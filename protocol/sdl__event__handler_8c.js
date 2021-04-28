@@ -1,0 +1,27 @@
+var sdl__event__handler_8c =
+[
+    [ "handle_key_up_down", "sdl__event__handler_8c.html#a112bf2771067e14df169fd79a8b0c880", null ],
+    [ "handle_mouse_button_up_down", "sdl__event__handler_8c.html#aa6774e6c4b4c2788adbd6355116aebe4", null ],
+    [ "handle_mouse_left_window", "sdl__event__handler_8c.html#a97a8eaaf117370aaae2ac57cc6b465cd", null ],
+    [ "handle_mouse_motion", "sdl__event__handler_8c.html#a35b9c01c1cfe52fcd8bd56a7c70bd49b", null ],
+    [ "handle_mouse_wheel", "sdl__event__handler_8c.html#a164058efeef458f33469a6abbbc9e9ac", null ],
+    [ "handle_multi_gesture", "sdl__event__handler_8c.html#a75118e01fa133274d0e45c48246eef64", null ],
+    [ "handle_sdl_event", "sdl__event__handler_8c.html#a66ddd1c4bf7788031a36578e95ad1b94", null ],
+    [ "handle_window_size_changed", "sdl__event__handler_8c.html#a567539355201a9a0ad842652f5dde3f6", null ],
+    [ "try_handle_sdl_event", "sdl__event__handler_8c.html#a0174a28e7af130d71bc1fbc09695fbfa", null ],
+    [ "alt_pressed", "sdl__event__handler_8c.html#a1eadcac7071ac5ef15612c11b156e4cc", null ],
+    [ "audio_refresh", "sdl__event__handler_8c.html#ac8331d539e4f6ec991544356b862abf4", null ],
+    [ "ctrl_pressed", "sdl__event__handler_8c.html#aec4e866abc16cc8217d33dfae87d5877", null ],
+    [ "exiting", "sdl__event__handler_8c.html#aff18c87636faa9e67a7245535051e82b", null ],
+    [ "lgui_pressed", "sdl__event__handler_8c.html#a5b2d8acba46a3a8d41972491e3e06b01", null ],
+    [ "mouse_state", "sdl__event__handler_8c.html#a9f5f2b90e5441717b0499669e2e742d3", null ],
+    [ "output_codec_type", "sdl__event__handler_8c.html#adb9ee7b2e8381606788de51e5548b57f", null ],
+    [ "output_height", "sdl__event__handler_8c.html#a2a57d774e71166271bbff6c515111104", null ],
+    [ "output_width", "sdl__event__handler_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ],
+    [ "pending_resize_message", "sdl__event__handler_8c.html#af4e35016b32376211dba7a8f028f3f88", null ],
+    [ "rgui_pressed", "sdl__event__handler_8c.html#a31e60ed488fac41f2eb7f3865937fc14", null ],
+    [ "window", "sdl__event__handler_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9", null ],
+    [ "window_resize_interval", "sdl__event__handler_8c.html#a70fe50e113f8382ae4dfaf9ddb53ee90", null ],
+    [ "window_resize_mutex", "sdl__event__handler_8c.html#a6429187068c6c199a60f7425e05362fd", null ],
+    [ "window_resize_timer", "sdl__event__handler_8c.html#a5421dd315eda4c2e3347f85fc9c86c69", null ]
+];

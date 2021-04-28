@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['fractalclientmessage_1707',['FractalClientMessage',['../structFractalClientMessage.html',1,'']]],
+  ['fractalcursor_1708',['FractalCursor',['../structFractalCursor.html',1,'']]],
+  ['fractalcursorimage_1709',['FractalCursorImage',['../structFractalCursorImage.html',1,'']]],
+  ['fractalcursortypes_1710',['FractalCursorTypes',['../structFractalCursorTypes.html',1,'']]],
+  ['fractaldestination_1711',['FractalDestination',['../structFractalDestination.html',1,'']]],
+  ['fractaldiscoveryreplymessage_1712',['FractalDiscoveryReplyMessage',['../structFractalDiscoveryReplyMessage.html',1,'']]],
+  ['fractaldiscoveryrequestmessage_1713',['FractalDiscoveryRequestMessage',['../structFractalDiscoveryRequestMessage.html',1,'']]],
+  ['fractalkeyboardmessage_1714',['FractalKeyboardMessage',['../structFractalKeyboardMessage.html',1,'']]],
+  ['fractalmousebuttonmessage_1715',['FractalMouseButtonMessage',['../structFractalMouseButtonMessage.html',1,'']]],
+  ['fractalmousemotionmessage_1716',['FractalMouseMotionMessage',['../structFractalMouseMotionMessage.html',1,'']]],
+  ['fractalmousewheelmessage_1717',['FractalMouseWheelMessage',['../structFractalMouseWheelMessage.html',1,'']]],
+  ['fractalmultigesturemessage_1718',['FractalMultigestureMessage',['../structFractalMultigestureMessage.html',1,'']]],
+  ['fractalpacket_1719',['FractalPacket',['../structFractalPacket.html',1,'']]],
+  ['fractalrgbcolor_1720',['FractalRGBColor',['../structFractalRGBColor.html',1,'']]],
+  ['fractalservermessage_1721',['FractalServerMessage',['../structFractalServerMessage.html',1,'']]],
+  ['fractaltimedata_1722',['FractalTimeData',['../structFractalTimeData.html',1,'']]],
+  ['fractalyuvcolor_1723',['FractalYUVColor',['../structFractalYUVColor.html',1,'']]],
+  ['frame_1724',['Frame',['../structFrame.html',1,'']]],
+  ['framedata_1725',['FrameData',['../structFrameData.html',1,'']]]
+];

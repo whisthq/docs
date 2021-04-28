@@ -1,0 +1,28 @@
+var structVideoEncoder =
+[
+    [ "already_encoded", "structVideoEncoder.html#a52ce53ffe33aa00a56cbf47dd98ecd02", null ],
+    [ "codec_type", "structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9", null ],
+    [ "encoded_frame_data", "structVideoEncoder.html#a190a90b67aaa7791e0de89fb935c00f9", null ],
+    [ "encoded_frame_size", "structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f", null ],
+    [ "filtered_frame", "structVideoEncoder.html#a4ae2a790c6f6188e97f92aef0ae4895a", null ],
+    [ "frames_since_last_iframe", "structVideoEncoder.html#abd962b8943014c5bf13588d5d8cdab67", null ],
+    [ "gop_size", "structVideoEncoder.html#a92d84481e74535af7ceac75e34a99879", null ],
+    [ "hw_device_ctx", "structVideoEncoder.html#acab2ad36e320ca01f5cc2cf206cedc04", null ],
+    [ "hw_frame", "structVideoEncoder.html#ad49c05680f1adb9bd0bb7f0b5e94508b", null ],
+    [ "in_height", "structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027", null ],
+    [ "in_width", "structVideoEncoder.html#a580791874e935338868c45c242b1b4e0", null ],
+    [ "is_iframe", "structVideoEncoder.html#a38a7c99b35edd4115d20a1b4e8c7bc82", null ],
+    [ "num_packets", "structVideoEncoder.html#a20b578a3610dce40aef2d04397bd7744", null ],
+    [ "out_height", "structVideoEncoder.html#a756d26cde728bccea40f70df0c05f3d6", null ],
+    [ "out_width", "structVideoEncoder.html#a8737b2047d311ccad803628b61a24ae3", null ],
+    [ "packets", "structVideoEncoder.html#a7b58cbbd0779fa34f6a4469eef21d112", null ],
+    [ "pCodec", "structVideoEncoder.html#a20b1ab54f0810d27faccbfc82bd8ec20", null ],
+    [ "pCodecCtx", "structVideoEncoder.html#a0425b2b0c4bbb0146ed9771dff129fa3", null ],
+    [ "pFilterGraph", "structVideoEncoder.html#adc2ccdfe5d4a30467607d0ccf2210ee3", null ],
+    [ "pFilterGraphSink", "structVideoEncoder.html#a883543e388c3299b7607e4e0b6b1364b", null ],
+    [ "pFilterGraphSource", "structVideoEncoder.html#a63e6cb0a0043813deeb0396e1fadc8e3", null ],
+    [ "sw_frame", "structVideoEncoder.html#ac454db2722ed912fa3f811ec673c495c", null ],
+    [ "sw_frame_buffer", "structVideoEncoder.html#a0c467b2aea2594951013e689af8261ab", null ],
+    [ "type", "structVideoEncoder.html#a8398ffc2981e88c4a59e58b9159b7079", null ],
+    [ "using_capture_encoder", "structVideoEncoder.html#a2c71c974670946ee61426ab67bde31aa", null ]
+];
