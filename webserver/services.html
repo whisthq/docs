@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Other services &#8212; Fractal  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Web server responsibilities" href="responsibilities.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="other-services">
+<h1>Other services<a class="headerlink" href="#other-services" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="user-agents">
+<h2>User agents<a class="headerlink" href="#user-agents" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The desktop application allows customers to register and log into user accounts. Once the desktop application is authenticated, it can request that the web server allocate it a streaming session.</p></li>
+<li><p>Developers use tools such as web browsers, Postman, and cURL to perform manual tests against instances of the web server and also to perform administrative actions like creating and deleting cloud resources.</p></li>
+</ul>
+</div>
+<div class="section" id="the-ecs-host-service">
+<h2>The ECS host service<a class="headerlink" href="#the-ecs-host-service" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The ECS host service wraps Amazon’s default ECS agent and extends its functionality.</p></li>
+<li><p>It listens for connections from the web server, which periodically sends commands and data to the host service that influence how and when containerized application streaming sessions start and run.</p></li>
+<li><p>The ECS host service also sends periodic heartbeats back to the web server to let it know that it is alive.</p></li>
+</ul>
+</div>
+<div class="section" id="fractal-protocol-server-instances">
+<h2>Fractal protocol server instances<a class="headerlink" href="#fractal-protocol-server-instances" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The Fractal protocol server notifies the web server when connected clients disconnect so the web server knows when to tell AWS to delete containers that are no longer needed.</p></li>
+</ul>
+</div>
+<div class="section" id="gha-workflows">
+<h2>GHA workflows<a class="headerlink" href="#gha-workflows" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Each time a new release is deployed, a GitHub Actions workflow places the web server in maintenance mode so the deployment can happen atomically.</p></li>
+</ul>
+</div>
+<div class="section" id="hirefire">
+<h2>HireFire<a class="headerlink" href="#hirefire" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>HireFire is a Heroku add-on that is responsible for scaling our Celery worker processes.</p></li>
+<li><p>The HireFire service periodically requests scaling metrics from the web server. It uses these metrics to determine the desired number of Celery worker processes to run and scales the actual number of running Celery worker processes accordingly.</p></li>
+</ul>
+</div>
+<div class="section" id="databases">
+<h2>Databases<a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>On startup, the web server reads from a centralized database of Flask configuration variables that may be overridden by Heroku environment variables.</p></li>
+<li><p>The web server is also attached to an all purpose PostgreSQL database that it uses at runtime.</p></li>
+</ul>
+</div>
+<div class="section" id="aws-services">
+<h2>AWS services<a class="headerlink" href="#aws-services" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The web server is responsible for scaling cloud resources. In particular, it interacts heavily with AWS ECS, EC2, and AutoScaling.</p></li>
+</ul>
+</div>
+<div class="section" id="stripe">
+<h2>Stripe<a class="headerlink" href="#stripe" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The web server is responsible for associating Stripe customers with Fractal user accounts, managing subscriptions, and granting or denying users service based on their subscription status.</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Fractal</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Web server architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Web server responsibilities</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Other services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#user-agents">User agents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-ecs-host-service">The ECS host service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fractal-protocol-server-instances">Fractal protocol server instances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gha-workflows">GHA workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hirefire">HireFire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#databases">Databases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#aws-services">AWS services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stripe">Stripe</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="responsibilities.html" title="previous chapter">Web server responsibilities</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Fractal.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/services.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
