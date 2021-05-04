@@ -5,3 +5,4 @@ This repository contains auto-generated documentation for projects in the Fracta
 - [Webserver Docs](https://docs.fractal.co/webserver)
 - [Protocol Docs](https://docs.fractal.co/protocol)
 - [SDL Docs](https://docs.fractal.co/SDL)
+- [FFmpeg Docs](https://docs.fractal.co/FFmpeg)
