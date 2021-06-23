@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web server responsibilities &#8212; Fractal  documentation</title>
+    <title>Webserver Responsibilities &#8212; Fractal Webserver  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -14,8 +14,8 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Other services" href="services.html" />
-    <link rel="prev" title="Web server architecture" href="architecture.html" />
+    <link rel="next" title="Other Services" href="services.html" />
+    <link rel="prev" title="Webserver Architecture" href="architecture.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -32,39 +32,72 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="web-server-responsibilities">
-<h1>Web server responsibilities<a class="headerlink" href="#web-server-responsibilities" title="Permalink to this headline">¶</a></h1>
-<p>The Fractal appears to have many different responsibilities because it does so much, but none of its responsibilities are particularly well-defined. In fact, we can think about the web server having just three main responsibilities:</p>
+  <div class="section" id="webserver-responsibilities">
+<h1>Webserver Responsibilities<a class="headerlink" href="#webserver-responsibilities" title="Permalink to this headline">¶</a></h1>
+<p>The Fractal Webserver performs three main functions:</p>
 <ul class="simple">
-<li><p>user management,</p></li>
-<li><p>access control, and</p></li>
-<li><p>and streaming session management.</p></li>
+<li><p>Controls which users have access to which compute resources</p></li>
+<li><p>Makes sure we have enough compute for the userload we’re seeing, by starting and stopping cloud instances</p></li>
+<li><p>Allows users to initiate application streams – i.e. to start using Fractal</p></li>
 </ul>
-<div class="section" id="user-management">
-<h2>User management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h2>
-<p>The user management responsibilities of the web server are pretty much limited to account registration. The web server is responsible for creating rows for new users in Fractal’s database.</p>
-</div>
 <div class="section" id="access-control">
-<h2>Access control<a class="headerlink" href="#access-control" title="Permalink to this headline">¶</a></h2>
-<p>For each user that the web server has registered, the web server must be able to control that user’s access to resources that are available via the web server. For example, the web server has to ensure that only users with an active Fractal subscription receive service.</p>
+<h2>Access Control<a class="headerlink" href="#access-control" title="Permalink to this headline">¶</a></h2>
+<p>For each access token that the Fractal Webserver receives, it must verify that the authenticated user is authorized to access
+the resources to which they are requesting access. For example, some Fractal Webserver resources are only accessible to
+Fractal subscribers, while others are only accessible to Fractal administrators. Access tokens are JWTs issued by an Auth0
+tenant that takes care of user management and authentication. Each time the Fractal Webserver receives one of these access
+tokens, it uses the Auth0 tenant’s public signing key to validate the token’s signature. Validating the signature allows the
+Fractal Webserver to trust that the token was really issued by the Auth0 tenant. Once the signature has been validated, the
+Webserver can use the data contained in the token’s payload to determine whether or not the authenticated is authorized to
+access the resource to which they are requesting access. In order to enforce access control for resources that are only
+accessible to Fractal subscribers, the Fractal Webserver reads the the authenticated user’s Stripe-issued customer ID from
+the token’s payload and uses it to query Stripe’s API for the authenticated user’s Fractal subscription status. If the
+subscription is in one of the “active” or “trialing” states, they are granted access to the resource. In order to enforce
+access control for resources that are only accessible to Fractal administrators, the Webserver reads from the token’s payload
+the API scopes that the user is authorized to access. If one of those scopes is “admin”, then the user is allowed to access
+the resource.</p>
 </div>
-<div class="section" id="streaming-session-management">
-<h2>Streaming session management<a class="headerlink" href="#streaming-session-management" title="Permalink to this headline">¶</a></h2>
-<p>By far the most significant and complicated of the web server’s responsibilities is that of allocating application streams to users. Upon receipt of a request to start streaming an application, the web server must quickly procure connection information for a running instance of the protocol server and return it to the the desktop application that requested the streaming session. In order to fulfill this responsibility, the web server consumes information from Fractal’s database and AWS account.</p>
+<div class="section" id="compute-scaling">
+<h2>Compute Scaling<a class="headerlink" href="#compute-scaling" title="Permalink to this headline">¶</a></h2>
+<p>The Fractal Webserver continuously keeps track of the amount of load on our system, both in terms of the number of active
+users and their actual activity level. Based on this, it starts and stops cloud instances dynamically in order to make sure
+everyone who wants a session can have one, ideally without any wait.</p>
+</div>
+<div class="section" id="application-streaming">
+<h2>Application Streaming<a class="headerlink" href="#application-streaming" title="Permalink to this headline">¶</a></h2>
+<p>By far the most significant and complicated of the Fractal Webserver’s responsibilities is that of allocating Fractal
+containers to users. When the Webserver receives a request to start streaming an application, the web server must quickly
+procure connection information for a running instance of the Fractal Protocol Server and return it to the the Fractal
+Desktop application that requested the streaming session.</p>
 <div class="section" id="starting-streams">
-<h3>Starting streams<a class="headerlink" href="#starting-streams" title="Permalink to this headline">¶</a></h3>
-<p>At a high level, when the web server receives a request to allocate an application stream to a user, it does the following in order:</p>
-<ol class="arabic simple">
-<li><p>Check for any idle streaming sessions that may have been created in advance in order to minimize the amount of time taken to return application stream connection information to the client. If any idle streaming sessions exist, choose one, return its connection information to the client, and skip to step 3.</p></li>
-<li><p>Start a new application stream and return its connection information to the user.</p></li>
-<li><p>Scale the pool of idle streaming sessions based idle application stream supply and application stream demand metrics.</p></li>
-</ol>
-<p>In order to reduce the amount of time it takes for the web server to associate an instance of the Fractal client with an application stream, we “cache,” as it were, some information about the cloud resources that are provisioned and available to serve application streams. Although it is redundant for us to take it upon ourselves to store some of this information because we could just as easily obtain it with a query to AWS, it is theoretically advantageous to do so because querying our own database is quicker than querying AWS.</p>
-<p>Another reason why it is useful, if not necessarily necessary, to cache some information about what cloud resources are available to serve application streams is that we have implemented our own scaling layer on top of what scaling AWS already provides. Specifically, there is code on the web server that both scales the number of ECS clusters we have made available to ourselves for the purposes of deploying containerized application streams and also load balances application streams across all of these clusters.</p>
+<h3>Starting Streams<a class="headerlink" href="#starting-streams" title="Permalink to this headline">¶</a></h3>
+<p>At a high level, when the Fractal Webserver receives a request to allocate a Fractal container to a user, from which an
+application stream will begin. It does the following in order:</p>
+<p>1. Check for any idle Fractal container that may have been created in advance in order to minimize the amount of time taken
+to return an application stream connection information to the client. If any idle Fractal container exist, choose one,
+return its connection information to the client, and skip to step 3.
+2. Start a new Fractal container on a cloud instance with availability, and return its connection information to the user.
+3. Scale the pool of idle Fractal containers based on current idle Fractal containers supply and application stream
+demand metrics, creating new cloud instances as necessary.</p>
+<p>In order to reduce the amount of time it takes for the Fractal Webserver to associate an instance of the Fractal client with
+an application stream, we “cache,” as it were, some information about the cloud resources that are provisioned and available
+to serve Fractal containers. Although it is redundant for us to take it upon ourselves to store some of this information
+because we could just as easily obtain it with a query to AWS, in practice it is advantageous to do so because querying
+our own database is quicker than querying AWS.</p>
+<p>Another reason why it is useful, if not necessarily necessary, to cache some information about what cloud resources are
+available to serve application streams is that we have implement our own scaling layer on top of what scaling AWS already
+provides. Specifically, there is code on the Fractal Webserver that both scales the number of ECS clusters we have made
+available to ourselves for the purposes of deploying containerized application streams and also load balances application
+streams across all of these clusters.</p>
 </div>
 <div class="section" id="ending-streams">
-<h3>Ending streams<a class="headerlink" href="#ending-streams" title="Permalink to this headline">¶</a></h3>
-<p>When a user closes a streamed application at the end of their streaming session, the application container notifies the web server that the user has disconnected. At this point, the web server instructs AWS to delete the container. All data except for any application-specific configuration vanishes. Application-specific configuration is encrypted with a user-specific encryption key that is never stored in plaintext on Fractal’s servers.</p>
+<h3>Ending Streams<a class="headerlink" href="#ending-streams" title="Permalink to this headline">¶</a></h3>
+<p>When a user closes a streamed application at the end of their streaming session, the Fractal container running this
+application notifies the Fractal Webserver that the user has disconnected. At this point, the web server instructs AWS to
+delete the container. All data except for any application-specific configuration vanishes. In other words, every streamed
+application (i.e. Fractal container) has an ephemeral hard drive. All data that is persisted between streaming sessions is
+encrypted with a user-specific encryption key and uploaded to in AWS S3 before the Fractal container destroys itself. The
+encryption key is known only to the end-user, so neither AWS nor Fractal employees are able to decrypt and read the users’ data.</p>
 </div>
 </div>
 </div>
@@ -76,7 +109,7 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Fractal</a></h1>
+<h1 class="logo"><a href="index.html">Fractal Webserver</a></h1>
 
 
 
@@ -88,22 +121,22 @@
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="architecture.html">Web server architecture</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Web server responsibilities</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#user-management">User management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#access-control">Access control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#streaming-session-management">Streaming session management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Webserver Architecture</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Webserver Responsibilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#access-control">Access Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compute-scaling">Compute Scaling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-streaming">Application Streaming</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="services.html">Other services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="architecture.html" title="previous chapter">Web server architecture</a></li>
-      <li>Next: <a href="services.html" title="next chapter">Other services</a></li>
+      <li>Previous: <a href="architecture.html" title="previous chapter">Webserver Architecture</a></li>
+      <li>Next: <a href="services.html" title="next chapter">Other Services</a></li>
   </ul></li>
 </ul>
 </div>
@@ -130,7 +163,7 @@
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2021, Fractal.
+      &copy;2021, Fractal Computers, Inc..
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
