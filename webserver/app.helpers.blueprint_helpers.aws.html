@@ -37,14 +37,182 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-helpers-blueprint-helpers-aws-aws-container-post-module">
-<h2>app.helpers.blueprint_helpers.aws.aws_container_post module<a class="headerlink" href="#app-helpers-blueprint-helpers-aws-aws-container-post-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.blueprint_helpers.aws.aws_container_post">
+<span id="app-helpers-blueprint-helpers-aws-aws-container-post-module"></span><h2>app.helpers.blueprint_helpers.aws.aws_container_post module<a class="headerlink" href="#module-app.helpers.blueprint_helpers.aws.aws_container_post" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt id="app.helpers.blueprint_helpers.aws.aws_container_post.BadAppError">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_container_post.</span></code><code class="sig-name descname"><span class="pre">BadAppError</span></code><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_container_post.BadAppError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Raised when <cite>preprocess_task_info</cite> doesn’t recognize an input.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.blueprint_helpers.aws.aws_container_post.ping_helper">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_container_post.</span></code><code class="sig-name descname"><span class="pre">ping_helper</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">available</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">container_ip</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port_32262</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aeskey</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_container_post.ping_helper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update container state in the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>available</strong> (<em>bool</em>) – True if Container is not being used, False otherwise</p></li>
+<li><p><strong>container_ip</strong> (<em>str</em>) – Container IP address</p></li>
+<li><p><strong>port_32262</strong> (<em>int</em>) – the port corresponding to port 32262</p></li>
+<li><p><strong>aeskey</strong> (<em>str</em>) – The container’s AES key.</p></li>
+<li><p><strong>version</strong> (<em>str</em>) – The version of the protocol that is running in the
+container.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A pair of HTTP response JSON and an HTTP status code.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.blueprint_helpers.aws.aws_container_post.preprocess_task_info">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_container_post.</span></code><code class="sig-name descname"><span class="pre">preprocess_task_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_container_post.preprocess_task_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maps names of applications to ECS task definitions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>app</strong> – The name of the application for which to generate a task
+definition.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A  triple containing arguments two through four of the</dt><dd><p>create_new_container celery task.</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.blueprint_helpers.aws.aws_container_post.protocol_info">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_container_post.</span></code><code class="sig-name descname"><span class="pre">protocol_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aeskey</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_container_post.protocol_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns information, which is consumed by the protocol, to the client.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> (<em>str</em>) – The IP address of the container whose information should be
+returned.</p></li>
+<li><p><strong>port</strong> (<em>str</em>) – which port the container’s port 32262 is mapped to</p></li>
+<li><p><strong>aeskey</strong> (<em>str</em>) – the container’s individual AES key</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a dict with conainer info</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="app-helpers-blueprint-helpers-aws-container-state-module">
-<h2>app.helpers.blueprint_helpers.aws.container_state module<a class="headerlink" href="#app-helpers-blueprint-helpers-aws-container-state-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.blueprint_helpers.aws.container_state">
+<span id="app-helpers-blueprint-helpers-aws-container-state-module"></span><h2>app.helpers.blueprint_helpers.aws.container_state module<a class="headerlink" href="#module-app.helpers.blueprint_helpers.aws.container_state" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.blueprint_helpers.aws.container_state.can_update_container_state">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.container_state.</span></code><code class="sig-name descname"><span class="pre">can_update_container_state</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="app.models.html#app.models.hardware.UserContainerState" title="app.models.hardware.UserContainerState"><span class="pre">app.models.hardware.UserContainerState</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.container_state.can_update_container_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>This lets us know if the user’s entry in UserContainerState
+can be updated (meaning that the task_id which is calling this,
+passing its own task_id, is still the valid one for that
+entry: this is meant to avoid race conditions).</p>
+<p>This is used by the create_container endpoint to check whether it can set it
+to FAILURE or CANCELLED (imagine that the user cancels and initializes a new task,
+then this old task would not want to be able to overwrite the table.)</p>
+<p>If obj is null then it will pass since that signifies creation. If task_id is null
+then it will also pass signifying that we do not actually care about the task_id.
+However, if this is used as a prelude to creation of an entry, that
+creation will fail since the column is non-nullable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user</strong> (<em>str</em>) – The username of the user who’s entry we want to</p></li>
+<li><p><strong>for whether it can be updated.</strong> (<em>check</em>) – </p></li>
+<li><p><strong>task_id</strong> (<em>str</em>) – The task id (status id) of the celery task calling this.</p></li>
+<li><p><strong>obj</strong> (<a class="reference internal" href="app.models.html#app.models.hardware.UserContainerState" title="app.models.hardware.UserContainerState"><em>UserContainerState</em></a>) – an object that can be passed if it’s being used inside</p></li>
+<li><p><strong>internal method</strong> (<em>an</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Whether the task id matches and this hasn’t been cancelled.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.blueprint_helpers.aws.container_state.container_state_obj">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.container_state.</span></code><code class="sig-name descname"><span class="pre">container_state_obj</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="app.models.html#app.models.hardware.UserContainerState" title="app.models.hardware.UserContainerState"><span class="pre">app.models.hardware.UserContainerState</span></a><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.container_state.container_state_obj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches the UserContainerState object which has the user_id,
+state, and task_id (i.e. for the celery task, called statusID on the client app).
+This can be used to modify the table or read values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>An entry into the UserContainerState table
+(user_app_state in SQL).</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="app.models.html#app.models.hardware.UserContainerState" title="app.models.hardware.UserContainerState">UserContainerState</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.blueprint_helpers.aws.container_state.create_container_state">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.container_state.</span></code><code class="sig-name descname"><span class="pre">create_container_state</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'PENDING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ip</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_app_auth_secret</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.container_state.create_container_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new entry into the app_info table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_id</strong> (<em>str</em>) – The username of the user for whom’stdv this entry belongs.</p></li>
+<li><p><strong>task_id</strong> (<em>str</em>) – The task id of the task that’s creating this.</p></li>
+<li><p><strong>ip</strong> (<em>str</em><em>, </em><em>optional</em>) – the IP of this container (none if none assigned)</p></li>
+<li><p><strong>client_app_auth_secret</strong> (<em>str</em><em>, </em><em>optional</em>) – the host service auth secret of this container
+(none if none assigned)</p></li>
+<li><p><strong>port</strong> (<em>int</em><em>, </em><em>optional</em>) – the port mapping of this container (none if none assigned)</p></li>
+<li><p><strong>state</strong> (<em>str</em><em>, </em><em>optional</em>) – The state that we want to write to the table for this</p></li>
+<li><p><strong>object. Defaults to PENDING.</strong> (<em>new</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – if it fails to commit the creation somehow.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.blueprint_helpers.aws.container_state.set_container_state">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.container_state.</span></code><code class="sig-name descname"><span class="pre">set_container_state</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keyuser</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keytask</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ip</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_app_auth_secret</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.container_state.set_container_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a container state in the UserContinerState (user_app_state) table. We
+require a keyuser (and potentially keytask) to set it. You can null out keytask only if
+the entry already exists and force is true. Otherwise keytask is required to check
+whether that entry can be updated. It can be updated only if the keytask matches the
+current task and it’s not cancelled. The other params (aside from force) set those
+values in the entry in the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keyuser</strong> (<em>str</em>) – The user to filter by.</p></li>
+<li><p><strong>keytask</strong> (<em>str</em>) – The task id that we should expect to be the current task</p></li>
+<li><p><strong>that entry.</strong> (<em>in</em>) – </p></li>
+<li><p><strong>user_id</strong> (<em>str</em><em>, </em><em>optional</em>) – The user_id we want to set. Defaults to None.</p></li>
+<li><p><strong>state</strong> (<em>str</em><em>, </em><em>optional</em>) – The state we want to set. Defaults to None.</p></li>
+<li><p><strong>ip</strong> (<em>str</em><em>, </em><em>optional</em>) – which IP we want to set. Defaults to None.</p></li>
+<li><p><strong>client_app_auth_secret</strong> (<em>str</em><em>, </em><em>optional</em>) – what the host service auth secret is.
+Defaults to None</p></li>
+<li><p><strong>port</strong> (<em>int</em><em>, </em><em>optional</em>) – which port we want to set. Defaults to None.</p></li>
+<li><p><strong>task_id</strong> (<em>str</em><em>, </em><em>optional</em>) – The task id we want to set. Defaults to None.</p></li>
+<li><p><strong>force</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update with a check for validity or not.</p></li>
+<li><p><strong>to False.</strong> (<em>Defaults</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.blueprint_helpers.aws">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.helpers.blueprint_helpers.aws" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

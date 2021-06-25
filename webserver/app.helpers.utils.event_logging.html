@@ -37,17 +37,186 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-helpers-utils-event-logging-event-tags-module">
-<h2>app.helpers.utils.event_logging.event_tags module<a class="headerlink" href="#app-helpers-utils-event-logging-event-tags-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.event_logging.event_tags">
+<span id="app-helpers-utils-event-logging-event-tags-module"></span><h2>app.helpers.utils.event_logging.event_tags module<a class="headerlink" href="#module-app.helpers.utils.event_logging.event_tags" title="Permalink to this headline">¶</a></h2>
+<p>Logz takes in string tags that let us categorize different events
+more easily than plain string searches</p>
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.event_tags.valid_tags">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.event_tags.</span></code><code class="sig-name descname"><span class="pre">valid_tags</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tags</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.event_tags.valid_tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the given tags are valid in that
+they contain the minimum requirements to be
+logged to event_logging. There should not be more than one of these.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tags</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – some tags that someone wants to put in some event_logging event</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-event-logging-event-text-module">
-<h2>app.helpers.utils.event_logging.event_text module<a class="headerlink" href="#app-helpers-utils-event-logging-event-text-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.event_logging.event_text">
+<span id="app-helpers-utils-event-logging-event-text-module"></span><h2>app.helpers.utils.event_logging.event_text module<a class="headerlink" href="#module-app.helpers.utils.event_logging.event_text" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.event_text.format_into_text">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.event_text.</span></code><code class="sig-name descname"><span class="pre">format_into_text</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key_val_store</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.event_text.format_into_text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.event_text.to_text">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.event_text.</span></code><code class="sig-name descname"><span class="pre">to_text</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.event_text.to_text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-event-logging-events-module">
-<h2>app.helpers.utils.event_logging.events module<a class="headerlink" href="#app-helpers-utils-event-logging-events-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.event_logging.events">
+<span id="app-helpers-utils-event-logging-events-module"></span><h2>app.helpers.utils.event_logging.events module<a class="headerlink" href="#module-app.helpers.utils.event_logging.events" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.events.basic_logging_event">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.events.</span></code><code class="sig-name descname"><span class="pre">basic_logging_event</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.events.basic_logging_event" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs a event_logging event to keep it in
+our main body of logs. We require tags to now allow people to make events that are not
+easily categorizeable. We require 2 tags, one for the event-type and one for the status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>title</strong> (<em>str</em>) – The title of the event giving cursory information.</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Body text of the event, giving detailed information. Defaults to “”.</p></li>
+<li><p><strong>tags</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – Tags to tag the event with for filtering. Defaults to None.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.events.lifecycle_getter">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.events.</span></code><code class="sig-name descname"><span class="pre">lifecycle_getter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_end_evt_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_end_evt_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.events.lifecycle_getter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.events.logged_event_cluster_created">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.events.</span></code><code class="sig-name descname"><span class="pre">logged_event_cluster_created</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_taken</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unknown'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.events.logged_event_cluster_created" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as logged_event_container_prewarmed but for clusters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cluster_name</strong> (<em>str</em>) – The name of the cluster which was created.
+This is used to search in lifecycle.</p></li>
+<li><p><strong>time_taken</strong> (<em>int</em>) – how long the operation took</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.events.logged_event_cluster_deleted">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.events.</span></code><code class="sig-name descname"><span class="pre">logged_event_cluster_deleted</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lifecycle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_taken</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unknown'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.events.logged_event_cluster_deleted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same idea as logged_event_container_deleted but for clusters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cluster_name</strong> (<em>str</em>) – Name of the cluster deleted.</p></li>
+<li><p><strong>lifecycle</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to do lifecycle type instead of naive.</p></li>
+<li><p><strong>time_taken</strong> (<em>int</em>) – how long the operation took</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.events.logged_event_cluster_lifecycle">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.events.</span></code><code class="sig-name descname"><span class="pre">logged_event_cluster_lifecycle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_taken</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unknown'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.events.logged_event_cluster_lifecycle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Effectively the same as logged_event_container_lifecycle, except for clusters.
+Read above.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cluster_name</strong> (<em>str</em>) – Name of the string</p></li>
+<li><p><strong>time_taken</strong> (<em>int</em>) – how long the operation took</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.events.logged_event_container_assigned">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.events.</span></code><code class="sig-name descname"><span class="pre">logged_event_container_assigned</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unknown'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_taken</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unknown'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.events.logged_event_container_assigned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs an event for container assignment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>container_name</strong> (<em>str</em>) – The name of the container which was created.
+This is used to search in lifecycle.</p></li>
+<li><p><strong>cluster_name</strong> (<em>str</em>) – The cluster it was created in.</p></li>
+<li><p><strong>username</strong> (<em>str</em><em>, </em><em>optional</em>) – The username of the user this is created for.</p></li>
+<li><p><strong>time_taken</strong> (<em>int</em>) – how long the operation took</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.events.logged_event_container_deleted">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.events.</span></code><code class="sig-name descname"><span class="pre">logged_event_container_deleted</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">container_user</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lifecycle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_taken</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.events.logged_event_container_deleted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs an event for the deletion of the container. It has a “naive” option and a
+lifecycle option. In the lifecycle option it will log a lifecycle type event instead
+of a deletion type event. This event will inform users of the length of time taken.
+In the case of the naive method (lifecycle=False) it will simply log that deletion
+without any calculation etc.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>container_name</strong> (<em>str</em>) – The name of the container that was deleted.</p></li>
+<li><p><strong>cluster_name</strong> (<em>str</em>) – The name of the cluster that the deleted container was in.</p></li>
+<li><p><strong>lifecycle</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether we want to measure time and return a lifecycle type
+event or prefer just to log the deletion itself naively. Defaults to False.’</p></li>
+<li><p><strong>time_taken</strong> (<em>int</em>) – how long the operation took</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.events.logged_event_container_lifecycle">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.events.</span></code><code class="sig-name descname"><span class="pre">logged_event_container_lifecycle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">container_user</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unknown'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_taken</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unknown'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.events.logged_event_container_lifecycle" title="Permalink to this definition">¶</a></dt>
+<dd><p>The goal is to tell the amount of time a container was up/down.</p>
+<p>This will log an event for the lifecycle of a container that is being shut down.
+It will search for the (most recent )previous event with tags corresponding to
+the creation of the container which is being deleted and then find the distance in time
+and put it into the body along with this event. This is meant to be filtered and then used
+for log analysis elsewhere.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>container_name</strong> (<em>str</em>) – The name of the container whose lifecycle we are observing the end of.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.event_logging.events.logged_event_container_prewarmed">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.event_logging.events.</span></code><code class="sig-name descname"><span class="pre">logged_event_container_prewarmed</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unknown'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_taken</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unknown'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.event_logging.events.logged_event_container_prewarmed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs an event for container creation for future metric collection</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>container_name</strong> (<em>str</em>) – The name of the container which was created.
+This is used to search in lifecycle.</p></li>
+<li><p><strong>cluster_name</strong> (<em>str</em>) – The cluster it was created in.</p></li>
+<li><p><strong>username</strong> (<em>str</em><em>, </em><em>optional</em>) – The username of the user this is created for.</p></li>
+<li><p><strong>time_taken</strong> (<em>int</em>) – how long the prewarm took</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.event_logging">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.helpers.utils.event_logging" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

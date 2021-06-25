@@ -37,11 +37,104 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-helpers-utils-mail-mail-client-module">
-<h2>app.helpers.utils.mail.mail_client module<a class="headerlink" href="#app-helpers-utils-mail-mail-client-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.mail.mail_client">
+<span id="app-helpers-utils-mail-mail-client-module"></span><h2>app.helpers.utils.mail.mail_client module<a class="headerlink" href="#module-app.helpers.utils.mail.mail_client" title="Permalink to this headline">¶</a></h2>
+<p>The Fractal mail client.</p>
+<p>The MailClient class wraps the Python Sendgrid SDK to make it easy to send mail to users.</p>
+<p>Email templates are stored in the <a href="#id1"><span class="problematic" id="id2">`</span></a>sales.email_templates table of the database.
+MailClient.send_email looks up a template by its template ID, downloads it from the
+fractal-email-templates S3 bucket, renders it with the specified parameters, and sends it to the
+specified recipient.</p>
+<p class="rubric">Example</p>
+<p>Suppose you’ve added an email template whose template ID is “HELLO” to the database. Let’s
+pretend it’s a Jinja template string that can be rendered with a particular message.</p>
+<p>The following lines of code can be used to render your template and send it to
+<a class="reference external" href="mailto:recipient&#37;&#52;&#48;example&#46;com">recipient<span>&#64;</span>example<span>&#46;</span>com</a> with the message “Hello”.</p>
+<blockquote>
+<div><p>mc = MailClient(“…”)
+mc.send_email(“HELLO”, “<a class="reference external" href="mailto:recipient&#37;&#52;&#48;example&#46;com">recipient<span>&#64;</span>example<span>&#46;</span>com</a>”, jinja_args={“message”: “Hello”})</p>
+</div></blockquote>
+<dl class="py class">
+<dt id="app.helpers.utils.mail.mail_client.MailClient">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.mail.mail_client.</span></code><code class="sig-name descname"><span class="pre">MailClient</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.mail.mail_client.MailClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A helper class that uses the Sendgrid API to send emails to users.</p>
+<dl class="py method">
+<dt id="app.helpers.utils.mail.mail_client.MailClient.send_email">
+<code class="sig-name descname"><span class="pre">send_email</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">from_email</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'noreply&#64;fractal.co'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jinja_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.mail.mail_client.MailClient.send_email" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a rendered email template.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>email_id</strong> (<em>str</em>) – The database ID (i.e. the value of the sales.email_templates.id column)
+of the email template to render.</p></li>
+<li><p><strong>to_email</strong> (<em>str</em>) – The recipient’s email address as a string.</p></li>
+<li><p><strong>from_email</strong> (<em>str</em>) – Optional. The sender’s email address as a string. Defaults to
+“<a class="reference external" href="mailto:noreply&#37;&#52;&#48;fractal&#46;co">noreply<span>&#64;</span>fractal<span>&#46;</span>co</a>”.</p></li>
+<li><p><strong>jinja_args</strong> (<em>dict</em>) – Optional. Keyword arguments forwarded to Jinja’s Template.render().
+Defaults to {}.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="app.html#app.exceptions.SendGridException" title="app.exceptions.SendGridException"><strong>SendGridException</strong></a> – Sendgrid was not able to send an email. SendGridAPIClient.send()
+    has a tendency to raise cryptic errors. Any time SendGridException is raised, the
+    traceback will also include the traceback of the SendGridAPIClient.send() error
+    that directly triggered SendGridException.</p></li>
+<li><p><a class="reference internal" href="app.html#app.exceptions.TemplateNotFound" title="app.exceptions.TemplateNotFound"><strong>TemplateNotFound</strong></a> – There does not exist a record in the database of an email template
+    whose ID matches email_id.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="app.helpers.utils.mail.mail_client.MailUtils">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.mail.mail_client.</span></code><code class="sig-name descname"><span class="pre">MailUtils</span></code><a class="headerlink" href="#app.helpers.utils.mail.mail_client.MailUtils" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Contains all static methods for MailClient (above)</p>
+<dl class="py method">
+<dt id="app.helpers.utils.mail.mail_client.MailUtils.check_jinja_args">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">check_jinja_args</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jinja_args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.mail.mail_client.MailUtils.check_jinja_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that jinja_args contains all the template arguments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>template</strong> (<em>str</em>) – Email template from S3</p></li>
+<li><p><strong>jinja_args</strong> (<em>dict</em>) – Dict of arguments to pass to Jinja</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if jinja_args contains all args, False otherwise</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.mail.mail_client.MailUtils.sanitize_jinja_args">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">sanitize_jinja_args</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jinja_args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.mail.mail_client.MailUtils.sanitize_jinja_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do custom server-side replacement of certain Jinja args,
+for example retrieving email verification tokens from the database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>to_email</strong> (<em>str</em>) – Email address to send to</p></li>
+<li><p><strong>jinja_args</strong> (<em>dict</em>) – Dict of arguments to pass to Jinja</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.mail">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.helpers.utils.mail" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

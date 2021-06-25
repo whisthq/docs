@@ -37,11 +37,60 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-blueprints-host-service-host-service-blueprint-module">
-<h2>app.blueprints.host_service.host_service_blueprint module<a class="headerlink" href="#app-blueprints-host-service-host-service-blueprint-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.blueprints.host_service.host_service_blueprint">
+<span id="app-blueprints-host-service-host-service-blueprint-module"></span><h2>app.blueprints.host_service.host_service_blueprint module<a class="headerlink" href="#module-app.blueprints.host_service.host_service_blueprint" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.blueprints.host_service.host_service_blueprint.host_service">
+<code class="sig-prename descclassname"><span class="pre">app.blueprints.host_service.host_service_blueprint.</span></code><code class="sig-name descname"><span class="pre">host_service</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.host_service.host_service_blueprint.host_service" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the user’s host service info for app config security</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>JSON of user’s host service info</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.blueprints.host_service.host_service_blueprint.host_service_auth">
+<code class="sig-prename descclassname"><span class="pre">app.blueprints.host_service.host_service_blueprint.</span></code><code class="sig-name descname"><span class="pre">host_service_auth</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.host_service.host_service_blueprint.host_service_auth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Authenticates a host instance with the webserver
+and saves its info in the DB.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>instance_id</strong> (<em>str</em>) – the cloud ID of the instance</p></li>
+<li><p><strong>instance_type</strong> (<em>str</em>) – what type of hardware is the instance on?</p></li>
+<li><p><strong>region</strong> (<em>str</em>) – where is the instance?</p></li>
+<li><p><strong>ami</strong> (<em>str</em>) – what image is the instance running?</p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns: a response indicating if the auth/db init succeeded</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.blueprints.host_service.host_service_blueprint.host_service_heartbeat">
+<code class="sig-prename descclassname"><span class="pre">app.blueprints.host_service.host_service_blueprint.</span></code><code class="sig-name descname"><span class="pre">host_service_heartbeat</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.host_service.host_service_blueprint.host_service_heartbeat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the host service’s info in the DB
+based on the incoming heartbeat.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>auth_token</strong> (<em>str</em>) – the instance’s authentication token with the webserver</p></li>
+<li><p><strong>instance_id</strong> (<em>str</em>) – the instance’s cloud ID</p></li>
+<li><p><strong>free_ram_kb</strong> (<em>int</em>) – how much ram does the instance had available?</p></li>
+<li><p><strong>dying_heartbeat</strong> (<em>bool</em>) – is the instance about to die?</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a response indicating if the heartbeat was processed</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.blueprints.host_service">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.blueprints.host_service" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

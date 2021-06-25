@@ -37,11 +37,45 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-helpers-utils-auth0-auth0-module">
-<h2>app.helpers.utils.auth0.auth0 module<a class="headerlink" href="#app-helpers-utils-auth0-auth0-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.auth0.auth0">
+<span id="app-helpers-utils-auth0-auth0-module"></span><h2>app.helpers.utils.auth0.auth0 module<a class="headerlink" href="#module-app.helpers.utils.auth0.auth0" title="Permalink to this headline">¶</a></h2>
+<p>The Auth0 utility class.</p>
+<p>This class provides utility methods for Auth0.
+Currently, it offers a method to generate machine-to-machine access tokens, which may
+be used to authenticate the webserver to the host service or Auth0’s internal management API.</p>
+<p>In the future, this class will contain additional methods for various Auth0 management tasks,
+such as triggering a 2FA enrollment.</p>
+<dl class="py class">
+<dt id="app.helpers.utils.auth0.auth0.Auth0Client">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.auth0.auth0.</span></code><code class="sig-name descname"><span class="pre">Auth0Client</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auth0_domain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth0_client_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth0_client_secret</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.auth0.auth0.Auth0Client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="app.helpers.utils.auth0.auth0.Auth0Client.token">
+<code class="sig-name descname"><span class="pre">token</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.auth0.auth0.Auth0Client.token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a machine-to-machine access token</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="app.helpers.utils.auth0.auth0.M2MAccessToken">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.auth0.auth0.</span></code><code class="sig-name descname"><span class="pre">M2MAccessToken</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expires</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.auth0.auth0.M2MAccessToken" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="app.helpers.utils.auth0.auth0.M2MAccessToken.access_token">
+<code class="sig-name descname"><span class="pre">access_token</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#app.helpers.utils.auth0.auth0.M2MAccessToken.access_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="app.helpers.utils.auth0.auth0.M2MAccessToken.expires">
+<code class="sig-name descname"><span class="pre">expires</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#app.helpers.utils.auth0.auth0.M2MAccessToken.expires" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.auth0">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.helpers.utils.auth0" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

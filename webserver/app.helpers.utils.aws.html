@@ -40,8 +40,8 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="app.helpers.utils.aws.ec2_userdata.html">app.helpers.utils.aws.ec2_userdata package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="app.helpers.utils.aws.ec2_userdata.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="app.helpers.utils.aws.ec2_userdata.html#app-helpers-utils-aws-ec2-userdata-no-ecs-userdata-module">app.helpers.utils.aws.ec2_userdata.no_ecs_userdata module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="app.helpers.utils.aws.ec2_userdata.html#module-contents">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="app.helpers.utils.aws.ec2_userdata.html#module-app.helpers.utils.aws.ec2_userdata.no_ecs_userdata">app.helpers.utils.aws.ec2_userdata.no_ecs_userdata module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="app.helpers.utils.aws.ec2_userdata.html#module-app.helpers.utils.aws.ec2_userdata">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -50,32 +50,993 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-helpers-utils-aws-autoscaling-module">
-<h2>app.helpers.utils.aws.autoscaling module<a class="headerlink" href="#app-helpers-utils-aws-autoscaling-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.aws.autoscaling">
+<span id="app-helpers-utils-aws-autoscaling-module"></span><h2>app.helpers.utils.aws.autoscaling module<a class="headerlink" href="#module-app.helpers.utils.aws.autoscaling" title="Permalink to this headline">¶</a></h2>
+<p>Low-level helper functions that interact directly with AWS AutoScaling.</p>
+<dl class="py function">
+<dt id="app.helpers.utils.aws.autoscaling.delete_autoscaling_group">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.autoscaling.</span></code><code class="sig-name descname"><span class="pre">delete_autoscaling_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">autoscaling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.autoscaling.delete_autoscaling_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the specified auto-scaling group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>autoscaling_groups</strong> – The short name of the autoscaling group to delete as a string.</p></li>
+<li><p><strong>region</strong> – The AWS region in which the auto-scaling group is located (e.g. “us-east-1”).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.aws.autoscaling.delete_launch_configuration">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.autoscaling.</span></code><code class="sig-name descname"><span class="pre">delete_launch_configuration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">launch_configuration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.autoscaling.delete_launch_configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the specified launch configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>launch_configuration</strong> – The short name of the launch configuration as a string.</p></li>
+<li><p><strong>region</strong> – The region in which the launch configuration is located as a string (e.g.
+“us-east-1”)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.aws.autoscaling.get_launch_configuration">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.autoscaling.</span></code><code class="sig-name descname"><span class="pre">get_launch_configuration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">autoscaling_group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.autoscaling.get_launch_configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the name of an auto-scaling group’s underlying launch configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>autoscaling_group</strong> – The short name of the auto-scaling group as a string.</p></li>
+<li><p><strong>region</strong> – The region in whicht the auto-scaling group is located as a string (e.g.
+“us-east-1”)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The short name of the auto-scaling group’s launch configuration as a string or None if the
+specified auto-scaling group doesn’t exist.</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-aws-aws-general-module">
-<h2>app.helpers.utils.aws.aws_general module<a class="headerlink" href="#app-helpers-utils-aws-aws-general-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.aws.aws_general">
+<span id="app-helpers-utils-aws-aws-general-module"></span><h2>app.helpers.utils.aws.aws_general module<a class="headerlink" href="#module-app.helpers.utils.aws.aws_general" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.utils.aws.aws_general.get_container_user">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.aws_general.</span></code><code class="sig-name descname"><span class="pre">get_container_user</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.aws_general.get_container_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-aws-aws-resource-integrity-module">
-<h2>app.helpers.utils.aws.aws_resource_integrity module<a class="headerlink" href="#app-helpers-utils-aws-aws-resource-integrity-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.aws.aws_resource_integrity">
+<span id="app-helpers-utils-aws-aws-resource-integrity-module"></span><h2>app.helpers.utils.aws.aws_resource_integrity module<a class="headerlink" href="#module-app.helpers.utils.aws.aws_resource_integrity" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.utils.aws.aws_resource_integrity.ensure_container_exists">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.aws_resource_integrity.</span></code><code class="sig-name descname"><span class="pre">ensure_container_exists</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="app.models.html#app.models.hardware.UserContainer" title="app.models.hardware.UserContainer"><span class="pre">app.models.hardware.UserContainer</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="app.models.html#app.models.hardware.UserContainer" title="app.models.hardware.UserContainer"><span class="pre">app.models.hardware.UserContainer</span></a><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.utils.aws.aws_resource_integrity.ensure_container_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether a container in the database actually exists.</p>
+<p>Function determining whether a container in the database actually
+exists as a task in ECS. If the container does not exist, delete
+it from the database.</p>
+<p>After a successful call to this function, the invariant is set that
+any non-Null return is a real container corresponding to an ECS
+task.</p>
+<p>This function should only be called after acquiring a lock on the
+container in question!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>container</strong> – The <cite>UserContainer</cite> entry whose task to find</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><cite>container</cite> if the task exists, else <cite>None</cite></p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>Exception</strong> – The input parameter <cite>container</cite> is <cite>None</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-aws-aws-resource-locks-module">
-<h2>app.helpers.utils.aws.aws_resource_locks module<a class="headerlink" href="#app-helpers-utils-aws-aws-resource-locks-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.aws.aws_resource_locks">
+<span id="app-helpers-utils-aws-aws-resource-locks-module"></span><h2>app.helpers.utils.aws.aws_resource_locks module<a class="headerlink" href="#module-app.helpers.utils.aws.aws_resource_locks" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.utils.aws.aws_resource_locks.lock_cluster_and_update">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.aws_resource_locks.</span></code><code class="sig-name descname"><span class="pre">lock_cluster_and_update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.aws_resource_locks.lock_cluster_and_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Acquire a lock on a row in the cluster_info table and update it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>TODO</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>TODO</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.aws.aws_resource_locks.lock_container_and_update">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.aws_resource_locks.</span></code><code class="sig-name descname"><span class="pre">lock_container_and_update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.aws_resource_locks.lock_container_and_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the state, lock, and temporary lock of a Container</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>container_name</strong> (<em>str</em>) – Name of Container</p></li>
+<li><p><strong>state</strong> (<em>str</em>) – Desired state of Container
+[RUNNING_AVAILABLE, RUNNING_UNAVAILABLE, DEALLOCATED, DEALLOCATING, STOPPED, STOPPING,
+DELETING, CREATING, RESTARTING, STARTING]</p></li>
+<li><p><strong>wait</strong> (<em>int</em>) – delay between acquiring lock and committing the update (for testing)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>1 = container is unlocked, -1 = giving up</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-aws-base-ec2-client-module">
-<h2>app.helpers.utils.aws.base_ec2_client module<a class="headerlink" href="#app-helpers-utils-aws-base-ec2-client-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.aws.base_ec2_client">
+<span id="app-helpers-utils-aws-base-ec2-client-module"></span><h2>app.helpers.utils.aws.base_ec2_client module<a class="headerlink" href="#module-app.helpers.utils.aws.base_ec2_client" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="app.helpers.utils.aws.base_ec2_client.EC2Client">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.base_ec2_client.</span></code><code class="sig-name descname"><span class="pre">EC2Client</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="app.helpers.utils.cloud_interface.html#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient" title="app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient</span></code></a></p>
+<p>This class governs everything you need to provision instances on EC2
+:param region_name: which AWS region you’re running on
+:type region_name: str
+:param key_id: the AWS access key ID to use
+:type key_id: Optional[str]
+:param access_key: the AWS access key going with that key_id
+:type access_key: Optional[str]</p>
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ec2_client.EC2Client.check_if_instances_down">
+<code class="sig-name descname"><span class="pre">check_if_instances_down</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.check_if_instances_down" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether a given set of instances are stopped
+:param instance_ids: the instances to check</p>
+<p>Returns: a boolean corresponding to whether every instance is dead`</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ec2_client.EC2Client.check_if_instances_up">
+<code class="sig-name descname"><span class="pre">check_if_instances_up</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.check_if_instances_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether a given set of instances are running
+:param instance_ids: the instances to check</p>
+<p>Returns: a boolean corresponding to whether every instance is live</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ec2_client.EC2Client.get_ip_of_instances">
+<code class="sig-name descname"><span class="pre">get_ip_of_instances</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.get_ip_of_instances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the IP addresses of the passed in instances, by ID
+:param instance_ids: what IDs to check</p>
+<p>Returns: a dict mapping instance ID to IP address</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_down">
+<code class="sig-name descname"><span class="pre">spin_til_instances_down</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_down" title="Permalink to this definition">¶</a></dt>
+<dd><p>Polls AWS every time_wait seconds until all specified instances are up
+:param instance_ids: which instances to check
+:param time_wait: how long to wait between polls</p>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_up">
+<code class="sig-name descname"><span class="pre">spin_til_instances_up</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Polls AWS every time_wait seconds until all specified instances are up
+:param instance_ids: which instances to check
+:param time_wait: how long to wait between polls</p>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ec2_client.EC2Client.start_instances">
+<code class="sig-name descname"><span class="pre">start_instances</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_instances</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'g3.4xlarge'</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.start_instances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts AWS instances with the given properties, not returning until they’re
+actively running
+:param image_id: which AMI to use
+:param instance_name: what name the instance should have
+:param num_instances: how many instances to start
+:param instance_type: which type of instance (hardwarewise) to start</p>
+<p>Returns: the IDs of the started instances</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ec2_client.EC2Client.stop_instances">
+<code class="sig-name descname"><span class="pre">stop_instances</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.stop_instances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns off all instances passed in
+:param instance_ids: which instances to disable</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="app.helpers.utils.aws.base_ec2_client.InstancesNotRunningException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.base_ec2_client.</span></code><code class="sig-name descname"><span class="pre">InstancesNotRunningException</span></code><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.InstancesNotRunningException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>This exception is thrown when instances that are expected to be up
+are not</p>
+</dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-aws-base-ecs-client-module">
-<h2>app.helpers.utils.aws.base_ecs_client module<a class="headerlink" href="#app-helpers-utils-aws-base-ecs-client-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.aws.base_ecs_client">
+<span id="app-helpers-utils-aws-base-ecs-client-module"></span><h2>app.helpers.utils.aws.base_ecs_client module<a class="headerlink" href="#module-app.helpers.utils.aws.base_ecs_client" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt id="app.helpers.utils.aws.base_ecs_client.ContainerBrokenException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.base_ecs_client.</span></code><code class="sig-name descname"><span class="pre">ContainerBrokenException</span></code><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ContainerBrokenException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.base_ecs_client.</span></code><code class="sig-name descname"><span class="pre">ECSClient</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'us-east-1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">launch_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EC2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_cluster</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">starter_client</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">starter_log_client</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">starter_ec2_client</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">starter_s3_client</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">starter_iam_client</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">starter_auto_scaling_client</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grab_logs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class governs everything you need to generate, run, and track a specific task on ECS
+:param region_name: which AWS region you’re running on
+:type region_name: Optional[str]
+:param key_id: the AWS access key ID to use
+:type key_id: Optional[str]
+:param access_key: the AWS access key going with that key_id
+:type access_key: Optional[str]
+:param launch_type: whether to use EC2 or FARGATE for the task
+:type launch_type: Optional[str]
+:param base_cluster: what cluster to run on, used for testing/mocking
+:type base_cluster: Optional[str]
+:param grab_logs: whether to pull down ECS logs
+:type grab_logs: Optional[bool]
+:param starter_client: starter ecs client, used for mocking
+:type starter_client: boto3.client
+:param starter_log_client: starter log client, used for mocking
+:type starter_log_client: boto3.client
+:param starter_ec2_client: starter log client, used for mocking
+:type starter_ec2_client: boto3.client
+:param starter_s3_client: starter s3 client, used for mocking
+:type starter_s3_client: boto3.client
+:param starter_iam_client: starter iam client, used for mocking
+:type starter_iam_client: boto3.client
+:param starter_auto_scaling_client: starter auto scaling client, used for mocking
+:type starter_auto_scaling_client: boto3.client</p>
+<p>TODO: find ECS specific logs, if they exist – right now logs are stdout and stderr</p>
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.add_task">
+<code class="sig-name descname"><span class="pre">add_task</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_arn</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.add_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a task by ARN to this client’s task list.</p>
+<p>Useful for keeping an eye on already running tasks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>task_arn</strong> – the ID of the task to add.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.check_if_done">
+<code class="sig-name descname"><span class="pre">check_if_done</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.check_if_done" title="Permalink to this definition">¶</a></dt>
+<dd><p>polls ECS to see if the task is complete, pulling down logs if so
+TODO:  handle pagination for 100+ tasks
+:param offset: which task to check for
+:type offset: int</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>boolean corresponding to completion</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.check_task_exists">
+<code class="sig-name descname"><span class="pre">check_task_exists</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.check_task_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether a task is active and actually belongs to the ecs_client cluster.</p>
+<p>If a task has been requested to be stopped, or if ECS failed to find the task, then
+this will tell us so. Else, we have successfully found the task.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>offset</strong> – The offset of the task to check in <cite>self.tasks</cite> (default: <cite>0</cite>)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><cite>True</cite> if the task exists and is not stopping, else <cite>False</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.create_auto_scaling_cluster">
+<code class="sig-name descname"><span class="pre">create_auto_scaling_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'t2.small'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ami</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ami-04cfcf6827bb29439'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">availability_zones</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.create_auto_scaling_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates launch configuration, auto scaling group, capacity provider, and cluster
+:param instance_type: size of instances to create in auto scaling group, defaults to t2.small
+:type instance_type: Optional[str]
+:param ami: AMI to use for the instances created in auto scaling group, defaults to an ECS-optimized, GPU-optimized Amazon Linux 2 AMI
+:type ami: Optional[str]
+:param min_size: the minimum number of containers in the auto scaling group, defaults to 1
+:type min_size: Optional[int]
+:param max_size: the maximum number of containers in the auto scaling group, defaults to 10
+:type max_size: Optional[int]
+:param region_name: which AWS region you’re running on
+:type region_name: Optional[str]
+:param availability_zones: the availability zones for creating instances in the auto scaling group
+:type availability_zones: Optional[List[str]]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>cluster name, launch configuration name, auto scaling group name, capacity provider name</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>(str, str, str, str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.create_auto_scaling_group">
+<code class="sig-name descname"><span class="pre">create_auto_scaling_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">launch_config_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_scaling_group_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">availability_zones</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.create_auto_scaling_group" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>launch_config_name</strong> (<em>str</em>) – the launch configuration to use for the instances created by the auto scaling group</p></li>
+<li><p><strong>auto_scaling_group_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – the name to give the generated auto scaling group, will be automatically generated if not provided</p></li>
+<li><p><strong>min_size</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the minimum number of containers in the auto scaling group, defaults to 1</p></li>
+<li><p><strong>max_size</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the maximum number of containers in the auto scaling group, defaults to 10</p></li>
+<li><p><strong>availability_zones</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – the availability zones for creating instances in the auto scaling group</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>name of auto scaling group created</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.create_capacity_provider">
+<code class="sig-name descname"><span class="pre">create_capacity_provider</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auto_scaling_group_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_provider_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.create_capacity_provider" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>auto_scaling_group_name</strong> (<em>str</em>) – the auto scaling group to create a capacity provider for</p></li>
+<li><p><strong>capacity_provider_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – the name to give the generated capacity provider, will be automatically generated if not provided</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>name of capacity provider created</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.create_cluster">
+<code class="sig-name descname"><span class="pre">create_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">capacity_providers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.create_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new cluster with the specified capacity providers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>capacity_providers</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – capacity providers to use for cluster</p></li>
+<li><p><strong>cluster_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – name of cluster, will be automatically generated if not
+provided</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.create_launch_configuration">
+<code class="sig-name descname"><span class="pre">create_launch_configuration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'g3s.xlarge'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ami</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ami-0c82e2febb87e6d1c'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">launch_config_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto-scaling-key'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.create_launch_configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a launch configuration to our AWS account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>instance_type</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – size of instances to create in auto scaling group,
+defaults to t2.small</p></li>
+<li><p><strong>ami</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – AMI to use for the instances created in auto scaling group,
+defaults to an ECS-optimized, GPU-optimized Amazon Linux 2 AMI</p></li>
+<li><p><strong>launch_config_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – the name to give the generated launch configuration,
+will be automatically generated if not provided</p></li>
+<li><p><strong>cluster_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – the cluster name that the launch configuration will be
+used for, will be automatically generated if not provided</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>name of cluster for launch configuration, name of launch configuration</dt><dd><p>created</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(str, str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.delete_cluster">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">delete_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.delete_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tear down an ECS cluster and the entire ECS/AutoScaling stack beneath it.</p>
+<p>This function and all of its callees are solely responsible for sending AWS requests. They
+don’t even know that Fractal maintains cluster pointers in a database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cluster_name</strong> – The short name of the cluster to delete as a string.</p></li>
+<li><p><strong>region</strong> – The name of the region in whicht the cluster to delete is located as a string
+(e.g. “us-east-1”).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.describe_auto_scaling_groups_in_cluster">
+<code class="sig-name descname"><span class="pre">describe_auto_scaling_groups_in_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.describe_auto_scaling_groups_in_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cluster</strong> (<em>str</em>) – name of cluster to set task’s compute cluster to</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>each dict contains details about an auto scaling group in the cluster</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.describe_cluster">
+<code class="sig-name descname"><span class="pre">describe_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.describe_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the raw JSON (as dict) description of a cluster.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cluster</strong> – cluster todescribe</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.describe_container_instances">
+<code class="sig-name descname"><span class="pre">describe_container_instances</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">container_arns</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.describe_container_instances" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cluster</strong> – name of cluster</p></li>
+<li><p><strong>container_arns</strong> – list of container ARNs</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>JSON response (as dict) description for each container</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.describe_task">
+<code class="sig-name descname"><span class="pre">describe_task</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">dict</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.describe_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get info on the task.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a dict of task information. See
+<a class="reference external" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition">https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition</a>
+for the response syntax.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>task_info</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.generate_name">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">generate_name</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">starter_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.generate_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function for generating a name with a random UID
+:param starter_name: starter string for the name
+:type starter_name: Optional[str]
+:param test_prefix: whether the resource should have a “test-” prefix attached
+:type test_prefix: Optional[bool]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the generated name</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_all_clusters">
+<code class="sig-name descname"><span class="pre">get_all_clusters</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_all_clusters" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of all cluster ARNs owned by AWS account</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_auto_scaling_groups_in_cluster">
+<code class="sig-name descname"><span class="pre">get_auto_scaling_groups_in_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_auto_scaling_groups_in_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the name of all ASGs in a cluster.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_clusters_usage">
+<code class="sig-name descname"><span class="pre">get_clusters_usage</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_clusters_usage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch usage info of clusters.</p>
+<p>Fetched data includes status, pending tasks, running tasks, container instances, container
+usage, min containers, and max containers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>clusters</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – the clusters to get the usage info for, defaults to all
+clusters associated with AWS account</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A dictionary mapping each cluster name to cluster usage info, which is</dt><dd><p>stored in a dict.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dict[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_container_for_tasks">
+<code class="sig-name descname"><span class="pre">get_container_for_tasks</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_arns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_container_for_tasks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_container_instance_ids">
+<code class="sig-name descname"><span class="pre">get_container_instance_ids</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">containers</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_container_instance_ids" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cluster</strong> (<em>str</em>) – name of cluster</p></li>
+<li><p><strong>containers</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – either the full ARNs or ec2 instance IDs of the containers</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the ec2 instance IDs of the containers</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_container_instance_ips">
+<code class="sig-name descname"><span class="pre">get_container_instance_ips</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">containers</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_container_instance_ips" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cluster</strong> (<em>str</em>) – name of cluster</p></li>
+<li><p><strong>containers</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – either the full ARNs or ec2 instance IDs of the containers</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the public IP address of each container</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_containers_in_cluster">
+<code class="sig-name descname"><span class="pre">get_containers_in_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_containers_in_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cluster</strong> (<em>str</em>) – name of cluster</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the ARNs of the containers in the cluster</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_task_binding_info">
+<code class="sig-name descname"><span class="pre">get_task_binding_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_task_binding_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_task_ip_ports">
+<code class="sig-name descname"><span class="pre">get_task_ip_ports</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_task_ip_ports" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.get_task_network_info">
+<code class="sig-name descname"><span class="pre">get_task_network_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_detail</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.get_task_network_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.list_container_instances">
+<code class="sig-name descname"><span class="pre">list_container_instances</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.list_container_instances" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cluster</strong> – name of cluster</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of container ARNs</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.make_client">
+<code class="sig-name descname"><span class="pre">make_client</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_type</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.make_client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructs an ECS client object with the given params
+:param client_type: which ECS client you’re trying to produce
+:type client_type: str
+:param **kwargs: any add’l keyword params</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the constructed client object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>client</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.run_task">
+<code class="sig-name descname"><span class="pre">run_task</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_launch_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.run_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>sets this client’s task running.
+TODO: explicitly add overrides as params here for cpu, command, and environment vars
+:param **kwargs: Any add’l params you want the task to have</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.set_and_register_task">
+<code class="sig-name descname"><span class="pre">set_and_register_task</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">command</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrypoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basedict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port_mappings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">family</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'echostart'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">containername</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'basictest'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imagename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'512'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'256'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.set_and_register_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a task.</p>
+<p>Generates a task corresponding to a given docker image, command, and entry point
+while setting instance attrs accordingly (logging and task attrs).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>command</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – Command to run on container</p></li>
+<li><p><strong>entrypoint</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – Entrypoint for container</p></li>
+<li><p><strong>basedict</strong> (<em>Optional</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – the base parametrization of your task.</p></li>
+<li><p><strong>port_mappings</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>Dict</em><em>]</em>) – any port mappings you want on the host container,
+defaults to 8080 tcp.</p></li>
+<li><p><strong>family</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – what task family you want this task revising</p></li>
+<li><p><strong>containername</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – what you want the container the task is on to be called</p></li>
+<li><p><strong>imagename</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – the URI for the docker image</p></li>
+<li><p><strong>memory</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – how much memory (in MB) the task needs</p></li>
+<li><p><strong>cpu</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – how much CPU (in vCPU) the task needs</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.set_auto_scaling_group_capacity">
+<code class="sig-name descname"><span class="pre">set_auto_scaling_group_capacity</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">asg_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_capacity</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.set_auto_scaling_group_capacity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the desired capacity (number of instances) of an ASG</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asg_name</strong> – name of asg to change capacity</p></li>
+<li><p><strong>desired_capacity</strong> – new capacity</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.set_cluster">
+<code class="sig-name descname"><span class="pre">set_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.set_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the task’s compute cluster.</p>
+<p>Choose either specified cluster or the first available/default compute cluster if a cluster
+is not provided.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cluster_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – name of cluster to set task’s compute cluster to</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.set_containers_to_draining">
+<code class="sig-name descname"><span class="pre">set_containers_to_draining</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">containers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.set_containers_to_draining" title="Permalink to this definition">¶</a></dt>
+<dd><p>sets input list of containers to draining
+:param containers: the ARNs of the containers you want to drain
+:type containers: list[str]
+:param cluster: the cluster on which the containers are, defaults to the</p>
+<blockquote>
+<div><p>overall client’s cluster.</p>
+</div></blockquote>
+<dl class="field-list simple">
+</dl>
+<p>Returns: the json returned by the API</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.set_task_definition_arn">
+<code class="sig-name descname"><span class="pre">set_task_definition_arn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_arn</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.set_task_definition_arn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.spin_all">
+<code class="sig-name descname"><span class="pre">spin_all</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_delay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.spin_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>spinpolls all generated tasks
+:param time_delay: how long to wait between polls, seconds
+:type time_delay: int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.spin_til_containers_up">
+<code class="sig-name descname"><span class="pre">spin_til_containers_up</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_delay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.spin_til_containers_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>spinpolls until container instances have been assigned to the cluster
+:param cluster_name:
+:type cluster_name: str
+:param time_delay: how long to wait between polls, seconds
+:type time_delay: int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.spin_til_done">
+<code class="sig-name descname"><span class="pre">spin_til_done</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_delay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.spin_til_done" title="Permalink to this definition">¶</a></dt>
+<dd><p>spinpolls the ECS servers to test if the task is done
+:param offset: the offset of the task within the task array
+:type offset: int
+:param time_delay: how long to wait between polls, seconds
+:type time_delay: int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.spin_til_no_containers">
+<code class="sig-name descname"><span class="pre">spin_til_no_containers</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_delay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.spin_til_no_containers" title="Permalink to this definition">¶</a></dt>
+<dd><p>spinpolls until all container instances have been removed from the cluster
+:param cluster_name:
+:type cluster_name: str
+:param time_delay: how long to wait between polls, seconds
+:type time_delay: int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.spin_til_running">
+<code class="sig-name descname"><span class="pre">spin_til_running</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_delay</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_polls</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">120</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.spin_til_running" title="Permalink to this definition">¶</a></dt>
+<dd><p>Spins until AWS gives us the network binding associated with a task.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>offset</strong> – task index in self.tasks</p></li>
+<li><p><strong>time_delay</strong> – seconds to sleep between AWS poll requests</p></li>
+<li><p><strong>max_polls</strong> – maximum number of times to poll AWS</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if and only if a networking binding was returned by AWS.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.stop_task">
+<code class="sig-name descname"><span class="pre">stop_task</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'user</span> <span class="pre">stopped'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.stop_task" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.terminate_containers_in_cluster">
+<code class="sig-name descname"><span class="pre">terminate_containers_in_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.terminate_containers_in_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Terminate all of the containers in the cluster.</p>
+<p>They will eventually be cleaned up automatically.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cluster</strong> (<em>str</em>) – name of cluster</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.update_auto_scaling_group">
+<code class="sig-name descname"><span class="pre">update_auto_scaling_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auto_scaling_group_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">launch_config_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.update_auto_scaling_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates a specific autoscaling group to use a new launch config
+:param auto_scaling_group_name (str): the name of the ASG to update
+:param launch_config_name (str): the name of the new launch config to use
+:return: the name of the updated ASG</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="app.helpers.utils.aws.base_ecs_client.ECSClient.update_cluster_with_new_ami">
+<code class="sig-name descname"><span class="pre">update_cluster_with_new_ami</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ami</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.ECSClient.update_cluster_with_new_ami" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates a given cluster to use a new AMI
+:param cluster_name (str): which cluster to update
+:param ami (str): which AMI to use
+:return: the name of the updated cluster</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="app.helpers.utils.aws.base_ecs_client.FractalECSClusterNotFoundException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.base_ecs_client.</span></code><code class="sig-name descname"><span class="pre">FractalECSClusterNotFoundException</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.FractalECSClusterNotFoundException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Exception to be raised when a requested cluster is not found on ECS.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.aws.base_ecs_client.check_bool_param">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.base_ecs_client.</span></code><code class="sig-name descname"><span class="pre">check_bool_param</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.check_bool_param" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.aws.base_ecs_client.check_str_param">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.base_ecs_client.</span></code><code class="sig-name descname"><span class="pre">check_str_param</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.base_ecs_client.check_str_param" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-aws-ecs-deletion-module">
-<h2>app.helpers.utils.aws.ecs_deletion module<a class="headerlink" href="#app-helpers-utils-aws-ecs-deletion-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.aws.ecs_deletion">
+<span id="app-helpers-utils-aws-ecs-deletion-module"></span><h2>app.helpers.utils.aws.ecs_deletion module<a class="headerlink" href="#module-app.helpers.utils.aws.ecs_deletion" title="Permalink to this headline">¶</a></h2>
+<p>Low-level helper functions that interact directly with AWS ECS.</p>
+<dl class="py function">
+<dt id="app.helpers.utils.aws.ecs_deletion.delete_capacity_provider">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.ecs_deletion.</span></code><code class="sig-name descname"><span class="pre">delete_capacity_provider</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">capacity_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.ecs_deletion.delete_capacity_provider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the specified capacity provider.</p>
+<p>The specified capacity provider must be an auto-scaling capacity provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>capacity_provider</strong> – The short name of the capacity provider to delete as a string.</p></li>
+<li><p><strong>region</strong> – The AWS region in which the capacity providers are located (e.g. “us-east-1”).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The short name of the capacity provider’s underlying autoscaling group as a string or None
+if the capacity provider doesn’t exist.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.aws.ecs_deletion.delete_cluster">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.ecs_deletion.</span></code><code class="sig-name descname"><span class="pre">delete_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.ecs_deletion.delete_cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the specified ECS cluster.</p>
+<p>This function will fail if there are still tasks pending or running on this cluster or if there
+are container instances registered to the cluster.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cluster_name</strong> – The short name of the cluster to delete as a string.</p></li>
+<li><p><strong>region</strong> – The region in which the cluster is located as a string (e.g. “us-east-1”).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of strings representing the short names of the capacity providers that were attached
+to the cluster before it was deleted.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.aws.ecs_deletion.deregister_container_instances">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.ecs_deletion.</span></code><code class="sig-name descname"><span class="pre">deregister_container_instances</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.ecs_deletion.deregister_container_instances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deregister all ECS container instances from the specified ECS cluster.</p>
+<p>This Celery task will forcibly stop all ECS tasks that are currently running on the cluster
+whose container instances are to be deregistered.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cluster_name</strong> – The short name of the cluster whose container instances are to be
+deregistered as a string.</p></li>
+<li><p><strong>region</strong> – The region in which the cluster is located as a string (e.g. “us-east-1”).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-aws-utils-module">
-<h2>app.helpers.utils.aws.utils module<a class="headerlink" href="#app-helpers-utils-aws-utils-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.aws.utils">
+<span id="app-helpers-utils-aws-utils-module"></span><h2>app.helpers.utils.aws.utils module<a class="headerlink" href="#module-app.helpers.utils.aws.utils" title="Permalink to this headline">¶</a></h2>
+<p>Miscellaneous helper utilities that might make boto3 a little less terrible to use.</p>
+<dl class="py exception">
+<dt id="app.helpers.utils.aws.utils.Retry">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.utils.</span></code><code class="sig-name descname"><span class="pre">Retry</span></code><a class="headerlink" href="#app.helpers.utils.aws.utils.Retry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Raised by a function wrapped by the <cite>retry_with_backoff</cite> decorator to trigger a retry.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.aws.utils.retry_with_backoff">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.aws.utils.</span></code><code class="sig-name descname"><span class="pre">retry_with_backoff</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_wait</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_delta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_wait</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.aws.utils.retry_with_backoff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call the decorated function, retrying up to the specified number of times.</p>
+<p>Decorated functions may raise Retry to indicate that the function should be retried. The
+__cause__ attribute on retry exception should be set either automatically with “raise from” or
+explicitly with attribute access.</p>
+<p>For example:</p>
+<blockquote>
+<div><p>&#64;retry_with_backoff(min_wait=1, wait_delta=1, max_wait=3, max_retries=4)
+def retry_me():</p>
+<blockquote>
+<div><dl class="simple">
+<dt>try:</dt><dd><p># Do some stuff.</p>
+</dd>
+<dt>except Exception as exc:</dt><dd><p># Using “raise from” sets the __cause__ attribute on the Retry exception
+# automatically.
+raise Retry from exc</p>
+</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<p>or:</p>
+<blockquote>
+<div><p>&#64;retry_with_backoff(min_wait=1, wait_delta=1, max_wait=3, max_retries=4)
+def retry_me_too():</p>
+<blockquote>
+<div><dl>
+<dt>try:</dt><dd><p># Do some stuff.</p>
+</dd>
+<dt>except Exception as exc:</dt><dd><p># Save any exception that is raised to a variable.
+exception = exc</p>
+</dd>
+<dt>else:</dt><dd><p>exception = None</p>
+</dd>
+<dt>if exception is not None:</dt><dd><p># Set the __cause__ attribute on the instance of the Retry attribute manually.
+retry = Retry()
+retry.__cause__ = exception</p>
+<p>raise retry</p>
+</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<p>See <a class="reference external" href="https://www.python.org/dev/peps/pep-3134/#explicit-exception-chaining">https://www.python.org/dev/peps/pep-3134/#explicit-exception-chaining</a> for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_wait</strong> – A floating point value representing the smallest number of seconds for which to
+wait between tries. In practice, this is how long to waitbefore the first retry.</p></li>
+<li><p><strong>wait_delta</strong> – A floating point value representing the amount of time by which to increase the
+wait time before retrying for each retry after the first one.</p></li>
+<li><p><strong>max_wait</strong> – A floating point value representing the maximum amount of time for which to wait
+between tries. The wait time between ttries will not increase past this value.</p></li>
+<li><p><strong>max_retries</strong> – Optional. An integer representing the maximum number of times to retry the
+function call. The maximum number of times the function may be called is max_retries +
+1. Setting max_retries=None removes the cap on the maximum number of
+times that this function may be called. Use with care!</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A decorator that calls the function it decorates up to max_retries + 1 times, waiting for
+a period of time, which varies proportionally to the number of retries, between attempts.</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.aws">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.helpers.utils.aws" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

@@ -37,26 +37,89 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-helpers-utils-general-auth-module">
-<h2>app.helpers.utils.general.auth module<a class="headerlink" href="#app-helpers-utils-general-auth-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.general.auth">
+<span id="app-helpers-utils-general-auth-module"></span><h2>app.helpers.utils.general.auth module<a class="headerlink" href="#module-app.helpers.utils.general.auth" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-helpers-utils-general-limiter-module">
-<h2>app.helpers.utils.general.limiter module<a class="headerlink" href="#app-helpers-utils-general-limiter-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.general.limiter">
+<span id="app-helpers-utils-general-limiter-module"></span><h2>app.helpers.utils.general.limiter module<a class="headerlink" href="#module-app.helpers.utils.general.limiter" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-helpers-utils-general-logs-module">
-<h2>app.helpers.utils.general.logs module<a class="headerlink" href="#app-helpers-utils-general-logs-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.general.logs">
+<span id="app-helpers-utils-general-logs-module"></span><h2>app.helpers.utils.general.logs module<a class="headerlink" href="#module-app.helpers.utils.general.logs" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.utils.general.logs.fractal_task_prerun">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.logs.</span></code><code class="sig-name descname"><span class="pre">fractal_task_prerun</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.logs.fractal_task_prerun" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference external" href="https://docs.celeryproject.org/en/stable/userguide/signals.html#task-prerun">https://docs.celeryproject.org/en/stable/userguide/signals.html#task-prerun</a>.
+This is run before any celery task is executed. We use this to print out the args
+and kwargs of every celery task so its input state is clear.</p>
+</dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-general-sql-commands-module">
-<h2>app.helpers.utils.general.sql_commands module<a class="headerlink" href="#app-helpers-utils-general-sql-commands-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.general.sql_commands">
+<span id="app-helpers-utils-general-sql-commands-module"></span><h2>app.helpers.utils.general.sql_commands module<a class="headerlink" href="#module-app.helpers.utils.general.sql_commands" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.utils.general.sql_commands.fractal_sql_commit">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.sql_commands.</span></code><code class="sig-name descname"><span class="pre">fractal_sql_commit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.sql_commands.fractal_sql_commit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.general.sql_commands.fractal_sql_update">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.sql_commands.</span></code><code class="sig-name descname"><span class="pre">fractal_sql_update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.sql_commands.fractal_sql_update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-general-time-module">
-<h2>app.helpers.utils.general.time module<a class="headerlink" href="#app-helpers-utils-general-time-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.general.time">
+<span id="app-helpers-utils-general-time-module"></span><h2>app.helpers.utils.general.time module<a class="headerlink" href="#module-app.helpers.utils.general.time" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.utils.general.time.date_to_string">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></code><code class="sig-name descname"><span class="pre">date_to_string</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.date_to_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.general.time.date_to_unix">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></code><code class="sig-name descname"><span class="pre">date_to_unix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.date_to_unix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.general.time.get_current_time">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></code><code class="sig-name descname"><span class="pre">get_current_time</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.get_current_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.general.time.get_today">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></code><code class="sig-name descname"><span class="pre">get_today</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.get_today" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.general.time.shift_unix_by_minutes">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></code><code class="sig-name descname"><span class="pre">shift_unix_by_minutes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_minutes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.shift_unix_by_minutes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.general.time.shift_unix_by_month">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></code><code class="sig-name descname"><span class="pre">shift_unix_by_month</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_months</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.shift_unix_by_month" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.general.time.shift_unix_by_week">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></code><code class="sig-name descname"><span class="pre">shift_unix_by_week</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_weeks</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.shift_unix_by_week" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="app.helpers.utils.general.time.unix_to_date">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></code><code class="sig-name descname"><span class="pre">unix_to_date</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.unix_to_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="app-helpers-utils-general-tokens-module">
-<h2>app.helpers.utils.general.tokens module<a class="headerlink" href="#app-helpers-utils-general-tokens-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.general.tokens">
+<span id="app-helpers-utils-general-tokens-module"></span><h2>app.helpers.utils.general.tokens module<a class="headerlink" href="#module-app.helpers.utils.general.tokens" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="app.helpers.utils.general.tokens.get_access_tokens">
+<code class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.tokens.</span></code><code class="sig-name descname"><span class="pre">get_access_tokens</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.tokens.get_access_tokens" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.helpers.utils.general">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.helpers.utils.general" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

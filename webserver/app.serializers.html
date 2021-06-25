@@ -36,14 +36,226 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="app-serializers-hardware-module">
-<h2>app.serializers.hardware module<a class="headerlink" href="#app-serializers-hardware-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.serializers.hardware">
+<span id="app-serializers-hardware-module"></span><h2>app.serializers.hardware module<a class="headerlink" href="#module-app.serializers.hardware" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="app.serializers.hardware.ClusterInfoSchema">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.serializers.hardware.</span></code><code class="sig-name descname"><span class="pre">ClusterInfoSchema</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.serializers.hardware.ClusterInfoSchema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_marshmallow.sqla.SQLAlchemyAutoSchema</span></code></p>
+<dl class="py class">
+<dt id="app.serializers.hardware.ClusterInfoSchema.Meta">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Meta</span></code><a class="headerlink" href="#app.serializers.hardware.ClusterInfoSchema.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="app.serializers.hardware.ClusterInfoSchema.Meta.include_fk">
+<code class="sig-name descname"><span class="pre">include_fk</span></code><em class="property"> <span class="pre">=</span> <span class="pre">True</span></em><a class="headerlink" href="#app.serializers.hardware.ClusterInfoSchema.Meta.include_fk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.ClusterInfoSchema.Meta.model">
+<code class="sig-name descname"><span class="pre">model</span></code><a class="headerlink" href="#app.serializers.hardware.ClusterInfoSchema.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="app.models.html#app.models.hardware.ClusterInfo" title="app.models.hardware.ClusterInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.hardware.ClusterInfo</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.ClusterInfoSchema.Meta.sqla_session">
+<code class="sig-name descname"><span class="pre">sqla_session</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.DummySession</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.ClusterInfoSchema.Meta.sqla_session" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.ClusterInfoSchema.opts">
+<code class="sig-name descname"><span class="pre">opts</span></code><em class="property"><span class="pre">:</span> <span class="pre">SchemaOpts</span></em><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.SQLAlchemyAutoSchemaOpts</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.ClusterInfoSchema.opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="app.serializers.hardware.InstanceInfoSchema">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.serializers.hardware.</span></code><code class="sig-name descname"><span class="pre">InstanceInfoSchema</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.serializers.hardware.InstanceInfoSchema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_marshmallow.sqla.SQLAlchemyAutoSchema</span></code></p>
+<dl class="py class">
+<dt id="app.serializers.hardware.InstanceInfoSchema.Meta">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Meta</span></code><a class="headerlink" href="#app.serializers.hardware.InstanceInfoSchema.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="app.serializers.hardware.InstanceInfoSchema.Meta.model">
+<code class="sig-name descname"><span class="pre">model</span></code><a class="headerlink" href="#app.serializers.hardware.InstanceInfoSchema.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="app.models.html#app.models.hardware.InstanceInfo" title="app.models.hardware.InstanceInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.hardware.InstanceInfo</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.InstanceInfoSchema.Meta.sqla_session">
+<code class="sig-name descname"><span class="pre">sqla_session</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.DummySession</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.InstanceInfoSchema.Meta.sqla_session" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.InstanceInfoSchema.opts">
+<code class="sig-name descname"><span class="pre">opts</span></code><em class="property"><span class="pre">:</span> <span class="pre">SchemaOpts</span></em><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.SQLAlchemyAutoSchemaOpts</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.InstanceInfoSchema.opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="app.serializers.hardware.RegionToAmiSchema">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.serializers.hardware.</span></code><code class="sig-name descname"><span class="pre">RegionToAmiSchema</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.serializers.hardware.RegionToAmiSchema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_marshmallow.sqla.SQLAlchemyAutoSchema</span></code></p>
+<dl class="py class">
+<dt id="app.serializers.hardware.RegionToAmiSchema.Meta">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Meta</span></code><a class="headerlink" href="#app.serializers.hardware.RegionToAmiSchema.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="app.serializers.hardware.RegionToAmiSchema.Meta.model">
+<code class="sig-name descname"><span class="pre">model</span></code><a class="headerlink" href="#app.serializers.hardware.RegionToAmiSchema.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="app.models.html#app.models.hardware.RegionToAmi" title="app.models.hardware.RegionToAmi"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.hardware.RegionToAmi</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.RegionToAmiSchema.Meta.sqla_session">
+<code class="sig-name descname"><span class="pre">sqla_session</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.DummySession</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.RegionToAmiSchema.Meta.sqla_session" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.RegionToAmiSchema.opts">
+<code class="sig-name descname"><span class="pre">opts</span></code><em class="property"><span class="pre">:</span> <span class="pre">SchemaOpts</span></em><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.SQLAlchemyAutoSchemaOpts</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.RegionToAmiSchema.opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="app.serializers.hardware.SupportedAppImagesSchema">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.serializers.hardware.</span></code><code class="sig-name descname"><span class="pre">SupportedAppImagesSchema</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.serializers.hardware.SupportedAppImagesSchema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_marshmallow.sqla.SQLAlchemyAutoSchema</span></code></p>
+<dl class="py class">
+<dt id="app.serializers.hardware.SupportedAppImagesSchema.Meta">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Meta</span></code><a class="headerlink" href="#app.serializers.hardware.SupportedAppImagesSchema.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="app.serializers.hardware.SupportedAppImagesSchema.Meta.model">
+<code class="sig-name descname"><span class="pre">model</span></code><a class="headerlink" href="#app.serializers.hardware.SupportedAppImagesSchema.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="app.models.html#app.models.hardware.SupportedAppImages" title="app.models.hardware.SupportedAppImages"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.hardware.SupportedAppImages</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.SupportedAppImagesSchema.Meta.sqla_session">
+<code class="sig-name descname"><span class="pre">sqla_session</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.DummySession</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.SupportedAppImagesSchema.Meta.sqla_session" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.SupportedAppImagesSchema.opts">
+<code class="sig-name descname"><span class="pre">opts</span></code><em class="property"><span class="pre">:</span> <span class="pre">SchemaOpts</span></em><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.SQLAlchemyAutoSchemaOpts</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.SupportedAppImagesSchema.opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="app.serializers.hardware.UserContainerSchema">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.serializers.hardware.</span></code><code class="sig-name descname"><span class="pre">UserContainerSchema</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.serializers.hardware.UserContainerSchema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_marshmallow.sqla.SQLAlchemyAutoSchema</span></code></p>
+<dl class="py class">
+<dt id="app.serializers.hardware.UserContainerSchema.Meta">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Meta</span></code><a class="headerlink" href="#app.serializers.hardware.UserContainerSchema.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="app.serializers.hardware.UserContainerSchema.Meta.include_fk">
+<code class="sig-name descname"><span class="pre">include_fk</span></code><em class="property"> <span class="pre">=</span> <span class="pre">True</span></em><a class="headerlink" href="#app.serializers.hardware.UserContainerSchema.Meta.include_fk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.UserContainerSchema.Meta.model">
+<code class="sig-name descname"><span class="pre">model</span></code><a class="headerlink" href="#app.serializers.hardware.UserContainerSchema.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="app.models.html#app.models.hardware.UserContainer" title="app.models.hardware.UserContainer"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.hardware.UserContainer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.UserContainerSchema.Meta.sqla_session">
+<code class="sig-name descname"><span class="pre">sqla_session</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.DummySession</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.UserContainerSchema.Meta.sqla_session" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.UserContainerSchema.opts">
+<code class="sig-name descname"><span class="pre">opts</span></code><em class="property"><span class="pre">:</span> <span class="pre">SchemaOpts</span></em><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.SQLAlchemyAutoSchemaOpts</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.UserContainerSchema.opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="app.serializers.hardware.UserContainerStateSchema">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.serializers.hardware.</span></code><code class="sig-name descname"><span class="pre">UserContainerStateSchema</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.serializers.hardware.UserContainerStateSchema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_marshmallow.sqla.SQLAlchemyAutoSchema</span></code></p>
+<dl class="py class">
+<dt id="app.serializers.hardware.UserContainerStateSchema.Meta">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Meta</span></code><a class="headerlink" href="#app.serializers.hardware.UserContainerStateSchema.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="app.serializers.hardware.UserContainerStateSchema.Meta.include_fk">
+<code class="sig-name descname"><span class="pre">include_fk</span></code><em class="property"> <span class="pre">=</span> <span class="pre">True</span></em><a class="headerlink" href="#app.serializers.hardware.UserContainerStateSchema.Meta.include_fk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.UserContainerStateSchema.Meta.model">
+<code class="sig-name descname"><span class="pre">model</span></code><a class="headerlink" href="#app.serializers.hardware.UserContainerStateSchema.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="app.models.html#app.models.hardware.UserContainerState" title="app.models.hardware.UserContainerState"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.hardware.UserContainerState</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.UserContainerStateSchema.Meta.sqla_session">
+<code class="sig-name descname"><span class="pre">sqla_session</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.DummySession</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.UserContainerStateSchema.Meta.sqla_session" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.hardware.UserContainerStateSchema.opts">
+<code class="sig-name descname"><span class="pre">opts</span></code><em class="property"><span class="pre">:</span> <span class="pre">SchemaOpts</span></em><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.SQLAlchemyAutoSchemaOpts</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.hardware.UserContainerStateSchema.opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="app-serializers-sales-module">
-<h2>app.serializers.sales module<a class="headerlink" href="#app-serializers-sales-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.serializers.sales">
+<span id="app-serializers-sales-module"></span><h2>app.serializers.sales module<a class="headerlink" href="#module-app.serializers.sales" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="app.serializers.sales.EmailTemplatesSchema">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.serializers.sales.</span></code><code class="sig-name descname"><span class="pre">EmailTemplatesSchema</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.serializers.sales.EmailTemplatesSchema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_marshmallow.sqla.SQLAlchemyAutoSchema</span></code></p>
+<p>Serialize an instance of the EmailTemplate model into a host-service-readable format.</p>
+<dl class="py class">
+<dt id="app.serializers.sales.EmailTemplatesSchema.Meta">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Meta</span></code><a class="headerlink" href="#app.serializers.sales.EmailTemplatesSchema.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="app.serializers.sales.EmailTemplatesSchema.Meta.model">
+<code class="sig-name descname"><span class="pre">model</span></code><a class="headerlink" href="#app.serializers.sales.EmailTemplatesSchema.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="app.models.html#app.models.sales.EmailTemplates" title="app.models.sales.EmailTemplates"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.sales.EmailTemplates</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.sales.EmailTemplatesSchema.Meta.sqla_session">
+<code class="sig-name descname"><span class="pre">sqla_session</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.DummySession</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.sales.EmailTemplatesSchema.Meta.sqla_session" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="app.serializers.sales.EmailTemplatesSchema.opts">
+<code class="sig-name descname"><span class="pre">opts</span></code><em class="property"><span class="pre">:</span> <span class="pre">SchemaOpts</span></em><em class="property"> <span class="pre">=</span> <span class="pre">&lt;flask_marshmallow.sqla.SQLAlchemyAutoSchemaOpts</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#app.serializers.sales.EmailTemplatesSchema.opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-app.serializers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.serializers" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
