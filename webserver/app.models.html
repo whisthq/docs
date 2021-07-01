@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>app.models package &#8212; Fractal Webserver  documentation</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
@@ -32,24 +33,24 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="app-models-package">
+  <section id="app-models-package">
 <h1>app.models package<a class="headerlink" href="#app-models-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-app.models.hardware">
+</section>
+<section id="module-app.models.hardware">
 <span id="app-models-hardware-module"></span><h2>app.models.hardware module<a class="headerlink" href="#module-app.models.hardware" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="app.models.hardware.ClusterInfo">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></code><code class="sig-name descname"><span class="pre">ClusterInfo</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.ClusterInfo" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></span><span class="sig-name descname"><span class="pre">ClusterInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.ClusterInfo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
 <dl class="simple">
 <dt>Stores data for ECS clusters spun up by the webserver. Containers information such as</dt><dd><p>total task count, number of running instances, and container status.</p>
 </dd>
 </dl>
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.cluster">
-<code class="sig-name descname"><span class="pre">cluster</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.cluster" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.cluster">
+<span class="sig-name descname"><span class="pre">cluster</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.cluster" title="Permalink to this definition">¶</a></dt>
 <dd><p>cluster id from AWS console</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -59,8 +60,8 @@
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.location">
-<code class="sig-name descname"><span class="pre">location</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.location" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.location">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.location" title="Permalink to this definition">¶</a></dt>
 <dd><p>AWS region (i.e. us-east-1)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -70,8 +71,8 @@
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.maxCPURemainingPerInstance">
-<code class="sig-name descname"><span class="pre">maxCPURemainingPerInstance</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.maxCPURemainingPerInstance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.maxCPURemainingPerInstance">
+<span class="sig-name descname"><span class="pre">maxCPURemainingPerInstance</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.maxCPURemainingPerInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>maximum available CPU that has not
 been allocated to tasks</p>
 <dl class="field-list simple">
@@ -82,8 +83,8 @@ been allocated to tasks</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.maxMemoryRemainingPerInstance">
-<code class="sig-name descname"><span class="pre">maxMemoryRemainingPerInstance</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.maxMemoryRemainingPerInstance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.maxMemoryRemainingPerInstance">
+<span class="sig-name descname"><span class="pre">maxMemoryRemainingPerInstance</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.maxMemoryRemainingPerInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>maximum avilable RAM that has not
 been allocated to tasks</p>
 <dl class="field-list simple">
@@ -94,8 +95,8 @@ been allocated to tasks</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.pendingTaskscount">
-<code class="sig-name descname"><span class="pre">pendingTaskscount</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.pendingTaskscount" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.pendingTaskscount">
+<span class="sig-name descname"><span class="pre">pendingTaskscount</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.pendingTaskscount" title="Permalink to this definition">¶</a></dt>
 <dd><p>number of tasks in the cluster that are in the PENDING state</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -105,8 +106,8 @@ been allocated to tasks</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.runningTasksCount">
-<code class="sig-name descname"><span class="pre">runningTasksCount</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.runningTasksCount" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.runningTasksCount">
+<span class="sig-name descname"><span class="pre">runningTasksCount</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.runningTasksCount" title="Permalink to this definition">¶</a></dt>
 <dd><p>number of tasks in the cluster that are in the RUNNING state</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -116,8 +117,8 @@ been allocated to tasks</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.registeredContainerInstancesCount">
-<code class="sig-name descname"><span class="pre">registeredContainerInstancesCount</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.registeredContainerInstancesCount" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.registeredContainerInstancesCount">
+<span class="sig-name descname"><span class="pre">registeredContainerInstancesCount</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.registeredContainerInstancesCount" title="Permalink to this definition">¶</a></dt>
 <dd><p>The number of container instances registered
 into the cluster. This includes container instances in both ACTIVE and DRAINING status.</p>
 <dl class="field-list simple">
@@ -128,8 +129,8 @@ into the cluster. This includes container instances in both ACTIVE and DRAINING 
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.minContainers">
-<code class="sig-name descname"><span class="pre">minContainers</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.minContainers" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.minContainers">
+<span class="sig-name descname"><span class="pre">minContainers</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.minContainers" title="Permalink to this definition">¶</a></dt>
 <dd><p>The minimum size of the Auto Scaling group.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -139,8 +140,8 @@ into the cluster. This includes container instances in both ACTIVE and DRAINING 
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.maxContainers">
-<code class="sig-name descname"><span class="pre">maxContainers</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.maxContainers" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.maxContainers">
+<span class="sig-name descname"><span class="pre">maxContainers</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.maxContainers" title="Permalink to this definition">¶</a></dt>
 <dd><p>The maximum size of the Auto Scaling Group</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -150,15 +151,15 @@ into the cluster. This includes container instances in both ACTIVE and DRAINING 
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.status">
-<code class="sig-name descname"><span class="pre">status</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.status" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.status" title="Permalink to this definition">¶</a></dt>
 <dd><p>(string): Status of the cluster, either [ACTIVE, PROVISIONING,
 DEPROVISINING, FAILED, INACTIVE]</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.containers">
-<code class="sig-name descname"><span class="pre">containers</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.containers" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.containers">
+<span class="sig-name descname"><span class="pre">containers</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.containers" title="Permalink to this definition">¶</a></dt>
 <dd><p>reference to hardware.user_containers of containers
 within given cluster</p>
 <dl class="field-list simple">
@@ -169,70 +170,70 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="id0">
-<code class="sig-name descname"><span class="pre">cluster</span></code><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">cluster</span></span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id1">
-<code class="sig-name descname"><span class="pre">containers</span></code><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">containers</span></span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id2">
-<code class="sig-name descname"><span class="pre">location</span></code><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id3">
-<code class="sig-name descname"><span class="pre">maxCPURemainingPerInstance</span></code><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">maxCPURemainingPerInstance</span></span><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id4">
-<code class="sig-name descname"><span class="pre">maxContainers</span></code><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">maxContainers</span></span><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id5">
-<code class="sig-name descname"><span class="pre">maxMemoryRemainingPerInstance</span></code><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">maxMemoryRemainingPerInstance</span></span><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id6">
-<code class="sig-name descname"><span class="pre">minContainers</span></code><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">minContainers</span></span><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.ClusterInfo.pendingTasksCount">
-<code class="sig-name descname"><span class="pre">pendingTasksCount</span></code><a class="headerlink" href="#app.models.hardware.ClusterInfo.pendingTasksCount" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.ClusterInfo.pendingTasksCount">
+<span class="sig-name descname"><span class="pre">pendingTasksCount</span></span><a class="headerlink" href="#app.models.hardware.ClusterInfo.pendingTasksCount" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id7">
-<code class="sig-name descname"><span class="pre">registeredContainerInstancesCount</span></code><a class="headerlink" href="#id7" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">registeredContainerInstancesCount</span></span><a class="headerlink" href="#id7" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id8">
-<code class="sig-name descname"><span class="pre">runningTasksCount</span></code><a class="headerlink" href="#id8" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">runningTasksCount</span></span><a class="headerlink" href="#id8" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id9">
-<code class="sig-name descname"><span class="pre">status</span></code><a class="headerlink" href="#id9" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id9">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#id9" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="app.models.hardware.InstanceInfo">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></code><code class="sig-name descname"><span class="pre">InstanceInfo</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.InstanceInfo" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></span><span class="sig-name descname"><span class="pre">InstanceInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.InstanceInfo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
 <p>compute instance information</p>
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.instance_id">
-<code class="sig-name descname"><span class="pre">instance_id</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.instance_id" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.instance_id">
+<span class="sig-name descname"><span class="pre">instance_id</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.instance_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>instance id from AWS console</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -242,8 +243,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.location">
-<code class="sig-name descname"><span class="pre">location</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.location" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.location">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.location" title="Permalink to this definition">¶</a></dt>
 <dd><p>AWS region (i.e. us-east-1)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -253,8 +254,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.instance_type">
-<code class="sig-name descname"><span class="pre">instance_type</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.instance_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.instance_type">
+<span class="sig-name descname"><span class="pre">instance_type</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.instance_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>what hardware is the instance running on?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -264,8 +265,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.auth_token">
-<code class="sig-name descname"><span class="pre">auth_token</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.auth_token" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.auth_token">
+<span class="sig-name descname"><span class="pre">auth_token</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.auth_token" title="Permalink to this definition">¶</a></dt>
 <dd><p>what token does this instance use to auth with the webserver?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -275,8 +276,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.ip">
-<code class="sig-name descname"><span class="pre">ip</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.ip" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.ip">
+<span class="sig-name descname"><span class="pre">ip</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.ip" title="Permalink to this definition">¶</a></dt>
 <dd><p>the instance’s public IP</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -286,8 +287,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.CPURemainingPerInstance">
-<code class="sig-name descname"><span class="pre">CPURemainingPerInstance</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.CPURemainingPerInstance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.CPURemainingPerInstance">
+<span class="sig-name descname"><span class="pre">CPURemainingPerInstance</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.CPURemainingPerInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>CPU that isn’t in use</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -297,8 +298,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.GPURemainingPerInstance">
-<code class="sig-name descname"><span class="pre">GPURemainingPerInstance</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.GPURemainingPerInstance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.GPURemainingPerInstance">
+<span class="sig-name descname"><span class="pre">GPURemainingPerInstance</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.GPURemainingPerInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>GPU that isn’t in use</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -308,8 +309,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.memoryRemainingPerInstance">
-<code class="sig-name descname"><span class="pre">memoryRemainingPerInstance</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.memoryRemainingPerInstance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.memoryRemainingPerInstance">
+<span class="sig-name descname"><span class="pre">memoryRemainingPerInstance</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.memoryRemainingPerInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>RAM not in use</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -319,8 +320,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.runningTasksCount">
-<code class="sig-name descname"><span class="pre">runningTasksCount</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.runningTasksCount" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.runningTasksCount">
+<span class="sig-name descname"><span class="pre">runningTasksCount</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.runningTasksCount" title="Permalink to this definition">¶</a></dt>
 <dd><p>how many containers are running?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -330,8 +331,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.last_pinged">
-<code class="sig-name descname"><span class="pre">last_pinged</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.last_pinged" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.last_pinged">
+<span class="sig-name descname"><span class="pre">last_pinged</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.last_pinged" title="Permalink to this definition">¶</a></dt>
 <dd><p>when did this instance last tell us it existed?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -341,8 +342,8 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.ami_id">
-<code class="sig-name descname"><span class="pre">ami_id</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.ami_id" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.ami_id">
+<span class="sig-name descname"><span class="pre">ami_id</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.ami_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>what image is this machine based on?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -352,250 +353,250 @@ within given cluster</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.CPURemainingInInstance">
-<code class="sig-name descname"><span class="pre">CPURemainingInInstance</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.CPURemainingInInstance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.CPURemainingInInstance">
+<span class="sig-name descname"><span class="pre">CPURemainingInInstance</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.CPURemainingInInstance" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.GPURemainingInInstance">
-<code class="sig-name descname"><span class="pre">GPURemainingInInstance</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.GPURemainingInInstance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.GPURemainingInInstance">
+<span class="sig-name descname"><span class="pre">GPURemainingInInstance</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.GPURemainingInInstance" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id10">
-<code class="sig-name descname"><span class="pre">ami_id</span></code><a class="headerlink" href="#id10" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">ami_id</span></span><a class="headerlink" href="#id10" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id11">
-<code class="sig-name descname"><span class="pre">auth_token</span></code><a class="headerlink" href="#id11" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id11">
+<span class="sig-name descname"><span class="pre">auth_token</span></span><a class="headerlink" href="#id11" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id12">
-<code class="sig-name descname"><span class="pre">instance_id</span></code><a class="headerlink" href="#id12" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id12">
+<span class="sig-name descname"><span class="pre">instance_id</span></span><a class="headerlink" href="#id12" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id13">
-<code class="sig-name descname"><span class="pre">instance_type</span></code><a class="headerlink" href="#id13" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">instance_type</span></span><a class="headerlink" href="#id13" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id14">
-<code class="sig-name descname"><span class="pre">ip</span></code><a class="headerlink" href="#id14" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id14">
+<span class="sig-name descname"><span class="pre">ip</span></span><a class="headerlink" href="#id14" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id15">
-<code class="sig-name descname"><span class="pre">last_pinged</span></code><a class="headerlink" href="#id15" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id15">
+<span class="sig-name descname"><span class="pre">last_pinged</span></span><a class="headerlink" href="#id15" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id16">
-<code class="sig-name descname"><span class="pre">location</span></code><a class="headerlink" href="#id16" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id16">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#id16" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.InstanceInfo.memoryRemainingInInstanceInMb">
-<code class="sig-name descname"><span class="pre">memoryRemainingInInstanceInMb</span></code><a class="headerlink" href="#app.models.hardware.InstanceInfo.memoryRemainingInInstanceInMb" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.InstanceInfo.memoryRemainingInInstanceInMb">
+<span class="sig-name descname"><span class="pre">memoryRemainingInInstanceInMb</span></span><a class="headerlink" href="#app.models.hardware.InstanceInfo.memoryRemainingInInstanceInMb" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id17">
-<code class="sig-name descname"><span class="pre">runningTasksCount</span></code><a class="headerlink" href="#id17" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id17">
+<span class="sig-name descname"><span class="pre">runningTasksCount</span></span><a class="headerlink" href="#id17" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="app.models.hardware.RegionToAmi">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></code><code class="sig-name descname"><span class="pre">RegionToAmi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.RegionToAmi" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.RegionToAmi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></span><span class="sig-name descname"><span class="pre">RegionToAmi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.RegionToAmi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
 <p>This class represents the region_to_ami table in hardware
 it maps region names to the AMIs which should be used
 for clusters in that region</p>
 <dl class="py attribute">
-<dt id="app.models.hardware.RegionToAmi.region_name">
-<code class="sig-name descname"><span class="pre">region_name</span></code><a class="headerlink" href="#app.models.hardware.RegionToAmi.region_name" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.RegionToAmi.region_name">
+<span class="sig-name descname"><span class="pre">region_name</span></span><a class="headerlink" href="#app.models.hardware.RegionToAmi.region_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>The name of the region to which the AMI corresponds as a string.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.RegionToAmi.ami_id">
-<code class="sig-name descname"><span class="pre">ami_id</span></code><a class="headerlink" href="#app.models.hardware.RegionToAmi.ami_id" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.RegionToAmi.ami_id">
+<span class="sig-name descname"><span class="pre">ami_id</span></span><a class="headerlink" href="#app.models.hardware.RegionToAmi.ami_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string representing the AMI ID of the latest AMI provisioned in the region
 corresponding to this row.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.RegionToAmi.allowed">
-<code class="sig-name descname"><span class="pre">allowed</span></code><a class="headerlink" href="#app.models.hardware.RegionToAmi.allowed" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.RegionToAmi.allowed">
+<span class="sig-name descname"><span class="pre">allowed</span></span><a class="headerlink" href="#app.models.hardware.RegionToAmi.allowed" title="Permalink to this definition">¶</a></dt>
 <dd><p>A boolean indicating whether or not users are allowed to deploy tasks in the
 region corresponding to this row.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="id18">
-<code class="sig-name descname"><span class="pre">allowed</span></code><a class="headerlink" href="#id18" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id18">
+<span class="sig-name descname"><span class="pre">allowed</span></span><a class="headerlink" href="#id18" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id19">
-<code class="sig-name descname"><span class="pre">ami_id</span></code><a class="headerlink" href="#id19" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id19">
+<span class="sig-name descname"><span class="pre">ami_id</span></span><a class="headerlink" href="#id19" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id20">
-<code class="sig-name descname"><span class="pre">region_name</span></code><a class="headerlink" href="#id20" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id20">
+<span class="sig-name descname"><span class="pre">region_name</span></span><a class="headerlink" href="#id20" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="app.models.hardware.SortedClusters">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></code><code class="sig-name descname"><span class="pre">SortedClusters</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.SortedClusters" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></span><span class="sig-name descname"><span class="pre">SortedClusters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.SortedClusters" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
 <p>Represents the cluster_sorted view, which contains data from cluster_info.</p>
 <p>The rows in cluster_sorted are sorted by cluster_info.registeredContainerInstancesCount.</p>
 <dl class="py attribute">
-<dt>
-<code class="sig-name descname"><span class="pre">See</span> <span class="pre">app.models.hardware.ClusterInfo.</span></code></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">See</span> <span class="pre">app.models.hardware.ClusterInfo.</span></span></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.cluster">
-<code class="sig-name descname"><span class="pre">cluster</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.cluster" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.cluster">
+<span class="sig-name descname"><span class="pre">cluster</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.cluster" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.containers">
-<code class="sig-name descname"><span class="pre">containers</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.containers" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.containers">
+<span class="sig-name descname"><span class="pre">containers</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.containers" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.location">
-<code class="sig-name descname"><span class="pre">location</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.location" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.location">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.location" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.maxCPURemainingPerInstance">
-<code class="sig-name descname"><span class="pre">maxCPURemainingPerInstance</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.maxCPURemainingPerInstance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.maxCPURemainingPerInstance">
+<span class="sig-name descname"><span class="pre">maxCPURemainingPerInstance</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.maxCPURemainingPerInstance" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.maxContainers">
-<code class="sig-name descname"><span class="pre">maxContainers</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.maxContainers" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.maxContainers">
+<span class="sig-name descname"><span class="pre">maxContainers</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.maxContainers" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.maxMemoryRemainingPerInstance">
-<code class="sig-name descname"><span class="pre">maxMemoryRemainingPerInstance</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.maxMemoryRemainingPerInstance" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.maxMemoryRemainingPerInstance">
+<span class="sig-name descname"><span class="pre">maxMemoryRemainingPerInstance</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.maxMemoryRemainingPerInstance" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.minContainers">
-<code class="sig-name descname"><span class="pre">minContainers</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.minContainers" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.minContainers">
+<span class="sig-name descname"><span class="pre">minContainers</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.minContainers" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.pendingTasksCount">
-<code class="sig-name descname"><span class="pre">pendingTasksCount</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.pendingTasksCount" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.pendingTasksCount">
+<span class="sig-name descname"><span class="pre">pendingTasksCount</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.pendingTasksCount" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.registeredContainerInstancesCount">
-<code class="sig-name descname"><span class="pre">registeredContainerInstancesCount</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.registeredContainerInstancesCount" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.registeredContainerInstancesCount">
+<span class="sig-name descname"><span class="pre">registeredContainerInstancesCount</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.registeredContainerInstancesCount" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.runningTasksCount">
-<code class="sig-name descname"><span class="pre">runningTasksCount</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.runningTasksCount" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.runningTasksCount">
+<span class="sig-name descname"><span class="pre">runningTasksCount</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.runningTasksCount" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SortedClusters.status">
-<code class="sig-name descname"><span class="pre">status</span></code><a class="headerlink" href="#app.models.hardware.SortedClusters.status" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SortedClusters.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#app.models.hardware.SortedClusters.status" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="app.models.hardware.SupportedAppImages">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></code><code class="sig-name descname"><span class="pre">SupportedAppImages</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.SupportedAppImages" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></span><span class="sig-name descname"><span class="pre">SupportedAppImages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.SupportedAppImages" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.active">
-<code class="sig-name descname"><span class="pre">active</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.active" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.active">
+<span class="sig-name descname"><span class="pre">active</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.active" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.app_id">
-<code class="sig-name descname"><span class="pre">app_id</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.app_id" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.app_id">
+<span class="sig-name descname"><span class="pre">app_id</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.app_id" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.category">
-<code class="sig-name descname"><span class="pre">category</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.category" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.category">
+<span class="sig-name descname"><span class="pre">category</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.category" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.containers">
-<code class="sig-name descname"><span class="pre">containers</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.containers" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.containers">
+<span class="sig-name descname"><span class="pre">containers</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.containers" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.description">
-<code class="sig-name descname"><span class="pre">description</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.description" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.description" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.logo_url">
-<code class="sig-name descname"><span class="pre">logo_url</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.logo_url" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.logo_url">
+<span class="sig-name descname"><span class="pre">logo_url</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.logo_url" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.long_description">
-<code class="sig-name descname"><span class="pre">long_description</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.long_description" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.long_description">
+<span class="sig-name descname"><span class="pre">long_description</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.long_description" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.preboot_number">
-<code class="sig-name descname"><span class="pre">preboot_number</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.preboot_number" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.preboot_number">
+<span class="sig-name descname"><span class="pre">preboot_number</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.preboot_number" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.task_definition">
-<code class="sig-name descname"><span class="pre">task_definition</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.task_definition" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.task_definition">
+<span class="sig-name descname"><span class="pre">task_definition</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.task_definition" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.task_version">
-<code class="sig-name descname"><span class="pre">task_version</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.task_version" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.task_version">
+<span class="sig-name descname"><span class="pre">task_version</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.task_version" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.tos">
-<code class="sig-name descname"><span class="pre">tos</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.tos" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.tos">
+<span class="sig-name descname"><span class="pre">tos</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.tos" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.SupportedAppImages.url">
-<code class="sig-name descname"><span class="pre">url</span></code><a class="headerlink" href="#app.models.hardware.SupportedAppImages.url" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.SupportedAppImages.url">
+<span class="sig-name descname"><span class="pre">url</span></span><a class="headerlink" href="#app.models.hardware.SupportedAppImages.url" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="app.models.hardware.UserContainer">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></code><code class="sig-name descname"><span class="pre">UserContainer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.UserContainer" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></span><span class="sig-name descname"><span class="pre">UserContainer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.UserContainer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
 <p>User container data - information for spun up protocol containers</p>
 <p>This SQLAlchemy model provides an interface to the hardware.user_containers
 table of the database</p>
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.container_id">
-<code class="sig-name descname"><span class="pre">container_id</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.container_id" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.container_id">
+<span class="sig-name descname"><span class="pre">container_id</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.container_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>container ID, taken from AWS</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -605,8 +606,8 @@ table of the database</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.ip">
-<code class="sig-name descname"><span class="pre">ip</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.ip" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.ip">
+<span class="sig-name descname"><span class="pre">ip</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.ip" title="Permalink to this definition">¶</a></dt>
 <dd><p>ip address of the ECS container instance (i.e. EC&#64; instance) on which the
 container is running</p>
 <dl class="field-list simple">
@@ -617,8 +618,8 @@ container is running</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.location">
-<code class="sig-name descname"><span class="pre">location</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.location" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.location">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.location" title="Permalink to this definition">¶</a></dt>
 <dd><p>AWS region of the container</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -628,8 +629,8 @@ container is running</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.state">
-<code class="sig-name descname"><span class="pre">state</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.state" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.state">
+<span class="sig-name descname"><span class="pre">state</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>Container state, either [RUNNING_AVAILABLE, RUNNING_UNAVAILABLE,
 STOPPED, STOPPING, DELETING, CREATING, RESTARTING, STARTING]</p>
 <dl class="simple">
@@ -646,8 +647,8 @@ to the web server.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.user_id">
-<code class="sig-name descname"><span class="pre">user_id</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.user_id" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.user_id">
+<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.user_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>User ID, typically email</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -657,8 +658,8 @@ to the web server.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.task_definition">
-<code class="sig-name descname"><span class="pre">task_definition</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.task_definition" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.task_definition">
+<span class="sig-name descname"><span class="pre">task_definition</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.task_definition" title="Permalink to this definition">¶</a></dt>
 <dd><p>foreign key to supported_app_images of streamed application</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -668,8 +669,8 @@ to the web server.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.app">
-<code class="sig-name descname"><span class="pre">app</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.app" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.app">
+<span class="sig-name descname"><span class="pre">app</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.app" title="Permalink to this definition">¶</a></dt>
 <dd><p>reference to hardware.supported_app_image obj of
 streamed application</p>
 <dl class="field-list simple">
@@ -680,8 +681,8 @@ streamed application</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.port_32262">
-<code class="sig-name descname"><span class="pre">port_32262</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.port_32262" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.port_32262">
+<span class="sig-name descname"><span class="pre">port_32262</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.port_32262" title="Permalink to this definition">¶</a></dt>
 <dd><p>port number on the ECS container instance host that is forwraded to
 port 32262 on the container</p>
 <dl class="field-list simple">
@@ -692,8 +693,8 @@ port 32262 on the container</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.port_32263">
-<code class="sig-name descname"><span class="pre">port_32263</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.port_32263" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.port_32263">
+<span class="sig-name descname"><span class="pre">port_32263</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.port_32263" title="Permalink to this definition">¶</a></dt>
 <dd><p>port number on the ECS container instance host that is forwraded to
 port 32263 on the container</p>
 <dl class="field-list simple">
@@ -704,8 +705,8 @@ port 32263 on the container</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.port_32273">
-<code class="sig-name descname"><span class="pre">port_32273</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.port_32273" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.port_32273">
+<span class="sig-name descname"><span class="pre">port_32273</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.port_32273" title="Permalink to this definition">¶</a></dt>
 <dd><p>port number on the ECS container instance host that is forwraded to
 port 32273 on the container</p>
 <dl class="field-list simple">
@@ -716,8 +717,8 @@ port 32273 on the container</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.last_pinged">
-<code class="sig-name descname"><span class="pre">last_pinged</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.last_pinged" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.last_pinged">
+<span class="sig-name descname"><span class="pre">last_pinged</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.last_pinged" title="Permalink to this definition">¶</a></dt>
 <dd><p>timestamp representing when the container was last pinged</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -727,8 +728,8 @@ port 32273 on the container</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.cluster">
-<code class="sig-name descname"><span class="pre">cluster</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.cluster" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.cluster">
+<span class="sig-name descname"><span class="pre">cluster</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.cluster" title="Permalink to this definition">¶</a></dt>
 <dd><p>foreign key for the cluster the container is hosted on</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -738,8 +739,8 @@ port 32273 on the container</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.parent_cluster">
-<code class="sig-name descname"><span class="pre">parent_cluster</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.parent_cluster" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.parent_cluster">
+<span class="sig-name descname"><span class="pre">parent_cluster</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.parent_cluster" title="Permalink to this definition">¶</a></dt>
 <dd><p>reference to hardware.cluster_info object of the parent</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -749,8 +750,8 @@ port 32273 on the container</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.dpi">
-<code class="sig-name descname"><span class="pre">dpi</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.dpi" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.dpi">
+<span class="sig-name descname"><span class="pre">dpi</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.dpi" title="Permalink to this definition">¶</a></dt>
 <dd><p>pixel density of the stream</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -760,8 +761,8 @@ port 32273 on the container</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.secret_key">
-<code class="sig-name descname"><span class="pre">secret_key</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.secret_key" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.secret_key">
+<span class="sig-name descname"><span class="pre">secret_key</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.secret_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>16-byte AES key used to encrypt communication between protocol
 server and client</p>
 <dl class="field-list simple">
@@ -772,90 +773,90 @@ server and client</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="id21">
-<code class="sig-name descname"><span class="pre">app</span></code><a class="headerlink" href="#id21" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id21">
+<span class="sig-name descname"><span class="pre">app</span></span><a class="headerlink" href="#id21" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id22">
-<code class="sig-name descname"><span class="pre">cluster</span></code><a class="headerlink" href="#id22" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id22">
+<span class="sig-name descname"><span class="pre">cluster</span></span><a class="headerlink" href="#id22" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id23">
-<code class="sig-name descname"><span class="pre">container_id</span></code><a class="headerlink" href="#id23" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id23">
+<span class="sig-name descname"><span class="pre">container_id</span></span><a class="headerlink" href="#id23" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id24">
-<code class="sig-name descname"><span class="pre">dpi</span></code><a class="headerlink" href="#id24" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id24">
+<span class="sig-name descname"><span class="pre">dpi</span></span><a class="headerlink" href="#id24" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id25">
-<code class="sig-name descname"><span class="pre">ip</span></code><a class="headerlink" href="#id25" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id25">
+<span class="sig-name descname"><span class="pre">ip</span></span><a class="headerlink" href="#id25" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id26">
-<code class="sig-name descname"><span class="pre">last_pinged</span></code><a class="headerlink" href="#id26" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id26">
+<span class="sig-name descname"><span class="pre">last_pinged</span></span><a class="headerlink" href="#id26" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id27">
-<code class="sig-name descname"><span class="pre">location</span></code><a class="headerlink" href="#id27" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id27">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#id27" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id28">
-<code class="sig-name descname"><span class="pre">parent_cluster</span></code><a class="headerlink" href="#id28" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id28">
+<span class="sig-name descname"><span class="pre">parent_cluster</span></span><a class="headerlink" href="#id28" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id29">
-<code class="sig-name descname"><span class="pre">port_32262</span></code><a class="headerlink" href="#id29" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id29">
+<span class="sig-name descname"><span class="pre">port_32262</span></span><a class="headerlink" href="#id29" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id30">
-<code class="sig-name descname"><span class="pre">port_32263</span></code><a class="headerlink" href="#id30" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id30">
+<span class="sig-name descname"><span class="pre">port_32263</span></span><a class="headerlink" href="#id30" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id31">
-<code class="sig-name descname"><span class="pre">port_32273</span></code><a class="headerlink" href="#id31" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id31">
+<span class="sig-name descname"><span class="pre">port_32273</span></span><a class="headerlink" href="#id31" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id32">
-<code class="sig-name descname"><span class="pre">secret_key</span></code><a class="headerlink" href="#id32" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id32">
+<span class="sig-name descname"><span class="pre">secret_key</span></span><a class="headerlink" href="#id32" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id33">
-<code class="sig-name descname"><span class="pre">state</span></code><a class="headerlink" href="#id33" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id33">
+<span class="sig-name descname"><span class="pre">state</span></span><a class="headerlink" href="#id33" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id34">
-<code class="sig-name descname"><span class="pre">task_definition</span></code><a class="headerlink" href="#id34" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id34">
+<span class="sig-name descname"><span class="pre">task_definition</span></span><a class="headerlink" href="#id34" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainer.task_version">
-<code class="sig-name descname"><span class="pre">task_version</span></code><a class="headerlink" href="#app.models.hardware.UserContainer.task_version" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainer.task_version">
+<span class="sig-name descname"><span class="pre">task_version</span></span><a class="headerlink" href="#app.models.hardware.UserContainer.task_version" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id35">
-<code class="sig-name descname"><span class="pre">user_id</span></code><a class="headerlink" href="#id35" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id35">
+<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#id35" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="app.models.hardware.UserContainerState">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></code><code class="sig-name descname"><span class="pre">UserContainerState</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.UserContainerState" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainerState">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></span><span class="sig-name descname"><span class="pre">UserContainerState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.UserContainerState" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
 <p>Stores basic state information which users can query or subscribe to, to
 find out whether their container/app is ready, pending etc. Check
@@ -868,49 +869,49 @@ for this table.</p>
 </dd>
 </dl>
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainerState.client_app_auth_secret">
-<code class="sig-name descname"><span class="pre">client_app_auth_secret</span></code><a class="headerlink" href="#app.models.hardware.UserContainerState.client_app_auth_secret" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainerState.client_app_auth_secret">
+<span class="sig-name descname"><span class="pre">client_app_auth_secret</span></span><a class="headerlink" href="#app.models.hardware.UserContainerState.client_app_auth_secret" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainerState.ip">
-<code class="sig-name descname"><span class="pre">ip</span></code><a class="headerlink" href="#app.models.hardware.UserContainerState.ip" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainerState.ip">
+<span class="sig-name descname"><span class="pre">ip</span></span><a class="headerlink" href="#app.models.hardware.UserContainerState.ip" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainerState.port">
-<code class="sig-name descname"><span class="pre">port</span></code><a class="headerlink" href="#app.models.hardware.UserContainerState.port" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainerState.port">
+<span class="sig-name descname"><span class="pre">port</span></span><a class="headerlink" href="#app.models.hardware.UserContainerState.port" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainerState.state">
-<code class="sig-name descname"><span class="pre">state</span></code><a class="headerlink" href="#app.models.hardware.UserContainerState.state" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainerState.state">
+<span class="sig-name descname"><span class="pre">state</span></span><a class="headerlink" href="#app.models.hardware.UserContainerState.state" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainerState.task_id">
-<code class="sig-name descname"><span class="pre">task_id</span></code><a class="headerlink" href="#app.models.hardware.UserContainerState.task_id" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainerState.task_id">
+<span class="sig-name descname"><span class="pre">task_id</span></span><a class="headerlink" href="#app.models.hardware.UserContainerState.task_id" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.hardware.UserContainerState.user_id">
-<code class="sig-name descname"><span class="pre">user_id</span></code><a class="headerlink" href="#app.models.hardware.UserContainerState.user_id" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.hardware.UserContainerState.user_id">
+<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#app.models.hardware.UserContainerState.user_id" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-app.models.sales">
+</section>
+<section id="module-app.models.sales">
 <span id="app-models-sales-module"></span><h2>app.models.sales module<a class="headerlink" href="#module-app.models.sales" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="app.models.sales.EmailTemplates">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.models.sales.</span></code><code class="sig-name descname"><span class="pre">EmailTemplates</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.sales.EmailTemplates" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.sales.EmailTemplates">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.sales.</span></span><span class="sig-name descname"><span class="pre">EmailTemplates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.sales.EmailTemplates" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
 <p>Stores all email templates that could be sent out to users.</p>
 <p>Used in the MailClient in app/helpers/utils/mail.py.</p>
 <dl class="py attribute">
-<dt id="app.models.sales.EmailTemplates.id">
-<code class="sig-name descname"><span class="pre">id</span></code><a class="headerlink" href="#app.models.sales.EmailTemplates.id" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.sales.EmailTemplates.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#app.models.sales.EmailTemplates.id" title="Permalink to this definition">¶</a></dt>
 <dd><p>string used to identify email templates and
 differentiation from each other</p>
 <dl class="field-list simple">
@@ -921,8 +922,8 @@ differentiation from each other</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.sales.EmailTemplates.url">
-<code class="sig-name descname"><span class="pre">url</span></code><a class="headerlink" href="#app.models.sales.EmailTemplates.url" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.sales.EmailTemplates.url">
+<span class="sig-name descname"><span class="pre">url</span></span><a class="headerlink" href="#app.models.sales.EmailTemplates.url" title="Permalink to this definition">¶</a></dt>
 <dd><p>url to the website template living in the AWS S3 bucket</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -932,8 +933,8 @@ differentiation from each other</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="app.models.sales.EmailTemplates.title">
-<code class="sig-name descname"><span class="pre">title</span></code><a class="headerlink" href="#app.models.sales.EmailTemplates.title" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.sales.EmailTemplates.title">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#app.models.sales.EmailTemplates.title" title="Permalink to this definition">¶</a></dt>
 <dd><p>subject of the email</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -943,8 +944,8 @@ differentiation from each other</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="app.models.sales.EmailTemplates.download">
-<code class="sig-name descname"><span class="pre">download</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#app.models.sales.EmailTemplates.download" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.models.sales.EmailTemplates.download">
+<span class="sig-name descname"><span class="pre">download</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#app.models.sales.EmailTemplates.download" title="Permalink to this definition">¶</a></dt>
 <dd><p>Download the template from Amazon S3.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -954,28 +955,28 @@ differentiation from each other</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="id36">
-<code class="sig-name descname"><span class="pre">id</span></code><a class="headerlink" href="#id36" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id36">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#id36" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id37">
-<code class="sig-name descname"><span class="pre">title</span></code><a class="headerlink" href="#id37" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id37">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#id37" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="id38">
-<code class="sig-name descname"><span class="pre">url</span></code><a class="headerlink" href="#id38" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="id38">
+<span class="sig-name descname"><span class="pre">url</span></span><a class="headerlink" href="#id38" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-app.models">
+</section>
+<section id="module-app.models">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.models" title="Permalink to this headline">¶</a></h2>
 <p>All database models.</p>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -1046,7 +1047,7 @@ differentiation from each other</p>
       &copy;2021, Fractal Computers, Inc..
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

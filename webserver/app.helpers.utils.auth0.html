@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>app.helpers.utils.auth0 package &#8212; Fractal Webserver  documentation</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
@@ -32,12 +33,12 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="app-helpers-utils-auth0-package">
+  <section id="app-helpers-utils-auth0-package">
 <h1>app.helpers.utils.auth0 package<a class="headerlink" href="#app-helpers-utils-auth0-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-app.helpers.utils.auth0.auth0">
+</section>
+<section id="module-app.helpers.utils.auth0.auth0">
 <span id="app-helpers-utils-auth0-auth0-module"></span><h2>app.helpers.utils.auth0.auth0 module<a class="headerlink" href="#module-app.helpers.utils.auth0.auth0" title="Permalink to this headline">¶</a></h2>
 <p>The Auth0 utility class.</p>
 <p>This class provides utility methods for Auth0.
@@ -46,38 +47,38 @@ be used to authenticate the webserver to the host service or Auth0’s internal 
 <p>In the future, this class will contain additional methods for various Auth0 management tasks,
 such as triggering a 2FA enrollment.</p>
 <dl class="py class">
-<dt id="app.helpers.utils.auth0.auth0.Auth0Client">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.auth0.auth0.</span></code><code class="sig-name descname"><span class="pre">Auth0Client</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auth0_domain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth0_client_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth0_client_secret</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.auth0.auth0.Auth0Client" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.helpers.utils.auth0.auth0.Auth0Client">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.helpers.utils.auth0.auth0.</span></span><span class="sig-name descname"><span class="pre">Auth0Client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auth0_domain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth0_client_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth0_client_secret</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.auth0.auth0.Auth0Client" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
-<dt id="app.helpers.utils.auth0.auth0.Auth0Client.token">
-<code class="sig-name descname"><span class="pre">token</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.auth0.auth0.Auth0Client.token" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.helpers.utils.auth0.auth0.Auth0Client.token">
+<span class="sig-name descname"><span class="pre">token</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.auth0.auth0.Auth0Client.token" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a machine-to-machine access token</p>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="app.helpers.utils.auth0.auth0.M2MAccessToken">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">app.helpers.utils.auth0.auth0.</span></code><code class="sig-name descname"><span class="pre">M2MAccessToken</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expires</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.auth0.auth0.M2MAccessToken" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.helpers.utils.auth0.auth0.M2MAccessToken">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.helpers.utils.auth0.auth0.</span></span><span class="sig-name descname"><span class="pre">M2MAccessToken</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expires</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.auth0.auth0.M2MAccessToken" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py attribute">
-<dt id="app.helpers.utils.auth0.auth0.M2MAccessToken.access_token">
-<code class="sig-name descname"><span class="pre">access_token</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#app.helpers.utils.auth0.auth0.M2MAccessToken.access_token" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.helpers.utils.auth0.auth0.M2MAccessToken.access_token">
+<span class="sig-name descname"><span class="pre">access_token</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#app.helpers.utils.auth0.auth0.M2MAccessToken.access_token" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.helpers.utils.auth0.auth0.M2MAccessToken.expires">
-<code class="sig-name descname"><span class="pre">expires</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#app.helpers.utils.auth0.auth0.M2MAccessToken.expires" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.helpers.utils.auth0.auth0.M2MAccessToken.expires">
+<span class="sig-name descname"><span class="pre">expires</span></span><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#app.helpers.utils.auth0.auth0.M2MAccessToken.expires" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-app.helpers.utils.auth0">
+</section>
+<section id="module-app.helpers.utils.auth0">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.helpers.utils.auth0" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -152,7 +153,7 @@ such as triggering a 2FA enrollment.</p>
       &copy;2021, Fractal Computers, Inc..
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

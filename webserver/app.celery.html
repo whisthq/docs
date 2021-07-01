@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>app.celery package &#8212; Fractal Webserver  documentation</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
@@ -32,56 +33,56 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="app-celery-package">
+  <section id="app-celery-package">
 <h1>app.celery package<a class="headerlink" href="#app-celery-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-app.celery.aws_celery_exceptions">
+</section>
+<section id="module-app.celery.aws_celery_exceptions">
 <span id="app-celery-aws-celery-exceptions-module"></span><h2>app.celery.aws_celery_exceptions module<a class="headerlink" href="#module-app.celery.aws_celery_exceptions" title="Permalink to this headline">¶</a></h2>
 <dl class="py exception">
-<dt id="app.celery.aws_celery_exceptions.ContainerNotAvailableError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.celery.aws_celery_exceptions.</span></code><code class="sig-name descname"><span class="pre">ContainerNotAvailableError</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.celery.aws_celery_exceptions.ContainerNotAvailableError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_celery_exceptions.ContainerNotAvailableError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">app.celery.aws_celery_exceptions.</span></span><span class="sig-name descname"><span class="pre">ContainerNotAvailableError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.celery.aws_celery_exceptions.ContainerNotAvailableError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">app.exceptions._FractalError</span></code></p>
 <dl class="py attribute">
-<dt id="app.celery.aws_celery_exceptions.ContainerNotAvailableError.message">
-<code class="sig-name descname"><span class="pre">message</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'AWS</span> <span class="pre">task</span> <span class="pre">{task_arn}</span> <span class="pre">failed</span> <span class="pre">to</span> <span class="pre">become</span> <span class="pre">available</span> <span class="pre">after</span> <span class="pre">{num_tries}.'</span></em><a class="headerlink" href="#app.celery.aws_celery_exceptions.ContainerNotAvailableError.message" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_celery_exceptions.ContainerNotAvailableError.message">
+<span class="sig-name descname"><span class="pre">message</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'AWS</span> <span class="pre">task</span> <span class="pre">{task_arn}</span> <span class="pre">failed</span> <span class="pre">to</span> <span class="pre">become</span> <span class="pre">available</span> <span class="pre">after</span> <span class="pre">{num_tries}.'</span></em><a class="headerlink" href="#app.celery.aws_celery_exceptions.ContainerNotAvailableError.message" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="app.celery.aws_celery_exceptions.ContainerNotAvailableError.params">
-<code class="sig-name descname"><span class="pre">params</span></code><em class="property"> <span class="pre">=</span> <span class="pre">('task_arn',</span> <span class="pre">'num_tries')</span></em><a class="headerlink" href="#app.celery.aws_celery_exceptions.ContainerNotAvailableError.params" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_celery_exceptions.ContainerNotAvailableError.params">
+<span class="sig-name descname"><span class="pre">params</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('task_arn',</span> <span class="pre">'num_tries')</span></em><a class="headerlink" href="#app.celery.aws_celery_exceptions.ContainerNotAvailableError.params" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py exception">
-<dt id="app.celery.aws_celery_exceptions.InvalidAppId">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.celery.aws_celery_exceptions.</span></code><code class="sig-name descname"><span class="pre">InvalidAppId</span></code><a class="headerlink" href="#app.celery.aws_celery_exceptions.InvalidAppId" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_celery_exceptions.InvalidAppId">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">app.celery.aws_celery_exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidAppId</span></span><a class="headerlink" href="#app.celery.aws_celery_exceptions.InvalidAppId" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Raised when the user provides an invalid app id.</p>
 </dd></dl>
 
 <dl class="py exception">
-<dt id="app.celery.aws_celery_exceptions.InvalidArguments">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.celery.aws_celery_exceptions.</span></code><code class="sig-name descname"><span class="pre">InvalidArguments</span></code><a class="headerlink" href="#app.celery.aws_celery_exceptions.InvalidArguments" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_celery_exceptions.InvalidArguments">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">app.celery.aws_celery_exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidArguments</span></span><a class="headerlink" href="#app.celery.aws_celery_exceptions.InvalidArguments" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Raised when the user provides bad arguments to a celery task</p>
 </dd></dl>
 
 <dl class="py exception">
-<dt id="app.celery.aws_celery_exceptions.InvalidCluster">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.celery.aws_celery_exceptions.</span></code><code class="sig-name descname"><span class="pre">InvalidCluster</span></code><a class="headerlink" href="#app.celery.aws_celery_exceptions.InvalidCluster" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_celery_exceptions.InvalidCluster">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">app.celery.aws_celery_exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidCluster</span></span><a class="headerlink" href="#app.celery.aws_celery_exceptions.InvalidCluster" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Raised when a cluster is not found in the database</p>
 </dd></dl>
 
-</div>
-<div class="section" id="module-app.celery.aws_ecs_creation">
+</section>
+<section id="module-app.celery.aws_ecs_creation">
 <span id="app-celery-aws-ecs-creation-module"></span><h2>app.celery.aws_ecs_creation module<a class="headerlink" href="#module-app.celery.aws_ecs_creation" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt id="app.celery.aws_ecs_creation.find_available_container">
-<code class="sig-prename descclassname"><span class="pre">app.celery.aws_ecs_creation.</span></code><code class="sig-name descname"><span class="pre">find_available_container</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_definition_arn</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_version</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="app.models.html#app.models.hardware.UserContainer" title="app.models.hardware.UserContainer"><span class="pre">app.models.hardware.UserContainer</span></a><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.celery.aws_ecs_creation.find_available_container" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_ecs_creation.find_available_container">
+<span class="sig-prename descclassname"><span class="pre">app.celery.aws_ecs_creation.</span></span><span class="sig-name descname"><span class="pre">find_available_container</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_definition_arn</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_version</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="app.models.html#app.models.hardware.UserContainer" title="app.models.hardware.UserContainer"><span class="pre">app.models.hardware.UserContainer</span></a><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.celery.aws_ecs_creation.find_available_container" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function to find an unassigned container with the right taskdef
 note that now UID=None means that a container is unassigned
 :param region_name: which region to look for
@@ -91,8 +92,8 @@ note that now UID=None means that a container is unassigned
 </dd></dl>
 
 <dl class="py function">
-<dt id="app.celery.aws_ecs_creation.select_cluster">
-<code class="sig-prename descclassname"><span class="pre">app.celery.aws_ecs_creation.</span></code><code class="sig-name descname"><span class="pre">select_cluster</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#app.celery.aws_ecs_creation.select_cluster" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_ecs_creation.select_cluster">
+<span class="sig-prename descclassname"><span class="pre">app.celery.aws_ecs_creation.</span></span><span class="sig-name descname"><span class="pre">select_cluster</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#app.celery.aws_ecs_creation.select_cluster" title="Permalink to this definition">¶</a></dt>
 <dd><p>Selects the best cluster for task placement in a given region, creating new clusters as
 necessary.
 :param region_name: which region to create the cluster in.</p>
@@ -100,8 +101,8 @@ necessary.
 </dd></dl>
 
 <dl class="py function">
-<dt id="app.celery.aws_ecs_creation.start_container">
-<code class="sig-prename descclassname"><span class="pre">app.celery.aws_ecs_creation.</span></code><code class="sig-name descname"><span class="pre">start_container</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">webserver_url</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_definition_arn</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_version</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.celery.aws_ecs_creation.start_container" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_ecs_creation.start_container">
+<span class="sig-prename descclassname"><span class="pre">app.celery.aws_ecs_creation.</span></span><span class="sig-name descname"><span class="pre">start_container</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">webserver_url</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cluster_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_definition_arn</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_version</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.celery.aws_ecs_creation.start_container" title="Permalink to this definition">¶</a></dt>
 <dd><p>This helper function configures and starts a container running</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -117,15 +118,15 @@ necessary.
 <p>Returns: the task_id, IP, port bindings, and aeskey of the container once running</p>
 </dd></dl>
 
-</div>
-<div class="section" id="module-app.celery.aws_ecs_deletion">
+</section>
+<section id="module-app.celery.aws_ecs_deletion">
 <span id="app-celery-aws-ecs-deletion-module"></span><h2>app.celery.aws_ecs_deletion module<a class="headerlink" href="#module-app.celery.aws_ecs_deletion" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-app.celery.aws_ecs_modification">
+</section>
+<section id="module-app.celery.aws_ecs_modification">
 <span id="app-celery-aws-ecs-modification-module"></span><h2>app.celery.aws_ecs_modification module<a class="headerlink" href="#module-app.celery.aws_ecs_modification" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt id="app.celery.aws_ecs_modification.kill_draining_instances_with_no_tasks">
-<code class="sig-prename descclassname"><span class="pre">app.celery.aws_ecs_modification.</span></code><code class="sig-name descname"><span class="pre">kill_draining_instances_with_no_tasks</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="app.models.html#app.models.hardware.ClusterInfo" title="app.models.hardware.ClusterInfo"><span class="pre">app.models.hardware.ClusterInfo</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">int</span><a class="headerlink" href="#app.celery.aws_ecs_modification.kill_draining_instances_with_no_tasks" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_ecs_modification.kill_draining_instances_with_no_tasks">
+<span class="sig-prename descclassname"><span class="pre">app.celery.aws_ecs_modification.</span></span><span class="sig-name descname"><span class="pre">kill_draining_instances_with_no_tasks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cluster_data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="app.models.html#app.models.hardware.ClusterInfo" title="app.models.hardware.ClusterInfo"><span class="pre">app.models.hardware.ClusterInfo</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">int</span><a class="headerlink" href="#app.celery.aws_ecs_modification.kill_draining_instances_with_no_tasks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Kill any instances that are draining and have no tasks.
 :param cluster_data: SQLAlchemy object containing information on the cluster</p>
 <dl class="field-list simple">
@@ -136,29 +137,29 @@ of the minContainers constraint.</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-app.celery.aws_s3_deletion">
+</section>
+<section id="module-app.celery.aws_s3_deletion">
 <span id="app-celery-aws-s3-deletion-module"></span><h2>app.celery.aws_s3_deletion module<a class="headerlink" href="#module-app.celery.aws_s3_deletion" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-app.celery.aws_s3_modification">
+</section>
+<section id="module-app.celery.aws_s3_modification">
 <span id="app-celery-aws-s3-modification-module"></span><h2>app.celery.aws_s3_modification module<a class="headerlink" href="#module-app.celery.aws_s3_modification" title="Permalink to this headline">¶</a></h2>
 <dl class="py exception">
-<dt id="app.celery.aws_s3_modification.BadSenderError">
-<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">app.celery.aws_s3_modification.</span></code><code class="sig-name descname"><span class="pre">BadSenderError</span></code><a class="headerlink" href="#app.celery.aws_s3_modification.BadSenderError" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.celery.aws_s3_modification.BadSenderError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">app.celery.aws_s3_modification.</span></span><span class="sig-name descname"><span class="pre">BadSenderError</span></span><a class="headerlink" href="#app.celery.aws_s3_modification.BadSenderError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Raised by upload_logs_to_s3.</p>
 <p>Raised by upload_logs_to_s3 when the sender argument is anything other than
 “client” or “server” (case-insensitive).</p>
 </dd></dl>
 
-</div>
-<div class="section" id="module-app.celery.dummy">
+</section>
+<section id="module-app.celery.dummy">
 <span id="app-celery-dummy-module"></span><h2>app.celery.dummy module<a class="headerlink" href="#module-app.celery.dummy" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-app.celery">
+</section>
+<section id="module-app.celery">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.celery" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -229,7 +230,7 @@ of the minContainers constraint.</p>
       &copy;2021, Fractal Computers, Inc..
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
