@@ -1,5 +1,17 @@
 var NAVTREEINDEX10 =
 {
+"structVideoEncoder.html#a580791874e935338868c45c242b1b4e0":[8,0,78,15],
+"structVideoEncoder.html#a756d26cde728bccea40f70df0c05f3d6":[8,0,78,18],
+"structVideoEncoder.html#a7b58cbbd0779fa34f6a4469eef21d112":[8,0,78,20],
+"structVideoEncoder.html#a8398ffc2981e88c4a59e58b9159b7079":[8,0,78,23],
+"structVideoEncoder.html#a84d292230261008db09220ac114977dd":[8,0,78,6],
+"structVideoEncoder.html#a8737b2047d311ccad803628b61a24ae3":[8,0,78,19],
+"structVideoEncoder.html#a92d84481e74535af7ceac75e34a99879":[8,0,78,11],
+"structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027":[8,0,78,14],
+"structVideoEncoder.html#abd962b8943014c5bf13588d5d8cdab67":[8,0,78,10],
+"structVideoEncoder.html#ac454db2722ed912fa3f811ec673c495c":[8,0,78,21],
+"structVideoEncoder.html#acab2ad36e320ca01f5cc2cf206cedc04":[8,0,78,12],
+"structVideoEncoder.html#ad49c05680f1adb9bd0bb7f0b5e94508b":[8,0,78,13],
 "structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f":[8,0,78,5],
 "structVideoEncoder.html#ae8d3228709db6e3ec6be168b5c932c01":[8,0,78,3],
 "structVideoEncoder.html#af390907d6592a2fbe049ab891ab5f22d":[8,0,78,7],
@@ -237,17 +249,5 @@ var NAVTREEINDEX10 =
 "windows__utils_8h.html#afbb7bcae67765daf0866f5aa6f61dd25":[9,0,1,6,31,5],
 "windows__utils_8h_source.html":[9,0,1,6,31],
 "windowscursor_8c.html":[9,0,1,3,2],
-"windowscursor_8c.html#a4df495b481d3b602c8a590693b51703c":[9,0,1,3,2,4],
-"windowscursor_8c.html#a6ce7a55b8e0f495906e8e7b55683829d":[9,0,1,3,2,6],
-"windowscursor_8c.html#aa50ef5fa8f55b575238c91217d06626d":[9,0,1,3,2,7],
-"windowscursor_8c.html#aa64732edda15f0d6d9efb8f8e946d237":[9,0,1,3,2,3],
-"windowscursor_8c.html#aafb0ee0e975861db1aad64695e5ad7cc":[9,0,1,3,2,5],
-"windowscursor_8c.html#ac5aef5326566949f36f110411b227606":[9,0,1,3,2,2],
-"windowscursor_8c.html#ae483c9d0df4a54172fbf891200acd69d":[9,0,1,3,2,1],
-"x11__clipboard_8c.html":[9,0,1,1,7],
-"x11__clipboard_8c.html#a274cba0b7864e3a3d3ad5d1c21b3914b":[9,0,1,1,7,5],
-"x11__clipboard_8c.html#a40bf7c75239a7071b828779dc528187b":[9,0,1,1,7,7],
-"x11__clipboard_8c.html#a5664c155680604dda1fb4d43e99ad5ab":[9,0,1,1,7,10],
-"x11__clipboard_8c.html#a7f7c69fcb26be1f0547b02ff86a7ea4c":[9,0,1,1,7,6],
-"x11__clipboard_8c.html#a81ef7887d2090a327f564ecf1afe8fcd":[9,0,1,1,7,2]
+"windowscursor_8c.html#a4df495b481d3b602c8a590693b51703c":[9,0,1,3,2,4]
 };

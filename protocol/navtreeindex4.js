@@ -1,5 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"fractalgetopt_8c.html#ac393ec775622430dfe25cd2ac9dec9f4":[9,0,1,2,6,4],
+"fractalgetopt_8c.html#ad5e1c16213bbee2d5e8cc363309f418c":[9,0,1,2,6,10],
+"fractalgetopt_8c.html#adb50a0eab9fed92fc3bfc7dfa4f2c410":[9,0,1,2,6,8],
+"fractalgetopt_8c.html#ae30f05ee1e2e5652f174a35c7875d25e":[9,0,1,2,6,9],
+"fractalgetopt_8c.html#af6a17143a11464662febd04a959012ed":[9,0,1,2,6,1],
+"fractalgetopt_8h.html":[9,0,1,2,7],
+"fractalgetopt_8h.html#a1bdfc7e950589c03db7c8395a76003ee":[9,0,1,2,7,1],
+"fractalgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce":[9,0,1,2,7,4],
 "fractalgetopt_8h.html#a475b8db98445da73e5f62a1ef6324b95":[9,0,1,2,7,14],
 "fractalgetopt_8h.html#a5d22901fcdfdcefd0cb2d6e7aaf16e2d":[9,0,1,2,7,2],
 "fractalgetopt_8h.html#a60428225710059ca135c6b2a8941855f":[9,0,1,2,7,7],
@@ -35,8 +43,8 @@ var NAVTREEINDEX4 =
 "functions_t.html":[8,2,0,18],
 "functions_u.html":[8,2,0,19],
 "functions_v.html":[8,2,0,20],
-"functions_vars.html":[8,2,1,0],
 "functions_vars.html":[8,2,1],
+"functions_vars.html":[8,2,1,0],
 "functions_vars_a.html":[8,2,1,1],
 "functions_vars_b.html":[8,2,1,2],
 "functions_vars_c.html":[8,2,1,3],
@@ -65,8 +73,8 @@ var NAVTREEINDEX4 =
 "functions_x.html":[8,2,0,22],
 "functions_y.html":[8,2,0,23],
 "functions_z.html":[8,2,0,24],
-"globals.html":[9,1,0],
 "globals.html":[9,1,0,0],
+"globals.html":[9,1,0],
 "globals_a.html":[9,1,0,1],
 "globals_b.html":[9,1,0,2],
 "globals_c.html":[9,1,0,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX4 =
 "index.html#autotoc_md7":[3,0],
 "index.html#autotoc_md8":[3,0,0],
 "index.html#autotoc_md9":[3,0,1],
-"input_8c.html":[9,0,1,4,0],
-"input_8c.html#a0265028ef5575ba2fd1ccc17aca7a8bf":[9,0,1,4,0,2],
-"input_8c.html#a4098920e17bb63ca9093bbb73a7d2fa1":[9,0,1,4,0,0],
-"input_8c.html#a48a1026f54faa291dfb551672b408aba":[9,0,1,4,0,6],
-"input_8c.html#a81933ce835596f75b018a99d771e939d":[9,0,1,4,0,3],
-"input_8c.html#a93b594668eda259d72c7b36972f64952":[9,0,1,4,0,1],
-"input_8c.html#a99b90850b7e18d48965a831b287449b0":[9,0,1,4,0,5],
-"input_8c.html#ae02991a8bb124185bd86e465ad3df1d0":[9,0,1,4,0,4],
-"input_8h.html":[9,0,1,4,1]
+"input_8c.html":[9,0,1,4,0]
 };

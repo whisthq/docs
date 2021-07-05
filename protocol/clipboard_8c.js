@@ -13,6 +13,6 @@ var clipboard_8c =
     [ "unsafe_has_clipboard_updated", "clipboard_8c.html#a85a65413d3b0c2f07391609a170dc14b", null ],
     [ "unsafe_init_clipboard", "clipboard_8c.html#a5664c155680604dda1fb4d43e99ad5ab", null ],
     [ "unsafe_set_clipboard", "clipboard_8c.html#abe8854daee3b27fbb4d5aaa19fde461f", null ],
-    [ "mutex", "clipboard_8c.html#a6af69fb616fb86ab2806de91f820ec83", null ],
+    [ "clipboard_mutex", "clipboard_8c.html#a5145c51563979189613a13bfca0e1ff1", null ],
     [ "preserve_local_clipboard", "clipboard_8c.html#a1fb5dac772a7255f1f205e788701f617", null ]
 ];

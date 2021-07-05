@@ -1,5 +1,17 @@
 var NAVTREEINDEX9 =
 {
+"structLodePNGColorStats.html#aa63f09d5c0252962f3739cf296678bce":[8,0,47,9],
+"structLodePNGColorStats.html#ad6de0a38622538aace50a99ff5f63854":[8,0,47,1],
+"structLodePNGColorStats.html#add4c44f18dcafae2c07914bd0faffc01":[8,0,47,4],
+"structLodePNGColorStats.html#ae334ca1cbfbb36f27addb801cfecc867":[8,0,47,7],
+"structLodePNGColorStats.html#af802f883e579161b78e210052bbbfb48":[8,0,47,8],
+"structLodePNGColorStats.html#af81e4a84aa3d94849736b6689643c101":[8,0,47,2],
+"structLodePNGCompressSettings.html":[8,0,48],
+"structLodePNGCompressSettings.html#a01e77a9db5c2c4dfe6c79bf04f0bf84e":[8,0,48,8],
+"structLodePNGCompressSettings.html#a11d89e0ff0c57f1c49dd58cb8347e005":[8,0,48,5],
+"structLodePNGCompressSettings.html#a37a87bd874376f0298efad2870e70e7e":[8,0,48,7],
+"structLodePNGCompressSettings.html#a4a7835f394349f15f1302d11bcb0efa0":[8,0,48,3],
+"structLodePNGCompressSettings.html#a55dafebbbe017806fb2bbc32bb40a59b":[8,0,48,2],
 "structLodePNGCompressSettings.html#a62826645ef28e2a84dd2b65f547a2883":[8,0,48,1],
 "structLodePNGCompressSettings.html#a70bc37e21eeffead6e9c8d67e163a591":[8,0,48,6],
 "structLodePNGCompressSettings.html#ac0afeac7276cce01fa9824aa2d5a1ba9":[8,0,48,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX9 =
 "structVideoEncoder.html#a38a7c99b35edd4115d20a1b4e8c7bc82":[8,0,78,16],
 "structVideoEncoder.html#a4ae2a790c6f6188e97f92aef0ae4895a":[8,0,78,9],
 "structVideoEncoder.html#a52ce53ffe33aa00a56cbf47dd98ecd02":[8,0,78,0],
-"structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9":[8,0,78,2],
-"structVideoEncoder.html#a580791874e935338868c45c242b1b4e0":[8,0,78,15],
-"structVideoEncoder.html#a756d26cde728bccea40f70df0c05f3d6":[8,0,78,18],
-"structVideoEncoder.html#a7b58cbbd0779fa34f6a4469eef21d112":[8,0,78,20],
-"structVideoEncoder.html#a8398ffc2981e88c4a59e58b9159b7079":[8,0,78,23],
-"structVideoEncoder.html#a84d292230261008db09220ac114977dd":[8,0,78,6],
-"structVideoEncoder.html#a8737b2047d311ccad803628b61a24ae3":[8,0,78,19],
-"structVideoEncoder.html#a92d84481e74535af7ceac75e34a99879":[8,0,78,11],
-"structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027":[8,0,78,14],
-"structVideoEncoder.html#abd962b8943014c5bf13588d5d8cdab67":[8,0,78,10],
-"structVideoEncoder.html#ac454db2722ed912fa3f811ec673c495c":[8,0,78,21],
-"structVideoEncoder.html#acab2ad36e320ca01f5cc2cf206cedc04":[8,0,78,12],
-"structVideoEncoder.html#ad49c05680f1adb9bd0bb7f0b5e94508b":[8,0,78,13]
+"structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9":[8,0,78,2]
 };

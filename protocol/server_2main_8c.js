@@ -1,7 +1,10 @@
 var server_2main_8c =
 [
+    [ "get_fractal_client_messages", "server_2main_8c.html#a8f4c60bf326fadfc2297721115ec7926", null ],
     [ "graceful_exit", "server_2main_8c.html#a3178a3113fe7545fa8f931889c3deb72", null ],
+    [ "handle_fractal_client_message", "server_2main_8c.html#a439293f64ea47126a05fad187a4882ee", null ],
     [ "main", "server_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
+    [ "multithreaded_sync_tcp_packets", "server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51", null ],
     [ "binary_aes_private_key", "server_2main_8c.html#ac2159c75ccc892bf05ef04748882e025", null ],
     [ "client_joined_after_window_name_broadcast", "server_2main_8c.html#a28d9e55fc917106b3014669bf9a52309", null ],
     [ "clients", "server_2main_8c.html#a062c92ce2779fc429eb44fbfebcf9d52", null ],

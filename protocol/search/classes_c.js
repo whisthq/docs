@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nvidiacapturedevice_1808',['NvidiaCaptureDevice',['../structNvidiaCaptureDevice.html',1,'']]]
+  ['nvidiacapturedevice_1820',['NvidiaCaptureDevice',['../structNvidiaCaptureDevice.html',1,'']]]
 ];

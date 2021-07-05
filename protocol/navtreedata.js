@@ -83,16 +83,16 @@ var NAVTREEINDEX =
 [
 "aes_8c.html",
 "client_2video_8c.html#a6f22535f72143edb1d30f2ae7b2063d7",
-"cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6",
-"fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8dce5f3f0e1098f52b2581900ef17016",
-"fractalgetopt_8h.html#a475b8db98445da73e5f62a1ef6324b95",
-"input_8h.html#a0265028ef5575ba2fd1ccc17aca7a8bf",
-"lodepng_8h.html#ad9b8eca971e9d01d55ced928b26a53c5",
-"sdl__utils_8c.html#ac32c89e7fa9e78da4ddcceff4dd0e55c",
-"structDesktopContext.html#a116a994232b8ff1a0f47fe881a6c37d2",
-"structLodePNGCompressSettings.html#a62826645ef28e2a84dd2b65f547a2883",
-"structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f",
-"x11__clipboard_8c.html#a85a65413d3b0c2f07391609a170dc14b"
+"cursor_8h.html",
+"fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a79c1b2513489f19e35e348ed08d6c805",
+"fractalgetopt_8c.html#ac393ec775622430dfe25cd2ac9dec9f4",
+"input_8c.html#a0265028ef5575ba2fd1ccc17aca7a8bf",
+"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254faa9160c3f9ed4e2a1ea3ec32e81f572a0",
+"sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81",
+"structClipboardData.html#aff16a7ca2b2bcf6eb42029a858056c2d",
+"structLodePNGColorStats.html#aa63f09d5c0252962f3739cf296678bce",
+"structVideoEncoder.html#a580791874e935338868c45c242b1b4e0",
+"windowscursor_8c.html#a6ce7a55b8e0f495906e8e7b55683829d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

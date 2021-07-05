@@ -19,6 +19,7 @@ var fractal_8h =
     [ "BYTES_IN_KILOBYTE", "fractal_8h.html#ae8e4c0175929d141a35aca839fea9693", null ],
     [ "CAN_UPDATE_WINDOW_TITLEBAR_COLOR", "fractal_8h.html#a80b7ed7aaba5302d4dfac7311d0b148e", null ],
     [ "CAPTURE_SPECIAL_WINDOWS_KEYS", "fractal_8h.html#a881d9eef8e780a05fe9cd24eab5514d8", null ],
+    [ "CHUNK_SIZE", "fractal_8h.html#aea3cfda4f3a9f978ec759f206cf186fe", null ],
     [ "DEFAULT_BINARY_PRIVATE_KEY", "fractal_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41", null ],
     [ "DEFAULT_DPI", "fractal_8h.html#a794e0417bdd7ebdad81c59a929932761", null ],
     [ "DEFAULT_HEX_PRIVATE_KEY", "fractal_8h.html#a151518969977796d7b0c7d40e9ced62f", null ],
