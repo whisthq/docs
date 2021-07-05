@@ -5,5 +5,6 @@ var searchData=
   ['_5fcrt_5fsecure_5fno_5fwarnings_2',['_CRT_SECURE_NO_WARNINGS',['../clock_8c.html#af08ec37a8c99d747fb60fa15bc28678b',1,'_CRT_SECURE_NO_WARNINGS():&#160;clock.c'],['../windows__utils_8c.html#af08ec37a8c99d747fb60fa15bc28678b',1,'_CRT_SECURE_NO_WARNINGS():&#160;windows_utils.c']]],
   ['_5fdiagassert_3',['_DIAGASSERT',['../fractalgetopt_8c.html#af6a17143a11464662febd04a959012ed',1,'fractalgetopt.c']]],
   ['_5ffile_4',['_FILE',['../logging_8h.html#a917888c1c6e773d709495236eaf46fc5',1,'logging.h']]],
-  ['_5fgetopt_5finternal_5',['_getopt_internal',['../fractalgetopt_8h.html#a60428225710059ca135c6b2a8941855f',1,'fractalgetopt.h']]]
+  ['_5fgetopt_5finternal_5',['_getopt_internal',['../fractalgetopt_8h.html#a60428225710059ca135c6b2a8941855f',1,'fractalgetopt.h']]],
+  ['_5fgnu_5fsource_6',['_GNU_SOURCE',['../logging_8c.html#a369266c24eacffb87046522897a570d5',1,'logging.c']]]
 ];

@@ -1,11 +1,13 @@
 var annotated_dup =
 [
-    [ "Checks & Tests", "index.html#autotoc_md22", null ],
+    [ "Checks & Tests", "index.html#autotoc_md20", null ],
+    [ "Option Flags", "md_client_README.html#autotoc_md48", null ],
+    [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md86", null ],
     [ "AudioContext", "structAudioContext.html", "structAudioContext" ],
     [ "AudioDecoder", "structAudioDecoder.html", "structAudioDecoder" ],
     [ "AudioDevice", "structAudioDevice.html", "structAudioDevice" ],
     [ "AudioEncoder", "structAudioEncoder.html", "structAudioEncoder" ],
-    [ "AudioPacket", "structAudioPacket.html", "structAudioPacket" ],
+    [ "AudioFrame", "structAudioFrame.html", "structAudioFrame" ],
     [ "BPMLists", "structBPMLists.html", "structBPMLists" ],
     [ "BPMNode", "structBPMNode.html", "structBPMNode" ],
     [ "CaptureDevice", "structCaptureDevice.html", "structCaptureDevice" ],
@@ -35,12 +37,11 @@ var annotated_dup =
     [ "FractalServerMessage", "structFractalServerMessage.html", "structFractalServerMessage" ],
     [ "FractalTimeData", "structFractalTimeData.html", "structFractalTimeData" ],
     [ "FractalYUVColor", "structFractalYUVColor.html", "structFractalYUVColor" ],
-    [ "Frame", "structFrame.html", "structFrame" ],
     [ "FrameData", "structFrameData.html", "structFrameData" ],
     [ "Hash", "structHash.html", "structHash" ],
     [ "HuffmanTree", "structHuffmanTree.html", "structHuffmanTree" ],
-    [ "ImageBufferData", "structImageBufferData.html", "structImageBufferData" ],
     [ "InputDevice", "structInputDevice.html", "structInputDevice" ],
+    [ "InternalBlockAllocator", "structInternalBlockAllocator.html", "structInternalBlockAllocator" ],
     [ "Json", "structJson.html", "structJson" ],
     [ "KVPair", "structKVPair.html", "structKVPair" ],
     [ "LodePNGBitReader", "structLodePNGBitReader.html", "structLodePNGBitReader" ],
@@ -62,7 +63,8 @@ var annotated_dup =
     [ "OSXImage", "structOSXImage.html", "structOSXImage" ],
     [ "PeerUpdateMessage", "structPeerUpdateMessage.html", "structPeerUpdateMessage" ],
     [ "PrivateKeyData", "structPrivateKeyData.html", "structPrivateKeyData" ],
-    [ "RenderContext", "structRenderContext.html", "structRenderContext" ],
+    [ "RegionHeader", "structRegionHeader.html", "structRegionHeader" ],
+    [ "RingBuffer", "structRingBuffer.html", "structRingBuffer" ],
     [ "RWLock", "structRWLock.html", "structRWLock" ],
     [ "ScreenshotContainer", "structScreenshotContainer.html", "structScreenshotContainer" ],
     [ "SDLVideoContext", "structSDLVideoContext.html", "structSDLVideoContext" ],
@@ -76,5 +78,6 @@ var annotated_dup =
     [ "UpdateStatusData", "structUpdateStatusData.html", "structUpdateStatusData" ],
     [ "VideoData", "structVideoData.html", "structVideoData" ],
     [ "VideoDecoder", "structVideoDecoder.html", "structVideoDecoder" ],
-    [ "VideoEncoder", "structVideoEncoder.html", "structVideoEncoder" ]
+    [ "VideoEncoder", "structVideoEncoder.html", "structVideoEncoder" ],
+    [ "VideoFrame", "structVideoFrame.html", "structVideoFrame" ]
 ];

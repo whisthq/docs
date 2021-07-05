@@ -5,14 +5,13 @@ var fractal_8h =
     [ "FractalMouseButtonMessage", "structFractalMouseButtonMessage.html", "structFractalMouseButtonMessage" ],
     [ "FractalMouseWheelMessage", "structFractalMouseWheelMessage.html", "structFractalMouseWheelMessage" ],
     [ "FractalMouseMotionMessage", "structFractalMouseMotionMessage.html", "structFractalMouseMotionMessage" ],
-    [ "FractalDiscoveryRequestMessage", "structFractalDiscoveryRequestMessage.html", "structFractalDiscoveryRequestMessage" ],
     [ "FractalMultigestureMessage", "structFractalMultigestureMessage.html", "structFractalMultigestureMessage" ],
-    [ "FractalClientMessage", "structFractalClientMessage.html", "structFractalClientMessage" ],
+    [ "FractalDiscoveryRequestMessage", "structFractalDiscoveryRequestMessage.html", "structFractalDiscoveryRequestMessage" ],
     [ "FractalDiscoveryReplyMessage", "structFractalDiscoveryReplyMessage.html", "structFractalDiscoveryReplyMessage" ],
-    [ "PeerUpdateMessage", "structPeerUpdateMessage.html", "structPeerUpdateMessage" ],
+    [ "FractalClientMessage", "structFractalClientMessage.html", "structFractalClientMessage" ],
     [ "FractalServerMessage", "structFractalServerMessage.html", "structFractalServerMessage" ],
+    [ "PeerUpdateMessage", "structPeerUpdateMessage.html", "structPeerUpdateMessage" ],
     [ "FractalDestination", "structFractalDestination.html", "structFractalDestination" ],
-    [ "Frame", "structFrame.html", "structFrame" ],
     [ "ACK_REFRESH_MS", "fractal_8h.html#a407e78922a862311fd4f35eeef889630", null ],
     [ "AUDIO_BITRATE", "fractal_8h.html#a4dd2e9c562db4c9c333b1ddcbea5f7cc", null ],
     [ "BASE_TCP_PORT", "fractal_8h.html#adc0ff2e968cb733b9d5b1370fec443f5", null ],
@@ -27,7 +26,6 @@ var fractal_8h =
     [ "FRACTAL_ARGS_MAXLEN", "fractal_8h.html#ac4b9ceebe220134e5a67f3596b06f752", null ],
     [ "FRACTAL_IDENTIFIER_MAXLEN", "fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95", null ],
     [ "INPUT_DRIVER", "fractal_8h.html#a514734c0c6acc3c2f2076323d45676d8", null ],
-    [ "LARGEST_FRAME_SIZE", "fractal_8h.html#a53f28711409b1b742fa3271768ce08d7", null ],
     [ "max", "fractal_8h.html#affe776513b24d84b39af8ab0930fef7f", null ],
     [ "MAX_NUM_CLIENTS", "fractal_8h.html#a03e2345e5641dd80fd2bad8b9cff3eff", null ],
     [ "MAXIMUM_BITRATE", "fractal_8h.html#af99345a216f300c72251d94158573c1c", null ],
@@ -41,6 +39,7 @@ var fractal_8h =
     [ "OUTPUT_HEIGHT", "fractal_8h.html#a5707c89933e682d000495637c8dc45fd", null ],
     [ "OUTPUT_WIDTH", "fractal_8h.html#a2b2575d308f4dcd72c988a83a6ea138d", null ],
     [ "PORT_DISCOVERY", "fractal_8h.html#a263ebc1eb05493f4752619082632207f", null ],
+    [ "safe_printf", "fractal_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b", null ],
     [ "STARTING_BITRATE", "fractal_8h.html#af6e2306adac4a7fc41cc4c181d2e605b", null ],
     [ "STARTING_BURST_BITRATE", "fractal_8h.html#a97888d50b51f804637c90a7dbee17c44", null ],
     [ "UINPUT_INPUT_DRIVER", "fractal_8h.html#ad69d62858e125982881b534cafa1cd0f", null ],
@@ -53,7 +52,6 @@ var fractal_8h =
     [ "WEBSERVER_URL_MAXLEN", "fractal_8h.html#aff63de116a6c4c1b4d80b8e1318ca3e8", null ],
     [ "WINAPI_INPUT_DRIVER", "fractal_8h.html#a5e3688d82ca0322b9f939340cd50023c", null ],
     [ "WINDOW_RESIZE_MESSAGE_INTERVAL", "fractal_8h.html#abe35f6b7cbcafed20fd9d41e4f11660a", null ],
-    [ "WRITE_MPRINTF_TO_LOG", "fractal_8h.html#a1480af9dd0fe93e28100aff847327cf0", null ],
     [ "XTEST_INPUT_DRIVER", "fractal_8h.html#ae5f9a5f50ab08d080df02684e783ab66", null ],
     [ "CodecType", "fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2", null ],
     [ "EncodeType", "fractal_8h.html#ab3b3ee35f4c14c1bf8522f2947daeefb", null ],
@@ -63,6 +61,7 @@ var fractal_8h =
     [ "FractalDestination", "fractal_8h.html#a12454a24d13a6903d34a4a73b0116975", null ],
     [ "FractalDiscoveryReplyMessage", "fractal_8h.html#aaa81779121ad8308e5c7109a52a92600", null ],
     [ "FractalDiscoveryRequestMessage", "fractal_8h.html#a6b8d8a899c43ee27db9e5e4bef353a0e", null ],
+    [ "FractalExitCode", "fractal_8h.html#a2d67806982bb94a658c81e21bb066020", null ],
     [ "FractalKeyboardMessage", "fractal_8h.html#a4f3fb383aaf92fc14805d860bb69bc9f", null ],
     [ "FractalKeycode", "fractal_8h.html#a1fd21922c209d22dba480caba7733dbc", null ],
     [ "FractalKeymod", "fractal_8h.html#adce029bed34cc96cf414e854c6808770", null ],
@@ -71,9 +70,9 @@ var fractal_8h =
     [ "FractalMouseMotionMessage", "fractal_8h.html#a48ad7c593a89a15b10bd2707c57405e5", null ],
     [ "FractalMouseWheelMessage", "fractal_8h.html#acf1b4541ca3fc91c6cf328a67018a662", null ],
     [ "FractalMultigestureMessage", "fractal_8h.html#a2ac7ef9020b9f6ec3bcd1900c1b4cef3", null ],
+    [ "FractalMultigestureType", "fractal_8h.html#adab434a4f56f688d5fb8babd46f76f5e", null ],
     [ "FractalServerMessage", "fractal_8h.html#a93b8f2ac3292bebd1693ff0bdd09846e", null ],
     [ "FractalServerMessageType", "fractal_8h.html#a168e78f121b9be3b1aa6c6df21c976eb", null ],
-    [ "Frame", "fractal_8h.html#a8bed1e36372ccc1470e37e91647cce20", null ],
     [ "InteractionMode", "fractal_8h.html#ae6ec9f8304ad463cd3dfbf626d60fe85", null ],
     [ "PeerUpdateMessage", "fractal_8h.html#a043b226c81e235189b7e647fa919a84f", null ],
     [ "CodecType", "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79", [
@@ -107,6 +106,11 @@ var fractal_8h =
       [ "CMESSAGE_INTERACTION_MODE", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a59bd9af833af2807d558075122620753", null ],
       [ "MESSAGE_DISCOVERY_REQUEST", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aad0e41f01fe989967ccf13dba65c7041", null ],
       [ "CMESSAGE_QUIT", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8a219f29b07f2bab02d8cd3112df3a28", null ]
+    ] ],
+    [ "FractalExitCode", "fractal_8h.html#a2cfee250c793df815c5216abc3f83621", [
+      [ "FRACTAL_EXIT_SUCCESS", "fractal_8h.html#a2cfee250c793df815c5216abc3f83621a9bb82af6040f79aa1d563f15f835c88b", null ],
+      [ "FRACTAL_EXIT_FAILURE", "fractal_8h.html#a2cfee250c793df815c5216abc3f83621a3a8ed25556c2f278287e6e8f9caad338", null ],
+      [ "FRACTAL_EXIT_CLI", "fractal_8h.html#a2cfee250c793df815c5216abc3f83621ab53065bdbf46c8a9b5744b572b12a132", null ]
     ] ],
     [ "FractalKeycode", "fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484", [
       [ "FK_A", "fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd", null ],
@@ -250,6 +254,13 @@ var fractal_8h =
       [ "MOUSE_X2", "fractal_8h.html#afb444b468c03623255b00447dada0f15a8993918fc27591183d5a678fda68bbc9", null ],
       [ "MOUSE_MAKE_32", "fractal_8h.html#afb444b468c03623255b00447dada0f15a390d7bc7b89a05b3cd1117aa2cc983b2", null ]
     ] ],
+    [ "FractalMultigestureType", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527", [
+      [ "NONE", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527ac157bdf0b85a40d2619cbc8bc1ae5fe2", null ],
+      [ "PINCH_OPEN", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a97f480d77d3b78f17d3262ecbeff714b", null ],
+      [ "PINCH_CLOSE", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527ad6d7898ff019981e10a42d82da685408", null ],
+      [ "ROTATE", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a3dcfe0046eb5876e287dbf0914819b16", null ],
+      [ "CANCEL", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527ae4842754cb17e5234637e3a85a7f3d90", null ]
+    ] ],
     [ "FractalServerMessageType", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c", [
       [ "SMESSAGE_NONE", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140cafcd5317ecd005a890b1c3e70c96f5695", null ],
       [ "MESSAGE_PONG", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140caaa1b5639726c407ba750853d9701a3fb", null ],
@@ -271,7 +282,6 @@ var fractal_8h =
     [ "print_system_info", "fractal_8h.html#ae9289a8d97634e052cb0341ff8ae7a5b", null ],
     [ "read_hexadecimal_private_key", "fractal_8h.html#a8715a52b4a7436f38ed03ec5705a9aff", null ],
     [ "runcmd", "fractal_8h.html#a18de2db2f97ace4d6129993e3d10e7f2", null ],
-    [ "safe_malloc", "fractal_8h.html#ac26280b92f7122e6f76a0407d26ae8e7", null ],
     [ "safe_strncpy", "fractal_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e", null ],
-    [ "terminate_protocol", "fractal_8h.html#a102c9426cc9de1a6e4067187166f935d", null ]
+    [ "terminate_protocol", "fractal_8h.html#a77e1c19da71eb1d7070da0583521fc54", null ]
 ];

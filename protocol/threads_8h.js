@@ -10,7 +10,8 @@ var threads_8h =
     [ "FractalThreadPriority", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952f", [
       [ "FRACTAL_THREAD_PRIORITY_LOW", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952faca6fefdb3454b9166ed0f9112e1feff8", null ],
       [ "FRACTAL_THREAD_PRIORITY_NORMAL", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fa09f72eca12b5d6e43614f8fafed2c825", null ],
-      [ "FRACTAL_THREAD_PRIORITY_HIGH", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fa971370d997fdf63bf68498e70baedb35", null ]
+      [ "FRACTAL_THREAD_PRIORITY_HIGH", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fa971370d997fdf63bf68498e70baedb35", null ],
+      [ "FRACTAL_THREAD_PRIORITY_REALTIME", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fac9f0811f66b4018f2c7f55fefd44b667", null ]
     ] ],
     [ "fractal_broadcast_cond", "threads_8h.html#ae0c7f22796d940df6cd4443ebca5a280", null ],
     [ "fractal_create_cond", "threads_8h.html#aac5422bf4478934eed7b69d4f310ef8f", null ],

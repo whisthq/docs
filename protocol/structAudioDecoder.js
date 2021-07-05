@@ -1,8 +1,9 @@
 var structAudioDecoder =
 [
+    [ "codec", "structAudioDecoder.html#a92369d78c0cbda3c14eb66369caaa498", null ],
+    [ "context", "structAudioDecoder.html#aff3ae75c61f4666b4347763ca6ac9f3d", null ],
+    [ "frame", "structAudioDecoder.html#afa1eb71c5c3a651f012993d7838fe994", null ],
     [ "out_buffer", "structAudioDecoder.html#a827784bdad17fdd71ab71de887f34837", null ],
-    [ "pCodec", "structAudioDecoder.html#accc40bce424d902eff26ead84a4c4060", null ],
-    [ "pCodecCtx", "structAudioDecoder.html#afae1d5f53bc14b2f4dd9738398709c95", null ],
-    [ "pFrame", "structAudioDecoder.html#a6ca9667320b94ba58c0ea4fee3f70915", null ],
-    [ "pSwrContext", "structAudioDecoder.html#a7e22cf7bc38e6a2940d567f43a3f4df4", null ]
+    [ "packets", "structAudioDecoder.html#a4a55dceb13b37b190d1e4f8e9743f794", null ],
+    [ "swr_context", "structAudioDecoder.html#ac82173b481da4e3df0fa9d208faca4f2", null ]
 ];

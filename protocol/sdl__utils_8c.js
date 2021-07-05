@@ -5,6 +5,7 @@ var sdl__utils_8c =
     [ "RGBA_MASK_G", "sdl__utils_8c.html#ac32c89e7fa9e78da4ddcceff4dd0e55c", null ],
     [ "RGBA_MASK_R", "sdl__utils_8c.html#afbc958cd698c7d076d069dc24c6e9a78", null ],
     [ "destroy_sdl", "sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81", null ],
+    [ "free_sdl_rgb_surface", "sdl__utils_8c.html#a1168ed24252f49c1e88570cce929ccb1", null ],
     [ "init_sdl", "sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362", null ],
     [ "resizing_event_watcher", "sdl__utils_8c.html#a14f0975d7a4c5a45353941aa88171b1c", null ],
     [ "safe_SDL_CondWait", "sdl__utils_8c.html#aa3bd5c19a5f8d2a5e39f067510ddd373", null ],

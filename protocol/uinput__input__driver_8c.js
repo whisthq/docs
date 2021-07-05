@@ -12,8 +12,10 @@ var uinput__input__driver_8c =
     [ "emit_low_res_mouse_wheel_event", "uinput__input__driver_8c.html#a5bc9755bb1311b40ecb6432bc0d1a58a", null ],
     [ "emit_mouse_button_event", "uinput__input__driver_8c.html#a76dd6d88fb55f29a3a7feb7c8ef060a6", null ],
     [ "emit_mouse_motion_event", "uinput__input__driver_8c.html#ac8a20be24877768539ac4cb85fc4a190", null ],
+    [ "emit_multigesture_event", "uinput__input__driver_8c.html#abf3126a0a279878f9e39e78d128cb0fa", null ],
     [ "get_keyboard_key_state", "uinput__input__driver_8c.html#a0633914f59dda19225c4514fca35da42", null ],
     [ "get_keyboard_modifier_state", "uinput__input__driver_8c.html#ab7e6d0c554f4813e884048112739364e", null ],
+    [ "ignore_key_state", "uinput__input__driver_8c.html#adfaf9acde8e1ba3a330060e06beb242f", null ],
     [ "recv_fds", "uinput__input__driver_8c.html#acd90bbe9de979b23743f9377a615f29c", null ],
     [ "linux_keycodes", "uinput__input__driver_8c.html#a2d0da7b11ef28f2142d8e82857a8f2ef", null ],
     [ "linux_mouse_buttons", "uinput__input__driver_8c.html#a7536f547f053d81b807aa2b1141eb193", null ]

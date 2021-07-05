@@ -10,12 +10,10 @@ var clipboard__synchronizer_8c =
     [ "clipboard", "clipboard__synchronizer_8c.html#a04e7b44d1106aeaa4a8f93b1026150ce", null ],
     [ "clipboard_semaphore", "clipboard__synchronizer_8c.html#ae33f32dc7833e4d7b4428996792faca1", null ],
     [ "clipboard_synchronizer_thread", "clipboard__synchronizer_8c.html#ae53cc0ce88ac9c6a2ab9aa61ff15ed3e", null ],
-    [ "filename", "clipboard__synchronizer_8c.html#a6cea1da6dfc7a9d4da31d1fd1efb982f", null ],
     [ "last_clipboard_update", "clipboard__synchronizer_8c.html#a0787b58a368a084406ec63f208f6a383", null ],
     [ "pending_clipboard_push", "clipboard__synchronizer_8c.html#aa2b45d79a290ca36bf13af41e575b871", null ],
     [ "pending_update_clipboard", "clipboard__synchronizer_8c.html#a716a3720d11f24c92d8fe3ca1a9859d4", null ],
     [ "updating_clipboard", "clipboard__synchronizer_8c.html#a4f81fd39a5a2c340794351e409a83c52", null ],
     [ "updating_get_clipboard", "clipboard__synchronizer_8c.html#aa9bdb2b45bcfaa74be2e006f0115c2ea", null ],
-    [ "updating_set_clipboard", "clipboard__synchronizer_8c.html#a328a943687536c490c175694fd9d71e4", null ],
-    [ "username", "clipboard__synchronizer_8c.html#a3dae4259c0ca612dbb2b1ac5f21def5d", null ]
+    [ "updating_set_clipboard", "clipboard__synchronizer_8c.html#a328a943687536c490c175694fd9d71e4", null ]
 ];

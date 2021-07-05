@@ -17,7 +17,6 @@ var handle__client__message_8c =
     [ "max_mbps", "handle__client__message_8c.html#a8b0dd2067ae06f62bcee776eee9a021e", null ],
     [ "update_device", "handle__client__message_8c.html#a0463a8762d54da9908315a54f9a740ea", null ],
     [ "update_encoder", "handle__client__message_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73", null ],
-    [ "using_sentry", "handle__client__message_8c.html#a16b4e397c8be565e4ea908bd82a2695a", null ],
     [ "video_buffer", "handle__client__message_8c.html#a01a041188d4486324c6ff534bf52e25c", null ],
     [ "video_buffer_packet_len", "handle__client__message_8c.html#a6c05ad81ca915a91496f07f003fbcc4f", null ],
     [ "wants_iframe", "handle__client__message_8c.html#a2c556bf7dad7ad139e553b7af6281656", null ]

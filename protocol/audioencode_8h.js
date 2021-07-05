@@ -2,6 +2,7 @@ var audioencode_8h =
 [
     [ "AudioEncoder", "structAudioEncoder.html", "structAudioEncoder" ],
     [ "EncodedAudio", "structEncodedAudio.html", "structEncodedAudio" ],
+    [ "MAX_NUM_AUDIO_PACKETS", "audioencode_8h.html#a092749887921c4ed1c2548d05fed835d", null ],
     [ "AudioEncoder", "audioencode_8h.html#a52972e0e53486d805d5a8f20dd35544d", null ],
     [ "EncodedAudio", "audioencode_8h.html#a8858004dfad5279aa1854de4a5dd3988", null ],
     [ "audio_encoder_encode_frame", "audioencode_8h.html#a828b5818961ffdb85d2ca58a845ec74c", null ],

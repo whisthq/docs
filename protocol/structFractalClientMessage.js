@@ -1,5 +1,6 @@
 var structFractalClientMessage =
 [
+    [ "active_pinch", "structFractalClientMessage.html#a3ffeebef56fe099790cf4ec8bbb6d5f2", null ],
     [ "caps_lock", "structFractalClientMessage.html#af7243df36e946b8fb6ad7d30ac4c0bd1", null ],
     [ "clipboard", "structFractalClientMessage.html#aa05f480722af0474f1d09080623e52cf", null ],
     [ "codec_type", "structFractalClientMessage.html#acedbede9d60d0d0fdd6b209d70c6f30c", null ],
@@ -12,6 +13,7 @@ var structFractalClientMessage =
     [ "index", "structFractalClientMessage.html#abb187100c62cb23004f47478eea0bb27", null ],
     [ "interaction_mode", "structFractalClientMessage.html#a1b50cde28800c82c9186b1c6afd5cdb3", null ],
     [ "keyboard", "structFractalClientMessage.html#aa46f8125ff20df23821cfe676a1786dd", null ],
+    [ "keyboard_state", "structFractalClientMessage.html#a9c9d8abc8b3b7256f9aa5fd65e2a4772", null ],
     [ "keyboard_state", "structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df", null ],
     [ "mbps", "structFractalClientMessage.html#a7340ed6f0bb4e97ad8608e9a036a0673", null ],
     [ "mouseButton", "structFractalClientMessage.html#a5ea6942a8198b46bb6a661ea9999d961", null ],

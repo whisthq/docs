@@ -24,6 +24,6 @@ var cursor_8h =
       [ "CURSOR_STATE_HIDDEN", "cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326af7afb8c1e22791f6d3f51cc98b83af44", null ],
       [ "CURSOR_STATE_VISIBLE", "cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326aa335fef0c5a110ab9ab94094f5c6b419", null ]
     ] ],
-    [ "get_current_cursor", "cursor_8h.html#a1eeb29db53995b4bbfd4cd175fd1da1e", null ],
+    [ "get_current_cursor", "cursor_8h.html#ac5aef5326566949f36f110411b227606", null ],
     [ "init_cursors", "cursor_8h.html#a4df495b481d3b602c8a590693b51703c", null ]
 ];

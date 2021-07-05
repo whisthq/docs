@@ -11,5 +11,7 @@ var videodecode_8c =
     [ "set_decoder_opts", "videodecode_8c.html#acc3d03227fdb2a0b9281d06a18fac9de", null ],
     [ "try_setup_video_decoder", "videodecode_8c.html#a52410082c8bdc9b39a7d8df228c7caf3", null ],
     [ "video_decoder_decode", "videodecode_8c.html#a4190e21d736599dcdbda2180df6d3ff7", null ],
+    [ "video_decoder_get_frame", "videodecode_8c.html#ac97bfc32b5f8336fe1de7829e9ded566", null ],
+    [ "video_decoder_send_packets", "videodecode_8c.html#a4d0a703f38ea832b5b5186b309499dc8", null ],
     [ "decoder_precedence", "videodecode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3", null ]
 ];

@@ -1,19 +1,12 @@
 var searchData=
 [
-  ['encoded_2477',['encoded',['../structRenderContext.html#a8106d27669745edd9097abaf97abffff',1,'RenderContext']]],
-  ['encoded_5fframe_5fdata_2478',['encoded_frame_data',['../structAudioEncoder.html#adc73f8c32dcbef0f7159afea53a00ed7',1,'AudioEncoder::encoded_frame_data()'],['../structVideoEncoder.html#a190a90b67aaa7791e0de89fb935c00f9',1,'VideoEncoder::encoded_frame_data()']]],
-  ['encoded_5fframe_5fsize_2479',['encoded_frame_size',['../structAudioEncoder.html#a0f6a97fd6950b9d51cc451259c484568',1,'AudioEncoder::encoded_frame_size()'],['../structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f',1,'VideoEncoder::encoded_frame_size()']]],
-  ['encoder_2480',['encoder',['../structLodePNGState.html#ac63d91db835129d02eb83bbe81de347e',1,'LodePNGState']]],
-  ['encoder_5ffactory_5fclient_5fh_2481',['encoder_factory_client_h',['../server_2main_8c.html#a09b3a81bd60476cc2c90241c8d824f48',1,'main.c']]],
-  ['encoder_5ffactory_5fclient_5fw_2482',['encoder_factory_client_w',['../server_2main_8c.html#a64f030e6a7f9922b97cee0b779eddc20',1,'main.c']]],
-  ['encoder_5ffactory_5fcodec_5ftype_2483',['encoder_factory_codec_type',['../server_2main_8c.html#a54bdce2e4db417107d734757672fb6e7',1,'main.c']]],
-  ['encoder_5ffactory_5fcurrent_5fbitrate_2484',['encoder_factory_current_bitrate',['../server_2main_8c.html#a5e9d3b560cf1c5cfee16d55638485d9d',1,'main.c']]],
-  ['encoder_5ffactory_5fresult_2485',['encoder_factory_result',['../server_2main_8c.html#adf4de9f8f9eb9a948c1d8628e96763d2',1,'main.c']]],
-  ['encoder_5ffactory_5fserver_5fh_2486',['encoder_factory_server_h',['../server_2main_8c.html#a9f981ade4b0e8646f7ad704ed1728929',1,'main.c']]],
-  ['encoder_5ffactory_5fserver_5fw_2487',['encoder_factory_server_w',['../server_2main_8c.html#a1217129e18712d2372f06641dfd86cee',1,'main.c']]],
-  ['encoder_5ffinished_2488',['encoder_finished',['../server_2main_8c.html#a22be3d7fd50df3078883ddadc5fe2eff',1,'main.c']]],
-  ['entry_2489',['entry',['../structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282',1,'StunRequest']]],
-  ['error_2490',['error',['../structLodePNGState.html#a1a00a050da588cf3c2b7a6252bebb0cd',1,'LodePNGState']]],
-  ['event_2491',['event',['../structCaptureDevice.html#ad5e4ce03fe499186498d0219164fe31d',1,'CaptureDevice']]],
-  ['exiting_2492',['exiting',['../handle__server__message_8c.html#aff18c87636faa9e67a7245535051e82b',1,'exiting():&#160;main.c'],['../client_2main_8c.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.c'],['../sdl__event__handler_8c.html#aff18c87636faa9e67a7245535051e82b',1,'exiting():&#160;main.c']]]
+  ['encoded_5fframe_5fdata_2612',['encoded_frame_data',['../structVideoEncoder.html#a190a90b67aaa7791e0de89fb935c00f9',1,'VideoEncoder']]],
+  ['encoded_5fframe_5fsize_2613',['encoded_frame_size',['../structAudioEncoder.html#a0f6a97fd6950b9d51cc451259c484568',1,'AudioEncoder::encoded_frame_size()'],['../structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f',1,'VideoEncoder::encoded_frame_size()']]],
+  ['encoder_2614',['encoder',['../structLodePNGState.html#ac63d91db835129d02eb83bbe81de347e',1,'LodePNGState::encoder()'],['../structNvidiaCaptureDevice.html#a649e26083934583e9847f57e79b4badb',1,'NvidiaCaptureDevice::encoder()']]],
+  ['encrypted_5ftcp_5fpacket_5fbuffer_2615',['encrypted_tcp_packet_buffer',['../structSocketContext.html#aa27318e295af2084b171ea4bbc6bee0a',1,'SocketContext']]],
+  ['entry_2616',['entry',['../structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282',1,'StunRequest']]],
+  ['error_2617',['error',['../structLodePNGState.html#a1a00a050da588cf3c2b7a6252bebb0cd',1,'LodePNGState']]],
+  ['error_5ftag_2618',['error_tag',['../logging_8c.html#a3dff165e9f1a40dfc76a953fec589061',1,'error_tag():&#160;logging.c'],['../logging_8h.html#a0583ea4d2c6f4bfb23c6d012d943a33f',1,'error_tag():&#160;logging.h']]],
+  ['event_2619',['event',['../structCaptureDevice.html#ad5e4ce03fe499186498d0219164fe31d',1,'CaptureDevice']]],
+  ['exiting_2620',['exiting',['../handle__server__message_8c.html#aff18c87636faa9e67a7245535051e82b',1,'exiting():&#160;main.c'],['../client_2main_8c.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.c'],['../sdl__event__handler_8c.html#aff18c87636faa9e67a7245535051e82b',1,'exiting():&#160;main.c'],['../server_2audio_8c.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.c'],['../server_2main_8c.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.c'],['../server_2network_8c.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.c'],['../server_2video_8c.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.c']]]
 ];

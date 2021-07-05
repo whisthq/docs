@@ -11,8 +11,10 @@ var xtest__input__driver_8c =
     [ "emit_low_res_mouse_wheel_event", "xtest__input__driver_8c.html#a5bc9755bb1311b40ecb6432bc0d1a58a", null ],
     [ "emit_mouse_button_event", "xtest__input__driver_8c.html#a76dd6d88fb55f29a3a7feb7c8ef060a6", null ],
     [ "emit_mouse_motion_event", "xtest__input__driver_8c.html#ac8a20be24877768539ac4cb85fc4a190", null ],
+    [ "emit_multigesture_event", "xtest__input__driver_8c.html#abf3126a0a279878f9e39e78d128cb0fa", null ],
     [ "get_input_dimensions", "xtest__input__driver_8c.html#a03938957e953f5634c8fadb231c001d0", null ],
     [ "get_keyboard_key_state", "xtest__input__driver_8c.html#a0633914f59dda19225c4514fca35da42", null ],
     [ "get_keyboard_modifier_state", "xtest__input__driver_8c.html#ab7e6d0c554f4813e884048112739364e", null ],
+    [ "ignore_key_state", "xtest__input__driver_8c.html#adfaf9acde8e1ba3a330060e06beb242f", null ],
     [ "x11_keysyms", "xtest__input__driver_8c.html#a44371afee62fafd6d00bf78a942e6a99", null ]
 ];

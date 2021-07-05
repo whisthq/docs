@@ -1,6 +1,7 @@
 var videodecode_8h =
 [
     [ "VideoDecoder", "structVideoDecoder.html", "structVideoDecoder" ],
+    [ "MAX_ENCODED_VIDEO_PACKETS", "videodecode_8h.html#adf1d7affd1d88117eaf1c0942a3a0222", null ],
     [ "DecodeType", "videodecode_8h.html#a6ad22d055a2a6874154984511a83cde5", null ],
     [ "VideoDecoder", "videodecode_8h.html#a931b433c839c4e0eddb5109d6e205a90", null ],
     [ "DecodeType", "videodecode_8h.html#a9262b421a57418a04c809f94041b2f9b", [
@@ -12,5 +13,7 @@ var videodecode_8h =
     ] ],
     [ "create_video_decoder", "videodecode_8h.html#a20ccfebe79578d850afc048e916aba50", null ],
     [ "destroy_video_decoder", "videodecode_8h.html#a49c422905662783d02130286cc73b8ea", null ],
-    [ "video_decoder_decode", "videodecode_8h.html#a4190e21d736599dcdbda2180df6d3ff7", null ]
+    [ "video_decoder_decode", "videodecode_8h.html#a4190e21d736599dcdbda2180df6d3ff7", null ],
+    [ "video_decoder_get_frame", "videodecode_8h.html#ac97bfc32b5f8336fe1de7829e9ded566", null ],
+    [ "video_decoder_send_packets", "videodecode_8h.html#a4d0a703f38ea832b5b5186b309499dc8", null ]
 ];
