@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"x11__clipboard_8c.html#a85a65413d3b0c2f07391609a170dc14b":[9,0,1,1,7,9],
 "x11__clipboard_8c.html#a8d11018db315ea5b962ddc273a590efd":[9,0,1,1,7,1],
 "x11__clipboard_8c.html#ab84d76871646660a9a9c105c53dd1a62":[9,0,1,1,7,0],
 "x11__clipboard_8c.html#abe8854daee3b27fbb4d5aaa19fde461f":[9,0,1,1,7,11],

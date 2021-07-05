@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f":[8,0,78,5],
 "structVideoEncoder.html#ae8d3228709db6e3ec6be168b5c932c01":[8,0,78,3],
 "structVideoEncoder.html#af390907d6592a2fbe049ab891ab5f22d":[8,0,78,7],
 "structVideoFrame.html":[8,0,79],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "x11__clipboard_8c.html#a40bf7c75239a7071b828779dc528187b":[9,0,1,1,7,7],
 "x11__clipboard_8c.html#a5664c155680604dda1fb4d43e99ad5ab":[9,0,1,1,7,10],
 "x11__clipboard_8c.html#a7f7c69fcb26be1f0547b02ff86a7ea4c":[9,0,1,1,7,6],
-"x11__clipboard_8c.html#a81ef7887d2090a327f564ecf1afe8fcd":[9,0,1,1,7,2],
-"x11__clipboard_8c.html#a85a65413d3b0c2f07391609a170dc14b":[9,0,1,1,7,9]
+"x11__clipboard_8c.html#a81ef7887d2090a327f564ecf1afe8fcd":[9,0,1,1,7,2]
 };

@@ -1,5 +1,6 @@
 var structRingBuffer =
 [
+    [ "currently_rendering_frame", "structRingBuffer.html#a57b1694749643d632f8cf0d0a2dd3305", null ],
     [ "currently_rendering_id", "structRingBuffer.html#add0e494a056eb1ea969545debc03d47f", null ],
     [ "frame_buffer_allocator", "structRingBuffer.html#a64c42ca0af0052ed9c9670b7aebd542c", null ],
     [ "frames_received", "structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717", null ],

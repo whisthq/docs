@@ -107,6 +107,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a2f8adc4bd7860a7265e43c66caa90c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add0e494a056eb1ea969545debc03d47f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#add0e494a056eb1ea969545debc03d47f">currently_rendering_id</a></td></tr>
 <tr class="separator:add0e494a056eb1ea969545debc03d47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b1694749643d632f8cf0d0a2dd3305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a57b1694749643d632f8cf0d0a2dd3305">currently_rendering_frame</a></td></tr>
+<tr class="separator:a57b1694749643d632f8cf0d0a2dd3305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d57e1ef2ee9d41d63130b647fe7c267"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a6d57e1ef2ee9d41d63130b647fe7c267">last_received_id</a></td></tr>
 <tr class="separator:a6d57e1ef2ee9d41d63130b647fe7c267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc462c5cab2b89ff34dbb3e7b1dfae99"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#afc462c5cab2b89ff34dbb3e7b1dfae99">num_nacked</a></td></tr>
@@ -124,6 +126,20 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p><a class="el" href="structRingBuffer.html" title="RingBuffer struct for abstracting away frame reconstruction and frame retrieval.">RingBuffer</a> struct for abstracting away frame reconstruction and frame retrieval. </p>
 <p>This is used by <a class="el" href="client_2audio_8c.html" title="This file contains all code that interacts directly with processing.">client/audio.c</a> and <a class="el" href="client_2video_8c.html" title="This file contains all code that interacts directly with receiving and.">client/video.c</a> to keep track of frames as the client receives packets. It handles inserting new packets into the ring buffer and nacking for missing packets. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a57b1694749643d632f8cf0d0a2dd3305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b1694749643d632f8cf0d0a2dd3305">&#9670;&nbsp;</a></span>currently_rendering_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFrameData.html">FrameData</a> RingBuffer::currently_rendering_frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="add0e494a056eb1ea969545debc03d47f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add0e494a056eb1ea969545debc03d47f">&#9670;&nbsp;</a></span>currently_rendering_id</h2>
 
