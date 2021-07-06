@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nvidiacapturedevice_3125',['NvidiaCaptureDevice',['../x11nvidiacapture_8h.html#a06db4ad94ddaac5376d24fadee3ed696',1,'x11nvidiacapture.h']]]
+  ['osxfilenames_3165',['OSXFilenames',['../clipboard__osx_8h.html#ababf04235e81476fb86fccbe4a849561',1,'clipboard_osx.h']]],
+  ['osximage_3166',['OSXImage',['../clipboard__osx_8h.html#a3933849df961424992b259228b2cc153',1,'clipboard_osx.h']]]
 ];

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('transfercapture_8h.html',''); initResi
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3319f20ac3232fe0837145362e331ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transfercapture_8h.html#a3319f20ac3232fe0837145362e331ac4">reinitialize_transfer_context</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a3319f20ac3232fe0837145362e331ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize or reinitialize the dxgi cuda transfer context, if it is needed for the given (device, encoder) pair. This should be called after deciding to use a new encoder, as it may be able to hardware optimize the transfer from device to encoder.  <a href="transfercapture_8h.html#a3319f20ac3232fe0837145362e331ac4">More...</a><br /></td></tr>
+<tr class="memdesc:a3319f20ac3232fe0837145362e331ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize or reinitialize the transfer context, if it is needed for the given (device, encoder) pair. This should be called when either the (device), or the (encoder) changes.  <a href="transfercapture_8h.html#a3319f20ac3232fe0837145362e331ac4">More...</a><br /></td></tr>
 <tr class="separator:a3319f20ac3232fe0837145362e331ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ff601abab02dcb3b01c6f2f7c9b9d37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transfercapture_8h.html#a1ff601abab02dcb3b01c6f2f7c9b9d37">transfer_capture</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a1ff601abab02dcb3b01c6f2f7c9b9d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the texture stored in the capture device to the encoder, either via GPU or CPU.  <a href="transfercapture_8h.html#a1ff601abab02dcb3b01c6f2f7c9b9d37">More...</a><br /></td></tr>
@@ -107,9 +107,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This code handles the data transfer from a video capture device to a. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md212"></a>
+<h1><a class="anchor" id="autotoc_md211"></a>
 video encoder.</h1>
-<h1><a class="anchor" id="autotoc_md213"></a>
+<h1><a class="anchor" id="autotoc_md212"></a>
 Usage</h1>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a3319f20ac3232fe0837145362e331ac4"></a>
@@ -138,7 +138,7 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize or reinitialize the dxgi cuda transfer context, if it is needed for the given (device, encoder) pair. This should be called after deciding to use a new encoder, as it may be able to hardware optimize the transfer from device to encoder. </p>
+<p>Initialize or reinitialize the transfer context, if it is needed for the given (device, encoder) pair. This should be called when either the (device), or the (encoder) changes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>The capture device being used</td></tr>

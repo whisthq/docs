@@ -12,6 +12,7 @@ var videoencode_8c =
     [ "create_sw_encoder", "videoencode_8c.html#a46ed98a2ec9f546f9aeca8ff0e84009a", null ],
     [ "create_video_encoder", "videoencode_8c.html#ac8fa01e9eea92339d1c54398ad7c202c", null ],
     [ "destroy_video_encoder", "videoencode_8c.html#a7f0817add564fea3dbb260a90cef9132", null ],
+    [ "reconfigure_encoder", "videoencode_8c.html#ad77b802583b571a3de0d17c5d6393655", null ],
     [ "set_opt", "videoencode_8c.html#a3e3d041141e90604019b73082441f0b4", null ],
     [ "video_encoder_encode", "videoencode_8c.html#a444edd5dc4cb990b7441ba96964936fa", null ],
     [ "video_encoder_frame_intake", "videoencode_8c.html#aeea4ed5fa6c1ede5ab8efbcca4ca05c5", null ],

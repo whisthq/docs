@@ -1,10 +1,9 @@
 var structVideoEncoder =
 [
-    [ "already_encoded", "structVideoEncoder.html#a52ce53ffe33aa00a56cbf47dd98ecd02", null ],
+    [ "capture_is_on_nvidia", "structVideoEncoder.html#ac79cdf4faddf28b3f5efbcd83afe3f28", null ],
     [ "codec", "structVideoEncoder.html#a262eb2e133fb60e21cbce4152c4aba97", null ],
     [ "codec_type", "structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9", null ],
     [ "context", "structVideoEncoder.html#ae8d3228709db6e3ec6be168b5c932c01", null ],
-    [ "encoded_frame_data", "structVideoEncoder.html#a190a90b67aaa7791e0de89fb935c00f9", null ],
     [ "encoded_frame_size", "structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f", null ],
     [ "filter_graph", "structVideoEncoder.html#a84d292230261008db09220ac114977dd", null ],
     [ "filter_graph_sink", "structVideoEncoder.html#af390907d6592a2fbe049ab891ab5f22d", null ],
@@ -18,11 +17,11 @@ var structVideoEncoder =
     [ "in_width", "structVideoEncoder.html#a580791874e935338868c45c242b1b4e0", null ],
     [ "is_iframe", "structVideoEncoder.html#a38a7c99b35edd4115d20a1b4e8c7bc82", null ],
     [ "num_packets", "structVideoEncoder.html#a20b578a3610dce40aef2d04397bd7744", null ],
+    [ "nvidia_encoder", "structVideoEncoder.html#a42d5b0c1a8047fdb623974491da41004", null ],
     [ "out_height", "structVideoEncoder.html#a756d26cde728bccea40f70df0c05f3d6", null ],
     [ "out_width", "structVideoEncoder.html#a8737b2047d311ccad803628b61a24ae3", null ],
     [ "packets", "structVideoEncoder.html#a7b58cbbd0779fa34f6a4469eef21d112", null ],
     [ "sw_frame", "structVideoEncoder.html#ac454db2722ed912fa3f811ec673c495c", null ],
     [ "sw_frame_buffer", "structVideoEncoder.html#a0c467b2aea2594951013e689af8261ab", null ],
-    [ "type", "structVideoEncoder.html#a8398ffc2981e88c4a59e58b9159b7079", null ],
-    [ "using_capture_encoder", "structVideoEncoder.html#a2c71c974670946ee61426ab67bde31aa", null ]
+    [ "type", "structVideoEncoder.html#a8398ffc2981e88c4a59e58b9159b7079", null ]
 ];

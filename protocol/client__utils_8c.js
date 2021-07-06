@@ -15,7 +15,6 @@ var client__utils_8c =
     [ "update_mouse_motion", "client__utils_8c.html#afd3d49fb422332aa7838542366bc87f9", null ],
     [ "binary_aes_private_key", "client__utils_8c.html#a8178ac994435a95792a29745aa7a77a0", null ],
     [ "cmd_options", "client__utils_8c.html#a3ad4b4a7eff6f2ec3337dd55564ce031", null ],
-    [ "codec_type", "client__utils_8c.html#aee63dfd068e6fbf6c16d1ee44972d556", null ],
     [ "hex_aes_private_key", "client__utils_8c.html#aa8c4fc02a0a9feabf512f08048bd1abc", null ],
     [ "icon_png_filename", "client__utils_8c.html#a7d4ba7377ed3ddb3081907af0a0f7c59", null ],
     [ "max_bitrate", "client__utils_8c.html#ad137585f4fddac5c02d6b3f99323385b", null ],
