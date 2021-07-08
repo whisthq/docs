@@ -29,7 +29,7 @@ var searchData=
   ['log_5ffmt_3548',['LOG_FMT',['../logging_8h.html#ac4541472739b48ec14d768219540a13a',1,'logging.h']]],
   ['log_5finfo_3549',['LOG_INFO',['../logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0',1,'logging.h']]],
   ['log_5flevel_3550',['LOG_LEVEL',['../logging_8h.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05',1,'logging.h']]],
-  ['log_5fvideo_3551',['LOG_VIDEO',['../client_2video_8c.html#af0923737dee5ff7a8f1a17c4b9c1f2fe',1,'video.c']]],
+  ['log_5fvideo_3551',['LOG_VIDEO',['../fractal_8h.html#af0923737dee5ff7a8f1a17c4b9c1f2fe',1,'fractal.h']]],
   ['log_5fwarning_3552',['LOG_WARNING',['../logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b',1,'logging.h']]],
   ['logger_5fbuf_5fsize_3553',['LOGGER_BUF_SIZE',['../logging_8h.html#a884a960393b267876a1e3bfc114f4032',1,'logging.h']]],
   ['logger_5fqueue_5fsize_3554',['LOGGER_QUEUE_SIZE',['../logging_8h.html#a5efcbb4a78eb37e2945e61e61f235a2e',1,'logging.h']]]

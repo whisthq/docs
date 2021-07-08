@@ -172,7 +172,7 @@ var searchData=
   ['log_5fframe_5fstatistics_1091',['log_frame_statistics',['../client_2video_8c.html#a59b630131017e1bc6f8780995bc72c8a',1,'video.c']]],
   ['log_5finfo_1092',['LOG_INFO',['../logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0',1,'logging.h']]],
   ['log_5flevel_1093',['LOG_LEVEL',['../logging_8h.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05',1,'logging.h']]],
-  ['log_5fvideo_1094',['LOG_VIDEO',['../client_2video_8c.html#af0923737dee5ff7a8f1a17c4b9c1f2fe',1,'video.c']]],
+  ['log_5fvideo_1094',['LOG_VIDEO',['../fractal_8h.html#af0923737dee5ff7a8f1a17c4b9c1f2fe',1,'fractal.h']]],
   ['log_5fwarning_1095',['LOG_WARNING',['../logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b',1,'logging.h']]],
   ['logger_5fbuf_5fsize_1096',['LOGGER_BUF_SIZE',['../logging_8h.html#a884a960393b267876a1e3bfc114f4032',1,'logging.h']]],
   ['logger_5fhistory_1097',['logger_history',['../logging_8c.html#a224eb7560635401953081973df1cab0d',1,'logging.c']]],

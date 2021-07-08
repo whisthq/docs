@@ -83,8 +83,8 @@ var NAVTREEINDEX =
 [
 "aes_8c.html",
 "client_2video_8c.html#a7196a73360e82c197c4f5511e5330602",
-"cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326aa335fef0c5a110ab9ab94094f5c6b419",
-"fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a816f8b5fb04195278cc36d6f2561906c",
+"cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326af7afb8c1e22791f6d3f51cc98b83af44",
+"fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a819b56ff71335d12b87feba6c0d8ebda",
 "fractalgetopt_8c.html#ad5e1c16213bbee2d5e8cc363309f418c",
 "input_8c.html#a4098920e17bb63ca9093bbb73a7d2fa1",
 "lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fac536539c215333def413f43c8b060b03",

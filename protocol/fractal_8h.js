@@ -27,6 +27,7 @@ var fractal_8h =
     [ "FRACTAL_ARGS_MAXLEN", "fractal_8h.html#ac4b9ceebe220134e5a67f3596b06f752", null ],
     [ "FRACTAL_IDENTIFIER_MAXLEN", "fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95", null ],
     [ "INPUT_DRIVER", "fractal_8h.html#a514734c0c6acc3c2f2076323d45676d8", null ],
+    [ "LOG_VIDEO", "fractal_8h.html#af0923737dee5ff7a8f1a17c4b9c1f2fe", null ],
     [ "max", "fractal_8h.html#affe776513b24d84b39af8ab0930fef7f", null ],
     [ "MAX_NUM_CLIENTS", "fractal_8h.html#a03e2345e5641dd80fd2bad8b9cff3eff", null ],
     [ "MAX_SCREEN_HEIGHT", "fractal_8h.html#a71b50617058e1b676d6fc6de1d4f05b1", null ],
