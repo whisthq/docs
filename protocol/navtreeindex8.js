@@ -1,9 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"structCaptureDevice.html#ae9fcde4b1986608dfca772fdf9fa01e1":[8,0,10,1],
-"structCaptureDevice.html#aee5729605497c38e50428818eabe1883":[8,0,10,19],
-"structClient.html":[8,0,11],
-"structClient.html#a17ecd3431f124e939332167e67d588a7":[8,0,11,3],
 "structClient.html#a301b48cabe484460c8b9d4846d64d265":[8,0,11,2],
 "structClient.html#a43a559d937a0efefb92260fc2c0d216f":[8,0,11,11],
 "structClient.html#a473ace0f6f1316dbf859b6768179dad6":[8,0,11,0],
@@ -52,11 +48,11 @@ var NAVTREEINDEX8 =
 "structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3":[8,0,19,1],
 "structEncodedAudio.html#a9f0b62fc01a231f73c90321f98c65e96":[8,0,19,0],
 "structFractalClientMessage.html":[8,0,20],
-"structFractalClientMessage.html#a150cbdccb818afd8db61d0edfec06cf6":[8,0,20,13],
+"structFractalClientMessage.html#a150cbdccb818afd8db61d0edfec06cf6":[8,0,20,14],
 "structFractalClientMessage.html#a1b50cde28800c82c9186b1c6afd5cdb3":[8,0,20,11],
 "structFractalClientMessage.html#a1dbda6c8337588eb94a56a891db9b8e7":[8,0,20,18],
 "structFractalClientMessage.html#a1f2c107958427670e44b0a7281b1a142":[8,0,20,8],
-"structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df":[8,0,20,14],
+"structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df":[8,0,20,13],
 "structFractalClientMessage.html#a24069289e1841145929dd766e4ceea9a":[8,0,20,7],
 "structFractalClientMessage.html#a3ffeebef56fe099790cf4ec8bbb6d5f2":[8,0,20,0],
 "structFractalClientMessage.html#a4bda042c8ccebb3085388fdfc3d05127":[8,0,20,23],
@@ -249,5 +245,9 @@ var NAVTREEINDEX8 =
 "structJson.html#a84cbc56cf66a6c996cef67d431450164":[8,0,43,1],
 "structJson.html#ac9a02293aafbec6344ce4e07900de85f":[8,0,43,0],
 "structKVPair.html":[8,0,44],
-"structKVPair.html#a07e8c8ef4b2be9b14a64fb427de1cb2b":[8,0,44,2]
+"structKVPair.html#a07e8c8ef4b2be9b14a64fb427de1cb2b":[8,0,44,2],
+"structKVPair.html#a3ec5d97df5807921ef8578ba6f60154a":[8,0,44,1],
+"structKVPair.html#a839d4855ee9f53e71eba5b05cf46fb09":[8,0,44,3],
+"structKVPair.html#aa7e933fcca5df87813717315000b266c":[8,0,44,4],
+"structKVPair.html#ad502f42346a66bd24409a6182bb2afdb":[8,0,44,0]
 };

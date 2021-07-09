@@ -140,10 +140,6 @@ Variables</h2></td></tr>
 <tr class="separator:a25c3fb3884e2ae1ca3c2fd3e4223bc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4e9daf88116b596d5ae5839f38b3ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#afd4e9daf88116b596d5ae5839f38b3ba">host_id</a> = -1</td></tr>
 <tr class="separator:afd4e9daf88116b596d5ae5839f38b3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44862971e6b601d55ff0b59be652d4f9"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a44862971e6b601d55ff0b59be652d4f9">client_exited_nongracefully</a></td></tr>
-<tr class="separator:a44862971e6b601d55ff0b59be652d4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b2626aa6d90768fb5808fe4e28dda59"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a4b2626aa6d90768fb5808fe4e28dda59">last_nongraceful_exit</a></td></tr>
-<tr class="separator:a4b2626aa6d90768fb5808fe4e28dda59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code for interacting with the client buffer. </p>
@@ -423,22 +419,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a44862971e6b601d55ff0b59be652d4f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44862971e6b601d55ff0b59be652d4f9">&#9670;&nbsp;</a></span>client_exited_nongracefully</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool client_exited_nongracefully</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="keyword">false</span></div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a062c92ce2779fc429eb44fbfebcf9d52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a062c92ce2779fc429eb44fbfebcf9d52">&#9670;&nbsp;</a></span>clients</h2>
 
@@ -475,20 +455,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structRWLock.html">RWLock</a> is_active_rwlock</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4b2626aa6d90768fb5808fe4e28dda59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b2626aa6d90768fb5808fe4e28dda59">&#9670;&nbsp;</a></span>last_nongraceful_exit</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> last_nongraceful_exit</td>
         </tr>
       </table>
 </div><div class="memdoc">

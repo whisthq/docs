@@ -1,9 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structKVPair.html#a3ec5d97df5807921ef8578ba6f60154a":[8,0,44,1],
-"structKVPair.html#a839d4855ee9f53e71eba5b05cf46fb09":[8,0,44,3],
-"structKVPair.html#aa7e933fcca5df87813717315000b266c":[8,0,44,4],
-"structKVPair.html#ad502f42346a66bd24409a6182bb2afdb":[8,0,44,0],
 "structLodePNGBitReader.html":[8,0,45],
 "structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[8,0,45,0],
 "structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[8,0,45,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX9 =
 "structVideoData.html":[8,0,78],
 "structVideoData.html#a07a1b7c552183ffa0d1ac5f5f9052725":[8,0,78,14],
 "structVideoData.html#a1dbe90498f9056e85a0a2b0d0682d7a7":[8,0,78,15],
-"structVideoData.html#a374a45d9b7f41f095e1b74352f07c2b3":[8,0,78,6]
+"structVideoData.html#a374a45d9b7f41f095e1b74352f07c2b3":[8,0,78,6],
+"structVideoData.html#a3c2e86f25ceca5fe1d91c4de371e3374":[8,0,78,4],
+"structVideoData.html#a3cecf13023cc8075f88d5ca6a0e50f1a":[8,0,78,9],
+"structVideoData.html#a5b0a69c681a1128045f84bac08ad6505":[8,0,78,3],
+"structVideoData.html#a813fb27ec2f902a5d4f3a1d41871a55f":[8,0,78,8]
 };

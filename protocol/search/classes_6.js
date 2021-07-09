@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hash_1821',['Hash',['../structHash.html',1,'']]],
-  ['huffmantree_1822',['HuffmanTree',['../structHuffmanTree.html',1,'']]]
+  ['hash_1819',['Hash',['../structHash.html',1,'']]],
+  ['huffmantree_1820',['HuffmanTree',['../structHuffmanTree.html',1,'']]]
 ];
