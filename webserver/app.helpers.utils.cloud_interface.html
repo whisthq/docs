@@ -47,7 +47,7 @@
 <p>This class defines the interface all our cloud providers should implement.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.get_ip_of_instances">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">get_ip_of_instances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.get_ip_of_instances" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">get_ip_of_instances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.get_ip_of_instances" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gets the IP addresses of the passed in instances, by ID
 :param instance_ids: what IDs to check</p>
 <p>Returns: a dict mapping instance ID to IP address</p>
@@ -55,7 +55,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_down">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">spin_til_instances_down</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_down" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">spin_til_instances_down</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_down" title="Permalink to this definition">¶</a></dt>
 <dd><p>Polls the cloud provider every time_wait seconds until all specified instances are down
 :param instance_ids: which instances to check
 :param time_wait: how long to wait between polls</p>
@@ -64,7 +64,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_up">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">spin_til_instances_up</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_up" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">spin_til_instances_up</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_up" title="Permalink to this definition">¶</a></dt>
 <dd><p>Polls the cloud provider every time_wait seconds until all specified instances are up
 :param instance_ids: which instances to check
 :param time_wait: how long to wait between polls</p>
@@ -73,7 +73,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.start_instances">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">start_instances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_instances</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'g4dn.xlarge'</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.start_instances" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">start_instances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_instances</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'g4dn.xlarge'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.start_instances" title="Permalink to this definition">¶</a></dt>
 <dd><p>Starts AWS instances with the given properties, not returning until they’re
 actively running
 :param image_id: which instance image to use
@@ -85,7 +85,7 @@ actively running
 
 <dl class="py method">
 <dt class="sig sig-object py" id="app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.stop_instances">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">stop_instances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.stop_instances" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">stop_instances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.stop_instances" title="Permalink to this definition">¶</a></dt>
 <dd><p>Turns off all instances passed in
 :param instance_ids: which instances to disable</p>
 </dd></dl>
@@ -115,7 +115,7 @@ actively running
 
 
 <h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="architecture.html">Webserver Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Webserver Responsibilities</a></li>
@@ -149,7 +149,7 @@ actively running
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
@@ -171,7 +171,7 @@ actively running
       &copy;2021, Fractal Computers, Inc..
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
