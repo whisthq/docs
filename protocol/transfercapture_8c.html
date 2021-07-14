@@ -89,25 +89,29 @@ $(document).ready(function(){initNavTree('transfercapture_8c.html',''); initResi
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="transfercapture_8h_source.html">transfercapture.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="screencapture_8h_source.html">screencapture.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="nvidiatransfercapture_8h_source.html">nvidiatransfercapture.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3319f20ac3232fe0837145362e331ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transfercapture_8c.html#a3319f20ac3232fe0837145362e331ac4">reinitialize_transfer_context</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a3319f20ac3232fe0837145362e331ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize or reinitialize the transfer context, if it is needed for the given (device, encoder) pair. This should be called when either the (device), or the (encoder) changes.  <a href="transfercapture_8c.html#a3319f20ac3232fe0837145362e331ac4">More...</a><br /></td></tr>
-<tr class="separator:a3319f20ac3232fe0837145362e331ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae876d3f35aa1b6a3ea71f00158e25568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transfercapture_8c.html#ae876d3f35aa1b6a3ea71f00158e25568">start_transfer_context</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:ae876d3f35aa1b6a3ea71f00158e25568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the transfer context between (device) and (encoder). Call this when we have changed resolution or recreated one of the device or encoder.  <a href="transfercapture_8c.html#ae876d3f35aa1b6a3ea71f00158e25568">More...</a><br /></td></tr>
+<tr class="separator:ae876d3f35aa1b6a3ea71f00158e25568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac960986559af79f3a71c190d4705d321"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transfercapture_8c.html#ac960986559af79f3a71c190d4705d321">close_transfer_context</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:ac960986559af79f3a71c190d4705d321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the transfer context between (device) and (encoder). Call this when we have changed resolution or recreated one of the device or encoder.  <a href="transfercapture_8c.html#ac960986559af79f3a71c190d4705d321">More...</a><br /></td></tr>
+<tr class="separator:ac960986559af79f3a71c190d4705d321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ff601abab02dcb3b01c6f2f7c9b9d37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transfercapture_8c.html#a1ff601abab02dcb3b01c6f2f7c9b9d37">transfer_capture</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a1ff601abab02dcb3b01c6f2f7c9b9d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the texture stored in the capture device to the encoder, either via GPU or CPU.  <a href="transfercapture_8c.html#a1ff601abab02dcb3b01c6f2f7c9b9d37">More...</a><br /></td></tr>
 <tr class="separator:a1ff601abab02dcb3b01c6f2f7c9b9d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3319f20ac3232fe0837145362e331ac4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3319f20ac3232fe0837145362e331ac4">&#9670;&nbsp;</a></span>reinitialize_transfer_context()</h2>
+<a id="ac960986559af79f3a71c190d4705d321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac960986559af79f3a71c190d4705d321">&#9670;&nbsp;</a></span>close_transfer_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void reinitialize_transfer_context </td>
+          <td class="memname">int close_transfer_context </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -126,14 +130,53 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize or reinitialize the transfer context, if it is needed for the given (device, encoder) pair. This should be called when either the (device), or the (encoder) changes. </p>
+<p>Close the transfer context between (device) and (encoder). Call this when we have changed resolution or recreated one of the device or encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>The capture device being used</td></tr>
-    <tr><td class="paramname">encoder</td><td>The encoder being used </td></tr>
+    <tr><td class="paramname">encoder</td><td>The encoder being used</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="ae876d3f35aa1b6a3ea71f00158e25568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae876d3f35aa1b6a3ea71f00158e25568">&#9670;&nbsp;</a></span>start_transfer_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int start_transfer_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the transfer context between (device) and (encoder). Call this when we have changed resolution or recreated one of the device or encoder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>The capture device being used</td></tr>
+    <tr><td class="paramname">encoder</td><td>The encoder being used</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
 
 </div>
 </div>

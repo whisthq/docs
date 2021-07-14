@@ -40,7 +40,6 @@ var annotated_dup =
     [ "FrameData", "structFrameData.html", "structFrameData" ],
     [ "Hash", "structHash.html", "structHash" ],
     [ "HuffmanTree", "structHuffmanTree.html", "structHuffmanTree" ],
-    [ "InputBufferCacheEntry", "structInputBufferCacheEntry.html", "structInputBufferCacheEntry" ],
     [ "InputDevice", "structInputDevice.html", "structInputDevice" ],
     [ "InternalBlockAllocator", "structInternalBlockAllocator.html", "structInternalBlockAllocator" ],
     [ "Json", "structJson.html", "structJson" ],

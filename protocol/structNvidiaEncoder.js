@@ -12,7 +12,7 @@ var structNvidiaEncoder =
     [ "output_buffer", "structNvidiaEncoder.html#a0a81764f3ac8435a645cbfb922b6a4a1", null ],
     [ "p_enc_fn", "structNvidiaEncoder.html#a06296d7cd4eeb1ebd1086523a45b1a41", null ],
     [ "registered_resource", "structNvidiaEncoder.html#adedc11d83069d1537b68d85f602ecede", null ],
-    [ "registered_resources", "structNvidiaEncoder.html#a7adbc08e7fb14496bc44075493d6ec49", null ],
+    [ "registered_resources", "structNvidiaEncoder.html#a795f8129cd034e4a18d7c4ac8506fcdd", null ],
     [ "wants_iframe", "structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709", null ],
     [ "width", "structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015", null ]
 ];

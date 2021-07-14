@@ -112,9 +112,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae4c3023420778d6e723a1d8c10859927"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#ae4c3023420778d6e723a1d8c10859927">create_nvidia_encoder</a> (int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int out_width, int out_height)</td></tr>
 <tr class="memdesc:ae4c3023420778d6e723a1d8c10859927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new nvidia encoder.  <a href="nvidia__encode_8c.html#ae4c3023420778d6e723a1d8c10859927">More...</a><br /></td></tr>
 <tr class="separator:ae4c3023420778d6e723a1d8c10859927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d5b47bd772dfa298e052de8843f426c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a0d5b47bd772dfa298e052de8843f426c">nvidia_encoder_frame_intake</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, uint32_t dw_texture, uint32_t dw_tex_target, int width, int height)</td></tr>
-<tr class="memdesc:a0d5b47bd772dfa298e052de8843f426c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into the nvidia encoder.  <a href="nvidia__encode_8c.html#a0d5b47bd772dfa298e052de8843f426c">More...</a><br /></td></tr>
-<tr class="separator:a0d5b47bd772dfa298e052de8843f426c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096183372479b7c4092d10cd35fdea98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a096183372479b7c4092d10cd35fdea98">nvidia_encoder_frame_intake</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, uint32_t dw_texture_index, int width, int height)</td></tr>
+<tr class="memdesc:a096183372479b7c4092d10cd35fdea98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into the nvidia encoder.  <a href="nvidia__encode_8c.html#a096183372479b7c4092d10cd35fdea98">More...</a><br /></td></tr>
+<tr class="separator:a096183372479b7c4092d10cd35fdea98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e">nvidia_encoder_encode</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the most recently intake'd frame.  <a href="nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e">More...</a><br /></td></tr>
 <tr class="separator:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,8 +310,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d5b47bd772dfa298e052de8843f426c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d5b47bd772dfa298e052de8843f426c">&#9670;&nbsp;</a></span>nvidia_encoder_frame_intake()</h2>
+<a id="a096183372479b7c4092d10cd35fdea98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096183372479b7c4092d10cd35fdea98">&#9670;&nbsp;</a></span>nvidia_encoder_frame_intake()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,13 +326,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>dw_texture</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>dw_tex_target</em>, </td>
+          <td class="paramname"><em>dw_texture_index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -358,8 +352,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>The encoder to encode with </td></tr>
-    <tr><td class="paramname">dw_texture</td><td>The GPU pointers needed to hold the captured frame </td></tr>
-    <tr><td class="paramname">dw_tex_target</td><td>The GPU pointers needed to hold the captured frame </td></tr>
+    <tr><td class="paramname">dw_texture_index</td><td>The index into registered_resources corresponding to the frame </td></tr>
     <tr><td class="paramname">width</td><td>The width of the inputted frame </td></tr>
     <tr><td class="paramname">height</td><td>The height of the inputted frame</td></tr>
   </table>

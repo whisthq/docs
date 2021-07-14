@@ -35,6 +35,8 @@ var fractal_8h =
     [ "MAXIMUM_BITRATE", "fractal_8h.html#af99345a216f300c72251d94158573c1c", null ],
     [ "min", "fractal_8h.html#ac6afabdc09a49a433ee19d8a9486056d", null ],
     [ "MIN_FPS", "fractal_8h.html#a07497cbfeb7eff3e5798235291f978c6", null ],
+    [ "MIN_SCREEN_HEIGHT", "fractal_8h.html#a5c279ad767a41e3b26f0f55bbc55749d", null ],
+    [ "MIN_SCREEN_WIDTH", "fractal_8h.html#a127a432b98b2684fb0d592970c125b41", null ],
     [ "MINIMUM_BITRATE", "fractal_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec", null ],
     [ "MOUSE_SCALING_FACTOR", "fractal_8h.html#a76bf238d14734ada3ef9fadfdea45ca7", null ],
     [ "MS_IN_SECOND", "fractal_8h.html#ab06727ebbc110e7071dc8090ced33373", null ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['peerupdatemessage_1844',['PeerUpdateMessage',['../structPeerUpdateMessage.html',1,'']]],
-  ['privatekeydata_1845',['PrivateKeyData',['../structPrivateKeyData.html',1,'']]]
+  ['peerupdatemessage_1848',['PeerUpdateMessage',['../structPeerUpdateMessage.html',1,'']]],
+  ['privatekeydata_1849',['PrivateKeyData',['../structPrivateKeyData.html',1,'']]]
 ];
