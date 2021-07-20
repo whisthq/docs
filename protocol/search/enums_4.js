@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interactionmode_3228',['InteractionMode',['../fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ff',1,'fractal.h']]]
+  ['jsontype_3270',['JsonType',['../json_8h.html#a749cb5137f6266520a9329b48a63decc',1,'json.h']]]
 ];

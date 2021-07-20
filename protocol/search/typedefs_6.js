@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hash_3173',['Hash',['../lodepng_8c.html#abe8fc99d29c0275271cbacd81d67ee07',1,'lodepng.c']]],
-  ['huffmantree_3174',['HuffmanTree',['../lodepng_8c.html#a3bcdfe56aa79c67e8f745020ecd3bbf8',1,'lodepng.c']]]
+  ['hash_3213',['Hash',['../lodepng_8c.html#abe8fc99d29c0275271cbacd81d67ee07',1,'lodepng.c']]],
+  ['huffmantree_3214',['HuffmanTree',['../lodepng_8c.html#a3bcdfe56aa79c67e8f745020ecd3bbf8',1,'lodepng.c']]]
 ];

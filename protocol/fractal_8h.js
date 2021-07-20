@@ -60,7 +60,6 @@ var fractal_8h =
     [ "WINDOW_RESIZE_MESSAGE_INTERVAL", "fractal_8h.html#abe35f6b7cbcafed20fd9d41e4f11660a", null ],
     [ "XTEST_INPUT_DRIVER", "fractal_8h.html#ae5f9a5f50ab08d080df02684e783ab66", null ],
     [ "CodecType", "fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2", null ],
-    [ "EncodeType", "fractal_8h.html#ab3b3ee35f4c14c1bf8522f2947daeefb", null ],
     [ "FractalClientMessage", "fractal_8h.html#ae75095f17ec3b67c19259d0c395e1c06", null ],
     [ "FractalClientMessageType", "fractal_8h.html#a69b64449a42b33fbb562e3ec992ae231", null ],
     [ "FractalCursor", "fractal_8h.html#aa7dd9d2356588059ac7a8fc5c2ed47c5", null ],
@@ -86,11 +85,6 @@ var fractal_8h =
       [ "CODEC_TYPE_H264", "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a27612f02539b2da18de5bdc23cda876f", null ],
       [ "CODEC_TYPE_H265", "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79af4b1406cb3a6d27c1582480586f29f82", null ],
       [ "CODEC_TYPE_MAKE_32", "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a6c65cd14a81a7975b603684e07b1c3cb", null ]
-    ] ],
-    [ "EncodeType", "fractal_8h.html#a162ade4412ea2a185a56e065d5099b95", [
-      [ "SOFTWARE_ENCODE", "fractal_8h.html#a162ade4412ea2a185a56e065d5099b95a5f0e0a33b7479565a2829cde8be8b24e", null ],
-      [ "NVENC_ENCODE", "fractal_8h.html#a162ade4412ea2a185a56e065d5099b95a4eaed9aa42e53ca6e33b4d923ff362a5", null ],
-      [ "QSV_ENCODE", "fractal_8h.html#a162ade4412ea2a185a56e065d5099b95ab6091c0afddff42230d17d45dcfa27d2", null ]
     ] ],
     [ "FractalClientMessageType", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90", [
       [ "CMESSAGE_NONE", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a02c0c7ec56775f79f4ee20ce24b2f5dc", null ],

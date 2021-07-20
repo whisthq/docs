@@ -90,18 +90,18 @@ $(document).ready(function(){initNavTree('screencapture_8h.html',''); initResiza
 
 <p>This file defines the proper header for capturing the screen depending.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="x11capture_8h_source.html">x11capture.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="linuxcapture_8h_source.html">linuxcapture.h</a>&quot;</code><br />
 </div>
 <p><a href="screencapture_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae29eb830cf07d21c1f8b31aa0f952c09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#ae29eb830cf07d21c1f8b31aa0f952c09">create_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> width, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> height, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> dpi)</td></tr>
-<tr class="memdesc:ae29eb830cf07d21c1f8b31aa0f952c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a screen capture device.  <a href="screencapture_8h.html#ae29eb830cf07d21c1f8b31aa0f952c09">More...</a><br /></td></tr>
-<tr class="separator:ae29eb830cf07d21c1f8b31aa0f952c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad32c0d4d84364e848eaf1ad6bedadd3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#ad32c0d4d84364e848eaf1ad6bedadd3f">reconfigure_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> width, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> height, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> dpi)</td></tr>
-<tr class="memdesc:ad32c0d4d84364e848eaf1ad6bedadd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to reconfigure the capture device using the newly provided parameters.  <a href="screencapture_8h.html#ad32c0d4d84364e848eaf1ad6bedadd3f">More...</a><br /></td></tr>
-<tr class="separator:ad32c0d4d84364e848eaf1ad6bedadd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#aa962953cfc3fdb9ed34703ab4a9afe42">create_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
+<tr class="memdesc:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a screen capture device.  <a href="screencapture_8h.html#aa962953cfc3fdb9ed34703ab4a9afe42">More...</a><br /></td></tr>
+<tr class="separator:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4f4d646d67a79cd2f4fe8fd487c7dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#a4d4f4d646d67a79cd2f4fe8fd487c7dc">reconfigure_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
+<tr class="memdesc:a4d4f4d646d67a79cd2f4fe8fd487c7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to reconfigure the capture device using the newly provided parameters.  <a href="screencapture_8h.html#a4d4f4d646d67a79cd2f4fe8fd487c7dc">More...</a><br /></td></tr>
+<tr class="separator:a4d4f4d646d67a79cd2f4fe8fd487c7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acddcc3aa008273807b931fbd1fd2a0bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#acddcc3aa008273807b931fbd1fd2a0bf">capture_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
 <tr class="memdesc:acddcc3aa008273807b931fbd1fd2a0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture a bitmap snapshot of the screen The width/height of the image is guaranteed to be the width/height passed into create_/reconfigure_ capture device, If the screen dimensions changed, then -1 will be returned.  <a href="screencapture_8h.html#acddcc3aa008273807b931fbd1fd2a0bf">More...</a><br /></td></tr>
 <tr class="separator:acddcc3aa008273807b931fbd1fd2a0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,9 +118,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file defines the proper header for capturing the screen depending. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md215"></a>
+<h1><a class="anchor" id="autotoc_md227"></a>
 on the local OS.</h1>
-<h1><a class="anchor" id="autotoc_md216"></a>
+<h1><a class="anchor" id="autotoc_md228"></a>
 Usage</h1>
 <p>Toggles automatically between the screen capture files based on OS. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -151,8 +151,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ae29eb830cf07d21c1f8b31aa0f952c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae29eb830cf07d21c1f8b31aa0f952c09">&#9670;&nbsp;</a></span>create_capture_device()</h2>
+<a id="aa962953cfc3fdb9ed34703ab4a9afe42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa962953cfc3fdb9ed34703ab4a9afe42">&#9670;&nbsp;</a></span>create_capture_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,19 +166,19 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>dpi</em>&#160;</td>
         </tr>
         <tr>
@@ -229,8 +229,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ad32c0d4d84364e848eaf1ad6bedadd3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad32c0d4d84364e848eaf1ad6bedadd3f">&#9670;&nbsp;</a></span>reconfigure_capture_device()</h2>
+<a id="a4d4f4d646d67a79cd2f4fe8fd487c7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d4f4d646d67a79cd2f4fe8fd487c7dc">&#9670;&nbsp;</a></span>reconfigure_capture_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,19 +244,19 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>dpi</em>&#160;</td>
         </tr>
         <tr>

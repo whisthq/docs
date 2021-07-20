@@ -83,71 +83,170 @@ $(document).ready(function(){initNavTree('x11capture_8h.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">x11capture.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This file contains the code to do screen capture in the GPU on Linux.  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;X11/Xlib.h&gt;</code><br />
 <code>#include &lt;X11/extensions/XShm.h&gt;</code><br />
 <code>#include &lt;X11/extensions/Xdamage.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="x11nvidiacapture_8h_source.html">x11nvidiacapture.h</a>&quot;</code><br />
 </div>
 <p><a href="x11capture_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html">CaptureDevice</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.  <a href="structX11CaptureDevice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a4f32ec0a1163b589b5296ac7a884e803"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structCaptureDevice.html">CaptureDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#a4f32ec0a1163b589b5296ac7a884e803">CaptureDevice</a></td></tr>
-<tr class="separator:a4f32ec0a1163b589b5296ac7a884e803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></td></tr>
-<tr class="separator:a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea69005fc267aff603dc2ff610aa95f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#aeea69005fc267aff603dc2ff610aa95f">X11CaptureDevice</a></td></tr>
+<tr class="memdesc:aeea69005fc267aff603dc2ff610aa95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.  <a href="x11capture_8h.html#aeea69005fc267aff603dc2ff610aa95f">More...</a><br /></td></tr>
+<tr class="separator:aeea69005fc267aff603dc2ff610aa95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8726a7b905e966e3da05147cd168bdf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#a8726a7b905e966e3da05147cd168bdf1">create_x11_capture_device</a> (uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
+<tr class="memdesc:a8726a7b905e966e3da05147cd168bdf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a device for capturing via X11 with the specified width, height, and DPI.  <a href="x11capture_8h.html#a8726a7b905e966e3da05147cd168bdf1">More...</a><br /></td></tr>
+<tr class="separator:a8726a7b905e966e3da05147cd168bdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14556ad435b66ddf880360717fbc0ba2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#a14556ad435b66ddf880360717fbc0ba2">x11_capture_screen</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:a14556ad435b66ddf880360717fbc0ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture the screen with given device. Afterwards, the frame capture is stored in frame_data.  <a href="x11capture_8h.html#a14556ad435b66ddf880360717fbc0ba2">More...</a><br /></td></tr>
+<tr class="separator:a14556ad435b66ddf880360717fbc0ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c091e3659e09d9e8968dab45486f057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#a8c091e3659e09d9e8968dab45486f057">destroy_x11_capture_device</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:a8c091e3659e09d9e8968dab45486f057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the given <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> and free it.  <a href="x11capture_8h.html#a8c091e3659e09d9e8968dab45486f057">More...</a><br /></td></tr>
+<tr class="separator:a8c091e3659e09d9e8968dab45486f057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the code to do screen capture in the GPU on Linux. </p>
-<p>Copyright Fractal Computers, Inc. 2021</p>
-<h1><a class="anchor" id="autotoc_md229"></a>
-Ubuntu.</h1>
-<h1><a class="anchor" id="autotoc_md230"></a>
+<div class="textblock"><p>Copyright Fractal Computers, Inc. 2021</p>
+<h1><a class="anchor" id="autotoc_md239"></a>
+@brief This file contains the code to do screen capture via the X11 API on Linux Ubuntu.</h1>
+<h1><a class="anchor" id="autotoc_md240"></a>
 Usage</h1>
-<p><a class="el" href="structCaptureDevice.html">CaptureDevice</a> contains all the information used to interface with the X11 screen capture API and the data of a frame.</p>
-<p>Call CreateCaptureDevice to initialize at the beginning of the program, and DestroyCaptureDevice to clean up at the end of the program. Call CaptureScreen to capture a frame.</p>
-<p>You must release each frame you capture via ReleaseScreen before calling CaptureScreen again. </p>
+<p><a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> contains all the information used to interface with the X11 screen capture API and the data of a frame. Call create_x11_capture_device to initialize a device, x11_capture_screen to capture the screen with said device, and destroy_x11_capture_device when done capturing frames.</p>
+<p>Copyright Fractal Computers, Inc. 2021</p>
+<h1><a class="anchor" id="autotoc_md241"></a>
+@brief This file contains the code to do screen capture via the X11 API on Linux Ubuntu.</h1>
+<h1><a class="anchor" id="autotoc_md242"></a>
+Usage</h1>
+<p><a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> contains all the information used to interface with the X11 screen capture API and the data of a frame. Call create_x11_capture_device to initialize a device, x11_capture_screen to capture the screen with said device, and destroy_x11_capture_device when done capturing frames. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a4f32ec0a1163b589b5296ac7a884e803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f32ec0a1163b589b5296ac7a884e803">&#9670;&nbsp;</a></span>CaptureDevice</h2>
+<a id="aeea69005fc267aff603dc2ff610aa95f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea69005fc267aff603dc2ff610aa95f">&#9670;&nbsp;</a></span>X11CaptureDevice</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structCaptureDevice.html">CaptureDevice</a> <a class="el" href="structCaptureDevice.html">CaptureDevice</a></td>
+          <td class="memname">typedef struct <a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> <a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data. </p>
+
 </div>
 </div>
-<a id="a36cb3b01d81ffd844bbbfb54003e06ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36cb3b01d81ffd844bbbfb54003e06ec">&#9670;&nbsp;</a></span>UINT</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a8726a7b905e966e3da05147cd168bdf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8726a7b905e966e3da05147cd168bdf1">&#9670;&nbsp;</a></span>create_x11_capture_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef unsigned int <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></td>
+          <td class="memname"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a>* create_x11_capture_device </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Create a device for capturing via X11 with the specified width, height, and DPI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>The desired width of the device </td></tr>
+    <tr><td class="paramname">height</td><td>The desired height of the device </td></tr>
+    <tr><td class="paramname">dpi</td><td>The desired DPI of the device</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8c091e3659e09d9e8968dab45486f057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c091e3659e09d9e8968dab45486f057">&#9670;&nbsp;</a></span>destroy_x11_capture_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy_x11_capture_device </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the given <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> and free it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Device to destroy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a14556ad435b66ddf880360717fbc0ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14556ad435b66ddf880360717fbc0ba2">&#9670;&nbsp;</a></span>x11_capture_screen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int x11_capture_screen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Capture the screen with given device. Afterwards, the frame capture is stored in frame_data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Device to use for screen captures</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
 
 </div>
 </div>

@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('x11capture_8c.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the code to do screen capture in the GPU on Linux.  
+<p>This file contains the code to create a capture device and use it to capture the screen on.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="screencapture_8h_source.html">screencapture.h</a>&quot;</code><br />
 <code>#include &lt;X11/extensions/Xdamage.h&gt;</code><br />
@@ -101,97 +101,47 @@ $(document).ready(function(){initNavTree('x11capture_8c.html',''); initResizable
 Functions</h2></td></tr>
 <tr class="memitem:a4b72082f8dd40fefd41fe8a3a721eba0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a4b72082f8dd40fefd41fe8a3a721eba0">handler</a> (Display *d, XErrorEvent *a)</td></tr>
 <tr class="separator:a4b72082f8dd40fefd41fe8a3a721eba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69ce92f7750a4005cc8babbc2c0075c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a69ce92f7750a4005cc8babbc2c0075c4">get_wh</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, int *w, int *h)</td></tr>
-<tr class="separator:a69ce92f7750a4005cc8babbc2c0075c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad099efd55f9d19dd97d00e0663941e5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#ad099efd55f9d19dd97d00e0663941e5a">is_same_wh</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="separator:ad099efd55f9d19dd97d00e0663941e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fa8354f65155e31e3c2993a89338201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a2fa8354f65155e31e3c2993a89338201">try_update_dimensions</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> width, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> height, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> dpi)</td></tr>
-<tr class="separator:a2fa8354f65155e31e3c2993a89338201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae29eb830cf07d21c1f8b31aa0f952c09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#ae29eb830cf07d21c1f8b31aa0f952c09">create_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> width, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> height, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> dpi)</td></tr>
-<tr class="memdesc:ae29eb830cf07d21c1f8b31aa0f952c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a screen capture device.  <a href="x11capture_8c.html#ae29eb830cf07d21c1f8b31aa0f952c09">More...</a><br /></td></tr>
-<tr class="separator:ae29eb830cf07d21c1f8b31aa0f952c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad32c0d4d84364e848eaf1ad6bedadd3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#ad32c0d4d84364e848eaf1ad6bedadd3f">reconfigure_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> width, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> height, <a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> dpi)</td></tr>
-<tr class="memdesc:ad32c0d4d84364e848eaf1ad6bedadd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to reconfigure the capture device using the newly provided parameters.  <a href="x11capture_8c.html#ad32c0d4d84364e848eaf1ad6bedadd3f">More...</a><br /></td></tr>
-<tr class="separator:ad32c0d4d84364e848eaf1ad6bedadd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acddcc3aa008273807b931fbd1fd2a0bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf">capture_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:acddcc3aa008273807b931fbd1fd2a0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture a bitmap snapshot of the screen The width/height of the image is guaranteed to be the width/height passed into create_/reconfigure_ capture device, If the screen dimensions changed, then -1 will be returned.  <a href="x11capture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf">More...</a><br /></td></tr>
-<tr class="separator:acddcc3aa008273807b931fbd1fd2a0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a837679835044596e8d0d22aca5756b03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a837679835044596e8d0d22aca5756b03">transfer_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:a837679835044596e8d0d22aca5756b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers screen capture to CPU buffer This is used if all attempts of a hardware screen transfer have failed.  <a href="x11capture_8c.html#a837679835044596e8d0d22aca5756b03">More...</a><br /></td></tr>
-<tr class="separator:a837679835044596e8d0d22aca5756b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad85f68930fed4c454c1e4f8def286cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#aad85f68930fed4c454c1e4f8def286cf">release_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:aad85f68930fed4c454c1e4f8def286cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a captured screen bitmap snapshot.  <a href="x11capture_8c.html#aad85f68930fed4c454c1e4f8def286cf">More...</a><br /></td></tr>
-<tr class="separator:aad85f68930fed4c454c1e4f8def286cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#abbd0ff16d9ee7c3353340b1d2529f8c7">destroy_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys and frees the memory of a capture device.  <a href="x11capture_8c.html#abbd0ff16d9ee7c3353340b1d2529f8c7">More...</a><br /></td></tr>
-<tr class="separator:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8726a7b905e966e3da05147cd168bdf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a8726a7b905e966e3da05147cd168bdf1">create_x11_capture_device</a> (uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
+<tr class="memdesc:a8726a7b905e966e3da05147cd168bdf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a device for capturing via X11 with the specified width, height, and DPI.  <a href="x11capture_8c.html#a8726a7b905e966e3da05147cd168bdf1">More...</a><br /></td></tr>
+<tr class="separator:a8726a7b905e966e3da05147cd168bdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14556ad435b66ddf880360717fbc0ba2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a14556ad435b66ddf880360717fbc0ba2">x11_capture_screen</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:a14556ad435b66ddf880360717fbc0ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture the screen with given device. Afterwards, the frame capture is stored in frame_data.  <a href="x11capture_8c.html#a14556ad435b66ddf880360717fbc0ba2">More...</a><br /></td></tr>
+<tr class="separator:a14556ad435b66ddf880360717fbc0ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c091e3659e09d9e8968dab45486f057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a8c091e3659e09d9e8968dab45486f057">destroy_x11_capture_device</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:a8c091e3659e09d9e8968dab45486f057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the given <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> and free it.  <a href="x11capture_8c.html#a8c091e3659e09d9e8968dab45486f057">More...</a><br /></td></tr>
+<tr class="separator:a8c091e3659e09d9e8968dab45486f057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the code to do screen capture in the GPU on Linux. </p>
+<div class="textblock"><p>This file contains the code to create a capture device and use it to capture the screen on. </p>
 <p>Copyright Fractal Computers, Inc. 2021</p>
-<h1><a class="anchor" id="autotoc_md227"></a>
-Ubuntu.</h1>
-<h1><a class="anchor" id="autotoc_md228"></a>
+<h1><a class="anchor" id="autotoc_md217"></a>
+Linux.</h1>
+<h1><a class="anchor" id="autotoc_md218"></a>
 Usage</h1>
-<p><a class="el" href="structCaptureDevice.html">CaptureDevice</a> contains all the information used to interface with the X11 screen capture API and the data of a frame.</p>
-<p>Call CreateCaptureDevice to initialize at the beginning of the program, and DestroyCaptureDevice to clean up at the end of the program. Call CaptureScreen to capture a frame.</p>
-<p>You must release each frame you capture via ReleaseScreen before calling CaptureScreen again. </p>
+<p>We first try to create a capture device that uses Nvidia's FBC SDK for capturing frames. This capture device must be paired with an Nvidia encoder. If those fail, we fall back to using X11's API to create a capture device, which captures on the CPU, and encode using FFmpeg instead. See <a class="el" href="videoencode_8h.html" title="This file contains the code to create and destroy Encoders and use.">videoencode.h</a> for more details on encoding. The type of capture device currently in use is indicated in active_capture_device. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="acddcc3aa008273807b931fbd1fd2a0bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acddcc3aa008273807b931fbd1fd2a0bf">&#9670;&nbsp;</a></span>capture_screen()</h2>
+<a id="a8726a7b905e966e3da05147cd168bdf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8726a7b905e966e3da05147cd168bdf1">&#9670;&nbsp;</a></span>create_x11_capture_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int capture_screen </td>
+          <td class="memname"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a>* create_x11_capture_device </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Capture a bitmap snapshot of the screen The width/height of the image is guaranteed to be the width/height passed into create_/reconfigure_ capture device, If the screen dimensions changed, then -1 will be returned. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>The device used to capture the screen</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of frames since last capture if succeeded, else -1 </dd></dl>
-
-</div>
-</div>
-<a id="ae29eb830cf07d21c1f8b31aa0f952c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae29eb830cf07d21c1f8b31aa0f952c09">&#9670;&nbsp;</a></span>create_capture_device()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int create_capture_device </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>dpi</em>&#160;</td>
         </tr>
         <tr>
@@ -202,77 +152,42 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a screen capture device. </p>
+<p>Create a device for capturing via X11 with the specified width, height, and DPI. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">device</td><td>Capture device struct to hold the capture device </td></tr>
-    <tr><td class="paramname">width</td><td>Width of the screen to capture, in pixels </td></tr>
-    <tr><td class="paramname">height</td><td>Height of the screen to capture, in pixels </td></tr>
-    <tr><td class="paramname">dpi</td><td>Dots per sq inch of the screen, (Where 96 is neutral)</td></tr>
+    <tr><td class="paramname">width</td><td>The desired width of the device </td></tr>
+    <tr><td class="paramname">height</td><td>The desired height of the device </td></tr>
+    <tr><td class="paramname">dpi</td><td>The desired DPI of the device</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if succeeded, else -1 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> </dd></dl>
 
 </div>
 </div>
-<a id="abbd0ff16d9ee7c3353340b1d2529f8c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbd0ff16d9ee7c3353340b1d2529f8c7">&#9670;&nbsp;</a></span>destroy_capture_device()</h2>
+<a id="a8c091e3659e09d9e8968dab45486f057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c091e3659e09d9e8968dab45486f057">&#9670;&nbsp;</a></span>destroy_x11_capture_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void destroy_capture_device </td>
+          <td class="memname">void destroy_x11_capture_device </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destroys and frees the memory of a capture device. </p>
+<p>Destroy the given <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> and free it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">device</td><td>The capture device to free </td></tr>
+    <tr><td class="paramname">device</td><td>Device to destroy </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a69ce92f7750a4005cc8babbc2c0075c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69ce92f7750a4005cc8babbc2c0075c4">&#9670;&nbsp;</a></span>get_wh()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void get_wh </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -304,166 +219,30 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ad099efd55f9d19dd97d00e0663941e5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad099efd55f9d19dd97d00e0663941e5a">&#9670;&nbsp;</a></span>is_same_wh()</h2>
+<a id="a14556ad435b66ddf880360717fbc0ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14556ad435b66ddf880360717fbc0ba2">&#9670;&nbsp;</a></span>x11_capture_screen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool is_same_wh </td>
+          <td class="memname">int x11_capture_screen </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ad32c0d4d84364e848eaf1ad6bedadd3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad32c0d4d84364e848eaf1ad6bedadd3f">&#9670;&nbsp;</a></span>reconfigure_capture_device()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool reconfigure_capture_device </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
-          <td class="paramname"><em>dpi</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Tries to reconfigure the capture device using the newly provided parameters. </p>
+<p>Capture the screen with given device. Afterwards, the frame capture is stored in frame_data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">device</td><td>The Capture Device to reconfigure </td></tr>
-    <tr><td class="paramname">width</td><td>New width of the screen to capture, in pixels </td></tr>
-    <tr><td class="paramname">height</td><td>New height of the screen to capture, in pixels </td></tr>
-    <tr><td class="paramname">dpi</td><td>New DPI</td></tr>
+    <tr><td class="paramname">device</td><td>Device to use for screen captures</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if succeeded, else -1 </dd></dl>
-
-</div>
-</div>
-<a id="aad85f68930fed4c454c1e4f8def286cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad85f68930fed4c454c1e4f8def286cf">&#9670;&nbsp;</a></span>release_screen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void release_screen </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Release a captured screen bitmap snapshot. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>The capture device holding the screen object captured </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a837679835044596e8d0d22aca5756b03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a837679835044596e8d0d22aca5756b03">&#9670;&nbsp;</a></span>transfer_screen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int transfer_screen </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Transfers screen capture to CPU buffer This is used if all attempts of a hardware screen transfer have failed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>The capture device used to capture the screen</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 always </dd></dl>
-
-</div>
-</div>
-<a id="a2fa8354f65155e31e3c2993a89338201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fa8354f65155e31e3c2993a89338201">&#9670;&nbsp;</a></span>try_update_dimensions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void try_update_dimensions </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="x11capture_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
-          <td class="paramname"><em>dpi</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
 
 </div>
 </div>

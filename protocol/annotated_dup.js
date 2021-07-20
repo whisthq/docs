@@ -20,6 +20,7 @@ var annotated_dup =
     [ "DisplayHardware", "structDisplayHardware.html", "structDisplayHardware" ],
     [ "DynamicBuffer", "structDynamicBuffer.html", "structDynamicBuffer" ],
     [ "EncodedAudio", "structEncodedAudio.html", "structEncodedAudio" ],
+    [ "FFmpegEncoder", "structFFmpegEncoder.html", "structFFmpegEncoder" ],
     [ "FractalClientMessage", "structFractalClientMessage.html", "structFractalClientMessage" ],
     [ "FractalCursor", "structFractalCursor.html", "structFractalCursor" ],
     [ "FractalCursorImage", "structFractalCursorImage.html", "structFractalCursorImage" ],
@@ -81,5 +82,6 @@ var annotated_dup =
     [ "VideoData", "structVideoData.html", "structVideoData" ],
     [ "VideoDecoder", "structVideoDecoder.html", "structVideoDecoder" ],
     [ "VideoEncoder", "structVideoEncoder.html", "structVideoEncoder" ],
-    [ "VideoFrame", "structVideoFrame.html", "structVideoFrame" ]
+    [ "VideoFrame", "structVideoFrame.html", "structVideoFrame" ],
+    [ "X11CaptureDevice", "structX11CaptureDevice.html", "structX11CaptureDevice" ]
 ];

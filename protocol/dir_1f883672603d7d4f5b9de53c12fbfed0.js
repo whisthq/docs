@@ -3,8 +3,14 @@ var dir_1f883672603d7d4f5b9de53c12fbfed0 =
     [ "dxgicapture.c", "dxgicapture_8c.html", "dxgicapture_8c" ],
     [ "dxgicapture.h", "dxgicapture_8h.html", "dxgicapture_8h" ],
     [ "dxgicudatransfercapture.h", "dxgicudatransfercapture_8h.html", "dxgicudatransfercapture_8h" ],
+    [ "ffmpeg_encode.c", "ffmpeg__encode_8c.html", "ffmpeg__encode_8c" ],
+    [ "ffmpeg_encode.h", "ffmpeg__encode_8h.html", "ffmpeg__encode_8h" ],
+    [ "linuxcapture.c", "linuxcapture_8c.html", "linuxcapture_8c" ],
+    [ "linuxcapture.h", "linuxcapture_8h.html", "linuxcapture_8h" ],
     [ "nvidia_encode.c", "nvidia__encode_8c.html", "nvidia__encode_8c" ],
     [ "nvidia_encode.h", "nvidia__encode_8h.html", "nvidia__encode_8h" ],
+    [ "nvidiacapture.c", "nvidiacapture_8c.html", "nvidiacapture_8c" ],
+    [ "nvidiacapture.h", "nvidiacapture_8h.html", "nvidiacapture_8h" ],
     [ "nvidiatransfercapture.c", "nvidiatransfercapture_8c.html", "nvidiatransfercapture_8c" ],
     [ "nvidiatransfercapture.h", "nvidiatransfercapture_8h.html", "nvidiatransfercapture_8h" ],
     [ "screencapture.h", "screencapture_8h.html", "screencapture_8h" ],
@@ -15,7 +21,5 @@ var dir_1f883672603d7d4f5b9de53c12fbfed0 =
     [ "videoencode.c", "videoencode_8c.html", "videoencode_8c" ],
     [ "videoencode.h", "videoencode_8h.html", "videoencode_8h" ],
     [ "x11capture.c", "x11capture_8c.html", "x11capture_8c" ],
-    [ "x11capture.h", "x11capture_8h.html", "x11capture_8h" ],
-    [ "x11nvidiacapture.c", "x11nvidiacapture_8c.html", "x11nvidiacapture_8c" ],
-    [ "x11nvidiacapture.h", "x11nvidiacapture_8h.html", "x11nvidiacapture_8h" ]
+    [ "x11capture.h", "x11capture_8h.html", "x11capture_8h" ]
 ];

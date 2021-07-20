@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fractal Protocol: fractal/video/x11nvidiacapture.h File Reference</title>
+<title>Fractal Protocol: fractal/video/nvidiacapture.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('x11nvidiacapture_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('nvidiacapture_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,44 +85,57 @@ $(document).ready(function(){initNavTree('x11nvidiacapture_8h.html',''); initRes
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">x11nvidiacapture.h File Reference</div>  </div>
+<div class="title">nvidiacapture.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;nvidia-linux/NvFBCUtils.h&quot;</code><br />
 <code>#include &quot;nvidia-linux/nvEncodeAPI.h&quot;</code><br />
 <code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
 </div>
-<p><a href="x11nvidiacapture_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="nvidiacapture_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to handle using Nvidia for capturing the screen. p_fbc_fn contains pointers to the API functions, and dw_texture_index keeps track of the GL texture that the capture is stored on.  <a href="structNvidiaCaptureDevice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a41a366c64c43502254f8ab61e70d37a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11nvidiacapture_8h.html#a41a366c64c43502254f8ab61e70d37a8">create_nvidia_capture_device</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:a41a366c64c43502254f8ab61e70d37a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an nvidia capture device.  <a href="x11nvidiacapture_8h.html#a41a366c64c43502254f8ab61e70d37a8">More...</a><br /></td></tr>
-<tr class="separator:a41a366c64c43502254f8ab61e70d37a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8b929d289578199244fb8e82bdceac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac">nvidia_capture_screen</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:aeb8b929d289578199244fb8e82bdceac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures the screen into GPU pointers. This will also set width/height to the dimensions of the captured image.  <a href="x11nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac">More...</a><br /></td></tr>
+<tr class="memitem:a3e7227af44e244f049aa253a20e01a0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#a3e7227af44e244f049aa253a20e01a0c">create_nvidia_capture_device</a> ()</td></tr>
+<tr class="memdesc:a3e7227af44e244f049aa253a20e01a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an nvidia capture device.  <a href="nvidiacapture_8h.html#a3e7227af44e244f049aa253a20e01a0c">More...</a><br /></td></tr>
+<tr class="separator:a3e7227af44e244f049aa253a20e01a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8b929d289578199244fb8e82bdceac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac">nvidia_capture_screen</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:aeb8b929d289578199244fb8e82bdceac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures the screen into GPU pointers. This will also set width/height to the dimensions of the captured image.  <a href="nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac">More...</a><br /></td></tr>
 <tr class="separator:aeb8b929d289578199244fb8e82bdceac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab166537ddb313de0c8583c84a6f79d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d">destroy_nvidia_capture_device</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:a6ab166537ddb313de0c8583c84a6f79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the nvidia capture device.  <a href="x11nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d">More...</a><br /></td></tr>
+<tr class="memitem:a6ab166537ddb313de0c8583c84a6f79d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d">destroy_nvidia_capture_device</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:a6ab166537ddb313de0c8583c84a6f79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the nvidia capture device.  <a href="nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d">More...</a><br /></td></tr>
 <tr class="separator:a6ab166537ddb313de0c8583c84a6f79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a41a366c64c43502254f8ab61e70d37a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41a366c64c43502254f8ab61e70d37a8">&#9670;&nbsp;</a></span>create_nvidia_capture_device()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Copyright Fractal Computers, Inc. 2021</p>
+<h1><a class="anchor" id="autotoc_md221"></a>
+@brief This file contains the code to do screen capture via the Nvidia FBC SDK on Linux Ubuntu.</h1>
+<h1><a class="anchor" id="autotoc_md222"></a>
+Usage</h1>
+<p><a class="el" href="structNvidiaCaptureDevice.html" title="Struct to handle using Nvidia for capturing the screen. p_fbc_fn contains pointers to the API functio...">NvidiaCaptureDevice</a> contains all the information used to interface with the Nvidia FBC SDK and the data of a frame. Call create_nvidia_capture_device to initialize a device, nvidia_capture_screen to capture the screen with said device, and destroy_nvidia_capture_device when done capturing frames.</p>
+<p>Copyright Fractal Computers, Inc. 2021</p>
+<h1><a class="anchor" id="autotoc_md223"></a>
+@brief This file contains the code to do screen capture via the Nvidia FBC SDK on Linux Ubuntu.</h1>
+<h1><a class="anchor" id="autotoc_md224"></a>
+Usage</h1>
+<p><a class="el" href="structNvidiaCaptureDevice.html" title="Struct to handle using Nvidia for capturing the screen. p_fbc_fn contains pointers to the API functio...">NvidiaCaptureDevice</a> contains all the information used to interface with the Nvidia FBC SDK and the data of a frame. Call create_nvidia_capture_device to initialize a device, nvidia_capture_screen to capture the screen with said device, and destroy_nvidia_capture_device when done capturing frames. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a3e7227af44e244f049aa253a20e01a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7227af44e244f049aa253a20e01a0c">&#9670;&nbsp;</a></span>create_nvidia_capture_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int create_nvidia_capture_device </td>
+          <td class="memname"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a>* create_nvidia_capture_device </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -197,7 +210,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="x11nvidiacapture_8h.html">x11nvidiacapture.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="nvidiacapture_8h.html">nvidiacapture.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
