@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('videodecode_8c.html',''); initResizabl
 <p>This file contains the code to create a video decoder and use that.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="videodecode_8h_source.html">videodecode.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="log__statistic_8h_source.html">fractal/utils/log_statistic.h</a>&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -141,9 +142,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code to create a video decoder and use that. </p>
 <p>Copyright Fractal Computers, Inc. 2021</p>
-<h1><a class="anchor" id="autotoc_md215"></a>
+<h1><a class="anchor" id="autotoc_md219"></a>
 decoder to decode frames.</h1>
-<h1><a class="anchor" id="autotoc_md216"></a>
+<h1><a class="anchor" id="autotoc_md220"></a>
 Usage</h1>
 <p>Video is decoded from H264 via ffmpeg; H265 is supported, but not currently used. Hardware-accelerated decoders are given priority, but if those fail, we decode on the CPU. All frames are eventually moved to the CPU for scaling and color conversion. Create a decoder via create_video_decoder. To decode a frame, call video_decoder_decode on the decoder and the encoded packets. To destroy the decoder when finished, destroy the encoder using video_decoder_decode. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>

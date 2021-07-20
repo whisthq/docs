@@ -14,6 +14,8 @@ var dir_df322525ef19ea0172bad82237de04c3 =
     [ "json.h", "json_8h.html", "json_8h" ],
     [ "lodepng.c", "lodepng_8c.html", "lodepng_8c" ],
     [ "lodepng.h", "lodepng_8h.html", "lodepng_8h" ],
+    [ "log_statistic.c", "log__statistic_8c.html", "log__statistic_8c" ],
+    [ "log_statistic.h", "log__statistic_8h.html", "log__statistic_8h" ],
     [ "logging.c", "logging_8c.html", "logging_8c" ],
     [ "logging.h", "logging_8h.html", "logging_8h" ],
     [ "mac_utils.c", "mac__utils_8c.html", "mac__utils_8c" ],

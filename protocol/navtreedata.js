@@ -88,11 +88,11 @@ var NAVTREEINDEX =
 "fractalgetopt_8c.html#ae30f05ee1e2e5652f174a35c7875d25e",
 "input_8c.html#a81933ce835596f75b018a99d771e939d",
 "lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fad6a42239671c359d83a337376272f1f1",
-"sdl__event__handler_8c.html#a6429187068c6c199a60f7425e05362fd",
-"structCaptureDevice.html#ad5e4ce03fe499186498d0219164fe31d",
-"structKVPair.html#a839d4855ee9f53e71eba5b05cf46fb09",
-"structVideoData.html#a5b0a69c681a1128045f84bac08ad6505",
-"winapi__input__driver_8c.html#a4ff7c93b0b6929590b766df7618614e7"
+"screencapture_8h.html#acddcc3aa008273807b931fbd1fd2a0bf",
+"structCaptureDevice.html#a4d79715c8323e9d3c34fc2419d54244d",
+"structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf",
+"structStunEntry.html#a10839151cc119dbc37f661fb95c781a2",
+"videoencode_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

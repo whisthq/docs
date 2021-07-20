@@ -71,6 +71,7 @@ var annotated_dup =
     [ "SDLVideoContext", "structSDLVideoContext.html", "structSDLVideoContext" ],
     [ "SignatureData", "structSignatureData.html", "structSignatureData" ],
     [ "SocketContext", "structSocketContext.html", "structSocketContext" ],
+    [ "StatisticData", "structStatisticData.html", "structStatisticData" ],
     [ "StunEntry", "structStunEntry.html", "structStunEntry" ],
     [ "StunRequest", "structStunRequest.html", "structStunRequest" ],
     [ "ucvector", "structucvector.html", "structucvector" ],
