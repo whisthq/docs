@@ -1,5 +1,6 @@
 var structFFmpegEncoder =
 [
+    [ "bitrate", "structFFmpegEncoder.html#a2ae0fedf9d315657a953e4af4deb2bb9", null ],
     [ "codec", "structFFmpegEncoder.html#ab0a0bffa578b5cdda3e3a2df79559235", null ],
     [ "codec_type", "structFFmpegEncoder.html#aa0355dad999dc4488e7232a6ae7e7985", null ],
     [ "context", "structFFmpegEncoder.html#a6d09613ab358fbe9c83c7f6f42e58c93", null ],

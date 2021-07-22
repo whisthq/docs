@@ -10,6 +10,7 @@ var structCaptureDevice =
     [ "duplication", "structCaptureDevice.html#a1585beb0d6a31abca75387fd7962743c", null ],
     [ "duplication_desc", "structCaptureDevice.html#aa4e41a29ef72dba9c75e70a41cb80d82", null ],
     [ "dxgi_cuda_available", "structCaptureDevice.html#a104ec4caeeff674bc3e4476bca202c55", null ],
+    [ "frame_data", "structCaptureDevice.html#a6800f23c51341920773e2dbaab517fe8", null ],
     [ "frame_data", "structCaptureDevice.html#a56f15ec7704de3bed4402e4c5487723e", null ],
     [ "frame_info", "structCaptureDevice.html#a6ebef6b13c3d4756f4f1f0de71229a7b", null ],
     [ "hardware", "structCaptureDevice.html#aa55d5107b84425915be58fba7433ddcc", null ],

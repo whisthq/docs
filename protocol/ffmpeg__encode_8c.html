@@ -113,8 +113,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a038e017b8be2be6b55f48d40e6fbb6d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a038e017b8be2be6b55f48d40e6fbb6d6">set_opt</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, char *<a class="el" href="structoption.html">option</a>, char *value)</td></tr>
-<tr class="separator:a038e017b8be2be6b55f48d40e6fbb6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23175808cea25551852ec1ca64d32439"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a23175808cea25551852ec1ca64d32439">set_opt</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, char *<a class="el" href="structoption.html">option</a>, char *value)</td></tr>
+<tr class="separator:a23175808cea25551852ec1ca64d32439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97ff2f956fbd9082e3490e2d0b5365a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a97ff2f956fbd9082e3490e2d0b5365a0">create_nvenc_encoder</a> (int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="separator:a97ff2f956fbd9082e3490e2d0b5365a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9688e5709d37e13877626a66c5b5039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#ae9688e5709d37e13877626a66c5b5039">create_qsv_encoder</a> (int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
@@ -124,6 +124,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a0fe709fad41e90091e23493ef5a6b058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a0fe709fad41e90091e23493ef5a6b058">create_ffmpeg_encoder</a> (int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="memdesc:a0fe709fad41e90091e23493ef5a6b058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new encoder.  <a href="ffmpeg__encode_8c.html#a0fe709fad41e90091e23493ef5a6b058">More...</a><br /></td></tr>
 <tr class="separator:a0fe709fad41e90091e23493ef5a6b058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac2dcffae1c9d12ec30438832b6dadc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a7ac2dcffae1c9d12ec30438832b6dadc">ffmpeg_reconfigure_encoder</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
+<tr class="separator:a7ac2dcffae1c9d12ec30438832b6dadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a0e2ca3b2e42c16087c14ed78d6d030b9">ffmpeg_encoder_frame_intake</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, void *rgb_pixels, int pitch)</td></tr>
 <tr class="memdesc:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into a software frame, and upload to a hardware frame if applicable.  <a href="ffmpeg__encode_8c.html#a0e2ca3b2e42c16087c14ed78d6d030b9">More...</a><br /></td></tr>
 <tr class="separator:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -591,6 +593,64 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7ac2dcffae1c9d12ec30438832b6dadc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac2dcffae1c9d12ec30438832b6dadc">&#9670;&nbsp;</a></span>ffmpeg_reconfigure_encoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ffmpeg_reconfigure_encoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>in_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>in_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>out_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>out_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bitrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
+          <td class="paramname"><em>codec_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7523bd870defc17734a03f7e88034161"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7523bd870defc17734a03f7e88034161">&#9670;&nbsp;</a></span>ffmpeg_set_iframe()</h2>
 
@@ -643,14 +703,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a038e017b8be2be6b55f48d40e6fbb6d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a038e017b8be2be6b55f48d40e6fbb6d6">&#9670;&nbsp;</a></span>set_opt()</h2>
+<a id="a23175808cea25551852ec1ca64d32439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23175808cea25551852ec1ca64d32439">&#9670;&nbsp;</a></span>set_opt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void set_opt </td>
+          <td class="memname">bool set_opt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td>
           <td class="paramname"><em>encoder</em>, </td>

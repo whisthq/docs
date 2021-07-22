@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"structFractalMouseWheelMessage.html#a45a24247859acd21f2ec72b716c6702f":[8,0,31,0],
+"structFractalMouseWheelMessage.html#abf553852527eb98a28971050f309f30c":[8,0,31,3],
+"structFractalMultigestureMessage.html":[8,0,32],
+"structFractalMultigestureMessage.html#a5fee4560815a6b016cdd28c5ea177156":[8,0,32,2],
 "structFractalMultigestureMessage.html#a736d0f0e068fd63264bf6500455bf155":[8,0,32,5],
 "structFractalMultigestureMessage.html#a96fe5fe1bc1a129932b4a5097cb2924c":[8,0,32,3],
 "structFractalMultigestureMessage.html#ab685f30c929b921bfec6bb041b5c4ade":[8,0,32,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "structNvidiaEncoder.html#aa54fc34114bd9f8f7521bccde9760418":[8,0,59,3],
 "structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709":[8,0,59,13],
 "structNvidiaEncoder.html#abaedbb50f564c663cae9bd38b2bd05e3":[8,0,59,2],
-"structNvidiaEncoder.html#abf286092a0fcee802960d70b27e32bbf":[8,0,59,1],
-"structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26":[8,0,59,6],
-"structNvidiaEncoder.html#adb88613a9ef984d97367a5e8f48933e8":[8,0,59,8],
-"structNvidiaEncoder.html#adedc11d83069d1537b68d85f602ecede":[8,0,59,11],
-"structNvidiaEncoder.html#af5f260d715aee66892c981d206ae5e32":[8,0,59,7]
+"structNvidiaEncoder.html#abf286092a0fcee802960d70b27e32bbf":[8,0,59,1]
 };

@@ -13,6 +13,7 @@ var ffmpeg__encode_8h =
     [ "ffmpeg_encoder_frame_intake", "ffmpeg__encode_8h.html#a0e2ca3b2e42c16087c14ed78d6d030b9", null ],
     [ "ffmpeg_encoder_receive_packet", "ffmpeg__encode_8h.html#a731cbac96e0dceaef41b44d4e3928a37", null ],
     [ "ffmpeg_encoder_send_frame", "ffmpeg__encode_8h.html#a4fac5117dccdd791ebfc6455df47af85", null ],
+    [ "ffmpeg_reconfigure_encoder", "ffmpeg__encode_8h.html#a7ac2dcffae1c9d12ec30438832b6dadc", null ],
     [ "ffmpeg_set_iframe", "ffmpeg__encode_8h.html#a7523bd870defc17734a03f7e88034161", null ],
     [ "ffmpeg_unset_iframe", "ffmpeg__encode_8h.html#aecc233fdf9336f6f3b9dbe0366df9ad2", null ]
 ];

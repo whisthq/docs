@@ -126,6 +126,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a0fe709fad41e90091e23493ef5a6b058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a0fe709fad41e90091e23493ef5a6b058">create_ffmpeg_encoder</a> (int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="memdesc:a0fe709fad41e90091e23493ef5a6b058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new encoder.  <a href="ffmpeg__encode_8h.html#a0fe709fad41e90091e23493ef5a6b058">More...</a><br /></td></tr>
 <tr class="separator:a0fe709fad41e90091e23493ef5a6b058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac2dcffae1c9d12ec30438832b6dadc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a7ac2dcffae1c9d12ec30438832b6dadc">ffmpeg_reconfigure_encoder</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
+<tr class="separator:a7ac2dcffae1c9d12ec30438832b6dadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a0e2ca3b2e42c16087c14ed78d6d030b9">ffmpeg_encoder_frame_intake</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, void *rgb_pixels, int pitch)</td></tr>
 <tr class="memdesc:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into a software frame, and upload to a hardware frame if applicable.  <a href="ffmpeg__encode_8h.html#a0e2ca3b2e42c16087c14ed78d6d030b9">More...</a><br /></td></tr>
 <tr class="separator:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -405,6 +407,64 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, else -1 </dd></dl>
+
+</div>
+</div>
+<a id="a7ac2dcffae1c9d12ec30438832b6dadc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac2dcffae1c9d12ec30438832b6dadc">&#9670;&nbsp;</a></span>ffmpeg_reconfigure_encoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ffmpeg_reconfigure_encoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>in_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>in_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>out_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>out_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bitrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
+          <td class="paramname"><em>codec_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -4,6 +4,8 @@ var structVideoEncoder =
     [ "codec_type", "structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9", null ],
     [ "encoded_frame_size", "structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f", null ],
     [ "ffmpeg_encoder", "structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7", null ],
+    [ "in_height", "structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027", null ],
+    [ "in_width", "structVideoEncoder.html#a580791874e935338868c45c242b1b4e0", null ],
     [ "is_iframe", "structVideoEncoder.html#a38a7c99b35edd4115d20a1b4e8c7bc82", null ],
     [ "num_packets", "structVideoEncoder.html#a20b578a3610dce40aef2d04397bd7744", null ],
     [ "nvidia_encoder", "structVideoEncoder.html#a42d5b0c1a8047fdb623974491da41004", null ],
