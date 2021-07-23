@@ -38,22 +38,6 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </section>
-<section id="module-app.helpers.utils.metrics.celery">
-<span id="app-helpers-utils-metrics-celery-module"></span><h2>app.helpers.utils.metrics.celery module<a class="headerlink" href="#module-app.helpers.utils.metrics.celery" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.utils.metrics.celery.register_metrics_monitor_in_worker">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.utils.metrics.celery.</span></span><span class="sig-name descname"><span class="pre">register_metrics_monitor_in_worker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flask_app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">flask.app.Flask</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.metrics.celery.register_metrics_monitor_in_worker" title="Permalink to this definition">¶</a></dt>
-<dd><p>Listen to Celery events to automatically report task metrics from each worker.</p>
-<p>The following metrics will be collected:
-* # of celery tasks being processed will be incremented/decremented when the task starts/ends
-* milliseconds a successful task took to complete
-* milliseconds a failing task took to terminate</p>
-<p>Each of these metrics will be accompanied by the standard dimensions plus:
-* the task’s ID
-* the task’s name</p>
-</dd></dl>
-
-</section>
 <section id="module-app.helpers.utils.metrics.flask_app">
 <span id="app-helpers-utils-metrics-flask-app-module"></span><h2>app.helpers.utils.metrics.flask_app module<a class="headerlink" href="#module-app.helpers.utils.metrics.flask_app" title="Permalink to this headline">¶</a></h2>
 <p>A singleton exposing app_record_metrics which is a wrapper around record_metrics that
@@ -70,9 +54,10 @@ The first time this is called it will use current_app to setup the metrics logge
 and extract default dimension values. Subsequent calls will use the cached logger
 and default dimensions.</p>
 <p>Example:</p>
-<ul>
-<li><dl>
-<dt>at the end of a celery task:</dt><dd><dl class="simple">
+<p>TODO: Update the example to show metrics for web
+* at the end of a celery task:</p>
+<blockquote>
+<div><dl class="simple">
 <dt>app_record_metrics(metrics={</dt><dd><p>“celery.task_duration.success.ms”: task_duration,
 “celery.tasks.count”: -1</p>
 </dd>
@@ -81,10 +66,7 @@ and default dimensions.</p>
 </dd>
 </dl>
 <p>})</p>
-</dd>
-</dl>
-</li>
-</ul>
+</div></blockquote>
 </dd></dl>
 
 </section>

@@ -15,8 +15,8 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="app.blueprints.celery package" href="app.blueprints.celery.html" />
-    <link rel="prev" title="app.blueprints.admin package" href="app.blueprints.admin.html" />
+    <link rel="next" title="app.blueprints.host_service package" href="app.blueprints.host_service.html" />
+    <link rel="prev" title="app.blueprints package" href="app.blueprints.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -38,129 +38,20 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </section>
-<section id="module-app.blueprints.aws.aws_container_blueprint">
-<span id="app-blueprints-aws-aws-container-blueprint-module"></span><h2>app.blueprints.aws.aws_container_blueprint module<a class="headerlink" href="#module-app.blueprints.aws.aws_container_blueprint" title="Permalink to this headline">¶</a></h2>
+<section id="module-app.blueprints.aws.aws_mandelbox_blueprint">
+<span id="app-blueprints-aws-aws-mandelbox-blueprint-module"></span><h2>app.blueprints.aws.aws_mandelbox_blueprint module<a class="headerlink" href="#module-app.blueprints.aws.aws_mandelbox_blueprint" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="app.blueprints.aws.aws_container_blueprint.aws_cluster_delete">
-<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_container_blueprint.</span></span><span class="sig-name descname"><span class="pre">aws_cluster_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_container_blueprint.aws_cluster_delete" title="Permalink to this definition">¶</a></dt>
-<dd><p>Delete the specified cluster.</p>
-<dl>
-<dt>POST keys:</dt><dd><p>cluster_name: The short name of the cluster to delete as a string.
-region_name: The name of the AWS region in which the cluster is running as a string.
-force: Optional. A boolean indiciating whether or not to delete the cluster even if there</p>
-<blockquote>
-<div><p>are still ECS tasks running on the cluster.</p>
-</div></blockquote>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>A dictionary containing a single key, “ID”, whose value is the task ID of a Celery task
-whose progress may be monitored through the /status/ endpoint.</p>
-</dd>
-</dl>
-</dd></dl>
+<dt class="sig sig-object py" id="app.blueprints.aws.aws_mandelbox_blueprint.aws_mandelbox_assign">
+<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_mandelbox_blueprint.</span></span><span class="sig-name descname"><span class="pre">aws_mandelbox_assign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="app.html#app.validation.MandelboxAssignBody" title="app.validation.MandelboxAssignBody"><span class="pre">app.validation.MandelboxAssignBody</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">_kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_mandelbox_blueprint.aws_mandelbox_assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="app.blueprints.aws.aws_container_blueprint.aws_container_assign">
-<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_container_blueprint.</span></span><span class="sig-name descname"><span class="pre">aws_container_assign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_container_blueprint.aws_container_assign" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assigns aws container. Needs:
-- username (str): username
-- config_encryption_token (str): the encryption token for app config
-- app (str): name of app that user is trying to use
-- region (str): region in which to host in AWS
-- dpi (int): dots per inch</p>
-<p>Returns container status</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.blueprints.aws.aws_container_blueprint.aws_container_delete">
-<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_container_blueprint.</span></span><span class="sig-name descname"><span class="pre">aws_container_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_container_blueprint.aws_container_delete" title="Permalink to this definition">¶</a></dt>
-<dd><p>Delete a container. Needs:
-- container_id (str): The ARN of the running container.
-- private_key (str): AES key</p>
-<p>Returns celery ID to poll.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.blueprints.aws.aws_container_blueprint.aws_container_info">
-<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_container_blueprint.</span></span><span class="sig-name descname"><span class="pre">aws_container_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_container_blueprint.aws_container_info" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get container info. Needs:
-- identifier (int): the port corresponding to port 32262
-- private_key (str): aes encryption key</p>
-<p>Returns info after a db lookup.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.blueprints.aws.aws_container_blueprint.aws_container_ping">
-<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_container_blueprint.</span></span><span class="sig-name descname"><span class="pre">aws_container_ping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_container_blueprint.aws_container_ping" title="Permalink to this definition">¶</a></dt>
-<dd><p>Ping aws container. Needs:
-- available (bool): True if Container is not being used, False otherwise
-- identifier (int): the port corresponding to port 32262
-- private_key (str): aes encryption key</p>
-<p>Returns container status</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.blueprints.aws.aws_container_blueprint.container_state">
-<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_container_blueprint.</span></span><span class="sig-name descname"><span class="pre">container_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_container_blueprint.container_state" title="Permalink to this definition">¶</a></dt>
-<dd><p>This is an endpoint which accesses our container_state_values table.
-This table hides much of the inner workings of container spinup from users
-and simply provides information regarding whether a user’s app/container is
-ready, cancelled, failed, etc. It is meant to be listened on through
-a GraphQL websocket (subscription) for the loading page in the client app.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>action</strong> (<em>str</em>) – The string at the end of the URL which signifies</p></li>
-<li><p><strong>Currently</strong> (<em>which action we want to take.</em>) – </p></li>
-<li><p><strong>provided</strong> (<em>only the cancel endpoint is</em>) – </p></li>
-</ul>
-</dd>
-</dl>
-<p>:param :
-:param which allows us to easily cancel a spinning up container and clean up our redux state.:</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>A json HTTP response and status code.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>json, int</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.blueprints.aws.aws_container_blueprint.regions">
-<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_container_blueprint.</span></span><span class="sig-name descname"><span class="pre">regions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_container_blueprint.regions" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.blueprints.aws.aws_mandelbox_blueprint.regions">
+<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_mandelbox_blueprint.</span></span><span class="sig-name descname"><span class="pre">regions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_mandelbox_blueprint.regions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the list of regions in which users are allowed to deploy tasks.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A list of strings, where each string is the name of a region.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.blueprints.aws.aws_container_blueprint.test_endpoint">
-<span class="sig-prename descclassname"><span class="pre">app.blueprints.aws.aws_container_blueprint.</span></span><span class="sig-name descname"><span class="pre">test_endpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.blueprints.aws.aws_container_blueprint.test_endpoint" title="Permalink to this definition">¶</a></dt>
-<dd><p>This is an endpoint for administrators and developers to test
-aws container creation, cluster creation, deletion, etcetera. It differs from our
-regular container endpoints in that it requires some different parameters and it
-has some additional functionality (i.e. for clusters).</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>action</strong> (<em>str</em>) – The action the user is requiesting in the url</p></li>
-<li><p><strong>clarity</strong><strong>)</strong><strong></strong> (<em>(</em><em>look at the route for</em>) – </p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>the json http response and the http status code
-(which is an int like 200, 400, …).</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>json, int</p>
 </dd>
 </dl>
 </dd></dl>
@@ -207,8 +98,8 @@ has some additional functionality (i.e. for clusters).</p>
   <li><a href="modules.html">app</a><ul>
   <li><a href="app.html">app package</a><ul>
   <li><a href="app.blueprints.html">app.blueprints package</a><ul>
-      <li>Previous: <a href="app.blueprints.admin.html" title="previous chapter">app.blueprints.admin package</a></li>
-      <li>Next: <a href="app.blueprints.celery.html" title="next chapter">app.blueprints.celery package</a></li>
+      <li>Previous: <a href="app.blueprints.html" title="previous chapter">app.blueprints package</a></li>
+      <li>Next: <a href="app.blueprints.host_service.html" title="next chapter">app.blueprints.host_service package</a></li>
   </ul></li>
   </ul></li>
   </ul></li>

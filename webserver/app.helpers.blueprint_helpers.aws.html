@@ -38,177 +38,128 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </section>
-<section id="module-app.helpers.blueprint_helpers.aws.aws_container_post">
-<span id="app-helpers-blueprint-helpers-aws-aws-container-post-module"></span><h2>app.helpers.blueprint_helpers.aws.aws_container_post module<a class="headerlink" href="#module-app.helpers.blueprint_helpers.aws.aws_container_post" title="Permalink to this headline">¶</a></h2>
-<dl class="py exception">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_container_post.BadAppError">
-<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_container_post.</span></span><span class="sig-name descname"><span class="pre">BadAppError</span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_container_post.BadAppError" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
-<p>Raised when <cite>preprocess_task_info</cite> doesn’t recognize an input.</p>
+<section id="module-app.helpers.blueprint_helpers.aws.aws_instance_post">
+<span id="app-helpers-blueprint-helpers-aws-aws-instance-post-module"></span><h2>app.helpers.blueprint_helpers.aws.aws_instance_post module<a class="headerlink" href="#module-app.helpers.blueprint_helpers.aws.aws_instance_post" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.check_and_handle_lingering_instances">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">check_and_handle_lingering_instances</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.check_and_handle_lingering_instances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drains all lingering instances when called.
+:returns: None</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_container_post.ping_helper">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_container_post.</span></span><span class="sig-name descname"><span class="pre">ping_helper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">available</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">container_ip</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port_32262</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aeskey</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_container_post.ping_helper" title="Permalink to this definition">¶</a></dt>
-<dd><p>Update container state in the database.</p>
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.do_scale_up_if_necessary">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">do_scale_up_if_necessary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ami</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_buffer</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.do_scale_up_if_necessary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scales up new instances as needed, given a region and AMI to check
+Specifically, if we want to add X instances (_get_num_new_instances
+returns X), we generate X new names and spin up new instances with those
+names.
+:param region: which region to check for scaling
+:param ami: which AMI to scale with
+:param force_buffer: this will be used to override the recommendation for
+:param number of instances to be launched by <cite>_get_num_new_instances</cite>:</p>
+<p>Returns: List of names of the instances created, if any.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.drain_instance">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">drain_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="app.models.html#app.models.hardware.InstanceInfo" title="app.models.hardware.InstanceInfo"><span class="pre">app.models.hardware.InstanceInfo</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.drain_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attempts to drain an instance, logging an error and marking unresponsive
+if it cannot be drained.
+:param instance: The instance to drain</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.find_instance">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">find_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_commit_hash</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.find_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a region, finds (if it can) an instance in that region or a neighboring region with space
+If it succeeds, returns the instance name.  Else, returns None
+:param region: which region to search</p>
+<p>Returns: either a good instance name or None</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.get_base_free_mandelboxes">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">get_base_free_mandelboxes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.get_base_free_mandelboxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of containers an instance of this type can hold
+:param instance_type: Which type of instance this is</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>How many containers can it hold</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.repeated_lingering_harness">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">repeated_lingering_harness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">time_delay:</span> <span class="pre">int</span></em>, <em class="sig-param"><span class="pre">flask_app:</span> <span class="pre">Any</span> <span class="pre">=</span> <span class="pre">&lt;LocalProxy</span> <span class="pre">unbound&gt;</span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.repeated_lingering_harness" title="Permalink to this definition">¶</a></dt>
+<dd><p>checks lingering instances every time_delay seconds.
+NOTE:  this function keeps looping and will
+not stop manually.
+Only run in background threads.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>available</strong> (<em>bool</em>) – True if Container is not being used, False otherwise</p></li>
-<li><p><strong>container_ip</strong> (<em>str</em>) – Container IP address</p></li>
-<li><p><strong>port_32262</strong> (<em>int</em>) – the port corresponding to port 32262</p></li>
-<li><p><strong>aeskey</strong> (<em>str</em>) – The container’s AES key.</p></li>
-<li><p><strong>version</strong> (<em>str</em>) – The version of the protocol that is running in the
-container.</p></li>
+<li><p><strong>time_delay</strong> (<em>int</em>) – how often to run the scaling, in seconds</p></li>
+<li><p><strong>flask_app</strong> (<em>Flask.application</em>) – app context, needed for DB operations</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>A pair of HTTP response JSON and an HTTP status code.</p>
-</dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_container_post.preprocess_task_info">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_container_post.</span></span><span class="sig-name descname"><span class="pre">preprocess_task_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_container_post.preprocess_task_info" title="Permalink to this definition">¶</a></dt>
-<dd><p>Maps names of applications to ECS task definitions.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>app</strong> – The name of the application for which to generate a task
-definition.</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><dl class="simple">
-<dt>A  triple containing arguments two through four of the</dt><dd><p>create_new_container celery task.</p>
-</dd>
-</dl>
-</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_container_post.protocol_info">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_container_post.</span></span><span class="sig-name descname"><span class="pre">protocol_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aeskey</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_container_post.protocol_info" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns information, which is consumed by the protocol, to the client.</p>
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.repeated_scale_down_harness">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">repeated_scale_down_harness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">time_delay:</span> <span class="pre">int</span></em>, <em class="sig-param"><span class="pre">flask_app:</span> <span class="pre">Any</span> <span class="pre">=</span> <span class="pre">&lt;LocalProxy</span> <span class="pre">unbound&gt;</span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.repeated_scale_down_harness" title="Permalink to this definition">¶</a></dt>
+<dd><p>checks scaling every time_delay seconds.
+NOTE:  this function keeps looping and will
+not stop manually.
+Only run in background threads.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>address</strong> (<em>str</em>) – The IP address of the container whose information should be
-returned.</p></li>
-<li><p><strong>port</strong> (<em>str</em>) – which port the container’s port 32262 is mapped to</p></li>
-<li><p><strong>aeskey</strong> (<em>str</em>) – the container’s individual AES key</p></li>
+<li><p><strong>time_delay</strong> (<em>int</em>) – how often to run the scaling, in seconds</p></li>
+<li><p><strong>flask_app</strong> (<em>Flask.application</em>) – app context, needed for DB operations</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>a dict with conainer info</p>
-</dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.try_scale_down_if_necessary">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">try_scale_down_if_necessary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ami</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.try_scale_down_if_necessary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scales down new instances as needed, given a region and AMI to check
+Specifically, if we want to remove X instances (_get_num_new_instances
+returns -X), we get as many inactive instances as we can (up to X)
+and stop them.
+:param region: which region to check for scaling
+:param ami: which AMI to scale with</p>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.try_scale_down_if_necessary_all_regions">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">try_scale_down_if_necessary_all_regions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.try_scale_down_if_necessary_all_regions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs try_scale_down_if_necessary on every region/AMI pair in our db</p>
 </dd></dl>
 
 </section>
-<section id="module-app.helpers.blueprint_helpers.aws.container_state">
-<span id="app-helpers-blueprint-helpers-aws-container-state-module"></span><h2>app.helpers.blueprint_helpers.aws.container_state module<a class="headerlink" href="#module-app.helpers.blueprint_helpers.aws.container_state" title="Permalink to this headline">¶</a></h2>
+<section id="module-app.helpers.blueprint_helpers.aws.aws_instance_state">
+<span id="app-helpers-blueprint-helpers-aws-aws-instance-state-module"></span><h2>app.helpers.blueprint_helpers.aws.aws_instance_state module<a class="headerlink" href="#module-app.helpers.blueprint_helpers.aws.aws_instance_state" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-app.helpers.blueprint_helpers.aws.aws_mandelbox_assign_post">
+<span id="app-helpers-blueprint-helpers-aws-aws-mandelbox-assign-post-module"></span><h2>app.helpers.blueprint_helpers.aws.aws_mandelbox_assign_post module<a class="headerlink" href="#module-app.helpers.blueprint_helpers.aws.aws_mandelbox_assign_post" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.container_state.can_update_container_state">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.container_state.</span></span><span class="sig-name descname"><span class="pre">can_update_container_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="app.models.html#app.models.hardware.UserContainerState" title="app.models.hardware.UserContainerState"><span class="pre">app.models.hardware.UserContainerState</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.container_state.can_update_container_state" title="Permalink to this definition">¶</a></dt>
-<dd><p>This lets us know if the user’s entry in UserContainerState
-can be updated (meaning that the task_id which is calling this,
-passing its own task_id, is still the valid one for that
-entry: this is meant to avoid race conditions).</p>
-<p>This is used by the create_container endpoint to check whether it can set it
-to FAILURE or CANCELLED (imagine that the user cancels and initializes a new task,
-then this old task would not want to be able to overwrite the table.)</p>
-<p>If obj is null then it will pass since that signifies creation. If task_id is null
-then it will also pass signifying that we do not actually care about the task_id.
-However, if this is used as a prelude to creation of an entry, that
-creation will fail since the column is non-nullable.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>user</strong> (<em>str</em>) – The username of the user who’s entry we want to</p></li>
-<li><p><strong>updated.</strong> (<em>check for whether it can be</em>) – </p></li>
-<li><p><strong>task_id</strong> (<em>str</em>) – The task id (status id) of the celery task calling this.</p></li>
-<li><p><strong>obj</strong> (<a class="reference internal" href="app.models.html#app.models.hardware.UserContainerState" title="app.models.hardware.UserContainerState"><em>UserContainerState</em></a>) – an object that can be passed if it’s being used inside</p></li>
-<li><p><strong>method</strong> (<em>an internal</em>) – </p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Whether the task id matches and this hasn’t been cancelled.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>bool</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.container_state.container_state_obj">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.container_state.</span></span><span class="sig-name descname"><span class="pre">container_state_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="app.models.html#app.models.hardware.UserContainerState" title="app.models.hardware.UserContainerState"><span class="pre">app.models.hardware.UserContainerState</span></a></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.container_state.container_state_obj" title="Permalink to this definition">¶</a></dt>
-<dd><p>Fetches the UserContainerState object which has the user_id,
-state, and task_id (i.e. for the celery task, called statusID on the client app).
-This can be used to modify the table or read values.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>An entry into the UserContainerState table
-(user_app_state in SQL).</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference internal" href="app.models.html#app.models.hardware.UserContainerState" title="app.models.hardware.UserContainerState">UserContainerState</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.container_state.create_container_state">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.container_state.</span></span><span class="sig-name descname"><span class="pre">create_container_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'PENDING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ip</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_app_auth_secret</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.container_state.create_container_state" title="Permalink to this definition">¶</a></dt>
-<dd><p>Creates a new entry into the app_info table.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>user_id</strong> (<em>str</em>) – The username of the user for whom’stdv this entry belongs.</p></li>
-<li><p><strong>task_id</strong> (<em>str</em>) – The task id of the task that’s creating this.</p></li>
-<li><p><strong>ip</strong> (<em>str</em><em>, </em><em>optional</em>) – the IP of this container (none if none assigned)</p></li>
-<li><p><strong>client_app_auth_secret</strong> (<em>str</em><em>, </em><em>optional</em>) – the host service auth secret of this container
-(none if none assigned)</p></li>
-<li><p><strong>port</strong> (<em>int</em><em>, </em><em>optional</em>) – the port mapping of this container (none if none assigned)</p></li>
-<li><p><strong>state</strong> (<em>str</em><em>, </em><em>optional</em>) – The state that we want to write to the table for this</p></li>
-<li><p><strong>PENDING.</strong> (<em>new object. Defaults to</em>) – </p></li>
-</ul>
-</dd>
-<dt class="field-even">Raises</dt>
-<dd class="field-even"><p><strong>Exception</strong> – if it fails to commit the creation somehow.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.container_state.set_container_state">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.container_state.</span></span><span class="sig-name descname"><span class="pre">set_container_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keyuser</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keytask</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ip</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_app_auth_secret</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.container_state.set_container_state" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set a container state in the UserContinerState (user_app_state) table. We
-require a keyuser (and potentially keytask) to set it. You can null out keytask only if
-the entry already exists and force is true. Otherwise keytask is required to check
-whether that entry can be updated. It can be updated only if the keytask matches the
-current task and it’s not cancelled. The other params (aside from force) set those
-values in the entry in the table.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>keyuser</strong> (<em>str</em>) – The user to filter by.</p></li>
-<li><p><strong>keytask</strong> (<em>str</em>) – The task id that we should expect to be the current task</p></li>
-<li><p><strong>entry.</strong> (<em>in that</em>) – </p></li>
-<li><p><strong>user_id</strong> (<em>str</em><em>, </em><em>optional</em>) – The user_id we want to set. Defaults to None.</p></li>
-<li><p><strong>state</strong> (<em>str</em><em>, </em><em>optional</em>) – The state we want to set. Defaults to None.</p></li>
-<li><p><strong>ip</strong> (<em>str</em><em>, </em><em>optional</em>) – which IP we want to set. Defaults to None.</p></li>
-<li><p><strong>client_app_auth_secret</strong> (<em>str</em><em>, </em><em>optional</em>) – what the host service auth secret is.
-Defaults to None</p></li>
-<li><p><strong>port</strong> (<em>int</em><em>, </em><em>optional</em>) – which port we want to set. Defaults to None.</p></li>
-<li><p><strong>task_id</strong> (<em>str</em><em>, </em><em>optional</em>) – The task id we want to set. Defaults to None.</p></li>
-<li><p><strong>force</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to update with a check for validity or not.</p></li>
-<li><p><strong>False.</strong> (<em>Defaults to</em>) – </p></li>
-</ul>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_mandelbox_assign_post.is_user_active">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_mandelbox_assign_post.</span></span><span class="sig-name descname"><span class="pre">is_user_active</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_mandelbox_assign_post.is_user_active" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function determines whether a given user already has a mandelbox running.
+Is it’s own function for ease of testing.
+:param username: Which user to check for</p>
+<p>Returns: True if and only if the user has a mandelbox in the DB</p>
 </dd></dl>
 
 </section>

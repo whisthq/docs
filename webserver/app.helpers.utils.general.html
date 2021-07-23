@@ -15,7 +15,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="app.helpers.utils.locations package" href="app.helpers.utils.locations.html" />
+    <link rel="next" title="app.helpers.utils.mail package" href="app.helpers.utils.mail.html" />
     <link rel="prev" title="app.helpers.utils.event_logging package" href="app.helpers.utils.event_logging.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -46,12 +46,29 @@
 </section>
 <section id="module-app.helpers.utils.general.logs">
 <span id="app-helpers-utils-general-logs-module"></span><h2>app.helpers.utils.general.logs module<a class="headerlink" href="#module-app.helpers.utils.general.logs" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-app.helpers.utils.general.name_generation">
+<span id="app-helpers-utils-general-name-generation-module"></span><h2>app.helpers.utils.general.name_generation module<a class="headerlink" href="#module-app.helpers.utils.general.name_generation" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.utils.general.logs.fractal_task_prerun">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.logs.</span></span><span class="sig-name descname"><span class="pre">fractal_task_prerun</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.logs.fractal_task_prerun" title="Permalink to this definition">¶</a></dt>
-<dd><p>See <a class="reference external" href="https://docs.celeryproject.org/en/stable/userguide/signals.html#task-prerun">https://docs.celeryproject.org/en/stable/userguide/signals.html#task-prerun</a>.
-This is run before any celery task is executed. We use this to print out the args
-and kwargs of every celery task so its input state is clear.</p>
+<dt class="sig sig-object py" id="app.helpers.utils.general.name_generation.generate_name">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.name_generation.</span></span><span class="sig-name descname"><span class="pre">generate_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">starter_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_prefix</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">branch</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">commit</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.name_generation.generate_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function for generating a name with a random UID
+:param starter_name: starter string for the name
+:type starter_name: Optional[str]
+:param test_prefix: whether the resource should have a “test-” prefix attached
+:type test_prefix: Optional[bool]
+:param branch: Which branch this instance is being created on
+:type branch: Optional[str]
+:param commit: Which commit this instance is being created on
+:type commit: Optional[str]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the generated name</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -68,31 +85,11 @@ and kwargs of every celery task so its input state is clear.</p>
 <dd></dd></dl>
 
 </section>
-<section id="module-app.helpers.utils.general.time">
-<span id="app-helpers-utils-general-time-module"></span><h2>app.helpers.utils.general.time module<a class="headerlink" href="#module-app.helpers.utils.general.time" title="Permalink to this headline">¶</a></h2>
+<section id="module-app.helpers.utils.general.timing">
+<span id="app-helpers-utils-general-timing-module"></span><h2>app.helpers.utils.general.timing module<a class="headerlink" href="#module-app.helpers.utils.general.timing" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.utils.general.time.date_to_string">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></span><span class="sig-name descname"><span class="pre">date_to_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.date_to_string" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.utils.general.time.date_to_unix">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></span><span class="sig-name descname"><span class="pre">date_to_unix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.date_to_unix" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.utils.general.time.get_current_time">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></span><span class="sig-name descname"><span class="pre">get_current_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.get_current_time" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.utils.general.time.get_today">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></span><span class="sig-name descname"><span class="pre">get_today</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.get_today" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.utils.general.time.unix_to_date">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.time.</span></span><span class="sig-name descname"><span class="pre">unix_to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.time.unix_to_date" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="app.helpers.utils.general.timing.log_time">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.utils.general.timing.</span></span><span class="sig-name descname"><span class="pre">log_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.helpers.utils.general.timing.log_time" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </section>
@@ -147,7 +144,7 @@ and kwargs of every celery task so its input state is clear.</p>
   <li><a href="app.helpers.html">app.helpers package</a><ul>
   <li><a href="app.helpers.utils.html">app.helpers.utils package</a><ul>
       <li>Previous: <a href="app.helpers.utils.event_logging.html" title="previous chapter">app.helpers.utils.event_logging package</a></li>
-      <li>Next: <a href="app.helpers.utils.locations.html" title="next chapter">app.helpers.utils.locations package</a></li>
+      <li>Next: <a href="app.helpers.utils.mail.html" title="next chapter">app.helpers.utils.mail package</a></li>
   </ul></li>
   </ul></li>
   </ul></li>
