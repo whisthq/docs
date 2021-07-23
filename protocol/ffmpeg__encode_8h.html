@@ -137,11 +137,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4fac5117dccdd791ebfc6455df47af85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the frame in <code>encoder-&gt;sw_frame</code> or <code>encoder-&gt;hw_frame</code>. The encoded packet(s) are stored in <code>encoder-&gt;packets</code>, and the size of the buffer necessary to store them is stored in <code>encoder-&gt;encoded_frame_size</code>  <a href="ffmpeg__encode_8h.html#a4fac5117dccdd791ebfc6455df47af85">More...</a><br /></td></tr>
 <tr class="separator:a4fac5117dccdd791ebfc6455df47af85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7523bd870defc17734a03f7e88034161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a7523bd870defc17734a03f7e88034161">ffmpeg_set_iframe</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a7523bd870defc17734a03f7e88034161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well. Right now, this function is not reliable.  <a href="ffmpeg__encode_8h.html#a7523bd870defc17734a03f7e88034161">More...</a><br /></td></tr>
+<tr class="memdesc:a7523bd870defc17734a03f7e88034161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well.  <a href="ffmpeg__encode_8h.html#a7523bd870defc17734a03f7e88034161">More...</a><br /></td></tr>
 <tr class="separator:a7523bd870defc17734a03f7e88034161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecc233fdf9336f6f3b9dbe0366df9ad2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#aecc233fdf9336f6f3b9dbe0366df9ad2">ffmpeg_unset_iframe</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:aecc233fdf9336f6f3b9dbe0366df9ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the next frame to be either an I-frame or not an i-frame. Right now, this function is not reliable.  <a href="ffmpeg__encode_8h.html#aecc233fdf9336f6f3b9dbe0366df9ad2">More...</a><br /></td></tr>
-<tr class="separator:aecc233fdf9336f6f3b9dbe0366df9ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a588b81c7a9be9daa76b2527e7368b10b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a588b81c7a9be9daa76b2527e7368b10b">destroy_ffmpeg_encoder</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a588b81c7a9be9daa76b2527e7368b10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy encoder.  <a href="ffmpeg__encode_8h.html#a588b81c7a9be9daa76b2527e7368b10b">More...</a><br /></td></tr>
 <tr class="separator:a588b81c7a9be9daa76b2527e7368b10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,15 +146,15 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code to create and destroy FFmpeg encoders and use. </p>
 <p>Copyright Fractal Computers, Inc. 2021</p>
-<h1><a class="anchor" id="autotoc_md213"></a>
+<h1><a class="anchor" id="autotoc_md209"></a>
 them to encode captured screens.</h1>
-<h1><a class="anchor" id="autotoc_md214"></a>
+<h1><a class="anchor" id="autotoc_md210"></a>
 Usage</h1>
 <p>Video is encoded to H264 via either a hardware encoder (currently, we use NVidia GPUs, so we use NVENC) or a software encoder if hardware encoding fails. H265 is also supported but not currently used. For encoders, create an H264 encoder via create_ffmpeg_encoder, and use it to encode frames via ffmpeg_encoder_send_frame. Retrieve encoded packets using ffmpeg_encoder_receive_packet. When finished, destroy the encoder using destroy_ffmpeg_encoder.</p>
 <p>Copyright Fractal Computers, Inc. 2021</p>
-<h1><a class="anchor" id="autotoc_md215"></a>
+<h1><a class="anchor" id="autotoc_md211"></a>
 them to encode captured screens.</h1>
-<h1><a class="anchor" id="autotoc_md216"></a>
+<h1><a class="anchor" id="autotoc_md212"></a>
 Usage</h1>
 <p>Video is encoded to H264 via either a hardware encoder (currently, we use NVidia GPUs, so we use NVENC) or a software encoder if hardware encoding fails. H265 is also supported but not currently used. For encoders, create an H264 encoder via create_ffmpeg_encoder, and use it to encode frames via ffmpeg_encoder_send_frame. Retrieve encoded packets using ffmpeg_encoder_receive_packet. When finished, destroy the encoder using destroy_ffmpeg_encoder. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
@@ -484,33 +481,7 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Set the next frame to be an IDR-frame, with SPS/PPS headers included as well. Right now, this function is not reliable. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">encoder</td><td>Encoder to be updated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aecc233fdf9336f6f3b9dbe0366df9ad2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecc233fdf9336f6f3b9dbe0366df9ad2">&#9670;&nbsp;</a></span>ffmpeg_unset_iframe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ffmpeg_unset_iframe </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allow the next frame to be either an I-frame or not an i-frame. Right now, this function is not reliable. </p>
+<p>Set the next frame to be an IDR-frame, with SPS/PPS headers included as well. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>Encoder to be updated </td></tr>

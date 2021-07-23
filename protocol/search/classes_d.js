@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['option_1882',['option',['../structoption.html',1,'']]],
-  ['osxfilenames_1883',['OSXFilenames',['../structOSXFilenames.html',1,'']]],
-  ['osximage_1884',['OSXImage',['../structOSXImage.html',1,'']]]
+  ['regionheader_1852',['RegionHeader',['../structRegionHeader.html',1,'']]],
+  ['ringbuffer_1853',['RingBuffer',['../structRingBuffer.html',1,'']]],
+  ['rwlock_1854',['RWLock',['../structRWLock.html',1,'']]]
 ];

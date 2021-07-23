@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['screenshotcontainer_1890',['ScreenshotContainer',['../structScreenshotContainer.html',1,'']]],
-  ['sdlvideocontext_1891',['SDLVideoContext',['../structSDLVideoContext.html',1,'']]],
-  ['signaturedata_1892',['SignatureData',['../structSignatureData.html',1,'']]],
-  ['socketcontext_1893',['SocketContext',['../structSocketContext.html',1,'']]],
-  ['statisticdata_1894',['StatisticData',['../structStatisticData.html',1,'']]],
-  ['stunentry_1895',['StunEntry',['../structStunEntry.html',1,'']]],
-  ['stunrequest_1896',['StunRequest',['../structStunRequest.html',1,'']]]
+  ['videodata_1865',['VideoData',['../structVideoData.html',1,'']]],
+  ['videodecoder_1866',['VideoDecoder',['../structVideoDecoder.html',1,'']]],
+  ['videoencoder_1867',['VideoEncoder',['../structVideoEncoder.html',1,'']]],
+  ['videoframe_1868',['VideoFrame',['../structVideoFrame.html',1,'']]]
 ];

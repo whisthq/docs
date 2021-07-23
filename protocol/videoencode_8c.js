@@ -6,6 +6,5 @@ var videoencode_8c =
     [ "transfer_ffmpeg_data", "videoencode_8c.html#a3f5453b8d7b53bbca04de7333c8ae718", null ],
     [ "transfer_nvidia_data", "videoencode_8c.html#abb912fcbf1706b8244597d99369363a1", null ],
     [ "video_encoder_encode", "videoencode_8c.html#a444edd5dc4cb990b7441ba96964936fa", null ],
-    [ "video_encoder_set_iframe", "videoencode_8c.html#a22d76272235619a7657b984487f1412a", null ],
-    [ "video_encoder_unset_iframe", "videoencode_8c.html#a63794a609f997d8a1cc1201685362939", null ]
+    [ "video_encoder_set_iframe", "videoencode_8c.html#a22d76272235619a7657b984487f1412a", null ]
 ];

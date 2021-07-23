@@ -100,7 +100,6 @@ $(document).ready(function(){initNavTree('fractal_2network_2network_8c.html','')
 <code>#include &lt;fcntl.h&gt;</code><br />
 <code>#include &quot;curl/curl.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="aes_8h_source.html">../utils/aes.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="json_8h_source.html">../utils/json.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -181,8 +180,6 @@ Functions</h2></td></tr>
 <tr class="separator:a3a2e10bd110ac081cd0cf43dfe111415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad86cd124c9b1757f4f424472babc829a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8c.html#ad86cd124c9b1757f4f424472babc829a">write_curl_response_callback</a> (char *ptr, size_t size, size_t nmemb, <a class="el" href="structCurlResponseBuffer.html">CurlResponseBuffer</a> *crb)</td></tr>
 <tr class="separator:ad86cd124c9b1757f4f424472babc829a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1860df4763000e89804a2b5acb39ad7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8c.html#ab1860df4763000e89804a2b5acb39ad7">send_http_request</a> (char *type, char *host_s, char *path, char *payload, char **response_body, size_t max_response_size)</td></tr>
-<tr class="separator:ab1860df4763000e89804a2b5acb39ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aa5e35a90b347a4c8a872f4bdddeec3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8c.html#a9aa5e35a90b347a4c8a872f4bdddeec3">init_networking</a> ()</td></tr>
 <tr class="separator:a9aa5e35a90b347a4c8a872f4bdddeec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3a12244c910bce55bfdcbd9bd5d687c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8c.html#ae3a12244c910bce55bfdcbd9bd5d687c">get_last_network_error</a> ()</td></tr>
@@ -216,12 +213,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a838d6a33dc748b31e1f3acc343159f7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8c.html#a838d6a33dc748b31e1f3acc343159f7a">free_tcp_packet</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> *tcp_packet)</td></tr>
 <tr class="memdesc:a838d6a33dc748b31e1f3acc343159f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a TCP packet created by read_tcp_packet.  <a href="fractal_2network_2network_8c.html#a838d6a33dc748b31e1f3acc343159f7a">More...</a><br /></td></tr>
 <tr class="separator:a838d6a33dc748b31e1f3acc343159f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d3b75dc6f536b07d479db5ba180b3e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8c.html#a4d3b75dc6f536b07d479db5ba180b3e3">send_post_request</a> (char *host_s, char *path, char *payload, char **response_body, size_t max_response_size)</td></tr>
-<tr class="memdesc:a4d3b75dc6f536b07d479db5ba180b3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a JSON POST request to some host and provides the response body.  <a href="fractal_2network_2network_8c.html#a4d3b75dc6f536b07d479db5ba180b3e3">More...</a><br /></td></tr>
-<tr class="separator:a4d3b75dc6f536b07d479db5ba180b3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1480ca6028a627eaad41f38c617a595d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8c.html#a1480ca6028a627eaad41f38c617a595d">send_get_request</a> (char *host_s, char *path, char **response_body, size_t max_response_size)</td></tr>
-<tr class="memdesc:a1480ca6028a627eaad41f38c617a595d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a JSON GET request to some host and provides the response body.  <a href="fractal_2network_2network_8c.html#a1480ca6028a627eaad41f38c617a595d">More...</a><br /></td></tr>
-<tr class="separator:a1480ca6028a627eaad41f38c617a595d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -1185,169 +1176,6 @@ Server</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, will return 0 on success </dd></dl>
-
-</div>
-</div>
-<a id="a1480ca6028a627eaad41f38c617a595d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1480ca6028a627eaad41f38c617a595d">&#9670;&nbsp;</a></span>send_get_request()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool send_get_request </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>host_s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>response_body</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>max_response_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sends a JSON GET request to some host and provides the response body. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">host_s</td><td>The hostname IP address </td></tr>
-    <tr><td class="paramname">path</td><td>The /path/to/the/endpoint </td></tr>
-    <tr><td class="paramname">response_body</td><td>After the function returns, this parameter will point to a buffer containing the body of the response. That buffer will need to be freed to avoid a memory leak. </td></tr>
-    <tr><td class="paramname">max_response_size</td><td>The size of buffer to allocate for the response (including the headers, which are stripped out and returned via <code>response_body</code>)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return false on failure, will return true on success Failure implies that the socket is broken or the TCP connection has ended, use GetLastNetworkError() to learn more about the error </dd></dl>
-
-</div>
-</div>
-<a id="ab1860df4763000e89804a2b5acb39ad7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1860df4763000e89804a2b5acb39ad7">&#9670;&nbsp;</a></span>send_http_request()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool send_http_request </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>host_s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>payload</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>response_body</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>max_response_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4d3b75dc6f536b07d479db5ba180b3e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d3b75dc6f536b07d479db5ba180b3e3">&#9670;&nbsp;</a></span>send_post_request()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool send_post_request </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>host_s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>payload</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>response_body</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>max_response_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sends a JSON POST request to some host and provides the response body. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">host_s</td><td>The hostname IP address </td></tr>
-    <tr><td class="paramname">path</td><td>The /path/to/the/endpoint </td></tr>
-    <tr><td class="paramname">payload</td><td>A string consisting of the payload to send to the webserver. </td></tr>
-    <tr><td class="paramname">response_body</td><td>After the function returns, this parameter will point to a buffer containing the body of the response. That buffer will need to be freed to avoid a memory leak. </td></tr>
-    <tr><td class="paramname">max_response_size</td><td>The size of buffer to allocate for the response (including the headers, which are stripped out and returned via <code>response_body</code>)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return false on failure, will return true on success Failure implies that the socket is broken or the TCP connection has ended, use GetLastNetworkError() to learn more about the error </dd></dl>
 
 </div>
 </div>

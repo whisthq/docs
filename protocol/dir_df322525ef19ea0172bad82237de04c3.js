@@ -10,8 +10,6 @@ var dir_df322525ef19ea0172bad82237de04c3 =
     [ "color.h", "color_8h.html", "color_8h" ],
     [ "error_monitor.c", "error__monitor_8c.html", "error__monitor_8c" ],
     [ "error_monitor.h", "error__monitor_8h.html", "error__monitor_8h" ],
-    [ "json.c", "json_8c.html", "json_8c" ],
-    [ "json.h", "json_8h.html", "json_8h" ],
     [ "lodepng.c", "lodepng_8c.html", "lodepng_8c" ],
     [ "lodepng.h", "lodepng_8h.html", "lodepng_8h" ],
     [ "log_statistic.c", "log__statistic_8c.html", "log__statistic_8c" ],

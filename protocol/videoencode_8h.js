@@ -12,6 +12,5 @@ var videoencode_8h =
     [ "destroy_video_encoder", "videoencode_8h.html#a7f0817add564fea3dbb260a90cef9132", null ],
     [ "reconfigure_encoder", "videoencode_8h.html#ad77b802583b571a3de0d17c5d6393655", null ],
     [ "video_encoder_encode", "videoencode_8h.html#a444edd5dc4cb990b7441ba96964936fa", null ],
-    [ "video_encoder_set_iframe", "videoencode_8h.html#a22d76272235619a7657b984487f1412a", null ],
-    [ "video_encoder_unset_iframe", "videoencode_8h.html#a63794a609f997d8a1cc1201685362939", null ]
+    [ "video_encoder_set_iframe", "videoencode_8h.html#a22d76272235619a7657b984487f1412a", null ]
 ];

@@ -6,6 +6,5 @@ var parse__args_8c =
     [ "binary_aes_private_key", "parse__args_8c.html#ac2159c75ccc892bf05ef04748882e025", null ],
     [ "cmd_options", "parse__args_8c.html#a3ad4b4a7eff6f2ec3337dd55564ce031", null ],
     [ "hex_aes_private_key", "parse__args_8c.html#a9dc8473a213eba8932df71190c0d5fbe", null ],
-    [ "identifier", "parse__args_8c.html#adba1e7b2167656bf2eb188879ac64a90", null ],
-    [ "webserver_url", "parse__args_8c.html#a215391d405e58c458deba630d15821ca", null ]
+    [ "identifier", "parse__args_8c.html#adba1e7b2167656bf2eb188879ac64a90", null ]
 ];

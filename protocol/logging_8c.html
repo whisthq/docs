@@ -107,8 +107,6 @@ $(document).ready(function(){initNavTree('logging_8c.html',''); initResizable();
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggerQueueItem.html">LoggerQueueItem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUpdateStatusData.html">UpdateStatusData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -123,8 +121,6 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:af61f6b2d47842e1ee680b45fe4e3a1f6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structLoggerQueueItem.html">LoggerQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#af61f6b2d47842e1ee680b45fe4e3a1f6">LoggerQueueItem</a></td></tr>
 <tr class="separator:af61f6b2d47842e1ee680b45fe4e3a1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed33d6080bad9d357fac2e801bec2ea0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structUpdateStatusData.html">UpdateStatusData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#aed33d6080bad9d357fac2e801bec2ea0">UpdateStatusData</a></td></tr>
-<tr class="separator:aed33d6080bad9d357fac2e801bec2ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -157,11 +153,6 @@ Functions</h2></td></tr>
 <tr class="separator:aa2557ff6773a87316035e296caebed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d1ad22ed5c7df9aefed129c439b7fea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a9d1ad22ed5c7df9aefed129c439b7fea">unix_crash_handler</a> (int sig)</td></tr>
 <tr class="separator:a9d1ad22ed5c7df9aefed129c439b7fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bb6c98286866c10c8f9b20657c99b43"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a2bb6c98286866c10c8f9b20657c99b43">multithreaded_update_server_status</a> (void *data)</td></tr>
-<tr class="separator:a2bb6c98286866c10c8f9b20657c99b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51dd804439effdb94b5d1f185d9b8e8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a51dd804439effdb94b5d1f185d9b8e8a">update_server_status</a> (bool is_connected, char *host, char *<a class="el" href="parse__args_8c.html#adba1e7b2167656bf2eb188879ac64a90">identifier</a>, char *<a class="el" href="parse__args_8c.html#a9dc8473a213eba8932df71190c0d5fbe">hex_aes_private_key</a>)</td></tr>
-<tr class="memdesc:a51dd804439effdb94b5d1f185d9b8e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell the server the WinLogon and connection status.  <a href="logging_8c.html#a51dd804439effdb94b5d1f185d9b8e8a">More...</a><br /></td></tr>
-<tr class="separator:a51dd804439effdb94b5d1f185d9b8e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -187,9 +178,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the logging macros and utils to send Winlogon. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md185"></a>
+<h1><a class="anchor" id="autotoc_md181"></a>
 status and to send the logs to the webserver.</h1>
-<h1><a class="anchor" id="autotoc_md186"></a>
+<h1><a class="anchor" id="autotoc_md182"></a>
 Usage</h1>
 <p>We have several levels of logging.</p><ul>
 <li>NO_LOG: self explanatory</li>
@@ -251,20 +242,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="structLoggerQueueItem.html">LoggerQueueItem</a> <a class="el" href="structLoggerQueueItem.html">LoggerQueueItem</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aed33d6080bad9d357fac2e801bec2ea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed33d6080bad9d357fac2e801bec2ea0">&#9670;&nbsp;</a></span>UpdateStatusData</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structUpdateStatusData.html">UpdateStatusData</a> <a class="el" href="structUpdateStatusData.html">UpdateStatusData</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -512,24 +489,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a2bb6c98286866c10c8f9b20657c99b43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bb6c98286866c10c8f9b20657c99b43">&#9670;&nbsp;</a></span>multithreaded_update_server_status()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t multithreaded_update_server_status </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa2557ff6773a87316035e296caebed4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2557ff6773a87316035e296caebed4a">&#9670;&nbsp;</a></span>print_stacktrace()</h2>
 
@@ -564,57 +523,6 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a51dd804439effdb94b5d1f185d9b8e8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51dd804439effdb94b5d1f185d9b8e8a">&#9670;&nbsp;</a></span>update_server_status()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_server_status </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_connected</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>host</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>identifier</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>hex_aes_private_key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Tell the server the WinLogon and connection status. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">is_connected</td><td>The connection status to send to the server. Pass true if connected to a client and false otherwise. </td></tr>
-    <tr><td class="paramname">host</td><td>The webserver host to send the message to. </td></tr>
-    <tr><td class="paramname">identifier</td><td>The string that uniquely identifies this instance of the protocol to the webserver. </td></tr>
-    <tr><td class="paramname">hex_aes_private_key</td><td>The private key, as a hex string. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

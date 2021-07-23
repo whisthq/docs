@@ -16,6 +16,5 @@ var server_2main_8c =
     [ "max_mbps", "server_2main_8c.html#a8b0dd2067ae06f62bcee776eee9a021e", null ],
     [ "sample_rate", "server_2main_8c.html#a527325650d66abd9626499785b3bafd2", null ],
     [ "update_encoder", "server_2main_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73", null ],
-    [ "wants_iframe", "server_2main_8c.html#a2c556bf7dad7ad139e553b7af6281656", null ],
-    [ "webserver_url", "server_2main_8c.html#a215391d405e58c458deba630d15821ca", null ]
+    [ "wants_iframe", "server_2main_8c.html#a2c556bf7dad7ad139e553b7af6281656", null ]
 ];

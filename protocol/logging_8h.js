@@ -27,7 +27,6 @@ var logging_8h =
     [ "init_logger", "logging_8h.html#ab3d0e9567cfad5d6f83abc585beb520d", null ],
     [ "internal_logging_printf", "logging_8h.html#a70325569587d06c4e89314d4db8b2d32", null ],
     [ "print_stacktrace", "logging_8h.html#aa2557ff6773a87316035e296caebed4a", null ],
-    [ "update_server_status", "logging_8h.html#a51dd804439effdb94b5d1f185d9b8e8a", null ],
     [ "debug_tag", "logging_8h.html#a2074b264c06107e25922c26e79c6c3c5", null ],
     [ "error_tag", "logging_8h.html#a0583ea4d2c6f4bfb23c6d012d943a33f", null ],
     [ "fatal_error_tag", "logging_8h.html#a40d7fb6145e38bf69d8be9ef38ceebed", null ],

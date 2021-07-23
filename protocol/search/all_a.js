@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['json_921',['Json',['../structJson.html',1,'Json'],['../json_8h.html#ae190670720cbec26b3b1b9d2ef6e9429',1,'Json():&#160;json.h']]],
-  ['json_2ec_922',['json.c',['../json_8c.html',1,'']]],
-  ['json_2eh_923',['json.h',['../json_8h.html',1,'']]],
-  ['json_5fbool_924',['JSON_BOOL',['../json_8h.html#a749cb5137f6266520a9329b48a63deccafc3a60886010e5b0f57d7aa30d0277b0',1,'json.h']]],
-  ['json_5fint_925',['JSON_INT',['../json_8h.html#a749cb5137f6266520a9329b48a63deccae6c0bfed3008189ab6f43ce03e118370',1,'json.h']]],
-  ['json_5fnull_926',['JSON_NULL',['../json_8h.html#a749cb5137f6266520a9329b48a63decca03ddcc4e2eef955020a01e10c11bfe48',1,'json.h']]],
-  ['json_5fstring_927',['JSON_STRING',['../json_8h.html#a749cb5137f6266520a9329b48a63decca02bfd03b07e5b9ecd6ee0d257dc37daf',1,'json.h']]],
-  ['jsontype_928',['JsonType',['../json_8h.html#a749cb5137f6266520a9329b48a63decc',1,'JsonType():&#160;json.h'],['../json_8h.html#a5cd9848f7fd3c472279109478e2894d9',1,'JsonType():&#160;json.h']]]
+  ['key_914',['key',['../structLodePNGColorStats.html#a162ce4d4ee804a0136814ba469c82294',1,'LodePNGColorStats::key()'],['../structStatisticData.html#a7a5f90f5e8917df8c2d3ed36f2af191f',1,'StatisticData::key()']]],
+  ['key_5fb_915',['key_b',['../structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8',1,'LodePNGColorMode::key_b()'],['../structLodePNGColorStats.html#a33724b799caf608319113a946c91406d',1,'LodePNGColorStats::key_b()']]],
+  ['key_5fdefined_916',['key_defined',['../structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54',1,'LodePNGColorMode']]],
+  ['key_5fg_917',['key_g',['../structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6',1,'LodePNGColorMode::key_g()'],['../structLodePNGColorStats.html#ae334ca1cbfbb36f27addb801cfecc867',1,'LodePNGColorStats::key_g()']]],
+  ['key_5fr_918',['key_r',['../structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50',1,'LodePNGColorMode::key_r()'],['../structLodePNGColorStats.html#af802f883e579161b78e210052bbbfb48',1,'LodePNGColorStats::key_r()']]],
+  ['keyboard_919',['keyboard',['../structFractalClientMessage.html#aa46f8125ff20df23821cfe676a1786dd',1,'FractalClientMessage']]],
+  ['keyboard_5fstate_920',['keyboard_state',['../structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df',1,'FractalClientMessage::keyboard_state()'],['../structFractalClientMessage.html#a150cbdccb818afd8db61d0edfec06cf6',1,'FractalClientMessage::keyboard_state()'],['../structInputDevice.html#a0f6b3f095ca9ad1b5c5fdbe77ab2ca21',1,'InputDevice::keyboard_state()']]],
+  ['keydown_921',['KeyDown',['../input_8c.html#a4098920e17bb63ca9093bbb73a7d2fa1',1,'input.c']]],
+  ['keypress_5fmask_922',['KEYPRESS_MASK',['../winapi__input__driver_8c.html#a7f5cf036b3e33bbbf8dae8893fbcd83e',1,'winapi_input_driver.c']]],
+  ['keyup_923',['KeyUp',['../input_8c.html#a93b594668eda259d72c7b36972f64952',1,'input.c']]]
 ];

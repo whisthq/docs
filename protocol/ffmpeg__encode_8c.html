@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('ffmpeg__encode_8c.html',''); initResiz
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab71f8fe496b871703ef49247c17b26f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#ab71f8fe496b871703ef49247c17b26f9">GOP_SIZE</a>&#160;&#160;&#160;99999</td></tr>
+<tr class="memitem:ab71f8fe496b871703ef49247c17b26f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#ab71f8fe496b871703ef49247c17b26f9">GOP_SIZE</a>&#160;&#160;&#160;999999</td></tr>
 <tr class="separator:ab71f8fe496b871703ef49247c17b26f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb066db7f4c192987054450ec2e20ad8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#afb066db7f4c192987054450ec2e20ad8">MIN_NVENC_WIDTH</a>&#160;&#160;&#160;33</td></tr>
 <tr class="separator:afb066db7f4c192987054450ec2e20ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,11 +130,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into a software frame, and upload to a hardware frame if applicable.  <a href="ffmpeg__encode_8c.html#a0e2ca3b2e42c16087c14ed78d6d030b9">More...</a><br /></td></tr>
 <tr class="separator:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7523bd870defc17734a03f7e88034161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a7523bd870defc17734a03f7e88034161">ffmpeg_set_iframe</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a7523bd870defc17734a03f7e88034161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well. Right now, this function is not reliable.  <a href="ffmpeg__encode_8c.html#a7523bd870defc17734a03f7e88034161">More...</a><br /></td></tr>
+<tr class="memdesc:a7523bd870defc17734a03f7e88034161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well.  <a href="ffmpeg__encode_8c.html#a7523bd870defc17734a03f7e88034161">More...</a><br /></td></tr>
 <tr class="separator:a7523bd870defc17734a03f7e88034161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecc233fdf9336f6f3b9dbe0366df9ad2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#aecc233fdf9336f6f3b9dbe0366df9ad2">ffmpeg_unset_iframe</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:aecc233fdf9336f6f3b9dbe0366df9ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the next frame to be either an I-frame or not an i-frame. Right now, this function is not reliable.  <a href="ffmpeg__encode_8c.html#aecc233fdf9336f6f3b9dbe0366df9ad2">More...</a><br /></td></tr>
-<tr class="separator:aecc233fdf9336f6f3b9dbe0366df9ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a588b81c7a9be9daa76b2527e7368b10b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a588b81c7a9be9daa76b2527e7368b10b">destroy_ffmpeg_encoder</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a588b81c7a9be9daa76b2527e7368b10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy encoder.  <a href="ffmpeg__encode_8c.html#a588b81c7a9be9daa76b2527e7368b10b">More...</a><br /></td></tr>
 <tr class="separator:a588b81c7a9be9daa76b2527e7368b10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,7 +149,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GOP_SIZE&#160;&#160;&#160;99999</td>
+          <td class="memname">#define GOP_SIZE&#160;&#160;&#160;999999</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -667,33 +664,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the next frame to be an IDR-frame, with SPS/PPS headers included as well. Right now, this function is not reliable. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">encoder</td><td>Encoder to be updated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aecc233fdf9336f6f3b9dbe0366df9ad2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecc233fdf9336f6f3b9dbe0366df9ad2">&#9670;&nbsp;</a></span>ffmpeg_unset_iframe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ffmpeg_unset_iframe </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allow the next frame to be either an I-frame or not an i-frame. Right now, this function is not reliable. </p>
+<p>Set the next frame to be an IDR-frame, with SPS/PPS headers included as well. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>Encoder to be updated </td></tr>

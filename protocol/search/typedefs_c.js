@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['osxfilenames_3239',['OSXFilenames',['../clipboard__osx_8h.html#ababf04235e81476fb86fccbe4a849561',1,'clipboard_osx.h']]],
-  ['osximage_3240',['OSXImage',['../clipboard__osx_8h.html#a3933849df961424992b259228b2cc153',1,'clipboard_osx.h']]]
+  ['ringbuffer_3179',['RingBuffer',['../ringbuffer_8h.html#ac0132fb254601f025c3cf73363a3c90c',1,'ringbuffer.h']]],
+  ['rwlock_3180',['RWLock',['../rwlock_8h.html#ad83aebd0296d168d4ad23b7d68a7f67b',1,'rwlock.h']]]
 ];

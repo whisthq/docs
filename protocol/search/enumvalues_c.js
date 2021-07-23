@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['smessage_5fclipboard_3514',['SMESSAGE_CLIPBOARD',['../fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca86b5ce811becb248c9572438105db9aa',1,'fractal.h']]],
-  ['smessage_5fnone_3515',['SMESSAGE_NONE',['../fractal_8h.html#aa56483762a863ec73e68c53c8fdf140cafcd5317ecd005a890b1c3e70c96f5695',1,'fractal.h']]],
-  ['smessage_5fquit_3516',['SMESSAGE_QUIT',['../fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca62adb843bfd6857bbf5f634425c404d1',1,'fractal.h']]],
-  ['smessage_5fwindow_5ftitle_3517',['SMESSAGE_WINDOW_TITLE',['../fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca350f6ac715ca8fba37c2967385fd1594',1,'fractal.h']]],
-  ['software_5fencode_3518',['SOFTWARE_ENCODE',['../ffmpeg__encode_8h.html#a710867b9460bb3ef175428fd1da3d41aa5f0e0a33b7479565a2829cde8be8b24e',1,'ffmpeg_encode.h']]],
-  ['spectate_3519',['SPECTATE',['../fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ffa01da13585122415fbe64a1d4961fcd35',1,'fractal.h']]]
+  ['x11_5fdevice_3451',['X11_DEVICE',['../linuxcapture_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621',1,'linuxcapture.h']]]
 ];

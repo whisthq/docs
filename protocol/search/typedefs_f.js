@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['screenshotcontainer_3244',['ScreenshotContainer',['../dxgicapture_8h.html#a390c95972b43679f5f59f273ab9b0bb1',1,'dxgicapture.h']]],
-  ['sdlvideocontext_3245',['SDLVideoContext',['../client_2video_8c.html#ae1ca498075131094d8d54ea592fae9f9',1,'video.c']]],
-  ['socketcontext_3246',['SocketContext',['../fractal_2network_2network_8h.html#a2d2dc6a8db8128da37b37664bdc6bb2f',1,'network.h']]],
-  ['statisticdata_3247',['StatisticData',['../log__statistic_8c.html#af18319ff9a332fa7ddb284bd76b12c32',1,'log_statistic.c']]],
-  ['stunrequesttype_3248',['StunRequestType',['../fractal_2network_2network_8c.html#a336dd8cf4ea29dfbe3f205aecd8c87ec',1,'network.c']]]
+  ['videodecoder_3188',['VideoDecoder',['../videodecode_8h.html#a931b433c839c4e0eddb5109d6e205a90',1,'videodecode.h']]],
+  ['videoencoder_3189',['VideoEncoder',['../videoencode_8h.html#aaf20c160de785dcebb9bdc14eec0f258',1,'videoencode.h']]],
+  ['videoencodertype_3190',['VideoEncoderType',['../videoencode_8h.html#ab20c7bac827841ee9ce7f6ca5c6be85a',1,'videoencode.h']]],
+  ['videoframe_3191',['VideoFrame',['../fractal__frame_8h.html#a25e7e527e214515b98f4d15b2dde80d0',1,'fractal_frame.h']]]
 ];

@@ -1,7 +1,18 @@
 var searchData=
 [
-  ['json_5fbool_3450',['JSON_BOOL',['../json_8h.html#a749cb5137f6266520a9329b48a63deccafc3a60886010e5b0f57d7aa30d0277b0',1,'json.h']]],
-  ['json_5fint_3451',['JSON_INT',['../json_8h.html#a749cb5137f6266520a9329b48a63deccae6c0bfed3008189ab6f43ce03e118370',1,'json.h']]],
-  ['json_5fnull_3452',['JSON_NULL',['../json_8h.html#a749cb5137f6266520a9329b48a63decca03ddcc4e2eef955020a01e10c11bfe48',1,'json.h']]],
-  ['json_5fstring_3453',['JSON_STRING',['../json_8h.html#a749cb5137f6266520a9329b48a63decca02bfd03b07e5b9ecd6ee0d257dc37daf',1,'json.h']]]
+  ['lct_5fgrey_3385',['LCT_GREY',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102a57b93d657f1794967620870e03643a6b',1,'lodepng.h']]],
+  ['lct_5fgrey_5falpha_3386',['LCT_GREY_ALPHA',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102a61da4464d66b2f215f7fc03c20c2418c',1,'lodepng.h']]],
+  ['lct_5fmax_5foctet_5fvalue_3387',['LCT_MAX_OCTET_VALUE',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102aa1e3ef8483d30e47c979a595d83a6ec4',1,'lodepng.h']]],
+  ['lct_5fpalette_3388',['LCT_PALETTE',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102a002c3ac8ce7ee8560249f034a3949c4c',1,'lodepng.h']]],
+  ['lct_5frgb_3389',['LCT_RGB',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102a47e389fe1e3e64ed4a22964d5e151894',1,'lodepng.h']]],
+  ['lct_5frgba_3390',['LCT_RGBA',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102af31451c4b991a3b3c764e983c77fa26e',1,'lodepng.h']]],
+  ['lfs_5fbrute_5fforce_3391',['LFS_BRUTE_FORCE',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa4cda3cf50239032689e5f5ec3c209531',1,'lodepng.h']]],
+  ['lfs_5fentropy_3392',['LFS_ENTROPY',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254faa9160c3f9ed4e2a1ea3ec32e81f572a0',1,'lodepng.h']]],
+  ['lfs_5ffour_3393',['LFS_FOUR',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fac6a0b7c205fdcec44356f2d6787b9bc3',1,'lodepng.h']]],
+  ['lfs_5fminsum_3394',['LFS_MINSUM',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fac536539c215333def413f43c8b060b03',1,'lodepng.h']]],
+  ['lfs_5fone_3395',['LFS_ONE',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fae0ec71ea2f843194a27cd38a62289aac',1,'lodepng.h']]],
+  ['lfs_5fpredefined_3396',['LFS_PREDEFINED',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa3cea29523d6a09283fec1c24ada6fd6b',1,'lodepng.h']]],
+  ['lfs_5fthree_3397',['LFS_THREE',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa3f175c084b5cf4e0f7d7736b19eef551',1,'lodepng.h']]],
+  ['lfs_5ftwo_3398',['LFS_TWO',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fad6a42239671c359d83a337376272f1f1',1,'lodepng.h']]],
+  ['lfs_5fzero_3399',['LFS_ZERO',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa95592a70a6850eff5a730ab6cd0344d8',1,'lodepng.h']]]
 ];

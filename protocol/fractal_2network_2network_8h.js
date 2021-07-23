@@ -33,8 +33,6 @@ var fractal_2network_2network_8h =
     [ "read_udp_packet", "fractal_2network_2network_8h.html#a79b7ae26dbe2bf91161fb7690d9dce49", null ],
     [ "recvp", "fractal_2network_2network_8h.html#a8030f60ee0fdd65573bdb96060d947dc", null ],
     [ "replay_packet", "fractal_2network_2network_8h.html#a59d9afd452b3516b3b7cbe3c39e65507", null ],
-    [ "send_get_request", "fractal_2network_2network_8h.html#a1480ca6028a627eaad41f38c617a595d", null ],
-    [ "send_post_request", "fractal_2network_2network_8h.html#a4d3b75dc6f536b07d479db5ba180b3e3", null ],
     [ "send_tcp_packet", "fractal_2network_2network_8h.html#a442afbbca53fdc607217cfc75bcb6adc", null ],
     [ "send_udp_packet", "fractal_2network_2network_8h.html#a03dbebf409b9143d10706e7a035007d7", null ],
     [ "sendp", "fractal_2network_2network_8h.html#a762e086ddd3fa8717527cefed7a70954", null ]

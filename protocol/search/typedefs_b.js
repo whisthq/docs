@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mousemotionaccumulation_3238',['MouseMotionAccumulation',['../client__utils_8h.html#ae872a0e58f3a81d0dbda00b224ae509b',1,'client_utils.h']]]
+  ['peerupdatemessage_3178',['PeerUpdateMessage',['../fractal_8h.html#a043b226c81e235189b7e647fa919a84f',1,'fractal.h']]]
 ];

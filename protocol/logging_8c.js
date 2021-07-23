@@ -1,12 +1,10 @@
 var logging_8c =
 [
     [ "LoggerQueueItem", "structLoggerQueueItem.html", "structLoggerQueueItem" ],
-    [ "UpdateStatusData", "structUpdateStatusData.html", "structUpdateStatusData" ],
     [ "_GNU_SOURCE", "logging_8c.html#a369266c24eacffb87046522897a570d5", null ],
     [ "HANDLER_ARRAY_SIZE", "logging_8c.html#a75b79c4739a390fe7788f3673880afa2", null ],
     [ "LOG_CACHE_SIZE", "logging_8c.html#a4d5ba6a5a4c97127dc3bb65c4a6fe5bd", null ],
     [ "LoggerQueueItem", "logging_8c.html#af61f6b2d47842e1ee680b45fe4e3a1f6", null ],
-    [ "UpdateStatusData", "logging_8c.html#aed33d6080bad9d357fac2e801bec2ea0", null ],
     [ "destroy_logger", "logging_8c.html#aa702fa9ec966709ebb51bef79be7b33e", null ],
     [ "escape_string", "logging_8c.html#a1e3b1171d28d9813a317bdf0f87ebedf", null ],
     [ "flush_logs", "logging_8c.html#ac3647cebf30fdb7695db0d5fd4dfec5e", null ],
@@ -17,10 +15,8 @@ var logging_8c =
     [ "internal_logging_printf", "logging_8c.html#a70325569587d06c4e89314d4db8b2d32", null ],
     [ "mprintf", "logging_8c.html#aa6b035701cf839a9b1790202705d6f2b", null ],
     [ "multi_threaded_printf", "logging_8c.html#af85e7e8aebf2ecc0e10139e82c826a2e", null ],
-    [ "multithreaded_update_server_status", "logging_8c.html#a2bb6c98286866c10c8f9b20657c99b43", null ],
     [ "print_stacktrace", "logging_8c.html#aa2557ff6773a87316035e296caebed4a", null ],
     [ "unix_crash_handler", "logging_8c.html#a9d1ad22ed5c7df9aefed129c439b7fea", null ],
-    [ "update_server_status", "logging_8c.html#a51dd804439effdb94b5d1f185d9b8e8a", null ],
     [ "crash_handler_mutex", "logging_8c.html#ae5498c85a54f25ea752b99992cb26589", null ],
     [ "debug_tag", "logging_8c.html#a2074b264c06107e25922c26e79c6c3c5", null ],
     [ "error_tag", "logging_8c.html#a3dff165e9f1a40dfc76a953fec589061", null ],

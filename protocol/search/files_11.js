@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['wasapicapture_2ec_2013',['wasapicapture.c',['../wasapicapture_8c.html',1,'']]],
-  ['wasapicapture_2eh_2014',['wasapicapture.h',['../wasapicapture_8h.html',1,'']]],
-  ['win_5fclipboard_2ec_2015',['win_clipboard.c',['../win__clipboard_8c.html',1,'']]],
-  ['winapi_5finput_5fdriver_2ec_2016',['winapi_input_driver.c',['../winapi__input__driver_8c.html',1,'']]],
-  ['winapi_5finput_5fdriver_2eh_2017',['winapi_input_driver.h',['../winapi__input__driver_8h.html',1,'']]],
-  ['window_5fname_2ec_2018',['window_name.c',['../window__name_8c.html',1,'']]],
-  ['window_5fname_2eh_2019',['window_name.h',['../window__name_8h.html',1,'']]],
-  ['windows_5futils_2ec_2020',['windows_utils.c',['../windows__utils_8c.html',1,'']]],
-  ['windows_5futils_2eh_2021',['windows_utils.h',['../windows__utils_8h.html',1,'']]],
-  ['windowscursor_2ec_2022',['windowscursor.c',['../windowscursor_8c.html',1,'']]]
+  ['x11_5fclipboard_2ec_1985',['x11_clipboard.c',['../x11__clipboard_8c.html',1,'']]],
+  ['x11capture_2ec_1986',['x11capture.c',['../x11capture_8c.html',1,'']]],
+  ['x11capture_2eh_1987',['x11capture.h',['../x11capture_8h.html',1,'']]],
+  ['xtest_5finput_5fdriver_2ec_1988',['xtest_input_driver.c',['../xtest__input__driver_8c.html',1,'']]],
+  ['xtest_5finput_5fdriver_2eh_1989',['xtest_input_driver.h',['../xtest__input__driver_8h.html',1,'']]]
 ];

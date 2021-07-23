@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['mac_5fclipboard_2ec_1966',['mac_clipboard.c',['../mac__clipboard_8c.html',1,'']]],
-  ['mac_5futils_2ec_1967',['mac_utils.c',['../mac__utils_8c.html',1,'']]],
-  ['mac_5futils_2eh_1968',['mac_utils.h',['../mac__utils_8h.html',1,'']]],
-  ['main_2ec_1969',['main.c',['../client_2main_8c.html',1,'(Global Namespace)'],['../server_2main_8c.html',1,'(Global Namespace)']]],
-  ['mouse_2ec_1970',['mouse.c',['../mouse_8c.html',1,'']]],
-  ['mouse_2eh_1971',['mouse.h',['../mouse_8h.html',1,'']]]
+  ['native_5fwindow_5futils_2eh_1934',['native_window_utils.h',['../native__window__utils_8h.html',1,'']]],
+  ['network_2ec_1935',['network.c',['../client_2network_8c.html',1,'(Global Namespace)'],['../server_2network_8c.html',1,'(Global Namespace)'],['../fractal_2network_2network_8c.html',1,'(Global Namespace)']]],
+  ['network_2eh_1936',['network.h',['../client_2network_8h.html',1,'(Global Namespace)'],['../server_2network_8h.html',1,'(Global Namespace)'],['../fractal_2network_2network_8h.html',1,'(Global Namespace)']]],
+  ['nvidia_5fencode_2ec_1937',['nvidia_encode.c',['../nvidia__encode_8c.html',1,'']]],
+  ['nvidia_5fencode_2eh_1938',['nvidia_encode.h',['../nvidia__encode_8h.html',1,'']]],
+  ['nvidiacapture_2ec_1939',['nvidiacapture.c',['../nvidiacapture_8c.html',1,'']]],
+  ['nvidiacapture_2eh_1940',['nvidiacapture.h',['../nvidiacapture_8h.html',1,'']]],
+  ['nvidiatransfercapture_2ec_1941',['nvidiatransfercapture.c',['../nvidiatransfercapture_8c.html',1,'']]],
+  ['nvidiatransfercapture_2eh_1942',['nvidiatransfercapture.h',['../nvidiatransfercapture_8h.html',1,'']]]
 ];
