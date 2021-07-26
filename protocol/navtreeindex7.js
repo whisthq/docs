@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"ringbuffer_8h.html#ac0132fb254601f025c3cf73363a3c90c":[9,0,0,13,4],
 "ringbuffer_8h.html#ad39f9574458820226981480a98a1081b":[9,0,0,13,9],
 "ringbuffer_8h.html#adc37000ecd47712d4a8cc8e83867a60d":[9,0,0,13,13],
 "ringbuffer_8h.html#af514843307356fd516b1a96211c9d986":[9,0,0,13,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structAudioEncoder.html#a7ee3acefd7cd64d0b67a86d0479af1c7":[8,0,6,5],
 "structAudioEncoder.html#a82f0e22a7a99c6361511ade5022fb413":[8,0,6,8],
 "structAudioEncoder.html#ad2fd1c8f3b654ec6959cce422daee81f":[8,0,6,7],
-"structAudioEncoder.html#af69024a62ca659d729c8e80fd8d37827":[8,0,6,4],
-"structAudioFrame.html":[8,0,7]
+"structAudioEncoder.html#af69024a62ca659d729c8e80fd8d37827":[8,0,6,4]
 };

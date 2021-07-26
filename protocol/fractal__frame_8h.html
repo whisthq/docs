@@ -105,12 +105,18 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a53f28711409b1b742fa3271768ce08d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8h.html#a53f28711409b1b742fa3271768ce08d7">LARGEST_FRAME_SIZE</a>&#160;&#160;&#160;1000000</td></tr>
-<tr class="separator:a53f28711409b1b742fa3271768ce08d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c2e9e598a12d4280bd382b213c8f99a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8h.html#a0c2e9e598a12d4280bd382b213c8f99a">MAX_FRAME_METADATA_SIZE</a>&#160;&#160;&#160;(sizeof(<a class="el" href="structVideoFrame.html">VideoFrame</a>) + sizeof(<a class="el" href="structFractalCursorImage.html">FractalCursorImage</a>) + sizeof(<a class="el" href="structPeerUpdateMessage.html">PeerUpdateMessage</a>) * <a class="el" href="fractal_8h.html#a03e2345e5641dd80fd2bad8b9cff3eff">MAX_NUM_CLIENTS</a>)</td></tr>
-<tr class="separator:a0c2e9e598a12d4280bd382b213c8f99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b96a09ba7ed06fc17b14deeb5dcc6cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8h.html#a2b96a09ba7ed06fc17b14deeb5dcc6cd">MAX_FRAME_VIDEODATA_SIZE</a>&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a53f28711409b1b742fa3271768ce08d7">LARGEST_FRAME_SIZE</a> - <a class="el" href="fractal__frame_8h.html#a0c2e9e598a12d4280bd382b213c8f99a">MAX_FRAME_METADATA_SIZE</a>)</td></tr>
-<tr class="separator:a2b96a09ba7ed06fc17b14deeb5dcc6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66295e639cf3c980d7e5c2605df61d4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f">LARGEST_VIDEOFRAME_SIZE</a>&#160;&#160;&#160;1000000</td></tr>
+<tr class="separator:a66295e639cf3c980d7e5c2605df61d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e8623194435c55447f0ebb656150ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8h.html#a84e8623194435c55447f0ebb656150ec">LARGEST_AUDIOFRAME_SIZE</a>&#160;&#160;&#160;9000</td></tr>
+<tr class="separator:a84e8623194435c55447f0ebb656150ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11350fab34a6d336dd5296535080bcea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8h.html#a11350fab34a6d336dd5296535080bcea">MAX_VIDEOFRAME_METADATA_SIZE</a>&#160;&#160;&#160;(sizeof(<a class="el" href="structVideoFrame.html">VideoFrame</a>) + sizeof(<a class="el" href="structFractalCursorImage.html">FractalCursorImage</a>) + sizeof(<a class="el" href="structPeerUpdateMessage.html">PeerUpdateMessage</a>) * <a class="el" href="fractal_8h.html#a03e2345e5641dd80fd2bad8b9cff3eff">MAX_NUM_CLIENTS</a>)</td></tr>
+<tr class="separator:a11350fab34a6d336dd5296535080bcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf1e16a380892934c327a95bd6115bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8h.html#a8bf1e16a380892934c327a95bd6115bb">MAX_VIDEOFRAME_DATA_SIZE</a>&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f">LARGEST_VIDEOFRAME_SIZE</a> - <a class="el" href="fractal__frame_8h.html#a11350fab34a6d336dd5296535080bcea">MAX_VIDEOFRAME_METADATA_SIZE</a>)</td></tr>
+<tr class="separator:a8bf1e16a380892934c327a95bd6115bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7720723895cf99ac2e4a848c2eda9554"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8h.html#a7720723895cf99ac2e4a848c2eda9554">MAX_AUDIOFRAME_METADATA_SIZE</a>&#160;&#160;&#160;sizeof(<a class="el" href="structAudioFrame.html">AudioFrame</a>)</td></tr>
+<tr class="separator:a7720723895cf99ac2e4a848c2eda9554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb3744afacc1bb5aa291d7aaf7ab218"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8h.html#a2cb3744afacc1bb5aa291d7aaf7ab218">MAX_AUDIOFRAME_DATA_SIZE</a>&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a84e8623194435c55447f0ebb656150ec">LARGEST_AUDIOFRAME_SIZE</a> - <a class="el" href="fractal__frame_8h.html#a7720723895cf99ac2e4a848c2eda9554">MAX_AUDIOFRAME_METADATA_SIZE</a>)</td></tr>
+<tr class="separator:a2cb3744afacc1bb5aa291d7aaf7ab218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -139,42 +145,84 @@ Functions</h2></td></tr>
 <tr class="separator:a3ab7e2f70fc8e9de982bf5f0f422eb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a53f28711409b1b742fa3271768ce08d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53f28711409b1b742fa3271768ce08d7">&#9670;&nbsp;</a></span>LARGEST_FRAME_SIZE</h2>
+<a id="a84e8623194435c55447f0ebb656150ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e8623194435c55447f0ebb656150ec">&#9670;&nbsp;</a></span>LARGEST_AUDIOFRAME_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LARGEST_FRAME_SIZE&#160;&#160;&#160;1000000</td>
+          <td class="memname">#define LARGEST_AUDIOFRAME_SIZE&#160;&#160;&#160;9000</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0c2e9e598a12d4280bd382b213c8f99a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c2e9e598a12d4280bd382b213c8f99a">&#9670;&nbsp;</a></span>MAX_FRAME_METADATA_SIZE</h2>
+<a id="a66295e639cf3c980d7e5c2605df61d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66295e639cf3c980d7e5c2605df61d4f">&#9670;&nbsp;</a></span>LARGEST_VIDEOFRAME_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_FRAME_METADATA_SIZE&#160;&#160;&#160;(sizeof(<a class="el" href="structVideoFrame.html">VideoFrame</a>) + sizeof(<a class="el" href="structFractalCursorImage.html">FractalCursorImage</a>) + sizeof(<a class="el" href="structPeerUpdateMessage.html">PeerUpdateMessage</a>) * <a class="el" href="fractal_8h.html#a03e2345e5641dd80fd2bad8b9cff3eff">MAX_NUM_CLIENTS</a>)</td>
+          <td class="memname">#define LARGEST_VIDEOFRAME_SIZE&#160;&#160;&#160;1000000</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2b96a09ba7ed06fc17b14deeb5dcc6cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b96a09ba7ed06fc17b14deeb5dcc6cd">&#9670;&nbsp;</a></span>MAX_FRAME_VIDEODATA_SIZE</h2>
+<a id="a2cb3744afacc1bb5aa291d7aaf7ab218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb3744afacc1bb5aa291d7aaf7ab218">&#9670;&nbsp;</a></span>MAX_AUDIOFRAME_DATA_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_FRAME_VIDEODATA_SIZE&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a53f28711409b1b742fa3271768ce08d7">LARGEST_FRAME_SIZE</a> - <a class="el" href="fractal__frame_8h.html#a0c2e9e598a12d4280bd382b213c8f99a">MAX_FRAME_METADATA_SIZE</a>)</td>
+          <td class="memname">#define MAX_AUDIOFRAME_DATA_SIZE&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a84e8623194435c55447f0ebb656150ec">LARGEST_AUDIOFRAME_SIZE</a> - <a class="el" href="fractal__frame_8h.html#a7720723895cf99ac2e4a848c2eda9554">MAX_AUDIOFRAME_METADATA_SIZE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7720723895cf99ac2e4a848c2eda9554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7720723895cf99ac2e4a848c2eda9554">&#9670;&nbsp;</a></span>MAX_AUDIOFRAME_METADATA_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_AUDIOFRAME_METADATA_SIZE&#160;&#160;&#160;sizeof(<a class="el" href="structAudioFrame.html">AudioFrame</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bf1e16a380892934c327a95bd6115bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf1e16a380892934c327a95bd6115bb">&#9670;&nbsp;</a></span>MAX_VIDEOFRAME_DATA_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_VIDEOFRAME_DATA_SIZE&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f">LARGEST_VIDEOFRAME_SIZE</a> - <a class="el" href="fractal__frame_8h.html#a11350fab34a6d336dd5296535080bcea">MAX_VIDEOFRAME_METADATA_SIZE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11350fab34a6d336dd5296535080bcea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11350fab34a6d336dd5296535080bcea">&#9670;&nbsp;</a></span>MAX_VIDEOFRAME_METADATA_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_VIDEOFRAME_METADATA_SIZE&#160;&#160;&#160;(sizeof(<a class="el" href="structVideoFrame.html">VideoFrame</a>) + sizeof(<a class="el" href="structFractalCursorImage.html">FractalCursorImage</a>) + sizeof(<a class="el" href="structPeerUpdateMessage.html">PeerUpdateMessage</a>) * <a class="el" href="fractal_8h.html#a03e2345e5641dd80fd2bad8b9cff3eff">MAX_NUM_CLIENTS</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

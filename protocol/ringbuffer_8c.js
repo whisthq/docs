@@ -1,7 +1,5 @@
 var ringbuffer_8c =
 [
-    [ "LARGEST_AUDIO_FRAME_SIZE", "ringbuffer_8c.html#a6e6decf52c37c264f4f75f71f81a8a57", null ],
-    [ "LARGEST_VIDEO_FRAME_SIZE", "ringbuffer_8c.html#ad2dda5f9269320e36baefa70fa8b7d7d", null ],
     [ "MAX_AUDIO_PACKETS", "ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe", null ],
     [ "MAX_RING_BUFFER_SIZE", "ringbuffer_8c.html#ace58ba786751c3524bcbb1bc4f8846ce", null ],
     [ "MAX_VIDEO_PACKETS", "ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b", null ],

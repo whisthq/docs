@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structFractalTimeData.html#a96e232a6ac81648d920006235bea848a":[8,0,36,0],
 "structFractalTimeData.html#ab2f79655c810eb70cc9b5e71a56ee161":[8,0,36,6],
 "structFractalTimeData.html#ac07263eb68eb04a539f1fc29218eb423":[8,0,36,3],
 "structFractalTimeData.html#ac9183f2e134e14fa0de41a2d6f3d22b8":[8,0,36,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structRingBuffer.html#adc2ffd22ee8a7cdee24096e8b70b534e":[8,0,64,12],
 "structRingBuffer.html#add0e494a056eb1ea969545debc03d47f":[8,0,64,1],
 "structRingBuffer.html#afc462c5cab2b89ff34dbb3e7b1dfae99":[8,0,64,9],
-"structSDLVideoContext.html":[8,0,67],
-"structSDLVideoContext.html#a4ea3aaca0a64058b18b1063d7b9df7fa":[8,0,67,0]
+"structSDLVideoContext.html":[8,0,67]
 };

@@ -1,10 +1,10 @@
 var searchData=
 [
   ['l_5ftypes_924',['l_types',['../windowscursor_8c.html#a6ce7a55b8e0f495906e8e7b55683829d',1,'windowscursor.c']]],
-  ['largest_5faudio_5fframe_5fsize_925',['LARGEST_AUDIO_FRAME_SIZE',['../ringbuffer_8c.html#a6e6decf52c37c264f4f75f71f81a8a57',1,'ringbuffer.c']]],
-  ['largest_5fframe_5fsize_926',['largest_frame_size',['../structRingBuffer.html#a44ac04c74f6f5e1a9c140d599df24ac5',1,'RingBuffer::largest_frame_size()'],['../fractal__frame_8h.html#a53f28711409b1b742fa3271768ce08d7',1,'LARGEST_FRAME_SIZE():&#160;fractal_frame.h']]],
+  ['largest_5faudioframe_5fsize_925',['LARGEST_AUDIOFRAME_SIZE',['../fractal__frame_8h.html#a84e8623194435c55447f0ebb656150ec',1,'fractal_frame.h']]],
+  ['largest_5fframe_5fsize_926',['largest_frame_size',['../structRingBuffer.html#a44ac04c74f6f5e1a9c140d599df24ac5',1,'RingBuffer']]],
   ['largest_5fnum_5fpackets_927',['largest_num_packets',['../structRingBuffer.html#a2f8adc4bd7860a7265e43c66caa90c07',1,'RingBuffer']]],
-  ['largest_5fvideo_5fframe_5fsize_928',['LARGEST_VIDEO_FRAME_SIZE',['../ringbuffer_8c.html#ad2dda5f9269320e36baefa70fa8b7d7d',1,'ringbuffer.c']]],
+  ['largest_5fvideoframe_5fsize_928',['LARGEST_VIDEOFRAME_SIZE',['../fractal__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f',1,'fractal_frame.h']]],
   ['last_5fclipboard_5fupdate_929',['last_clipboard_update',['../clipboard__synchronizer_8c.html#a0787b58a368a084406ec63f208f6a383',1,'clipboard_synchronizer.c']]],
   ['last_5fcursor_930',['last_cursor',['../client_2video_8c.html#ac8e234f4a448ca7f7daa67b626e77a55',1,'video.c']]],
   ['last_5fiframe_5frequest_5ftimer_931',['last_iframe_request_timer',['../structVideoData.html#a8e906fbc4d8abc70ed75a6e718413d8f',1,'VideoData']]],

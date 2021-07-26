@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structSDLVideoContext.html#a4ea3aaca0a64058b18b1063d7b9df7fa":[8,0,67,0],
 "structSDLVideoContext.html#a68388d1a66bf4dcde5c189afda2a0534":[8,0,67,3],
 "structSDLVideoContext.html#a853949bfa371a9e918310654f15d4484":[8,0,67,5],
 "structSDLVideoContext.html#a88245b9ad1538e762fb7d37c2e3d1e04":[8,0,67,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "videodecode_8h.html#a4d0a703f38ea832b5b5186b309499dc8":[9,0,1,8,17,9],
 "videodecode_8h.html#a6ad22d055a2a6874154984511a83cde5":[9,0,1,8,17,2],
 "videodecode_8h.html#a9262b421a57418a04c809f94041b2f9b":[9,0,1,8,17,4],
-"videodecode_8h.html#a9262b421a57418a04c809f94041b2f9ba03ca5c85d60d2ccb6bc5d67fc4d6485f":[9,0,1,8,17,4,4],
-"videodecode_8h.html#a9262b421a57418a04c809f94041b2f9ba50199f09c30d5c0d3105a38f8e390f74":[9,0,1,8,17,4,0]
+"videodecode_8h.html#a9262b421a57418a04c809f94041b2f9ba03ca5c85d60d2ccb6bc5d67fc4d6485f":[9,0,1,8,17,4,4]
 };

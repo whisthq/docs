@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"structAudioFrame.html":[8,0,7],
 "structAudioFrame.html#a5168d3c2471f20a34878365cdd945985":[8,0,7,0],
 "structAudioFrame.html#ac283fc6ad11e6c76ea3235cf6e5e37e5":[8,0,7,1],
 "structBPMLists.html":[8,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structFractalServerMessage.html#acccf04404179521e1f37d6423baa8abe":[8,0,35,3],
 "structFractalTimeData.html":[8,0,36],
 "structFractalTimeData.html#a058114405e433ec692f12256de3fd86c":[8,0,36,2],
-"structFractalTimeData.html#a6878c191a70b9217cb415ee5cf7bc0c4":[8,0,36,5],
-"structFractalTimeData.html#a96e232a6ac81648d920006235bea848a":[8,0,36,0]
+"structFractalTimeData.html#a6878c191a70b9217cb415ee5cf7bc0c4":[8,0,36,5]
 };
