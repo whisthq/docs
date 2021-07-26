@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structFractalTimeData.html#ac07263eb68eb04a539f1fc29218eb423":[8,0,36,3],
 "structFractalTimeData.html#ac9183f2e134e14fa0de41a2d6f3d22b8":[8,0,36,4],
 "structFractalTimeData.html#af19603a50cb4f8e2860afae303a5c864":[8,0,36,1],
 "structFractalYUVColor.html":[8,0,37],
@@ -173,9 +174,8 @@ var NAVTREEINDEX9 =
 "structLodePNGTime.html#ac3045de79728f29fc61f534b062e0f13":[8,0,53,2],
 "structLodePNGTime.html#ac99cb7f3ce16a85f9f505b7f5f6e0aa7":[8,0,53,1],
 "structLoggerQueueItem.html":[8,0,54],
-"structLoggerQueueItem.html#a33a8ae78fa6abfffcf74ef477f972953":[8,0,54,1],
 "structLoggerQueueItem.html#a35797499deb09b7eeba3cd102c8ae2a4":[8,0,54,0],
-"structLoggerQueueItem.html#ab5eb451eaf5444b7235532d3396ce286":[8,0,54,2],
+"structLoggerQueueItem.html#ab5eb451eaf5444b7235532d3396ce286":[8,0,54,1],
 "structMouseMotionAccumulation.html":[8,0,55],
 "structMouseMotionAccumulation.html#a2694caa5e5928916a7b7647f4fe27f08":[8,0,55,5],
 "structMouseMotionAccumulation.html#a30694ffc525d4d5c8fc34a806e455aba":[8,0,55,4],

@@ -88,9 +88,9 @@ var NAVTREEINDEX =
 "fractal__memory_8h.html#a3b6692eaffcf106ffdecddfb77e8dbe9",
 "index.html#autotoc_md14",
 "lodepng_8h.html#ab752d2ce31fb7e6fe1a27b559d3097ad",
-"ringbuffer_8h.html#af514843307356fd516b1a96211c9d986",
-"structBPMLists.html",
-"structFractalTimeData.html#ac9183f2e134e14fa0de41a2d6f3d22b8",
+"ringbuffer_8h.html#adc37000ecd47712d4a8cc8e83867a60d",
+"structAudioFrame.html#ac283fc6ad11e6c76ea3235cf6e5e37e5",
+"structFractalTimeData.html#ac07263eb68eb04a539f1fc29218eb423",
 "structSDLVideoContext.html#a853949bfa371a9e918310654f15d4484",
 "videodecode_8h.html#a9262b421a57418a04c809f94041b2f9bac94edb6e1bbca1ac423b3e4d2da8162a"
 ];

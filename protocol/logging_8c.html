@@ -130,8 +130,8 @@ Functions</h2></td></tr>
 <tr class="separator:adb0760e13a6d46cae993729e3427f9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa50e9f30a5985e3c02649e9c1c9bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a3fa50e9f30a5985e3c02649e9c1c9bee">init_backtrace_handler</a> ()</td></tr>
 <tr class="separator:a3fa50e9f30a5985e3c02649e9c1c9bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85e7e8aebf2ecc0e10139e82c826a2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#af85e7e8aebf2ecc0e10139e82c826a2e">multi_threaded_printf</a> (void *opaque)</td></tr>
-<tr class="separator:af85e7e8aebf2ecc0e10139e82c826a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a75250763a2a4bbc6623223f9c3128b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a3a75250763a2a4bbc6623223f9c3128b">multithreaded_printf</a> (void *opaque)</td></tr>
+<tr class="separator:a3a75250763a2a4bbc6623223f9c3128b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b035701cf839a9b1790202705d6f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#aa6b035701cf839a9b1790202705d6f2b">mprintf</a> (const char *tag, const char *fmt_str, va_list args)</td></tr>
 <tr class="separator:aa6b035701cf839a9b1790202705d6f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d0e9567cfad5d6f83abc585beb520d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#ab3d0e9567cfad5d6f83abc585beb520d">init_logger</a> ()</td></tr>
@@ -143,11 +143,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ac3647cebf30fdb7695db0d5fd4dfec5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#ac3647cebf30fdb7695db0d5fd4dfec5e">flush_logs</a> ()</td></tr>
 <tr class="memdesc:ac3647cebf30fdb7695db0d5fd4dfec5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will immediately flush all of the logs, rather than slowly pushing the logs through from another thread.  <a href="logging_8c.html#ac3647cebf30fdb7695db0d5fd4dfec5e">More...</a><br /></td></tr>
 <tr class="separator:ac3647cebf30fdb7695db0d5fd4dfec5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e3b1171d28d9813a317bdf0f87ebedf"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a1e3b1171d28d9813a317bdf0f87ebedf">escape_string</a> (char *old_string, bool escape_all)</td></tr>
-<tr class="separator:a1e3b1171d28d9813a317bdf0f87ebedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60cc877da6dc64161638b755348664f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#af60cc877da6dc64161638b755348664f">escape_string</a> (const char *old_string, bool escape_all)</td></tr>
+<tr class="separator:af60cc877da6dc64161638b755348664f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70325569587d06c4e89314d4db8b2d32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a> (const char *tag, const char *fmt_str,...)</td></tr>
 <tr class="memdesc:a70325569587d06c4e89314d4db8b2d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the given format string This is an internal function that shouldn't be used, please use the macros LOG_INFO, LOG_WARNING, etc.  <a href="logging_8c.html#a70325569587d06c4e89314d4db8b2d32">More...</a><br /></td></tr>
 <tr class="separator:a70325569587d06c4e89314d4db8b2d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa308412b4c02ab6ee05211372608f42c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#aa308412b4c02ab6ee05211372608f42c">mprintf_queue_line</a> (const char *line_fmt, const char *tag, const char *line)</td></tr>
+<tr class="separator:aa308412b4c02ab6ee05211372608f42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2557ff6773a87316035e296caebed4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#aa2557ff6773a87316035e296caebed4a">print_stacktrace</a> ()</td></tr>
 <tr class="memdesc:aa2557ff6773a87316035e296caebed4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the stacktrace of the calling function to stdout This will be registered as if it was logged as well.  <a href="logging_8c.html#aa2557ff6773a87316035e296caebed4a">More...</a><br /></td></tr>
 <tr class="separator:aa2557ff6773a87316035e296caebed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,8 +270,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a1e3b1171d28d9813a317bdf0f87ebedf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e3b1171d28d9813a317bdf0f87ebedf">&#9670;&nbsp;</a></span>escape_string()</h2>
+<a id="af60cc877da6dc64161638b755348664f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af60cc877da6dc64161638b755348664f">&#9670;&nbsp;</a></span>escape_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +279,7 @@ Usage</h1>
         <tr>
           <td class="memname">char* escape_string </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>old_string</em>, </td>
         </tr>
         <tr>
@@ -471,14 +473,48 @@ Usage</h1>
 
 </div>
 </div>
-<a id="af85e7e8aebf2ecc0e10139e82c826a2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af85e7e8aebf2ecc0e10139e82c826a2e">&#9670;&nbsp;</a></span>multi_threaded_printf()</h2>
+<a id="aa308412b4c02ab6ee05211372608f42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa308412b4c02ab6ee05211372608f42c">&#9670;&nbsp;</a></span>mprintf_queue_line()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int multi_threaded_printf </td>
+          <td class="memname">void mprintf_queue_line </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>line_fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a75250763a2a4bbc6623223f9c3128b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a75250763a2a4bbc6623223f9c3128b">&#9670;&nbsp;</a></span>multithreaded_printf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int multithreaded_printf </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>opaque</em></td><td>)</td>

@@ -31,7 +31,7 @@ var searchData=
   ['error_5fmonitor_5fset_5fusername_421',['error_monitor_set_username',['../error__monitor_8c.html#ac79b8627dca780eb8e77b089904e9720',1,'error_monitor_set_username(char *username):&#160;error_monitor.c'],['../error__monitor_8h.html#ac79b8627dca780eb8e77b089904e9720',1,'error_monitor_set_username(char *username):&#160;error_monitor.c']]],
   ['error_5fmonitor_5fshutdown_422',['error_monitor_shutdown',['../error__monitor_8c.html#ab5509b96231f401ea288eec740f85eed',1,'error_monitor_shutdown():&#160;error_monitor.c'],['../error__monitor_8h.html#ab5509b96231f401ea288eec740f85eed',1,'error_monitor_shutdown():&#160;error_monitor.c']]],
   ['error_5ftag_423',['error_tag',['../logging_8c.html#a3dff165e9f1a40dfc76a953fec589061',1,'error_tag():&#160;logging.c'],['../logging_8h.html#a0583ea4d2c6f4bfb23c6d012d943a33f',1,'error_tag():&#160;logging.h'],['../logging_8h.html#aa29007116d11e676da62a3ae1dae4402',1,'ERROR_TAG():&#160;logging.h']]],
-  ['escape_5fstring_424',['escape_string',['../logging_8c.html#a1e3b1171d28d9813a317bdf0f87ebedf',1,'logging.c']]],
+  ['escape_5fstring_424',['escape_string',['../logging_8c.html#af60cc877da6dc64161638b755348664f',1,'logging.c']]],
   ['evaluate_5farg_425',['evaluate_arg',['../client__utils_8c.html#a75e80d1fa4b30805a90363e84266a603',1,'client_utils.c']]],
   ['event_426',['event',['../structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb',1,'X11CaptureDevice']]],
   ['exclusive_5fcontrol_427',['EXCLUSIVE_CONTROL',['../fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ffab170611b776a9ab381c9572a4b9a8aea',1,'fractal.h']]],
