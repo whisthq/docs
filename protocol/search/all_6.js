@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fatal_5ferror_5ftag_431',['fatal_error_tag',['../logging_8c.html#a7839ef37dc31d9ce82b1698801a6a75c',1,'fatal_error_tag():&#160;logging.c'],['../logging_8h.html#a40d7fb6145e38bf69d8be9ef38ceebed',1,'fatal_error_tag():&#160;logging.h'],['../logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a',1,'FATAL_ERROR_TAG():&#160;logging.h']]],
+  ['fatal_5ferror_5ftag_431',['FATAL_ERROR_TAG',['../logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a',1,'FATAL_ERROR_TAG():&#160;logging.h'],['../logging_8c.html#a7839ef37dc31d9ce82b1698801a6a75c',1,'fatal_error_tag():&#160;logging.c'],['../logging_8h.html#a40d7fb6145e38bf69d8be9ef38ceebed',1,'fatal_error_tag():&#160;logging.h']]],
   ['fbc_5fhandle_432',['fbc_handle',['../structNvidiaCaptureDevice.html#a16517c3ba7cca2be8aa32b766742721b',1,'NvidiaCaptureDevice']]],
   ['fd_5fabsmouse_433',['fd_absmouse',['../structInputDevice.html#a3cf568b6e17d58b12beeb7098c7c0527',1,'InputDevice']]],
   ['fd_5fkeyboard_434',['fd_keyboard',['../structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf',1,'InputDevice']]],
