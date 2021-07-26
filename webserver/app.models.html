@@ -272,71 +272,6 @@
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="app.models.hardware.InstanceSorted">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></span><span class="sig-name descname"><span class="pre">InstanceSorted</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.InstanceSorted" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
-<p>A list of instance IDs and info, for selecting where
-we deploy incoming tasks to.
-Ordered by region (for faster SQL queries) and descending by
-number of running mandelboxes (so we preferentially fill up old
-instances rather than creating new ones).
-See tests/aws/test_instance_selection for a bunch of sample instance sort orders.</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="app.models.hardware.InstanceSorted.instance_name">
-<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#app.models.hardware.InstanceSorted.instance_name" title="Permalink to this definition">¶</a></dt>
-<dd><p>A unique identifier generated randomly to identify the instance.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>string</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="app.models.hardware.InstanceSorted.location">
-<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#app.models.hardware.InstanceSorted.location" title="Permalink to this definition">¶</a></dt>
-<dd><p>where is the instance?</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>string</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="app.models.hardware.InstanceSorted.ami_id">
-<span class="sig-name descname"><span class="pre">ami_id</span></span><a class="headerlink" href="#app.models.hardware.InstanceSorted.ami_id" title="Permalink to this definition">¶</a></dt>
-<dd><p>What image is the instance running?</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>string</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="app.models.hardware.InstanceSorted.aws_ami_id">
-<span class="sig-name descname"><span class="pre">aws_ami_id</span></span><a class="headerlink" href="#app.models.hardware.InstanceSorted.aws_ami_id" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="app.models.hardware.InstanceSorted.commit_hash">
-<span class="sig-name descname"><span class="pre">commit_hash</span></span><a class="headerlink" href="#app.models.hardware.InstanceSorted.commit_hash" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="id13">
-<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#id13" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="id14">
-<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#id14" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
 <dt class="sig sig-object py" id="app.models.hardware.InstancesWithRoomForMandelboxes">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.hardware.</span></span><span class="sig-name descname"><span class="pre">InstancesWithRoomForMandelboxes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.hardware.InstancesWithRoomForMandelboxes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
@@ -358,6 +293,17 @@ i.e. ‘how many mandelboxes are running on this instance’,
 <dt class="sig sig-object py" id="app.models.hardware.InstancesWithRoomForMandelboxes.location">
 <span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#app.models.hardware.InstancesWithRoomForMandelboxes.location" title="Permalink to this definition">¶</a></dt>
 <dd><p>where is the instance?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.hardware.InstancesWithRoomForMandelboxes.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#app.models.hardware.InstancesWithRoomForMandelboxes.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>what’s the instance’s status?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>string</p>
@@ -409,23 +355,28 @@ i.e. ‘how many mandelboxes are running on this instance’,
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#id13" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id14">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#id14" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="id15">
-<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#id15" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">mandelbox_capacity</span></span><a class="headerlink" href="#id15" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id16">
-<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#id16" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">num_running_mandelboxes</span></span><a class="headerlink" href="#id16" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id17">
-<span class="sig-name descname"><span class="pre">mandelbox_capacity</span></span><a class="headerlink" href="#id17" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="id18">
-<span class="sig-name descname"><span class="pre">num_running_mandelboxes</span></span><a class="headerlink" href="#id18" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#id17" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -473,18 +424,18 @@ but that have not updated their status in the db for the specified period of tim
 </dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="id18">
+<span class="sig-name descname"><span class="pre">cloud_provider_id</span></span><a class="headerlink" href="#id18" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="id19">
-<span class="sig-name descname"><span class="pre">cloud_provider_id</span></span><a class="headerlink" href="#id19" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#id19" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id20">
-<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#id20" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="id21">
-<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#id21" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#id20" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -545,23 +496,23 @@ who’s running them and where they’re running.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="id21">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#id21" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="id22">
-<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#id22" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">mandelbox_id</span></span><a class="headerlink" href="#id22" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id23">
-<span class="sig-name descname"><span class="pre">mandelbox_id</span></span><a class="headerlink" href="#id23" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#id23" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id24">
-<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#id24" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="id25">
-<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#id25" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#id24" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -616,28 +567,28 @@ But didn’t find any reference to back that up, so including a constraint.</p>
 </dd>
 </dl>
 <dl class="py attribute">
+<dt class="sig sig-object py" id="id25">
+<span class="sig-name descname"><span class="pre">ami_active</span></span><a class="headerlink" href="#id25" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="id26">
-<span class="sig-name descname"><span class="pre">ami_active</span></span><a class="headerlink" href="#id26" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ami_id</span></span><a class="headerlink" href="#id26" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id27">
-<span class="sig-name descname"><span class="pre">ami_id</span></span><a class="headerlink" href="#id27" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">client_commit_hash</span></span><a class="headerlink" href="#id27" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id28">
-<span class="sig-name descname"><span class="pre">client_commit_hash</span></span><a class="headerlink" href="#id28" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">protected_from_scale_down</span></span><a class="headerlink" href="#id28" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id29">
-<span class="sig-name descname"><span class="pre">protected_from_scale_down</span></span><a class="headerlink" href="#id29" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="id30">
-<span class="sig-name descname"><span class="pre">region_name</span></span><a class="headerlink" href="#id30" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">region_name</span></span><a class="headerlink" href="#id29" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -748,18 +699,18 @@ differentiation from each other</p>
 </dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="id30">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#id30" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="id31">
-<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#id31" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#id31" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id32">
-<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#id32" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="id33">
-<span class="sig-name descname"><span class="pre">url</span></span><a class="headerlink" href="#id33" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">url</span></span><a class="headerlink" href="#id32" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
