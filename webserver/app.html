@@ -52,9 +52,6 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="app.blueprints.mail.html">app.blueprints.mail package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="app.blueprints.mail.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="app.blueprints.mail.html#module-app.blueprints.mail.mail_blueprint">app.blueprints.mail.mail_blueprint module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="app.blueprints.mail.html#module-app.blueprints.mail.newsletter_blueprint">app.blueprints.mail.newsletter_blueprint module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="app.blueprints.mail.html#module-app.blueprints.mail">Module contents</a></li>
 </ul>
 </li>
@@ -98,14 +95,10 @@
 <li class="toctree-l1"><a class="reference internal" href="app.models.html">app.models package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="app.models.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="app.models.html#module-app.models.hardware">app.models.hardware module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="app.models.html#module-app.models.sales">app.models.sales module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="app.models.html#module-app.models">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="app.serializers.html">app.serializers package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="app.serializers.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="app.serializers.html#module-app.serializers.hardware">app.serializers.hardware module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="app.serializers.html#module-app.serializers.sales">app.serializers.sales module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="app.serializers.html#module-app.serializers">Module contents</a></li>
 </ul>
 </li>
@@ -1058,46 +1051,9 @@ process’s execution environment, optionally falling back on the configuration 
 <span id="app-exceptions-module"></span><h2>app.exceptions module<a class="headerlink" href="#module-app.exceptions" title="Permalink to this headline">¶</a></h2>
 <p>A collection of exceptions that may be raised by the Flask application.</p>
 <dl class="py exception">
-<dt class="sig sig-object py" id="app.exceptions.SendGridException">
-<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">app.exceptions.</span></span><span class="sig-name descname"><span class="pre">SendGridException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.exceptions.SendGridException" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">app.exceptions._FractalError</span></code></p>
-<p>This exception is raised when SendGrid email sending API throws an exception
-Args: None</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="app.exceptions.SendGridException.message">
-<span class="sig-name descname"><span class="pre">message</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'Sendgrid</span> <span class="pre">sending</span> <span class="pre">API</span> <span class="pre">threw</span> <span class="pre">an</span> <span class="pre">exception'</span></em><a class="headerlink" href="#app.exceptions.SendGridException.message" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="app.exceptions.SendGridException.params">
-<span class="sig-name descname"><span class="pre">params</span></span><em class="property"> <span class="pre">=</span> <span class="pre">()</span></em><a class="headerlink" href="#app.exceptions.SendGridException.params" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py exception">
 <dt class="sig sig-object py" id="app.exceptions.SentryInitializationError">
 <em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">app.exceptions.</span></span><span class="sig-name descname"><span class="pre">SentryInitializationError</span></span><a class="headerlink" href="#app.exceptions.SentryInitializationError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
-</dd></dl>
-
-<dl class="py exception">
-<dt class="sig sig-object py" id="app.exceptions.TemplateNotFound">
-<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">app.exceptions.</span></span><span class="sig-name descname"><span class="pre">TemplateNotFound</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.exceptions.TemplateNotFound" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">app.exceptions._FractalError</span></code></p>
-<p>This exception is raised when an email template ID is requested that does not exist
-:param email_template_id: id of the selected email template
-:type email_template_id: str</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="app.exceptions.TemplateNotFound.message">
-<span class="sig-name descname"><span class="pre">message</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'Email_template_id:</span> <span class="pre">{email_template_id}'</span></em><a class="headerlink" href="#app.exceptions.TemplateNotFound.message" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="app.exceptions.TemplateNotFound.params">
-<span class="sig-name descname"><span class="pre">params</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('email_template_id',)</span></em><a class="headerlink" href="#app.exceptions.TemplateNotFound.params" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </section>

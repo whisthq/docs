@@ -35,34 +35,6 @@
             
   <section id="app-helpers-blueprint-helpers-mail-package">
 <h1>app.helpers.blueprint_helpers.mail package<a class="headerlink" href="#app-helpers-blueprint-helpers-mail-package" title="Permalink to this headline">¶</a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="module-app.helpers.blueprint_helpers.mail.mail_post">
-<span id="app-helpers-blueprint-helpers-mail-mail-post-module"></span><h2>app.helpers.blueprint_helpers.mail.mail_post module<a class="headerlink" href="#module-app.helpers.blueprint_helpers.mail.mail_post" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.mail.mail_post.mail_helper">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.mail.mail_post.</span></span><span class="sig-name descname"><span class="pre">mail_helper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">from_email</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_email</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.mail.mail_post.mail_helper" title="Permalink to this definition">¶</a></dt>
-<dd><p>Helper function for the /mail route.</p>
-<p>Calls the send_email function, and catches possible exceptions.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>email_id</strong> (<em>str</em>) – ID of the email being sent (ex. EMAIL_VERIFICATION, PASSWORD_RESET,
-etc.)</p></li>
-<li><p><strong>from_email</strong> (<em>str</em>) – email being sent from</p></li>
-<li><p><strong>to_email</strong> (<em>str</em>) – email being sent to</p></li>
-<li><p><strong>email_args</strong> (<em>dict</em>) – dict of Jinja arguments to pass into render_template()</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>A dictionary object with the keys “status” and “verified”, representing the HTTP
-response to the request.</p>
-</dd>
-</dl>
-</dd></dl>
-
-</section>
 <section id="module-app.helpers.blueprint_helpers.mail">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.helpers.blueprint_helpers.mail" title="Permalink to this headline">¶</a></h2>
 </section>
