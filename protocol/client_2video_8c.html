@@ -98,12 +98,13 @@ $(document).ready(function(){initNavTree('client_2video_8c.html',''); initResiza
 <code>#include &quot;<a class="el" href="sdl__utils_8h_source.html">sdl_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ringbuffer_8h_source.html">ringbuffer.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="peercursor_8h_source.html">peercursor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sdlscreeninfo_8h_source.html">sdlscreeninfo.h</a>&quot;</code><br />
 <code>#include &lt;SDL2/SDL.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="color_8h_source.html">fractal/utils/color.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="png_8h_source.html">fractal/utils/png.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">fractal/logging/log_statistic.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="peercursor_8h_source.html">peercursor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sdlscreeninfo_8h_source.html">sdlscreeninfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="native__window__utils_8h_source.html">native_window_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_2network_8h_source.html">network.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -183,6 +184,8 @@ Functions</h2></td></tr>
 <tr class="separator:a2b0a6d84fb4c5932cf794270360bc9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc212dea40551c699510c7524009faab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#adc212dea40551c699510c7524009faab">request_iframe_to_catch_up</a> ()</td></tr>
 <tr class="separator:adc212dea40551c699510c7524009faab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8268859f16e161b579a9200b11ee5db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#af8268859f16e161b579a9200b11ee5db">update_window_titlebar_color</a> ()</td></tr>
+<tr class="separator:af8268859f16e161b579a9200b11ee5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759f71f304c11873e67bf7cc3f2d08a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a759f71f304c11873e67bf7cc3f2d08a8">init_video</a> ()</td></tr>
 <tr class="memdesc:a759f71f304c11873e67bf7cc3f2d08a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the SDL video thread.  <a href="client_2video_8c.html#a759f71f304c11873e67bf7cc3f2d08a8">More...</a><br /></td></tr>
 <tr class="separator:a759f71f304c11873e67bf7cc3f2d08a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,6 +232,10 @@ Variables</h2></td></tr>
 <tr class="separator:adb9ee7b2e8381606788de51e5548b57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5120ece93dfddf5638a59e495e9c6d46"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a></td></tr>
 <tr class="separator:a5120ece93dfddf5638a59e495e9c6d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47696269ce2ea4b6deaa9145a677892"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="structFractalRGBColor.html">FractalRGBColor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ab47696269ce2ea4b6deaa9145a677892">native_window_color</a></td></tr>
+<tr class="separator:ab47696269ce2ea4b6deaa9145a677892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a5f1af397e2937ecbd7c0a77f0766b"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a27a5f1af397e2937ecbd7c0a77f0766b">native_window_color_update</a></td></tr>
+<tr class="separator:a27a5f1af397e2937ecbd7c0a77f0766b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c07149072d05b0b806023079dc6e56"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326">FractalCursorState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a32c07149072d05b0b806023079dc6e56">cursor_state</a> = <a class="el" href="cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326aa335fef0c5a110ab9ab94094f5c6b419">CURSOR_STATE_VISIBLE</a></td></tr>
 <tr class="separator:a32c07149072d05b0b806023079dc6e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7b6f397fba3aca11063cdd5a2084994"><td class="memItemLeft" align="right" valign="top">volatile SDL_Cursor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ac7b6f397fba3aca11063cdd5a2084994">sdl_cursor</a> = NULL</td></tr>
@@ -265,9 +272,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with receiving and. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md63"></a>
+<h1><a class="anchor" id="autotoc_md67"></a>
 processing video packets on the client.</h1>
-<h1><a class="anchor" id="autotoc_md64"></a>
+<h1><a class="anchor" id="autotoc_md68"></a>
 Usage</h1>
 <p>initVideo() gets called before any video packet can be received. The video packets are received as standard FractalPackets by ReceiveVideo(FractalPacket* packet), before being saved in a proper video frame format. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -962,6 +969,23 @@ Usage</h1>
 
 </div>
 </div>
+<a id="af8268859f16e161b579a9200b11ee5db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8268859f16e161b579a9200b11ee5db">&#9670;&nbsp;</a></span>update_window_titlebar_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update_window_titlebar_color </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a85ae5e613843de1252d2e83d7aa9ab1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85ae5e613843de1252d2e83d7aa9ab1b">&#9670;&nbsp;</a></span>can_render</h2>
@@ -1083,6 +1107,34 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile int max_bitrate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab47696269ce2ea4b6deaa9145a677892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab47696269ce2ea4b6deaa9145a677892">&#9670;&nbsp;</a></span>native_window_color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="structFractalRGBColor.html">FractalRGBColor</a>* native_window_color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27a5f1af397e2937ecbd7c0a77f0766b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a5f1af397e2937ecbd7c0a77f0766b">&#9670;&nbsp;</a></span>native_window_color_update</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool native_window_color_update</td>
         </tr>
       </table>
 </div><div class="memdoc">

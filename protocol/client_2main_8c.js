@@ -29,6 +29,8 @@ var client_2main_8c =
     [ "lgui_pressed", "client_2main_8c.html#a5b2d8acba46a3a8d41972491e3e06b01", null ],
     [ "max_bitrate", "client_2main_8c.html#ad137585f4fddac5c02d6b3f99323385b", null ],
     [ "mouse_state", "client_2main_8c.html#a9f5f2b90e5441717b0499669e2e742d3", null ],
+    [ "native_window_color", "client_2main_8c.html#ab47696269ce2ea4b6deaa9145a677892", null ],
+    [ "native_window_color_update", "client_2main_8c.html#a27a5f1af397e2937ecbd7c0a77f0766b", null ],
     [ "output_codec_type", "client_2main_8c.html#adb9ee7b2e8381606788de51e5548b57f", null ],
     [ "output_height", "client_2main_8c.html#a2a57d774e71166271bbff6c515111104", null ],
     [ "output_width", "client_2main_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ],

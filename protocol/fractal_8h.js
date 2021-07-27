@@ -17,7 +17,6 @@ var fractal_8h =
     [ "BASE_TCP_PORT", "fractal_8h.html#adc0ff2e968cb733b9d5b1370fec443f5", null ],
     [ "BASE_UDP_PORT", "fractal_8h.html#abf13ea9a5895c46f8309ca5a57d176dd", null ],
     [ "BYTES_IN_KILOBYTE", "fractal_8h.html#ae8e4c0175929d141a35aca839fea9693", null ],
-    [ "CAN_UPDATE_WINDOW_TITLEBAR_COLOR", "fractal_8h.html#a80b7ed7aaba5302d4dfac7311d0b148e", null ],
     [ "CAPTURE_SPECIAL_WINDOWS_KEYS", "fractal_8h.html#a881d9eef8e780a05fe9cd24eab5514d8", null ],
     [ "CHUNK_SIZE", "fractal_8h.html#aea3cfda4f3a9f978ec759f206cf186fe", null ],
     [ "DEFAULT_BINARY_PRIVATE_KEY", "fractal_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41", null ],

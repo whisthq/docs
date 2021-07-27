@@ -2,7 +2,6 @@ var structInputDevice =
 [
     [ "caps_lock", "structInputDevice.html#ab1e5788638481214330b017d325ed424", null ],
     [ "display", "structInputDevice.html#a4fa4d386a10f209982638cc8bd1e79fb", null ],
-    [ "dpi", "structInputDevice.html#a342f6ed06953928796c79a08f2d93f4c", null ],
     [ "fd_absmouse", "structInputDevice.html#a3cf568b6e17d58b12beeb7098c7c0527", null ],
     [ "fd_keyboard", "structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf", null ],
     [ "fd_relmouse", "structInputDevice.html#a1d3c4e4761cc5549826c66ace98566e7", null ],

@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['native_5fwindow_5futils_2eh_1937',['native_window_utils.h',['../native__window__utils_8h.html',1,'']]],
-  ['network_2ec_1938',['network.c',['../client_2network_8c.html',1,'(Global Namespace)'],['../server_2network_8c.html',1,'(Global Namespace)'],['../fractal_2network_2network_8c.html',1,'(Global Namespace)']]],
-  ['network_2eh_1939',['network.h',['../client_2network_8h.html',1,'(Global Namespace)'],['../server_2network_8h.html',1,'(Global Namespace)'],['../fractal_2network_2network_8h.html',1,'(Global Namespace)']]],
-  ['nvidia_5fencode_2ec_1940',['nvidia_encode.c',['../nvidia__encode_8c.html',1,'']]],
-  ['nvidia_5fencode_2eh_1941',['nvidia_encode.h',['../nvidia__encode_8h.html',1,'']]],
-  ['nvidiacapture_2ec_1942',['nvidiacapture.c',['../nvidiacapture_8c.html',1,'']]],
-  ['nvidiacapture_2eh_1943',['nvidiacapture.h',['../nvidiacapture_8h.html',1,'']]],
-  ['nvidiatransfercapture_2ec_1944',['nvidiatransfercapture.c',['../nvidiatransfercapture_8c.html',1,'']]],
-  ['nvidiatransfercapture_2eh_1945',['nvidiatransfercapture.h',['../nvidiatransfercapture_8h.html',1,'']]]
+  ['native_5fwindow_5futils_2eh_1943',['native_window_utils.h',['../native__window__utils_8h.html',1,'']]],
+  ['native_5fwindow_5futils_5fwindows_2ec_1944',['native_window_utils_windows.c',['../native__window__utils__windows_8c.html',1,'']]],
+  ['native_5fwindow_5futils_5fx11_2ec_1945',['native_window_utils_x11.c',['../native__window__utils__x11_8c.html',1,'']]],
+  ['network_2ec_1946',['network.c',['../client_2network_8c.html',1,'(Global Namespace)'],['../server_2network_8c.html',1,'(Global Namespace)'],['../fractal_2network_2network_8c.html',1,'(Global Namespace)']]],
+  ['network_2eh_1947',['network.h',['../client_2network_8h.html',1,'(Global Namespace)'],['../server_2network_8h.html',1,'(Global Namespace)'],['../fractal_2network_2network_8h.html',1,'(Global Namespace)']]],
+  ['nvidia_5fencode_2ec_1948',['nvidia_encode.c',['../nvidia__encode_8c.html',1,'']]],
+  ['nvidia_5fencode_2eh_1949',['nvidia_encode.h',['../nvidia__encode_8h.html',1,'']]],
+  ['nvidiacapture_2ec_1950',['nvidiacapture.c',['../nvidiacapture_8c.html',1,'']]],
+  ['nvidiacapture_2eh_1951',['nvidiacapture.h',['../nvidiacapture_8h.html',1,'']]],
+  ['nvidiatransfercapture_2ec_1952',['nvidiatransfercapture.c',['../nvidiatransfercapture_8c.html',1,'']]],
+  ['nvidiatransfercapture_2eh_1953',['nvidiatransfercapture.h',['../nvidiatransfercapture_8h.html',1,'']]]
 ];

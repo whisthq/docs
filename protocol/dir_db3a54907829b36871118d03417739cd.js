@@ -8,6 +8,8 @@ var dir_db3a54907829b36871118d03417739cd =
     [ "handle_server_message.h", "handle__server__message_8h.html", "handle__server__message_8h" ],
     [ "main.c", "client_2main_8c.html", "client_2main_8c" ],
     [ "native_window_utils.h", "native__window__utils_8h.html", "native__window__utils_8h" ],
+    [ "native_window_utils_windows.c", "native__window__utils__windows_8c.html", "native__window__utils__windows_8c" ],
+    [ "native_window_utils_x11.c", "native__window__utils__x11_8c.html", "native__window__utils__x11_8c" ],
     [ "network.c", "client_2network_8c.html", "client_2network_8c" ],
     [ "network.h", "client_2network_8h.html", "client_2network_8h" ],
     [ "peercursor.c", "peercursor_8c.html", "peercursor_8c" ],
