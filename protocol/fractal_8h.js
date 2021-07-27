@@ -94,6 +94,8 @@ var fractal_8h =
       [ "MESSAGE_MOUSE_INACTIVE", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90abd281fa3b55cbc8ae43f021676a558c2", null ],
       [ "MESSAGE_MULTIGESTURE", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ad722ecc5dd0b2b51dba5f23ac3562b14", null ],
       [ "MESSAGE_RELEASE", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90af64db5b6ef557aabdd68fc45a3319a7a", null ],
+      [ "MESSAGE_STOP_STREAMING", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ab09c156101b732de51304e3be78103e7", null ],
+      [ "MESSAGE_START_STREAMING", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aef24dabe7e8ee67e35c2bd80cce17ced", null ],
       [ "MESSAGE_MBPS", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ad061888ad51db62ad7d38fb2e1c5967a", null ],
       [ "MESSAGE_PING", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90af789f175f2a0ff161aea00846b9b50e0", null ],
       [ "MESSAGE_DIMENSIONS", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a320f73bbf3e5c9abb3285eb70a278b35", null ],

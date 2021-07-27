@@ -1,5 +1,10 @@
 var NAVTREEINDEX9 =
 {
+"structFractalPacket.html#aba9e3b70c203e6d03f15769081c08429":[8,0,33,2],
+"structFractalPacket.html#ac5895bdbd8ec8426128cd7b5668feb0c":[8,0,33,3],
+"structFractalPacket.html#ad39788d087576c274ea0a63249e3f012":[8,0,33,1],
+"structFractalPacket.html#add266cde733c1abfe0c5730f482794f3":[8,0,33,7],
+"structFractalRGBColor.html":[8,0,34],
 "structFractalRGBColor.html#a4a0ad558b5ada20d973a85257f45b9d3":[8,0,34,2],
 "structFractalRGBColor.html#a7a2bfacdd1bbcb1d0c823ea8407e9da8":[8,0,34,1],
 "structFractalRGBColor.html#ae64928bcd033489ec1bfc1022a2a22dd":[8,0,34,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX9 =
 "structRWLock.html#a5d42b8c11230b110b81ffb99b4b9b5a3":[8,0,65,6],
 "structRWLock.html#a63262eeb460e762ebf98002e6a746d3a":[8,0,65,3],
 "structRWLock.html#a652c761a1dec74612a3b72cc4fdd1525":[8,0,65,8],
-"structRWLock.html#a6d02f221523aa66ecb38e71e9220cb11":[8,0,65,7],
-"structRWLock.html#ac63f2a076a4330adcabe3ea5e84afd8e":[8,0,65,1],
-"structRegionHeader.html":[8,0,63],
-"structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[8,0,63,0],
-"structRingBuffer.html":[8,0,64],
-"structRingBuffer.html#a222e926e44d53e0f8bec5e58bbccfc64":[8,0,64,7]
+"structRWLock.html#a6d02f221523aa66ecb38e71e9220cb11":[8,0,65,7]
 };

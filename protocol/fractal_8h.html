@@ -543,18 +543,21 @@ Enumerations</h2></td></tr>
 <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ad722ecc5dd0b2b51dba5f23ac3562b14">MESSAGE_MULTIGESTURE</a> = 7, 
 <br />
 &#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90af64db5b6ef557aabdd68fc45a3319a7a">MESSAGE_RELEASE</a> = 8, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ab09c156101b732de51304e3be78103e7">MESSAGE_STOP_STREAMING</a> = 105, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aef24dabe7e8ee67e35c2bd80cce17ced">MESSAGE_START_STREAMING</a> = 106, 
 <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ad061888ad51db62ad7d38fb2e1c5967a">MESSAGE_MBPS</a> = 107, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90af789f175f2a0ff161aea00846b9b50e0">MESSAGE_PING</a> = 108, 
+<br />
+&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90af789f175f2a0ff161aea00846b9b50e0">MESSAGE_PING</a> = 108, 
 <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a320f73bbf3e5c9abb3285eb70a278b35">MESSAGE_DIMENSIONS</a> = 109, 
-<br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a6c81ea559025810031e39cb391506a01">MESSAGE_VIDEO_NACK</a> = 110, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a6c81ea559025810031e39cb391506a01">MESSAGE_VIDEO_NACK</a> = 110, 
 <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a20da901d62d1b274e068be2a88ae4f8e">MESSAGE_AUDIO_NACK</a> = 111, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8285383cb763af7a4747b8a516103e4c">CMESSAGE_CLIPBOARD</a> = 112, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aa13dda8eb711d38d91b408de950920ee">MESSAGE_IFRAME_REQUEST</a> = 113, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a59bd9af833af2807d558075122620753">CMESSAGE_INTERACTION_MODE</a> = 115, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8285383cb763af7a4747b8a516103e4c">CMESSAGE_CLIPBOARD</a> = 112, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aa13dda8eb711d38d91b408de950920ee">MESSAGE_IFRAME_REQUEST</a> = 113, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a59bd9af833af2807d558075122620753">CMESSAGE_INTERACTION_MODE</a> = 115, 
 <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aad0e41f01fe989967ccf13dba65c7041">MESSAGE_DISCOVERY_REQUEST</a> = 116, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
+<br />
+&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
 <br />
  }</td></tr>
 <tr class="memdesc:a24b3a769a239a708b28e06e660b63f90"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message type.  <a href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90">More...</a><br /></td></tr>
@@ -1693,6 +1696,10 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90ad722ecc5dd0b2b51dba5f23ac3562b14"></a>MESSAGE_MULTIGESTURE&#160;</td><td class="fielddoc"><p>Gesture Event. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90af64db5b6ef557aabdd68fc45a3319a7a"></a>MESSAGE_RELEASE&#160;</td><td class="fielddoc"><p>Message instructing the host to release all input that is currently pressed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90ab09c156101b732de51304e3be78103e7"></a>MESSAGE_STOP_STREAMING&#160;</td><td class="fielddoc"><p>Message asking server to stop encoding/sending frames. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90aef24dabe7e8ee67e35c2bd80cce17ced"></a>MESSAGE_START_STREAMING&#160;</td><td class="fielddoc"><p>Message asking server to resume encoding/sending frames. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90ad061888ad51db62ad7d38fb2e1c5967a"></a>MESSAGE_MBPS&#160;</td><td class="fielddoc"><p><code>mbps</code> double is valid in FractClientMessage. </p>
 </td></tr>

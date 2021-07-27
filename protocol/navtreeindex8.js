@@ -1,5 +1,10 @@
 var NAVTREEINDEX8 =
 {
+"structAudioDevice.html#ab616984298894136dfa02352891355ab":[8,0,5,17],
+"structAudioDevice.html#abea55870545de19e8142a33e10b3a0aa":[8,0,5,6],
+"structAudioDevice.html#ac2589308342a2a84a6cc39d3601ff730":[8,0,5,16],
+"structAudioDevice.html#ad408969c4942fd73942c68ac3951146c":[8,0,5,18],
+"structAudioDevice.html#addf1307732fc4a16ed1e0594296088ff":[8,0,5,23],
 "structAudioDevice.html#ae1047096760f99335d802231d346d6dd":[8,0,5,21],
 "structAudioDevice.html#ae98de4067495ed26afa7d80ae9050454":[8,0,5,12],
 "structAudioDevice.html#aebb487115eacc7d3ff71ac78934f4955":[8,0,5,9],
@@ -130,11 +135,11 @@ var NAVTREEINDEX8 =
 "structFFmpegEncoder.html#ae52a37a05a72be3d8a226baa69e744b3":[8,0,20,10],
 "structFFmpegEncoder.html#aeb3727e6ee67ad19e50da029cb77634f":[8,0,20,9],
 "structFractalClientMessage.html":[8,0,21],
-"structFractalClientMessage.html#a150cbdccb818afd8db61d0edfec06cf6":[8,0,21,13],
+"structFractalClientMessage.html#a150cbdccb818afd8db61d0edfec06cf6":[8,0,21,14],
 "structFractalClientMessage.html#a1b50cde28800c82c9186b1c6afd5cdb3":[8,0,21,11],
 "structFractalClientMessage.html#a1dbda6c8337588eb94a56a891db9b8e7":[8,0,21,18],
 "structFractalClientMessage.html#a1f2c107958427670e44b0a7281b1a142":[8,0,21,8],
-"structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df":[8,0,21,14],
+"structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df":[8,0,21,13],
 "structFractalClientMessage.html#a24069289e1841145929dd766e4ceea9a":[8,0,21,7],
 "structFractalClientMessage.html#a3ffeebef56fe099790cf4ec8bbb6d5f2":[8,0,21,0],
 "structFractalClientMessage.html#a4bda042c8ccebb3085388fdfc3d05127":[8,0,21,23],
@@ -244,10 +249,5 @@ var NAVTREEINDEX8 =
 "structFractalPacket.html#a63cb0571283efc6154a98e0f5bf676b5":[8,0,33,10],
 "structFractalPacket.html#a6d3808877ba611eca997656ba7bd6519":[8,0,33,0],
 "structFractalPacket.html#a8a61b18ce1b2cc71cfe8693d9379a4db":[8,0,33,6],
-"structFractalPacket.html#a9f91e6aaa11195d9c6090837e450103a":[8,0,33,4],
-"structFractalPacket.html#aba9e3b70c203e6d03f15769081c08429":[8,0,33,2],
-"structFractalPacket.html#ac5895bdbd8ec8426128cd7b5668feb0c":[8,0,33,3],
-"structFractalPacket.html#ad39788d087576c274ea0a63249e3f012":[8,0,33,1],
-"structFractalPacket.html#add266cde733c1abfe0c5730f482794f3":[8,0,33,7],
-"structFractalRGBColor.html":[8,0,34]
+"structFractalPacket.html#a9f91e6aaa11195d9c6090837e450103a":[8,0,33,4]
 };

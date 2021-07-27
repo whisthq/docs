@@ -85,14 +85,14 @@ var NAVTREEINDEX =
 "client_2video_8c.html#a6aca8731f3a28e96c0743be91d481a21",
 "cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326aa335fef0c5a110ab9ab94094f5c6b419",
 "fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4c4993c040397b1afc66c4a1ed849690",
-"fractal__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7",
-"handle__server__message_8h.html#a6fdf80a306f445f898e20758ab3d297b",
-"lodepng_8h.html#aa255d9a2e4054fc2888bf7670dac4107",
-"ringbuffer_8c.html#ad39f9574458820226981480a98a1081b",
-"structAudioDevice.html#ae1047096760f99335d802231d346d6dd",
-"structFractalRGBColor.html#a4a0ad558b5ada20d973a85257f45b9d3",
-"structRingBuffer.html#a2f8adc4bd7860a7265e43c66caa90c07",
-"videodecode_8c.html#ab9604aff2a5d55f9963036a266e1eb91"
+"fractal__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7",
+"handle__server__message_8c.html#afa6b4edce81c43a0d02ec5c0b6e97ce0",
+"lodepng_8h.html#a9b069a52f02ce6d2873c2a45d9fbdb8f",
+"ringbuffer_8c.html#ab9c50544e0beb60fdcf23b5b30e9a34c",
+"structAudioDevice.html#ab616984298894136dfa02352891355ab",
+"structFractalPacket.html#aba9e3b70c203e6d03f15769081c08429",
+"structRWLock.html#ac63f2a076a4330adcabe3ea5e84afd8e",
+"videodecode_8c.html#a4190e21d736599dcdbda2180df6d3ff7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

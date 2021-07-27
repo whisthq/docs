@@ -15,6 +15,7 @@ var handle__client__message_8c =
     [ "host_id", "handle__client__message_8c.html#afd4e9daf88116b596d5ae5839f38b3ba", null ],
     [ "input_device", "handle__client__message_8c.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd", null ],
     [ "max_mbps", "handle__client__message_8c.html#a8b0dd2067ae06f62bcee776eee9a021e", null ],
+    [ "stop_streaming", "handle__client__message_8c.html#aae54fd77214dad6eaf2b542edb690d53", null ],
     [ "update_device", "handle__client__message_8c.html#a0463a8762d54da9908315a54f9a740ea", null ],
     [ "update_encoder", "handle__client__message_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73", null ],
     [ "video_buffer", "handle__client__message_8c.html#a01a041188d4486324c6ff534bf52e25c", null ],
