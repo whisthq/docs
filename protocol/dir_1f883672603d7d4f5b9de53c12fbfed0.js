@@ -1,5 +1,7 @@
 var dir_1f883672603d7d4f5b9de53c12fbfed0 =
 [
+    [ "cudacontext.c", "cudacontext_8c.html", "cudacontext_8c" ],
+    [ "cudacontext.h", "cudacontext_8h.html", "cudacontext_8h" ],
     [ "dxgicapture.c", "dxgicapture_8c.html", "dxgicapture_8c" ],
     [ "dxgicapture.h", "dxgicapture_8h.html", "dxgicapture_8h" ],
     [ "dxgicudatransfercapture.h", "dxgicudatransfercapture_8h.html", "dxgicudatransfercapture_8h" ],

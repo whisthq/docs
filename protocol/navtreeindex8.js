@@ -1,5 +1,16 @@
 var NAVTREEINDEX8 =
 {
+"structAudioDevice.html#a30f89c17b8309a71ccb029404a29500c":[8,0,5,0],
+"structAudioDevice.html#a36ab5c207f117d40abc59a159d2b97ba":[8,0,5,5],
+"structAudioDevice.html#a4574b7c2ae86bf323140b66991d43c02":[8,0,5,3],
+"structAudioDevice.html#a4808a1fccaab21e3232ddedbbdc43aa2":[8,0,5,25],
+"structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb":[8,0,5,8],
+"structAudioDevice.html#a517141e95ece63642b0ca9c5c1b646b5":[8,0,5,24],
+"structAudioDevice.html#a645f69ffc8b9217e0207309905d103a3":[8,0,5,22],
+"structAudioDevice.html#a776db6f31e926dec0570d306da4237e4":[8,0,5,20],
+"structAudioDevice.html#a98cac2811b8f307ffc99724b9165eab1":[8,0,5,1],
+"structAudioDevice.html#a9febe11feee1de69e2f5baa097656cc1":[8,0,5,13],
+"structAudioDevice.html#a9ff1106a806021a728387789dddd38d6":[8,0,5,15],
 "structAudioDevice.html#ab616984298894136dfa02352891355ab":[8,0,5,17],
 "structAudioDevice.html#abea55870545de19e8142a33e10b3a0aa":[8,0,5,6],
 "structAudioDevice.html#ac2589308342a2a84a6cc39d3601ff730":[8,0,5,16],
@@ -238,16 +249,5 @@ var NAVTREEINDEX8 =
 "structFractalMultigestureMessage.html#a5fee4560815a6b016cdd28c5ea177156":[8,0,32,2],
 "structFractalMultigestureMessage.html#a736d0f0e068fd63264bf6500455bf155":[8,0,32,5],
 "structFractalMultigestureMessage.html#a96fe5fe1bc1a129932b4a5097cb2924c":[8,0,32,3],
-"structFractalMultigestureMessage.html#ab685f30c929b921bfec6bb041b5c4ade":[8,0,32,4],
-"structFractalMultigestureMessage.html#ac45facdfa07ffd5878413aad523b0d32":[8,0,32,0],
-"structFractalMultigestureMessage.html#ad3c82e6c702c861ed4d8f67aa98ecde8":[8,0,32,6],
-"structFractalMultigestureMessage.html#aef710e036d1fa6f67f7e05ef7a87ff8a":[8,0,32,1],
-"structFractalPacket.html":[8,0,33],
-"structFractalPacket.html#a1a5443c7e815deed30c562580cd53dfa":[8,0,33,5],
-"structFractalPacket.html#a41adc2a31ee326eef530380b89e2de59":[8,0,33,8],
-"structFractalPacket.html#a58ef07c9ccab1a89004781614619a348":[8,0,33,9],
-"structFractalPacket.html#a63cb0571283efc6154a98e0f5bf676b5":[8,0,33,10],
-"structFractalPacket.html#a6d3808877ba611eca997656ba7bd6519":[8,0,33,0],
-"structFractalPacket.html#a8a61b18ce1b2cc71cfe8693d9379a4db":[8,0,33,6],
-"structFractalPacket.html#a9f91e6aaa11195d9c6090837e450103a":[8,0,33,4]
+"structFractalMultigestureMessage.html#ab685f30c929b921bfec6bb041b5c4ade":[8,0,32,4]
 };

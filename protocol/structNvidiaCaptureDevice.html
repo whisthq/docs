@@ -99,32 +99,16 @@ Data Fields</h2></td></tr>
 <tr class="separator:a6ad1a9e3c3b416c35ec68546c26359a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc703007982b06f21676d69a48edf4f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvidiaCaptureDevice.html#afc703007982b06f21676d69a48edf4f8">height</a></td></tr>
 <tr class="separator:afc703007982b06f21676d69a48edf4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e26ce3aeccef4c002c9f94394a778e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvidiaCaptureDevice.html#af5e26ce3aeccef4c002c9f94394a778e">p_gpu_texture</a></td></tr>
+<tr class="separator:af5e26ce3aeccef4c002c9f94394a778e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16517c3ba7cca2be8aa32b766742721b"><td class="memItemLeft" align="right" valign="top">NVFBC_SESSION_HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvidiaCaptureDevice.html#a16517c3ba7cca2be8aa32b766742721b">fbc_handle</a></td></tr>
 <tr class="separator:a16517c3ba7cca2be8aa32b766742721b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd93581407810e43c14e6c23ae96385e"><td class="memItemLeft" align="right" valign="top">NVFBC_API_FUNCTION_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvidiaCaptureDevice.html#acd93581407810e43c14e6c23ae96385e">p_fbc_fn</a></td></tr>
 <tr class="separator:acd93581407810e43c14e6c23ae96385e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacea21f46a5a80ad9d5dc4b7243c5082"><td class="memItemLeft" align="right" valign="top">NVFBC_TOGL_SETUP_PARAMS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvidiaCaptureDevice.html#aacea21f46a5a80ad9d5dc4b7243c5082">togl_setup_params</a></td></tr>
-<tr class="separator:aacea21f46a5a80ad9d5dc4b7243c5082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1bb69f5f15debe7fdee4600fdfb0863"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvidiaCaptureDevice.html#ae1bb69f5f15debe7fdee4600fdfb0863">dw_texture_index</a></td></tr>
-<tr class="separator:ae1bb69f5f15debe7fdee4600fdfb0863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Struct to handle using Nvidia for capturing the screen. p_fbc_fn contains pointers to the API functions, and dw_texture_index keeps track of the GL texture that the capture is stored on. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="ae1bb69f5f15debe7fdee4600fdfb0863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1bb69f5f15debe7fdee4600fdfb0863">&#9670;&nbsp;</a></span>dw_texture_index</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t NvidiaCaptureDevice::dw_texture_index</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a16517c3ba7cca2be8aa32b766742721b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16517c3ba7cca2be8aa32b766742721b">&#9670;&nbsp;</a></span>fbc_handle</h2>
 
@@ -167,14 +151,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="aacea21f46a5a80ad9d5dc4b7243c5082"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacea21f46a5a80ad9d5dc4b7243c5082">&#9670;&nbsp;</a></span>togl_setup_params</h2>
+<a id="af5e26ce3aeccef4c002c9f94394a778e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e26ce3aeccef4c002c9f94394a778e">&#9670;&nbsp;</a></span>p_gpu_texture</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NVFBC_TOGL_SETUP_PARAMS NvidiaCaptureDevice::togl_setup_params</td>
+          <td class="memname">void* NvidiaCaptureDevice::p_gpu_texture</td>
         </tr>
       </table>
 </div><div class="memdoc">

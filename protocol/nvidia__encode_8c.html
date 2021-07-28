@@ -105,16 +105,12 @@ Functions</h2></td></tr>
 <tr class="separator:a30e1d4db419af47348131f5909917d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb48d23ded788334a3091c23fc41fd79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aeb48d23ded788334a3091c23fc41fd79">try_free_frame</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder)</td></tr>
 <tr class="separator:aeb48d23ded788334a3091c23fc41fd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f71b2bd606e8e99a76d0ca16a996270"><td class="memItemLeft" align="right" valign="top">NV_ENC_REGISTERED_PTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a0f71b2bd606e8e99a76d0ca16a996270">register_resource</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, uint32_t dw_texture, uint32_t dw_tex_target, int width, int height)</td></tr>
-<tr class="separator:a0f71b2bd606e8e99a76d0ca16a996270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d39f2732c6402b4dead0ed962d050b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a20d39f2732c6402b4dead0ed962d050b">unregister_resource</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, NV_ENC_REGISTERED_PTR registered_resource)</td></tr>
-<tr class="separator:a20d39f2732c6402b4dead0ed962d050b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c3023420778d6e723a1d8c10859927"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#ae4c3023420778d6e723a1d8c10859927">create_nvidia_encoder</a> (int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int out_width, int out_height)</td></tr>
 <tr class="memdesc:ae4c3023420778d6e723a1d8c10859927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new nvidia encoder.  <a href="nvidia__encode_8c.html#ae4c3023420778d6e723a1d8c10859927">More...</a><br /></td></tr>
 <tr class="separator:ae4c3023420778d6e723a1d8c10859927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a096183372479b7c4092d10cd35fdea98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a096183372479b7c4092d10cd35fdea98">nvidia_encoder_frame_intake</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, uint32_t dw_texture_index, int width, int height)</td></tr>
-<tr class="memdesc:a096183372479b7c4092d10cd35fdea98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into the nvidia encoder.  <a href="nvidia__encode_8c.html#a096183372479b7c4092d10cd35fdea98">More...</a><br /></td></tr>
-<tr class="separator:a096183372479b7c4092d10cd35fdea98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1692d86a98211318e61487325e4af20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#ae1692d86a98211318e61487325e4af20">nvidia_encoder_frame_intake</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, int width, int height)</td></tr>
+<tr class="memdesc:ae1692d86a98211318e61487325e4af20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into the nvidia encoder.  <a href="nvidia__encode_8c.html#ae1692d86a98211318e61487325e4af20">More...</a><br /></td></tr>
+<tr class="separator:ae1692d86a98211318e61487325e4af20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e">nvidia_encoder_encode</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the most recently intake'd frame.  <a href="nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e">More...</a><br /></td></tr>
 <tr class="separator:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,8 +303,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a096183372479b7c4092d10cd35fdea98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a096183372479b7c4092d10cd35fdea98">&#9670;&nbsp;</a></span>nvidia_encoder_frame_intake()</h2>
+<a id="ae1692d86a98211318e61487325e4af20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1692d86a98211318e61487325e4af20">&#9670;&nbsp;</a></span>nvidia_encoder_frame_intake()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,12 +314,6 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
           <td class="paramname"><em>encoder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>dw_texture_index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -349,7 +339,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>The encoder to encode with </td></tr>
-    <tr><td class="paramname">dw_texture_index</td><td>The index into registered_resources corresponding to the frame </td></tr>
     <tr><td class="paramname">width</td><td>The width of the inputted frame </td></tr>
     <tr><td class="paramname">height</td><td>The height of the inputted frame</td></tr>
   </table>
@@ -444,52 +433,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f71b2bd606e8e99a76d0ca16a996270"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f71b2bd606e8e99a76d0ca16a996270">&#9670;&nbsp;</a></span>register_resource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NV_ENC_REGISTERED_PTR register_resource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>dw_texture</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>dw_tex_target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aeb48d23ded788334a3091c23fc41fd79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb48d23ded788334a3091c23fc41fd79">&#9670;&nbsp;</a></span>try_free_frame()</h2>
 
@@ -502,34 +445,6 @@ Functions</h2></td></tr>
           <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
           <td class="paramname"><em>encoder</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a20d39f2732c6402b4dead0ed962d050b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20d39f2732c6402b4dead0ed962d050b">&#9670;&nbsp;</a></span>unregister_resource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unregister_resource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NV_ENC_REGISTERED_PTR&#160;</td>
-          <td class="paramname"><em>registered_resource</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

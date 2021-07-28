@@ -83,16 +83,16 @@ var NAVTREEINDEX =
 [
 "aes_8c.html",
 "client_2video_8c.html#a6aca8731f3a28e96c0743be91d481a21",
-"cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326aa335fef0c5a110ab9ab94094f5c6b419",
-"fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4c4993c040397b1afc66c4a1ed849690",
-"fractal__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7",
-"handle__server__message_8c.html#afa6b4edce81c43a0d02ec5c0b6e97ce0",
-"lodepng_8h.html#a9b069a52f02ce6d2873c2a45d9fbdb8f",
-"ringbuffer_8c.html#ab9c50544e0beb60fdcf23b5b30e9a34c",
-"structAudioDevice.html#ab616984298894136dfa02352891355ab",
-"structFractalPacket.html#aba9e3b70c203e6d03f15769081c08429",
-"structRWLock.html#ac63f2a076a4330adcabe3ea5e84afd8e",
-"videodecode_8c.html#a4190e21d736599dcdbda2180df6d3ff7"
+"cudacontext_8c.html#a917eb3f03688dde30d8567cf341399f8",
+"fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd",
+"fractal__memory_8c.html",
+"handle__client__message_8h.html",
+"lodepng_8h.html#a874763ad14a0c84d41d0819212407a5a",
+"ringbuffer_8c.html",
+"structAudioDevice.html#a30f89c17b8309a71ccb029404a29500c",
+"structFractalMultigestureMessage.html#ac45facdfa07ffd5878413aad523b0d32",
+"structRWLock.html",
+"uinput__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
