@@ -72,6 +72,7 @@ var fractal_8h =
     [ "FractalMouseButtonMessage", "fractal_8h.html#acfa644d0f58d497fe5e27e306676e060", null ],
     [ "FractalMouseMotionMessage", "fractal_8h.html#a48ad7c593a89a15b10bd2707c57405e5", null ],
     [ "FractalMouseWheelMessage", "fractal_8h.html#acf1b4541ca3fc91c6cf328a67018a662", null ],
+    [ "FractalMouseWheelMomentumType", "fractal_8h.html#aeb6f843f09da236f49aaabbaf45b3ee4", null ],
     [ "FractalMultigestureMessage", "fractal_8h.html#a2ac7ef9020b9f6ec3bcd1900c1b4cef3", null ],
     [ "FractalMultigestureType", "fractal_8h.html#adab434a4f56f688d5fb8babd46f76f5e", null ],
     [ "FractalServerMessage", "fractal_8h.html#a93b8f2ac3292bebd1693ff0bdd09846e", null ],
@@ -254,12 +255,18 @@ var fractal_8h =
       [ "MOUSE_X2", "fractal_8h.html#afb444b468c03623255b00447dada0f15a8993918fc27591183d5a678fda68bbc9", null ],
       [ "MOUSE_MAKE_32", "fractal_8h.html#afb444b468c03623255b00447dada0f15a390d7bc7b89a05b3cd1117aa2cc983b2", null ]
     ] ],
+    [ "FractalMouseWheelMomentumType", "fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2", [
+      [ "MOUSEWHEEL_MOMENTUM_NONE", "fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2a6b12aa8b149748637abe609a4dac0ff9", null ],
+      [ "MOUSEWHEEL_MOMENTUM_BEGIN", "fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2a630b10cec9f191836c71a2921e9cb92b", null ],
+      [ "MOUSEWHEEL_MOMENTUM_ACTIVE", "fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2ac35d891e7f97f5c677ac573ad418b6bf", null ],
+      [ "MOUSEWHEEL_MOMENTUM_END", "fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2a6168472a2aa467df0d82596eb8b341d1", null ]
+    ] ],
     [ "FractalMultigestureType", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527", [
-      [ "NONE", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527ac157bdf0b85a40d2619cbc8bc1ae5fe2", null ],
-      [ "PINCH_OPEN", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a97f480d77d3b78f17d3262ecbeff714b", null ],
-      [ "PINCH_CLOSE", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527ad6d7898ff019981e10a42d82da685408", null ],
-      [ "ROTATE", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a3dcfe0046eb5876e287dbf0914819b16", null ],
-      [ "CANCEL", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527ae4842754cb17e5234637e3a85a7f3d90", null ]
+      [ "MULTIGESTURE_NONE", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527af4c4f031796f45e85396e0a2fc898cec", null ],
+      [ "MULTIGESTURE_PINCH_OPEN", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a4dcb99f1729a987dfe37244716120684", null ],
+      [ "MULTIGESTURE_PINCH_CLOSE", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a09d12a732eaebb811e574655d2730ed6", null ],
+      [ "MULTIGESTURE_ROTATE", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a1ab59eb574b1e82f729c76699e3218bf", null ],
+      [ "MULTIGESTURE_CANCEL", "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a39566e1d859d99ec29a65f2b57de025c", null ]
     ] ],
     [ "FractalServerMessageType", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c", [
       [ "SMESSAGE_NONE", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140cafcd5317ecd005a890b1c3e70c96f5695", null ],

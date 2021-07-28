@@ -10,6 +10,7 @@ var sdl__event__handler_8c =
     [ "handle_sdl_event", "sdl__event__handler_8c.html#a66ddd1c4bf7788031a36578e95ad1b94", null ],
     [ "handle_window_size_changed", "sdl__event__handler_8c.html#a567539355201a9a0ad842652f5dde3f6", null ],
     [ "try_handle_sdl_event", "sdl__event__handler_8c.html#a0174a28e7af130d71bc1fbc09695fbfa", null ],
+    [ "active_momentum_scroll", "sdl__event__handler_8c.html#adb980b682301eb39aab79d8280ba0610", null ],
     [ "active_pinch", "sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48", null ],
     [ "alt_pressed", "sdl__event__handler_8c.html#a1eadcac7071ac5ef15612c11b156e4cc", null ],
     [ "ctrl_pressed", "sdl__event__handler_8c.html#aec4e866abc16cc8217d33dfae87d5877", null ],

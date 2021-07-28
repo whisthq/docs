@@ -1,5 +1,11 @@
 var NAVTREEINDEX8 =
 {
+"structAudioDevice.html#a012200fa5d0cb415fa8eb68c429305b9":[8,0,5,4],
+"structAudioDevice.html#a1005c08f0e07d2de573f04a57166ca2e":[8,0,5,10],
+"structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb":[8,0,5,7],
+"structAudioDevice.html#a2278bb9d36a1802778f1882143fb5cf3":[8,0,5,19],
+"structAudioDevice.html#a2c0c7921b718b5155b66f6305d10f6a5":[8,0,5,11],
+"structAudioDevice.html#a2f47a9f4c113a883442e14be91ddb486":[8,0,5,2],
 "structAudioDevice.html#a30f89c17b8309a71ccb029404a29500c":[8,0,5,0],
 "structAudioDevice.html#a36ab5c207f117d40abc59a159d2b97ba":[8,0,5,5],
 "structAudioDevice.html#a4574b7c2ae86bf323140b66991d43c02":[8,0,5,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX8 =
 "structFractalMouseWheelMessage.html":[8,0,31],
 "structFractalMouseWheelMessage.html#a06d632ea447c7c20fb7f3e3ed5dda03e":[8,0,31,2],
 "structFractalMouseWheelMessage.html#a16659e8b9a7b8aaca82a8da9e7b4106d":[8,0,31,1],
-"structFractalMouseWheelMessage.html#a45a24247859acd21f2ec72b716c6702f":[8,0,31,0],
-"structFractalMouseWheelMessage.html#abf553852527eb98a28971050f309f30c":[8,0,31,3],
-"structFractalMultigestureMessage.html":[8,0,32],
-"structFractalMultigestureMessage.html#a5fee4560815a6b016cdd28c5ea177156":[8,0,32,2],
-"structFractalMultigestureMessage.html#a736d0f0e068fd63264bf6500455bf155":[8,0,32,5],
-"structFractalMultigestureMessage.html#a96fe5fe1bc1a129932b4a5097cb2924c":[8,0,32,3],
-"structFractalMultigestureMessage.html#ab685f30c929b921bfec6bb041b5c4ade":[8,0,32,4]
+"structFractalMouseWheelMessage.html#a45a24247859acd21f2ec72b716c6702f":[8,0,31,0]
 };

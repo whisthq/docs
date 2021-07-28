@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['calculate_5fstatistics_116',['calculate_statistics',['../client_2video_8c.html#abdd03a9a8632c1d1f80a3a113d5ba8d1',1,'video.c']]],
-  ['can_5frender_117',['can_render',['../client_2video_8c.html#a85ae5e613843de1252d2e83d7aa9ab1b',1,'video.c']]],
-  ['can_5fuse_5fhardware_118',['can_use_hardware',['../structVideoDecoder.html#a27967f2aa7bdc30485b06955aeb919fd',1,'VideoDecoder']]],
-  ['cancel_119',['CANCEL',['../fractal_8h.html#a69973fa63511c3fd057755fcae4b8527ae4842754cb17e5234637e3a85a7f3d90',1,'fractal.h']]],
+  ['calculate_5fstatistics_117',['calculate_statistics',['../client_2video_8c.html#abdd03a9a8632c1d1f80a3a113d5ba8d1',1,'video.c']]],
+  ['can_5frender_118',['can_render',['../client_2video_8c.html#a85ae5e613843de1252d2e83d7aa9ab1b',1,'video.c']]],
+  ['can_5fuse_5fhardware_119',['can_use_hardware',['../structVideoDecoder.html#a27967f2aa7bdc30485b06955aeb919fd',1,'VideoDecoder']]],
   ['capacity_120',['capacity',['../structDynamicBuffer.html#ab086b6e22e3b2018e9cb35aaf637e22c',1,'DynamicBuffer']]],
   ['caps_5flock_121',['caps_lock',['../structFractalClientMessage.html#af7243df36e946b8fb6ad7d30ac4c0bd1',1,'FractalClientMessage::caps_lock()'],['../structInputDevice.html#ab1e5788638481214330b017d325ed424',1,'InputDevice::caps_lock()']]],
   ['capture_5fscreen_122',['capture_screen',['../dxgicapture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf',1,'capture_screen(CaptureDevice *device):&#160;dxgicapture.c'],['../linuxcapture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf',1,'capture_screen(CaptureDevice *device):&#160;linuxcapture.c'],['../screencapture_8h.html#acddcc3aa008273807b931fbd1fd2a0bf',1,'capture_screen(CaptureDevice *device):&#160;dxgicapture.c']]],

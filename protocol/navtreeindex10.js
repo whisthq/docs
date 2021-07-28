@@ -1,5 +1,11 @@
 var NAVTREEINDEX10 =
 {
+"structPeerUpdateMessage.html#a7697d592f94a993a6fe83e93f698f170":[8,0,61,4],
+"structPeerUpdateMessage.html#ac2544a6bd011b31144d6efb9ed77ba04":[8,0,61,0],
+"structPeerUpdateMessage.html#ada0754f5b2a3e486ef00bf9cee4e5a39":[8,0,61,2],
+"structPrivateKeyData.html":[8,0,62],
+"structPrivateKeyData.html#a03d54979387e3696d02a1f64c062349e":[8,0,62,1],
+"structPrivateKeyData.html#af2b5112edcbf71f74629d4bc4e0ffe61":[8,0,62,0],
 "structRWLock.html":[8,0,65],
 "structRWLock.html#a1245c7609fc0a1cfa48749b2a9cc720f":[8,0,65,0],
 "structRWLock.html#a21e4c9b060f192399684227ab1cbfc53":[8,0,65,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX10 =
 "uinput__input__driver_8c.html#a7536f547f053d81b807aa2b1141eb193":[9,0,1,4,3,18],
 "uinput__input__driver_8c.html#a76dd6d88fb55f29a3a7feb7c8ef060a6":[9,0,1,4,3,10],
 "uinput__input__driver_8c.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7":[9,0,1,4,3,5],
-"uinput__input__driver_8c.html#ab1704f180776d4b16d7c229f016340c6":[9,0,1,4,3,0],
-"uinput__input__driver_8c.html#ab7e6d0c554f4813e884048112739364e":[9,0,1,4,3,14],
-"uinput__input__driver_8c.html#abf3126a0a279878f9e39e78d128cb0fa":[9,0,1,4,3,12],
-"uinput__input__driver_8c.html#ac8a20be24877768539ac4cb85fc4a190":[9,0,1,4,3,11],
-"uinput__input__driver_8c.html#acd90bbe9de979b23743f9377a615f29c":[9,0,1,4,3,16],
-"uinput__input__driver_8c.html#ad1e8834908bafbc324c8f1f22fc37406":[9,0,1,4,3,1],
-"uinput__input__driver_8c.html#adfaf9acde8e1ba3a330060e06beb242f":[9,0,1,4,3,15]
+"uinput__input__driver_8c.html#ab1704f180776d4b16d7c229f016340c6":[9,0,1,4,3,0]
 };

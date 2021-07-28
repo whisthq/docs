@@ -1,5 +1,11 @@
 var NAVTREEINDEX9 =
 {
+"structFractalMouseWheelMessage.html#abf553852527eb98a28971050f309f30c":[8,0,31,3],
+"structFractalMultigestureMessage.html":[8,0,32],
+"structFractalMultigestureMessage.html#a5fee4560815a6b016cdd28c5ea177156":[8,0,32,2],
+"structFractalMultigestureMessage.html#a736d0f0e068fd63264bf6500455bf155":[8,0,32,5],
+"structFractalMultigestureMessage.html#a96fe5fe1bc1a129932b4a5097cb2924c":[8,0,32,3],
+"structFractalMultigestureMessage.html#ab685f30c929b921bfec6bb041b5c4ade":[8,0,32,4],
 "structFractalMultigestureMessage.html#ac45facdfa07ffd5878413aad523b0d32":[8,0,32,0],
 "structFractalMultigestureMessage.html#ad3c82e6c702c861ed4d8f67aa98ecde8":[8,0,32,6],
 "structFractalMultigestureMessage.html#aef710e036d1fa6f67f7e05ef7a87ff8a":[8,0,32,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX9 =
 "structOSXImage.html#a2cbabeab913da9f6b9bd91b081960bc6":[8,0,60,0],
 "structPeerUpdateMessage.html":[8,0,61],
 "structPeerUpdateMessage.html#a075e354807f111bf5b808a69714ecde3":[8,0,61,1],
-"structPeerUpdateMessage.html#a33d224d6a46541396b5464e14965c56b":[8,0,61,3],
-"structPeerUpdateMessage.html#a7697d592f94a993a6fe83e93f698f170":[8,0,61,4],
-"structPeerUpdateMessage.html#ac2544a6bd011b31144d6efb9ed77ba04":[8,0,61,0],
-"structPeerUpdateMessage.html#ada0754f5b2a3e486ef00bf9cee4e5a39":[8,0,61,2],
-"structPrivateKeyData.html":[8,0,62],
-"structPrivateKeyData.html#a03d54979387e3696d02a1f64c062349e":[8,0,62,1],
-"structPrivateKeyData.html#af2b5112edcbf71f74629d4bc4e0ffe61":[8,0,62,0]
+"structPeerUpdateMessage.html#a33d224d6a46541396b5464e14965c56b":[8,0,61,3]
 };

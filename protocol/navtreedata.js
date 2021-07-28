@@ -85,14 +85,14 @@ var NAVTREEINDEX =
 "client_2video_8c.html#a6aca8731f3a28e96c0743be91d481a21",
 "cudacontext_8c.html#a917eb3f03688dde30d8567cf341399f8",
 "fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd",
-"fractal__memory_8c.html",
-"handle__client__message_8h.html",
-"lodepng_8h.html#a874763ad14a0c84d41d0819212407a5a",
-"ringbuffer_8c.html",
-"structAudioDevice.html#a30f89c17b8309a71ccb029404a29500c",
-"structFractalMultigestureMessage.html#ac45facdfa07ffd5878413aad523b0d32",
-"structRWLock.html",
-"uinput__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532"
+"fractal__frame_8h.html#a84e8623194435c55447f0ebb656150ec",
+"handle__client__message_8c.html#ac3d44b527e1617a4fa8324474f434cfb",
+"lodepng_8h.html#a8262a8a17b785f72034b585ae13aafcf",
+"png_8h.html#a12301c318d2537c0971e3862a2589d82",
+"structAudioDevice.html#a012200fa5d0cb415fa8eb68c429305b9",
+"structFractalMouseWheelMessage.html#abf553852527eb98a28971050f309f30c",
+"structPeerUpdateMessage.html#a7697d592f94a993a6fe83e93f698f170",
+"uinput__input__driver_8c.html#ab7e6d0c554f4813e884048112739364e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

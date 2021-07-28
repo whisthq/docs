@@ -184,7 +184,6 @@ var menudata={children:[
 {text:"n",url:"globals_eval_n.html#index_n"},
 {text:"p",url:"globals_eval_p.html#index_p"},
 {text:"q",url:"globals_eval_q.html#index_q"},
-{text:"r",url:"globals_eval_r.html#index_r"},
 {text:"s",url:"globals_eval_s.html#index_s"},
 {text:"x",url:"globals_eval_x.html#index_x"}]},
 {text:"Macros",url:"globals_defs.html",children:[
