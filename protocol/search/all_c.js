@@ -143,9 +143,10 @@ var searchData=
   ['multithreaded_5fmanage_5fclients_1262',['multithreaded_manage_clients',['../server_2network_8c.html#a9a9c39ca8196bc510dcc48d54e66694c',1,'multithreaded_manage_clients(void *opaque):&#160;network.c'],['../server_2network_8h.html#a9a9c39ca8196bc510dcc48d54e66694c',1,'multithreaded_manage_clients(void *opaque):&#160;network.c']]],
   ['multithreaded_5fprint_5fsystem_5finfo_1263',['multithreaded_print_system_info',['../fractal_8c.html#a3dbb8a0134508906bb2e9dc92039a97e',1,'fractal.c']]],
   ['multithreaded_5fprintf_1264',['multithreaded_printf',['../logging_8c.html#a3a75250763a2a4bbc6623223f9c3128b',1,'logging.c']]],
-  ['multithreaded_5frenderer_1265',['multithreaded_renderer',['../client_2main_8c.html#a50ca81e13392bb11097488f5aa92bde7',1,'main.c']]],
-  ['multithreaded_5fsend_5faudio_1266',['multithreaded_send_audio',['../server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7',1,'multithreaded_send_audio(void *opaque):&#160;audio.c'],['../server_2audio_8h.html#a5d4cd54c3652d2c734923079d07992b7',1,'multithreaded_send_audio(void *opaque):&#160;audio.c']]],
-  ['multithreaded_5fsend_5fvideo_1267',['multithreaded_send_video',['../server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08',1,'multithreaded_send_video(void *opaque):&#160;video.c'],['../server_2video_8h.html#a26603a17edf486ab02cf85b75e60eb08',1,'multithreaded_send_video(void *opaque):&#160;video.c']]],
-  ['multithreaded_5fsync_5ftcp_5fpackets_1268',['multithreaded_sync_tcp_packets',['../server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51',1,'main.c']]],
-  ['mutex_1269',['mutex',['../structSocketContext.html#abf76fd0caab9e872b74d16346c4e6827',1,'SocketContext']]]
+  ['multithreaded_5fread_5fpiped_5farguments_1265',['multithreaded_read_piped_arguments',['../client_2main_8c.html#abb8595dbf9f6317d4817adb8fe175efe',1,'main.c']]],
+  ['multithreaded_5frenderer_1266',['multithreaded_renderer',['../client_2main_8c.html#a50ca81e13392bb11097488f5aa92bde7',1,'main.c']]],
+  ['multithreaded_5fsend_5faudio_1267',['multithreaded_send_audio',['../server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7',1,'multithreaded_send_audio(void *opaque):&#160;audio.c'],['../server_2audio_8h.html#a5d4cd54c3652d2c734923079d07992b7',1,'multithreaded_send_audio(void *opaque):&#160;audio.c']]],
+  ['multithreaded_5fsend_5fvideo_1268',['multithreaded_send_video',['../server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08',1,'multithreaded_send_video(void *opaque):&#160;video.c'],['../server_2video_8h.html#a26603a17edf486ab02cf85b75e60eb08',1,'multithreaded_send_video(void *opaque):&#160;video.c']]],
+  ['multithreaded_5fsync_5ftcp_5fpackets_1269',['multithreaded_sync_tcp_packets',['../server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51',1,'main.c']]],
+  ['mutex_1270',['mutex',['../structSocketContext.html#abf76fd0caab9e872b74d16346c4e6827',1,'SocketContext']]]
 ];
