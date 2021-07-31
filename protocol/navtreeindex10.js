@@ -122,11 +122,12 @@ var NAVTREEINDEX10 =
 "structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027":[8,0,78,4],
 "structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f":[8,0,78,2],
 "structVideoFrame.html":[8,0,79],
-"structVideoFrame.html#a21d459b551ceeac67227b348099c193b":[8,0,79,7],
-"structVideoFrame.html#a39ba6c50ef047fd9a11c7fbf32e01c6e":[8,0,79,6],
+"structVideoFrame.html#a21d459b551ceeac67227b348099c193b":[8,0,79,8],
+"structVideoFrame.html#a39ba6c50ef047fd9a11c7fbf32e01c6e":[8,0,79,7],
+"structVideoFrame.html#a4e5146fe473d1cbf298009ffb7b972d3":[8,0,79,6],
 "structVideoFrame.html#a60c91c18927cc386348501debd45ecc4":[8,0,79,5],
 "structVideoFrame.html#a7536e945f4295dd551e4eaa162b15a8d":[8,0,79,4],
-"structVideoFrame.html#a7a7f8852074f5c7ccf06f1a27e317bde":[8,0,79,8],
+"structVideoFrame.html#a7a7f8852074f5c7ccf06f1a27e317bde":[8,0,79,9],
 "structVideoFrame.html#abdc75b129bdb137631597f75476536af":[8,0,79,3],
 "structVideoFrame.html#ae4cfd527d7faecb877fd5464037f11aa":[8,0,79,0],
 "structVideoFrame.html#aec94d3047b7310df6191dff99bd929f8":[8,0,79,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "uinput__input__driver_8c.html#a68d952af97dc08e94a465fc1eb9934c7":[9,0,1,4,3,6],
 "uinput__input__driver_8c.html#a7536f547f053d81b807aa2b1141eb193":[9,0,1,4,3,18],
 "uinput__input__driver_8c.html#a76dd6d88fb55f29a3a7feb7c8ef060a6":[9,0,1,4,3,10],
-"uinput__input__driver_8c.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7":[9,0,1,4,3,5],
-"uinput__input__driver_8c.html#ab1704f180776d4b16d7c229f016340c6":[9,0,1,4,3,0]
+"uinput__input__driver_8c.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7":[9,0,1,4,3,5]
 };

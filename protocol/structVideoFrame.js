@@ -6,6 +6,7 @@ var structVideoFrame =
     [ "height", "structVideoFrame.html#abdc75b129bdb137631597f75476536af", null ],
     [ "is_empty_frame", "structVideoFrame.html#a7536e945f4295dd551e4eaa162b15a8d", null ],
     [ "is_iframe", "structVideoFrame.html#a60c91c18927cc386348501debd45ecc4", null ],
+    [ "is_window_visible", "structVideoFrame.html#a4e5146fe473d1cbf298009ffb7b972d3", null ],
     [ "num_peer_update_msgs", "structVideoFrame.html#a39ba6c50ef047fd9a11c7fbf32e01c6e", null ],
     [ "videodata_length", "structVideoFrame.html#a21d459b551ceeac67227b348099c193b", null ],
     [ "width", "structVideoFrame.html#a7a7f8852074f5c7ccf06f1a27e317bde", null ]

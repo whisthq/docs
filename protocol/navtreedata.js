@@ -92,7 +92,7 @@ var NAVTREEINDEX =
 "structAudioDevice.html#a012200fa5d0cb415fa8eb68c429305b9",
 "structFractalMouseWheelMessage.html#abf553852527eb98a28971050f309f30c",
 "structPeerUpdateMessage.html#a7697d592f94a993a6fe83e93f698f170",
-"uinput__input__driver_8c.html#ab7e6d0c554f4813e884048112739364e"
+"uinput__input__driver_8c.html#ab1704f180776d4b16d7c229f016340c6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -82,10 +82,11 @@ var searchData=
   ['is_5ftiming_5flatency_916',['is_timing_latency',['../handle__server__message_8c.html#ad0678fc1d4fdecca7f3facd477aa7335',1,'is_timing_latency():&#160;main.c'],['../client_2main_8c.html#ad0678fc1d4fdecca7f3facd477aa7335',1,'is_timing_latency():&#160;main.c']]],
   ['is_5fvalid_5faudio_5ffrequency_917',['is_valid_audio_frequency',['../client_2audio_8c.html#a946667e9b9fe9c4aad687f64bcf85256',1,'audio.c']]],
   ['is_5fwaiting_5ffor_5fiframe_918',['is_waiting_for_iframe',['../structVideoData.html#a3c2e86f25ceca5fe1d91c4de371e3374',1,'VideoData']]],
-  ['itext_5fkeys_919',['itext_keys',['../structLodePNGInfo.html#a1b909e03596abf86d564641741b0087f',1,'LodePNGInfo']]],
-  ['itext_5flangtags_920',['itext_langtags',['../structLodePNGInfo.html#ae9f9f594e63c910d467a14f550960837',1,'LodePNGInfo']]],
-  ['itext_5fnum_921',['itext_num',['../structLodePNGInfo.html#a22166bb10c89a4d80e206d6c4736b625',1,'LodePNGInfo']]],
-  ['itext_5fstrings_922',['itext_strings',['../structLodePNGInfo.html#a7014fd40ffeb1d482f72d33c020cf73e',1,'LodePNGInfo']]],
-  ['itext_5ftranskeys_923',['itext_transkeys',['../structLodePNGInfo.html#a93a8e823ac715dbdd625f023d8fdebc2',1,'LodePNGInfo']]],
-  ['iv_924',['iv',['../structPrivateKeyData.html#af2b5112edcbf71f74629d4bc4e0ffe61',1,'PrivateKeyData::iv()'],['../structSignatureData.html#a2ef961b57959643007054896938fe8bf',1,'SignatureData::iv()'],['../structFractalPacket.html#a8a61b18ce1b2cc71cfe8693d9379a4db',1,'FractalPacket::iv()']]]
+  ['is_5fwindow_5fvisible_919',['is_window_visible',['../structVideoFrame.html#a4e5146fe473d1cbf298009ffb7b972d3',1,'VideoFrame']]],
+  ['itext_5fkeys_920',['itext_keys',['../structLodePNGInfo.html#a1b909e03596abf86d564641741b0087f',1,'LodePNGInfo']]],
+  ['itext_5flangtags_921',['itext_langtags',['../structLodePNGInfo.html#ae9f9f594e63c910d467a14f550960837',1,'LodePNGInfo']]],
+  ['itext_5fnum_922',['itext_num',['../structLodePNGInfo.html#a22166bb10c89a4d80e206d6c4736b625',1,'LodePNGInfo']]],
+  ['itext_5fstrings_923',['itext_strings',['../structLodePNGInfo.html#a7014fd40ffeb1d482f72d33c020cf73e',1,'LodePNGInfo']]],
+  ['itext_5ftranskeys_924',['itext_transkeys',['../structLodePNGInfo.html#a93a8e823ac715dbdd625f023d8fdebc2',1,'LodePNGInfo']]],
+  ['iv_925',['iv',['../structPrivateKeyData.html#af2b5112edcbf71f74629d4bc4e0ffe61',1,'PrivateKeyData::iv()'],['../structSignatureData.html#a2ef961b57959643007054896938fe8bf',1,'SignatureData::iv()'],['../structFractalPacket.html#a8a61b18ce1b2cc71cfe8693d9379a4db',1,'FractalPacket::iv()']]]
 ];
