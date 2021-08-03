@@ -130,6 +130,14 @@ Only run in background threads.</p>
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.terminate_instance">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">terminate_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="app.models.html#app.models.hardware.InstanceInfo" title="app.models.hardware.InstanceInfo"><span class="pre">app.models.hardware.InstanceInfo</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.terminate_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Terminates a given instance using the AWS client
+:param instance: which instance to terminate</p>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.try_scale_down_if_necessary">
 <span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">try_scale_down_if_necessary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ami</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.try_scale_down_if_necessary" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scales down new instances as needed, given a region and AMI to check
