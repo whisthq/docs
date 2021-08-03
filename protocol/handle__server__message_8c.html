@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('handle__server__message_8c.html',''); 
 <code>#include &lt;<a class="el" href="window__name_8h_source.html">fractal/utils/window_name.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="client__utils_8h_source.html">client_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_2audio_8h_source.html">audio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="client_2network_8h_source.html">network.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -112,16 +113,8 @@ Variables</h2></td></tr>
 <tr class="separator:aff18c87636faa9e67a7245535051e82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a227c64b79cf6b3b8986b03c1fcea78ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8c.html#a227c64b79cf6b3b8986b03c1fcea78ec">audio_frequency</a></td></tr>
 <tr class="separator:a227c64b79cf6b3b8986b03c1fcea78ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0678fc1d4fdecca7f3facd477aa7335"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8c.html#ad0678fc1d4fdecca7f3facd477aa7335">is_timing_latency</a></td></tr>
-<tr class="separator:ad0678fc1d4fdecca7f3facd477aa7335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5120ece93dfddf5638a59e495e9c6d46"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a></td></tr>
 <tr class="separator:a5120ece93dfddf5638a59e495e9c6d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2fd1c793448fe9917f0c2db6caeaf29"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8c.html#ac2fd1c793448fe9917f0c2db6caeaf29">latency_timer</a></td></tr>
-<tr class="separator:ac2fd1c793448fe9917f0c2db6caeaf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c9886c931ec34327e4412815efd24a"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8c.html#a68c9886c931ec34327e4412815efd24a">ping_id</a></td></tr>
-<tr class="separator:a68c9886c931ec34327e4412815efd24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa6b4edce81c43a0d02ec5c0b6e97ce0"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8c.html#afa6b4edce81c43a0d02ec5c0b6e97ce0">ping_failures</a></td></tr>
-<tr class="separator:afa6b4edce81c43a0d02ec5c0b6e97ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a20c62920643e0961985e36f26f022b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8c.html#a9a20c62920643e0961985e36f26f022b">try_amount</a></td></tr>
 <tr class="separator:a9a20c62920643e0961985e36f26f022b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee0e0bd2a44abf157b2b1aea462be6b9"><td class="memItemLeft" align="right" valign="top">volatile char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8c.html#aee0e0bd2a44abf157b2b1aea462be6b9">window_title</a></td></tr>
@@ -206,20 +199,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ad0678fc1d4fdecca7f3facd477aa7335"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0678fc1d4fdecca7f3facd477aa7335">&#9670;&nbsp;</a></span>is_timing_latency</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool is_timing_latency</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5120ece93dfddf5638a59e495e9c6d46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5120ece93dfddf5638a59e495e9c6d46">&#9670;&nbsp;</a></span>latency</h2>
 
@@ -228,48 +207,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile double latency</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac2fd1c793448fe9917f0c2db6caeaf29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2fd1c793448fe9917f0c2db6caeaf29">&#9670;&nbsp;</a></span>latency_timer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> latency_timer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afa6b4edce81c43a0d02ec5c0b6e97ce0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa6b4edce81c43a0d02ec5c0b6e97ce0">&#9670;&nbsp;</a></span>ping_failures</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int ping_failures</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a68c9886c931ec34327e4412815efd24a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68c9886c931ec34327e4412815efd24a">&#9670;&nbsp;</a></span>ping_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int ping_id</td>
         </tr>
       </table>
 </div><div class="memdoc">

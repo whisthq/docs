@@ -79,7 +79,7 @@ var searchData=
   ['is_5fsame_5fwh_913',['is_same_wh',['../linuxcapture_8c.html#ad099efd55f9d19dd97d00e0663941e5a',1,'linuxcapture.c']]],
   ['is_5fserver_914',['is_server',['../structSocketContext.html#a1864be71c4d0c370178688dcdb2d9a2d',1,'SocketContext']]],
   ['is_5ftcp_915',['is_tcp',['../structSocketContext.html#aae57afb23b658bc32bc3c267667fb527',1,'SocketContext']]],
-  ['is_5ftiming_5flatency_916',['is_timing_latency',['../handle__server__message_8c.html#ad0678fc1d4fdecca7f3facd477aa7335',1,'is_timing_latency():&#160;main.c'],['../client_2main_8c.html#ad0678fc1d4fdecca7f3facd477aa7335',1,'is_timing_latency():&#160;main.c']]],
+  ['is_5ftiming_5flatency_916',['is_timing_latency',['../client_2main_8c.html#ad0678fc1d4fdecca7f3facd477aa7335',1,'main.c']]],
   ['is_5fvalid_5faudio_5ffrequency_917',['is_valid_audio_frequency',['../client_2audio_8c.html#a946667e9b9fe9c4aad687f64bcf85256',1,'audio.c']]],
   ['is_5fwaiting_5ffor_5fiframe_918',['is_waiting_for_iframe',['../structVideoData.html#a3c2e86f25ceca5fe1d91c4de371e3374',1,'VideoData']]],
   ['is_5fwindow_5fvisible_919',['is_window_visible',['../structVideoFrame.html#a4e5146fe473d1cbf298009ffb7b972d3',1,'VideoFrame']]],

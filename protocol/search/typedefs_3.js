@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['decodetype_3160',['DecodeType',['../videodecode_8h.html#a6ad22d055a2a6874154984511a83cde5',1,'videodecode.h']]],
-  ['desktopcontext_3161',['DesktopContext',['../windows__utils_8h.html#a8dbd7e5e707ec59f1f72b369046878c5',1,'windows_utils.h']]],
-  ['displayhardware_3162',['DisplayHardware',['../dxgicapture_8h.html#a6a7a4cc627738d1dc547d4f0e673987e',1,'dxgicapture.h']]]
+  ['decodetype_3174',['DecodeType',['../videodecode_8h.html#a6ad22d055a2a6874154984511a83cde5',1,'videodecode.h']]],
+  ['desktopcontext_3175',['DesktopContext',['../windows__utils_8h.html#a8dbd7e5e707ec59f1f72b369046878c5',1,'windows_utils.h']]],
+  ['displayhardware_3176',['DisplayHardware',['../dxgicapture_8h.html#a6a7a4cc627738d1dc547d4f0e673987e',1,'dxgicapture.h']]]
 ];

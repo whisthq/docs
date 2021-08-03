@@ -1,5 +1,13 @@
 var NAVTREEINDEX10 =
 {
+"structOSXFilenames.html#abea7caa7613ceaec2cb9ea802f27114d":[8,0,59,0],
+"structOSXFilenames.html#afb130cc3d8df974472a08125d2ded88d":[8,0,59,1],
+"structOSXImage.html":[8,0,60],
+"structOSXImage.html#a15ae259e64ab9740a60fb301723b6b90":[8,0,60,1],
+"structOSXImage.html#a2cbabeab913da9f6b9bd91b081960bc6":[8,0,60,0],
+"structPeerUpdateMessage.html":[8,0,61],
+"structPeerUpdateMessage.html#a075e354807f111bf5b808a69714ecde3":[8,0,61,1],
+"structPeerUpdateMessage.html#a33d224d6a46541396b5464e14965c56b":[8,0,61,3],
 "structPeerUpdateMessage.html#a7697d592f94a993a6fe83e93f698f170":[8,0,61,4],
 "structPeerUpdateMessage.html#ac2544a6bd011b31144d6efb9ed77ba04":[8,0,61,0],
 "structPeerUpdateMessage.html#ada0754f5b2a3e486ef00bf9cee4e5a39":[8,0,61,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX10 =
 "transfercapture_8h_source.html":[9,0,1,8,17],
 "uinput__input__driver_8c.html":[9,0,1,4,3],
 "uinput__input__driver_8c.html#a0633914f59dda19225c4514fca35da42":[9,0,1,4,3,13],
-"uinput__input__driver_8c.html#a2d0da7b11ef28f2142d8e82857a8f2ef":[9,0,1,4,3,17],
-"uinput__input__driver_8c.html#a479a458a40523a870b0e3a46ee35ae51":[9,0,1,4,3,7],
-"uinput__input__driver_8c.html#a4bf16a0974d994a27ff7248b4ae56dc5":[9,0,1,4,3,3],
-"uinput__input__driver_8c.html#a59dbe42e300c156534a496e176ca2c23":[9,0,1,4,3,2],
-"uinput__input__driver_8c.html#a5bc9755bb1311b40ecb6432bc0d1a58a":[9,0,1,4,3,9],
-"uinput__input__driver_8c.html#a68d952af97dc08e94a465fc1eb9934c7":[9,0,1,4,3,6],
-"uinput__input__driver_8c.html#a7536f547f053d81b807aa2b1141eb193":[9,0,1,4,3,18],
-"uinput__input__driver_8c.html#a76dd6d88fb55f29a3a7feb7c8ef060a6":[9,0,1,4,3,10],
-"uinput__input__driver_8c.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7":[9,0,1,4,3,5]
+"uinput__input__driver_8c.html#a2d0da7b11ef28f2142d8e82857a8f2ef":[9,0,1,4,3,17]
 };
