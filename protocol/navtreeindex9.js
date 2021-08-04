@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structFractalMouseMotionMessage.html#a52e30b56aaf25eda708f956f12dd2a92":[8,0,30,0],
 "structFractalMouseMotionMessage.html#a7acb549cb12dffc79cd9333086a316f4":[8,0,30,3],
 "structFractalMouseMotionMessage.html#aa9f0ef9df613b9901c4e84a3f9d6f1d8":[8,0,30,5],
 "structFractalMouseMotionMessage.html#ac20ba1b865f12ed44b78e7d1174c0631":[8,0,30,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structNvidiaEncoder.html#adb88613a9ef984d97367a5e8f48933e8":[8,0,57,8],
 "structNvidiaEncoder.html#adedc11d83069d1537b68d85f602ecede":[8,0,57,11],
 "structNvidiaEncoder.html#af5f260d715aee66892c981d206ae5e32":[8,0,57,7],
-"structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[8,0,57,13],
-"structOSXFilenames.html":[8,0,59]
+"structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[8,0,57,13]
 };

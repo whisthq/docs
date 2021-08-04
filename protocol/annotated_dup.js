@@ -1,8 +1,8 @@
 var annotated_dup =
 [
-    [ "Checks & Tests", "index.html#autotoc_md20", null ],
-    [ "Option Flags", "md_client_README.html#autotoc_md52", null ],
-    [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md90", null ],
+    [ "Checks & Tests", "index.html#autotoc_md21", null ],
+    [ "Option Flags", "md_client_README.html#autotoc_md53", null ],
+    [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md91", null ],
     [ "AudioContext", "structAudioContext.html", "structAudioContext" ],
     [ "AudioDecoder", "structAudioDecoder.html", "structAudioDecoder" ],
     [ "AudioDevice", "structAudioDevice.html", "structAudioDevice" ],

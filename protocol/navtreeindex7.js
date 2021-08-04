@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"peercursor_8h.html#af828d16f2d071c45c05671fa337a78b4":[9,0,0,13,1],
 "peercursor_8h.html#afd7004affe1dd084e31336c072204cf3":[9,0,0,13,0],
 "peercursor_8h_source.html":[9,0,0,13],
 "png_8c.html":[9,0,1,7,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "server_2video_8h_source.html":[9,0,2,12],
 "structAudioContext.html":[8,0,3],
 "structAudioContext.html#a2869e97966d53b5f9fc23f9ccb9e7743":[8,0,3,2],
-"structAudioContext.html#a333d813e153e9a5457e1a66be50a6d93":[8,0,3,0],
-"structAudioContext.html#a66c510b7f76c4a89f71f8237e582c01d":[8,0,3,1]
+"structAudioContext.html#a333d813e153e9a5457e1a66be50a6d93":[8,0,3,0]
 };

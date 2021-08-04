@@ -27,32 +27,34 @@ var NAVTREE =
       [ "Server", "index.html#autotoc_md2", null ],
       [ "Client", "index.html#autotoc_md3", null ]
     ] ],
-    [ "High-Level Overview", "index.html#autotoc_md4", null ],
-    [ "File Structure", "index.html#autotoc_md5", null ],
-    [ "Development", "index.html#autotoc_md6", [
-      [ "Installation of Dependencies", "index.html#autotoc_md7", [
-        [ "Linux", "index.html#autotoc_md8", null ],
-        [ "MacOS", "index.html#autotoc_md9", [
-          [ "Windows", "index.html#autotoc_md10", null ]
+    [ "High-Level Overview", "index.html#autotoc_md4", [
+      [ "Current Encoding Status", "index.html#autotoc_md5", null ]
+    ] ],
+    [ "File Structure", "index.html#autotoc_md6", null ],
+    [ "Development", "index.html#autotoc_md7", [
+      [ "Installation of Dependencies", "index.html#autotoc_md8", [
+        [ "Linux", "index.html#autotoc_md9", null ],
+        [ "MacOS", "index.html#autotoc_md10", [
+          [ "Windows", "index.html#autotoc_md11", null ]
         ] ]
       ] ],
-      [ "Building the Protocol", "index.html#autotoc_md11", null ],
-      [ "Running the Protocol", "index.html#autotoc_md12", [
-        [ "Sentry", "index.html#autotoc_md13", null ]
+      [ "Building the Protocol", "index.html#autotoc_md12", null ],
+      [ "Running the Protocol", "index.html#autotoc_md13", [
+        [ "Sentry", "index.html#autotoc_md14", null ]
       ] ],
-      [ "Tips for Specific Tools", "index.html#autotoc_md14", [
-        [ "IDEs", "index.html#autotoc_md15", null ],
-        [ "MacOS CLI", "index.html#autotoc_md16", null ],
-        [ "Linux CLI", "index.html#autotoc_md17", null ]
+      [ "Tips for Specific Tools", "index.html#autotoc_md15", [
+        [ "IDEs", "index.html#autotoc_md16", null ],
+        [ "MacOS CLI", "index.html#autotoc_md17", null ],
+        [ "Linux CLI", "index.html#autotoc_md18", null ]
       ] ],
-      [ "Further documentation", "index.html#autotoc_md18", null ]
+      [ "Further documentation", "index.html#autotoc_md19", null ]
     ] ],
-    [ "CI & CD", "index.html#autotoc_md19", [
-      [ "Continuous Integration", "index.html#autotoc_md21", null ]
+    [ "CI & CD", "index.html#autotoc_md20", [
+      [ "Continuous Integration", "index.html#autotoc_md22", null ]
     ] ],
-    [ "Styling", "index.html#autotoc_md22", [
-      [ "clang-format", "index.html#autotoc_md23", null ],
-      [ "clang-tidy", "index.html#autotoc_md24", null ]
+    [ "Styling", "index.html#autotoc_md23", [
+      [ "clang-format", "index.html#autotoc_md24", null ],
+      [ "clang-tidy", "index.html#autotoc_md25", null ]
     ] ],
     [ "Fractal Desktop Clients", "md_client_README.html", null ],
     [ "Fractal Windows/Linux Ubuntu Servers", "md_server_README.html", null ],
@@ -87,12 +89,12 @@ var NAVTREEINDEX =
 "fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a12c1a42d0005f44ea18b72e0f0187756",
 "fractal__frame_8c.html#a44e0b9e4c4e0d2feabc5fce2664e0601",
 "handle__client__message_8c.html#a2c556bf7dad7ad139e553b7af6281656",
-"lodepng_8h.html#a72d4240c44c9ba1814dae814c7d80eb1",
-"peercursor_8h.html#afd7004affe1dd084e31336c072204cf3",
-"structAudioDecoder.html",
-"structFractalMouseMotionMessage.html#a7acb549cb12dffc79cd9333086a316f4",
-"structOSXFilenames.html#abea7caa7613ceaec2cb9ea802f27114d",
-"uinput__input__driver_8c.html#a479a458a40523a870b0e3a46ee35ae51"
+"lodepng_8h.html#a70adabd588a9a27dcc9eb4322f6c3b3f",
+"peercursor_8h.html#af828d16f2d071c45c05671fa337a78b4",
+"structAudioContext.html#a66c510b7f76c4a89f71f8237e582c01d",
+"structFractalMouseMotionMessage.html#a52e30b56aaf25eda708f956f12dd2a92",
+"structOSXFilenames.html",
+"uinput__input__driver_8c.html#a2d0da7b11ef28f2142d8e82857a8f2ef"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

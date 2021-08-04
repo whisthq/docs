@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"lodepng_8h.html#a70adabd588a9a27dcc9eb4322f6c3b3f":[9,0,1,7,9,61],
 "lodepng_8h.html#a72d4240c44c9ba1814dae814c7d80eb1":[9,0,1,7,9,102],
 "lodepng_8h.html#a74109bf9860e2eb4bfa872ab8cf0f000":[9,0,1,7,9,99],
 "lodepng_8h.html#a75d7f3e4e388b74b7b5214c76c66382f":[9,0,1,7,9,74],
@@ -170,9 +171,9 @@ var NAVTREEINDEX6 =
 "mac__utils_8h.html#af129d99849e4f4ee915ac926ecc19adc":[9,0,1,7,11,1],
 "mac__utils_8h_source.html":[9,0,1,7,11],
 "md_client_README.html":[6],
-"md_client_README.html#autotoc_md52":[1],
+"md_client_README.html#autotoc_md53":[1],
 "md_server_README.html":[7],
-"md_server_README.html#autotoc_md90":[2],
+"md_server_README.html#autotoc_md91":[2],
 "mouse_8c.html":[9,0,1,7,12],
 "mouse_8c.html#af0bc8bd1eaf38fa0da9fa3deaa7d8675":[9,0,1,7,12,0],
 "mouse_8h.html":[9,0,1,7,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "peercursor_8c.html#af828d16f2d071c45c05671fa337a78b4":[9,0,0,12,1],
 "peercursor_8c.html#afd7004affe1dd084e31336c072204cf3":[9,0,0,12,0],
 "peercursor_8h.html":[9,0,0,13],
-"peercursor_8h.html#a3ea13aadd96bb45e39425b3e1914cdef":[9,0,0,13,2],
-"peercursor_8h.html#af828d16f2d071c45c05671fa337a78b4":[9,0,0,13,1]
+"peercursor_8h.html#a3ea13aadd96bb45e39425b3e1914cdef":[9,0,0,13,2]
 };

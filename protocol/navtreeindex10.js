@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structOSXFilenames.html":[8,0,59],
 "structOSXFilenames.html#abea7caa7613ceaec2cb9ea802f27114d":[8,0,59,0],
 "structOSXFilenames.html#afb130cc3d8df974472a08125d2ded88d":[8,0,59,1],
 "structOSXImage.html":[8,0,60],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "transfercapture_8h.html#ae876d3f35aa1b6a3ea71f00158e25568":[9,0,1,8,17,1],
 "transfercapture_8h_source.html":[9,0,1,8,17],
 "uinput__input__driver_8c.html":[9,0,1,4,3],
-"uinput__input__driver_8c.html#a0633914f59dda19225c4514fca35da42":[9,0,1,4,3,13],
-"uinput__input__driver_8c.html#a2d0da7b11ef28f2142d8e82857a8f2ef":[9,0,1,4,3,17]
+"uinput__input__driver_8c.html#a0633914f59dda19225c4514fca35da42":[9,0,1,4,3,13]
 };
