@@ -2,7 +2,7 @@ var annotated_dup =
 [
     [ "Checks & Tests", "index.html#autotoc_md21", null ],
     [ "Option Flags", "md_client_README.html#autotoc_md53", null ],
-    [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md91", null ],
+    [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md95", null ],
     [ "AudioContext", "structAudioContext.html", "structAudioContext" ],
     [ "AudioDecoder", "structAudioDecoder.html", "structAudioDecoder" ],
     [ "AudioDevice", "structAudioDevice.html", "structAudioDevice" ],
@@ -75,7 +75,6 @@ var annotated_dup =
     [ "StunRequest", "structStunRequest.html", "structStunRequest" ],
     [ "ucvector", "structucvector.html", "structucvector" ],
     [ "uivector", "structuivector.html", "structuivector" ],
-    [ "UpdateData", "structUpdateData.html", "structUpdateData" ],
     [ "VideoData", "structVideoData.html", "structVideoData" ],
     [ "VideoDecoder", "structVideoDecoder.html", "structVideoDecoder" ],
     [ "VideoEncoder", "structVideoEncoder.html", "structVideoEncoder" ],

@@ -1,16 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"lodepng_8h.html#a70adabd588a9a27dcc9eb4322f6c3b3f":[9,0,1,7,9,61],
-"lodepng_8h.html#a72d4240c44c9ba1814dae814c7d80eb1":[9,0,1,7,9,102],
-"lodepng_8h.html#a74109bf9860e2eb4bfa872ab8cf0f000":[9,0,1,7,9,99],
-"lodepng_8h.html#a75d7f3e4e388b74b7b5214c76c66382f":[9,0,1,7,9,74],
-"lodepng_8h.html#a7801819a161b96f65259680126e270f1":[9,0,1,7,9,53],
-"lodepng_8h.html#a7c005174c1cf07ff093596007bbab4c1":[9,0,1,7,9,40],
-"lodepng_8h.html#a7d37ae3a9b001b5606ea7e705d43ec51":[9,0,1,7,9,39],
-"lodepng_8h.html#a7d5d22aab76370293dd43cb348630f33":[9,0,1,7,9,22],
-"lodepng_8h.html#a823441da1dd5ddf7282d1f3bca124938":[9,0,1,7,9,11],
-"lodepng_8h.html#a8262a8a17b785f72034b585ae13aafcf":[9,0,1,7,9,56],
-"lodepng_8h.html#a82c0c408213e5bbb4a8d0edbaeffc97f":[9,0,1,7,9,84],
 "lodepng_8h.html#a8311042f05584567db96143811fe706d":[9,0,1,7,9,17],
 "lodepng_8h.html#a83344b5c8c5839ca42858dd3578220ef":[9,0,1,7,9,80],
 "lodepng_8h.html#a837bf136ff32ee3efed5df4105ccedf7":[9,0,1,7,9,97],
@@ -173,7 +162,7 @@ var NAVTREEINDEX6 =
 "md_client_README.html":[6],
 "md_client_README.html#autotoc_md53":[1],
 "md_server_README.html":[7],
-"md_server_README.html#autotoc_md91":[2],
+"md_server_README.html#autotoc_md95":[2],
 "mouse_8c.html":[9,0,1,7,12],
 "mouse_8c.html#af0bc8bd1eaf38fa0da9fa3deaa7d8675":[9,0,1,7,12,0],
 "mouse_8h.html":[9,0,1,7,13],
@@ -249,5 +238,16 @@ var NAVTREEINDEX6 =
 "peercursor_8c.html#af828d16f2d071c45c05671fa337a78b4":[9,0,0,12,1],
 "peercursor_8c.html#afd7004affe1dd084e31336c072204cf3":[9,0,0,12,0],
 "peercursor_8h.html":[9,0,0,13],
-"peercursor_8h.html#a3ea13aadd96bb45e39425b3e1914cdef":[9,0,0,13,2]
+"peercursor_8h.html#a3ea13aadd96bb45e39425b3e1914cdef":[9,0,0,13,2],
+"peercursor_8h.html#af828d16f2d071c45c05671fa337a78b4":[9,0,0,13,1],
+"peercursor_8h.html#afd7004affe1dd084e31336c072204cf3":[9,0,0,13,0],
+"peercursor_8h_source.html":[9,0,0,13],
+"png_8c.html":[9,0,1,7,14],
+"png_8c.html#a1b45cdbfc554a707d424aa5a505c6797":[9,0,1,7,14,1],
+"png_8c.html#a7ebd93ef9d64745b4ac761e97325fbb3":[9,0,1,7,14,3],
+"png_8c.html#aa0373c0047d5ada0a13ca3d2d96cf839":[9,0,1,7,14,2],
+"png_8c.html#ab7d6099cebb697cb13341b3a3757a433":[9,0,1,7,14,0],
+"png_8h.html":[9,0,1,7,15],
+"png_8h.html#a12301c318d2537c0971e3862a2589d82":[9,0,1,7,15,3],
+"png_8h.html#a38ea0e4e6d1fbd622a87cb7bf87516be":[9,0,1,7,15,0]
 };

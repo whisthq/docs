@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('client_2main_8c.html',''); initResizab
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -115,15 +114,11 @@ $(document).ready(function(){initNavTree('client_2main_8c.html',''); initResizab
 <code>#include &quot;<a class="el" href="sdl__utils_8h_source.html">sdl_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="handle__server__message_8h_source.html">handle_server_message.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_2video_8h_source.html">video.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sync__packets_8h_source.html">sync_packets.h</a>&quot;</code><br />
 <code>#include &lt;SDL2/SDL_syswm.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="color_8h_source.html">fractal/utils/color.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="native__window__utils_8h_source.html">native_window_utils.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUpdateData.html">UpdateData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a51f528deaaeb973f417b46a2ec36f850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a51f528deaaeb973f417b46a2ec36f850">SDL_MAIN_HANDLED</a></td></tr>
@@ -133,16 +128,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a553636676fec2fcef4fcee990e62ed40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a553636676fec2fcef4fcee990e62ed40">receive_packets</a> (void *opaque)</td></tr>
-<tr class="separator:a553636676fec2fcef4fcee990e62ed40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4330fa82a8817962b0f9b44d6195e42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#ab4330fa82a8817962b0f9b44d6195e42">init_update</a> ()</td></tr>
-<tr class="separator:ab4330fa82a8817962b0f9b44d6195e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab9281ad5e3203379614da2c4fa18b89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#aab9281ad5e3203379614da2c4fa18b89">destroy_update</a> ()</td></tr>
-<tr class="separator:aab9281ad5e3203379614da2c4fa18b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
-<tr class="separator:ac5c54df7ed3b930268c8d7752c101725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a782529e1c7649a631fbe818c848be142"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a782529e1c7649a631fbe818c848be142">sync_tcp_packets</a> (void *opaque)</td></tr>
-<tr class="separator:a782529e1c7649a631fbe818c848be142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f5ea66e025554e86a5fdfed5892732"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a74f5ea66e025554e86a5fdfed5892732">sync_keyboard_state</a> (void)</td></tr>
 <tr class="separator:a74f5ea66e025554e86a5fdfed5892732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8595dbf9f6317d4817adb8fe175efe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#abb8595dbf9f6317d4817adb8fe175efe">multithreaded_read_piped_arguments</a> (void *keep_piping)</td></tr>
@@ -176,20 +161,14 @@ Variables</h2></td></tr>
 <tr class="separator:aee0e0bd2a44abf157b2b1aea462be6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0c2ec06745b8cf1880f783b7f2edd40"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#ae0c2ec06745b8cf1880f783b7f2edd40">should_update_window_title</a></td></tr>
 <tr class="separator:ae0c2ec06745b8cf1880f783b7f2edd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17d24616ffea952b10e8dbfa831ee773"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a17d24616ffea952b10e8dbfa831ee773">run_receive_packets</a></td></tr>
-<tr class="separator:a17d24616ffea952b10e8dbfa831ee773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2232bba6513705e585909234c5d5ee29"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a2232bba6513705e585909234c5d5ee29">run_sync_udp_packets</a></td></tr>
+<tr class="separator:a2232bba6513705e585909234c5d5ee29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a5adce20124948b4bb6e3847d570d93"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a5a5adce20124948b4bb6e3847d570d93">run_sync_tcp_packets</a></td></tr>
 <tr class="separator:a5a5adce20124948b4bb6e3847d570d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0678fc1d4fdecca7f3facd477aa7335"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#ad0678fc1d4fdecca7f3facd477aa7335">is_timing_latency</a></td></tr>
 <tr class="separator:ad0678fc1d4fdecca7f3facd477aa7335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2fd1c793448fe9917f0c2db6caeaf29"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#ac2fd1c793448fe9917f0c2db6caeaf29">latency_timer</a></td></tr>
-<tr class="separator:ac2fd1c793448fe9917f0c2db6caeaf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5120ece93dfddf5638a59e495e9c6d46"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a></td></tr>
 <tr class="separator:a5120ece93dfddf5638a59e495e9c6d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c457e76be79a364d33e19e1fc9d9fb8"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a6c457e76be79a364d33e19e1fc9d9fb8">last_ping_id</a></td></tr>
-<tr class="separator:a6c457e76be79a364d33e19e1fc9d9fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa6b4edce81c43a0d02ec5c0b6e97ce0"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#afa6b4edce81c43a0d02ec5c0b6e97ce0">ping_failures</a></td></tr>
-<tr class="separator:afa6b4edce81c43a0d02ec5c0b6e97ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47696269ce2ea4b6deaa9145a677892"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="structFractalRGBColor.html">FractalRGBColor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#ab47696269ce2ea4b6deaa9145a677892">native_window_color</a> = NULL</td></tr>
 <tr class="separator:ab47696269ce2ea4b6deaa9145a677892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a5f1af397e2937ecbd7c0a77f0766b"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a27a5f1af397e2937ecbd7c0a77f0766b">native_window_color_update</a> = false</td></tr>
@@ -236,10 +215,10 @@ Variables</h2></td></tr>
 <tr class="separator:a5421dd315eda4c2e3347f85fc9c86c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e35016b32376211dba7a8f028f3f88"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#af4e35016b32376211dba7a8f028f3f88">pending_resize_message</a></td></tr>
 <tr class="separator:af4e35016b32376211dba7a8f028f3f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0801a32227215dcf5fff45c5edc26b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSocketContext.html">SocketContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#af0801a32227215dcf5fff45c5edc26b2">packet_send_context</a> = {0}</td></tr>
-<tr class="separator:af0801a32227215dcf5fff45c5edc26b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c4de3d275acd27423ea5abd15db51c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSocketContext.html">SocketContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a9c4de3d275acd27423ea5abd15db51c5">packet_receive_context</a> = {0}</td></tr>
-<tr class="separator:a9c4de3d275acd27423ea5abd15db51c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538a30e816cc639963f7a961e5888cbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSocketContext.html">SocketContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a538a30e816cc639963f7a961e5888cbc">packet_send_udp_context</a> = {0}</td></tr>
+<tr class="separator:a538a30e816cc639963f7a961e5888cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ce4bba6c79b5b081548e501dabf7af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSocketContext.html">SocketContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a62ce4bba6c79b5b081548e501dabf7af">packet_receive_udp_context</a> = {0}</td></tr>
+<tr class="separator:a62ce4bba6c79b5b081548e501dabf7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab052ae0d87ab16898c020aed81f21aa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSocketContext.html">SocketContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#ab052ae0d87ab16898c020aed81f21aa0">packet_tcp_context</a> = {0}</td></tr>
 <tr class="separator:ab052ae0d87ab16898c020aed81f21aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e4ce6a658b77aa4bb7753403794776"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#ae4e4ce6a658b77aa4bb7753403794776">connected</a> = true</td></tr>
@@ -248,8 +227,6 @@ Variables</h2></td></tr>
 <tr class="separator:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a20c62920643e0961985e36f26f022b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a9a20c62920643e0961985e36f26f022b">try_amount</a></td></tr>
 <tr class="separator:a9a20c62920643e0961985e36f26f022b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a153cb0476296da464c04b56864fcdd35"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structUpdateData.html">UpdateData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a153cb0476296da464c04b56864fcdd35">update_data</a></td></tr>
-<tr class="separator:a153cb0476296da464c04b56864fcdd35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b78c181bfd39c925b4fee86464e17c"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2main_8c.html#a16b78c181bfd39c925b4fee86464e17c">continue_pumping</a> = false</td></tr>
 <tr class="separator:a16b78c181bfd39c925b4fee86464e17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -291,23 +268,6 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aab9281ad5e3203379614da2c4fa18b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab9281ad5e3203379614da2c4fa18b89">&#9670;&nbsp;</a></span>destroy_update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void destroy_update </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aaa67857270c77a8376ea818ee854198a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa67857270c77a8376ea818ee854198a">&#9670;&nbsp;</a></span>handle_single_icon_launch_client_app()</h2>
 
@@ -330,23 +290,6 @@ Usage</h1>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab4330fa82a8817962b0f9b44d6195e42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4330fa82a8817962b0f9b44d6195e42">&#9670;&nbsp;</a></span>init_update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_update </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -417,24 +360,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a553636676fec2fcef4fcee990e62ed40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a553636676fec2fcef4fcee990e62ed40">&#9670;&nbsp;</a></span>receive_packets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int receive_packets </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>opaque</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a74f5ea66e025554e86a5fdfed5892732"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74f5ea66e025554e86a5fdfed5892732">&#9670;&nbsp;</a></span>sync_keyboard_state()</h2>
 
@@ -445,41 +370,6 @@ Usage</h1>
           <td class="memname">int sync_keyboard_state </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a782529e1c7649a631fbe818c848be142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a782529e1c7649a631fbe818c848be142">&#9670;&nbsp;</a></span>sync_tcp_packets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sync_tcp_packets </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>opaque</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac5c54df7ed3b930268c8d7752c101725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5c54df7ed3b930268c8d7752c101725">&#9670;&nbsp;</a></span>update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update </td>
-          <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -643,20 +533,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a6c457e76be79a364d33e19e1fc9d9fb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c457e76be79a364d33e19e1fc9d9fb8">&#9670;&nbsp;</a></span>last_ping_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int last_ping_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5120ece93dfddf5638a59e495e9c6d46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5120ece93dfddf5638a59e495e9c6d46">&#9670;&nbsp;</a></span>latency</h2>
 
@@ -665,20 +541,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile double latency</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac2fd1c793448fe9917f0c2db6caeaf29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2fd1c793448fe9917f0c2db6caeaf29">&#9670;&nbsp;</a></span>latency_timer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> latency_timer</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -797,28 +659,28 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a9c4de3d275acd27423ea5abd15db51c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c4de3d275acd27423ea5abd15db51c5">&#9670;&nbsp;</a></span>packet_receive_context</h2>
+<a id="a62ce4bba6c79b5b081548e501dabf7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ce4bba6c79b5b081548e501dabf7af">&#9670;&nbsp;</a></span>packet_receive_udp_context</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structSocketContext.html">SocketContext</a> packet_receive_context = {0}</td>
+          <td class="memname"><a class="el" href="structSocketContext.html">SocketContext</a> packet_receive_udp_context = {0}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af0801a32227215dcf5fff45c5edc26b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0801a32227215dcf5fff45c5edc26b2">&#9670;&nbsp;</a></span>packet_send_context</h2>
+<a id="a538a30e816cc639963f7a961e5888cbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538a30e816cc639963f7a961e5888cbc">&#9670;&nbsp;</a></span>packet_send_udp_context</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structSocketContext.html">SocketContext</a> packet_send_context = {0}</td>
+          <td class="memname"><a class="el" href="structSocketContext.html">SocketContext</a> packet_send_udp_context = {0}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -855,20 +717,6 @@ Usage</h1>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="afa6b4edce81c43a0d02ec5c0b6e97ce0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa6b4edce81c43a0d02ec5c0b6e97ce0">&#9670;&nbsp;</a></span>ping_failures</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int ping_failures</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a724e6f14a5eaffd21dc3012771360af3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a724e6f14a5eaffd21dc3012771360af3">&#9670;&nbsp;</a></span>program_name</h2>
 
@@ -897,20 +745,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a17d24616ffea952b10e8dbfa831ee773"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17d24616ffea952b10e8dbfa831ee773">&#9670;&nbsp;</a></span>run_receive_packets</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool run_receive_packets</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5a5adce20124948b4bb6e3847d570d93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a5adce20124948b4bb6e3847d570d93">&#9670;&nbsp;</a></span>run_sync_tcp_packets</h2>
 
@@ -919,6 +753,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile bool run_sync_tcp_packets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2232bba6513705e585909234c5d5ee29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2232bba6513705e585909234c5d5ee29">&#9670;&nbsp;</a></span>run_sync_udp_packets</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool run_sync_udp_packets</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1045,20 +893,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">int uid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a153cb0476296da464c04b56864fcdd35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a153cb0476296da464c04b56864fcdd35">&#9670;&nbsp;</a></span>update_data</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structUpdateData.html">UpdateData</a> update_data</td>
         </tr>
       </table>
 </div><div class="memdoc">

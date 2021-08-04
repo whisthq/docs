@@ -32,7 +32,7 @@ var searchData=
   ['transfer_5fscreen_1659',['transfer_screen',['../dxgicapture_8c.html#a837679835044596e8d0d22aca5756b03',1,'transfer_screen(CaptureDevice *device):&#160;dxgicapture.c'],['../linuxcapture_8c.html#a837679835044596e8d0d22aca5756b03',1,'transfer_screen(CaptureDevice *device):&#160;linuxcapture.c'],['../screencapture_8h.html#a837679835044596e8d0d22aca5756b03',1,'transfer_screen(CaptureDevice *device):&#160;dxgicapture.c']]],
   ['transfercapture_2ec_1660',['transfercapture.c',['../transfercapture_8c.html',1,'']]],
   ['transfercapture_2eh_1661',['transfercapture.h',['../transfercapture_8h.html',1,'']]],
-  ['tried_5fto_5fupdate_5fdimension_1662',['tried_to_update_dimension',['../structUpdateData.html#a53b404e467f80ac176b55724bb19007c',1,'UpdateData']]],
+  ['tried_5fto_5fupdate_5fdimension_1662',['tried_to_update_dimension',['../sync__packets_8c.html#ab95e774bfab195d541773d8ec7e23b82',1,'sync_packets.c']]],
   ['try_5famount_1663',['try_amount',['../handle__server__message_8c.html#a9a20c62920643e0961985e36f26f022b',1,'try_amount():&#160;main.c'],['../client_2main_8c.html#a9a20c62920643e0961985e36f26f022b',1,'try_amount():&#160;main.c']]],
   ['try_5ffind_5fclient_5fid_5fby_5fuser_5fid_1664',['try_find_client_id_by_user_id',['../client_8c.html#add50caadbb6f7927f1bce57086bc5296',1,'try_find_client_id_by_user_id(int user_id, bool *found, int *id):&#160;client.c'],['../client_8h.html#add50caadbb6f7927f1bce57086bc5296',1,'try_find_client_id_by_user_id(int user_id, bool *found, int *id):&#160;client.c']]],
   ['try_5ffree_5fframe_1665',['try_free_frame',['../nvidia__encode_8c.html#aeb48d23ded788334a3091c23fc41fd79',1,'nvidia_encode.c']]],

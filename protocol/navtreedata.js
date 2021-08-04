@@ -84,17 +84,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "aes_8c.html",
-"client_2video_8c.html#a32c07149072d05b0b806023079dc6e56",
-"color_8c.html#ab9dc9170b5a175f507648d6f5307c828",
-"fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a12c1a42d0005f44ea18b72e0f0187756",
-"fractal__frame_8c.html#a44e0b9e4c4e0d2feabc5fce2664e0601",
-"handle__client__message_8c.html#a2c556bf7dad7ad139e553b7af6281656",
-"lodepng_8h.html#a70adabd588a9a27dcc9eb4322f6c3b3f",
-"peercursor_8h.html#af828d16f2d071c45c05671fa337a78b4",
-"structAudioContext.html#a66c510b7f76c4a89f71f8237e582c01d",
-"structFractalMouseMotionMessage.html#a52e30b56aaf25eda708f956f12dd2a92",
-"structOSXFilenames.html",
-"uinput__input__driver_8c.html#a2d0da7b11ef28f2142d8e82857a8f2ef"
+"client_2video_8c.html#a6a861b3439ce18c75608120608d0fb55",
+"cudacontext_8c.html#a8a6fbb415419477f8db2951d7a98b256",
+"fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3288e7db10b5914f9022a20f09b6f90f",
+"fractal__frame_8h.html#a7720723895cf99ac2e4a848c2eda9554",
+"handle__client__message_8c.html#aae54fd77214dad6eaf2b542edb690d53",
+"lodepng_8h.html#a8311042f05584567db96143811fe706d",
+"png_8h.html#a87109994771a5c6bb713ac5a2289055f",
+"structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb",
+"structFractalMultigestureMessage.html#a5fee4560815a6b016cdd28c5ea177156",
+"structPeerUpdateMessage.html#ada0754f5b2a3e486ef00bf9cee4e5a39",
+"threads_8h.html#acabb6eeece9f9cd511277df6e8547479"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

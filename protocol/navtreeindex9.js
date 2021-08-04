@@ -1,16 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structFractalMouseMotionMessage.html#a52e30b56aaf25eda708f956f12dd2a92":[8,0,30,0],
-"structFractalMouseMotionMessage.html#a7acb549cb12dffc79cd9333086a316f4":[8,0,30,3],
-"structFractalMouseMotionMessage.html#aa9f0ef9df613b9901c4e84a3f9d6f1d8":[8,0,30,5],
-"structFractalMouseMotionMessage.html#ac20ba1b865f12ed44b78e7d1174c0631":[8,0,30,1],
-"structFractalMouseMotionMessage.html#adf18f8fc1964bea50d90e710710dd4f5":[8,0,30,4],
-"structFractalMouseWheelMessage.html":[8,0,31],
-"structFractalMouseWheelMessage.html#a06d632ea447c7c20fb7f3e3ed5dda03e":[8,0,31,2],
-"structFractalMouseWheelMessage.html#a16659e8b9a7b8aaca82a8da9e7b4106d":[8,0,31,1],
-"structFractalMouseWheelMessage.html#a45a24247859acd21f2ec72b716c6702f":[8,0,31,0],
-"structFractalMouseWheelMessage.html#abf553852527eb98a28971050f309f30c":[8,0,31,3],
-"structFractalMultigestureMessage.html":[8,0,32],
 "structFractalMultigestureMessage.html#a5fee4560815a6b016cdd28c5ea177156":[8,0,32,2],
 "structFractalMultigestureMessage.html#a736d0f0e068fd63264bf6500455bf155":[8,0,32,5],
 "structFractalMultigestureMessage.html#a96fe5fe1bc1a129932b4a5097cb2924c":[8,0,32,3],
@@ -249,5 +238,16 @@ var NAVTREEINDEX9 =
 "structNvidiaEncoder.html#adb88613a9ef984d97367a5e8f48933e8":[8,0,57,8],
 "structNvidiaEncoder.html#adedc11d83069d1537b68d85f602ecede":[8,0,57,11],
 "structNvidiaEncoder.html#af5f260d715aee66892c981d206ae5e32":[8,0,57,7],
-"structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[8,0,57,13]
+"structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[8,0,57,13],
+"structOSXFilenames.html":[8,0,59],
+"structOSXFilenames.html#abea7caa7613ceaec2cb9ea802f27114d":[8,0,59,0],
+"structOSXFilenames.html#afb130cc3d8df974472a08125d2ded88d":[8,0,59,1],
+"structOSXImage.html":[8,0,60],
+"structOSXImage.html#a15ae259e64ab9740a60fb301723b6b90":[8,0,60,1],
+"structOSXImage.html#a2cbabeab913da9f6b9bd91b081960bc6":[8,0,60,0],
+"structPeerUpdateMessage.html":[8,0,61],
+"structPeerUpdateMessage.html#a075e354807f111bf5b808a69714ecde3":[8,0,61,1],
+"structPeerUpdateMessage.html#a33d224d6a46541396b5464e14965c56b":[8,0,61,3],
+"structPeerUpdateMessage.html#a7697d592f94a993a6fe83e93f698f170":[8,0,61,4],
+"structPeerUpdateMessage.html#ac2544a6bd011b31144d6efb9ed77ba04":[8,0,61,0]
 };
