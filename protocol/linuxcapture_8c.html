@@ -99,6 +99,12 @@ Functions</h2></td></tr>
 <tr class="separator:ad099efd55f9d19dd97d00e0663941e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14b75002652418b8d18ea4e16569c5b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linuxcapture_8c.html#a14b75002652418b8d18ea4e16569c5b1">try_update_dimensions</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
 <tr class="separator:a14b75002652418b8d18ea4e16569c5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1064c2a948e85981c0b287c2028bc488"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linuxcapture_8c.html#a1064c2a948e85981c0b287c2028bc488">multithreaded_nvidia_device_manager</a> (void *opaque)</td></tr>
+<tr class="separator:a1064c2a948e85981c0b287c2028bc488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a26c48d15e724e38c71e67d995a4ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linuxcapture_8c.html#a58a26c48d15e724e38c71e67d995a4ee">unbind_fbc_cuda_context</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
+<tr class="separator:a58a26c48d15e724e38c71e67d995a4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa1a9b0eceac7e10f57ab40a92b9492"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linuxcapture_8c.html#aafa1a9b0eceac7e10f57ab40a92b9492">bind_fbc_cuda_context</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
+<tr class="separator:aafa1a9b0eceac7e10f57ab40a92b9492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linuxcapture_8c.html#aa962953cfc3fdb9ed34703ab4a9afe42">create_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
 <tr class="memdesc:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a screen capture device.  <a href="linuxcapture_8c.html#aa962953cfc3fdb9ed34703ab4a9afe42">More...</a><br /></td></tr>
 <tr class="separator:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +122,24 @@ Functions</h2></td></tr>
 <tr class="separator:a837679835044596e8d0d22aca5756b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aafa1a9b0eceac7e10f57ab40a92b9492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa1a9b0eceac7e10f57ab40a92b9492">&#9670;&nbsp;</a></span>bind_fbc_cuda_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bind_fbc_cuda_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acddcc3aa008273807b931fbd1fd2a0bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acddcc3aa008273807b931fbd1fd2a0bf">&#9670;&nbsp;</a></span>capture_screen()</h2>
 
@@ -273,6 +297,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1064c2a948e85981c0b287c2028bc488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1064c2a948e85981c0b287c2028bc488">&#9670;&nbsp;</a></span>multithreaded_nvidia_device_manager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t multithreaded_nvidia_device_manager </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>opaque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4d4f4d646d67a79cd2f4fe8fd487c7dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d4f4d646d67a79cd2f4fe8fd487c7dc">&#9670;&nbsp;</a></span>reconfigure_capture_device()</h2>
 
@@ -386,6 +428,24 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58a26c48d15e724e38c71e67d995a4ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a26c48d15e724e38c71e67d995a4ee">&#9670;&nbsp;</a></span>unbind_fbc_cuda_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unbind_fbc_cuda_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

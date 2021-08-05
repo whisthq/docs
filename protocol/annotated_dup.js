@@ -64,6 +64,7 @@ var annotated_dup =
     [ "PeerUpdateMessage", "structPeerUpdateMessage.html", "structPeerUpdateMessage" ],
     [ "PrivateKeyData", "structPrivateKeyData.html", "structPrivateKeyData" ],
     [ "RegionHeader", "structRegionHeader.html", "structRegionHeader" ],
+    [ "RegisteredResource", "structRegisteredResource.html", "structRegisteredResource" ],
     [ "RingBuffer", "structRingBuffer.html", "structRingBuffer" ],
     [ "RWLock", "structRWLock.html", "structRWLock" ],
     [ "ScreenshotContainer", "structScreenshotContainer.html", "structScreenshotContainer" ],

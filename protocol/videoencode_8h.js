@@ -2,6 +2,7 @@ var videoencode_8h =
 [
     [ "VideoEncoder", "structVideoEncoder.html", "structVideoEncoder" ],
     [ "MAX_ENCODER_PACKETS", "videoencode_8h.html#a70988121b77d11b511a2bd2fe701d665", null ],
+    [ "NUM_ENCODERS", "videoencode_8h.html#ae929ca78c731b77fe6f5bb516d9a9cfc", null ],
     [ "VideoEncoder", "videoencode_8h.html#aaf20c160de785dcebb9bdc14eec0f258", null ],
     [ "VideoEncoderType", "videoencode_8h.html#ab20c7bac827841ee9ce7f6ca5c6be85a", null ],
     [ "VideoEncoderType", "videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562", [

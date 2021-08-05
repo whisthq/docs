@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('nvidiacapture_8h.html',''); initResiza
 <div class="textblock"><code>#include &quot;nvidia-linux/NvFBCUtils.h&quot;</code><br />
 <code>#include &quot;nvidia-linux/nvEncodeAPI.h&quot;</code><br />
 <code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="cudacontext_8h_source.html">cudacontext.h</a>&quot;</code><br />
 </div>
 <p><a href="nvidiacapture_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -111,6 +112,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a6ab166537ddb313de0c8583c84a6f79d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d">destroy_nvidia_capture_device</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
 <tr class="memdesc:a6ab166537ddb313de0c8583c84a6f79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the nvidia capture device.  <a href="nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d">More...</a><br /></td></tr>
 <tr class="separator:a6ab166537ddb313de0c8583c84a6f79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a4405d843daa1f597a536de1dc07d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#a68a4405d843daa1f597a536de1dc07d4">nvidia_bind_context</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
+<tr class="separator:a68a4405d843daa1f597a536de1dc07d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5940a21cbe50f63624e278862d61db58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#a5940a21cbe50f63624e278862d61db58">nvidia_release_context</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
+<tr class="separator:a5940a21cbe50f63624e278862d61db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright Fractal Computers, Inc. 2021</p>
@@ -178,6 +183,24 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a68a4405d843daa1f597a536de1dc07d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a4405d843daa1f597a536de1dc07d4">&#9670;&nbsp;</a></span>nvidia_bind_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvidia_bind_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aeb8b929d289578199244fb8e82bdceac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb8b929d289578199244fb8e82bdceac">&#9670;&nbsp;</a></span>nvidia_capture_screen()</h2>
 
@@ -202,6 +225,24 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a5940a21cbe50f63624e278862d61db58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5940a21cbe50f63624e278862d61db58">&#9670;&nbsp;</a></span>nvidia_release_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvidia_release_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

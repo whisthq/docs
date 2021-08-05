@@ -5,5 +5,6 @@ var screencapture_8h =
     [ "destroy_capture_device", "screencapture_8h.html#abbd0ff16d9ee7c3353340b1d2529f8c7", null ],
     [ "reconfigure_capture_device", "screencapture_8h.html#a4d4f4d646d67a79cd2f4fe8fd487c7dc", null ],
     [ "release_screen", "screencapture_8h.html#aad85f68930fed4c454c1e4f8def286cf", null ],
-    [ "transfer_screen", "screencapture_8h.html#a837679835044596e8d0d22aca5756b03", null ]
+    [ "transfer_screen", "screencapture_8h.html#a837679835044596e8d0d22aca5756b03", null ],
+    [ "update_capture_device", "screencapture_8h.html#af9fc9ee2cc0effcb8b75c06d860ef4b7", null ]
 ];

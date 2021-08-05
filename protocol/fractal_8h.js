@@ -51,12 +51,14 @@ var fractal_8h =
     [ "UNUSED", "fractal_8h.html#a5f64c424fc4e04a8b3afd79a1e245625", null ],
     [ "USING_AUDIO_ENCODE_DECODE", "fractal_8h.html#a1aabd41fc3d6e2687cf1cda5a88dd6d3", null ],
     [ "USING_FFMPEG_IFRAME_FLAG", "fractal_8h.html#ac98c653bb06a80c855ad7013dccb3f26", null ],
-    [ "USING_NVIDIA_CAPTURE_AND_ENCODE", "fractal_8h.html#a39d9fc9169acedf51c76772327e6c219", null ],
+    [ "USING_NVIDIA_CAPTURE", "fractal_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6", null ],
+    [ "USING_NVIDIA_ENCODE", "fractal_8h.html#a8c14c321fd244515ad04ff39026feb75", null ],
     [ "USING_SERVERSIDE_SCALE", "fractal_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb", null ],
     [ "USING_SHM", "fractal_8h.html#a18c8a407377bbb09b730044ba92ff029", null ],
     [ "WINAPI_INPUT_DRIVER", "fractal_8h.html#a5e3688d82ca0322b9f939340cd50023c", null ],
     [ "WINDOW_RESIZE_MESSAGE_INTERVAL", "fractal_8h.html#abe35f6b7cbcafed20fd9d41e4f11660a", null ],
     [ "XTEST_INPUT_DRIVER", "fractal_8h.html#ae5f9a5f50ab08d080df02684e783ab66", null ],
+    [ "CaptureDeviceType", "fractal_8h.html#aac56de0da721105f54191ba968635836", null ],
     [ "CodecType", "fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2", null ],
     [ "FractalClientMessage", "fractal_8h.html#ae75095f17ec3b67c19259d0c395e1c06", null ],
     [ "FractalClientMessageType", "fractal_8h.html#a69b64449a42b33fbb562e3ec992ae231", null ],
@@ -79,6 +81,10 @@ var fractal_8h =
     [ "FractalServerMessageType", "fractal_8h.html#a168e78f121b9be3b1aa6c6df21c976eb", null ],
     [ "InteractionMode", "fractal_8h.html#ae6ec9f8304ad463cd3dfbf626d60fe85", null ],
     [ "PeerUpdateMessage", "fractal_8h.html#a043b226c81e235189b7e647fa919a84f", null ],
+    [ "CaptureDeviceType", "fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600", [
+      [ "NVIDIA_DEVICE", "fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c", null ],
+      [ "X11_DEVICE", "fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621", null ]
+    ] ],
     [ "CodecType", "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79", [
       [ "CODEC_TYPE_UNKNOWN", "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a078edde93a764047c0ea92d4b2238a37", null ],
       [ "CODEC_TYPE_H264", "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a27612f02539b2da18de5bdc23cda876f", null ],

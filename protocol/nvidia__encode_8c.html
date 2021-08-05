@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('nvidia__encode_8c.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="nvidia__encode_8h_source.html">nvidia_encode.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="cudacontext_8h_source.html">cudacontext.h</a>&quot;</code><br />
 <code>#include &lt;dlfcn.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -103,14 +104,18 @@ Functions</h2></td></tr>
 <tr class="separator:a56c9acc53836e6c0e86ffc98791cf424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30e1d4db419af47348131f5909917d29"><td class="memItemLeft" align="right" valign="top">GUID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a30e1d4db419af47348131f5909917d29">get_codec_guid</a> (<a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec)</td></tr>
 <tr class="separator:a30e1d4db419af47348131f5909917d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa846f530346de8312a49572115d99eaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aa846f530346de8312a49572115d99eaf">register_resource</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, <a class="el" href="structRegisteredResource.html">RegisteredResource</a> *resource_to_register)</td></tr>
+<tr class="separator:aa846f530346de8312a49572115d99eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9391956a5fdb145023447edaa6a5cda3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a9391956a5fdb145023447edaa6a5cda3">unregister_resource</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, <a class="el" href="structRegisteredResource.html">RegisteredResource</a> registered_resource)</td></tr>
+<tr class="separator:a9391956a5fdb145023447edaa6a5cda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb48d23ded788334a3091c23fc41fd79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aeb48d23ded788334a3091c23fc41fd79">try_free_frame</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder)</td></tr>
 <tr class="separator:aeb48d23ded788334a3091c23fc41fd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4c3023420778d6e723a1d8c10859927"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#ae4c3023420778d6e723a1d8c10859927">create_nvidia_encoder</a> (int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int out_width, int out_height)</td></tr>
-<tr class="memdesc:ae4c3023420778d6e723a1d8c10859927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new nvidia encoder.  <a href="nvidia__encode_8c.html#ae4c3023420778d6e723a1d8c10859927">More...</a><br /></td></tr>
-<tr class="separator:ae4c3023420778d6e723a1d8c10859927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1692d86a98211318e61487325e4af20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#ae1692d86a98211318e61487325e4af20">nvidia_encoder_frame_intake</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, int width, int height)</td></tr>
-<tr class="memdesc:ae1692d86a98211318e61487325e4af20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into the nvidia encoder.  <a href="nvidia__encode_8c.html#ae1692d86a98211318e61487325e4af20">More...</a><br /></td></tr>
-<tr class="separator:ae1692d86a98211318e61487325e4af20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2652e81003368f8bf0501290ac82bfe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a2652e81003368f8bf0501290ac82bfe8">create_nvidia_encoder</a> (int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int out_width, int out_height, CUcontext cuda_context)</td></tr>
+<tr class="memdesc:a2652e81003368f8bf0501290ac82bfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new nvidia encoder.  <a href="nvidia__encode_8c.html#a2652e81003368f8bf0501290ac82bfe8">More...</a><br /></td></tr>
+<tr class="separator:a2652e81003368f8bf0501290ac82bfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526f8efc8ebb82f02cf739318642d291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a526f8efc8ebb82f02cf739318642d291">nvidia_encoder_frame_intake</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, <a class="el" href="structRegisteredResource.html">RegisteredResource</a> resource_to_register)</td></tr>
+<tr class="memdesc:a526f8efc8ebb82f02cf739318642d291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into the nvidia encoder.  <a href="nvidia__encode_8c.html#a526f8efc8ebb82f02cf739318642d291">More...</a><br /></td></tr>
+<tr class="separator:a526f8efc8ebb82f02cf739318642d291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e">nvidia_encoder_encode</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the most recently intake'd frame.  <a href="nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e">More...</a><br /></td></tr>
 <tr class="separator:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,8 +145,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae4c3023420778d6e723a1d8c10859927"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4c3023420778d6e723a1d8c10859927">&#9670;&nbsp;</a></span>create_nvidia_encoder()</h2>
+<a id="a2652e81003368f8bf0501290ac82bfe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2652e81003368f8bf0501290ac82bfe8">&#9670;&nbsp;</a></span>create_nvidia_encoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +173,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>out_height</em>&#160;</td>
+          <td class="paramname"><em>out_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CUcontext&#160;</td>
+          <td class="paramname"><em>cuda_context</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -184,7 +195,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">bitrate</td><td>The bitrate to encode at (In bits per second) </td></tr>
     <tr><td class="paramname">codec</td><td>Which codec type (h264 or h265) to use </td></tr>
     <tr><td class="paramname">out_width</td><td>Width of the output frame </td></tr>
-    <tr><td class="paramname">out_height</td><td>Height of the output frame</td></tr>
+    <tr><td class="paramname">out_height</td><td>Height of the output frame </td></tr>
+    <tr><td class="paramname">cuda_context</td><td>The CUDA context to use for the encoding session</td></tr>
   </table>
   </dd>
 </dl>
@@ -303,8 +315,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1692d86a98211318e61487325e4af20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1692d86a98211318e61487325e4af20">&#9670;&nbsp;</a></span>nvidia_encoder_frame_intake()</h2>
+<a id="a526f8efc8ebb82f02cf739318642d291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a526f8efc8ebb82f02cf739318642d291">&#9670;&nbsp;</a></span>nvidia_encoder_frame_intake()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,14 +330,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structRegisteredResource.html">RegisteredResource</a>&#160;</td>
+          <td class="paramname"><em>resource_to_register</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -339,8 +345,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>The encoder to encode with </td></tr>
-    <tr><td class="paramname">width</td><td>The width of the inputted frame </td></tr>
-    <tr><td class="paramname">height</td><td>The height of the inputted frame</td></tr>
+    <tr><td class="paramname">resource_to_register</td><td>The resource to register - contains data about capture device, width, height, and texture</td></tr>
   </table>
   </dd>
 </dl>
@@ -433,6 +438,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa846f530346de8312a49572115d99eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa846f530346de8312a49572115d99eaf">&#9670;&nbsp;</a></span>register_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int register_resource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structRegisteredResource.html">RegisteredResource</a> *&#160;</td>
+          <td class="paramname"><em>resource_to_register</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aeb48d23ded788334a3091c23fc41fd79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb48d23ded788334a3091c23fc41fd79">&#9670;&nbsp;</a></span>try_free_frame()</h2>
 
@@ -445,6 +478,34 @@ Functions</h2></td></tr>
           <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
           <td class="paramname"><em>encoder</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9391956a5fdb145023447edaa6a5cda3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9391956a5fdb145023447edaa6a5cda3">&#9670;&nbsp;</a></span>unregister_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unregister_resource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structRegisteredResource.html">RegisteredResource</a>&#160;</td>
+          <td class="paramname"><em>registered_resource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

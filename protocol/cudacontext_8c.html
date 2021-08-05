@@ -108,19 +108,39 @@ Typedefs</h2></td></tr>
 <tr class="separator:ad85102144c2aea39b7f5cd9dc751ac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ee8978341d92a7692b0b460b1e1f8c"><td class="memItemLeft" align="right" valign="top">typedef CUresult(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#ac2ee8978341d92a7692b0b460b1e1f8c">CUMEMCPYDTOHV2PROC</a>) (void *dst_host, CUdeviceptr src_device, size_t byte_count)</td></tr>
 <tr class="separator:ac2ee8978341d92a7692b0b460b1e1f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c94ab7b166d5485a76d945666e8574"><td class="memItemLeft" align="right" valign="top">typedef CUresult(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#a38c94ab7b166d5485a76d945666e8574">CUCTXDESTROYV2PROC</a>) (CUcontext ctx)</td></tr>
+<tr class="separator:a38c94ab7b166d5485a76d945666e8574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1f3fe326c0197bb0ad75333c9b0b5c46"><td class="memItemLeft" align="right" valign="top">NVFBC_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#a1f3fe326c0197bb0ad75333c9b0b5c46">cuda_init</a> ()</td></tr>
-<tr class="separator:a1f3fe326c0197bb0ad75333c9b0b5c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afab1a2aa138f8e21e93b210203df01cc"><td class="memItemLeft" align="right" valign="top">CUcontext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#afab1a2aa138f8e21e93b210203df01cc">get_active_cuda_context_ptr</a> ()</td></tr>
-<tr class="memdesc:afab1a2aa138f8e21e93b210203df01cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the active CUDA context.  <a href="cudacontext_8c.html#afab1a2aa138f8e21e93b210203df01cc">More...</a><br /></td></tr>
-<tr class="separator:afab1a2aa138f8e21e93b210203df01cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03821ea384d1614612f1b625aa7d0bd"><td class="memItemLeft" align="right" valign="top">NVFBC_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#aa03821ea384d1614612f1b625aa7d0bd">cuda_destroy</a> (CUcontext cuda_context)</td></tr>
+<tr class="memdesc:aa03821ea384d1614612f1b625aa7d0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the CUDA context given.  <a href="cudacontext_8c.html#aa03821ea384d1614612f1b625aa7d0bd">More...</a><br /></td></tr>
+<tr class="separator:aa03821ea384d1614612f1b625aa7d0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9e5066d4daf827ca3ec0fd0ee7aae0"><td class="memItemLeft" align="right" valign="top">NVFBC_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#a8a9e5066d4daf827ca3ec0fd0ee7aae0">cuda_init</a> (CUcontext *cuda_context)</td></tr>
+<tr class="separator:a8a9e5066d4daf827ca3ec0fd0ee7aae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af407668744bbd4b8febfe21cdd4e8da5"><td class="memItemLeft" align="right" valign="top">CUcontext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#af407668744bbd4b8febfe21cdd4e8da5">get_video_thread_cuda_context_ptr</a> ()</td></tr>
+<tr class="memdesc:af407668744bbd4b8febfe21cdd4e8da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the CUDA context that will be used next by the video thread.  <a href="cudacontext_8c.html#af407668744bbd4b8febfe21cdd4e8da5">More...</a><br /></td></tr>
+<tr class="separator:af407668744bbd4b8febfe21cdd4e8da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfc1d423b8c97bdc046bbeaa71fce8e"><td class="memItemLeft" align="right" valign="top">CUcontext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#a3cfc1d423b8c97bdc046bbeaa71fce8e">get_nvidia_thread_cuda_context_ptr</a> ()</td></tr>
+<tr class="memdesc:a3cfc1d423b8c97bdc046bbeaa71fce8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the CUDA context that will be used next by the Nvidia device manager thread.  <a href="cudacontext_8c.html#a3cfc1d423b8c97bdc046bbeaa71fce8e">More...</a><br /></td></tr>
+<tr class="separator:a3cfc1d423b8c97bdc046bbeaa71fce8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa72ae6d687dc2d8449469de92a3a5fbc"><td class="memItemLeft" align="right" valign="top">CUcontext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#aa72ae6d687dc2d8449469de92a3a5fbc">active_cuda_context</a> = NULL</td></tr>
-<tr class="separator:aa72ae6d687dc2d8449469de92a3a5fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fad4683f3f7a313295d1d9a3c680a03"><td class="memItemLeft" align="right" valign="top">CUcontext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#a3fad4683f3f7a313295d1d9a3c680a03">video_thread_cuda_context</a> = NULL</td></tr>
+<tr class="separator:a3fad4683f3f7a313295d1d9a3c680a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df5fac016ab1ed161d55c2a5f28d3d9"><td class="memItemLeft" align="right" valign="top">CUcontext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#a8df5fac016ab1ed161d55c2a5f28d3d9">nvidia_thread_cuda_context</a> = NULL</td></tr>
+<tr class="separator:a8df5fac016ab1ed161d55c2a5f28d3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0f47814f5d86d632943b4b3d03fcfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#ae25c9508bd93dd7ecd2ea96a9251c364">CUCTXSETCURRENTPROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#a3f0f47814f5d86d632943b4b3d03fcfc">cu_ctx_set_current_ptr</a> = NULL</td></tr>
+<tr class="separator:a3f0f47814f5d86d632943b4b3d03fcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5d2e06d5f897917e53cfd12c611515"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#aff2dd8622cc9999ce7888fb29ae73d17">CUCTXGETCURRENTPROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#aaa5d2e06d5f897917e53cfd12c611515">cu_ctx_get_current_ptr</a> = NULL</td></tr>
+<tr class="separator:aaa5d2e06d5f897917e53cfd12c611515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0167f2161c2cacf6e4474059e249a079"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#a986d57ec411c83249d4a97721ca9d3ff">CUCTXPUSHCURRENTPROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#a0167f2161c2cacf6e4474059e249a079">cu_ctx_push_current_ptr</a> = NULL</td></tr>
+<tr class="separator:a0167f2161c2cacf6e4474059e249a079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b316171b3093f1334560dcf6bd2ef7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#a9763746b245643d49d1deb5d4a421554">CUCTXPOPCURRENTPROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#aa2b316171b3093f1334560dcf6bd2ef7">cu_ctx_pop_current_ptr</a> = NULL</td></tr>
+<tr class="separator:aa2b316171b3093f1334560dcf6bd2ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3e65e6da803fd2897d61923c68cdb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#a311e59b2689a525efef40a4f472cec8d">CUCTXSYNCHRONIZEPROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#adb3e65e6da803fd2897d61923c68cdb7">cu_ctx_synchronize_ptr</a> = NULL</td></tr>
+<tr class="separator:adb3e65e6da803fd2897d61923c68cdb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright Fractal Computers, Inc. 2021</p>
@@ -128,7 +148,7 @@ Variables</h2></td></tr>
 @brief This file contains the code to create a CUDA context</h1>
 <h1><a class="anchor" id="autotoc_md215"></a>
 Usage</h1>
-<p>The CUDA context is required for the NVIDIA encoder. First call <code><a class="el" href="cudacontext_8c.html#a1f3fe326c0197bb0ad75333c9b0b5c46">cuda_init()</a></code> and then use the initialized CUDA context by calling <code><a class="el" href="cudacontext_8c.html#afab1a2aa138f8e21e93b210203df01cc" title="Returns a pointer to the active CUDA context.">get_active_cuda_context_ptr()</a></code>. </p>
+<p>The CUDA context is required for the NVIDIA encoder. First call <code><a class="el" href="cudacontext_8c.html#a8a9e5066d4daf827ca3ec0fd0ee7aae0">cuda_init()</a></code> and then use the initialized CUDA context by calling <code>get_active_cuda_context_ptr()</code>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a917eb3f03688dde30d8567cf341399f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a917eb3f03688dde30d8567cf341399f8">&#9670;&nbsp;</a></span>LIB_CUDA_NAME</h2>
@@ -153,6 +173,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">typedef CUresult(* CUCTXCREATEV2PROC) (CUcontext *pctx, unsigned int flags, CUdevice dev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38c94ab7b166d5485a76d945666e8574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c94ab7b166d5485a76d945666e8574">&#9670;&nbsp;</a></span>CUCTXDESTROYV2PROC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef CUresult(* CUCTXDESTROYV2PROC) (CUcontext ctx)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,8 +236,35 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1f3fe326c0197bb0ad75333c9b0b5c46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3fe326c0197bb0ad75333c9b0b5c46">&#9670;&nbsp;</a></span>cuda_init()</h2>
+<a id="aa03821ea384d1614612f1b625aa7d0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa03821ea384d1614612f1b625aa7d0bd">&#9670;&nbsp;</a></span>cuda_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NVFBC_BOOL cuda_destroy </td>
+          <td>(</td>
+          <td class="paramtype">CUcontext&#160;</td>
+          <td class="paramname"><em>cuda_context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the CUDA context given. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cuda_context</td><td>CUDA context to destroy</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NVFBC_TRUE on success, NVFBC_FALSE otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a8a9e5066d4daf827ca3ec0fd0ee7aae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a9e5066d4daf827ca3ec0fd0ee7aae0">&#9670;&nbsp;</a></span>cuda_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +272,8 @@ Usage</h1>
         <tr>
           <td class="memname">NVFBC_BOOL cuda_init </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">CUcontext *&#160;</td>
+          <td class="paramname"><em>cuda_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -221,14 +283,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="afab1a2aa138f8e21e93b210203df01cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afab1a2aa138f8e21e93b210203df01cc">&#9670;&nbsp;</a></span>get_active_cuda_context_ptr()</h2>
+<a id="a3cfc1d423b8c97bdc046bbeaa71fce8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfc1d423b8c97bdc046bbeaa71fce8e">&#9670;&nbsp;</a></span>get_nvidia_thread_cuda_context_ptr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CUcontext* get_active_cuda_context_ptr </td>
+          <td class="memname">CUcontext* get_nvidia_thread_cuda_context_ptr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -236,20 +298,124 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a pointer to the active CUDA context. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the active CUDA context </dd></dl>
+<p>Returns a pointer to the CUDA context that will be used next by the Nvidia device manager thread. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to nvidia thread CUDA context </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="aa72ae6d687dc2d8449469de92a3a5fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa72ae6d687dc2d8449469de92a3a5fbc">&#9670;&nbsp;</a></span>active_cuda_context</h2>
+<a id="af407668744bbd4b8febfe21cdd4e8da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af407668744bbd4b8febfe21cdd4e8da5">&#9670;&nbsp;</a></span>get_video_thread_cuda_context_ptr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CUcontext active_cuda_context = NULL</td>
+          <td class="memname">CUcontext* get_video_thread_cuda_context_ptr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the CUDA context that will be used next by the video thread. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the video thread CUDA context </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aaa5d2e06d5f897917e53cfd12c611515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa5d2e06d5f897917e53cfd12c611515">&#9670;&nbsp;</a></span>cu_ctx_get_current_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cudacontext_8h.html#aff2dd8622cc9999ce7888fb29ae73d17">CUCTXGETCURRENTPROC</a> cu_ctx_get_current_ptr = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2b316171b3093f1334560dcf6bd2ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b316171b3093f1334560dcf6bd2ef7">&#9670;&nbsp;</a></span>cu_ctx_pop_current_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cudacontext_8h.html#a9763746b245643d49d1deb5d4a421554">CUCTXPOPCURRENTPROC</a> cu_ctx_pop_current_ptr = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0167f2161c2cacf6e4474059e249a079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0167f2161c2cacf6e4474059e249a079">&#9670;&nbsp;</a></span>cu_ctx_push_current_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cudacontext_8h.html#a986d57ec411c83249d4a97721ca9d3ff">CUCTXPUSHCURRENTPROC</a> cu_ctx_push_current_ptr = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f0f47814f5d86d632943b4b3d03fcfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0f47814f5d86d632943b4b3d03fcfc">&#9670;&nbsp;</a></span>cu_ctx_set_current_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cudacontext_8h.html#ae25c9508bd93dd7ecd2ea96a9251c364">CUCTXSETCURRENTPROC</a> cu_ctx_set_current_ptr = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb3e65e6da803fd2897d61923c68cdb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3e65e6da803fd2897d61923c68cdb7">&#9670;&nbsp;</a></span>cu_ctx_synchronize_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cudacontext_8h.html#a311e59b2689a525efef40a4f472cec8d">CUCTXSYNCHRONIZEPROC</a> cu_ctx_synchronize_ptr = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8df5fac016ab1ed161d55c2a5f28d3d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df5fac016ab1ed161d55c2a5f28d3d9">&#9670;&nbsp;</a></span>nvidia_thread_cuda_context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CUcontext nvidia_thread_cuda_context = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fad4683f3f7a313295d1d9a3c680a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fad4683f3f7a313295d1d9a3c680a03">&#9670;&nbsp;</a></span>video_thread_cuda_context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CUcontext video_thread_cuda_context = NULL</td>
         </tr>
       </table>
 </div><div class="memdoc">

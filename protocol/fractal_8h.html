@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('fractal_8h.html',''); initResizable();
 <code>#include &lt;sys/time.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/syscall.h&gt;</code><br />
 <code>#include &lt;libavcodec/avcodec.h&gt;</code><br />
 <code>#include &lt;libavdevice/avdevice.h&gt;</code><br />
 <code>#include &lt;libavfilter/avfilter.h&gt;</code><br />
@@ -198,8 +199,10 @@ Macros</h2></td></tr>
 <tr class="separator:afa1974cc8beaefae0b0afb0e084ff9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514734c0c6acc3c2f2076323d45676d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a514734c0c6acc3c2f2076323d45676d8">INPUT_DRIVER</a>&#160;&#160;&#160;<a class="el" href="fractal_8h.html#ad69d62858e125982881b534cafa1cd0f">UINPUT_INPUT_DRIVER</a></td></tr>
 <tr class="separator:a514734c0c6acc3c2f2076323d45676d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d9fc9169acedf51c76772327e6c219"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a39d9fc9169acedf51c76772327e6c219">USING_NVIDIA_CAPTURE_AND_ENCODE</a>&#160;&#160;&#160;false</td></tr>
-<tr class="separator:a39d9fc9169acedf51c76772327e6c219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e53fd1451b40e47cdbfc94814bf4de6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6">USING_NVIDIA_CAPTURE</a>&#160;&#160;&#160;false</td></tr>
+<tr class="separator:a0e53fd1451b40e47cdbfc94814bf4de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c14c321fd244515ad04ff39026feb75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a8c14c321fd244515ad04ff39026feb75">USING_NVIDIA_ENCODE</a>&#160;&#160;&#160;true</td></tr>
+<tr class="separator:a8c14c321fd244515ad04ff39026feb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18c8a407377bbb09b730044ba92ff029"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a18c8a407377bbb09b730044ba92ff029">USING_SHM</a>&#160;&#160;&#160;true</td></tr>
 <tr class="separator:a18c8a407377bbb09b730044ba92ff029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe35f6b7cbcafed20fd9d41e4f11660a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#abe35f6b7cbcafed20fd9d41e4f11660a">WINDOW_RESIZE_MESSAGE_INTERVAL</a>&#160;&#160;&#160;200</td></tr>
@@ -261,6 +264,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a9740e3eb33500c4ba6d6efade68933d2"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2">CodecType</a></td></tr>
 <tr class="memdesc:a9740e3eb33500c4ba6d6efade68933d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec types.  <a href="fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2">More...</a><br /></td></tr>
 <tr class="separator:a9740e3eb33500c4ba6d6efade68933d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac56de0da721105f54191ba968635836"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aac56de0da721105f54191ba968635836">CaptureDeviceType</a></td></tr>
+<tr class="memdesc:aac56de0da721105f54191ba968635836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> struct below.  <a href="fractal_8h.html#aac56de0da721105f54191ba968635836">More...</a><br /></td></tr>
+<tr class="separator:aac56de0da721105f54191ba968635836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd21922c209d22dba480caba7733dbc"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">FractalKeycode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a1fd21922c209d22dba480caba7733dbc">FractalKeycode</a></td></tr>
 <tr class="memdesc:a1fd21922c209d22dba480caba7733dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keycodes.  <a href="fractal_8h.html#a1fd21922c209d22dba480caba7733dbc">More...</a><br /></td></tr>
 <tr class="separator:a1fd21922c209d22dba480caba7733dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,6 +339,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a03b4b6ae5fb82af68d46aaea3d3e4d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec types.  <a href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">More...</a><br /></td></tr>
 <tr class="separator:a03b4b6ae5fb82af68d46aaea3d3e4d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> { <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c">NVIDIA_DEVICE</a>, 
+<a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621">X11_DEVICE</a>
+ }</td></tr>
+<tr class="memdesc:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> struct below.  <a href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">More...</a><br /></td></tr>
+<tr class="separator:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19e7f1b27cb5354c7031d5aef9163484"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">FractalKeycode</a> { <br />
 &#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd">FK_A</a> = 4, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3de5ed32dd07837360f10206e9c1bdd1">FK_B</a> = 5, 
@@ -1213,14 +1224,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a39d9fc9169acedf51c76772327e6c219"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39d9fc9169acedf51c76772327e6c219">&#9670;&nbsp;</a></span>USING_NVIDIA_CAPTURE_AND_ENCODE</h2>
+<a id="a0e53fd1451b40e47cdbfc94814bf4de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e53fd1451b40e47cdbfc94814bf4de6">&#9670;&nbsp;</a></span>USING_NVIDIA_CAPTURE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define USING_NVIDIA_CAPTURE_AND_ENCODE&#160;&#160;&#160;false</td>
+          <td class="memname">#define USING_NVIDIA_CAPTURE&#160;&#160;&#160;false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c14c321fd244515ad04ff39026feb75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c14c321fd244515ad04ff39026feb75">&#9670;&nbsp;</a></span>USING_NVIDIA_ENCODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USING_NVIDIA_ENCODE&#160;&#160;&#160;true</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1298,6 +1323,22 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="aac56de0da721105f54191ba968635836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac56de0da721105f54191ba968635836">&#9670;&nbsp;</a></span>CaptureDeviceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> struct below. </p>
+
+</div>
+</div>
 <a id="a9740e3eb33500c4ba6d6efade68933d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9740e3eb33500c4ba6d6efade68933d2">&#9670;&nbsp;</a></span>CodecType</h2>
 
@@ -1670,6 +1711,26 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a405cbf3c7e9ae25dc03ad4fcf563f600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a405cbf3c7e9ae25dc03ad4fcf563f600">&#9670;&nbsp;</a></span>CaptureDeviceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> struct below. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c"></a>NVIDIA_DEVICE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621"></a>X11_DEVICE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a03b4b6ae5fb82af68d46aaea3d3e4d79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03b4b6ae5fb82af68d46aaea3d3e4d79">&#9670;&nbsp;</a></span>CodecType</h2>
 
