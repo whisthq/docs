@@ -96,40 +96,6 @@ If it succeeds, returns the instance name.  Else, returns None
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.repeated_lingering_harness">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">repeated_lingering_harness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">time_delay:</span> <span class="pre">int</span></em>, <em class="sig-param"><span class="pre">flask_app:</span> <span class="pre">Any</span> <span class="pre">=</span> <span class="pre">&lt;LocalProxy</span> <span class="pre">unbound&gt;</span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.repeated_lingering_harness" title="Permalink to this definition">¶</a></dt>
-<dd><p>checks lingering instances every time_delay seconds.
-NOTE:  this function keeps looping and will
-not stop manually.
-Only run in background threads.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>time_delay</strong> (<em>int</em>) – how often to run the scaling, in seconds</p></li>
-<li><p><strong>flask_app</strong> (<em>Flask.application</em>) – app context, needed for DB operations</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.repeated_scale_down_harness">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">repeated_scale_down_harness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">time_delay:</span> <span class="pre">int</span></em>, <em class="sig-param"><span class="pre">flask_app:</span> <span class="pre">Any</span> <span class="pre">=</span> <span class="pre">&lt;LocalProxy</span> <span class="pre">unbound&gt;</span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.repeated_scale_down_harness" title="Permalink to this definition">¶</a></dt>
-<dd><p>checks scaling every time_delay seconds.
-NOTE:  this function keeps looping and will
-not stop manually.
-Only run in background threads.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>time_delay</strong> (<em>int</em>) – how often to run the scaling, in seconds</p></li>
-<li><p><strong>flask_app</strong> (<em>Flask.application</em>) – app context, needed for DB operations</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
 <dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.terminate_instance">
 <span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">terminate_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="app.models.html#app.models.hardware.InstanceInfo" title="app.models.hardware.InstanceInfo"><span class="pre">app.models.hardware.InstanceInfo</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.terminate_instance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Terminates a given instance using the AWS client

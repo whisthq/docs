@@ -104,6 +104,33 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </section>
+<section id="module-app.cli">
+<span id="app-cli-module"></span><h2>app.cli module<a class="headerlink" href="#module-app.cli" title="Permalink to this headline">¶</a></h2>
+<p>Custom Flask CLI extensions</p>
+<p>This module contains blueprints that create Flask CLI (sub)commands when they are registered to a
+Flask application. See <a class="reference external" href="https://flask.palletsprojects.com/en/2.0.x/cli/#custom-commands">https://flask.palletsprojects.com/en/2.0.x/cli/#custom-commands</a>.</p>
+<p>Example usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># wsgi.py</span>
+
+<span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">Flask</span>
+<span class="kn">from</span> <span class="nn">app.cli</span> <span class="k">import</span> <span class="n">command_bp</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">register_blueprint</span><span class="p">(</span><span class="n">command_bp</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Once a blueprint that defines custom CLI commands has been registered to a Flask application, the
+custom commands will appear in the <code class="docutils literal notranslate"><span class="pre">flask</span> <span class="pre">help</span></code> output and can be called as subcommands of
+<code class="docutils literal notranslate"><span class="pre">flask</span></code>. For example, the commands defined by the <code class="docutils literal notranslate"><span class="pre">command_bp</span></code> blueprint can be called with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ flask ami create_buffers
+...
+$ flask ami swap_over_buffers
+...
+$ flask ami generate_test_data
+...
+</pre></div>
+</div>
+</section>
 <section id="module-app.config">
 <span id="app-config-module"></span><h2>app.config module<a class="headerlink" href="#module-app.config" title="Permalink to this headline">¶</a></h2>
 <p>Flask application configuration.</p>
@@ -508,34 +535,6 @@ function is called using instance.method() syntax.</p>
 <dl class="py property">
 <dt class="sig sig-object py" id="app.config.DeploymentConfig.METRICS_SINK_LOGZ_TOKEN">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">METRICS_SINK_LOGZ_TOKEN</span></span><a class="headerlink" href="#app.config.DeploymentConfig.METRICS_SINK_LOGZ_TOKEN" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return an instance attribute value.</p>
-<p>This function is an instance method suitable to be passed as the first argument to the
-built-in property() decorator. Were this method defined as instance methods are normally
-defined, it would be clear that the config argument is actually the instance on which the
-method is defined, i.e. self.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>config</strong> – The instance on which the method is defined. Passed automatically when this
-function is called using instance.method() syntax.</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><dl class="simple">
-<dt>Either a str or an int; the value of the configuration variable for which this function</dt><dd><p>has been generated to be a getter method.</p>
-</dd>
-</dl>
-</p>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><p><strong>KeyError</strong> – The configuration key for which this function has been generated to be a
-    getter method could be found neither in the process’s execution environment nor in
-    the configuration database.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="app.config.DeploymentConfig.RUNNING_LOCALLY">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">RUNNING_LOCALLY</span></span><a class="headerlink" href="#app.config.DeploymentConfig.RUNNING_LOCALLY" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return an instance attribute value.</p>
 <p>This function is an instance method suitable to be passed as the first argument to the
 built-in property() decorator. Were this method defined as instance methods are normally
