@@ -142,8 +142,10 @@ Variables</h2></td></tr>
 <tr class="separator:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a527325650d66abd9626499785b3bafd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a527325650d66abd9626499785b3bafd2">sample_rate</a> = -1</td></tr>
 <tr class="separator:a527325650d66abd9626499785b3bafd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b0dd2067ae06f62bcee776eee9a021e"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a8b0dd2067ae06f62bcee776eee9a021e">max_mbps</a></td></tr>
-<tr class="separator:a8b0dd2067ae06f62bcee776eee9a021e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad137585f4fddac5c02d6b3f99323385b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#ad137585f4fddac5c02d6b3f99323385b">max_bitrate</a> = <a class="el" href="fractal_8h.html#af6e2306adac4a7fc41cc4c181d2e605b">STARTING_BITRATE</a></td></tr>
+<tr class="separator:ad137585f4fddac5c02d6b3f99323385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5269d876b9e07618d093dbd293141c"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a8a5269d876b9e07618d093dbd293141c">max_burst_bitrate</a> = <a class="el" href="fractal_8h.html#a97888d50b51f804637c90a7dbee17c44">STARTING_BURST_BITRATE</a></td></tr>
+<tr class="separator:a8a5269d876b9e07618d093dbd293141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0cefee7dcd4ec6bdd40ff87edaa96fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a> = NULL</td></tr>
 <tr class="separator:aa0cefee7dcd4ec6bdd40ff87edaa96fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae54fd77214dad6eaf2b542edb690d53"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#aae54fd77214dad6eaf2b542edb690d53">stop_streaming</a></td></tr>
@@ -404,14 +406,28 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a8b0dd2067ae06f62bcee776eee9a021e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b0dd2067ae06f62bcee776eee9a021e">&#9670;&nbsp;</a></span>max_mbps</h2>
+<a id="ad137585f4fddac5c02d6b3f99323385b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad137585f4fddac5c02d6b3f99323385b">&#9670;&nbsp;</a></span>max_bitrate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile double max_mbps</td>
+          <td class="memname">volatile int max_bitrate = <a class="el" href="fractal_8h.html#af6e2306adac4a7fc41cc4c181d2e605b">STARTING_BITRATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a5269d876b9e07618d093dbd293141c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5269d876b9e07618d093dbd293141c">&#9670;&nbsp;</a></span>max_burst_bitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int max_burst_bitrate = <a class="el" href="fractal_8h.html#a97888d50b51f804637c90a7dbee17c44">STARTING_BURST_BITRATE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

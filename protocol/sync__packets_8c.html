@@ -106,8 +106,8 @@ Functions</h2></td></tr>
 <tr class="separator:a78bbdbfea5b73604c4fb25309546d862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f0ddd57267ce009b4010bdf993f05b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a65f0ddd57267ce009b4010bdf993f05b">destroy_updater</a> ()</td></tr>
 <tr class="separator:a65f0ddd57267ce009b4010bdf993f05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87b1212dbda52e04e3da1ba63d44e822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a87b1212dbda52e04e3da1ba63d44e822">update_bitrate</a> ()</td></tr>
-<tr class="separator:a87b1212dbda52e04e3da1ba63d44e822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498b4522ce3389a0c020fcdd5287644d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a498b4522ce3389a0c020fcdd5287644d">try_update_bitrate</a> ()</td></tr>
+<tr class="separator:a498b4522ce3389a0c020fcdd5287644d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6622b69f724d312e46353eda6c9123e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#ae6622b69f724d312e46353eda6c9123e">update_ping</a> ()</td></tr>
 <tr class="separator:ae6622b69f724d312e46353eda6c9123e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53946a29605f229b5599f3803fe55f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#ad53946a29605f229b5599f3803fe55f9">update_initial_dimensions</a> ()</td></tr>
@@ -147,10 +147,12 @@ Variables</h2></td></tr>
 <tr class="separator:a9061fffacf92050e5de2ceaf600c8050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5120ece93dfddf5638a59e495e9c6d46"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a></td></tr>
 <tr class="separator:a5120ece93dfddf5638a59e495e9c6d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30eda55f653cdd4be94a7d0b0b7dfb99"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a30eda55f653cdd4be94a7d0b0b7dfb99">update_mbps</a></td></tr>
-<tr class="separator:a30eda55f653cdd4be94a7d0b0b7dfb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad137585f4fddac5c02d6b3f99323385b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#ad137585f4fddac5c02d6b3f99323385b">max_bitrate</a></td></tr>
 <tr class="separator:ad137585f4fddac5c02d6b3f99323385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5269d876b9e07618d093dbd293141c"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a8a5269d876b9e07618d093dbd293141c">max_burst_bitrate</a></td></tr>
+<tr class="separator:a8a5269d876b9e07618d093dbd293141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a80ed277e1f61a1fe7d7b91250e8d5"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5">update_bitrate</a></td></tr>
+<tr class="separator:a29a80ed277e1f61a1fe7d7b91250e8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb26e424f91b3e96e593c77ffff265f6"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#adb26e424f91b3e96e593c77ffff265f6">server_width</a></td></tr>
 <tr class="separator:adb26e424f91b3e96e593c77ffff265f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f22535f72143edb1d30f2ae7b2063d7"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a6f22535f72143edb1d30f2ae7b2063d7">server_height</a></td></tr>
@@ -258,14 +260,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a87b1212dbda52e04e3da1ba63d44e822"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87b1212dbda52e04e3da1ba63d44e822">&#9670;&nbsp;</a></span>update_bitrate()</h2>
+<a id="a498b4522ce3389a0c020fcdd5287644d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a498b4522ce3389a0c020fcdd5287644d">&#9670;&nbsp;</a></span>try_update_bitrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void update_bitrate </td>
+          <td class="memname">void try_update_bitrate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -416,6 +418,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile int max_bitrate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a5269d876b9e07618d093dbd293141c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5269d876b9e07618d093dbd293141c">&#9670;&nbsp;</a></span>max_burst_bitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int max_burst_bitrate</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -576,14 +592,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a30eda55f653cdd4be94a7d0b0b7dfb99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30eda55f653cdd4be94a7d0b0b7dfb99">&#9670;&nbsp;</a></span>update_mbps</h2>
+<a id="a29a80ed277e1f61a1fe7d7b91250e8d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a80ed277e1f61a1fe7d7b91250e8d5">&#9670;&nbsp;</a></span>update_bitrate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool update_mbps</td>
+          <td class="memname">volatile bool update_bitrate</td>
         </tr>
       </table>
 </div><div class="memdoc">

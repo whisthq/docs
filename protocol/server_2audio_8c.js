@@ -6,5 +6,6 @@ var server_2audio_8c =
     [ "audio_buffer", "server_2audio_8c.html#af180842296d501d15cda94decb2f3559", null ],
     [ "audio_buffer_packet_len", "server_2audio_8c.html#aa217c7c1dc5bcabd736d81a611e909b8", null ],
     [ "exiting", "server_2audio_8c.html#a9aec5d9660ae8a0c8117f5d96b871606", null ],
+    [ "max_burst_bitrate", "server_2audio_8c.html#a8a5269d876b9e07618d093dbd293141c", null ],
     [ "sample_rate", "server_2audio_8c.html#a527325650d66abd9626499785b3bafd2", null ]
 ];

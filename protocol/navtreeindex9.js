@@ -1,5 +1,13 @@
 var NAVTREEINDEX9 =
 {
+"structFractalCursorTypes.html#a39b9e246e4f75a574c2ae7c711796e1f":[8,0,24,14],
+"structFractalCursorTypes.html#a5677a585ef3a33751bf6a69cc131d8dc":[8,0,24,4],
+"structFractalCursorTypes.html#a5c9a19820c2a00c563df2c98b985d6f0":[8,0,24,0],
+"structFractalCursorTypes.html#a5e33b99989f05702597808af9d1d069a":[8,0,24,13],
+"structFractalCursorTypes.html#a6f873d85dde4619f41b99d5576c3ec98":[8,0,24,8],
+"structFractalCursorTypes.html#a7b6b14e2e10b863316a3876b3b92bd6d":[8,0,24,7],
+"structFractalCursorTypes.html#a7cd587c251cd1ebfcc6a7cb89241dc24":[8,0,24,10],
+"structFractalCursorTypes.html#aa0594876aec8d14c74b858b31debc01a":[8,0,24,2],
 "structFractalCursorTypes.html#aa4b88caf8aedf8fda2950be83d4b42c8":[8,0,24,11],
 "structFractalCursorTypes.html#ac6aec3170c2850475865445644868ccc":[8,0,24,6],
 "structFractalCursorTypes.html#ac6ee56c251b4998c3f7c41c12083b854":[8,0,24,15],
@@ -241,13 +249,5 @@ var NAVTREEINDEX9 =
 "structLodePNGState.html#ac63d91db835129d02eb83bbe81de347e":[8,0,52,1],
 "structLodePNGTime.html":[8,0,53],
 "structLodePNGTime.html#a295d890e862d5cd0c444e9d3a96fa9d5":[8,0,53,3],
-"structLodePNGTime.html#a32b68342f39f3d38ba91a721b1149b8f":[8,0,53,5],
-"structLodePNGTime.html#a6c691c5821e828488a8bb8a90751a2f0":[8,0,53,4],
-"structLodePNGTime.html#aa3dee3b7b3a1e730fbded7a7b8cf355e":[8,0,53,0],
-"structLodePNGTime.html#ac3045de79728f29fc61f534b062e0f13":[8,0,53,2],
-"structLodePNGTime.html#ac99cb7f3ce16a85f9f505b7f5f6e0aa7":[8,0,53,1],
-"structLoggerQueueItem.html":[8,0,54],
-"structLoggerQueueItem.html#a35797499deb09b7eeba3cd102c8ae2a4":[8,0,54,0],
-"structLoggerQueueItem.html#ab5eb451eaf5444b7235532d3396ce286":[8,0,54,1],
-"structMouseMotionAccumulation.html":[8,0,55]
+"structLodePNGTime.html#a32b68342f39f3d38ba91a721b1149b8f":[8,0,53,5]
 };

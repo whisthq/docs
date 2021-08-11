@@ -4,7 +4,7 @@ var sync__packets_8c =
     [ "init_updater", "sync__packets_8c.html#a78bbdbfea5b73604c4fb25309546d862", null ],
     [ "multithreaded_sync_tcp_packets", "sync__packets_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51", null ],
     [ "multithreaded_sync_udp_packets", "sync__packets_8c.html#a98dda3fd63338635cde0ad01133e5e2b", null ],
-    [ "update_bitrate", "sync__packets_8c.html#a87b1212dbda52e04e3da1ba63d44e822", null ],
+    [ "try_update_bitrate", "sync__packets_8c.html#a498b4522ce3389a0c020fcdd5287644d", null ],
     [ "update_initial_dimensions", "sync__packets_8c.html#ad53946a29605f229b5599f3803fe55f9", null ],
     [ "update_ping", "sync__packets_8c.html#ae6622b69f724d312e46353eda6c9123e", null ],
     [ "connected", "sync__packets_8c.html#ab36823025f12a809217f7771125658c2", null ],
@@ -15,6 +15,7 @@ var sync__packets_8c =
     [ "latency", "sync__packets_8c.html#a5120ece93dfddf5638a59e495e9c6d46", null ],
     [ "latency_timer", "sync__packets_8c.html#a9061fffacf92050e5de2ceaf600c8050", null ],
     [ "max_bitrate", "sync__packets_8c.html#ad137585f4fddac5c02d6b3f99323385b", null ],
+    [ "max_burst_bitrate", "sync__packets_8c.html#a8a5269d876b9e07618d093dbd293141c", null ],
     [ "output_codec_type", "sync__packets_8c.html#adb9ee7b2e8381606788de51e5548b57f", null ],
     [ "output_height", "sync__packets_8c.html#a2a57d774e71166271bbff6c515111104", null ],
     [ "output_width", "sync__packets_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ],
@@ -26,6 +27,6 @@ var sync__packets_8c =
     [ "server_height", "sync__packets_8c.html#a6f22535f72143edb1d30f2ae7b2063d7", null ],
     [ "server_width", "sync__packets_8c.html#adb26e424f91b3e96e593c77ffff265f6", null ],
     [ "tried_to_update_dimension", "sync__packets_8c.html#ab95e774bfab195d541773d8ec7e23b82", null ],
-    [ "update_mbps", "sync__packets_8c.html#a30eda55f653cdd4be94a7d0b0b7dfb99", null ],
+    [ "update_bitrate", "sync__packets_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5", null ],
     [ "updater_initialized", "sync__packets_8c.html#a9fcf0f9a2fb99261ecba944272bbf91a", null ]
 ];
