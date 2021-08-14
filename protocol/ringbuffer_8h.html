@@ -148,9 +148,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad39f9574458820226981480a98a1081b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#ad39f9574458820226981480a98a1081b">nack_missing_packets_up_to_index</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *frame_data, int index)</td></tr>
 <tr class="memdesc:ad39f9574458820226981480a98a1081b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nack 1 missing packet of frame_data up to index.  <a href="ringbuffer_8h.html#ad39f9574458820226981480a98a1081b">More...</a><br /></td></tr>
 <tr class="separator:ad39f9574458820226981480a98a1081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bad7228c06e5509c4a34954db122d36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a3bad7228c06e5509c4a34954db122d36">reset_frame</a> (<a class="el" href="structFrameData.html">FrameData</a> *frame_data)</td></tr>
-<tr class="memdesc:a3bad7228c06e5509c4a34954db122d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the frame's metadata.  <a href="ringbuffer_8h.html#a3bad7228c06e5509c4a34954db122d36">More...</a><br /></td></tr>
-<tr class="separator:a3bad7228c06e5509c4a34954db122d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4415bb2d50c63ca97a0eafa97964188d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a4415bb2d50c63ca97a0eafa97964188d">reset_frame</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *frame_data)</td></tr>
+<tr class="memdesc:a4415bb2d50c63ca97a0eafa97964188d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the frame, both metadata and frame buffer.  <a href="ringbuffer_8h.html#a4415bb2d50c63ca97a0eafa97964188d">More...</a><br /></td></tr>
+<tr class="separator:a4415bb2d50c63ca97a0eafa97964188d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc37000ecd47712d4a8cc8e83867a60d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#adc37000ecd47712d4a8cc8e83867a60d">set_rendering</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
 <tr class="memdesc:adc37000ecd47712d4a8cc8e83867a60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. The ring buffer will not write to the currently rendering frame.  <a href="ringbuffer_8h.html#adc37000ecd47712d4a8cc8e83867a60d">More...</a><br /></td></tr>
 <tr class="separator:adc37000ecd47712d4a8cc8e83867a60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -464,8 +464,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a3bad7228c06e5509c4a34954db122d36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bad7228c06e5509c4a34954db122d36">&#9670;&nbsp;</a></span>reset_frame()</h2>
+<a id="a4415bb2d50c63ca97a0eafa97964188d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4415bb2d50c63ca97a0eafa97964188d">&#9670;&nbsp;</a></span>reset_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,16 +473,27 @@ Usage</h1>
         <tr>
           <td class="memname">void reset_frame </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td>
-          <td class="paramname"><em>frame_data</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
+          <td class="paramname"><em>ring_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td>
+          <td class="paramname"><em>frame_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reset the frame's metadata. </p>
+<p>Reset the frame, both metadata and frame buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">ring_buffer</td><td>Ring buffer containing the frame. </td></tr>
     <tr><td class="paramname">frame_data</td><td>Frame to "clear" from the ring buffer. </td></tr>
   </table>
   </dd>
