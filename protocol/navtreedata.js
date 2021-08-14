@@ -85,17 +85,17 @@ var NAVTREEINDEX =
 [
 "aes_8c.html",
 "client_2video_8c.html#a6657fb884f41e0f0e26825773f0c3cd6",
-"cudacontext_8c.html",
-"fractal_8h.html#a127a432b98b2684fb0d592970c125b41",
-"fractal_8h.html#aeb6f843f09da236f49aaabbaf45b3ee4",
-"globals_vars_o.html",
-"lodepng_8h.html#a3eca27e18f0e71cf1c21e1c1f5ff4aab",
-"nvidiatransfercapture_8c.html#a4c133adf6908227f17d989287c4f933d",
-"server_2video_8c.html",
-"structFractalCursorTypes.html#a39b9e246e4f75a574c2ae7c711796e1f",
-"structLodePNGTime.html#a6c691c5821e828488a8bb8a90751a2f0",
-"sysinfo_8c.html#a94ad53a553e755f6da2881a12984080c",
-"xtest__input__driver_8h.html#a6a1dbc5faad2bff5d15369a25ff9f142"
+"color_8h_source.html",
+"fractal_8h.html#a12454a24d13a6903d34a4a73b0116975",
+"fractal_8h.html#aea3cfda4f3a9f978ec759f206cf186fe",
+"globals_vars_n.html",
+"lodepng_8h.html#a32282377bca2e3e43bcf16aa9daa8554",
+"nvidiatransfercapture_8c.html",
+"server_2network_8h_source.html",
+"structFractalCursorTypes.html#a377f3ab40416485096cbd6776702ba92",
+"structLodePNGTime.html#a32b68342f39f3d38ba91a721b1149b8f",
+"sysinfo_8c.html#a823bff2120fee3abcbe0f103b8162d45",
+"xtest__input__driver_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

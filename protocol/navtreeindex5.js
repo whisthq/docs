@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"globals_vars_n.html":[9,1,2,10],
 "globals_vars_o.html":[9,1,2,11],
 "globals_vars_p.html":[9,1,2,12],
 "globals_vars_r.html":[9,1,2,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "lodepng_8h.html#a2aa729ce82079627789a0f8961c82f5e":[9,0,1,7,9,96],
 "lodepng_8h.html#a2b202fb988cf2b881266a26cf081f016":[9,0,1,7,9,25],
 "lodepng_8h.html#a2ccd8bef4daad75002f72308a5cbd0dc":[9,0,1,7,9,47],
-"lodepng_8h.html#a2e09963fb4b4eb4ee7789d40b9080250":[9,0,1,7,9,46],
-"lodepng_8h.html#a32282377bca2e3e43bcf16aa9daa8554":[9,0,1,7,9,10]
+"lodepng_8h.html#a2e09963fb4b4eb4ee7789d40b9080250":[9,0,1,7,9,46]
 };

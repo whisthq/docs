@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"sysinfo_8c.html#a823bff2120fee3abcbe0f103b8162d45":[9,0,1,7,18,1],
 "sysinfo_8c.html#a94ad53a553e755f6da2881a12984080c":[9,0,1,7,18,2],
 "sysinfo_8c.html#aa73d528f69ac45e66f2ee4fb2f077462":[9,0,1,7,18,4],
 "sysinfo_8c.html#acb6e3849546ce7fe538d4aca175cf4a3":[9,0,1,7,18,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "xtest__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532":[9,0,1,4,7,4],
 "xtest__input__driver_8c.html#aeab6a095afeed0b9e64e415c5a5c669a":[9,0,1,4,7,3],
 "xtest__input__driver_8c.html#aec6d0da6165b52bfcd168bace7e3c889":[9,0,1,4,7,7],
-"xtest__input__driver_8c.html#aec71542ec6598ecc619a2921296d5511":[9,0,1,4,7,2],
-"xtest__input__driver_8h.html":[9,0,1,4,8]
+"xtest__input__driver_8c.html#aec71542ec6598ecc619a2921296d5511":[9,0,1,4,7,2]
 };

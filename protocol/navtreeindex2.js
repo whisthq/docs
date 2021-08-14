@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"color_8h_source.html":[9,0,1,7,7],
 "cudacontext_8c.html":[9,0,1,8,0],
 "cudacontext_8c.html#a0167f2161c2cacf6e4474059e249a079":[9,0,1,8,0,12],
 "cudacontext_8c.html#a38c94ab7b166d5485a76d945666e8574":[9,0,1,8,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "fractal_8h.html#a043b226c81e235189b7e647fa919a84f":[9,0,1,2,1,80],
 "fractal_8h.html#a07497cbfeb7eff3e5798235291f978c6":[9,0,1,2,1,33],
 "fractal_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6":[9,0,1,2,1,51],
-"fractal_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41":[9,0,1,2,1,19],
-"fractal_8h.html#a12454a24d13a6903d34a4a73b0116975":[9,0,1,2,1,63]
+"fractal_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41":[9,0,1,2,1,19]
 };
