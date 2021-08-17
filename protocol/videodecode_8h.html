@@ -154,9 +154,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code to create a video decoder and use that. </p>
 <p>Copyright Fractal Computers, Inc. 2021</p>
-<h1><a class="anchor" id="autotoc_md242"></a>
+<h1><a class="anchor" id="autotoc_md246"></a>
 decoder to decode frames.</h1>
-<h1><a class="anchor" id="autotoc_md243"></a>
+<h1><a class="anchor" id="autotoc_md247"></a>
 Usage</h1>
 <p>Video is decoded from H264 via ffmpeg; H265 is supported, but not currently used. Hardware-accelerated decoders are given priority, but if those fail, we decode on the CPU. All frames are eventually moved to the CPU for scaling and color conversion. Create a decoder via create_video_decoder. To decode a frame, call video_decoder_decode on the decoder and the encoded packets. To destroy the decoder when finished, destroy the encoder using video_decoder_decode. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>

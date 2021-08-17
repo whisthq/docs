@@ -1,6 +1,19 @@
 var searchData=
 [
-  ['dxgicapture_2ec_1973',['dxgicapture.c',['../dxgicapture_8c.html',1,'']]],
-  ['dxgicapture_2eh_1974',['dxgicapture.h',['../dxgicapture_8h.html',1,'']]],
-  ['dxgicudatransfercapture_2eh_1975',['dxgicudatransfercapture.h',['../dxgicudatransfercapture_8h.html',1,'']]]
+  ['client_2ec_1973',['client.c',['../client_8c.html',1,'']]],
+  ['client_2eh_1974',['client.h',['../client_8h.html',1,'']]],
+  ['client_5futils_2ec_1975',['client_utils.c',['../client__utils_8c.html',1,'']]],
+  ['client_5futils_2eh_1976',['client_utils.h',['../client__utils_8h.html',1,'']]],
+  ['clipboard_2ec_1977',['clipboard.c',['../clipboard_8c.html',1,'']]],
+  ['clipboard_2eh_1978',['clipboard.h',['../clipboard_8h.html',1,'']]],
+  ['clipboard_5fosx_2eh_1979',['clipboard_osx.h',['../clipboard__osx_8h.html',1,'']]],
+  ['clipboard_5fsynchronizer_2ec_1980',['clipboard_synchronizer.c',['../clipboard__synchronizer_8c.html',1,'']]],
+  ['clipboard_5fsynchronizer_2eh_1981',['clipboard_synchronizer.h',['../clipboard__synchronizer_8h.html',1,'']]],
+  ['clock_2ec_1982',['clock.c',['../clock_8c.html',1,'']]],
+  ['clock_2eh_1983',['clock.h',['../clock_8h.html',1,'']]],
+  ['color_2ec_1984',['color.c',['../color_8c.html',1,'']]],
+  ['color_2eh_1985',['color.h',['../color_8h.html',1,'']]],
+  ['cudacontext_2ec_1986',['cudacontext.c',['../cudacontext_8c.html',1,'']]],
+  ['cudacontext_2eh_1987',['cudacontext.h',['../cudacontext_8h.html',1,'']]],
+  ['cursor_2eh_1988',['cursor.h',['../cursor_8h.html',1,'']]]
 ];

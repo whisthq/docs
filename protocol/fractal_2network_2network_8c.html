@@ -222,9 +222,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with sockets. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md168"></a>
+<h1><a class="anchor" id="autotoc_md172"></a>
 under-the-hood.</h1>
-<h1><a class="anchor" id="autotoc_md169"></a>
+<h1><a class="anchor" id="autotoc_md173"></a>
 Usage</h1>
 <p><a class="el" href="structSocketContext.html">SocketContext</a>: This type represents a socket.</p><ul>
 <li>To use a socket, call CreateUDPContext or CreateTCPContext with the desired parameters</li>
@@ -242,12 +242,12 @@ Usage</h1>
 <li>To reconstruct the original datagram from a sequence of FractalPackets, concatenated the data[] streams (From 0 to payload_size - 1) for each index from 0 to num_indices - 1</li>
 </ul>
 <hr  />
- <h2><a class="anchor" id="autotoc_md171"></a>
+ <h2><a class="anchor" id="autotoc_md175"></a>
 Client</h2>
 <p><a class="el" href="structSocketContext.html">SocketContext</a> context; CreateTCPContext(&amp;context, "10.0.0.5", 5055, 500, 250);</p>
 <p>char* msg = "Hello this is a message!"; SendTCPPacket(&amp;context, PACKET_MESSAGE, msg, strlen(msg);</p>
 <hr  />
- <h2><a class="anchor" id="autotoc_md173"></a>
+ <h2><a class="anchor" id="autotoc_md177"></a>
 Server</h2>
 <p><a class="el" href="structSocketContext.html">SocketContext</a> context; CreateTCPContext(&amp;context, NULL, 5055, 500, 250);</p>
 <p>FractalPacket* packet = NULL; while(!packet) { packet = ReadTCPPacket(context); }</p>

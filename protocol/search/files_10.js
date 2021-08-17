@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['wasapicapture_2ec_2055',['wasapicapture.c',['../wasapicapture_8c.html',1,'']]],
-  ['wasapicapture_2eh_2056',['wasapicapture.h',['../wasapicapture_8h.html',1,'']]],
-  ['win_5fclipboard_2ec_2057',['win_clipboard.c',['../win__clipboard_8c.html',1,'']]],
-  ['winapi_5finput_5fdriver_2ec_2058',['winapi_input_driver.c',['../winapi__input__driver_8c.html',1,'']]],
-  ['winapi_5finput_5fdriver_2eh_2059',['winapi_input_driver.h',['../winapi__input__driver_8h.html',1,'']]],
-  ['window_5fname_2ec_2060',['window_name.c',['../window__name_8c.html',1,'']]],
-  ['window_5fname_2eh_2061',['window_name.h',['../window__name_8h.html',1,'']]],
-  ['windows_5futils_2ec_2062',['windows_utils.c',['../windows__utils_8c.html',1,'']]],
-  ['windows_5futils_2eh_2063',['windows_utils.h',['../windows__utils_8h.html',1,'']]],
-  ['windowscursor_2ec_2064',['windowscursor.c',['../windowscursor_8c.html',1,'']]]
+  ['video_2ec_2065',['video.c',['../client_2video_8c.html',1,'(Global Namespace)'],['../server_2video_8c.html',1,'(Global Namespace)']]],
+  ['video_2eh_2066',['video.h',['../client_2video_8h.html',1,'(Global Namespace)'],['../server_2video_8h.html',1,'(Global Namespace)']]],
+  ['videodecode_2ec_2067',['videodecode.c',['../videodecode_8c.html',1,'']]],
+  ['videodecode_2eh_2068',['videodecode.h',['../videodecode_8h.html',1,'']]],
+  ['videoencode_2ec_2069',['videoencode.c',['../videoencode_8c.html',1,'']]],
+  ['videoencode_2eh_2070',['videoencode.h',['../videoencode_8h.html',1,'']]]
 ];

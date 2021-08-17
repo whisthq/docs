@@ -2,6 +2,8 @@ var dir_db3a54907829b36871118d03417739cd =
 [
     [ "audio.c", "client_2audio_8c.html", "client_2audio_8c" ],
     [ "audio.h", "client_2audio_8h.html", "client_2audio_8h" ],
+    [ "bitrate.c", "bitrate_8c.html", "bitrate_8c" ],
+    [ "bitrate.h", "bitrate_8h.html", "bitrate_8h" ],
     [ "client_utils.c", "client__utils_8c.html", "client__utils_8c" ],
     [ "client_utils.h", "client__utils_8h.html", "client__utils_8h" ],
     [ "handle_server_message.c", "handle__server__message_8c.html", "handle__server__message_8c" ],
