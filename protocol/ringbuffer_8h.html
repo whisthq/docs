@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('ringbuffer_8h.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -107,6 +108,11 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html">RingBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structRingBuffer.html" title="RingBuffer struct for abstracting away frame reconstruction and frame retrieval.">RingBuffer</a> struct for abstracting away frame reconstruction and frame retrieval.  <a href="structRingBuffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:adf06ce5e31c557cd5e3342811904c911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#adf06ce5e31c557cd5e3342811904c911">MAX_PACKET_NACKS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:adf06ce5e31c557cd5e3342811904c911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -163,7 +169,22 @@ audio/video.</h1>
 <h1><a class="anchor" id="autotoc_md55"></a>
 Usage</h1>
 <p>Initialize a ring buffer for audio or video using init_ring_buffer. When new packets arrive, call receive_packet to process the packet and modify or create ring buffer entries as needed. To nack a packet, call nack_packet. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="adf06ce5e31c557cd5e3342811904c911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf06ce5e31c557cd5e3342811904c911">&#9670;&nbsp;</a></span>MAX_PACKET_NACKS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PACKET_NACKS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="a2763204414a22a08c1edb26446244d80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2763204414a22a08c1edb26446244d80">&#9670;&nbsp;</a></span>FrameData</h2>
 

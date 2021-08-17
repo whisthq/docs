@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"server_2network_8h.html#ad178bab3f08d704a9e668939ffad8434":[9,0,2,8,6],
+"server_2network_8h.html#ae2ac516b9876383e13ecdd0e552f34dc":[9,0,2,8,9],
 "server_2network_8h_source.html":[9,0,2,8],
 "server_2video_8c.html":[9,0,2,11],
 "server_2video_8c.html#a01a041188d4486324c6ff534bf52e25c":[9,0,2,11,18],
@@ -199,7 +201,7 @@ var NAVTREEINDEX8 =
 "structFractalClientMessage.html#a1b50cde28800c82c9186b1c6afd5cdb3":[8,0,21,14],
 "structFractalClientMessage.html#a1dbda6c8337588eb94a56a891db9b8e7":[8,0,21,20],
 "structFractalClientMessage.html#a1f2c107958427670e44b0a7281b1a142":[8,0,21,11],
-"structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df":[8,0,21,17],
+"structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df":[8,0,21,16],
 "structFractalClientMessage.html#a24069289e1841145929dd766e4ceea9a":[8,0,21,10],
 "structFractalClientMessage.html#a3ffeebef56fe099790cf4ec8bbb6d5f2":[8,0,21,0],
 "structFractalClientMessage.html#a495e80b12b57a5b3697f53e1a43fd28d":[8,0,21,7],
@@ -210,7 +212,7 @@ var NAVTREEINDEX8 =
 "structFractalClientMessage.html#a6e6089eea6c3d9429d56a5f26d3ac6cb":[8,0,21,1],
 "structFractalClientMessage.html#a7184c50d7d3eba02d87d274a5969c3df":[8,0,21,26],
 "structFractalClientMessage.html#a8ea6c95372a7fd445dd4ef73f57b12f8":[8,0,21,2],
-"structFractalClientMessage.html#a9805b15c074716cd28fe6f00b4c604b6":[8,0,21,16],
+"structFractalClientMessage.html#a9805b15c074716cd28fe6f00b4c604b6":[8,0,21,17],
 "structFractalClientMessage.html#aa05f480722af0474f1d09080623e52cf":[8,0,21,5],
 "structFractalClientMessage.html#aa46f8125ff20df23821cfe676a1786dd":[8,0,21,15],
 "structFractalClientMessage.html#aa73229191846c04602687ddb1de3737a":[8,0,21,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "structFractalCursorImage.html#adaac4d79d4c893e6b1f62ec9c461a66c":[8,0,23,0],
 "structFractalCursorTypes.html":[8,0,24],
 "structFractalCursorTypes.html#a0ce11502c9481ef6f9c2fb2396599a25":[8,0,24,1],
-"structFractalCursorTypes.html#a1d7f181e6bd667e0a1cbef828272df9e":[8,0,24,9],
-"structFractalCursorTypes.html#a2fd7c46375da85c0386f57337ed651fa":[8,0,24,5],
-"structFractalCursorTypes.html#a31b3b911dd0bff2246bbf63d0e68ee57":[8,0,24,3]
+"structFractalCursorTypes.html#a1d7f181e6bd667e0a1cbef828272df9e":[8,0,24,9]
 };

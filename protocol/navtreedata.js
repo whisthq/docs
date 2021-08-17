@@ -91,11 +91,11 @@ var NAVTREEINDEX =
 "globals_vars_n.html",
 "lodepng_8h.html#a32282377bca2e3e43bcf16aa9daa8554",
 "nvidiatransfercapture_8c.html",
-"server_2network_8h_source.html",
-"structFractalCursorTypes.html#a377f3ab40416485096cbd6776702ba92",
-"structLodePNGTime.html#a32b68342f39f3d38ba91a721b1149b8f",
-"sysinfo_8c.html#a823bff2120fee3abcbe0f103b8162d45",
-"xtest__input__driver_8h.html"
+"server_2network_8h.html#ad178bab3f08d704a9e668939ffad8434",
+"structFractalCursorTypes.html#a2fd7c46375da85c0386f57337ed651fa",
+"structLodePNGTime.html",
+"sysinfo_8c.html#a3034ac5197f174a8c76e3f63a230fd1c",
+"xtest__input__driver_8c.html#aec6d0da6165b52bfcd168bace7e3c889"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

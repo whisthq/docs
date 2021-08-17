@@ -2,6 +2,7 @@ var ringbuffer_8h =
 [
     [ "FrameData", "structFrameData.html", "structFrameData" ],
     [ "RingBuffer", "structRingBuffer.html", "structRingBuffer" ],
+    [ "MAX_PACKET_NACKS", "ringbuffer_8h.html#adf06ce5e31c557cd5e3342811904c911", null ],
     [ "FrameData", "ringbuffer_8h.html#a2763204414a22a08c1edb26446244d80", null ],
     [ "FrameDataType", "ringbuffer_8h.html#a2eca4a720a0435f1f5e9f4eae291fe90", null ],
     [ "RingBuffer", "ringbuffer_8h.html#ac0132fb254601f025c3cf73363a3c90c", null ],

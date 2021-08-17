@@ -7,7 +7,7 @@ var structFrameData =
     [ "last_nacked_index", "structFrameData.html#aa204dd1d41815bff9f3df1576e4bd3ad", null ],
     [ "last_nacked_timer", "structFrameData.html#a862d6346d2101e2d68beba3f061f5b70", null ],
     [ "last_packet_timer", "structFrameData.html#af291b0bfed5c356e784ed5b6ef083036", null ],
-    [ "nacked_indices", "structFrameData.html#a348c442fe4d9d847af56cc6ca0638c92", null ],
+    [ "nacked_indices", "structFrameData.html#ae679a4e5201a00081a8231ad220c095a", null ],
     [ "num_packets", "structFrameData.html#ae057f87a42582a77c8e89d85dc1375db", null ],
     [ "num_times_nacked", "structFrameData.html#ade9910f3dfd891166f811094e39a0556", null ],
     [ "packets_received", "structFrameData.html#ad678f7fddd965f8239caef6d6adccb97", null ],

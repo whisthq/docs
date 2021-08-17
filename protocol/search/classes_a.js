@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nvidiacapturedevice_1917',['NvidiaCaptureDevice',['../structNvidiaCaptureDevice.html',1,'']]],
-  ['nvidiaencoder_1918',['NvidiaEncoder',['../structNvidiaEncoder.html',1,'']]]
+  ['nvidiacapturedevice_1919',['NvidiaCaptureDevice',['../structNvidiaCaptureDevice.html',1,'']]],
+  ['nvidiaencoder_1920',['NvidiaEncoder',['../structNvidiaEncoder.html',1,'']]]
 ];

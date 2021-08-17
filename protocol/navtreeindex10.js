@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"structLodePNGTime.html":[8,0,53],
+"structLodePNGTime.html#a295d890e862d5cd0c444e9d3a96fa9d5":[8,0,53,3],
 "structLodePNGTime.html#a32b68342f39f3d38ba91a721b1149b8f":[8,0,53,5],
 "structLodePNGTime.html#a6c691c5821e828488a8bb8a90751a2f0":[8,0,53,4],
 "structLodePNGTime.html#aa3dee3b7b3a1e730fbded7a7b8cf355e":[8,0,53,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "sync__packets_8h_source.html":[9,0,0,23],
 "sysinfo_8c.html":[9,0,1,7,18],
 "sysinfo_8c.html#a18e1848dd1f6ac2ef3a214ef6b157af2":[9,0,1,7,18,3],
-"sysinfo_8c.html#a2854e37843d597f91b5839ebff7de3dc":[9,0,1,7,18,6],
-"sysinfo_8c.html#a3034ac5197f174a8c76e3f63a230fd1c":[9,0,1,7,18,5],
-"sysinfo_8c.html#a3aa6ce794bc953ff1e452ac8c50a2235":[9,0,1,7,18,7]
+"sysinfo_8c.html#a2854e37843d597f91b5839ebff7de3dc":[9,0,1,7,18,6]
 };
