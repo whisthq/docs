@@ -107,6 +107,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a74d8fabea8bfc30077f88bad5a81c776"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__window__utils__windows_8c.html#a74d8fabea8bfc30077f88bad5a81c776">get_native_window_dpi</a> (SDL_Window *<a class="el" href="client_2video_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a>)</td></tr>
 <tr class="memdesc:a74d8fabea8bfc30077f88bad5a81c776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the DPI for the display of the provided window.  <a href="native__window__utils__windows_8c.html#a74d8fabea8bfc30077f88bad5a81c776">More...</a><br /></td></tr>
 <tr class="separator:a74d8fabea8bfc30077f88bad5a81c776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fdb8461d4ad88f587da71a354a7a727"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalYUVColor.html">FractalYUVColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__window__utils__windows_8c.html#a6fdb8461d4ad88f587da71a354a7a727">get_frame_color</a> (uint8_t *y_data, uint8_t *u_data, uint8_t *v_data, bool using_hardware)</td></tr>
+<tr class="separator:a6fdb8461d4ad88f587da71a354a7a727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file implements Windows APIs for native window. </p>
@@ -117,6 +119,46 @@ modifications not handled by SDL.</h1>
 Usage</h1>
 <p>Use these functions to modify the appearance or behavior of the native window underlying the SDL window. These functions will almost always need to be called from the same thread as SDL window creation and SDL event handling; usually this is the main thread. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a6fdb8461d4ad88f587da71a354a7a727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fdb8461d4ad88f587da71a354a7a727">&#9670;&nbsp;</a></span>get_frame_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFractalYUVColor.html">FractalYUVColor</a> get_frame_color </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>y_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>u_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>v_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>using_hardware</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afe081b078698fc9f7e657b72c933e513"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe081b078698fc9f7e657b72c933e513">&#9670;&nbsp;</a></span>get_native_window()</h2>
 

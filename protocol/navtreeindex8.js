@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"server_2network_8c.html#aa1f8977f45967a160b8f3ed1d93c9754":[9,0,2,7,23],
+"server_2network_8c.html#ac2159c75ccc892bf05ef04748882e025":[9,0,2,7,16],
+"server_2network_8c.html#ac54bd5b32c8baefaf13608a9296a7564":[9,0,2,7,0],
 "server_2network_8c.html#ac5b5686b7c49fe0d9f6049297416a558":[9,0,2,7,4],
 "server_2network_8c.html#ad178bab3f08d704a9e668939ffad8434":[9,0,2,7,9],
 "server_2network_8c.html#ae2ac516b9876383e13ecdd0e552f34dc":[9,0,2,7,13],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "structFractalClientMessage.html#ad34a862a5290a680e2e628cd7093d911":[8,0,23,12],
 "structFractalClientMessage.html#af7243df36e946b8fb6ad7d30ac4c0bd1":[8,0,23,4],
 "structFractalClientMessage.html#af8c3f85f21a8e5b1a2090512ca3f9896":[8,0,23,9],
-"structFractalCursor.html":[8,0,24],
-"structFractalCursor.html#a008e5f8805cd1509814cd425c20c514e":[8,0,24,7],
-"structFractalCursor.html#a09f8c9d331b2eb8a3d5761534d2ef22a":[8,0,24,9],
-"structFractalCursor.html#a275d01f717fbb24393e67298127b3ae3":[8,0,24,5]
+"structFractalCursor.html":[8,0,24]
 };
