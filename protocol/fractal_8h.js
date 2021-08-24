@@ -53,6 +53,7 @@ var fractal_8h =
     [ "USING_FFMPEG_IFRAME_FLAG", "fractal_8h.html#ac98c653bb06a80c855ad7013dccb3f26", null ],
     [ "USING_NVIDIA_CAPTURE", "fractal_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6", null ],
     [ "USING_NVIDIA_ENCODE", "fractal_8h.html#a8c14c321fd244515ad04ff39026feb75", null ],
+    [ "USING_SENTRY", "fractal_8h.html#a06264520eefaf16d80f93e8cd93817b5", null ],
     [ "USING_SERVERSIDE_SCALE", "fractal_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb", null ],
     [ "USING_SHM", "fractal_8h.html#a18c8a407377bbb09b730044ba92ff029", null ],
     [ "WINAPI_INPUT_DRIVER", "fractal_8h.html#a5e3688d82ca0322b9f939340cd50023c", null ],

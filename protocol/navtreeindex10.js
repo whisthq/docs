@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structLodePNGInfo.html#a71cf7e4f8837406061c3f045d7fc3006":[8,0,53,11],
 "structLodePNGInfo.html#a7394fc7407c168180b2cf64896fbe7fc":[8,0,53,4],
 "structLodePNGInfo.html#a80207e3e53c959b2285636496a3dd3f1":[8,0,53,22],
 "structLodePNGInfo.html#a8347476da7fc2fc6af4ec7ed44b638c6":[8,0,53,39],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "sync__packets_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51":[9,0,0,24,2],
 "sync__packets_8c.html#a498b4522ce3389a0c020fcdd5287644d":[9,0,0,24,4],
 "sync__packets_8c.html#a5120ece93dfddf5638a59e495e9c6d46":[9,0,0,24,12],
-"sync__packets_8c.html#a5a5adce20124948b4bb6e3847d570d93":[9,0,0,24,21],
-"sync__packets_8c.html#a65f0ddd57267ce009b4010bdf993f05b":[9,0,0,24,0]
+"sync__packets_8c.html#a5a5adce20124948b4bb6e3847d570d93":[9,0,0,24,21]
 };

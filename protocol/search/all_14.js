@@ -66,8 +66,9 @@ var searchData=
   ['using_5fnvidia_5fcapture_1787',['USING_NVIDIA_CAPTURE',['../fractal_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6',1,'fractal.h']]],
   ['using_5fnvidia_5fencode_1788',['USING_NVIDIA_ENCODE',['../fractal_8h.html#a8c14c321fd244515ad04ff39026feb75',1,'fractal.h']]],
   ['using_5fpiped_5farguments_1789',['using_piped_arguments',['../client__utils_8c.html#a7ff422af60ed8780f0dbfca8c92ec337',1,'client_utils.c']]],
-  ['using_5fserverside_5fscale_1790',['USING_SERVERSIDE_SCALE',['../fractal_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb',1,'fractal.h']]],
-  ['using_5fshm_1791',['USING_SHM',['../fractal_8h.html#a18c8a407377bbb09b730044ba92ff029',1,'fractal.h']]],
-  ['using_5fstun_1792',['using_stun',['../client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;main.c'],['../client_2main_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;main.c']]],
-  ['utc_5foffset_1793',['utc_offset',['../structFractalTimeData.html#a6878c191a70b9217cb415ee5cf7bc0c4',1,'FractalTimeData']]]
+  ['using_5fsentry_1790',['USING_SENTRY',['../fractal_8h.html#a06264520eefaf16d80f93e8cd93817b5',1,'fractal.h']]],
+  ['using_5fserverside_5fscale_1791',['USING_SERVERSIDE_SCALE',['../fractal_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb',1,'fractal.h']]],
+  ['using_5fshm_1792',['USING_SHM',['../fractal_8h.html#a18c8a407377bbb09b730044ba92ff029',1,'fractal.h']]],
+  ['using_5fstun_1793',['using_stun',['../client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;main.c'],['../client_2main_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;main.c']]],
+  ['utc_5foffset_1794',['utc_offset',['../structFractalTimeData.html#a6878c191a70b9217cb415ee5cf7bc0c4',1,'FractalTimeData']]]
 ];
