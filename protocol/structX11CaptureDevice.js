@@ -1,5 +1,6 @@
 var structX11CaptureDevice =
 [
+    [ "corner_color", "structX11CaptureDevice.html#a80a587966b34edd3fe9abcbe6f0a6f49", null ],
     [ "counter", "structX11CaptureDevice.html#abfd36ca31e71e058cc8b63592b2415df", null ],
     [ "damage", "structX11CaptureDevice.html#a74d01856486376e69cdbce519e5a9174", null ],
     [ "display", "structX11CaptureDevice.html#a47bfa7fe3830e8f7ffc8b7a48fc78870", null ],

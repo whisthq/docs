@@ -1,6 +1,7 @@
 var structVideoFrame =
 [
     [ "codec_type", "structVideoFrame.html#ae4cfd527d7faecb877fd5464037f11aa", null ],
+    [ "corner_color", "structVideoFrame.html#a59f5a62dc6b37a95b67c600a7f413053", null ],
     [ "data", "structVideoFrame.html#aec94d3047b7310df6191dff99bd929f8", null ],
     [ "has_cursor", "structVideoFrame.html#aef3314aab1ba78f86d87b04395658de6", null ],
     [ "height", "structVideoFrame.html#abdc75b129bdb137631597f75476536af", null ],

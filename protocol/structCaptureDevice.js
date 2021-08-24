@@ -3,6 +3,7 @@ var structCaptureDevice =
     [ "active_capture_device", "structCaptureDevice.html#a36c4bc68cdade3387c5b56dffa79bae9", null ],
     [ "bitmap", "structCaptureDevice.html#a4d79715c8323e9d3c34fc2419d54244d", null ],
     [ "Box", "structCaptureDevice.html#ae9fcde4b1986608dfca772fdf9fa01e1", null ],
+    [ "corner_color", "structCaptureDevice.html#a2c98177722c829280c8321793a269486", null ],
     [ "counter", "structCaptureDevice.html#a64ee073fbd22f7527d9e6224f33a76e6", null ],
     [ "D3D11context", "structCaptureDevice.html#a973f662b6b428b16853e9a1eb2bb7cbb", null ],
     [ "D3D11device", "structCaptureDevice.html#ab19dc55a0802e4854d4557cb3d77ab16", null ],
