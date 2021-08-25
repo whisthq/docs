@@ -83,7 +83,8 @@ $(document).ready(function(){initNavTree('error__monitor_8c.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">error_monitor.c File Reference</div>  </div>
 </div><!--header-->
@@ -99,9 +100,15 @@ $(document).ready(function(){initNavTree('error__monitor_8c.html',''); initResiz
 Macros</h2></td></tr>
 <tr class="memitem:a50fce9626b2a2a434fcdf1fbf944a40b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#a50fce9626b2a2a434fcdf1fbf944a40b">SENTRY_DSN</a>&#160;&#160;&#160;&quot;https://8e1447e8ea2f4ac6ac64e0150fa3e5d0@o400459.ingest.sentry.io/5373388&quot;</td></tr>
 <tr class="separator:a50fce9626b2a2a434fcdf1fbf944a40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611aea3d89115184e7b59a56c33e5d09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#a611aea3d89115184e7b59a56c33e5d09">MAX_EVENTS_IN_PERIOD</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a611aea3d89115184e7b59a56c33e5d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa4213bc7616e5536adaff78a778ad6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#acfa4213bc7616e5536adaff78a778ad6">MAX_EVENTS_PERIOD_MS</a>&#160;&#160;&#160;1000.0</td></tr>
+<tr class="separator:acfa4213bc7616e5536adaff78a778ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a117dee2a05899edad60bb85d53f59d57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#a117dee2a05899edad60bb85d53f59d57">check_error_monitor_backoff</a> ()</td></tr>
+<tr class="separator:a117dee2a05899edad60bb85d53f59d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f24be79dfc9dd371d5dd40856a59a85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#a5f24be79dfc9dd371d5dd40856a59a85">error_monitor_set_environment</a> (char *environment)</td></tr>
 <tr class="memdesc:a5f24be79dfc9dd371d5dd40856a59a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the error monitor to use the provided environment.  <a href="error__monitor_8c.html#a5f24be79dfc9dd371d5dd40856a59a85">More...</a><br /></td></tr>
 <tr class="separator:a5f24be79dfc9dd371d5dd40856a59a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +130,11 @@ Functions</h2></td></tr>
 <tr class="memitem:afd75d2bc78de7ef5c6d782337e3f96a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#afd75d2bc78de7ef5c6d782337e3f96a4">error_monitor_log_error</a> (const char *message)</td></tr>
 <tr class="memdesc:afd75d2bc78de7ef5c6d782337e3f96a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error event to the error monitor.  <a href="error__monitor_8c.html#afd75d2bc78de7ef5c6d782337e3f96a4">More...</a><br /></td></tr>
 <tr class="separator:afd75d2bc78de7ef5c6d782337e3f96a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a78f41661570a9eb3d4ed2a5f63782823"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#a78f41661570a9eb3d4ed2a5f63782823">last_error_event_timer</a></td></tr>
+<tr class="separator:a78f41661570a9eb3d4ed2a5f63782823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the functions to configure and report breadcrumbs. </p>
@@ -137,6 +149,34 @@ Usage</h1>
 <p>At this point, calling <code><a class="el" href="error__monitor_8c.html#aa6769fc9b7fd37709668f93f23735132" title="Logs a breadcrumb to the error monitor.">error_monitor_log_breadcrumb()</a></code> and <code><a class="el" href="error__monitor_8c.html#afd75d2bc78de7ef5c6d782337e3f96a4" title="Logs an error event to the error monitor.">error_monitor_log_error()</a></code> will report a trace of non-error events and report a detailed breakdown for error-level events to the error monitor service, respectively. Importantly, <em>you should almost never be calling this function by itself</em>. Instead, simply use the <code>LOG_*()</code> functions from <a class="el" href="logging_8h.html" title="This file contains the logging macros and utils to send Winlogon.">logging.h</a>, which will automatically send error monitor breadcrumbs and error reports as needed.</p>
 <p>Because of this integration with our logging setup, we run into race conditions in <code><a class="el" href="error__monitor_8c.html#ab5509b96231f401ea288eec740f85eed" title="Shuts down the error monitor.">error_monitor_shutdown()</a></code>, which may cause us to fail to report our last few breadcrumbs and error events. In order to avoid this, we must call <code><a class="el" href="error__monitor_8c.html#ab5509b96231f401ea288eec740f85eed" title="Shuts down the error monitor.">error_monitor_shutdown()</a></code> after calling <code><a class="el" href="logging_8c.html#aa702fa9ec966709ebb51bef79be7b33e" title="Destroy the logger object.">destroy_logger()</a></code>, to allow for any pending error monitor log calls to be handled. Eventually, we should set up a more robust solution for synchronizing these calls. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a611aea3d89115184e7b59a56c33e5d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a611aea3d89115184e7b59a56c33e5d09">&#9670;&nbsp;</a></span>MAX_EVENTS_IN_PERIOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_EVENTS_IN_PERIOD&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfa4213bc7616e5536adaff78a778ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa4213bc7616e5536adaff78a778ad6">&#9670;&nbsp;</a></span>MAX_EVENTS_PERIOD_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_EVENTS_PERIOD_MS&#160;&#160;&#160;1000.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a50fce9626b2a2a434fcdf1fbf944a40b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50fce9626b2a2a434fcdf1fbf944a40b">&#9670;&nbsp;</a></span>SENTRY_DSN</h2>
 
@@ -152,6 +192,23 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a117dee2a05899edad60bb85d53f59d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117dee2a05899edad60bb85d53f59d57">&#9670;&nbsp;</a></span>check_error_monitor_backoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check_error_monitor_backoff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a34f41217150d754fbef4f32e948748e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34f41217150d754fbef4f32e948748e3">&#9670;&nbsp;</a></span>error_monitor_initialize()</h2>
 
@@ -342,6 +399,21 @@ Usage</h1>
 
 <p>Shuts down the error monitor. </p>
 <dl class="section note"><dt>Note</dt><dd>This should only be called after calling <a class="el" href="logging_8h.html" title="This file contains the logging macros and utils to send Winlogon.">logging.h</a>'s <code><a class="el" href="logging_8c.html#aa702fa9ec966709ebb51bef79be7b33e" title="Destroy the logger object.">destroy_logger()</a></code>. See the "Usage" section above for details. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a78f41661570a9eb3d4ed2a5f63782823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f41661570a9eb3d4ed2a5f63782823">&#9670;&nbsp;</a></span>last_error_event_timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> last_error_event_timer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
