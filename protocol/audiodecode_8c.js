@@ -1,5 +1,6 @@
 var audiodecode_8c =
 [
+    [ "OUTPUT_FMT", "audiodecode_8c.html#ae7fba0d4c3bf2641625467893d9461e1", null ],
     [ "audio_decoder_decode_packet", "audiodecode_8c.html#a7eb64285c5bd3e0e96aae31af24b07f9", null ],
     [ "audio_decoder_get_frame", "audiodecode_8c.html#a06ecafd93f2347b15bb85d13faf0037a", null ],
     [ "audio_decoder_get_frame_data_size", "audiodecode_8c.html#a25429b8e0d6431f92c634233f2eb4c7f", null ],

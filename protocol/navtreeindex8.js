@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"server_2network_8c.html#a732e7db3c0c60e10c60ea9a6bb0690d8":[9,0,2,7,10],
 "server_2network_8c.html#a87359d0492cce4252fa833844855438d":[9,0,2,7,15],
 "server_2network_8c.html#a961bf3611973011277079ee5647d25b0":[9,0,2,7,19],
 "server_2network_8c.html#a9712f3cdf71debf012d7fe26b23b40d8":[9,0,2,7,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structFractalClientMessage.html#aa962a98ff0a051019e476606e41f8a0d":[8,0,23,27],
 "structFractalClientMessage.html#ab0d9a31ad39791710c9ded0d941835ef":[8,0,23,8],
 "structFractalClientMessage.html#abb187100c62cb23004f47478eea0bb27":[8,0,23,13],
-"structFractalClientMessage.html#acc775e4bcdc81355302dcb35e1f344ed":[8,0,23,28],
-"structFractalClientMessage.html#acedbede9d60d0d0fdd6b209d70c6f30c":[8,0,23,6]
+"structFractalClientMessage.html#acc775e4bcdc81355302dcb35e1f344ed":[8,0,23,28]
 };

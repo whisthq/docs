@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('audiodecode_8c.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">audiodecode.c File Reference</div>  </div>
@@ -89,6 +90,11 @@ $(document).ready(function(){initNavTree('audiodecode_8c.html',''); initResizabl
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="audiodecode_8h_source.html">audiodecode.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae7fba0d4c3bf2641625467893d9461e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audiodecode_8c.html#ae7fba0d4c3bf2641625467893d9461e1">OUTPUT_FMT</a>&#160;&#160;&#160;AV_SAMPLE_FMT_FLT</td></tr>
+<tr class="separator:ae7fba0d4c3bf2641625467893d9461e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae7a32f8ef9a38d7e14a4ad43871eb3ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioDecoder.html">AudioDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audiodecode_8c.html#ae7a32f8ef9a38d7e14a4ad43871eb3ec">create_audio_decoder</a> (int <a class="el" href="server_2network_8c.html#a527325650d66abd9626499785b3bafd2">sample_rate</a>)</td></tr>
@@ -123,7 +129,22 @@ Functions</h2></td></tr>
 <h1><a class="anchor" id="autotoc_md111"></a>
 Usage</h1>
 <p>Audio is decoded from AAC via FFmpeg. In order for FFmpeg to be able to decoder an audio frame, it needs to be have a certain duration of data. This is frequently more than a single packet, which is why we have a FIFO encoding queue. This is abstracted away in the decoder, each packet will already have enough data from the way the encoder encodes. You can initialize the AAC decoder via create_audio_decoder. You then decode packets via audio_decoder_decode_packet and convert them into readable format via audio_decoder_packet_readout. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ae7fba0d4c3bf2641625467893d9461e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7fba0d4c3bf2641625467893d9461e1">&#9670;&nbsp;</a></span>OUTPUT_FMT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OUTPUT_FMT&#160;&#160;&#160;AV_SAMPLE_FMT_FLT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a7eb64285c5bd3e0e96aae31af24b07f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7eb64285c5bd3e0e96aae31af24b07f9">&#9670;&nbsp;</a></span>audio_decoder_decode_packet()</h2>
 
