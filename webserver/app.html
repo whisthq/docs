@@ -84,12 +84,6 @@
 <li class="toctree-l2"><a class="reference internal" href="app.helpers.html#module-app.helpers">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="app.models.html">app.models package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="app.models.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="app.models.html#module-app.models.hardware">app.models.hardware module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="app.models.html#module-app.models">Module contents</a></li>
-</ul>
-</li>
 </ul>
 </div>
 </section>
@@ -1134,6 +1128,411 @@ rejected with RESOURCE_UNAVAILABLE status code.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>True if and only if _WEB_REQUESTS_ENABLED was properly set to the given parameter <cite>enabled</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-app.models">
+<span id="app-models-module"></span><h2>app.models module<a class="headerlink" href="#module-app.models" title="Permalink to this headline">¶</a></h2>
+<p>SQLAlchemy models</p>
+<dl class="simple">
+<dt>In this module, we define Python models that represent tables in our PostgreSQL database. Each</dt><dd><p>model’s attributes are automatically loaded from database column names when we call</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">DeferredReflection.prepare()</span></code> in <code class="docutils literal notranslate"><span class="pre">app/factory.py</span></code>.</p>
+<p>Note that SQLAlchemy is unable to reflect primary key constraints from views automatically. For
+models representing SQL views (e.g. <a class="reference internal" href="#app.models.LingeringInstances" title="app.models.LingeringInstances"><code class="xref py py-class docutils literal notranslate"><span class="pre">LingeringInstances</span></code></a>), the attribute representing the
+primary key column must be defined explicitly.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.InstanceInfo">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">InstanceInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.InstanceInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.ext.declarative.extensions.DeferredReflection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
+<p>General information about our EC2 instances</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.instance_name">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#app.models.InstanceInfo.instance_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>what is the instance called?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.cloud_provider_id">
+<span class="sig-name descname"><span class="pre">cloud_provider_id</span></span><a class="headerlink" href="#app.models.InstanceInfo.cloud_provider_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>instance id from AWS console</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.location">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#app.models.InstanceInfo.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>AWS region (i.e. us-east-1)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.instance_type">
+<span class="sig-name descname"><span class="pre">instance_type</span></span><a class="headerlink" href="#app.models.InstanceInfo.instance_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>what hardware is the instance running on?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.ip">
+<span class="sig-name descname"><span class="pre">ip</span></span><a class="headerlink" href="#app.models.InstanceInfo.ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>the instance’s public IP</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.nanocpus_remaining">
+<span class="sig-name descname"><span class="pre">nanocpus_remaining</span></span><a class="headerlink" href="#app.models.InstanceInfo.nanocpus_remaining" title="Permalink to this definition">¶</a></dt>
+<dd><p>CPU that isn’t in use</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.gpu_vram_remaining_kb">
+<span class="sig-name descname"><span class="pre">gpu_vram_remaining_kb</span></span><a class="headerlink" href="#app.models.InstanceInfo.gpu_vram_remaining_kb" title="Permalink to this definition">¶</a></dt>
+<dd><p>GPU that isn’t in use</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.memory_remaining_kb">
+<span class="sig-name descname"><span class="pre">memory_remaining_kb</span></span><a class="headerlink" href="#app.models.InstanceInfo.memory_remaining_kb" title="Permalink to this definition">¶</a></dt>
+<dd><p>RAM not in use</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.mandelbox_capacity">
+<span class="sig-name descname"><span class="pre">mandelbox_capacity</span></span><a class="headerlink" href="#app.models.InstanceInfo.mandelbox_capacity" title="Permalink to this definition">¶</a></dt>
+<dd><p>how many mandelboxes can run at once?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.last_updated_utc_unix_ms">
+<span class="sig-name descname"><span class="pre">last_updated_utc_unix_ms</span></span><a class="headerlink" href="#app.models.InstanceInfo.last_updated_utc_unix_ms" title="Permalink to this definition">¶</a></dt>
+<dd><p>when did this instance last tell us it existed?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.creation_time_utc_unix_ms">
+<span class="sig-name descname"><span class="pre">creation_time_utc_unix_ms</span></span><a class="headerlink" href="#app.models.InstanceInfo.creation_time_utc_unix_ms" title="Permalink to this definition">¶</a></dt>
+<dd><p>When was this instance created?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.aws_ami_id">
+<span class="sig-name descname"><span class="pre">aws_ami_id</span></span><a class="headerlink" href="#app.models.InstanceInfo.aws_ami_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>what image is this machine based on?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#app.models.InstanceInfo.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>either PRE_CONNECTION, ACTIVE, HOST_SERVICE_UNRESPONSIVE or DRAINING</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstanceInfo.commit_hash">
+<span class="sig-name descname"><span class="pre">commit_hash</span></span><a class="headerlink" href="#app.models.InstanceInfo.commit_hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>what commit hash of our infrastructure is this machine running?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.InstancesWithRoomForMandelboxes">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">InstancesWithRoomForMandelboxes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.InstancesWithRoomForMandelboxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.ext.declarative.extensions.DeferredReflection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
+<p>A map linking instance information to general mandelbox information
+i.e. ‘how many mandelboxes are running on this instance’,
+‘how many can be’, etc.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstancesWithRoomForMandelboxes.instance_name">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#app.models.InstancesWithRoomForMandelboxes.instance_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A unique identifier generated randomly to identify the instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstancesWithRoomForMandelboxes.location">
+<span class="sig-name descname"><span class="pre">location</span></span><a class="headerlink" href="#app.models.InstancesWithRoomForMandelboxes.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>where is the instance?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstancesWithRoomForMandelboxes.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#app.models.InstancesWithRoomForMandelboxes.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>what’s the instance’s status?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstancesWithRoomForMandelboxes.ami_id">
+<span class="sig-name descname"><span class="pre">ami_id</span></span><a class="headerlink" href="#app.models.InstancesWithRoomForMandelboxes.ami_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>What image is the instance running?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstancesWithRoomForMandelboxes.mandelbox_capacity">
+<span class="sig-name descname"><span class="pre">mandelbox_capacity</span></span><a class="headerlink" href="#app.models.InstancesWithRoomForMandelboxes.mandelbox_capacity" title="Permalink to this definition">¶</a></dt>
+<dd><p>How many mandelboxes can the instance have?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.InstancesWithRoomForMandelboxes.num_running_mandelboxes">
+<span class="sig-name descname"><span class="pre">num_running_mandelboxes</span></span><a class="headerlink" href="#app.models.InstancesWithRoomForMandelboxes.num_running_mandelboxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>and how many does it have?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">Column('instance_name',</span> <span class="pre">String(),</span> <span class="pre">table=&lt;instances_with_room_for_mandelboxes&gt;,</span> <span class="pre">primary_key=True,</span> <span class="pre">nullable=False)</span></em><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.LingeringInstances">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">LingeringInstances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.LingeringInstances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.ext.declarative.extensions.DeferredReflection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
+<p>A view detailing which instances haven’t updated recently so we can manually
+drain them.
+Specifically, it’s all instances that are listed as either  active or preconnection,
+but that have not updated their status in the db for the specified period of time:
+2 min for running instances, 15 for preconnected instances</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.LingeringInstances.instance_name">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#app.models.LingeringInstances.instance_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A unique identifier generated randomly to identify the instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.LingeringInstances.cloud_provider_id">
+<span class="sig-name descname"><span class="pre">cloud_provider_id</span></span><a class="headerlink" href="#app.models.LingeringInstances.cloud_provider_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>What’s it called on AWS?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.LingeringInstances.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#app.models.LingeringInstances.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>What’s it’s most recent status??</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">Column('instance_name',</span> <span class="pre">String(),</span> <span class="pre">table=&lt;lingering_instances&gt;,</span> <span class="pre">primary_key=True,</span> <span class="pre">nullable=False)</span></em><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.MandelboxInfo">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">MandelboxInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.MandelboxInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.ext.declarative.extensions.DeferredReflection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
+<p>Information about individual mandelboxes, namely
+who’s running them and where they’re running.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxInfo.mandelbox_id">
+<span class="sig-name descname"><span class="pre">mandelbox_id</span></span><a class="headerlink" href="#app.models.MandelboxInfo.mandelbox_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>which mandelbox is this?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxInfo.instance_name">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><a class="headerlink" href="#app.models.MandelboxInfo.instance_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>the instance the mandelbox lives on.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxInfo.user_id">
+<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#app.models.MandelboxInfo.user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>who requested it?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxInfo.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#app.models.MandelboxInfo.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>is it running?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.RegionToAmi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">RegionToAmi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.RegionToAmi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.ext.declarative.extensions.DeferredReflection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
+<p>This class represents the region_to_ami table in hardware
+it maps region names to the AMIs which should be used
+for instances in that region</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.RegionToAmi.region_name">
+<span class="sig-name descname"><span class="pre">region_name</span></span><a class="headerlink" href="#app.models.RegionToAmi.region_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the region to which the AMI corresponds as a string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.RegionToAmi.ami_id">
+<span class="sig-name descname"><span class="pre">ami_id</span></span><a class="headerlink" href="#app.models.RegionToAmi.ami_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A string representing the AMI ID of the latest AMI provisioned in the region
+corresponding to this row.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.RegionToAmi.client_commit_hash">
+<span class="sig-name descname"><span class="pre">client_commit_hash</span></span><a class="headerlink" href="#app.models.RegionToAmi.client_commit_hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>A string representing the commit hash for the client.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.RegionToAmi.ami_active">
+<span class="sig-name descname"><span class="pre">ami_active</span></span><a class="headerlink" href="#app.models.RegionToAmi.ami_active" title="Permalink to this definition">¶</a></dt>
+<dd><p>A boolean that will be marked true if this AMI corresponds to
+an active versions of the client app’.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.RegionToAmi.protected_from_scale_down">
+<span class="sig-name descname"><span class="pre">protected_from_scale_down</span></span><a class="headerlink" href="#app.models.RegionToAmi.protected_from_scale_down" title="Permalink to this definition">¶</a></dt>
+<dd><p>A bool indicating whether the AMI is currently having an initial
+buffer spun up for it</p>
+</dd></dl>
+
+<dl class="simple">
+<dt>Constraints:</dt><dd><dl class="simple">
+<dt>Unique:</dt><dd><p>_region_name_ami_id_unique_constraint: AMIs are expected to be unique per region
+and most likely global too.
+But didn’t find any reference to back that up, so including a constraint.</p>
+</dd>
+</dl>
 </dd>
 </dl>
 </dd></dl>
