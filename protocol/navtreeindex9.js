@@ -1,5 +1,11 @@
 var NAVTREEINDEX9 =
 {
+"structFractalClientMessage.html#aa46f8125ff20df23821cfe676a1786dd":[8,0,23,15],
+"structFractalClientMessage.html#aa73229191846c04602687ddb1de3737a":[8,0,23,21],
+"structFractalClientMessage.html#aa962a98ff0a051019e476606e41f8a0d":[8,0,23,27],
+"structFractalClientMessage.html#ab0d9a31ad39791710c9ded0d941835ef":[8,0,23,8],
+"structFractalClientMessage.html#abb187100c62cb23004f47478eea0bb27":[8,0,23,13],
+"structFractalClientMessage.html#acc775e4bcdc81355302dcb35e1f344ed":[8,0,23,28],
 "structFractalClientMessage.html#acedbede9d60d0d0fdd6b209d70c6f30c":[8,0,23,6],
 "structFractalClientMessage.html#acf1d9e1549e75954dbb508838693c724":[8,0,23,23],
 "structFractalClientMessage.html#ad0b944a61d472a58e1f3f4c144411184":[8,0,23,24],
@@ -104,11 +110,12 @@ var NAVTREEINDEX9 =
 "structFractalRGBColor.html#ae64928bcd033489ec1bfc1022a2a22dd":[8,0,36,0],
 "structFractalServerMessage.html":[8,0,37],
 "structFractalServerMessage.html#a15f229c03a491727b3a8582febf2af00":[8,0,37,1],
-"structFractalServerMessage.html#a21abf1827009c0b766e338676b922f57":[8,0,37,6],
+"structFractalServerMessage.html#a21abf1827009c0b766e338676b922f57":[8,0,37,7],
 "structFractalServerMessage.html#a3f132fc97985283b0e0b8bd464e6928b":[8,0,37,4],
 "structFractalServerMessage.html#a50b407d8616467284f0f88e1ce0a82c7":[8,0,37,0],
-"structFractalServerMessage.html#a80cfa1dc6167438d7e4c38c27ca3e436":[8,0,37,5],
+"structFractalServerMessage.html#a80cfa1dc6167438d7e4c38c27ca3e436":[8,0,37,6],
 "structFractalServerMessage.html#aaf6636fbb52fa6d8246ffb882943cd1a":[8,0,37,2],
+"structFractalServerMessage.html#ac2d3c1f23b0751938c55f26f8b7b13b0":[8,0,37,5],
 "structFractalServerMessage.html#acccf04404179521e1f37d6423baa8abe":[8,0,37,3],
 "structFractalTimeData.html":[8,0,38],
 "structFractalTimeData.html#a058114405e433ec692f12256de3fd86c":[8,0,38,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX9 =
 "structLodePNGInfo.html#a1b909e03596abf86d564641741b0087f":[8,0,53,23],
 "structLodePNGInfo.html#a22166bb10c89a4d80e206d6c4736b625":[8,0,53,25],
 "structLodePNGInfo.html#a25a81d760759bd0383ae5a81ba83911d":[8,0,53,40],
-"structLodePNGInfo.html#a35a37c55a3b6c5ff3d064dd26531c72b":[8,0,53,33],
-"structLodePNGInfo.html#a393e0b3948ca6674232e1cc625db282e":[8,0,53,35],
-"structLodePNGInfo.html#a39824e3bce473eb8a9a27c8075fc407d":[8,0,53,10],
-"structLodePNGInfo.html#a3a0795a8ec1ddcaac245ba3337054e46":[8,0,53,32],
-"structLodePNGInfo.html#a42bcacd0dbaaea01c04cc87b58ac3c1d":[8,0,53,14],
-"structLodePNGInfo.html#a4400b67420e9c225881901bb48eda9b2":[8,0,53,20],
-"structLodePNGInfo.html#a4d3407acdf79bf87f20a3562f210b393":[8,0,53,37],
-"structLodePNGInfo.html#a5098d6e8aa528d5197f51914439633b9":[8,0,53,15]
+"structLodePNGInfo.html#a35a37c55a3b6c5ff3d064dd26531c72b":[8,0,53,33]
 };

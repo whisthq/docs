@@ -1,5 +1,7 @@
 var server_2main_8c =
 [
+    [ "HANDLED_URI_MAX_LEN", "server_2main_8c.html#adc95f9b7193dc5487799bb500fad55df", null ],
+    [ "URI_HANDLER_FILE", "server_2main_8c.html#acbb846d0488e43d207fcd2c04d9894c9", null ],
     [ "get_fractal_client_messages", "server_2main_8c.html#a8f4c60bf326fadfc2297721115ec7926", null ],
     [ "graceful_exit", "server_2main_8c.html#a3178a3113fe7545fa8f931889c3deb72", null ],
     [ "handle_fractal_client_message", "server_2main_8c.html#a439293f64ea47126a05fad187a4882ee", null ],

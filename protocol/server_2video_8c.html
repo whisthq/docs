@@ -126,6 +126,9 @@ Functions</h2></td></tr>
 <tr class="separator:a27bfdcc708610481b47c9e7383c99241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34bd39d3decec9bb20a254ad91a8707d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a34bd39d3decec9bb20a254ad91a8707d">multithreaded_destroy_encoder</a> (void *opaque)</td></tr>
 <tr class="separator:a34bd39d3decec9bb20a254ad91a8707d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c">do_update_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the encoder upon request. Note that this function <em>returns</em> the updated encoder, due to the encoder factory.  <a href="server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c">More...</a><br /></td></tr>
+<tr class="separator:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26603a17edf486ab02cf85b75e60eb08"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">multithreaded_send_video</a> (void *opaque)</td></tr>
 <tr class="memdesc:a26603a17edf486ab02cf85b75e60eb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This loops and captures video frames, encodes them if needed, and sends them to the client along with cursor images if necessary.  <a href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">More...</a><br /></td></tr>
 <tr class="separator:a26603a17edf486ab02cf85b75e60eb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,6 +242,44 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a6a1d3a18d03d9029e12df0a96684cc4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a1d3a18d03d9029e12df0a96684cc4c">&#9670;&nbsp;</a></span>do_update_encoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVideoEncoder.html">VideoEncoder</a>* do_update_encoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the encoder upon request. Note that this function <em>returns</em> the updated encoder, due to the encoder factory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer</td></tr>
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new encoder </dd></dl>
+
+</div>
+</div>
 <a id="a34bd39d3decec9bb20a254ad91a8707d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34bd39d3decec9bb20a254ad91a8707d">&#9670;&nbsp;</a></span>multithreaded_destroy_encoder()</h2>
 

@@ -5,6 +5,7 @@ var server_2video_8c =
     [ "USE_GPU", "server_2video_8c.html#a54eafd80e10b63aa9cf7feaa7bce061d", null ],
     [ "USE_MONITOR", "server_2video_8c.html#ad846e33fa77d9246e697aa1142e2bd5c", null ],
     [ "VIDEO_BUFFER_SIZE", "server_2video_8c.html#aac42910ae45f91387f94d0487608a219", null ],
+    [ "do_update_encoder", "server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c", null ],
     [ "multithreaded_destroy_encoder", "server_2video_8c.html#a34bd39d3decec9bb20a254ad91a8707d", null ],
     [ "multithreaded_encoder_factory", "server_2video_8c.html#a27bfdcc708610481b47c9e7383c99241", null ],
     [ "multithreaded_send_video", "server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08", null ],
