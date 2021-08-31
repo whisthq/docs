@@ -235,11 +235,11 @@ Building the Protocol</h2>
 <h2><a class="anchor" id="autotoc_md13"></a>
 Running the Protocol</h2>
 <p>From the build directory (usually <code>/build</code>), you can simply run:</p>
-<div class="fragment"><div class="line">Windows:</div>
+<div class="fragment"><div class="line"># Windows:</div>
 <div class="line">fclient IP_ADDRESS [OPTION]...</div>
 <div class="line">fserver [OPTION]...</div>
 <div class="line"> </div>
-<div class="line">MacOS/Linux:</div>
+<div class="line"># MacOS/Linux:</div>
 <div class="line">./fclient IP_ADDRESS [OPTION]...</div>
 <div class="line">./fserver [OPTION]...</div>
 </div><!-- fragment --><p>For the specific option flags for the client, see the <a class="el" href="md_client_README.html">client-specific README</a>. If you want to see the specific option flags for the server, you're straight out of luck.</p>
@@ -281,13 +281,13 @@ Styling</h1>
 <h2><a class="anchor" id="autotoc_md24"></a>
 clang-format</h2>
 <p>For <code>.c</code> and <code>.h</code> files, we are formatting using the clang format <code>{BasedOnStyle: Google, IndentWidth: 4}</code>. You can download clang-format via the package manager for your respective OS:</p>
-<div class="fragment"><div class="line">MacOS:</div>
+<div class="fragment"><div class="line"># MacOS:</div>
 <div class="line">brew install clang-format</div>
 <div class="line"> </div>
-<div class="line">Linux Ubuntu:</div>
+<div class="line"># Linux Ubuntu:</div>
 <div class="line">apt-get install clang-format</div>
 <div class="line"> </div>
-<div class="line">Windows:</div>
+<div class="line"># Windows:</div>
 <div class="line">choco install llvm --force</div>
 </div><!-- fragment --><p>If using vim, VSCode, or Visual Studio, please set this up in your editor to format on save if possible (in Visual Studio, this is through the C/C++ extension settings, as well as the general 'Format on Save' setting/shortcut). Otherwise, please make sure to run your code through <code>clang</code> before commits. You can run it from the CLI by running <code>cmake . &amp;&amp; make clang-format</code>, on MacOS/Linux, or <code>cmake -G "NMake Makefiles" &amp;&amp; make clang-format</code>, on Windows.</p>
 <p>We have <a href="https://pre-commit.com/">pre-commit hooks</a> with clang-format support installed on this project, which you can initialize by first installing pre-commit via <code>pip install pre-commit</code> and then running <code>pre-commit install</code> to instantiate the hooks for clang-format.</p>
@@ -295,17 +295,17 @@ clang-format</h2>
 <h2><a class="anchor" id="autotoc_md25"></a>
 clang-tidy</h2>
 <p>Make sure your code is following code standards by running the script <code>./run-clang-tidy.sh</code>. The dependencies for each OS are listed below:</p>
-<div class="fragment"><div class="line">MacOS:</div>
+<div class="fragment"><div class="line"># MacOS:</div>
 <div class="line"># set up clang-tidy and clang-apply-replacements</div>
 <div class="line">brew install llvm</div>
 <div class="line">ln -s &quot;$(brew --prefix llvm)/bin/clang-tidy&quot; &quot;/usr/local/bin/clang-tidy&quot;</div>
 <div class="line">ln -s &quot;$(brew --prefix llvm)/bin/clang-apply-replacements&quot; &quot;/usr/local/bin/clang-apply-replacements&quot;</div>
 <div class="line"> </div>
-<div class="line">Linux Ubuntu:</div>
-<div class="line">sudo apt install clang-tidy -y</div>
+<div class="line"># Linux Ubuntu:</div>
 <div class="line"># clang-tidy and clang-apply-replacements-10 should come installed with clang</div>
+<div class="line">sudo apt install clang-tidy -y</div>
 <div class="line"> </div>
-<div class="line">Windows:</div>
+<div class="line"># Windows:</div>
 <div class="line"># Go to https://releases.llvm.org/download.html and install the pre-built LLVM binary. In the installation wizard, make sure to select &quot;add to path&quot;.</div>
 </div><!-- fragment --><p>Running <code>./run-clang-tidy.sh</code> will find all code standard violations and give you the option to modify and accept or reject changes. Running './run-clang-tidy.sh -c' will find whether there are any code standard violations and exit with status 1 if there are (designed for CI usage).</p>
 <p>If you want any lines to be exempted from the clang-tidy check, either place <code>// NOLINTNEXTLINE</code> in the line above or <code>// NOLINT</code> at the end of the line.</p>
