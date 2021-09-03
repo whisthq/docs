@@ -9,6 +9,7 @@ var server_2main_8c =
     [ "multithreaded_sync_tcp_packets", "server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51", null ],
     [ "binary_aes_private_key", "server_2main_8c.html#ac2159c75ccc892bf05ef04748882e025", null ],
     [ "client_joined_after_window_name_broadcast", "server_2main_8c.html#a28d9e55fc917106b3014669bf9a52309", null ],
+    [ "client_os", "server_2main_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420", null ],
     [ "clients", "server_2main_8c.html#a062c92ce2779fc429eb44fbfebcf9d52", null ],
     [ "connection_id", "server_2main_8c.html#a961bf3611973011277079ee5647d25b0", null ],
     [ "exiting", "server_2main_8c.html#a9aec5d9660ae8a0c8117f5d96b871606", null ],

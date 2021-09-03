@@ -17,6 +17,6 @@ var uinput__input__driver_8c =
     [ "get_keyboard_modifier_state", "uinput__input__driver_8c.html#ab7e6d0c554f4813e884048112739364e", null ],
     [ "ignore_key_state", "uinput__input__driver_8c.html#adfaf9acde8e1ba3a330060e06beb242f", null ],
     [ "recv_fds", "uinput__input__driver_8c.html#acd90bbe9de979b23743f9377a615f29c", null ],
-    [ "linux_keycodes", "uinput__input__driver_8c.html#a2d0da7b11ef28f2142d8e82857a8f2ef", null ],
+    [ "linux_keycodes", "uinput__input__driver_8c.html#a05a281131f961593c1ca1e39123f31b7", null ],
     [ "linux_mouse_buttons", "uinput__input__driver_8c.html#a7536f547f053d81b807aa2b1141eb193", null ]
 ];

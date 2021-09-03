@@ -10,6 +10,7 @@ var handle__client__message_8c =
     [ "client_codec_type", "handle__client__message_8c.html#a7cb7ba1823d4d6f9fea456f96e729710", null ],
     [ "client_dpi", "handle__client__message_8c.html#acb23d13f6e3a74caa90ec0482ec2c947", null ],
     [ "client_height", "handle__client__message_8c.html#ac3d44b527e1617a4fa8324474f434cfb", null ],
+    [ "client_os", "handle__client__message_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420", null ],
     [ "client_width", "handle__client__message_8c.html#accc5e4446971a6408d2505502c9bb3a0", null ],
     [ "clients", "handle__client__message_8c.html#a062c92ce2779fc429eb44fbfebcf9d52", null ],
     [ "host_id", "handle__client__message_8c.html#afd4e9daf88116b596d5ae5839f38b3ba", null ],

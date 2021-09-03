@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['osxfilenames_3370',['OSXFilenames',['../clipboard__osx_8h.html#ababf04235e81476fb86fccbe4a849561',1,'clipboard_osx.h']]],
-  ['osximage_3371',['OSXImage',['../clipboard__osx_8h.html#a3933849df961424992b259228b2cc153',1,'clipboard_osx.h']]]
+  ['mousemotionaccumulation_3393',['MouseMotionAccumulation',['../client__utils_8h.html#ae872a0e58f3a81d0dbda00b224ae509b',1,'client_utils.h']]]
 ];

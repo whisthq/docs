@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ringbuffer_3373',['RingBuffer',['../ringbuffer_8h.html#ac0132fb254601f025c3cf73363a3c90c',1,'ringbuffer.h']]],
-  ['rwlock_3374',['RWLock',['../rwlock_8h.html#ad83aebd0296d168d4ad23b7d68a7f67b',1,'rwlock.h']]]
+  ['peerupdatemessage_3396',['PeerUpdateMessage',['../fractal_8h.html#a043b226c81e235189b7e647fa919a84f',1,'fractal.h']]]
 ];

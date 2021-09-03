@@ -87,15 +87,15 @@ var NAVTREEINDEX =
 "client_2video_8c.html#a27a5f1af397e2937ecbd7c0a77f0766b",
 "clock_8h.html#ac6c1f208b451cecf8667af4ce182fd2d",
 "fractal_8c.html#a17ca4f730204cc3fccc0691bd8105847",
-"fractal_8h.html#abf13ea9a5895c46f8309ca5a57d176dd",
-"globals_l.html",
-"lodepng_8c.html#af0b16abca7a6a20ff4980e9f04374c90",
-"nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e",
-"server_2network_8c.html#a527325650d66abd9626499785b3bafd2",
-"structFractalClientMessage.html#a68efa5bf521e7824b149a1834957a402",
-"structLodePNGInfo.html#a1593fa6e1acc93f3b9de51c340bef94d",
-"structoption.html#a90d7ee9a51eea5c002682dbd0af149e4",
-"windowscursor_8c.html#a6ce7a55b8e0f495906e8e7b55683829d"
+"fractal_8h.html#aa56483762a863ec73e68c53c8fdf140cafcd5317ecd005a890b1c3e70c96f5695",
+"globals_func_w.html",
+"lodepng_8c.html#acfb12caea990f92b3aed7c199f615213",
+"native__window__utils__x11_8c.html#a637fdd1a1f351d7b4e338afbdbda5ab6",
+"server_2main_8c.html#a9aec5d9660ae8a0c8117f5d96b871606",
+"structFFmpegEncoder.html#ad4d170bef27ad9a721e99f9508cfec09",
+"structLodePNGDecompressSettings.html#a44a3616151a81422c237a5334752299c",
+"structVideoFrame.html#aec94d3047b7310df6191dff99bd929f8",
+"window__name_8h.html#aa2bf408416b9cca588b33f5807794dc1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

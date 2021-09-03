@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['native_5fwindow_5futils_2eh_2050',['native_window_utils.h',['../native__window__utils_8h.html',1,'']]],
-  ['native_5fwindow_5futils_5fwindows_2ec_2051',['native_window_utils_windows.c',['../native__window__utils__windows_8c.html',1,'']]],
-  ['native_5fwindow_5futils_5fx11_2ec_2052',['native_window_utils_x11.c',['../native__window__utils__x11_8c.html',1,'']]],
-  ['network_2ec_2053',['network.c',['../client_2network_8c.html',1,'(Global Namespace)'],['../server_2network_8c.html',1,'(Global Namespace)'],['../fractal_2network_2network_8c.html',1,'(Global Namespace)']]],
-  ['network_2eh_2054',['network.h',['../client_2network_8h.html',1,'(Global Namespace)'],['../server_2network_8h.html',1,'(Global Namespace)'],['../fractal_2network_2network_8h.html',1,'(Global Namespace)']]],
-  ['nvidia_5fencode_2ec_2055',['nvidia_encode.c',['../nvidia__encode_8c.html',1,'']]],
-  ['nvidia_5fencode_2eh_2056',['nvidia_encode.h',['../nvidia__encode_8h.html',1,'']]],
-  ['nvidiacapture_2ec_2057',['nvidiacapture.c',['../nvidiacapture_8c.html',1,'']]],
-  ['nvidiacapture_2eh_2058',['nvidiacapture.h',['../nvidiacapture_8h.html',1,'']]],
-  ['nvidiatransfercapture_2ec_2059',['nvidiatransfercapture.c',['../nvidiatransfercapture_8c.html',1,'']]],
-  ['nvidiatransfercapture_2eh_2060',['nvidiatransfercapture.h',['../nvidiatransfercapture_8h.html',1,'']]]
+  ['mac_5fclipboard_2ec_2061',['mac_clipboard.c',['../mac__clipboard_8c.html',1,'']]],
+  ['mac_5futils_2ec_2062',['mac_utils.c',['../mac__utils_8c.html',1,'']]],
+  ['mac_5futils_2eh_2063',['mac_utils.h',['../mac__utils_8h.html',1,'']]],
+  ['main_2ec_2064',['main.c',['../client_2main_8c.html',1,'(Global Namespace)'],['../server_2main_8c.html',1,'(Global Namespace)']]],
+  ['mouse_2ec_2065',['mouse.c',['../mouse_8c.html',1,'']]],
+  ['mouse_2eh_2066',['mouse.h',['../mouse_8h.html',1,'']]]
 ];

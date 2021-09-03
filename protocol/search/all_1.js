@@ -8,7 +8,7 @@ var searchData=
   ['active_5fencoder_5fidx_12',['active_encoder_idx',['../structVideoEncoder.html#adb457706b572dcd6b81eeecc250b3e3f',1,'VideoEncoder']]],
   ['active_5fgesture_13',['active_gesture',['../structFractalMultigestureMessage.html#ac45facdfa07ffd5878413aad523b0d32',1,'FractalMultigestureMessage']]],
   ['active_5fmomentum_5fscroll_14',['active_momentum_scroll',['../sdl__event__handler_8c.html#adb980b682301eb39aab79d8280ba0610',1,'sdl_event_handler.c']]],
-  ['active_5fpinch_15',['active_pinch',['../structFractalClientMessage.html#a3ffeebef56fe099790cf4ec8bbb6d5f2',1,'FractalClientMessage::active_pinch()'],['../client_2main_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48',1,'active_pinch():&#160;sdl_event_handler.c'],['../sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48',1,'active_pinch():&#160;sdl_event_handler.c']]],
+  ['active_5fpinch_15',['active_pinch',['../structFractalKeyboardState.html#a391f0c7e7af97abda1ccec089db8e36c',1,'FractalKeyboardState::active_pinch()'],['../client_2main_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48',1,'active_pinch():&#160;sdl_event_handler.c'],['../sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48',1,'active_pinch():&#160;sdl_event_handler.c']]],
   ['adapter_16',['adapter',['../structDisplayHardware.html#a9e1b56eec9fe57deb012c47cb7a64e91',1,'DisplayHardware']]],
   ['add_5fid_17',['add_id',['../structLodePNGEncoderSettings.html#a893aa542aa7c122c32ee36dd716fbcb2',1,'LodePNGEncoderSettings']]],
   ['addr_18',['addr',['../structSocketContext.html#ac7290efc7e58c25c9e8906153f3507cf',1,'SocketContext']]],

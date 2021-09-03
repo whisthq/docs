@@ -151,6 +151,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFractalDiscoveryReplyMessage.html">FractalDiscoveryReplyMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discovery reply message.  <a href="structFractalDiscoveryReplyMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFractalKeyboardState.html">FractalKeyboardState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message.  <a href="structFractalClientMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,8 +175,6 @@ Macros</h2></td></tr>
 <tr class="separator:a5f64c424fc4e04a8b3afd79a1e245625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06264520eefaf16d80f93e8cd93817b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a06264520eefaf16d80f93e8cd93817b5">USING_SENTRY</a>&#160;&#160;&#160;true</td></tr>
 <tr class="separator:a06264520eefaf16d80f93e8cd93817b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dbb3fc1c4a78ddba8904d186c8b2784"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a6dbb3fc1c4a78ddba8904d186c8b2784">NUM_KEYCODES</a>&#160;&#160;&#160;265</td></tr>
-<tr class="separator:a6dbb3fc1c4a78ddba8904d186c8b2784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881d9eef8e780a05fe9cd24eab5514d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a881d9eef8e780a05fe9cd24eab5514d8">CAPTURE_SPECIAL_WINDOWS_KEYS</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:a881d9eef8e780a05fe9cd24eab5514d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e2345e5641dd80fd2bad8b9cff3eff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a03e2345e5641dd80fd2bad8b9cff3eff">MAX_NUM_CLIENTS</a>&#160;&#160;&#160;10</td></tr>
@@ -257,6 +257,8 @@ Macros</h2></td></tr>
 <tr class="separator:aa1728270d73c5d1598de1fd691762eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea3cfda4f3a9f978ec759f206cf186fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aea3cfda4f3a9f978ec759f206cf186fe">CHUNK_SIZE</a>&#160;&#160;&#160;65536</td></tr>
 <tr class="separator:aea3cfda4f3a9f978ec759f206cf186fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a115e1297596f9885f9a0dbb6a63b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a61a115e1297596f9885f9a0dbb6a63b7">KEYCODE_UPPERBOUND</a>&#160;&#160;&#160;265</td></tr>
+<tr class="separator:a61a115e1297596f9885f9a0dbb6a63b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">safe_printf</a>&#160;&#160;&#160;UNINITIALIZED_LOG</td></tr>
 <tr class="memdesc:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will exit on error, and log a warning if this function is used when the logger is already initialized. If the logger is initialized, please use LOG_INFO.  <a href="fractal_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">More...</a><br /></td></tr>
 <tr class="separator:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,6 +304,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:adab434a4f56f688d5fb8babd46f76f5e"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527">FractalMultigestureType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#adab434a4f56f688d5fb8babd46f76f5e">FractalMultigestureType</a></td></tr>
 <tr class="memdesc:adab434a4f56f688d5fb8babd46f76f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture type.  <a href="fractal_8h.html#adab434a4f56f688d5fb8babd46f76f5e">More...</a><br /></td></tr>
 <tr class="separator:adab434a4f56f688d5fb8babd46f76f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1575aaeab2f2b0eea6864ae974e437b"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac1575aaeab2f2b0eea6864ae974e437b">FractalOSType</a></td></tr>
+<tr class="memdesc:ac1575aaeab2f2b0eea6864ae974e437b"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS type.  <a href="fractal_8h.html#ac1575aaeab2f2b0eea6864ae974e437b">More...</a><br /></td></tr>
+<tr class="separator:ac1575aaeab2f2b0eea6864ae974e437b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ac7ef9020b9f6ec3bcd1900c1b4cef3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFractalMultigestureMessage.html">FractalMultigestureMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a2ac7ef9020b9f6ec3bcd1900c1b4cef3">FractalMultigestureMessage</a></td></tr>
 <tr class="memdesc:a2ac7ef9020b9f6ec3bcd1900c1b4cef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture message.  <a href="fractal_8h.html#a2ac7ef9020b9f6ec3bcd1900c1b4cef3">More...</a><br /></td></tr>
 <tr class="separator:a2ac7ef9020b9f6ec3bcd1900c1b4cef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,157 +352,158 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> struct below.  <a href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">More...</a><br /></td></tr>
 <tr class="separator:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19e7f1b27cb5354c7031d5aef9163484"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">FractalKeycode</a> { <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd">FK_A</a> = 4, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aab0bb0036eaae33892ed0665cb12bcea">FK_UNKNOWN</a> = 0, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd">FK_A</a> = 4, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3de5ed32dd07837360f10206e9c1bdd1">FK_B</a> = 5, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3288e7db10b5914f9022a20f09b6f90f">FK_C</a> = 6, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484abec5b0a4a52ab1a099b54f1c1bc20df7">FK_D</a> = 7, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6a168aff6f84808b1afd0a07ae11324b">FK_E</a> = 8, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484abec5b0a4a52ab1a099b54f1c1bc20df7">FK_D</a> = 7, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6a168aff6f84808b1afd0a07ae11324b">FK_E</a> = 8, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a996a4a50a036b319f8dd5717be114d68">FK_F</a> = 9, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af2f87ab840784374b550ed44ba626825">FK_G</a> = 10, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad26f33ae99edf1e5d1b437ff9b879e5d">FK_H</a> = 11, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6c304406ebe7f768f50ffea098b82973">FK_I</a> = 12, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad26f33ae99edf1e5d1b437ff9b879e5d">FK_H</a> = 11, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6c304406ebe7f768f50ffea098b82973">FK_I</a> = 12, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a443fe4bd2206d215664634fb65319251">FK_J</a> = 13, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5ec59c702eff00a4f12a96f49c1daeb5">FK_K</a> = 14, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac2b5b2114ad4181a20ef39b6f9f1f8dd">FK_L</a> = 15, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1f319e1522ae26a9f81e72cadd6bffc8">FK_M</a> = 16, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac2b5b2114ad4181a20ef39b6f9f1f8dd">FK_L</a> = 15, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1f319e1522ae26a9f81e72cadd6bffc8">FK_M</a> = 16, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a74f692e89205b1e37911a0693e20a9d1">FK_N</a> = 17, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad065cf5892bede7bdb46ab55271a11ed">FK_O</a> = 18, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8dce5f3f0e1098f52b2581900ef17016">FK_P</a> = 19, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af9ebdfb062945532b99e9afc03985b68">FK_Q</a> = 20, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8dce5f3f0e1098f52b2581900ef17016">FK_P</a> = 19, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af9ebdfb062945532b99e9afc03985b68">FK_Q</a> = 20, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a435478c7885901194b94701e5328bca2">FK_R</a> = 21, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3519ef7bc8bffd0997ca3ce140e1b64b">FK_S</a> = 22, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab92d3169c47f0c7ac99aee17feed2b92">FK_T</a> = 23, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad655d5794fcf9b66a6caf12c56970aae">FK_U</a> = 24, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab92d3169c47f0c7ac99aee17feed2b92">FK_T</a> = 23, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad655d5794fcf9b66a6caf12c56970aae">FK_U</a> = 24, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a18e50cba35a9382c02ef961720d3b4ce">FK_V</a> = 25, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a83d360856506e2d486443c1dbc453286">FK_W</a> = 26, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a809f218d449451cd25a94b55324cfcdf">FK_X</a> = 27, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a40f9abe139ef9e19552aa84fa3f6efe4">FK_Y</a> = 28, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a809f218d449451cd25a94b55324cfcdf">FK_X</a> = 27, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a40f9abe139ef9e19552aa84fa3f6efe4">FK_Y</a> = 28, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a7717b50b7d4130797625663fe06ba8a5">FK_Z</a> = 29, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a591141082955023ddb8548d594851237">FK_1</a> = 30, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad41ee92089ae381c082353ef22ba522e">FK_2</a> = 31, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac3b61ec5467273b9e9da36d4661249c9">FK_3</a> = 32, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad41ee92089ae381c082353ef22ba522e">FK_2</a> = 31, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac3b61ec5467273b9e9da36d4661249c9">FK_3</a> = 32, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae81d83271cfd9585c149ee38bb42e322">FK_4</a> = 33, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aea5d05471d78051a52e746fd6d70ee72">FK_5</a> = 34, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a19da7d51701c0afcba08908503c78e0b">FK_6</a> = 35, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae52f42baa5c1ccb20f0bcc962f289f5e">FK_7</a> = 36, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a19da7d51701c0afcba08908503c78e0b">FK_6</a> = 35, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae52f42baa5c1ccb20f0bcc962f289f5e">FK_7</a> = 36, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a636364e5e1ca42d8527d64fca1e43a02">FK_8</a> = 37, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a52528daac0c5b1b3f40acee58bb0e3ae">FK_9</a> = 38, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad4da59b631617f30bd79bd50d03e6040">FK_0</a> = 39, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a93b370dc4d2cc202c3151a32502e8c54">FK_ENTER</a> = 40, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad4da59b631617f30bd79bd50d03e6040">FK_0</a> = 39, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a93b370dc4d2cc202c3151a32502e8c54">FK_ENTER</a> = 40, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a0f24dbd11272f6fca6c06adedd587d5f">FK_ESCAPE</a> = 41, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a53cac29e9b03e6903861ce2e9280e5c0">FK_BACKSPACE</a> = 42, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5bb6ca70be1105137ae22a82e1c875c3">FK_TAB</a> = 43, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab7a1670ecf3e29957013ef10105b2e07">FK_SPACE</a> = 44, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5bb6ca70be1105137ae22a82e1c875c3">FK_TAB</a> = 43, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab7a1670ecf3e29957013ef10105b2e07">FK_SPACE</a> = 44, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a913d051b1076a8c68ab002b1132dfd6e">FK_MINUS</a> = 45, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa7f3de42cac09f9d9dcfd538c2d24a9d">FK_EQUALS</a> = 46, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a46497c8c38e6c971ae2450da3a55ca17">FK_LBRACKET</a> = 47, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aea7d00bf76e51a8294edf8a467502bb2">FK_RBRACKET</a> = 48, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a46497c8c38e6c971ae2450da3a55ca17">FK_LBRACKET</a> = 47, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aea7d00bf76e51a8294edf8a467502bb2">FK_RBRACKET</a> = 48, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae1a6a063966bc39b2abf44a7b5fcb0b9">FK_BACKSLASH</a> = 49, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4e466885ae7e86d9d60e498d52609620">FK_SEMICOLON</a> = 51, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8836cbe8cd93ce8eaabdc2c8165414d6">FK_APOSTROPHE</a> = 52, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4c7d2d632681a0eb2c749b76b5185c8a">FK_BACKTICK</a> = 53, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8836cbe8cd93ce8eaabdc2c8165414d6">FK_APOSTROPHE</a> = 52, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4c7d2d632681a0eb2c749b76b5185c8a">FK_BACKTICK</a> = 53, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8e58cff2fdc723f151687d825887b9e7">FK_COMMA</a> = 54, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a94ef33653b65752ff5d34cefe0255874">FK_PERIOD</a> = 55, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac33759fb0db0773e945f540a5de345f1">FK_SLASH</a> = 56, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a19083c5d05222cc2e4707d58f35f253d">FK_CAPSLOCK</a> = 57, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac33759fb0db0773e945f540a5de345f1">FK_SLASH</a> = 56, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a19083c5d05222cc2e4707d58f35f253d">FK_CAPSLOCK</a> = 57, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab85a53812275166e0e89119914f32dab">FK_F1</a> = 58, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a813abe56d714fa4466f1b176c4688da9">FK_F2</a> = 59, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad30ef2c46ff3289c75a8b8af7d8dae54">FK_F3</a> = 60, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa9fc3ddd5c8375e1c00cd0ea6a9e309c">FK_F4</a> = 61, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad30ef2c46ff3289c75a8b8af7d8dae54">FK_F3</a> = 60, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa9fc3ddd5c8375e1c00cd0ea6a9e309c">FK_F4</a> = 61, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a48b8abc56d0f0070662bb824e43fbf20">FK_F5</a> = 62, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a0c072170b7696d324309fe788183063c">FK_F6</a> = 63, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a7627c213aacd80c52ed17b5b395a108d">FK_F7</a> = 64, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac1a909c4b1cf9ea2b873063026410cf9">FK_F8</a> = 65, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a7627c213aacd80c52ed17b5b395a108d">FK_F7</a> = 64, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac1a909c4b1cf9ea2b873063026410cf9">FK_F8</a> = 65, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9a752dd629f36970a2cc3246b2df4e6c">FK_F9</a> = 66, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a816f8b5fb04195278cc36d6f2561906c">FK_F10</a> = 67, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6727559da243aa450a3a1ea4db81cfca">FK_F11</a> = 68, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5399b6b14d1a3ad97fe6522be8e2000a">FK_F12</a> = 69, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6727559da243aa450a3a1ea4db81cfca">FK_F11</a> = 68, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5399b6b14d1a3ad97fe6522be8e2000a">FK_F12</a> = 69, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a36e3b50b7a0bd04dfcdc06825bcfc00f">FK_PRINTSCREEN</a> = 70, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a0fec00e23f944ed6208d8fbaf262967f">FK_SCROLLLOCK</a> = 71, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a12c1a42d0005f44ea18b72e0f0187756">FK_PAUSE</a> = 72, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad57d3e35aeb12abead2ef4c5aadbcda9">FK_INSERT</a> = 73, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a12c1a42d0005f44ea18b72e0f0187756">FK_PAUSE</a> = 72, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad57d3e35aeb12abead2ef4c5aadbcda9">FK_INSERT</a> = 73, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab8323e82200d344b036eb9f8447e2d6d">FK_HOME</a> = 74, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a819b56ff71335d12b87feba6c0d8ebda">FK_PAGEUP</a> = 75, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad1ba3dcc9b01be6fafc6a038106f54d8">FK_DELETE</a> = 76, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484adab27c6a6d60b5878a2f35e6061d1006">FK_END</a> = 77, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad1ba3dcc9b01be6fafc6a038106f54d8">FK_DELETE</a> = 76, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484adab27c6a6d60b5878a2f35e6061d1006">FK_END</a> = 77, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1579ce5d5bb894cb68e2556cd9c10c17">FK_PAGEDOWN</a> = 78, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9d23cd31b9c170e5c2759de310f041a3">FK_RIGHT</a> = 79, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af07fc58d05509d53181f708d8d065f35">FK_LEFT</a> = 80, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af8bbf659545ab49050d9eb1dcef535b9">FK_DOWN</a> = 81, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af07fc58d05509d53181f708d8d065f35">FK_LEFT</a> = 80, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af8bbf659545ab49050d9eb1dcef535b9">FK_DOWN</a> = 81, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6fa65284a189b9298ead12027adee956">FK_UP</a> = 82, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484addf90743116c74437a4f125ba8e3580d">FK_NUMLOCK</a> = 83, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a441feb392e50cc87cf1b55f368833757">FK_KP_DIVIDE</a> = 84, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac16c0b441c643c1cc29aff900851d662">FK_KP_MULTIPLY</a> = 85, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a441feb392e50cc87cf1b55f368833757">FK_KP_DIVIDE</a> = 84, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac16c0b441c643c1cc29aff900851d662">FK_KP_MULTIPLY</a> = 85, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a26c9efa1631fcd31f3e5c53b7843a00a">FK_KP_MINUS</a> = 86, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484adb8f18884d8aadc4a389d31eded8bfa2">FK_KP_PLUS</a> = 87, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af18949abfba6f227c4872174725440dd">FK_KP_ENTER</a> = 88, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac9df8ac9fef341631691a51bbcf36fe0">FK_KP_1</a> = 89, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af18949abfba6f227c4872174725440dd">FK_KP_ENTER</a> = 88, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac9df8ac9fef341631691a51bbcf36fe0">FK_KP_1</a> = 89, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af35cb86ea4e2404cd20b41073be38a40">FK_KP_2</a> = 90, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8e5e9e671fc95c49e1423eab58d1d068">FK_KP_3</a> = 91, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a08a34812a9e004d02bd110aefb077081">FK_KP_4</a> = 92, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae56f448c1c005278bd82b6045d3584d2">FK_KP_5</a> = 93, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a08a34812a9e004d02bd110aefb077081">FK_KP_4</a> = 92, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae56f448c1c005278bd82b6045d3584d2">FK_KP_5</a> = 93, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a411143651b06b06f547240de7bd76aa8">FK_KP_6</a> = 94, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1016c03f5cbd4c9d3f0fb86e66ef5ec9">FK_KP_7</a> = 95, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484afe6e2287ca245be4b03086c020608df4">FK_KP_8</a> = 96, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9975e78a506aaa118cc1943935e069b0">FK_KP_9</a> = 97, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484afe6e2287ca245be4b03086c020608df4">FK_KP_8</a> = 96, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9975e78a506aaa118cc1943935e069b0">FK_KP_9</a> = 97, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a2b2d7b385aa97e38dbecf9886087f9cb">FK_KP_0</a> = 98, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484acd0c9f821f37ecfc0834bc16badd35aa">FK_KP_PERIOD</a> = 99, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a76fc273a564785d2e3d7b22560929e2e">FK_APPLICATION</a> = 101, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a52aae9067d77996ba6fded2f4c63c5b5">FK_F13</a> = 104, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a76fc273a564785d2e3d7b22560929e2e">FK_APPLICATION</a> = 101, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a52aae9067d77996ba6fded2f4c63c5b5">FK_F13</a> = 104, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a90cf658b58fe9f3f611e46cd53176306">FK_F14</a> = 105, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4c4993c040397b1afc66c4a1ed849690">FK_F15</a> = 106, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4df93f616eb4d79e449ffca0f2da95e7">FK_F16</a> = 107, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aed5e1543039139c1587c15cb218c143b">FK_F17</a> = 108, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4df93f616eb4d79e449ffca0f2da95e7">FK_F16</a> = 107, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aed5e1543039139c1587c15cb218c143b">FK_F17</a> = 108, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aeca5d4f90301f1e5c2539d9aaab13a21">FK_F18</a> = 109, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a580f88894c3d56d8a6d9786a4f23a0dd">FK_F19</a> = 110, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a206617008fdbd145b668491f62f524ee">FK_MENU</a> = 118, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a38711aab829d9e731fff0d58d0fbbc4e">FK_MUTE</a> = 127, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a206617008fdbd145b668491f62f524ee">FK_MENU</a> = 118, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a38711aab829d9e731fff0d58d0fbbc4e">FK_MUTE</a> = 127, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9ac8de279413c83847392c6db0870cf9">FK_VOLUMEUP</a> = 128, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a79c1b2513489f19e35e348ed08d6c805">FK_VOLUMEDOWN</a> = 129, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac7c551a5a3e3486d85f04395e9c744ad">FK_LCTRL</a> = 224, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4a32ff6596af0b343a1ab1d97e61c0f2">FK_LSHIFT</a> = 225, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac7c551a5a3e3486d85f04395e9c744ad">FK_LCTRL</a> = 224, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4a32ff6596af0b343a1ab1d97e61c0f2">FK_LSHIFT</a> = 225, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9666f78a4e150e9a834ca391ab5ccd81">FK_LALT</a> = 226, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484acac0267cf99aef731019d28c4a861e47">FK_LGUI</a> = 227, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4ebed0029353c63da5abadcdc1e55568">FK_RCTRL</a> = 228, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab13ab530be447084cf223934ae13169d">FK_RSHIFT</a> = 229, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4ebed0029353c63da5abadcdc1e55568">FK_RCTRL</a> = 228, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab13ab530be447084cf223934ae13169d">FK_RSHIFT</a> = 229, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484acc315994e8d77bc610fa401d9a7ffadf">FK_RALT</a> = 230, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a241c3fefa30c0139f7654619c88854ad">FK_RGUI</a> = 231, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5b2e65e1c2ebfa53fa31bcd7db0605ab">FK_AUDIONEXT</a> = 258, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a70c1cddcc50ceac5d37ceb0dd69e177b">FK_AUDIOPREV</a> = 259, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5b2e65e1c2ebfa53fa31bcd7db0605ab">FK_AUDIONEXT</a> = 258, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a70c1cddcc50ceac5d37ceb0dd69e177b">FK_AUDIOPREV</a> = 259, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484acdb2191ebdaac77eeefe8fcc43fca7f3">FK_AUDIOSTOP</a> = 260, 
 <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa4f434050c76e13cfb03a6c2fa38f97f">FK_AUDIOPLAY</a> = 261, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8dee2fd9056ea67f5cda60a2df4941b0">FK_AUDIOMUTE</a> = 262, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a2b4807ee083dde3d95b6a66b19b4d46b">FK_MEDIASELECT</a> = 263
+&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8dee2fd9056ea67f5cda60a2df4941b0">FK_AUDIOMUTE</a> = 262, 
+<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a2b4807ee083dde3d95b6a66b19b4d46b">FK_MEDIASELECT</a> = 263
 <br />
  }</td></tr>
 <tr class="memdesc:a19e7f1b27cb5354c7031d5aef9163484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keycodes.  <a href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">More...</a><br /></td></tr>
@@ -554,6 +560,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a69973fa63511c3fd057755fcae4b8527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture type.  <a href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527">More...</a><br /></td></tr>
 <tr class="separator:a69973fa63511c3fd057755fcae4b8527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9161a926090d029e22f75f083d664f34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a> { <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d">FRACTAL_UNKNOWN_OS</a> = 0, 
+<a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34a9faf84ff98cb30604cea619cdfa3367d">FRACTAL_WINDOWS</a> = 1, 
+<a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34a68675b2596f255845cccdfb05c23b3b2">FRACTAL_APPLE</a> = 2, 
+<a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34a0f2213a39fae1debb99e1def4848720f">FRACTAL_LINUX</a> = 3
+ }</td></tr>
+<tr class="memdesc:a9161a926090d029e22f75f083d664f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS type.  <a href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">More...</a><br /></td></tr>
+<tr class="separator:a9161a926090d029e22f75f083d664f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b3a769a239a708b28e06e660b63f90"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90">FractalClientMessageType</a> { <br />
 &#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a02c0c7ec56775f79f4ee20ce24b2f5dc">CMESSAGE_NONE</a> = 0, 
 <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ad5a5909097baad47841396801ee21191">MESSAGE_KEYBOARD</a> = 1, 
@@ -836,6 +849,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a61a115e1297596f9885f9a0dbb6a63b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a115e1297596f9885f9a0dbb6a63b7">&#9670;&nbsp;</a></span>KEYCODE_UPPERBOUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEYCODE_UPPERBOUND&#160;&#160;&#160;265</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af0923737dee5ff7a8f1a17c4b9c1f2fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0923737dee5ff7a8f1a17c4b9c1f2fe">&#9670;&nbsp;</a></span>LOG_VIDEO</h2>
 
@@ -1054,20 +1081,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define NORETURN&#160;&#160;&#160;__attribute__((noreturn))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6dbb3fc1c4a78ddba8904d186c8b2784"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dbb3fc1c4a78ddba8904d186c8b2784">&#9670;&nbsp;</a></span>NUM_KEYCODES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NUM_KEYCODES&#160;&#160;&#160;265</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1659,6 +1672,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac1575aaeab2f2b0eea6864ae974e437b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1575aaeab2f2b0eea6864ae974e437b">&#9670;&nbsp;</a></span>FractalOSType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a> <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OS type. </p>
+<p>An enum of OS types </p>
+
+</div>
+</div>
 <a id="a93b8f2ac3292bebd1693ff0bdd09846e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93b8f2ac3292bebd1693ff0bdd09846e">&#9670;&nbsp;</a></span>FractalServerMessage</h2>
 
@@ -1859,7 +1889,9 @@ Functions</h2></td></tr>
 <p>Keycodes. </p>
 <p>Different accepted keycodes from client input. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd"></a>FK_A&#160;</td><td class="fielddoc"><p>4 </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a19e7f1b27cb5354c7031d5aef9163484aab0bb0036eaae33892ed0665cb12bcea"></a>FK_UNKNOWN&#160;</td><td class="fielddoc"><p>0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd"></a>FK_A&#160;</td><td class="fielddoc"><p>4 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a19e7f1b27cb5354c7031d5aef9163484a3de5ed32dd07837360f10206e9c1bdd1"></a>FK_B&#160;</td><td class="fielddoc"><p>5 </p>
 </td></tr>
@@ -2215,6 +2247,29 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a69973fa63511c3fd057755fcae4b8527a09d12a732eaebb811e574655d2730ed6"></a>MULTIGESTURE_PINCH_CLOSE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a69973fa63511c3fd057755fcae4b8527a1ab59eb574b1e82f729c76699e3218bf"></a>MULTIGESTURE_ROTATE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a69973fa63511c3fd057755fcae4b8527a39566e1d859d99ec29a65f2b57de025c"></a>MULTIGESTURE_CANCEL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9161a926090d029e22f75f083d664f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9161a926090d029e22f75f083d664f34">&#9670;&nbsp;</a></span>FractalOSType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OS type. </p>
+<p>An enum of OS types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d"></a>FRACTAL_UNKNOWN_OS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9161a926090d029e22f75f083d664f34a9faf84ff98cb30604cea619cdfa3367d"></a>FRACTAL_WINDOWS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9161a926090d029e22f75f083d664f34a68675b2596f255845cccdfb05c23b3b2"></a>FRACTAL_APPLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9161a926090d029e22f75f083d664f34a0f2213a39fae1debb99e1def4848720f"></a>FRACTAL_LINUX&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

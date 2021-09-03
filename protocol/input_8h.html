@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('input_8h.html',''); initResizable(); }
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae02991a8bb124185bd86e465ad3df1d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ae02991a8bb124185bd86e465ad3df1d0">reset_input</a> ()</td></tr>
-<tr class="memdesc:ae02991a8bb124185bd86e465ad3df1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input system. Should be used prior to every new client connection that will send inputs.  <a href="input_8h.html#ae02991a8bb124185bd86e465ad3df1d0">More...</a><br /></td></tr>
-<tr class="separator:ae02991a8bb124185bd86e465ad3df1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b0ab1da4398d0245d6673c76f5d452"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ac6b0ab1da4398d0245d6673c76f5d452">reset_input</a> (<a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a> os_type)</td></tr>
+<tr class="memdesc:ac6b0ab1da4398d0245d6673c76f5d452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input system. Should be used prior to every new client connection that will send inputs.  <a href="input_8h.html#ac6b0ab1da4398d0245d6673c76f5d452">More...</a><br /></td></tr>
+<tr class="separator:ac6b0ab1da4398d0245d6673c76f5d452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81933ce835596f75b018a99d771e939d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a81933ce835596f75b018a99d771e939d">replay_user_input</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="server_2main_8c.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fmsg)</td></tr>
 <tr class="memdesc:a81933ce835596f75b018a99d771e939d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replayed a received user action on a server, by sending it to the OS.  <a href="input_8h.html#a81933ce835596f75b018a99d771e939d">More...</a><br /></td></tr>
 <tr class="separator:a81933ce835596f75b018a99d771e939d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,8 +201,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ae02991a8bb124185bd86e465ad3df1d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae02991a8bb124185bd86e465ad3df1d0">&#9670;&nbsp;</a></span>reset_input()</h2>
+<a id="ac6b0ab1da4398d0245d6673c76f5d452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b0ab1da4398d0245d6673c76f5d452">&#9670;&nbsp;</a></span>reset_input()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,13 +210,20 @@ Usage</h1>
         <tr>
           <td class="memname">void reset_input </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a>&#160;</td>
+          <td class="paramname"><em>os_type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Initialize the input system. Should be used prior to every new client connection that will send inputs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os_type</td><td>The OS type to use for keyboard mapping </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

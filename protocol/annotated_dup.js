@@ -31,6 +31,7 @@ var annotated_dup =
     [ "FractalDiscoveryReplyMessage", "structFractalDiscoveryReplyMessage.html", "structFractalDiscoveryReplyMessage" ],
     [ "FractalDiscoveryRequestMessage", "structFractalDiscoveryRequestMessage.html", "structFractalDiscoveryRequestMessage" ],
     [ "FractalKeyboardMessage", "structFractalKeyboardMessage.html", "structFractalKeyboardMessage" ],
+    [ "FractalKeyboardState", "structFractalKeyboardState.html", "structFractalKeyboardState" ],
     [ "FractalMouseButtonMessage", "structFractalMouseButtonMessage.html", "structFractalMouseButtonMessage" ],
     [ "FractalMouseMotionMessage", "structFractalMouseMotionMessage.html", "structFractalMouseMotionMessage" ],
     [ "FractalMouseWheelMessage", "structFractalMouseWheelMessage.html", "structFractalMouseWheelMessage" ],

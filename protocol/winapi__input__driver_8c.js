@@ -16,5 +16,5 @@ var winapi__input__driver_8c =
     [ "get_keyboard_key_state", "winapi__input__driver_8c.html#a0633914f59dda19225c4514fca35da42", null ],
     [ "get_keyboard_modifier_state", "winapi__input__driver_8c.html#ab7e6d0c554f4813e884048112739364e", null ],
     [ "ignore_key_state", "winapi__input__driver_8c.html#adfaf9acde8e1ba3a330060e06beb242f", null ],
-    [ "windows_keycodes", "winapi__input__driver_8c.html#a1f4ec6c8c6d9da97787ccc4dc0694899", null ]
+    [ "windows_keycodes", "winapi__input__driver_8c.html#a79ab71d32b9f112962007b8dc84c3507", null ]
 ];
