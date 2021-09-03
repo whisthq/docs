@@ -14,6 +14,7 @@ var ringbuffer_8c =
     [ "nack_missing_packets_up_to_index", "ringbuffer_8c.html#ad39f9574458820226981480a98a1081b", null ],
     [ "nack_packet", "ringbuffer_8c.html#a36f7eee64b17022f222c26c71edc3078", null ],
     [ "receive_packet", "ringbuffer_8c.html#a2f7e1e295ea3891d8b9b342fab21db03", null ],
+    [ "reset_bitrate_stat_members", "ringbuffer_8c.html#ac90027614c72dd29204b9f884e0a0493", null ],
     [ "reset_frame", "ringbuffer_8c.html#a4415bb2d50c63ca97a0eafa97964188d", null ],
     [ "reset_ring_buffer", "ringbuffer_8c.html#aaae4a29416ec3cb8ae72b86ce57f3638", null ],
     [ "set_rendering", "ringbuffer_8c.html#adc37000ecd47712d4a8cc8e83867a60d", null ]

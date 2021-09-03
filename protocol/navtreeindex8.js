@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"server_2network_8c.html#a527325650d66abd9626499785b3bafd2":[9,0,2,7,24],
+"server_2network_8c.html#a56a1a7fd8ac80bfa44bf782fe3617193":[9,0,2,7,7],
+"server_2network_8c.html#a5d17c2bed3efc45988b308faa8392bc8":[9,0,2,7,21],
 "server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79":[9,0,2,7,5],
 "server_2network_8c.html#a69ac525d995758ffd8a2403a33ba581f":[9,0,2,7,3],
 "server_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4":[9,0,2,7,1],
@@ -123,8 +126,11 @@ var NAVTREEINDEX8 =
 "structBPMNode.html#a8a77213810f8e491f8d1f7d8793b641f":[8,0,11,1],
 "structBPMNode.html#ae0117b99903b29d19f41e0c242c25dca":[8,0,11,0],
 "structBitrateStatistics.html":[8,0,9],
-"structBitrateStatistics.html#a696af8c5cbc8888cff1e0a3c81b445ff":[8,0,9,1],
+"structBitrateStatistics.html#a2229a532d25059d9b848e0dbd3246932":[8,0,9,3],
+"structBitrateStatistics.html#a696af8c5cbc8888cff1e0a3c81b445ff":[8,0,9,4],
 "structBitrateStatistics.html#a7f51dbb483c0ec09af8af81db1afa7e8":[8,0,9,0],
+"structBitrateStatistics.html#acf1fa30c174709b2c6c8abe77e1c0368":[8,0,9,1],
+"structBitrateStatistics.html#add1b2e520593613c11662a1c41a3ea2e":[8,0,9,2],
 "structBitrates.html":[8,0,8],
 "structBitrates.html#a7a6a075fb9985d4995a12da354b06cd7":[8,0,8,0],
 "structBitrates.html#af93a88f0725aad9cc7ecd7aaeaf49af2":[8,0,8,1],
@@ -237,17 +243,11 @@ var NAVTREEINDEX8 =
 "structFractalClientMessage.html#a1b50cde28800c82c9186b1c6afd5cdb3":[8,0,23,14],
 "structFractalClientMessage.html#a1dbda6c8337588eb94a56a891db9b8e7":[8,0,23,20],
 "structFractalClientMessage.html#a1f2c107958427670e44b0a7281b1a142":[8,0,23,11],
-"structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df":[8,0,23,17],
+"structFractalClientMessage.html#a237b78ceef834d81b9a3c5311f9908df":[8,0,23,16],
 "structFractalClientMessage.html#a24069289e1841145929dd766e4ceea9a":[8,0,23,10],
 "structFractalClientMessage.html#a3ffeebef56fe099790cf4ec8bbb6d5f2":[8,0,23,0],
 "structFractalClientMessage.html#a495e80b12b57a5b3697f53e1a43fd28d":[8,0,23,7],
 "structFractalClientMessage.html#a4bda042c8ccebb3085388fdfc3d05127":[8,0,23,25],
 "structFractalClientMessage.html#a4f4ec4a4a3c4156372022f499673aeae":[8,0,23,22],
-"structFractalClientMessage.html#a5ea6942a8198b46bb6a661ea9999d961":[8,0,23,18],
-"structFractalClientMessage.html#a68efa5bf521e7824b149a1834957a402":[8,0,23,19],
-"structFractalClientMessage.html#a6e6089eea6c3d9429d56a5f26d3ac6cb":[8,0,23,1],
-"structFractalClientMessage.html#a7184c50d7d3eba02d87d274a5969c3df":[8,0,23,26],
-"structFractalClientMessage.html#a8ea6c95372a7fd445dd4ef73f57b12f8":[8,0,23,2],
-"structFractalClientMessage.html#a9805b15c074716cd28fe6f00b4c604b6":[8,0,23,16],
-"structFractalClientMessage.html#aa05f480722af0474f1d09080623e52cf":[8,0,23,5]
+"structFractalClientMessage.html#a5ea6942a8198b46bb6a661ea9999d961":[8,0,23,18]
 };

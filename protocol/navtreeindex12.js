@@ -1,5 +1,14 @@
 var NAVTREEINDEX12 =
 {
+"windowscursor_8c.html#a6ce7a55b8e0f495906e8e7b55683829d":[9,0,1,3,2,6],
+"windowscursor_8c.html#aa50ef5fa8f55b575238c91217d06626d":[9,0,1,3,2,7],
+"windowscursor_8c.html#aa64732edda15f0d6d9efb8f8e946d237":[9,0,1,3,2,3],
+"windowscursor_8c.html#aafb0ee0e975861db1aad64695e5ad7cc":[9,0,1,3,2,5],
+"windowscursor_8c.html#ac5aef5326566949f36f110411b227606":[9,0,1,3,2,2],
+"windowscursor_8c.html#ae483c9d0df4a54172fbf891200acd69d":[9,0,1,3,2,1],
+"x11__clipboard_8c.html":[9,0,1,1,7],
+"x11__clipboard_8c.html#a274cba0b7864e3a3d3ad5d1c21b3914b":[9,0,1,1,7,5],
+"x11__clipboard_8c.html#a40bf7c75239a7071b828779dc528187b":[9,0,1,1,7,7],
 "x11__clipboard_8c.html#a5664c155680604dda1fb4d43e99ad5ab":[9,0,1,1,7,10],
 "x11__clipboard_8c.html#a7f7c69fcb26be1f0547b02ff86a7ea4c":[9,0,1,1,7,6],
 "x11__clipboard_8c.html#a81ef7887d2090a327f564ecf1afe8fcd":[9,0,1,1,7,2],

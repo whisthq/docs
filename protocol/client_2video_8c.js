@@ -15,6 +15,7 @@ var client_2video_8c =
     [ "NUMBER_LOADING_FRAMES", "client_2video_8c.html#ade4f768ca0968a4e5944d25236f9a080", null ],
     [ "RECV_FRAMES_BUFFER_SIZE", "client_2video_8c.html#ae25c15f9233eff2796785d6f51159b56", null ],
     [ "REQUEST_IFRAME_ON_MISSING_PACKETS", "client_2video_8c.html#a593eaa748e8587a244384a571e8e20cf", null ],
+    [ "STATISTICS_SECONDS", "client_2video_8c.html#a3190cca650071548d6b75370b0e5c41c", null ],
     [ "USE_HARDWARE", "client_2video_8c.html#aad2b19cec36db1f64bc8992a5aa8cbf3", null ],
     [ "SDLVideoContext", "client_2video_8c.html#ae1ca498075131094d8d54ea592fae9f9", null ],
     [ "calculate_statistics", "client_2video_8c.html#abdd03a9a8632c1d1f80a3a113d5ba8d1", null ],

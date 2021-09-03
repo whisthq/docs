@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"fractal_8h.html#abf13ea9a5895c46f8309ca5a57d176dd":[9,0,1,2,1,15],
+"fractal_8h.html#ac1e00c8fbed99c74c417df246043bcb6":[9,0,1,2,1,71],
 "fractal_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec":[9,0,1,2,1,36],
 "fractal_8h.html#ac4b9ceebe220134e5a67f3596b06f752":[9,0,1,2,1,23],
 "fractal_8h.html#ac6afabdc09a49a433ee19d8a9486056d":[9,0,1,2,1,32],
@@ -143,8 +145,8 @@ var NAVTREEINDEX4 =
 "functions_t.html":[8,2,0,18],
 "functions_u.html":[8,2,0,19],
 "functions_v.html":[8,2,0,20],
-"functions_vars.html":[8,2,1],
 "functions_vars.html":[8,2,1,0],
+"functions_vars.html":[8,2,1],
 "functions_vars_a.html":[8,2,1,1],
 "functions_vars_b.html":[8,2,1,2],
 "functions_vars_c.html":[8,2,1,3],
@@ -205,8 +207,8 @@ var NAVTREEINDEX4 =
 "globals_defs_x.html":[9,1,6,22],
 "globals_e.html":[9,1,0,5],
 "globals_enum.html":[9,1,4],
-"globals_eval.html":[9,1,5,0],
 "globals_eval.html":[9,1,5],
+"globals_eval.html":[9,1,5,0],
 "globals_eval_c.html":[9,1,5,1],
 "globals_eval_d.html":[9,1,5,2],
 "globals_eval_e.html":[9,1,5,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "globals_g.html":[9,1,0,7],
 "globals_h.html":[9,1,0,8],
 "globals_i.html":[9,1,0,9],
-"globals_k.html":[9,1,0,10],
-"globals_l.html":[9,1,0,11],
-"globals_m.html":[9,1,0,12]
+"globals_k.html":[9,1,0,10]
 };

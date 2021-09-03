@@ -111,8 +111,14 @@ Data Fields</h2></td></tr>
 <tr class="separator:a57b1694749643d632f8cf0d0a2dd3305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6e3ca32887769ae2f52855fab96776f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#aa6e3ca32887769ae2f52855fab96776f">last_received_nonnack_id</a></td></tr>
 <tr class="separator:aa6e3ca32887769ae2f52855fab96776f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc462c5cab2b89ff34dbb3e7b1dfae99"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#afc462c5cab2b89ff34dbb3e7b1dfae99">num_nacked</a></td></tr>
-<tr class="separator:afc462c5cab2b89ff34dbb3e7b1dfae99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c8b6829b64fd8b7f0aa7dbf7847a07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a43c8b6829b64fd8b7f0aa7dbf7847a07">num_packets_nacked</a></td></tr>
+<tr class="separator:a43c8b6829b64fd8b7f0aa7dbf7847a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd759c93f9abe89bc60b57e307a278d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#abd759c93f9abe89bc60b57e307a278d1">num_packets_received</a></td></tr>
+<tr class="separator:abd759c93f9abe89bc60b57e307a278d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ab80f31a9df5fd35a5a1c3360b4663"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a01ab80f31a9df5fd35a5a1c3360b4663">num_frames_skipped</a></td></tr>
+<tr class="separator:a01ab80f31a9df5fd35a5a1c3360b4663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e1182176a371b72a662765e1202347"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#ad3e1182176a371b72a662765e1202347">num_frames_rendered</a></td></tr>
+<tr class="separator:ad3e1182176a371b72a662765e1202347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7affb58c98e2fd8ef8edf6bc5664717"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717">frames_received</a></td></tr>
 <tr class="separator:ac7affb58c98e2fd8ef8edf6bc5664717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a222e926e44d53e0f8bec5e58bbccfc64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a222e926e44d53e0f8bec5e58bbccfc64">max_id</a></td></tr>
@@ -252,14 +258,56 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="afc462c5cab2b89ff34dbb3e7b1dfae99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc462c5cab2b89ff34dbb3e7b1dfae99">&#9670;&nbsp;</a></span>num_nacked</h2>
+<a id="ad3e1182176a371b72a662765e1202347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e1182176a371b72a662765e1202347">&#9670;&nbsp;</a></span>num_frames_rendered</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int RingBuffer::num_nacked</td>
+          <td class="memname">int RingBuffer::num_frames_rendered</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01ab80f31a9df5fd35a5a1c3360b4663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ab80f31a9df5fd35a5a1c3360b4663">&#9670;&nbsp;</a></span>num_frames_skipped</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuffer::num_frames_skipped</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43c8b6829b64fd8b7f0aa7dbf7847a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c8b6829b64fd8b7f0aa7dbf7847a07">&#9670;&nbsp;</a></span>num_packets_nacked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuffer::num_packets_nacked</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd759c93f9abe89bc60b57e307a278d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd759c93f9abe89bc60b57e307a278d1">&#9670;&nbsp;</a></span>num_packets_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuffer::num_packets_received</td>
         </tr>
       </table>
 </div><div class="memdoc">

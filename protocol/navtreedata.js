@@ -84,18 +84,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "aes_8c.html",
-"client_2video_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5",
-"clock_8h.html#acd824f01e9b0a5671a7820c23c1eede1",
-"fractal_8c.html#a26b5a597b23ed194a2401b7dbc1bd502",
-"fractal_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec",
-"globals_n.html",
-"lodepng_8h.html",
-"nvidia__encode_8h.html",
-"server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79",
-"structFractalClientMessage.html#aa46f8125ff20df23821cfe676a1786dd",
-"structLodePNGInfo.html#a393e0b3948ca6674232e1cc625db282e",
-"structuivector.html#aa999025945f0c93d0461192475ae2720",
-"x11__clipboard_8c.html#a5664c155680604dda1fb4d43e99ad5ab"
+"client_2video_8c.html#a27a5f1af397e2937ecbd7c0a77f0766b",
+"clock_8h.html#ac6c1f208b451cecf8667af4ce182fd2d",
+"fractal_8c.html#a17ca4f730204cc3fccc0691bd8105847",
+"fractal_8h.html#abf13ea9a5895c46f8309ca5a57d176dd",
+"globals_l.html",
+"lodepng_8c.html#af0b16abca7a6a20ff4980e9f04374c90",
+"nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e",
+"server_2network_8c.html#a527325650d66abd9626499785b3bafd2",
+"structFractalClientMessage.html#a68efa5bf521e7824b149a1834957a402",
+"structLodePNGInfo.html#a1593fa6e1acc93f3b9de51c340bef94d",
+"structoption.html#a90d7ee9a51eea5c002682dbd0af149e4",
+"windowscursor_8c.html#a6ce7a55b8e0f495906e8e7b55683829d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

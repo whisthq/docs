@@ -9,7 +9,10 @@ var structRingBuffer =
     [ "last_received_nonnack_id", "structRingBuffer.html#aa6e3ca32887769ae2f52855fab96776f", null ],
     [ "max_id", "structRingBuffer.html#a222e926e44d53e0f8bec5e58bbccfc64", null ],
     [ "missing_frame_nack_timer", "structRingBuffer.html#a6069bcbd74d1374e507f9d16cadbb5e6", null ],
-    [ "num_nacked", "structRingBuffer.html#afc462c5cab2b89ff34dbb3e7b1dfae99", null ],
+    [ "num_frames_rendered", "structRingBuffer.html#ad3e1182176a371b72a662765e1202347", null ],
+    [ "num_frames_skipped", "structRingBuffer.html#a01ab80f31a9df5fd35a5a1c3360b4663", null ],
+    [ "num_packets_nacked", "structRingBuffer.html#a43c8b6829b64fd8b7f0aa7dbf7847a07", null ],
+    [ "num_packets_received", "structRingBuffer.html#abd759c93f9abe89bc60b57e307a278d1", null ],
     [ "receiving_frames", "structRingBuffer.html#ac44f73cf4dcb49ad0bbabc3fca4f1fd4", null ],
     [ "ring_buffer_size", "structRingBuffer.html#a82a70174568113a76b153e9f67b72532", null ],
     [ "type", "structRingBuffer.html#adc2ffd22ee8a7cdee24096e8b70b534e", null ]
