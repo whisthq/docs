@@ -3,6 +3,7 @@ var clipboard_8h =
     [ "ClipboardData", "structClipboardData.html", "structClipboardData" ],
     [ "ClipboardFiles", "structClipboardFiles.html", "structClipboardFiles" ],
     [ "GET_CLIPBOARD", "clipboard_8h.html#acf1d14716f8f17fb982f48300e3e0c38", null ],
+    [ "PATH_MAXLEN", "clipboard_8h.html#ade76749524806bb7873dd724056c4ba9", null ],
     [ "SET_CLIPBOARD", "clipboard_8h.html#a39e7c57aca05db0fb2a9ba9949a1ee5c", null ],
     [ "ClipboardChunkType", "clipboard_8h.html#a7d9aaa1f2170fa8b774f6d0136bd58e7", null ],
     [ "ClipboardData", "clipboard_8h.html#a092f67435f72a3755ebb0c3bc77d4d54", null ],

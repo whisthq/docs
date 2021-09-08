@@ -1,6 +1,6 @@
 var client_2main_8c =
 [
-    [ "MAX_APP_PATH_LEN", "client_2main_8c.html#a7413c093294048fbce2527eb27dba12e", null ],
+    [ "APP_PATH_MAXLEN", "client_2main_8c.html#a3a90209de834d7d87f20ea1f1d3408f4", null ],
     [ "SDL_MAIN_HANDLED", "client_2main_8c.html#a51f528deaaeb973f417b46a2ec36f850", null ],
     [ "handle_single_icon_launch_client_app", "client_2main_8c.html#aaa67857270c77a8376ea818ee854198a", null ],
     [ "main", "client_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97", null ],

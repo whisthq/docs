@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['handled_5furi_5fmax_5flen_3759',['HANDLED_URI_MAX_LEN',['../server_2main_8c.html#adc95f9b7193dc5487799bb500fad55df',1,'main.c']]],
-  ['handler_5farray_5fsize_3760',['HANDLER_ARRAY_SIZE',['../logging_8c.html#a75b79c4739a390fe7788f3673880afa2',1,'logging.c']]]
+  ['handled_5furi_5fmaxlen_3761',['HANDLED_URI_MAXLEN',['../server_2main_8c.html#a0a91ba3287363037712f8500e8357340',1,'main.c']]],
+  ['handler_5farray_5fsize_3762',['HANDLER_ARRAY_SIZE',['../logging_8c.html#a75b79c4739a390fe7788f3673880afa2',1,'logging.c']]]
 ];
