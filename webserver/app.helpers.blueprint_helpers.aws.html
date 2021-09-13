@@ -50,12 +50,13 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="app.helpers.blueprint_helpers.aws.aws_instance_post.check_instance_exists">
 <span class="sig-prename descclassname"><span class="pre">app.helpers.blueprint_helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">check_instance_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#app.helpers.blueprint_helpers.aws.aws_instance_post.check_instance_exists" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks whether a specified instance actually exists, using the AWS client
+<dd><p>Checks whether a specified instance actually exists and is not
+stopped/terminated, using the AWS client
 :param instance_id: the id of the instance to query
 :param location: the region to check in</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>True if the instance is up, else False</p>
+<dd class="field-odd"><p>True if the instance actually exists and is not stopped/terminated, else False</p>
 </dd>
 </dl>
 </dd></dl>

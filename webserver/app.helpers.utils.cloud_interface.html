@@ -54,18 +54,11 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_down">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">spin_til_instances_down</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_down" title="Permalink to this definition">¶</a></dt>
-<dd><p>Polls the cloud provider every time_wait seconds until all specified instances are down
-:param instance_ids: which instances to check
-:param time_wait: how long to wait between polls</p>
-<p>Returns: None</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_up">
-<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">spin_til_instances_up</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_up" title="Permalink to this definition">¶</a></dt>
-<dd><p>Polls the cloud provider every time_wait seconds until all specified instances are up
+<dt class="sig sig-object py" id="app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_running">
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">spin_til_instances_running</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.spin_til_instances_running" title="Permalink to this definition">¶</a></dt>
+<dd><p>Polls the cloud provider every time_wait seconds until all specified
+instances are marked as running by the cloud provider (NOT necessarily
+fully initialized and ready to accept connections yet).
 :param instance_ids: which instances to check
 :param time_wait: how long to wait between polls</p>
 <p>Returns: None</p>

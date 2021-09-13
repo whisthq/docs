@@ -52,19 +52,44 @@
 :param access_key: the AWS access key going with that key_id
 :type access_key: Optional[str]</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="app.helpers.utils.aws.base_ec2_client.EC2Client.check_if_instances_down">
-<span class="sig-name descname"><span class="pre">check_if_instances_down</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.check_if_instances_down" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks whether a given set of instances are stopped
-:param instance_ids: the instances to check</p>
-<p>Returns: a boolean corresponding to whether every instance is dead</p>
+<dt class="sig sig-object py" id="app.helpers.utils.aws.base_ec2_client.EC2Client.all_not_running">
+<span class="sig-name descname"><span class="pre">all_not_running</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.all_not_running" title="Permalink to this definition">¶</a></dt>
+<dd><p>A helper function that returns true if all instances provided are in
+the “not running” EC2 state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>instance_ids</strong> – which instances to check</p>
+</dd>
+</dl>
+<p>Returns: <cite>true</cite> if all instances are not running, <cite>false</cite> otherwise.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="app.helpers.utils.aws.base_ec2_client.EC2Client.check_if_instances_up">
-<span class="sig-name descname"><span class="pre">check_if_instances_up</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.check_if_instances_up" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks whether a given set of instances are running
-:param instance_ids: the instances to check</p>
-<p>Returns: a boolean corresponding to whether every instance is live</p>
+<dt class="sig sig-object py" id="app.helpers.utils.aws.base_ec2_client.EC2Client.all_running">
+<span class="sig-name descname"><span class="pre">all_running</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.all_running" title="Permalink to this definition">¶</a></dt>
+<dd><p>A helper function that returns true if all instances provided are in
+the “running” EC2 state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>instance_ids</strong> – which instances to check</p>
+</dd>
+</dl>
+<p>Returns: <cite>true</cite> if all instances are running, <cite>false</cite> otherwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.helpers.utils.aws.base_ec2_client.EC2Client.get_instance_states">
+<span class="sig-name descname"><span class="pre">get_instance_states</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="app.constants.html#app.constants.ec2_instance_states.EC2InstanceState" title="app.constants.ec2_instance_states.EC2InstanceState"><span class="pre">app.constants.ec2_instance_states.EC2InstanceState</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.get_instance_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the state of each of the provided instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>instance_ids</strong> – the instances to check</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Returns: a list of EC2InstanceState values, corresponding to the states</dt><dd><p>of the provided instances.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -76,18 +101,21 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_down">
-<span class="sig-name descname"><span class="pre">spin_til_instances_down</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_down" title="Permalink to this definition">¶</a></dt>
-<dd><p>Polls AWS every time_wait seconds until all specified instances are up
+<dt class="sig sig-object py" id="app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_not_running">
+<span class="sig-name descname"><span class="pre">spin_til_instances_not_running</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_not_running" title="Permalink to this definition">¶</a></dt>
+<dd><p>Polls AWS every time_wait seconds until all specified instances are
+marked as not running by AWS.
 :param instance_ids: which instances to check
 :param time_wait: how long to wait between polls</p>
 <p>Returns: None</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_up">
-<span class="sig-name descname"><span class="pre">spin_til_instances_up</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_up" title="Permalink to this definition">¶</a></dt>
-<dd><p>Polls AWS every time_wait seconds until all specified instances are up
+<dt class="sig sig-object py" id="app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_running">
+<span class="sig-name descname"><span class="pre">spin_til_instances_running</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.utils.aws.base_ec2_client.EC2Client.spin_til_instances_running" title="Permalink to this definition">¶</a></dt>
+<dd><p>Polls AWS every time_wait seconds until all specified instances are
+marked as running by AWS (NOT necessarily fully initialized and ready
+to accept connections yet).
 :param instance_ids: which instances to check
 :param time_wait: how long to wait between polls</p>
 <p>Returns: None</p>
