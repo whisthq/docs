@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"lodepng_8c.html#ac432c606cccae0b22f9ec10948f56ec4":[9,0,1,7,8,10],
 "lodepng_8c.html#ac5a9e38fc392fc26897610a6d824cc21":[9,0,1,7,8,40],
 "lodepng_8c.html#acfb12caea990f92b3aed7c199f615213":[9,0,1,7,8,15],
 "lodepng_8c.html#ad4b9dc33569e24062e077f5a69ead178":[9,0,1,7,8,93],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "native__window__utils__windows_8c.html#a4a1cc0cf009ac3e12e4ec1b4e65faded":[9,0,0,10,5],
 "native__window__utils__windows_8c.html#a637fdd1a1f351d7b4e338afbdbda5ab6":[9,0,0,10,4],
 "native__window__utils__windows_8c.html#a6fdb8461d4ad88f587da71a354a7a727":[9,0,0,10,1],
-"native__window__utils__windows_8c.html#a74d8fabea8bfc30077f88bad5a81c776":[9,0,0,10,3],
-"native__window__utils__windows_8c.html#aa5e85f401416fce58db1ca2448883855":[9,0,0,10,0]
+"native__window__utils__windows_8c.html#a74d8fabea8bfc30077f88bad5a81c776":[9,0,0,10,3]
 };

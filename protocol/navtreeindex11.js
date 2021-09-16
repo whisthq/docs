@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structVideoFrame.html#a60c91c18927cc386348501debd45ecc4":[8,0,82,6],
 "structVideoFrame.html#a7536e945f4295dd551e4eaa162b15a8d":[8,0,82,5],
 "structVideoFrame.html#a7a7f8852074f5c7ccf06f1a27e317bde":[8,0,82,10],
 "structVideoFrame.html#abdc75b129bdb137631597f75476536af":[8,0,82,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "winapi__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532":[9,0,1,4,6,4],
 "winapi__input__driver_8c.html#aec6d0da6165b52bfcd168bace7e3c889":[9,0,1,4,6,7],
 "winapi__input__driver_8h.html":[9,0,1,4,7],
-"winapi__input__driver_8h.html#a6b71b7e398618bbc36139211e28b26f3":[9,0,1,4,7,0],
-"winapi__input__driver_8h_source.html":[9,0,1,4,7]
+"winapi__input__driver_8h.html#a6b71b7e398618bbc36139211e28b26f3":[9,0,1,4,7,0]
 };
