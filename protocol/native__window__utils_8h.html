@@ -108,6 +108,9 @@ Functions</h2></td></tr>
 <tr class="separator:a74d8fabea8bfc30077f88bad5a81c776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fdb8461d4ad88f587da71a354a7a727"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalYUVColor.html">FractalYUVColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__window__utils_8h.html#a6fdb8461d4ad88f587da71a354a7a727">get_frame_color</a> (uint8_t *y_data, uint8_t *u_data, uint8_t *v_data, bool using_hardware)</td></tr>
 <tr class="separator:a6fdb8461d4ad88f587da71a354a7a727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e85f401416fce58db1ca2448883855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__window__utils_8h.html#aa5e85f401416fce58db1ca2448883855">declare_user_activity</a> ()</td></tr>
+<tr class="memdesc:aa5e85f401416fce58db1ca2448883855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares that UserActivity has occured, resetting the timer for screensavers/sleepmode.  <a href="native__window__utils_8h.html#aa5e85f401416fce58db1ca2448883855">More...</a><br /></td></tr>
+<tr class="separator:aa5e85f401416fce58db1ca2448883855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file exposes platform-independent APIs for. </p>
@@ -118,6 +121,25 @@ native window modifications not handled by SDL.</h1>
 Usage</h1>
 <p>Use these functions to modify the appearance or behavior of the native window underlying the SDL window. These functions will almost always need to be called from the same thread as SDL window creation and SDL event handling; usually this is the main thread. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="aa5e85f401416fce58db1ca2448883855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e85f401416fce58db1ca2448883855">&#9670;&nbsp;</a></span>declare_user_activity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void declare_user_activity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Declares that UserActivity has occured, resetting the timer for screensavers/sleepmode. </p>
+
+</div>
+</div>
 <a id="a6fdb8461d4ad88f587da71a354a7a727"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6fdb8461d4ad88f587da71a354a7a727">&#9670;&nbsp;</a></span>get_frame_color()</h2>
 

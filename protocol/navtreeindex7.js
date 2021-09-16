@@ -1,9 +1,12 @@
 var NAVTREEINDEX7 =
 {
-"native__window__utils__x11_8c.html#a4a1cc0cf009ac3e12e4ec1b4e65faded":[9,0,0,11,3],
-"native__window__utils__x11_8c.html#a637fdd1a1f351d7b4e338afbdbda5ab6":[9,0,0,11,2],
-"native__window__utils__x11_8c.html#a6fdb8461d4ad88f587da71a354a7a727":[9,0,0,11,0],
-"native__window__utils__x11_8c.html#a74d8fabea8bfc30077f88bad5a81c776":[9,0,0,11,1],
+"native__window__utils__windows_8c.html#afe081b078698fc9f7e657b72c933e513":[9,0,0,10,2],
+"native__window__utils__x11_8c.html":[9,0,0,11],
+"native__window__utils__x11_8c.html#a4a1cc0cf009ac3e12e4ec1b4e65faded":[9,0,0,11,4],
+"native__window__utils__x11_8c.html#a637fdd1a1f351d7b4e338afbdbda5ab6":[9,0,0,11,3],
+"native__window__utils__x11_8c.html#a6fdb8461d4ad88f587da71a354a7a727":[9,0,0,11,1],
+"native__window__utils__x11_8c.html#a74d8fabea8bfc30077f88bad5a81c776":[9,0,0,11,2],
+"native__window__utils__x11_8c.html#aa5e85f401416fce58db1ca2448883855":[9,0,0,11,0],
 "nvidia__encode_8c.html":[9,0,1,8,9],
 "nvidia__encode_8c.html#a12a20bac4fd4d9b21cc2bbcd9c559ba4":[9,0,1,8,9,8],
 "nvidia__encode_8c.html#a1dfb7e3e77454fb585140ba00684a59b":[9,0,1,8,9,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "server_2main_8c.html#a2c556bf7dad7ad139e553b7af6281656":[9,0,2,6,21],
 "server_2main_8c.html#a3178a3113fe7545fa8f931889c3deb72":[9,0,2,6,3],
 "server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51":[9,0,2,6,6],
-"server_2main_8c.html#a439293f64ea47126a05fad187a4882ee":[9,0,2,6,4],
-"server_2main_8c.html#a527325650d66abd9626499785b3bafd2":[9,0,2,6,18],
-"server_2main_8c.html#a8a5269d876b9e07618d093dbd293141c":[9,0,2,6,17],
-"server_2main_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73":[9,0,2,6,20]
+"server_2main_8c.html#a439293f64ea47126a05fad187a4882ee":[9,0,2,6,4]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"server_2main_8c.html#a527325650d66abd9626499785b3bafd2":[9,0,2,6,18],
+"server_2main_8c.html#a8a5269d876b9e07618d093dbd293141c":[9,0,2,6,17],
+"server_2main_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73":[9,0,2,6,20],
 "server_2main_8c.html#a8f4c60bf326fadfc2297721115ec7926":[9,0,2,6,2],
 "server_2main_8c.html#a961bf3611973011277079ee5647d25b0":[9,0,2,6,11],
 "server_2main_8c.html#a9aec5d9660ae8a0c8117f5d96b871606":[9,0,2,6,12],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "structFFmpegEncoder.html#a9a074395cf5a4d86e88dbc33887246c8":[8,0,22,13],
 "structFFmpegEncoder.html#aa0355dad999dc4488e7232a6ae7e7985":[8,0,22,2],
 "structFFmpegEncoder.html#aa06d046f88e26f184006e1d04149bb22":[8,0,22,19],
-"structFFmpegEncoder.html#ab0a0bffa578b5cdda3e3a2df79559235":[8,0,22,1],
-"structFFmpegEncoder.html#abd7c3cc4015ba4461719dad0ba536dfd":[8,0,22,20],
-"structFFmpegEncoder.html#ace0c3501fa100509441e629ed50be608":[8,0,22,15],
-"structFFmpegEncoder.html#ad28eb7b920e487f3686433bd573e1fde":[8,0,22,21]
+"structFFmpegEncoder.html#ab0a0bffa578b5cdda3e3a2df79559235":[8,0,22,1]
 };

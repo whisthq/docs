@@ -1,5 +1,8 @@
 var NAVTREEINDEX10 =
 {
+"structLodePNGDecoderSettings.html#af26f2b29cd338ce4476bee9571a0818a":[8,0,51,0],
+"structLodePNGDecompressSettings.html":[8,0,52],
+"structLodePNGDecompressSettings.html#a023aa5946c99934d40280850a4d8b204":[8,0,52,1],
 "structLodePNGDecompressSettings.html#a0bdb19d05ae04b4fce7ed8c72463ab57":[8,0,52,4],
 "structLodePNGDecompressSettings.html#a44a3616151a81422c237a5334752299c":[8,0,52,5],
 "structLodePNGDecompressSettings.html#a66e3608b541c64bb275c0ac1a80c3ec6":[8,0,52,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX10 =
 "structVideoFrame.html#a39ba6c50ef047fd9a11c7fbf32e01c6e":[8,0,82,8],
 "structVideoFrame.html#a4e5146fe473d1cbf298009ffb7b972d3":[8,0,82,7],
 "structVideoFrame.html#a59f5a62dc6b37a95b67c600a7f413053":[8,0,82,1],
-"structVideoFrame.html#a60c91c18927cc386348501debd45ecc4":[8,0,82,6],
-"structVideoFrame.html#a7536e945f4295dd551e4eaa162b15a8d":[8,0,82,5],
-"structVideoFrame.html#a7a7f8852074f5c7ccf06f1a27e317bde":[8,0,82,10],
-"structVideoFrame.html#abdc75b129bdb137631597f75476536af":[8,0,82,4]
+"structVideoFrame.html#a60c91c18927cc386348501debd45ecc4":[8,0,82,6]
 };
