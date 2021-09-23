@@ -15,7 +15,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Webserver Architecture" href="architecture.html" />
+    <link rel="next" title="Authentication" href="authentication.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -37,16 +37,23 @@
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="architecture.html">Webserver Architecture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="architecture.html#http-server">HTTP Server</a></li>
-<li class="toctree-l2"><a class="reference internal" href="architecture.html#redis-store">Redis Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="architecture.html#worker-pool">Worker Pool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authentication.html">Authentication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="authentication.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="authentication.html#token-validation">Token validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="authentication.html#custom-claims">Custom claims</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Webserver Responsibilities</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="responsibilities.html#access-control">Access Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="responsibilities.html#compute-scaling">Compute Scaling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="responsibilities.html#application-streaming">Application Streaming</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="stripe.html">Stripe Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="stripe.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stripe.html#subscription-status">Subscription status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stripe.html#payment-portal">Payment portal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stripe.html#optimizing-the-stripe-integration">Optimizing the Stripe integration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a><ul>
@@ -60,8 +67,10 @@
 <li class="toctree-l2"><a class="reference internal" href="services.html#stripe">Stripe</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="module_docs.html">Module Documentation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="modules.html">app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Module Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="app.html">app package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth0.html">auth0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments.html">Payments</a></li>
 </ul>
 </li>
 </ul>
@@ -120,17 +129,18 @@ services. It receives incoming requests from:</p>
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="architecture.html">Webserver Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authentication.html">Authentication</a></li>
 <li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Webserver Responsibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripe.html">Stripe Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_docs.html">Module Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Module Documentation</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="architecture.html" title="next chapter">Webserver Architecture</a></li>
+      <li>Next: <a href="authentication.html" title="next chapter">Authentication</a></li>
   </ul></li>
 </ul>
 </div>

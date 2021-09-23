@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Stripe Integration &#8212; Fractal Webserver  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Other Services" href="services.html" />
+    <link rel="prev" title="Webserver Responsibilities" href="responsibilities.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="stripe-integration">
+<h1>Stripe Integration<a class="headerlink" href="#stripe-integration" title="Permalink to this headline">¶</a></h1>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>The following configuration variables affect the Webserver’s ability to
+integrate with Stripe correctly:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="app.html#app.config.DeploymentConfig.STRIPE_CUSTOMER_ID_CLAIM" title="app.config.DeploymentConfig.STRIPE_CUSTOMER_ID_CLAIM"><code class="xref py py-attr docutils literal notranslate"><span class="pre">STRIPE_CUSTOMER_ID_CLAIM</span></code></a></p></li>
+<li><p><a class="reference internal" href="app.html#app.config.DeploymentConfig.STRIPE_PRICE_ID" title="app.config.DeploymentConfig.STRIPE_PRICE_ID"><code class="xref py py-attr docutils literal notranslate"><span class="pre">STRIPE_PRICE_ID</span></code></a></p></li>
+<li><p><a class="reference internal" href="app.html#app.config.DeploymentConfig.STRIPE_SECRET" title="app.config.DeploymentConfig.STRIPE_SECRET"><code class="xref py py-attr docutils literal notranslate"><span class="pre">STRIPE_SECRET</span></code></a></p></li>
+<li><p><a class="reference internal" href="app.html#app.config.DeploymentConfig.STRIPE_SUBSCRIPTION_STATUS_CLAIM" title="app.config.DeploymentConfig.STRIPE_SUBSCRIPTION_STATUS_CLAIM"><code class="xref py py-attr docutils literal notranslate"><span class="pre">STRIPE_SUBSCRIPTION_STATUS_CLAIM</span></code></a></p></li>
+</ul>
+<p>It is also important that the same
+<a class="reference internal" href="app.html#app.config.DeploymentConfig.STRIPE_PRICE_ID" title="app.config.DeploymentConfig.STRIPE_PRICE_ID"><code class="xref py py-attr docutils literal notranslate"><span class="pre">STRIPE_PRICE_ID</span></code></a> and
+<a class="reference internal" href="app.html#app.config.DeploymentConfig.STRIPE_SECRET" title="app.config.DeploymentConfig.STRIPE_SECRET"><code class="xref py py-attr docutils literal notranslate"><span class="pre">STRIPE_SECRET</span></code></a> values that the Webserver
+uses are stored in the appropriate Auth0 tenant’s <a class="reference external" href="https://auth0.com/docs/rules/configuration">Rules configuration</a> as
+<code class="docutils literal notranslate"><span class="pre">STRIPE_PRICE_ID</span></code> and <code class="docutils literal notranslate"><span class="pre">STRIPE_API_KEY</span></code> respectively.</p>
+<img alt="_images/rules.png" src="_images/rules.png" />
+</section>
+<section id="subscription-status">
+<h2>Subscription status<a class="headerlink" href="#subscription-status" title="Permalink to this headline">¶</a></h2>
+<p>Part of enforcing access control is denying service to users who lack active
+Fractal subscriptions. The <a class="reference internal" href="payments.html#payments.payment_required" title="payments.payment_required"><code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code></a> decorator
+implements this behavior. Each time the Webserver receives a request for a
+resource that is only available to paying users, the
+<a class="reference internal" href="payments.html#payments.payment_required" title="payments.payment_required"><code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code></a> decorator checks the authenticated user’s
+subscription status before deciding whether or not to allow the request to be
+processed as usual.</p>
+<p>As is mentioned in the section about <a class="reference internal" href="authentication.html#custom-claims"><span class="std std-ref">Custom claims</span></a>, each access token’s
+payload includes includes a <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code>
+claim whose value is a string representing the authorized user’s subscription
+status. More specifically, the value of the
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim is the value of the
+<code class="docutils literal notranslate"><span class="pre">status</span></code> attribute of the most recent non-terminal Stripe
+<a class="reference external" href="https://stripe.com/docs/api/subscriptions/object#subscription_object-status">Subscription object</a> associated with Stripe Customer record associated with
+the user’s Fractal account, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if all of a user’s subscriptions are in
+terminal states. Let’s break that down:</p>
+<ol class="arabic simple">
+<li><p>Also mentioned in the section about <a class="reference internal" href="authentication.html#custom-claims"><span class="std std-ref">Custom claims</span></a> is the
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/stripe_customer_id</span></code> claim. This claim contains the
+ID of the Stripe customer record associated with the authorized user’s
+Fractal account. The customer record associated with the authorized user’s
+is created the first time the user logs into Fractal.</p></li>
+<li><p>When a Fractal user buys a Fractal subscription, a Subscription object
+representing their subscription is associated with the Customer record
+associated with their account. An invariant that we don’t necessarily
+enforce, but we hope holds true is that each Fractal user is only paying for
+one subscription at a time (and so has only one Subscription object
+associated with their Customer record. Nevertheless, we disregard all
+Subscription objects associated with a user’s Customer record other than the
+most recent one when computing the value of the
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim to be on the safe side.</p></li>
+<li><p>Each subscription can be in a variety of “terminal” or “non-terminal” states.
+To be in a terminal state is to be un-renewable. There is no action a user or
+developer can take (e.g. updating payment information) to move a
+subscription that is in a terminal state into a non-terminal state. A
+subscription enters a terminal state when it is canceled either manually or
+automatically (e.g. due to a lack of payment). To be in a non-terminal state
+is for a subscription to be active or inactive but renewable. Users and
+developers alike can take action to keep a subscription in a non-terminal
+state (e.g. by updating payment information to cause subsequent payment
+attempts to succeed after a failed attempt) or move it into a terminal state
+(e.g. by canceling it). We can determine whether a subscription is in a
+“terminal” or “non-terminal” state by examining the appropriate Subscription
+object’s <code class="docutils literal notranslate"><span class="pre">status</span></code> attribute. A subscription is in a non-terminal state if
+and only if the value of its Subscription object’s <code class="docutils literal notranslate"><span class="pre">status</span></code> attribute is
+one of <code class="docutils literal notranslate"><span class="pre">active</span></code>, <code class="docutils literal notranslate"><span class="pre">past_due</span></code>, <code class="docutils literal notranslate"><span class="pre">incomplete</span></code>, or <code class="docutils literal notranslate"><span class="pre">trialing</span></code>. Otherwise
+(i.e. if and only if the value of the Subscription object’s <code class="docutils literal notranslate"><span class="pre">status</span></code>
+attribute is one of <code class="docutils literal notranslate"><span class="pre">unpaid</span></code>, <code class="docutils literal notranslate"><span class="pre">canceled</span></code>, or <code class="docutils literal notranslate"><span class="pre">incomplete_expired</span></code>), the
+subscription is in a terminal state.</p></li>
+<li><p>If and only if all of the authorized users are in terminal states, the value
+of the <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim is <code class="docutils literal notranslate"><span class="pre">null</span></code>.
+This is due to the fact that once a subscription enters a terminal state, it
+may as well not exist, but as long as it is in a non-terminal state, it may
+be worth knowing the exact state in which it is.</p></li>
+</ol>
+<p>The <a class="reference internal" href="payments.html#payments.payment_required" title="payments.payment_required"><code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code></a> decorator examines the value of the
+access token’s <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim and grants
+access to only those users whose subscriptions are <code class="docutils literal notranslate"><span class="pre">active</span></code> or <code class="docutils literal notranslate"><span class="pre">trialing</span></code>.</p>
+</section>
+<section id="payment-portal">
+<span id="id1"></span><h2>Payment portal<a class="headerlink" href="#payment-portal" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://stripe.com/docs/payments/checkout">Stripe Checkout Sessions</a> and the <a class="reference external" href="https://stripe.com/docs/billing/subscriptions/customer-portal">Stripe Customer Portal</a> eliminate the
+necessity of implementing our own payment and billing UI. Instead, when a user
+would like to manage their subscription or billing information, the desktop app
+calls the <code class="docutils literal notranslate"><span class="pre">/payment_portal_url</span></code> endpoint on the Webserver to obtain the URL
+of either a Stripe Checkout or Customer Portal session. Opening the URL brings
+up a Stripe-hosted form that allows the user to sign up for a new subscription
+or manage their existing subscription and billing information. Fractal
+developers can customize the form’s appearance from the <a class="reference external" href="https://dashboard.stripe.com/settings/billing/portal">Stripe dashboard</a>.</p>
+<p>The Webserver determines whether or not a Checkout or Customer Portal session
+should be created based on the value of the authenticated user’s access token’s
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim. If its value indicates
+that the user has a subscription in a non-terminal state (one of <code class="docutils literal notranslate"><span class="pre">active</span></code>,
+<code class="docutils literal notranslate"><span class="pre">past_due</span></code>, <code class="docutils literal notranslate"><span class="pre">incomplete</span></code>, or <code class="docutils literal notranslate"><span class="pre">trialing</span></code>), then the Webserver creates a
+Customer Portal session and returns its URL to the client so the user can
+update their existing subscription and billing information. If its value
+indicates that all of the user’s subscriptions are in teriminal states
+(<code class="docutils literal notranslate"><span class="pre">unpaid</span></code>, <code class="docutils literal notranslate"><span class="pre">canceled</span></code>, or <code class="docutils literal notranslate"><span class="pre">incomplete_expired</span></code>), the Webserver creates a
+Checkout session and returns its URL to the client os the user can purchase a
+new subscription.</p>
+</section>
+<section id="optimizing-the-stripe-integration">
+<span id="stripe-optimization"></span><h2>Optimizing the Stripe integration<a class="headerlink" href="#optimizing-the-stripe-integration" title="Permalink to this headline">¶</a></h2>
+<p>We have decided to define the custom
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/stripe_customer_id</span></code> and
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> access token claims in order to
+share information between Stripe and the rest of our backend as efficiently as
+possible.</p>
+<p>Not mentioned in the <a class="reference internal" href="#payment-portal">payment portal</a> section is that in order to create a
+Checkout or Customer Portal session for an authenticated user, the Webserver
+needs to know the ID of the Stripe Customer associated with that user. The
+Webserver could obtain the necessary information by querying Stripe or Auth0’s
+API, but round trips are time-consuming. By claiming the ID of the Customer
+record associated a user’s account in each of their access tokens, we eliminate
+at least one round trip that must be made to Stripe or Auth0’s API.</p>
+<p>Each time a user sends a request to an endpoint that is protected by the
+<a class="reference internal" href="payments.html#payments.payment_required" title="payments.payment_required"><code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code></a> decorator, the Webserver needs to look up the
+authenticated user’s subscription status in order to enforce access control. It
+would be possible to extract the ID of the Customer record associated with the
+user’s account and query the Stripe API for the subscription status, but such
+queries have been observed to take as much as a quarter of a second, which is an
+unacceptably long time. Furthermore, under high load, we risk exceeding our
+Stripe API rate limits.</p>
+<p>The values of each of these claims is re-computed each time a new access token
+is issued. The only downside of re-computing the value of the
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim is that the subscription
+status claimed in the user’s current access token may fall out of sync with the
+user’s actual subscription status. In theory, an extremely meticulous and
+technical user could continue to use a subscription for one extra day after it
+expires. However, we don’t believe that this worst-case scenario is worth
+addressing, especially considering the advantages and ease of adoption of
+caching a user’s subscription status in their access token.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Fractal Webserver</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="authentication.html">Authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Webserver Responsibilities</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Stripe Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#subscription-status">Subscription status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#payment-portal">Payment portal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optimizing-the-stripe-integration">Optimizing the Stripe integration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Module Documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="responsibilities.html" title="previous chapter">Webserver Responsibilities</a></li>
+      <li>Next: <a href="services.html" title="next chapter">Other Services</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Fractal Computers, Inc..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/stripe.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -434,6 +434,13 @@
       </ul></li>
       <li><a href="app.helpers.utils.metrics.html#app.helpers.utils.metrics.flask_app.app_record_metrics">app_record_metrics() (in module app.helpers.utils.metrics.flask_app)</a>
 </li>
+      <li>
+    auth0
+
+      <ul>
+        <li><a href="auth0.html#module-auth0">module</a>
+</li>
+      </ul></li>
       <li><a href="app.html#app.config.DeploymentConfig.AUTH0_DOMAIN">AUTH0_DOMAIN (app.config.DeploymentConfig property)</a>
 
       <ul>
@@ -486,6 +493,8 @@
 </li>
       <li><a href="app.helpers.blueprint_helpers.aws.html#app.helpers.blueprint_helpers.aws.aws_instance_post.check_instance_exists">check_instance_exists() (in module app.helpers.blueprint_helpers.aws.aws_instance_post)</a>
 </li>
+      <li><a href="payments.html#payments.check_payment">check_payment() (in module payments)</a>
+</li>
       <li><a href="app.html#app.models.RegionToAmi.client_commit_hash">client_commit_hash (app.models.RegionToAmi attribute)</a>
 
       <ul>
@@ -516,8 +525,6 @@
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="app.html#app.config.DeploymentConfig.database_url">database_url (app.config.DeploymentConfig property)</a>
-</li>
       <li><a href="app.html#app.factory.decode_key_callback">decode_key_callback() (in module app.factory)</a>
 </li>
       <li><a href="app.html#app.config.DeploymentConfig.DEFAULT_INSTANCE_BUFFER">DEFAULT_INSTANCE_BUFFER (app.config.DeploymentConfig property)</a>
@@ -550,8 +557,6 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="app.html#app.config.DeploymentConfig.ENDPOINT_SECRET">ENDPOINT_SECRET (app.config.DeploymentConfig property)</a>
-</li>
       <li><a href="app.html#app.config.DeploymentConfig.ENVIRONMENT">ENVIRONMENT (app.config.DeploymentConfig property)</a>
 
       <ul>
@@ -574,8 +579,6 @@
 </li>
       <li><a href="app.constants.html#app.constants.config_table_names.from_env">from_env() (in module app.constants.config_table_names)</a>
 </li>
-      <li><a href="app.html#app.config.DeploymentConfig.FRONTEND_URL">FRONTEND_URL (app.config.DeploymentConfig property)</a>
-</li>
   </ul></td>
 </tr></table>
 
@@ -585,6 +588,8 @@
       <li><a href="app.helpers.utils.general.html#app.helpers.utils.general.name_generation.generate_name">generate_name() (in module app.helpers.utils.general.name_generation)</a>
 </li>
       <li><a href="app.helpers.blueprint_helpers.aws.html#app.helpers.blueprint_helpers.aws.aws_instance_post.get_base_free_mandelboxes">get_base_free_mandelboxes() (in module app.helpers.blueprint_helpers.aws.aws_instance_post)</a>
+</li>
+      <li><a href="payments.html#payments.get_customer_id">get_customer_id() (in module payments)</a>
 </li>
       <li><a href="app.helpers.blueprint_helpers.aws.html#app.helpers.blueprint_helpers.aws.aws_instance_post.get_instance_id">get_instance_id() (in module app.helpers.blueprint_helpers.aws.aws_instance_post)</a>
 </li>
@@ -598,6 +603,8 @@
         <li><a href="app.helpers.utils.cloud_interface.html#app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient.get_ip_of_instances">(app.helpers.utils.cloud_interface.base_cloud_interface.CloudClient method)</a>
 </li>
       </ul></li>
+      <li><a href="payments.html#payments.get_subscription_status">get_subscription_status() (in module payments)</a>
+</li>
       <li><a href="app.html#app.config.getter">getter() (in module app.config)</a>
 </li>
       <li><a href="app.html#app.models.InstanceInfo.gpu_vram_remaining_kb">gpu_vram_remaining_kb (app.models.InstanceInfo attribute)</a>
@@ -609,6 +616,8 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="app.html#app.signals.WebSignalHandler.handle_sigterm">handle_sigterm() (app.signals.WebSignalHandler method)</a>
+</li>
+      <li><a href="auth0.html#auth0.has_scope">has_scope() (in module auth0)</a>
 </li>
       <li><a href="app.html#app.config.DeploymentConfig.HOST_SERVER">HOST_SERVER (app.config.DeploymentConfig property)</a>
 
@@ -633,9 +642,9 @@
       <li><a href="app.html#app.models.InstanceInfo.instance_name">instance_name (app.models.InstanceInfo attribute)</a>
 
       <ul>
-        <li><a href="app.html#app.models.InstancesWithRoomForMandelboxes.instance_name">(app.models.InstancesWithRoomForMandelboxes attribute)</a>, <a href="app.html#id0">[1]</a>
+        <li><a href="app.html#app.models.InstancesWithRoomForMandelboxes.instance_name">(app.models.InstancesWithRoomForMandelboxes attribute)</a>
 </li>
-        <li><a href="app.html#app.models.LingeringInstances.instance_name">(app.models.LingeringInstances attribute)</a>, <a href="app.html#id1">[1]</a>
+        <li><a href="app.html#app.models.LingeringInstances.instance_name">(app.models.LingeringInstances attribute)</a>
 </li>
         <li><a href="app.html#app.models.MandelboxInfo.instance_name">(app.models.MandelboxInfo attribute)</a>
 </li>
@@ -838,6 +847,10 @@
 </li>
         <li><a href="app.html#module-app.validation">app.validation</a>
 </li>
+        <li><a href="auth0.html#module-auth0">auth0</a>
+</li>
+        <li><a href="payments.html#module-payments">payments</a>
+</li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -863,10 +876,23 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="app.html#app.parse_request">parse_request() (in module app)</a>
 </li>
-      <li><a href="app.constants.html#app.constants.ec2_instance_states.EC2InstanceState.PENDING">PENDING (app.constants.ec2_instance_states.EC2InstanceState attribute)</a>
+      <li><a href="payments.html#payments.payment_portal_factory">payment_portal_factory() (in module payments)</a>
+</li>
+      <li><a href="payments.html#payments.payment_required">payment_required() (in module payments)</a>
+</li>
+      <li><a href="payments.html#payments.PaymentRequired">PaymentRequired</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    payments
+
+      <ul>
+        <li><a href="payments.html#module-payments">module</a>
+</li>
+      </ul></li>
+      <li><a href="app.constants.html#app.constants.ec2_instance_states.EC2InstanceState.PENDING">PENDING (app.constants.ec2_instance_states.EC2InstanceState attribute)</a>
+</li>
       <li><a href="app.constants.html#app.constants.mandelbox_host_states.MandelboxHostState.PRE_CONNECTION">PRE_CONNECTION (app.constants.mandelbox_host_states.MandelboxHostState attribute)</a>
 </li>
       <li><a href="app.html#app.models.RegionToAmi.protected_from_scale_down">protected_from_scale_down (app.models.RegionToAmi attribute)</a>
@@ -905,9 +931,9 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="app.html#app.config.DeploymentConfig.SENDGRID_API_KEY">SENDGRID_API_KEY (app.config.DeploymentConfig property)</a>
+      <li><a href="auth0.html#auth0.scope_required">scope_required() (in module auth0)</a>
 </li>
-      <li><a href="app.html#app.config.DeploymentConfig.SENDGRID_DEFAULT_FROM">SENDGRID_DEFAULT_FROM (app.config.DeploymentConfig attribute)</a>
+      <li><a href="auth0.html#auth0.ScopeError">ScopeError</a>
 </li>
       <li><a href="app.html#app.config.DeploymentConfig.SENTRY_DSN">SENTRY_DSN (app.config.DeploymentConfig property)</a>
 
@@ -1044,10 +1070,11 @@
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="architecture.html">Webserver Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authentication.html">Authentication</a></li>
 <li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Webserver Responsibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripe.html">Stripe Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_docs.html">Module Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Module Documentation</a></li>
 </ul>
 
 <div class="relations">

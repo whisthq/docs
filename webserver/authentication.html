@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Authentication &#8212; Fractal Webserver  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Webserver Responsibilities" href="responsibilities.html" />
+    <link rel="prev" title="Welcome to the Fractal Webserver internal documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="authentication">
+<h1>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">¶</a></h1>
+<p>The Webserver is an OAuth 2.0 specification compliant resource server (see
+<a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.1">Section 1.1 of RFC 6479</a>).</p>
+<p>Most requests sent to the Webserver must be authorized. An authorized request
+must contain an valid access token in its HTTP headers:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">Authorization</span><span class="p">:</span> <span class="n">Bearer</span> <span class="o">&lt;</span><span class="n">token</span><span class="o">&gt;</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>Access tokens are RS256-signed <a class="reference external" href="https://jwt.io/introduction">JSON Web Tokens</a>
+issued by one of our Auth0 tenants. Each Auth0 tenant is an OAuth 2.0
+specification compliant authorization server.</p>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>The Webserver must be configured to communicate with the deployment-specific
+Auth0 tenant that protects access to it. The following configuration variables
+must be set correctly to ensure that the Webserver is able to communicate with
+the correct tenant.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="app.html#app.config.DeploymentConfig.AUTH0_DOMAIN" title="app.config.DeploymentConfig.AUTH0_DOMAIN"><code class="xref py py-attr docutils literal notranslate"><span class="pre">AUTH0_DOMAIN</span></code></a></p></li>
+<li><p><a class="reference internal" href="app.html#app.config.DeploymentConfig.AUTH0_WEBSERVER_CLIENT_ID" title="app.config.DeploymentConfig.AUTH0_WEBSERVER_CLIENT_ID"><code class="xref py py-attr docutils literal notranslate"><span class="pre">AUTH0_WEBSERVER_CLIENT_ID</span></code></a></p></li>
+<li><p><a class="reference internal" href="app.html#app.config.DeploymentConfig.AUTH0_WEBSERVER_CLIENT_SECRET" title="app.config.DeploymentConfig.AUTH0_WEBSERVER_CLIENT_SECRET"><code class="xref py py-attr docutils literal notranslate"><span class="pre">AUTH0_WEBSERVER_CLIENT_SECRET</span></code></a></p></li>
+</ul>
+</section>
+<section id="token-validation">
+<h2>Token validation<a class="headerlink" href="#token-validation" title="Permalink to this headline">¶</a></h2>
+<p>Upon receipt of an HTTP request containing an access token in its
+<code class="docutils literal notranslate"><span class="pre">Authorization</span></code> header, the Webserver attempts to determine whether or not
+the token is valid. In order to be considered valid, a token’s standard time-based claims (<code class="docutils literal notranslate"><span class="pre">iat</span></code> and <code class="docutils literal notranslate"><span class="pre">exp</span></code>) must be valid, the issuer must be the
+deployment-specific Auth0 tenant (e.g. <code class="docutils literal notranslate"><span class="pre">https://fractal-prod.us.auth0.com/</span></code>
+in production), <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co</span></code> must be one of the token’s
+audiences, and the signature must be verified.</p>
+<p>Validating the standard time-based, issuer, and audience claims can easily be
+done locally. Since tokens are signed using the asymmetric RS256 signing
+algorithm, the authorization server’s public key is required to verify their
+signatures. A JSON web key set containing public keys can be downloaded from
+each tenant’s <code class="docutils literal notranslate"><span class="pre">/.well-known/jwks.json</span></code> endpoint. For example, our production
+tenant’s public keys are available at
+<a class="reference external" href="https://fractal-prod.us.auth0.com/.well-known/jwks.json">https://fractal-prod.us.auth0.com/.well-known/jwks.json</a>. Once the public keys
+have been downloaded, signature verification can be done locally as well.</p>
+</section>
+<section id="custom-claims">
+<span id="id1"></span><h2>Custom claims<a class="headerlink" href="#custom-claims" title="Permalink to this headline">¶</a></h2>
+<p>Don’t be alarmed to find two custom claims in each access token’s payload. The
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/stripe_customer_id</span></code> claim contains the ID of the
+Stripe customer record that is associated with the authorized user’s Fractal
+account. The <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim contains a
+string indicating the user’s subscription status. Note that, per Auth0’s
+guidelines, each of these claims is <a class="reference external" href="https://auth0.com/docs/tokens/create-namespaced-custom-claims">namespaced</a> with the namespace URL
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/</span></code>. Read <a class="reference internal" href="stripe.html#stripe-optimization"><span class="std std-ref">Optimizing the Stripe integration</span></a> for an explanation
+of why we have chosen to define these two custom claims.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Fractal Webserver</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Authentication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#token-validation">Token validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-claims">Custom claims</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Webserver Responsibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripe.html">Stripe Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Module Documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to the Fractal Webserver internal documentation!</a></li>
+      <li>Next: <a href="responsibilities.html" title="next chapter">Webserver Responsibilities</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Fractal Computers, Inc..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/authentication.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

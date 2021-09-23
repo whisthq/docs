@@ -15,6 +15,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="auth0" href="auth0.html" />
     <link rel="prev" title="app.helpers.utils.mail package" href="app.helpers.utils.mail.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -53,19 +54,16 @@ The first time this is called it will use current_app to setup the metrics logge
 and extract default dimension values. Subsequent calls will use the cached logger
 and default dimensions.</p>
 <p>Example:</p>
-<p>TODO: Update the example to show metrics for web
-* at the end of a celery task:</p>
-<blockquote>
-<div><dl class="simple">
-<dt>app_record_metrics(metrics={</dt><dd><p>“celery.task_duration.success.ms”: task_duration,
-“celery.tasks.count”: -1</p>
-</dd>
-<dt>}, extra_dims={</dt><dd><p>“task_name”: “assign_mandelbox”,
-“task_id”: task_id,</p>
-</dd>
-</dl>
-<p>})</p>
-</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">app_record_metrics</span><span class="p">(</span>
+    <span class="n">metrics</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;web.time_to_find_instance&quot;</span><span class="p">:</span> <span class="n">time_to_find_instance</span><span class="p">,</span>
+        <span class="s2">&quot;web.time_to_create_row&quot;</span><span class="p">:</span> <span class="n">time_to_create_row</span><span class="p">,</span>
+        <span class="s2">&quot;web.total_request_time&quot;</span><span class="p">:</span> <span class="n">total_request_time</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="n">extra_dims</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;task_name&quot;</span><span class="p">:</span> <span class="s2">&quot;assign_mandelbox&quot;</span><span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>
@@ -142,11 +140,14 @@ JSON objects to the file. This is intended for development assistance.</p>
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="architecture.html">Webserver Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authentication.html">Authentication</a></li>
 <li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Webserver Responsibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripe.html">Stripe Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="module_docs.html">Module Documentation</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="modules.html">app</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Module Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="app.html">app package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth0.html">auth0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments.html">Payments</a></li>
 </ul>
 </li>
 </ul>
@@ -155,13 +156,12 @@ JSON objects to the file. This is intended for development assistance.</p>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="module_docs.html">Module Documentation</a><ul>
-  <li><a href="modules.html">app</a><ul>
+  <li><a href="modules.html">Module Documentation</a><ul>
   <li><a href="app.html">app package</a><ul>
   <li><a href="app.helpers.html">app.helpers package</a><ul>
   <li><a href="app.helpers.utils.html">app.helpers.utils package</a><ul>
       <li>Previous: <a href="app.helpers.utils.mail.html" title="previous chapter">app.helpers.utils.mail package</a></li>
-  </ul></li>
+      <li>Next: <a href="auth0.html" title="next chapter">auth0</a></li>
   </ul></li>
   </ul></li>
   </ul></li>

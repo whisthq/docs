@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>auth0 &#8212; Fractal Webserver  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Payments" href="payments.html" />
+    <link rel="prev" title="app.helpers.utils.metrics package" href="app.helpers.utils.metrics.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-auth0">
+<span id="auth0"></span><h1>auth0<a class="headerlink" href="#module-auth0" title="Permalink to this headline">¶</a></h1>
+<p>Utilities for enforcing scoped access.</p>
+<p>Example usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># wsgi.py</span>
+
+<span class="kn">from</span> <span class="nn">auth0</span> <span class="k">import</span> <span class="n">scope_required</span><span class="p">,</span> <span class="n">ScopeError</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">Flask</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;AUTH0_DOMAIN&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;auth.fractal.co&quot;</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;JWT_DECODE_ALGORITHMS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;RS256&quot;</span><span class="p">,)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;JWT_DECODE_AUDIENCE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;https://api.fractal.co/&quot;</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">errorhandler</span><span class="p">(</span><span class="n">ScopeError</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">_handle_scope_error</span><span class="p">(</span><span class="n">_e</span><span class="p">:</span> <span class="n">ScopeError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;Unauthorized&quot;</span><span class="p">,</span> <span class="mi">401</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<span class="nd">@scope_required</span><span class="p">(</span><span class="s2">&quot;admin&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">hello</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello world&quot;</span>
+</pre></div>
+</div>
+<dl class="py exception">
+<dt class="sig sig-object py" id="auth0.ScopeError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">auth0.</span></span><span class="sig-name descname"><span class="pre">ScopeError</span></span><a class="headerlink" href="#auth0.ScopeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when an access token does not include the scopes required to access a resource.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="auth0.has_scope">
+<span class="sig-prename descclassname"><span class="pre">auth0.</span></span><span class="sig-name descname"><span class="pre">has_scope</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scope</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#auth0.has_scope" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether or not an access token contains a claim to the specified scope.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>scope</strong> – A string containing the name of an OAuth 2.0 scope.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if and only if the specified scope appears in the JWT’s scope claim.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="auth0.scope_required">
+<span class="sig-prename descclassname"><span class="pre">auth0.</span></span><span class="sig-name descname"><span class="pre">scope_required</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scope</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#auth0.scope_required" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow a user to access a decorated endpoint if their access token has the proper scope.</p>
+<p>Instructions for writing custom authorization decorators can be found here:
+<a class="reference external" href="https://flask-jwt-extended.readthedocs.io/en/stable/custom_decorators/">https://flask-jwt-extended.readthedocs.io/en/stable/custom_decorators/</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>scope</strong> – A string indicating the name of the OAuth 2.0 scope by which this view function is
+protected.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A decorator that can be applied to a Flask view function to enforce authentication.</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#auth0.ScopeError" title="auth0.ScopeError"><strong>ScopeError</strong></a> – The access token does not authorize access to the specified API scope.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Fractal Webserver</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="authentication.html">Authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Webserver Responsibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripe.html">Stripe Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Module Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="app.html">app package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">auth0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments.html">Payments</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">Module Documentation</a><ul>
+      <li>Previous: <a href="app.helpers.utils.metrics.html" title="previous chapter">app.helpers.utils.metrics package</a></li>
+      <li>Next: <a href="payments.html" title="next chapter">Payments</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Fractal Computers, Inc..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/auth0.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
