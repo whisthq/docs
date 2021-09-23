@@ -94,8 +94,8 @@ var NAVTREEINDEX =
 "sdlscreeninfo_8h_source.html",
 "structFFmpegEncoder.html#a6d09613ab358fbe9c83c7f6f42e58c93",
 "structLodePNGDecoderSettings.html#a51c3ce791f1b1d325d5e1f7e18caeeea",
-"structVideoEncoder.html#af56f705c8349a76f221e7b09c4316d17",
-"winapi__input__driver_8c.html#ac8a20be24877768539ac4cb85fc4a190"
+"structVideoEncoder.html#adb457706b572dcd6b81eeecc250b3e3f",
+"winapi__input__driver_8c.html#abf3126a0a279878f9e39e78d128cb0fa"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -9,5 +9,6 @@ var structSocketContext =
     [ "mutex", "structSocketContext.html#abf76fd0caab9e872b74d16346c4e6827", null ],
     [ "reading_packet_len", "structSocketContext.html#a6523d7c1b6a3b420efd84fe2f4037d72", null ],
     [ "socket", "structSocketContext.html#a28ede8b0a03a907d521651a919e68a17", null ],
-    [ "timeout", "structSocketContext.html#a5a36cb1810c843770bd4c12a0ac03698", null ]
+    [ "timeout", "structSocketContext.html#a5a36cb1810c843770bd4c12a0ac03698", null ],
+    [ "udp_is_connected", "structSocketContext.html#a6672303936f3fbb6654773981c1094a9", null ]
 ];

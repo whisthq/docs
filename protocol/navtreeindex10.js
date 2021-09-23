@@ -189,6 +189,7 @@ var NAVTREEINDEX10 =
 "structSocketContext.html#a569c72c5d3530a5260f9e9f89c32a371":[8,0,73,0],
 "structSocketContext.html#a5a36cb1810c843770bd4c12a0ac03698":[8,0,73,9],
 "structSocketContext.html#a6523d7c1b6a3b420efd84fe2f4037d72":[8,0,73,7],
+"structSocketContext.html#a6672303936f3fbb6654773981c1094a9":[8,0,73,10],
 "structSocketContext.html#aa27318e295af2084b171ea4bbc6bee0a":[8,0,73,3],
 "structSocketContext.html#aae57afb23b658bc32bc3c267667fb527":[8,0,73,5],
 "structSocketContext.html#abf76fd0caab9e872b74d16346c4e6827":[8,0,73,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7":[8,0,81,4],
 "structVideoEncoder.html#a9975e772b1f1916ed1aa99f82ca8b065":[8,0,81,0],
 "structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027":[8,0,81,5],
-"structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f":[8,0,81,3],
-"structVideoEncoder.html#adb457706b572dcd6b81eeecc250b3e3f":[8,0,81,1]
+"structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f":[8,0,81,3]
 };
