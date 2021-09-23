@@ -26,7 +26,7 @@ var searchData=
   ['alpha_30',['alpha',['../structLodePNGColorStats.html#af81e4a84aa3d94849736b6689643c101',1,'LodePNGColorStats']]],
   ['alsacapture_2ec_31',['alsacapture.c',['../alsacapture_8c.html',1,'']]],
   ['alsacapture_2eh_32',['alsacapture.h',['../alsacapture_8h.html',1,'']]],
-  ['alt_5fpressed_33',['alt_pressed',['../client_2main_8c.html#a1eadcac7071ac5ef15612c11b156e4cc',1,'alt_pressed():&#160;main.c'],['../sdl__event__handler_8c.html#a1eadcac7071ac5ef15612c11b156e4cc',1,'alt_pressed():&#160;main.c']]],
+  ['alt_5fpressed_33',['alt_pressed',['../client_2main_8c.html#a1eadcac7071ac5ef15612c11b156e4cc',1,'alt_pressed():&#160;sdl_event_handler.c'],['../sdl__event__handler_8c.html#a1eadcac7071ac5ef15612c11b156e4cc',1,'alt_pressed():&#160;sdl_event_handler.c']]],
   ['app_5fpath_5fmaxlen_34',['APP_PATH_MAXLEN',['../client_2main_8c.html#a3a90209de834d7d87f20ea1f1d3408f4',1,'main.c']]],
   ['app_5fversion_35',['APP_VERSION',['../nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806',1,'nvidiacapture.c']]],
   ['ask_5finfo_36',['ASK_INFO',['../fractal_2network_2network_8c.html#a57fdac43f47de768666a1961513f2e5baae4deeb65aaa4dd474e53c0860d1d51a',1,'network.c']]],

@@ -83,8 +83,7 @@ $(document).ready(function(){initNavTree('server_2main_8c.html',''); initResizab
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">main.c File Reference</div>  </div>
 </div><!--header-->
@@ -92,27 +91,7 @@ $(document).ready(function(){initNavTree('server_2main_8c.html',''); initResizab
 
 <p>This file contains the main code that runs a Fractal server on a.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;signal.h&gt;</code><br />
-<code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &lt;fcntl.h&gt;</code><br />
-<code>#include &lt;time.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="window__name_8h_source.html">fractal/utils/window_name.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="fractalgetopt_8h_source.html">fractal/core/fractalgetopt.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="input_8h_source.html">fractal/input/input.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="error__monitor_8h_source.html">fractal/logging/error_monitor.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="transfercapture_8h_source.html">fractal/video/transfercapture.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="log__statistic_8h_source.html">fractal/logging/log_statistic.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="handle__client__message_8h_source.html">handle_client_message.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parse__args_8h_source.html">parse_args.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="server_2video_8h_source.html">video.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="server_2audio_8h_source.html">audio.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -134,39 +113,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a3bc6e5d2c6baa8b2b71ed64392e01d51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51">multithreaded_sync_tcp_packets</a> (void *opaque)</td></tr>
 <tr class="memdesc:a3bc6e5d2c6baa8b2b71ed64392e01d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive and send TCP packets, mostly clipboard.  <a href="server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51">More...</a><br /></td></tr>
 <tr class="separator:a3bc6e5d2c6baa8b2b71ed64392e01d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a062c92ce2779fc429eb44fbfebcf9d52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClient.html">Client</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a062c92ce2779fc429eb44fbfebcf9d52">clients</a> [<a class="el" href="fractal_8h.html#a03e2345e5641dd80fd2bad8b9cff3eff">MAX_NUM_CLIENTS</a>]</td></tr>
-<tr class="separator:a062c92ce2779fc429eb44fbfebcf9d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420">client_os</a></td></tr>
-<tr class="separator:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2159c75ccc892bf05ef04748882e025"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#ac2159c75ccc892bf05ef04748882e025">binary_aes_private_key</a> [16]</td></tr>
-<tr class="separator:ac2159c75ccc892bf05ef04748882e025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dc8473a213eba8932df71190c0d5fbe"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a9dc8473a213eba8932df71190c0d5fbe">hex_aes_private_key</a> [33]</td></tr>
-<tr class="separator:a9dc8473a213eba8932df71190c0d5fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adba1e7b2167656bf2eb188879ac64a90"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#adba1e7b2167656bf2eb188879ac64a90">identifier</a> [<a class="el" href="fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95">FRACTAL_IDENTIFIER_MAXLEN</a>+1]</td></tr>
-<tr class="separator:adba1e7b2167656bf2eb188879ac64a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a961bf3611973011277079ee5647d25b0"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a961bf3611973011277079ee5647d25b0">connection_id</a></td></tr>
-<tr class="separator:a961bf3611973011277079ee5647d25b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a9aec5d9660ae8a0c8117f5d96b871606">exiting</a></td></tr>
-<tr class="separator:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a527325650d66abd9626499785b3bafd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a527325650d66abd9626499785b3bafd2">sample_rate</a> = -1</td></tr>
-<tr class="separator:a527325650d66abd9626499785b3bafd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad137585f4fddac5c02d6b3f99323385b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#ad137585f4fddac5c02d6b3f99323385b">max_bitrate</a> = <a class="el" href="fractal_8h.html#af6e2306adac4a7fc41cc4c181d2e605b">STARTING_BITRATE</a></td></tr>
-<tr class="separator:ad137585f4fddac5c02d6b3f99323385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a5269d876b9e07618d093dbd293141c"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a8a5269d876b9e07618d093dbd293141c">max_burst_bitrate</a> = <a class="el" href="fractal_8h.html#a97888d50b51f804637c90a7dbee17c44">STARTING_BURST_BITRATE</a></td></tr>
-<tr class="separator:a8a5269d876b9e07618d093dbd293141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0cefee7dcd4ec6bdd40ff87edaa96fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a> = NULL</td></tr>
-<tr class="separator:aa0cefee7dcd4ec6bdd40ff87edaa96fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae54fd77214dad6eaf2b542edb690d53"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#aae54fd77214dad6eaf2b542edb690d53">stop_streaming</a></td></tr>
-<tr class="separator:aae54fd77214dad6eaf2b542edb690d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c556bf7dad7ad139e553b7af6281656"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a2c556bf7dad7ad139e553b7af6281656">wants_iframe</a></td></tr>
-<tr class="separator:a2c556bf7dad7ad139e553b7af6281656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e07e0ac06cb165d61f1e475c82aaa73"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73">update_encoder</a></td></tr>
-<tr class="separator:a8e07e0ac06cb165d61f1e475c82aaa73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d9e55fc917106b3014669bf9a52309"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a28d9e55fc917106b3014669bf9a52309">client_joined_after_window_name_broadcast</a> = false</td></tr>
-<tr class="separator:a28d9e55fc917106b3014669bf9a52309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the main code that runs a Fractal server on a. </p>
@@ -330,217 +276,6 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ac2159c75ccc892bf05ef04748882e025"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2159c75ccc892bf05ef04748882e025">&#9670;&nbsp;</a></span>binary_aes_private_key</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char binary_aes_private_key[16]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a28d9e55fc917106b3014669bf9a52309"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28d9e55fc917106b3014669bf9a52309">&#9670;&nbsp;</a></span>client_joined_after_window_name_broadcast</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool client_joined_after_window_name_broadcast = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac13d90362a4bbfdd5d1d04e6c2d16420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac13d90362a4bbfdd5d1d04e6c2d16420">&#9670;&nbsp;</a></span>client_os</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a> client_os</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a062c92ce2779fc429eb44fbfebcf9d52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a062c92ce2779fc429eb44fbfebcf9d52">&#9670;&nbsp;</a></span>clients</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structClient.html">Client</a> clients[<a class="el" href="fractal_8h.html#a03e2345e5641dd80fd2bad8b9cff3eff">MAX_NUM_CLIENTS</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a961bf3611973011277079ee5647d25b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a961bf3611973011277079ee5647d25b0">&#9670;&nbsp;</a></span>connection_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int connection_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9aec5d9660ae8a0c8117f5d96b871606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aec5d9660ae8a0c8117f5d96b871606">&#9670;&nbsp;</a></span>exiting</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool exiting</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9dc8473a213eba8932df71190c0d5fbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dc8473a213eba8932df71190c0d5fbe">&#9670;&nbsp;</a></span>hex_aes_private_key</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char hex_aes_private_key[33]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adba1e7b2167656bf2eb188879ac64a90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adba1e7b2167656bf2eb188879ac64a90">&#9670;&nbsp;</a></span>identifier</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char identifier[<a class="el" href="fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95">FRACTAL_IDENTIFIER_MAXLEN</a>+1]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa0cefee7dcd4ec6bdd40ff87edaa96fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0cefee7dcd4ec6bdd40ff87edaa96fd">&#9670;&nbsp;</a></span>input_device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structInputDevice.html">InputDevice</a>* input_device = NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad137585f4fddac5c02d6b3f99323385b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad137585f4fddac5c02d6b3f99323385b">&#9670;&nbsp;</a></span>max_bitrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int max_bitrate = <a class="el" href="fractal_8h.html#af6e2306adac4a7fc41cc4c181d2e605b">STARTING_BITRATE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8a5269d876b9e07618d093dbd293141c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a5269d876b9e07618d093dbd293141c">&#9670;&nbsp;</a></span>max_burst_bitrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int max_burst_bitrate = <a class="el" href="fractal_8h.html#a97888d50b51f804637c90a7dbee17c44">STARTING_BURST_BITRATE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a527325650d66abd9626499785b3bafd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a527325650d66abd9626499785b3bafd2">&#9670;&nbsp;</a></span>sample_rate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sample_rate = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aae54fd77214dad6eaf2b542edb690d53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae54fd77214dad6eaf2b542edb690d53">&#9670;&nbsp;</a></span>stop_streaming</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool stop_streaming</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8e07e0ac06cb165d61f1e475c82aaa73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e07e0ac06cb165d61f1e475c82aaa73">&#9670;&nbsp;</a></span>update_encoder</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool update_encoder</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2c556bf7dad7ad139e553b7af6281656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c556bf7dad7ad139e553b7af6281656">&#9670;&nbsp;</a></span>wants_iframe</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool wants_iframe</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

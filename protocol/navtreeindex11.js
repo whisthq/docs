@@ -1,5 +1,11 @@
 var NAVTREEINDEX11 =
 {
+"structVideoEncoder.html#af56f705c8349a76f221e7b09c4316d17":[8,0,81,9],
+"structVideoFrame.html":[8,0,82],
+"structVideoFrame.html#a21d459b551ceeac67227b348099c193b":[8,0,82,9],
+"structVideoFrame.html#a39ba6c50ef047fd9a11c7fbf32e01c6e":[8,0,82,8],
+"structVideoFrame.html#a4e5146fe473d1cbf298009ffb7b972d3":[8,0,82,7],
+"structVideoFrame.html#a59f5a62dc6b37a95b67c600a7f413053":[8,0,82,1],
 "structVideoFrame.html#a60c91c18927cc386348501debd45ecc4":[8,0,82,6],
 "structVideoFrame.html#a7536e945f4295dd551e4eaa162b15a8d":[8,0,82,5],
 "structVideoFrame.html#a7a7f8852074f5c7ccf06f1a27e317bde":[8,0,82,10],
@@ -243,11 +249,5 @@ var NAVTREEINDEX11 =
 "winapi__input__driver_8c.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7":[9,0,1,4,6,5],
 "winapi__input__driver_8c.html#ab7e6d0c554f4813e884048112739364e":[9,0,1,4,6,14],
 "winapi__input__driver_8c.html#aba49b09f8d4131835017618fc0250711":[9,0,1,4,6,2],
-"winapi__input__driver_8c.html#abf3126a0a279878f9e39e78d128cb0fa":[9,0,1,4,6,11],
-"winapi__input__driver_8c.html#ac8a20be24877768539ac4cb85fc4a190":[9,0,1,4,6,10],
-"winapi__input__driver_8c.html#adfaf9acde8e1ba3a330060e06beb242f":[9,0,1,4,6,15],
-"winapi__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532":[9,0,1,4,6,4],
-"winapi__input__driver_8c.html#aec6d0da6165b52bfcd168bace7e3c889":[9,0,1,4,6,7],
-"winapi__input__driver_8h.html":[9,0,1,4,7],
-"winapi__input__driver_8h.html#a6b71b7e398618bbc36139211e28b26f3":[9,0,1,4,7,0]
+"winapi__input__driver_8c.html#abf3126a0a279878f9e39e78d128cb0fa":[9,0,1,4,6,11]
 };

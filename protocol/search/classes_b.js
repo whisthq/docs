@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['option_1978',['option',['../structoption.html',1,'']]],
-  ['osxfilenames_1979',['OSXFilenames',['../structOSXFilenames.html',1,'']]],
-  ['osximage_1980',['OSXImage',['../structOSXImage.html',1,'']]]
+  ['option_1979',['option',['../structoption.html',1,'']]],
+  ['osxfilenames_1980',['OSXFilenames',['../structOSXFilenames.html',1,'']]],
+  ['osximage_1981',['OSXImage',['../structOSXImage.html',1,'']]]
 ];
