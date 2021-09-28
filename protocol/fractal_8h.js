@@ -7,6 +7,7 @@ var fractal_8h =
     [ "FractalMouseMotionMessage", "structFractalMouseMotionMessage.html", "structFractalMouseMotionMessage" ],
     [ "FractalMultigestureMessage", "structFractalMultigestureMessage.html", "structFractalMultigestureMessage" ],
     [ "FractalDiscoveryRequestMessage", "structFractalDiscoveryRequestMessage.html", "structFractalDiscoveryRequestMessage" ],
+    [ "FractalTCPRecoveryMessage", "structFractalTCPRecoveryMessage.html", "structFractalTCPRecoveryMessage" ],
     [ "FractalDiscoveryReplyMessage", "structFractalDiscoveryReplyMessage.html", "structFractalDiscoveryReplyMessage" ],
     [ "FractalKeyboardState", "structFractalKeyboardState.html", "structFractalKeyboardState" ],
     [ "FractalClientMessage", "structFractalClientMessage.html", "structFractalClientMessage" ],
@@ -82,6 +83,7 @@ var fractal_8h =
     [ "FractalOSType", "fractal_8h.html#ac1575aaeab2f2b0eea6864ae974e437b", null ],
     [ "FractalServerMessage", "fractal_8h.html#a93b8f2ac3292bebd1693ff0bdd09846e", null ],
     [ "FractalServerMessageType", "fractal_8h.html#a168e78f121b9be3b1aa6c6df21c976eb", null ],
+    [ "FractalTCPRecoveryMessage", "fractal_8h.html#a43784a40328c8589a32e3dc7e6d45ee9", null ],
     [ "InteractionMode", "fractal_8h.html#ae6ec9f8304ad463cd3dfbf626d60fe85", null ],
     [ "PeerUpdateMessage", "fractal_8h.html#a043b226c81e235189b7e647fa919a84f", null ],
     [ "CaptureDeviceType", "fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600", [
@@ -108,6 +110,7 @@ var fractal_8h =
       [ "MESSAGE_START_STREAMING", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aef24dabe7e8ee67e35c2bd80cce17ced", null ],
       [ "MESSAGE_MBPS", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ad061888ad51db62ad7d38fb2e1c5967a", null ],
       [ "MESSAGE_PING", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90af789f175f2a0ff161aea00846b9b50e0", null ],
+      [ "MESSAGE_TCP_PING", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a7dc3a20041a5307d6ca698071014c81b", null ],
       [ "MESSAGE_DIMENSIONS", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a320f73bbf3e5c9abb3285eb70a278b35", null ],
       [ "MESSAGE_VIDEO_NACK", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a6c81ea559025810031e39cb391506a01", null ],
       [ "MESSAGE_AUDIO_NACK", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a20da901d62d1b274e068be2a88ae4f8e", null ],
@@ -115,6 +118,7 @@ var fractal_8h =
       [ "MESSAGE_IFRAME_REQUEST", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aa13dda8eb711d38d91b408de950920ee", null ],
       [ "CMESSAGE_INTERACTION_MODE", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a59bd9af833af2807d558075122620753", null ],
       [ "MESSAGE_DISCOVERY_REQUEST", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aad0e41f01fe989967ccf13dba65c7041", null ],
+      [ "MESSAGE_TCP_RECOVERY", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a349edcec26ba49767cf95f929499760c", null ],
       [ "CMESSAGE_QUIT", "fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8a219f29b07f2bab02d8cd3112df3a28", null ]
     ] ],
     [ "FractalExitCode", "fractal_8h.html#a2cfee250c793df815c5216abc3f83621", [
@@ -287,6 +291,7 @@ var fractal_8h =
     [ "FractalServerMessageType", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c", [
       [ "SMESSAGE_NONE", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140cafcd5317ecd005a890b1c3e70c96f5695", null ],
       [ "MESSAGE_PONG", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140caaa1b5639726c407ba750853d9701a3fb", null ],
+      [ "MESSAGE_TCP_PONG", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca6389a3270b7b9331d3032b9c2ecd8681", null ],
       [ "MESSAGE_AUDIO_FREQUENCY", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca9a194dedc17990414b991c7fbfec8c9c", null ],
       [ "SMESSAGE_CLIPBOARD", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca86b5ce811becb248c9572438105db9aa", null ],
       [ "SMESSAGE_WINDOW_TITLE", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca350f6ac715ca8fba37c2967385fd1594", null ],

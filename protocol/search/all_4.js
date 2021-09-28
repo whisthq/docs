@@ -69,7 +69,7 @@ var searchData=
   ['discoveryrequest_407',['discoveryRequest',['../structFractalClientMessage.html#ab0d9a31ad39791710c9ded0d941835ef',1,'FractalClientMessage']]],
   ['display_408',['display',['../structInputDevice.html#a4fa4d386a10f209982638cc8bd1e79fb',1,'InputDevice::display()'],['../structCaptureDevice.html#a7a25adf7669abcddbec4eca079d24429',1,'CaptureDevice::display()'],['../structX11CaptureDevice.html#a47bfa7fe3830e8f7ffc8b7a48fc78870',1,'X11CaptureDevice::display()']]],
   ['displayhardware_409',['DisplayHardware',['../structDisplayHardware.html',1,'DisplayHardware'],['../dxgicapture_8h.html#a6a7a4cc627738d1dc547d4f0e673987e',1,'DisplayHardware():&#160;dxgicapture.h']]],
-  ['do_5fdiscovery_5fhandshake_410',['do_discovery_handshake',['../server_2network_8c.html#a732e7db3c0c60e10c60ea9a6bb0690d8',1,'network.c']]],
+  ['do_5fdiscovery_5fhandshake_410',['do_discovery_handshake',['../server_2network_8c.html#a1618b6ad9143a8eb880dc1de748a74ae',1,'network.c']]],
   ['do_5fupdate_5fencoder_411',['do_update_encoder',['../server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c',1,'video.c']]],
   ['dpi_412',['dpi',['../structFractalClientMessage.html#af8c3f85f21a8e5b1a2090512ca3f9896',1,'FractalClientMessage']]],
   ['draw_5fpeer_5fcursor_413',['draw_peer_cursor',['../peercursor_8c.html#af828d16f2d071c45c05671fa337a78b4',1,'draw_peer_cursor(SDL_Renderer *renderer, int x, int y, int r, int g, int b):&#160;peercursor.c'],['../peercursor_8h.html#af828d16f2d071c45c05671fa337a78b4',1,'draw_peer_cursor(SDL_Renderer *renderer, int x, int y, int r, int g, int b):&#160;peercursor.c']]],

@@ -84,18 +84,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "aes_8c.html",
-"client_2video_8c.html#a27a5f1af397e2937ecbd7c0a77f0766b",
-"clock_8c.html#af5671ae4b14faf26a3ff32cef1f1e6cb",
-"fractal_2network_2network_8h.html#aec0bccebe540af495aec057193863827",
-"fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca62adb843bfd6857bbf5f634425c404d1",
-"globals_func_q.html",
-"lodepng_8c.html#abd20ba96aa7a2e3d782204c604baab09",
-"md_client_README.html",
-"sdlscreeninfo_8h_source.html",
-"structFFmpegEncoder.html#a6d09613ab358fbe9c83c7f6f42e58c93",
-"structLodePNGDecoderSettings.html#a51c3ce791f1b1d325d5e1f7e18caeeea",
-"structVideoEncoder.html#adb457706b572dcd6b81eeecc250b3e3f",
-"winapi__input__driver_8c.html#abf3126a0a279878f9e39e78d128cb0fa"
+"client_2video_8c.html#a0edcb0ee9dd163c66de486f96baba311",
+"clock_8c.html#aa1e4553179f6ee4788e4339764acd6ae",
+"fractal_2network_2network_8h.html#a79b7ae26dbe2bf91161fb7690d9dce49",
+"fractal_8h.html#a8c14c321fd244515ad04ff39026feb75",
+"globals_func_b.html",
+"lodepng_8c.html#aa255d9a2e4054fc2888bf7670dac4107",
+"main_8h.html#a527325650d66abd9626499785b3bafd2",
+"sdlscreeninfo_8c.html#aa2d2a409454a1e668c7d42f226b600ca",
+"structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac",
+"structLodePNGColorStats.html#a9919718b21a89c1c8cb7f393ff80f696",
+"structVideoDecoder.html#a72441c34541e71b1a2cabd4fe28128d0",
+"videoencode_8h.html#a7f0817add564fea3dbb260a90cef9132"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

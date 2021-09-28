@@ -96,12 +96,15 @@ $(document).ready(function(){initNavTree('client_2network_8h.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7f1688e7fd60c0b361b449db233bc0c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8">discover_ports</a> (bool *<a class="el" href="client_2main_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
+<tr class="memitem:a7f1688e7fd60c0b361b449db233bc0c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8">discover_ports</a> (bool *<a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
 <tr class="memdesc:a7f1688e7fd60c0b361b449db233bc0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client. Must be called before <code><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c" title="Connect to the server. Must be called after discover_ports().">connect_to_server()</a></code>.  <a href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8">More...</a><br /></td></tr>
 <tr class="separator:a7f1688e7fd60c0b361b449db233bc0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">connect_to_server</a> (bool <a class="el" href="client_2main_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
+<tr class="memitem:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">connect_to_server</a> (bool <a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
 <tr class="memdesc:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server. Must be called after <code><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8" title="Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the clie...">discover_ports()</a></code>.  <a href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">More...</a><br /></td></tr>
 <tr class="separator:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c13ae8a95d45f9a20a3d8895e785ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#ab2c13ae8a95d45f9a20a3d8895e785ac">send_tcp_reconnect_message</a> (bool <a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
+<tr class="memdesc:ab2c13ae8a95d45f9a20a3d8895e785ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a TCP socket reset message to the server, regardless of the initiator of the lost connection.  <a href="client_2network_8h.html#ab2c13ae8a95d45f9a20a3d8895e785ac">More...</a><br /></td></tr>
+<tr class="separator:ab2c13ae8a95d45f9a20a3d8895e785ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac9ba3b2a752a8ba9805b539765a2e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#abac9ba3b2a752a8ba9805b539765a2e4">close_connections</a> (void)</td></tr>
 <tr class="separator:abac9ba3b2a752a8ba9805b539765a2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8bf751ea26659195c59cd180956315a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#aa8bf751ea26659195c59cd180956315a">send_server_quit_messages</a> (int num_messages)</td></tr>
@@ -113,9 +116,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a227a48ef77a55282ab59696435f3859b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a227a48ef77a55282ab59696435f3859b">send_ping</a> (int ping_id)</td></tr>
 <tr class="memdesc:a227a48ef77a55282ab59696435f3859b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a ping with ID ping_id to the server.  <a href="client_2network_8h.html#a227a48ef77a55282ab59696435f3859b">More...</a><br /></td></tr>
 <tr class="separator:a227a48ef77a55282ab59696435f3859b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbcee4b22977f8b164eb393f8dd4187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a0fbcee4b22977f8b164eb393f8dd4187">send_tcp_ping</a> (int ping_id)</td></tr>
+<tr class="memdesc:a0fbcee4b22977f8b164eb393f8dd4187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a TCP ping with to the server with the given <code>ping_id</code>.  <a href="client_2network_8h.html#a0fbcee4b22977f8b164eb393f8dd4187">More...</a><br /></td></tr>
+<tr class="separator:a0fbcee4b22977f8b164eb393f8dd4187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b09717d72f228e3e98a8345a00c9e3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a5b09717d72f228e3e98a8345a00c9e3a">receive_pong</a> (int pong_id)</td></tr>
 <tr class="memdesc:a5b09717d72f228e3e98a8345a00c9e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a pong (ping acknowledgement) with ID pong_id.  <a href="client_2network_8h.html#a5b09717d72f228e3e98a8345a00c9e3a">More...</a><br /></td></tr>
 <tr class="separator:a5b09717d72f228e3e98a8345a00c9e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#ab324d1a3aeb074f72b3cde078ef3e0bb">receive_tcp_pong</a> (int pong_id)</td></tr>
+<tr class="memdesc:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a TCP pong (ping acknowledgement) with ID pong_id.  <a href="client_2network_8h.html#ab324d1a3aeb074f72b3cde078ef3e0bb">More...</a><br /></td></tr>
+<tr class="separator:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains client-specific wrappers to low-level network. </p>
@@ -225,6 +234,32 @@ Usage</h1>
 
 </div>
 </div>
+<a id="ab324d1a3aeb074f72b3cde078ef3e0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab324d1a3aeb074f72b3cde078ef3e0bb">&#9670;&nbsp;</a></span>receive_tcp_pong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void receive_tcp_pong </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pong_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle a TCP pong (ping acknowledgement) with ID pong_id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pong_id</td><td>ID of the received TCP pong </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad659e1d12a99b24203c3b288a07f40ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad659e1d12a99b24203c3b288a07f40ae">&#9670;&nbsp;</a></span>send_fmsg()</h2>
 
@@ -293,6 +328,59 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">num_messages</td><td>Number of quit messages to send</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
+
+</div>
+</div>
+<a id="a0fbcee4b22977f8b164eb393f8dd4187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fbcee4b22977f8b164eb393f8dd4187">&#9670;&nbsp;</a></span>send_tcp_ping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void send_tcp_ping </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ping_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send a TCP ping with to the server with the given <code>ping_id</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ping_id</td><td>Ping ID to send to the server </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab2c13ae8a95d45f9a20a3d8895e785ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c13ae8a95d45f9a20a3d8895e785ac">&#9670;&nbsp;</a></span>send_tcp_reconnect_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int send_tcp_reconnect_message </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>using_stun</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send a TCP socket reset message to the server, regardless of the initiator of the lost connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">using_stun</td><td>Whether we are using the STUN server</td></tr>
   </table>
   </dd>
 </dl>

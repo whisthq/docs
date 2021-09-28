@@ -22,6 +22,7 @@ var structFractalClientMessage =
     [ "nack_data", "structFractalClientMessage.html#a4f4ec4a4a3c4156372022f499673aeae", null ],
     [ "ping_id", "structFractalClientMessage.html#a4bda042c8ccebb3085388fdfc3d05127", null ],
     [ "reinitialize_encoder", "structFractalClientMessage.html#a7184c50d7d3eba02d87d274a5969c3df", null ],
+    [ "tcpRecovery", "structFractalClientMessage.html#aba3d2531c7e0cea6d64cc49797f26ff2", null ],
     [ "type", "structFractalClientMessage.html#aa962a98ff0a051019e476606e41f8a0d", null ],
     [ "width", "structFractalClientMessage.html#acc775e4bcdc81355302dcb35e1f344ed", null ]
 ];

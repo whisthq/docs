@@ -39,6 +39,7 @@ var annotated_dup =
     [ "FractalPacket", "structFractalPacket.html", "structFractalPacket" ],
     [ "FractalRGBColor", "structFractalRGBColor.html", "structFractalRGBColor" ],
     [ "FractalServerMessage", "structFractalServerMessage.html", "structFractalServerMessage" ],
+    [ "FractalTCPRecoveryMessage", "structFractalTCPRecoveryMessage.html", "structFractalTCPRecoveryMessage" ],
     [ "FractalTimeData", "structFractalTimeData.html", "structFractalTimeData" ],
     [ "FractalYUVColor", "structFractalYUVColor.html", "structFractalYUVColor" ],
     [ "FrameData", "structFrameData.html", "structFrameData" ],

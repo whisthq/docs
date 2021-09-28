@@ -115,9 +115,11 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a732e7db3c0c60e10c60ea9a6bb0690d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a732e7db3c0c60e10c60ea9a6bb0690d8">do_discovery_handshake</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, int *<a class="el" href="client_2video_8c.html#a81633369010405f6d037092570b2d7aa">client_id</a>)</td></tr>
-<tr class="separator:a732e7db3c0c60e10c60ea9a6bb0690d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a1a7fd8ac80bfa44bf782fe3617193"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a56a1a7fd8ac80bfa44bf782fe3617193">connect_client</a> (int id, bool <a class="el" href="client_2main_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *binary_aes_private_key_input)</td></tr>
+<tr class="memitem:a46351141d143672e77144d6539d35491"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a46351141d143672e77144d6539d35491">handle_discovery_port_message</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, int *<a class="el" href="client_2video_8c.html#a81633369010405f6d037092570b2d7aa">client_id</a>, bool *new_client)</td></tr>
+<tr class="separator:a46351141d143672e77144d6539d35491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1618b6ad9143a8eb880dc1de748a74ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a1618b6ad9143a8eb880dc1de748a74ae">do_discovery_handshake</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, int <a class="el" href="client_2video_8c.html#a81633369010405f6d037092570b2d7aa">client_id</a>, <a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
+<tr class="separator:a1618b6ad9143a8eb880dc1de748a74ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a1a7fd8ac80bfa44bf782fe3617193"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a56a1a7fd8ac80bfa44bf782fe3617193">connect_client</a> (int id, bool <a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *binary_aes_private_key_input)</td></tr>
 <tr class="memdesc:a56a1a7fd8ac80bfa44bf782fe3617193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes UDP and TCP connection to client.  <a href="server_2network_8c.html#a56a1a7fd8ac80bfa44bf782fe3617193">More...</a><br /></td></tr>
 <tr class="separator:a56a1a7fd8ac80bfa44bf782fe3617193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a28ddc7421981679586a2d8bdbd0d0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a6a28ddc7421981679586a2d8bdbd0d0e">disconnect_client</a> (int id)</td></tr>
@@ -472,8 +474,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a732e7db3c0c60e10c60ea9a6bb0690d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a732e7db3c0c60e10c60ea9a6bb0690d8">&#9670;&nbsp;</a></span>do_discovery_handshake()</h2>
+<a id="a1618b6ad9143a8eb880dc1de748a74ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1618b6ad9143a8eb880dc1de748a74ae">&#9670;&nbsp;</a></span>do_discovery_handshake()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -487,8 +489,14 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>client_id</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>client_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
+          <td class="paramname"><em>fcmsg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -517,6 +525,40 @@ Usage</h1>
 
 <p>Decides whether the server is using stun. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if server is using stun, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a46351141d143672e77144d6539d35491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46351141d143672e77144d6539d35491">&#9670;&nbsp;</a></span>handle_discovery_port_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int handle_discovery_port_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>client_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>new_client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
