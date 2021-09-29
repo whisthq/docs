@@ -55,10 +55,10 @@ uses are stored in the appropriate Auth0 tenant’s <a class="reference external
 <section id="subscription-status">
 <h2>Subscription status<a class="headerlink" href="#subscription-status" title="Permalink to this headline">¶</a></h2>
 <p>Part of enforcing access control is denying service to users who lack active
-Fractal subscriptions. The <a class="reference internal" href="payments.html#payments.payment_required" title="payments.payment_required"><code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code></a> decorator
+Fractal subscriptions. The <code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code> decorator
 implements this behavior. Each time the Webserver receives a request for a
 resource that is only available to paying users, the
-<a class="reference internal" href="payments.html#payments.payment_required" title="payments.payment_required"><code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code></a> decorator checks the authenticated user’s
+<code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code> decorator checks the authenticated user’s
 subscription status before deciding whether or not to allow the request to be
 processed as usual.</p>
 <p>As is mentioned in the section about <a class="reference internal" href="authentication.html#custom-claims"><span class="std std-ref">Custom claims</span></a>, each access token’s
@@ -109,7 +109,7 @@ This is due to the fact that once a subscription enters a terminal state, it
 may as well not exist, but as long as it is in a non-terminal state, it may
 be worth knowing the exact state in which it is.</p></li>
 </ol>
-<p>The <a class="reference internal" href="payments.html#payments.payment_required" title="payments.payment_required"><code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code></a> decorator examines the value of the
+<p>The <code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code> decorator examines the value of the
 access token’s <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim and grants
 access to only those users whose subscriptions are <code class="docutils literal notranslate"><span class="pre">active</span></code> or <code class="docutils literal notranslate"><span class="pre">trialing</span></code>.</p>
 </section>
@@ -150,7 +150,7 @@ API, but round trips are time-consuming. By claiming the ID of the Customer
 record associated a user’s account in each of their access tokens, we eliminate
 at least one round trip that must be made to Stripe or Auth0’s API.</p>
 <p>Each time a user sends a request to an endpoint that is protected by the
-<a class="reference internal" href="payments.html#payments.payment_required" title="payments.payment_required"><code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code></a> decorator, the Webserver needs to look up the
+<code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code> decorator, the Webserver needs to look up the
 authenticated user’s subscription status in order to enforce access control. It
 would be possible to extract the ID of the Customer record associated with the
 user’s account and query the Stripe API for the subscription status, but such
