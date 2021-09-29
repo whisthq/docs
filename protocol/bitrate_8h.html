@@ -121,17 +121,17 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the client's adaptive bitrate code. Any algorithms we are using for. </p>
 <p>Copyright Fractal Computers, Inc. 2021</p>
-<h1><a class="anchor" id="autotoc_md30"></a>
+<h1><a class="anchor" id="autotoc_md32"></a>
 predicting bitrate should be stored here.</h1>
-<h1><a class="anchor" id="autotoc_md31"></a>
+<h1><a class="anchor" id="autotoc_md33"></a>
 Usage</h1>
 <p>Place to put any predictive/adaptive bitrate algorithms. In the current setup, each algorithm is a function that takes in inputs through a <a class="el" href="structBitrateStatistics.html">BitrateStatistics</a> struct. The function is responsible for maintaining any internal state necessary for the algorithm (possibly through the use of custom types or helpers), and should update max_bitrate when necessary.</p>
 <p>To change the algorithm the client uses, set <code>calculate_new_bitrate</code> to the desired algorithm. The function assigned to <code>calculate_new_bitrate</code> should have signature such that it takes one argument of type <code><a class="el" href="structBitrateStatistics.html">BitrateStatistics</a></code> and returns type <code><a class="el" href="structBitrates.html">Bitrates</a></code>.</p>
 <p>For more details about the individual algorithms, please visit <a href="https://www.notion.so/tryfractal/Adaptive-Bitrate-Algorithms-a6ea0987adc04e8d84792fc9dcbc7fc7">https://www.notion.so/tryfractal/Adaptive-Bitrate-Algorithms-a6ea0987adc04e8d84792fc9dcbc7fc7</a></p>
 <p>Copyright Fractal Computers, Inc. 2021</p>
-<h1><a class="anchor" id="autotoc_md32"></a>
+<h1><a class="anchor" id="autotoc_md34"></a>
 predicting bitrate should be stored here.</h1>
-<h1><a class="anchor" id="autotoc_md33"></a>
+<h1><a class="anchor" id="autotoc_md35"></a>
 Usage</h1>
 <p>The client should periodically call calculate_new_bitrate with any data rrequested, such as throughput or nack data. This will update max_bitrate and max_burst_bitrate if needed. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>

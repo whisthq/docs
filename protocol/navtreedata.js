@@ -38,23 +38,23 @@ var NAVTREE =
           [ "Windows", "index.html#autotoc_md11", null ]
         ] ]
       ] ],
-      [ "Building the Protocol", "index.html#autotoc_md12", null ],
-      [ "Running the Protocol", "index.html#autotoc_md13", [
-        [ "Sentry", "index.html#autotoc_md14", null ]
+      [ "Building the Protocol", "index.html#autotoc_md14", null ],
+      [ "Running the Protocol", "index.html#autotoc_md15", [
+        [ "Sentry", "index.html#autotoc_md16", null ]
       ] ],
-      [ "Tips for Specific Tools", "index.html#autotoc_md15", [
-        [ "IDEs", "index.html#autotoc_md16", null ],
-        [ "MacOS CLI", "index.html#autotoc_md17", null ],
-        [ "Linux CLI", "index.html#autotoc_md18", null ]
+      [ "Tips for Specific Tools", "index.html#autotoc_md17", [
+        [ "IDEs", "index.html#autotoc_md18", null ],
+        [ "MacOS CLI", "index.html#autotoc_md19", null ],
+        [ "Linux CLI", "index.html#autotoc_md20", null ]
       ] ],
-      [ "Further documentation", "index.html#autotoc_md19", null ]
+      [ "Further documentation", "index.html#autotoc_md21", null ]
     ] ],
-    [ "CI & CD", "index.html#autotoc_md20", [
-      [ "Continuous Integration", "index.html#autotoc_md22", null ]
+    [ "CI & CD", "index.html#autotoc_md22", [
+      [ "Continuous Integration", "index.html#autotoc_md24", null ]
     ] ],
-    [ "Styling", "index.html#autotoc_md23", [
-      [ "clang-format", "index.html#autotoc_md24", null ],
-      [ "clang-tidy", "index.html#autotoc_md25", null ]
+    [ "Styling", "index.html#autotoc_md25", [
+      [ "clang-format", "index.html#autotoc_md26", null ],
+      [ "clang-tidy", "index.html#autotoc_md27", null ]
     ] ],
     [ "Fractal Desktop Clients", "md_client_README.html", null ],
     [ "Fractal Windows/Linux Ubuntu Servers", "md_server_README.html", null ],
