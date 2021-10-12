@@ -77,20 +77,18 @@ names.
 
 <dl class="py function">
 <dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.drain_instance">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">drain_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">app.database.models.cloud.InstanceInfo</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.drain_instance" title="Permalink to this definition">¶</a></dt>
-<dd><p>Attempts to drain an instance, logging an error and marking unresponsive
-if it cannot be drained, and removing from the database if the instance
+<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">drain_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">app.database.models.cloud.InstanceInfo</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.drain_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks an instance as draining, removing from the database if the instance
 in question does not actually exist. Note that we will terminate instances
 that do not have a valid IP (since host service is not up/connected yet).</p>
-<p>Note that we should not call this function multiple times on a single host
-since subsequent calls will fail and we will unfairly mark the host
-service as unresponsive.</p>
+<p>After marking the instance as draining, the host service should react to this
+change and terminate itself.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>instance</strong> – The instance to drain</p>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>True if the instance is marked for draining, else False.</p>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
