@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"fractal_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e":[9,0,1,2,1,121],
+"fractal_8h.html#a514734c0c6acc3c2f2076323d45676d8":[9,0,1,2,1,31],
 "fractal_8h.html#a56ab8e1d2af6f308d5612205ba3d9e6b":[9,0,1,2,1,40],
 "fractal_8h.html#a5707c89933e682d000495637c8dc45fd":[9,0,1,2,1,51],
 "fractal_8h.html#a5c279ad767a41e3b26f0f55bbc55749d":[9,0,1,2,1,45],
@@ -39,10 +41,11 @@ var NAVTREEINDEX4 =
 "fractal_8h.html#aa1728270d73c5d1598de1fd691762eb1":[9,0,1,2,1,50],
 "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c":[9,0,1,2,1,105],
 "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca350f6ac715ca8fba37c2967385fd1594":[9,0,1,2,1,105,5],
-"fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca62adb843bfd6857bbf5f634425c404d1":[9,0,1,2,1,105,8],
+"fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca62adb843bfd6857bbf5f634425c404d1":[9,0,1,2,1,105,9],
 "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca6389a3270b7b9331d3032b9c2ecd8681":[9,0,1,2,1,105,2],
 "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca86b5ce811becb248c9572438105db9aa":[9,0,1,2,1,105,4],
 "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca8aa255189138c9a25497f6e544c8f645":[9,0,1,2,1,105,7],
+"fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca8bee600907e82ec0da4091d1c1a5abe5":[9,0,1,2,1,105,8],
 "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca9a194dedc17990414b991c7fbfec8c9c":[9,0,1,2,1,105,3],
 "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140caaa1b5639726c407ba750853d9701a3fb":[9,0,1,2,1,105,1],
 "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140cad224a8c24c20cac687cbc8a988ac8cc6":[9,0,1,2,1,105,6],
@@ -240,14 +243,11 @@ var NAVTREEINDEX4 =
 "globals_b.html":[9,1,0,2],
 "globals_c.html":[9,1,0,3],
 "globals_d.html":[9,1,0,4],
-"globals_defs.html":[9,1,6,0],
 "globals_defs.html":[9,1,6],
+"globals_defs.html":[9,1,6,0],
 "globals_defs_a.html":[9,1,6,1],
 "globals_defs_b.html":[9,1,6,2],
 "globals_defs_c.html":[9,1,6,3],
 "globals_defs_d.html":[9,1,6,4],
-"globals_defs_e.html":[9,1,6,5],
-"globals_defs_f.html":[9,1,6,6],
-"globals_defs_g.html":[9,1,6,7],
-"globals_defs_h.html":[9,1,6,8]
+"globals_defs_e.html":[9,1,6,5]
 };

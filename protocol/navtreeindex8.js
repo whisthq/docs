@@ -1,5 +1,10 @@
 var NAVTREEINDEX8 =
 {
+"sdl__utils_8c.html#a1b2a1365885e6c3b0e2e42d9e38d56a8":[9,0,0,20,13],
+"sdl__utils_8c.html#a1bf4241c001c12d54c4b59d77f422183":[9,0,0,20,11],
+"sdl__utils_8c.html#a242ea45e405e9d5ae92e440357e98c3c":[9,0,0,20,18],
+"sdl__utils_8c.html#a2a57d774e71166271bbff6c515111104":[9,0,0,20,16],
+"sdl__utils_8c.html#a2d249b006c12fe0b7622c0d3b2d1650d":[9,0,0,20,0],
 "sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81":[9,0,0,20,4],
 "sdl__utils_8c.html#a7210c0d222c584be91c2f0584f8d6a10":[9,0,0,20,14],
 "sdl__utils_8c.html#a87e59165386162d74cf290669cf1e5d8":[9,0,0,20,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX8 =
 "structClient.html#a301b48cabe484460c8b9d4846d64d265":[8,0,14,2],
 "structClient.html#a473ace0f6f1316dbf859b6768179dad6":[8,0,14,0],
 "structClient.html#a68ea4f9e537b3187041d85c74b9d57c8":[8,0,14,9],
-"structClient.html#a6d3700d67550763757c5c4e3fdaa8827":[8,0,14,13],
-"structClient.html#a77177b559115520f217f957fc94b8cee":[8,0,14,12],
-"structClient.html#aa6c6a5dde8a67c48ea8b184d98a4933f":[8,0,14,7],
-"structClient.html#aac8b455ff593997a80d995a49bf7819e":[8,0,14,15],
-"structClient.html#ac38ecce3d2a583001c5fe752e2402c88":[8,0,14,6],
-"structClient.html#ad569582e91bf11c839621f77dd7d4fcf":[8,0,14,14]
+"structClient.html#a6d3700d67550763757c5c4e3fdaa8827":[8,0,14,13]
 };

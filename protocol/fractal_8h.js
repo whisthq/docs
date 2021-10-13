@@ -308,6 +308,7 @@ var fractal_8h =
       [ "SMESSAGE_WINDOW_TITLE", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca350f6ac715ca8fba37c2967385fd1594", null ],
       [ "MESSAGE_DISCOVERY_REPLY", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140cad224a8c24c20cac687cbc8a988ac8cc6", null ],
       [ "SMESSAGE_OPEN_URI", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca8aa255189138c9a25497f6e544c8f645", null ],
+      [ "SMESSAGE_FULLSCREEN", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca8bee600907e82ec0da4091d1c1a5abe5", null ],
       [ "SMESSAGE_QUIT", "fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca62adb843bfd6857bbf5f634425c404d1", null ]
     ] ],
     [ "InteractionMode", "fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ff", [

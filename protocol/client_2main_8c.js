@@ -15,6 +15,8 @@ var client_2main_8c =
     [ "continue_pumping", "client_2main_8c.html#a16b78c181bfd39c925b4fee86464e17c", null ],
     [ "ctrl_pressed", "client_2main_8c.html#aec4e866abc16cc8217d33dfae87d5877", null ],
     [ "exiting", "client_2main_8c.html#a9aec5d9660ae8a0c8117f5d96b871606", null ],
+    [ "fullscreen_trigger", "client_2main_8c.html#ad298bfb09c7b25b5d4ad072f4d605370", null ],
+    [ "fullscreen_value", "client_2main_8c.html#aa0aea9909a758e1f73c276a4ca15f893", null ],
     [ "hex_aes_private_key", "client_2main_8c.html#aa8c4fc02a0a9feabf512f08048bd1abc", null ],
     [ "icon_png_filename", "client_2main_8c.html#a7d4ba7377ed3ddb3081907af0a0f7c59", null ],
     [ "is_timing_latency", "client_2main_8c.html#ad0678fc1d4fdecca7f3facd477aa7335", null ],
