@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['y_3334',['y',['../structClient.html#adb47e2d8642c3a2d788eeb58a290db78',1,'Client::y()'],['../structFractalMouseWheelMessage.html#abf553852527eb98a28971050f309f30c',1,'FractalMouseWheelMessage::y()'],['../structFractalMouseMotionMessage.html#adf18f8fc1964bea50d90e710710dd4f5',1,'FractalMouseMotionMessage::y()'],['../structFractalMultigestureMessage.html#ad3c82e6c702c861ed4d8f67aa98ecde8',1,'FractalMultigestureMessage::y()'],['../structPeerUpdateMessage.html#a7697d592f94a993a6fe83e93f698f170',1,'PeerUpdateMessage::y()'],['../structFractalYUVColor.html#a6f50df6de770dfed4506bcaa8f4fdb63',1,'FractalYUVColor::y()']]],
-  ['y_5fnonrel_3335',['y_nonrel',['../structMouseMotionAccumulation.html#a30694ffc525d4d5c8fc34a806e455aba',1,'MouseMotionAccumulation::y_nonrel()'],['../structFractalMouseMotionMessage.html#aa9f0ef9df613b9901c4e84a3f9d6f1d8',1,'FractalMouseMotionMessage::y_nonrel()']]],
-  ['y_5frel_3336',['y_rel',['../structMouseMotionAccumulation.html#a2694caa5e5928916a7b7647f4fe27f08',1,'MouseMotionAccumulation']]],
-  ['year_3337',['year',['../structLodePNGTime.html#a32b68342f39f3d38ba91a721b1149b8f',1,'LodePNGTime']]]
+  ['x_3406',['x',['../structClient.html#afcea5d07cfcabf22a3889d4bec33fc78',1,'Client::x()'],['../structFractalMouseWheelMessage.html#a06d632ea447c7c20fb7f3e3ed5dda03e',1,'FractalMouseWheelMessage::x()'],['../structFractalMouseMotionMessage.html#a069e20d19bed4c29108cfc97eca90591',1,'FractalMouseMotionMessage::x()'],['../structFractalMultigestureMessage.html#a736d0f0e068fd63264bf6500455bf155',1,'FractalMultigestureMessage::x()'],['../structPeerUpdateMessage.html#a33d224d6a46541396b5464e14965c56b',1,'PeerUpdateMessage::x()']]],
+  ['x11_5fcapture_5fdevice_3407',['x11_capture_device',['../structCaptureDevice.html#ac5f90886ec7d4b671095a2f62a88f99e',1,'CaptureDevice']]],
+  ['x11_5fkeysyms_3408',['x11_keysyms',['../xtest__input__driver_8c.html#acff3b962a684552cbf6677b3e397b121',1,'xtest_input_driver.c']]],
+  ['x_5fnonrel_3409',['x_nonrel',['../structMouseMotionAccumulation.html#a5072e8720b2fc91ad75d4f8436f635e5',1,'MouseMotionAccumulation::x_nonrel()'],['../structFractalMouseMotionMessage.html#a7acb549cb12dffc79cd9333086a316f4',1,'FractalMouseMotionMessage::x_nonrel()']]],
+  ['x_5frel_3410',['x_rel',['../structMouseMotionAccumulation.html#a455d2dc7dff512016314a68b54ae17d2',1,'MouseMotionAccumulation']]]
 ];

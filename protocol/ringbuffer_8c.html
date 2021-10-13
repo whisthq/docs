@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('ringbuffer_8c.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="ringbuffer_8h_source.html">ringbuffer.h</a>&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -133,9 +134,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a2f7e1e295ea3891d8b9b342fab21db03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a2f7e1e295ea3891d8b9b342fab21db03">receive_packet</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet)</td></tr>
 <tr class="memdesc:a2f7e1e295ea3891d8b9b342fab21db03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a packet to the ring buffer, and initialize the corresponding frame if necessary. Also nacks for missing packets or frames.  <a href="ringbuffer_8c.html#a2f7e1e295ea3891d8b9b342fab21db03">More...</a><br /></td></tr>
 <tr class="separator:a2f7e1e295ea3891d8b9b342fab21db03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36f7eee64b17022f222c26c71edc3078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a36f7eee64b17022f222c26c71edc3078">nack_packet</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int index)</td></tr>
-<tr class="memdesc:a36f7eee64b17022f222c26c71edc3078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a nack for the packet at index index of frame with ID id.  <a href="ringbuffer_8c.html#a36f7eee64b17022f222c26c71edc3078">More...</a><br /></td></tr>
-<tr class="separator:a36f7eee64b17022f222c26c71edc3078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06579df66400790c9af75c806b484aba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a06579df66400790c9af75c806b484aba">nack_single_packet</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int index)</td></tr>
+<tr class="memdesc:a06579df66400790c9af75c806b484aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a nack for the packet at index index of frame with ID id.  <a href="ringbuffer_8c.html#a06579df66400790c9af75c806b484aba">More...</a><br /></td></tr>
+<tr class="separator:a06579df66400790c9af75c806b484aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e418ff63c607877e2cf30c280003b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a73e418ff63c607877e2cf30c280003b8">nack_bitarray_packets</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int start_index, <a class="el" href="structBitArray.html">BitArray</a> *bit_arr)</td></tr>
+<tr class="separator:a73e418ff63c607877e2cf30c280003b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af514843307356fd516b1a96211c9d986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#af514843307356fd516b1a96211c9d986">destroy_ring_buffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
 <tr class="memdesc:af514843307356fd516b1a96211c9d986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the ring buffer and all its constituent frames.  <a href="ringbuffer_8c.html#af514843307356fd516b1a96211c9d986">More...</a><br /></td></tr>
 <tr class="separator:af514843307356fd516b1a96211c9d986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,6 +393,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a73e418ff63c607877e2cf30c280003b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e418ff63c607877e2cf30c280003b8">&#9670;&nbsp;</a></span>nack_bitarray_packets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nack_bitarray_packets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
+          <td class="paramname"><em>ring_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBitArray.html">BitArray</a> *&#160;</td>
+          <td class="paramname"><em>bit_arr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4f2aef26327e3507e68f09372a84a83b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f2aef26327e3507e68f09372a84a83b">&#9670;&nbsp;</a></span>nack_missing_frames()</h2>
 
@@ -468,14 +511,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a36f7eee64b17022f222c26c71edc3078"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36f7eee64b17022f222c26c71edc3078">&#9670;&nbsp;</a></span>nack_packet()</h2>
+<a id="a06579df66400790c9af75c806b484aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06579df66400790c9af75c806b484aba">&#9670;&nbsp;</a></span>nack_single_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void nack_packet </td>
+          <td class="memname">void nack_single_packet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
           <td class="paramname"><em>ring_buffer</em>, </td>

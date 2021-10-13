@@ -133,9 +133,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa8bf751ea26659195c59cd180956315a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#aa8bf751ea26659195c59cd180956315a">send_server_quit_messages</a> (int num_messages)</td></tr>
 <tr class="memdesc:aa8bf751ea26659195c59cd180956315a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends quit messages to the server.  <a href="client_2network_8c.html#aa8bf751ea26659195c59cd180956315a">More...</a><br /></td></tr>
 <tr class="separator:aa8bf751ea26659195c59cd180956315a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad659e1d12a99b24203c3b288a07f40ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ad659e1d12a99b24203c3b288a07f40ae">send_fmsg</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fmsg)</td></tr>
-<tr class="memdesc:ad659e1d12a99b24203c3b288a07f40ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a FractalMessage from client to server.  <a href="client_2network_8c.html#ad659e1d12a99b24203c3b288a07f40ae">More...</a><br /></td></tr>
-<tr class="separator:ad659e1d12a99b24203c3b288a07f40ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacae26c0e5cbef7e08f1c3011b07e58a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#aacae26c0e5cbef7e08f1c3011b07e58a">send_fcmsg</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
+<tr class="memdesc:aacae26c0e5cbef7e08f1c3011b07e58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a FractalMessage from client to server.  <a href="client_2network_8c.html#aacae26c0e5cbef7e08f1c3011b07e58a">More...</a><br /></td></tr>
+<tr class="separator:aacae26c0e5cbef7e08f1c3011b07e58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -186,7 +186,7 @@ functions.</h1>
 <h1><a class="anchor" id="autotoc_md53"></a>
 Usage</h1>
 <p>discover_ports, connect_to_server, close_connections, and send_server_quit_messages are used to start and end connections to the Fractal server. To connect, call discover_ports, then connect_to_server. To disconnect, send_server_quit_messages and then close_connections.</p>
-<p>To communicate with the server, use send_fmsg to send Fractal messages to the server. Large fmsg's (e.g. clipboard messages) are sent over TCP; otherwise, messages are sent over UDP. Use update_ping to ping the server at regular intervals, and receive_pong to receive pongs (ping acknowledgements) from the server. </p>
+<p>To communicate with the server, use send_fcmsg to send Fractal messages to the server. Large fcmsg's (e.g. clipboard messages) are sent over TCP; otherwise, messages are sent over UDP. Use update_ping to ping the server at regular intervals, and receive_pong to receive pongs (ping acknowledgements) from the server. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a69eb06e880b8a55013053ab9c221c9a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69eb06e880b8a55013053ab9c221c9a4">&#9670;&nbsp;</a></span>TCP_CONNECTION_WAIT</h2>
@@ -341,17 +341,17 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ad659e1d12a99b24203c3b288a07f40ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad659e1d12a99b24203c3b288a07f40ae">&#9670;&nbsp;</a></span>send_fmsg()</h2>
+<a id="aacae26c0e5cbef7e08f1c3011b07e58a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacae26c0e5cbef7e08f1c3011b07e58a">&#9670;&nbsp;</a></span>send_fcmsg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int send_fmsg </td>
+          <td class="memname">int send_fcmsg </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
-          <td class="paramname"><em>fmsg</em></td><td>)</td>
+          <td class="paramname"><em>fcmsg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -360,7 +360,7 @@ Usage</h1>
 <p>Send a FractalMessage from client to server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fmsg</td><td>FractalMessage struct to send as packet</td></tr>
+    <tr><td class="paramname">fcmsg</td><td>FractalMessage struct to send as packet</td></tr>
   </table>
   </dd>
 </dl>

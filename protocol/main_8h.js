@@ -10,7 +10,6 @@ var main_8h =
     [ "identifier", "main_8h.html#adba1e7b2167656bf2eb188879ac64a90", null ],
     [ "input_device", "main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd", null ],
     [ "max_bitrate", "main_8h.html#ad137585f4fddac5c02d6b3f99323385b", null ],
-    [ "max_burst_bitrate", "main_8h.html#a8a5269d876b9e07618d093dbd293141c", null ],
     [ "sample_rate", "main_8h.html#a527325650d66abd9626499785b3bafd2", null ],
     [ "stop_streaming", "main_8h.html#aae54fd77214dad6eaf2b542edb690d53", null ],
     [ "update_encoder", "main_8h.html#a8e07e0ac06cb165d61f1e475c82aaa73", null ],

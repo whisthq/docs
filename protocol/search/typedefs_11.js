@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['x11capturedevice_3449',['X11CaptureDevice',['../x11capture_8h.html#aeea69005fc267aff603dc2ff610aa95f',1,'x11capture.h']]]
+  ['videodecoder_3525',['VideoDecoder',['../videodecode_8h.html#a931b433c839c4e0eddb5109d6e205a90',1,'videodecode.h']]],
+  ['videoencoder_3526',['VideoEncoder',['../videoencode_8h.html#aaf20c160de785dcebb9bdc14eec0f258',1,'videoencode.h']]],
+  ['videoencodertype_3527',['VideoEncoderType',['../videoencode_8h.html#ab20c7bac827841ee9ce7f6ca5c6be85a',1,'videoencode.h']]],
+  ['videoframe_3528',['VideoFrame',['../fractal__frame_8h.html#a25e7e527e214515b98f4d15b2dde80d0',1,'fractal_frame.h']]]
 ];

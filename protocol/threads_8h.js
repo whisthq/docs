@@ -29,6 +29,7 @@ var threads_8h =
     [ "fractal_sleep", "threads_8h.html#a88a9f64dcb3765f09fd4eda466448288", null ],
     [ "fractal_try_lock_mutex", "threads_8h.html#ab41ae12e1dcb546490c49368c8fb65a8", null ],
     [ "fractal_unlock_mutex", "threads_8h.html#a93553032fddbc15ef88daf320939c68a", null ],
+    [ "fractal_usleep", "threads_8h.html#a5b910d9c11ffb23856f54c988a69886d", null ],
     [ "fractal_wait_cond", "threads_8h.html#a8665784a8782fd230d875e1ccfd1ae08", null ],
     [ "fractal_wait_semaphore", "threads_8h.html#a4c4336163b787c6d5b50dc612ddab51d", null ],
     [ "fractal_wait_thread", "threads_8h.html#a348bd984efaaafbd9f297f63a46dd65c", null ]

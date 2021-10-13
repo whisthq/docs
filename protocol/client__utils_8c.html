@@ -132,9 +132,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a44fd0b41f8dec9bae4a8e081703c014b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8c.html#a44fd0b41f8dec9bae4a8e081703c014b">free_parsed_args</a> (void)</td></tr>
 <tr class="memdesc:a44fd0b41f8dec9bae4a8e081703c014b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free any allocated memory for parsed args.  <a href="client__utils_8c.html#a44fd0b41f8dec9bae4a8e081703c014b">More...</a><br /></td></tr>
 <tr class="separator:a44fd0b41f8dec9bae4a8e081703c014b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a354511aa3deaaae3123e6ae6fdd0e7c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8c.html#a354511aa3deaaae3123e6ae6fdd0e7c9">prepare_init_to_server</a> (<a class="el" href="structFractalDiscoveryRequestMessage.html">FractalDiscoveryRequestMessage</a> *fmsg, char *email)</td></tr>
-<tr class="memdesc:a354511aa3deaaae3123e6ae6fdd0e7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for initial request to server by setting user email and time data.  <a href="client__utils_8c.html#a354511aa3deaaae3123e6ae6fdd0e7c9">More...</a><br /></td></tr>
-<tr class="separator:a354511aa3deaaae3123e6ae6fdd0e7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8c.html#a68658df46ddef1ce1ea7ee3b1600bc6a">prepare_init_to_server</a> (<a class="el" href="structFractalDiscoveryRequestMessage.html">FractalDiscoveryRequestMessage</a> *fcmsg, char *email)</td></tr>
+<tr class="memdesc:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for initial request to server by setting user email and time data.  <a href="client__utils_8c.html#a68658df46ddef1ce1ea7ee3b1600bc6a">More...</a><br /></td></tr>
+<tr class="separator:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd3d49fb422332aa7838542366bc87f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8c.html#afd3d49fb422332aa7838542366bc87f9">update_mouse_motion</a> ()</td></tr>
 <tr class="memdesc:afd3d49fb422332aa7838542366bc87f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update mouse location if the mouse state has updated since the last call to this function.  <a href="client__utils_8c.html#afd3d49fb422332aa7838542366bc87f9">More...</a><br /></td></tr>
 <tr class="separator:afd3d49fb422332aa7838542366bc87f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -394,8 +394,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a354511aa3deaaae3123e6ae6fdd0e7c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a354511aa3deaaae3123e6ae6fdd0e7c9">&#9670;&nbsp;</a></span>prepare_init_to_server()</h2>
+<a id="a68658df46ddef1ce1ea7ee3b1600bc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68658df46ddef1ce1ea7ee3b1600bc6a">&#9670;&nbsp;</a></span>prepare_init_to_server()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,7 +404,7 @@ Usage</h1>
           <td class="memname">int prepare_init_to_server </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structFractalDiscoveryRequestMessage.html">FractalDiscoveryRequestMessage</a> *&#160;</td>
-          <td class="paramname"><em>fmsg</em>, </td>
+          <td class="paramname"><em>fcmsg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -423,7 +423,7 @@ Usage</h1>
 <p>Prepare for initial request to server by setting user email and time data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fmsg</td><td>Discovery request message packet to be sent to the server</td></tr>
+    <tr><td class="paramname">fcmsg</td><td>Discovery request message packet to be sent to the server</td></tr>
     <tr><td class="paramname">email</td><td>User email</td></tr>
   </table>
   </dd>

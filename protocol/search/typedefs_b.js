@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['osxfilenames_3433',['OSXFilenames',['../clipboard__osx_8h.html#ababf04235e81476fb86fccbe4a849561',1,'clipboard_osx.h']]],
-  ['osximage_3434',['OSXImage',['../clipboard__osx_8h.html#a3933849df961424992b259228b2cc153',1,'clipboard_osx.h']]]
+  ['networkthrottlecontext_3511',['NetworkThrottleContext',['../throttle_8h.html#a375c9c414e1b142f3dd40bf3eadc00ab',1,'throttle.h']]],
+  ['networkthrottlecontextinternal_3512',['NetworkThrottleContextInternal',['../throttle_8c.html#a469c9c9f601f599a07ccf1407b1a84d5',1,'throttle.c']]]
 ];

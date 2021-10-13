@@ -104,12 +104,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5b5686b7c49fe0d9f6049297416a558"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ac5b5686b7c49fe0d9f6049297416a558">broadcast_ack</a> (void)</td></tr>
 <tr class="memdesc:ac5b5686b7c49fe0d9f6049297416a558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts acks to all active clients.  <a href="server_2network_8h.html#ac5b5686b7c49fe0d9f6049297416a558">More...</a><br /></td></tr>
 <tr class="separator:ac5b5686b7c49fe0d9f6049297416a558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21641f19c8c9a0c13dbc600d7c65cc2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a21641f19c8c9a0c13dbc600d7c65cc2b">broadcast_udp_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len, int id, int burst_bitrate, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet_buffer, int *packet_len_buffer)</td></tr>
-<tr class="memdesc:a21641f19c8c9a0c13dbc600d7c65cc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> and accompanying FractalPacketType to all active clients, over UDP.  <a href="server_2network_8h.html#a21641f19c8c9a0c13dbc600d7c65cc2b">More...</a><br /></td></tr>
-<tr class="separator:a21641f19c8c9a0c13dbc600d7c65cc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625cda3e571448de114b40c82ffc1e79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a625cda3e571448de114b40c82ffc1e79">broadcast_tcp_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len)</td></tr>
-<tr class="memdesc:a625cda3e571448de114b40c82ffc1e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> and accompanying FractalPacketType to all active clients, over TCP.  <a href="server_2network_8h.html#a625cda3e571448de114b40c82ffc1e79">More...</a><br /></td></tr>
-<tr class="separator:a625cda3e571448de114b40c82ffc1e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae457421e461e9d3e93c7a059653d4121"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ae457421e461e9d3e93c7a059653d4121">broadcast_udp_packet_from_payload</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len, int packet_id)</td></tr>
+<tr class="memdesc:ae457421e461e9d3e93c7a059653d4121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> and accompanying FractalPacketType to all active clients, over UDP.  <a href="server_2network_8h.html#ae457421e461e9d3e93c7a059653d4121">More...</a><br /></td></tr>
+<tr class="separator:ae457421e461e9d3e93c7a059653d4121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156affa96c205eece510502ca0fa4148"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a156affa96c205eece510502ca0fa4148">broadcast_udp_packet</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> *packet, size_t packet_size)</td></tr>
+<tr class="memdesc:a156affa96c205eece510502ca0fa4148"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> over UDP to all active clients. This function does not create the packet from raw data, but assumes that the packet has been prepared by the caller (e.g. fragmented into appropriately-sized chunks by a fragmenter). This function assumes and checks that the packet is small enough to send without further breaking into smaller packets.  <a href="server_2network_8h.html#a156affa96c205eece510502ca0fa4148">More...</a><br /></td></tr>
+<tr class="separator:a156affa96c205eece510502ca0fa4148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b24bef8f391554f0828151fe6fc2d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ab4b24bef8f391554f0828151fe6fc2d7">broadcast_tcp_packet_from_payload</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len)</td></tr>
+<tr class="memdesc:ab4b24bef8f391554f0828151fe6fc2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> and accompanying FractalPacketType to all active clients, over TCP.  <a href="server_2network_8h.html#ab4b24bef8f391554f0828151fe6fc2d7">More...</a><br /></td></tr>
+<tr class="separator:ab4b24bef8f391554f0828151fe6fc2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2ac516b9876383e13ecdd0e552f34dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ae2ac516b9876383e13ecdd0e552f34dc">try_get_next_message_tcp</a> (int <a class="el" href="client_2video_8c.html#a81633369010405f6d037092570b2d7aa">client_id</a>, <a class="el" href="structFractalPacket.html">FractalPacket</a> **p_tcp_packet)</td></tr>
 <tr class="memdesc:ae2ac516b9876383e13ecdd0e552f34dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read in next available TCP message from a given, active client.  <a href="server_2network_8h.html#ae2ac516b9876383e13ecdd0e552f34dc">More...</a><br /></td></tr>
 <tr class="separator:ae2ac516b9876383e13ecdd0e552f34dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,14 +179,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a625cda3e571448de114b40c82ffc1e79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a625cda3e571448de114b40c82ffc1e79">&#9670;&nbsp;</a></span>broadcast_tcp_packet()</h2>
+<a id="ab4b24bef8f391554f0828151fe6fc2d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b24bef8f391554f0828151fe6fc2d7">&#9670;&nbsp;</a></span>broadcast_tcp_packet_from_payload()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int broadcast_tcp_packet </td>
+          <td class="memname">int broadcast_tcp_packet_from_payload </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
@@ -221,14 +224,52 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a21641f19c8c9a0c13dbc600d7c65cc2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21641f19c8c9a0c13dbc600d7c65cc2b">&#9670;&nbsp;</a></span>broadcast_udp_packet()</h2>
+<a id="a156affa96c205eece510502ca0fa4148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156affa96c205eece510502ca0fa4148">&#9670;&nbsp;</a></span>broadcast_udp_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int broadcast_udp_packet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>packet_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> over UDP to all active clients. This function does not create the packet from raw data, but assumes that the packet has been prepared by the caller (e.g. fragmented into appropriately-sized chunks by a fragmenter). This function assumes and checks that the packet is small enough to send without further breaking into smaller packets. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>A pointer to the packet to be sent </td></tr>
+    <tr><td class="paramname">packet_size</td><td>The size of the packet to be sent</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, will return 0 on success </dd></dl>
+
+</div>
+</div>
+<a id="ae457421e461e9d3e93c7a059653d4121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae457421e461e9d3e93c7a059653d4121">&#9670;&nbsp;</a></span>broadcast_udp_packet_from_payload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int broadcast_udp_packet_from_payload </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
@@ -249,25 +290,7 @@ Usage</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>burst_bitrate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>packet_len_buffer</em>&#160;</td>
+          <td class="paramname"><em>packet_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -283,10 +306,7 @@ Usage</h1>
     <tr><td class="paramname">type</td><td>The FractalPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
     <tr><td class="paramname">data</td><td>A pointer to the data to be sent </td></tr>
     <tr><td class="paramname">len</td><td>The number of bytes to send </td></tr>
-    <tr><td class="paramname">id</td><td>An ID for the UDP data. </td></tr>
-    <tr><td class="paramname">burst_bitrate</td><td>The maximum bitrate that packets will be sent over. -1 will imply sending as fast as possible </td></tr>
-    <tr><td class="paramname">packet_buffer</td><td>An array of RTPPacket's, each sub-packet of the UDPPacket will be stored in packet_buffer[i] </td></tr>
-    <tr><td class="paramname">packet_len_buffer</td><td>An array of int's, defining the length of each sub-packet located in packet_buffer[i]</td></tr>
+    <tr><td class="paramname">packet_id</td><td>An ID for the UDP data.</td></tr>
   </table>
   </dd>
 </dl>

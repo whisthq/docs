@@ -1,5 +1,8 @@
 var structFractalClientMessage =
 [
+    [ "ba_raw", "structFractalClientMessage.html#aae784c0454a7fecfcbdaa621c202a2b9", null ],
+    [ "bitarray_audio_nack", "structFractalClientMessage.html#ad9ff12f5b4b3b74e107aae325039eae7", null ],
+    [ "bitarray_video_nack", "structFractalClientMessage.html#a3e8707fd0877137690ead61680b26531", null ],
     [ "bitrate", "structFractalClientMessage.html#a6e6089eea6c3d9429d56a5f26d3ac6cb", null ],
     [ "bitrate_data", "structFractalClientMessage.html#a8ea6c95372a7fd445dd4ef73f57b12f8", null ],
     [ "burst_bitrate", "structFractalClientMessage.html#a17c8531cf1bc459418e449c2939d9eed", null ],
@@ -19,9 +22,10 @@ var structFractalClientMessage =
     [ "mouseMotion", "structFractalClientMessage.html#a68efa5bf521e7824b149a1834957a402", null ],
     [ "mouseWheel", "structFractalClientMessage.html#a1dbda6c8337588eb94a56a891db9b8e7", null ],
     [ "multigesture", "structFractalClientMessage.html#aa73229191846c04602687ddb1de3737a", null ],
-    [ "nack_data", "structFractalClientMessage.html#a4f4ec4a4a3c4156372022f499673aeae", null ],
+    [ "numBits", "structFractalClientMessage.html#a1bca58e9791bd1d0eba2872f3b9b1251", null ],
     [ "ping_id", "structFractalClientMessage.html#a4bda042c8ccebb3085388fdfc3d05127", null ],
     [ "reinitialize_encoder", "structFractalClientMessage.html#a7184c50d7d3eba02d87d274a5969c3df", null ],
+    [ "simple_nack", "structFractalClientMessage.html#a4d99984635a4701789f61199d2e07783", null ],
     [ "tcpRecovery", "structFractalClientMessage.html#aba3d2531c7e0cea6d64cc49797f26ff2", null ],
     [ "type", "structFractalClientMessage.html#aa962a98ff0a051019e476606e41f8a0d", null ],
     [ "width", "structFractalClientMessage.html#acc775e4bcdc81355302dcb35e1f344ed", null ]

@@ -111,13 +111,13 @@ High-Level Overview</h1>
 <p>The same process is used for audio capture, encoding, decoding, and playing. See <code>send_audio</code> of <code>./server/main.c</code>, <code>./fractal/audio/audio{capture,encode,decode}.c</code>, and <code>receive_audio</code> of <code>./client/audio.c</code></p>
 <p>Throughout the life of the protocol, various messages will be send to and from the client and server. For example, if the client and server are of different resolution, the image will appear stretched, so to fix this the client will send a message to server to ask the server to change resolutions to match the client.</p>
 <ul>
-<li>To send a message from client to server, call <code>send_fmsg</code>. See <code>./client/main.c</code> for usage.</li>
+<li>To send a message from client to server, call <code>send_fcmsg</code>. See <code>./client/main.c</code> for usage.</li>
 <li>To send a message from server to client, create a <code><a class="el" href="structFractalServerMessage.html" title="Server message.">FractalServerMessage</a></code> and call <code>broadcast_tcp_packet</code> or <code>broadcast_udp_packet</code>. See <code>./server/main.c</code> for usage.</li>
 <li>To handle a server message on the client, see <code>./client/handle_server_message.c</code></li>
 <li>To handle a client message on the server, see <code>./server/handle_client_message.c</code></li>
 <li>See <code>./fractal/core/fractal.h</code> for struct definitions.</li>
 </ul>
-<p>Of course, input must also be sent from client to server. This is handled in the form of SDL Events, which are retrieved in <code>./client/main.c</code> and handled in <code><a class="el" href="sdl__event__handler_8c.html" title="This file contains client-specific wrappers to low-level network.">sdl_event_handler.c</a></code>. These generally take the form of <code>fmsg</code>'s sent from client to server, over <code>UDP</code> for speed. We don't handle packet dropping, however, so sometimes the capslock and numlock will go out-of-sync. We use <code>sync_keyboard_state</code> to fix this, resyncing stateful keys every 50ms with an <code>fmsg</code>. This additionally handles the initial sync by-default.</p>
+<p>Of course, input must also be sent from client to server. This is handled in the form of SDL Events, which are retrieved in <code>./client/main.c</code> and handled in <code><a class="el" href="sdl__event__handler_8c.html" title="This file contains client-specific wrappers to low-level network.">sdl_event_handler.c</a></code>. These generally take the form of <code>fcmsg</code>'s sent from client to server, over <code>UDP</code> for speed. We don't handle packet dropping, however, so sometimes the capslock and numlock will go out-of-sync. We use <code>sync_keyboard_state</code> to fix this, resyncing stateful keys every 50ms with an <code>fcmsg</code>. This additionally handles the initial sync by-default.</p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Current Encoding Status</h2>
 <p>Our current status of using encoders is a bit tricky.</p>
@@ -129,9 +129,9 @@ File Structure</h1>
 <div class="line">├── client</div>
 <div class="line">│   ├── audio.c &lt;- Handle and play audio packets</div>
 <div class="line">│   ├── client_utils.c &lt;- cmdline options, among others</div>
-<div class="line">│   ├── handle_server_message.c &lt;- Handle server fmsg&#39;s</div>
-<div class="line">│   ├── main.c &lt;- SDL Event loop, receive and categorize packets as fmsg/audio/video</div>
-<div class="line">│   ├── network.c &lt;- Functions to connect to server, and send_fmsg</div>
+<div class="line">│   ├── handle_server_message.c &lt;- Handle server fcmsg&#39;s</div>
+<div class="line">│   ├── main.c &lt;- SDL Event loop, receive and categorize packets as fcmsg/audio/video</div>
+<div class="line">│   ├── network.c &lt;- Functions to connect to server, and send_fcmsg</div>
 <div class="line">│   ├── sdl_event_handler.c &lt;- Handle SDL Events</div>
 <div class="line">│   ├── sdl_utils.c &lt;- Set window icon, resize handler</div>
 <div class="line">│   ├── sdlscreeninfo.c &lt;- Get monitor/window width/height functions</div>
@@ -190,7 +190,7 @@ File Structure</h1>
 <div class="line">│       └── x11nvidiacapture.c &lt;- Capture h264/h265 compressed screen with NvidiaCaptureSDK</div>
 <div class="line">└── server</div>
 <div class="line">    ├── client.c &lt;- Handle multiclient messages</div>
-<div class="line">    ├── handle_client_message.c &lt;- Handle client fmsg&#39;s</div>
+<div class="line">    ├── handle_client_message.c &lt;- Handle client fsmsg&#39;s</div>
 <div class="line">    ├── main.c &lt;- Initialize server, receive packets and pass to where it needs to go</div>
 <div class="line">    ├── network.c &lt;- Networking code for multiclient</div>
 </div><!-- fragment --><p>The above files are fairly static. If you add or remove a file, or change what a file does, please update this directory so we can keep track of it all!</p>

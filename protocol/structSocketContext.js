@@ -7,6 +7,7 @@ var structSocketContext =
     [ "is_server", "structSocketContext.html#a1864be71c4d0c370178688dcdb2d9a2d", null ],
     [ "is_tcp", "structSocketContext.html#aae57afb23b658bc32bc3c267667fb527", null ],
     [ "mutex", "structSocketContext.html#abf76fd0caab9e872b74d16346c4e6827", null ],
+    [ "network_throttler", "structSocketContext.html#a1f399aec611c87250b70d43c98de0c44", null ],
     [ "reading_packet_len", "structSocketContext.html#a6523d7c1b6a3b420efd84fe2f4037d72", null ],
     [ "socket", "structSocketContext.html#a28ede8b0a03a907d521651a919e68a17", null ],
     [ "timeout", "structSocketContext.html#a5a36cb1810c843770bd4c12a0ac03698", null ],

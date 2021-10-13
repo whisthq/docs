@@ -28,12 +28,14 @@ var fractal_2network_2network_8h =
     [ "create_udp_context", "fractal_2network_2network_8h.html#a23eba78b590709dfde7f990f5bc5cebb", null ],
     [ "free_tcp_packet", "fractal_2network_2network_8h.html#a838d6a33dc748b31e1f3acc343159f7a", null ],
     [ "get_last_network_error", "fractal_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c", null ],
+    [ "get_packet_size", "fractal_2network_2network_8h.html#ad6c0e688fb68c0d4edac78142c950926", null ],
     [ "init_networking", "fractal_2network_2network_8h.html#a9aa5e35a90b347a4c8a872f4bdddeec3", null ],
     [ "read_tcp_packet", "fractal_2network_2network_8h.html#a61ea8223f4ac9109b1cc0aae95fc55b3", null ],
     [ "read_udp_packet", "fractal_2network_2network_8h.html#a79b7ae26dbe2bf91161fb7690d9dce49", null ],
     [ "recvp", "fractal_2network_2network_8h.html#a8030f60ee0fdd65573bdb96060d947dc", null ],
-    [ "replay_packet", "fractal_2network_2network_8h.html#a59d9afd452b3516b3b7cbe3c39e65507", null ],
-    [ "send_tcp_packet", "fractal_2network_2network_8h.html#a442afbbca53fdc607217cfc75bcb6adc", null ],
-    [ "send_udp_packet", "fractal_2network_2network_8h.html#a03dbebf409b9143d10706e7a035007d7", null ],
-    [ "sendp", "fractal_2network_2network_8h.html#a762e086ddd3fa8717527cefed7a70954", null ]
+    [ "send_tcp_packet_from_payload", "fractal_2network_2network_8h.html#a0b1ecf8502083587bccb42787b9499e2", null ],
+    [ "send_udp_packet", "fractal_2network_2network_8h.html#a78b823d957c810b584512f5ce9fa1664", null ],
+    [ "send_udp_packet_from_payload", "fractal_2network_2network_8h.html#a081e7cfcd2d33a90043ce61838a1b867", null ],
+    [ "sendp", "fractal_2network_2network_8h.html#a762e086ddd3fa8717527cefed7a70954", null ],
+    [ "write_payload_to_packets", "fractal_2network_2network_8h.html#a7c14bcd61990ab39706e7b5bb4b539db", null ]
 ];
