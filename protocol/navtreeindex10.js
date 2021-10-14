@@ -1,5 +1,8 @@
 var NAVTREEINDEX10 =
 {
+"structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137":[8,0,45,5],
+"structHuffmanTree.html#a232198073ccf061fd9fe1d18d346e220":[8,0,45,4],
+"structHuffmanTree.html#a608df5a24f60d1077a5cde19d5149e1f":[8,0,45,3],
 "structHuffmanTree.html#adf034ca9ce62a4ebfffaaeaba4378a26":[8,0,45,2],
 "structHuffmanTree.html#aef81d45a5c56276c5699a8e9a575021d":[8,0,45,1],
 "structHuffmanTree.html#af4717fb7948ba21daca651dc5d1abad6":[8,0,45,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX10 =
 "structSDLVideoContext.html#af0ae7ee9c3859565aa1c1f758c84e8ca":[8,0,75,4],
 "structScreenshotContainer.html":[8,0,74],
 "structScreenshotContainer.html#a33eae2495ca31e1e81d1a6ef59610cab":[8,0,74,0],
-"structScreenshotContainer.html#a3978aa9492254d836e47baa2545f1249":[8,0,74,4],
-"structScreenshotContainer.html#a8db8a86c6e8ebcad04fea5392dfb7c4e":[8,0,74,5],
-"structScreenshotContainer.html#aa3cffc6d20b44b0849d2775027d1b652":[8,0,74,3],
-"structScreenshotContainer.html#acd7a83bc6466cf45b58c1cb765d08ba4":[8,0,74,1]
+"structScreenshotContainer.html#a3978aa9492254d836e47baa2545f1249":[8,0,74,4]
 };

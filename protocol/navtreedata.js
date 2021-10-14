@@ -91,11 +91,11 @@ var NAVTREEINDEX =
 "globals_defs_f.html",
 "lodepng_8c.html#a623138ad43ce7eae0346e4324ba1f14e",
 "logging_8h.html#ab3d0e9567cfad5d6f83abc585beb520d",
-"sdl__utils_8c.html#a1b2a1365885e6c3b0e2e42d9e38d56a8",
-"structClient.html#a77177b559115520f217f957fc94b8cee",
-"structHuffmanTree.html#adf034ca9ce62a4ebfffaaeaba4378a26",
-"structScreenshotContainer.html#ae1b31b8b318b5c7341f6b3223295ff37",
-"transfercapture_8h.html#a1ff601abab02dcb3b01c6f2f7c9b9d37"
+"sdl__utils_8c.html",
+"structClient.html#a473ace0f6f1316dbf859b6768179dad6",
+"structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137",
+"structScreenshotContainer.html#a8db8a86c6e8ebcad04fea5392dfb7c4e",
+"transfercapture_8c.html#ac960986559af79f3a71c190d4705d321"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

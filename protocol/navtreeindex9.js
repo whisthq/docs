@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"structClient.html#a473ace0f6f1316dbf859b6768179dad6":[8,0,14,0],
+"structClient.html#a68ea4f9e537b3187041d85c74b9d57c8":[8,0,14,9],
+"structClient.html#a6d3700d67550763757c5c4e3fdaa8827":[8,0,14,13],
 "structClient.html#a77177b559115520f217f957fc94b8cee":[8,0,14,12],
 "structClient.html#aa6c6a5dde8a67c48ea8b184d98a4933f":[8,0,14,7],
 "structClient.html#aac8b455ff593997a80d995a49bf7819e":[8,0,14,15],
@@ -246,8 +249,5 @@ var NAVTREEINDEX9 =
 "structHash.html#a66918968854722efdf7ab5f8ac2c6c1d":[8,0,44,4],
 "structHash.html#a7247caa3e23eaba8f0d199ec5010c931":[8,0,44,5],
 "structHash.html#abf6ad3db2f652a19cc4ff0792e477899":[8,0,44,0],
-"structHuffmanTree.html":[8,0,45],
-"structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137":[8,0,45,5],
-"structHuffmanTree.html#a232198073ccf061fd9fe1d18d346e220":[8,0,45,4],
-"structHuffmanTree.html#a608df5a24f60d1077a5cde19d5149e1f":[8,0,45,3]
+"structHuffmanTree.html":[8,0,45]
 };
