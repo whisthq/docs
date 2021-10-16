@@ -18,7 +18,8 @@ var cursor_8h =
       [ "FRACTAL_CURSOR_SIZENS", "cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6a8e11b0073026a39280929be4a1fdb4a6", null ],
       [ "FRACTAL_CURSOR_SIZEALL", "cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6a199c10b09a45bcf02ee48771ec29e268", null ],
       [ "FRACTAL_CURSOR_NO", "cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6a97950c906e85cb072d95996e03faff50", null ],
-      [ "FRACTAL_CURSOR_HAND", "cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6a30f03c9d71b2ccdfbd9b633888036d50", null ]
+      [ "FRACTAL_CURSOR_HAND", "cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6a30f03c9d71b2ccdfbd9b633888036d50", null ],
+      [ "INVALID", "cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6aef2863a469df3ea6871d640e3669a2f2", null ]
     ] ],
     [ "FractalCursorState", "cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326", [
       [ "CURSOR_STATE_HIDDEN", "cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326af7afb8c1e22791f6d3f51cc98b83af44", null ],

@@ -86,16 +86,16 @@ var NAVTREEINDEX =
 "aes_8c.html",
 "client_2video_8c.html#a05762f440c9779950682d48749194672",
 "clock_8c.html#a38ab90ca4a75cfcbfee0d465955fca32",
-"fractal_2network_2network_8h.html#a69bfb6e73bae0625ac56f441ccf542d1",
-"fractal_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e",
-"globals_defs_f.html",
-"lodepng_8c.html#a623138ad43ce7eae0346e4324ba1f14e",
-"logging_8h.html#ab3d0e9567cfad5d6f83abc585beb520d",
-"sdl__utils_8c.html",
-"structClient.html#a473ace0f6f1316dbf859b6768179dad6",
-"structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137",
-"structScreenshotContainer.html#a8db8a86c6e8ebcad04fea5392dfb7c4e",
-"transfercapture_8c.html#ac960986559af79f3a71c190d4705d321"
+"fractal_2network_2network_8h.html#a65f2e30f7b11dadfd39341801f27b0b4",
+"fractal_8h.html#a4f3fb383aaf92fc14805d860bb69bc9f",
+"globals_defs_e.html",
+"linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768acd4b0dd64f273d24dcebef05e507ae2e",
+"logging_8c.html#a224eb7560635401953081973df1cab0d",
+"rwlock_8h.html#a5255faa9a120bed552bca2d77c2deb28",
+"structBitArray.html#aa3d7594ec48d0e37b897bf7ced3e0047",
+"structFractalServerMessage.html",
+"structRWLock.html",
+"threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

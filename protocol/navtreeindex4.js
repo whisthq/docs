@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"fractal_8h.html#a4f3fb383aaf92fc14805d860bb69bc9f":[9,0,1,2,1,79],
 "fractal_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e":[9,0,1,2,1,121],
 "fractal_8h.html#a514734c0c6acc3c2f2076323d45676d8":[9,0,1,2,1,31],
 "fractal_8h.html#a56ab8e1d2af6f308d5612205ba3d9e6b":[9,0,1,2,1,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "globals_defs_a.html":[9,1,6,1],
 "globals_defs_b.html":[9,1,6,2],
 "globals_defs_c.html":[9,1,6,3],
-"globals_defs_d.html":[9,1,6,4],
-"globals_defs_e.html":[9,1,6,5]
+"globals_defs_d.html":[9,1,6,4]
 };
