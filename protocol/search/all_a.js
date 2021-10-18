@@ -8,7 +8,7 @@ var searchData=
   ['key_5fr_1018',['key_r',['../structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50',1,'LodePNGColorMode::key_r()'],['../structLodePNGColorStats.html#af802f883e579161b78e210052bbbfb48',1,'LodePNGColorStats::key_r()']]],
   ['keyboard_1019',['keyboard',['../structFractalClientMessage.html#aa46f8125ff20df23821cfe676a1786dd',1,'FractalClientMessage']]],
   ['keyboard_5fmapping_2eh_1020',['keyboard_mapping.h',['../keyboard__mapping_8h.html',1,'']]],
-  ['keyboard_5fstate_1021',['keyboard_state',['../structFractalKeyboardState.html#abf22439fb585ae8ef217383cd68ab69a',1,'FractalKeyboardState::keyboard_state()'],['../structFractalClientMessage.html#a24c73194b0adda71ab68872aa1d1ed5e',1,'FractalClientMessage::keyboard_state()'],['../structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345',1,'InputDevice::keyboard_state()']]],
+  ['keyboard_5fstate_1021',['keyboard_state',['../structFractalClientMessage.html#a24c73194b0adda71ab68872aa1d1ed5e',1,'FractalClientMessage::keyboard_state()'],['../structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345',1,'InputDevice::keyboard_state()']]],
   ['keyboardmapping_1022',['KeyboardMapping',['../keyboard__mapping_8h.html#a433c7b2beaafee035596f5a5bee7ef92',1,'keyboard_mapping.h']]],
   ['keycode_5fupperbound_1023',['KEYCODE_UPPERBOUND',['../fractal_8h.html#a61a115e1297596f9885f9a0dbb6a63b7',1,'fractal.h']]],
   ['keydown_1024',['KeyDown',['../input_8c.html#a4098920e17bb63ca9093bbb73a7d2fa1',1,'input.c']]],

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['capturedevice_2039',['CaptureDevice',['../structCaptureDevice.html',1,'']]],
-  ['client_2040',['Client',['../structClient.html',1,'']]],
-  ['clipboarddata_2041',['ClipboardData',['../structClipboardData.html',1,'']]],
-  ['clipboardfiles_2042',['ClipboardFiles',['../structClipboardFiles.html',1,'']]],
-  ['colortree_2043',['ColorTree',['../structColorTree.html',1,'']]],
-  ['curlresponsebuffer_2044',['CurlResponseBuffer',['../structCurlResponseBuffer.html',1,'']]]
+  ['capturedevice_2040',['CaptureDevice',['../structCaptureDevice.html',1,'']]],
+  ['client_2041',['Client',['../structClient.html',1,'']]],
+  ['clipboarddata_2042',['ClipboardData',['../structClipboardData.html',1,'']]],
+  ['clipboardfiles_2043',['ClipboardFiles',['../structClipboardFiles.html',1,'']]],
+  ['colortree_2044',['ColorTree',['../structColorTree.html',1,'']]],
+  ['curlresponsebuffer_2045',['CurlResponseBuffer',['../structCurlResponseBuffer.html',1,'']]]
 ];
