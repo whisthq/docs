@@ -44,7 +44,6 @@ var client_2video_8c =
     [ "update_video", "client_2video_8c.html#a39d6b8b70fbb92596ede52637c8b3282", null ],
     [ "update_window_titlebar_color", "client_2video_8c.html#a83a182739f09f49351bd1722f6e596a0", null ],
     [ "can_render", "client_2video_8c.html#a85ae5e613843de1252d2e83d7aa9ab1b", null ],
-    [ "client_id", "client_2video_8c.html#a81633369010405f6d037092570b2d7aa", null ],
     [ "cursor_state", "client_2video_8c.html#a32c07149072d05b0b806023079dc6e56", null ],
     [ "has_video_rendered_yet", "client_2video_8c.html#ab1d250e7203e002261d585e56d000f0a", null ],
     [ "initialized_video_buffer", "client_2video_8c.html#affcdcf13d5f462454b3f176c90a6a896", null ],

@@ -10,7 +10,6 @@ var client_2main_8c =
     [ "active_pinch", "client_2main_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48", null ],
     [ "alt_pressed", "client_2main_8c.html#a1eadcac7071ac5ef15612c11b156e4cc", null ],
     [ "binary_aes_private_key", "client_2main_8c.html#a8178ac994435a95792a29745aa7a77a0", null ],
-    [ "client_id", "client_2main_8c.html#a81633369010405f6d037092570b2d7aa", null ],
     [ "connected", "client_2main_8c.html#ae4e4ce6a658b77aa4bb7753403794776", null ],
     [ "continue_pumping", "client_2main_8c.html#a16b78c181bfd39c925b4fee86464e17c", null ],
     [ "ctrl_pressed", "client_2main_8c.html#aec4e866abc16cc8217d33dfae87d5877", null ],

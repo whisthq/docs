@@ -2,7 +2,6 @@ var sdl__event__handler_8c =
 [
     [ "handle_key_up_down", "sdl__event__handler_8c.html#a112bf2771067e14df169fd79a8b0c880", null ],
     [ "handle_mouse_button_up_down", "sdl__event__handler_8c.html#aa6774e6c4b4c2788adbd6355116aebe4", null ],
-    [ "handle_mouse_left_window", "sdl__event__handler_8c.html#a97a8eaaf117370aaae2ac57cc6b465cd", null ],
     [ "handle_mouse_motion", "sdl__event__handler_8c.html#a35b9c01c1cfe52fcd8bd56a7c70bd49b", null ],
     [ "handle_mouse_wheel", "sdl__event__handler_8c.html#a164058efeef458f33469a6abbbc9e9ac", null ],
     [ "handle_multi_gesture", "sdl__event__handler_8c.html#a75118e01fa133274d0e45c48246eef64", null ],

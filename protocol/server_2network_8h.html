@@ -113,34 +113,31 @@ Functions</h2></td></tr>
 <tr class="memitem:ab4b24bef8f391554f0828151fe6fc2d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ab4b24bef8f391554f0828151fe6fc2d7">broadcast_tcp_packet_from_payload</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len)</td></tr>
 <tr class="memdesc:ab4b24bef8f391554f0828151fe6fc2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> and accompanying FractalPacketType to all active clients, over TCP.  <a href="server_2network_8h.html#ab4b24bef8f391554f0828151fe6fc2d7">More...</a><br /></td></tr>
 <tr class="separator:ab4b24bef8f391554f0828151fe6fc2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2ac516b9876383e13ecdd0e552f34dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ae2ac516b9876383e13ecdd0e552f34dc">try_get_next_message_tcp</a> (int <a class="el" href="client_2video_8c.html#a81633369010405f6d037092570b2d7aa">client_id</a>, <a class="el" href="structFractalPacket.html">FractalPacket</a> **p_tcp_packet)</td></tr>
-<tr class="memdesc:ae2ac516b9876383e13ecdd0e552f34dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read in next available TCP message from a given, active client.  <a href="server_2network_8h.html#ae2ac516b9876383e13ecdd0e552f34dc">More...</a><br /></td></tr>
-<tr class="separator:ae2ac516b9876383e13ecdd0e552f34dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aa515b2b01a804608a761f13f936f68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a2aa515b2b01a804608a761f13f936f68">try_get_next_message_udp</a> (int <a class="el" href="client_2video_8c.html#a81633369010405f6d037092570b2d7aa">client_id</a>, <a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg, size_t *fcmsg_size)</td></tr>
-<tr class="memdesc:a2aa515b2b01a804608a761f13f936f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read in next available UDP message from a given, active client.  <a href="server_2network_8h.html#a2aa515b2b01a804608a761f13f936f68">More...</a><br /></td></tr>
-<tr class="separator:a2aa515b2b01a804608a761f13f936f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32830555579a5b434e3e20f6420b17fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a32830555579a5b434e3e20f6420b17fa">connect_client</a> (int id, bool <a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *<a class="el" href="parse__args_8c.html#ac2159c75ccc892bf05ef04748882e025">binary_aes_private_key</a>)</td></tr>
-<tr class="memdesc:a32830555579a5b434e3e20f6420b17fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes UDP and TCP connection to client.  <a href="server_2network_8h.html#a32830555579a5b434e3e20f6420b17fa">More...</a><br /></td></tr>
-<tr class="separator:a32830555579a5b434e3e20f6420b17fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a28ddc7421981679586a2d8bdbd0d0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a6a28ddc7421981679586a2d8bdbd0d0e">disconnect_client</a> (int id)</td></tr>
-<tr class="memdesc:a6a28ddc7421981679586a2d8bdbd0d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes client's UDP and TCP sockets.  <a href="server_2network_8h.html#a6a28ddc7421981679586a2d8bdbd0d0e">More...</a><br /></td></tr>
-<tr class="separator:a6a28ddc7421981679586a2d8bdbd0d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad178bab3f08d704a9e668939ffad8434"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ad178bab3f08d704a9e668939ffad8434">disconnect_clients</a> (void)</td></tr>
-<tr class="memdesc:ad178bab3f08d704a9e668939ffad8434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes UDP and TCP sockets for all active clients.  <a href="server_2network_8h.html#ad178bab3f08d704a9e668939ffad8434">More...</a><br /></td></tr>
-<tr class="separator:ad178bab3f08d704a9e668939ffad8434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d09b1c8c7de997b76720d4045ec518a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a5d09b1c8c7de997b76720d4045ec518a">try_get_next_message_tcp</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> **p_tcp_packet)</td></tr>
+<tr class="memdesc:a5d09b1c8c7de997b76720d4045ec518a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read in next available TCP message from a given, active client.  <a href="server_2network_8h.html#a5d09b1c8c7de997b76720d4045ec518a">More...</a><br /></td></tr>
+<tr class="separator:a5d09b1c8c7de997b76720d4045ec518a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0379e02ab2bc4ccae18a02a005cdbd58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a0379e02ab2bc4ccae18a02a005cdbd58">try_get_next_message_udp</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg, size_t *fcmsg_size)</td></tr>
+<tr class="memdesc:a0379e02ab2bc4ccae18a02a005cdbd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read in next available UDP message from a given, active client.  <a href="server_2network_8h.html#a0379e02ab2bc4ccae18a02a005cdbd58">More...</a><br /></td></tr>
+<tr class="separator:a0379e02ab2bc4ccae18a02a005cdbd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9610cffe8a4e37b80e9de4774aa78134"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a9610cffe8a4e37b80e9de4774aa78134">connect_client</a> (bool <a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *<a class="el" href="parse__args_8c.html#ac2159c75ccc892bf05ef04748882e025">binary_aes_private_key</a>)</td></tr>
+<tr class="memdesc:a9610cffe8a4e37b80e9de4774aa78134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes UDP and TCP connection to client.  <a href="server_2network_8h.html#a9610cffe8a4e37b80e9de4774aa78134">More...</a><br /></td></tr>
+<tr class="separator:a9610cffe8a4e37b80e9de4774aa78134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d1e1147b89a199b7d0067298e9c167"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a90d1e1147b89a199b7d0067298e9c167">disconnect_client</a> ()</td></tr>
+<tr class="memdesc:a90d1e1147b89a199b7d0067298e9c167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes client's UDP and TCP sockets.  <a href="server_2network_8h.html#a90d1e1147b89a199b7d0067298e9c167">More...</a><br /></td></tr>
+<tr class="separator:a90d1e1147b89a199b7d0067298e9c167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9712f3cdf71debf012d7fe26b23b40d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a9712f3cdf71debf012d7fe26b23b40d8">get_using_stun</a> ()</td></tr>
 <tr class="memdesc:a9712f3cdf71debf012d7fe26b23b40d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides whether the server is using stun.  <a href="server_2network_8h.html#a9712f3cdf71debf012d7fe26b23b40d8">More...</a><br /></td></tr>
 <tr class="separator:a9712f3cdf71debf012d7fe26b23b40d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a9c39ca8196bc510dcc48d54e66694c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a9a9c39ca8196bc510dcc48d54e66694c">multithreaded_manage_clients</a> (void *opaque)</td></tr>
-<tr class="memdesc:a9a9c39ca8196bc510dcc48d54e66694c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be run in its own thread. Loops and manages connecting to/maintaining client connections.  <a href="server_2network_8h.html#a9a9c39ca8196bc510dcc48d54e66694c">More...</a><br /></td></tr>
-<tr class="separator:a9a9c39ca8196bc510dcc48d54e66694c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cc5da4bd5acfde815f921746a28da7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a38cc5da4bd5acfde815f921746a28da7">multithreaded_manage_client</a> (void *opaque)</td></tr>
+<tr class="memdesc:a38cc5da4bd5acfde815f921746a28da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be run in its own thread. Loops and manages connecting to/maintaining client connection and recovery.  <a href="server_2network_8h.html#a38cc5da4bd5acfde815f921746a28da7">More...</a><br /></td></tr>
+<tr class="separator:a38cc5da4bd5acfde815f921746a28da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains server-specific wrappers to low-level network. </p>
 <p>Copyright Fractal Computers, Inc. 2021</p>
-<h1><a class="anchor" id="autotoc_md96"></a>
+<h1><a class="anchor" id="autotoc_md94"></a>
 functions.</h1>
-<h1><a class="anchor" id="autotoc_md97"></a>
+<h1><a class="anchor" id="autotoc_md95"></a>
 Usage</h1>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ac12625c51cdfeeee6a82de27704b21b6"></a>
@@ -314,8 +311,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a32830555579a5b434e3e20f6420b17fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32830555579a5b434e3e20f6420b17fa">&#9670;&nbsp;</a></span>connect_client()</h2>
+<a id="a9610cffe8a4e37b80e9de4774aa78134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9610cffe8a4e37b80e9de4774aa78134">&#9670;&nbsp;</a></span>connect_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,12 +320,6 @@ Usage</h1>
         <tr>
           <td class="memname">int connect_client </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>using_stun</em>, </td>
         </tr>
@@ -350,7 +341,6 @@ Usage</h1>
 <p>details If no UDP message is available, *fcmsg is set to NULL and *fcmsg_size is set to 0. Otherwise, *fcmsg is populated with a pointer to the next available UDP message and *fcmsg_size is set to the size of that message. The message need not be freed. Failure here</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td><a class="el" href="structClient.html">Client</a> ID of an active client </td></tr>
     <tr><td class="paramname">using_stun</td><td>True if we are running a stun server </td></tr>
     <tr><td class="paramname">binary_aes_private_key</td><td>Key used to encrypt and decrypt communication with the client.</td></tr>
   </table>
@@ -360,8 +350,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a6a28ddc7421981679586a2d8bdbd0d0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a28ddc7421981679586a2d8bdbd0d0e">&#9670;&nbsp;</a></span>disconnect_client()</h2>
+<a id="a90d1e1147b89a199b7d0067298e9c167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d1e1147b89a199b7d0067298e9c167">&#9670;&nbsp;</a></span>disconnect_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,41 +359,13 @@ Usage</h1>
         <tr>
           <td class="memname">int disconnect_client </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Closes client's UDP and TCP sockets. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td><a class="el" href="structClient.html">Client</a> ID of an active client</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success. </dd></dl>
-
-</div>
-</div>
-<a id="ad178bab3f08d704a9e668939ffad8434"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad178bab3f08d704a9e668939ffad8434">&#9670;&nbsp;</a></span>disconnect_clients()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int disconnect_clients </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Closes UDP and TCP sockets for all active clients. </p>
+<p>Closes client's UDP and TCP sockets. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success. </dd></dl>
 
 </div>
@@ -428,14 +390,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a9a9c39ca8196bc510dcc48d54e66694c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a9c39ca8196bc510dcc48d54e66694c">&#9670;&nbsp;</a></span>multithreaded_manage_clients()</h2>
+<a id="a38cc5da4bd5acfde815f921746a28da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cc5da4bd5acfde815f921746a28da7">&#9670;&nbsp;</a></span>multithreaded_manage_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int multithreaded_manage_clients </td>
+          <td class="memname">int multithreaded_manage_client </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>opaque</em></td><td>)</td>
@@ -444,13 +406,13 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Should be run in its own thread. Loops and manages connecting to/maintaining client connections. </p>
+<p>Should be run in its own thread. Loops and manages connecting to/maintaining client connection and recovery. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns 0 on completion. </dd></dl>
 
 </div>
 </div>
-<a id="ae2ac516b9876383e13ecdd0e552f34dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2ac516b9876383e13ecdd0e552f34dc">&#9670;&nbsp;</a></span>try_get_next_message_tcp()</h2>
+<a id="a5d09b1c8c7de997b76720d4045ec518a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d09b1c8c7de997b76720d4045ec518a">&#9670;&nbsp;</a></span>try_get_next_message_tcp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,19 +420,9 @@ Usage</h1>
         <tr>
           <td class="memname">int try_get_next_message_tcp </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>client_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> **&#160;</td>
-          <td class="paramname"><em>p_tcp_packet</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>p_tcp_packet</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -479,7 +431,6 @@ Usage</h1>
 <p>details If no TCP message is available, *tcp_packet is set to NULL. Otherwise, *tcp_packet is populated with a pointer to the next available TCP message. Remember to free with free_tcp_packet</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client_id</td><td><a class="el" href="structClient.html">Client</a> ID of an active client</td></tr>
     <tr><td class="paramname">p_tcp_packet</td><td>Where to write the tcp_packet</td></tr>
   </table>
   </dd>
@@ -488,8 +439,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a2aa515b2b01a804608a761f13f936f68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aa515b2b01a804608a761f13f936f68">&#9670;&nbsp;</a></span>try_get_next_message_udp()</h2>
+<a id="a0379e02ab2bc4ccae18a02a005cdbd58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0379e02ab2bc4ccae18a02a005cdbd58">&#9670;&nbsp;</a></span>try_get_next_message_udp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,12 +448,6 @@ Usage</h1>
         <tr>
           <td class="memname">int try_get_next_message_udp </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>client_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em>, </td>
         </tr>
@@ -524,7 +469,6 @@ Usage</h1>
 <p>details If no UDP message is available, *fcmsg is set to NULL and *fcmsg_size is set to 0. Otherwise, *fcmsg is populated with a pointer to the next available UDP message and *fcmsg_size is set to the size of that message. The message need not be freed. Failure here</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client_id</td><td><a class="el" href="structClient.html">Client</a> ID of an active client </td></tr>
     <tr><td class="paramname">fcmsg</td><td>Pointer to field which is to be populated with pointer to next available message </td></tr>
     <tr><td class="paramname">fcmsg_size</td><td>Pointer to field which is to be populated with size of the next available message.</td></tr>
   </table>

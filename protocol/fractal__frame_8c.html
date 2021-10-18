@@ -100,9 +100,6 @@ Functions</h2></td></tr>
 <tr class="memitem:acdeb42e88b9e2069dbb195e4a28efa61"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8c.html#acdeb42e88b9e2069dbb195e4a28efa61">get_frame_videodata</a> (<a class="el" href="structVideoFrame.html">VideoFrame</a> *frame)</td></tr>
 <tr class="memdesc:acdeb42e88b9e2069dbb195e4a28efa61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the videodata inside of the VideoFrame* Prerequisites for writing to the returned buffer pointer: frame-&gt;videodata_length must be set set_frame_cursor_image must be called Please only read/write up to frame-&gt;videodata_length bytes from the returned buffer.  <a href="fractal__frame_8c.html#acdeb42e88b9e2069dbb195e4a28efa61">More...</a><br /></td></tr>
 <tr class="separator:acdeb42e88b9e2069dbb195e4a28efa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96b8829cb7d7e671dc6539f14cf9e664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPeerUpdateMessage.html">PeerUpdateMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8c.html#a96b8829cb7d7e671dc6539f14cf9e664">get_frame_peer_messages</a> (<a class="el" href="structVideoFrame.html">VideoFrame</a> *frame)</td></tr>
-<tr class="memdesc:a96b8829cb7d7e671dc6539f14cf9e664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the <a class="el" href="structPeerUpdateMessage.html" title="Peer update message.">PeerUpdateMessage</a> inside of the VideoFrame* Prerequisites for writing to the returned <a class="el" href="structPeerUpdateMessage.html" title="Peer update message.">PeerUpdateMessage</a> pointer: frame-&gt;videodata_length must be set set_frame_cursor_image must be called. After writing to the returned PeerUpdateMessage*, please update frame-&gt;num_peer_update_msgs.  <a href="fractal__frame_8c.html#a96b8829cb7d7e671dc6539f14cf9e664">More...</a><br /></td></tr>
-<tr class="separator:a96b8829cb7d7e671dc6539f14cf9e664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ab7e2f70fc8e9de982bf5f0f422eb2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__frame_8c.html#a3ab7e2f70fc8e9de982bf5f0f422eb2d">get_total_frame_size</a> (<a class="el" href="structVideoFrame.html">VideoFrame</a> *frame)</td></tr>
 <tr class="memdesc:a3ab7e2f70fc8e9de982bf5f0f422eb2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a> size, including all of the data embedded in the <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a>'s buffer. Even if the VideoFrame* is being stored in a much larger buffer, this function returns only the number of bytes needed for the data inside the VideoFrame* to be read correctly. I.e., these are the only bytes that need to be sent over for example a network connection.  <a href="fractal__frame_8c.html#a3ab7e2f70fc8e9de982bf5f0f422eb2d">More...</a><br /></td></tr>
 <tr class="separator:a3ab7e2f70fc8e9de982bf5f0f422eb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,33 +129,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the internal <a class="el" href="structFractalCursorImage.html" title="Cursor image.">FractalCursorImage</a>. May return NULL if no cursor was embedded. </dd></dl>
-
-</div>
-</div>
-<a id="a96b8829cb7d7e671dc6539f14cf9e664"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96b8829cb7d7e671dc6539f14cf9e664">&#9670;&nbsp;</a></span>get_frame_peer_messages()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structPeerUpdateMessage.html">PeerUpdateMessage</a>* get_frame_peer_messages </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoFrame.html">VideoFrame</a> *&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get a pointer to the <a class="el" href="structPeerUpdateMessage.html" title="Peer update message.">PeerUpdateMessage</a> inside of the VideoFrame* Prerequisites for writing to the returned <a class="el" href="structPeerUpdateMessage.html" title="Peer update message.">PeerUpdateMessage</a> pointer: frame-&gt;videodata_length must be set set_frame_cursor_image must be called. After writing to the returned PeerUpdateMessage*, please update frame-&gt;num_peer_update_msgs. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frame</td><td>The <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a> who's data buffer is being used</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the internal <a class="el" href="structPeerUpdateMessage.html" title="Peer update message.">PeerUpdateMessage</a> buffer </dd></dl>
 
 </div>
 </div>

@@ -13,7 +13,6 @@ var client_2network_8c =
     [ "send_tcp_ping", "client_2network_8c.html#a0fbcee4b22977f8b164eb393f8dd4187", null ],
     [ "send_tcp_reconnect_message", "client_2network_8c.html#ab2c13ae8a95d45f9a20a3d8895e785ac", null ],
     [ "binary_aes_private_key", "client_2network_8c.html#a8178ac994435a95792a29745aa7a77a0", null ],
-    [ "client_id", "client_2network_8c.html#a81633369010405f6d037092570b2d7aa", null ],
     [ "last_ping_id", "client_2network_8c.html#a6c457e76be79a364d33e19e1fc9d9fb8", null ],
     [ "last_ping_timer", "client_2network_8c.html#a92425ae0273fefdb5f3ff49e0c81cca5", null ],
     [ "last_pong_id", "client_2network_8c.html#a12984fe432debb51219fbbeef84a6963", null ],

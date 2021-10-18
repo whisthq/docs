@@ -12,8 +12,6 @@ var dir_df322525ef19ea0172bad82237de04c3 =
     [ "lodepng.h", "lodepng_8h.html", "lodepng_8h" ],
     [ "mac_utils.c", "mac__utils_8c.html", "mac__utils_8c" ],
     [ "mac_utils.h", "mac__utils_8h.html", "mac__utils_8h" ],
-    [ "mouse.c", "mouse_8c.html", "mouse_8c" ],
-    [ "mouse.h", "mouse_8h.html", "mouse_8h" ],
     [ "png.c", "png_8c.html", "png_8c" ],
     [ "png.h", "png_8h.html", "png_8h" ],
     [ "rwlock.c", "rwlock_8c.html", "rwlock_8c" ],

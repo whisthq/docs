@@ -1,9 +1,9 @@
 var main_8h =
 [
     [ "binary_aes_private_key", "main_8h.html#ac2159c75ccc892bf05ef04748882e025", null ],
+    [ "client", "main_8h.html#afb3a99353e3c50b4339ceb1efd4e00b1", null ],
     [ "client_joined_after_window_name_broadcast", "main_8h.html#a28d9e55fc917106b3014669bf9a52309", null ],
     [ "client_os", "main_8h.html#ac13d90362a4bbfdd5d1d04e6c2d16420", null ],
-    [ "clients", "main_8h.html#a062c92ce2779fc429eb44fbfebcf9d52", null ],
     [ "connection_id", "main_8h.html#a961bf3611973011277079ee5647d25b0", null ],
     [ "exiting", "main_8h.html#a9aec5d9660ae8a0c8117f5d96b871606", null ],
     [ "hex_aes_private_key", "main_8h.html#a9dc8473a213eba8932df71190c0d5fbe", null ],

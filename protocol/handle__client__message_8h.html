@@ -96,21 +96,21 @@ $(document).ready(function(){initNavTree('handle__client__message_8h.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a617502f4571b3bb11d7d643bd51400ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8h.html#a617502f4571b3bb11d7d643bd51400ad">handle_client_message</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg, int <a class="el" href="client_2video_8c.html#a81633369010405f6d037092570b2d7aa">client_id</a>, bool is_controlling)</td></tr>
-<tr class="memdesc:a617502f4571b3bb11d7d643bd51400ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles message received by the server from a client, on the server-side.  <a href="handle__client__message_8h.html#a617502f4571b3bb11d7d643bd51400ad">More...</a><br /></td></tr>
-<tr class="separator:a617502f4571b3bb11d7d643bd51400ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3119895e2868283cc978ae8685b2f11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8h.html#ad3119895e2868283cc978ae8685b2f11">handle_client_message</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
+<tr class="memdesc:ad3119895e2868283cc978ae8685b2f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles message received by the server from a client, on the server-side.  <a href="handle__client__message_8h.html#ad3119895e2868283cc978ae8685b2f11">More...</a><br /></td></tr>
+<tr class="separator:ad3119895e2868283cc978ae8685b2f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all the code for server-side processing of messages. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md88"></a>
+<h1><a class="anchor" id="autotoc_md86"></a>
 received from a client</h1>
-<h1><a class="anchor" id="autotoc_md89"></a>
+<h1><a class="anchor" id="autotoc_md87"></a>
 Usage</h1>
-<p><a class="el" href="handle__client__message_8h.html#a617502f4571b3bb11d7d643bd51400ad" title="Handles message received by the server from a client, on the server-side.">handle_client_message()</a> must be called on any received message from a client. </p>
+<p><a class="el" href="handle__client__message_8h.html#ad3119895e2868283cc978ae8685b2f11" title="Handles message received by the server from a client, on the server-side.">handle_client_message()</a> must be called on any received message from a client. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a617502f4571b3bb11d7d643bd51400ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a617502f4571b3bb11d7d643bd51400ad">&#9670;&nbsp;</a></span>handle_client_message()</h2>
+<a id="ad3119895e2868283cc978ae8685b2f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3119895e2868283cc978ae8685b2f11">&#9670;&nbsp;</a></span>handle_client_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -119,24 +119,8 @@ Usage</h1>
           <td class="memname">int handle_client_message </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
-          <td class="paramname"><em>fcmsg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>fcmsg</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>client_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_controlling</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -145,9 +129,7 @@ Usage</h1>
 <p>Replays keyboard and mouse input, replies to pings, or performs whatever side-effects appropriate in handling message from client. Logs errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fcmsg</td><td>Message from client </td></tr>
-    <tr><td class="paramname">client_id</td><td><a class="el" href="structClient.html">Client</a> ID of client from whom message was received </td></tr>
-    <tr><td class="paramname">is_controlling</td><td>True is the client from whom the message was received is controlling, not spectating</td></tr>
+    <tr><td class="paramname">fcmsg</td><td>Message from client</td></tr>
   </table>
   </dd>
 </dl>

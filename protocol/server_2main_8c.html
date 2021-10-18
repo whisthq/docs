@@ -106,8 +106,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3178a3113fe7545fa8f931889c3deb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69dcb6e329ade3d7295043fd150acb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#ad69dcb6e329ade3d7295043fd150acb6">handle_fractal_client_message</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg, int id)</td></tr>
-<tr class="separator:ad69dcb6e329ade3d7295043fd150acb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a997e38df3974c4fe8657eb0933f4063c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a997e38df3974c4fe8657eb0933f4063c">handle_fractal_client_message</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
+<tr class="separator:a997e38df3974c4fe8657eb0933f4063c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f4c60bf326fadfc2297721115ec7926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a8f4c60bf326fadfc2297721115ec7926">get_fractal_client_messages</a> (bool get_tcp, bool get_udp)</td></tr>
 <tr class="separator:a8f4c60bf326fadfc2297721115ec7926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bc6e5d2c6baa8b2b71ed64392e01d51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51">multithreaded_sync_tcp_packets</a> (void *opaque)</td></tr>
@@ -117,9 +117,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the main code that runs a Fractal server on a. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md90"></a>
+<h1><a class="anchor" id="autotoc_md88"></a>
 Windows or Linux Ubuntu computer.</h1>
-<h1><a class="anchor" id="autotoc_md91"></a>
+<h1><a class="anchor" id="autotoc_md89"></a>
 Usage</h1>
 <p>Follow <a class="el" href="client_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a> to see a Fractal video streaming server being created and creating its threads. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -197,8 +197,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ad69dcb6e329ade3d7295043fd150acb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad69dcb6e329ade3d7295043fd150acb6">&#9670;&nbsp;</a></span>handle_fractal_client_message()</h2>
+<a id="a997e38df3974c4fe8657eb0933f4063c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a997e38df3974c4fe8657eb0933f4063c">&#9670;&nbsp;</a></span>handle_fractal_client_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,18 +207,8 @@ Usage</h1>
           <td class="memname">void handle_fractal_client_message </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
-          <td class="paramname"><em>fcmsg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>fcmsg</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

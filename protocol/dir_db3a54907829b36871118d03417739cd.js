@@ -14,8 +14,6 @@ var dir_db3a54907829b36871118d03417739cd =
     [ "native_window_utils_x11.c", "native__window__utils__x11_8c.html", "native__window__utils__x11_8c" ],
     [ "network.c", "client_2network_8c.html", "client_2network_8c" ],
     [ "network.h", "client_2network_8h.html", "client_2network_8h" ],
-    [ "peercursor.c", "peercursor_8c.html", "peercursor_8c" ],
-    [ "peercursor.h", "peercursor_8h.html", "peercursor_8h" ],
     [ "ringbuffer.c", "ringbuffer_8c.html", "ringbuffer_8c" ],
     [ "ringbuffer.h", "ringbuffer_8h.html", "ringbuffer_8h" ],
     [ "sdl_event_handler.c", "sdl__event__handler_8c.html", "sdl__event__handler_8c" ],

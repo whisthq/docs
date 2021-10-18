@@ -2,19 +2,14 @@ var client_8h =
 [
     [ "Client", "structClient.html", "structClient" ],
     [ "Client", "client_8h.html#a7302c9ba9fef6f7473f52cc61bd4bc40", null ],
+    [ "add_thread_to_client_active_dependents", "client_8h.html#a29042e5606a07696cb4a51f8353b7bb1", null ],
     [ "destroy_clients", "client_8h.html#ab87075b04dd30af0da1713a6140c99eb", null ],
-    [ "exists_timed_out_client", "client_8h.html#a521695d8a32225c2865bd979b8b5ad36", null ],
-    [ "fill_peer_update_messages", "client_8h.html#aa1fda3c647cee07fe4055fd2bcf16726", null ],
-    [ "get_available_client_id", "client_8h.html#aa47e1b70738e6b76cfefc1366b2645b7", null ],
-    [ "init_clients", "client_8h.html#ae32d8db7ef3a61b68f17cbf49614ca0b", null ],
-    [ "quit_client", "client_8h.html#afd9b65bd1f89477d89a654170cd17a18", null ],
-    [ "quit_clients", "client_8h.html#abf91ae8d156ab237bbc692d10f97b2f0", null ],
-    [ "reap_timed_out_clients", "client_8h.html#a5cf5f4da2b402eda75b9a3d040d07e00", null ],
-    [ "try_find_client_id_by_user_id", "client_8h.html#add50caadbb6f7927f1bce57086bc5296", null ],
-    [ "clients", "client_8h.html#a062c92ce2779fc429eb44fbfebcf9d52", null ],
-    [ "host_id", "client_8h.html#afd4e9daf88116b596d5ae5839f38b3ba", null ],
-    [ "is_active_rwlock", "client_8h.html#a084a04a0538e6c0c7316da18809f2af0", null ],
-    [ "num_active_clients", "client_8h.html#a25c3fb3884e2ae1ca3c2fd3e4223bc96", null ],
-    [ "num_controlling_clients", "client_8h.html#a2c257731ea7c366dacfaa8a5a09a153e", null ],
-    [ "state_lock", "client_8h.html#af42131b109bdc113c12af255e018100b", null ]
+    [ "init_client", "client_8h.html#a07496953b070830ab60efddb18c960cc", null ],
+    [ "quit_client", "client_8h.html#a79916ea22b8643d863a371aa727a3fd8", null ],
+    [ "reap_timed_out_client", "client_8h.html#aee5b77bb95702e63a178b1075f081c94", null ],
+    [ "reset_threads_holding_active_count", "client_8h.html#a0740741ea55ddddb53fa36aaae2d9d88", null ],
+    [ "start_quitting_client", "client_8h.html#aa7b24c815e1583ea8f39ab7e809d0eab", null ],
+    [ "threads_still_holding_active", "client_8h.html#a8f2aca1eee229215f79c4a4ce41a54f8", null ],
+    [ "update_client_active_status", "client_8h.html#a7d430eadcbe00e1328952cadfc1d9547", null ],
+    [ "client", "client_8h.html#afb3a99353e3c50b4339ceb1efd4e00b1", null ]
 ];

@@ -5,11 +5,10 @@ var server_2network_8h =
     [ "broadcast_tcp_packet_from_payload", "server_2network_8h.html#ab4b24bef8f391554f0828151fe6fc2d7", null ],
     [ "broadcast_udp_packet", "server_2network_8h.html#a156affa96c205eece510502ca0fa4148", null ],
     [ "broadcast_udp_packet_from_payload", "server_2network_8h.html#ae457421e461e9d3e93c7a059653d4121", null ],
-    [ "connect_client", "server_2network_8h.html#a32830555579a5b434e3e20f6420b17fa", null ],
-    [ "disconnect_client", "server_2network_8h.html#a6a28ddc7421981679586a2d8bdbd0d0e", null ],
-    [ "disconnect_clients", "server_2network_8h.html#ad178bab3f08d704a9e668939ffad8434", null ],
+    [ "connect_client", "server_2network_8h.html#a9610cffe8a4e37b80e9de4774aa78134", null ],
+    [ "disconnect_client", "server_2network_8h.html#a90d1e1147b89a199b7d0067298e9c167", null ],
     [ "get_using_stun", "server_2network_8h.html#a9712f3cdf71debf012d7fe26b23b40d8", null ],
-    [ "multithreaded_manage_clients", "server_2network_8h.html#a9a9c39ca8196bc510dcc48d54e66694c", null ],
-    [ "try_get_next_message_tcp", "server_2network_8h.html#ae2ac516b9876383e13ecdd0e552f34dc", null ],
-    [ "try_get_next_message_udp", "server_2network_8h.html#a2aa515b2b01a804608a761f13f936f68", null ]
+    [ "multithreaded_manage_client", "server_2network_8h.html#a38cc5da4bd5acfde815f921746a28da7", null ],
+    [ "try_get_next_message_tcp", "server_2network_8h.html#a5d09b1c8c7de997b76720d4045ec518a", null ],
+    [ "try_get_next_message_udp", "server_2network_8h.html#a0379e02ab2bc4ccae18a02a005cdbd58", null ]
 ];
