@@ -159,8 +159,8 @@ Variables</h2></td></tr>
 <tr class="separator:a117db89a849e4e6ff486921d2a76fa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5120ece93dfddf5638a59e495e9c6d46"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a></td></tr>
 <tr class="separator:a5120ece93dfddf5638a59e495e9c6d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad137585f4fddac5c02d6b3f99323385b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#ad137585f4fddac5c02d6b3f99323385b">max_bitrate</a></td></tr>
-<tr class="separator:ad137585f4fddac5c02d6b3f99323385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f3dcad51272bd3610f3a94361d6cda"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a31f3dcad51272bd3610f3a94361d6cda">client_max_bitrate</a></td></tr>
+<tr class="separator:a31f3dcad51272bd3610f3a94361d6cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a5269d876b9e07618d093dbd293141c"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a8a5269d876b9e07618d093dbd293141c">max_burst_bitrate</a></td></tr>
 <tr class="separator:a8a5269d876b9e07618d093dbd293141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a80ed277e1f61a1fe7d7b91250e8d5"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5">update_bitrate</a></td></tr>
@@ -180,9 +180,9 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md72"></a>
-@brief This file contains code for high-level communication with the server</h1>
 <h1><a class="anchor" id="autotoc_md73"></a>
+@brief This file contains code for high-level communication with the server</h1>
+<h1><a class="anchor" id="autotoc_md74"></a>
 Usage</h1>
 <p>Use multithreaded_sync_udp_packets to send and receive UDP messages to and from the server, such as audio and video packets. Use multithreaded_sync_tcp_packets to send and receive TCP messages, mostly clipboard packets. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -341,6 +341,20 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a31f3dcad51272bd3610f3a94361d6cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f3dcad51272bd3610f3a94361d6cda">&#9670;&nbsp;</a></span>client_max_bitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int client_max_bitrate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab36823025f12a809217f7771125658c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab36823025f12a809217f7771125658c2">&#9670;&nbsp;</a></span>connected</h2>
 
@@ -475,20 +489,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> latency_timer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad137585f4fddac5c02d6b3f99323385b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad137585f4fddac5c02d6b3f99323385b">&#9670;&nbsp;</a></span>max_bitrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int max_bitrate</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -132,8 +132,8 @@ Variables</h2></td></tr>
 <tr class="separator:a5b2d8acba46a3a8d41972491e3e06b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e60ed488fac41f2eb7f3865937fc14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#a31e60ed488fac41f2eb7f3865937fc14">rgui_pressed</a> = false</td></tr>
 <tr class="separator:a31e60ed488fac41f2eb7f3865937fc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff18c87636faa9e67a7245535051e82b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#aff18c87636faa9e67a7245535051e82b">exiting</a></td></tr>
-<tr class="separator:aff18c87636faa9e67a7245535051e82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c3e2078c3e8d9dc12234276d14b0f63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#a3c3e2078c3e8d9dc12234276d14b0f63">client_exiting</a></td></tr>
+<tr class="separator:a3c3e2078c3e8d9dc12234276d14b0f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6429187068c6c199a60f7425e05362fd"><td class="memItemLeft" align="right" valign="top">SDL_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#a6429187068c6c199a60f7425e05362fd">window_resize_mutex</a></td></tr>
 <tr class="separator:a6429187068c6c199a60f7425e05362fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70fe50e113f8382ae4dfaf9ddb53ee90"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#a70fe50e113f8382ae4dfaf9ddb53ee90">window_resize_interval</a></td></tr>
@@ -160,9 +160,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains client-specific wrappers to low-level network. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md60"></a>
-functions.</h1>
 <h1><a class="anchor" id="autotoc_md61"></a>
+functions.</h1>
+<h1><a class="anchor" id="autotoc_md62"></a>
 Usage</h1>
 <p>handleSDLEvent() must be called on any SDL event that occurs. Any action trigged an SDL event must be triggered in <a class="el" href="sdl__event__handler_8c.html" title="This file contains client-specific wrappers to low-level network.">sdl_event_handler.c</a> </p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -377,6 +377,20 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a3c3e2078c3e8d9dc12234276d14b0f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3e2078c3e8d9dc12234276d14b0f63">&#9670;&nbsp;</a></span>client_exiting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool client_exiting</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aec4e866abc16cc8217d33dfae87d5877"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec4e866abc16cc8217d33dfae87d5877">&#9670;&nbsp;</a></span>ctrl_pressed</h2>
 
@@ -385,20 +399,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">bool ctrl_pressed = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aff18c87636faa9e67a7245535051e82b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff18c87636faa9e67a7245535051e82b">&#9670;&nbsp;</a></span>exiting</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool exiting</td>
         </tr>
       </table>
 </div><div class="memdoc">

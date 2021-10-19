@@ -222,8 +222,8 @@ Variables</h2></td></tr>
 <tr class="separator:a6f22535f72143edb1d30f2ae7b2063d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c601e07e2ab0a163872f816a34fad9c"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a1c601e07e2ab0a163872f816a34fad9c">server_codec_type</a></td></tr>
 <tr class="separator:a1c601e07e2ab0a163872f816a34fad9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad137585f4fddac5c02d6b3f99323385b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ad137585f4fddac5c02d6b3f99323385b">max_bitrate</a></td></tr>
-<tr class="separator:ad137585f4fddac5c02d6b3f99323385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f3dcad51272bd3610f3a94361d6cda"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a31f3dcad51272bd3610f3a94361d6cda">client_max_bitrate</a></td></tr>
+<tr class="separator:a31f3dcad51272bd3610f3a94361d6cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a5269d876b9e07618d093dbd293141c"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a8a5269d876b9e07618d093dbd293141c">max_burst_bitrate</a></td></tr>
 <tr class="separator:a8a5269d876b9e07618d093dbd293141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a80ed277e1f61a1fe7d7b91250e8d5"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5">update_bitrate</a></td></tr>
@@ -278,9 +278,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with receiving and. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md76"></a>
-processing video packets on the client.</h1>
 <h1><a class="anchor" id="autotoc_md77"></a>
+processing video packets on the client.</h1>
+<h1><a class="anchor" id="autotoc_md78"></a>
 Usage</h1>
 <p>initVideo() gets called before any video packet can be received. The video packets are received as standard FractalPackets by ReceiveVideo(FractalPacket* packet), before being saved in a proper video frame format. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -1036,6 +1036,20 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a31f3dcad51272bd3610f3a94361d6cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f3dcad51272bd3610f3a94361d6cda">&#9670;&nbsp;</a></span>client_max_bitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int client_max_bitrate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a32c07149072d05b0b806023079dc6e56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32c07149072d05b0b806023079dc6e56">&#9670;&nbsp;</a></span>cursor_state</h2>
 
@@ -1128,20 +1142,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile double latency</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad137585f4fddac5c02d6b3f99323385b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad137585f4fddac5c02d6b3f99323385b">&#9670;&nbsp;</a></span>max_bitrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int max_bitrate</td>
         </tr>
       </table>
 </div><div class="memdoc">

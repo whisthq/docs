@@ -129,8 +129,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5f1a7da6ed534a5a22487cb479d66b10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a5f1a7da6ed534a5a22487cb479d66b10">destroy_audio_device</a> ()</td></tr>
-<tr class="separator:a5f1a7da6ed534a5a22487cb479d66b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532b0d276bdbce912975bfaf4312ef68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a532b0d276bdbce912975bfaf4312ef68">client_destroy_audio_device</a> ()</td></tr>
+<tr class="separator:a532b0d276bdbce912975bfaf4312ef68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91ef041f981cda8f533daa126004bb0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a91ef041f981cda8f533daa126004bb0e">reinit_audio_device</a> ()</td></tr>
 <tr class="separator:a91ef041f981cda8f533daa126004bb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d6ad9061f9338f312ce10c0cbd3d1db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a9d6ad9061f9338f312ce10c0cbd3d1db">audio_nack</a> (int id, int index)</td></tr>
@@ -189,9 +189,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with processing. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md28"></a>
-audio packets on the client.</h1>
 <h1><a class="anchor" id="autotoc_md29"></a>
+audio packets on the client.</h1>
+<h1><a class="anchor" id="autotoc_md30"></a>
 Usage</h1>
 <p>initAudio() must be called first before receiving any audio packets. updateAudio() gets called immediately after to update the client to the server's audio format. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -386,6 +386,23 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a532b0d276bdbce912975bfaf4312ef68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532b0d276bdbce912975bfaf4312ef68">&#9670;&nbsp;</a></span>client_destroy_audio_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void client_destroy_audio_device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac90c07c746043c5102cd99c13376a6e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac90c07c746043c5102cd99c13376a6e7">&#9670;&nbsp;</a></span>destroy_audio()</h2>
 
@@ -402,23 +419,6 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Close the SDL audio and the FFmpeg audio decoder. </p>
-
-</div>
-</div>
-<a id="a5f1a7da6ed534a5a22487cb479d66b10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f1a7da6ed534a5a22487cb479d66b10">&#9670;&nbsp;</a></span>destroy_audio_device()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void destroy_audio_device </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

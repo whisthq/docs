@@ -141,8 +141,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a8466ec35e93193f19d678f546cd12171"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a8466ec35e93193f19d678f546cd12171">user_email</a> [<a class="el" href="fractal_8h.html#ac4b9ceebe220134e5a67f3596b06f752">FRACTAL_ARGS_MAXLEN</a>+1]</td></tr>
 <tr class="separator:a8466ec35e93193f19d678f546cd12171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8178ac994435a95792a29745aa7a77a0"><td class="memItemLeft" align="right" valign="top">volatile char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a8178ac994435a95792a29745aa7a77a0">binary_aes_private_key</a> [16]</td></tr>
-<tr class="separator:a8178ac994435a95792a29745aa7a77a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd46fdf3118d19eed21408086a671f2"><td class="memItemLeft" align="right" valign="top">volatile char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a7fd46fdf3118d19eed21408086a671f2">client_binary_aes_private_key</a> [16]</td></tr>
+<tr class="separator:a7fd46fdf3118d19eed21408086a671f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8080d4d36d5d3d072be611a95f864ac1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a8080d4d36d5d3d072be611a95f864ac1">udp_port</a> = -1</td></tr>
 <tr class="separator:a8080d4d36d5d3d072be611a95f864ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9edbe9dd2977e5cc56138a3a05f7a98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#aa9edbe9dd2977e5cc56138a3a05f7a98">tcp_port</a> = -1</td></tr>
@@ -179,9 +179,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains client-specific wrappers to low-level network. </p>
 <p>Copyright Fractal Computers, Inc. 2020</p>
-<h1><a class="anchor" id="autotoc_md52"></a>
-functions.</h1>
 <h1><a class="anchor" id="autotoc_md53"></a>
+functions.</h1>
+<h1><a class="anchor" id="autotoc_md54"></a>
 Usage</h1>
 <p>discover_ports, connect_to_server, close_connections, and send_server_quit_messages are used to start and end connections to the Fractal server. To connect, call discover_ports, then connect_to_server. To disconnect, send_server_quit_messages and then close_connections.</p>
 <p>To communicate with the server, use send_fcmsg to send Fractal messages to the server. Large fcmsg's (e.g. clipboard messages) are sent over TCP; otherwise, messages are sent over UDP. Use update_ping to ping the server at regular intervals, and receive_pong to receive pongs (ping acknowledgements) from the server. </p>
@@ -468,14 +468,14 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a8178ac994435a95792a29745aa7a77a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8178ac994435a95792a29745aa7a77a0">&#9670;&nbsp;</a></span>binary_aes_private_key</h2>
+<a id="a7fd46fdf3118d19eed21408086a671f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd46fdf3118d19eed21408086a671f2">&#9670;&nbsp;</a></span>client_binary_aes_private_key</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile char binary_aes_private_key[16]</td>
+          <td class="memname">volatile char client_binary_aes_private_key[16]</td>
         </tr>
       </table>
 </div><div class="memdoc">

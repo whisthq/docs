@@ -187,10 +187,13 @@ File Structure</h1>
 <div class="line">│       ├── x11capture.c &lt;- Capture screen using X11</div>
 <div class="line">│       └── x11nvidiacapture.c &lt;- Capture h264/h265 compressed screen with NvidiaCaptureSDK</div>
 <div class="line">└── server</div>
-<div class="line">    ├── client.c &lt;- Handle multiclient messages</div>
-<div class="line">    ├── handle_client_message.c &lt;- Handle client fsmsg&#39;s</div>
-<div class="line">    ├── main.c &lt;- Initialize server, receive packets and pass to where it needs to go</div>
-<div class="line">    ├── network.c &lt;- Networking code for multiclient</div>
+<div class="line">|    ├── client.c &lt;- Handle multiclient messages</div>
+<div class="line">|    ├── handle_client_message.c &lt;- Handle client fmsg&#39;s</div>
+<div class="line">|    ├── main.c &lt;- Initialize server, receive packets and pass to where it needs to go</div>
+<div class="line">|    ├── network.c &lt;- Networking code for multiclient</div>
+<div class="line">└── test</div>
+<div class="line">    ├── images &lt;- images for unit testing</div>
+<div class="line">    └── ProtocolTest.cpp &lt;- tests code in fractal module</div>
 </div><!-- fragment --><p>The above files are fairly static. If you add or remove a file, or change what a file does, please update this directory so we can keep track of it all!</p>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Development</h1>
@@ -275,12 +278,18 @@ Checks &amp; Tests</h3>
 <p>These builds will also have <code>cppcheck</code> run against them which is a static analysis tool which can catch errors which compilers cannot, e.g. accessing uninitialized memory and other undefined behavior. Not everything it catches is critical, but it does indicate the possibility of unexpected behavior.</p>
 <p>These builds will also (TODO) be tested against a live server VM. This workflow will spin up an Azure VM, upload the server build to it, and then use GitHub Actions VMs on Windows, MacOS and Linux Ubuntu as clients to connect and stream via the protocol for one minute. This will also occur nightly against the <code>dev</code> branch, but these builds will not be released (this can be removed once testing is stable and re-enabled on all commits).</p>
 <p>To see the warnings in context go to the Actions tab, click on your PR/push that launched the action, select an OS it ran on and then select build. This expands the build log, where you can clearly see the warnings/errors generated.</p>
-<h2><a class="anchor" id="autotoc_md24"></a>
+<h3><a class="anchor" id="autotoc_md24"></a>
+Unit Testing</h3>
+<p>The protocol currently uses gtest to create and execute unit tests for the <code>protocol</code> repository. To add tests for the <code>protocol</code> module, add tests to the <code>ProtocolTest.cpp</code> file in the test folder.</p>
+<p>To run all unit tests, recompile the protocol by going into the <code>protocol/build</code> directory and running <code>make -j</code>. This is assuming you have already ran <code>cmake -S .. -B .</code> from the Building the Protocol section. If you have not done that, do so before running <code>make -j</code>.</p>
+<p>Next, run <code>cd test</code>. Now:</p>
+<p>To run the unit tests for the protocol, run <code>./FractalProtocolTest</code></p>
+<h2><a class="anchor" id="autotoc_md25"></a>
 Continuous Integration</h2>
 <p>For every push or PR, the code will be automatically linted via clang-format according to the <a href="#styling">styling</a> guidelines.</p>
-<h1><a class="anchor" id="autotoc_md25"></a>
+<h1><a class="anchor" id="autotoc_md26"></a>
 Styling</h1>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<h2><a class="anchor" id="autotoc_md27"></a>
 clang-format</h2>
 <p>For <code>.c</code> and <code>.h</code> files, we are formatting using the clang format <code>{BasedOnStyle: Google, IndentWidth: 4}</code>. You can download clang-format via the package manager for your respective OS:</p>
 <div class="fragment"><div class="line"># MacOS:</div>
@@ -294,7 +303,7 @@ clang-format</h2>
 </div><!-- fragment --><p>If using vim, VSCode, or Visual Studio, please set this up in your editor to format on save if possible (in Visual Studio, this is through the C/C++ extension settings, as well as the general 'Format on Save' setting/shortcut). Otherwise, please make sure to run your code through <code>clang</code> before commits. You can run it from the CLI by running <code>cmake . &amp;&amp; make clang-format</code>, on MacOS/Linux, or <code>cmake -G "NMake Makefiles" &amp;&amp; make clang-format</code>, on Windows.</p>
 <p>We have <a href="https://pre-commit.com/">pre-commit hooks</a> with clang-format support installed on this project, which you can initialize by first installing pre-commit via <code>pip install pre-commit</code> and then running <code>pre-commit install</code> to instantiate the hooks for clang-format.</p>
 <p>We also have a custom build target in the CMake 'clang-format' which will run with this style over all <code>.c</code> and <code>.h</code> files in <code>server/</code>, <code>client/</code>, and <code>fractal/</code>. You can call it by running <code>make clang-format</code>.</p>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 clang-tidy</h2>
 <p>Make sure your code is following code standards by running the script <code>./run-clang-tidy.sh</code>. The dependencies for each OS are listed below:</p>
 <div class="fragment"><div class="line"># MacOS:</div>

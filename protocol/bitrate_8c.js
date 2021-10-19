@@ -6,6 +6,6 @@ var bitrate_8c =
     [ "ewma_ratio_bitrate", "bitrate_8c.html#a5dbb437cd314f496d04752f212191b22", null ],
     [ "fallback_bitrate", "bitrate_8c.html#a72c3a6b78f0cef49389bce674059e971", null ],
     [ "calculate_new_bitrate", "bitrate_8c.html#a20c5158dec37f68fed488b560a85baf1", null ],
-    [ "max_bitrate", "bitrate_8c.html#ad137585f4fddac5c02d6b3f99323385b", null ],
+    [ "client_max_bitrate", "bitrate_8c.html#a31f3dcad51272bd3610f3a94361d6cda", null ],
     [ "max_burst_bitrate", "bitrate_8c.html#a8a5269d876b9e07618d093dbd293141c", null ]
 ];

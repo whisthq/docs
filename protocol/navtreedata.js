@@ -50,11 +50,11 @@ var NAVTREE =
       [ "Further documentation", "index.html#autotoc_md21", null ]
     ] ],
     [ "CI & CD", "index.html#autotoc_md22", [
-      [ "Continuous Integration", "index.html#autotoc_md24", null ]
+      [ "Continuous Integration", "index.html#autotoc_md25", null ]
     ] ],
-    [ "Styling", "index.html#autotoc_md25", [
-      [ "clang-format", "index.html#autotoc_md26", null ],
-      [ "clang-tidy", "index.html#autotoc_md27", null ]
+    [ "Styling", "index.html#autotoc_md26", [
+      [ "clang-format", "index.html#autotoc_md27", null ],
+      [ "clang-tidy", "index.html#autotoc_md28", null ]
     ] ],
     [ "Fractal Desktop Clients", "md_client_README.html", null ],
     [ "Fractal Windows/Linux Ubuntu Servers", "md_server_README.html", null ],
@@ -89,13 +89,13 @@ var NAVTREEINDEX =
 "fractal_2network_2network_8h.html#a879456c3b8e2853f7044d764e9c180d4",
 "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527af4c4f031796f45e85396e0a2fc898cec",
 "globals_defs_x.html",
-"lodepng_8c.html#a0b5cf190f94f8f11ed5c0abb3504ad86",
-"logging_8c.html#ab3d0e9567cfad5d6f83abc585beb520d",
-"sdl__event__handler_8c.html#a9e4e33ee09eeb233278258291d2723b7",
-"structCaptureDevice.html#aa55d5107b84425915be58fba7433ddcc",
-"structHuffmanTree.html#a232198073ccf061fd9fe1d18d346e220",
-"structSocketContext.html",
-"uinput__input__driver_8c.html#a05a281131f961593c1ca1e39123f31b7"
+"lodepng_8c.html#a05bf6fac7afc9025bbcb9f5f9f1b0027",
+"logging_8c.html#ab0c68adcbe413036b210457344f1c3a6",
+"sdl__event__handler_8c.html#a75118e01fa133274d0e45c48246eef64",
+"structCaptureDevice.html#aa4e41a29ef72dba9c75e70a41cb80d82",
+"structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137",
+"structSignatureData.html#a989fd2cca3163181c990fb756830c7e9",
+"uinput__input__driver_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
