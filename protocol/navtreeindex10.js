@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structHuffmanTree.html":[8,0,45],
 "structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137":[8,0,45,5],
 "structHuffmanTree.html#a232198073ccf061fd9fe1d18d346e220":[8,0,45,4],
 "structHuffmanTree.html#a608df5a24f60d1077a5cde19d5149e1f":[8,0,45,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structScreenshotContainer.html#aa3cffc6d20b44b0849d2775027d1b652":[8,0,73,3],
 "structScreenshotContainer.html#acd7a83bc6466cf45b58c1cb765d08ba4":[8,0,73,1],
 "structScreenshotContainer.html#ae1b31b8b318b5c7341f6b3223295ff37":[8,0,73,2],
-"structSignatureData.html":[8,0,75],
-"structSignatureData.html#a2ef961b57959643007054896938fe8bf":[8,0,75,0]
+"structSignatureData.html":[8,0,75]
 };
