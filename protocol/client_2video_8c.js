@@ -8,6 +8,7 @@ var client_2video_8c =
     [ "CURSORIMAGE_G", "client_2video_8c.html#a4e8c4b05a876fdaac747e4b3b85e5574", null ],
     [ "CURSORIMAGE_R", "client_2video_8c.html#a0fbf0790655d1cdb41690ef2c44626c2", null ],
     [ "FPS_LOG_FREQUENCY_IN_SEC", "client_2video_8c.html#aad4426f54d5a54f1fd41dee912d228ab", null ],
+    [ "IFRAME_REQUEST_INTERVAL_MS", "client_2video_8c.html#a45c417a4f8fcc4608ad1f0b63b26e634", null ],
     [ "MAX_NACKED", "client_2video_8c.html#aa9e5700b550a9fc28b9fcf6f18f3442f", null ],
     [ "MAX_UNSYNCED_FRAMES", "client_2video_8c.html#a63712ce21a04379372836cb9a38e657a", null ],
     [ "MAX_UNSYNCED_FRAMES_RENDER", "client_2video_8c.html#aa5c848a99cdfaef94195c539e073a5c1", null ],

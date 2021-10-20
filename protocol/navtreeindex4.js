@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a39566e1d859d99ec29a65f2b57de025c":[9,0,1,2,1,98,4],
 "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a4dcb99f1729a987dfe37244716120684":[9,0,1,2,1,98,1],
 "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527af4c4f031796f45e85396e0a2fc898cec":[9,0,1,2,1,98,0],
 "fractal_8h.html#a69b64449a42b33fbb562e3ec992ae231":[9,0,1,2,1,70],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "globals_defs_r.html":[9,1,6,16],
 "globals_defs_s.html":[9,1,6,17],
 "globals_defs_t.html":[9,1,6,18],
-"globals_defs_u.html":[9,1,6,19],
-"globals_defs_v.html":[9,1,6,20]
+"globals_defs_u.html":[9,1,6,19]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structCaptureDevice.html#a97d53ce2d38dafb711a77c682520b5ce":[8,0,14,19],
 "structCaptureDevice.html#aa2c17d01561072cc45142d873790c7f0":[8,0,14,29],
 "structCaptureDevice.html#aa4e41a29ef72dba9c75e70a41cb80d82":[8,0,14,9],
 "structCaptureDevice.html#aa55d5107b84425915be58fba7433ddcc":[8,0,14,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structHash.html#a0977cf12b1d8e6bbc784b5e0877926f5":[8,0,44,2],
 "structHash.html#a3ed8f51297a858686e11a1a295a3a39c":[8,0,44,3],
 "structHash.html#a66918968854722efdf7ab5f8ac2c6c1d":[8,0,44,4],
-"structHash.html#a7247caa3e23eaba8f0d199ec5010c931":[8,0,44,5],
-"structHash.html#abf6ad3db2f652a19cc4ff0792e477899":[8,0,44,0]
+"structHash.html#a7247caa3e23eaba8f0d199ec5010c931":[8,0,44,5]
 };
