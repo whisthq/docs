@@ -330,5 +330,6 @@ var fractal_8h =
     [ "read_hexadecimal_private_key", "fractal_8h.html#a8715a52b4a7436f38ed03ec5705a9aff", null ],
     [ "runcmd", "fractal_8h.html#a18de2db2f97ace4d6129993e3d10e7f2", null ],
     [ "safe_strncpy", "fractal_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e", null ],
-    [ "terminate_protocol", "fractal_8h.html#a77e1c19da71eb1d7070da0583521fc54", null ]
+    [ "terminate_protocol", "fractal_8h.html#a77e1c19da71eb1d7070da0583521fc54", null ],
+    [ "trim_utf8_string", "fractal_8h.html#a8643207a604b19f3fefe5046bd3c0290", null ]
 ];

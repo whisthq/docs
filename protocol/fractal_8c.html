@@ -130,6 +130,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">safe_strncpy</a> (char *destination, const char *source, size_t num)</td></tr>
 <tr class="memdesc:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a string from source to destination.  <a href="fractal_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">More...</a><br /></td></tr>
 <tr class="separator:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8643207a604b19f3fefe5046bd3c0290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a8643207a604b19f3fefe5046bd3c0290">trim_utf8_string</a> (char *<a class="el" href="fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>)</td></tr>
+<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.  <a href="fractal_8c.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
+<tr class="separator:a8643207a604b19f3fefe5046bd3c0290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBitArray.html">BitArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">bit_array_create</a> (const unsigned int bits)</td></tr>
 <tr class="memdesc:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structBitArray.html">BitArray</a> object.  <a href="fractal_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">More...</a><br /></td></tr>
 <tr class="separator:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -687,6 +690,32 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Terminates the protocol. </p>
+
+</div>
+</div>
+<a id="a8643207a604b19f3fefe5046bd3c0290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8643207a604b19f3fefe5046bd3c0290">&#9670;&nbsp;</a></span>trim_utf8_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void trim_utf8_string </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The utf8 string to be trimmed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

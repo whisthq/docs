@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"throttle_8c.html#adf1c12bd26c167ee8a628ed3b8ac8ea2":[9,0,1,6,2,7],
+"throttle_8h.html":[9,0,1,6,3],
 "throttle_8h.html#a375c9c414e1b142f3dd40bf3eadc00ab":[9,0,1,6,3,1],
 "throttle_8h.html#a719afae66ac2bd9da6f064fe111e8345":[9,0,1,6,3,4],
 "throttle_8h.html#a8094ca0422b39ccb3302aaaf740b959d":[9,0,1,6,3,5],

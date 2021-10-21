@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"structFrameData.html#a862d6346d2101e2d68beba3f061f5b70":[8,0,43,5],
+"structFrameData.html#a8aa6d7083971af8bef3ef4e11cfb3629":[8,0,43,2],
 "structFrameData.html#aa204dd1d41815bff9f3df1576e4bd3ad":[8,0,43,4],
 "structFrameData.html#aa52523581ed94b51f298010cf33d338f":[8,0,43,0],
 "structFrameData.html#ad678f7fddd965f8239caef6d6adccb97":[8,0,43,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "structRingBuffer.html#ac44f73cf4dcb49ad0bbabc3fca4f1fd4":[8,0,71,13],
 "structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717":[8,0,71,3],
 "structRingBuffer.html#ad3e1182176a371b72a662765e1202347":[8,0,71,9],
-"structRingBuffer.html#adc2ffd22ee8a7cdee24096e8b70b534e":[8,0,71,15],
-"structRingBuffer.html#add0e494a056eb1ea969545debc03d47f":[8,0,71,1],
-"structSDLVideoContext.html":[8,0,74]
+"structRingBuffer.html#adc2ffd22ee8a7cdee24096e8b70b534e":[8,0,71,15]
 };
