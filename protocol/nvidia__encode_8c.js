@@ -1,5 +1,7 @@
 var nvidia__encode_8c =
 [
+    [ "FRACTAL_PRESET", "nvidia__encode_8c.html#abbbe58e3859f0548fa71d04730576640", null ],
+    [ "FRACTAL_TUNING", "nvidia__encode_8c.html#a33f96b66ba3592ba12f9ad6972c937f1", null ],
     [ "LIB_ENCODEAPI_NAME", "nvidia__encode_8c.html#a413f8f4298cddd83945cbe786aae3a98", null ],
     [ "create_nvidia_encoder", "nvidia__encode_8c.html#a2652e81003368f8bf0501290ac82bfe8", null ],
     [ "destroy_nvidia_encoder", "nvidia__encode_8c.html#a1dfb7e3e77454fb585140ba00684a59b", null ],

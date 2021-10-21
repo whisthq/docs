@@ -1,5 +1,13 @@
 var NAVTREEINDEX11 =
 {
+"structSDLVideoContext.html#a4ea3aaca0a64058b18b1063d7b9df7fa":[8,0,74,0],
+"structSDLVideoContext.html#a68388d1a66bf4dcde5c189afda2a0534":[8,0,74,3],
+"structSDLVideoContext.html#a853949bfa371a9e918310654f15d4484":[8,0,74,5],
+"structSDLVideoContext.html#a88245b9ad1538e762fb7d37c2e3d1e04":[8,0,74,2],
+"structSDLVideoContext.html#aca721432a52278d39db9dfcd49090a40":[8,0,74,1],
+"structSDLVideoContext.html#af0ae7ee9c3859565aa1c1f758c84e8ca":[8,0,74,4],
+"structScreenshotContainer.html":[8,0,73],
+"structScreenshotContainer.html#a33eae2495ca31e1e81d1a6ef59610cab":[8,0,73,0],
 "structScreenshotContainer.html#a3978aa9492254d836e47baa2545f1249":[8,0,73,4],
 "structScreenshotContainer.html#a8db8a86c6e8ebcad04fea5392dfb7c4e":[8,0,73,5],
 "structScreenshotContainer.html#aa3cffc6d20b44b0849d2775027d1b652":[8,0,73,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX11 =
 "throttle_8c.html#ac061cfa926230ca0f7218d4ce3955a85":[9,0,1,6,2,5],
 "throttle_8c.html#ac54bd5b32c8baefaf13608a9296a7564":[9,0,1,6,2,1],
 "throttle_8c.html#adf1c12bd26c167ee8a628ed3b8ac8ea2":[9,0,1,6,2,7],
-"throttle_8h.html":[9,0,1,6,3],
-"throttle_8h.html#a375c9c414e1b142f3dd40bf3eadc00ab":[9,0,1,6,3,1],
-"throttle_8h.html#a719afae66ac2bd9da6f064fe111e8345":[9,0,1,6,3,4],
-"throttle_8h.html#a8094ca0422b39ccb3302aaaf740b959d":[9,0,1,6,3,5],
-"throttle_8h.html#abdd485a4dd0b32148884b04e1d92eb1f":[9,0,1,6,3,3],
-"throttle_8h.html#ac061cfa926230ca0f7218d4ce3955a85":[9,0,1,6,3,2],
-"throttle_8h_source.html":[9,0,1,6,3],
-"transfercapture_8c.html":[9,0,1,8,16],
-"transfercapture_8c.html#a1ff601abab02dcb3b01c6f2f7c9b9d37":[9,0,1,8,16,2]
+"throttle_8h.html":[9,0,1,6,3]
 };

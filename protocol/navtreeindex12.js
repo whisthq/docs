@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"throttle_8h.html#a375c9c414e1b142f3dd40bf3eadc00ab":[9,0,1,6,3,1],
+"throttle_8h.html#a719afae66ac2bd9da6f064fe111e8345":[9,0,1,6,3,4],
+"throttle_8h.html#a8094ca0422b39ccb3302aaaf740b959d":[9,0,1,6,3,5],
+"throttle_8h.html#abdd485a4dd0b32148884b04e1d92eb1f":[9,0,1,6,3,3],
+"throttle_8h.html#ac061cfa926230ca0f7218d4ce3955a85":[9,0,1,6,3,2],
+"throttle_8h_source.html":[9,0,1,6,3],
+"transfercapture_8c.html":[9,0,1,8,16],
+"transfercapture_8c.html#a1ff601abab02dcb3b01c6f2f7c9b9d37":[9,0,1,8,16,2],
 "transfercapture_8c.html#ac960986559af79f3a71c190d4705d321":[9,0,1,8,16,0],
 "transfercapture_8c.html#ae876d3f35aa1b6a3ea71f00158e25568":[9,0,1,8,16,1],
 "transfercapture_8h.html":[9,0,1,8,17],
