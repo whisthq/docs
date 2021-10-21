@@ -1,5 +1,10 @@
 var NAVTREEINDEX10 =
 {
+"structHash.html#a04ef237e7bc2fa99bc7305fb2352084d":[8,0,44,1],
+"structHash.html#a0977cf12b1d8e6bbc784b5e0877926f5":[8,0,44,2],
+"structHash.html#a3ed8f51297a858686e11a1a295a3a39c":[8,0,44,3],
+"structHash.html#a66918968854722efdf7ab5f8ac2c6c1d":[8,0,44,4],
+"structHash.html#a7247caa3e23eaba8f0d199ec5010c931":[8,0,44,5],
 "structHash.html#abf6ad3db2f652a19cc4ff0792e477899":[8,0,44,0],
 "structHuffmanTree.html":[8,0,45],
 "structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137":[8,0,45,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX10 =
 "structSDLVideoContext.html#aca721432a52278d39db9dfcd49090a40":[8,0,74,1],
 "structSDLVideoContext.html#af0ae7ee9c3859565aa1c1f758c84e8ca":[8,0,74,4],
 "structScreenshotContainer.html":[8,0,73],
-"structScreenshotContainer.html#a33eae2495ca31e1e81d1a6ef59610cab":[8,0,73,0],
-"structScreenshotContainer.html#a3978aa9492254d836e47baa2545f1249":[8,0,73,4],
-"structScreenshotContainer.html#a8db8a86c6e8ebcad04fea5392dfb7c4e":[8,0,73,5],
-"structScreenshotContainer.html#aa3cffc6d20b44b0849d2775027d1b652":[8,0,73,3],
-"structScreenshotContainer.html#acd7a83bc6466cf45b58c1cb765d08ba4":[8,0,73,1],
-"structScreenshotContainer.html#ae1b31b8b318b5c7341f6b3223295ff37":[8,0,73,2]
+"structScreenshotContainer.html#a33eae2495ca31e1e81d1a6ef59610cab":[8,0,73,0]
 };

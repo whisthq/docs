@@ -128,6 +128,21 @@ Functions</h2></td></tr>
 <tr class="separator:a27bfdcc708610481b47c9e7383c99241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34bd39d3decec9bb20a254ad91a8707d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a34bd39d3decec9bb20a254ad91a8707d">multithreaded_destroy_encoder</a> (void *opaque)</td></tr>
 <tr class="separator:a34bd39d3decec9bb20a254ad91a8707d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46dcd5b99eab1c1d974902d5491c4f33"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33">create_new_device</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> **device, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *rdevice, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> **encoder, uint32_t true_width, uint32_t true_height)</td></tr>
+<tr class="memdesc:a46dcd5b99eab1c1d974902d5491c4f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a>.  <a href="server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33">More...</a><br /></td></tr>
+<tr class="separator:a46dcd5b99eab1c1d974902d5491c4f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a01a61cb6b7ae03bb07b00f30b778d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a71a01a61cb6b7ae03bb07b00f30b778d">send_populated_frames</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *server_frame_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, bool assuming_client_active, int *id)</td></tr>
+<tr class="memdesc:a71a01a61cb6b7ae03bb07b00f30b778d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the populated video frames to the client.  <a href="server_2video_8c.html#a71a01a61cb6b7ae03bb07b00f30b778d">More...</a><br /></td></tr>
+<tr class="separator:a71a01a61cb6b7ae03bb07b00f30b778d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6146b7e514266435cfb9f2192094d8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a6146b7e514266435cfb9f2192094d8f5">retry_capture_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:a6146b7e514266435cfb9f2192094d8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to capture the screen. Afterwards sets update_device to true.  <a href="server_2video_8c.html#a6146b7e514266435cfb9f2192094d8f5">More...</a><br /></td></tr>
+<tr class="separator:a6146b7e514266435cfb9f2192094d8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5863302048e034c334f453238443c658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a5863302048e034c334f453238443c658">update_current_device</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, uint32_t true_width, uint32_t true_height)</td></tr>
+<tr class="memdesc:a5863302048e034c334f453238443c658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates dimensions of capture device and sets update_encoder to true.  <a href="server_2video_8c.html#a5863302048e034c334f453238443c658">More...</a><br /></td></tr>
+<tr class="separator:a5863302048e034c334f453238443c658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4956001dae79684292fdd9baaab92076"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a4956001dae79684292fdd9baaab92076">send_empty_frame</a> (int *id, bool assuming_client_active)</td></tr>
+<tr class="memdesc:a4956001dae79684292fdd9baaab92076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an empty frame to the client.  <a href="server_2video_8c.html#a4956001dae79684292fdd9baaab92076">More...</a><br /></td></tr>
+<tr class="separator:a4956001dae79684292fdd9baaab92076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c">do_update_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
 <tr class="memdesc:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the encoder upon request. Note that this function <em>returns</em> the updated encoder, due to the encoder factory.  <a href="server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c">More...</a><br /></td></tr>
 <tr class="separator:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,6 +269,72 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a46dcd5b99eab1c1d974902d5491c4f33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46dcd5b99eab1c1d974902d5491c4f33">&#9670;&nbsp;</a></span>create_new_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t create_new_device </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
+          <td class="paramname"><em>statistics_timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> **&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>rdevice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> **&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>true_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>true_height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statistics_timer</td><td>Pointer to statistics timer used for logging </td></tr>
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">rdevice</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
+    <tr><td class="paramname">true_width</td><td>True width of client screen </td></tr>
+    <tr><td class="paramname">true_height</td><td>True height of client screen </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>On success, 0. On failure, -1. </dd></dl>
+
+</div>
+</div>
 <a id="a6a1d3a18d03d9029e12df0a96684cc4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a1d3a18d03d9029e12df0a96684cc4c">&#9670;&nbsp;</a></span>do_update_encoder()</h2>
 
@@ -345,6 +426,203 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>This loops and captures video frames, encodes them if needed, and sends them to the client along with cursor images if necessary. </p>
+
+</div>
+</div>
+<a id="a6146b7e514266435cfb9f2192094d8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6146b7e514266435cfb9f2192094d8f5">&#9670;&nbsp;</a></span>retry_capture_screen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retry_capture_screen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempts to capture the screen. Afterwards sets update_device to true. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4956001dae79684292fdd9baaab92076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4956001dae79684292fdd9baaab92076">&#9670;&nbsp;</a></span>send_empty_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void send_empty_frame </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>assuming_client_active</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends an empty frame to the client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Pointer to the frame id </td></tr>
+    <tr><td class="paramname">assuming_client_active</td><td>Boolean describing whether we are assuming the client is active </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a71a01a61cb6b7ae03bb07b00f30b778d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a01a61cb6b7ae03bb07b00f30b778d">&#9670;&nbsp;</a></span>send_populated_frames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void send_populated_frames </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
+          <td class="paramname"><em>statistics_timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
+          <td class="paramname"><em>server_frame_timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>assuming_client_active</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends the populated video frames to the client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statistics_timer</td><td>Pointer to statistics timer used for logging </td></tr>
+    <tr><td class="paramname">server_frame_timer</td><td>Pointer to server_frame_timer </td></tr>
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
+    <tr><td class="paramname">assuming_client_active</td><td>Boolean describing whether we are assuming the client is active </td></tr>
+    <tr><td class="paramname">id</td><td>Pointer to frame id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5863302048e034c334f453238443c658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5863302048e034c334f453238443c658">&#9670;&nbsp;</a></span>update_current_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update_current_device </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
+          <td class="paramname"><em>statistics_timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>true_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>true_height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates dimensions of capture device and sets update_encoder to true. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statistics_timer</td><td>Pointer to the timer used for statistics logging </td></tr>
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
+    <tr><td class="paramname">true_width</td><td>True width of client screen </td></tr>
+    <tr><td class="paramname">true_height</td><td>True height of client screen </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
