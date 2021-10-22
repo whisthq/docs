@@ -7,6 +7,7 @@ var fractal_2network_2network_8c =
     [ "CurlResponseBuffer", "structCurlResponseBuffer.html", "structCurlResponseBuffer" ],
     [ "BITS_IN_BYTE", "fractal_2network_2network_8c.html#ac54bd5b32c8baefaf13608a9296a7564", null ],
     [ "MS_IN_SECOND", "fractal_2network_2network_8c.html#ab06727ebbc110e7071dc8090ced33373", null ],
+    [ "RETRIES_ON_BUFFER_FULL", "fractal_2network_2network_8c.html#a4f283368e88ac298d92d1506dd4c0abb", null ],
     [ "STUN_IP", "fractal_2network_2network_8c.html#a68f8e6814da9faad6d4eb32379d58412", null ],
     [ "STUN_PORT", "fractal_2network_2network_8c.html#a81e4fdb2a08afd19ef501855bb9fbeec", null ],
     [ "TCP_SEGMENT_SIZE", "fractal_2network_2network_8c.html#ab8c6b65188e80c3ec91782df45b9f787", null ],
