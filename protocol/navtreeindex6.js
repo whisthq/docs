@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768adc8fba076ca60b5f7be3440a6f32e2d6":[9,0,1,3,1,1,28],
+"linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768adf67371b2db9ee537d66142468e91028":[9,0,1,3,1,1,8],
 "linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768adfc34344de8211ce9da7927b90200342":[9,0,1,3,1,1,31],
 "linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768af432054e873c0d6f81cb0ca670e5ad5a":[9,0,1,3,1,1,15],
 "linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768afd69f45ba5eaf979c78e3495295d0493":[9,0,1,3,1,1,35],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "logging_8c.html#a2074b264c06107e25922c26e79c6c3c5":[9,0,1,5,4,19],
 "logging_8c.html#a224eb7560635401953081973df1cab0d":[9,0,1,5,4,23],
 "logging_8c.html#a2cce92d2c21ca0faeb6d6468d9c798e8":[9,0,1,5,4,8],
-"logging_8c.html#a369266c24eacffb87046522897a570d5":[9,0,1,5,4,1],
-"logging_8c.html#a3a75250763a2a4bbc6623223f9c3128b":[9,0,1,5,4,15],
-"logging_8c.html#a3dff165e9f1a40dfc76a953fec589061":[9,0,1,5,4,20]
+"logging_8c.html#a369266c24eacffb87046522897a570d5":[9,0,1,5,4,1]
 };

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lodepngcolortype_3591',['LodePNGColorType',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102',1,'lodepng.h']]],
-  ['lodepngfilterstrategy_3592',['LodePNGFilterStrategy',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254f',1,'lodepng.h']]]
+  ['lodepngcolortype_3593',['LodePNGColorType',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102',1,'lodepng.h']]],
+  ['lodepngfilterstrategy_3594',['LodePNGFilterStrategy',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254f',1,'lodepng.h']]]
 ];

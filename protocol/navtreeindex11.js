@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717":[8,0,71,3],
+"structRingBuffer.html#ad3e1182176a371b72a662765e1202347":[8,0,71,9],
 "structRingBuffer.html#adc2ffd22ee8a7cdee24096e8b70b534e":[8,0,71,15],
 "structRingBuffer.html#add0e494a056eb1ea969545debc03d47f":[8,0,71,1],
 "structSDLVideoContext.html":[8,0,74],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "throttle_8c.html#a719afae66ac2bd9da6f064fe111e8345":[9,0,1,6,2,8],
 "throttle_8c.html#a8094ca0422b39ccb3302aaaf740b959d":[9,0,1,6,2,9],
 "throttle_8c.html#a9ccc87177ffb877516344c17887a8e81":[9,0,1,6,2,3],
-"throttle_8c.html#aa2e968986f4cee48dbca1d37ffda5354":[9,0,1,6,2,2],
-"throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f":[9,0,1,6,2,6],
-"throttle_8c.html#ac061cfa926230ca0f7218d4ce3955a85":[9,0,1,6,2,5]
+"throttle_8c.html#aa2e968986f4cee48dbca1d37ffda5354":[9,0,1,6,2,2]
 };
