@@ -117,7 +117,7 @@ Macros</h2></td></tr>
 <tr class="separator:ac54bd5b32c8baefaf13608a9296a7564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac42910ae45f91387f94d0487608a219"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#aac42910ae45f91387f94d0487608a219">VIDEO_BUFFER_SIZE</a>&#160;&#160;&#160;25</td></tr>
 <tr class="separator:aac42910ae45f91387f94d0487608a219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0676ffefc1a296049d97227a122a3b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a0676ffefc1a296049d97227a122a3b01">MAX_NUM_VIDEO_INDICES</a>&#160;&#160;&#160;500</td></tr>
+<tr class="memitem:a0676ffefc1a296049d97227a122a3b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a0676ffefc1a296049d97227a122a3b01">MAX_NUM_VIDEO_INDICES</a>&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a8bf1e16a380892934c327a95bd6115bb">MAX_VIDEOFRAME_DATA_SIZE</a> / <a class="el" href="fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a> + 10)</td></tr>
 <tr class="separator:a0676ffefc1a296049d97227a122a3b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7d5718ab8c38506adb3bef2469b319"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#aca7d5718ab8c38506adb3bef2469b319">MOD</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:aca7d5718ab8c38506adb3bef2469b319"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,18 +131,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a46dcd5b99eab1c1d974902d5491c4f33"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33">create_new_device</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> **device, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *rdevice, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> **encoder, uint32_t true_width, uint32_t true_height)</td></tr>
 <tr class="memdesc:a46dcd5b99eab1c1d974902d5491c4f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a>.  <a href="server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33">More...</a><br /></td></tr>
 <tr class="separator:a46dcd5b99eab1c1d974902d5491c4f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a308665caf6de50edd105d0b83123193a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a308665caf6de50edd105d0b83123193a">send_populated_frames</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *server_frame_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int *id)</td></tr>
-<tr class="memdesc:a308665caf6de50edd105d0b83123193a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the populated video frames to the client.  <a href="server_2video_8c.html#a308665caf6de50edd105d0b83123193a">More...</a><br /></td></tr>
-<tr class="separator:a308665caf6de50edd105d0b83123193a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f23919fade390e6daaa8985a386746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a92f23919fade390e6daaa8985a386746">send_populated_frames</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *server_frame_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int id)</td></tr>
+<tr class="memdesc:a92f23919fade390e6daaa8985a386746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the populated video frames to the client.  <a href="server_2video_8c.html#a92f23919fade390e6daaa8985a386746">More...</a><br /></td></tr>
+<tr class="separator:a92f23919fade390e6daaa8985a386746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6146b7e514266435cfb9f2192094d8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a6146b7e514266435cfb9f2192094d8f5">retry_capture_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a6146b7e514266435cfb9f2192094d8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to capture the screen. Afterwards sets update_device to true.  <a href="server_2video_8c.html#a6146b7e514266435cfb9f2192094d8f5">More...</a><br /></td></tr>
 <tr class="separator:a6146b7e514266435cfb9f2192094d8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5863302048e034c334f453238443c658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a5863302048e034c334f453238443c658">update_current_device</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, uint32_t true_width, uint32_t true_height)</td></tr>
 <tr class="memdesc:a5863302048e034c334f453238443c658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates dimensions of capture device and sets update_encoder to true.  <a href="server_2video_8c.html#a5863302048e034c334f453238443c658">More...</a><br /></td></tr>
 <tr class="separator:a5863302048e034c334f453238443c658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43ec3c90e2ee235af4c87dc7d05810f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a43ec3c90e2ee235af4c87dc7d05810f3">send_empty_frame</a> (int *id)</td></tr>
-<tr class="memdesc:a43ec3c90e2ee235af4c87dc7d05810f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an empty frame to the client.  <a href="server_2video_8c.html#a43ec3c90e2ee235af4c87dc7d05810f3">More...</a><br /></td></tr>
-<tr class="separator:a43ec3c90e2ee235af4c87dc7d05810f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5859368e99c5368c8673f27f8b64392d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a5859368e99c5368c8673f27f8b64392d">send_empty_frame</a> (int id)</td></tr>
+<tr class="memdesc:a5859368e99c5368c8673f27f8b64392d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an empty frame to the client.  <a href="server_2video_8c.html#a5859368e99c5368c8673f27f8b64392d">More...</a><br /></td></tr>
+<tr class="separator:a5859368e99c5368c8673f27f8b64392d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c">do_update_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
 <tr class="memdesc:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the encoder upon request. Note that this function <em>returns</em> the updated encoder, due to the encoder factory.  <a href="server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c">More...</a><br /></td></tr>
 <tr class="separator:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,7 +205,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_NUM_VIDEO_INDICES&#160;&#160;&#160;500</td>
+          <td class="memname">#define MAX_NUM_VIDEO_INDICES&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a8bf1e16a380892934c327a95bd6115bb">MAX_VIDEOFRAME_DATA_SIZE</a> / <a class="el" href="fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a> + 10)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -466,8 +466,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a43ec3c90e2ee235af4c87dc7d05810f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43ec3c90e2ee235af4c87dc7d05810f3">&#9670;&nbsp;</a></span>send_empty_frame()</h2>
+<a id="a5859368e99c5368c8673f27f8b64392d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5859368e99c5368c8673f27f8b64392d">&#9670;&nbsp;</a></span>send_empty_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -475,7 +475,7 @@ Usage</h1>
         <tr>
           <td class="memname">void send_empty_frame </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -492,8 +492,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a308665caf6de50edd105d0b83123193a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a308665caf6de50edd105d0b83123193a">&#9670;&nbsp;</a></span>send_populated_frames()</h2>
+<a id="a92f23919fade390e6daaa8985a386746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f23919fade390e6daaa8985a386746">&#9670;&nbsp;</a></span>send_populated_frames()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -525,7 +525,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em>&#160;</td>
         </tr>
         <tr>

@@ -114,9 +114,9 @@ $(document).ready(function(){initNavTree('fractal__frame_8h_source.html',''); in
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <a class="code" href="fractal__frame_8h.html#af972e86db0d7f39d6abb7fc0ba8eff5e">AudioFrame</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// The maximum possible valid size of a VideoFrame*</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// It is guaranteed that no valid VideoFrame will be larger than this,</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// since all valid frames will have a videodata_length less than MAX_VIDEOFRAME_DATA_SIZE</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="fractal__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f">   39</a></span>&#160;<span class="preprocessor">#define LARGEST_VIDEOFRAME_SIZE 1000000</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// It will be guaranteed that no valid VideoFrame will be larger than this.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// Any videoframes larger will be unconditionally dropped and error reported</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="fractal__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f">   39</a></span>&#160;<span class="preprocessor">#define LARGEST_VIDEOFRAME_SIZE 4000000</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// The maximum possible valid size of an audio frame: a little more than 8192 bytes, which is the</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// frame size of the decoded data</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="fractal__frame_8h.html#a84e8623194435c55447f0ebb656150ec">   42</a></span>&#160;<span class="preprocessor">#define LARGEST_AUDIOFRAME_SIZE 9000</span></div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('fractal__frame_8h_source.html',''); in
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="fractal__frame_8h.html#a11350fab34a6d336dd5296535080bcea">   45</a></span>&#160;<span class="preprocessor">#define MAX_VIDEOFRAME_METADATA_SIZE (sizeof(VideoFrame) + sizeof(FractalCursorImage))</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// The maximum allowed videodata size that can be embedded in a VideoFrame*</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Setting frame-&gt;videodata_length to anything larger than this is invalid and will cause problems</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Setting frame-&gt;videodata_length to anything larger than this is invalid and will cause bugs</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="fractal__frame_8h.html#a8bf1e16a380892934c327a95bd6115bb">   49</a></span>&#160;<span class="preprocessor">#define MAX_VIDEOFRAME_DATA_SIZE (LARGEST_VIDEOFRAME_SIZE - MAX_VIDEOFRAME_METADATA_SIZE)</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// The maximum frame size, excluding the embedded videodata</span></div>
