@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>app package &#8212; Fractal Webserver  documentation</title>
+    <title>app package &#8212; Whist Webserver  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -157,7 +157,7 @@ standard heroku app environments as well as test environments.</p>
 <dt class="sig sig-object py" id="app.config.DeploymentConfig.AUTH0_DOMAIN">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">AUTH0_DOMAIN</span></span><em class="property"><span class="pre">:</span> <span class="pre">Any</span></em><a class="headerlink" href="#app.config.DeploymentConfig.AUTH0_DOMAIN" title="Permalink to this definition">¶</a></dt>
 <dd><p>A domain name identifying the Auth0 tenant with which the Webserver should communicate.
-Examples include <code class="docutils literal notranslate"><span class="pre">fractal-dev.us.auth0.com</span></code> and <code class="docutils literal notranslate"><span class="pre">login.fractal.co</span></code>.</p>
+Examples include <code class="docutils literal notranslate"><span class="pre">fractal-dev.us.auth0.com</span></code> and <code class="docutils literal notranslate"><span class="pre">login.whist.com</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -445,7 +445,7 @@ function is called using instance.method() syntax.</p>
 <dt class="sig sig-object py" id="app.config.DeploymentConfig.STRIPE_CUSTOMER_ID_CLAIM">
 <span class="sig-name descname"><span class="pre">STRIPE_CUSTOMER_ID_CLAIM</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'https://api.fractal.co/stripe_customer_id'</span></em><a class="headerlink" href="#app.config.DeploymentConfig.STRIPE_CUSTOMER_ID_CLAIM" title="Permalink to this definition">¶</a></dt>
 <dd><p>The name of the access token claim containing the ID of the Stripe Customer record
-associated with an authenticated user’s Fractal account.</p>
+associated with an authenticated user’s Whist account.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -735,7 +735,7 @@ function is called using instance.method() syntax.</p>
 <p>This function attempts to retrieve the value associated with a configuration variable key. It
 first tries to retrieve the value of the environment variable whose name matches the key. If
 no environment variable is set in the process’s execution environment it may attempt to fetch
-the value associated with the specified key from Fractal’s configuration database. If the key
+the value associated with the specified key from Whist’s configuration database. If the key
 cannot be found, a default value is returned or a KeyError is raised.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -801,7 +801,7 @@ if the logging level is set below INFO.</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Fractal Webserver</a></h1>
+<h1 class="logo"><a href="index.html">Whist Webserver</a></h1>
 
 
 
@@ -857,7 +857,7 @@ if the logging level is set below INFO.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2021, Fractal Computers, Inc..
+      &copy;Fractal Computers, Inc. (dba Whist) 2021.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.0</a>

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome to the Fractal Webserver internal documentation! &#8212; Fractal Webserver  documentation</title>
+    <title>Welcome to the Whist Webserver internal documentation! &#8212; Whist Webserver  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -32,8 +32,8 @@
 
           <div class="body" role="main">
             
-  <section id="welcome-to-the-fractal-webserver-internal-documentation">
-<h1>Welcome to the Fractal Webserver internal documentation!<a class="headerlink" href="#welcome-to-the-fractal-webserver-internal-documentation" title="Permalink to this headline">¶</a></h1>
+  <section id="welcome-to-the-whist-webserver-internal-documentation">
+<h1>Welcome to the Whist Webserver internal documentation!<a class="headerlink" href="#welcome-to-the-whist-webserver-internal-documentation" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
@@ -58,8 +58,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="services.html#user-agents">User Agents</a></li>
-<li class="toctree-l2"><a class="reference internal" href="services.html#fractal-host-service">Fractal Host Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="services.html#fractal-protocol-server">Fractal Protocol Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="services.html#whist-host-service">Whist Host Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="services.html#whist-protocol-server">Whist Protocol Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="services.html#github-actions-workflows">GitHub Actions Workflows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="services.html#hirefire">HireFire</a></li>
 <li class="toctree-l2"><a class="reference internal" href="services.html#databases">Databases</a></li>
@@ -75,27 +75,27 @@
 </div>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>The Fractal Webserver is responsible for implementing all of Fractal’s business logic. Its responsibilities include:</p>
+<p>The Whist Webserver is responsible for implementing all of Whist’s business logic. Its responsibilities include:</p>
 <ul class="simple">
 <li><p>Access control (lightweight authentication by interfacing with Auth0, our authentication provider)</p></li>
 <li><p>Interfacing our frontend (end user applications) with our cloud infrastructure</p></li>
 <li><p>Streaming sessions management (monitoring active instances, etc.)</p></li>
 </ul>
-<p>In order to fulfill all of its responsibilities, the Fractal Webserver communicates with many other internal and external
+<p>In order to fulfill all of its responsibilities, the Whist Webserver communicates with many other internal and external
 services. It receives incoming requests from:</p>
 <ul class="simple">
 <li><p>User agents (e.g. the desktop applications, browsers, developer tools such as Postman and cURL)</p></li>
-<li><p>The Fractal Host Service running on Fractal cloud instances</p></li>
-<li><p>Instances of the Fractal protocol server running in Fractal mandelboxes on Fractal cloud instances</p></li>
+<li><p>The Whist Host Service running on Whist cloud instances</p></li>
+<li><p>Instances of the Whist protocol server running in Whist mandelboxes on Whist cloud instances</p></li>
 <li><p>GitHub Actions (GHA) workflows, for deployment and testing</p></li>
 </ul>
 <p>It also sends outgoing queries to:</p>
 <ul class="simple">
-<li><p>Fractal Databases</p></li>
-<li><p>Various AWS services used by Fractal</p></li>
-<li><p>The Fractal Host Service running on Fractal cloud instances</p></li>
-<li><p>Auth0, the authentication provider used by Fractal</p></li>
-<li><p>Stripe, the payment provider used by Fractal</p></li>
+<li><p>Whist Databases</p></li>
+<li><p>Various AWS services used by Whist</p></li>
+<li><p>The Whist Host Service running on Whist cloud instances</p></li>
+<li><p>Auth0, the authentication provider used by Whist</p></li>
+<li><p>Stripe, the payment provider used by Whist</p></li>
 </ul>
 </section>
 </section>
@@ -115,7 +115,7 @@ services. It receives incoming requests from:</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="#">Fractal Webserver</a></h1>
+<h1 class="logo"><a href="#">Whist Webserver</a></h1>
 
 
 
@@ -165,7 +165,7 @@ services. It receives incoming requests from:</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2021, Fractal Computers, Inc..
+      &copy;Fractal Computers, Inc. (dba Whist) 2021.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.0</a>

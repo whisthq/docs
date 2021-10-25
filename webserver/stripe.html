@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Stripe Integration &#8212; Fractal Webserver  documentation</title>
+    <title>Stripe Integration &#8212; Whist Webserver  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -55,7 +55,7 @@ uses are stored in the appropriate Auth0 tenant’s <a class="reference external
 <section id="subscription-status">
 <h2>Subscription status<a class="headerlink" href="#subscription-status" title="Permalink to this headline">¶</a></h2>
 <p>Part of enforcing access control is denying service to users who lack active
-Fractal subscriptions. The <code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code> decorator
+Whist subscriptions. The <code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code> decorator
 implements this behavior. Each time the Webserver receives a request for a
 resource that is only available to paying users, the
 <code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code> decorator checks the authenticated user’s
@@ -68,18 +68,18 @@ status. More specifically, the value of the
 <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim is the value of the
 <code class="docutils literal notranslate"><span class="pre">status</span></code> attribute of the most recent non-terminal Stripe
 <a class="reference external" href="https://stripe.com/docs/api/subscriptions/object#subscription_object-status">Subscription object</a> associated with Stripe Customer record associated with
-the user’s Fractal account, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if all of a user’s subscriptions are in
+the user’s Whist account, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if all of a user’s subscriptions are in
 terminal states. Let’s break that down:</p>
 <ol class="arabic simple">
 <li><p>Also mentioned in the section about <a class="reference internal" href="authentication.html#custom-claims"><span class="std std-ref">Custom claims</span></a> is the
 <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/stripe_customer_id</span></code> claim. This claim contains the
 ID of the Stripe customer record associated with the authorized user’s
-Fractal account. The customer record associated with the authorized user’s
-is created the first time the user logs into Fractal.</p></li>
-<li><p>When a Fractal user buys a Fractal subscription, a Subscription object
+Whist account. The customer record associated with the authorized user’s
+is created the first time the user logs into Whist.</p></li>
+<li><p>When a Whist user buys a Whist subscription, a Subscription object
 representing their subscription is associated with the Customer record
 associated with their account. An invariant that we don’t necessarily
-enforce, but we hope holds true is that each Fractal user is only paying for
+enforce, but we hope holds true is that each Whist user is only paying for
 one subscription at a time (and so has only one Subscription object
 associated with their Customer record. Nevertheless, we disregard all
 Subscription objects associated with a user’s Customer record other than the
@@ -121,7 +121,7 @@ would like to manage their subscription or billing information, the desktop app
 calls the <code class="docutils literal notranslate"><span class="pre">/payment_portal_url</span></code> endpoint on the Webserver to obtain the URL
 of either a Stripe Checkout or Customer Portal session. Opening the URL brings
 up a Stripe-hosted form that allows the user to sign up for a new subscription
-or manage their existing subscription and billing information. Fractal
+or manage their existing subscription and billing information. Whist
 developers can customize the form’s appearance from the <a class="reference external" href="https://dashboard.stripe.com/settings/billing/portal">Stripe dashboard</a>.</p>
 <p>The Webserver determines whether or not a Checkout or Customer Portal session
 should be created based on the value of the authenticated user’s access token’s
@@ -176,7 +176,7 @@ caching a user’s subscription status in their access token.</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Fractal Webserver</a></h1>
+<h1 class="logo"><a href="index.html">Whist Webserver</a></h1>
 
 
 
@@ -233,7 +233,7 @@ caching a user’s subscription status in their access token.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2021, Fractal Computers, Inc..
+      &copy;Fractal Computers, Inc. (dba Whist) 2021.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.0</a>
