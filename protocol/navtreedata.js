@@ -22,7 +22,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Fractal Protocol", "index.html", [
+  [ "Whist Protocol", "index.html", [
     [ "Supported Platforms", "index.html#autotoc_md1", [
       [ "Server", "index.html#autotoc_md2", null ],
       [ "Client", "index.html#autotoc_md3", null ]
@@ -56,8 +56,8 @@ var NAVTREE =
       [ "clang-format", "index.html#autotoc_md27", null ],
       [ "clang-tidy", "index.html#autotoc_md28", null ]
     ] ],
-    [ "Fractal Desktop Clients", "md_client_README.html", null ],
-    [ "Fractal Windows/Linux Ubuntu Servers", "md_server_README.html", null ],
+    [ "Whist Desktop Clients", "md_client_README.html", null ],
+    [ "Whist Windows/Linux Ubuntu Servers", "md_server_README.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
