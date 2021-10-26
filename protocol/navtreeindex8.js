@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"screencapture_8h_source.html":[9,0,1,8,15],
 "sdl__event__handler_8c.html":[9,0,0,16],
 "sdl__event__handler_8c.html#a0174a28e7af130d71bc1fbc09695fbfa":[9,0,0,16,8],
 "sdl__event__handler_8c.html#a112bf2771067e14df169fd79a8b0c880":[9,0,0,16,0],
@@ -110,8 +111,8 @@ var NAVTREEINDEX8 =
 "server_2network_8c.html#a5d09b1c8c7de997b76720d4045ec518a":[9,0,2,8,14],
 "server_2network_8c.html#a5d17c2bed3efc45988b308faa8392bc8":[9,0,2,8,23],
 "server_2network_8c.html#a69ac525d995758ffd8a2403a33ba581f":[9,0,2,8,3],
-"server_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4":[9,0,2,8,2],
 "server_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4":[9,0,2,8,1],
+"server_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4":[9,0,2,8,2],
 "server_2network_8c.html#a87359d0492cce4252fa833844855438d":[9,0,2,8,16],
 "server_2network_8c.html#a90d1e1147b89a199b7d0067298e9c167":[9,0,2,8,9],
 "server_2network_8c.html#a961bf3611973011277079ee5647d25b0":[9,0,2,8,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structBitrates.html":[8,0,10],
 "structBitrates.html#a7a6a075fb9985d4995a12da354b06cd7":[8,0,10,0],
 "structBitrates.html#af93a88f0725aad9cc7ecd7aaeaf49af2":[8,0,10,1],
-"structCaptureDevice.html":[8,0,14],
-"structCaptureDevice.html#a104ec4caeeff674bc3e4476bca202c55":[8,0,14,10]
+"structCaptureDevice.html":[8,0,14]
 };

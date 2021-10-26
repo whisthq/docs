@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"logging_8c.html#a369266c24eacffb87046522897a570d5":[9,0,1,5,4,1],
 "logging_8c.html#a3a75250763a2a4bbc6623223f9c3128b":[9,0,1,5,4,15],
 "logging_8c.html#a3dff165e9f1a40dfc76a953fec589061":[9,0,1,5,4,20],
 "logging_8c.html#a3fa50e9f30a5985e3c02649e9c1c9bee":[9,0,1,5,4,10],
@@ -91,9 +92,9 @@ var NAVTREEINDEX7 =
 "main_8h.html#afb3a99353e3c50b4339ceb1efd4e00b1":[9,0,2,7,1],
 "main_8h_source.html":[9,0,2,7],
 "md_client_README.html":[6],
-"md_client_README.html#autotoc_md58":[2],
+"md_client_README.html#autotoc_md59":[2],
 "md_server_README.html":[7],
-"md_server_README.html#autotoc_md102":[3],
+"md_server_README.html#autotoc_md103":[3],
 "native__window__utils_8h.html":[9,0,0,9],
 "native__window__utils_8h.html#a4a1cc0cf009ac3e12e4ec1b4e65faded":[9,0,0,9,5],
 "native__window__utils_8h.html#a637fdd1a1f351d7b4e338afbdbda5ab6":[9,0,0,9,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "screencapture_8h.html#aad85f68930fed4c454c1e4f8def286cf":[9,0,1,8,15,4],
 "screencapture_8h.html#abbd0ff16d9ee7c3353340b1d2529f8c7":[9,0,1,8,15,2],
 "screencapture_8h.html#acddcc3aa008273807b931fbd1fd2a0bf":[9,0,1,8,15,0],
-"screencapture_8h.html#af9fc9ee2cc0effcb8b75c06d860ef4b7":[9,0,1,8,15,6],
-"screencapture_8h_source.html":[9,0,1,8,15]
+"screencapture_8h.html#af9fc9ee2cc0effcb8b75c06d860ef4b7":[9,0,1,8,15,6]
 };

@@ -54,7 +54,8 @@ var NAVTREE =
     ] ],
     [ "Styling", "index.html#autotoc_md26", [
       [ "clang-format", "index.html#autotoc_md27", null ],
-      [ "clang-tidy", "index.html#autotoc_md28", null ]
+      [ "clang-tidy", "index.html#autotoc_md28", null ],
+      [ "Logz.io", "index.html#autotoc_md29", null ]
     ] ],
     [ "Whist Desktop Clients", "md_client_README.html", null ],
     [ "Whist Windows/Linux Ubuntu Servers", "md_server_README.html", null ],
@@ -89,13 +90,13 @@ var NAVTREEINDEX =
 "fractal_2network_2network_8h.html#a7e0de62b786afcf1536f2410fe5dd8cf",
 "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527",
 "globals_defs_i.html",
-"linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768adc8fba076ca60b5f7be3440a6f32e2d6",
-"logging_8c.html#a3a75250763a2a4bbc6623223f9c3128b",
-"sdl__event__handler_8c.html",
-"structCaptureDevice.html#a10e28e39576bde33b71c4f7a4d0f3055",
-"structFrameData.html#a28cffb0c17e4f704b491f31b166e544d",
-"structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717",
-"throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f"
+"linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768ad987f8c504f7bf38568962cbc630e5b5",
+"logging_8c.html#a369266c24eacffb87046522897a570d5",
+"screencapture_8h_source.html",
+"structCaptureDevice.html#a104ec4caeeff674bc3e4476bca202c55",
+"structFrameData.html#a17b526603f40e18dba49fa0f2cb75b27",
+"structRingBuffer.html#ac44f73cf4dcb49ad0bbabc3fca4f1fd4",
+"throttle_8c.html#aa2e968986f4cee48dbca1d37ffda5354"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
