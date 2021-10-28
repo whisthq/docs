@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['acceptp_7',['acceptp',['../fractal_2network_2network_8c.html#a811a37790abb8890e23af20721f618d2',1,'network.c']]],
-  ['ack_8',['ack',['../structSocketContext.html#a569c72c5d3530a5260f9e9f89c32a371',1,'SocketContext::ack()'],['../fractal_2network_2network_8c.html#a716fd11de9d48aa6f307185a3e9d130b',1,'ack(SocketContext *context):&#160;network.c'],['../fractal_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b',1,'ack(SocketContext *context):&#160;network.c']]],
+  ['acceptp_7',['acceptp',['../tcp_8c.html#a811a37790abb8890e23af20721f618d2',1,'tcp.c']]],
+  ['ack_8',['ack',['../structSocketContextData.html#a53214358998840a3029a770e482f4c59',1,'SocketContextData::ack()'],['../structSocketContext.html#a088a2da14c54575d914f99b1ac3bb68e',1,'SocketContext::ack()'],['../fractal_2network_2network_8c.html#a716fd11de9d48aa6f307185a3e9d130b',1,'ack(SocketContext *context):&#160;network.c'],['../fractal_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b',1,'ack(SocketContext *context):&#160;network.c']]],
   ['ack_5frefresh_5fms_9',['ACK_REFRESH_MS',['../fractal_8h.html#a407e78922a862311fd4f35eeef889630',1,'fractal.h']]],
   ['active_5fcapture_5fdevice_10',['active_capture_device',['../structCaptureDevice.html#a36c4bc68cdade3387c5b56dffa79bae9',1,'CaptureDevice']]],
   ['active_5fencoder_11',['active_encoder',['../structVideoEncoder.html#a9975e772b1f1916ed1aa99f82ca8b065',1,'VideoEncoder']]],
@@ -12,7 +12,7 @@ var searchData=
   ['adapter_16',['adapter',['../structDisplayHardware.html#a9e1b56eec9fe57deb012c47cb7a64e91',1,'DisplayHardware']]],
   ['add_5fid_17',['add_id',['../structLodePNGEncoderSettings.html#a893aa542aa7c122c32ee36dd716fbcb2',1,'LodePNGEncoderSettings']]],
   ['add_5fthread_5fto_5fclient_5factive_5fdependents_18',['add_thread_to_client_active_dependents',['../client_8c.html#a29042e5606a07696cb4a51f8353b7bb1',1,'add_thread_to_client_active_dependents():&#160;client.c'],['../client_8h.html#a29042e5606a07696cb4a51f8353b7bb1',1,'add_thread_to_client_active_dependents():&#160;client.c']]],
-  ['addr_19',['addr',['../structSocketContext.html#ac7290efc7e58c25c9e8906153f3507cf',1,'SocketContext']]],
+  ['addr_19',['addr',['../structSocketContextData.html#a036eefecf0aef61bddb53b24438f872c',1,'SocketContextData']]],
   ['aes_2ec_20',['aes.c',['../aes_8c.html',1,'']]],
   ['aes_2eh_21',['aes.h',['../aes_8h.html',1,'']]],
   ['aes_5fdecrypt_22',['aes_decrypt',['../aes_8c.html#a0359a26db61e9a5acab81ea291b53f0e',1,'aes_decrypt(void *ciphertext, int ciphertext_len, void *key, void *iv, void *plaintext):&#160;aes.c'],['../aes_8h.html#a0359a26db61e9a5acab81ea291b53f0e',1,'aes_decrypt(void *ciphertext, int ciphertext_len, void *key, void *iv, void *plaintext):&#160;aes.c']]],
@@ -32,7 +32,7 @@ var searchData=
   ['app_5fversion_36',['APP_VERSION',['../nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806',1,'nvidiacapture.c']]],
   ['array_37',['array',['../structBitArray.html#aa3d7594ec48d0e37b897bf7ced3e0047',1,'BitArray']]],
   ['arrow_5fcursor_5fhash_38',['ARROW_CURSOR_HASH',['../linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a7109b5b109c7f920637ded7d0b742b11',1,'linuxcursor.c']]],
-  ['ask_5finfo_39',['ASK_INFO',['../fractal_2network_2network_8c.html#a57fdac43f47de768666a1961513f2e5baae4deeb65aaa4dd474e53c0860d1d51a',1,'network.c']]],
+  ['ask_5finfo_39',['ASK_INFO',['../fractal_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5baae4deeb65aaa4dd474e53c0860d1d51a',1,'network.h']]],
   ['audio_2ec_40',['audio.c',['../client_2audio_8c.html',1,'(Global Namespace)'],['../server_2audio_8c.html',1,'(Global Namespace)']]],
   ['audio_2eh_41',['audio.h',['../client_2audio_8h.html',1,'(Global Namespace)'],['../server_2audio_8h.html',1,'(Global Namespace)']]],
   ['audio_5fbitrate_42',['AUDIO_BITRATE',['../fractal_8h.html#a4dd2e9c562db4c9c333b1ddcbea5f7cc',1,'fractal.h']]],

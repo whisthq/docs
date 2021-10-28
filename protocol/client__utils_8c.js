@@ -22,7 +22,7 @@ var client__utils_8c =
     [ "output_codec_type", "client__utils_8c.html#adb9ee7b2e8381606788de51e5548b57f", null ],
     [ "output_height", "client__utils_8c.html#a2a57d774e71166271bbff6c515111104", null ],
     [ "output_width", "client__utils_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ],
-    [ "port_mappings", "client__utils_8c.html#a9cae1dba0665c0c1ddc55108c52efa46", null ],
+    [ "port_mappings", "client__utils_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a", null ],
     [ "program_name", "client__utils_8c.html#a724e6f14a5eaffd21dc3012771360af3", null ],
     [ "server_codec_type", "client__utils_8c.html#a1c601e07e2ab0a163872f816a34fad9c", null ],
     [ "server_height", "client__utils_8c.html#a6f22535f72143edb1d30f2ae7b2063d7", null ],

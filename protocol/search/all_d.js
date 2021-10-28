@@ -20,7 +20,7 @@ var searchData=
   ['nesw_5fcursor_5fhash_1389',['NESW_CURSOR_HASH',['../linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a818614cbe58b7010ee7e076acb73aaa6',1,'linuxcursor.c']]],
   ['network_2ec_1390',['network.c',['../client_2network_8c.html',1,'(Global Namespace)'],['../server_2network_8c.html',1,'(Global Namespace)'],['../fractal_2network_2network_8c.html',1,'(Global Namespace)']]],
   ['network_2eh_1391',['network.h',['../client_2network_8h.html',1,'(Global Namespace)'],['../server_2network_8h.html',1,'(Global Namespace)'],['../fractal_2network_2network_8h.html',1,'(Global Namespace)']]],
-  ['network_5fthrottler_1392',['network_throttler',['../structSocketContext.html#a1f399aec611c87250b70d43c98de0c44',1,'SocketContext']]],
+  ['network_5fthrottler_1392',['network_throttler',['../structSocketContextData.html#abd81aa98e7dbbac8eed5843e63b7b153',1,'SocketContextData']]],
   ['network_5fthrottler_5fcreate_1393',['network_throttler_create',['../throttle_8c.html#ac061cfa926230ca0f7218d4ce3955a85',1,'network_throttler_create():&#160;throttle.c'],['../throttle_8h.html#ac061cfa926230ca0f7218d4ce3955a85',1,'network_throttler_create():&#160;throttle.c']]],
   ['network_5fthrottler_5fdestroy_1394',['network_throttler_destroy',['../throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f',1,'network_throttler_destroy(NetworkThrottleContext *ctx):&#160;throttle.c'],['../throttle_8h.html#abdd485a4dd0b32148884b04e1d92eb1f',1,'network_throttler_destroy(NetworkThrottleContext *ctx):&#160;throttle.c']]],
   ['network_5fthrottler_5fget_5fburst_5fbitrate_1395',['network_throttler_get_burst_bitrate',['../throttle_8c.html#adf1c12bd26c167ee8a628ed3b8ac8ea2',1,'throttle.c']]],

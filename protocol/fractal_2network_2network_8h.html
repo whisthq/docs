@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('fractal_2network_2network_8h.html','')
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -100,15 +99,28 @@ $(document).ready(function(){initNavTree('fractal_2network_2network_8h.html','')
 <code>#include &lt;sys/socket.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="throttle_8h_source.html">fractal/network/throttle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tcp_8h_source.html">fractal/network/tcp.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="udp_8h_source.html">fractal/network/udp.h</a>&gt;</code><br />
 </div>
 <p><a href="fractal_2network_2network_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html">SocketContext</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFractalPacket.html">FractalPacket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet of data to be sent over a <a class="el" href="structSocketContext.html">SocketContext</a>.  <a href="structFractalPacket.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet of data to be sent over a <a class="el" href="structSocketContextData.html">SocketContextData</a>.  <a href="structFractalPacket.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStunEntry.html">StunEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStunRequest.html">StunRequest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html">SocketContextData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html">SocketContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface describing the avaliable functions and socket context of a network protocol.  <a href="structSocketContext.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrivateKeyData.html">PrivateKeyData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSignatureData.html">SignatureData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -131,6 +143,10 @@ Macros</h2></td></tr>
 <tr class="separator:a2e0cefb8f477cfcff5dbc9ea1cea9ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f2e30f7b11dadfd39341801f27b0b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a65f2e30f7b11dadfd39341801f27b0b4">FRACTAL_EINPROGRESS</a>&#160;&#160;&#160;EINPROGRESS</td></tr>
 <tr class="separator:a65f2e30f7b11dadfd39341801f27b0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f8e6814da9faad6d4eb32379d58412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a68f8e6814da9faad6d4eb32379d58412">STUN_IP</a>&#160;&#160;&#160;&quot;0.0.0.0&quot;</td></tr>
+<tr class="separator:a68f8e6814da9faad6d4eb32379d58412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e4fdb2a08afd19ef501855bb9fbeec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a81e4fdb2a08afd19ef501855bb9fbeec">STUN_PORT</a>&#160;&#160;&#160;48800</td></tr>
+<tr class="separator:a81e4fdb2a08afd19ef501855bb9fbeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33652a6c0f89aa7c48ed7512a2e6844a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a33652a6c0f89aa7c48ed7512a2e6844a">FRACTAL_SHUTDOWN_SOCKET</a>(s)&#160;&#160;&#160;shutdown(s, 2)</td></tr>
 <tr class="separator:a33652a6c0f89aa7c48ed7512a2e6844a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6303f7392a2d06be5a121c54278d561b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a>&#160;&#160;&#160;1285</td></tr>
@@ -140,17 +156,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a69bfb6e73bae0625ac56f441ccf542d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a69bfb6e73bae0625ac56f441ccf542d1">PACKET_HEADER_SIZE</a>&#160;&#160;&#160;(sizeof(<a class="el" href="structFractalPacket.html">FractalPacket</a>) - <a class="el" href="fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a> - 16)</td></tr>
 <tr class="separator:a69bfb6e73bae0625ac56f441ccf542d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a2d2dc6a8db8128da37b37664bdc6bb2f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structSocketContext.html">SocketContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a2d2dc6a8db8128da37b37664bdc6bb2f">SocketContext</a></td></tr>
-<tr class="separator:a2d2dc6a8db8128da37b37664bdc6bb2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e0de62b786afcf1536f2410fe5dd8cf"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a7e0de62b786afcf1536f2410fe5dd8cf">FractalPacketType</a></td></tr>
-<tr class="memdesc:a7e0de62b786afcf1536f2410fe5dd8cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data packet description.  <a href="fractal_2network_2network_8h.html#a7e0de62b786afcf1536f2410fe5dd8cf">More...</a><br /></td></tr>
-<tr class="separator:a7e0de62b786afcf1536f2410fe5dd8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b234fbba693d95e00630ea5c32e1205"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFractalPacket.html">FractalPacket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a1b234fbba693d95e00630ea5c32e1205">FractalPacket</a></td></tr>
-<tr class="memdesc:a1b234fbba693d95e00630ea5c32e1205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet of data to be sent over a <a class="el" href="structSocketContext.html">SocketContext</a>.  <a href="fractal_2network_2network_8h.html#a1b234fbba693d95e00630ea5c32e1205">More...</a><br /></td></tr>
-<tr class="separator:a1b234fbba693d95e00630ea5c32e1205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a09a4a3c07926e40e3e7014120eb75bdb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> { <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdba3701057450c7a09aa316bb880f2db6ac">PACKET_AUDIO</a>, 
@@ -159,6 +164,10 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a09a4a3c07926e40e3e7014120eb75bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data packet description.  <a href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">More...</a><br /></td></tr>
 <tr class="separator:a09a4a3c07926e40e3e7014120eb75bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57fdac43f47de768666a1961513f2e5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5b">StunRequestType</a> { <a class="el" href="fractal_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5baae4deeb65aaa4dd474e53c0860d1d51a">ASK_INFO</a>, 
+<a class="el" href="fractal_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5ba7d577d5f6b53d2a8cf9f60ef153c68b9">POST_INFO</a>
+ }</td></tr>
+<tr class="separator:a57fdac43f47de768666a1961513f2e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -167,42 +176,47 @@ Functions</h2></td></tr>
 <tr class="memitem:ae3a12244c910bce55bfdcbd9bd5d687c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c">get_last_network_error</a> ()</td></tr>
 <tr class="memdesc:ae3a12244c910bce55bfdcbd9bd5d687c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recent network error.  <a href="fractal_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c">More...</a><br /></td></tr>
 <tr class="separator:ae3a12244c910bce55bfdcbd9bd5d687c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8030f60ee0fdd65573bdb96060d947dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a8030f60ee0fdd65573bdb96060d947dc">recvp</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, void *buf, int len)</td></tr>
-<tr class="memdesc:a8030f60ee0fdd65573bdb96060d947dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will send or receive data over a socket.  <a href="fractal_2network_2network_8h.html#a8030f60ee0fdd65573bdb96060d947dc">More...</a><br /></td></tr>
-<tr class="separator:a8030f60ee0fdd65573bdb96060d947dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a762e086ddd3fa8717527cefed7a70954"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a762e086ddd3fa8717527cefed7a70954">sendp</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, void *buf, int len)</td></tr>
-<tr class="separator:a762e086ddd3fa8717527cefed7a70954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23eba78b590709dfde7f990f5bc5cebb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a23eba78b590709dfde7f990f5bc5cebb">create_udp_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, char *destination, int port, int recvfrom_timeout_s, int connection_timeout_ms, bool <a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *<a class="el" href="parse__args_8c.html#ac2159c75ccc892bf05ef04748882e025">binary_aes_private_key</a>)</td></tr>
-<tr class="memdesc:a23eba78b590709dfde7f990f5bc5cebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a UDP/TCP connection between a server and a client.  <a href="fractal_2network_2network_8h.html#a23eba78b590709dfde7f990f5bc5cebb">More...</a><br /></td></tr>
-<tr class="separator:a23eba78b590709dfde7f990f5bc5cebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dbc639770fb556e68b0508f71605e95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a1dbc639770fb556e68b0508f71605e95">create_tcp_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, char *destination, int port, int recvfrom_timeout_s, int connection_timeout_ms, bool <a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *<a class="el" href="parse__args_8c.html#ac2159c75ccc892bf05ef04748882e025">binary_aes_private_key</a>)</td></tr>
-<tr class="separator:a1dbc639770fb556e68b0508f71605e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c14bcd61990ab39706e7b5bb4b539db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a7c14bcd61990ab39706e7b5bb4b539db">write_payload_to_packets</a> (uint8_t *payload, size_t payload_size, int payload_id, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> packet_type, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet_buffer, size_t packet_buffer_length)</td></tr>
-<tr class="memdesc:a7c14bcd61990ab39706e7b5bb4b539db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a payload into several packets approprately-sized for UDP transport, and write those files to a buffer.  <a href="fractal_2network_2network_8h.html#a7c14bcd61990ab39706e7b5bb4b539db">More...</a><br /></td></tr>
-<tr class="separator:a7c14bcd61990ab39706e7b5bb4b539db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6c0e688fb68c0d4edac78142c950926"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ad6c0e688fb68c0d4edac78142c950926">get_packet_size</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> *packet)</td></tr>
-<tr class="memdesc:ad6c0e688fb68c0d4edac78142c950926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a>.  <a href="fractal_2network_2network_8h.html#ad6c0e688fb68c0d4edac78142c950926">More...</a><br /></td></tr>
+<tr class="memdesc:ad6c0e688fb68c0d4edac78142c950926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>.  <a href="fractal_2network_2network_8h.html#ad6c0e688fb68c0d4edac78142c950926">More...</a><br /></td></tr>
 <tr class="separator:ad6c0e688fb68c0d4edac78142c950926"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b1ecf8502083587bccb42787b9499e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a0b1ecf8502083587bccb42787b9499e2">send_tcp_packet_from_payload</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len)</td></tr>
-<tr class="memdesc:a0b1ecf8502083587bccb42787b9499e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> over TCP to the <a class="el" href="structSocketContext.html">SocketContext</a> context. A FractalPacketType is also provided to describe the packet.  <a href="fractal_2network_2network_8h.html#a0b1ecf8502083587bccb42787b9499e2">More...</a><br /></td></tr>
-<tr class="separator:a0b1ecf8502083587bccb42787b9499e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a081e7cfcd2d33a90043ce61838a1b867"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a081e7cfcd2d33a90043ce61838a1b867">send_udp_packet_from_payload</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len, int id)</td></tr>
-<tr class="memdesc:a081e7cfcd2d33a90043ce61838a1b867"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> over UDP to the <a class="el" href="structSocketContext.html">SocketContext</a> context. A FractalPacketType is also provided to the receiving end.  <a href="fractal_2network_2network_8h.html#a081e7cfcd2d33a90043ce61838a1b867">More...</a><br /></td></tr>
-<tr class="separator:a081e7cfcd2d33a90043ce61838a1b867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78b823d957c810b584512f5ce9fa1664"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a78b823d957c810b584512f5ce9fa1664">send_udp_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet, size_t packet_size)</td></tr>
-<tr class="memdesc:a78b823d957c810b584512f5ce9fa1664"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> over UDP to the <a class="el" href="structSocketContext.html">SocketContext</a> context. This function does not create the packet from raw data, but assumes that the packet has been prepared by the caller (e.g. fragmented into appropriately-sized chunks by a fragmenter). This function assumes and checks that the packet is small enough to send without further breaking into smaller packets.  <a href="fractal_2network_2network_8h.html#a78b823d957c810b584512f5ce9fa1664">More...</a><br /></td></tr>
-<tr class="separator:a78b823d957c810b584512f5ce9fa1664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a716fd11de9d48aa6f307185a3e9d130b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b">ack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
 <tr class="memdesc:a716fd11de9d48aa6f307185a3e9d130b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 0-length packet over the socket. Used to keep-alive over NATs, and to check on the validity of the socket.  <a href="fractal_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b">More...</a><br /></td></tr>
 <tr class="separator:a716fd11de9d48aa6f307185a3e9d130b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61ea8223f4ac9109b1cc0aae95fc55b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a61ea8223f4ac9109b1cc0aae95fc55b3">read_tcp_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, bool should_recvp)</td></tr>
-<tr class="memdesc:a61ea8223f4ac9109b1cc0aae95fc55b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> from a <a class="el" href="structSocketContext.html">SocketContext</a>, if any such packet exists.  <a href="fractal_2network_2network_8h.html#a61ea8223f4ac9109b1cc0aae95fc55b3">More...</a><br /></td></tr>
-<tr class="separator:a61ea8223f4ac9109b1cc0aae95fc55b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b7ae26dbe2bf91161fb7690d9dce49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a79b7ae26dbe2bf91161fb7690d9dce49">read_udp_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
-<tr class="separator:a79b7ae26dbe2bf91161fb7690d9dce49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a838d6a33dc748b31e1f3acc343159f7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a838d6a33dc748b31e1f3acc343159f7a">free_tcp_packet</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> *tcp_packet)</td></tr>
-<tr class="memdesc:a838d6a33dc748b31e1f3acc343159f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a TCP packet created by read_tcp_packet.  <a href="fractal_2network_2network_8h.html#a838d6a33dc748b31e1f3acc343159f7a">More...</a><br /></td></tr>
-<tr class="separator:a838d6a33dc748b31e1f3acc343159f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c4c9fdd38d88c51cf58632dc8491a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a39c4c9fdd38d88c51cf58632dc8491a8">read_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, bool should_recv)</td></tr>
+<tr class="memdesc:a39c4c9fdd38d88c51cf58632dc8491a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> from a <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>, if any such packet exists.  <a href="fractal_2network_2network_8h.html#a39c4c9fdd38d88c51cf58632dc8491a8">More...</a><br /></td></tr>
+<tr class="separator:a39c4c9fdd38d88c51cf58632dc8491a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a8a43b3c445d31b3d47f9a797174ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a02a8a43b3c445d31b3d47f9a797174ed">free_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet)</td></tr>
+<tr class="memdesc:a02a8a43b3c445d31b3d47f9a797174ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> created by read_packet.  <a href="fractal_2network_2network_8h.html#a02a8a43b3c445d31b3d47f9a797174ed">More...</a><br /></td></tr>
+<tr class="separator:a02a8a43b3c445d31b3d47f9a797174ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bcd9a01f43f57ea227125918286a9f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a5bcd9a01f43f57ea227125918286a9f6">send_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet, size_t packet_size)</td></tr>
+<tr class="memdesc:a5bcd9a01f43f57ea227125918286a9f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> over the the <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> context. packet_size must not exceed sizeof(FractalPacket) over UDP.  <a href="fractal_2network_2network_8h.html#a5bcd9a01f43f57ea227125918286a9f6">More...</a><br /></td></tr>
+<tr class="separator:a5bcd9a01f43f57ea227125918286a9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9955708c76e233fc628e53a343296056"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a9955708c76e233fc628e53a343296056">send_packet_from_payload</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *payload, int payload_len, int id)</td></tr>
+<tr class="memdesc:a9955708c76e233fc628e53a343296056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> over the network. There is no restriction on the size of this packet, it will be fragmented if necessary. TODO: Fragment over UDP.  <a href="fractal_2network_2network_8h.html#a9955708c76e233fc628e53a343296056">More...</a><br /></td></tr>
+<tr class="separator:a9955708c76e233fc628e53a343296056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a0fd81ba2ff03975531d6e1fc1440e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ac5a0fd81ba2ff03975531d6e1fc1440e">write_payload_to_packets</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, uint8_t *payload, size_t payload_size, int payload_id, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> packet_type, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet_buffer, size_t packet_buffer_length)</td></tr>
+<tr class="memdesc:ac5a0fd81ba2ff03975531d6e1fc1440e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a payload into several packets approprately-sized for UDP transport, and write those files to a buffer.  <a href="fractal_2network_2network_8h.html#ac5a0fd81ba2ff03975531d6e1fc1440e">More...</a><br /></td></tr>
+<tr class="separator:ac5a0fd81ba2ff03975531d6e1fc1440e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30fe25b1472f12966debaa6535b4339"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339">destroy_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
+<tr class="memdesc:af30fe25b1472f12966debaa6535b4339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an allocated and initialized <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="fractal_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339">More...</a><br /></td></tr>
+<tr class="separator:af30fe25b1472f12966debaa6535b4339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c60fb86a89187155fb727e0dba01ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea">set_timeout</a> (<a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socket, int timeout_ms)</td></tr>
+<tr class="separator:a61c60fb86a89187155fb727e0dba01ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ae7ead432330774ba9da1b075939c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a24ae7ead432330774ba9da1b075939c8">socketp_tcp</a> ()</td></tr>
+<tr class="separator:a24ae7ead432330774ba9da1b075939c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab494a21469f6fa25ca60570bc2788461"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">socketp_udp</a> ()</td></tr>
+<tr class="separator:ab494a21469f6fa25ca60570bc2788461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a90ae812859c3bb8ac6c201b8497676"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a8a90ae812859c3bb8ac6c201b8497676">prepare_private_key_request</a> (<a class="el" href="structPrivateKeyData.html">PrivateKeyData</a> *priv_key_data)</td></tr>
+<tr class="separator:a8a90ae812859c3bb8ac6c201b8497676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b007eb3d73b69d23cc7f2e9e415f4ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a7b007eb3d73b69d23cc7f2e9e415f4ac">sign_private_key</a> (<a class="el" href="structPrivateKeyData.html">PrivateKeyData</a> *priv_key_data, int recv_size, void *private_key)</td></tr>
+<tr class="separator:a7b007eb3d73b69d23cc7f2e9e415f4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18592a22b00bd3f4580170e2a847a2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ad18592a22b00bd3f4580170e2a847a2a">confirm_private_key</a> (<a class="el" href="structPrivateKeyData.html">PrivateKeyData</a> *our_priv_key_data, <a class="el" href="structPrivateKeyData.html">PrivateKeyData</a> *our_signed_priv_key_data, int recv_size, void *private_key)</td></tr>
+<tr class="separator:ad18592a22b00bd3f4580170e2a847a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d93b58103186e725fb1ee4de7f32b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a34d93b58103186e725fb1ee4de7f32b5">handshake_private_key</a> (<a class="el" href="structSocketContextData.html">SocketContextData</a> *context)</td></tr>
+<tr class="separator:a34d93b58103186e725fb1ee4de7f32b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32330bd7a40d21dcbe92a7501dc69e57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a32330bd7a40d21dcbe92a7501dc69e57">sendp</a> (<a class="el" href="structSocketContextData.html">SocketContextData</a> *context, void *buf, int len)</td></tr>
+<tr class="memdesc:a32330bd7a40d21dcbe92a7501dc69e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will send or receive data over a socket.  <a href="fractal_2network_2network_8h.html#a32330bd7a40d21dcbe92a7501dc69e57">More...</a><br /></td></tr>
+<tr class="separator:a32330bd7a40d21dcbe92a7501dc69e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with sockets. </p>
@@ -211,30 +225,30 @@ Functions</h2></td></tr>
 under-the-hood.</h1>
 <h1><a class="anchor" id="autotoc_md183"></a>
 Usage</h1>
-<p><a class="el" href="structSocketContext.html">SocketContext</a>: This type represents a socket.</p><ul>
+<p><a class="el" href="structSocketContextData.html">SocketContextData</a>: This type represents a socket.</p><ul>
 <li>To use a socket, call CreateUDPContext or CreateTCPContext with the desired parameters</li>
 <li>To send data over a socket, call SendTCPPacket or SendUDPPacket</li>
 <li>To receive data over a socket, call ReadTCPPacket or ReadUDPPacket</li>
 <li>If there is belief that a packet wasn't sent, you can call ReplayPacket to send a packet twice</li>
 </ul>
-<p><a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a>: This type represents a packet of information</p><ul>
+<p><a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>: This type represents a packet of information</p><ul>
 <li>Unique packets of a given type will be given unique IDs. IDs are expected to be increasing monotonically, with a gap implying that a packet was lost</li>
 <li>FractalPackets that were thought to have been sent may not arrive, and FractalPackets may arrive out-of-order, in the case of UDP. This will not be the case for TCP, however TCP sockets may lose connection if there is a problem.</li>
 <li>A given block of data will, during transmission, be split up into packets with the same type and ID, but indicies ranging from 0 to num_indices - 1</li>
 <li>A missing index implies that a packet was lost</li>
-<li>A <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> is only guaranteed to have data information from 0 to payload_size - 1 data[] occurs at the end of the packet, so extra bytes may in-fact point to invalid memory to save space and bandwidth</li>
-<li>A <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> may be sent twice in the case of packet recovery, but any two FractalPackets found that are of the same type and ID will be expected to have the same data (To be specific, the <a class="el" href="structClient.html">Client</a> should never legally send two distinct packets with same ID/Type, and neither should the Server, but if the <a class="el" href="structClient.html">Client</a> and Server happen to both make a PACKET_MESSAGE packet with ID 1 they can be different)</li>
+<li>A <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> is only guaranteed to have data information from 0 to payload_size - 1 data[] occurs at the end of the packet, so extra bytes may in-fact point to invalid memory to save space and bandwidth</li>
+<li>A <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> may be sent twice in the case of packet recovery, but any two FractalPackets found that are of the same type and ID will be expected to have the same data (To be specific, the <a class="el" href="structClient.html">Client</a> should never legally send two distinct packets with same ID/Type, and neither should the Server, but if the <a class="el" href="structClient.html">Client</a> and Server happen to both make a PACKET_MESSAGE packet with ID 1 they can be different)</li>
 <li>To reconstruct the original datagram from a sequence of FractalPackets, concatenated the data[] streams (From 0 to payload_size - 1) for each index from 0 to num_indices - 1</li>
 </ul>
 <hr  />
  <h2><a class="anchor" id="autotoc_md185"></a>
 Client</h2>
-<p><a class="el" href="structSocketContext.html">SocketContext</a> context; CreateTCPContext(&amp;context, "10.0.0.5", 5055, 500, 250);</p>
+<p><a class="el" href="structSocketContextData.html">SocketContextData</a> context; CreateTCPContext(&amp;context, "10.0.0.5", 5055, 500, 250);</p>
 <p>char* msg = "Hello this is a message!"; SendTCPPacket(&amp;context, PACKET_MESSAGE, msg, strlen(msg);</p>
 <hr  />
  <h2><a class="anchor" id="autotoc_md187"></a>
 Server</h2>
-<p><a class="el" href="structSocketContext.html">SocketContext</a> context; CreateTCPContext(&amp;context, NULL, 5055, 500, 250);</p>
+<p><a class="el" href="structSocketContextData.html">SocketContextData</a> context; CreateTCPContext(&amp;context, NULL, 5055, 500, 250);</p>
 <p>FractalPacket* packet = NULL; while(!packet) { packet = ReadTCPPacket(context); }</p>
 <p>LOG_INFO("MESSAGE: %s", packet-&gt;data); // Will print "Hello this is a message!" </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -424,47 +438,28 @@ Server</h2>
 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a1b234fbba693d95e00630ea5c32e1205"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b234fbba693d95e00630ea5c32e1205">&#9670;&nbsp;</a></span>FractalPacket</h2>
+<a id="a68f8e6814da9faad6d4eb32379d58412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f8e6814da9faad6d4eb32379d58412">&#9670;&nbsp;</a></span>STUN_IP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structFractalPacket.html">FractalPacket</a> <a class="el" href="structFractalPacket.html">FractalPacket</a></td>
+          <td class="memname">#define STUN_IP&#160;&#160;&#160;&quot;0.0.0.0&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Packet of data to be sent over a <a class="el" href="structSocketContext.html">SocketContext</a>. </p>
-
 </div>
 </div>
-<a id="a7e0de62b786afcf1536f2410fe5dd8cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e0de62b786afcf1536f2410fe5dd8cf">&#9670;&nbsp;</a></span>FractalPacketType</h2>
+<a id="a81e4fdb2a08afd19ef501855bb9fbeec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e4fdb2a08afd19ef501855bb9fbeec">&#9670;&nbsp;</a></span>STUN_PORT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Data packet description. </p>
-
-</div>
-</div>
-<a id="a2d2dc6a8db8128da37b37664bdc6bb2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d2dc6a8db8128da37b37664bdc6bb2f">&#9670;&nbsp;</a></span>SocketContext</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structSocketContext.html">SocketContext</a> <a class="el" href="structSocketContext.html">SocketContext</a></td>
+          <td class="memname">#define STUN_PORT&#160;&#160;&#160;48800</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -493,6 +488,24 @@ Server</h2>
 
 </div>
 </div>
+<a id="a57fdac43f47de768666a1961513f2e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57fdac43f47de768666a1961513f2e5b">&#9670;&nbsp;</a></span>StunRequestType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="fractal_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5b">StunRequestType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a57fdac43f47de768666a1961513f2e5baae4deeb65aaa4dd474e53c0860d1d51a"></a>ASK_INFO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57fdac43f47de768666a1961513f2e5ba7d577d5f6b53d2a8cf9f60ef153c68b9"></a>POST_INFO&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a716fd11de9d48aa6f307185a3e9d130b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a716fd11de9d48aa6f307185a3e9d130b">&#9670;&nbsp;</a></span>ack()</h2>
@@ -517,57 +530,39 @@ Server</h2>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, will return 0 on success Failure implies that the socket is broken or the TCP connection has ended, use GetLastNetworkError() to learn more about the error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, and 0 on success Failure implies that the socket is broken or the TCP connection has ended, use <a class="el" href="fractal_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c" title="Get the most recent network error.">get_last_network_error()</a> to learn more about the error </dd></dl>
 
 </div>
 </div>
-<a id="a1dbc639770fb556e68b0508f71605e95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dbc639770fb556e68b0508f71605e95">&#9670;&nbsp;</a></span>create_tcp_context()</h2>
+<a id="ad18592a22b00bd3f4580170e2a847a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18592a22b00bd3f4580170e2a847a2a">&#9670;&nbsp;</a></span>confirm_private_key()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int create_tcp_context </td>
+          <td class="memname">bool confirm_private_key </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
+          <td class="paramtype"><a class="el" href="structPrivateKeyData.html">PrivateKeyData</a> *&#160;</td>
+          <td class="paramname"><em>our_priv_key_data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>destination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramtype"><a class="el" href="structPrivateKeyData.html">PrivateKeyData</a> *&#160;</td>
+          <td class="paramname"><em>our_signed_priv_key_data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>recvfrom_timeout_s</em>, </td>
+          <td class="paramname"><em>recv_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>connection_timeout_ms</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>using_stun</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>binary_aes_private_key</em>&#160;</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>private_key</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -579,99 +574,63 @@ Server</h2>
 
 </div>
 </div>
-<a id="a23eba78b590709dfde7f990f5bc5cebb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23eba78b590709dfde7f990f5bc5cebb">&#9670;&nbsp;</a></span>create_udp_context()</h2>
+<a id="af30fe25b1472f12966debaa6535b4339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30fe25b1472f12966debaa6535b4339">&#9670;&nbsp;</a></span>destroy_socket_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int create_udp_context </td>
+          <td class="memname">void destroy_socket_context </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>destination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>recvfrom_timeout_s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>connection_timeout_ms</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>using_stun</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>binary_aes_private_key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a UDP/TCP connection between a server and a client. </p>
+<p>Destroys an allocated and initialized <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>The socket context that will be initialized </td></tr>
-    <tr><td class="paramname">destination</td><td>The server IP address to connect to. Passing NULL will wait for another client to connect to the socket </td></tr>
-    <tr><td class="paramname">port</td><td>The port to connect to. This will be a real port if USING_STUN is false, and it will be a virtual port if USING_STUN is true; (The real port will be some randomly chosen port if USING_STUN is true) </td></tr>
-    <tr><td class="paramname">recvfrom_timeout_s</td><td>The timeout that the socketcontext will use after being initialized </td></tr>
-    <tr><td class="paramname">connection_timeout_ms</td><td>The timeout that will be used when attempting to connect. The handshake sends a few packets back and forth, so the upper bound of how long CreateXContext will take is some small constant times connection_timeout_ms </td></tr>
-    <tr><td class="paramname">using_stun</td><td>True/false for whether or not to use the STUN server for this context </td></tr>
-    <tr><td class="paramname">binary_aes_private_key</td><td>The AES private key used to encrypt the socket communication</td></tr>
+    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> to destroy </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, will return 0 on success </dd></dl>
 
 </div>
 </div>
-<a id="a838d6a33dc748b31e1f3acc343159f7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a838d6a33dc748b31e1f3acc343159f7a">&#9670;&nbsp;</a></span>free_tcp_packet()</h2>
+<a id="a02a8a43b3c445d31b3d47f9a797174ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a8a43b3c445d31b3d47f9a797174ed">&#9670;&nbsp;</a></span>free_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void free_tcp_packet </td>
+          <td class="memname">void free_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
-          <td class="paramname"><em>tcp_packet</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Frees a TCP packet created by read_tcp_packet. </p>
+<p>Frees a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> created by read_packet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tcp_packet</td><td>The TCP packet to free </td></tr>
+    <tr><td class="paramname">context</td><td>The socket context that created the packet </td></tr>
+    <tr><td class="paramname">packet</td><td>The <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> to free </td></tr>
   </table>
   </dd>
 </dl>
@@ -714,7 +673,7 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>Get the size of a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a>. </p>
+<p>Get the size of a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td>The packet to get the size of</td></tr>
@@ -722,6 +681,24 @@ Server</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The size of the packet, or -1 on error </dd></dl>
+
+</div>
+</div>
+<a id="a34d93b58103186e725fb1ee4de7f32b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d93b58103186e725fb1ee4de7f32b5">&#9670;&nbsp;</a></span>handshake_private_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool handshake_private_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContextData.html">SocketContextData</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -742,14 +719,32 @@ Server</h2>
 
 </div>
 </div>
-<a id="a61ea8223f4ac9109b1cc0aae95fc55b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61ea8223f4ac9109b1cc0aae95fc55b3">&#9670;&nbsp;</a></span>read_tcp_packet()</h2>
+<a id="a8a90ae812859c3bb8ac6c201b8497676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a90ae812859c3bb8ac6c201b8497676">&#9670;&nbsp;</a></span>prepare_private_key_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structFractalPacket.html">FractalPacket</a>* read_tcp_packet </td>
+          <td class="memname">void prepare_private_key_request </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPrivateKeyData.html">PrivateKeyData</a> *&#160;</td>
+          <td class="paramname"><em>priv_key_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39c4c9fdd38d88c51cf58632dc8491a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c4c9fdd38d88c51cf58632dc8491a8">&#9670;&nbsp;</a></span>read_packet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFractalPacket.html">FractalPacket</a>* read_packet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -758,7 +753,7 @@ Server</h2>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>should_recvp</em>&#160;</td>
+          <td class="paramname"><em>should_recv</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -768,46 +763,132 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>Receive a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> from a <a class="el" href="structSocketContext.html">SocketContext</a>, if any such packet exists. </p>
+<p>Receive a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> from a <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>, if any such packet exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The socket context </td></tr>
-    <tr><td class="paramname">should_recvp</td><td>If false, this function will only pop buffered packets If true, this function will pull data from the TCP socket, but that might take a while</td></tr>
+    <tr><td class="paramname">should_recv</td><td>If false, this function will only pop buffered packets, if any exist. If true, this function will call recv from the socket, but that might take a while in the case of TCP.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> on success, NULL on failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> on success, NULL on failure </dd></dl>
 
 </div>
 </div>
-<a id="a79b7ae26dbe2bf91161fb7690d9dce49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79b7ae26dbe2bf91161fb7690d9dce49">&#9670;&nbsp;</a></span>read_udp_packet()</h2>
+<a id="a5bcd9a01f43f57ea227125918286a9f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bcd9a01f43f57ea227125918286a9f6">&#9670;&nbsp;</a></span>send_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structFractalPacket.html">FractalPacket</a>* read_udp_packet </td>
+          <td class="memname">int send_packet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>packet_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> over the the <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> context. packet_size must not exceed sizeof(FractalPacket) over UDP. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The socket context </td></tr>
+    <tr><td class="paramname">packet</td><td>A pointer to the packet to be sent </td></tr>
+    <tr><td class="paramname">packet_size</td><td>The total size of the packet to be sent</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, will return 0 on success </dd></dl>
+
 </div>
 </div>
-<a id="a8030f60ee0fdd65573bdb96060d947dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8030f60ee0fdd65573bdb96060d947dc">&#9670;&nbsp;</a></span>recvp()</h2>
+<a id="a9955708c76e233fc628e53a343296056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9955708c76e233fc628e53a343296056">&#9670;&nbsp;</a></span>send_packet_from_payload()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int recvp </td>
+          <td class="memname">int send_packet_from_payload </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>payload_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> over the network. There is no restriction on the size of this packet, it will be fragmented if necessary. TODO: Fragment over UDP. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The socket context </td></tr>
+    <tr><td class="paramname">type</td><td>The FractalPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
+    <tr><td class="paramname">payload</td><td>A pointer to the payload that is to be sent </td></tr>
+    <tr><td class="paramname">payload_len</td><td>The length of the payload </td></tr>
+    <tr><td class="paramname">id</td><td>An ID for the UDP data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, will return 0 on success </dd></dl>
+
+</div>
+</div>
+<a id="a32330bd7a40d21dcbe92a7501dc69e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32330bd7a40d21dcbe92a7501dc69e57">&#9670;&nbsp;</a></span>sendp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sendp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContextData.html">SocketContextData</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
@@ -843,35 +924,57 @@ Server</h2>
 
 </div>
 </div>
-<a id="a0b1ecf8502083587bccb42787b9499e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b1ecf8502083587bccb42787b9499e2">&#9670;&nbsp;</a></span>send_tcp_packet_from_payload()</h2>
+<a id="a61c60fb86a89187155fb727e0dba01ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c60fb86a89187155fb727e0dba01ea">&#9670;&nbsp;</a></span>set_timeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int send_tcp_packet_from_payload </td>
+          <td class="memname">void set_timeout </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td>
+          <td class="paramname"><em>socket</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b007eb3d73b69d23cc7f2e9e415f4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b007eb3d73b69d23cc7f2e9e415f4ac">&#9670;&nbsp;</a></span>sign_private_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sign_private_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPrivateKeyData.html">PrivateKeyData</a> *&#160;</td>
+          <td class="paramname"><em>priv_key_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recv_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><em>private_key</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -881,160 +984,44 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> over TCP to the <a class="el" href="structSocketContext.html">SocketContext</a> context. A FractalPacketType is also provided to describe the packet. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>The socket context </td></tr>
-    <tr><td class="paramname">type</td><td>The FractalPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
-    <tr><td class="paramname">data</td><td>A pointer to the data to be sent </td></tr>
-    <tr><td class="paramname">len</td><td>The number of bytes to send</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, will return 0 on success </dd></dl>
-
 </div>
 </div>
-<a id="a78b823d957c810b584512f5ce9fa1664"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78b823d957c810b584512f5ce9fa1664">&#9670;&nbsp;</a></span>send_udp_packet()</h2>
+<a id="a24ae7ead432330774ba9da1b075939c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ae7ead432330774ba9da1b075939c8">&#9670;&nbsp;</a></span>socketp_tcp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int send_udp_packet </td>
+          <td class="memname"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socketp_tcp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>packet_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> over UDP to the <a class="el" href="structSocketContext.html">SocketContext</a> context. This function does not create the packet from raw data, but assumes that the packet has been prepared by the caller (e.g. fragmented into appropriately-sized chunks by a fragmenter). This function assumes and checks that the packet is small enough to send without further breaking into smaller packets. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>The socket context </td></tr>
-    <tr><td class="paramname">packet</td><td>A pointer to the packet to be sent </td></tr>
-    <tr><td class="paramname">packet_size</td><td>The size of the packet to be sent</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, will return 0 on success </dd></dl>
-
 </div>
 </div>
-<a id="a081e7cfcd2d33a90043ce61838a1b867"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a081e7cfcd2d33a90043ce61838a1b867">&#9670;&nbsp;</a></span>send_udp_packet_from_payload()</h2>
+<a id="ab494a21469f6fa25ca60570bc2788461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab494a21469f6fa25ca60570bc2788461">&#9670;&nbsp;</a></span>socketp_udp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int send_udp_packet_from_payload </td>
+          <td class="memname"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socketp_udp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This will send a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContext.">FractalPacket</a> over UDP to the <a class="el" href="structSocketContext.html">SocketContext</a> context. A FractalPacketType is also provided to the receiving end. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>The socket context </td></tr>
-    <tr><td class="paramname">type</td><td>The FractalPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
-    <tr><td class="paramname">data</td><td>A pointer to the data to be sent </td></tr>
-    <tr><td class="paramname">len</td><td>The number of bytes to send </td></tr>
-    <tr><td class="paramname">id</td><td>An ID for the UDP data.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, will return 0 on success </dd></dl>
-
-</div>
-</div>
-<a id="a762e086ddd3fa8717527cefed7a70954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a762e086ddd3fa8717527cefed7a70954">&#9670;&nbsp;</a></span>sendp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sendp </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7c14bcd61990ab39706e7b5bb4b539db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c14bcd61990ab39706e7b5bb4b539db">&#9670;&nbsp;</a></span>write_payload_to_packets()</h2>
+<a id="ac5a0fd81ba2ff03975531d6e1fc1440e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a0fd81ba2ff03975531d6e1fc1440e">&#9670;&nbsp;</a></span>write_payload_to_packets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1042,6 +1029,12 @@ Server</h2>
         <tr>
           <td class="memname">int write_payload_to_packets </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>payload</em>, </td>
         </tr>
@@ -1086,6 +1079,7 @@ Server</h2>
 <p>Split a payload into several packets approprately-sized for UDP transport, and write those files to a buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">context</td><td>The socket context to use </td></tr>
     <tr><td class="paramname">payload</td><td>The payload data to be split into packets </td></tr>
     <tr><td class="paramname">payload_size</td><td>The size of the payload, in bytes </td></tr>
     <tr><td class="paramname">payload_id</td><td>An ID for the UDP data (must be positive) </td></tr>
