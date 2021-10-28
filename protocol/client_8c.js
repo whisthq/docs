@@ -10,6 +10,7 @@ var client_8c =
     [ "start_quitting_client", "client_8c.html#aa7b24c815e1583ea8f39ab7e809d0eab", null ],
     [ "threads_still_holding_active", "client_8c.html#a8f2aca1eee229215f79c4a4ce41a54f8", null ],
     [ "update_client_active_status", "client_8c.html#a7d430eadcbe00e1328952cadfc1d9547", null ],
+    [ "active_holding_write_mutex", "client_8c.html#a8109f210eda138f4236f671fb3d46092", null ],
     [ "client", "client_8c.html#afb3a99353e3c50b4339ceb1efd4e00b1", null ],
     [ "threads_holding_active", "client_8c.html#a030d89da314e66f72903838a18d5934a", null ],
     [ "threads_needing_active", "client_8c.html#af475a5bf35f3ea675cbc37ed28a1daac", null ]

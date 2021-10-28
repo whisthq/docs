@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dxgicapture_2ec_2155',['dxgicapture.c',['../dxgicapture_8c.html',1,'']]],
-  ['dxgicapture_2eh_2156',['dxgicapture.h',['../dxgicapture_8h.html',1,'']]],
-  ['dxgicudatransfercapture_2eh_2157',['dxgicudatransfercapture.h',['../dxgicudatransfercapture_8h.html',1,'']]]
+  ['dxgicapture_2ec_2156',['dxgicapture.c',['../dxgicapture_8c.html',1,'']]],
+  ['dxgicapture_2eh_2157',['dxgicapture.h',['../dxgicapture_8h.html',1,'']]],
+  ['dxgicudatransfercapture_2eh_2158',['dxgicudatransfercapture.h',['../dxgicudatransfercapture_8h.html',1,'']]]
 ];
