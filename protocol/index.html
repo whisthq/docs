@@ -323,7 +323,7 @@ clang-tidy</h2>
 <p>Macro constants will NOT be checked by this script because of the variety of implementations of <code>#define</code>. Please be sure to follow appropriate standards for <code>#define</code>s when committing code.</p>
 <h2><a class="anchor" id="autotoc_md29"></a>
 Logz.io</h2>
-<p>We currently use logz.io to store our logs. To get the logs for a session_id, navigate to the <code>fractal/microservices/scripts</code> directory, then type in: <code>python3 logs-to-text.py &lt;&lt;sesion_id&gt;&gt;</code> where <code>session_id</code> is the id of the currently running session.</p>
+<p>We currently use logz.io to store our logs. To get the logs for a session_id, navigate to the <code>fractal/protocol</code> directory, then type in: <code>python3 logs-to-text.py &lt;&lt;sesion_id&gt;&gt;</code> where <code>&lt;&lt;session_id&gt;&gt;</code> is the id of the currently running session.</p>
 <p>This will output two files:</p>
 <ol type="1">
 <li><code>&lt;&lt;session_id&gt;&gt;-client.txt</code>: These are the sorted logs for the client from that session_id</li>
@@ -331,7 +331,7 @@ Logz.io</h2>
 </ol>
 <p>You will need an logz.io API key to use this. Please contact Phil to get this or to get an admin account so you can generate your own. After this, set an environment variable "LOGZ_IO_API_KEY" to your API key via:</p>
 <p><code>export LOGZ_IO_API_KEY=&lt;&lt;your api key&gt;&gt;</code></p>
-<p>Note: logz.io currently only retains logs for 5 days. That said, this will only return the logs from 5 days ago. </p>
+<p>Note: logz.io currently only retains logs for 5 days, as of 10/29/2021. That said, this will only return the logs from 5 days ago. If this changes, please modify the <code>RETENTION_PERIOD_DAYS</code> constant in the top of <code>logs-to-text.py</code> to reflect this change. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
