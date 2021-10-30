@@ -92,12 +92,6 @@ $(document).ready(function(){initNavTree('structSocketContextData.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ad86902fac2f1d85f21fca187c2286c7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#ad86902fac2f1d85f21fca187c2286c7f">is_server</a></td></tr>
-<tr class="separator:ad86902fac2f1d85f21fca187c2286c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f30d8d4436913eae0c625155eca7819"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#a2f30d8d4436913eae0c625155eca7819">is_tcp</a></td></tr>
-<tr class="separator:a2f30d8d4436913eae0c625155eca7819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0497b3c9603377ade4d46d8a3aa8d4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#ac0497b3c9603377ade4d46d8a3aa8d4e">udp_is_connected</a></td></tr>
-<tr class="separator:ac0497b3c9603377ade4d46d8a3aa8d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43b0a5dcbf177e0e9147072f10c871ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#a43b0a5dcbf177e0e9147072f10c871ba">timeout</a></td></tr>
 <tr class="separator:a43b0a5dcbf177e0e9147072f10c871ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5238468950851acc56a05a4507ce660d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#a5238468950851acc56a05a4507ce660d">socket</a></td></tr>
@@ -120,6 +114,16 @@ Data Fields</h2></td></tr>
 <tr class="separator:aedce534a3eb3d7bd001b6e0e5115ce2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a71de4be46db7c1463c505a83f713f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#a1a71de4be46db7c1463c505a83f713f7">decrypted_packet</a></td></tr>
 <tr class="separator:a1a71de4be46db7c1463c505a83f713f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2c81893b82bcb2569ef5b873a9b69c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#a2e2c81893b82bcb2569ef5b873a9b69c">nack_buffers</a> [<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td></tr>
+<tr class="separator:a2e2c81893b82bcb2569ef5b873a9b69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79bff2b794c98ea1b38fb48bfbeec521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">FractalMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#a79bff2b794c98ea1b38fb48bfbeec521">nack_mutex</a> [<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td></tr>
+<tr class="separator:a79bff2b794c98ea1b38fb48bfbeec521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8eab56b0bbc0d20ab04d3e0dca7df7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#a6b8eab56b0bbc0d20ab04d3e0dca7df7">nack_num_buffers</a> [<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td></tr>
+<tr class="separator:a6b8eab56b0bbc0d20ab04d3e0dca7df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f5e1a798ac91586e1e8dd794e34ab5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#ac8f5e1a798ac91586e1e8dd794e34ab5">nack_buffer_max_indices</a> [<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td></tr>
+<tr class="separator:ac8f5e1a798ac91586e1e8dd794e34ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a853db879046aba333069aa98c1340235"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContextData.html#a853db879046aba333069aa98c1340235">nack_buffer_max_payload_size</a> [<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td></tr>
+<tr class="separator:a853db879046aba333069aa98c1340235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a53214358998840a3029a770e482f4c59"></a>
@@ -206,34 +210,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ad86902fac2f1d85f21fca187c2286c7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad86902fac2f1d85f21fca187c2286c7f">&#9670;&nbsp;</a></span>is_server</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SocketContextData::is_server</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2f30d8d4436913eae0c625155eca7819"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f30d8d4436913eae0c625155eca7819">&#9670;&nbsp;</a></span>is_tcp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SocketContextData::is_tcp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abeeb16c2e59a68e0e78ec40c2715f53f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abeeb16c2e59a68e0e78ec40c2715f53f">&#9670;&nbsp;</a></span>mutex</h2>
 
@@ -242,6 +218,76 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">FractalMutex</a> SocketContextData::mutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8f5e1a798ac91586e1e8dd794e34ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f5e1a798ac91586e1e8dd794e34ab5">&#9670;&nbsp;</a></span>nack_buffer_max_indices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SocketContextData::nack_buffer_max_indices[<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a853db879046aba333069aa98c1340235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a853db879046aba333069aa98c1340235">&#9670;&nbsp;</a></span>nack_buffer_max_payload_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SocketContextData::nack_buffer_max_payload_size[<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e2c81893b82bcb2569ef5b873a9b69c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2c81893b82bcb2569ef5b873a9b69c">&#9670;&nbsp;</a></span>nack_buffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFractalPacket.html">FractalPacket</a>** SocketContextData::nack_buffers[<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79bff2b794c98ea1b38fb48bfbeec521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79bff2b794c98ea1b38fb48bfbeec521">&#9670;&nbsp;</a></span>nack_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">FractalMutex</a> SocketContextData::nack_mutex[<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b8eab56b0bbc0d20ab04d3e0dca7df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8eab56b0bbc0d20ab04d3e0dca7df7">&#9670;&nbsp;</a></span>nack_num_buffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SocketContextData::nack_num_buffers[<a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -298,20 +344,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int SocketContextData::timeout</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac0497b3c9603377ade4d46d8a3aa8d4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0497b3c9603377ade4d46d8a3aa8d4e">&#9670;&nbsp;</a></span>udp_is_connected</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SocketContextData::udp_is_connected</td>
         </tr>
       </table>
 </div><div class="memdoc">

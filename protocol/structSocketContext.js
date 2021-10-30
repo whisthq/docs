@@ -5,7 +5,5 @@ var structSocketContext =
     [ "destroy_socket_context", "structSocketContext.html#a65dffab1bb0a4b08cff6c58232d34e2d", null ],
     [ "free_packet", "structSocketContext.html#ad4484adf3ce34d636892bbf9938bd034", null ],
     [ "read_packet", "structSocketContext.html#ab3632e6da5fb718777b30ee8dbb6d062", null ],
-    [ "send_packet", "structSocketContext.html#a16a5ac9a2ba8ef7f67a36713a4c6b21a", null ],
-    [ "send_packet_from_payload", "structSocketContext.html#a6d3d199104eefc5343c9dedb2c511918", null ],
-    [ "write_payload_to_packets", "structSocketContext.html#ab3a3656aece66a83e042f3a7752bd28f", null ]
+    [ "send_packet", "structSocketContext.html#a528ca29dbd429a6022a2daa66127696e", null ]
 ];

@@ -1,11 +1,6 @@
 var handle__client__message_8c =
 [
-    [ "AUDIO_BUFFER_SIZE", "handle__client__message_8c.html#a1d48237cb63c5ae67aab6d00cc64afb6", null ],
-    [ "MAX_NUM_AUDIO_INDICES", "handle__client__message_8c.html#a736d8dc245b4399c31cc0502f8142bff", null ],
-    [ "MAX_VIDEO_INDEX", "handle__client__message_8c.html#a7437d8cfd34ab5d6344de985633531c6", null ],
-    [ "VIDEO_BUFFER_SIZE", "handle__client__message_8c.html#aac42910ae45f91387f94d0487608a219", null ],
     [ "handle_client_message", "handle__client__message_8c.html#ad3119895e2868283cc978ae8685b2f11", null ],
-    [ "audio_buffer", "handle__client__message_8c.html#af180842296d501d15cda94decb2f3559", null ],
     [ "client", "handle__client__message_8c.html#afb3a99353e3c50b4339ceb1efd4e00b1", null ],
     [ "client_codec_type", "handle__client__message_8c.html#a7cb7ba1823d4d6f9fea456f96e729710", null ],
     [ "client_dpi", "handle__client__message_8c.html#acb23d13f6e3a74caa90ec0482ec2c947", null ],
@@ -18,6 +13,5 @@ var handle__client__message_8c =
     [ "stop_streaming", "handle__client__message_8c.html#aae54fd77214dad6eaf2b542edb690d53", null ],
     [ "update_device", "handle__client__message_8c.html#a0463a8762d54da9908315a54f9a740ea", null ],
     [ "update_encoder", "handle__client__message_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73", null ],
-    [ "video_buffer", "handle__client__message_8c.html#a01a041188d4486324c6ff534bf52e25c", null ],
     [ "wants_iframe", "handle__client__message_8c.html#a2c556bf7dad7ad139e553b7af6281656", null ]
 ];

@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('server_2audio_8c.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -106,13 +105,6 @@ $(document).ready(function(){initNavTree('server_2audio_8c.html',''); initResiza
 <code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2audio_8h_source.html">audio.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a1d48237cb63c5ae67aab6d00cc64afb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2audio_8c.html#a1d48237cb63c5ae67aab6d00cc64afb6">AUDIO_BUFFER_SIZE</a>&#160;&#160;&#160;100</td></tr>
-<tr class="separator:a1d48237cb63c5ae67aab6d00cc64afb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a736d8dc245b4399c31cc0502f8142bff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2audio_8c.html#a736d8dc245b4399c31cc0502f8142bff">MAX_NUM_AUDIO_INDICES</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:a736d8dc245b4399c31cc0502f8142bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5d4cd54c3652d2c734923079d07992b7"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7">multithreaded_send_audio</a> (void *opaque)</td></tr>
@@ -123,8 +115,6 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2audio_8c.html#a9aec5d9660ae8a0c8117f5d96b871606">exiting</a></td></tr>
 <tr class="separator:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af180842296d501d15cda94decb2f3559"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2audio_8c.html#af180842296d501d15cda94decb2f3559">audio_buffer</a> [<a class="el" href="handle__client__message_8c.html#a1d48237cb63c5ae67aab6d00cc64afb6">AUDIO_BUFFER_SIZE</a>][<a class="el" href="handle__client__message_8c.html#a736d8dc245b4399c31cc0502f8142bff">MAX_NUM_AUDIO_INDICES</a>]</td></tr>
-<tr class="separator:af180842296d501d15cda94decb2f3559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a527325650d66abd9626499785b3bafd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2audio_8c.html#a527325650d66abd9626499785b3bafd2">sample_rate</a></td></tr>
 <tr class="separator:a527325650d66abd9626499785b3bafd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -136,36 +126,7 @@ audio on the server.</h1>
 <h1><a class="anchor" id="autotoc_md83"></a>
 Usage</h1>
 <p><a class="el" href="server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7" title="This loops and collects audio samples, encodes the frames, and sends them to the client.">multithreaded_send_audio()</a> is called on its own thread and loops repeatedly to capture and send audio. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a1d48237cb63c5ae67aab6d00cc64afb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d48237cb63c5ae67aab6d00cc64afb6">&#9670;&nbsp;</a></span>AUDIO_BUFFER_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AUDIO_BUFFER_SIZE&#160;&#160;&#160;100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a736d8dc245b4399c31cc0502f8142bff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a736d8dc245b4399c31cc0502f8142bff">&#9670;&nbsp;</a></span>MAX_NUM_AUDIO_INDICES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_NUM_AUDIO_INDICES&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a5d4cd54c3652d2c734923079d07992b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d4cd54c3652d2c734923079d07992b7">&#9670;&nbsp;</a></span>multithreaded_send_audio()</h2>
 
@@ -187,20 +148,6 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="af180842296d501d15cda94decb2f3559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af180842296d501d15cda94decb2f3559">&#9670;&nbsp;</a></span>audio_buffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structFractalPacket.html">FractalPacket</a> audio_buffer[<a class="el" href="handle__client__message_8c.html#a1d48237cb63c5ae67aab6d00cc64afb6">AUDIO_BUFFER_SIZE</a>][<a class="el" href="handle__client__message_8c.html#a736d8dc245b4399c31cc0502f8142bff">MAX_NUM_AUDIO_INDICES</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9aec5d9660ae8a0c8117f5d96b871606"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9aec5d9660ae8a0c8117f5d96b871606">&#9670;&nbsp;</a></span>exiting</h2>
 

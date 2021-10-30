@@ -1,11 +1,8 @@
 var server_2video_8c =
 [
     [ "BITS_IN_BYTE", "server_2video_8c.html#ac54bd5b32c8baefaf13608a9296a7564", null ],
-    [ "MAX_NUM_VIDEO_INDICES", "server_2video_8c.html#a0676ffefc1a296049d97227a122a3b01", null ],
-    [ "MOD", "server_2video_8c.html#aca7d5718ab8c38506adb3bef2469b319", null ],
     [ "USE_GPU", "server_2video_8c.html#a54eafd80e10b63aa9cf7feaa7bce061d", null ],
     [ "USE_MONITOR", "server_2video_8c.html#ad846e33fa77d9246e697aa1142e2bd5c", null ],
-    [ "VIDEO_BUFFER_SIZE", "server_2video_8c.html#aac42910ae45f91387f94d0487608a219", null ],
     [ "create_new_device", "server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33", null ],
     [ "do_update_encoder", "server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c", null ],
     [ "multithreaded_destroy_encoder", "server_2video_8c.html#a34bd39d3decec9bb20a254ad91a8707d", null ],
@@ -24,6 +21,5 @@ var server_2video_8c =
     [ "stop_streaming", "server_2video_8c.html#aae54fd77214dad6eaf2b542edb690d53", null ],
     [ "update_device", "server_2video_8c.html#a0463a8762d54da9908315a54f9a740ea", null ],
     [ "update_encoder", "server_2video_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73", null ],
-    [ "video_buffer", "server_2video_8c.html#a909445aead0b773d5afe50c961a14039", null ],
     [ "wants_iframe", "server_2video_8c.html#a2c556bf7dad7ad139e553b7af6281656", null ]
 ];

@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('udp_8c.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="udp_8h_source.html">udp.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="aes_8h_source.html">fractal/utils/aes.h</a>&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -101,16 +102,20 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a713e2bb65b6a99478cc9002660e22ece"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a713e2bb65b6a99478cc9002660e22ece">udp_ack</a> (void *raw_context)</td></tr>
 <tr class="separator:a713e2bb65b6a99478cc9002660e22ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9206cb7f59c541622f38c6e32d5281"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aaf9206cb7f59c541622f38c6e32d5281">udp_send_packet</a> (void *raw_context, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet, size_t packet_size)</td></tr>
-<tr class="separator:aaf9206cb7f59c541622f38c6e32d5281"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d43510a83933ac251c3a6cc3c6d1544"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a7d43510a83933ac251c3a6cc3c6d1544">udp_send_packet_from_payload</a> (void *raw_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len, int id)</td></tr>
-<tr class="separator:a7d43510a83933ac251c3a6cc3c6d1544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac27f4dfb76e41f1fb173e669776ca04f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ac27f4dfb76e41f1fb173e669776ca04f">udp_read_packet</a> (void *raw_context, bool should_recv)</td></tr>
 <tr class="separator:ac27f4dfb76e41f1fb173e669776ca04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a893c09bd1b4e0af49efa7fe9436347de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a893c09bd1b4e0af49efa7fe9436347de">udp_free_packet</a> (void *raw_context, <a class="el" href="structFractalPacket.html">FractalPacket</a> *udp_packet)</td></tr>
 <tr class="separator:a893c09bd1b4e0af49efa7fe9436347de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc0c120106ac1c2a3ae71ec9b8d46e1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#abc0c120106ac1c2a3ae71ec9b8d46e1c">udp_write_payload_to_packets</a> (uint8_t *payload, size_t payload_size, int payload_id, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> packet_type, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet_buffer, size_t packet_buffer_length)</td></tr>
-<tr class="separator:abc0c120106ac1c2a3ae71ec9b8d46e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cfb343ad75614f609c353f2bb665c2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a0cfb343ad75614f609c353f2bb665c2a">udp_send_constructed_packet</a> (void *raw_context, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet, size_t packet_size)</td></tr>
+<tr class="separator:a0cfb343ad75614f609c353f2bb665c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b06c51c64deb9e8cf3ad46ccd209c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a45b06c51c64deb9e8cf3ad46ccd209c9">udp_send_packet</a> (void *raw_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
+<tr class="separator:a45b06c51c64deb9e8cf3ad46ccd209c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015631fd2787d70710cce93d321f862e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a015631fd2787d70710cce93d321f862e">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
+<tr class="memdesc:a015631fd2787d70710cce93d321f862e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a015631fd2787d70710cce93d321f862e">More...</a><br /></td></tr>
+<tr class="separator:a015631fd2787d70710cce93d321f862e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500f7f3663deeffbbe690baac3425d44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a500f7f3663deeffbbe690baac3425d44">udp_nack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, int packet_id, int packet_index)</td></tr>
+<tr class="memdesc:a500f7f3663deeffbbe690baac3425d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a nack for a given ID/Index NOTE: This function is thread-safe with send_packet.  <a href="udp_8c.html#a500f7f3663deeffbbe690baac3425d44">More...</a><br /></td></tr>
+<tr class="separator:a500f7f3663deeffbbe690baac3425d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2db373aa7821bd661df6fbd19bf6ac5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab2db373aa7821bd661df6fbd19bf6ac5">udp_destroy_socket_context</a> (void *raw_context)</td></tr>
 <tr class="separator:ab2db373aa7821bd661df6fbd19bf6ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa0745e4600fb1898e4acdb00ea8ddad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#afa0745e4600fb1898e4acdb00ea8ddad">create_udp_server_context</a> (void *raw_context, int port, int recvfrom_timeout_ms, int stun_timeout_ms)</td></tr>
@@ -455,6 +460,57 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a500f7f3663deeffbbe690baac3425d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500f7f3663deeffbbe690baac3425d44">&#9670;&nbsp;</a></span>udp_nack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int udp_nack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Respond to a nack for a given ID/Index NOTE: This function is thread-safe with send_packet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> to nack from </td></tr>
+    <tr><td class="paramname">type</td><td>The FractalPacketType of the nack'ed packet </td></tr>
+    <tr><td class="paramname">id</td><td>The ID of the nack'ed packet </td></tr>
+    <tr><td class="paramname">index</td><td>The index of the nack'ed packet (The UDP packet index into the larger <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac27f4dfb76e41f1fb173e669776ca04f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac27f4dfb76e41f1fb173e669776ca04f">&#9670;&nbsp;</a></span>udp_read_packet()</h2>
 
@@ -483,14 +539,65 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aaf9206cb7f59c541622f38c6e32d5281"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf9206cb7f59c541622f38c6e32d5281">&#9670;&nbsp;</a></span>udp_send_packet()</h2>
+<a id="a015631fd2787d70710cce93d321f862e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015631fd2787d70710cce93d321f862e">&#9670;&nbsp;</a></span>udp_register_nack_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int udp_send_packet </td>
+          <td class="memname">void udp_register_nack_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_payload_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_buffers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> that will have a nack buffer </td></tr>
+    <tr><td class="paramname">type</td><td>The FractalPacketType that this nack buffer will be used for </td></tr>
+    <tr><td class="paramname">max_payload_size</td><td>The largest payload that will be saved in the nack buffer </td></tr>
+    <tr><td class="paramname">num_buffers</td><td>The number of buffers that will be stored in the nack buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0cfb343ad75614f609c353f2bb665c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cfb343ad75614f609c353f2bb665c2a">&#9670;&nbsp;</a></span>udp_send_constructed_packet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int udp_send_constructed_packet </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>raw_context</em>, </td>
@@ -517,75 +624,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7d43510a83933ac251c3a6cc3c6d1544"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d43510a83933ac251c3a6cc3c6d1544">&#9670;&nbsp;</a></span>udp_send_packet_from_payload()</h2>
+<a id="a45b06c51c64deb9e8cf3ad46ccd209c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b06c51c64deb9e8cf3ad46ccd209c9">&#9670;&nbsp;</a></span>udp_send_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int udp_send_packet_from_payload </td>
+          <td class="memname">int udp_send_packet </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>raw_context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abc0c120106ac1c2a3ae71ec9b8d46e1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc0c120106ac1c2a3ae71ec9b8d46e1c">&#9670;&nbsp;</a></span>udp_write_payload_to_packets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int udp_write_payload_to_packets </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>payload</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>payload_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>payload_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -596,14 +645,20 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet_buffer</em>, </td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>packet_buffer_length</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>payload_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>packet_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -115,12 +115,6 @@ Macros</h2></td></tr>
 <tr class="separator:ad846e33fa77d9246e697aa1142e2bd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac54bd5b32c8baefaf13608a9296a7564"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#ac54bd5b32c8baefaf13608a9296a7564">BITS_IN_BYTE</a>&#160;&#160;&#160;8.0</td></tr>
 <tr class="separator:ac54bd5b32c8baefaf13608a9296a7564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac42910ae45f91387f94d0487608a219"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#aac42910ae45f91387f94d0487608a219">VIDEO_BUFFER_SIZE</a>&#160;&#160;&#160;25</td></tr>
-<tr class="separator:aac42910ae45f91387f94d0487608a219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0676ffefc1a296049d97227a122a3b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a0676ffefc1a296049d97227a122a3b01">MAX_NUM_VIDEO_INDICES</a>&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a8bf1e16a380892934c327a95bd6115bb">MAX_VIDEOFRAME_DATA_SIZE</a> / <a class="el" href="fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a> + 10)</td></tr>
-<tr class="separator:a0676ffefc1a296049d97227a122a3b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca7d5718ab8c38506adb3bef2469b319"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#aca7d5718ab8c38506adb3bef2469b319">MOD</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:aca7d5718ab8c38506adb3bef2469b319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -166,8 +160,6 @@ Variables</h2></td></tr>
 <tr class="separator:a7cb7ba1823d4d6f9fea456f96e729710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0463a8762d54da9908315a54f9a740ea"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a0463a8762d54da9908315a54f9a740ea">update_device</a> = true</td></tr>
 <tr class="separator:a0463a8762d54da9908315a54f9a740ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a909445aead0b773d5afe50c961a14039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a909445aead0b773d5afe50c961a14039">video_buffer</a> [<a class="el" href="server_2video_8c.html#aac42910ae45f91387f94d0487608a219">VIDEO_BUFFER_SIZE</a>][<a class="el" href="server_2video_8c.html#a0676ffefc1a296049d97227a122a3b01">MAX_NUM_VIDEO_INDICES</a>]</td></tr>
-<tr class="separator:a909445aead0b773d5afe50c961a14039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae54fd77214dad6eaf2b542edb690d53"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#aae54fd77214dad6eaf2b542edb690d53">stop_streaming</a></td></tr>
 <tr class="separator:aae54fd77214dad6eaf2b542edb690d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c556bf7dad7ad139e553b7af6281656"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a2c556bf7dad7ad139e553b7af6281656">wants_iframe</a></td></tr>
@@ -198,34 +190,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a0676ffefc1a296049d97227a122a3b01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0676ffefc1a296049d97227a122a3b01">&#9670;&nbsp;</a></span>MAX_NUM_VIDEO_INDICES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_NUM_VIDEO_INDICES&#160;&#160;&#160;(<a class="el" href="fractal__frame_8h.html#a8bf1e16a380892934c327a95bd6115bb">MAX_VIDEOFRAME_DATA_SIZE</a> / <a class="el" href="fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a> + 10)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aca7d5718ab8c38506adb3bef2469b319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca7d5718ab8c38506adb3bef2469b319">&#9670;&nbsp;</a></span>MOD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MOD&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a54eafd80e10b63aa9cf7feaa7bce061d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54eafd80e10b63aa9cf7feaa7bce061d">&#9670;&nbsp;</a></span>USE_GPU</h2>
 
@@ -248,20 +212,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define USE_MONITOR&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aac42910ae45f91387f94d0487608a219"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac42910ae45f91387f94d0487608a219">&#9670;&nbsp;</a></span>VIDEO_BUFFER_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VIDEO_BUFFER_SIZE&#160;&#160;&#160;25</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -729,20 +679,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile bool update_encoder</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a909445aead0b773d5afe50c961a14039"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a909445aead0b773d5afe50c961a14039">&#9670;&nbsp;</a></span>video_buffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structFractalPacket.html">FractalPacket</a> video_buffer[<a class="el" href="server_2video_8c.html#aac42910ae45f91387f94d0487608a219">VIDEO_BUFFER_SIZE</a>][<a class="el" href="server_2video_8c.html#a0676ffefc1a296049d97227a122a3b01">MAX_NUM_VIDEO_INDICES</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">

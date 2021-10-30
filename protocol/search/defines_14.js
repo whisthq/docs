@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['video_5fbuffer_5fsize_4184',['VIDEO_BUFFER_SIZE',['../handle__client__message_8c.html#aac42910ae45f91387f94d0487608a219',1,'VIDEO_BUFFER_SIZE():&#160;handle_client_message.c'],['../server_2video_8c.html#aac42910ae45f91387f94d0487608a219',1,'VIDEO_BUFFER_SIZE():&#160;video.c']]]
+  ['video_5fnackbuffer_5fsize_4169',['VIDEO_NACKBUFFER_SIZE',['../fractal_2network_2network_8h.html#a4ff2e6a193139535d0d23d5f46419f84',1,'network.h']]]
 ];
