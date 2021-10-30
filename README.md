@@ -1,9 +1,9 @@
 # Fractal Docs
 
-This repository contains auto-generated documentation for projects in the Fractal organization, published internally via GitHub Pages to `docs.fractal.co/[project]`.
+This repository contains auto-generated documentation for projects in the Fractal organization, published internally via GitHub Pages to `docs.whist.com/[project]`.
 
-- [Webserver Docs](https://docs.fractal.co/webserver)
-- [Host Service Docs](https://docs.fractal.co/host-service/)
-- [Protocol Docs](https://docs.fractal.co/protocol)
-- [SDL Docs](https://docs.fractal.co/SDL)
-- [FFmpeg Docs](https://docs.fractal.co/FFmpeg)
+- [Webserver Docs](https://docs.whist.com/webserver)
+- [Host Service Docs](https://docs.whist.com/host-service/)
+- [Protocol Docs](https://docs.whist.com/protocol)
+- [SDL Docs](https://docs.whist.com/SDL)
+- [FFmpeg Docs](https://docs.whist.com/FFmpeg)

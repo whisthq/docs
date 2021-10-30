@@ -65,7 +65,7 @@ the correct tenant.</p>
 <code class="docutils literal notranslate"><span class="pre">Authorization</span></code> header, the Webserver attempts to determine whether or not
 the token is valid. In order to be considered valid, a token’s standard time-based claims (<code class="docutils literal notranslate"><span class="pre">iat</span></code> and <code class="docutils literal notranslate"><span class="pre">exp</span></code>) must be valid, the issuer must be the
 deployment-specific Auth0 tenant (e.g. <code class="docutils literal notranslate"><span class="pre">https://fractal-prod.us.auth0.com/</span></code>
-in production), <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co</span></code> must be one of the token’s
+in production), <code class="docutils literal notranslate"><span class="pre">https://api.whist.com</span></code> must be one of the token’s
 audiences, and the signature must be verified.</p>
 <p>Validating the standard time-based, issuer, and audience claims can easily be
 done locally. Since tokens are signed using the asymmetric RS256 signing
@@ -79,12 +79,12 @@ have been downloaded, signature verification can be done locally as well.</p>
 <section id="custom-claims">
 <span id="id1"></span><h2>Custom claims<a class="headerlink" href="#custom-claims" title="Permalink to this headline">¶</a></h2>
 <p>Don’t be alarmed to find two custom claims in each access token’s payload. The
-<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/stripe_customer_id</span></code> claim contains the ID of the
+<code class="docutils literal notranslate"><span class="pre">https://api.whist.com/stripe_customer_id</span></code> claim contains the ID of the
 Stripe customer record that is associated with the authorized user’s Whist
-account. The <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim contains a
+account. The <code class="docutils literal notranslate"><span class="pre">https://api.whist.com/subscription_status</span></code> claim contains a
 string indicating the user’s subscription status. Note that, per Auth0’s
 guidelines, each of these claims is <a class="reference external" href="https://auth0.com/docs/tokens/create-namespaced-custom-claims">namespaced</a> with the namespace URL
-<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/</span></code>. Read <a class="reference internal" href="stripe.html#stripe-optimization"><span class="std std-ref">Optimizing the Stripe integration</span></a> for an explanation
+<code class="docutils literal notranslate"><span class="pre">https://api.whist.com/</span></code>. Read <a class="reference internal" href="stripe.html#stripe-optimization"><span class="std std-ref">Optimizing the Stripe integration</span></a> for an explanation
 of why we have chosen to define these two custom claims.</p>
 </section>
 </section>
