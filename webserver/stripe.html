@@ -62,17 +62,17 @@ resource that is only available to paying users, the
 subscription status before deciding whether or not to allow the request to be
 processed as usual.</p>
 <p>As is mentioned in the section about <a class="reference internal" href="authentication.html#custom-claims"><span class="std std-ref">Custom claims</span></a>, each access token’s
-payload includes includes a <code class="docutils literal notranslate"><span class="pre">https://api.whist.com/subscription_status</span></code>
+payload includes includes a <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code>
 claim whose value is a string representing the authorized user’s subscription
 status. More specifically, the value of the
-<code class="docutils literal notranslate"><span class="pre">https://api.whist.com/subscription_status</span></code> claim is the value of the
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim is the value of the
 <code class="docutils literal notranslate"><span class="pre">status</span></code> attribute of the most recent non-terminal Stripe
 <a class="reference external" href="https://stripe.com/docs/api/subscriptions/object#subscription_object-status">Subscription object</a> associated with Stripe Customer record associated with
 the user’s Whist account, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if all of a user’s subscriptions are in
 terminal states. Let’s break that down:</p>
 <ol class="arabic simple">
 <li><p>Also mentioned in the section about <a class="reference internal" href="authentication.html#custom-claims"><span class="std std-ref">Custom claims</span></a> is the
-<code class="docutils literal notranslate"><span class="pre">https://api.whist.com/stripe_customer_id</span></code> claim. This claim contains the
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/stripe_customer_id</span></code> claim. This claim contains the
 ID of the Stripe customer record associated with the authorized user’s
 Whist account. The customer record associated with the authorized user’s
 is created the first time the user logs into Whist.</p></li>
@@ -84,7 +84,7 @@ one subscription at a time (and so has only one Subscription object
 associated with their Customer record. Nevertheless, we disregard all
 Subscription objects associated with a user’s Customer record other than the
 most recent one when computing the value of the
-<code class="docutils literal notranslate"><span class="pre">https://api.whist.com/subscription_status</span></code> claim to be on the safe side.</p></li>
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim to be on the safe side.</p></li>
 <li><p>Each subscription can be in a variety of “terminal” or “non-terminal” states.
 To be in a terminal state is to be un-renewable. There is no action a user or
 developer can take (e.g. updating payment information) to move a
@@ -104,13 +104,13 @@ one of <code class="docutils literal notranslate"><span class="pre">active</span
 attribute is one of <code class="docutils literal notranslate"><span class="pre">unpaid</span></code>, <code class="docutils literal notranslate"><span class="pre">canceled</span></code>, or <code class="docutils literal notranslate"><span class="pre">incomplete_expired</span></code>), the
 subscription is in a terminal state.</p></li>
 <li><p>If and only if all of the authorized users are in terminal states, the value
-of the <code class="docutils literal notranslate"><span class="pre">https://api.whist.com/subscription_status</span></code> claim is <code class="docutils literal notranslate"><span class="pre">null</span></code>.
+of the <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim is <code class="docutils literal notranslate"><span class="pre">null</span></code>.
 This is due to the fact that once a subscription enters a terminal state, it
 may as well not exist, but as long as it is in a non-terminal state, it may
 be worth knowing the exact state in which it is.</p></li>
 </ol>
 <p>The <code class="xref py py-func docutils literal notranslate"><span class="pre">payments.payment_required()</span></code> decorator examines the value of the
-access token’s <code class="docutils literal notranslate"><span class="pre">https://api.whist.com/subscription_status</span></code> claim and grants
+access token’s <code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim and grants
 access to only those users whose subscriptions are <code class="docutils literal notranslate"><span class="pre">active</span></code> or <code class="docutils literal notranslate"><span class="pre">trialing</span></code>.</p>
 </section>
 <section id="payment-portal">
@@ -125,7 +125,7 @@ or manage their existing subscription and billing information. Whist
 developers can customize the form’s appearance from the <a class="reference external" href="https://dashboard.stripe.com/settings/billing/portal">Stripe dashboard</a>.</p>
 <p>The Webserver determines whether or not a Checkout or Customer Portal session
 should be created based on the value of the authenticated user’s access token’s
-<code class="docutils literal notranslate"><span class="pre">https://api.whist.com/subscription_status</span></code> claim. If its value indicates
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim. If its value indicates
 that the user has a subscription in a non-terminal state (one of <code class="docutils literal notranslate"><span class="pre">active</span></code>,
 <code class="docutils literal notranslate"><span class="pre">past_due</span></code>, <code class="docutils literal notranslate"><span class="pre">incomplete</span></code>, or <code class="docutils literal notranslate"><span class="pre">trialing</span></code>), then the Webserver creates a
 Customer Portal session and returns its URL to the client so the user can
@@ -138,8 +138,8 @@ new subscription.</p>
 <section id="optimizing-the-stripe-integration">
 <span id="stripe-optimization"></span><h2>Optimizing the Stripe integration<a class="headerlink" href="#optimizing-the-stripe-integration" title="Permalink to this headline">¶</a></h2>
 <p>We have decided to define the custom
-<code class="docutils literal notranslate"><span class="pre">https://api.whist.com/stripe_customer_id</span></code> and
-<code class="docutils literal notranslate"><span class="pre">https://api.whist.com/subscription_status</span></code> access token claims in order to
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/stripe_customer_id</span></code> and
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> access token claims in order to
 share information between Stripe and the rest of our backend as efficiently as
 possible.</p>
 <p>Not mentioned in the <a class="reference internal" href="#payment-portal">payment portal</a> section is that in order to create a
@@ -159,7 +159,7 @@ unacceptably long time. Furthermore, under high load, we risk exceeding our
 Stripe API rate limits.</p>
 <p>The values of each of these claims is re-computed each time a new access token
 is issued. The only downside of re-computing the value of the
-<code class="docutils literal notranslate"><span class="pre">https://api.whist.com/subscription_status</span></code> claim is that the subscription
+<code class="docutils literal notranslate"><span class="pre">https://api.fractal.co/subscription_status</span></code> claim is that the subscription
 status claimed in the user’s current access token may fall out of sync with the
 user’s actual subscription status. In theory, an extremely meticulous and
 technical user could continue to use a subscription for one extra day after it
