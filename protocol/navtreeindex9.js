@@ -1,8 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structClient.html#afe6de735904a6a1c6b2d8b46cb58c238":[8,0,15,1],
-"structClipboardData.html":[8,0,16],
-"structClipboardData.html#a8206090576aadfd57a86acc49c076640":[8,0,16,1],
 "structClipboardData.html#aad609297cebff188b34474d1c0ae634d":[8,0,16,2],
 "structClipboardData.html#afd06ecae38ccf441544891c1c8cc1f1d":[8,0,16,3],
 "structClipboardData.html#aff16a7ca2b2bcf6eb42029a858056c2d":[8,0,16,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX9 =
 "structInternalBlockAllocator.html#a8a593897ceb7df623e6855d9116e95c4":[8,0,46,2],
 "structInternalBlockAllocator.html#ad6e498bdc136f87de0db4c850d22059d":[8,0,46,3],
 "structLodePNGBitReader.html":[8,0,47],
-"structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[8,0,47,0]
+"structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[8,0,47,0],
+"structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[8,0,47,3],
+"structLodePNGBitReader.html#a80a148b29e36301da77f3d2432cbd608":[8,0,47,4],
+"structLodePNGBitReader.html#aac5615d1bb15682c3bc6e9e52b8cd5aa":[8,0,47,1]
 };

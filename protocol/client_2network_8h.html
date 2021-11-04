@@ -96,15 +96,15 @@ $(document).ready(function(){initNavTree('client_2network_8h.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7f1688e7fd60c0b361b449db233bc0c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8">discover_ports</a> (bool *<a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
+<tr class="memitem:a7f1688e7fd60c0b361b449db233bc0c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8">discover_ports</a> (bool *<a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
 <tr class="memdesc:a7f1688e7fd60c0b361b449db233bc0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client. Must be called before <code><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c" title="Connect to the server. Must be called after discover_ports().">connect_to_server()</a></code>.  <a href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8">More...</a><br /></td></tr>
 <tr class="separator:a7f1688e7fd60c0b361b449db233bc0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">connect_to_server</a> (bool <a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
+<tr class="memitem:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">connect_to_server</a> (bool <a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
 <tr class="memdesc:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server. Must be called after <code><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8" title="Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the clie...">discover_ports()</a></code>.  <a href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">More...</a><br /></td></tr>
 <tr class="separator:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2c13ae8a95d45f9a20a3d8895e785ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#ab2c13ae8a95d45f9a20a3d8895e785ac">send_tcp_reconnect_message</a> (bool <a class="el" href="sync__packets_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
-<tr class="memdesc:ab2c13ae8a95d45f9a20a3d8895e785ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a TCP socket reset message to the server, regardless of the initiator of the lost connection.  <a href="client_2network_8h.html#ab2c13ae8a95d45f9a20a3d8895e785ac">More...</a><br /></td></tr>
-<tr class="separator:ab2c13ae8a95d45f9a20a3d8895e785ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb29b0f743d1edcc94da3691d2867f76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#acb29b0f743d1edcc94da3691d2867f76">send_tcp_reconnect_message</a> ()</td></tr>
+<tr class="memdesc:acb29b0f743d1edcc94da3691d2867f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a TCP socket reset message to the server, regardless of the initiator of the lost connection.  <a href="client_2network_8h.html#acb29b0f743d1edcc94da3691d2867f76">More...</a><br /></td></tr>
+<tr class="separator:acb29b0f743d1edcc94da3691d2867f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac9ba3b2a752a8ba9805b539765a2e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#abac9ba3b2a752a8ba9805b539765a2e4">close_connections</a> (void)</td></tr>
 <tr class="separator:abac9ba3b2a752a8ba9805b539765a2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8bf751ea26659195c59cd180956315a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#aa8bf751ea26659195c59cd180956315a">send_server_quit_messages</a> (int num_messages)</td></tr>
@@ -361,8 +361,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ab2c13ae8a95d45f9a20a3d8895e785ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2c13ae8a95d45f9a20a3d8895e785ac">&#9670;&nbsp;</a></span>send_tcp_reconnect_message()</h2>
+<a id="acb29b0f743d1edcc94da3691d2867f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb29b0f743d1edcc94da3691d2867f76">&#9670;&nbsp;</a></span>send_tcp_reconnect_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,20 +370,13 @@ Usage</h1>
         <tr>
           <td class="memname">int send_tcp_reconnect_message </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>using_stun</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Send a TCP socket reset message to the server, regardless of the initiator of the lost connection. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">using_stun</td><td>Whether we are using the STUN server</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
 
 </div>

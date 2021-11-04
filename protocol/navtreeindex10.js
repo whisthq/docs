@@ -1,8 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[8,0,47,3],
-"structLodePNGBitReader.html#a80a148b29e36301da77f3d2432cbd608":[8,0,47,4],
-"structLodePNGBitReader.html#aac5615d1bb15682c3bc6e9e52b8cd5aa":[8,0,47,1],
 "structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f":[8,0,47,2],
 "structLodePNGBitWriter.html":[8,0,48],
 "structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[8,0,48,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX10 =
 "structSocketContextData.html#a79bff2b794c98ea1b38fb48bfbeec521":[8,0,76,12],
 "structSocketContextData.html#a853db879046aba333069aa98c1340235":[8,0,76,10],
 "structSocketContextData.html#abd81aa98e7dbbac8eed5843e63b7b153":[8,0,76,14],
-"structSocketContextData.html#abeeb16c2e59a68e0e78ec40c2715f53f":[8,0,76,8]
+"structSocketContextData.html#abeeb16c2e59a68e0e78ec40c2715f53f":[8,0,76,8],
+"structSocketContextData.html#ac797b2bf6b4b85379cb724761e72db24":[8,0,76,15],
+"structSocketContextData.html#ac8f5e1a798ac91586e1e8dd794e34ab5":[8,0,76,9],
+"structSocketContextData.html#ac9e273bf6db80ca12e8ca4be65eca693":[8,0,76,2]
 };
