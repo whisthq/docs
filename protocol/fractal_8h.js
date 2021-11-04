@@ -29,6 +29,7 @@ var fractal_8h =
     [ "DEFAULT_HEX_PRIVATE_KEY", "fractal_8h.html#a151518969977796d7b0c7d40e9ced62f", null ],
     [ "DISABLED_ENCODER_FPS", "fractal_8h.html#aa432070c422ef782d49e2dc35b8a6e56", null ],
     [ "ENCRYPTING_PACKETS", "fractal_8h.html#ac5a4d8d35aab3f2cd853e52c407e0d9c", null ],
+    [ "FEC_PACKET_RATIO", "fractal_8h.html#acdc6e77e478edc14b707385d84b37c2e", null ],
     [ "FPS", "fractal_8h.html#ac92ca5ab87034a348decad7ee8d4bd1b", null ],
     [ "FRACTAL_ARGS_MAXLEN", "fractal_8h.html#ac4b9ceebe220134e5a67f3596b06f752", null ],
     [ "FRACTAL_IDENTIFIER_MAXLEN", "fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95", null ],

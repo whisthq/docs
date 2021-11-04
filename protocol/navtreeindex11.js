@@ -1,5 +1,9 @@
 var NAVTREEINDEX11 =
 {
+"structSocketContextData.html#ac797b2bf6b4b85379cb724761e72db24":[8,0,76,15],
+"structSocketContextData.html#ac8f5e1a798ac91586e1e8dd794e34ab5":[8,0,76,9],
+"structSocketContextData.html#ac9e273bf6db80ca12e8ca4be65eca693":[8,0,76,2],
+"structSocketContextData.html#aedce534a3eb3d7bd001b6e0e5115ce2c":[8,0,76,5],
 "structStatisticData.html":[8,0,77],
 "structStatisticData.html#a285604f80595a5dec886ece325a8253d":[8,0,77,3],
 "structStatisticData.html#a3bb64ee46fc7fe4fb0dc1861bf578139":[8,0,77,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX11 =
 "throttle_8h.html#a719afae66ac2bd9da6f064fe111e8345":[9,0,1,6,5,4],
 "throttle_8h.html#a8094ca0422b39ccb3302aaaf740b959d":[9,0,1,6,5,5],
 "throttle_8h.html#abdd485a4dd0b32148884b04e1d92eb1f":[9,0,1,6,5,3],
-"throttle_8h.html#ac061cfa926230ca0f7218d4ce3955a85":[9,0,1,6,5,2],
-"throttle_8h_source.html":[9,0,1,6,5],
-"transfercapture_8c.html":[9,0,1,8,16],
-"transfercapture_8c.html#a1ff601abab02dcb3b01c6f2f7c9b9d37":[9,0,1,8,16,2],
-"transfercapture_8c.html#ac960986559af79f3a71c190d4705d321":[9,0,1,8,16,0]
+"throttle_8h.html#ac061cfa926230ca0f7218d4ce3955a85":[9,0,1,6,5,2]
 };

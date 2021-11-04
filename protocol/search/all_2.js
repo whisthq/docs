@@ -64,7 +64,7 @@ var searchData=
   ['buffer_5faudio_135',['buffer_audio',['../client_2audio_8c.html#aeb4436cb5c8617e87fb753b6b210973c',1,'audio.c']]],
   ['buffer_5ffmt_136',['buffer_fmt',['../structNvidiaEncoder.html#a69451df151eec51e0f4f7a258dec8e5d',1,'NvidiaEncoder']]],
   ['buffer_5fsize_137',['buffer_size',['../structAudioDevice.html#a2f47a9f4c113a883442e14be91ddb486',1,'AudioDevice::buffer_size()'],['../structAudioDevice.html#a4574b7c2ae86bf323140b66991d43c02',1,'AudioDevice::buffer_size()']]],
-  ['burst_5fbitrate_138',['burst_bitrate',['../structBitrates.html#af93a88f0725aad9cc7ecd7aaeaf49af2',1,'Bitrates::burst_bitrate()'],['../structFractalClientMessage.html#a17c8531cf1bc459418e449c2939d9eed',1,'FractalClientMessage::burst_bitrate()'],['../structNetworkThrottleContextInternal.html#a268464ad296ca0404920810083c9ddf9',1,'NetworkThrottleContextInternal::burst_bitrate()']]],
+  ['burst_5fbitrate_138',['burst_bitrate',['../structBitrates.html#af93a88f0725aad9cc7ecd7aaeaf49af2',1,'Bitrates::burst_bitrate()'],['../structFractalClientMessage.html#a17c8531cf1bc459418e449c2939d9eed',1,'FractalClientMessage::burst_bitrate()'],['../structSocketContextData.html#a383f157574c25155e32fd2dc8a5f89c4',1,'SocketContextData::burst_bitrate()'],['../structNetworkThrottleContextInternal.html#a268464ad296ca0404920810083c9ddf9',1,'NetworkThrottleContextInternal::burst_bitrate()']]],
   ['button_139',['button',['../structFractalMouseButtonMessage.html#abb5b6a2db5fbd3f9e64e66d3b295c687',1,'FractalMouseButtonMessage']]],
   ['bytes_5fin_5fgb_140',['BYTES_IN_GB',['../sysinfo_8h.html#aa25230024110b1969fc70f71110daaca',1,'sysinfo.h']]],
   ['bytes_5fin_5fkilobyte_141',['BYTES_IN_KILOBYTE',['../fractal_8h.html#ae8e4c0175929d141a35aca839fea9693',1,'fractal.h']]],

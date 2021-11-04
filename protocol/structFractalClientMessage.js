@@ -11,6 +11,7 @@ var structFractalClientMessage =
     [ "dimensions", "structFractalClientMessage.html#a7b32b5b9f54f45c67ca5a6ce4d98bfe5", null ],
     [ "discoveryRequest", "structFractalClientMessage.html#ab0d9a31ad39791710c9ded0d941835ef", null ],
     [ "dpi", "structFractalClientMessage.html#af8c3f85f21a8e5b1a2090512ca3f9896", null ],
+    [ "fec_packet_ratio", "structFractalClientMessage.html#ae885ea0bcfbe801892f78efc4d4c41e9", null ],
     [ "height", "structFractalClientMessage.html#a24069289e1841145929dd766e4ceea9a", null ],
     [ "id", "structFractalClientMessage.html#a1f2c107958427670e44b0a7281b1a142", null ],
     [ "id", "structFractalClientMessage.html#ad34a862a5290a680e2e628cd7093d911", null ],

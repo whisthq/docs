@@ -110,6 +110,9 @@ Functions</h2></td></tr>
 <tr class="separator:a0cfb343ad75614f609c353f2bb665c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45b06c51c64deb9e8cf3ad46ccd209c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a45b06c51c64deb9e8cf3ad46ccd209c9">udp_send_packet</a> (void *raw_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
 <tr class="separator:a45b06c51c64deb9e8cf3ad46ccd209c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5ada1e657a06b0f0168556f83ed1f6dc">udp_update_bitrate_settings</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, int burst_bitrate, double fec_packet_ratio)</td></tr>
+<tr class="memdesc:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a5ada1e657a06b0f0168556f83ed1f6dc">More...</a><br /></td></tr>
+<tr class="separator:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a015631fd2787d70710cce93d321f862e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a015631fd2787d70710cce93d321f862e">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
 <tr class="memdesc:a015631fd2787d70710cce93d321f862e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a015631fd2787d70710cce93d321f862e">More...</a><br /></td></tr>
 <tr class="separator:a015631fd2787d70710cce93d321f862e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -667,6 +670,50 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ada1e657a06b0f0168556f83ed1f6dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ada1e657a06b0f0168556f83ed1f6dc">&#9670;&nbsp;</a></span>udp_update_bitrate_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void udp_update_bitrate_settings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>burst_bitrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fec_packet_ratio</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> that we'll be adjusting the burst bitrate for </td></tr>
+    <tr><td class="paramname">burst_bitrate</td><td>The new burst bitrate, in MBPS </td></tr>
+    <tr><td class="paramname">fec_packet_ratio</td><td>The percentage of packets that should be FEC </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
