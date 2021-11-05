@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structSocketContextData.html#aedce534a3eb3d7bd001b6e0e5115ce2c":[8,0,76,5],
 "structStatisticData.html":[8,0,77],
 "structStatisticData.html#a285604f80595a5dec886ece325a8253d":[8,0,77,3],
 "structStatisticData.html#a3bb64ee46fc7fe4fb0dc1861bf578139":[8,0,77,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "transfercapture_8h.html#ae876d3f35aa1b6a3ea71f00158e25568":[9,0,1,8,17,1],
 "transfercapture_8h_source.html":[9,0,1,8,17],
 "udp_8c.html":[9,0,1,6,6],
-"udp_8c.html#a015631fd2787d70710cce93d321f862e":[9,0,1,6,6,11]
+"udp_8c.html#a015631fd2787d70710cce93d321f862e":[9,0,1,6,6,11],
+"udp_8c.html#a0cfb343ad75614f609c353f2bb665c2a":[9,0,1,6,6,12]
 };

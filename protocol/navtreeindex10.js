@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f":[8,0,47,2],
 "structLodePNGBitWriter.html":[8,0,48],
 "structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[8,0,48,0],
 "structLodePNGBitWriter.html#aeabd9ce60873a85f587df7df46548d04":[8,0,48,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "structSocketContextData.html#abeeb16c2e59a68e0e78ec40c2715f53f":[8,0,76,8],
 "structSocketContextData.html#ac797b2bf6b4b85379cb724761e72db24":[8,0,76,15],
 "structSocketContextData.html#ac8f5e1a798ac91586e1e8dd794e34ab5":[8,0,76,9],
-"structSocketContextData.html#ac9e273bf6db80ca12e8ca4be65eca693":[8,0,76,2]
+"structSocketContextData.html#ac9e273bf6db80ca12e8ca4be65eca693":[8,0,76,2],
+"structSocketContextData.html#aedce534a3eb3d7bd001b6e0e5115ce2c":[8,0,76,5]
 };

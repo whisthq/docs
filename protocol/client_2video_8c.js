@@ -35,6 +35,7 @@ var client_2video_8c =
     [ "replace_texture", "client_2video_8c.html#a6aca8731f3a28e96c0743be91d481a21", null ],
     [ "request_iframe", "client_2video_8c.html#ac9287c6b500b1230a70d7afc95bab9d9", null ],
     [ "request_iframe_to_catch_up", "client_2video_8c.html#adc212dea40551c699510c7524009faab", null ],
+    [ "resizing_event_watcher", "client_2video_8c.html#a14f0975d7a4c5a45353941aa88171b1c", null ],
     [ "set_video_active_resizing", "client_2video_8c.html#a460fea5c8cd411b76d7b5c7e68ee0ede", null ],
     [ "skip_to_next_iframe", "client_2video_8c.html#a6c024f93309638b1e8f755f63c37f06d", null ],
     [ "sync_decoder_parameters", "client_2video_8c.html#a2b0a6d84fb4c5932cf794270360bc9de", null ],

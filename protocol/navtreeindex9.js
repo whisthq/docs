@@ -1,6 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structClipboardData.html#aad609297cebff188b34474d1c0ae634d":[8,0,16,2],
 "structClipboardData.html#afd06ecae38ccf441544891c1c8cc1f1d":[8,0,16,3],
 "structClipboardData.html#aff16a7ca2b2bcf6eb42029a858056c2d":[8,0,16,0],
 "structClipboardFiles.html":[8,0,17],
@@ -249,5 +248,6 @@ var NAVTREEINDEX9 =
 "structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[8,0,47,0],
 "structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[8,0,47,3],
 "structLodePNGBitReader.html#a80a148b29e36301da77f3d2432cbd608":[8,0,47,4],
-"structLodePNGBitReader.html#aac5615d1bb15682c3bc6e9e52b8cd5aa":[8,0,47,1]
+"structLodePNGBitReader.html#aac5615d1bb15682c3bc6e9e52b8cd5aa":[8,0,47,1],
+"structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f":[8,0,47,2]
 };
