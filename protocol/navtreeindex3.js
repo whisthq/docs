@@ -1,14 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"fractal_8c.html#aa005f29266f2ddf76cb57dc510516839":[9,0,1,2,0,9],
-"fractal_8c.html#ac4ac0c784aec9caf76934889e1ac04c5":[9,0,1,2,0,0],
-"fractal_8c.html#ad1afe30fe8a08f76491e0150c0b790eb":[9,0,1,2,0,10],
-"fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc":[9,0,1,2,0,3],
-"fractal_8c.html#ade1756210446fe6f3480382a6d3de46f":[9,0,1,2,0,12],
-"fractal_8c.html#ae9289a8d97634e052cb0341ff8ae7a5b":[9,0,1,2,0,15],
-"fractal_8c.html#aeec40e2b433cc2844853d184006edff0":[9,0,1,2,0,4],
-"fractal_8h.html":[9,0,1,2,1],
-"fractal_8h.html#a00948d171966edaeadd7719bd2f87f38":[9,0,1,2,1,113],
 "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79":[9,0,1,2,1,100],
 "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a078edde93a764047c0ea92d4b2238a37":[9,0,1,2,1,100,0],
 "fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a27612f02539b2da18de5bdc23cda876f":[9,0,1,2,1,100,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX3 =
 "fractal_8h.html#a9161a926090d029e22f75f083d664f34a9faf84ff98cb30604cea619cdfa3367d":[9,0,1,2,1,108,1],
 "fractal_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d":[9,0,1,2,1,108,0],
 "fractal_8h.html#a93b8f2ac3292bebd1693ff0bdd09846e":[9,0,1,2,1,96],
-"fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2":[9,0,1,2,1,77]
+"fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2":[9,0,1,2,1,77],
+"fractal_8h.html#a97888d50b51f804637c90a7dbee17c44":[9,0,1,2,1,61],
+"fractal_8h.html#a99cc5a998dfeebc3567baec59b4a77a3":[9,0,1,2,1,18],
+"fractal_8h.html#a9b26cd4ece83eb114a81877bd849e28b":[9,0,1,2,1,23],
+"fractal_8h.html#aa005f29266f2ddf76cb57dc510516839":[9,0,1,2,1,115],
+"fractal_8h.html#aa1728270d73c5d1598de1fd691762eb1":[9,0,1,2,1,54],
+"fractal_8h.html#aa432070c422ef782d49e2dc35b8a6e56":[9,0,1,2,1,27],
+"fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c":[9,0,1,2,1,109],
+"fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca350f6ac715ca8fba37c2967385fd1594":[9,0,1,2,1,109,5],
+"fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca62adb843bfd6857bbf5f634425c404d1":[9,0,1,2,1,109,9]
 };

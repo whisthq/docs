@@ -1,14 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"sdl__utils_8c.html#a1bf4241c001c12d54c4b59d77f422183":[9,0,0,18,10],
-"sdl__utils_8c.html#a242ea45e405e9d5ae92e440357e98c3c":[9,0,0,18,17],
-"sdl__utils_8c.html#a2a57d774e71166271bbff6c515111104":[9,0,0,18,15],
-"sdl__utils_8c.html#a2d249b006c12fe0b7622c0d3b2d1650d":[9,0,0,18,0],
-"sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81":[9,0,0,18,4],
-"sdl__utils_8c.html#a7210c0d222c584be91c2f0584f8d6a10":[9,0,0,18,13],
-"sdl__utils_8c.html#a87e59165386162d74cf290669cf1e5d8":[9,0,0,18,8],
-"sdl__utils_8c.html#aa3bd5c19a5f8d2a5e39f067510ddd373":[9,0,0,18,7],
-"sdl__utils_8c.html#aaacc5ce7ced4977cd893708f5d789df4":[9,0,0,18,16],
 "sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9":[9,0,0,18,18],
 "sdl__utils_8c.html#abbd0cc7567697175ece165e1495dcaef":[9,0,0,18,11],
 "sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362":[9,0,0,18,6],
@@ -249,5 +240,14 @@ var NAVTREEINDEX8 =
 "structClient.html#afe6de735904a6a1c6b2d8b46cb58c238":[8,0,15,1],
 "structClipboardData.html":[8,0,16],
 "structClipboardData.html#a8206090576aadfd57a86acc49c076640":[8,0,16,1],
-"structClipboardData.html#aad609297cebff188b34474d1c0ae634d":[8,0,16,2]
+"structClipboardData.html#aad609297cebff188b34474d1c0ae634d":[8,0,16,2],
+"structClipboardData.html#afd06ecae38ccf441544891c1c8cc1f1d":[8,0,16,3],
+"structClipboardData.html#aff16a7ca2b2bcf6eb42029a858056c2d":[8,0,16,0],
+"structClipboardFiles.html":[8,0,17],
+"structClipboardFiles.html#a162abb7fcd52c644863e8d6abfe7600c":[8,0,17,1],
+"structClipboardFiles.html#ad6b3efc63acdc42cf8be3feadb55c908":[8,0,17,0],
+"structColorTree.html":[8,0,18],
+"structColorTree.html#a46a3b1d9239f5fd467ec97cd067b9a96":[8,0,18,0],
+"structColorTree.html#ab3836a4a5981a7cf4ef553d25d9b0361":[8,0,18,1],
+"structDesktopContext.html":[8,0,19]
 };

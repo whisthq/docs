@@ -1,15 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structLodePNGBitWriter.html":[8,0,48],
-"structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[8,0,48,0],
-"structLodePNGBitWriter.html#aeabd9ce60873a85f587df7df46548d04":[8,0,48,1],
-"structLodePNGColorMode.html":[8,0,49],
-"structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50":[8,0,49,5],
-"structLodePNGColorMode.html#a407557f056168682d9319aeb60866dcc":[8,0,49,7],
-"structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[8,0,49,1],
-"structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[8,0,49,6],
-"structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[8,0,49,2],
-"structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[8,0,49,3],
 "structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[8,0,49,0],
 "structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6":[8,0,49,4],
 "structLodePNGColorStats.html":[8,0,50],
@@ -249,5 +239,15 @@ var NAVTREEINDEX10 =
 "structSocketContextData.html#ac797b2bf6b4b85379cb724761e72db24":[8,0,76,15],
 "structSocketContextData.html#ac8f5e1a798ac91586e1e8dd794e34ab5":[8,0,76,9],
 "structSocketContextData.html#ac9e273bf6db80ca12e8ca4be65eca693":[8,0,76,2],
-"structSocketContextData.html#aedce534a3eb3d7bd001b6e0e5115ce2c":[8,0,76,5]
+"structSocketContextData.html#aedce534a3eb3d7bd001b6e0e5115ce2c":[8,0,76,5],
+"structStatisticData.html":[8,0,77],
+"structStatisticData.html#a285604f80595a5dec886ece325a8253d":[8,0,77,3],
+"structStatisticData.html#a3bb64ee46fc7fe4fb0dc1861bf578139":[8,0,77,1],
+"structStatisticData.html#a4674dd9ea84c2c1f62a3b93930a3af05":[8,0,77,0],
+"structStatisticData.html#ad0f0b77f038851d9dd2bbeefa49c4500":[8,0,77,2],
+"structStatisticData.html#add2670d9360e9e131ab795fe99e0f605":[8,0,77,4],
+"structStunEntry.html":[8,0,78],
+"structStunEntry.html#a10839151cc119dbc37f661fb95c781a2":[8,0,78,0],
+"structStunEntry.html#a2f91ab967aef8fd994899c1a931fcd75":[8,0,78,2],
+"structStunEntry.html#afbe51e6c2b5677fb46034ced462d1f7b":[8,0,78,1]
 };

@@ -86,17 +86,17 @@ var NAVTREEINDEX =
 [
 "aes_8c.html",
 "client_2video_8c.html#a14db20d88e6fccf6c7fbcfe15c23a6a1",
-"clock_8c.html#af5671ae4b14faf26a3ff32cef1f1e6cb",
-"fractal_8c.html#aa005f29266f2ddf76cb57dc510516839",
-"fractal_8h.html#a97888d50b51f804637c90a7dbee17c44",
-"globals_eval_q.html",
-"lodepng_8c.html#a4e89e0d7e13e0f3c098c4cf326cc5014",
-"logging_8h.html#a5efcbb4a78eb37e2945e61e61f235a2e",
-"sdl__utils_8c.html#a1bf4241c001c12d54c4b59d77f422183",
-"structClipboardData.html#afd06ecae38ccf441544891c1c8cc1f1d",
-"structLodePNGBitWriter.html",
-"structStatisticData.html",
-"udp_8c.html#a433731b91ca2a984a715798f98f1bf03"
+"clock_8h.html#acd824f01e9b0a5671a7820c23c1eede1",
+"fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79",
+"fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca6389a3270b7b9331d3032b9c2ecd8681",
+"globals_func_c.html",
+"lodepng_8c.html#a61f6f6ad4518cc4a5135c789ba60c2e0",
+"logging_8h.html#aa702fa9ec966709ebb51bef79be7b33e",
+"sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9",
+"structDesktopContext.html#a116a994232b8ff1a0f47fe881a6c37d2",
+"structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253",
+"structStunRequest.html",
+"udp_8c.html#ab2db373aa7821bd661df6fbd19bf6ac5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
