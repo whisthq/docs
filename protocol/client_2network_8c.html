@@ -104,6 +104,10 @@ Macros</h2></td></tr>
 <tr class="separator:a69eb06e880b8a55013053ab9c221c9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69ac525d995758ffd8a2403a33ba581f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a69ac525d995758ffd8a2403a33ba581f">UDP_CONNECTION_WAIT</a>&#160;&#160;&#160;300</td></tr>
 <tr class="separator:a69ac525d995758ffd8a2403a33ba581f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d3c6f5a5467a70cd7e0c3d853c0e8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a49d3c6f5a5467a70cd7e0c3d853c0e8f">UDP_CONNECTION_TIMEOUT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a49d3c6f5a5467a70cd7e0c3d853c0e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635ecd17e7464eb39a48fbab171ddeb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a635ecd17e7464eb39a48fbab171ddeb6">TCP_CONNECTION_TIMEOUT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a635ecd17e7464eb39a48fbab171ddeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -186,6 +190,20 @@ Usage</h1>
 <p>discover_ports, connect_to_server, close_connections, and send_server_quit_messages are used to start and end connections to the Whist server. To connect, call discover_ports, then connect_to_server. To disconnect, send_server_quit_messages and then close_connections.</p>
 <p>To communicate with the server, use send_fcmsg to send Whist messages to the server. Large fcmsg's (e.g. clipboard messages) are sent over TCP; otherwise, messages are sent over UDP. Use update_ping to ping the server at regular intervals, and receive_pong to receive pongs (ping acknowledgements) from the server. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a635ecd17e7464eb39a48fbab171ddeb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a635ecd17e7464eb39a48fbab171ddeb6">&#9670;&nbsp;</a></span>TCP_CONNECTION_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TCP_CONNECTION_TIMEOUT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a69eb06e880b8a55013053ab9c221c9a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69eb06e880b8a55013053ab9c221c9a4">&#9670;&nbsp;</a></span>TCP_CONNECTION_WAIT</h2>
 
@@ -194,6 +212,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define TCP_CONNECTION_WAIT&#160;&#160;&#160;300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49d3c6f5a5467a70cd7e0c3d853c0e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d3c6f5a5467a70cd7e0c3d853c0e8f">&#9670;&nbsp;</a></span>UDP_CONNECTION_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UDP_CONNECTION_TIMEOUT&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">

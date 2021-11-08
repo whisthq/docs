@@ -1,6 +1,8 @@
 var client_2network_8c =
 [
+    [ "TCP_CONNECTION_TIMEOUT", "client_2network_8c.html#a635ecd17e7464eb39a48fbab171ddeb6", null ],
     [ "TCP_CONNECTION_WAIT", "client_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4", null ],
+    [ "UDP_CONNECTION_TIMEOUT", "client_2network_8c.html#a49d3c6f5a5467a70cd7e0c3d853c0e8f", null ],
     [ "UDP_CONNECTION_WAIT", "client_2network_8c.html#a69ac525d995758ffd8a2403a33ba581f", null ],
     [ "close_connections", "client_2network_8c.html#abac9ba3b2a752a8ba9805b539765a2e4", null ],
     [ "connect_to_server", "client_2network_8c.html#a7349857d1ea028ae1b5479ff57a0dd5c", null ],
