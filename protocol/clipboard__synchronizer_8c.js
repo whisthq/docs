@@ -15,7 +15,6 @@ var clipboard__synchronizer_8c =
     [ "clipboard_written_bytes", "clipboard__synchronizer_8c.html#ab7877334281a013170ede61edcbed225", null ],
     [ "last_clipboard_update", "clipboard__synchronizer_8c.html#a0787b58a368a084406ec63f208f6a383", null ],
     [ "pending_clipboard_push", "clipboard__synchronizer_8c.html#aa2b45d79a290ca36bf13af41e575b871", null ],
-    [ "updating_clipboard", "clipboard__synchronizer_8c.html#a4f81fd39a5a2c340794351e409a83c52", null ],
     [ "updating_get_clipboard", "clipboard__synchronizer_8c.html#aa9bdb2b45bcfaa74be2e006f0115c2ea", null ],
     [ "updating_set_clipboard", "clipboard__synchronizer_8c.html#a328a943687536c490c175694fd9d71e4", null ]
 ];

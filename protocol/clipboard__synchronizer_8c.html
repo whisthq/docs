@@ -105,6 +105,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a261891d599896c8fde741ee616e5e37b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#a261891d599896c8fde741ee616e5e37b">update_clipboard</a> (void *opaque)</td></tr>
 <tr class="separator:a261891d599896c8fde741ee616e5e37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f4e6b5a91ace3e22f16d3d9d80d050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#aa3f4e6b5a91ace3e22f16d3d9d80d050">clipboard_synchronizer_abort_active_clipboard_action</a> ()</td></tr>
+<tr class="separator:aa3f4e6b5a91ace3e22f16d3d9d80d050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a475c38ee3728b3834c716c4428a2dcb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#a475c38ee3728b3834c716c4428a2dcb6">is_clipboard_synchronizing</a> ()</td></tr>
 <tr class="memdesc:a475c38ee3728b3834c716c4428a2dcb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the clipboard is in the midst of being updated.  <a href="clipboard__synchronizer_8c.html#a475c38ee3728b3834c716c4428a2dcb6">More...</a><br /></td></tr>
 <tr class="separator:a475c38ee3728b3834c716c4428a2dcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,8 +116,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5babcd29916447dfb0d861bfae48102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#ac5babcd29916447dfb0d861bfae48102">destroy_clipboard_synchronizer</a> ()</td></tr>
 <tr class="memdesc:ac5babcd29916447dfb0d861bfae48102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup the clipboard synchronizer.  <a href="clipboard__synchronizer_8c.html#ac5babcd29916447dfb0d861bfae48102">More...</a><br /></td></tr>
 <tr class="separator:ac5babcd29916447dfb0d861bfae48102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3f4e6b5a91ace3e22f16d3d9d80d050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#aa3f4e6b5a91ace3e22f16d3d9d80d050">clipboard_synchronizer_abort_active_clipboard_action</a> ()</td></tr>
-<tr class="separator:aa3f4e6b5a91ace3e22f16d3d9d80d050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a7072063df8fcaf1e5fcf6bf849361f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#a2a7072063df8fcaf1e5fcf6bf849361f">clipboard_synchronizer_set_clipboard_chunk</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *cb_chunk)</td></tr>
 <tr class="memdesc:a2a7072063df8fcaf1e5fcf6bf849361f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the clipboard to a given clipboard data.  <a href="clipboard__synchronizer_8c.html#a2a7072063df8fcaf1e5fcf6bf849361f">More...</a><br /></td></tr>
 <tr class="separator:a2a7072063df8fcaf1e5fcf6bf849361f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,8 +129,6 @@ Variables</h2></td></tr>
 <tr class="separator:a328a943687536c490c175694fd9d71e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9bdb2b45bcfaa74be2e006f0115c2ea"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#aa9bdb2b45bcfaa74be2e006f0115c2ea">updating_get_clipboard</a></td></tr>
 <tr class="separator:aa9bdb2b45bcfaa74be2e006f0115c2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f81fd39a5a2c340794351e409a83c52"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#a4f81fd39a5a2c340794351e409a83c52">updating_clipboard</a></td></tr>
-<tr class="separator:a4f81fd39a5a2c340794351e409a83c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0787b58a368a084406ec63f208f6a383"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#a0787b58a368a084406ec63f208f6a383">last_clipboard_update</a></td></tr>
 <tr class="separator:a0787b58a368a084406ec63f208f6a383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33f32dc7833e4d7b4428996792faca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">FractalSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#ae33f32dc7833e4d7b4428996792faca1">clipboard_semaphore</a></td></tr>
@@ -417,20 +415,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">bool pending_clipboard_push</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4f81fd39a5a2c340794351e409a83c52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f81fd39a5a2c340794351e409a83c52">&#9670;&nbsp;</a></span>updating_clipboard</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool updating_clipboard</td>
         </tr>
       </table>
 </div><div class="memdoc">
