@@ -124,10 +124,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2cce92d2c21ca0faeb6d6468d9c798e8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a2cce92d2c21ca0faeb6d6468d9c798e8">get_logger_history</a> ()</td></tr>
-<tr class="separator:a2cce92d2c21ca0faeb6d6468d9c798e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb0760e13a6d46cae993729e3427f9a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#adb0760e13a6d46cae993729e3427f9a5">get_logger_history_len</a> ()</td></tr>
-<tr class="separator:adb0760e13a6d46cae993729e3427f9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa50e9f30a5985e3c02649e9c1c9bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a3fa50e9f30a5985e3c02649e9c1c9bee">init_backtrace_handler</a> ()</td></tr>
 <tr class="separator:a3fa50e9f30a5985e3c02649e9c1c9bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a75250763a2a4bbc6623223f9c3128b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a3a75250763a2a4bbc6623223f9c3128b">multithreaded_printf</a> (void *opaque)</td></tr>
@@ -170,10 +166,6 @@ Variables</h2></td></tr>
 <tr class="separator:a7839ef37dc31d9ce82b1698801a6a75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1feb2a9a2c3d3ca601a8736df4a5ccee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">FractalThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a1feb2a9a2c3d3ca601a8736df4a5ccee">mprintf_thread</a> = NULL</td></tr>
 <tr class="separator:a1feb2a9a2c3d3ca601a8736df4a5ccee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a224eb7560635401953081973df1cab0d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a224eb7560635401953081973df1cab0d">logger_history</a> [<a class="el" href="logging_8c.html#a4d5ba6a5a4c97127dc3bb65c4a6fe5bd">LOG_CACHE_SIZE</a>]</td></tr>
-<tr class="separator:a224eb7560635401953081973df1cab0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d07609464e969d7e4a702ed6219d82a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a6d07609464e969d7e4a702ed6219d82a">logger_history_len</a></td></tr>
-<tr class="separator:a6d07609464e969d7e4a702ed6219d82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5498c85a54f25ea752b99992cb26589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">FractalMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#ae5498c85a54f25ea752b99992cb26589">crash_handler_mutex</a></td></tr>
 <tr class="separator:ae5498c85a54f25ea752b99992cb26589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -323,40 +315,6 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>This function will immediately flush all of the logs, rather than slowly pushing the logs through from another thread. </p>
-
-</div>
-</div>
-<a id="a2cce92d2c21ca0faeb6d6468d9c798e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cce92d2c21ca0faeb6d6468d9c798e8">&#9670;&nbsp;</a></span>get_logger_history()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * get_logger_history </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adb0760e13a6d46cae993729e3427f9a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb0760e13a6d46cae993729e3427f9a5">&#9670;&nbsp;</a></span>get_logger_history_len()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int get_logger_history_len </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -627,34 +585,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">const char* info_tag = &quot;INFO&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a224eb7560635401953081973df1cab0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a224eb7560635401953081973df1cab0d">&#9670;&nbsp;</a></span>logger_history</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char logger_history[<a class="el" href="logging_8c.html#a4d5ba6a5a4c97127dc3bb65c4a6fe5bd">LOG_CACHE_SIZE</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6d07609464e969d7e4a702ed6219d82a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d07609464e969d7e4a702ed6219d82a">&#9670;&nbsp;</a></span>logger_history_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int logger_history_len</td>
         </tr>
       </table>
 </div><div class="memdoc">

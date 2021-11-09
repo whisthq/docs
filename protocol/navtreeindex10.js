@@ -1,9 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structLodePNGColorStats.html":[8,0,50],
-"structLodePNGColorStats.html#a162ce4d4ee804a0136814ba469c82294":[8,0,50,5],
-"structLodePNGColorStats.html#a33724b799caf608319113a946c91406d":[8,0,50,6],
-"structLodePNGColorStats.html#a7eda029397c945602ecf49d5277c936e":[8,0,50,11],
 "structLodePNGColorStats.html#a8db59a808dc9f57ccaba638be2a2946d":[8,0,50,3],
 "structLodePNGColorStats.html#a97c2e4db5de999cd92c1eabcdf80d431":[8,0,50,0],
 "structLodePNGColorStats.html#a9919718b21a89c1c8cb7f393ff80f696":[8,0,50,10],
@@ -249,5 +245,9 @@ var NAVTREEINDEX10 =
 "structStunEntry.html#a2f91ab967aef8fd994899c1a931fcd75":[8,0,78,2],
 "structStunEntry.html#afbe51e6c2b5677fb46034ced462d1f7b":[8,0,78,1],
 "structStunRequest.html":[8,0,79],
-"structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282":[8,0,79,0]
+"structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282":[8,0,79,0],
+"structStunRequest.html#aef0c7d317052068582b3ec0d5766ae64":[8,0,79,1],
+"structVideoData.html":[8,0,82],
+"structVideoData.html#a07a1b7c552183ffa0d1ac5f5f9052725":[8,0,82,13],
+"structVideoData.html#a1dbe90498f9056e85a0a2b0d0682d7a7":[8,0,82,14]
 };

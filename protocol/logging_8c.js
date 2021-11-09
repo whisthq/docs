@@ -8,8 +8,6 @@ var logging_8c =
     [ "destroy_logger", "logging_8c.html#aa702fa9ec966709ebb51bef79be7b33e", null ],
     [ "escape_string", "logging_8c.html#af60cc877da6dc64161638b755348664f", null ],
     [ "flush_logs", "logging_8c.html#ac3647cebf30fdb7695db0d5fd4dfec5e", null ],
-    [ "get_logger_history", "logging_8c.html#a2cce92d2c21ca0faeb6d6468d9c798e8", null ],
-    [ "get_logger_history_len", "logging_8c.html#adb0760e13a6d46cae993729e3427f9a5", null ],
     [ "init_backtrace_handler", "logging_8c.html#a3fa50e9f30a5985e3c02649e9c1c9bee", null ],
     [ "init_logger", "logging_8c.html#ab3d0e9567cfad5d6f83abc585beb520d", null ],
     [ "internal_logging_printf", "logging_8c.html#a70325569587d06c4e89314d4db8b2d32", null ],
@@ -23,8 +21,6 @@ var logging_8c =
     [ "error_tag", "logging_8c.html#a3dff165e9f1a40dfc76a953fec589061", null ],
     [ "fatal_error_tag", "logging_8c.html#a7839ef37dc31d9ce82b1698801a6a75c", null ],
     [ "info_tag", "logging_8c.html#a188a516b4c5b2df9cd9a81a931902b88", null ],
-    [ "logger_history", "logging_8c.html#a224eb7560635401953081973df1cab0d", null ],
-    [ "logger_history_len", "logging_8c.html#a6d07609464e969d7e4a702ed6219d82a", null ],
     [ "mprintf_thread", "logging_8c.html#a1feb2a9a2c3d3ca601a8736df4a5ccee", null ],
     [ "warning_tag", "logging_8c.html#ab0c68adcbe413036b210457344f1c3a6", null ]
 ];
