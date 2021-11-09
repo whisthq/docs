@@ -12,5 +12,6 @@ var structFrameData =
     [ "num_times_nacked", "structFrameData.html#ade9910f3dfd891166f811094e39a0556", null ],
     [ "packets_received", "structFrameData.html#ad678f7fddd965f8239caef6d6adccb97", null ],
     [ "received_indices", "structFrameData.html#a28cffb0c17e4f704b491f31b166e544d", null ],
+    [ "recovery_mode", "structFrameData.html#a1bdb1b932824acc61d24b6b1643de4aa", null ],
     [ "type", "structFrameData.html#a5feff2d6d8e79f41b5e4b748c17f8a5b", null ]
 ];

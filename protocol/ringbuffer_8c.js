@@ -1,6 +1,8 @@
 var ringbuffer_8c =
 [
     [ "MAX_AUDIO_PACKETS", "ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe", null ],
+    [ "MAX_NACKS_PER_CALL", "ringbuffer_8c.html#a9b0633d89e77a53993dd697dcfb78606", null ],
+    [ "MAX_PACKET_NACKS", "ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911", null ],
     [ "MAX_RING_BUFFER_SIZE", "ringbuffer_8c.html#ace58ba786751c3524bcbb1bc4f8846ce", null ],
     [ "MAX_UNORDERED_PACKETS", "ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33", null ],
     [ "MAX_VIDEO_PACKETS", "ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b", null ],
@@ -11,12 +13,12 @@ var ringbuffer_8c =
     [ "init_frame", "ringbuffer_8c.html#a1fc73c796f6b71709d750033c1b58b63", null ],
     [ "init_ring_buffer", "ringbuffer_8c.html#a672f453baf215cd27bb691b95db7c205", null ],
     [ "nack_bitarray_packets", "ringbuffer_8c.html#a73e418ff63c607877e2cf30c280003b8", null ],
-    [ "nack_missing_frames", "ringbuffer_8c.html#a4f2aef26327e3507e68f09372a84a83b", null ],
-    [ "nack_missing_packets_up_to_index", "ringbuffer_8c.html#ad39f9574458820226981480a98a1081b", null ],
+    [ "nack_missing_packets_up_to_index", "ringbuffer_8c.html#a0048b36c977f38b40533fa7eea0f974c", null ],
     [ "nack_single_packet", "ringbuffer_8c.html#a06579df66400790c9af75c806b484aba", null ],
     [ "receive_packet", "ringbuffer_8c.html#a2f7e1e295ea3891d8b9b342fab21db03", null ],
     [ "reset_bitrate_stat_members", "ringbuffer_8c.html#ac90027614c72dd29204b9f884e0a0493", null ],
     [ "reset_frame", "ringbuffer_8c.html#a4415bb2d50c63ca97a0eafa97964188d", null ],
     [ "reset_ring_buffer", "ringbuffer_8c.html#aaae4a29416ec3cb8ae72b86ce57f3638", null ],
-    [ "set_rendering", "ringbuffer_8c.html#adc37000ecd47712d4a8cc8e83867a60d", null ]
+    [ "set_rendering", "ringbuffer_8c.html#adc37000ecd47712d4a8cc8e83867a60d", null ],
+    [ "try_nacking", "ringbuffer_8c.html#a33faf8c99a7bcd3260eb86367ce9b7ad", null ]
 ];

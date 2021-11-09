@@ -140,8 +140,6 @@ Macros</h2></td></tr>
 <tr class="separator:a4e8c4b05a876fdaac747e4b3b85e5574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ea5eab775ceae86f0aee1829a91c052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a7ea5eab775ceae86f0aee1829a91c052">CURSORIMAGE_B</a>&#160;&#160;&#160;0x000000ff</td></tr>
 <tr class="separator:a7ea5eab775ceae86f0aee1829a91c052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e5700b550a9fc28b9fcf6f18f3442f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#aa9e5700b550a9fc28b9fcf6f18f3442f">MAX_NACKED</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:aa9e5700b550a9fc28b9fcf6f18f3442f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25c15f9233eff2796785d6f51159b56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ae25c15f9233eff2796785d6f51159b56">RECV_FRAMES_BUFFER_SIZE</a>&#160;&#160;&#160;275</td></tr>
 <tr class="separator:ae25c15f9233eff2796785d6f51159b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3190cca650071548d6b75370b0e5c41c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a3190cca650071548d6b75370b0e5c41c">STATISTICS_SECONDS</a>&#160;&#160;&#160;5</td></tr>
@@ -188,8 +186,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6c024f93309638b1e8f755f63c37f06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0a6d84fb4c5932cf794270360bc9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a2b0a6d84fb4c5932cf794270360bc9de">sync_decoder_parameters</a> (<a class="el" href="structVideoFrame.html">VideoFrame</a> *frame)</td></tr>
 <tr class="separator:a2b0a6d84fb4c5932cf794270360bc9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc212dea40551c699510c7524009faab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#adc212dea40551c699510c7524009faab">request_iframe_to_catch_up</a> ()</td></tr>
-<tr class="separator:adc212dea40551c699510c7524009faab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad143c356edf6de20d4d405981f347ad4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ad143c356edf6de20d4d405981f347ad4">try_request_iframe_to_catch_up</a> ()</td></tr>
+<tr class="separator:ad143c356edf6de20d4d405981f347ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83a182739f09f49351bd1722f6e596a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a83a182739f09f49351bd1722f6e596a0">update_window_titlebar_color</a> (<a class="el" href="structFractalRGBColor.html">FractalRGBColor</a> color)</td></tr>
 <tr class="separator:a83a182739f09f49351bd1722f6e596a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759f71f304c11873e67bf7cc3f2d08a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a759f71f304c11873e67bf7cc3f2d08a8">init_video</a> ()</td></tr>
@@ -380,20 +378,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define IFRAME_REQUEST_INTERVAL_MS&#160;&#160;&#160;(50)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa9e5700b550a9fc28b9fcf6f18f3442f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9e5700b550a9fc28b9fcf6f18f3442f">&#9670;&nbsp;</a></span>MAX_NACKED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_NACKED&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -838,23 +822,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="adc212dea40551c699510c7524009faab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc212dea40551c699510c7524009faab">&#9670;&nbsp;</a></span>request_iframe_to_catch_up()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void request_iframe_to_catch_up </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a14f0975d7a4c5a45353941aa88171b1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14f0975d7a4c5a45353941aa88171b1c">&#9670;&nbsp;</a></span>resizing_event_watcher()</h2>
 
@@ -937,6 +904,23 @@ Usage</h1>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structVideoFrame.html">VideoFrame</a> *&#160;</td>
           <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad143c356edf6de20d4d405981f347ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad143c356edf6de20d4d405981f347ad4">&#9670;&nbsp;</a></span>try_request_iframe_to_catch_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool try_request_iframe_to_catch_up </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -1,9 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"sdl__utils_8c.html#aaacc5ce7ced4977cd893708f5d789df4":[9,0,0,18,16],
-"sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9":[9,0,0,18,18],
-"sdl__utils_8c.html#abbd0cc7567697175ece165e1495dcaef":[9,0,0,18,11],
-"sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362":[9,0,0,18,6],
 "sdl__utils_8c.html#ac32c89e7fa9e78da4ddcceff4dd0e55c":[9,0,0,18,2],
 "sdl__utils_8c.html#ad9dc00e8f51bb7c29c05499134fe2ddb":[9,0,0,18,9],
 "sdl__utils_8c.html#ae34216ffba563226782368f47bf81216":[9,0,0,18,1],
@@ -64,8 +60,8 @@ var NAVTREEINDEX8 =
 "server_2network_8c.html#a5d17c2bed3efc45988b308faa8392bc8":[9,0,2,8,22],
 "server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79":[9,0,2,8,5],
 "server_2network_8c.html#a69ac525d995758ffd8a2403a33ba581f":[9,0,2,8,3],
-"server_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4":[9,0,2,8,1],
 "server_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4":[9,0,2,8,2],
+"server_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4":[9,0,2,8,1],
 "server_2network_8c.html#a87359d0492cce4252fa833844855438d":[9,0,2,8,15],
 "server_2network_8c.html#a90d1e1147b89a199b7d0067298e9c167":[9,0,2,8,8],
 "server_2network_8c.html#a961bf3611973011277079ee5647d25b0":[9,0,2,8,20],
@@ -249,5 +245,9 @@ var NAVTREEINDEX8 =
 "structClipboardFiles.html#ad6b3efc63acdc42cf8be3feadb55c908":[8,0,17,0],
 "structColorTree.html":[8,0,18],
 "structColorTree.html#a46a3b1d9239f5fd467ec97cd067b9a96":[8,0,18,0],
-"structColorTree.html#ab3836a4a5981a7cf4ef553d25d9b0361":[8,0,18,1]
+"structColorTree.html#ab3836a4a5981a7cf4ef553d25d9b0361":[8,0,18,1],
+"structDesktopContext.html":[8,0,19],
+"structDesktopContext.html#a116a994232b8ff1a0f47fe881a6c37d2":[8,0,19,1],
+"structDesktopContext.html#a4f1543c4d22d96f1923407ed1fa4b6e6":[8,0,19,0],
+"structDesktopContext.html#a6267569de90ae95e7a0e77049a84b0fe":[8,0,19,2]
 };

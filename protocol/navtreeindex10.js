@@ -1,8 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[8,0,49,3],
-"structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[8,0,49,0],
-"structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6":[8,0,49,4],
 "structLodePNGColorStats.html":[8,0,50],
 "structLodePNGColorStats.html#a162ce4d4ee804a0136814ba469c82294":[8,0,50,5],
 "structLodePNGColorStats.html#a33724b799caf608319113a946c91406d":[8,0,50,6],
@@ -184,14 +181,14 @@ var NAVTREEINDEX10 =
 "structRingBuffer.html":[8,0,70],
 "structRingBuffer.html#a01ab80f31a9df5fd35a5a1c3360b4663":[8,0,70,10],
 "structRingBuffer.html#a222e926e44d53e0f8bec5e58bbccfc64":[8,0,70,7],
+"structRingBuffer.html#a29d39a4bed1167d337237b48d36f396a":[8,0,70,8],
 "structRingBuffer.html#a2f8adc4bd7860a7265e43c66caa90c07":[8,0,70,5],
 "structRingBuffer.html#a43c8b6829b64fd8b7f0aa7dbf7847a07":[8,0,70,11],
 "structRingBuffer.html#a44ac04c74f6f5e1a9c140d599df24ac5":[8,0,70,4],
 "structRingBuffer.html#a57b1694749643d632f8cf0d0a2dd3305":[8,0,70,0],
-"structRingBuffer.html#a6069bcbd74d1374e507f9d16cadbb5e6":[8,0,70,8],
 "structRingBuffer.html#a64c42ca0af0052ed9c9670b7aebd542c":[8,0,70,2],
+"structRingBuffer.html#a6e2f7541e6a30aad26fcc4f24934d32f":[8,0,70,6],
 "structRingBuffer.html#a82a70174568113a76b153e9f67b72532":[8,0,70,14],
-"structRingBuffer.html#aa6e3ca32887769ae2f52855fab96776f":[8,0,70,6],
 "structRingBuffer.html#abd759c93f9abe89bc60b57e307a278d1":[8,0,70,12],
 "structRingBuffer.html#ac44f73cf4dcb49ad0bbabc3fca4f1fd4":[8,0,70,13],
 "structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717":[8,0,70,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX10 =
 "structStatisticData.html#add2670d9360e9e131ab795fe99e0f605":[8,0,77,4],
 "structStunEntry.html":[8,0,78],
 "structStunEntry.html#a10839151cc119dbc37f661fb95c781a2":[8,0,78,0],
-"structStunEntry.html#a2f91ab967aef8fd994899c1a931fcd75":[8,0,78,2]
+"structStunEntry.html#a2f91ab967aef8fd994899c1a931fcd75":[8,0,78,2],
+"structStunEntry.html#afbe51e6c2b5677fb46034ced462d1f7b":[8,0,78,1],
+"structStunRequest.html":[8,0,79],
+"structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282":[8,0,79,0]
 };

@@ -2,7 +2,6 @@ var ringbuffer_8h =
 [
     [ "FrameData", "structFrameData.html", "structFrameData" ],
     [ "RingBuffer", "structRingBuffer.html", "structRingBuffer" ],
-    [ "MAX_PACKET_NACKS", "ringbuffer_8h.html#adf06ce5e31c557cd5e3342811904c911", null ],
     [ "FrameData", "ringbuffer_8h.html#a2763204414a22a08c1edb26446244d80", null ],
     [ "FrameDataType", "ringbuffer_8h.html#a2eca4a720a0435f1f5e9f4eae291fe90", null ],
     [ "RingBuffer", "ringbuffer_8h.html#ac0132fb254601f025c3cf73363a3c90c", null ],
@@ -13,9 +12,8 @@ var ringbuffer_8h =
     [ "destroy_ring_buffer", "ringbuffer_8h.html#af514843307356fd516b1a96211c9d986", null ],
     [ "get_frame_at_id", "ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5", null ],
     [ "init_ring_buffer", "ringbuffer_8h.html#a672f453baf215cd27bb691b95db7c205", null ],
-    [ "nack_missing_packets_up_to_index", "ringbuffer_8h.html#ad39f9574458820226981480a98a1081b", null ],
-    [ "nack_single_packet", "ringbuffer_8h.html#a06579df66400790c9af75c806b484aba", null ],
     [ "receive_packet", "ringbuffer_8h.html#a2f7e1e295ea3891d8b9b342fab21db03", null ],
     [ "reset_frame", "ringbuffer_8h.html#a4415bb2d50c63ca97a0eafa97964188d", null ],
-    [ "set_rendering", "ringbuffer_8h.html#adc37000ecd47712d4a8cc8e83867a60d", null ]
+    [ "set_rendering", "ringbuffer_8h.html#adc37000ecd47712d4a8cc8e83867a60d", null ],
+    [ "try_nacking", "ringbuffer_8h.html#a33faf8c99a7bcd3260eb86367ce9b7ad", null ]
 ];

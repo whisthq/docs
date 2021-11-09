@@ -10,7 +10,6 @@ var structVideoData =
     [ "last_rendered_id", "structVideoData.html#ae4fad73aff87753dda1eb26350222eac", null ],
     [ "last_statistics_id", "structVideoData.html#a813fb27ec2f902a5d4f3a1d41871a55f", null ],
     [ "loading_index", "structVideoData.html#a3cecf13023cc8075f88d5ca6a0e50f1a", null ],
-    [ "missing_frame_nack_timer", "structVideoData.html#ada9116322bcbce9c3cd6774645976c13", null ],
     [ "most_recent_iframe", "structVideoData.html#aeb1a6b4dbad7c51d22ca95a05d89bc8f", null ],
     [ "nack_by_bitrate", "structVideoData.html#a8555ab1442199f99ac59687ca76a3062", null ],
     [ "pending_ctx", "structVideoData.html#af65c91245b9566a949fb9a762fd79f47", null ],

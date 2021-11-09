@@ -1,9 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structDesktopContext.html":[8,0,19],
-"structDesktopContext.html#a116a994232b8ff1a0f47fe881a6c37d2":[8,0,19,1],
-"structDesktopContext.html#a4f1543c4d22d96f1923407ed1fa4b6e6":[8,0,19,0],
-"structDesktopContext.html#a6267569de90ae95e7a0e77049a84b0fe":[8,0,19,2],
 "structDisplayHardware.html":[8,0,20],
 "structDisplayHardware.html#a2345429e567126bbc1d26a81dae3641d":[8,0,20,1],
 "structDisplayHardware.html#a9e1b56eec9fe57deb012c47cb7a64e91":[8,0,20,0],
@@ -194,8 +190,9 @@ var NAVTREEINDEX9 =
 "structFractalYUVColor.html#a6f50df6de770dfed4506bcaa8f4fdb63":[8,0,41,2],
 "structFrameData.html":[8,0,42],
 "structFrameData.html#a17b526603f40e18dba49fa0f2cb75b27":[8,0,42,3],
+"structFrameData.html#a1bdb1b932824acc61d24b6b1643de4aa":[8,0,42,12],
 "structFrameData.html#a28cffb0c17e4f704b491f31b166e544d":[8,0,42,11],
-"structFrameData.html#a5feff2d6d8e79f41b5e4b748c17f8a5b":[8,0,42,12],
+"structFrameData.html#a5feff2d6d8e79f41b5e4b748c17f8a5b":[8,0,42,13],
 "structFrameData.html#a7226c64e0bf8e557dd9470adac009226":[8,0,42,1],
 "structFrameData.html#a862d6346d2101e2d68beba3f061f5b70":[8,0,42,5],
 "structFrameData.html#a8aa6d7083971af8bef3ef4e11cfb3629":[8,0,42,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX9 =
 "structLodePNGColorMode.html#a407557f056168682d9319aeb60866dcc":[8,0,49,7],
 "structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[8,0,49,1],
 "structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[8,0,49,6],
-"structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[8,0,49,2]
+"structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[8,0,49,2],
+"structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[8,0,49,3],
+"structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[8,0,49,0],
+"structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6":[8,0,49,4]
 };
