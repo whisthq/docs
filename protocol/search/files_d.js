@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['readme_2emd_2183',['README.md',['../README_8md.html',1,'(Global Namespace)'],['../client_2README_8md.html',1,'(Global Namespace)'],['../server_2README_8md.html',1,'(Global Namespace)']]],
-  ['ringbuffer_2ec_2184',['ringbuffer.c',['../ringbuffer_8c.html',1,'']]],
-  ['ringbuffer_2eh_2185',['ringbuffer.h',['../ringbuffer_8h.html',1,'']]],
-  ['rwlock_2ec_2186',['rwlock.c',['../rwlock_8c.html',1,'']]],
-  ['rwlock_2eh_2187',['rwlock.h',['../rwlock_8h.html',1,'']]]
+  ['readme_2emd_2184',['README.md',['../README_8md.html',1,'(Global Namespace)'],['../client_2README_8md.html',1,'(Global Namespace)'],['../server_2README_8md.html',1,'(Global Namespace)']]],
+  ['ringbuffer_2ec_2185',['ringbuffer.c',['../ringbuffer_8c.html',1,'']]],
+  ['ringbuffer_2eh_2186',['ringbuffer.h',['../ringbuffer_8h.html',1,'']]],
+  ['rwlock_2ec_2187',['rwlock.c',['../rwlock_8c.html',1,'']]],
+  ['rwlock_2eh_2188',['rwlock.h',['../rwlock_8h.html',1,'']]]
 ];

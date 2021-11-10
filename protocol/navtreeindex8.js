@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"sdl__utils_8c.html#afbc958cd698c7d076d069dc24c6e9a78":[9,0,0,18,3],
 "sdl__utils_8c.html#aff48bb1fe7d404dc2d22473427fdc36d":[9,0,0,18,14],
 "sdl__utils_8h.html":[9,0,0,19],
 "sdl__utils_8h.html#a1168ed24252f49c1e88570cce929ccb1":[9,0,0,19,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structDesktopContext.html#a6267569de90ae95e7a0e77049a84b0fe":[8,0,19,2],
 "structDisplayHardware.html":[8,0,20],
 "structDisplayHardware.html#a2345429e567126bbc1d26a81dae3641d":[8,0,20,1],
-"structDisplayHardware.html#a9e1b56eec9fe57deb012c47cb7a64e91":[8,0,20,0],
-"structDisplayHardware.html#ab6d1caa9fb092e730103473114fc2ffb":[8,0,20,2]
+"structDisplayHardware.html#a9e1b56eec9fe57deb012c47cb7a64e91":[8,0,20,0]
 };

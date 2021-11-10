@@ -1,5 +1,6 @@
 var ringbuffer_8c =
 [
+    [ "LATENCY_MULTIPLIER", "ringbuffer_8c.html#ad464aa9327c044ef86c684201b5c2044", null ],
     [ "MAX_AUDIO_PACKETS", "ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe", null ],
     [ "MAX_NACKS_PER_CALL", "ringbuffer_8c.html#a9b0633d89e77a53993dd697dcfb78606", null ],
     [ "MAX_PACKET_NACKS", "ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911", null ],
