@@ -1,17 +1,18 @@
 var NAVTREEINDEX8 =
 {
 "sdl__utils_8c.html#afbc958cd698c7d076d069dc24c6e9a78":[9,0,0,18,3],
-"sdl__utils_8c.html#aff48bb1fe7d404dc2d22473427fdc36d":[9,0,0,18,14],
+"sdl__utils_8c.html#aff48bb1fe7d404dc2d22473427fdc36d":[9,0,0,18,15],
 "sdl__utils_8h.html":[9,0,0,19],
 "sdl__utils_8h.html#a1168ed24252f49c1e88570cce929ccb1":[9,0,0,19,1],
-"sdl__utils_8h.html#a1b2a1365885e6c3b0e2e42d9e38d56a8":[9,0,0,19,8],
-"sdl__utils_8h.html#a1bf4241c001c12d54c4b59d77f422183":[9,0,0,19,6],
-"sdl__utils_8h.html#a87e59165386162d74cf290669cf1e5d8":[9,0,0,19,4],
-"sdl__utils_8h.html#aa3bd5c19a5f8d2a5e39f067510ddd373":[9,0,0,19,3],
-"sdl__utils_8h.html#abbd0cc7567697175ece165e1495dcaef":[9,0,0,19,7],
+"sdl__utils_8h.html#a1b2a1365885e6c3b0e2e42d9e38d56a8":[9,0,0,19,9],
+"sdl__utils_8h.html#a1bf4241c001c12d54c4b59d77f422183":[9,0,0,19,7],
+"sdl__utils_8h.html#a87e59165386162d74cf290669cf1e5d8":[9,0,0,19,5],
+"sdl__utils_8h.html#aa3bd5c19a5f8d2a5e39f067510ddd373":[9,0,0,19,4],
+"sdl__utils_8h.html#abbd0cc7567697175ece165e1495dcaef":[9,0,0,19,8],
 "sdl__utils_8h.html#abf404550e168d933d326c980202e21e7":[9,0,0,19,0],
-"sdl__utils_8h.html#ad9dc00e8f51bb7c29c05499134fe2ddb":[9,0,0,19,5],
-"sdl__utils_8h.html#afcab3b594694ac8eb074b84f28ec11f0":[9,0,0,19,2],
+"sdl__utils_8h.html#ad9dc00e8f51bb7c29c05499134fe2ddb":[9,0,0,19,6],
+"sdl__utils_8h.html#af36c30a59cac797df9bd73e4531c58cd":[9,0,0,19,2],
+"sdl__utils_8h.html#afcab3b594694ac8eb074b84f28ec11f0":[9,0,0,19,3],
 "sdl__utils_8h_source.html":[9,0,0,19],
 "sdlscreeninfo_8c.html":[9,0,0,20],
 "sdlscreeninfo_8c.html#a13be734a55dab04bfc1d64ea468d6732":[9,0,0,20,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structDesktopContext.html#a4f1543c4d22d96f1923407ed1fa4b6e6":[8,0,19,0],
 "structDesktopContext.html#a6267569de90ae95e7a0e77049a84b0fe":[8,0,19,2],
 "structDisplayHardware.html":[8,0,20],
-"structDisplayHardware.html#a2345429e567126bbc1d26a81dae3641d":[8,0,20,1],
-"structDisplayHardware.html#a9e1b56eec9fe57deb012c47cb7a64e91":[8,0,20,0]
+"structDisplayHardware.html#a2345429e567126bbc1d26a81dae3641d":[8,0,20,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structDisplayHardware.html#a9e1b56eec9fe57deb012c47cb7a64e91":[8,0,20,0],
 "structDisplayHardware.html#ab6d1caa9fb092e730103473114fc2ffb":[8,0,20,2],
 "structDynamicBuffer.html":[8,0,21],
 "structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac":[8,0,21,3],
@@ -199,7 +200,7 @@ var NAVTREEINDEX9 =
 "structFrameData.html#ade9910f3dfd891166f811094e39a0556":[8,0,42,9],
 "structFrameData.html#ae057f87a42582a77c8e89d85dc1375db":[8,0,42,8],
 "structFrameData.html#ae679a4e5201a00081a8231ad220c095a":[8,0,42,7],
-"structFrameData.html#af291b0bfed5c356e784ed5b6ef083036":[8,0,42,6],
+"structFrameData.html#afb97179c1d427aa00a216f641b0ba236":[8,0,42,6],
 "structHash.html":[8,0,43],
 "structHash.html#a04ef237e7bc2fa99bc7305fb2352084d":[8,0,43,1],
 "structHash.html#a0977cf12b1d8e6bbc784b5e0877926f5":[8,0,43,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[8,0,49,0],
 "structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6":[8,0,49,4],
 "structLodePNGColorStats.html":[8,0,50],
-"structLodePNGColorStats.html#a162ce4d4ee804a0136814ba469c82294":[8,0,50,5],
-"structLodePNGColorStats.html#a33724b799caf608319113a946c91406d":[8,0,50,6]
+"structLodePNGColorStats.html#a162ce4d4ee804a0136814ba469c82294":[8,0,50,5]
 };

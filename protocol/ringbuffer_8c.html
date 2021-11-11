@@ -101,12 +101,12 @@ Macros</h2></td></tr>
 <tr class="separator:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a035f1eb6db73cb497f6de67cad4ade33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33">MAX_UNORDERED_PACKETS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a035f1eb6db73cb497f6de67cad4ade33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad464aa9327c044ef86c684201b5c2044"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ad464aa9327c044ef86c684201b5c2044">LATENCY_MULTIPLIER</a>&#160;&#160;&#160;0.8</td></tr>
-<tr class="separator:ad464aa9327c044ef86c684201b5c2044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf06ce5e31c557cd5e3342811904c911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911">MAX_PACKET_NACKS</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:adf06ce5e31c557cd5e3342811904c911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b0633d89e77a53993dd697dcfb78606"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a9b0633d89e77a53993dd697dcfb78606">MAX_NACKS_PER_CALL</a>&#160;&#160;&#160;25</td></tr>
-<tr class="separator:a9b0633d89e77a53993dd697dcfb78606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1394526c365da140a30aa8d28887fda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ae1394526c365da140a30aa8d28887fda">MAX_NACK_AVG_MBPS</a>&#160;&#160;&#160;2200000</td></tr>
+<tr class="separator:ae1394526c365da140a30aa8d28887fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c68baaea63ef075d65c8f5a3885d75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a68c68baaea63ef075d65c8f5a3885d75">MAX_NACK_BURST_MBPS</a>&#160;&#160;&#160;4800000</td></tr>
+<tr class="separator:a68c68baaea63ef075d65c8f5a3885d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -149,20 +149,6 @@ Functions</h2></td></tr>
 <tr class="separator:af514843307356fd516b1a96211c9d986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ad464aa9327c044ef86c684201b5c2044"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad464aa9327c044ef86c684201b5c2044">&#9670;&nbsp;</a></span>LATENCY_MULTIPLIER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LATENCY_MULTIPLIER&#160;&#160;&#160;0.8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a83bbf59667cbb81c5c7d11df72ca7dfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83bbf59667cbb81c5c7d11df72ca7dfe">&#9670;&nbsp;</a></span>MAX_AUDIO_PACKETS</h2>
 
@@ -177,14 +163,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b0633d89e77a53993dd697dcfb78606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b0633d89e77a53993dd697dcfb78606">&#9670;&nbsp;</a></span>MAX_NACKS_PER_CALL</h2>
+<a id="ae1394526c365da140a30aa8d28887fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1394526c365da140a30aa8d28887fda">&#9670;&nbsp;</a></span>MAX_NACK_AVG_MBPS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_NACKS_PER_CALL&#160;&#160;&#160;25</td>
+          <td class="memname">#define MAX_NACK_AVG_MBPS&#160;&#160;&#160;2200000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68c68baaea63ef075d65c8f5a3885d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c68baaea63ef075d65c8f5a3885d75">&#9670;&nbsp;</a></span>MAX_NACK_BURST_MBPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_NACK_BURST_MBPS&#160;&#160;&#160;4800000</td>
         </tr>
       </table>
 </div><div class="memdoc">

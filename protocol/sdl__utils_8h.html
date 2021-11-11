@@ -101,6 +101,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afcab3b594694ac8eb074b84f28ec11f0"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#afcab3b594694ac8eb074b84f28ec11f0">init_sdl</a> (int <a class="el" href="client_2video_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, int <a class="el" href="client_2video_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, char *name, char *icon_filename)</td></tr>
 <tr class="memdesc:afcab3b594694ac8eb074b84f28ec11f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL window, with the currently running thread at the owner.  <a href="sdl__utils_8h.html#afcab3b594694ac8eb074b84f28ec11f0">More...</a><br /></td></tr>
 <tr class="separator:afcab3b594694ac8eb074b84f28ec11f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af36c30a59cac797df9bd73e4531c58cd"><td class="memItemLeft" align="right" valign="top">SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#af36c30a59cac797df9bd73e4531c58cd">init_renderer</a> (SDL_Window *sdl_window)</td></tr>
+<tr class="memdesc:af36c30a59cac797df9bd73e4531c58cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL Renderer, using the current SDL <code>window</code>.  <a href="sdl__utils_8h.html#af36c30a59cac797df9bd73e4531c58cd">More...</a><br /></td></tr>
+<tr class="separator:af36c30a59cac797df9bd73e4531c58cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf404550e168d933d326c980202e21e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#abf404550e168d933d326c980202e21e7">destroy_sdl</a> (SDL_Window *<a class="el" href="client_2video_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a>)</td></tr>
 <tr class="memdesc:abf404550e168d933d326c980202e21e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8h.html#abf404550e168d933d326c980202e21e7">More...</a><br /></td></tr>
 <tr class="separator:abf404550e168d933d326c980202e21e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +184,32 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">surface</td><td>The SDL_Surface to be freed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af36c30a59cac797df9bd73e4531c58cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af36c30a59cac797df9bd73e4531c58cd">&#9670;&nbsp;</a></span>init_renderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Renderer* init_renderer </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>sdl_window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates the SDL Renderer, using the current SDL <code>window</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdl_window</td><td>The SDL Window to use </td></tr>
   </table>
   </dd>
 </dl>
