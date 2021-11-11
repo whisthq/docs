@@ -101,12 +101,12 @@ change and terminate itself.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.find_instance">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">find_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_commit_hash</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.find_instance" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">find_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_commit_hash</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><a class="reference internal" href="app.constants.html#app.constants.mandelbox_assign_error_names.MandelboxAssignError" title="app.constants.mandelbox_assign_error_names.MandelboxAssignError"><span class="pre">app.constants.mandelbox_assign_error_names.MandelboxAssignError</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.find_instance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a list of regions, finds (if it can) an instance in that region
 or a neighboring region with space. If it succeeds, returns the instance name.
 Else, returns None
 :param regions: a list of regions sorted by proximity</p>
-<p>Returns: either an instance name or None</p>
+<p>Returns: either an instance name or MandelboxAssignError</p>
 </dd></dl>
 
 <dl class="py function">
