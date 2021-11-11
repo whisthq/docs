@@ -74,7 +74,7 @@ processes to run and scales the actual number of running Celery worker processes
 </section>
 <section id="databases">
 <h2>Databases<a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h2>
-<p>On startup, the Whist Webserver reads from a centralized database of Flask configuration variables, the <cite>fractal-config</cite>
+<p>On startup, the Whist Webserver reads from a centralized database of Flask configuration variables, the <cite>whist-config</cite>
 database, that may be overridden by Heroku environment variables. We call this database the configuration database and it is
 shared by all Whist Webserver deployments, mainly <cite>dev</cite>, <cite>staging</cite> and <cite>prod</cite>. Each Whist Webserver deployment is also
 attached to an all-purpose PostgresSQL database that it uses at runtime. This database keeps track of streaming sessions that
