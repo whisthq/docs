@@ -20,8 +20,6 @@ var dir_df322525ef19ea0172bad82237de04c3 =
     [ "sysinfo.h", "sysinfo_8h.html", "sysinfo_8h" ],
     [ "threads.c", "threads_8c.html", "threads_8c" ],
     [ "threads.h", "threads_8h.html", "threads_8h" ],
-    [ "windows_utils.c", "windows__utils_8c.html", "windows__utils_8c" ],
-    [ "windows_utils.h", "windows__utils_8h.html", "windows__utils_8h" ],
     [ "x11_window_info.c", "x11__window__info_8c.html", null ],
     [ "x11_window_info.h", "x11__window__info_8h.html", "x11__window__info_8h" ]
 ];

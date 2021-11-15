@@ -90,13 +90,13 @@ var NAVTREEINDEX =
 "fractal_2network_2network_8h.html#ac7d327a3e16a307766fb00cbdcaa9f0c",
 "fractal_8h.html#a69973fa63511c3fd057755fcae4b8527af4c4f031796f45e85396e0a2fc898cec",
 "globals_defs_o.html",
-"lodepng_8c.html#a05bf6fac7afc9025bbcb9f5f9f1b0027",
-"logging_8c.html#ae5498c85a54f25ea752b99992cb26589",
-"sdl__utils_8c.html#a2a57d774e71166271bbff6c515111104",
-"structFFmpegEncoder.html#a2ae0fedf9d315657a953e4af4deb2bb9",
-"structLodePNGCompressSettings.html#a4a7835f394349f15f1302d11bcb0efa0",
-"structVideoDecoder.html#a5b3d785474b5a99d64e5baf87bb0abed",
-"uinput__input__driver_8h.html"
+"lodepng_8c.html#a0b5cf190f94f8f11ed5c0abb3504ad86",
+"logging_8c.html#af60cc877da6dc64161638b755348664f",
+"sdl__utils_8c.html#a2d249b006c12fe0b7622c0d3b2d1650d",
+"structFFmpegEncoder.html#a71883d3f943064de6c4a4d350d727890",
+"structLodePNGCompressSettings.html#ad4ffde429dee40a8c314016f5f6fdab5",
+"structVideoDecoder.html#aa313589a298c3baf90bfdc4810073868",
+"wasapicapture_8h.html#a9329f8d868f57c865444a80df32c9943"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x11_5fcapture_5fscreen_2737',['x11_capture_screen',['../x11capture_8c.html#a14556ad435b66ddf880360717fbc0ba2',1,'x11_capture_screen(X11CaptureDevice *device):&#160;x11capture.c'],['../x11capture_8h.html#a14556ad435b66ddf880360717fbc0ba2',1,'x11_capture_screen(X11CaptureDevice *device):&#160;x11capture.c']]]
+  ['yuv_5fto_5frgb_2721',['yuv_to_rgb',['../color_8c.html#ab9dc9170b5a175f507648d6f5307c828',1,'yuv_to_rgb(FractalYUVColor yuv_color):&#160;color.c'],['../color_8h.html#ab9dc9170b5a175f507648d6f5307c828',1,'yuv_to_rgb(FractalYUVColor yuv_color):&#160;color.c']]]
 ];
