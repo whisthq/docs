@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('server_2video_8c.html',''); initResiza
 <code>#include &lt;signal.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="transfercapture_8h_source.html">fractal/video/transfercapture.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="screencapture_8h_source.html">fractal/video/screencapture.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="videoencode_8h_source.html">fractal/video/videoencode.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="capture_8h_source.html">fractal/video/capture/capture.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="encode_8h_source.html">fractal/video/codec/encode.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="avpacket__buffer_8h_source.html">fractal/utils/avpacket_buffer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">fractal/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
@@ -123,7 +123,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a34bd39d3decec9bb20a254ad91a8707d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a34bd39d3decec9bb20a254ad91a8707d">multithreaded_destroy_encoder</a> (void *opaque)</td></tr>
 <tr class="separator:a34bd39d3decec9bb20a254ad91a8707d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46dcd5b99eab1c1d974902d5491c4f33"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33">create_new_device</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> **device, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *rdevice, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> **encoder, uint32_t true_width, uint32_t true_height)</td></tr>
-<tr class="memdesc:a46dcd5b99eab1c1d974902d5491c4f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a>.  <a href="server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33">More...</a><br /></td></tr>
+<tr class="memdesc:a46dcd5b99eab1c1d974902d5491c4f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structCaptureDevice.html">CaptureDevice</a>.  <a href="server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33">More...</a><br /></td></tr>
 <tr class="separator:a46dcd5b99eab1c1d974902d5491c4f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92f23919fade390e6daaa8985a386746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a92f23919fade390e6daaa8985a386746">send_populated_frames</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *server_frame_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int id)</td></tr>
 <tr class="memdesc:a92f23919fade390e6daaa8985a386746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the populated video frames to the client.  <a href="server_2video_8c.html#a92f23919fade390e6daaa8985a386746">More...</a><br /></td></tr>
@@ -269,12 +269,12 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a>. </p>
+<p>Creates a new <a class="el" href="structCaptureDevice.html">CaptureDevice</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">statistics_timer</td><td>Pointer to statistics timer used for logging </td></tr>
-    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
-    <tr><td class="paramname">rdevice</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">rdevice</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
     <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
     <tr><td class="paramname">true_width</td><td>True width of client screen </td></tr>
     <tr><td class="paramname">true_height</td><td>True height of client screen </td></tr>
@@ -315,7 +315,7 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer</td></tr>
-    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer</td></tr>
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer</td></tr>
   </table>
   </dd>
 </dl>
@@ -408,7 +408,7 @@ Usage</h1>
 <p>Attempts to capture the screen. Afterwards sets update_device to true. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
     <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
   </table>
   </dd>
@@ -491,7 +491,7 @@ Usage</h1>
   <table class="params">
     <tr><td class="paramname">statistics_timer</td><td>Pointer to statistics timer used for logging </td></tr>
     <tr><td class="paramname">server_frame_timer</td><td>Pointer to server_frame_timer </td></tr>
-    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
     <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
     <tr><td class="paramname">id</td><td>Pointer to frame id </td></tr>
   </table>
@@ -548,7 +548,7 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">statistics_timer</td><td>Pointer to the timer used for statistics logging </td></tr>
-    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html" title="Struct holding the global data needed for capturing: the type of capture device we are using,...">CaptureDevice</a> pointer </td></tr>
+    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
     <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
     <tr><td class="paramname">true_width</td><td>True width of client screen </td></tr>
     <tr><td class="paramname">true_height</td><td>True height of client screen </td></tr>

@@ -88,121 +88,24 @@ $(document).ready(function(){initNavTree('structCaptureDevice.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>Struct holding the global data needed for capturing: the type of capture device we are using, information necessary for resizing, and pointers to the specific capture devices. The implementations of the <a class="el" href="screencapture_8h.html" title="This file defines the proper header for capturing the screen depending.">screencapture.h</a> API internally decide what capture device to use.  
- <a href="structCaptureDevice.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="dxgicapture_8h_source.html">dxgicapture.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="capture_8h_source.html">capture.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ae9fcde4b1986608dfca772fdf9fa01e1"><td class="memItemLeft" align="right" valign="top">D3D11_BOX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#ae9fcde4b1986608dfca772fdf9fa01e1">Box</a></td></tr>
-<tr class="separator:ae9fcde4b1986608dfca772fdf9fa01e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab19dc55a0802e4854d4557cb3d77ab16"><td class="memItemLeft" align="right" valign="top">ID3D11Device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#ab19dc55a0802e4854d4557cb3d77ab16">D3D11device</a></td></tr>
-<tr class="separator:ab19dc55a0802e4854d4557cb3d77ab16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a973f662b6b428b16853e9a1eb2bb7cbb"><td class="memItemLeft" align="right" valign="top">ID3D11DeviceContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a973f662b6b428b16853e9a1eb2bb7cbb">D3D11context</a></td></tr>
-<tr class="separator:a973f662b6b428b16853e9a1eb2bb7cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1585beb0d6a31abca75387fd7962743c"><td class="memItemLeft" align="right" valign="top">IDXGIOutputDuplication *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a1585beb0d6a31abca75387fd7962743c">duplication</a></td></tr>
-<tr class="separator:a1585beb0d6a31abca75387fd7962743c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ebef6b13c3d4756f4f1f0de71229a7b"><td class="memItemLeft" align="right" valign="top">DXGI_OUTDUPL_FRAME_INFO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a6ebef6b13c3d4756f4f1f0de71229a7b">frame_info</a></td></tr>
-<tr class="separator:a6ebef6b13c3d4756f4f1f0de71229a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4e41a29ef72dba9c75e70a41cb80d82"><td class="memItemLeft" align="right" valign="top">DXGI_OUTDUPL_DESC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#aa4e41a29ef72dba9c75e70a41cb80d82">duplication_desc</a></td></tr>
-<tr class="separator:aa4e41a29ef72dba9c75e70a41cb80d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64ee073fbd22f7527d9e6224f33a76e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a64ee073fbd22f7527d9e6224f33a76e6">counter</a></td></tr>
-<tr class="separator:a64ee073fbd22f7527d9e6224f33a76e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2c17d01561072cc45142d873790c7f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#aa2c17d01561072cc45142d873790c7f0">width</a></td></tr>
 <tr class="separator:aa2c17d01561072cc45142d873790c7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434ce48f6bf02c758f551cda2ffdfe6e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a434ce48f6bf02c758f551cda2ffdfe6e">height</a></td></tr>
 <tr class="separator:a434ce48f6bf02c758f551cda2ffdfe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35716fa2587ecc62a1e4a01252849418"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a35716fa2587ecc62a1e4a01252849418">pitch</a></td></tr>
 <tr class="separator:a35716fa2587ecc62a1e4a01252849418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56f15ec7704de3bed4402e4c5487723e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a56f15ec7704de3bed4402e4c5487723e">frame_data</a></td></tr>
-<tr class="separator:a56f15ec7704de3bed4402e4c5487723e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10e28e39576bde33b71c4f7a4d0f3055"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structScreenshotContainer.html">ScreenshotContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a10e28e39576bde33b71c4f7a4d0f3055">screenshot</a></td></tr>
-<tr class="separator:a10e28e39576bde33b71c4f7a4d0f3055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36fa44a8adf191c61ded35ceb227378f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a36fa44a8adf191c61ded35ceb227378f">texture_on_gpu</a></td></tr>
-<tr class="separator:a36fa44a8adf191c61ded35ceb227378f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa55d5107b84425915be58fba7433ddcc"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structDisplayHardware.html">DisplayHardware</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#aa55d5107b84425915be58fba7433ddcc">hardware</a></td></tr>
-<tr class="separator:aa55d5107b84425915be58fba7433ddcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9dc74e3f09852b2ba6e590551ff7a91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#ad9dc74e3f09852b2ba6e590551ff7a91">released</a></td></tr>
-<tr class="separator:ad9dc74e3f09852b2ba6e590551ff7a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6a8b8d54484a1d9dcf7ba5cb393b1f6"><td class="memItemLeft" align="right" valign="top">MONITORINFOEXW&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#ad6a8b8d54484a1d9dcf7ba5cb393b1f6">monitorInfo</a></td></tr>
-<tr class="separator:ad6a8b8d54484a1d9dcf7ba5cb393b1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d79715c8323e9d3c34fc2419d54244d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a4d79715c8323e9d3c34fc2419d54244d">bitmap</a></td></tr>
-<tr class="separator:a4d79715c8323e9d3c34fc2419d54244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb67c4279feb337bb460b3c357389f3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#adb67c4279feb337bb460b3c357389f3f">using_nvidia</a></td></tr>
-<tr class="separator:adb67c4279feb337bb460b3c357389f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a104ec4caeeff674bc3e4476bca202c55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a104ec4caeeff674bc3e4476bca202c55">dxgi_cuda_available</a></td></tr>
-<tr class="separator:a104ec4caeeff674bc3e4476bca202c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c98177722c829280c8321793a269486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalRGBColor.html">FractalRGBColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a2c98177722c829280c8321793a269486">corner_color</a></td></tr>
-<tr class="separator:a2c98177722c829280c8321793a269486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36c4bc68cdade3387c5b56dffa79bae9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a36c4bc68cdade3387c5b56dffa79bae9">active_capture_device</a></td></tr>
-<tr class="separator:a36c4bc68cdade3387c5b56dffa79bae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd504789d9f86c8ca5f4364c098fbe61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#afd504789d9f86c8ca5f4364c098fbe61">last_capture_device</a></td></tr>
-<tr class="separator:afd504789d9f86c8ca5f4364c098fbe61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4206b5793183eaacb390eadb9893fcde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a4206b5793183eaacb390eadb9893fcde">pending_destruction</a></td></tr>
-<tr class="separator:a4206b5793183eaacb390eadb9893fcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b6b7d36e1d1da19604b7bc01eaeba42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">FractalThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a5b6b7d36e1d1da19604b7bc01eaeba42">nvidia_manager</a></td></tr>
-<tr class="separator:a5b6b7d36e1d1da19604b7bc01eaeba42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ede4e4802aded53053254de78e9449"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">FractalSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a58ede4e4802aded53053254de78e9449">nvidia_device_semaphore</a></td></tr>
-<tr class="separator:a58ede4e4802aded53053254de78e9449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d53ce2d38dafb711a77c682520b5ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a97d53ce2d38dafb711a77c682520b5ce">nvidia_context_is_stale</a></td></tr>
-<tr class="separator:a97d53ce2d38dafb711a77c682520b5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6800f23c51341920773e2dbaab517fe8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a6800f23c51341920773e2dbaab517fe8">frame_data</a></td></tr>
 <tr class="separator:a6800f23c51341920773e2dbaab517fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a25adf7669abcddbec4eca079d24429"><td class="memItemLeft" align="right" valign="top">Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a7a25adf7669abcddbec4eca079d24429">display</a></td></tr>
-<tr class="separator:a7a25adf7669abcddbec4eca079d24429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58a64d2acde2a80ff3cf0abce9e05f14"><td class="memItemLeft" align="right" valign="top">Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a58a64d2acde2a80ff3cf0abce9e05f14">root</a></td></tr>
-<tr class="separator:a58a64d2acde2a80ff3cf0abce9e05f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1fe3d2399c97e579b87111c696a10cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#af1fe3d2399c97e579b87111c696a10cb">nvidia_capture_device</a></td></tr>
-<tr class="separator:af1fe3d2399c97e579b87111c696a10cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5f90886ec7d4b671095a2f62a88f99e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#ac5f90886ec7d4b671095a2f62a88f99e">x11_capture_device</a></td></tr>
-<tr class="separator:ac5f90886ec7d4b671095a2f62a88f99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c98177722c829280c8321793a269486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalRGBColor.html">FractalRGBColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#a2c98177722c829280c8321793a269486">corner_color</a></td></tr>
+<tr class="separator:a2c98177722c829280c8321793a269486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7380b5b42caebd0a7401c17437d4ec2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCaptureDevice.html#ac7380b5b42caebd0a7401c17437d4ec2">internal</a></td></tr>
+<tr class="separator:ac7380b5b42caebd0a7401c17437d4ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Struct holding the global data needed for capturing: the type of capture device we are using, information necessary for resizing, and pointers to the specific capture devices. The implementations of the <a class="el" href="screencapture_8h.html" title="This file defines the proper header for capturing the screen depending.">screencapture.h</a> API internally decide what capture device to use. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a id="a36c4bc68cdade3387c5b56dffa79bae9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36c4bc68cdade3387c5b56dffa79bae9">&#9670;&nbsp;</a></span>active_capture_device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> CaptureDevice::active_capture_device</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4d79715c8323e9d3c34fc2419d54244d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d79715c8323e9d3c34fc2419d54244d">&#9670;&nbsp;</a></span>bitmap</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* CaptureDevice::bitmap</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae9fcde4b1986608dfca772fdf9fa01e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9fcde4b1986608dfca772fdf9fa01e1">&#9670;&nbsp;</a></span>Box</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">D3D11_BOX CaptureDevice::Box</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="a2c98177722c829280c8321793a269486"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c98177722c829280c8321793a269486">&#9670;&nbsp;</a></span>corner_color</h2>
 
@@ -217,154 +120,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a64ee073fbd22f7527d9e6224f33a76e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64ee073fbd22f7527d9e6224f33a76e6">&#9670;&nbsp;</a></span>counter</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int CaptureDevice::counter</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a973f662b6b428b16853e9a1eb2bb7cbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a973f662b6b428b16853e9a1eb2bb7cbb">&#9670;&nbsp;</a></span>D3D11context</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ID3D11DeviceContext* CaptureDevice::D3D11context</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab19dc55a0802e4854d4557cb3d77ab16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab19dc55a0802e4854d4557cb3d77ab16">&#9670;&nbsp;</a></span>D3D11device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ID3D11Device* CaptureDevice::D3D11device</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7a25adf7669abcddbec4eca079d24429"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a25adf7669abcddbec4eca079d24429">&#9670;&nbsp;</a></span>display</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Display* CaptureDevice::display</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1585beb0d6a31abca75387fd7962743c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1585beb0d6a31abca75387fd7962743c">&#9670;&nbsp;</a></span>duplication</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">IDXGIOutputDuplication* CaptureDevice::duplication</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa4e41a29ef72dba9c75e70a41cb80d82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4e41a29ef72dba9c75e70a41cb80d82">&#9670;&nbsp;</a></span>duplication_desc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DXGI_OUTDUPL_DESC CaptureDevice::duplication_desc</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a104ec4caeeff674bc3e4476bca202c55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a104ec4caeeff674bc3e4476bca202c55">&#9670;&nbsp;</a></span>dxgi_cuda_available</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CaptureDevice::dxgi_cuda_available</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a6800f23c51341920773e2dbaab517fe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6800f23c51341920773e2dbaab517fe8">&#9670;&nbsp;</a></span>frame_data <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6800f23c51341920773e2dbaab517fe8">&#9670;&nbsp;</a></span>frame_data</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void* CaptureDevice::frame_data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a56f15ec7704de3bed4402e4c5487723e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56f15ec7704de3bed4402e4c5487723e">&#9670;&nbsp;</a></span>frame_data <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* CaptureDevice::frame_data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6ebef6b13c3d4756f4f1f0de71229a7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ebef6b13c3d4756f4f1f0de71229a7b">&#9670;&nbsp;</a></span>frame_info</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DXGI_OUTDUPL_FRAME_INFO CaptureDevice::frame_info</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa55d5107b84425915be58fba7433ddcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa55d5107b84425915be58fba7433ddcc">&#9670;&nbsp;</a></span>hardware</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structDisplayHardware.html">DisplayHardware</a>* CaptureDevice::hardware</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -385,98 +148,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="afd504789d9f86c8ca5f4364c098fbe61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd504789d9f86c8ca5f4364c098fbe61">&#9670;&nbsp;</a></span>last_capture_device</h2>
+<a id="ac7380b5b42caebd0a7401c17437d4ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7380b5b42caebd0a7401c17437d4ec2">&#9670;&nbsp;</a></span>internal</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> CaptureDevice::last_capture_device</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad6a8b8d54484a1d9dcf7ba5cb393b1f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6a8b8d54484a1d9dcf7ba5cb393b1f6">&#9670;&nbsp;</a></span>monitorInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MONITORINFOEXW CaptureDevice::monitorInfo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af1fe3d2399c97e579b87111c696a10cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1fe3d2399c97e579b87111c696a10cb">&#9670;&nbsp;</a></span>nvidia_capture_device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a>* CaptureDevice::nvidia_capture_device</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a97d53ce2d38dafb711a77c682520b5ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97d53ce2d38dafb711a77c682520b5ce">&#9670;&nbsp;</a></span>nvidia_context_is_stale</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CaptureDevice::nvidia_context_is_stale</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58ede4e4802aded53053254de78e9449"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58ede4e4802aded53053254de78e9449">&#9670;&nbsp;</a></span>nvidia_device_semaphore</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">FractalSemaphore</a> CaptureDevice::nvidia_device_semaphore</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5b6b7d36e1d1da19604b7bc01eaeba42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b6b7d36e1d1da19604b7bc01eaeba42">&#9670;&nbsp;</a></span>nvidia_manager</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">FractalThread</a> CaptureDevice::nvidia_manager</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4206b5793183eaacb390eadb9893fcde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4206b5793183eaacb390eadb9893fcde">&#9670;&nbsp;</a></span>pending_destruction</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CaptureDevice::pending_destruction</td>
+          <td class="memname">void* CaptureDevice::internal</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -497,76 +176,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9dc74e3f09852b2ba6e590551ff7a91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9dc74e3f09852b2ba6e590551ff7a91">&#9670;&nbsp;</a></span>released</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CaptureDevice::released</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58a64d2acde2a80ff3cf0abce9e05f14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58a64d2acde2a80ff3cf0abce9e05f14">&#9670;&nbsp;</a></span>root</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Window CaptureDevice::root</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a10e28e39576bde33b71c4f7a4d0f3055"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10e28e39576bde33b71c4f7a4d0f3055">&#9670;&nbsp;</a></span>screenshot</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structScreenshotContainer.html">ScreenshotContainer</a> CaptureDevice::screenshot</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a36fa44a8adf191c61ded35ceb227378f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36fa44a8adf191c61ded35ceb227378f">&#9670;&nbsp;</a></span>texture_on_gpu</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CaptureDevice::texture_on_gpu</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adb67c4279feb337bb460b3c357389f3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb67c4279feb337bb460b3c357389f3f">&#9670;&nbsp;</a></span>using_nvidia</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CaptureDevice::using_nvidia</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa2c17d01561072cc45142d873790c7f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2c17d01561072cc45142d873790c7f0">&#9670;&nbsp;</a></span>width</h2>
 
@@ -581,23 +190,8 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ac5f90886ec7d4b671095a2f62a88f99e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5f90886ec7d4b671095a2f62a88f99e">&#9670;&nbsp;</a></span>x11_capture_device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a>* CaptureDevice::x11_capture_device</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li>fractal/video/<a class="el" href="dxgicapture_8h_source.html">dxgicapture.h</a></li>
-<li>fractal/video/<a class="el" href="linuxcapture_8h_source.html">linuxcapture.h</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>fractal/video/capture/<a class="el" href="capture_8h_source.html">capture.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

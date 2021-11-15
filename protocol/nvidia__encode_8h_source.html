@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/video/nvidia_encode.h Source File</title>
+<title>Whist Protocol: fractal/video/codec/nvidia_encode.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,10 +88,10 @@ $(document).ready(function(){initNavTree('nvidia__encode_8h_source.html',''); in
 <a href="nvidia__encode_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NVIDIA_ENCODE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define NVIDIA_ENCODE_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;nvidia-linux/NvFBCUtils.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;nvidia-linux/nvEncodeAPI.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../nvidia-linux/NvFBCUtils.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../nvidia-linux/nvEncodeAPI.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fractal_8h.html">fractal/core/fractal.h</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cudacontext_8h.html">cudacontext.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../cudacontext.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="nvidia__encode_8h.html#a4f0d768789134574390c824762f76180">    9</a></span>&#160;<span class="preprocessor">#define RESOURCE_CACHE_SIZE 4</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
@@ -149,11 +149,11 @@ $(document).ready(function(){initNavTree('nvidia__encode_8h_source.html',''); in
 <div class="ttc" id="afractal_8h_html"><div class="ttname"><a href="fractal_8h.html">fractal.h</a></div><div class="ttdoc">This file contains the core of Whist custom structs and definitions used throughout.</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html_abf286092a0fcee802960d70b27e32bbf"><div class="ttname"><a href="structNvidiaEncoder.html#abf286092a0fcee802960d70b27e32bbf">NvidiaEncoder::codec_type</a></div><div class="ttdeci">CodecType codec_type</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:31</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html_aeb87ea17f895dcd52cb50ec08a000c7d"><div class="ttname"><a href="structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d">NvidiaEncoder::registered_resource</a></div><div class="ttdeci">RegisteredResource registered_resource</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:26</div></div>
-<div class="ttc" id="afractal_8h_html_a405cbf3c7e9ae25dc03ad4fcf563f600"><div class="ttname"><a href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></div><div class="ttdeci">CaptureDeviceType</div><div class="ttdoc">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option ...</div><div class="ttdef"><b>Definition:</b> fractal.h:226</div></div>
+<div class="ttc" id="afractal_8h_html_a405cbf3c7e9ae25dc03ad4fcf563f600"><div class="ttname"><a href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></div><div class="ttdeci">CaptureDeviceType</div><div class="ttdoc">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option ...</div><div class="ttdef"><b>Definition:</b> fractal.h:225</div></div>
 <div class="ttc" id="anvidia__encode_8h_html_a2652e81003368f8bf0501290ac82bfe8"><div class="ttname"><a href="nvidia__encode_8h.html#a2652e81003368f8bf0501290ac82bfe8">create_nvidia_encoder</a></div><div class="ttdeci">NvidiaEncoder * create_nvidia_encoder(int bitrate, CodecType codec, int out_width, int out_height, CUcontext cuda_context)</div><div class="ttdoc">Will create a new nvidia encoder.</div><div class="ttdef"><b>Definition:</b> nvidia_encode.c:43</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html_ab6ff6d04caf3808c3b36c871fdc87709"><div class="ttname"><a href="structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709">NvidiaEncoder::wants_iframe</a></div><div class="ttdeci">bool wants_iframe</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:37</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html_a955fc9b03169bd06a8bdc33f366e916b"><div class="ttname"><a href="structNvidiaEncoder.html#a955fc9b03169bd06a8bdc33f366e916b">NvidiaEncoder::frame_size</a></div><div class="ttdeci">unsigned int frame_size</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:40</div></div>
-<div class="ttc" id="afractal_8h_html_a03b4b6ae5fb82af68d46aaea3d3e4d79"><div class="ttname"><a href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a></div><div class="ttdeci">CodecType</div><div class="ttdoc">Codec types.</div><div class="ttdef"><b>Definition:</b> fractal.h:215</div></div>
+<div class="ttc" id="afractal_8h_html_a03b4b6ae5fb82af68d46aaea3d3e4d79"><div class="ttname"><a href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a></div><div class="ttdeci">CodecType</div><div class="ttdoc">Codec types.</div><div class="ttdef"><b>Definition:</b> fractal.h:214</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html_a1c0e30efa3e1851f4fa9f733d0a0de7f"><div class="ttname"><a href="structNvidiaEncoder.html#a1c0e30efa3e1851f4fa9f733d0a0de7f">NvidiaEncoder::frame_idx</a></div><div class="ttdeci">uint32_t frame_idx</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:33</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html_aca8c6a0ee6dd4730e5ac54f0de5d9e26"><div class="ttname"><a href="structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26">NvidiaEncoder::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:35</div></div>
 <div class="ttc" id="astructRegisteredResource_html_a4d549b8fc69a8bce4e28a6f9a16129be"><div class="ttname"><a href="structRegisteredResource.html#a4d549b8fc69a8bce4e28a6f9a16129be">RegisteredResource::texture_pointer</a></div><div class="ttdeci">void * texture_pointer</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:17</div></div>
@@ -170,7 +170,6 @@ $(document).ready(function(){initNavTree('nvidia__encode_8h_source.html',''); in
 <div class="ttc" id="astructNvidiaEncoder_html_a6148961323d7c225188fecad61d2358d"><div class="ttname"><a href="structNvidiaEncoder.html#a6148961323d7c225188fecad61d2358d">NvidiaEncoder::bitrate</a></div><div class="ttdeci">int bitrate</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:32</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html_afbe001a4f0eb9ff627a8e8c27a0a8015"><div class="ttname"><a href="structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015">NvidiaEncoder::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:34</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html_aa54fc34114bd9f8f7521bccde9760418"><div class="ttname"><a href="structNvidiaEncoder.html#aa54fc34114bd9f8f7521bccde9760418">NvidiaEncoder::frame</a></div><div class="ttdeci">void * frame</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:39</div></div>
-<div class="ttc" id="acudacontext_8h_html"><div class="ttname"><a href="cudacontext_8h.html">cudacontext.h</a></div></div>
 <div class="ttc" id="astructRegisteredResource_html_a364758c77b0b72cabc4e4b9d72fb03e5"><div class="ttname"><a href="structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5">RegisteredResource::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:15</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html_a06296d7cd4eeb1ebd1086523a45b1a41"><div class="ttname"><a href="structNvidiaEncoder.html#a06296d7cd4eeb1ebd1086523a45b1a41">NvidiaEncoder::p_enc_fn</a></div><div class="ttdeci">NV_ENCODE_API_FUNCTION_LIST p_enc_fn</div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:21</div></div>
 <div class="ttc" id="astructNvidiaEncoder_html"><div class="ttname"><a href="structNvidiaEncoder.html">NvidiaEncoder</a></div><div class="ttdef"><b>Definition:</b> nvidia_encode.h:20</div></div>
@@ -183,7 +182,7 @@ $(document).ready(function(){initNavTree('nvidia__encode_8h_source.html',''); in
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="nvidia__encode_8h.html">nvidia_encode.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="nvidia__encode_8h.html">nvidia_encode.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

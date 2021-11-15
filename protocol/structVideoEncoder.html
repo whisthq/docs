@@ -91,17 +91,17 @@ $(document).ready(function(){initNavTree('structVideoEncoder.html',''); initResi
 <p>Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + frame metadata needed for sending encoded frames to the client. We default to using the Nvidia encoder, and fall back to the FFmpeg encoder if that fails.  
  <a href="structVideoEncoder.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="videoencode_8h_source.html">videoencode.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="encode_8h_source.html">encode.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:adb457706b572dcd6b81eeecc250b3e3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#adb457706b572dcd6b81eeecc250b3e3f">active_encoder_idx</a></td></tr>
 <tr class="separator:adb457706b572dcd6b81eeecc250b3e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9975e772b1f1916ed1aa99f82ca8b065"><td class="memItemLeft" align="right" valign="top"><a class="el" href="videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a9975e772b1f1916ed1aa99f82ca8b065">active_encoder</a></td></tr>
+<tr class="memitem:a9975e772b1f1916ed1aa99f82ca8b065"><td class="memItemLeft" align="right" valign="top"><a class="el" href="encode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a9975e772b1f1916ed1aa99f82ca8b065">active_encoder</a></td></tr>
 <tr class="separator:a9975e772b1f1916ed1aa99f82ca8b065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20b578a3610dce40aef2d04397bd7744"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a20b578a3610dce40aef2d04397bd7744">num_packets</a></td></tr>
 <tr class="separator:a20b578a3610dce40aef2d04397bd7744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b58cbbd0779fa34f6a4469eef21d112"><td class="memItemLeft" align="right" valign="top">AVPacket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a7b58cbbd0779fa34f6a4469eef21d112">packets</a> [<a class="el" href="videoencode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a>]</td></tr>
+<tr class="memitem:a7b58cbbd0779fa34f6a4469eef21d112"><td class="memItemLeft" align="right" valign="top">AVPacket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a7b58cbbd0779fa34f6a4469eef21d112">packets</a> [<a class="el" href="encode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a>]</td></tr>
 <tr class="separator:a7b58cbbd0779fa34f6a4469eef21d112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580791874e935338868c45c242b1b4e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a580791874e935338868c45c242b1b4e0">in_width</a></td></tr>
 <tr class="separator:a580791874e935338868c45c242b1b4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,7 +118,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a53618bc02044fef89a820bab1e2a1ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9">codec_type</a></td></tr>
 <tr class="memdesc:a53618bc02044fef89a820bab1e2a1ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt;size of encoded frame in bytes  <a href="structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9">More...</a><br /></td></tr>
 <tr class="separator:a53618bc02044fef89a820bab1e2a1ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af56f705c8349a76f221e7b09c4316d17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#af56f705c8349a76f221e7b09c4316d17">nvidia_encoders</a> [<a class="el" href="videoencode_8h.html#ae929ca78c731b77fe6f5bb516d9a9cfc">NUM_ENCODERS</a>]</td></tr>
+<tr class="memitem:af56f705c8349a76f221e7b09c4316d17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#af56f705c8349a76f221e7b09c4316d17">nvidia_encoders</a> [<a class="el" href="encode_8h.html#ae929ca78c731b77fe6f5bb516d9a9cfc">NUM_ENCODERS</a>]</td></tr>
 <tr class="separator:af56f705c8349a76f221e7b09c4316d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9307f198076d55ba94d55ab275c2c7d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7">ffmpeg_encoder</a></td></tr>
 <tr class="separator:a9307f198076d55ba94d55ab275c2c7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +133,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a> VideoEncoder::active_encoder</td>
+          <td class="memname"><a class="el" href="encode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a> VideoEncoder::active_encoder</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -261,7 +261,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a>* VideoEncoder::nvidia_encoders[<a class="el" href="videoencode_8h.html#ae929ca78c731b77fe6f5bb516d9a9cfc">NUM_ENCODERS</a>]</td>
+          <td class="memname"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a>* VideoEncoder::nvidia_encoders[<a class="el" href="encode_8h.html#ae929ca78c731b77fe6f5bb516d9a9cfc">NUM_ENCODERS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -303,7 +303,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AVPacket VideoEncoder::packets[<a class="el" href="videoencode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a>]</td>
+          <td class="memname">AVPacket VideoEncoder::packets[<a class="el" href="encode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,7 +311,7 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>fractal/video/<a class="el" href="videoencode_8h_source.html">videoencode.h</a></li>
+<li>fractal/video/codec/<a class="el" href="encode_8h_source.html">encode.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

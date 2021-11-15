@@ -1,27 +1,9 @@
 var dir_1f883672603d7d4f5b9de53c12fbfed0 =
 [
+    [ "capture", "dir_c68b84a95155b43b9b365380c19f666b.html", "dir_c68b84a95155b43b9b365380c19f666b" ],
+    [ "codec", "dir_b9b700e18727e46fa49505d4e021260b.html", "dir_b9b700e18727e46fa49505d4e021260b" ],
     [ "cudacontext.c", "cudacontext_8c.html", "cudacontext_8c" ],
     [ "cudacontext.h", "cudacontext_8h.html", "cudacontext_8h" ],
-    [ "dxgicapture.c", "dxgicapture_8c.html", "dxgicapture_8c" ],
-    [ "dxgicapture.h", "dxgicapture_8h.html", "dxgicapture_8h" ],
-    [ "dxgicudatransfercapture.h", "dxgicudatransfercapture_8h.html", "dxgicudatransfercapture_8h" ],
-    [ "ffmpeg_encode.c", "ffmpeg__encode_8c.html", "ffmpeg__encode_8c" ],
-    [ "ffmpeg_encode.h", "ffmpeg__encode_8h.html", "ffmpeg__encode_8h" ],
-    [ "linuxcapture.c", "linuxcapture_8c.html", "linuxcapture_8c" ],
-    [ "linuxcapture.h", "linuxcapture_8h.html", "linuxcapture_8h" ],
-    [ "nvidia_encode.c", "nvidia__encode_8c.html", "nvidia__encode_8c" ],
-    [ "nvidia_encode.h", "nvidia__encode_8h.html", "nvidia__encode_8h" ],
-    [ "nvidiacapture.c", "nvidiacapture_8c.html", "nvidiacapture_8c" ],
-    [ "nvidiacapture.h", "nvidiacapture_8h.html", "nvidiacapture_8h" ],
-    [ "nvidiatransfercapture.c", "nvidiatransfercapture_8c.html", "nvidiatransfercapture_8c" ],
-    [ "nvidiatransfercapture.h", "nvidiatransfercapture_8h.html", "nvidiatransfercapture_8h" ],
-    [ "screencapture.h", "screencapture_8h.html", "screencapture_8h" ],
     [ "transfercapture.c", "transfercapture_8c.html", "transfercapture_8c" ],
-    [ "transfercapture.h", "transfercapture_8h.html", "transfercapture_8h" ],
-    [ "videodecode.c", "videodecode_8c.html", "videodecode_8c" ],
-    [ "videodecode.h", "videodecode_8h.html", "videodecode_8h" ],
-    [ "videoencode.c", "videoencode_8c.html", "videoencode_8c" ],
-    [ "videoencode.h", "videoencode_8h.html", "videoencode_8h" ],
-    [ "x11capture.c", "x11capture_8c.html", "x11capture_8c" ],
-    [ "x11capture.h", "x11capture_8h.html", "x11capture_8h" ]
+    [ "transfercapture.h", "transfercapture_8h.html", "transfercapture_8h" ]
 ];

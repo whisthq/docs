@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/video/screencapture.h File Reference</title>
+<title>Whist Protocol: fractal/video/capture/windowscapture.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('screencapture_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('windowscapture_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,48 +84,31 @@ $(document).ready(function(){initNavTree('screencapture_8h.html',''); initResiza
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">screencapture.h File Reference</div>  </div>
+<div class="title">windowscapture.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This file defines the proper header for capturing the screen depending.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="linuxcapture_8h_source.html">linuxcapture.h</a>&quot;</code><br />
-</div>
-<p><a href="screencapture_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="capture_8h_source.html">capture.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">fractal/logging/logging.h</a>&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#aa962953cfc3fdb9ed34703ab4a9afe42">create_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
-<tr class="memdesc:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a screen capture device.  <a href="screencapture_8h.html#aa962953cfc3fdb9ed34703ab4a9afe42">More...</a><br /></td></tr>
+<tr class="memitem:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="windowscapture_8c.html#aa962953cfc3fdb9ed34703ab4a9afe42">create_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
+<tr class="memdesc:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a screen capture device.  <a href="windowscapture_8c.html#aa962953cfc3fdb9ed34703ab4a9afe42">More...</a><br /></td></tr>
 <tr class="separator:aa962953cfc3fdb9ed34703ab4a9afe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4f4d646d67a79cd2f4fe8fd487c7dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#a4d4f4d646d67a79cd2f4fe8fd487c7dc">reconfigure_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
-<tr class="memdesc:a4d4f4d646d67a79cd2f4fe8fd487c7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to reconfigure the capture device using the newly provided parameters.  <a href="screencapture_8h.html#a4d4f4d646d67a79cd2f4fe8fd487c7dc">More...</a><br /></td></tr>
+<tr class="memitem:a4d4f4d646d67a79cd2f4fe8fd487c7dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="windowscapture_8c.html#a4d4f4d646d67a79cd2f4fe8fd487c7dc">reconfigure_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
+<tr class="memdesc:a4d4f4d646d67a79cd2f4fe8fd487c7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to reconfigure the capture device using the newly provided parameters.  <a href="windowscapture_8c.html#a4d4f4d646d67a79cd2f4fe8fd487c7dc">More...</a><br /></td></tr>
 <tr class="separator:a4d4f4d646d67a79cd2f4fe8fd487c7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9fc9ee2cc0effcb8b75c06d860ef4b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#af9fc9ee2cc0effcb8b75c06d860ef4b7">update_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
-<tr class="separator:af9fc9ee2cc0effcb8b75c06d860ef4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acddcc3aa008273807b931fbd1fd2a0bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#acddcc3aa008273807b931fbd1fd2a0bf">capture_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:acddcc3aa008273807b931fbd1fd2a0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture a bitmap snapshot of the screen The width/height of the image is guaranteed to be the width/height passed into create_/reconfigure_ capture device, If the screen dimensions changed, then -1 will be returned.  <a href="screencapture_8h.html#acddcc3aa008273807b931fbd1fd2a0bf">More...</a><br /></td></tr>
+<tr class="memitem:acddcc3aa008273807b931fbd1fd2a0bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="windowscapture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf">capture_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:acddcc3aa008273807b931fbd1fd2a0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture a bitmap snapshot of the screen The width/height of the image is guaranteed to be the width/height passed into create_/reconfigure_ capture device, If the screen dimensions changed, then -1 will be returned.  <a href="windowscapture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf">More...</a><br /></td></tr>
 <tr class="separator:acddcc3aa008273807b931fbd1fd2a0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a837679835044596e8d0d22aca5756b03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#a837679835044596e8d0d22aca5756b03">transfer_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:a837679835044596e8d0d22aca5756b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers screen capture to CPU buffer This is used if all attempts of a hardware screen transfer have failed.  <a href="screencapture_8h.html#a837679835044596e8d0d22aca5756b03">More...</a><br /></td></tr>
+<tr class="memitem:a837679835044596e8d0d22aca5756b03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="windowscapture_8c.html#a837679835044596e8d0d22aca5756b03">transfer_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:a837679835044596e8d0d22aca5756b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers screen capture to CPU buffer This is used if all attempts of a hardware screen transfer have failed.  <a href="windowscapture_8c.html#a837679835044596e8d0d22aca5756b03">More...</a><br /></td></tr>
 <tr class="separator:a837679835044596e8d0d22aca5756b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad85f68930fed4c454c1e4f8def286cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#aad85f68930fed4c454c1e4f8def286cf">release_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:aad85f68930fed4c454c1e4f8def286cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a captured screen bitmap snapshot.  <a href="screencapture_8h.html#aad85f68930fed4c454c1e4f8def286cf">More...</a><br /></td></tr>
-<tr class="separator:aad85f68930fed4c454c1e4f8def286cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screencapture_8h.html#abbd0ff16d9ee7c3353340b1d2529f8c7">destroy_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys and frees the memory of a capture device.  <a href="screencapture_8h.html#abbd0ff16d9ee7c3353340b1d2529f8c7">More...</a><br /></td></tr>
+<tr class="memitem:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="windowscapture_8c.html#abbd0ff16d9ee7c3353340b1d2529f8c7">destroy_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys and frees the memory of a capture device.  <a href="windowscapture_8c.html#abbd0ff16d9ee7c3353340b1d2529f8c7">More...</a><br /></td></tr>
 <tr class="separator:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file defines the proper header for capturing the screen depending. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
-<h1><a class="anchor" id="autotoc_md244"></a>
-on the local OS.</h1>
-<h1><a class="anchor" id="autotoc_md245"></a>
-Usage</h1>
-<p>Toggles automatically between the screen capture files based on OS. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="acddcc3aa008273807b931fbd1fd2a0bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acddcc3aa008273807b931fbd1fd2a0bf">&#9670;&nbsp;</a></span>capture_screen()</h2>
 
@@ -283,32 +266,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aad85f68930fed4c454c1e4f8def286cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad85f68930fed4c454c1e4f8def286cf">&#9670;&nbsp;</a></span>release_screen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void release_screen </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Release a captured screen bitmap snapshot. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>The capture device holding the screen object captured </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a837679835044596e8d0d22aca5756b03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a837679835044596e8d0d22aca5756b03">&#9670;&nbsp;</a></span>transfer_screen()</h2>
 
@@ -336,52 +293,12 @@ Usage</h1>
 
 </div>
 </div>
-<a id="af9fc9ee2cc0effcb8b75c06d860ef4b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9fc9ee2cc0effcb8b75c06d860ef4b7">&#9670;&nbsp;</a></span>update_capture_device()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int update_capture_device </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>dpi</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="screencapture_8h.html">screencapture.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_c68b84a95155b43b9b365380c19f666b.html">capture</a></li><li class="navelem"><a class="el" href="windowscapture_8c.html">windowscapture.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

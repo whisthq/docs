@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/video/videodecode.c File Reference</title>
+<title>Whist Protocol: fractal/video/codec/decode.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('videodecode_8c.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -86,65 +86,65 @@ $(document).ready(function(){initNavTree('videodecode_8c.html',''); initResizabl
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">videodecode.c File Reference</div>  </div>
+<div class="title">decode.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>This file contains the code to create a video decoder and use that.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="videodecode_8h_source.html">videodecode.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="decode_8h_source.html">decode.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">fractal/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab9604aff2a5d55f9963036a266e1eb91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#ab9604aff2a5d55f9963036a266e1eb91">SHOW_DECODER_LOGS</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memitem:ab9604aff2a5d55f9963036a266e1eb91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ab9604aff2a5d55f9963036a266e1eb91">SHOW_DECODER_LOGS</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:ab9604aff2a5d55f9963036a266e1eb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab22f9042c8cab794fbf43ab56b286d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#ab22f9042c8cab794fbf43ab56b286d2d">NUM_DECODER_TYPES</a>&#160;&#160;&#160;(sizeof(<a class="el" href="videodecode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>) / sizeof(<a class="el" href="videodecode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>[0]))</td></tr>
+<tr class="memitem:ab22f9042c8cab794fbf43ab56b286d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ab22f9042c8cab794fbf43ab56b286d2d">NUM_DECODER_TYPES</a>&#160;&#160;&#160;(sizeof(<a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>) / sizeof(<a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>[0]))</td></tr>
 <tr class="separator:ab22f9042c8cab794fbf43ab56b286d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acc3d03227fdb2a0b9281d06a18fac9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#acc3d03227fdb2a0b9281d06a18fac9de">set_decoder_opts</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
+<tr class="memitem:acc3d03227fdb2a0b9281d06a18fac9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#acc3d03227fdb2a0b9281d06a18fac9de">set_decoder_opts</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="separator:acc3d03227fdb2a0b9281d06a18fac9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecbd5bf901b4689e39c2b50406bde3f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#aecbd5bf901b4689e39c2b50406bde3f1">hw_decoder_init</a> (AVCodecContext *ctx, const enum AVHWDeviceType type)</td></tr>
+<tr class="memitem:aecbd5bf901b4689e39c2b50406bde3f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#aecbd5bf901b4689e39c2b50406bde3f1">hw_decoder_init</a> (AVCodecContext *ctx, const enum AVHWDeviceType type)</td></tr>
 <tr class="separator:aecbd5bf901b4689e39c2b50406bde3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190657db24a19ecbc06305a156c2f1ca"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#a190657db24a19ecbc06305a156c2f1ca">match_format</a> (AVCodecContext *ctx, const enum AVPixelFormat *pix_fmts, enum AVPixelFormat match_pix_fmt)</td></tr>
+<tr class="memitem:a190657db24a19ecbc06305a156c2f1ca"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a190657db24a19ecbc06305a156c2f1ca">match_format</a> (AVCodecContext *ctx, const enum AVPixelFormat *pix_fmts, enum AVPixelFormat match_pix_fmt)</td></tr>
 <tr class="separator:a190657db24a19ecbc06305a156c2f1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62f833af702daca27e921024987fb3a5"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#a62f833af702daca27e921024987fb3a5">get_format</a> (AVCodecContext *ctx, const enum AVPixelFormat *pix_fmts)</td></tr>
+<tr class="memitem:a62f833af702daca27e921024987fb3a5"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a62f833af702daca27e921024987fb3a5">get_format</a> (AVCodecContext *ctx, const enum AVPixelFormat *pix_fmts)</td></tr>
 <tr class="separator:a62f833af702daca27e921024987fb3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52410082c8bdc9b39a7d8df228c7caf3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#a52410082c8bdc9b39a7d8df228c7caf3">try_setup_video_decoder</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
+<tr class="memitem:a52410082c8bdc9b39a7d8df228c7caf3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a52410082c8bdc9b39a7d8df228c7caf3">try_setup_video_decoder</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="separator:a52410082c8bdc9b39a7d8df228c7caf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a300fe3797438293a2f86900366f062dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#a300fe3797438293a2f86900366f062dd">destroy_video_decoder_members</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
+<tr class="memitem:a300fe3797438293a2f86900366f062dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a300fe3797438293a2f86900366f062dd">destroy_video_decoder_members</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="separator:a300fe3797438293a2f86900366f062dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ccfebe79578d850afc048e916aba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#a20ccfebe79578d850afc048e916aba50">create_video_decoder</a> (int width, int height, bool use_hardware, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
-<tr class="memdesc:a20ccfebe79578d850afc048e916aba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the FFmpeg H264 or H265 video decoder, and set the proper video parameters for receiving from the server.  <a href="videodecode_8c.html#a20ccfebe79578d850afc048e916aba50">More...</a><br /></td></tr>
+<tr class="memitem:a20ccfebe79578d850afc048e916aba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">create_video_decoder</a> (int width, int height, bool use_hardware, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
+<tr class="memdesc:a20ccfebe79578d850afc048e916aba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the FFmpeg H264 or H265 video decoder, and set the proper video parameters for receiving from the server.  <a href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">More...</a><br /></td></tr>
 <tr class="separator:a20ccfebe79578d850afc048e916aba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49c422905662783d02130286cc73b8ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#a49c422905662783d02130286cc73b8ea">destroy_video_decoder</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
-<tr class="memdesc:a49c422905662783d02130286cc73b8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an initialized FFmpeg video decoder and frees its memory.  <a href="videodecode_8c.html#a49c422905662783d02130286cc73b8ea">More...</a><br /></td></tr>
+<tr class="memitem:a49c422905662783d02130286cc73b8ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a49c422905662783d02130286cc73b8ea">destroy_video_decoder</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
+<tr class="memdesc:a49c422905662783d02130286cc73b8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an initialized FFmpeg video decoder and frees its memory.  <a href="decode_8c.html#a49c422905662783d02130286cc73b8ea">More...</a><br /></td></tr>
 <tr class="separator:a49c422905662783d02130286cc73b8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0a703f38ea832b5b5186b309499dc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#a4d0a703f38ea832b5b5186b309499dc8">video_decoder_send_packets</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, int buffer_size)</td></tr>
-<tr class="memdesc:a4d0a703f38ea832b5b5186b309499dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the packets contained in buffer into the decoder.  <a href="videodecode_8c.html#a4d0a703f38ea832b5b5186b309499dc8">More...</a><br /></td></tr>
+<tr class="memitem:a4d0a703f38ea832b5b5186b309499dc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a4d0a703f38ea832b5b5186b309499dc8">video_decoder_send_packets</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, int buffer_size)</td></tr>
+<tr class="memdesc:a4d0a703f38ea832b5b5186b309499dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the packets contained in buffer into the decoder.  <a href="decode_8c.html#a4d0a703f38ea832b5b5186b309499dc8">More...</a><br /></td></tr>
 <tr class="separator:a4d0a703f38ea832b5b5186b309499dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac97bfc32b5f8336fe1de7829e9ded566"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#ac97bfc32b5f8336fe1de7829e9ded566">video_decoder_get_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
-<tr class="memdesc:ac97bfc32b5f8336fe1de7829e9ded566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next decoded frame from the decoder, which will be placed in decoder-&gt;sw_frame.  <a href="videodecode_8c.html#ac97bfc32b5f8336fe1de7829e9ded566">More...</a><br /></td></tr>
+<tr class="memitem:ac97bfc32b5f8336fe1de7829e9ded566"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ac97bfc32b5f8336fe1de7829e9ded566">video_decoder_get_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
+<tr class="memdesc:ac97bfc32b5f8336fe1de7829e9ded566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next decoded frame from the decoder, which will be placed in decoder-&gt;sw_frame.  <a href="decode_8c.html#ac97bfc32b5f8336fe1de7829e9ded566">More...</a><br /></td></tr>
 <tr class="separator:ac97bfc32b5f8336fe1de7829e9ded566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4190e21d736599dcdbda2180df6d3ff7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#a4190e21d736599dcdbda2180df6d3ff7">video_decoder_decode</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, int buffer_size)</td></tr>
-<tr class="memdesc:a4190e21d736599dcdbda2180df6d3ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a compressed video frame using the FFmpeg decoder.  <a href="videodecode_8c.html#a4190e21d736599dcdbda2180df6d3ff7">More...</a><br /></td></tr>
+<tr class="memitem:a4190e21d736599dcdbda2180df6d3ff7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a4190e21d736599dcdbda2180df6d3ff7">video_decoder_decode</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, int buffer_size)</td></tr>
+<tr class="memdesc:a4190e21d736599dcdbda2180df6d3ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a compressed video frame using the FFmpeg decoder.  <a href="decode_8c.html#a4190e21d736599dcdbda2180df6d3ff7">More...</a><br /></td></tr>
 <tr class="separator:a4190e21d736599dcdbda2180df6d3ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac8c9bf0bd41abed7a451183729ea39a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="videodecode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videodecode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a> [] = { <a class="el" href="videodecode_8h.html#a9262b421a57418a04c809f94041b2f9bac43764b121b87a7d5492c657e5796ab1">DECODE_TYPE_SOFTWARE</a>}</td></tr>
+<tr class="memitem:ac8c9bf0bd41abed7a451183729ea39a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a> [] = { <a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9bac43764b121b87a7d5492c657e5796ab1">DECODE_TYPE_SOFTWARE</a>}</td></tr>
 <tr class="separator:ac8c9bf0bd41abed7a451183729ea39a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code to create a video decoder and use that. </p>
 <p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
-<h1><a class="anchor" id="autotoc_md248"></a>
+<h1><a class="anchor" id="autotoc_md234"></a>
 decoder to decode frames.</h1>
-<h1><a class="anchor" id="autotoc_md249"></a>
+<h1><a class="anchor" id="autotoc_md235"></a>
 Usage</h1>
 <p>Video is decoded from H264 via ffmpeg; H265 is supported, but not currently used. Hardware-accelerated decoders are given priority, but if those fail, we decode on the CPU. All frames are eventually moved to the CPU for scaling and color conversion. Create a decoder via create_video_decoder. To decode a frame, call video_decoder_decode on the decoder and the encoded packets. To destroy the decoder when finished, destroy the encoder using video_decoder_decode. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -155,7 +155,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NUM_DECODER_TYPES&#160;&#160;&#160;(sizeof(<a class="el" href="videodecode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>) / sizeof(<a class="el" href="videodecode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>[0]))</td>
+          <td class="memname">#define NUM_DECODER_TYPES&#160;&#160;&#160;(sizeof(<a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>) / sizeof(<a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>[0]))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -524,7 +524,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="videodecode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a> decoder_precedence[] = { <a class="el" href="videodecode_8h.html#a9262b421a57418a04c809f94041b2f9bac43764b121b87a7d5492c657e5796ab1">DECODE_TYPE_SOFTWARE</a>}</td>
+          <td class="memname"><a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a> decoder_precedence[] = { <a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9bac43764b121b87a7d5492c657e5796ab1">DECODE_TYPE_SOFTWARE</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -536,7 +536,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="videodecode_8c.html">videodecode.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="decode_8c.html">decode.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

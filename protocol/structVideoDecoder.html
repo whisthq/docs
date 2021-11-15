@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('structVideoDecoder.html',''); initResi
 <p>Struct for decoding frames via ffmpeg. Decoding is handled by the codec and context, and after decoding finishes, the decoded frame will be in sw_frame, regardless of whether or not we used hardware-accelerated decoding.  
  <a href="structVideoDecoder.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="videodecode_8h_source.html">videodecode.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="decode_8h_source.html">decode.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -111,11 +111,11 @@ Data Fields</h2></td></tr>
 <tr class="separator:a3c25b61f5b35540514b80b3120cb6516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaa22ea0c3bd326be6742c450c0e10a6"><td class="memItemLeft" align="right" valign="top">AVBufferRef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#aeaa22ea0c3bd326be6742c450c0e10a6">ref</a></td></tr>
 <tr class="separator:aeaa22ea0c3bd326be6742c450c0e10a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f8e3f82f466acb503f53aedbf14065"><td class="memItemLeft" align="right" valign="top">AVPacket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a19f8e3f82f466acb503f53aedbf14065">packets</a> [<a class="el" href="videodecode_8h.html#adf1d7affd1d88117eaf1c0942a3a0222">MAX_ENCODED_VIDEO_PACKETS</a>]</td></tr>
+<tr class="memitem:a19f8e3f82f466acb503f53aedbf14065"><td class="memItemLeft" align="right" valign="top">AVPacket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a19f8e3f82f466acb503f53aedbf14065">packets</a> [<a class="el" href="decode_8h.html#adf1d7affd1d88117eaf1c0942a3a0222">MAX_ENCODED_VIDEO_PACKETS</a>]</td></tr>
 <tr class="separator:a19f8e3f82f466acb503f53aedbf14065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a30f5137d2829eeb2ee326700b52f0"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a82a30f5137d2829eeb2ee326700b52f0">match_fmt</a></td></tr>
 <tr class="separator:a82a30f5137d2829eeb2ee326700b52f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72697a2594afce2d1dbd80eeedd5ec9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="videodecode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a72697a2594afce2d1dbd80eeedd5ec9a">type</a></td></tr>
+<tr class="memitem:a72697a2594afce2d1dbd80eeedd5ec9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a72697a2594afce2d1dbd80eeedd5ec9a">type</a></td></tr>
 <tr class="separator:a72697a2594afce2d1dbd80eeedd5ec9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c756dc084226e1cb64e1bfb9f7e19e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a1c756dc084226e1cb64e1bfb9f7e19e0">codec_type</a></td></tr>
 <tr class="separator:a1c756dc084226e1cb64e1bfb9f7e19e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,7 +244,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AVPacket VideoDecoder::packets[<a class="el" href="videodecode_8h.html#adf1d7affd1d88117eaf1c0942a3a0222">MAX_ENCODED_VIDEO_PACKETS</a>]</td>
+          <td class="memname">AVPacket VideoDecoder::packets[<a class="el" href="decode_8h.html#adf1d7affd1d88117eaf1c0942a3a0222">MAX_ENCODED_VIDEO_PACKETS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -286,7 +286,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="videodecode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a> VideoDecoder::type</td>
+          <td class="memname"><a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a> VideoDecoder::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -308,7 +308,7 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>fractal/video/<a class="el" href="videodecode_8h_source.html">videodecode.h</a></li>
+<li>fractal/video/codec/<a class="el" href="decode_8h_source.html">decode.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

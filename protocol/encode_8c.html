@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/video/videoencode.h File Reference</title>
+<title>Whist Protocol: fractal/video/codec/encode.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('videoencode_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('encode_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -82,158 +82,50 @@ $(document).ready(function(){initNavTree('videoencode_8h.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">videoencode.h File Reference</div>  </div>
+<div class="title">encode.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>This file contains the code to create and destroy Encoders and use.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="nvidia__encode_8h_source.html">nvidia_encode.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ffmpeg__encode_8h_source.html">ffmpeg_encode.h</a>&quot;</code><br />
-</div>
-<p><a href="videoencode_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html">VideoEncoder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + frame metadata needed for sending encoded frames to the client. We default to using the Nvidia encoder, and fall back to the FFmpeg encoder if that fails.  <a href="structVideoEncoder.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a70988121b77d11b511a2bd2fe701d665"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a>&#160;&#160;&#160;20</td></tr>
-<tr class="separator:a70988121b77d11b511a2bd2fe701d665"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae929ca78c731b77fe6f5bb516d9a9cfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#ae929ca78c731b77fe6f5bb516d9a9cfc">NUM_ENCODERS</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ae929ca78c731b77fe6f5bb516d9a9cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ab20c7bac827841ee9ce7f6ca5c6be85a"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#ab20c7bac827841ee9ce7f6ca5c6be85a">VideoEncoderType</a></td></tr>
-<tr class="separator:ab20c7bac827841ee9ce7f6ca5c6be85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf20c160de785dcebb9bdc14eec0f258"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structVideoEncoder.html">VideoEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#aaf20c160de785dcebb9bdc14eec0f258">VideoEncoder</a></td></tr>
-<tr class="memdesc:aaf20c160de785dcebb9bdc14eec0f258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + frame metadata needed for sending encoded frames to the client. We default to using the Nvidia encoder, and fall back to the FFmpeg encoder if that fails.  <a href="videoencode_8h.html#aaf20c160de785dcebb9bdc14eec0f258">More...</a><br /></td></tr>
-<tr class="separator:aaf20c160de785dcebb9bdc14eec0f258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a2f3c0233caf50b001eb28cbaea7f0562"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a> { <a class="el" href="videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562ab792692a01f6b3a964743a59ae2cbec4">NVIDIA_ENCODER</a>, 
-<a class="el" href="videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562a856ce1da43f5764119d04916e1a7d083">FFMPEG_ENCODER</a>
- }</td></tr>
-<tr class="separator:a2f3c0233caf50b001eb28cbaea7f0562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="encode_8h_source.html">encode.h</a>&quot;</code><br />
+<code>#include &lt;libavfilter/avfilter.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac8fa01e9eea92339d1c54398ad7c202c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#ac8fa01e9eea92339d1c54398ad7c202c">create_video_encoder</a> (int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
-<tr class="memdesc:ac8fa01e9eea92339d1c54398ad7c202c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new encoder.  <a href="videoencode_8h.html#ac8fa01e9eea92339d1c54398ad7c202c">More...</a><br /></td></tr>
+<tr class="memitem:abb912fcbf1706b8244597d99369363a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8c.html#abb912fcbf1706b8244597d99369363a1">transfer_nvidia_data</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
+<tr class="separator:abb912fcbf1706b8244597d99369363a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5453b8d7b53bbca04de7333c8ae718"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8c.html#a3f5453b8d7b53bbca04de7333c8ae718">transfer_ffmpeg_data</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
+<tr class="separator:a3f5453b8d7b53bbca04de7333c8ae718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8fa01e9eea92339d1c54398ad7c202c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8c.html#ac8fa01e9eea92339d1c54398ad7c202c">create_video_encoder</a> (int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
+<tr class="memdesc:ac8fa01e9eea92339d1c54398ad7c202c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new encoder.  <a href="encode_8c.html#ac8fa01e9eea92339d1c54398ad7c202c">More...</a><br /></td></tr>
 <tr class="separator:ac8fa01e9eea92339d1c54398ad7c202c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a444edd5dc4cb990b7441ba96964936fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#a444edd5dc4cb990b7441ba96964936fa">video_encoder_encode</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a444edd5dc4cb990b7441ba96964936fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a frame. This will call the necessary encoding functions depending on the encoder type, then record metadata and the encoded packets into encoder-&gt;packets.  <a href="videoencode_8h.html#a444edd5dc4cb990b7441ba96964936fa">More...</a><br /></td></tr>
+<tr class="memitem:a444edd5dc4cb990b7441ba96964936fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8c.html#a444edd5dc4cb990b7441ba96964936fa">video_encoder_encode</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:a444edd5dc4cb990b7441ba96964936fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a frame. This will call the necessary encoding functions depending on the encoder type, then record metadata and the encoded packets into encoder-&gt;packets.  <a href="encode_8c.html#a444edd5dc4cb990b7441ba96964936fa">More...</a><br /></td></tr>
 <tr class="separator:a444edd5dc4cb990b7441ba96964936fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad77b802583b571a3de0d17c5d6393655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#ad77b802583b571a3de0d17c5d6393655">reconfigure_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int width, int height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec)</td></tr>
-<tr class="memdesc:ad77b802583b571a3de0d17c5d6393655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconfigure the encoder using new parameters.  <a href="videoencode_8h.html#ad77b802583b571a3de0d17c5d6393655">More...</a><br /></td></tr>
+<tr class="memitem:ad77b802583b571a3de0d17c5d6393655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8c.html#ad77b802583b571a3de0d17c5d6393655">reconfigure_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int width, int height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec)</td></tr>
+<tr class="memdesc:ad77b802583b571a3de0d17c5d6393655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconfigure the encoder using new parameters.  <a href="encode_8c.html#ad77b802583b571a3de0d17c5d6393655">More...</a><br /></td></tr>
 <tr class="separator:ad77b802583b571a3de0d17c5d6393655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22d76272235619a7657b984487f1412a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#a22d76272235619a7657b984487f1412a">video_encoder_set_iframe</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a22d76272235619a7657b984487f1412a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well.  <a href="videoencode_8h.html#a22d76272235619a7657b984487f1412a">More...</a><br /></td></tr>
+<tr class="memitem:a22d76272235619a7657b984487f1412a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8c.html#a22d76272235619a7657b984487f1412a">video_encoder_set_iframe</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:a22d76272235619a7657b984487f1412a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well.  <a href="encode_8c.html#a22d76272235619a7657b984487f1412a">More...</a><br /></td></tr>
 <tr class="separator:a22d76272235619a7657b984487f1412a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f0817add564fea3dbb260a90cef9132"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoencode_8h.html#a7f0817add564fea3dbb260a90cef9132">destroy_video_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a7f0817add564fea3dbb260a90cef9132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy encoder.  <a href="videoencode_8h.html#a7f0817add564fea3dbb260a90cef9132">More...</a><br /></td></tr>
+<tr class="memitem:a7f0817add564fea3dbb260a90cef9132"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8c.html#a7f0817add564fea3dbb260a90cef9132">destroy_video_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:a7f0817add564fea3dbb260a90cef9132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy encoder.  <a href="encode_8c.html#a7f0817add564fea3dbb260a90cef9132">More...</a><br /></td></tr>
 <tr class="separator:a7f0817add564fea3dbb260a90cef9132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code to create and destroy Encoders and use. </p>
 <p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
-<h1><a class="anchor" id="autotoc_md254"></a>
+<h1><a class="anchor" id="autotoc_md238"></a>
 them to encode captured screens.</h1>
-<h1><a class="anchor" id="autotoc_md255"></a>
+<h1><a class="anchor" id="autotoc_md239"></a>
 Usage</h1>
 <p>Video is encoded to H264 via either a hardware encoder (currently, we use NVidia GPUs, so we use NVENC) or a software encoder. H265 is also supported but not currently used. Since NVidia allows us to both capture and encode the screen, most of the functions will be called in <a class="el" href="server_2main_8c.html" title="This file contains the main code that runs a Whist server on a.">server/main.c</a> with an empty dummy encoder. For encoders, create an H264 encoder via create_video_encode, and use it to encode frames via video_encoder_encode. Write the encoded output via video_encoder_write_buffer, and when finished, destroy the encoder using destroy_video_encoder. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a70988121b77d11b511a2bd2fe701d665"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70988121b77d11b511a2bd2fe701d665">&#9670;&nbsp;</a></span>MAX_ENCODER_PACKETS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_ENCODER_PACKETS&#160;&#160;&#160;20</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae929ca78c731b77fe6f5bb516d9a9cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae929ca78c731b77fe6f5bb516d9a9cfc">&#9670;&nbsp;</a></span>NUM_ENCODERS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NUM_ENCODERS&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="aaf20c160de785dcebb9bdc14eec0f258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf20c160de785dcebb9bdc14eec0f258">&#9670;&nbsp;</a></span>VideoEncoder</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structVideoEncoder.html">VideoEncoder</a> <a class="el" href="structVideoEncoder.html">VideoEncoder</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + frame metadata needed for sending encoded frames to the client. We default to using the Nvidia encoder, and fall back to the FFmpeg encoder if that fails. </p>
-
-</div>
-</div>
-<a id="ab20c7bac827841ee9ce7f6ca5c6be85a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab20c7bac827841ee9ce7f6ca5c6be85a">&#9670;&nbsp;</a></span>VideoEncoderType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef enum <a class="el" href="videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a> <a class="el" href="videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a2f3c0233caf50b001eb28cbaea7f0562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f3c0233caf50b001eb28cbaea7f0562">&#9670;&nbsp;</a></span>VideoEncoderType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="videoencode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2f3c0233caf50b001eb28cbaea7f0562ab792692a01f6b3a964743a59ae2cbec4"></a>NVIDIA_ENCODER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a2f3c0233caf50b001eb28cbaea7f0562a856ce1da43f5764119d04916e1a7d083"></a>FFMPEG_ENCODER&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="ac8fa01e9eea92339d1c54398ad7c202c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8fa01e9eea92339d1c54398ad7c202c">&#9670;&nbsp;</a></span>create_video_encoder()</h2>
 
@@ -385,6 +277,42 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a3f5453b8d7b53bbca04de7333c8ae718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f5453b8d7b53bbca04de7333c8ae718">&#9670;&nbsp;</a></span>transfer_ffmpeg_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int transfer_ffmpeg_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb912fcbf1706b8244597d99369363a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb912fcbf1706b8244597d99369363a1">&#9670;&nbsp;</a></span>transfer_nvidia_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void transfer_nvidia_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a444edd5dc4cb990b7441ba96964936fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a444edd5dc4cb990b7441ba96964936fa">&#9670;&nbsp;</a></span>video_encoder_encode()</h2>
 
@@ -443,7 +371,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="videoencode_8h.html">videoencode.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="encode_8c.html">encode.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
