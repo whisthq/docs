@@ -12,7 +12,7 @@ var ringbuffer_8c =
     [ "destroy_ring_buffer", "ringbuffer_8c.html#af514843307356fd516b1a96211c9d986", null ],
     [ "get_frame_at_id", "ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5", null ],
     [ "init_frame", "ringbuffer_8c.html#a1fc73c796f6b71709d750033c1b58b63", null ],
-    [ "init_ring_buffer", "ringbuffer_8c.html#a672f453baf215cd27bb691b95db7c205", null ],
+    [ "init_ring_buffer", "ringbuffer_8c.html#acb417345ec29cff5507ee356644fe579", null ],
     [ "nack_bitarray_packets", "ringbuffer_8c.html#a73e418ff63c607877e2cf30c280003b8", null ],
     [ "nack_missing_packets_up_to_index", "ringbuffer_8c.html#a0048b36c977f38b40533fa7eea0f974c", null ],
     [ "nack_single_packet", "ringbuffer_8c.html#a06579df66400790c9af75c806b484aba", null ],

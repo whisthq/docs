@@ -13,5 +13,5 @@ var structFrameData =
     [ "packets_received", "structFrameData.html#ad678f7fddd965f8239caef6d6adccb97", null ],
     [ "received_indices", "structFrameData.html#a28cffb0c17e4f704b491f31b166e544d", null ],
     [ "recovery_mode", "structFrameData.html#a1bdb1b932824acc61d24b6b1643de4aa", null ],
-    [ "type", "structFrameData.html#a5feff2d6d8e79f41b5e4b748c17f8a5b", null ]
+    [ "type", "structFrameData.html#a2217440875b1518304c9c77fc07180fc", null ]
 ];

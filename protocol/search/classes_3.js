@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['desktopcontext_1977',['DesktopContext',['../structDesktopContext.html',1,'']]],
-  ['dynamicbuffer_1978',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
+  ['desktopcontext_1973',['DesktopContext',['../structDesktopContext.html',1,'']]],
+  ['dynamicbuffer_1974',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
 ];

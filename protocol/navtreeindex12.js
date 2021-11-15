@@ -1,7 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"uinput__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532":[9,0,1,4,4,4],
-"uinput__input__driver_8c.html#aec6d0da6165b52bfcd168bace7e3c889":[9,0,1,4,4,8],
 "uinput__input__driver_8h.html":[9,0,1,4,5],
 "uinput__input__driver_8h.html#a6a1dbc5faad2bff5d15369a25ff9f142":[9,0,1,4,5,1],
 "uinput__input__driver_8h_source.html":[9,0,1,4,5],

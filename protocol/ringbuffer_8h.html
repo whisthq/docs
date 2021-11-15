@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: client/ringbuffer.h File Reference</title>
+<title>Whist Protocol: fractal/network/ringbuffer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('ringbuffer_8h.html',''); initResizable
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ringbuffer.h File Reference</div>  </div>
@@ -94,8 +93,6 @@ $(document).ready(function(){initNavTree('ringbuffer_8h.html',''); initResizable
 <p>This file contains the code to create a ring buffer and use it for handling received.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="client_2network_8h_source.html">network.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="fractal__frame_8h_source.html">fractal/core/fractal_frame.h</a>&gt;</code><br />
 </div>
 <p><a href="ringbuffer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -110,29 +107,20 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2eca4a720a0435f1f5e9f4eae291fe90"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45">FrameDataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a2eca4a720a0435f1f5e9f4eae291fe90">FrameDataType</a></td></tr>
-<tr class="memdesc:a2eca4a720a0435f1f5e9f4eae291fe90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio/video types for ring buffers and frames.  <a href="ringbuffer_8h.html#a2eca4a720a0435f1f5e9f4eae291fe90">More...</a><br /></td></tr>
-<tr class="separator:a2eca4a720a0435f1f5e9f4eae291fe90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2763204414a22a08c1edb26446244d80"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFrameData.html">FrameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a2763204414a22a08c1edb26446244d80">FrameData</a></td></tr>
 <tr class="memdesc:a2763204414a22a08c1edb26446244d80"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structFrameData.html" title="FrameData struct containing content and metadata of encoded frames.">FrameData</a> struct containing content and metadata of encoded frames.  <a href="ringbuffer_8h.html#a2763204414a22a08c1edb26446244d80">More...</a><br /></td></tr>
 <tr class="separator:a2763204414a22a08c1edb26446244d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e75176c308e3d89a2f3d8b7d6d6158"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a72e75176c308e3d89a2f3d8b7d6d6158">NackPacketFn</a>) (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> frame_type, int id, int index)</td></tr>
+<tr class="separator:a72e75176c308e3d89a2f3d8b7d6d6158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0132fb254601f025c3cf73363a3c90c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structRingBuffer.html">RingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#ac0132fb254601f025c3cf73363a3c90c">RingBuffer</a></td></tr>
 <tr class="memdesc:ac0132fb254601f025c3cf73363a3c90c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structRingBuffer.html" title="RingBuffer struct for abstracting away frame reconstruction and frame retrieval.">RingBuffer</a> struct for abstracting away frame reconstruction and frame retrieval.  <a href="ringbuffer_8h.html#ac0132fb254601f025c3cf73363a3c90c">More...</a><br /></td></tr>
 <tr class="separator:ac0132fb254601f025c3cf73363a3c90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a3be5e6f81a17677db9e4aa98a541ba45"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45">FrameDataType</a> { <a class="el" href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45aa0ddc8dca3a9e11bf8cb2a97630c461c">FRAME_AUDIO</a>, 
-<a class="el" href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45a69a6e5462ec0d106fee538d79162bf70">FRAME_VIDEO</a>
- }</td></tr>
-<tr class="memdesc:a3be5e6f81a17677db9e4aa98a541ba45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio/video types for ring buffers and frames.  <a href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45">More...</a><br /></td></tr>
-<tr class="separator:a3be5e6f81a17677db9e4aa98a541ba45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a672f453baf215cd27bb691b95db7c205"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a672f453baf215cd27bb691b95db7c205">init_ring_buffer</a> (<a class="el" href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45">FrameDataType</a> type, int ring_buffer_size)</td></tr>
-<tr class="memdesc:a672f453baf215cd27bb691b95db7c205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a ring buffer of the specified size and type.  <a href="ringbuffer_8h.html#a672f453baf215cd27bb691b95db7c205">More...</a><br /></td></tr>
-<tr class="separator:a672f453baf215cd27bb691b95db7c205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb417345ec29cff5507ee356644fe579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#acb417345ec29cff5507ee356644fe579">init_ring_buffer</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, int ring_buffer_size, <a class="el" href="ringbuffer_8h.html#a72e75176c308e3d89a2f3d8b7d6d6158">NackPacketFn</a> <a class="el" href="client__utils_8h.html#ad3e9e1825d7ccb7641d84ffcafad5ec9">nack_packet</a>)</td></tr>
+<tr class="memdesc:acb417345ec29cff5507ee356644fe579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a ring buffer of the specified size and type.  <a href="ringbuffer_8h.html#acb417345ec29cff5507ee356644fe579">More...</a><br /></td></tr>
+<tr class="separator:acb417345ec29cff5507ee356644fe579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5">get_frame_at_id</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
 <tr class="memdesc:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrives the frame at the given ID in the ring buffer.  <a href="ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5">More...</a><br /></td></tr>
 <tr class="separator:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,9 +143,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code to create a ring buffer and use it for handling received. </p>
 <p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
-<h1><a class="anchor" id="autotoc_md60"></a>
+<h1><a class="anchor" id="autotoc_md180"></a>
 audio/video.</h1>
-<h1><a class="anchor" id="autotoc_md61"></a>
+<h1><a class="anchor" id="autotoc_md181"></a>
 Usage</h1>
 <p>Initialize a ring buffer for audio or video using init_ring_buffer. When new packets arrive, call receive_packet to process the packet and modify or create ring buffer entries as needed. To nack a packet, call nack_single_packet. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
@@ -178,19 +166,17 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a2eca4a720a0435f1f5e9f4eae291fe90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eca4a720a0435f1f5e9f4eae291fe90">&#9670;&nbsp;</a></span>FrameDataType</h2>
+<a id="a72e75176c308e3d89a2f3d8b7d6d6158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e75176c308e3d89a2f3d8b7d6d6158">&#9670;&nbsp;</a></span>NackPacketFn</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45">FrameDataType</a> <a class="el" href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45">FrameDataType</a></td>
+          <td class="memname">typedef void(* NackPacketFn) (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> frame_type, int id, int index)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Audio/video types for ring buffers and frames. </p>
 
 </div>
 </div>
@@ -208,27 +194,6 @@ Usage</h1>
 
 <p><a class="el" href="structRingBuffer.html" title="RingBuffer struct for abstracting away frame reconstruction and frame retrieval.">RingBuffer</a> struct for abstracting away frame reconstruction and frame retrieval. </p>
 <p>This is used by <a class="el" href="client_2audio_8c.html" title="This file contains all code that interacts directly with processing.">client/audio.c</a> and <a class="el" href="client_2video_8c.html" title="This file contains all code that interacts directly with receiving and.">client/video.c</a> to keep track of frames as the client receives packets. It handles inserting new packets into the ring buffer and nacking for missing packets. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a3be5e6f81a17677db9e4aa98a541ba45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3be5e6f81a17677db9e4aa98a541ba45">&#9670;&nbsp;</a></span>FrameDataType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45">FrameDataType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Audio/video types for ring buffers and frames. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3be5e6f81a17677db9e4aa98a541ba45aa0ddc8dca3a9e11bf8cb2a97630c461c"></a>FRAME_AUDIO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3be5e6f81a17677db9e4aa98a541ba45a69a6e5462ec0d106fee538d79162bf70"></a>FRAME_VIDEO&#160;</td><td class="fielddoc"></td></tr>
-</table>
 
 </div>
 </div>
@@ -297,8 +262,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a672f453baf215cd27bb691b95db7c205"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a672f453baf215cd27bb691b95db7c205">&#9670;&nbsp;</a></span>init_ring_buffer()</h2>
+<a id="acb417345ec29cff5507ee356644fe579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb417345ec29cff5507ee356644fe579">&#9670;&nbsp;</a></span>init_ring_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,14 +271,20 @@ Usage</h1>
         <tr>
           <td class="memname"><a class="el" href="structRingBuffer.html">RingBuffer</a>* init_ring_buffer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ringbuffer_8h.html#a3be5e6f81a17677db9e4aa98a541ba45">FrameDataType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ring_buffer_size</em>&#160;</td>
+          <td class="paramname"><em>ring_buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ringbuffer_8h.html#a72e75176c308e3d89a2f3d8b7d6d6158">NackPacketFn</a>&#160;</td>
+          <td class="paramname"><em>nack_packet</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -328,6 +299,7 @@ Usage</h1>
   <table class="params">
     <tr><td class="paramname">type</td><td>Either an audio or video ring buffer.</td></tr>
     <tr><td class="paramname">ring_buffer_size</td><td>The desired size of the ring buffer</td></tr>
+    <tr><td class="paramname">nack_packet</td><td>A lambda function that will be called when the ring buffer wants to nack. NULL will disable nacking.</td></tr>
   </table>
   </dd>
 </dl>
@@ -489,7 +461,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a class="el" href="ringbuffer_8h.html">ringbuffer.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="ringbuffer_8h.html">ringbuffer.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

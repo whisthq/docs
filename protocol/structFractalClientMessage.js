@@ -1,8 +1,7 @@
 var structFractalClientMessage =
 [
-    [ "ba_raw", "structFractalClientMessage.html#aae784c0454a7fecfcbdaa621c202a2b9", null ],
-    [ "bitarray_audio_nack", "structFractalClientMessage.html#abf3f91125d7e2c853adcc8b1c2597e61", null ],
-    [ "bitarray_video_nack", "structFractalClientMessage.html#a765b0ac2499014da212f487c7c91c98f", null ],
+    [ "ba_raw", "structFractalClientMessage.html#a08c67ae9fbc4b53e366201225bd4d5c0", null ],
+    [ "bitarray_nack", "structFractalClientMessage.html#abc2bf26ef7729aeea5991ed849ab6d2f", null ],
     [ "bitrate", "structFractalClientMessage.html#a6e6089eea6c3d9429d56a5f26d3ac6cb", null ],
     [ "bitrate_data", "structFractalClientMessage.html#aa38e4a26e4c12a9b8c24aa57c358dbd3", null ],
     [ "burst_bitrate", "structFractalClientMessage.html#a17c8531cf1bc459418e449c2939d9eed", null ],
@@ -27,5 +26,6 @@ var structFractalClientMessage =
     [ "reinitialize_encoder", "structFractalClientMessage.html#a7184c50d7d3eba02d87d274a5969c3df", null ],
     [ "simple_nack", "structFractalClientMessage.html#a8586a5a661a9852bdf4a5ee590f59c09", null ],
     [ "type", "structFractalClientMessage.html#aa962a98ff0a051019e476606e41f8a0d", null ],
+    [ "type", "structFractalClientMessage.html#a601dbb97e51e2a0015ceeb1a10a34dbb", null ],
     [ "width", "structFractalClientMessage.html#acc775e4bcdc81355302dcb35e1f344ed", null ]
 ];

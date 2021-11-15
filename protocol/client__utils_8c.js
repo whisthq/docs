@@ -9,6 +9,7 @@ var client__utils_8c =
     [ "evaluate_arg", "client__utils_8c.html#a75e80d1fa4b30805a90363e84266a603", null ],
     [ "free_parsed_args", "client__utils_8c.html#a44fd0b41f8dec9bae4a8e081703c014b", null ],
     [ "init_socket_library", "client__utils_8c.html#ad4870ff2e632a5999971c28e4a94eb32", null ],
+    [ "nack_packet", "client__utils_8c.html#ad3e9e1825d7ccb7641d84ffcafad5ec9", null ],
     [ "prepare_init_to_server", "client__utils_8c.html#a68658df46ddef1ce1ea7ee3b1600bc6a", null ],
     [ "read_piped_arguments", "client__utils_8c.html#af8ab011038590e9843336f4283bc8698", null ],
     [ "send_message_dimensions", "client__utils_8c.html#aa474e56b998eeac46c72e779fd2701fa", null ],

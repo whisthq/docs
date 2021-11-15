@@ -611,17 +611,15 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a7dc3a20041a5307d6ca698071014c81b">MESSAGE_TCP_PING</a> = 109, 
 <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a320f73bbf3e5c9abb3285eb70a278b35">MESSAGE_DIMENSIONS</a> = 110, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a6c81ea559025810031e39cb391506a01">MESSAGE_VIDEO_NACK</a> = 111, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a800390613d83c4064211e49eb0200aac">MESSAGE_VIDEO_BITARRAY_NACK</a> = 112, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a56281630a2dddf4896eb7c456f13f053">MESSAGE_NACK</a> = 111, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a535a324c90ea58fb2754d8ad02370c49">MESSAGE_BITARRAY_NACK</a> = 112, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a20da901d62d1b274e068be2a88ae4f8e">MESSAGE_AUDIO_NACK</a> = 113, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a7a8380bda4e6e72cb76810cd09525ecd">MESSAGE_AUDIO_BITARRAY_NACK</a> = 114, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8285383cb763af7a4747b8a516103e4c">CMESSAGE_CLIPBOARD</a> = 115, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aa13dda8eb711d38d91b408de950920ee">MESSAGE_IFRAME_REQUEST</a> = 116, 
+&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8285383cb763af7a4747b8a516103e4c">CMESSAGE_CLIPBOARD</a> = 113, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aa13dda8eb711d38d91b408de950920ee">MESSAGE_IFRAME_REQUEST</a> = 114, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aad0e41f01fe989967ccf13dba65c7041">MESSAGE_DISCOVERY_REQUEST</a> = 115, 
+<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a349edcec26ba49767cf95f929499760c">MESSAGE_TCP_RECOVERY</a> = 116, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aad0e41f01fe989967ccf13dba65c7041">MESSAGE_DISCOVERY_REQUEST</a> = 117, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a349edcec26ba49767cf95f929499760c">MESSAGE_TCP_RECOVERY</a> = 118, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
+&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
 <br />
  }</td></tr>
 <tr class="memdesc:a24b3a769a239a708b28e06e660b63f90"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message type.  <a href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90">More...</a><br /></td></tr>
@@ -2101,10 +2099,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90a7dc3a20041a5307d6ca698071014c81b"></a>MESSAGE_TCP_PING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90a320f73bbf3e5c9abb3285eb70a278b35"></a>MESSAGE_DIMENSIONS&#160;</td><td class="fielddoc"><p><code>dimensions.width</code> int and <code>dimensions.height</code> int is valid in FractClientMessage </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90a6c81ea559025810031e39cb391506a01"></a>MESSAGE_VIDEO_NACK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90a800390613d83c4064211e49eb0200aac"></a>MESSAGE_VIDEO_BITARRAY_NACK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90a20da901d62d1b274e068be2a88ae4f8e"></a>MESSAGE_AUDIO_NACK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90a7a8380bda4e6e72cb76810cd09525ecd"></a>MESSAGE_AUDIO_BITARRAY_NACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90a56281630a2dddf4896eb7c456f13f053"></a>MESSAGE_NACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90a535a324c90ea58fb2754d8ad02370c49"></a>MESSAGE_BITARRAY_NACK&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90a8285383cb763af7a4747b8a516103e4c"></a>CMESSAGE_CLIPBOARD&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90aa13dda8eb711d38d91b408de950920ee"></a>MESSAGE_IFRAME_REQUEST&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a24b3a769a239a708b28e06e660b63f90aad0e41f01fe989967ccf13dba65c7041"></a>MESSAGE_DISCOVERY_REQUEST&#160;</td><td class="fielddoc"></td></tr>
