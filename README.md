@@ -1,6 +1,6 @@
-# Fractal Docs
+# Whist Docs
 
-This repository contains auto-generated documentation for projects in the Fractal organization, published internally via GitHub Pages to `docs.whist.com/[project]`.
+This repository contains auto-generated documentation for projects in the Whist organization, published internally via GitHub Pages to `docs.whist.com/[project]`.
 
 - [Webserver Docs](https://docs.whist.com/webserver)
 - [Host Service Docs](https://docs.whist.com/host-service/)
