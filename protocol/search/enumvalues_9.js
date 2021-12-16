@@ -5,7 +5,7 @@ var searchData=
   ['not_5fallowed_5fcursor_5fhash_3676',['NOT_ALLOWED_CURSOR_HASH',['../linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a47b9da7d77958040c28310c7a5c93551',1,'linuxcursor.c']]],
   ['ns_5fcursor_5fhash_3677',['NS_CURSOR_HASH',['../linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768aa7f345948486a6668a6e10e93f370a12',1,'linuxcursor.c']]],
   ['nvenc_5fencode_3678',['NVENC_ENCODE',['../ffmpeg__encode_8h.html#a710867b9460bb3ef175428fd1da3d41aa4eaed9aa42e53ca6e33b4d923ff362a5',1,'ffmpeg_encode.h']]],
-  ['nvidia_5fdevice_3679',['NVIDIA_DEVICE',['../fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c',1,'fractal.h']]],
+  ['nvidia_5fdevice_3679',['NVIDIA_DEVICE',['../whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c',1,'whist.h']]],
   ['nvidia_5fencoder_3680',['NVIDIA_ENCODER',['../encode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562ab792692a01f6b3a964743a59ae2cbec4',1,'encode.h']]],
   ['nw_5fcursor_5fhash_3681',['NW_CURSOR_HASH',['../linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a866642bed89a1a54ed31cddb74aa4d2f',1,'linuxcursor.c']]],
   ['nwse_5fcursor_5fhash_3682',['NWSE_CURSOR_HASH',['../linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a60ce484b6fa427a1406c177c3d781f25',1,'linuxcursor.c']]]

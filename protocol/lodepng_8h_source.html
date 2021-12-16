@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/utils/lodepng.h Source File</title>
+<title>Whist Protocol: whist/utils/lodepng.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -695,13 +695,13 @@ $(document).ready(function(){initNavTree('lodepng_8h_source.html',''); initResiz
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<span class="preprocessor">#ifdef LODEPNG_COMPILE_ANCILLARY_CHUNKS</span></div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="lodepng_8h.html#a10c9cfd9edf86fc8e21d5f69d81238d0">lodepng_add_text</a>(<a class="code" href="structLodePNGInfo.html">LodePNGInfo</a>* info, <span class="keyword">const</span> <span class="keywordtype">char</span>* key,</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                          <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>); <span class="comment">/*push back both texts at once*/</span></div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                          <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>); <span class="comment">/*push back both texts at once*/</span></div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lodepng_8h.html#a533d58c161de45096b83c44bbaa95e93">lodepng_clear_text</a>(</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <a class="code" href="structLodePNGInfo.html">LodePNGInfo</a>* info); <span class="comment">/*use this to clear the texts again after you filled them in*/</span></div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160; </div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="lodepng_8h.html#aad7cb0e06093d0111bd599a279360f98">lodepng_add_itext</a>(<a class="code" href="structLodePNGInfo.html">LodePNGInfo</a>* info, <span class="keyword">const</span> <span class="keywordtype">char</span>* key, <span class="keyword">const</span> <span class="keywordtype">char</span>* langtag,</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span>* transkey,</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>); <span class="comment">/*push back the 4 texts of 1 chunk at once*/</span></div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>); <span class="comment">/*push back the 4 texts of 1 chunk at once*/</span></div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lodepng_8h.html#aea7d8c2bb2adaf028ec143c08a53f815">lodepng_clear_itext</a>(</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <a class="code" href="structLodePNGInfo.html">LodePNGInfo</a>* info); <span class="comment">/*use this to clear the itexts again after you filled them in*/</span></div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160; </div>
@@ -2243,7 +2243,7 @@ $(document).ready(function(){initNavTree('lodepng_8h_source.html',''); initResiz
 <div class="ttc" id="alodepng_8h_html_ae3ee1eb944467fbbc1cf939328dd6a57"><div class="ttname"><a href="lodepng_8h.html#ae3ee1eb944467fbbc1cf939328dd6a57">lodepng_state_init</a></div><div class="ttdeci">void lodepng_state_init(LodePNGState *state)</div><div class="ttdef"><b>Definition:</b> lodepng.c:5312</div></div>
 <div class="ttc" id="astructLodePNGInfo_html_a3a0795a8ec1ddcaac245ba3337054e46"><div class="ttname"><a href="structLodePNGInfo.html#a3a0795a8ec1ddcaac245ba3337054e46">LodePNGInfo::srgb_defined</a></div><div class="ttdeci">unsigned srgb_defined</div><div class="ttdef"><b>Definition:</b> lodepng.h:542</div></div>
 <div class="ttc" id="astructLodePNGDecoderSettings_html_a8775e4fc539dc457916720f52b442f27"><div class="ttname"><a href="structLodePNGDecoderSettings.html#a8775e4fc539dc457916720f52b442f27">LodePNGDecoderSettings::remember_unknown_chunks</a></div><div class="ttdeci">unsigned remember_unknown_chunks</div><div class="ttdef"><b>Definition:</b> lodepng.h:668</div></div>
-<div class="ttc" id="afractal_8c_html_ad8ab729381f270b100f3d05b6c6676fc"><div class="ttname"><a href="fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a></div><div class="ttdeci">#define str(s)</div><div class="ttdef"><b>Definition:</b> fractal.c:514</div></div>
+<div class="ttc" id="awhist_8c_html_ad8ab729381f270b100f3d05b6c6676fc"><div class="ttname"><a href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a></div><div class="ttdeci">#define str(s)</div><div class="ttdef"><b>Definition:</b> whist.c:514</div></div>
 <div class="ttc" id="astructLodePNGCompressSettings_html_a55dafebbbe017806fb2bbc32bb40a59b"><div class="ttname"><a href="structLodePNGCompressSettings.html#a55dafebbbe017806fb2bbc32bb40a59b">LodePNGCompressSettings::custom_deflate</a></div><div class="ttdeci">unsigned(* custom_deflate)(unsigned char **, size_t *, const unsigned char *, size_t, const LodePNGCompressSettings *)</div><div class="ttdef"><b>Definition:</b> lodepng.h:312</div></div>
 <div class="ttc" id="alodepng_8h_html_a67c3a7ee81836f6e5c9ba6487a1b38f5"><div class="ttname"><a href="lodepng_8h.html#a67c3a7ee81836f6e5c9ba6487a1b38f5">lodepng_decode32</a></div><div class="ttdeci">unsigned lodepng_decode32(unsigned char **out, unsigned *w, unsigned *h, const unsigned char *in, size_t insize)</div><div class="ttdef"><b>Definition:</b> lodepng.c:5257</div></div>
 <div class="ttc" id="astructLodePNGInfo_html_a1b909e03596abf86d564641741b0087f"><div class="ttname"><a href="structLodePNGInfo.html#a1b909e03596abf86d564641741b0087f">LodePNGInfo::itext_keys</a></div><div class="ttdeci">char ** itext_keys</div><div class="ttdef"><b>Definition:</b> lodepng.h:494</div></div>
@@ -2295,7 +2295,7 @@ $(document).ready(function(){initNavTree('lodepng_8h_source.html',''); initResiz
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_df322525ef19ea0172bad82237de04c3.html">utils</a></li><li class="navelem"><a class="el" href="lodepng_8h.html">lodepng.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_df322525ef19ea0172bad82237de04c3.html">utils</a></li><li class="navelem"><a class="el" href="lodepng_8h.html">lodepng.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/input/keyboard_mapping.h File Reference</title>
+<title>Whist Protocol: whist/input/keyboard_mapping.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('keyboard__mapping_8h.html',''); initRe
 <div class="title">keyboard_mapping.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="input__driver_8h_source.html">input_driver.h</a>&quot;</code><br />
 </div>
 <p><a href="keyboard__mapping_8h_source.html">Go to the source code of this file.</a></p>
@@ -100,10 +100,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afdd4ff380ffe5b73b751f0560390b508"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard__mapping_8h.html#afdd4ff380ffe5b73b751f0560390b508">update_mapped_keyboard_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> os_type, <a class="el" href="structWhistKeyboardState.html">WhistKeyboardState</a> keyboard_state)</td></tr>
+<tr class="memitem:afdd4ff380ffe5b73b751f0560390b508"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard__mapping_8h.html#afdd4ff380ffe5b73b751f0560390b508">update_mapped_keyboard_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> os_type, <a class="el" href="structWhistKeyboardState.html">WhistKeyboardState</a> keyboard_state)</td></tr>
 <tr class="memdesc:afdd4ff380ffe5b73b751f0560390b508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the keyboard state on the server to match the client's.  <a href="keyboard__mapping_8h.html#afdd4ff380ffe5b73b751f0560390b508">More...</a><br /></td></tr>
 <tr class="separator:afdd4ff380ffe5b73b751f0560390b508"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2df14973ad286f321aba7962c642d3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard__mapping_8h.html#ae2df14973ad286f321aba7962c642d3c">emit_mapped_key_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> os_type, <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> fractal_keycode, int pressed)</td></tr>
+<tr class="memitem:ae2df14973ad286f321aba7962c642d3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard__mapping_8h.html#ae2df14973ad286f321aba7962c642d3c">emit_mapped_key_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> os_type, <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> whist_keycode, int pressed)</td></tr>
 <tr class="memdesc:ae2df14973ad286f321aba7962c642d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a keyboard press/unpress event.  <a href="keyboard__mapping_8h.html#ae2df14973ad286f321aba7962c642d3c">More...</a><br /></td></tr>
 <tr class="separator:ae2df14973ad286f321aba7962c642d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -138,14 +138,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td>
           <td class="paramname"><em>os_type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a>&#160;</td>
-          <td class="paramname"><em>fractal_keycode</em>, </td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a>&#160;</td>
+          <td class="paramname"><em>whist_keycode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -166,7 +166,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">input_device</td><td>The initialized input device to write</td></tr>
     <tr><td class="paramname">os_type</td><td>The origin OS to use for deciding keymaps</td></tr>
-    <tr><td class="paramname">fractal_keycode</td><td>The Whist keycode to modify</td></tr>
+    <tr><td class="paramname">whist_keycode</td><td>The Whist keycode to modify</td></tr>
     <tr><td class="paramname">pressed</td><td>1 for a key press, 0 for a key unpress</td></tr>
   </table>
   </dd>
@@ -190,7 +190,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td>
           <td class="paramname"><em>os_type</em>, </td>
         </tr>
         <tr>
@@ -224,7 +224,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_e288031044ae90885cb3e2f59036aeb8.html">input</a></li><li class="navelem"><a class="el" href="keyboard__mapping_8h.html">keyboard_mapping.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_e288031044ae90885cb3e2f59036aeb8.html">input</a></li><li class="navelem"><a class="el" href="keyboard__mapping_8h.html">keyboard_mapping.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

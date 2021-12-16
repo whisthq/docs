@@ -98,24 +98,24 @@ Client</h2>
 High-Level Overview</h1>
 <p>In order to give the user their low-latency high-FPS experience, the protocol executes the following processes in order from top-to-bottom:</p>
 <ul>
-<li><code>create_capture_device</code> from either <code>./fractal/video/dxgicapture.c</code> or <code>./fractal/video/x11capture.c</code> is called, the former is for Windows and the latter is for Linux. Then, <code>capture_screen</code> is called in <code>./server/main.c</code> to capture the screen.</li>
+<li><code>create_capture_device</code> from either <code>./whist/video/dxgicapture.c</code> or <code>./whist/video/x11capture.c</code> is called, the former is for Windows and the latter is for Linux. Then, <code>capture_screen</code> is called in <code>./server/main.c</code> to capture the screen.</li>
 <li><code>encoder_t</code> from <code>videoencode.c</code> will be used to encode the screenshot using h264, if needed. If Nvidia Capture SDK is being used (<code>USING_GPU_CAPTURE == true</code> and on linux), then the image will already be encoded upon capture, and this is not necessary.</li>
-<li>A <code>Frame*</code> is created and the members of the <code>Frame</code> struct is filled in, see <code>./server/main.c</code> for the code and <code>./fractal/core/fractal.h</code> for the <code>Frame</code> struct.</li>
+<li>A <code>Frame*</code> is created and the members of the <code>Frame</code> struct is filled in, see <code>./server/main.c</code> for the code and <code>./whist/core/whist.h</code> for the <code>Frame</code> struct.</li>
 <li><code>broadcast_udp_packet_from_payload</code> from <code>./server/network.c</code>is called with the <code>Frame*</code> passed in. This will break-up the <code>Frame*</code> into hundreds of individual network packets.</li>
 <li>On the client, these packets are received in <code>./client/main.c</code> and passed into <code>receive_video</code> in <code>./client/video.c</code>.</li>
 <li><code>receive_video</code> will receive video packets and will save them in a buffer (packet 17 will be stored at <code>buffer + PACKET_SIZE*(17-1)</code>, so that the packets go into their correct slot until the entire <code>Frame*</code> is recreated). <code>video.c</code> keeps track of the ID of the most recently rendered frame, ie ID 247. Once all of the packets of ID 248 are received, it will take the pointer to the beginning of the buffer and then render it. Each packet will contain the number of packets for the <code>Frame*</code>, so once one is received, the client will know when all of them have been received.</li>
-<li>Once a <code>Frame*</code> has been accumulated, <code>render_screen</code> in <code>./server/video.c</code> will trigger, and <code>video_decoder_decode</code> from <code>./fractal/video/videodecode.c</code> will be called. Any cursor image will be rendered on-top, along with <code>sws_scale</code>'ing if the frame is not the same resolution as the client. Peruse <code>render_screen</code> for further details.</li>
+<li>Once a <code>Frame*</code> has been accumulated, <code>render_screen</code> in <code>./server/video.c</code> will trigger, and <code>video_decoder_decode</code> from <code>./whist/video/videodecode.c</code> will be called. Any cursor image will be rendered on-top, along with <code>sws_scale</code>'ing if the frame is not the same resolution as the client. Peruse <code>render_screen</code> for further details.</li>
 <li>Finally, <code>SDL_RenderPresent</code> will be called, rendering the Frame.</li>
 <li>If no packet from the expected ID is received within a couple hundred milliseconds, or if a subset of packets have been received and it's been a couple hundred milliseconds since the last seen packet, then the <code>./client/video.c</code>protocol will send a <code>nack()</code> to the server in order to get a copy of the presumably dropped or missed packet. The server keeps the last couple <code>Frame*</code>'s in a buffer in order to respond to <code>nack()</code>'s.</li>
 </ul>
-<p>The same process is used for audio capture, encoding, decoding, and playing. See <code>send_audio</code> of <code>./server/main.c</code>, <code>./fractal/audio/audio{capture,encode,decode}.c</code>, and <code>receive_audio</code> of <code>./client/audio.c</code></p>
+<p>The same process is used for audio capture, encoding, decoding, and playing. See <code>send_audio</code> of <code>./server/main.c</code>, <code>./whist/audio/audio{capture,encode,decode}.c</code>, and <code>receive_audio</code> of <code>./client/audio.c</code></p>
 <p>Throughout the life of the protocol, various messages will be send to and from the client and server. For example, if the client and server are of different resolution, the image will appear stretched, so to fix this the client will send a message to server to ask the server to change resolutions to match the client.</p>
 <ul>
 <li>To send a message from client to server, call <code>send_fcmsg</code>. See <code>./client/main.c</code> for usage.</li>
 <li>To send a message from server to client, create a <code><a class="el" href="structWhistServerMessage.html" title="Server message.">WhistServerMessage</a></code> and call <code>broadcast_tcp_packet</code> or <code>broadcast_udp_packet</code>. See <code>./server/main.c</code> for usage.</li>
 <li>To handle a server message on the client, see <code>./client/handle_server_message.c</code></li>
 <li>To handle a client message on the server, see <code>./server/handle_client_message.c</code></li>
-<li>See <code>./fractal/core/fractal.h</code> for struct definitions.</li>
+<li>See <code>./whist/core/whist.h</code> for struct definitions.</li>
 </ul>
 <p>Of course, input must also be sent from client to server. This is handled in the form of SDL Events, which are retrieved in <code>./client/main.c</code> and handled in <code><a class="el" href="sdl__event__handler_8c.html" title="This file contains client-specific wrappers to low-level network.">sdl_event_handler.c</a></code>. These generally take the form of <code>fcmsg</code>'s sent from client to server, over <code>UDP</code> for speed. We don't handle packet dropping, however, so sometimes the capslock and numlock will go out-of-sync. We use <code>sync_keyboard_state</code> to fix this, resyncing stateful keys every 50ms with an <code>fcmsg</code>. This additionally handles the initial sync by-default.</p>
 <h2><a class="anchor" id="autotoc_md5"></a>
@@ -136,7 +136,7 @@ File Structure</h1>
 <div class="line">│   ├── sdl_utils.c &lt;- Set window icon, resize handler</div>
 <div class="line">│   ├── sdlscreeninfo.c &lt;- Get monitor/window width/height functions</div>
 <div class="line">│   └── video.c &lt;- Handle and render video packets</div>
-<div class="line">├── fractal</div>
+<div class="line">├── whist</div>
 <div class="line">│   ├── audio</div>
 <div class="line">│   │   ├── alsacapture.c &lt;- Capture Linux audio</div>
 <div class="line">│   │   ├── audiodecode.c &lt;- AAC Decode Audio</div>
@@ -150,8 +150,8 @@ File Structure</h1>
 <div class="line">│   │   ├── win_clipboard.c &lt;- Windows implementation of {get,set}_clipboard</div>
 <div class="line">│   │   └── x11_clipboard.c &lt;- Linux implementation of {get,set}_clipboard</div>
 <div class="line">│   ├── core</div>
-<div class="line">│   │   ├── fractal.c &lt;- Various helpers</div>
-<div class="line">│   │   └── fractalgetopt.c &lt;- Cross-platform getopt</div>
+<div class="line">│   │   ├── whist.c &lt;- Various helpers</div>
+<div class="line">│   │   └── whistgetopt.c &lt;- Cross-platform getopt</div>
 <div class="line">│   ├── cursor</div>
 <div class="line">│   │   ├── linuxcursor.c &lt;- get_current_cursor for Linux</div>
 <div class="line">│   │   └── windowscursor.c &lt;- get_current_cursor for Windows</div>
@@ -193,7 +193,7 @@ File Structure</h1>
 <div class="line">|    ├── network.c &lt;- Networking code for multiclient</div>
 <div class="line">└── test</div>
 <div class="line">    ├── images &lt;- images for unit testing</div>
-<div class="line">    └── ProtocolTest.cpp &lt;- tests code in fractal module</div>
+<div class="line">    └── ProtocolTest.cpp &lt;- tests code in whist module</div>
 </div><!-- fragment --><p>The above files are fairly static. If you add or remove a file, or change what a file does, please update this directory so we can keep track of it all!</p>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Development</h1>
@@ -224,7 +224,7 @@ Windows</h4>
 <p>After doing this all this, you might have to restart your terminal or IDE, after which you'll be able to build using CMake.</p>
 <h2><a class="anchor" id="autotoc_md14"></a>
 Building the Protocol</h2>
-<p>In order to save time recompiling dependencies repeatedly (and use CI to update them), we store some precompiled libraries in <a href="https://s3.console.aws.amazon.com/s3/buckets/fractal-protocol-shared-libs?region=us-east-1&amp;tab=objects">AWS S3</a>. Downloading them will require the AWS CLI to be installed and set up on your machine. Instructions for installing and configuring awscli can be found above.</p>
+<p>In order to save time recompiling dependencies repeatedly (and use CI to update them), we store some precompiled libraries in <a href="https://s3.console.aws.amazon.com/s3/buckets/whist-protocol-shared-libs?region=us-east-1&amp;tab=objects">AWS S3</a>. Downloading them will require the AWS CLI to be installed and set up on your machine. Instructions for installing and configuring awscli can be found above.</p>
 <p>If you want to manually retrieve the binaries yourself (Not Recommended), download the files from S3 into the proper locations (see <code>download-binaries.sh</code>), and <em>then</em> run <code>cmake</code> with the <code>-D DOWNLOAD_BINARIES=OFF</code> option. The order of these operations is important.</p>
 <p>To compile on MacOS/Linux, run:</p>
 <div class="fragment"><div class="line">mkdir build</div>
@@ -270,7 +270,7 @@ Linux CLI</h3>
 <p>Only running <code>make</code> defaults to building WhistClient and WhistServer if you set both of these to ON in your configuration. GCC only supports one type of build at a time, so if you are currently building Release, but want to build Debug, you need to edit the cache and regenerate the makefile.</p>
 <h2><a class="anchor" id="autotoc_md21"></a>
 Further documentation</h2>
-<p>We also use Doxygen in this repository. The Doxy file is <code>docs/Doxyfile</code>. To generate it, you should first install <code>doxygen</code>, and then run <code>doxygen Doxyfile</code>. This will generate the docs and put them in <code>docs/html</code> and <code>docs/latex</code>. You can view the html docs by opening the index.html page with a web browser. We keep the docs <code>.gitignore</code>d to avoid clutter on the repository. They are also published at <code>docs.whist.com</code>, but updating the documentation with CI is still a <a href="https://github.com/fractal/fractal/issues/1976">TODO</a>.</p>
+<p>We also use Doxygen in this repository. The Doxy file is <code>docs/Doxyfile</code>. To generate it, you should first install <code>doxygen</code>, and then run <code>doxygen Doxyfile</code>. This will generate the docs and put them in <code>docs/html</code> and <code>docs/latex</code>. You can view the html docs by opening the index.html page with a web browser. We keep the docs <code>.gitignore</code>d to avoid clutter on the repository. They are also published at <code>docs.whist.com</code>, but updating the documentation with CI is still a <a href="https://github.com/whist/whist/issues/1976">TODO</a>.</p>
 <h1><a class="anchor" id="autotoc_md22"></a>
 CI &amp; CD</h1>
 <h3><a class="anchor" id="autotoc_md23"></a>
@@ -302,7 +302,7 @@ clang-format</h2>
 <div class="line">choco install llvm --force</div>
 </div><!-- fragment --><p>If using vim, VSCode, or Visual Studio, please set this up in your editor to format on save if possible (in Visual Studio, this is through the C/C++ extension settings, as well as the general 'Format on Save' setting/shortcut). Otherwise, please make sure to run your code through <code>clang</code> before commits. You can run it from the CLI by running <code>cmake . &amp;&amp; make clang-format</code>, on MacOS/Linux, or <code>cmake -G "NMake Makefiles" &amp;&amp; make clang-format</code>, on Windows.</p>
 <p>We have <a href="https://pre-commit.com/">pre-commit hooks</a> with clang-format support installed on this project, which you can initialize by first installing pre-commit via <code>pip install pre-commit</code> and then running <code>pre-commit install</code> to instantiate the hooks for clang-format.</p>
-<p>We also have a custom build target in the CMake 'clang-format' which will run with this style over all <code>.c</code> and <code>.h</code> files in <code>server/</code>, <code>client/</code>, and <code>fractal/</code>. You can call it by running <code>make clang-format</code>.</p>
+<p>We also have a custom build target in the CMake 'clang-format' which will run with this style over all <code>.c</code> and <code>.h</code> files in <code>server/</code>, <code>client/</code>, and <code>whist/</code>. You can call it by running <code>make clang-format</code>.</p>
 <h2><a class="anchor" id="autotoc_md28"></a>
 clang-tidy</h2>
 <p>Make sure your code is following code standards by running the script <code>./run-clang-tidy.sh</code>. The dependencies for each OS are listed below:</p>
@@ -323,7 +323,7 @@ clang-tidy</h2>
 <p>Macro constants will NOT be checked by this script because of the variety of implementations of <code>#define</code>. Please be sure to follow appropriate standards for <code>#define</code>s when committing code.</p>
 <h2><a class="anchor" id="autotoc_md29"></a>
 Logz.io</h2>
-<p>We currently use logz.io to store our logs. To get the logs for a session_id, navigate to the <code>fractal/protocol</code> directory, then type in: <code>python3 logs-to-text.py &lt;&lt;sesion_id&gt;&gt;</code> where <code>&lt;&lt;session_id&gt;&gt;</code> is the id of the currently running session.</p>
+<p>We currently use logz.io to store our logs. To get the logs for a session_id, navigate to the <code>whist/protocol</code> directory, then type in: <code>python3 logs-to-text.py &lt;&lt;sesion_id&gt;&gt;</code> where <code>&lt;&lt;session_id&gt;&gt;</code> is the id of the currently running session.</p>
 <p>This will output two files:</p>
 <ol type="1">
 <li><code>&lt;&lt;session_id&gt;&gt;-client.txt</code>: These are the sorted logs for the client from that session_id</li>

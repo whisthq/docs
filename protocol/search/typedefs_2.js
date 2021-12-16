@@ -1,14 +1,14 @@
 var searchData=
 [
   ['capturedevice_3329',['CaptureDevice',['../capture_8h.html#a4f32ec0a1163b589b5296ac7a884e803',1,'capture.h']]],
-  ['capturedevicetype_3330',['CaptureDeviceType',['../fractal_8h.html#aac56de0da721105f54191ba968635836',1,'fractal.h']]],
+  ['capturedevicetype_3330',['CaptureDeviceType',['../whist_8h.html#aac56de0da721105f54191ba968635836',1,'whist.h']]],
   ['chromecursorhash_3331',['ChromeCursorHash',['../linuxcursor_8c.html#ae6b771cfe86671ca768c2010e188b775',1,'linuxcursor.c']]],
   ['client_3332',['Client',['../client_8h.html#a7302c9ba9fef6f7473f52cc61bd4bc40',1,'client.h']]],
   ['clipboardchunktype_3333',['ClipboardChunkType',['../clipboard_8h.html#a7d9aaa1f2170fa8b774f6d0136bd58e7',1,'clipboard.h']]],
   ['clipboarddata_3334',['ClipboardData',['../clipboard_8h.html#a092f67435f72a3755ebb0c3bc77d4d54',1,'clipboard.h']]],
   ['clipboardfiles_3335',['ClipboardFiles',['../clipboard_8h.html#a41bafa8b5488a703d883ad31585cf9eb',1,'clipboard.h']]],
   ['clipboardtype_3336',['ClipboardType',['../clipboard_8h.html#a31cb48111b65c5d60c6718a523775978',1,'clipboard.h']]],
-  ['codectype_3337',['CodecType',['../fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2',1,'fractal.h']]],
+  ['codectype_3337',['CodecType',['../whist_8h.html#a9740e3eb33500c4ba6d6efade68933d2',1,'whist.h']]],
   ['colortree_3338',['ColorTree',['../lodepng_8c.html#abb86a394dcbb7e752e39d174a0f20830',1,'lodepng.c']]],
   ['cuctxcreatev2proc_3339',['CUCTXCREATEV2PROC',['../cudacontext_8c.html#ad85102144c2aea39b7f5cd9dc751ac7f',1,'cudacontext.c']]],
   ['cuctxdestroyv2proc_3340',['CUCTXDESTROYV2PROC',['../cudacontext_8c.html#a38c94ab7b166d5485a76d945666e8574',1,'cudacontext.c']]],

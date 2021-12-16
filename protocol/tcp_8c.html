@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/network/tcp.c File Reference</title>
+<title>Whist Protocol: whist/network/tcp.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('tcp_8c.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="tcp_8h_source.html">tcp.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="aes_8h_source.html">fractal/utils/aes.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="aes_8h_source.html">whist/utils/aes.h</a>&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -100,13 +100,13 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a24ae7ead432330774ba9da1b075939c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a24ae7ead432330774ba9da1b075939c8">socketp_tcp</a> ()</td></tr>
+<tr class="memitem:a24ae7ead432330774ba9da1b075939c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a24ae7ead432330774ba9da1b075939c8">socketp_tcp</a> ()</td></tr>
 <tr class="memdesc:a24ae7ead432330774ba9da1b075939c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform socket() syscall and set fds to use flag FD_CLOEXEC.  <a href="tcp_8c.html#a24ae7ead432330774ba9da1b075939c8">More...</a><br /></td></tr>
 <tr class="separator:a24ae7ead432330774ba9da1b075939c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a811a37790abb8890e23af20721f618d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a811a37790abb8890e23af20721f618d2">acceptp</a> (<a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> sock_fd, struct sockaddr *sock_addr, socklen_t *sock_len)</td></tr>
+<tr class="memitem:a811a37790abb8890e23af20721f618d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a811a37790abb8890e23af20721f618d2">acceptp</a> (<a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> sock_fd, struct sockaddr *sock_addr, socklen_t *sock_len)</td></tr>
 <tr class="memdesc:a811a37790abb8890e23af20721f618d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform accept syscall and set fd to use flag FD_CLOEXEC.  <a href="tcp_8c.html#a811a37790abb8890e23af20721f618d2">More...</a><br /></td></tr>
 <tr class="separator:a811a37790abb8890e23af20721f618d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d257115224205c814ba99a5964fd38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a51d257115224205c814ba99a5964fd38">tcp_connect</a> (<a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> sock_fd, struct sockaddr_in sock_addr, int timeout_ms)</td></tr>
+<tr class="memitem:a51d257115224205c814ba99a5964fd38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a51d257115224205c814ba99a5964fd38">tcp_connect</a> (<a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> sock_fd, struct sockaddr_in sock_addr, int timeout_ms)</td></tr>
 <tr class="memdesc:a51d257115224205c814ba99a5964fd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a TCP Server.  <a href="tcp_8c.html#a51d257115224205c814ba99a5964fd38">More...</a><br /></td></tr>
 <tr class="separator:a51d257115224205c814ba99a5964fd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af709002cd314953aa37e85dfa8288ed2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#af709002cd314953aa37e85dfa8288ed2">tcp_ack</a> (void *raw_context)</td></tr>
@@ -117,7 +117,7 @@ Functions</h2></td></tr>
 <tr class="separator:a6ac857f8697c6275db865f531155fa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a72ab23ed5cae60a741054cfbcb28fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a8a72ab23ed5cae60a741054cfbcb28fc">tcp_send_constructed_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet, size_t packet_size)</td></tr>
 <tr class="separator:a8a72ab23ed5cae60a741054cfbcb28fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30eb82123ff662b77ca8ccdd3665ac1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ac30eb82123ff662b77ca8ccdd3665ac1">tcp_send_packet</a> (void *raw_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int id)</td></tr>
+<tr class="memitem:ac30eb82123ff662b77ca8ccdd3665ac1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ac30eb82123ff662b77ca8ccdd3665ac1">tcp_send_packet</a> (void *raw_context, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int id)</td></tr>
 <tr class="separator:ac30eb82123ff662b77ca8ccdd3665ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae89f86a9b2cc8965df295f78631d5a0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ae89f86a9b2cc8965df295f78631d5a0b">tcp_destroy_socket_context</a> (void *raw_context)</td></tr>
 <tr class="separator:ae89f86a9b2cc8965df295f78631d5a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,9 +161,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> acceptp </td>
+          <td class="memname"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> acceptp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td>
           <td class="paramname"><em>sock_fd</em>, </td>
         </tr>
         <tr>
@@ -451,7 +451,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socketp_tcp </td>
+          <td class="memname"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socketp_tcp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -491,7 +491,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool tcp_connect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td>
           <td class="paramname"><em>sock_fd</em>, </td>
         </tr>
         <tr>
@@ -650,7 +650,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -701,7 +701,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="tcp_8c.html">tcp.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="tcp_8c.html">tcp.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

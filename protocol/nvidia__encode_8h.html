@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/video/codec/nvidia_encode.h File Reference</title>
+<title>Whist Protocol: whist/video/codec/nvidia_encode.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('nvidia__encode_8h.html',''); initResiz
 <div class="contents">
 <div class="textblock"><code>#include &quot;../nvidia-linux/NvFBCUtils.h&quot;</code><br />
 <code>#include &quot;../nvidia-linux/nvEncodeAPI.h&quot;</code><br />
-<code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="cudacontext_8h_source.html">../cudacontext.h</a>&quot;</code><br />
 </div>
 <p><a href="nvidia__encode_8h_source.html">Go to the source code of this file.</a></p>
@@ -110,10 +110,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2652e81003368f8bf0501290ac82bfe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8h.html#a2652e81003368f8bf0501290ac82bfe8">create_nvidia_encoder</a> (int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int out_width, int out_height, CUcontext cuda_context)</td></tr>
+<tr class="memitem:a2652e81003368f8bf0501290ac82bfe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8h.html#a2652e81003368f8bf0501290ac82bfe8">create_nvidia_encoder</a> (int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int out_width, int out_height, CUcontext cuda_context)</td></tr>
 <tr class="memdesc:a2652e81003368f8bf0501290ac82bfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new nvidia encoder.  <a href="nvidia__encode_8h.html#a2652e81003368f8bf0501290ac82bfe8">More...</a><br /></td></tr>
 <tr class="separator:a2652e81003368f8bf0501290ac82bfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e8b76037ee47e328a85df8842ea8fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8h.html#aa7e8b76037ee47e328a85df8842ea8fb">nvidia_reconfigure_encoder</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec)</td></tr>
+<tr class="memitem:aa7e8b76037ee47e328a85df8842ea8fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8h.html#aa7e8b76037ee47e328a85df8842ea8fb">nvidia_reconfigure_encoder</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, int out_width, int out_height, int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec)</td></tr>
 <tr class="memdesc:aa7e8b76037ee47e328a85df8842ea8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will reconfigure an nvidia encoder.  <a href="nvidia__encode_8h.html#aa7e8b76037ee47e328a85df8842ea8fb">More...</a><br /></td></tr>
 <tr class="separator:aa7e8b76037ee47e328a85df8842ea8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a526f8efc8ebb82f02cf739318642d291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8h.html#a526f8efc8ebb82f02cf739318642d291">nvidia_encoder_frame_intake</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, <a class="el" href="structRegisteredResource.html">RegisteredResource</a> resource_to_register)</td></tr>
@@ -160,7 +160,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
           <td class="paramname"><em>codec</em>, </td>
         </tr>
         <tr>
@@ -328,7 +328,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
           <td class="paramname"><em>codec</em>&#160;</td>
         </tr>
         <tr>
@@ -385,7 +385,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="nvidia__encode_8h.html">nvidia_encode.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="nvidia__encode_8h.html">nvidia_encode.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

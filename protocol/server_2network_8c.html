@@ -92,11 +92,11 @@ $(document).ready(function(){initNavTree('server_2network_8c.html',''); initResi
 
 <p>This file contains server-specific wrappers to low-level network.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="fractal_2network_2network_8h_source.html">fractal/network/network.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="input_8h_source.html">fractal/input/input.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="error__monitor_8h_source.html">fractal/logging/error_monitor.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="aes_8h_source.html">fractal/utils/aes.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="input_8h_source.html">whist/input/input.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="error__monitor_8h_source.html">whist/logging/error_monitor.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="aes_8h_source.html">whist/utils/aes.h</a>&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
@@ -128,10 +128,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5b5686b7c49fe0d9f6049297416a558"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#ac5b5686b7c49fe0d9f6049297416a558">broadcast_ack</a> (void)</td></tr>
 <tr class="memdesc:ac5b5686b7c49fe0d9f6049297416a558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts acks to all active clients.  <a href="server_2network_8c.html#ac5b5686b7c49fe0d9f6049297416a558">More...</a><br /></td></tr>
 <tr class="separator:ac5b5686b7c49fe0d9f6049297416a558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafd8bd4c2226a90167764494f4738512"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#aafd8bd4c2226a90167764494f4738512">broadcast_udp_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int packet_id)</td></tr>
+<tr class="memitem:aafd8bd4c2226a90167764494f4738512"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#aafd8bd4c2226a90167764494f4738512">broadcast_udp_packet</a> (<a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int packet_id)</td></tr>
 <tr class="memdesc:aafd8bd4c2226a90167764494f4738512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over UDP.  <a href="server_2network_8c.html#aafd8bd4c2226a90167764494f4738512">More...</a><br /></td></tr>
 <tr class="separator:aafd8bd4c2226a90167764494f4738512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625cda3e571448de114b40c82ffc1e79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79">broadcast_tcp_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len)</td></tr>
+<tr class="memitem:a625cda3e571448de114b40c82ffc1e79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79">broadcast_tcp_packet</a> (<a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len)</td></tr>
 <tr class="memdesc:a625cda3e571448de114b40c82ffc1e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over TCP.  <a href="server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79">More...</a><br /></td></tr>
 <tr class="separator:a625cda3e571448de114b40c82ffc1e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d09b1c8c7de997b76720d4045ec518a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a5d09b1c8c7de997b76720d4045ec518a">try_get_next_message_tcp</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> **p_tcp_packet)</td></tr>
@@ -161,7 +161,7 @@ Variables</h2></td></tr>
 <tr class="separator:a527325650d66abd9626499785b3bafd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28d9e55fc917106b3014669bf9a52309"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a28d9e55fc917106b3014669bf9a52309">client_joined_after_window_name_broadcast</a></td></tr>
 <tr class="separator:a28d9e55fc917106b3014669bf9a52309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420">client_os</a></td></tr>
+<tr class="memitem:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420">client_os</a></td></tr>
 <tr class="separator:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87359d0492cce4252fa833844855438d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a87359d0492cce4252fa833844855438d">begin_time_to_exit</a> = 60</td></tr>
 <tr class="separator:a87359d0492cce4252fa833844855438d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,7 +268,7 @@ Usage</h1>
         <tr>
           <td class="memname">int broadcast_tcp_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -313,7 +313,7 @@ Usage</h1>
         <tr>
           <td class="memname">int broadcast_udp_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -643,7 +643,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> client_os</td>
+          <td class="memname">volatile <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> client_os</td>
         </tr>
       </table>
 </div><div class="memdoc">

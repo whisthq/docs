@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/utils/threads.c File Reference</title>
+<title>Whist Protocol: whist/utils/threads.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,60 +88,60 @@ $(document).ready(function(){initNavTree('threads_8c.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="threads_8h_source.html">threads.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="logging_8h_source.html">fractal/logging/logging.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acabb6eeece9f9cd511277df6e8547479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#acabb6eeece9f9cd511277df6e8547479">fractal_init_multithreading</a> ()</td></tr>
+<tr class="memitem:acabb6eeece9f9cd511277df6e8547479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#acabb6eeece9f9cd511277df6e8547479">whist_init_multithreading</a> ()</td></tr>
 <tr class="separator:acabb6eeece9f9cd511277df6e8547479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affcf1f66852c98f479bf7d6b6a03c464"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#affcf1f66852c98f479bf7d6b6a03c464">fractal_create_thread</a> (<a class="el" href="threads_8h.html#aedfaae191fd6597f6583aa57d2a23ed8">WhistThreadFunction</a> thread_function, char *thread_name, void *data)</td></tr>
+<tr class="memitem:affcf1f66852c98f479bf7d6b6a03c464"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#affcf1f66852c98f479bf7d6b6a03c464">whist_create_thread</a> (<a class="el" href="threads_8h.html#aedfaae191fd6597f6583aa57d2a23ed8">WhistThreadFunction</a> thread_function, char *thread_name, void *data)</td></tr>
 <tr class="separator:affcf1f66852c98f479bf7d6b6a03c464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad988a790ff02ec5f854823ce11ef64bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#ad988a790ff02ec5f854823ce11ef64bc">fractal_detach_thread</a> (<a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a> thread)</td></tr>
+<tr class="memitem:ad988a790ff02ec5f854823ce11ef64bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#ad988a790ff02ec5f854823ce11ef64bc">whist_detach_thread</a> (<a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a> thread)</td></tr>
 <tr class="separator:ad988a790ff02ec5f854823ce11ef64bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a348bd984efaaafbd9f297f63a46dd65c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a348bd984efaaafbd9f297f63a46dd65c">fractal_wait_thread</a> (<a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a> thread, int *ret)</td></tr>
+<tr class="memitem:a348bd984efaaafbd9f297f63a46dd65c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a348bd984efaaafbd9f297f63a46dd65c">whist_wait_thread</a> (<a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a> thread, int *ret)</td></tr>
 <tr class="separator:a348bd984efaaafbd9f297f63a46dd65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be53882993e31ec764bf2250a5d32b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a1be53882993e31ec764bf2250a5d32b9">fractal_set_thread_priority</a> (<a class="el" href="threads_8h.html#a0c2105cfa5604d9eb16caa460841952f">WhistThreadPriority</a> priority)</td></tr>
+<tr class="memitem:a1be53882993e31ec764bf2250a5d32b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a1be53882993e31ec764bf2250a5d32b9">whist_set_thread_priority</a> (<a class="el" href="threads_8h.html#a0c2105cfa5604d9eb16caa460841952f">WhistThreadPriority</a> priority)</td></tr>
 <tr class="separator:a1be53882993e31ec764bf2250a5d32b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88a9f64dcb3765f09fd4eda466448288"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a88a9f64dcb3765f09fd4eda466448288">fractal_sleep</a> (uint32_t ms)</td></tr>
+<tr class="memitem:a88a9f64dcb3765f09fd4eda466448288"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a88a9f64dcb3765f09fd4eda466448288">whist_sleep</a> (uint32_t ms)</td></tr>
 <tr class="separator:a88a9f64dcb3765f09fd4eda466448288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b910d9c11ffb23856f54c988a69886d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a5b910d9c11ffb23856f54c988a69886d">fractal_usleep</a> (uint32_t us)</td></tr>
+<tr class="memitem:a5b910d9c11ffb23856f54c988a69886d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a5b910d9c11ffb23856f54c988a69886d">whist_usleep</a> (uint32_t us)</td></tr>
 <tr class="separator:a5b910d9c11ffb23856f54c988a69886d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a0b30131292c5f157889060f185433f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a7a0b30131292c5f157889060f185433f">fractal_create_mutex</a> ()</td></tr>
+<tr class="memitem:a7a0b30131292c5f157889060f185433f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a7a0b30131292c5f157889060f185433f">whist_create_mutex</a> ()</td></tr>
 <tr class="separator:a7a0b30131292c5f157889060f185433f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29180bb7deac52f3ffb43bdb86fd1cdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a29180bb7deac52f3ffb43bdb86fd1cdc">fractal_lock_mutex</a> (<a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
+<tr class="memitem:a29180bb7deac52f3ffb43bdb86fd1cdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a29180bb7deac52f3ffb43bdb86fd1cdc">whist_lock_mutex</a> (<a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
 <tr class="separator:a29180bb7deac52f3ffb43bdb86fd1cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab41ae12e1dcb546490c49368c8fb65a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#ab41ae12e1dcb546490c49368c8fb65a8">fractal_try_lock_mutex</a> (<a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
+<tr class="memitem:ab41ae12e1dcb546490c49368c8fb65a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#ab41ae12e1dcb546490c49368c8fb65a8">whist_try_lock_mutex</a> (<a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
 <tr class="separator:ab41ae12e1dcb546490c49368c8fb65a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93553032fddbc15ef88daf320939c68a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a93553032fddbc15ef88daf320939c68a">fractal_unlock_mutex</a> (<a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
+<tr class="memitem:a93553032fddbc15ef88daf320939c68a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a93553032fddbc15ef88daf320939c68a">whist_unlock_mutex</a> (<a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
 <tr class="separator:a93553032fddbc15ef88daf320939c68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2099c7fa312444b0305d7d95a55d18ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a2099c7fa312444b0305d7d95a55d18ac">fractal_destroy_mutex</a> (<a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
+<tr class="memitem:a2099c7fa312444b0305d7d95a55d18ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a2099c7fa312444b0305d7d95a55d18ac">whist_destroy_mutex</a> (<a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
 <tr class="separator:a2099c7fa312444b0305d7d95a55d18ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac5422bf4478934eed7b69d4f310ef8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#aac5422bf4478934eed7b69d4f310ef8f">fractal_create_cond</a> ()</td></tr>
+<tr class="memitem:aac5422bf4478934eed7b69d4f310ef8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#aac5422bf4478934eed7b69d4f310ef8f">whist_create_cond</a> ()</td></tr>
 <tr class="separator:aac5422bf4478934eed7b69d4f310ef8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8665784a8782fd230d875e1ccfd1ae08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a8665784a8782fd230d875e1ccfd1ae08">fractal_wait_cond</a> (<a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a> cond, <a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
+<tr class="memitem:a8665784a8782fd230d875e1ccfd1ae08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a8665784a8782fd230d875e1ccfd1ae08">whist_wait_cond</a> (<a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a> cond, <a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> mutex)</td></tr>
 <tr class="separator:a8665784a8782fd230d875e1ccfd1ae08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0c7f22796d940df6cd4443ebca5a280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#ae0c7f22796d940df6cd4443ebca5a280">fractal_broadcast_cond</a> (<a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a> cond)</td></tr>
+<tr class="memitem:ae0c7f22796d940df6cd4443ebca5a280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#ae0c7f22796d940df6cd4443ebca5a280">whist_broadcast_cond</a> (<a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a> cond)</td></tr>
 <tr class="separator:ae0c7f22796d940df6cd4443ebca5a280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1a3371c4d905bac9fd26ff31f8644a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#aeb1a3371c4d905bac9fd26ff31f8644a">fractal_destroy_cond</a> (<a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a> cond)</td></tr>
+<tr class="memitem:aeb1a3371c4d905bac9fd26ff31f8644a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#aeb1a3371c4d905bac9fd26ff31f8644a">whist_destroy_cond</a> (<a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a> cond)</td></tr>
 <tr class="separator:aeb1a3371c4d905bac9fd26ff31f8644a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75531bc0af28c1d57ad7fe579d1577b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a75531bc0af28c1d57ad7fe579d1577b0">fractal_create_semaphore</a> (uint32_t initial_value)</td></tr>
+<tr class="memitem:a75531bc0af28c1d57ad7fe579d1577b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a75531bc0af28c1d57ad7fe579d1577b0">whist_create_semaphore</a> (uint32_t initial_value)</td></tr>
 <tr class="separator:a75531bc0af28c1d57ad7fe579d1577b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c612660e714d5e6e27084781cb33f48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a2c612660e714d5e6e27084781cb33f48">fractal_post_semaphore</a> (<a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a> semaphore)</td></tr>
+<tr class="memitem:a2c612660e714d5e6e27084781cb33f48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a2c612660e714d5e6e27084781cb33f48">whist_post_semaphore</a> (<a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a> semaphore)</td></tr>
 <tr class="separator:a2c612660e714d5e6e27084781cb33f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c4336163b787c6d5b50dc612ddab51d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a4c4336163b787c6d5b50dc612ddab51d">fractal_wait_semaphore</a> (<a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a> semaphore)</td></tr>
+<tr class="memitem:a4c4336163b787c6d5b50dc612ddab51d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#a4c4336163b787c6d5b50dc612ddab51d">whist_wait_semaphore</a> (<a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a> semaphore)</td></tr>
 <tr class="separator:a4c4336163b787c6d5b50dc612ddab51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa10e0ab9830739378965b98de10e30e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#aa10e0ab9830739378965b98de10e30e9">fractal_destroy_semaphore</a> (<a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a> semaphore)</td></tr>
+<tr class="memitem:aa10e0ab9830739378965b98de10e30e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8c.html#aa10e0ab9830739378965b98de10e30e9">whist_destroy_semaphore</a> (<a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a> semaphore)</td></tr>
 <tr class="separator:aa10e0ab9830739378965b98de10e30e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae0c7f22796d940df6cd4443ebca5a280"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0c7f22796d940df6cd4443ebca5a280">&#9670;&nbsp;</a></span>fractal_broadcast_cond()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c7f22796d940df6cd4443ebca5a280">&#9670;&nbsp;</a></span>whist_broadcast_cond()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_broadcast_cond </td>
+          <td class="memname">void whist_broadcast_cond </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a>&#160;</td>
           <td class="paramname"><em>cond</em></td><td>)</td>
@@ -153,13 +153,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aac5422bf4478934eed7b69d4f310ef8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac5422bf4478934eed7b69d4f310ef8f">&#9670;&nbsp;</a></span>fractal_create_cond()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5422bf4478934eed7b69d4f310ef8f">&#9670;&nbsp;</a></span>whist_create_cond()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a> fractal_create_cond </td>
+          <td class="memname"><a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a> whist_create_cond </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -170,13 +170,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7a0b30131292c5f157889060f185433f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a0b30131292c5f157889060f185433f">&#9670;&nbsp;</a></span>fractal_create_mutex()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0b30131292c5f157889060f185433f">&#9670;&nbsp;</a></span>whist_create_mutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> fractal_create_mutex </td>
+          <td class="memname"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> whist_create_mutex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -187,13 +187,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a75531bc0af28c1d57ad7fe579d1577b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75531bc0af28c1d57ad7fe579d1577b0">&#9670;&nbsp;</a></span>fractal_create_semaphore()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75531bc0af28c1d57ad7fe579d1577b0">&#9670;&nbsp;</a></span>whist_create_semaphore()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a> fractal_create_semaphore </td>
+          <td class="memname"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a> whist_create_semaphore </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>initial_value</em></td><td>)</td>
@@ -205,13 +205,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="affcf1f66852c98f479bf7d6b6a03c464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affcf1f66852c98f479bf7d6b6a03c464">&#9670;&nbsp;</a></span>fractal_create_thread()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affcf1f66852c98f479bf7d6b6a03c464">&#9670;&nbsp;</a></span>whist_create_thread()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a> fractal_create_thread </td>
+          <td class="memname"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a> whist_create_thread </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#aedfaae191fd6597f6583aa57d2a23ed8">WhistThreadFunction</a>&#160;</td>
           <td class="paramname"><em>thread_function</em>, </td>
@@ -239,13 +239,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aeb1a3371c4d905bac9fd26ff31f8644a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1a3371c4d905bac9fd26ff31f8644a">&#9670;&nbsp;</a></span>fractal_destroy_cond()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1a3371c4d905bac9fd26ff31f8644a">&#9670;&nbsp;</a></span>whist_destroy_cond()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_destroy_cond </td>
+          <td class="memname">void whist_destroy_cond </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a>&#160;</td>
           <td class="paramname"><em>cond</em></td><td>)</td>
@@ -257,13 +257,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2099c7fa312444b0305d7d95a55d18ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2099c7fa312444b0305d7d95a55d18ac">&#9670;&nbsp;</a></span>fractal_destroy_mutex()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2099c7fa312444b0305d7d95a55d18ac">&#9670;&nbsp;</a></span>whist_destroy_mutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_destroy_mutex </td>
+          <td class="memname">void whist_destroy_mutex </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a>&#160;</td>
           <td class="paramname"><em>mutex</em></td><td>)</td>
@@ -275,13 +275,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa10e0ab9830739378965b98de10e30e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa10e0ab9830739378965b98de10e30e9">&#9670;&nbsp;</a></span>fractal_destroy_semaphore()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa10e0ab9830739378965b98de10e30e9">&#9670;&nbsp;</a></span>whist_destroy_semaphore()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_destroy_semaphore </td>
+          <td class="memname">void whist_destroy_semaphore </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a>&#160;</td>
           <td class="paramname"><em>semaphore</em></td><td>)</td>
@@ -293,13 +293,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad988a790ff02ec5f854823ce11ef64bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad988a790ff02ec5f854823ce11ef64bc">&#9670;&nbsp;</a></span>fractal_detach_thread()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad988a790ff02ec5f854823ce11ef64bc">&#9670;&nbsp;</a></span>whist_detach_thread()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_detach_thread </td>
+          <td class="memname">void whist_detach_thread </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a>&#160;</td>
           <td class="paramname"><em>thread</em></td><td>)</td>
@@ -311,13 +311,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="acabb6eeece9f9cd511277df6e8547479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acabb6eeece9f9cd511277df6e8547479">&#9670;&nbsp;</a></span>fractal_init_multithreading()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acabb6eeece9f9cd511277df6e8547479">&#9670;&nbsp;</a></span>whist_init_multithreading()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_init_multithreading </td>
+          <td class="memname">void whist_init_multithreading </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -328,13 +328,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a29180bb7deac52f3ffb43bdb86fd1cdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29180bb7deac52f3ffb43bdb86fd1cdc">&#9670;&nbsp;</a></span>fractal_lock_mutex()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a29180bb7deac52f3ffb43bdb86fd1cdc">&#9670;&nbsp;</a></span>whist_lock_mutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_lock_mutex </td>
+          <td class="memname">void whist_lock_mutex </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a>&#160;</td>
           <td class="paramname"><em>mutex</em></td><td>)</td>
@@ -346,13 +346,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2c612660e714d5e6e27084781cb33f48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c612660e714d5e6e27084781cb33f48">&#9670;&nbsp;</a></span>fractal_post_semaphore()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c612660e714d5e6e27084781cb33f48">&#9670;&nbsp;</a></span>whist_post_semaphore()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_post_semaphore </td>
+          <td class="memname">void whist_post_semaphore </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a>&#160;</td>
           <td class="paramname"><em>semaphore</em></td><td>)</td>
@@ -364,13 +364,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1be53882993e31ec764bf2250a5d32b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1be53882993e31ec764bf2250a5d32b9">&#9670;&nbsp;</a></span>fractal_set_thread_priority()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be53882993e31ec764bf2250a5d32b9">&#9670;&nbsp;</a></span>whist_set_thread_priority()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_set_thread_priority </td>
+          <td class="memname">void whist_set_thread_priority </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a0c2105cfa5604d9eb16caa460841952f">WhistThreadPriority</a>&#160;</td>
           <td class="paramname"><em>priority</em></td><td>)</td>
@@ -382,13 +382,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a88a9f64dcb3765f09fd4eda466448288"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88a9f64dcb3765f09fd4eda466448288">&#9670;&nbsp;</a></span>fractal_sleep()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a9f64dcb3765f09fd4eda466448288">&#9670;&nbsp;</a></span>whist_sleep()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_sleep </td>
+          <td class="memname">void whist_sleep </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>ms</em></td><td>)</td>
@@ -400,13 +400,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab41ae12e1dcb546490c49368c8fb65a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab41ae12e1dcb546490c49368c8fb65a8">&#9670;&nbsp;</a></span>fractal_try_lock_mutex()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab41ae12e1dcb546490c49368c8fb65a8">&#9670;&nbsp;</a></span>whist_try_lock_mutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fractal_try_lock_mutex </td>
+          <td class="memname">int whist_try_lock_mutex </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a>&#160;</td>
           <td class="paramname"><em>mutex</em></td><td>)</td>
@@ -418,13 +418,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a93553032fddbc15ef88daf320939c68a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93553032fddbc15ef88daf320939c68a">&#9670;&nbsp;</a></span>fractal_unlock_mutex()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a93553032fddbc15ef88daf320939c68a">&#9670;&nbsp;</a></span>whist_unlock_mutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_unlock_mutex </td>
+          <td class="memname">void whist_unlock_mutex </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a>&#160;</td>
           <td class="paramname"><em>mutex</em></td><td>)</td>
@@ -436,13 +436,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5b910d9c11ffb23856f54c988a69886d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b910d9c11ffb23856f54c988a69886d">&#9670;&nbsp;</a></span>fractal_usleep()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b910d9c11ffb23856f54c988a69886d">&#9670;&nbsp;</a></span>whist_usleep()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_usleep </td>
+          <td class="memname">void whist_usleep </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>us</em></td><td>)</td>
@@ -454,13 +454,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8665784a8782fd230d875e1ccfd1ae08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8665784a8782fd230d875e1ccfd1ae08">&#9670;&nbsp;</a></span>fractal_wait_cond()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8665784a8782fd230d875e1ccfd1ae08">&#9670;&nbsp;</a></span>whist_wait_cond()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_wait_cond </td>
+          <td class="memname">void whist_wait_cond </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559">WhistCondition</a>&#160;</td>
           <td class="paramname"><em>cond</em>, </td>
@@ -482,13 +482,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4c4336163b787c6d5b50dc612ddab51d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c4336163b787c6d5b50dc612ddab51d">&#9670;&nbsp;</a></span>fractal_wait_semaphore()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c4336163b787c6d5b50dc612ddab51d">&#9670;&nbsp;</a></span>whist_wait_semaphore()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_wait_semaphore </td>
+          <td class="memname">void whist_wait_semaphore </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a>&#160;</td>
           <td class="paramname"><em>semaphore</em></td><td>)</td>
@@ -500,13 +500,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a348bd984efaaafbd9f297f63a46dd65c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a348bd984efaaafbd9f297f63a46dd65c">&#9670;&nbsp;</a></span>fractal_wait_thread()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a348bd984efaaafbd9f297f63a46dd65c">&#9670;&nbsp;</a></span>whist_wait_thread()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fractal_wait_thread </td>
+          <td class="memname">void whist_wait_thread </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a>&#160;</td>
           <td class="paramname"><em>thread</em>, </td>
@@ -532,7 +532,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_df322525ef19ea0172bad82237de04c3.html">utils</a></li><li class="navelem"><a class="el" href="threads_8c.html">threads.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_df322525ef19ea0172bad82237de04c3.html">utils</a></li><li class="navelem"><a class="el" href="threads_8c.html">threads.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

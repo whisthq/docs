@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/core/fractal.h File Reference</title>
+<title>Whist Protocol: whist/core/whist.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('fractal_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('whist_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('fractal_8h.html',''); initResizable();
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">fractal.h File Reference</div>  </div>
+<div class="title">whist.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -114,16 +114,16 @@ $(document).ready(function(){initNavTree('fractal_8h.html',''); initResizable();
 <code>#include &lt;libavutil/hwcontext_qsv.h&gt;</code><br />
 <code>#include &lt;libavutil/imgutils.h&gt;</code><br />
 <code>#include &lt;libswscale/swscale.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="fractal__memory_8h_source.html">fractal/core/fractal_memory.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="threads_8h_source.html">fractal/utils/threads.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="clipboard__synchronizer_8h_source.html">fractal/clipboard/clipboard_synchronizer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="color_8h_source.html">fractal/utils/color.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="fractal_2network_2network_8h_source.html">fractal/network/network.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="clock_8h_source.html">fractal/utils/clock.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="logging_8h_source.html">fractal/logging/logging.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="fractal__frame_8h_source.html">fractal_frame.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="whist__memory_8h_source.html">whist/core/whist_memory.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="threads_8h_source.html">whist/utils/threads.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="clipboard__synchronizer_8h_source.html">whist/clipboard/clipboard_synchronizer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="color_8h_source.html">whist/utils/color.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="clock_8h_source.html">whist/utils/clock.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="whist__frame_8h_source.html">whist_frame.h</a>&quot;</code><br />
 </div>
-<p><a href="fractal_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="whist_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -166,540 +166,540 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:affe776513b24d84b39af8ab0930fef7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(a,  b)&#160;&#160;&#160;(((a) &gt; (b)) ? (a) : (b))</td></tr>
+<tr class="memitem:affe776513b24d84b39af8ab0930fef7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(a,  b)&#160;&#160;&#160;(((a) &gt; (b)) ? (a) : (b))</td></tr>
 <tr class="separator:affe776513b24d84b39af8ab0930fef7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6afabdc09a49a433ee19d8a9486056d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(a,  b)&#160;&#160;&#160;(((a) &lt; (b)) ? (a) : (b))</td></tr>
+<tr class="memitem:ac6afabdc09a49a433ee19d8a9486056d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(a,  b)&#160;&#160;&#160;(((a) &lt; (b)) ? (a) : (b))</td></tr>
 <tr class="separator:ac6afabdc09a49a433ee19d8a9486056d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f64c424fc4e04a8b3afd79a1e245625"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a5f64c424fc4e04a8b3afd79a1e245625">UNUSED</a>(var)&#160;&#160;&#160;(void)(var)</td></tr>
+<tr class="memitem:a5f64c424fc4e04a8b3afd79a1e245625"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a5f64c424fc4e04a8b3afd79a1e245625">UNUSED</a>(var)&#160;&#160;&#160;(void)(var)</td></tr>
 <tr class="separator:a5f64c424fc4e04a8b3afd79a1e245625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06264520eefaf16d80f93e8cd93817b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a06264520eefaf16d80f93e8cd93817b5">USING_SENTRY</a>&#160;&#160;&#160;true</td></tr>
+<tr class="memitem:a06264520eefaf16d80f93e8cd93817b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a06264520eefaf16d80f93e8cd93817b5">USING_SENTRY</a>&#160;&#160;&#160;true</td></tr>
 <tr class="separator:a06264520eefaf16d80f93e8cd93817b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a881d9eef8e780a05fe9cd24eab5514d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a881d9eef8e780a05fe9cd24eab5514d8">CAPTURE_SPECIAL_WINDOWS_KEYS</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memitem:a881d9eef8e780a05fe9cd24eab5514d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a881d9eef8e780a05fe9cd24eab5514d8">CAPTURE_SPECIAL_WINDOWS_KEYS</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:a881d9eef8e780a05fe9cd24eab5514d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a263ebc1eb05493f4752619082632207f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a263ebc1eb05493f4752619082632207f">PORT_DISCOVERY</a>&#160;&#160;&#160;32262</td></tr>
+<tr class="memitem:a263ebc1eb05493f4752619082632207f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a263ebc1eb05493f4752619082632207f">PORT_DISCOVERY</a>&#160;&#160;&#160;32262</td></tr>
 <tr class="separator:a263ebc1eb05493f4752619082632207f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf13ea9a5895c46f8309ca5a57d176dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#abf13ea9a5895c46f8309ca5a57d176dd">BASE_UDP_PORT</a>&#160;&#160;&#160;32263</td></tr>
+<tr class="memitem:abf13ea9a5895c46f8309ca5a57d176dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#abf13ea9a5895c46f8309ca5a57d176dd">BASE_UDP_PORT</a>&#160;&#160;&#160;32263</td></tr>
 <tr class="separator:abf13ea9a5895c46f8309ca5a57d176dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc0ff2e968cb733b9d5b1370fec443f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#adc0ff2e968cb733b9d5b1370fec443f5">BASE_TCP_PORT</a>&#160;&#160;&#160;32273</td></tr>
+<tr class="memitem:adc0ff2e968cb733b9d5b1370fec443f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#adc0ff2e968cb733b9d5b1370fec443f5">BASE_TCP_PORT</a>&#160;&#160;&#160;32273</td></tr>
 <tr class="separator:adc0ff2e968cb733b9d5b1370fec443f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aabd41fc3d6e2687cf1cda5a88dd6d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a1aabd41fc3d6e2687cf1cda5a88dd6d3">USING_AUDIO_ENCODE_DECODE</a>&#160;&#160;&#160;true</td></tr>
+<tr class="memitem:a1aabd41fc3d6e2687cf1cda5a88dd6d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a1aabd41fc3d6e2687cf1cda5a88dd6d3">USING_AUDIO_ENCODE_DECODE</a>&#160;&#160;&#160;true</td></tr>
 <tr class="separator:a1aabd41fc3d6e2687cf1cda5a88dd6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98c653bb06a80c855ad7013dccb3f26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac98c653bb06a80c855ad7013dccb3f26">USING_FFMPEG_IFRAME_FLAG</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memitem:ac98c653bb06a80c855ad7013dccb3f26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac98c653bb06a80c855ad7013dccb3f26">USING_FFMPEG_IFRAME_FLAG</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:ac98c653bb06a80c855ad7013dccb3f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a4d8d35aab3f2cd853e52c407e0d9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac5a4d8d35aab3f2cd853e52c407e0d9c">ENCRYPTING_PACKETS</a>&#160;&#160;&#160;true</td></tr>
+<tr class="memitem:ac5a4d8d35aab3f2cd853e52c407e0d9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac5a4d8d35aab3f2cd853e52c407e0d9c">ENCRYPTING_PACKETS</a>&#160;&#160;&#160;true</td></tr>
 <tr class="separator:ac5a4d8d35aab3f2cd853e52c407e0d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0923737dee5ff7a8f1a17c4b9c1f2fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#af0923737dee5ff7a8f1a17c4b9c1f2fe">LOG_VIDEO</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memitem:af0923737dee5ff7a8f1a17c4b9c1f2fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#af0923737dee5ff7a8f1a17c4b9c1f2fe">LOG_VIDEO</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:af0923737dee5ff7a8f1a17c4b9c1f2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c3a7c646b3ccbd02f0b98fa5c7b28a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a06c3a7c646b3ccbd02f0b98fa5c7b28a">LOG_NACKING</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memitem:a06c3a7c646b3ccbd02f0b98fa5c7b28a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a06c3a7c646b3ccbd02f0b98fa5c7b28a">LOG_NACKING</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:a06c3a7c646b3ccbd02f0b98fa5c7b28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0b6fc03c4691990ac064ede518dd2c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#af0b6fc03c4691990ac064ede518dd2c3">LOG_NETWORKING</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memitem:af0b6fc03c4691990ac064ede518dd2c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#af0b6fc03c4691990ac064ede518dd2c3">LOG_NETWORKING</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:af0b6fc03c4691990ac064ede518dd2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e3688d82ca0322b9f939340cd50023c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a5e3688d82ca0322b9f939340cd50023c">WINAPI_INPUT_DRIVER</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a5e3688d82ca0322b9f939340cd50023c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a5e3688d82ca0322b9f939340cd50023c">WINAPI_INPUT_DRIVER</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a5e3688d82ca0322b9f939340cd50023c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f9a5f50ab08d080df02684e783ab66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ae5f9a5f50ab08d080df02684e783ab66">XTEST_INPUT_DRIVER</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:ae5f9a5f50ab08d080df02684e783ab66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ae5f9a5f50ab08d080df02684e783ab66">XTEST_INPUT_DRIVER</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ae5f9a5f50ab08d080df02684e783ab66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69d62858e125982881b534cafa1cd0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ad69d62858e125982881b534cafa1cd0f">UINPUT_INPUT_DRIVER</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:ad69d62858e125982881b534cafa1cd0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ad69d62858e125982881b534cafa1cd0f">UINPUT_INPUT_DRIVER</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:ad69d62858e125982881b534cafa1cd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa1974cc8beaefae0b0afb0e084ff9eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb">USING_SERVERSIDE_SCALE</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memitem:afa1974cc8beaefae0b0afb0e084ff9eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb">USING_SERVERSIDE_SCALE</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:afa1974cc8beaefae0b0afb0e084ff9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a514734c0c6acc3c2f2076323d45676d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a514734c0c6acc3c2f2076323d45676d8">INPUT_DRIVER</a>&#160;&#160;&#160;<a class="el" href="fractal_8h.html#ad69d62858e125982881b534cafa1cd0f">UINPUT_INPUT_DRIVER</a></td></tr>
+<tr class="memitem:a514734c0c6acc3c2f2076323d45676d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a514734c0c6acc3c2f2076323d45676d8">INPUT_DRIVER</a>&#160;&#160;&#160;<a class="el" href="whist_8h.html#ad69d62858e125982881b534cafa1cd0f">UINPUT_INPUT_DRIVER</a></td></tr>
 <tr class="separator:a514734c0c6acc3c2f2076323d45676d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e53fd1451b40e47cdbfc94814bf4de6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6">USING_NVIDIA_CAPTURE</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memitem:a0e53fd1451b40e47cdbfc94814bf4de6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6">USING_NVIDIA_CAPTURE</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:a0e53fd1451b40e47cdbfc94814bf4de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c14c321fd244515ad04ff39026feb75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a8c14c321fd244515ad04ff39026feb75">USING_NVIDIA_ENCODE</a>&#160;&#160;&#160;true</td></tr>
+<tr class="memitem:a8c14c321fd244515ad04ff39026feb75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a8c14c321fd244515ad04ff39026feb75">USING_NVIDIA_ENCODE</a>&#160;&#160;&#160;true</td></tr>
 <tr class="separator:a8c14c321fd244515ad04ff39026feb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08b5ca53d7a67e07145271921a829015"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a08b5ca53d7a67e07145271921a829015">VSYNC_ON</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memitem:a08b5ca53d7a67e07145271921a829015"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a08b5ca53d7a67e07145271921a829015">VSYNC_ON</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:a08b5ca53d7a67e07145271921a829015"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe35f6b7cbcafed20fd9d41e4f11660a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#abe35f6b7cbcafed20fd9d41e4f11660a">WINDOW_RESIZE_MESSAGE_INTERVAL</a>&#160;&#160;&#160;200</td></tr>
+<tr class="memitem:abe35f6b7cbcafed20fd9d41e4f11660a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#abe35f6b7cbcafed20fd9d41e4f11660a">WINDOW_RESIZE_MESSAGE_INTERVAL</a>&#160;&#160;&#160;200</td></tr>
 <tr class="separator:abe35f6b7cbcafed20fd9d41e4f11660a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99345a216f300c72251d94158573c1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#af99345a216f300c72251d94158573c1c">MAXIMUM_BITRATE</a>&#160;&#160;&#160;30000000</td></tr>
+<tr class="memitem:af99345a216f300c72251d94158573c1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#af99345a216f300c72251d94158573c1c">MAXIMUM_BITRATE</a>&#160;&#160;&#160;30000000</td></tr>
 <tr class="separator:af99345a216f300c72251d94158573c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2aaa80882bbda0541e0a62c9a6125ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec">MINIMUM_BITRATE</a>&#160;&#160;&#160;2000000</td></tr>
+<tr class="memitem:ac2aaa80882bbda0541e0a62c9a6125ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec">MINIMUM_BITRATE</a>&#160;&#160;&#160;2000000</td></tr>
 <tr class="separator:ac2aaa80882bbda0541e0a62c9a6125ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ca2d6baec9e5c02bb2de6a3596ff72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#af6ca2d6baec9e5c02bb2de6a3596ff72">STARTING_BITRATE_RAW</a>&#160;&#160;&#160;15400000</td></tr>
+<tr class="memitem:af6ca2d6baec9e5c02bb2de6a3596ff72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#af6ca2d6baec9e5c02bb2de6a3596ff72">STARTING_BITRATE_RAW</a>&#160;&#160;&#160;15400000</td></tr>
 <tr class="separator:af6ca2d6baec9e5c02bb2de6a3596ff72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6e2306adac4a7fc41cc4c181d2e605b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#af6e2306adac4a7fc41cc4c181d2e605b">STARTING_BITRATE</a>&#160;&#160;&#160;(<a class="el" href="fractal_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(<a class="el" href="fractal_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="fractal_8h.html#af6ca2d6baec9e5c02bb2de6a3596ff72">STARTING_BITRATE_RAW</a>, <a class="el" href="fractal_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec">MINIMUM_BITRATE</a>), <a class="el" href="fractal_8h.html#af99345a216f300c72251d94158573c1c">MAXIMUM_BITRATE</a>))</td></tr>
+<tr class="memitem:af6e2306adac4a7fc41cc4c181d2e605b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#af6e2306adac4a7fc41cc4c181d2e605b">STARTING_BITRATE</a>&#160;&#160;&#160;(<a class="el" href="whist_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="whist_8h.html#af6ca2d6baec9e5c02bb2de6a3596ff72">STARTING_BITRATE_RAW</a>, <a class="el" href="whist_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec">MINIMUM_BITRATE</a>), <a class="el" href="whist_8h.html#af99345a216f300c72251d94158573c1c">MAXIMUM_BITRATE</a>))</td></tr>
 <tr class="separator:af6e2306adac4a7fc41cc4c181d2e605b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d1a6f11ba27fccd22c0a937de148e8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a7d1a6f11ba27fccd22c0a937de148e8b">MAXIMUM_BURST_BITRATE</a>&#160;&#160;&#160;200000000</td></tr>
+<tr class="memitem:a7d1a6f11ba27fccd22c0a937de148e8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a7d1a6f11ba27fccd22c0a937de148e8b">MAXIMUM_BURST_BITRATE</a>&#160;&#160;&#160;200000000</td></tr>
 <tr class="separator:a7d1a6f11ba27fccd22c0a937de148e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a766f336f01ead55fa462053310ece2df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a766f336f01ead55fa462053310ece2df">MINIMUM_BURST_BITRATE</a>&#160;&#160;&#160;4000000</td></tr>
+<tr class="memitem:a766f336f01ead55fa462053310ece2df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a766f336f01ead55fa462053310ece2df">MINIMUM_BURST_BITRATE</a>&#160;&#160;&#160;4000000</td></tr>
 <tr class="separator:a766f336f01ead55fa462053310ece2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a252287e91b6d572153c2a6e7ab1c342b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a252287e91b6d572153c2a6e7ab1c342b">STARTING_BURST_BITRATE_RAW</a>&#160;&#160;&#160;100000000</td></tr>
+<tr class="memitem:a252287e91b6d572153c2a6e7ab1c342b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a252287e91b6d572153c2a6e7ab1c342b">STARTING_BURST_BITRATE_RAW</a>&#160;&#160;&#160;100000000</td></tr>
 <tr class="separator:a252287e91b6d572153c2a6e7ab1c342b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97888d50b51f804637c90a7dbee17c44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a97888d50b51f804637c90a7dbee17c44">STARTING_BURST_BITRATE</a>&#160;&#160;&#160;(<a class="el" href="fractal_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(<a class="el" href="fractal_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="fractal_8h.html#a252287e91b6d572153c2a6e7ab1c342b">STARTING_BURST_BITRATE_RAW</a>, <a class="el" href="fractal_8h.html#a766f336f01ead55fa462053310ece2df">MINIMUM_BURST_BITRATE</a>), <a class="el" href="fractal_8h.html#a7d1a6f11ba27fccd22c0a937de148e8b">MAXIMUM_BURST_BITRATE</a>))</td></tr>
+<tr class="memitem:a97888d50b51f804637c90a7dbee17c44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a97888d50b51f804637c90a7dbee17c44">STARTING_BURST_BITRATE</a>&#160;&#160;&#160;(<a class="el" href="whist_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="whist_8h.html#a252287e91b6d572153c2a6e7ab1c342b">STARTING_BURST_BITRATE_RAW</a>, <a class="el" href="whist_8h.html#a766f336f01ead55fa462053310ece2df">MINIMUM_BURST_BITRATE</a>), <a class="el" href="whist_8h.html#a7d1a6f11ba27fccd22c0a937de148e8b">MAXIMUM_BURST_BITRATE</a>))</td></tr>
 <tr class="separator:a97888d50b51f804637c90a7dbee17c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc6e77e478edc14b707385d84b37c2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#acdc6e77e478edc14b707385d84b37c2e">FEC_PACKET_RATIO</a>&#160;&#160;&#160;0.0</td></tr>
+<tr class="memitem:acdc6e77e478edc14b707385d84b37c2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#acdc6e77e478edc14b707385d84b37c2e">FEC_PACKET_RATIO</a>&#160;&#160;&#160;0.0</td></tr>
 <tr class="separator:acdc6e77e478edc14b707385d84b37c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a407e78922a862311fd4f35eeef889630"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a407e78922a862311fd4f35eeef889630">ACK_REFRESH_MS</a>&#160;&#160;&#160;50</td></tr>
+<tr class="memitem:a407e78922a862311fd4f35eeef889630"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a407e78922a862311fd4f35eeef889630">ACK_REFRESH_MS</a>&#160;&#160;&#160;50</td></tr>
 <tr class="separator:a407e78922a862311fd4f35eeef889630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a127a432b98b2684fb0d592970c125b41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a127a432b98b2684fb0d592970c125b41">MIN_SCREEN_WIDTH</a>&#160;&#160;&#160;500</td></tr>
+<tr class="memitem:a127a432b98b2684fb0d592970c125b41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a127a432b98b2684fb0d592970c125b41">MIN_SCREEN_WIDTH</a>&#160;&#160;&#160;500</td></tr>
 <tr class="separator:a127a432b98b2684fb0d592970c125b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c279ad767a41e3b26f0f55bbc55749d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a5c279ad767a41e3b26f0f55bbc55749d">MIN_SCREEN_HEIGHT</a>&#160;&#160;&#160;500</td></tr>
+<tr class="memitem:a5c279ad767a41e3b26f0f55bbc55749d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a5c279ad767a41e3b26f0f55bbc55749d">MIN_SCREEN_HEIGHT</a>&#160;&#160;&#160;500</td></tr>
 <tr class="separator:a5c279ad767a41e3b26f0f55bbc55749d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56ab8e1d2af6f308d5612205ba3d9e6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a56ab8e1d2af6f308d5612205ba3d9e6b">MAX_SCREEN_WIDTH</a>&#160;&#160;&#160;8192</td></tr>
+<tr class="memitem:a56ab8e1d2af6f308d5612205ba3d9e6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a56ab8e1d2af6f308d5612205ba3d9e6b">MAX_SCREEN_WIDTH</a>&#160;&#160;&#160;8192</td></tr>
 <tr class="separator:a56ab8e1d2af6f308d5612205ba3d9e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71b50617058e1b676d6fc6de1d4f05b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a71b50617058e1b676d6fc6de1d4f05b1">MAX_SCREEN_HEIGHT</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="memitem:a71b50617058e1b676d6fc6de1d4f05b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a71b50617058e1b676d6fc6de1d4f05b1">MAX_SCREEN_HEIGHT</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:a71b50617058e1b676d6fc6de1d4f05b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dd2e9c562db4c9c333b1ddcbea5f7cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a4dd2e9c562db4c9c333b1ddcbea5f7cc">AUDIO_BITRATE</a>&#160;&#160;&#160;128000</td></tr>
+<tr class="memitem:a4dd2e9c562db4c9c333b1ddcbea5f7cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a4dd2e9c562db4c9c333b1ddcbea5f7cc">AUDIO_BITRATE</a>&#160;&#160;&#160;128000</td></tr>
 <tr class="separator:a4dd2e9c562db4c9c333b1ddcbea5f7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac92ca5ab87034a348decad7ee8d4bd1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac92ca5ab87034a348decad7ee8d4bd1b">FPS</a>&#160;&#160;&#160;60</td></tr>
+<tr class="memitem:ac92ca5ab87034a348decad7ee8d4bd1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac92ca5ab87034a348decad7ee8d4bd1b">FPS</a>&#160;&#160;&#160;60</td></tr>
 <tr class="separator:ac92ca5ab87034a348decad7ee8d4bd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07497cbfeb7eff3e5798235291f978c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a07497cbfeb7eff3e5798235291f978c6">MIN_FPS</a>&#160;&#160;&#160;45</td></tr>
+<tr class="memitem:a07497cbfeb7eff3e5798235291f978c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a07497cbfeb7eff3e5798235291f978c6">MIN_FPS</a>&#160;&#160;&#160;45</td></tr>
 <tr class="separator:a07497cbfeb7eff3e5798235291f978c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b26cd4ece83eb114a81877bd849e28b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a9b26cd4ece83eb114a81877bd849e28b">CONSECUTIVE_IDENTICAL_FRAMES</a>&#160;&#160;&#160;300</td></tr>
+<tr class="memitem:a9b26cd4ece83eb114a81877bd849e28b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a9b26cd4ece83eb114a81877bd849e28b">CONSECUTIVE_IDENTICAL_FRAMES</a>&#160;&#160;&#160;300</td></tr>
 <tr class="separator:a9b26cd4ece83eb114a81877bd849e28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa432070c422ef782d49e2dc35b8a6e56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aa432070c422ef782d49e2dc35b8a6e56">DISABLED_ENCODER_FPS</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:aa432070c422ef782d49e2dc35b8a6e56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aa432070c422ef782d49e2dc35b8a6e56">DISABLED_ENCODER_FPS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:aa432070c422ef782d49e2dc35b8a6e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b2575d308f4dcd72c988a83a6ea138d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a2b2575d308f4dcd72c988a83a6ea138d">OUTPUT_WIDTH</a>&#160;&#160;&#160;1280</td></tr>
+<tr class="memitem:a2b2575d308f4dcd72c988a83a6ea138d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a2b2575d308f4dcd72c988a83a6ea138d">OUTPUT_WIDTH</a>&#160;&#160;&#160;1280</td></tr>
 <tr class="separator:a2b2575d308f4dcd72c988a83a6ea138d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5707c89933e682d000495637c8dc45fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a5707c89933e682d000495637c8dc45fd">OUTPUT_HEIGHT</a>&#160;&#160;&#160;720</td></tr>
+<tr class="memitem:a5707c89933e682d000495637c8dc45fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a5707c89933e682d000495637c8dc45fd">OUTPUT_HEIGHT</a>&#160;&#160;&#160;720</td></tr>
 <tr class="separator:a5707c89933e682d000495637c8dc45fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1235010ccd0a75e6b2f1e805e7ab3a41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41">DEFAULT_BINARY_PRIVATE_KEY</a>&#160;&#160;&#160;&quot;\xED\x5E\xF3\x3C\xD7\x28\xD1\x7D\xB8\x06\x45\x81\x42\x8D\x19\xEF&quot;</td></tr>
+<tr class="memitem:a1235010ccd0a75e6b2f1e805e7ab3a41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41">DEFAULT_BINARY_PRIVATE_KEY</a>&#160;&#160;&#160;&quot;\xED\x5E\xF3\x3C\xD7\x28\xD1\x7D\xB8\x06\x45\x81\x42\x8D\x19\xEF&quot;</td></tr>
 <tr class="separator:a1235010ccd0a75e6b2f1e805e7ab3a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a151518969977796d7b0c7d40e9ced62f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a151518969977796d7b0c7d40e9ced62f">DEFAULT_HEX_PRIVATE_KEY</a>&#160;&#160;&#160;&quot;ED5EF33CD728D17DB8064581428D19EF&quot;</td></tr>
+<tr class="memitem:a151518969977796d7b0c7d40e9ced62f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a151518969977796d7b0c7d40e9ced62f">DEFAULT_HEX_PRIVATE_KEY</a>&#160;&#160;&#160;&quot;ED5EF33CD728D17DB8064581428D19EF&quot;</td></tr>
 <tr class="separator:a151518969977796d7b0c7d40e9ced62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76bf238d14734ada3ef9fadfdea45ca7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a76bf238d14734ada3ef9fadfdea45ca7">MOUSE_SCALING_FACTOR</a>&#160;&#160;&#160;100000</td></tr>
+<tr class="memitem:a76bf238d14734ada3ef9fadfdea45ca7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a76bf238d14734ada3ef9fadfdea45ca7">MOUSE_SCALING_FACTOR</a>&#160;&#160;&#160;100000</td></tr>
 <tr class="separator:a76bf238d14734ada3ef9fadfdea45ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d5505ccdc13c57ee664df9e2ff76b95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95">WHIST_IDENTIFIER_MAXLEN</a>&#160;&#160;&#160;31</td></tr>
+<tr class="memitem:a2d5505ccdc13c57ee664df9e2ff76b95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95">WHIST_IDENTIFIER_MAXLEN</a>&#160;&#160;&#160;31</td></tr>
 <tr class="separator:a2d5505ccdc13c57ee664df9e2ff76b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b9ceebe220134e5a67f3596b06f752"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac4b9ceebe220134e5a67f3596b06f752">WHIST_ARGS_MAXLEN</a>&#160;&#160;&#160;255</td></tr>
+<tr class="memitem:ac4b9ceebe220134e5a67f3596b06f752"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac4b9ceebe220134e5a67f3596b06f752">WHIST_ARGS_MAXLEN</a>&#160;&#160;&#160;255</td></tr>
 <tr class="separator:ac4b9ceebe220134e5a67f3596b06f752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab06727ebbc110e7071dc8090ced33373"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memitem:ab06727ebbc110e7071dc8090ced33373"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a>&#160;&#160;&#160;1000</td></tr>
 <tr class="separator:ab06727ebbc110e7071dc8090ced33373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e4c0175929d141a35aca839fea9693"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ae8e4c0175929d141a35aca839fea9693">BYTES_IN_KILOBYTE</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memitem:ae8e4c0175929d141a35aca839fea9693"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ae8e4c0175929d141a35aca839fea9693">BYTES_IN_KILOBYTE</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:ae8e4c0175929d141a35aca839fea9693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a794e0417bdd7ebdad81c59a929932761"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a794e0417bdd7ebdad81c59a929932761">DEFAULT_DPI</a>&#160;&#160;&#160;72.0</td></tr>
+<tr class="memitem:a794e0417bdd7ebdad81c59a929932761"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a794e0417bdd7ebdad81c59a929932761">DEFAULT_DPI</a>&#160;&#160;&#160;72.0</td></tr>
 <tr class="separator:a794e0417bdd7ebdad81c59a929932761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1728270d73c5d1598de1fd691762eb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aa1728270d73c5d1598de1fd691762eb1">NORETURN</a>&#160;&#160;&#160;__attribute__((noreturn))</td></tr>
+<tr class="memitem:aa1728270d73c5d1598de1fd691762eb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aa1728270d73c5d1598de1fd691762eb1">NORETURN</a>&#160;&#160;&#160;__attribute__((noreturn))</td></tr>
 <tr class="separator:aa1728270d73c5d1598de1fd691762eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea3cfda4f3a9f978ec759f206cf186fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aea3cfda4f3a9f978ec759f206cf186fe">CHUNK_SIZE</a>&#160;&#160;&#160;1000000</td></tr>
+<tr class="memitem:aea3cfda4f3a9f978ec759f206cf186fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aea3cfda4f3a9f978ec759f206cf186fe">CHUNK_SIZE</a>&#160;&#160;&#160;1000000</td></tr>
 <tr class="separator:aea3cfda4f3a9f978ec759f206cf186fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a115e1297596f9885f9a0dbb6a63b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a61a115e1297596f9885f9a0dbb6a63b7">KEYCODE_UPPERBOUND</a>&#160;&#160;&#160;265</td></tr>
+<tr class="memitem:a61a115e1297596f9885f9a0dbb6a63b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a61a115e1297596f9885f9a0dbb6a63b7">KEYCODE_UPPERBOUND</a>&#160;&#160;&#160;265</td></tr>
 <tr class="separator:a61a115e1297596f9885f9a0dbb6a63b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4ac0c784aec9caf76934889e1ac04c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac4ac0c784aec9caf76934889e1ac04c5">BIT_CHAR</a>(bit)&#160;&#160;&#160;((bit) / CHAR_BIT)</td></tr>
+<tr class="memitem:ac4ac0c784aec9caf76934889e1ac04c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac4ac0c784aec9caf76934889e1ac04c5">BIT_CHAR</a>(bit)&#160;&#160;&#160;((bit) / CHAR_BIT)</td></tr>
 <tr class="separator:ac4ac0c784aec9caf76934889e1ac04c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99cc5a998dfeebc3567baec59b4a77a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a99cc5a998dfeebc3567baec59b4a77a3">BIT_IN_CHAR</a>(bit)&#160;&#160;&#160;(1 &lt;&lt; (CHAR_BIT - 1 - ((bit) % CHAR_BIT)))</td></tr>
+<tr class="memitem:a99cc5a998dfeebc3567baec59b4a77a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a99cc5a998dfeebc3567baec59b4a77a3">BIT_IN_CHAR</a>(bit)&#160;&#160;&#160;(1 &lt;&lt; (CHAR_BIT - 1 - ((bit) % CHAR_BIT)))</td></tr>
 <tr class="separator:a99cc5a998dfeebc3567baec59b4a77a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d7c1ddafff24bb11e440ffaf1ebbcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a60d7c1ddafff24bb11e440ffaf1ebbcf">BITS_TO_CHARS</a>(bits)&#160;&#160;&#160;((((bits)-1) / CHAR_BIT) + 1)</td></tr>
+<tr class="memitem:a60d7c1ddafff24bb11e440ffaf1ebbcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a60d7c1ddafff24bb11e440ffaf1ebbcf">BITS_TO_CHARS</a>(bits)&#160;&#160;&#160;((((bits)-1) / CHAR_BIT) + 1)</td></tr>
 <tr class="separator:a60d7c1ddafff24bb11e440ffaf1ebbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2fc8d91a4522aa7564405e36898140b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>&#160;&#160;&#160;500</td></tr>
+<tr class="memitem:ac2fc8d91a4522aa7564405e36898140b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>&#160;&#160;&#160;500</td></tr>
 <tr class="separator:ac2fc8d91a4522aa7564405e36898140b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">safe_printf</a>&#160;&#160;&#160;UNINITIALIZED_LOG</td></tr>
-<tr class="memdesc:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will exit on error, and log a warning if this function is used when the logger is already initialized. If the logger is initialized, please use LOG_INFO.  <a href="fractal_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">More...</a><br /></td></tr>
+<tr class="memitem:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">safe_printf</a>&#160;&#160;&#160;UNINITIALIZED_LOG</td></tr>
+<tr class="memdesc:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will exit on error, and log a warning if this function is used when the logger is already initialized. If the logger is initialized, please use LOG_INFO.  <a href="whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">More...</a><br /></td></tr>
 <tr class="separator:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a9740e3eb33500c4ba6d6efade68933d2"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2">CodecType</a></td></tr>
-<tr class="memdesc:a9740e3eb33500c4ba6d6efade68933d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec types.  <a href="fractal_8h.html#a9740e3eb33500c4ba6d6efade68933d2">More...</a><br /></td></tr>
+<tr class="memitem:a9740e3eb33500c4ba6d6efade68933d2"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a9740e3eb33500c4ba6d6efade68933d2">CodecType</a></td></tr>
+<tr class="memdesc:a9740e3eb33500c4ba6d6efade68933d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec types.  <a href="whist_8h.html#a9740e3eb33500c4ba6d6efade68933d2">More...</a><br /></td></tr>
 <tr class="separator:a9740e3eb33500c4ba6d6efade68933d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac56de0da721105f54191ba968635836"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aac56de0da721105f54191ba968635836">CaptureDeviceType</a></td></tr>
-<tr class="memdesc:aac56de0da721105f54191ba968635836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below.  <a href="fractal_8h.html#aac56de0da721105f54191ba968635836">More...</a><br /></td></tr>
+<tr class="memitem:aac56de0da721105f54191ba968635836"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aac56de0da721105f54191ba968635836">CaptureDeviceType</a></td></tr>
+<tr class="memdesc:aac56de0da721105f54191ba968635836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below.  <a href="whist_8h.html#aac56de0da721105f54191ba968635836">More...</a><br /></td></tr>
 <tr class="separator:aac56de0da721105f54191ba968635836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fd21922c209d22dba480caba7733dbc"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a1fd21922c209d22dba480caba7733dbc">WhistKeycode</a></td></tr>
-<tr class="memdesc:a1fd21922c209d22dba480caba7733dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keycodes.  <a href="fractal_8h.html#a1fd21922c209d22dba480caba7733dbc">More...</a><br /></td></tr>
+<tr class="memitem:a1fd21922c209d22dba480caba7733dbc"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a1fd21922c209d22dba480caba7733dbc">WhistKeycode</a></td></tr>
+<tr class="memdesc:a1fd21922c209d22dba480caba7733dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keycodes.  <a href="whist_8h.html#a1fd21922c209d22dba480caba7733dbc">More...</a><br /></td></tr>
 <tr class="separator:a1fd21922c209d22dba480caba7733dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce029bed34cc96cf414e854c6808770"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#adce029bed34cc96cf414e854c6808770">WhistKeymod</a></td></tr>
-<tr class="memdesc:adce029bed34cc96cf414e854c6808770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifier keys applied to keyboard input.  <a href="fractal_8h.html#adce029bed34cc96cf414e854c6808770">More...</a><br /></td></tr>
+<tr class="memitem:adce029bed34cc96cf414e854c6808770"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#adce029bed34cc96cf414e854c6808770">WhistKeymod</a></td></tr>
+<tr class="memdesc:adce029bed34cc96cf414e854c6808770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifier keys applied to keyboard input.  <a href="whist_8h.html#adce029bed34cc96cf414e854c6808770">More...</a><br /></td></tr>
 <tr class="separator:adce029bed34cc96cf414e854c6808770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1e00c8fbed99c74c417df246043bcb6"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac1e00c8fbed99c74c417df246043bcb6">WhistMouseButton</a></td></tr>
-<tr class="memdesc:ac1e00c8fbed99c74c417df246043bcb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse button.  <a href="fractal_8h.html#ac1e00c8fbed99c74c417df246043bcb6">More...</a><br /></td></tr>
+<tr class="memitem:ac1e00c8fbed99c74c417df246043bcb6"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac1e00c8fbed99c74c417df246043bcb6">WhistMouseButton</a></td></tr>
+<tr class="memdesc:ac1e00c8fbed99c74c417df246043bcb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse button.  <a href="whist_8h.html#ac1e00c8fbed99c74c417df246043bcb6">More...</a><br /></td></tr>
 <tr class="separator:ac1e00c8fbed99c74c417df246043bcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7dd9d2356588059ac7a8fc5c2ed47c5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistCursor.html">WhistCursor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aa7dd9d2356588059ac7a8fc5c2ed47c5">WhistCursor</a></td></tr>
-<tr class="memdesc:aa7dd9d2356588059ac7a8fc5c2ed47c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursor properties.  <a href="fractal_8h.html#aa7dd9d2356588059ac7a8fc5c2ed47c5">More...</a><br /></td></tr>
+<tr class="memitem:aa7dd9d2356588059ac7a8fc5c2ed47c5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistCursor.html">WhistCursor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aa7dd9d2356588059ac7a8fc5c2ed47c5">WhistCursor</a></td></tr>
+<tr class="memdesc:aa7dd9d2356588059ac7a8fc5c2ed47c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursor properties.  <a href="whist_8h.html#aa7dd9d2356588059ac7a8fc5c2ed47c5">More...</a><br /></td></tr>
 <tr class="separator:aa7dd9d2356588059ac7a8fc5c2ed47c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ec9f8304ad463cd3dfbf626d60fe85"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ae6ec9f8304ad463cd3dfbf626d60fe85">InteractionMode</a></td></tr>
-<tr class="memdesc:ae6ec9f8304ad463cd3dfbf626d60fe85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interaction mode.  <a href="fractal_8h.html#ae6ec9f8304ad463cd3dfbf626d60fe85">More...</a><br /></td></tr>
+<tr class="memitem:ae6ec9f8304ad463cd3dfbf626d60fe85"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ae6ec9f8304ad463cd3dfbf626d60fe85">InteractionMode</a></td></tr>
+<tr class="memdesc:ae6ec9f8304ad463cd3dfbf626d60fe85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interaction mode.  <a href="whist_8h.html#ae6ec9f8304ad463cd3dfbf626d60fe85">More...</a><br /></td></tr>
 <tr class="separator:ae6ec9f8304ad463cd3dfbf626d60fe85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f3fb383aaf92fc14805d860bb69bc9f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistKeyboardMessage.html">WhistKeyboardMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a4f3fb383aaf92fc14805d860bb69bc9f">WhistKeyboardMessage</a></td></tr>
-<tr class="memdesc:a4f3fb383aaf92fc14805d860bb69bc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keyboard message.  <a href="fractal_8h.html#a4f3fb383aaf92fc14805d860bb69bc9f">More...</a><br /></td></tr>
+<tr class="memitem:a4f3fb383aaf92fc14805d860bb69bc9f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistKeyboardMessage.html">WhistKeyboardMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a4f3fb383aaf92fc14805d860bb69bc9f">WhistKeyboardMessage</a></td></tr>
+<tr class="memdesc:a4f3fb383aaf92fc14805d860bb69bc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keyboard message.  <a href="whist_8h.html#a4f3fb383aaf92fc14805d860bb69bc9f">More...</a><br /></td></tr>
 <tr class="separator:a4f3fb383aaf92fc14805d860bb69bc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa644d0f58d497fe5e27e306676e060"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistMouseButtonMessage.html">WhistMouseButtonMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#acfa644d0f58d497fe5e27e306676e060">WhistMouseButtonMessage</a></td></tr>
-<tr class="memdesc:acfa644d0f58d497fe5e27e306676e060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse button message.  <a href="fractal_8h.html#acfa644d0f58d497fe5e27e306676e060">More...</a><br /></td></tr>
+<tr class="memitem:acfa644d0f58d497fe5e27e306676e060"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistMouseButtonMessage.html">WhistMouseButtonMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#acfa644d0f58d497fe5e27e306676e060">WhistMouseButtonMessage</a></td></tr>
+<tr class="memdesc:acfa644d0f58d497fe5e27e306676e060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse button message.  <a href="whist_8h.html#acfa644d0f58d497fe5e27e306676e060">More...</a><br /></td></tr>
 <tr class="separator:acfa644d0f58d497fe5e27e306676e060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6f843f09da236f49aaabbaf45b3ee4"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aeb6f843f09da236f49aaabbaf45b3ee4">WhistMouseWheelMomentumType</a></td></tr>
-<tr class="memdesc:aeb6f843f09da236f49aaabbaf45b3ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scroll momentum type.  <a href="fractal_8h.html#aeb6f843f09da236f49aaabbaf45b3ee4">More...</a><br /></td></tr>
+<tr class="memitem:aeb6f843f09da236f49aaabbaf45b3ee4"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aeb6f843f09da236f49aaabbaf45b3ee4">WhistMouseWheelMomentumType</a></td></tr>
+<tr class="memdesc:aeb6f843f09da236f49aaabbaf45b3ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scroll momentum type.  <a href="whist_8h.html#aeb6f843f09da236f49aaabbaf45b3ee4">More...</a><br /></td></tr>
 <tr class="separator:aeb6f843f09da236f49aaabbaf45b3ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf1b4541ca3fc91c6cf328a67018a662"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistMouseWheelMessage.html">WhistMouseWheelMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#acf1b4541ca3fc91c6cf328a67018a662">WhistMouseWheelMessage</a></td></tr>
-<tr class="memdesc:acf1b4541ca3fc91c6cf328a67018a662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse wheel message.  <a href="fractal_8h.html#acf1b4541ca3fc91c6cf328a67018a662">More...</a><br /></td></tr>
+<tr class="memitem:acf1b4541ca3fc91c6cf328a67018a662"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistMouseWheelMessage.html">WhistMouseWheelMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#acf1b4541ca3fc91c6cf328a67018a662">WhistMouseWheelMessage</a></td></tr>
+<tr class="memdesc:acf1b4541ca3fc91c6cf328a67018a662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse wheel message.  <a href="whist_8h.html#acf1b4541ca3fc91c6cf328a67018a662">More...</a><br /></td></tr>
 <tr class="separator:acf1b4541ca3fc91c6cf328a67018a662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48ad7c593a89a15b10bd2707c57405e5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistMouseMotionMessage.html">WhistMouseMotionMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a48ad7c593a89a15b10bd2707c57405e5">WhistMouseMotionMessage</a></td></tr>
-<tr class="memdesc:a48ad7c593a89a15b10bd2707c57405e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse motion message.  <a href="fractal_8h.html#a48ad7c593a89a15b10bd2707c57405e5">More...</a><br /></td></tr>
+<tr class="memitem:a48ad7c593a89a15b10bd2707c57405e5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistMouseMotionMessage.html">WhistMouseMotionMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a48ad7c593a89a15b10bd2707c57405e5">WhistMouseMotionMessage</a></td></tr>
+<tr class="memdesc:a48ad7c593a89a15b10bd2707c57405e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse motion message.  <a href="whist_8h.html#a48ad7c593a89a15b10bd2707c57405e5">More...</a><br /></td></tr>
 <tr class="separator:a48ad7c593a89a15b10bd2707c57405e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adab434a4f56f688d5fb8babd46f76f5e"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#adab434a4f56f688d5fb8babd46f76f5e">WhistMultigestureType</a></td></tr>
-<tr class="memdesc:adab434a4f56f688d5fb8babd46f76f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture type.  <a href="fractal_8h.html#adab434a4f56f688d5fb8babd46f76f5e">More...</a><br /></td></tr>
+<tr class="memitem:adab434a4f56f688d5fb8babd46f76f5e"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#adab434a4f56f688d5fb8babd46f76f5e">WhistMultigestureType</a></td></tr>
+<tr class="memdesc:adab434a4f56f688d5fb8babd46f76f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture type.  <a href="whist_8h.html#adab434a4f56f688d5fb8babd46f76f5e">More...</a><br /></td></tr>
 <tr class="separator:adab434a4f56f688d5fb8babd46f76f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1575aaeab2f2b0eea6864ae974e437b"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ac1575aaeab2f2b0eea6864ae974e437b">WhistOSType</a></td></tr>
-<tr class="memdesc:ac1575aaeab2f2b0eea6864ae974e437b"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS type.  <a href="fractal_8h.html#ac1575aaeab2f2b0eea6864ae974e437b">More...</a><br /></td></tr>
+<tr class="memitem:ac1575aaeab2f2b0eea6864ae974e437b"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac1575aaeab2f2b0eea6864ae974e437b">WhistOSType</a></td></tr>
+<tr class="memdesc:ac1575aaeab2f2b0eea6864ae974e437b"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS type.  <a href="whist_8h.html#ac1575aaeab2f2b0eea6864ae974e437b">More...</a><br /></td></tr>
 <tr class="separator:ac1575aaeab2f2b0eea6864ae974e437b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ac7ef9020b9f6ec3bcd1900c1b4cef3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistMultigestureMessage.html">WhistMultigestureMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a2ac7ef9020b9f6ec3bcd1900c1b4cef3">WhistMultigestureMessage</a></td></tr>
-<tr class="memdesc:a2ac7ef9020b9f6ec3bcd1900c1b4cef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture message.  <a href="fractal_8h.html#a2ac7ef9020b9f6ec3bcd1900c1b4cef3">More...</a><br /></td></tr>
+<tr class="memitem:a2ac7ef9020b9f6ec3bcd1900c1b4cef3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistMultigestureMessage.html">WhistMultigestureMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a2ac7ef9020b9f6ec3bcd1900c1b4cef3">WhistMultigestureMessage</a></td></tr>
+<tr class="memdesc:a2ac7ef9020b9f6ec3bcd1900c1b4cef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture message.  <a href="whist_8h.html#a2ac7ef9020b9f6ec3bcd1900c1b4cef3">More...</a><br /></td></tr>
 <tr class="separator:a2ac7ef9020b9f6ec3bcd1900c1b4cef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8d8a899c43ee27db9e5e4bef353a0e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistDiscoveryRequestMessage.html">WhistDiscoveryRequestMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a6b8d8a899c43ee27db9e5e4bef353a0e">WhistDiscoveryRequestMessage</a></td></tr>
-<tr class="memdesc:a6b8d8a899c43ee27db9e5e4bef353a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discovery request message.  <a href="fractal_8h.html#a6b8d8a899c43ee27db9e5e4bef353a0e">More...</a><br /></td></tr>
+<tr class="memitem:a6b8d8a899c43ee27db9e5e4bef353a0e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistDiscoveryRequestMessage.html">WhistDiscoveryRequestMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a6b8d8a899c43ee27db9e5e4bef353a0e">WhistDiscoveryRequestMessage</a></td></tr>
+<tr class="memdesc:a6b8d8a899c43ee27db9e5e4bef353a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discovery request message.  <a href="whist_8h.html#a6b8d8a899c43ee27db9e5e4bef353a0e">More...</a><br /></td></tr>
 <tr class="separator:a6b8d8a899c43ee27db9e5e4bef353a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa81779121ad8308e5c7109a52a92600"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistDiscoveryReplyMessage.html">WhistDiscoveryReplyMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aaa81779121ad8308e5c7109a52a92600">WhistDiscoveryReplyMessage</a></td></tr>
-<tr class="memdesc:aaa81779121ad8308e5c7109a52a92600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discovery reply message.  <a href="fractal_8h.html#aaa81779121ad8308e5c7109a52a92600">More...</a><br /></td></tr>
+<tr class="memitem:aaa81779121ad8308e5c7109a52a92600"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistDiscoveryReplyMessage.html">WhistDiscoveryReplyMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aaa81779121ad8308e5c7109a52a92600">WhistDiscoveryReplyMessage</a></td></tr>
+<tr class="memdesc:aaa81779121ad8308e5c7109a52a92600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discovery reply message.  <a href="whist_8h.html#aaa81779121ad8308e5c7109a52a92600">More...</a><br /></td></tr>
 <tr class="separator:aaa81779121ad8308e5c7109a52a92600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69b64449a42b33fbb562e3ec992ae231"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a69b64449a42b33fbb562e3ec992ae231">WhistClientMessageType</a></td></tr>
-<tr class="memdesc:a69b64449a42b33fbb562e3ec992ae231"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message type.  <a href="fractal_8h.html#a69b64449a42b33fbb562e3ec992ae231">More...</a><br /></td></tr>
+<tr class="memitem:a69b64449a42b33fbb562e3ec992ae231"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a69b64449a42b33fbb562e3ec992ae231">WhistClientMessageType</a></td></tr>
+<tr class="memdesc:a69b64449a42b33fbb562e3ec992ae231"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message type.  <a href="whist_8h.html#a69b64449a42b33fbb562e3ec992ae231">More...</a><br /></td></tr>
 <tr class="separator:a69b64449a42b33fbb562e3ec992ae231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d67806982bb94a658c81e21bb066020"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a2d67806982bb94a658c81e21bb066020">WhistExitCode</a></td></tr>
-<tr class="memdesc:a2d67806982bb94a658c81e21bb066020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer exit code.  <a href="fractal_8h.html#a2d67806982bb94a658c81e21bb066020">More...</a><br /></td></tr>
+<tr class="memitem:a2d67806982bb94a658c81e21bb066020"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a2d67806982bb94a658c81e21bb066020">WhistExitCode</a></td></tr>
+<tr class="memdesc:a2d67806982bb94a658c81e21bb066020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer exit code.  <a href="whist_8h.html#a2d67806982bb94a658c81e21bb066020">More...</a><br /></td></tr>
 <tr class="separator:a2d67806982bb94a658c81e21bb066020"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae75095f17ec3b67c19259d0c395e1c06"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ae75095f17ec3b67c19259d0c395e1c06">WhistClientMessage</a></td></tr>
-<tr class="memdesc:ae75095f17ec3b67c19259d0c395e1c06"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message.  <a href="fractal_8h.html#ae75095f17ec3b67c19259d0c395e1c06">More...</a><br /></td></tr>
+<tr class="memitem:ae75095f17ec3b67c19259d0c395e1c06"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ae75095f17ec3b67c19259d0c395e1c06">WhistClientMessage</a></td></tr>
+<tr class="memdesc:ae75095f17ec3b67c19259d0c395e1c06"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message.  <a href="whist_8h.html#ae75095f17ec3b67c19259d0c395e1c06">More...</a><br /></td></tr>
 <tr class="separator:ae75095f17ec3b67c19259d0c395e1c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a168e78f121b9be3b1aa6c6df21c976eb"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a168e78f121b9be3b1aa6c6df21c976eb">WhistServerMessageType</a></td></tr>
-<tr class="memdesc:a168e78f121b9be3b1aa6c6df21c976eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message type.  <a href="fractal_8h.html#a168e78f121b9be3b1aa6c6df21c976eb">More...</a><br /></td></tr>
+<tr class="memitem:a168e78f121b9be3b1aa6c6df21c976eb"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a168e78f121b9be3b1aa6c6df21c976eb">WhistServerMessageType</a></td></tr>
+<tr class="memdesc:a168e78f121b9be3b1aa6c6df21c976eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message type.  <a href="whist_8h.html#a168e78f121b9be3b1aa6c6df21c976eb">More...</a><br /></td></tr>
 <tr class="separator:a168e78f121b9be3b1aa6c6df21c976eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b8f2ac3292bebd1693ff0bdd09846e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistServerMessage.html">WhistServerMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a93b8f2ac3292bebd1693ff0bdd09846e">WhistServerMessage</a></td></tr>
-<tr class="memdesc:a93b8f2ac3292bebd1693ff0bdd09846e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message.  <a href="fractal_8h.html#a93b8f2ac3292bebd1693ff0bdd09846e">More...</a><br /></td></tr>
+<tr class="memitem:a93b8f2ac3292bebd1693ff0bdd09846e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistServerMessage.html">WhistServerMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a93b8f2ac3292bebd1693ff0bdd09846e">WhistServerMessage</a></td></tr>
+<tr class="memdesc:a93b8f2ac3292bebd1693ff0bdd09846e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message.  <a href="whist_8h.html#a93b8f2ac3292bebd1693ff0bdd09846e">More...</a><br /></td></tr>
 <tr class="separator:a93b8f2ac3292bebd1693ff0bdd09846e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12454a24d13a6903d34a4a73b0116975"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistDestination.html">WhistDestination</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a12454a24d13a6903d34a4a73b0116975">WhistDestination</a></td></tr>
+<tr class="memitem:a12454a24d13a6903d34a4a73b0116975"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistDestination.html">WhistDestination</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a12454a24d13a6903d34a4a73b0116975">WhistDestination</a></td></tr>
 <tr class="separator:a12454a24d13a6903d34a4a73b0116975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44f9a1312aeadcbf8ec7561cea0525e2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structBitArray.html">BitArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a44f9a1312aeadcbf8ec7561cea0525e2">BitArray</a></td></tr>
+<tr class="memitem:a44f9a1312aeadcbf8ec7561cea0525e2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structBitArray.html">BitArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a44f9a1312aeadcbf8ec7561cea0525e2">BitArray</a></td></tr>
 <tr class="separator:a44f9a1312aeadcbf8ec7561cea0525e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a03b4b6ae5fb82af68d46aaea3d3e4d79"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> { <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a078edde93a764047c0ea92d4b2238a37">CODEC_TYPE_UNKNOWN</a> = 0, 
-<a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a27612f02539b2da18de5bdc23cda876f">CODEC_TYPE_H264</a> = 264, 
-<a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79af4b1406cb3a6d27c1582480586f29f82">CODEC_TYPE_H265</a> = 265, 
-<a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a6c65cd14a81a7975b603684e07b1c3cb">CODEC_TYPE_MAKE_32</a> = 0x7FFFFFFF
+<tr class="memitem:a03b4b6ae5fb82af68d46aaea3d3e4d79"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> { <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a078edde93a764047c0ea92d4b2238a37">CODEC_TYPE_UNKNOWN</a> = 0, 
+<a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a27612f02539b2da18de5bdc23cda876f">CODEC_TYPE_H264</a> = 264, 
+<a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79af4b1406cb3a6d27c1582480586f29f82">CODEC_TYPE_H265</a> = 265, 
+<a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a6c65cd14a81a7975b603684e07b1c3cb">CODEC_TYPE_MAKE_32</a> = 0x7FFFFFFF
  }</td></tr>
-<tr class="memdesc:a03b4b6ae5fb82af68d46aaea3d3e4d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec types.  <a href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">More...</a><br /></td></tr>
+<tr class="memdesc:a03b4b6ae5fb82af68d46aaea3d3e4d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec types.  <a href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">More...</a><br /></td></tr>
 <tr class="separator:a03b4b6ae5fb82af68d46aaea3d3e4d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> { <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c">NVIDIA_DEVICE</a>, 
-<a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621">X11_DEVICE</a>
+<tr class="memitem:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> { <a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c">NVIDIA_DEVICE</a>, 
+<a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621">X11_DEVICE</a>
  }</td></tr>
-<tr class="memdesc:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below.  <a href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">More...</a><br /></td></tr>
+<tr class="memdesc:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below.  <a href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">More...</a><br /></td></tr>
 <tr class="separator:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19e7f1b27cb5354c7031d5aef9163484"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> { <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aab0bb0036eaae33892ed0665cb12bcea">FK_UNKNOWN</a> = 0, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd">FK_A</a> = 4, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3de5ed32dd07837360f10206e9c1bdd1">FK_B</a> = 5, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3288e7db10b5914f9022a20f09b6f90f">FK_C</a> = 6, 
+<tr class="memitem:a19e7f1b27cb5354c7031d5aef9163484"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> { <br />
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484aab0bb0036eaae33892ed0665cb12bcea">FK_UNKNOWN</a> = 0, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a347ca8d4192ab8b650191d80349bbbcd">FK_A</a> = 4, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3de5ed32dd07837360f10206e9c1bdd1">FK_B</a> = 5, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3288e7db10b5914f9022a20f09b6f90f">FK_C</a> = 6, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484abec5b0a4a52ab1a099b54f1c1bc20df7">FK_D</a> = 7, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6a168aff6f84808b1afd0a07ae11324b">FK_E</a> = 8, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a996a4a50a036b319f8dd5717be114d68">FK_F</a> = 9, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af2f87ab840784374b550ed44ba626825">FK_G</a> = 10, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484abec5b0a4a52ab1a099b54f1c1bc20df7">FK_D</a> = 7, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6a168aff6f84808b1afd0a07ae11324b">FK_E</a> = 8, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a996a4a50a036b319f8dd5717be114d68">FK_F</a> = 9, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484af2f87ab840784374b550ed44ba626825">FK_G</a> = 10, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad26f33ae99edf1e5d1b437ff9b879e5d">FK_H</a> = 11, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6c304406ebe7f768f50ffea098b82973">FK_I</a> = 12, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a443fe4bd2206d215664634fb65319251">FK_J</a> = 13, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5ec59c702eff00a4f12a96f49c1daeb5">FK_K</a> = 14, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad26f33ae99edf1e5d1b437ff9b879e5d">FK_H</a> = 11, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6c304406ebe7f768f50ffea098b82973">FK_I</a> = 12, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a443fe4bd2206d215664634fb65319251">FK_J</a> = 13, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5ec59c702eff00a4f12a96f49c1daeb5">FK_K</a> = 14, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac2b5b2114ad4181a20ef39b6f9f1f8dd">FK_L</a> = 15, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1f319e1522ae26a9f81e72cadd6bffc8">FK_M</a> = 16, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a74f692e89205b1e37911a0693e20a9d1">FK_N</a> = 17, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad065cf5892bede7bdb46ab55271a11ed">FK_O</a> = 18, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac2b5b2114ad4181a20ef39b6f9f1f8dd">FK_L</a> = 15, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1f319e1522ae26a9f81e72cadd6bffc8">FK_M</a> = 16, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a74f692e89205b1e37911a0693e20a9d1">FK_N</a> = 17, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad065cf5892bede7bdb46ab55271a11ed">FK_O</a> = 18, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8dce5f3f0e1098f52b2581900ef17016">FK_P</a> = 19, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af9ebdfb062945532b99e9afc03985b68">FK_Q</a> = 20, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a435478c7885901194b94701e5328bca2">FK_R</a> = 21, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3519ef7bc8bffd0997ca3ce140e1b64b">FK_S</a> = 22, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8dce5f3f0e1098f52b2581900ef17016">FK_P</a> = 19, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484af9ebdfb062945532b99e9afc03985b68">FK_Q</a> = 20, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a435478c7885901194b94701e5328bca2">FK_R</a> = 21, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a3519ef7bc8bffd0997ca3ce140e1b64b">FK_S</a> = 22, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab92d3169c47f0c7ac99aee17feed2b92">FK_T</a> = 23, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad655d5794fcf9b66a6caf12c56970aae">FK_U</a> = 24, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a18e50cba35a9382c02ef961720d3b4ce">FK_V</a> = 25, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a83d360856506e2d486443c1dbc453286">FK_W</a> = 26, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab92d3169c47f0c7ac99aee17feed2b92">FK_T</a> = 23, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad655d5794fcf9b66a6caf12c56970aae">FK_U</a> = 24, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a18e50cba35a9382c02ef961720d3b4ce">FK_V</a> = 25, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a83d360856506e2d486443c1dbc453286">FK_W</a> = 26, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a809f218d449451cd25a94b55324cfcdf">FK_X</a> = 27, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a40f9abe139ef9e19552aa84fa3f6efe4">FK_Y</a> = 28, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a7717b50b7d4130797625663fe06ba8a5">FK_Z</a> = 29, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a591141082955023ddb8548d594851237">FK_1</a> = 30, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a809f218d449451cd25a94b55324cfcdf">FK_X</a> = 27, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a40f9abe139ef9e19552aa84fa3f6efe4">FK_Y</a> = 28, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a7717b50b7d4130797625663fe06ba8a5">FK_Z</a> = 29, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a591141082955023ddb8548d594851237">FK_1</a> = 30, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad41ee92089ae381c082353ef22ba522e">FK_2</a> = 31, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac3b61ec5467273b9e9da36d4661249c9">FK_3</a> = 32, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae81d83271cfd9585c149ee38bb42e322">FK_4</a> = 33, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aea5d05471d78051a52e746fd6d70ee72">FK_5</a> = 34, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad41ee92089ae381c082353ef22ba522e">FK_2</a> = 31, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac3b61ec5467273b9e9da36d4661249c9">FK_3</a> = 32, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae81d83271cfd9585c149ee38bb42e322">FK_4</a> = 33, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484aea5d05471d78051a52e746fd6d70ee72">FK_5</a> = 34, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a19da7d51701c0afcba08908503c78e0b">FK_6</a> = 35, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae52f42baa5c1ccb20f0bcc962f289f5e">FK_7</a> = 36, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a636364e5e1ca42d8527d64fca1e43a02">FK_8</a> = 37, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a52528daac0c5b1b3f40acee58bb0e3ae">FK_9</a> = 38, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a19da7d51701c0afcba08908503c78e0b">FK_6</a> = 35, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae52f42baa5c1ccb20f0bcc962f289f5e">FK_7</a> = 36, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a636364e5e1ca42d8527d64fca1e43a02">FK_8</a> = 37, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a52528daac0c5b1b3f40acee58bb0e3ae">FK_9</a> = 38, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad4da59b631617f30bd79bd50d03e6040">FK_0</a> = 39, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a93b370dc4d2cc202c3151a32502e8c54">FK_ENTER</a> = 40, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a0f24dbd11272f6fca6c06adedd587d5f">FK_ESCAPE</a> = 41, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a53cac29e9b03e6903861ce2e9280e5c0">FK_BACKSPACE</a> = 42, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad4da59b631617f30bd79bd50d03e6040">FK_0</a> = 39, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a93b370dc4d2cc202c3151a32502e8c54">FK_ENTER</a> = 40, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a0f24dbd11272f6fca6c06adedd587d5f">FK_ESCAPE</a> = 41, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a53cac29e9b03e6903861ce2e9280e5c0">FK_BACKSPACE</a> = 42, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5bb6ca70be1105137ae22a82e1c875c3">FK_TAB</a> = 43, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab7a1670ecf3e29957013ef10105b2e07">FK_SPACE</a> = 44, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a913d051b1076a8c68ab002b1132dfd6e">FK_MINUS</a> = 45, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa7f3de42cac09f9d9dcfd538c2d24a9d">FK_EQUALS</a> = 46, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5bb6ca70be1105137ae22a82e1c875c3">FK_TAB</a> = 43, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab7a1670ecf3e29957013ef10105b2e07">FK_SPACE</a> = 44, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a913d051b1076a8c68ab002b1132dfd6e">FK_MINUS</a> = 45, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa7f3de42cac09f9d9dcfd538c2d24a9d">FK_EQUALS</a> = 46, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a46497c8c38e6c971ae2450da3a55ca17">FK_LBRACKET</a> = 47, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aea7d00bf76e51a8294edf8a467502bb2">FK_RBRACKET</a> = 48, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae1a6a063966bc39b2abf44a7b5fcb0b9">FK_BACKSLASH</a> = 49, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4e466885ae7e86d9d60e498d52609620">FK_SEMICOLON</a> = 51, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a46497c8c38e6c971ae2450da3a55ca17">FK_LBRACKET</a> = 47, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484aea7d00bf76e51a8294edf8a467502bb2">FK_RBRACKET</a> = 48, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae1a6a063966bc39b2abf44a7b5fcb0b9">FK_BACKSLASH</a> = 49, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4e466885ae7e86d9d60e498d52609620">FK_SEMICOLON</a> = 51, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8836cbe8cd93ce8eaabdc2c8165414d6">FK_APOSTROPHE</a> = 52, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4c7d2d632681a0eb2c749b76b5185c8a">FK_BACKTICK</a> = 53, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8e58cff2fdc723f151687d825887b9e7">FK_COMMA</a> = 54, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a94ef33653b65752ff5d34cefe0255874">FK_PERIOD</a> = 55, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8836cbe8cd93ce8eaabdc2c8165414d6">FK_APOSTROPHE</a> = 52, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4c7d2d632681a0eb2c749b76b5185c8a">FK_BACKTICK</a> = 53, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8e58cff2fdc723f151687d825887b9e7">FK_COMMA</a> = 54, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a94ef33653b65752ff5d34cefe0255874">FK_PERIOD</a> = 55, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac33759fb0db0773e945f540a5de345f1">FK_SLASH</a> = 56, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a19083c5d05222cc2e4707d58f35f253d">FK_CAPSLOCK</a> = 57, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab85a53812275166e0e89119914f32dab">FK_F1</a> = 58, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a813abe56d714fa4466f1b176c4688da9">FK_F2</a> = 59, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac33759fb0db0773e945f540a5de345f1">FK_SLASH</a> = 56, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a19083c5d05222cc2e4707d58f35f253d">FK_CAPSLOCK</a> = 57, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab85a53812275166e0e89119914f32dab">FK_F1</a> = 58, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a813abe56d714fa4466f1b176c4688da9">FK_F2</a> = 59, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad30ef2c46ff3289c75a8b8af7d8dae54">FK_F3</a> = 60, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa9fc3ddd5c8375e1c00cd0ea6a9e309c">FK_F4</a> = 61, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a48b8abc56d0f0070662bb824e43fbf20">FK_F5</a> = 62, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a0c072170b7696d324309fe788183063c">FK_F6</a> = 63, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad30ef2c46ff3289c75a8b8af7d8dae54">FK_F3</a> = 60, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa9fc3ddd5c8375e1c00cd0ea6a9e309c">FK_F4</a> = 61, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a48b8abc56d0f0070662bb824e43fbf20">FK_F5</a> = 62, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a0c072170b7696d324309fe788183063c">FK_F6</a> = 63, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a7627c213aacd80c52ed17b5b395a108d">FK_F7</a> = 64, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac1a909c4b1cf9ea2b873063026410cf9">FK_F8</a> = 65, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9a752dd629f36970a2cc3246b2df4e6c">FK_F9</a> = 66, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a816f8b5fb04195278cc36d6f2561906c">FK_F10</a> = 67, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a7627c213aacd80c52ed17b5b395a108d">FK_F7</a> = 64, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac1a909c4b1cf9ea2b873063026410cf9">FK_F8</a> = 65, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9a752dd629f36970a2cc3246b2df4e6c">FK_F9</a> = 66, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a816f8b5fb04195278cc36d6f2561906c">FK_F10</a> = 67, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6727559da243aa450a3a1ea4db81cfca">FK_F11</a> = 68, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5399b6b14d1a3ad97fe6522be8e2000a">FK_F12</a> = 69, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a36e3b50b7a0bd04dfcdc06825bcfc00f">FK_PRINTSCREEN</a> = 70, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a0fec00e23f944ed6208d8fbaf262967f">FK_SCROLLLOCK</a> = 71, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6727559da243aa450a3a1ea4db81cfca">FK_F11</a> = 68, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5399b6b14d1a3ad97fe6522be8e2000a">FK_F12</a> = 69, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a36e3b50b7a0bd04dfcdc06825bcfc00f">FK_PRINTSCREEN</a> = 70, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a0fec00e23f944ed6208d8fbaf262967f">FK_SCROLLLOCK</a> = 71, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a12c1a42d0005f44ea18b72e0f0187756">FK_PAUSE</a> = 72, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad57d3e35aeb12abead2ef4c5aadbcda9">FK_INSERT</a> = 73, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab8323e82200d344b036eb9f8447e2d6d">FK_HOME</a> = 74, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a819b56ff71335d12b87feba6c0d8ebda">FK_PAGEUP</a> = 75, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a12c1a42d0005f44ea18b72e0f0187756">FK_PAUSE</a> = 72, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad57d3e35aeb12abead2ef4c5aadbcda9">FK_INSERT</a> = 73, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab8323e82200d344b036eb9f8447e2d6d">FK_HOME</a> = 74, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a819b56ff71335d12b87feba6c0d8ebda">FK_PAGEUP</a> = 75, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad1ba3dcc9b01be6fafc6a038106f54d8">FK_DELETE</a> = 76, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484adab27c6a6d60b5878a2f35e6061d1006">FK_END</a> = 77, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1579ce5d5bb894cb68e2556cd9c10c17">FK_PAGEDOWN</a> = 78, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9d23cd31b9c170e5c2759de310f041a3">FK_RIGHT</a> = 79, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ad1ba3dcc9b01be6fafc6a038106f54d8">FK_DELETE</a> = 76, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484adab27c6a6d60b5878a2f35e6061d1006">FK_END</a> = 77, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1579ce5d5bb894cb68e2556cd9c10c17">FK_PAGEDOWN</a> = 78, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9d23cd31b9c170e5c2759de310f041a3">FK_RIGHT</a> = 79, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af07fc58d05509d53181f708d8d065f35">FK_LEFT</a> = 80, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af8bbf659545ab49050d9eb1dcef535b9">FK_DOWN</a> = 81, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6fa65284a189b9298ead12027adee956">FK_UP</a> = 82, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484addf90743116c74437a4f125ba8e3580d">FK_NUMLOCK</a> = 83, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484af07fc58d05509d53181f708d8d065f35">FK_LEFT</a> = 80, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484af8bbf659545ab49050d9eb1dcef535b9">FK_DOWN</a> = 81, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a6fa65284a189b9298ead12027adee956">FK_UP</a> = 82, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484addf90743116c74437a4f125ba8e3580d">FK_NUMLOCK</a> = 83, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a441feb392e50cc87cf1b55f368833757">FK_KP_DIVIDE</a> = 84, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac16c0b441c643c1cc29aff900851d662">FK_KP_MULTIPLY</a> = 85, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a26c9efa1631fcd31f3e5c53b7843a00a">FK_KP_MINUS</a> = 86, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484adb8f18884d8aadc4a389d31eded8bfa2">FK_KP_PLUS</a> = 87, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a441feb392e50cc87cf1b55f368833757">FK_KP_DIVIDE</a> = 84, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac16c0b441c643c1cc29aff900851d662">FK_KP_MULTIPLY</a> = 85, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a26c9efa1631fcd31f3e5c53b7843a00a">FK_KP_MINUS</a> = 86, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484adb8f18884d8aadc4a389d31eded8bfa2">FK_KP_PLUS</a> = 87, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af18949abfba6f227c4872174725440dd">FK_KP_ENTER</a> = 88, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac9df8ac9fef341631691a51bbcf36fe0">FK_KP_1</a> = 89, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484af35cb86ea4e2404cd20b41073be38a40">FK_KP_2</a> = 90, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8e5e9e671fc95c49e1423eab58d1d068">FK_KP_3</a> = 91, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484af18949abfba6f227c4872174725440dd">FK_KP_ENTER</a> = 88, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac9df8ac9fef341631691a51bbcf36fe0">FK_KP_1</a> = 89, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484af35cb86ea4e2404cd20b41073be38a40">FK_KP_2</a> = 90, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8e5e9e671fc95c49e1423eab58d1d068">FK_KP_3</a> = 91, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a08a34812a9e004d02bd110aefb077081">FK_KP_4</a> = 92, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae56f448c1c005278bd82b6045d3584d2">FK_KP_5</a> = 93, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a411143651b06b06f547240de7bd76aa8">FK_KP_6</a> = 94, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1016c03f5cbd4c9d3f0fb86e66ef5ec9">FK_KP_7</a> = 95, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a08a34812a9e004d02bd110aefb077081">FK_KP_4</a> = 92, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ae56f448c1c005278bd82b6045d3584d2">FK_KP_5</a> = 93, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a411143651b06b06f547240de7bd76aa8">FK_KP_6</a> = 94, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a1016c03f5cbd4c9d3f0fb86e66ef5ec9">FK_KP_7</a> = 95, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484afe6e2287ca245be4b03086c020608df4">FK_KP_8</a> = 96, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9975e78a506aaa118cc1943935e069b0">FK_KP_9</a> = 97, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a2b2d7b385aa97e38dbecf9886087f9cb">FK_KP_0</a> = 98, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484acd0c9f821f37ecfc0834bc16badd35aa">FK_KP_PERIOD</a> = 99, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484afe6e2287ca245be4b03086c020608df4">FK_KP_8</a> = 96, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9975e78a506aaa118cc1943935e069b0">FK_KP_9</a> = 97, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a2b2d7b385aa97e38dbecf9886087f9cb">FK_KP_0</a> = 98, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484acd0c9f821f37ecfc0834bc16badd35aa">FK_KP_PERIOD</a> = 99, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a76fc273a564785d2e3d7b22560929e2e">FK_APPLICATION</a> = 101, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a52aae9067d77996ba6fded2f4c63c5b5">FK_F13</a> = 104, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a90cf658b58fe9f3f611e46cd53176306">FK_F14</a> = 105, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4c4993c040397b1afc66c4a1ed849690">FK_F15</a> = 106, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a76fc273a564785d2e3d7b22560929e2e">FK_APPLICATION</a> = 101, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a52aae9067d77996ba6fded2f4c63c5b5">FK_F13</a> = 104, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a90cf658b58fe9f3f611e46cd53176306">FK_F14</a> = 105, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4c4993c040397b1afc66c4a1ed849690">FK_F15</a> = 106, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4df93f616eb4d79e449ffca0f2da95e7">FK_F16</a> = 107, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aed5e1543039139c1587c15cb218c143b">FK_F17</a> = 108, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aeca5d4f90301f1e5c2539d9aaab13a21">FK_F18</a> = 109, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a580f88894c3d56d8a6d9786a4f23a0dd">FK_F19</a> = 110, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4df93f616eb4d79e449ffca0f2da95e7">FK_F16</a> = 107, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484aed5e1543039139c1587c15cb218c143b">FK_F17</a> = 108, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484aeca5d4f90301f1e5c2539d9aaab13a21">FK_F18</a> = 109, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a580f88894c3d56d8a6d9786a4f23a0dd">FK_F19</a> = 110, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a206617008fdbd145b668491f62f524ee">FK_MENU</a> = 118, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a38711aab829d9e731fff0d58d0fbbc4e">FK_MUTE</a> = 127, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9ac8de279413c83847392c6db0870cf9">FK_VOLUMEUP</a> = 128, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a79c1b2513489f19e35e348ed08d6c805">FK_VOLUMEDOWN</a> = 129, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a206617008fdbd145b668491f62f524ee">FK_MENU</a> = 118, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a38711aab829d9e731fff0d58d0fbbc4e">FK_MUTE</a> = 127, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9ac8de279413c83847392c6db0870cf9">FK_VOLUMEUP</a> = 128, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a79c1b2513489f19e35e348ed08d6c805">FK_VOLUMEDOWN</a> = 129, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac7c551a5a3e3486d85f04395e9c744ad">FK_LCTRL</a> = 224, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4a32ff6596af0b343a1ab1d97e61c0f2">FK_LSHIFT</a> = 225, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9666f78a4e150e9a834ca391ab5ccd81">FK_LALT</a> = 226, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484acac0267cf99aef731019d28c4a861e47">FK_LGUI</a> = 227, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ac7c551a5a3e3486d85f04395e9c744ad">FK_LCTRL</a> = 224, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4a32ff6596af0b343a1ab1d97e61c0f2">FK_LSHIFT</a> = 225, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a9666f78a4e150e9a834ca391ab5ccd81">FK_LALT</a> = 226, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484acac0267cf99aef731019d28c4a861e47">FK_LGUI</a> = 227, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4ebed0029353c63da5abadcdc1e55568">FK_RCTRL</a> = 228, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab13ab530be447084cf223934ae13169d">FK_RSHIFT</a> = 229, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484acc315994e8d77bc610fa401d9a7ffadf">FK_RALT</a> = 230, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a241c3fefa30c0139f7654619c88854ad">FK_RGUI</a> = 231, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a4ebed0029353c63da5abadcdc1e55568">FK_RCTRL</a> = 228, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484ab13ab530be447084cf223934ae13169d">FK_RSHIFT</a> = 229, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484acc315994e8d77bc610fa401d9a7ffadf">FK_RALT</a> = 230, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a241c3fefa30c0139f7654619c88854ad">FK_RGUI</a> = 231, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5b2e65e1c2ebfa53fa31bcd7db0605ab">FK_AUDIONEXT</a> = 258, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a70c1cddcc50ceac5d37ceb0dd69e177b">FK_AUDIOPREV</a> = 259, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484acdb2191ebdaac77eeefe8fcc43fca7f3">FK_AUDIOSTOP</a> = 260, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa4f434050c76e13cfb03a6c2fa38f97f">FK_AUDIOPLAY</a> = 261, 
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a5b2e65e1c2ebfa53fa31bcd7db0605ab">FK_AUDIONEXT</a> = 258, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a70c1cddcc50ceac5d37ceb0dd69e177b">FK_AUDIOPREV</a> = 259, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484acdb2191ebdaac77eeefe8fcc43fca7f3">FK_AUDIOSTOP</a> = 260, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484aa4f434050c76e13cfb03a6c2fa38f97f">FK_AUDIOPLAY</a> = 261, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8dee2fd9056ea67f5cda60a2df4941b0">FK_AUDIOMUTE</a> = 262, 
-<a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484a2b4807ee083dde3d95b6a66b19b4d46b">FK_MEDIASELECT</a> = 263
+&#160;&#160;<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a8dee2fd9056ea67f5cda60a2df4941b0">FK_AUDIOMUTE</a> = 262, 
+<a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484a2b4807ee083dde3d95b6a66b19b4d46b">FK_MEDIASELECT</a> = 263
 <br />
  }</td></tr>
-<tr class="memdesc:a19e7f1b27cb5354c7031d5aef9163484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keycodes.  <a href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">More...</a><br /></td></tr>
+<tr class="memdesc:a19e7f1b27cb5354c7031d5aef9163484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keycodes.  <a href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">More...</a><br /></td></tr>
 <tr class="separator:a19e7f1b27cb5354c7031d5aef9163484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a464690172782dc4aa3d838d9fd05d3b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a> { <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0aa8f2a864daf0fc895eb702ab057b34c7">MOD_NONE</a> = 0x0000, 
-<a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0a2ad9ffa4003974a07ace4b717bc9cb54">MOD_LSHIFT</a> = 0x0001, 
-<a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0a06d9de66a9b72e605f22e1ff36d08760">MOD_RSHIFT</a> = 0x0002, 
-<a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0a98833b83c6bedf86421078449cdf8cf3">MOD_LCTRL</a> = 0x0040, 
+<tr class="memitem:a464690172782dc4aa3d838d9fd05d3b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a> { <br />
+&#160;&#160;<a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0aa8f2a864daf0fc895eb702ab057b34c7">MOD_NONE</a> = 0x0000, 
+<a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0a2ad9ffa4003974a07ace4b717bc9cb54">MOD_LSHIFT</a> = 0x0001, 
+<a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0a06d9de66a9b72e605f22e1ff36d08760">MOD_RSHIFT</a> = 0x0002, 
+<a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0a98833b83c6bedf86421078449cdf8cf3">MOD_LCTRL</a> = 0x0040, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0a70ca6445f95771c474d23af06fdbabb1">MOD_RCTRL</a> = 0x0080, 
-<a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0acd89fcc060ec46cf3b7c56181ae49d6c">MOD_LALT</a> = 0x0100, 
-<a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0a23ecdfd216a39039cd53d383532184ed">MOD_RALT</a> = 0x0200, 
-<a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0a221c5a2ce82a31c502d12253957ae36c">MOD_NUM</a> = 0x1000, 
+&#160;&#160;<a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0a70ca6445f95771c474d23af06fdbabb1">MOD_RCTRL</a> = 0x0080, 
+<a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0acd89fcc060ec46cf3b7c56181ae49d6c">MOD_LALT</a> = 0x0100, 
+<a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0a23ecdfd216a39039cd53d383532184ed">MOD_RALT</a> = 0x0200, 
+<a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0a221c5a2ce82a31c502d12253957ae36c">MOD_NUM</a> = 0x1000, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0a0ff99e5c7ebd39669a13e66271cf8c4d">MOD_CAPS</a> = 0x2000
+&#160;&#160;<a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0a0ff99e5c7ebd39669a13e66271cf8c4d">MOD_CAPS</a> = 0x2000
 <br />
  }</td></tr>
-<tr class="memdesc:a464690172782dc4aa3d838d9fd05d3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifier keys applied to keyboard input.  <a href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0">More...</a><br /></td></tr>
+<tr class="memdesc:a464690172782dc4aa3d838d9fd05d3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifier keys applied to keyboard input.  <a href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0">More...</a><br /></td></tr>
 <tr class="separator:a464690172782dc4aa3d838d9fd05d3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb444b468c03623255b00447dada0f15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a> { <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15a6c748505c18ae6e7168e90d7693cfc9e">MOUSE_L</a> = 1, 
-<a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15a7f45b948d9961a23d38837855e535f13">MOUSE_MIDDLE</a> = 2, 
-<a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15a53a0e5961a0f852ee5da76ea147aba11">MOUSE_R</a> = 3, 
-<a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15a77991fd820fa0879001c745a758be452">MOUSE_X1</a> = 4, 
+<tr class="memitem:afb444b468c03623255b00447dada0f15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a> { <br />
+&#160;&#160;<a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15a6c748505c18ae6e7168e90d7693cfc9e">MOUSE_L</a> = 1, 
+<a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15a7f45b948d9961a23d38837855e535f13">MOUSE_MIDDLE</a> = 2, 
+<a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15a53a0e5961a0f852ee5da76ea147aba11">MOUSE_R</a> = 3, 
+<a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15a77991fd820fa0879001c745a758be452">MOUSE_X1</a> = 4, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15a8993918fc27591183d5a678fda68bbc9">MOUSE_X2</a> = 5, 
-<a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15a390d7bc7b89a05b3cd1117aa2cc983b2">MOUSE_MAKE_32</a> = 0x7FFFFFFF
+&#160;&#160;<a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15a8993918fc27591183d5a678fda68bbc9">MOUSE_X2</a> = 5, 
+<a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15a390d7bc7b89a05b3cd1117aa2cc983b2">MOUSE_MAKE_32</a> = 0x7FFFFFFF
 <br />
  }</td></tr>
-<tr class="memdesc:afb444b468c03623255b00447dada0f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse button.  <a href="fractal_8h.html#afb444b468c03623255b00447dada0f15">More...</a><br /></td></tr>
+<tr class="memdesc:afb444b468c03623255b00447dada0f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse button.  <a href="whist_8h.html#afb444b468c03623255b00447dada0f15">More...</a><br /></td></tr>
 <tr class="separator:afb444b468c03623255b00447dada0f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8e584d95cf66831f54e2d9c933b2ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a> { <a class="el" href="fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ffaf722a5faa36087c914da53ebe4711f08">CONTROL</a> = 1, 
-<a class="el" href="fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ffa01da13585122415fbe64a1d4961fcd35">SPECTATE</a> = 2, 
-<a class="el" href="fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ffab170611b776a9ab381c9572a4b9a8aea">EXCLUSIVE_CONTROL</a> = 3
+<tr class="memitem:acf8e584d95cf66831f54e2d9c933b2ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a> { <a class="el" href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ffaf722a5faa36087c914da53ebe4711f08">CONTROL</a> = 1, 
+<a class="el" href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ffa01da13585122415fbe64a1d4961fcd35">SPECTATE</a> = 2, 
+<a class="el" href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ffab170611b776a9ab381c9572a4b9a8aea">EXCLUSIVE_CONTROL</a> = 3
  }</td></tr>
-<tr class="memdesc:acf8e584d95cf66831f54e2d9c933b2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interaction mode.  <a href="fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">More...</a><br /></td></tr>
+<tr class="memdesc:acf8e584d95cf66831f54e2d9c933b2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interaction mode.  <a href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">More...</a><br /></td></tr>
 <tr class="separator:acf8e584d95cf66831f54e2d9c933b2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ddaa3bcb6a84e1f79e2ad8a364367c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a> { <a class="el" href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2a6b12aa8b149748637abe609a4dac0ff9">MOUSEWHEEL_MOMENTUM_NONE</a> = 0, 
-<a class="el" href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2a630b10cec9f191836c71a2921e9cb92b">MOUSEWHEEL_MOMENTUM_BEGIN</a> = 1, 
-<a class="el" href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2ac35d891e7f97f5c677ac573ad418b6bf">MOUSEWHEEL_MOMENTUM_ACTIVE</a> = 2, 
-<a class="el" href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2a6168472a2aa467df0d82596eb8b341d1">MOUSEWHEEL_MOMENTUM_END</a> = 3
+<tr class="memitem:a3ddaa3bcb6a84e1f79e2ad8a364367c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a> { <a class="el" href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2a6b12aa8b149748637abe609a4dac0ff9">MOUSEWHEEL_MOMENTUM_NONE</a> = 0, 
+<a class="el" href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2a630b10cec9f191836c71a2921e9cb92b">MOUSEWHEEL_MOMENTUM_BEGIN</a> = 1, 
+<a class="el" href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2ac35d891e7f97f5c677ac573ad418b6bf">MOUSEWHEEL_MOMENTUM_ACTIVE</a> = 2, 
+<a class="el" href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2a6168472a2aa467df0d82596eb8b341d1">MOUSEWHEEL_MOMENTUM_END</a> = 3
  }</td></tr>
-<tr class="memdesc:a3ddaa3bcb6a84e1f79e2ad8a364367c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scroll momentum type.  <a href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">More...</a><br /></td></tr>
+<tr class="memdesc:a3ddaa3bcb6a84e1f79e2ad8a364367c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scroll momentum type.  <a href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">More...</a><br /></td></tr>
 <tr class="separator:a3ddaa3bcb6a84e1f79e2ad8a364367c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69973fa63511c3fd057755fcae4b8527"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a> { <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527af4c4f031796f45e85396e0a2fc898cec">MULTIGESTURE_NONE</a> = 0, 
-<a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a4dcb99f1729a987dfe37244716120684">MULTIGESTURE_PINCH_OPEN</a> = 1, 
-<a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a09d12a732eaebb811e574655d2730ed6">MULTIGESTURE_PINCH_CLOSE</a> = 2, 
-<a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a1ab59eb574b1e82f729c76699e3218bf">MULTIGESTURE_ROTATE</a> = 3, 
+<tr class="memitem:a69973fa63511c3fd057755fcae4b8527"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a> { <br />
+&#160;&#160;<a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527af4c4f031796f45e85396e0a2fc898cec">MULTIGESTURE_NONE</a> = 0, 
+<a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527a4dcb99f1729a987dfe37244716120684">MULTIGESTURE_PINCH_OPEN</a> = 1, 
+<a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527a09d12a732eaebb811e574655d2730ed6">MULTIGESTURE_PINCH_CLOSE</a> = 2, 
+<a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527a1ab59eb574b1e82f729c76699e3218bf">MULTIGESTURE_ROTATE</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527a39566e1d859d99ec29a65f2b57de025c">MULTIGESTURE_CANCEL</a> = 4
+&#160;&#160;<a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527a39566e1d859d99ec29a65f2b57de025c">MULTIGESTURE_CANCEL</a> = 4
 <br />
  }</td></tr>
-<tr class="memdesc:a69973fa63511c3fd057755fcae4b8527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture type.  <a href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527">More...</a><br /></td></tr>
+<tr class="memdesc:a69973fa63511c3fd057755fcae4b8527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture type.  <a href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527">More...</a><br /></td></tr>
 <tr class="separator:a69973fa63511c3fd057755fcae4b8527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9161a926090d029e22f75f083d664f34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> { <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d">WHIST_UNKNOWN_OS</a> = 0, 
-<a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34a9faf84ff98cb30604cea619cdfa3367d">WHIST_WINDOWS</a> = 1, 
-<a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34a68675b2596f255845cccdfb05c23b3b2">WHIST_APPLE</a> = 2, 
-<a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34a0f2213a39fae1debb99e1def4848720f">WHIST_LINUX</a> = 3
+<tr class="memitem:a9161a926090d029e22f75f083d664f34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> { <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d">WHIST_UNKNOWN_OS</a> = 0, 
+<a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34a9faf84ff98cb30604cea619cdfa3367d">WHIST_WINDOWS</a> = 1, 
+<a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34a68675b2596f255845cccdfb05c23b3b2">WHIST_APPLE</a> = 2, 
+<a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34a0f2213a39fae1debb99e1def4848720f">WHIST_LINUX</a> = 3
  }</td></tr>
-<tr class="memdesc:a9161a926090d029e22f75f083d664f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS type.  <a href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">More...</a><br /></td></tr>
+<tr class="memdesc:a9161a926090d029e22f75f083d664f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS type.  <a href="whist_8h.html#a9161a926090d029e22f75f083d664f34">More...</a><br /></td></tr>
 <tr class="separator:a9161a926090d029e22f75f083d664f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24b3a769a239a708b28e06e660b63f90"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a> { <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a02c0c7ec56775f79f4ee20ce24b2f5dc">CMESSAGE_NONE</a> = 0, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ad5a5909097baad47841396801ee21191">MESSAGE_KEYBOARD</a> = 1, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a958702106aca85abadfa7e016b678a9e">MESSAGE_KEYBOARD_STATE</a> = 2, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a78be388c885b18710345371fe0a15765">MESSAGE_MOUSE_BUTTON</a> = 3, 
+<tr class="memitem:a24b3a769a239a708b28e06e660b63f90"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a> { <br />
+&#160;&#160;<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a02c0c7ec56775f79f4ee20ce24b2f5dc">CMESSAGE_NONE</a> = 0, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90ad5a5909097baad47841396801ee21191">MESSAGE_KEYBOARD</a> = 1, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a958702106aca85abadfa7e016b678a9e">MESSAGE_KEYBOARD_STATE</a> = 2, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a78be388c885b18710345371fe0a15765">MESSAGE_MOUSE_BUTTON</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a9f9add8a6dfe9d599b493d8ee69ed221">MESSAGE_MOUSE_WHEEL</a> = 4, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8b596b9bb846fed48ef79eebc93e3667">MESSAGE_MOUSE_MOTION</a> = 5, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ad722ecc5dd0b2b51dba5f23ac3562b14">MESSAGE_MULTIGESTURE</a> = 6, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90af64db5b6ef557aabdd68fc45a3319a7a">MESSAGE_RELEASE</a> = 7, 
+&#160;&#160;<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a9f9add8a6dfe9d599b493d8ee69ed221">MESSAGE_MOUSE_WHEEL</a> = 4, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a8b596b9bb846fed48ef79eebc93e3667">MESSAGE_MOUSE_MOTION</a> = 5, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90ad722ecc5dd0b2b51dba5f23ac3562b14">MESSAGE_MULTIGESTURE</a> = 6, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90af64db5b6ef557aabdd68fc45a3319a7a">MESSAGE_RELEASE</a> = 7, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ab09c156101b732de51304e3be78103e7">MESSAGE_STOP_STREAMING</a> = 105, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aef24dabe7e8ee67e35c2bd80cce17ced">MESSAGE_START_STREAMING</a> = 106, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90ad061888ad51db62ad7d38fb2e1c5967a">MESSAGE_MBPS</a> = 107, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90af789f175f2a0ff161aea00846b9b50e0">MESSAGE_PING</a> = 108, 
+&#160;&#160;<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90ab09c156101b732de51304e3be78103e7">MESSAGE_STOP_STREAMING</a> = 105, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90aef24dabe7e8ee67e35c2bd80cce17ced">MESSAGE_START_STREAMING</a> = 106, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90ad061888ad51db62ad7d38fb2e1c5967a">MESSAGE_MBPS</a> = 107, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90af789f175f2a0ff161aea00846b9b50e0">MESSAGE_PING</a> = 108, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a7dc3a20041a5307d6ca698071014c81b">MESSAGE_TCP_PING</a> = 109, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a320f73bbf3e5c9abb3285eb70a278b35">MESSAGE_DIMENSIONS</a> = 110, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a56281630a2dddf4896eb7c456f13f053">MESSAGE_NACK</a> = 111, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a535a324c90ea58fb2754d8ad02370c49">MESSAGE_BITARRAY_NACK</a> = 112, 
+&#160;&#160;<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a7dc3a20041a5307d6ca698071014c81b">MESSAGE_TCP_PING</a> = 109, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a320f73bbf3e5c9abb3285eb70a278b35">MESSAGE_DIMENSIONS</a> = 110, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a56281630a2dddf4896eb7c456f13f053">MESSAGE_NACK</a> = 111, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a535a324c90ea58fb2754d8ad02370c49">MESSAGE_BITARRAY_NACK</a> = 112, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8285383cb763af7a4747b8a516103e4c">CMESSAGE_CLIPBOARD</a> = 113, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aa13dda8eb711d38d91b408de950920ee">MESSAGE_IFRAME_REQUEST</a> = 114, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90aad0e41f01fe989967ccf13dba65c7041">MESSAGE_DISCOVERY_REQUEST</a> = 115, 
-<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a349edcec26ba49767cf95f929499760c">MESSAGE_TCP_RECOVERY</a> = 116, 
+&#160;&#160;<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a8285383cb763af7a4747b8a516103e4c">CMESSAGE_CLIPBOARD</a> = 113, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90aa13dda8eb711d38d91b408de950920ee">MESSAGE_IFRAME_REQUEST</a> = 114, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90aad0e41f01fe989967ccf13dba65c7041">MESSAGE_DISCOVERY_REQUEST</a> = 115, 
+<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a349edcec26ba49767cf95f929499760c">MESSAGE_TCP_RECOVERY</a> = 116, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
+&#160;&#160;<a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
 <br />
  }</td></tr>
-<tr class="memdesc:a24b3a769a239a708b28e06e660b63f90"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message type.  <a href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90">More...</a><br /></td></tr>
+<tr class="memdesc:a24b3a769a239a708b28e06e660b63f90"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message type.  <a href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90">More...</a><br /></td></tr>
 <tr class="separator:a24b3a769a239a708b28e06e660b63f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cfee250c793df815c5216abc3f83621"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a> { <a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621a9bb82af6040f79aa1d563f15f835c88b">WHIST_EXIT_SUCCESS</a> = 0, 
-<a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621a3a8ed25556c2f278287e6e8f9caad338">WHIST_EXIT_FAILURE</a> = 1, 
-<a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621ab53065bdbf46c8a9b5744b572b12a132">WHIST_EXIT_CLI</a> = 2
+<tr class="memitem:a2cfee250c793df815c5216abc3f83621"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a> { <a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621a9bb82af6040f79aa1d563f15f835c88b">WHIST_EXIT_SUCCESS</a> = 0, 
+<a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621a3a8ed25556c2f278287e6e8f9caad338">WHIST_EXIT_FAILURE</a> = 1, 
+<a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621ab53065bdbf46c8a9b5744b572b12a132">WHIST_EXIT_CLI</a> = 2
  }</td></tr>
-<tr class="memdesc:a2cfee250c793df815c5216abc3f83621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer exit code.  <a href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">More...</a><br /></td></tr>
+<tr class="memdesc:a2cfee250c793df815c5216abc3f83621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer exit code.  <a href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">More...</a><br /></td></tr>
 <tr class="separator:a2cfee250c793df815c5216abc3f83621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa56483762a863ec73e68c53c8fdf140c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a> { <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140cafcd5317ecd005a890b1c3e70c96f5695">SMESSAGE_NONE</a> = 0, 
-<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140caaa1b5639726c407ba750853d9701a3fb">MESSAGE_PONG</a> = 1, 
-<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca6389a3270b7b9331d3032b9c2ecd8681">MESSAGE_TCP_PONG</a> = 2, 
-<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca9a194dedc17990414b991c7fbfec8c9c">MESSAGE_AUDIO_FREQUENCY</a> = 3, 
+<tr class="memitem:aa56483762a863ec73e68c53c8fdf140c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a> { <br />
+&#160;&#160;<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140cafcd5317ecd005a890b1c3e70c96f5695">SMESSAGE_NONE</a> = 0, 
+<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140caaa1b5639726c407ba750853d9701a3fb">MESSAGE_PONG</a> = 1, 
+<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca6389a3270b7b9331d3032b9c2ecd8681">MESSAGE_TCP_PONG</a> = 2, 
+<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca9a194dedc17990414b991c7fbfec8c9c">MESSAGE_AUDIO_FREQUENCY</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca86b5ce811becb248c9572438105db9aa">SMESSAGE_CLIPBOARD</a> = 4, 
-<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca350f6ac715ca8fba37c2967385fd1594">SMESSAGE_WINDOW_TITLE</a> = 5, 
-<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140cad224a8c24c20cac687cbc8a988ac8cc6">MESSAGE_DISCOVERY_REPLY</a> = 6, 
-<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca8aa255189138c9a25497f6e544c8f645">SMESSAGE_OPEN_URI</a> = 7, 
+&#160;&#160;<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca86b5ce811becb248c9572438105db9aa">SMESSAGE_CLIPBOARD</a> = 4, 
+<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca350f6ac715ca8fba37c2967385fd1594">SMESSAGE_WINDOW_TITLE</a> = 5, 
+<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140cad224a8c24c20cac687cbc8a988ac8cc6">MESSAGE_DISCOVERY_REPLY</a> = 6, 
+<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca8aa255189138c9a25497f6e544c8f645">SMESSAGE_OPEN_URI</a> = 7, 
 <br />
-&#160;&#160;<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca8bee600907e82ec0da4091d1c1a5abe5">SMESSAGE_FULLSCREEN</a> = 8, 
-<a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140ca62adb843bfd6857bbf5f634425c404d1">SMESSAGE_QUIT</a> = 100
+&#160;&#160;<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca8bee600907e82ec0da4091d1c1a5abe5">SMESSAGE_FULLSCREEN</a> = 8, 
+<a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca62adb843bfd6857bbf5f634425c404d1">SMESSAGE_QUIT</a> = 100
 <br />
  }</td></tr>
-<tr class="memdesc:aa56483762a863ec73e68c53c8fdf140c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message type.  <a href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c">More...</a><br /></td></tr>
+<tr class="memdesc:aa56483762a863ec73e68c53c8fdf140c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message type.  <a href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140c">More...</a><br /></td></tr>
 <tr class="separator:aa56483762a863ec73e68c53c8fdf140c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a18e1848dd1f6ac2ef3a214ef6b157af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a18e1848dd1f6ac2ef3a214ef6b157af2">print_memory_info</a> ()</td></tr>
-<tr class="memdesc:a18e1848dd1f6ac2ef3a214ef6b157af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the memory trace of a process.  <a href="fractal_8h.html#a18e1848dd1f6ac2ef3a214ef6b157af2">More...</a><br /></td></tr>
+<tr class="memitem:a18e1848dd1f6ac2ef3a214ef6b157af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a18e1848dd1f6ac2ef3a214ef6b157af2">print_memory_info</a> ()</td></tr>
+<tr class="memdesc:a18e1848dd1f6ac2ef3a214ef6b157af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the memory trace of a process.  <a href="whist_8h.html#a18e1848dd1f6ac2ef3a214ef6b157af2">More...</a><br /></td></tr>
 <tr class="separator:a18e1848dd1f6ac2ef3a214ef6b157af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ae9289a8d97634e052cb0341ff8ae7a5b">print_system_info</a> ()</td></tr>
-<tr class="memdesc:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the system info of the computer.  <a href="fractal_8h.html#ae9289a8d97634e052cb0341ff8ae7a5b">More...</a><br /></td></tr>
+<tr class="memitem:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ae9289a8d97634e052cb0341ff8ae7a5b">print_system_info</a> ()</td></tr>
+<tr class="memdesc:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the system info of the computer.  <a href="whist_8h.html#ae9289a8d97634e052cb0341ff8ae7a5b">More...</a><br /></td></tr>
 <tr class="separator:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18de2db2f97ace4d6129993e3d10e7f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a18de2db2f97ace4d6129993e3d10e7f2">runcmd</a> (const char *cmdline, char **response)</td></tr>
-<tr class="memdesc:a18de2db2f97ace4d6129993e3d10e7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a system command via command prompt or terminal.  <a href="fractal_8h.html#a18de2db2f97ace4d6129993e3d10e7f2">More...</a><br /></td></tr>
+<tr class="memitem:a18de2db2f97ace4d6129993e3d10e7f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a18de2db2f97ace4d6129993e3d10e7f2">runcmd</a> (const char *cmdline, char **response)</td></tr>
+<tr class="memdesc:a18de2db2f97ace4d6129993e3d10e7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a system command via command prompt or terminal.  <a href="whist_8h.html#a18de2db2f97ace4d6129993e3d10e7f2">More...</a><br /></td></tr>
 <tr class="separator:a18de2db2f97ace4d6129993e3d10e7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a456fad37c7036da0467b4de34948a0e8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a456fad37c7036da0467b4de34948a0e8">get_ip</a> ()</td></tr>
-<tr class="memdesc:a456fad37c7036da0467b4de34948a0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the public IPv4 of the computer it is run on.  <a href="fractal_8h.html#a456fad37c7036da0467b4de34948a0e8">More...</a><br /></td></tr>
+<tr class="memitem:a456fad37c7036da0467b4de34948a0e8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a456fad37c7036da0467b4de34948a0e8">get_ip</a> ()</td></tr>
+<tr class="memdesc:a456fad37c7036da0467b4de34948a0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the public IPv4 of the computer it is run on.  <a href="whist_8h.html#a456fad37c7036da0467b4de34948a0e8">More...</a><br /></td></tr>
 <tr class="separator:a456fad37c7036da0467b4de34948a0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8715a52b4a7436f38ed03ec5705a9aff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a8715a52b4a7436f38ed03ec5705a9aff">read_hexadecimal_private_key</a> (char *hex_string, char *binary_private_key, char *hex_private_key)</td></tr>
-<tr class="memdesc:a8715a52b4a7436f38ed03ec5705a9aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a 16-byte hexidecimal string and copies it into private_key.  <a href="fractal_8h.html#a8715a52b4a7436f38ed03ec5705a9aff">More...</a><br /></td></tr>
+<tr class="memitem:a8715a52b4a7436f38ed03ec5705a9aff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a8715a52b4a7436f38ed03ec5705a9aff">read_hexadecimal_private_key</a> (char *hex_string, char *binary_private_key, char *hex_private_key)</td></tr>
+<tr class="memdesc:a8715a52b4a7436f38ed03ec5705a9aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a 16-byte hexidecimal string and copies it into private_key.  <a href="whist_8h.html#a8715a52b4a7436f38ed03ec5705a9aff">More...</a><br /></td></tr>
 <tr class="separator:a8715a52b4a7436f38ed03ec5705a9aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b97a107ed4e99e174b0c8d245e868d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a36b97a107ed4e99e174b0c8d245e868d">get_fcmsg_size</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
-<tr class="memdesc:a36b97a107ed4e99e174b0c8d245e868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of a <a class="el" href="structWhistClientMessage.html" title="Client message.">WhistClientMessage</a> struct.  <a href="fractal_8h.html#a36b97a107ed4e99e174b0c8d245e868d">More...</a><br /></td></tr>
+<tr class="memitem:a36b97a107ed4e99e174b0c8d245e868d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a36b97a107ed4e99e174b0c8d245e868d">get_fcmsg_size</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
+<tr class="memdesc:a36b97a107ed4e99e174b0c8d245e868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of a <a class="el" href="structWhistClientMessage.html" title="Client message.">WhistClientMessage</a> struct.  <a href="whist_8h.html#a36b97a107ed4e99e174b0c8d245e868d">More...</a><br /></td></tr>
 <tr class="separator:a36b97a107ed4e99e174b0c8d245e868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77e1c19da71eb1d7070da0583521fc54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_8h.html#aa1728270d73c5d1598de1fd691762eb1">NORETURN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a77e1c19da71eb1d7070da0583521fc54">terminate_protocol</a> (<a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a> exit_code)</td></tr>
-<tr class="memdesc:a77e1c19da71eb1d7070da0583521fc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the protocol.  <a href="fractal_8h.html#a77e1c19da71eb1d7070da0583521fc54">More...</a><br /></td></tr>
+<tr class="memitem:a77e1c19da71eb1d7070da0583521fc54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#aa1728270d73c5d1598de1fd691762eb1">NORETURN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a77e1c19da71eb1d7070da0583521fc54">terminate_protocol</a> (<a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a> exit_code)</td></tr>
+<tr class="memdesc:a77e1c19da71eb1d7070da0583521fc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the protocol.  <a href="whist_8h.html#a77e1c19da71eb1d7070da0583521fc54">More...</a><br /></td></tr>
 <tr class="separator:a77e1c19da71eb1d7070da0583521fc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e">safe_strncpy</a> (char *destination, const char *source, size_t num)</td></tr>
-<tr class="memdesc:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a string from source to destination.  <a href="fractal_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e">More...</a><br /></td></tr>
+<tr class="memitem:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e">safe_strncpy</a> (char *destination, const char *source, size_t num)</td></tr>
+<tr class="memdesc:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a string from source to destination.  <a href="whist_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e">More...</a><br /></td></tr>
 <tr class="separator:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBitArray.html">BitArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">bit_array_create</a> (const unsigned int bits)</td></tr>
-<tr class="memdesc:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structBitArray.html">BitArray</a> object.  <a href="fractal_8h.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">More...</a><br /></td></tr>
+<tr class="memitem:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBitArray.html">BitArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">bit_array_create</a> (const unsigned int bits)</td></tr>
+<tr class="memdesc:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structBitArray.html">BitArray</a> object.  <a href="whist_8h.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">More...</a><br /></td></tr>
 <tr class="separator:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00948d171966edaeadd7719bd2f87f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a00948d171966edaeadd7719bd2f87f38">bit_array_free</a> (<a class="el" href="structBitArray.html">BitArray</a> *ba)</td></tr>
-<tr class="memdesc:a00948d171966edaeadd7719bd2f87f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function frees the memory allocated for a bit array.  <a href="fractal_8h.html#a00948d171966edaeadd7719bd2f87f38">More...</a><br /></td></tr>
+<tr class="memitem:a00948d171966edaeadd7719bd2f87f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a00948d171966edaeadd7719bd2f87f38">bit_array_free</a> (<a class="el" href="structBitArray.html">BitArray</a> *ba)</td></tr>
+<tr class="memdesc:a00948d171966edaeadd7719bd2f87f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function frees the memory allocated for a bit array.  <a href="whist_8h.html#a00948d171966edaeadd7719bd2f87f38">More...</a><br /></td></tr>
 <tr class="separator:a00948d171966edaeadd7719bd2f87f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a7d59f1d85585b3ff640a8ece33c6da5b">bit_array_clear_all</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
-<tr class="memdesc:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 0 in the bit array passed as a parameter.  <a href="fractal_8h.html#a7d59f1d85585b3ff640a8ece33c6da5b">More...</a><br /></td></tr>
+<tr class="memitem:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a7d59f1d85585b3ff640a8ece33c6da5b">bit_array_clear_all</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
+<tr class="memdesc:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 0 in the bit array passed as a parameter.  <a href="whist_8h.html#a7d59f1d85585b3ff640a8ece33c6da5b">More...</a><br /></td></tr>
 <tr class="separator:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8643207a604b19f3fefe5046bd3c0290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a8643207a604b19f3fefe5046bd3c0290">trim_utf8_string</a> (char *<a class="el" href="fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>)</td></tr>
-<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.  <a href="fractal_8h.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
+<tr class="memitem:a8643207a604b19f3fefe5046bd3c0290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a8643207a604b19f3fefe5046bd3c0290">trim_utf8_string</a> (char *<a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>)</td></tr>
+<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.  <a href="whist_8h.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
 <tr class="separator:a8643207a604b19f3fefe5046bd3c0290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa005f29266f2ddf76cb57dc510516839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#aa005f29266f2ddf76cb57dc510516839">bit_array_set_all</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
-<tr class="memdesc:aa005f29266f2ddf76cb57dc510516839"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 1 in the bit array passed as a parameter.  <a href="fractal_8h.html#aa005f29266f2ddf76cb57dc510516839">More...</a><br /></td></tr>
+<tr class="memitem:aa005f29266f2ddf76cb57dc510516839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aa005f29266f2ddf76cb57dc510516839">bit_array_set_all</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
+<tr class="memdesc:aa005f29266f2ddf76cb57dc510516839"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 1 in the bit array passed as a parameter.  <a href="whist_8h.html#aa005f29266f2ddf76cb57dc510516839">More...</a><br /></td></tr>
 <tr class="separator:aa005f29266f2ddf76cb57dc510516839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1afe30fe8a08f76491e0150c0b790eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ad1afe30fe8a08f76491e0150c0b790eb">bit_array_set_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
-<tr class="memdesc:ad1afe30fe8a08f76491e0150c0b790eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the specified bit to 1 in the bit array passed as a parameter.  <a href="fractal_8h.html#ad1afe30fe8a08f76491e0150c0b790eb">More...</a><br /></td></tr>
+<tr class="memitem:ad1afe30fe8a08f76491e0150c0b790eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ad1afe30fe8a08f76491e0150c0b790eb">bit_array_set_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
+<tr class="memdesc:ad1afe30fe8a08f76491e0150c0b790eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the specified bit to 1 in the bit array passed as a parameter.  <a href="whist_8h.html#ad1afe30fe8a08f76491e0150c0b790eb">More...</a><br /></td></tr>
 <tr class="separator:ad1afe30fe8a08f76491e0150c0b790eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ea629de5b3e424ab213f0be58279fe"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a70ea629de5b3e424ab213f0be58279fe">bit_array_get_bits</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
-<tr class="memdesc:a70ea629de5b3e424ab213f0be58279fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns a pointer to the array of unsigned char containing actual bits.  <a href="fractal_8h.html#a70ea629de5b3e424ab213f0be58279fe">More...</a><br /></td></tr>
+<tr class="memitem:a70ea629de5b3e424ab213f0be58279fe"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a70ea629de5b3e424ab213f0be58279fe">bit_array_get_bits</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
+<tr class="memdesc:a70ea629de5b3e424ab213f0be58279fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns a pointer to the array of unsigned char containing actual bits.  <a href="whist_8h.html#a70ea629de5b3e424ab213f0be58279fe">More...</a><br /></td></tr>
 <tr class="separator:a70ea629de5b3e424ab213f0be58279fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31fd6c4678d06a79702a5781fb54b43b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#a31fd6c4678d06a79702a5781fb54b43b">bit_array_test_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
-<tr class="memdesc:a31fd6c4678d06a79702a5781fb54b43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tests the specified bit in the bit array passed as a parameter. A non-zero will be returned if the tested bit is set.  <a href="fractal_8h.html#a31fd6c4678d06a79702a5781fb54b43b">More...</a><br /></td></tr>
+<tr class="memitem:a31fd6c4678d06a79702a5781fb54b43b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a31fd6c4678d06a79702a5781fb54b43b">bit_array_test_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
+<tr class="memdesc:a31fd6c4678d06a79702a5781fb54b43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tests the specified bit in the bit array passed as a parameter. A non-zero will be returned if the tested bit is set.  <a href="whist_8h.html#a31fd6c4678d06a79702a5781fb54b43b">More...</a><br /></td></tr>
 <tr class="separator:a31fd6c4678d06a79702a5781fb54b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade1756210446fe6f3480382a6d3de46f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8h.html#ade1756210446fe6f3480382a6d3de46f">fractal_git_revision</a> ()</td></tr>
-<tr class="memdesc:ade1756210446fe6f3480382a6d3de46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short string representing the current git commit of fractal at the time of compilation.  <a href="fractal_8h.html#ade1756210446fe6f3480382a6d3de46f">More...</a><br /></td></tr>
+<tr class="memitem:ade1756210446fe6f3480382a6d3de46f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ade1756210446fe6f3480382a6d3de46f">whist_git_revision</a> ()</td></tr>
+<tr class="memdesc:ade1756210446fe6f3480382a6d3de46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short string representing the current git commit of whist at the time of compilation.  <a href="whist_8h.html#ade1756210446fe6f3480382a6d3de46f">More...</a><br /></td></tr>
 <tr class="separator:ade1756210446fe6f3480382a6d3de46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1005,7 +1005,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define INPUT_DRIVER&#160;&#160;&#160;<a class="el" href="fractal_8h.html#ad69d62858e125982881b534cafa1cd0f">UINPUT_INPUT_DRIVER</a></td>
+          <td class="memname">#define INPUT_DRIVER&#160;&#160;&#160;<a class="el" href="whist_8h.html#ad69d62858e125982881b534cafa1cd0f">UINPUT_INPUT_DRIVER</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1392,7 +1392,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STARTING_BITRATE&#160;&#160;&#160;(<a class="el" href="fractal_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(<a class="el" href="fractal_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="fractal_8h.html#af6ca2d6baec9e5c02bb2de6a3596ff72">STARTING_BITRATE_RAW</a>, <a class="el" href="fractal_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec">MINIMUM_BITRATE</a>), <a class="el" href="fractal_8h.html#af99345a216f300c72251d94158573c1c">MAXIMUM_BITRATE</a>))</td>
+          <td class="memname">#define STARTING_BITRATE&#160;&#160;&#160;(<a class="el" href="whist_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="whist_8h.html#af6ca2d6baec9e5c02bb2de6a3596ff72">STARTING_BITRATE_RAW</a>, <a class="el" href="whist_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec">MINIMUM_BITRATE</a>), <a class="el" href="whist_8h.html#af99345a216f300c72251d94158573c1c">MAXIMUM_BITRATE</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1420,7 +1420,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STARTING_BURST_BITRATE&#160;&#160;&#160;(<a class="el" href="fractal_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(<a class="el" href="fractal_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="fractal_8h.html#a252287e91b6d572153c2a6e7ab1c342b">STARTING_BURST_BITRATE_RAW</a>, <a class="el" href="fractal_8h.html#a766f336f01ead55fa462053310ece2df">MINIMUM_BURST_BITRATE</a>), <a class="el" href="fractal_8h.html#a7d1a6f11ba27fccd22c0a937de148e8b">MAXIMUM_BURST_BITRATE</a>))</td>
+          <td class="memname">#define STARTING_BURST_BITRATE&#160;&#160;&#160;(<a class="el" href="whist_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="whist_8h.html#a252287e91b6d572153c2a6e7ab1c342b">STARTING_BURST_BITRATE_RAW</a>, <a class="el" href="whist_8h.html#a766f336f01ead55fa462053310ece2df">MINIMUM_BURST_BITRATE</a>), <a class="el" href="whist_8h.html#a7d1a6f11ba27fccd22c0a937de148e8b">MAXIMUM_BURST_BITRATE</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1635,7 +1635,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> <a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1651,7 +1651,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1685,7 +1685,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a> <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a> <a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1767,7 +1767,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a> <a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a> <a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1801,7 +1801,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1818,7 +1818,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a> <a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a> <a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1835,7 +1835,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a> <a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a> <a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1903,7 +1903,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a> <a class="el" href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a> <a class="el" href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1937,7 +1937,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a> <a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a> <a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1954,7 +1954,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1988,7 +1988,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a> <a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a> <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2005,7 +2005,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a> <a class="el" href="fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a></td>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a> <a class="el" href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2023,7 +2023,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2043,7 +2043,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2066,7 +2066,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#a24b3a769a239a708b28e06e660b63f90">WhistClientMessageType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2117,7 +2117,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2139,7 +2139,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2402,7 +2402,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#a464690172782dc4aa3d838d9fd05d3b0">WhistKeymod</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2439,7 +2439,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2469,7 +2469,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#a3ddaa3bcb6a84e1f79e2ad8a364367c2">WhistMouseWheelMomentumType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2492,7 +2492,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2516,7 +2516,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2539,7 +2539,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140c">WhistServerMessageType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2569,7 +2569,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a></td>
+          <td class="memname">enum <a class="el" href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ff">InteractionMode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2796,13 +2796,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ade1756210446fe6f3480382a6d3de46f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade1756210446fe6f3480382a6d3de46f">&#9670;&nbsp;</a></span>fractal_git_revision()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1756210446fe6f3480382a6d3de46f">&#9670;&nbsp;</a></span>whist_git_revision()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* fractal_git_revision </td>
+          <td class="memname">char* whist_git_revision </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2810,7 +2810,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a short string representing the current git commit of fractal at the time of compilation. </p>
+<p>Returns a short string representing the current git commit of whist at the time of compilation. </p>
 <dl class="section return"><dt>Returns</dt><dd>The git commit </dd></dl>
 
 </div>
@@ -3036,9 +3036,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fractal_8h.html#aa1728270d73c5d1598de1fd691762eb1">NORETURN</a> void terminate_protocol </td>
+          <td class="memname"><a class="el" href="whist_8h.html#aa1728270d73c5d1598de1fd691762eb1">NORETURN</a> void terminate_protocol </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a>&#160;</td>
           <td class="paramname"><em>exit_code</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3080,7 +3080,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_4a8c8719a23d19c67389effe97a80d8c.html">core</a></li><li class="navelem"><a class="el" href="fractal_8h.html">fractal.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_4a8c8719a23d19c67389effe97a80d8c.html">core</a></li><li class="navelem"><a class="el" href="whist_8h.html">whist.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

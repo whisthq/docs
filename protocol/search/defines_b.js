@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['largest_5faudioframe_5fsize_3831',['LARGEST_AUDIOFRAME_SIZE',['../fractal__frame_8h.html#a84e8623194435c55447f0ebb656150ec',1,'fractal_frame.h']]],
-  ['largest_5fvideoframe_5fsize_3832',['LARGEST_VIDEOFRAME_SIZE',['../fractal__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f',1,'fractal_frame.h']]],
+  ['largest_5faudioframe_5fsize_3831',['LARGEST_AUDIOFRAME_SIZE',['../whist__frame_8h.html#a84e8623194435c55447f0ebb656150ec',1,'whist_frame.h']]],
+  ['largest_5fvideoframe_5fsize_3832',['LARGEST_VIDEOFRAME_SIZE',['../whist__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f',1,'whist_frame.h']]],
   ['last_5flength_5fcode_5findex_3833',['LAST_LENGTH_CODE_INDEX',['../lodepng_8c.html#adf9597781d7175fdee0b2466e6e462e7',1,'lodepng.c']]],
   ['lib_5fcuda_5fname_3834',['LIB_CUDA_NAME',['../cudacontext_8c.html#a917eb3f03688dde30d8567cf341399f8',1,'cudacontext.c']]],
   ['lib_5fencodeapi_5fname_3835',['LIB_ENCODEAPI_NAME',['../nvidia__encode_8c.html#a413f8f4298cddd83945cbe786aae3a98',1,'nvidia_encode.c']]],
@@ -29,10 +29,10 @@ var searchData=
   ['log_5ffmt_3857',['LOG_FMT',['../logging_8h.html#ac4541472739b48ec14d768219540a13a',1,'logging.h']]],
   ['log_5finfo_3858',['LOG_INFO',['../logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0',1,'logging.h']]],
   ['log_5flevel_3859',['LOG_LEVEL',['../logging_8h.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05',1,'logging.h']]],
-  ['log_5fnacking_3860',['LOG_NACKING',['../fractal_8h.html#a06c3a7c646b3ccbd02f0b98fa5c7b28a',1,'fractal.h']]],
-  ['log_5fnetworking_3861',['LOG_NETWORKING',['../fractal_8h.html#af0b6fc03c4691990ac064ede518dd2c3',1,'fractal.h']]],
+  ['log_5fnacking_3860',['LOG_NACKING',['../whist_8h.html#a06c3a7c646b3ccbd02f0b98fa5c7b28a',1,'whist.h']]],
+  ['log_5fnetworking_3861',['LOG_NETWORKING',['../whist_8h.html#af0b6fc03c4691990ac064ede518dd2c3',1,'whist.h']]],
   ['log_5fstatistics_3862',['LOG_STATISTICS',['../log__statistic_8c.html#a5b97cf4a994812e87eca5e55b2a7d6a1',1,'log_statistic.c']]],
-  ['log_5fvideo_3863',['LOG_VIDEO',['../fractal_8h.html#af0923737dee5ff7a8f1a17c4b9c1f2fe',1,'fractal.h']]],
+  ['log_5fvideo_3863',['LOG_VIDEO',['../whist_8h.html#af0923737dee5ff7a8f1a17c4b9c1f2fe',1,'whist.h']]],
   ['log_5fwarning_3864',['LOG_WARNING',['../logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b',1,'logging.h']]],
   ['logger_5fbuf_5fsize_3865',['LOGGER_BUF_SIZE',['../logging_8h.html#a884a960393b267876a1e3bfc114f4032',1,'logging.h']]],
   ['logger_5fqueue_5fsize_3866',['LOGGER_QUEUE_SIZE',['../logging_8h.html#a5efcbb4a78eb37e2945e61e61f235a2e',1,'logging.h']]]

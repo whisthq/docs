@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/core/fractal.c File Reference</title>
+<title>Whist Protocol: whist/core/whist.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('fractal_8c.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('whist_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,77 +85,77 @@ $(document).ready(function(){initNavTree('fractal_8c.html',''); initResizable();
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">fractal.c File Reference</div>  </div>
+<div class="title">whist.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="fractal_8h_source.html">fractal.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="logging_8h_source.html">fractal/logging/logging.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="whist_8h_source.html">whist.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="sysinfo_8h_source.html">../utils/sysinfo.h</a>&quot;</code><br />
-<code>#include &lt;fractal.v&gt;</code><br />
+<code>#include &lt;whist.v&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ac4ac0c784aec9caf76934889e1ac04c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#ac4ac0c784aec9caf76934889e1ac04c5">BIT_CHAR</a>(bit)&#160;&#160;&#160;((bit) / CHAR_BIT)</td></tr>
+<tr class="memitem:ac4ac0c784aec9caf76934889e1ac04c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#ac4ac0c784aec9caf76934889e1ac04c5">BIT_CHAR</a>(bit)&#160;&#160;&#160;((bit) / CHAR_BIT)</td></tr>
 <tr class="separator:ac4ac0c784aec9caf76934889e1ac04c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99cc5a998dfeebc3567baec59b4a77a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a99cc5a998dfeebc3567baec59b4a77a3">BIT_IN_CHAR</a>(bit)&#160;&#160;&#160;(1 &lt;&lt; (CHAR_BIT - 1 - ((bit) % CHAR_BIT)))</td></tr>
+<tr class="memitem:a99cc5a998dfeebc3567baec59b4a77a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a99cc5a998dfeebc3567baec59b4a77a3">BIT_IN_CHAR</a>(bit)&#160;&#160;&#160;(1 &lt;&lt; (CHAR_BIT - 1 - ((bit) % CHAR_BIT)))</td></tr>
 <tr class="separator:a99cc5a998dfeebc3567baec59b4a77a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d7c1ddafff24bb11e440ffaf1ebbcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a60d7c1ddafff24bb11e440ffaf1ebbcf">BITS_TO_CHARS</a>(bits)&#160;&#160;&#160;((((bits)-1) / CHAR_BIT) + 1)</td></tr>
+<tr class="memitem:a60d7c1ddafff24bb11e440ffaf1ebbcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a60d7c1ddafff24bb11e440ffaf1ebbcf">BITS_TO_CHARS</a>(bits)&#160;&#160;&#160;((((bits)-1) / CHAR_BIT) + 1)</td></tr>
 <tr class="separator:a60d7c1ddafff24bb11e440ffaf1ebbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec40e2b433cc2844853d184006edff0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#aeec40e2b433cc2844853d184006edff0">xstr</a>(s)&#160;&#160;&#160;<a class="el" href="fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>(s)</td></tr>
+<tr class="memitem:aeec40e2b433cc2844853d184006edff0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#aeec40e2b433cc2844853d184006edff0">xstr</a>(s)&#160;&#160;&#160;<a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>(s)</td></tr>
 <tr class="separator:aeec40e2b433cc2844853d184006edff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8ab729381f270b100f3d05b6c6676fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>(s)&#160;&#160;&#160;#s</td></tr>
+<tr class="memitem:ad8ab729381f270b100f3d05b6c6676fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>(s)&#160;&#160;&#160;#s</td></tr>
 <tr class="separator:ad8ab729381f270b100f3d05b6c6676fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3dbb8a0134508906bb2e9dc92039a97e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a3dbb8a0134508906bb2e9dc92039a97e">multithreaded_print_system_info</a> (void *opaque)</td></tr>
+<tr class="memitem:a3dbb8a0134508906bb2e9dc92039a97e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a3dbb8a0134508906bb2e9dc92039a97e">multithreaded_print_system_info</a> (void *opaque)</td></tr>
 <tr class="separator:a3dbb8a0134508906bb2e9dc92039a97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#ae9289a8d97634e052cb0341ff8ae7a5b">print_system_info</a> ()</td></tr>
-<tr class="memdesc:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the system info of the computer.  <a href="fractal_8c.html#ae9289a8d97634e052cb0341ff8ae7a5b">More...</a><br /></td></tr>
+<tr class="memitem:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#ae9289a8d97634e052cb0341ff8ae7a5b">print_system_info</a> ()</td></tr>
+<tr class="memdesc:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the system info of the computer.  <a href="whist_8c.html#ae9289a8d97634e052cb0341ff8ae7a5b">More...</a><br /></td></tr>
 <tr class="separator:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18de2db2f97ace4d6129993e3d10e7f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a18de2db2f97ace4d6129993e3d10e7f2">runcmd</a> (const char *cmdline, char **response)</td></tr>
-<tr class="memdesc:a18de2db2f97ace4d6129993e3d10e7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a system command via command prompt or terminal.  <a href="fractal_8c.html#a18de2db2f97ace4d6129993e3d10e7f2">More...</a><br /></td></tr>
+<tr class="memitem:a18de2db2f97ace4d6129993e3d10e7f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a18de2db2f97ace4d6129993e3d10e7f2">runcmd</a> (const char *cmdline, char **response)</td></tr>
+<tr class="memdesc:a18de2db2f97ace4d6129993e3d10e7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a system command via command prompt or terminal.  <a href="whist_8c.html#a18de2db2f97ace4d6129993e3d10e7f2">More...</a><br /></td></tr>
 <tr class="separator:a18de2db2f97ace4d6129993e3d10e7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8715a52b4a7436f38ed03ec5705a9aff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a8715a52b4a7436f38ed03ec5705a9aff">read_hexadecimal_private_key</a> (char *hex_string, char *binary_private_key, char *hex_private_key)</td></tr>
-<tr class="memdesc:a8715a52b4a7436f38ed03ec5705a9aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a 16-byte hexidecimal string and copies it into private_key.  <a href="fractal_8c.html#a8715a52b4a7436f38ed03ec5705a9aff">More...</a><br /></td></tr>
+<tr class="memitem:a8715a52b4a7436f38ed03ec5705a9aff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a8715a52b4a7436f38ed03ec5705a9aff">read_hexadecimal_private_key</a> (char *hex_string, char *binary_private_key, char *hex_private_key)</td></tr>
+<tr class="memdesc:a8715a52b4a7436f38ed03ec5705a9aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a 16-byte hexidecimal string and copies it into private_key.  <a href="whist_8c.html#a8715a52b4a7436f38ed03ec5705a9aff">More...</a><br /></td></tr>
 <tr class="separator:a8715a52b4a7436f38ed03ec5705a9aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b97a107ed4e99e174b0c8d245e868d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a36b97a107ed4e99e174b0c8d245e868d">get_fcmsg_size</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
-<tr class="memdesc:a36b97a107ed4e99e174b0c8d245e868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of a <a class="el" href="structWhistClientMessage.html" title="Client message.">WhistClientMessage</a> struct.  <a href="fractal_8c.html#a36b97a107ed4e99e174b0c8d245e868d">More...</a><br /></td></tr>
+<tr class="memitem:a36b97a107ed4e99e174b0c8d245e868d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a36b97a107ed4e99e174b0c8d245e868d">get_fcmsg_size</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
+<tr class="memdesc:a36b97a107ed4e99e174b0c8d245e868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of a <a class="el" href="structWhistClientMessage.html" title="Client message.">WhistClientMessage</a> struct.  <a href="whist_8c.html#a36b97a107ed4e99e174b0c8d245e868d">More...</a><br /></td></tr>
 <tr class="separator:a36b97a107ed4e99e174b0c8d245e868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26b5a597b23ed194a2401b7dbc1bd502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a26b5a597b23ed194a2401b7dbc1bd502">terminate_protocol</a> (<a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a> exit_code)</td></tr>
-<tr class="memdesc:a26b5a597b23ed194a2401b7dbc1bd502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the protocol.  <a href="fractal_8c.html#a26b5a597b23ed194a2401b7dbc1bd502">More...</a><br /></td></tr>
+<tr class="memitem:a26b5a597b23ed194a2401b7dbc1bd502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a26b5a597b23ed194a2401b7dbc1bd502">terminate_protocol</a> (<a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a> exit_code)</td></tr>
+<tr class="memdesc:a26b5a597b23ed194a2401b7dbc1bd502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the protocol.  <a href="whist_8c.html#a26b5a597b23ed194a2401b7dbc1bd502">More...</a><br /></td></tr>
 <tr class="separator:a26b5a597b23ed194a2401b7dbc1bd502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">safe_strncpy</a> (char *destination, const char *source, size_t num)</td></tr>
-<tr class="memdesc:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a string from source to destination.  <a href="fractal_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">More...</a><br /></td></tr>
+<tr class="memitem:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">safe_strncpy</a> (char *destination, const char *source, size_t num)</td></tr>
+<tr class="memdesc:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a string from source to destination.  <a href="whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">More...</a><br /></td></tr>
 <tr class="separator:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8643207a604b19f3fefe5046bd3c0290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a8643207a604b19f3fefe5046bd3c0290">trim_utf8_string</a> (char *<a class="el" href="fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>)</td></tr>
-<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.  <a href="fractal_8c.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
+<tr class="memitem:a8643207a604b19f3fefe5046bd3c0290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a8643207a604b19f3fefe5046bd3c0290">trim_utf8_string</a> (char *<a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>)</td></tr>
+<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.  <a href="whist_8c.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
 <tr class="separator:a8643207a604b19f3fefe5046bd3c0290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBitArray.html">BitArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">bit_array_create</a> (const unsigned int bits)</td></tr>
-<tr class="memdesc:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structBitArray.html">BitArray</a> object.  <a href="fractal_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">More...</a><br /></td></tr>
+<tr class="memitem:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBitArray.html">BitArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">bit_array_create</a> (const unsigned int bits)</td></tr>
+<tr class="memdesc:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structBitArray.html">BitArray</a> object.  <a href="whist_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">More...</a><br /></td></tr>
 <tr class="separator:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00948d171966edaeadd7719bd2f87f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a00948d171966edaeadd7719bd2f87f38">bit_array_free</a> (<a class="el" href="structBitArray.html">BitArray</a> *ba)</td></tr>
-<tr class="memdesc:a00948d171966edaeadd7719bd2f87f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function frees the memory allocated for a bit array.  <a href="fractal_8c.html#a00948d171966edaeadd7719bd2f87f38">More...</a><br /></td></tr>
+<tr class="memitem:a00948d171966edaeadd7719bd2f87f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a00948d171966edaeadd7719bd2f87f38">bit_array_free</a> (<a class="el" href="structBitArray.html">BitArray</a> *ba)</td></tr>
+<tr class="memdesc:a00948d171966edaeadd7719bd2f87f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function frees the memory allocated for a bit array.  <a href="whist_8c.html#a00948d171966edaeadd7719bd2f87f38">More...</a><br /></td></tr>
 <tr class="separator:a00948d171966edaeadd7719bd2f87f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa005f29266f2ddf76cb57dc510516839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#aa005f29266f2ddf76cb57dc510516839">bit_array_set_all</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
-<tr class="memdesc:aa005f29266f2ddf76cb57dc510516839"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 1 in the bit array passed as a parameter.  <a href="fractal_8c.html#aa005f29266f2ddf76cb57dc510516839">More...</a><br /></td></tr>
+<tr class="memitem:aa005f29266f2ddf76cb57dc510516839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#aa005f29266f2ddf76cb57dc510516839">bit_array_set_all</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
+<tr class="memdesc:aa005f29266f2ddf76cb57dc510516839"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 1 in the bit array passed as a parameter.  <a href="whist_8c.html#aa005f29266f2ddf76cb57dc510516839">More...</a><br /></td></tr>
 <tr class="separator:aa005f29266f2ddf76cb57dc510516839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a7d59f1d85585b3ff640a8ece33c6da5b">bit_array_clear_all</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
-<tr class="memdesc:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 0 in the bit array passed as a parameter.  <a href="fractal_8c.html#a7d59f1d85585b3ff640a8ece33c6da5b">More...</a><br /></td></tr>
+<tr class="memitem:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a7d59f1d85585b3ff640a8ece33c6da5b">bit_array_clear_all</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
+<tr class="memdesc:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 0 in the bit array passed as a parameter.  <a href="whist_8c.html#a7d59f1d85585b3ff640a8ece33c6da5b">More...</a><br /></td></tr>
 <tr class="separator:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1afe30fe8a08f76491e0150c0b790eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#ad1afe30fe8a08f76491e0150c0b790eb">bit_array_set_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
-<tr class="memdesc:ad1afe30fe8a08f76491e0150c0b790eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the specified bit to 1 in the bit array passed as a parameter.  <a href="fractal_8c.html#ad1afe30fe8a08f76491e0150c0b790eb">More...</a><br /></td></tr>
+<tr class="memitem:ad1afe30fe8a08f76491e0150c0b790eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#ad1afe30fe8a08f76491e0150c0b790eb">bit_array_set_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
+<tr class="memdesc:ad1afe30fe8a08f76491e0150c0b790eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the specified bit to 1 in the bit array passed as a parameter.  <a href="whist_8c.html#ad1afe30fe8a08f76491e0150c0b790eb">More...</a><br /></td></tr>
 <tr class="separator:ad1afe30fe8a08f76491e0150c0b790eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ea629de5b3e424ab213f0be58279fe"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a70ea629de5b3e424ab213f0be58279fe">bit_array_get_bits</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
-<tr class="memdesc:a70ea629de5b3e424ab213f0be58279fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns a pointer to the array of unsigned char containing actual bits.  <a href="fractal_8c.html#a70ea629de5b3e424ab213f0be58279fe">More...</a><br /></td></tr>
+<tr class="memitem:a70ea629de5b3e424ab213f0be58279fe"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a70ea629de5b3e424ab213f0be58279fe">bit_array_get_bits</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
+<tr class="memdesc:a70ea629de5b3e424ab213f0be58279fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns a pointer to the array of unsigned char containing actual bits.  <a href="whist_8c.html#a70ea629de5b3e424ab213f0be58279fe">More...</a><br /></td></tr>
 <tr class="separator:a70ea629de5b3e424ab213f0be58279fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31fd6c4678d06a79702a5781fb54b43b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a31fd6c4678d06a79702a5781fb54b43b">bit_array_test_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
-<tr class="memdesc:a31fd6c4678d06a79702a5781fb54b43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tests the specified bit in the bit array passed as a parameter. A non-zero will be returned if the tested bit is set.  <a href="fractal_8c.html#a31fd6c4678d06a79702a5781fb54b43b">More...</a><br /></td></tr>
+<tr class="memitem:a31fd6c4678d06a79702a5781fb54b43b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a31fd6c4678d06a79702a5781fb54b43b">bit_array_test_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
+<tr class="memdesc:a31fd6c4678d06a79702a5781fb54b43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tests the specified bit in the bit array passed as a parameter. A non-zero will be returned if the tested bit is set.  <a href="whist_8c.html#a31fd6c4678d06a79702a5781fb54b43b">More...</a><br /></td></tr>
 <tr class="separator:a31fd6c4678d06a79702a5781fb54b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade1756210446fe6f3480382a6d3de46f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#ade1756210446fe6f3480382a6d3de46f">fractal_git_revision</a> ()</td></tr>
-<tr class="memdesc:ade1756210446fe6f3480382a6d3de46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short string representing the current git commit of fractal at the time of compilation.  <a href="fractal_8c.html#ade1756210446fe6f3480382a6d3de46f">More...</a><br /></td></tr>
+<tr class="memitem:ade1756210446fe6f3480382a6d3de46f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#ade1756210446fe6f3480382a6d3de46f">whist_git_revision</a> ()</td></tr>
+<tr class="memdesc:ade1756210446fe6f3480382a6d3de46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short string representing the current git commit of whist at the time of compilation.  <a href="whist_8c.html#ade1756210446fe6f3480382a6d3de46f">More...</a><br /></td></tr>
 <tr class="separator:ade1756210446fe6f3480382a6d3de46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -242,7 +242,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">s</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="fractal_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>(s)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>(s)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -461,13 +461,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ade1756210446fe6f3480382a6d3de46f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade1756210446fe6f3480382a6d3de46f">&#9670;&nbsp;</a></span>fractal_git_revision()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1756210446fe6f3480382a6d3de46f">&#9670;&nbsp;</a></span>whist_git_revision()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* fractal_git_revision </td>
+          <td class="memname">char* whist_git_revision </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -475,7 +475,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a short string representing the current git commit of fractal at the time of compilation. </p>
+<p>Returns a short string representing the current git commit of whist at the time of compilation. </p>
 <dl class="section return"><dt>Returns</dt><dd>The git commit </dd></dl>
 
 </div>
@@ -682,7 +682,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void terminate_protocol </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a>&#160;</td>
           <td class="paramname"><em>exit_code</em></td><td>)</td>
           <td></td>
         </tr>
@@ -724,7 +724,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_4a8c8719a23d19c67389effe97a80d8c.html">core</a></li><li class="navelem"><a class="el" href="fractal_8c.html">fractal.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_4a8c8719a23d19c67389effe97a80d8c.html">core</a></li><li class="navelem"><a class="el" href="whist_8c.html">whist.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/network/udp.c File Reference</title>
+<title>Whist Protocol: whist/network/udp.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('udp_8c.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="udp_8h_source.html">udp.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="aes_8h_source.html">fractal/utils/aes.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="aes_8h_source.html">whist/utils/aes.h</a>&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -108,15 +108,15 @@ Functions</h2></td></tr>
 <tr class="separator:a893c09bd1b4e0af49efa7fe9436347de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cfb343ad75614f609c353f2bb665c2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a0cfb343ad75614f609c353f2bb665c2a">udp_send_constructed_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet, size_t packet_size)</td></tr>
 <tr class="separator:a0cfb343ad75614f609c353f2bb665c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b06c51c64deb9e8cf3ad46ccd209c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a45b06c51c64deb9e8cf3ad46ccd209c9">udp_send_packet</a> (void *raw_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
+<tr class="memitem:a45b06c51c64deb9e8cf3ad46ccd209c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a45b06c51c64deb9e8cf3ad46ccd209c9">udp_send_packet</a> (void *raw_context, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
 <tr class="separator:a45b06c51c64deb9e8cf3ad46ccd209c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5ada1e657a06b0f0168556f83ed1f6dc">udp_update_bitrate_settings</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, int burst_bitrate, double fec_packet_ratio)</td></tr>
 <tr class="memdesc:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a5ada1e657a06b0f0168556f83ed1f6dc">More...</a><br /></td></tr>
 <tr class="separator:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a015631fd2787d70710cce93d321f862e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a015631fd2787d70710cce93d321f862e">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
+<tr class="memitem:a015631fd2787d70710cce93d321f862e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a015631fd2787d70710cce93d321f862e">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
 <tr class="memdesc:a015631fd2787d70710cce93d321f862e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a015631fd2787d70710cce93d321f862e">More...</a><br /></td></tr>
 <tr class="separator:a015631fd2787d70710cce93d321f862e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a500f7f3663deeffbbe690baac3425d44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a500f7f3663deeffbbe690baac3425d44">udp_nack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, int packet_id, int packet_index)</td></tr>
+<tr class="memitem:a500f7f3663deeffbbe690baac3425d44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a500f7f3663deeffbbe690baac3425d44">udp_nack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, int packet_id, int packet_index)</td></tr>
 <tr class="memdesc:a500f7f3663deeffbbe690baac3425d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a nack for a given ID/Index NOTE: This function is thread-safe with send_packet.  <a href="udp_8c.html#a500f7f3663deeffbbe690baac3425d44">More...</a><br /></td></tr>
 <tr class="separator:a500f7f3663deeffbbe690baac3425d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2db373aa7821bd661df6fbd19bf6ac5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab2db373aa7821bd661df6fbd19bf6ac5">udp_destroy_socket_context</a> (void *raw_context)</td></tr>
@@ -478,7 +478,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -557,7 +557,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -642,7 +642,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>packet_type</em>, </td>
         </tr>
         <tr>
@@ -737,7 +737,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="udp_8c.html">udp.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="udp_8c.html">udp.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

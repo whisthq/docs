@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('server_2main_8c.html',''); initResizab
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:acbb846d0488e43d207fcd2c04d9894c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#acbb846d0488e43d207fcd2c04d9894c9">URI_HANDLER_FILE</a>&#160;&#160;&#160;&quot;/home/fractal/.teleport/handled-uri&quot;</td></tr>
+<tr class="memitem:acbb846d0488e43d207fcd2c04d9894c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#acbb846d0488e43d207fcd2c04d9894c9">URI_HANDLER_FILE</a>&#160;&#160;&#160;&quot;/home/whist/.teleport/handled-uri&quot;</td></tr>
 <tr class="separator:acbb846d0488e43d207fcd2c04d9894c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a91ba3287363037712f8500e8357340"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a0a91ba3287363037712f8500e8357340">HANDLED_URI_MAXLEN</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:a0a91ba3287363037712f8500e8357340"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,9 +106,9 @@ Functions</h2></td></tr>
 <tr class="separator:a3178a3113fe7545fa8f931889c3deb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a997e38df3974c4fe8657eb0933f4063c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a997e38df3974c4fe8657eb0933f4063c">handle_fractal_client_message</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
+<tr class="memitem:a997e38df3974c4fe8657eb0933f4063c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a997e38df3974c4fe8657eb0933f4063c">handle_whist_client_message</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
 <tr class="separator:a997e38df3974c4fe8657eb0933f4063c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4c60bf326fadfc2297721115ec7926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a8f4c60bf326fadfc2297721115ec7926">get_fractal_client_messages</a> (bool get_tcp, bool get_udp)</td></tr>
+<tr class="memitem:a8f4c60bf326fadfc2297721115ec7926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a8f4c60bf326fadfc2297721115ec7926">get_whist_client_messages</a> (bool get_tcp, bool get_udp)</td></tr>
 <tr class="separator:a8f4c60bf326fadfc2297721115ec7926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bc6e5d2c6baa8b2b71ed64392e01d51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51">multithreaded_sync_tcp_packets</a> (void *opaque)</td></tr>
 <tr class="memdesc:a3bc6e5d2c6baa8b2b71ed64392e01d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive and send TCP packets, mostly clipboard.  <a href="server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51">More...</a><br /></td></tr>
@@ -144,7 +144,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define URI_HANDLER_FILE&#160;&#160;&#160;&quot;/home/fractal/.teleport/handled-uri&quot;</td>
+          <td class="memname">#define URI_HANDLER_FILE&#160;&#160;&#160;&quot;/home/whist/.teleport/handled-uri&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -153,13 +153,13 @@ Usage</h1>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a8f4c60bf326fadfc2297721115ec7926"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f4c60bf326fadfc2297721115ec7926">&#9670;&nbsp;</a></span>get_fractal_client_messages()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4c60bf326fadfc2297721115ec7926">&#9670;&nbsp;</a></span>get_whist_client_messages()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void get_fractal_client_messages </td>
+          <td class="memname">void get_whist_client_messages </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>get_tcp</em>, </td>
@@ -198,13 +198,13 @@ Usage</h1>
 </div>
 </div>
 <a id="a997e38df3974c4fe8657eb0933f4063c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a997e38df3974c4fe8657eb0933f4063c">&#9670;&nbsp;</a></span>handle_fractal_client_message()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a997e38df3974c4fe8657eb0933f4063c">&#9670;&nbsp;</a></span>handle_whist_client_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void handle_fractal_client_message </td>
+          <td class="memname">void handle_whist_client_message </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em></td><td>)</td>
@@ -262,7 +262,7 @@ Usage</h1>
 <p>Receive and send TCP packets, mostly clipboard. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opaque</td><td>Unused - necessary for creating fractal threads. </td></tr>
+    <tr><td class="paramname">opaque</td><td>Unused - necessary for creating whist threads. </td></tr>
   </table>
   </dd>
 </dl>

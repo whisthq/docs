@@ -5,7 +5,7 @@ var searchData=
   ['tcp_5fconnection_5fwait_3967',['TCP_CONNECTION_WAIT',['../client_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4',1,'TCP_CONNECTION_WAIT():&#160;network.c'],['../server_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4',1,'TCP_CONNECTION_WAIT():&#160;network.c'],['../server_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4',1,'TCP_CONNECTION_WAIT():&#160;network.c']]],
   ['tcp_5fsegment_5fsize_3968',['TCP_SEGMENT_SIZE',['../tcp_8c.html#ab8c6b65188e80c3ec91782df45b9f787',1,'tcp.c']]],
   ['time_5frun_3969',['TIME_RUN',['../sync__packets_8c.html#a04c8f42babfe110a848d8fdd6ebabd65',1,'sync_packets.c']]],
-  ['to_5fregion_5fdata_3970',['TO_REGION_DATA',['../fractal__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c',1,'fractal_memory.c']]],
-  ['to_5fregion_5fheader_3971',['TO_REGION_HEADER',['../fractal__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a',1,'fractal_memory.c']]],
+  ['to_5fregion_5fdata_3970',['TO_REGION_DATA',['../whist__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c',1,'whist_memory.c']]],
+  ['to_5fregion_5fheader_3971',['TO_REGION_HEADER',['../whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a',1,'whist_memory.c']]],
   ['tz_5fname_5fmaxlen_3972',['TZ_NAME_MAXLEN',['../clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39',1,'clock.h']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/video/capture/capture.h Source File</title>
+<title>Whist Protocol: whist/video/capture/capture.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -94,8 +94,8 @@ $(document).ready(function(){initNavTree('capture_8h_source.html',''); initResiz
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">============================</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fractal_8h.html">fractal/core/fractal.h</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="color_8h.html">fractal/utils/color.h</a>&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="whist_8h.html">whist/core/whist.h</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="color_8h.html">whist/utils/color.h</a>&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;X11/Xlib.h&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nvidiacapture_8h.html">nvidiacapture.h</a>&quot;</span></div>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('capture_8h_source.html',''); initResiz
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structCaptureDevice.html#ac7380b5b42caebd0a7401c17437d4ec2">   41</a></span>&#160;    <span class="keywordtype">void</span>* <span class="keyword">internal</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> active_capture_device;  <span class="comment">// the device currently used for capturing</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> last_capture_device;  <span class="comment">// the device used for the last capture, so we can pick</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> active_capture_device;  <span class="comment">// the device currently used for capturing</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> last_capture_device;  <span class="comment">// the device used for the last capture, so we can pick</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                            <span class="comment">// the right encoder</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> pending_destruction;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a> nvidia_manager;</div>
@@ -155,10 +155,10 @@ $(document).ready(function(){initNavTree('capture_8h_source.html',''); initResiz
 </div><!-- doc-content -->
 <div class="ttc" id="astructCaptureDevice_html_a6800f23c51341920773e2dbaab517fe8"><div class="ttname"><a href="structCaptureDevice.html#a6800f23c51341920773e2dbaab517fe8">CaptureDevice::frame_data</a></div><div class="ttdeci">void * frame_data</div><div class="ttdef"><b>Definition:</b> capture.h:39</div></div>
 <div class="ttc" id="ax11capture_8h_html"><div class="ttname"><a href="x11capture_8h.html">x11capture.h</a></div></div>
-<div class="ttc" id="afractal_8h_html"><div class="ttname"><a href="fractal_8h.html">fractal.h</a></div><div class="ttdoc">This file contains the core of Whist custom structs and definitions used throughout.</div></div>
+<div class="ttc" id="awhist_8h_html"><div class="ttname"><a href="whist_8h.html">whist.h</a></div><div class="ttdoc">This file contains the core of Whist custom structs and definitions used throughout.</div></div>
 <div class="ttc" id="anvidiacapture_8h_html"><div class="ttname"><a href="nvidiacapture_8h.html">nvidiacapture.h</a></div></div>
 <div class="ttc" id="astructX11CaptureDevice_html"><div class="ttname"><a href="structX11CaptureDevice.html">X11CaptureDevice</a></div><div class="ttdoc">Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.</div><div class="ttdef"><b>Definition:</b> x11capture.h:41</div></div>
-<div class="ttc" id="afractal_8h_html_a405cbf3c7e9ae25dc03ad4fcf563f600"><div class="ttname"><a href="fractal_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></div><div class="ttdeci">CaptureDeviceType</div><div class="ttdoc">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option ...</div><div class="ttdef"><b>Definition:</b> fractal.h:230</div></div>
+<div class="ttc" id="awhist_8h_html_a405cbf3c7e9ae25dc03ad4fcf563f600"><div class="ttname"><a href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a></div><div class="ttdeci">CaptureDeviceType</div><div class="ttdoc">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option ...</div><div class="ttdef"><b>Definition:</b> whist.h:230</div></div>
 <div class="ttc" id="astructCaptureDevice_html_a2c98177722c829280c8321793a269486"><div class="ttname"><a href="structCaptureDevice.html#a2c98177722c829280c8321793a269486">CaptureDevice::corner_color</a></div><div class="ttdeci">WhistRGBColor corner_color</div><div class="ttdef"><b>Definition:</b> capture.h:40</div></div>
 <div class="ttc" id="acapture_8h_html_acddcc3aa008273807b931fbd1fd2a0bf"><div class="ttname"><a href="capture_8h.html#acddcc3aa008273807b931fbd1fd2a0bf">capture_screen</a></div><div class="ttdeci">int capture_screen(CaptureDevice *device)</div><div class="ttdoc">Capture a bitmap snapshot of the screen The width/height of the image is guaranteed to be the width/h...</div><div class="ttdef"><b>Definition:</b> linuxcapture.c:295</div></div>
 <div class="ttc" id="astructWhistRGBColor_html"><div class="ttname"><a href="structWhistRGBColor.html">WhistRGBColor</a></div><div class="ttdoc">RGB Color.</div><div class="ttdef"><b>Definition:</b> color.h:43</div></div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('capture_8h_source.html',''); initResiz
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_c68b84a95155b43b9b365380c19f666b.html">capture</a></li><li class="navelem"><a class="el" href="capture_8h.html">capture.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_c68b84a95155b43b9b365380c19f666b.html">capture</a></li><li class="navelem"><a class="el" href="capture_8h.html">capture.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

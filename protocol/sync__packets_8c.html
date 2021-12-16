@@ -89,11 +89,11 @@ $(document).ready(function(){initNavTree('sync__packets_8c.html',''); initResiza
 <div class="title">sync_packets.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="clock_8h_source.html">fractal/utils/clock.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="fractal_2network_2network_8h_source.html">fractal/network/network.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="log__statistic_8h_source.html">fractal/logging/log_statistic.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="logging_8h_source.html">fractal/logging/logging.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="clock_8h_source.html">whist/utils/clock.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="handle__server__message_8h_source.html">handle_server_message.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_2network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_2audio_8h_source.html">audio.h</a>&quot;</code><br />
@@ -155,9 +155,9 @@ Variables</h2></td></tr>
 <tr class="separator:adb26e424f91b3e96e593c77ffff265f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f22535f72143edb1d30f2ae7b2063d7"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a6f22535f72143edb1d30f2ae7b2063d7">server_height</a></td></tr>
 <tr class="separator:a6f22535f72143edb1d30f2ae7b2063d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c601e07e2ab0a163872f816a34fad9c"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a1c601e07e2ab0a163872f816a34fad9c">server_codec_type</a></td></tr>
+<tr class="memitem:a1c601e07e2ab0a163872f816a34fad9c"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a1c601e07e2ab0a163872f816a34fad9c">server_codec_type</a></td></tr>
 <tr class="separator:a1c601e07e2ab0a163872f816a34fad9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb9ee7b2e8381606788de51e5548b57f"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#adb9ee7b2e8381606788de51e5548b57f">output_codec_type</a></td></tr>
+<tr class="memitem:adb9ee7b2e8381606788de51e5548b57f"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#adb9ee7b2e8381606788de51e5548b57f">output_codec_type</a></td></tr>
 <tr class="separator:adb9ee7b2e8381606788de51e5548b57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaacc5ce7ced4977cd893708f5d789df4"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a></td></tr>
 <tr class="separator:aaacc5ce7ced4977cd893708f5d789df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,7 +229,7 @@ Usage</h1>
 <p>Receive and send TCP packets, mostly clipboard. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opaque</td><td>Unused - necessary for creating fractal threads. </td></tr>
+    <tr><td class="paramname">opaque</td><td>Unused - necessary for creating whist threads. </td></tr>
   </table>
   </dd>
 </dl>
@@ -461,7 +461,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> output_codec_type</td>
+          <td class="memname">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> output_codec_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -545,7 +545,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> server_codec_type</td>
+          <td class="memname">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> server_codec_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
