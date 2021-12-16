@@ -2,7 +2,7 @@ var searchData=
 [
   ['nack_5fbitarray_5fpackets_2541',['nack_bitarray_packets',['../ringbuffer_8c.html#a73e418ff63c607877e2cf30c280003b8',1,'ringbuffer.c']]],
   ['nack_5fmissing_5fpackets_5fup_5fto_5findex_2542',['nack_missing_packets_up_to_index',['../ringbuffer_8c.html#a0048b36c977f38b40533fa7eea0f974c',1,'ringbuffer.c']]],
-  ['nack_5fpacket_2543',['nack_packet',['../client__utils_8c.html#ad3e9e1825d7ccb7641d84ffcafad5ec9',1,'nack_packet(FractalPacketType frame_type, int id, int index):&#160;client_utils.c'],['../client__utils_8h.html#ad3e9e1825d7ccb7641d84ffcafad5ec9',1,'nack_packet(FractalPacketType frame_type, int id, int index):&#160;client_utils.c']]],
+  ['nack_5fpacket_2543',['nack_packet',['../client__utils_8c.html#ad3e9e1825d7ccb7641d84ffcafad5ec9',1,'nack_packet(WhistPacketType frame_type, int id, int index):&#160;client_utils.c'],['../client__utils_8h.html#ad3e9e1825d7ccb7641d84ffcafad5ec9',1,'nack_packet(WhistPacketType frame_type, int id, int index):&#160;client_utils.c']]],
   ['nack_5fsingle_5fpacket_2544',['nack_single_packet',['../ringbuffer_8c.html#a06579df66400790c9af75c806b484aba',1,'ringbuffer.c']]],
   ['network_5fthrottler_5fcreate_2545',['network_throttler_create',['../throttle_8c.html#ac061cfa926230ca0f7218d4ce3955a85',1,'network_throttler_create():&#160;throttle.c'],['../throttle_8h.html#ac061cfa926230ca0f7218d4ce3955a85',1,'network_throttler_create():&#160;throttle.c']]],
   ['network_5fthrottler_5fdestroy_2546',['network_throttler_destroy',['../throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f',1,'network_throttler_destroy(NetworkThrottleContext *ctx):&#160;throttle.c'],['../throttle_8h.html#abdd485a4dd0b32148884b04e1d92eb1f',1,'network_throttler_destroy(NetworkThrottleContext *ctx):&#160;throttle.c']]],

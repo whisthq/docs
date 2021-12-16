@@ -1,19 +1,19 @@
 var fractal_2network_2network_8h =
 [
-    [ "FractalPacket", "structFractalPacket.html", "structFractalPacket" ],
+    [ "WhistPacket", "structWhistPacket.html", "structWhistPacket" ],
     [ "StunEntry", "structStunEntry.html", "structStunEntry" ],
     [ "StunRequest", "structStunRequest.html", "structStunRequest" ],
     [ "SocketContextData", "structSocketContextData.html", "structSocketContextData" ],
     [ "SocketContext", "structSocketContext.html", "structSocketContext" ],
     [ "AUDIO_NACKBUFFER_SIZE", "fractal_2network_2network_8h.html#a6268ba8879305a31512908e23f295ddc", null ],
     [ "closesocket", "fractal_2network_2network_8h.html#afdbb9d84bd17efd2ae7290e664992c48", null ],
-    [ "FRACTAL_CLOSE_SOCKET", "fractal_2network_2network_8h.html#ac98a99e5dd88c460bf5e253a897ffa0e", null ],
-    [ "FRACTAL_EAGAIN", "fractal_2network_2network_8h.html#a2e0cefb8f477cfcff5dbc9ea1cea9ed1", null ],
-    [ "FRACTAL_EINPROGRESS", "fractal_2network_2network_8h.html#a65f2e30f7b11dadfd39341801f27b0b4", null ],
-    [ "FRACTAL_ETIMEDOUT", "fractal_2network_2network_8h.html#aec0bccebe540af495aec057193863827", null ],
-    [ "FRACTAL_EWOULDBLOCK", "fractal_2network_2network_8h.html#a930515ae12ecd7aa2ef0e36886daf0d2", null ],
-    [ "FRACTAL_IOCTL_SOCKET", "fractal_2network_2network_8h.html#aef4f8657ef95d300ddb3901a2efe020b", null ],
-    [ "FRACTAL_SHUTDOWN_SOCKET", "fractal_2network_2network_8h.html#a33652a6c0f89aa7c48ed7512a2e6844a", null ],
+    [ "WHIST_CLOSE_SOCKET", "fractal_2network_2network_8h.html#ac98a99e5dd88c460bf5e253a897ffa0e", null ],
+    [ "WHIST_EAGAIN", "fractal_2network_2network_8h.html#a2e0cefb8f477cfcff5dbc9ea1cea9ed1", null ],
+    [ "WHIST_EINPROGRESS", "fractal_2network_2network_8h.html#a65f2e30f7b11dadfd39341801f27b0b4", null ],
+    [ "WHIST_ETIMEDOUT", "fractal_2network_2network_8h.html#aec0bccebe540af495aec057193863827", null ],
+    [ "WHIST_EWOULDBLOCK", "fractal_2network_2network_8h.html#a930515ae12ecd7aa2ef0e36886daf0d2", null ],
+    [ "WHIST_IOCTL_SOCKET", "fractal_2network_2network_8h.html#aef4f8657ef95d300ddb3901a2efe020b", null ],
+    [ "WHIST_SHUTDOWN_SOCKET", "fractal_2network_2network_8h.html#a33652a6c0f89aa7c48ed7512a2e6844a", null ],
     [ "INVALID_SOCKET", "fractal_2network_2network_8h.html#a26769957ec1a2beaf223f33b66ee64ab", null ],
     [ "MAX_PACKET_SIZE", "fractal_2network_2network_8h.html#a879456c3b8e2853f7044d764e9c180d4", null ],
     [ "MAX_PAYLOAD_SIZE", "fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b", null ],
@@ -23,7 +23,7 @@ var fractal_2network_2network_8h =
     [ "STUN_IP", "fractal_2network_2network_8h.html#a68f8e6814da9faad6d4eb32379d58412", null ],
     [ "STUN_PORT", "fractal_2network_2network_8h.html#a81e4fdb2a08afd19ef501855bb9fbeec", null ],
     [ "VIDEO_NACKBUFFER_SIZE", "fractal_2network_2network_8h.html#a4ff2e6a193139535d0d23d5f46419f84", null ],
-    [ "FractalPacketType", "fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb", [
+    [ "WhistPacketType", "fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb", [
       [ "PACKET_AUDIO", "fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdba3701057450c7a09aa316bb880f2db6ac", null ],
       [ "PACKET_VIDEO", "fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdbab3488b238f3094f2bcfaa19a393be226", null ],
       [ "PACKET_MESSAGE", "fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdba501ce71c96f98746319edaf14fd43aef", null ]

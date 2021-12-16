@@ -109,13 +109,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a76788983d3f213efe39bb8196fb18837"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#a76788983d3f213efe39bb8196fb18837">verify_hmac</a> (void *signature, void *buf, int len, void *key)</td></tr>
 <tr class="memdesc:a76788983d3f213efe39bb8196fb18837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify an hmac signature.  <a href="aes_8h.html#a76788983d3f213efe39bb8196fb18837">More...</a><br /></td></tr>
 <tr class="separator:a76788983d3f213efe39bb8196fb18837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a57d6837da2c6aefac4bf16a3e48101"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#a4a57d6837da2c6aefac4bf16a3e48101">encrypt_packet</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> *plaintext_packet, int packet_len, <a class="el" href="structFractalPacket.html">FractalPacket</a> *encrypted_packet, unsigned char *private_key)</td></tr>
+<tr class="memitem:a4a57d6837da2c6aefac4bf16a3e48101"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#a4a57d6837da2c6aefac4bf16a3e48101">encrypt_packet</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> *plaintext_packet, int packet_len, <a class="el" href="structWhistPacket.html">WhistPacket</a> *encrypted_packet, unsigned char *private_key)</td></tr>
 <tr class="memdesc:a4a57d6837da2c6aefac4bf16a3e48101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypts a data packet using the AES private key.  <a href="aes_8h.html#a4a57d6837da2c6aefac4bf16a3e48101">More...</a><br /></td></tr>
 <tr class="separator:a4a57d6837da2c6aefac4bf16a3e48101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac80469202c52f5d7a0a37c349e7b4724"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#ac80469202c52f5d7a0a37c349e7b4724">decrypt_packet</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> *encrypted_packet, int packet_len, <a class="el" href="structFractalPacket.html">FractalPacket</a> *plaintext_packet, unsigned char *private_key)</td></tr>
+<tr class="memitem:ac80469202c52f5d7a0a37c349e7b4724"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#ac80469202c52f5d7a0a37c349e7b4724">decrypt_packet</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> *encrypted_packet, int packet_len, <a class="el" href="structWhistPacket.html">WhistPacket</a> *plaintext_packet, unsigned char *private_key)</td></tr>
 <tr class="memdesc:ac80469202c52f5d7a0a37c349e7b4724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls decrypt_packet_n to decrypt an AES-encrypted packet.  <a href="aes_8h.html#ac80469202c52f5d7a0a37c349e7b4724">More...</a><br /></td></tr>
 <tr class="separator:ac80469202c52f5d7a0a37c349e7b4724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0a2da0fbf7c804b48792d51d7e19ec6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#af0a2da0fbf7c804b48792d51d7e19ec6">decrypt_packet_n</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> *encrypted_packet, int packet_len, <a class="el" href="structFractalPacket.html">FractalPacket</a> *plaintext_packet, int plaintext_len, unsigned char *private_key)</td></tr>
+<tr class="memitem:af0a2da0fbf7c804b48792d51d7e19ec6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#af0a2da0fbf7c804b48792d51d7e19ec6">decrypt_packet_n</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> *encrypted_packet, int packet_len, <a class="el" href="structWhistPacket.html">WhistPacket</a> *plaintext_packet, int plaintext_len, unsigned char *private_key)</td></tr>
 <tr class="memdesc:af0a2da0fbf7c804b48792d51d7e19ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts an AES-encrypted packet.  <a href="aes_8h.html#af0a2da0fbf7c804b48792d51d7e19ec6">More...</a><br /></td></tr>
 <tr class="separator:af0a2da0fbf7c804b48792d51d7e19ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd36e6218717e29a5d0eca35b49b1e19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#acd36e6218717e29a5d0eca35b49b1e19">aes_encrypt</a> (void *plaintext, int plaintext_len, void *key, void *iv, void *ciphertext)</td></tr>
@@ -127,7 +127,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with packets. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md188"></a>
 encryption (using AES encryption).</h1>
 <h1><a class="anchor" id="autotoc_md189"></a>
@@ -261,7 +261,7 @@ Usage</h1>
         <tr>
           <td class="memname">int decrypt_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>encrypted_packet</em>, </td>
         </tr>
         <tr>
@@ -273,7 +273,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>plaintext_packet</em>, </td>
         </tr>
         <tr>
@@ -313,7 +313,7 @@ Usage</h1>
         <tr>
           <td class="memname">int decrypt_packet_n </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>encrypted_packet</em>, </td>
         </tr>
         <tr>
@@ -325,7 +325,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>plaintext_packet</em>, </td>
         </tr>
         <tr>
@@ -372,7 +372,7 @@ Usage</h1>
         <tr>
           <td class="memname">int encrypt_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>plaintext_packet</em>, </td>
         </tr>
         <tr>
@@ -384,7 +384,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>encrypted_packet</em>, </td>
         </tr>
         <tr>

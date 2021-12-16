@@ -1,11 +1,11 @@
 var dir_4a8c8719a23d19c67389effe97a80d8c =
 [
-    [ "fractal.c", "fractal_8c.html", "fractal_8c" ],
-    [ "fractal.h", "fractal_8h.html", "fractal_8h" ],
-    [ "fractal_frame.c", "fractal__frame_8c.html", "fractal__frame_8c" ],
-    [ "fractal_frame.h", "fractal__frame_8h.html", "fractal__frame_8h" ],
-    [ "fractal_memory.c", "fractal__memory_8c.html", "fractal__memory_8c" ],
-    [ "fractal_memory.h", "fractal__memory_8h.html", "fractal__memory_8h" ],
-    [ "fractalgetopt.c", "fractalgetopt_8c.html", "fractalgetopt_8c" ],
-    [ "fractalgetopt.h", "fractalgetopt_8h.html", "fractalgetopt_8h" ]
+    [ "whist.c", "whist_8c.html", "whist_8c" ],
+    [ "whist.h", "whist_8h.html", "whist_8h" ],
+    [ "whist_frame.c", "whist__frame_8c.html", "whist__frame_8c" ],
+    [ "whist_frame.h", "whist__frame_8h.html", "whist__frame_8h" ],
+    [ "whist_memory.c", "whist__memory_8c.html", "whist__memory_8c" ],
+    [ "whist_memory.h", "whist__memory_8h.html", "whist__memory_8h" ],
+    [ "whistgetopt.c", "whistgetopt_8c.html", "whistgetopt_8c" ],
+    [ "whistgetopt.h", "whistgetopt_8h.html", "whistgetopt_8h" ]
 ];

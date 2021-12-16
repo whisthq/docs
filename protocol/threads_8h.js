@@ -1,17 +1,17 @@
 var threads_8h =
 [
     [ "SDL_MAIN_HANDLED", "threads_8h.html#a51f528deaaeb973f417b46a2ec36f850", null ],
-    [ "FractalCondition", "threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559", null ],
-    [ "FractalMutex", "threads_8h.html#a56cb64f164524256b9e406138d8e1530", null ],
-    [ "FractalSemaphore", "threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4", null ],
-    [ "FractalThread", "threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72", null ],
-    [ "FractalThreadFunction", "threads_8h.html#aedfaae191fd6597f6583aa57d2a23ed8", null ],
-    [ "FractalThreadPriority", "threads_8h.html#a902677cdda9699ceb9c58c020ac10f99", null ],
-    [ "FractalThreadPriority", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952f", [
-      [ "FRACTAL_THREAD_PRIORITY_LOW", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952faca6fefdb3454b9166ed0f9112e1feff8", null ],
-      [ "FRACTAL_THREAD_PRIORITY_NORMAL", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fa09f72eca12b5d6e43614f8fafed2c825", null ],
-      [ "FRACTAL_THREAD_PRIORITY_HIGH", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fa971370d997fdf63bf68498e70baedb35", null ],
-      [ "FRACTAL_THREAD_PRIORITY_REALTIME", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fac9f0811f66b4018f2c7f55fefd44b667", null ]
+    [ "WhistCondition", "threads_8h.html#a1e1b476c8f52015dd4c583d66b5d3559", null ],
+    [ "WhistMutex", "threads_8h.html#a56cb64f164524256b9e406138d8e1530", null ],
+    [ "WhistSemaphore", "threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4", null ],
+    [ "WhistThread", "threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72", null ],
+    [ "WhistThreadFunction", "threads_8h.html#aedfaae191fd6597f6583aa57d2a23ed8", null ],
+    [ "WhistThreadPriority", "threads_8h.html#a902677cdda9699ceb9c58c020ac10f99", null ],
+    [ "WhistThreadPriority", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952f", [
+      [ "WHIST_THREAD_PRIORITY_LOW", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952faca6fefdb3454b9166ed0f9112e1feff8", null ],
+      [ "WHIST_THREAD_PRIORITY_NORMAL", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fa09f72eca12b5d6e43614f8fafed2c825", null ],
+      [ "WHIST_THREAD_PRIORITY_HIGH", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fa971370d997fdf63bf68498e70baedb35", null ],
+      [ "WHIST_THREAD_PRIORITY_REALTIME", "threads_8h.html#a0c2105cfa5604d9eb16caa460841952fac9f0811f66b4018f2c7f55fefd44b667", null ]
     ] ],
     [ "fractal_broadcast_cond", "threads_8h.html#ae0c7f22796d940df6cd4443ebca5a280", null ],
     [ "fractal_create_cond", "threads_8h.html#aac5422bf4478934eed7b69d4f310ef8f", null ],

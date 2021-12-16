@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['v_3287',['v',['../structFractalYUVColor.html#a4557abaf95d3273f9ad698a02c22f7de',1,'FractalYUVColor']]],
+  ['v_3287',['v',['../structWhistYUVColor.html#a4557abaf95d3273f9ad698a02c22f7de',1,'WhistYUVColor']]],
   ['val_3288',['val',['../structoption.html#a13bd155ec3b405d29c41ab8d0793be11',1,'option::val()'],['../structHash.html#a66918968854722efdf7ab5f8ac2c6c1d',1,'Hash::val()']]],
   ['video_5fcontext_3289',['video_context',['../client_2video_8c.html#aa92efa63e6b242933ea86e3570b23840',1,'video.c']]],
   ['video_5fdata_3290',['video_data',['../client_2video_8c.html#aa1d41049bf49cadb43ab9beb0a606bd6',1,'video.c']]],

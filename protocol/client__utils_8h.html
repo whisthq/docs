@@ -134,7 +134,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a44fd0b41f8dec9bae4a8e081703c014b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a44fd0b41f8dec9bae4a8e081703c014b">free_parsed_args</a> (void)</td></tr>
 <tr class="memdesc:a44fd0b41f8dec9bae4a8e081703c014b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free any allocated memory for parsed args.  <a href="client__utils_8h.html#a44fd0b41f8dec9bae4a8e081703c014b">More...</a><br /></td></tr>
 <tr class="separator:a44fd0b41f8dec9bae4a8e081703c014b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a68658df46ddef1ce1ea7ee3b1600bc6a">prepare_init_to_server</a> (<a class="el" href="structFractalDiscoveryRequestMessage.html">FractalDiscoveryRequestMessage</a> *fcmsg, char *email)</td></tr>
+<tr class="memitem:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a68658df46ddef1ce1ea7ee3b1600bc6a">prepare_init_to_server</a> (<a class="el" href="structWhistDiscoveryRequestMessage.html">WhistDiscoveryRequestMessage</a> *fcmsg, char *email)</td></tr>
 <tr class="memdesc:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for initial request to server by setting user email and time data.  <a href="client__utils_8h.html#a68658df46ddef1ce1ea7ee3b1600bc6a">More...</a><br /></td></tr>
 <tr class="separator:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd3d49fb422332aa7838542366bc87f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#afd3d49fb422332aa7838542366bc87f9">update_mouse_motion</a> ()</td></tr>
@@ -143,12 +143,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aa474e56b998eeac46c72e779fd2701fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#aa474e56b998eeac46c72e779fd2701fa">send_message_dimensions</a> ()</td></tr>
 <tr class="memdesc:aa474e56b998eeac46c72e779fd2701fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends message to server with output dimensions and DPI.  <a href="client__utils_8h.html#aa474e56b998eeac46c72e779fd2701fa">More...</a><br /></td></tr>
 <tr class="separator:aa474e56b998eeac46c72e779fd2701fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3e9e1825d7ccb7641d84ffcafad5ec9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ad3e9e1825d7ccb7641d84ffcafad5ec9">nack_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> frame_type, int id, int index)</td></tr>
+<tr class="memitem:ad3e9e1825d7ccb7641d84ffcafad5ec9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ad3e9e1825d7ccb7641d84ffcafad5ec9">nack_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> frame_type, int id, int index)</td></tr>
 <tr class="memdesc:ad3e9e1825d7ccb7641d84ffcafad5ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nack handler for the ring buffer.  <a href="client__utils_8h.html#ad3e9e1825d7ccb7641d84ffcafad5ec9">More...</a><br /></td></tr>
 <tr class="separator:ad3e9e1825d7ccb7641d84ffcafad5ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<div class="textblock"><p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md40"></a>
 @brief TODO</h1>
 <h1><a class="anchor" id="autotoc_md41"></a>
@@ -344,7 +344,7 @@ Usage</h1>
         <tr>
           <td class="memname">void nack_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>frame_type</em>, </td>
         </tr>
         <tr>
@@ -388,7 +388,7 @@ Usage</h1>
         <tr>
           <td class="memname">int prepare_init_to_server </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalDiscoveryRequestMessage.html">FractalDiscoveryRequestMessage</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistDiscoveryRequestMessage.html">WhistDiscoveryRequestMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em>, </td>
         </tr>
         <tr>

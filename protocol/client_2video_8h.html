@@ -102,7 +102,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a759f71f304c11873e67bf7cc3f2d08a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a759f71f304c11873e67bf7cc3f2d08a8">init_video</a> ()</td></tr>
 <tr class="memdesc:a759f71f304c11873e67bf7cc3f2d08a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the SDL video thread.  <a href="client_2video_8h.html#a759f71f304c11873e67bf7cc3f2d08a8">More...</a><br /></td></tr>
 <tr class="separator:a759f71f304c11873e67bf7cc3f2d08a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db18738906fd04329094890a035cd11"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a5db18738906fd04329094890a035cd11">receive_video</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> *packet)</td></tr>
+<tr class="memitem:a5db18738906fd04329094890a035cd11"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a5db18738906fd04329094890a035cd11">receive_video</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
 <tr class="memdesc:a5db18738906fd04329094890a035cd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8h.html#a5db18738906fd04329094890a035cd11">More...</a><br /></td></tr>
 <tr class="separator:a5db18738906fd04329094890a035cd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39d6b8b70fbb92596ede52637c8b3282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a39d6b8b70fbb92596ede52637c8b3282">update_video</a> ()</td></tr>
@@ -123,12 +123,12 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with receiving and. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md78"></a>
 processing video packets on the client.</h1>
 <h1><a class="anchor" id="autotoc_md79"></a>
 Usage</h1>
-<p>initVideo() gets called before any video packet can be received. The video packets are received as standard FractalPackets by ReceiveVideo(FractalPacket* packet), before being saved in a proper video frame format. </p>
+<p>initVideo() gets called before any video packet can be received. The video packets are received as standard WhistPackets by ReceiveVideo(WhistPacket* packet), before being saved in a proper video frame format. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a120d323bd5860a23810ea5174a8f2f36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a120d323bd5860a23810ea5174a8f2f36">&#9670;&nbsp;</a></span>destroy_video()</h2>
@@ -196,7 +196,7 @@ Usage</h1>
         <tr>
           <td class="memname">int32_t receive_video </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>

@@ -112,7 +112,7 @@ High-Level Overview</h1>
 <p>Throughout the life of the protocol, various messages will be send to and from the client and server. For example, if the client and server are of different resolution, the image will appear stretched, so to fix this the client will send a message to server to ask the server to change resolutions to match the client.</p>
 <ul>
 <li>To send a message from client to server, call <code>send_fcmsg</code>. See <code>./client/main.c</code> for usage.</li>
-<li>To send a message from server to client, create a <code><a class="el" href="structFractalServerMessage.html" title="Server message.">FractalServerMessage</a></code> and call <code>broadcast_tcp_packet</code> or <code>broadcast_udp_packet</code>. See <code>./server/main.c</code> for usage.</li>
+<li>To send a message from server to client, create a <code><a class="el" href="structWhistServerMessage.html" title="Server message.">WhistServerMessage</a></code> and call <code>broadcast_tcp_packet</code> or <code>broadcast_udp_packet</code>. See <code>./server/main.c</code> for usage.</li>
 <li>To handle a server message on the client, see <code>./client/handle_server_message.c</code></li>
 <li>To handle a client message on the server, see <code>./server/handle_client_message.c</code></li>
 <li>See <code>./fractal/core/fractal.h</code> for struct definitions.</li>
@@ -252,22 +252,22 @@ Running the Protocol</h2>
 <h3><a class="anchor" id="autotoc_md16"></a>
 Sentry</h3>
 <p>The sentry-native SDK gets automatically built by our CMake build system.</p>
-<p>To start the protocol with a given Sentry configuration, use the <code>-e</code> argument, for instance with <code>.\FractalClient.exe -e prod &lt;IP&gt;</code>. See the output of <code>FractalClient.exe --help</code> for more details.</p>
+<p>To start the protocol with a given Sentry configuration, use the <code>-e</code> argument, for instance with <code>.\WhistClient.exe -e prod &lt;IP&gt;</code>. See the output of <code>WhistClient.exe --help</code> for more details.</p>
 <h2><a class="anchor" id="autotoc_md17"></a>
 Tips for Specific Tools</h2>
 <h3><a class="anchor" id="autotoc_md18"></a>
 IDEs</h3>
 <p>We use CMake to build. If you are using VS code, VS or Clion, this is pretty easy to use. You need to either open the root repo folder as a project, or open the root <code>CMakelist.txt</code> as a project. On CLion and VS there is a menu to build at the top, on VS code you need the CMake extension and the build command is at the bottom. CMake currently has two types of builds, Debug and Release. You probably want to be building debug builds while developing, since they log more aggressively (Warning levels: Info and above).</p>
 <p>Currently, we use the same compiler flags for Debug and Release because we distribute binaries with debug flags, to better troubleshoot errors and bugs.</p>
-<p>The build target for client is "FractalClient" and the server is "FractalServer".</p>
+<p>The build target for client is "WhistClient" and the server is "WhistServer".</p>
 <h3><a class="anchor" id="autotoc_md19"></a>
 MacOS CLI</h3>
-<p>You can simply run <code>cmake .</code> from the root folder, <code>/protocol/</code>, which will generate the makefiles. You can then run <code>make FractalClient</code> from the root folder, or cd into <code>/client</code> and run <code>make</code> to compile the MacOS client. The client will be in <code>/protocol/client/build64</code>.</p>
+<p>You can simply run <code>cmake .</code> from the root folder, <code>/protocol/</code>, which will generate the makefiles. You can then run <code>make WhistClient</code> from the root folder, or cd into <code>/client</code> and run <code>make</code> to compile the MacOS client. The client will be in <code>/protocol/client/build64</code>.</p>
 <h3><a class="anchor" id="autotoc_md20"></a>
 Linux CLI</h3>
 <p>A helpful TUI for configuring the build is <code>ccmake</code>. To use it, run <code>ccmake .</code> in the root of the protocol repo. You will initially see a blank screen because no cache has been built yet. Hit <code>c</code> to configure. This will populate the cache and show you a page with various settings. The setting you will likely care about is <code>CMAKE_BUILD_TYPE</code> which is one of <code>Debug</code> or <code>Release</code>.</p>
-<p>Next hit <code>c</code> again to reconfigure with your possibly new settings, then hit <code>g</code> to generate the makefile. This makefile has all of the build targets, including <code>FractalClient</code>, <code>FractalServer</code> and all of our libraries. It also includes CMake targets to clean, edit, and rebuild the cache.</p>
-<p>Only running <code>make</code> defaults to building FractalClient and FractalServer if you set both of these to ON in your configuration. GCC only supports one type of build at a time, so if you are currently building Release, but want to build Debug, you need to edit the cache and regenerate the makefile.</p>
+<p>Next hit <code>c</code> again to reconfigure with your possibly new settings, then hit <code>g</code> to generate the makefile. This makefile has all of the build targets, including <code>WhistClient</code>, <code>WhistServer</code> and all of our libraries. It also includes CMake targets to clean, edit, and rebuild the cache.</p>
+<p>Only running <code>make</code> defaults to building WhistClient and WhistServer if you set both of these to ON in your configuration. GCC only supports one type of build at a time, so if you are currently building Release, but want to build Debug, you need to edit the cache and regenerate the makefile.</p>
 <h2><a class="anchor" id="autotoc_md21"></a>
 Further documentation</h2>
 <p>We also use Doxygen in this repository. The Doxy file is <code>docs/Doxyfile</code>. To generate it, you should first install <code>doxygen</code>, and then run <code>doxygen Doxyfile</code>. This will generate the docs and put them in <code>docs/html</code> and <code>docs/latex</code>. You can view the html docs by opening the index.html page with a web browser. We keep the docs <code>.gitignore</code>d to avoid clutter on the repository. They are also published at <code>docs.whist.com</code>, but updating the documentation with CI is still a <a href="https://github.com/fractal/fractal/issues/1976">TODO</a>.</p>
@@ -283,7 +283,7 @@ Unit Testing</h3>
 <p>The protocol currently uses gtest to create and execute unit tests for the <code>protocol</code> repository. To add tests for the <code>protocol</code> module, add tests to the <code>ProtocolTest.cpp</code> file in the test folder.</p>
 <p>To run all unit tests, recompile the protocol by going into the <code>protocol/build</code> directory and running <code>make -j</code>. This is assuming you have already ran <code>cmake -S .. -B .</code> from the Building the Protocol section. If you have not done that, do so before running <code>make -j</code>.</p>
 <p>Next, run <code>cd test</code>. Now:</p>
-<p>To run the unit tests for the protocol, run <code>./FractalProtocolTest</code></p>
+<p>To run the unit tests for the protocol, run <code>./WhistProtocolTest</code></p>
 <h2><a class="anchor" id="autotoc_md25"></a>
 Continuous Integration</h2>
 <p>For every push or PR, the code will be automatically linted via clang-format according to the <a href="#styling">styling</a> guidelines.</p>

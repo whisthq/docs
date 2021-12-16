@@ -33,7 +33,7 @@ var searchData=
   ['linesize_3052',['linesize',['../structSDLVideoContext.html#a88245b9ad1538e762fb7d37c2e3d1e04',1,'SDLVideoContext']]],
   ['linux_5fkeycodes_3053',['linux_keycodes',['../uinput__input__driver_8c.html#a05a281131f961593c1ca1e39123f31b7',1,'uinput_input_driver.c']]],
   ['linux_5fmouse_5fbuttons_3054',['linux_mouse_buttons',['../uinput__input__driver_8c.html#a7536f547f053d81b807aa2b1141eb193',1,'uinput_input_driver.c']]],
-  ['linux_5ftz_5fname_3055',['linux_tz_name',['../structFractalTimeData.html#af19603a50cb4f8e2860afae303a5c864',1,'FractalTimeData']]],
+  ['linux_5ftz_5fname_3055',['linux_tz_name',['../structWhistTimeData.html#af19603a50cb4f8e2860afae303a5c864',1,'WhistTimeData']]],
   ['listsize_3056',['listsize',['../structBPMLists.html#a3a41279ef589f0365c33d42b044f4864',1,'BPMLists']]],
   ['loading_5findex_3057',['loading_index',['../structVideoData.html#a3cecf13023cc8075f88d5ca6a0e50f1a',1,'VideoData']]],
   ['lodepng_5fdefault_5fcompress_5fsettings_3058',['lodepng_default_compress_settings',['../lodepng_8c.html#a0b5cf190f94f8f11ed5c0abb3504ad86',1,'lodepng_default_compress_settings():&#160;lodepng.c'],['../lodepng_8h.html#a0b5cf190f94f8f11ed5c0abb3504ad86',1,'lodepng_default_compress_settings():&#160;lodepng.c']]],

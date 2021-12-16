@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/clipboard/clipboard_synchronizer.c File Reference</title>
+<title>Whist Protocol: whist/clipboard/clipboard_synchronizer.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('clipboard__synchronizer_8c.html',''); 
 <p>This file contains code meant, to be used by both the server and client to synchronize clipboard contents, both setting and gettings. <a class="el" href="structClient.html">Client</a> and server clipboard activities are parallel, and therefore the.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="clipboard_8h_source.html">clipboard.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -131,22 +131,22 @@ Variables</h2></td></tr>
 <tr class="separator:aa9bdb2b45bcfaa74be2e006f0115c2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0787b58a368a084406ec63f208f6a383"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#a0787b58a368a084406ec63f208f6a383">last_clipboard_update</a></td></tr>
 <tr class="separator:a0787b58a368a084406ec63f208f6a383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33f32dc7833e4d7b4428996792faca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">FractalSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#ae33f32dc7833e4d7b4428996792faca1">clipboard_semaphore</a></td></tr>
+<tr class="memitem:ae33f32dc7833e4d7b4428996792faca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#ae33f32dc7833e4d7b4428996792faca1">clipboard_semaphore</a></td></tr>
 <tr class="separator:ae33f32dc7833e4d7b4428996792faca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefc3f01e4ded7fe2b9a4964625ab2a9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">FractalMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#aefc3f01e4ded7fe2b9a4964625ab2a9f">clipboard_update_mutex</a></td></tr>
+<tr class="memitem:aefc3f01e4ded7fe2b9a4964625ab2a9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#aefc3f01e4ded7fe2b9a4964625ab2a9f">clipboard_update_mutex</a></td></tr>
 <tr class="separator:aefc3f01e4ded7fe2b9a4964625ab2a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04e7b44d1106aeaa4a8f93b1026150ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#a04e7b44d1106aeaa4a8f93b1026150ce">clipboard</a></td></tr>
 <tr class="separator:a04e7b44d1106aeaa4a8f93b1026150ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7877334281a013170ede61edcbed225"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#ab7877334281a013170ede61edcbed225">clipboard_written_bytes</a> = 0</td></tr>
 <tr class="separator:ab7877334281a013170ede61edcbed225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae53cc0ce88ac9c6a2ab9aa61ff15ed3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">FractalThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#ae53cc0ce88ac9c6a2ab9aa61ff15ed3e">clipboard_synchronizer_thread</a></td></tr>
+<tr class="memitem:ae53cc0ce88ac9c6a2ab9aa61ff15ed3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#ae53cc0ce88ac9c6a2ab9aa61ff15ed3e">clipboard_synchronizer_thread</a></td></tr>
 <tr class="separator:ae53cc0ce88ac9c6a2ab9aa61ff15ed3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2b45d79a290ca36bf13af41e575b871"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__synchronizer_8c.html#aa2b45d79a290ca36bf13af41e575b871">pending_clipboard_push</a></td></tr>
 <tr class="separator:aa2b45d79a290ca36bf13af41e575b871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains code meant, to be used by both the server and client to synchronize clipboard contents, both setting and gettings. <a class="el" href="structClient.html">Client</a> and server clipboard activities are parallel, and therefore the. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md130"></a>
 synchronizer abstracts out and allows threading of clipboard actions.</h1>
 <h1><a class="anchor" id="autotoc_md131"></a>
@@ -344,7 +344,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">FractalSemaphore</a> clipboard_semaphore</td>
+          <td class="memname"><a class="el" href="threads_8h.html#a2a695f8212ba4894d8996352a55d3bf4">WhistSemaphore</a> clipboard_semaphore</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -358,7 +358,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">FractalThread</a> clipboard_synchronizer_thread</td>
+          <td class="memname"><a class="el" href="threads_8h.html#a2e566c74a2baf0f00e630b4a4ff9ff72">WhistThread</a> clipboard_synchronizer_thread</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -372,7 +372,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">FractalMutex</a> clipboard_update_mutex</td>
+          <td class="memname"><a class="el" href="threads_8h.html#a56cb64f164524256b9e406138d8e1530">WhistMutex</a> clipboard_update_mutex</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -454,7 +454,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_18a87b5a2e3bb90143f55fb2a95e2152.html">clipboard</a></li><li class="navelem"><a class="el" href="clipboard__synchronizer_8c.html">clipboard_synchronizer.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_18a87b5a2e3bb90143f55fb2a95e2152.html">clipboard</a></li><li class="navelem"><a class="el" href="clipboard__synchronizer_8c.html">clipboard_synchronizer.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

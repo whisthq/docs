@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/video/codec/encode.h Source File</title>
+<title>Whist Protocol: whist/video/codec/encode.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('encode_8h_source.html',''); initResiza
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">============================</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fractal_8h.html">fractal/core/fractal.h</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="whist_8h.html">whist/core/whist.h</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nvidia__encode_8h.html">nvidia_encode.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ffmpeg__encode_8h.html">ffmpeg_encode.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('encode_8h_source.html',''); initResiza
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structVideoEncoder.html#a8737b2047d311ccad803628b61a24ae3">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVideoEncoder.html#a8737b2047d311ccad803628b61a24ae3">out_width</a>, <a class="code" href="structVideoEncoder.html#a756d26cde728bccea40f70df0c05f3d6">out_height</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structVideoEncoder.html#a38a7c99b35edd4115d20a1b4e8c7bc82">   55</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structVideoEncoder.html#a38a7c99b35edd4115d20a1b4e8c7bc82">is_iframe</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f">encoded_frame_size</a>;  </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9">   57</a></span>&#160;    <a class="code" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> <a class="code" href="structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9">codec_type</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9">   57</a></span>&#160;    <a class="code" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> <a class="code" href="structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9">codec_type</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structVideoEncoder.html#af56f705c8349a76f221e7b09c4316d17">   58</a></span>&#160;    <a class="code" href="structNvidiaEncoder.html">NvidiaEncoder</a>* <a class="code" href="structVideoEncoder.html#af56f705c8349a76f221e7b09c4316d17">nvidia_encoders</a>[<a class="code" href="encode_8h.html#ae929ca78c731b77fe6f5bb516d9a9cfc">NUM_ENCODERS</a>];</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7">   59</a></span>&#160;    <a class="code" href="structFFmpegEncoder.html">FFmpegEncoder</a>* <a class="code" href="structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7">ffmpeg_encoder</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <a class="code" href="encode_8h.html#aaf20c160de785dcebb9bdc14eec0f258">VideoEncoder</a>;</div>
@@ -133,12 +133,12 @@ $(document).ready(function(){initNavTree('encode_8h_source.html',''); initResiza
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="structVideoEncoder.html">VideoEncoder</a>* <a class="code" href="encode_8h.html#ac8fa01e9eea92339d1c54398ad7c202c">create_video_encoder</a>(<span class="keywordtype">int</span> in_width, <span class="keywordtype">int</span> in_height, <span class="keywordtype">int</span> out_width, <span class="keywordtype">int</span> out_height,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                   <span class="keywordtype">int</span> bitrate, <a class="code" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                   <span class="keywordtype">int</span> bitrate, <a class="code" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">int</span> <a class="code" href="encode_8h.html#a444edd5dc4cb990b7441ba96964936fa">video_encoder_encode</a>(<a class="code" href="structVideoEncoder.html">VideoEncoder</a>* encoder);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="encode_8h.html#ad77b802583b571a3de0d17c5d6393655">reconfigure_encoder</a>(<a class="code" href="structVideoEncoder.html">VideoEncoder</a>* encoder, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> bitrate,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                         <a class="code" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                         <a class="code" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> <a class="code" href="encode_8h.html#a22d76272235619a7657b984487f1412a">video_encoder_set_iframe</a>(<a class="code" href="structVideoEncoder.html">VideoEncoder</a>* encoder);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
@@ -149,11 +149,11 @@ $(document).ready(function(){initNavTree('encode_8h_source.html',''); initResiza
 </div><!-- doc-content -->
 <div class="ttc" id="aencode_8h_html_a2f3c0233caf50b001eb28cbaea7f0562"><div class="ttname"><a href="encode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562">VideoEncoderType</a></div><div class="ttdeci">VideoEncoderType</div><div class="ttdef"><b>Definition:</b> encode.h:38</div></div>
 <div class="ttc" id="astructVideoEncoder_html_a20b578a3610dce40aef2d04397bd7744"><div class="ttname"><a href="structVideoEncoder.html#a20b578a3610dce40aef2d04397bd7744">VideoEncoder::num_packets</a></div><div class="ttdeci">int num_packets</div><div class="ttdef"><b>Definition:</b> encode.h:49</div></div>
-<div class="ttc" id="afractal_8h_html"><div class="ttname"><a href="fractal_8h.html">fractal.h</a></div><div class="ttdoc">This file contains the core of Whist custom structs and definitions used throughout.</div></div>
+<div class="ttc" id="awhist_8h_html"><div class="ttname"><a href="whist_8h.html">whist.h</a></div><div class="ttdoc">This file contains the core of Whist custom structs and definitions used throughout.</div></div>
 <div class="ttc" id="aencode_8h_html_a70988121b77d11b511a2bd2fe701d665"><div class="ttname"><a href="encode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a></div><div class="ttdeci">#define MAX_ENCODER_PACKETS</div><div class="ttdef"><b>Definition:</b> encode.h:35</div></div>
 <div class="ttc" id="astructVideoEncoder_html_a9bd4d8cfca88434dbd276a6bfacfe027"><div class="ttname"><a href="structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027">VideoEncoder::in_height</a></div><div class="ttdeci">int in_height</div><div class="ttdef"><b>Definition:</b> encode.h:53</div></div>
 <div class="ttc" id="astructVideoEncoder_html_a9975e772b1f1916ed1aa99f82ca8b065"><div class="ttname"><a href="structVideoEncoder.html#a9975e772b1f1916ed1aa99f82ca8b065">VideoEncoder::active_encoder</a></div><div class="ttdeci">VideoEncoderType active_encoder</div><div class="ttdef"><b>Definition:</b> encode.h:47</div></div>
-<div class="ttc" id="afractal_8h_html_a03b4b6ae5fb82af68d46aaea3d3e4d79"><div class="ttname"><a href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a></div><div class="ttdeci">CodecType</div><div class="ttdoc">Codec types.</div><div class="ttdef"><b>Definition:</b> fractal.h:219</div></div>
+<div class="ttc" id="awhist_8h_html_a03b4b6ae5fb82af68d46aaea3d3e4d79"><div class="ttname"><a href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a></div><div class="ttdeci">CodecType</div><div class="ttdoc">Codec types.</div><div class="ttdef"><b>Definition:</b> whist.h:219</div></div>
 <div class="ttc" id="aencode_8h_html_a2f3c0233caf50b001eb28cbaea7f0562a856ce1da43f5764119d04916e1a7d083"><div class="ttname"><a href="encode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562a856ce1da43f5764119d04916e1a7d083">FFMPEG_ENCODER</a></div><div class="ttdeci">@ FFMPEG_ENCODER</div><div class="ttdef"><b>Definition:</b> encode.h:38</div></div>
 <div class="ttc" id="aencode_8h_html_a22d76272235619a7657b984487f1412a"><div class="ttname"><a href="encode_8h.html#a22d76272235619a7657b984487f1412a">video_encoder_set_iframe</a></div><div class="ttdeci">void video_encoder_set_iframe(VideoEncoder *encoder)</div><div class="ttdoc">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well.</div><div class="ttdef"><b>Definition:</b> encode.c:265</div></div>
 <div class="ttc" id="astructVideoEncoder_html_a8737b2047d311ccad803628b61a24ae3"><div class="ttname"><a href="structVideoEncoder.html#a8737b2047d311ccad803628b61a24ae3">VideoEncoder::out_width</a></div><div class="ttdeci">int out_width</div><div class="ttdef"><b>Definition:</b> encode.h:54</div></div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('encode_8h_source.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="encode_8h.html">encode.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="encode_8h.html">encode.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

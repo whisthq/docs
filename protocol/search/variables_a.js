@@ -5,6 +5,6 @@ var searchData=
   ['key_5fdefined_3017',['key_defined',['../structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54',1,'LodePNGColorMode']]],
   ['key_5fg_3018',['key_g',['../structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6',1,'LodePNGColorMode::key_g()'],['../structLodePNGColorStats.html#ae334ca1cbfbb36f27addb801cfecc867',1,'LodePNGColorStats::key_g()']]],
   ['key_5fr_3019',['key_r',['../structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50',1,'LodePNGColorMode::key_r()'],['../structLodePNGColorStats.html#af802f883e579161b78e210052bbbfb48',1,'LodePNGColorStats::key_r()']]],
-  ['keyboard_3020',['keyboard',['../structFractalClientMessage.html#aa46f8125ff20df23821cfe676a1786dd',1,'FractalClientMessage']]],
-  ['keyboard_5fstate_3021',['keyboard_state',['../structFractalClientMessage.html#a24c73194b0adda71ab68872aa1d1ed5e',1,'FractalClientMessage::keyboard_state()'],['../structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345',1,'InputDevice::keyboard_state()']]]
+  ['keyboard_3020',['keyboard',['../structWhistClientMessage.html#aa46f8125ff20df23821cfe676a1786dd',1,'WhistClientMessage']]],
+  ['keyboard_5fstate_3021',['keyboard_state',['../structWhistClientMessage.html#a24c73194b0adda71ab68872aa1d1ed5e',1,'WhistClientMessage::keyboard_state()'],['../structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345',1,'InputDevice::keyboard_state()']]]
 ];

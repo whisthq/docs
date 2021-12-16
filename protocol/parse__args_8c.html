@@ -115,7 +115,7 @@ Variables</h2></td></tr>
 <tr class="separator:ac2159c75ccc892bf05ef04748882e025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc8473a213eba8932df71190c0d5fbe"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__args_8c.html#a9dc8473a213eba8932df71190c0d5fbe">hex_aes_private_key</a> [33]</td></tr>
 <tr class="separator:a9dc8473a213eba8932df71190c0d5fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adba1e7b2167656bf2eb188879ac64a90"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__args_8c.html#adba1e7b2167656bf2eb188879ac64a90">identifier</a> [<a class="el" href="fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95">FRACTAL_IDENTIFIER_MAXLEN</a>+1]</td></tr>
+<tr class="memitem:adba1e7b2167656bf2eb188879ac64a90"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__args_8c.html#adba1e7b2167656bf2eb188879ac64a90">identifier</a> [<a class="el" href="fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95">WHIST_IDENTIFIER_MAXLEN</a>+1]</td></tr>
 <tr class="separator:adba1e7b2167656bf2eb188879ac64a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87359d0492cce4252fa833844855438d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__args_8c.html#a87359d0492cce4252fa833844855438d">begin_time_to_exit</a></td></tr>
 <tr class="separator:a87359d0492cce4252fa833844855438d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,7 +124,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code that parses the args for. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md96"></a>
 the server protocol.</h1>
 <h1><a class="anchor" id="autotoc_md97"></a>
@@ -229,8 +229,8 @@ Usage</h1>
 <div class="line">                                     {<span class="stringliteral">&quot;environment&quot;</span>, <a class="code" href="fractalgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;e&#39;</span>},</div>
 <div class="line">                                     {<span class="stringliteral">&quot;timeout&quot;</span>, <a class="code" href="fractalgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;t&#39;</span>},</div>
 <div class="line">                                     </div>
-<div class="line">                                     {<span class="stringliteral">&quot;help&quot;</span>, <a class="code" href="fractalgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <a class="code" href="fractalgetopt_8h.html#a5d22901fcdfdcefd0cb2d6e7aaf16e2d">FRACTAL_GETOPT_HELP_CHAR</a>},</div>
-<div class="line">                                     {<span class="stringliteral">&quot;version&quot;</span>, <a class="code" href="fractalgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <a class="code" href="fractalgetopt_8h.html#a8ddf967b3a8e609a71c037c4a3e0d54d">FRACTAL_GETOPT_VERSION_CHAR</a>},</div>
+<div class="line">                                     {<span class="stringliteral">&quot;help&quot;</span>, <a class="code" href="fractalgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <a class="code" href="fractalgetopt_8h.html#a5d22901fcdfdcefd0cb2d6e7aaf16e2d">WHIST_GETOPT_HELP_CHAR</a>},</div>
+<div class="line">                                     {<span class="stringliteral">&quot;version&quot;</span>, <a class="code" href="fractalgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <a class="code" href="fractalgetopt_8h.html#a8ddf967b3a8e609a71c037c4a3e0d54d">WHIST_GETOPT_VERSION_CHAR</a>},</div>
 <div class="line">                                     </div>
 <div class="line">                                     {0, 0, 0, 0}}</div>
 </div><!-- fragment -->
@@ -257,7 +257,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char identifier[<a class="el" href="fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95">FRACTAL_IDENTIFIER_MAXLEN</a>+1]</td>
+          <td class="memname">char identifier[<a class="el" href="fractal_8h.html#a2d5505ccdc13c57ee664df9e2ff76b95">WHIST_IDENTIFIER_MAXLEN</a>+1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -266,9 +266,9 @@ Usage</h1>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="afractalgetopt_8h_html_a5d22901fcdfdcefd0cb2d6e7aaf16e2d"><div class="ttname"><a href="fractalgetopt_8h.html#a5d22901fcdfdcefd0cb2d6e7aaf16e2d">FRACTAL_GETOPT_HELP_CHAR</a></div><div class="ttdeci">#define FRACTAL_GETOPT_HELP_CHAR</div><div class="ttdef"><b>Definition:</b> fractalgetopt.h:23</div></div>
+<div class="ttc" id="afractalgetopt_8h_html_a5d22901fcdfdcefd0cb2d6e7aaf16e2d"><div class="ttname"><a href="fractalgetopt_8h.html#a5d22901fcdfdcefd0cb2d6e7aaf16e2d">WHIST_GETOPT_HELP_CHAR</a></div><div class="ttdeci">#define WHIST_GETOPT_HELP_CHAR</div><div class="ttdef"><b>Definition:</b> fractalgetopt.h:23</div></div>
 <div class="ttc" id="afractalgetopt_8h_html_a6ece8d8dfa8378778f7290fdaba5b8bc"><div class="ttname"><a href="fractalgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a></div><div class="ttdeci">#define required_argument</div><div class="ttdef"><b>Definition:</b> fractalgetopt.h:103</div></div>
-<div class="ttc" id="afractalgetopt_8h_html_a8ddf967b3a8e609a71c037c4a3e0d54d"><div class="ttname"><a href="fractalgetopt_8h.html#a8ddf967b3a8e609a71c037c4a3e0d54d">FRACTAL_GETOPT_VERSION_CHAR</a></div><div class="ttdeci">#define FRACTAL_GETOPT_VERSION_CHAR</div><div class="ttdef"><b>Definition:</b> fractalgetopt.h:24</div></div>
+<div class="ttc" id="afractalgetopt_8h_html_a8ddf967b3a8e609a71c037c4a3e0d54d"><div class="ttname"><a href="fractalgetopt_8h.html#a8ddf967b3a8e609a71c037c4a3e0d54d">WHIST_GETOPT_VERSION_CHAR</a></div><div class="ttdeci">#define WHIST_GETOPT_VERSION_CHAR</div><div class="ttdef"><b>Definition:</b> fractalgetopt.h:24</div></div>
 <div class="ttc" id="afractalgetopt_8h_html_a3bc1d5f667b5b4ca4b4abb685dc874ce"><div class="ttname"><a href="fractalgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a></div><div class="ttdeci">#define no_argument</div><div class="ttdef"><b>Definition:</b> fractalgetopt.h:102</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

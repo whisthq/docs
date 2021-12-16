@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('handle__client__message_8c.html',''); 
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad3119895e2868283cc978ae8685b2f11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#ad3119895e2868283cc978ae8685b2f11">handle_client_message</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
+<tr class="memitem:ad3119895e2868283cc978ae8685b2f11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#ad3119895e2868283cc978ae8685b2f11">handle_client_message</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
 <tr class="memdesc:ad3119895e2868283cc978ae8685b2f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles message received by the server from a client, on the server-side.  <a href="handle__client__message_8c.html#ad3119895e2868283cc978ae8685b2f11">More...</a><br /></td></tr>
 <tr class="separator:ad3119895e2868283cc978ae8685b2f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -124,7 +124,7 @@ Variables</h2></td></tr>
 <tr class="separator:a7cb7ba1823d4d6f9fea456f96e729710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0463a8762d54da9908315a54f9a740ea"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#a0463a8762d54da9908315a54f9a740ea">update_device</a></td></tr>
 <tr class="separator:a0463a8762d54da9908315a54f9a740ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420">client_os</a></td></tr>
+<tr class="memitem:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420">client_os</a></td></tr>
 <tr class="separator:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae54fd77214dad6eaf2b542edb690d53"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#aae54fd77214dad6eaf2b542edb690d53">stop_streaming</a></td></tr>
 <tr class="separator:aae54fd77214dad6eaf2b542edb690d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +139,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all the code for server-side processing of messages. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md84"></a>
 received from a client</h1>
 <h1><a class="anchor" id="autotoc_md85"></a>
@@ -155,7 +155,7 @@ Usage</h1>
         <tr>
           <td class="memname">int handle_client_message </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -238,7 +238,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a> client_os</td>
+          <td class="memname">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> client_os</td>
         </tr>
       </table>
 </div><div class="memdoc">

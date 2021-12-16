@@ -55,7 +55,7 @@ var searchData=
   ['linesize_1023',['linesize',['../structSDLVideoContext.html#a88245b9ad1538e762fb7d37c2e3d1e04',1,'SDLVideoContext']]],
   ['linux_5fkeycodes_1024',['linux_keycodes',['../uinput__input__driver_8c.html#a05a281131f961593c1ca1e39123f31b7',1,'uinput_input_driver.c']]],
   ['linux_5fmouse_5fbuttons_1025',['linux_mouse_buttons',['../uinput__input__driver_8c.html#a7536f547f053d81b807aa2b1141eb193',1,'uinput_input_driver.c']]],
-  ['linux_5ftz_5fname_1026',['linux_tz_name',['../structFractalTimeData.html#af19603a50cb4f8e2860afae303a5c864',1,'FractalTimeData']]],
+  ['linux_5ftz_5fname_1026',['linux_tz_name',['../structWhistTimeData.html#af19603a50cb4f8e2860afae303a5c864',1,'WhistTimeData']]],
   ['linuxcapture_2ec_1027',['linuxcapture.c',['../linuxcapture_8c.html',1,'']]],
   ['linuxcursor_2ec_1028',['linuxcursor.c',['../linuxcursor_8c.html',1,'']]],
   ['listsize_1029',['listsize',['../structBPMLists.html#a3a41279ef589f0365c33d42b044f4864',1,'BPMLists']]],

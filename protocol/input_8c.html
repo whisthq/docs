@@ -104,16 +104,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac6b0ab1da4398d0245d6673c76f5d452"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#ac6b0ab1da4398d0245d6673c76f5d452">reset_input</a> (<a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a> os_type)</td></tr>
+<tr class="memitem:ac6b0ab1da4398d0245d6673c76f5d452"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#ac6b0ab1da4398d0245d6673c76f5d452">reset_input</a> (<a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> os_type)</td></tr>
 <tr class="memdesc:ac6b0ab1da4398d0245d6673c76f5d452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input system. Should be used prior to every new client connection that will send inputs.  <a href="input_8c.html#ac6b0ab1da4398d0245d6673c76f5d452">More...</a><br /></td></tr>
 <tr class="separator:ac6b0ab1da4398d0245d6673c76f5d452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce9f1ba55b6872bce873cfa1833475d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a7ce9f1ba55b6872bce873cfa1833475d">update_keyboard_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
+<tr class="memitem:a7ce9f1ba55b6872bce873cfa1833475d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a7ce9f1ba55b6872bce873cfa1833475d">update_keyboard_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
 <tr class="memdesc:a7ce9f1ba55b6872bce873cfa1833475d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the keyboard state on the server to match the client's.  <a href="input_8c.html#a7ce9f1ba55b6872bce873cfa1833475d">More...</a><br /></td></tr>
 <tr class="separator:a7ce9f1ba55b6872bce873cfa1833475d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8d58d465e3ed2d47bccfbc997125e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a6a8d58d465e3ed2d47bccfbc997125e6">replay_user_input</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
+<tr class="memitem:a6a8d58d465e3ed2d47bccfbc997125e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a6a8d58d465e3ed2d47bccfbc997125e6">replay_user_input</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
 <tr class="memdesc:a6a8d58d465e3ed2d47bccfbc997125e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replayed a received user action on a server, by sending it to the OS.  <a href="input_8c.html#a6a8d58d465e3ed2d47bccfbc997125e6">More...</a><br /></td></tr>
 <tr class="separator:a6a8d58d465e3ed2d47bccfbc997125e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0265028ef5575ba2fd1ccc17aca7a8bf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a0265028ef5575ba2fd1ccc17aca7a8bf">input_keycodes</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">FractalKeycode</a> *keycodes, size_t count)</td></tr>
+<tr class="memitem:a0265028ef5575ba2fd1ccc17aca7a8bf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a0265028ef5575ba2fd1ccc17aca7a8bf">input_keycodes</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> *keycodes, size_t count)</td></tr>
 <tr class="memdesc:a0265028ef5575ba2fd1ccc17aca7a8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the keyboard state on the server to match the client's.  <a href="input_8c.html#a0265028ef5575ba2fd1ccc17aca7a8bf">More...</a><br /></td></tr>
 <tr class="separator:a0265028ef5575ba2fd1ccc17aca7a8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -121,12 +121,12 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ad7febba9db49c6ef29d4bfc0b011086f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#ad7febba9db49c6ef29d4bfc0b011086f">last_input_fcmsg_id</a> = 0</td></tr>
 <tr class="separator:ad7febba9db49c6ef29d4bfc0b011086f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9173ccd812e4863075474f077ae12cd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a9173ccd812e4863075474f077ae12cd2">input_os_type</a> = <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d">FRACTAL_UNKNOWN_OS</a></td></tr>
+<tr class="memitem:a9173ccd812e4863075474f077ae12cd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a9173ccd812e4863075474f077ae12cd2">input_os_type</a> = <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d">WHIST_UNKNOWN_OS</a></td></tr>
 <tr class="separator:a9173ccd812e4863075474f077ae12cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file defines general input-processing functions and toggles. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md148"></a>
 between Windows and Linux servers.</h1>
 <h1><a class="anchor" id="autotoc_md149"></a>
@@ -205,7 +205,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">FractalKeycode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> *&#160;</td>
           <td class="paramname"><em>keycodes</em>, </td>
         </tr>
         <tr>
@@ -250,7 +250,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em>&#160;</td>
         </tr>
         <tr>
@@ -282,7 +282,7 @@ Usage</h1>
         <tr>
           <td class="memname">void reset_input </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td>
           <td class="paramname"><em>os_type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -314,7 +314,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em>&#160;</td>
         </tr>
         <tr>
@@ -344,7 +344,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a> input_os_type = <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d">FRACTAL_UNKNOWN_OS</a></td>
+          <td class="memname"><a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> input_os_type = <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d">WHIST_UNKNOWN_OS</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

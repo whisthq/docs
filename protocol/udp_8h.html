@@ -102,16 +102,16 @@ Functions</h2></td></tr>
 <tr class="memitem:acd5303599f69de58b96be9dca5ddcb6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#acd5303599f69de58b96be9dca5ddcb6d">udp_update_bitrate_settings</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, int burst_bitrate, double fec_packet_ratio)</td></tr>
 <tr class="memdesc:acd5303599f69de58b96be9dca5ddcb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8h.html#acd5303599f69de58b96be9dca5ddcb6d">More...</a><br /></td></tr>
 <tr class="separator:acd5303599f69de58b96be9dca5ddcb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190e70a92627626785b33d0731d5d998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a190e70a92627626785b33d0731d5d998">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
+<tr class="memitem:a190e70a92627626785b33d0731d5d998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a190e70a92627626785b33d0731d5d998">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
 <tr class="memdesc:a190e70a92627626785b33d0731d5d998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8h.html#a190e70a92627626785b33d0731d5d998">More...</a><br /></td></tr>
 <tr class="separator:a190e70a92627626785b33d0731d5d998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a824f5789506ada45a81696c460a0a0fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a824f5789506ada45a81696c460a0a0fa">udp_nack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, int id, int index)</td></tr>
+<tr class="memitem:a824f5789506ada45a81696c460a0a0fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a824f5789506ada45a81696c460a0a0fa">udp_nack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, int id, int index)</td></tr>
 <tr class="memdesc:a824f5789506ada45a81696c460a0a0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a nack for a given ID/Index NOTE: This function is thread-safe with send_packet.  <a href="udp_8h.html#a824f5789506ada45a81696c460a0a0fa">More...</a><br /></td></tr>
 <tr class="separator:a824f5789506ada45a81696c460a0a0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the network interface code for UDP protocol. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <hr  />
  <h1><a class="anchor" id="autotoc_md185"></a>
 Usage</h1>
@@ -208,7 +208,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -235,9 +235,9 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> to nack from </td></tr>
-    <tr><td class="paramname">type</td><td>The FractalPacketType of the nack'ed packet </td></tr>
+    <tr><td class="paramname">type</td><td>The WhistPacketType of the nack'ed packet </td></tr>
     <tr><td class="paramname">id</td><td>The ID of the nack'ed packet </td></tr>
-    <tr><td class="paramname">index</td><td>The index of the nack'ed packet (The UDP packet index into the larger <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>) </td></tr>
+    <tr><td class="paramname">index</td><td>The index of the nack'ed packet (The UDP packet index into the larger <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>) </td></tr>
   </table>
   </dd>
 </dl>
@@ -259,7 +259,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -286,7 +286,7 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> that will have a nack buffer </td></tr>
-    <tr><td class="paramname">type</td><td>The FractalPacketType that this nack buffer will be used for </td></tr>
+    <tr><td class="paramname">type</td><td>The WhistPacketType that this nack buffer will be used for </td></tr>
     <tr><td class="paramname">max_payload_size</td><td>The largest payload that will be saved in the nack buffer </td></tr>
     <tr><td class="paramname">num_buffers</td><td>The number of buffers that will be stored in the nack buffer </td></tr>
   </table>

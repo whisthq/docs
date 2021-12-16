@@ -110,8 +110,8 @@ Functions</h2></td></tr>
 <tr class="memitem:aa8bf751ea26659195c59cd180956315a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#aa8bf751ea26659195c59cd180956315a">send_server_quit_messages</a> (int num_messages)</td></tr>
 <tr class="memdesc:aa8bf751ea26659195c59cd180956315a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends quit messages to the server.  <a href="client_2network_8h.html#aa8bf751ea26659195c59cd180956315a">More...</a><br /></td></tr>
 <tr class="separator:aa8bf751ea26659195c59cd180956315a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacae26c0e5cbef7e08f1c3011b07e58a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#aacae26c0e5cbef7e08f1c3011b07e58a">send_fcmsg</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
-<tr class="memdesc:aacae26c0e5cbef7e08f1c3011b07e58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a FractalMessage from client to server.  <a href="client_2network_8h.html#aacae26c0e5cbef7e08f1c3011b07e58a">More...</a><br /></td></tr>
+<tr class="memitem:aacae26c0e5cbef7e08f1c3011b07e58a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#aacae26c0e5cbef7e08f1c3011b07e58a">send_fcmsg</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
+<tr class="memdesc:aacae26c0e5cbef7e08f1c3011b07e58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a WhistMessage from client to server.  <a href="client_2network_8h.html#aacae26c0e5cbef7e08f1c3011b07e58a">More...</a><br /></td></tr>
 <tr class="separator:aacae26c0e5cbef7e08f1c3011b07e58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a227a48ef77a55282ab59696435f3859b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a227a48ef77a55282ab59696435f3859b">send_ping</a> (int ping_id)</td></tr>
 <tr class="memdesc:a227a48ef77a55282ab59696435f3859b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a ping with ID ping_id to the server.  <a href="client_2network_8h.html#a227a48ef77a55282ab59696435f3859b">More...</a><br /></td></tr>
@@ -128,7 +128,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains client-specific wrappers to low-level network. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md56"></a>
 functions.</h1>
 <h1><a class="anchor" id="autotoc_md57"></a>
@@ -269,17 +269,17 @@ Usage</h1>
         <tr>
           <td class="memname">int send_fcmsg </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Send a FractalMessage from client to server. </p>
+<p>Send a WhistMessage from client to server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fcmsg</td><td>FractalMessage struct to send as packet</td></tr>
+    <tr><td class="paramname">fcmsg</td><td>WhistMessage struct to send as packet</td></tr>
   </table>
   </dd>
 </dl>

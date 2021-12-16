@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/network/network.h File Reference</title>
+<title>Whist Protocol: whist/network/network.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('fractal_2network_2network_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('whist_2network_2network_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,17 +97,17 @@ $(document).ready(function(){initNavTree('fractal_2network_2network_8h.html','')
 <code>#include &lt;netdb.h&gt;</code><br />
 <code>#include &lt;netinet/in.h&gt;</code><br />
 <code>#include &lt;sys/socket.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="throttle_8h_source.html">fractal/network/throttle.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="tcp_8h_source.html">fractal/network/tcp.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="udp_8h_source.html">fractal/network/udp.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="throttle_8h_source.html">whist/network/throttle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tcp_8h_source.html">whist/network/tcp.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="udp_8h_source.html">whist/network/udp.h</a>&gt;</code><br />
 </div>
-<p><a href="fractal_2network_2network_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="whist_2network_2network_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFractalPacket.html">FractalPacket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet of data to be sent over a <a class="el" href="structSocketContextData.html">SocketContextData</a>.  <a href="structFractalPacket.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistPacket.html">WhistPacket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet of data to be sent over a <a class="el" href="structSocketContextData.html">SocketContextData</a>.  <a href="structWhistPacket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStunEntry.html">StunEntry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,94 +121,94 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aff55fe551a9992a54ec54621c524d0a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;&#160;&#160;int</td></tr>
+<tr class="memitem:aff55fe551a9992a54ec54621c524d0a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;&#160;&#160;int</td></tr>
 <tr class="separator:aff55fe551a9992a54ec54621c524d0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26769957ec1a2beaf223f33b66ee64ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a26769957ec1a2beaf223f33b66ee64ab">INVALID_SOCKET</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memitem:a26769957ec1a2beaf223f33b66ee64ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a26769957ec1a2beaf223f33b66ee64ab">INVALID_SOCKET</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="separator:a26769957ec1a2beaf223f33b66ee64ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdbb9d84bd17efd2ae7290e664992c48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#afdbb9d84bd17efd2ae7290e664992c48">closesocket</a>&#160;&#160;&#160;close</td></tr>
+<tr class="memitem:afdbb9d84bd17efd2ae7290e664992c48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#afdbb9d84bd17efd2ae7290e664992c48">closesocket</a>&#160;&#160;&#160;close</td></tr>
 <tr class="separator:afdbb9d84bd17efd2ae7290e664992c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef4f8657ef95d300ddb3901a2efe020b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#aef4f8657ef95d300ddb3901a2efe020b">FRACTAL_IOCTL_SOCKET</a>&#160;&#160;&#160;ioctl</td></tr>
+<tr class="memitem:aef4f8657ef95d300ddb3901a2efe020b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#aef4f8657ef95d300ddb3901a2efe020b">whist_IOCTL_SOCKET</a>&#160;&#160;&#160;ioctl</td></tr>
 <tr class="separator:aef4f8657ef95d300ddb3901a2efe020b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98a99e5dd88c460bf5e253a897ffa0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ac98a99e5dd88c460bf5e253a897ffa0e">FRACTAL_CLOSE_SOCKET</a>&#160;&#160;&#160;close</td></tr>
+<tr class="memitem:ac98a99e5dd88c460bf5e253a897ffa0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#ac98a99e5dd88c460bf5e253a897ffa0e">whist_CLOSE_SOCKET</a>&#160;&#160;&#160;close</td></tr>
 <tr class="separator:ac98a99e5dd88c460bf5e253a897ffa0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec0bccebe540af495aec057193863827"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#aec0bccebe540af495aec057193863827">FRACTAL_ETIMEDOUT</a>&#160;&#160;&#160;ETIMEDOUT</td></tr>
+<tr class="memitem:aec0bccebe540af495aec057193863827"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#aec0bccebe540af495aec057193863827">whist_ETIMEDOUT</a>&#160;&#160;&#160;ETIMEDOUT</td></tr>
 <tr class="separator:aec0bccebe540af495aec057193863827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a930515ae12ecd7aa2ef0e36886daf0d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a930515ae12ecd7aa2ef0e36886daf0d2">FRACTAL_EWOULDBLOCK</a>&#160;&#160;&#160;EWOULDBLOCK</td></tr>
+<tr class="memitem:a930515ae12ecd7aa2ef0e36886daf0d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a930515ae12ecd7aa2ef0e36886daf0d2">whist_EWOULDBLOCK</a>&#160;&#160;&#160;EWOULDBLOCK</td></tr>
 <tr class="separator:a930515ae12ecd7aa2ef0e36886daf0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e0cefb8f477cfcff5dbc9ea1cea9ed1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a2e0cefb8f477cfcff5dbc9ea1cea9ed1">FRACTAL_EAGAIN</a>&#160;&#160;&#160;EAGAIN</td></tr>
+<tr class="memitem:a2e0cefb8f477cfcff5dbc9ea1cea9ed1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a2e0cefb8f477cfcff5dbc9ea1cea9ed1">whist_EAGAIN</a>&#160;&#160;&#160;EAGAIN</td></tr>
 <tr class="separator:a2e0cefb8f477cfcff5dbc9ea1cea9ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65f2e30f7b11dadfd39341801f27b0b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a65f2e30f7b11dadfd39341801f27b0b4">FRACTAL_EINPROGRESS</a>&#160;&#160;&#160;EINPROGRESS</td></tr>
+<tr class="memitem:a65f2e30f7b11dadfd39341801f27b0b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a65f2e30f7b11dadfd39341801f27b0b4">whist_EINPROGRESS</a>&#160;&#160;&#160;EINPROGRESS</td></tr>
 <tr class="separator:a65f2e30f7b11dadfd39341801f27b0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68f8e6814da9faad6d4eb32379d58412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a68f8e6814da9faad6d4eb32379d58412">STUN_IP</a>&#160;&#160;&#160;&quot;0.0.0.0&quot;</td></tr>
+<tr class="memitem:a68f8e6814da9faad6d4eb32379d58412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a68f8e6814da9faad6d4eb32379d58412">STUN_IP</a>&#160;&#160;&#160;&quot;0.0.0.0&quot;</td></tr>
 <tr class="separator:a68f8e6814da9faad6d4eb32379d58412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81e4fdb2a08afd19ef501855bb9fbeec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a81e4fdb2a08afd19ef501855bb9fbeec">STUN_PORT</a>&#160;&#160;&#160;48800</td></tr>
+<tr class="memitem:a81e4fdb2a08afd19ef501855bb9fbeec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a81e4fdb2a08afd19ef501855bb9fbeec">STUN_PORT</a>&#160;&#160;&#160;48800</td></tr>
 <tr class="separator:a81e4fdb2a08afd19ef501855bb9fbeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33652a6c0f89aa7c48ed7512a2e6844a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a33652a6c0f89aa7c48ed7512a2e6844a">FRACTAL_SHUTDOWN_SOCKET</a>(s)&#160;&#160;&#160;shutdown(s, 2)</td></tr>
+<tr class="memitem:a33652a6c0f89aa7c48ed7512a2e6844a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a33652a6c0f89aa7c48ed7512a2e6844a">whist_SHUTDOWN_SOCKET</a>(s)&#160;&#160;&#160;shutdown(s, 2)</td></tr>
 <tr class="separator:a33652a6c0f89aa7c48ed7512a2e6844a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6303f7392a2d06be5a121c54278d561b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a>&#160;&#160;&#160;1285</td></tr>
+<tr class="memitem:a6303f7392a2d06be5a121c54278d561b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a>&#160;&#160;&#160;1285</td></tr>
 <tr class="separator:a6303f7392a2d06be5a121c54278d561b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ff2e6a193139535d0d23d5f46419f84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a4ff2e6a193139535d0d23d5f46419f84">VIDEO_NACKBUFFER_SIZE</a>&#160;&#160;&#160;25</td></tr>
+<tr class="memitem:a4ff2e6a193139535d0d23d5f46419f84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a4ff2e6a193139535d0d23d5f46419f84">VIDEO_NACKBUFFER_SIZE</a>&#160;&#160;&#160;25</td></tr>
 <tr class="separator:a4ff2e6a193139535d0d23d5f46419f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6268ba8879305a31512908e23f295ddc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a6268ba8879305a31512908e23f295ddc">AUDIO_NACKBUFFER_SIZE</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memitem:a6268ba8879305a31512908e23f295ddc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a6268ba8879305a31512908e23f295ddc">AUDIO_NACKBUFFER_SIZE</a>&#160;&#160;&#160;100</td></tr>
 <tr class="separator:a6268ba8879305a31512908e23f295ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc4f416f991d08029b35c68af4424fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:acdc4f416f991d08029b35c68af4424fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#acdc4f416f991d08029b35c68af4424fb">NUM_PACKET_TYPES</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:acdc4f416f991d08029b35c68af4424fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a879456c3b8e2853f7044d764e9c180d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a879456c3b8e2853f7044d764e9c180d4">MAX_PACKET_SIZE</a>&#160;&#160;&#160;(sizeof(<a class="el" href="structFractalPacket.html">FractalPacket</a>))</td></tr>
+<tr class="memitem:a879456c3b8e2853f7044d764e9c180d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a879456c3b8e2853f7044d764e9c180d4">MAX_PACKET_SIZE</a>&#160;&#160;&#160;(sizeof(<a class="el" href="structWhistPacket.html">WhistPacket</a>))</td></tr>
 <tr class="separator:a879456c3b8e2853f7044d764e9c180d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69bfb6e73bae0625ac56f441ccf542d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a69bfb6e73bae0625ac56f441ccf542d1">PACKET_HEADER_SIZE</a>&#160;&#160;&#160;(sizeof(<a class="el" href="structFractalPacket.html">FractalPacket</a>) - <a class="el" href="fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a> - 16)</td></tr>
+<tr class="memitem:a69bfb6e73bae0625ac56f441ccf542d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a69bfb6e73bae0625ac56f441ccf542d1">PACKET_HEADER_SIZE</a>&#160;&#160;&#160;(sizeof(<a class="el" href="structWhistPacket.html">WhistPacket</a>) - <a class="el" href="whist_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a> - 16)</td></tr>
 <tr class="separator:a69bfb6e73bae0625ac56f441ccf542d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a09a4a3c07926e40e3e7014120eb75bdb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> { <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdba3701057450c7a09aa316bb880f2db6ac">PACKET_AUDIO</a>, 
-<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdbab3488b238f3094f2bcfaa19a393be226">PACKET_VIDEO</a>, 
-<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdba501ce71c96f98746319edaf14fd43aef">PACKET_MESSAGE</a>
+<tr class="memitem:a09a4a3c07926e40e3e7014120eb75bdb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> { <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdba3701057450c7a09aa316bb880f2db6ac">PACKET_AUDIO</a>, 
+<a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdbab3488b238f3094f2bcfaa19a393be226">PACKET_VIDEO</a>, 
+<a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdba501ce71c96f98746319edaf14fd43aef">PACKET_MESSAGE</a>
  }</td></tr>
-<tr class="memdesc:a09a4a3c07926e40e3e7014120eb75bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data packet description.  <a href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">More...</a><br /></td></tr>
+<tr class="memdesc:a09a4a3c07926e40e3e7014120eb75bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data packet description.  <a href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">More...</a><br /></td></tr>
 <tr class="separator:a09a4a3c07926e40e3e7014120eb75bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57fdac43f47de768666a1961513f2e5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5b">StunRequestType</a> { <a class="el" href="fractal_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5baae4deeb65aaa4dd474e53c0860d1d51a">ASK_INFO</a>, 
-<a class="el" href="fractal_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5ba7d577d5f6b53d2a8cf9f60ef153c68b9">POST_INFO</a>
+<tr class="memitem:a57fdac43f47de768666a1961513f2e5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5b">StunRequestType</a> { <a class="el" href="whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5baae4deeb65aaa4dd474e53c0860d1d51a">ASK_INFO</a>, 
+<a class="el" href="whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5ba7d577d5f6b53d2a8cf9f60ef153c68b9">POST_INFO</a>
  }</td></tr>
 <tr class="separator:a57fdac43f47de768666a1961513f2e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a716fd11de9d48aa6f307185a3e9d130b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b">ack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
-<tr class="memdesc:a716fd11de9d48aa6f307185a3e9d130b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 0-length packet over the socket. Used to keep-alive over NATs, and to check on the validity of the socket.  <a href="fractal_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b">More...</a><br /></td></tr>
+<tr class="memitem:a716fd11de9d48aa6f307185a3e9d130b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b">ack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
+<tr class="memdesc:a716fd11de9d48aa6f307185a3e9d130b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 0-length packet over the socket. Used to keep-alive over NATs, and to check on the validity of the socket.  <a href="whist_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b">More...</a><br /></td></tr>
 <tr class="separator:a716fd11de9d48aa6f307185a3e9d130b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c4c9fdd38d88c51cf58632dc8491a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a39c4c9fdd38d88c51cf58632dc8491a8">read_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, bool should_recv)</td></tr>
-<tr class="memdesc:a39c4c9fdd38d88c51cf58632dc8491a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> from a <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>, if any such packet exists.  <a href="fractal_2network_2network_8h.html#a39c4c9fdd38d88c51cf58632dc8491a8">More...</a><br /></td></tr>
+<tr class="memitem:a39c4c9fdd38d88c51cf58632dc8491a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a39c4c9fdd38d88c51cf58632dc8491a8">read_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, bool should_recv)</td></tr>
+<tr class="memdesc:a39c4c9fdd38d88c51cf58632dc8491a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> from a <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>, if any such packet exists.  <a href="whist_2network_2network_8h.html#a39c4c9fdd38d88c51cf58632dc8491a8">More...</a><br /></td></tr>
 <tr class="separator:a39c4c9fdd38d88c51cf58632dc8491a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02a8a43b3c445d31b3d47f9a797174ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a02a8a43b3c445d31b3d47f9a797174ed">free_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet)</td></tr>
-<tr class="memdesc:a02a8a43b3c445d31b3d47f9a797174ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> created by read_packet.  <a href="fractal_2network_2network_8h.html#a02a8a43b3c445d31b3d47f9a797174ed">More...</a><br /></td></tr>
+<tr class="memitem:a02a8a43b3c445d31b3d47f9a797174ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a02a8a43b3c445d31b3d47f9a797174ed">free_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
+<tr class="memdesc:a02a8a43b3c445d31b3d47f9a797174ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> created by read_packet.  <a href="whist_2network_2network_8h.html#a02a8a43b3c445d31b3d47f9a797174ed">More...</a><br /></td></tr>
 <tr class="separator:a02a8a43b3c445d31b3d47f9a797174ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d327a3e16a307766fb00cbdcaa9f0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ac7d327a3e16a307766fb00cbdcaa9f0c">send_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
-<tr class="memdesc:ac7d327a3e16a307766fb00cbdcaa9f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> over the network. There is no restriction on the size of this packet, it will be fragmented if necessary. TODO: Fragment over UDP.  <a href="fractal_2network_2network_8h.html#ac7d327a3e16a307766fb00cbdcaa9f0c">More...</a><br /></td></tr>
+<tr class="memitem:ac7d327a3e16a307766fb00cbdcaa9f0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#ac7d327a3e16a307766fb00cbdcaa9f0c">send_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
+<tr class="memdesc:ac7d327a3e16a307766fb00cbdcaa9f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> over the network. There is no restriction on the size of this packet, it will be fragmented if necessary. TODO: Fragment over UDP.  <a href="whist_2network_2network_8h.html#ac7d327a3e16a307766fb00cbdcaa9f0c">More...</a><br /></td></tr>
 <tr class="separator:ac7d327a3e16a307766fb00cbdcaa9f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af30fe25b1472f12966debaa6535b4339"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339">destroy_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
-<tr class="memdesc:af30fe25b1472f12966debaa6535b4339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an allocated and initialized <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="fractal_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339">More...</a><br /></td></tr>
+<tr class="memitem:af30fe25b1472f12966debaa6535b4339"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339">destroy_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
+<tr class="memdesc:af30fe25b1472f12966debaa6535b4339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an allocated and initialized <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="whist_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339">More...</a><br /></td></tr>
 <tr class="separator:af30fe25b1472f12966debaa6535b4339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aa5e35a90b347a4c8a872f4bdddeec3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a9aa5e35a90b347a4c8a872f4bdddeec3">init_networking</a> ()</td></tr>
+<tr class="memitem:a9aa5e35a90b347a4c8a872f4bdddeec3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a9aa5e35a90b347a4c8a872f4bdddeec3">init_networking</a> ()</td></tr>
 <tr class="separator:a9aa5e35a90b347a4c8a872f4bdddeec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a12244c910bce55bfdcbd9bd5d687c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c">get_last_network_error</a> ()</td></tr>
-<tr class="memdesc:ae3a12244c910bce55bfdcbd9bd5d687c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recent network error.  <a href="fractal_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c">More...</a><br /></td></tr>
+<tr class="memitem:ae3a12244c910bce55bfdcbd9bd5d687c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c">get_last_network_error</a> ()</td></tr>
+<tr class="memdesc:ae3a12244c910bce55bfdcbd9bd5d687c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recent network error.  <a href="whist_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c">More...</a><br /></td></tr>
 <tr class="separator:ae3a12244c910bce55bfdcbd9bd5d687c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6c0e688fb68c0d4edac78142c950926"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ad6c0e688fb68c0d4edac78142c950926">get_packet_size</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> *packet)</td></tr>
-<tr class="memdesc:ad6c0e688fb68c0d4edac78142c950926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>.  <a href="fractal_2network_2network_8h.html#ad6c0e688fb68c0d4edac78142c950926">More...</a><br /></td></tr>
+<tr class="memitem:ad6c0e688fb68c0d4edac78142c950926"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#ad6c0e688fb68c0d4edac78142c950926">get_packet_size</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
+<tr class="memdesc:ad6c0e688fb68c0d4edac78142c950926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>.  <a href="whist_2network_2network_8h.html#ad6c0e688fb68c0d4edac78142c950926">More...</a><br /></td></tr>
 <tr class="separator:ad6c0e688fb68c0d4edac78142c950926"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61c60fb86a89187155fb727e0dba01ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea">set_timeout</a> (<a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socket, int timeout_ms)</td></tr>
-<tr class="memdesc:a61c60fb86a89187155fb727e0dba01ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will set <code>socket</code> to have timeout timeout_ms.  <a href="fractal_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea">More...</a><br /></td></tr>
+<tr class="memitem:a61c60fb86a89187155fb727e0dba01ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea">set_timeout</a> (<a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socket, int timeout_ms)</td></tr>
+<tr class="memdesc:a61c60fb86a89187155fb727e0dba01ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will set <code>socket</code> to have timeout timeout_ms.  <a href="whist_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea">More...</a><br /></td></tr>
 <tr class="separator:a61c60fb86a89187155fb727e0dba01ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab494a21469f6fa25ca60570bc2788461"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">socketp_udp</a> ()</td></tr>
-<tr class="memdesc:ab494a21469f6fa25ca60570bc2788461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a UDP socket() syscall and set fds to use flag FD_CLOEXEC if needed. This prevents child processes from holding onto the socket, preventing the socket's closure.  <a href="fractal_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">More...</a><br /></td></tr>
+<tr class="memitem:ab494a21469f6fa25ca60570bc2788461"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">socketp_udp</a> ()</td></tr>
+<tr class="memdesc:ab494a21469f6fa25ca60570bc2788461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a UDP socket() syscall and set fds to use flag FD_CLOEXEC if needed. This prevents child processes from holding onto the socket, preventing the socket's closure.  <a href="whist_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">More...</a><br /></td></tr>
 <tr class="separator:ab494a21469f6fa25ca60570bc2788461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34d93b58103186e725fb1ee4de7f32b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_2network_2network_8h.html#a34d93b58103186e725fb1ee4de7f32b5">handshake_private_key</a> (<a class="el" href="structSocketContextData.html">SocketContextData</a> *context)</td></tr>
-<tr class="memdesc:a34d93b58103186e725fb1ee4de7f32b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform socket syscalls and set fds to use flag FD_CLOEXEC.  <a href="fractal_2network_2network_8h.html#a34d93b58103186e725fb1ee4de7f32b5">More...</a><br /></td></tr>
+<tr class="memitem:a34d93b58103186e725fb1ee4de7f32b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a34d93b58103186e725fb1ee4de7f32b5">handshake_private_key</a> (<a class="el" href="structSocketContextData.html">SocketContextData</a> *context)</td></tr>
+<tr class="memdesc:a34d93b58103186e725fb1ee4de7f32b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform socket syscalls and set fds to use flag FD_CLOEXEC.  <a href="whist_2network_2network_8h.html#a34d93b58103186e725fb1ee4de7f32b5">More...</a><br /></td></tr>
 <tr class="separator:a34d93b58103186e725fb1ee4de7f32b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with sockets. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md174"></a>
 under-the-hood.</h1>
 <h1><a class="anchor" id="autotoc_md175"></a>
@@ -219,21 +219,21 @@ Usage</h1>
 <li>To receive data over a socket, call ReadTCPPacket or ReadUDPPacket</li>
 <li>If there is belief that a packet wasn't sent, you can call ReplayPacket to send a packet twice</li>
 </ul>
-<p><a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>: This type represents a packet of information</p><ul>
+<p><a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>: This type represents a packet of information</p><ul>
 <li>Unique packets of a given type will be given unique IDs. IDs are expected to be increasing monotonically, with a gap implying that a packet was lost</li>
-<li>FractalPackets that were thought to have been sent may not arrive, and FractalPackets may arrive out-of-order, in the case of UDP. This will not be the case for TCP, however TCP sockets may lose connection if there is a problem.</li>
+<li>WhistPackets that were thought to have been sent may not arrive, and WhistPackets may arrive out-of-order, in the case of UDP. This will not be the case for TCP, however TCP sockets may lose connection if there is a problem.</li>
 <li>A given block of data will, during transmission, be split up into packets with the same type and ID, but indicies ranging from 0 to num_indices - 1</li>
 <li>A missing index implies that a packet was lost</li>
-<li>A <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> is only guaranteed to have data information from 0 to payload_size - 1 data[] occurs at the end of the packet, so extra bytes may in-fact point to invalid memory to save space and bandwidth</li>
-<li>A <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> may be sent twice in the case of packet recovery, but any two FractalPackets found that are of the same type and ID will be expected to have the same data (To be specific, the <a class="el" href="structClient.html">Client</a> should never legally send two distinct packets with same ID/Type, and neither should the Server, but if the <a class="el" href="structClient.html">Client</a> and Server happen to both make a PACKET_MESSAGE packet with ID 1 they can be different)</li>
-<li>To reconstruct the original datagram from a sequence of FractalPackets, concatenated the data[] streams (From 0 to payload_size - 1) for each index from 0 to num_indices - 1</li>
+<li>A <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> is only guaranteed to have data information from 0 to payload_size - 1 data[] occurs at the end of the packet, so extra bytes may in-fact point to invalid memory to save space and bandwidth</li>
+<li>A <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> may be sent twice in the case of packet recovery, but any two WhistPackets found that are of the same type and ID will be expected to have the same data (To be specific, the <a class="el" href="structClient.html">Client</a> should never legally send two distinct packets with same ID/Type, and neither should the Server, but if the <a class="el" href="structClient.html">Client</a> and Server happen to both make a PACKET_MESSAGE packet with ID 1 they can be different)</li>
+<li>To reconstruct the original datagram from a sequence of WhistPackets, concatenated the data[] streams (From 0 to payload_size - 1) for each index from 0 to num_indices - 1</li>
 </ul>
 <hr  />
  <h2><a class="anchor" id="autotoc_md177"></a>
 Client</h2>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> context; create_tcp_socket_context(&amp;context, "10.0.0.5", 5055, 500, 250);</p>
 <p>char* msg = "Hello this is a message!"; send_packet(&amp;context, PACKET_MESSAGE, msg, strlen(msg) + 1);</p>
-<p>FractalPacket* packet = NULL; while(packet == NULL) { packet = read_packet(&amp;context); }</p>
+<p>WhistPacket* packet = NULL; while(packet == NULL) { packet = read_packet(&amp;context); }</p>
 <p>LOG_INFO("Response: %s", packet-&gt;data); // Will print "Message received!"</p>
 <p>free_packet(packet);</p>
 <p>destroy_socket_context(&amp;context);</p>
@@ -241,7 +241,7 @@ Client</h2>
  <h2><a class="anchor" id="autotoc_md179"></a>
 Server</h2>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> context; creaqte_tcp_socket_context(&amp;context, NULL, 5055, 500, 250);</p>
-<p>FractalPacket* packet = NULL; while(packet == NULL) { packet = read_packet(&amp;context); }</p>
+<p>WhistPacket* packet = NULL; while(packet == NULL) { packet = read_packet(&amp;context); }</p>
 <p>LOG_INFO("Message: %s", packet-&gt;data); // Will print "Hello this is a message!"</p>
 <p>free_packet(packet);</p>
 <p>char* msg = "Message received!"; send_packet(&amp;context, PACKET_MESSAGE, msg, strlen(msg) + 1);</p>
@@ -276,13 +276,13 @@ Server</h2>
 </div>
 </div>
 <a id="ac98a99e5dd88c460bf5e253a897ffa0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac98a99e5dd88c460bf5e253a897ffa0e">&#9670;&nbsp;</a></span>FRACTAL_CLOSE_SOCKET</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98a99e5dd88c460bf5e253a897ffa0e">&#9670;&nbsp;</a></span>whist_CLOSE_SOCKET</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRACTAL_CLOSE_SOCKET&#160;&#160;&#160;close</td>
+          <td class="memname">#define whist_CLOSE_SOCKET&#160;&#160;&#160;close</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -290,13 +290,13 @@ Server</h2>
 </div>
 </div>
 <a id="a2e0cefb8f477cfcff5dbc9ea1cea9ed1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e0cefb8f477cfcff5dbc9ea1cea9ed1">&#9670;&nbsp;</a></span>FRACTAL_EAGAIN</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e0cefb8f477cfcff5dbc9ea1cea9ed1">&#9670;&nbsp;</a></span>whist_EAGAIN</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRACTAL_EAGAIN&#160;&#160;&#160;EAGAIN</td>
+          <td class="memname">#define whist_EAGAIN&#160;&#160;&#160;EAGAIN</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -304,13 +304,13 @@ Server</h2>
 </div>
 </div>
 <a id="a65f2e30f7b11dadfd39341801f27b0b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65f2e30f7b11dadfd39341801f27b0b4">&#9670;&nbsp;</a></span>FRACTAL_EINPROGRESS</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a65f2e30f7b11dadfd39341801f27b0b4">&#9670;&nbsp;</a></span>whist_EINPROGRESS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRACTAL_EINPROGRESS&#160;&#160;&#160;EINPROGRESS</td>
+          <td class="memname">#define whist_EINPROGRESS&#160;&#160;&#160;EINPROGRESS</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -318,13 +318,13 @@ Server</h2>
 </div>
 </div>
 <a id="aec0bccebe540af495aec057193863827"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec0bccebe540af495aec057193863827">&#9670;&nbsp;</a></span>FRACTAL_ETIMEDOUT</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0bccebe540af495aec057193863827">&#9670;&nbsp;</a></span>whist_ETIMEDOUT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRACTAL_ETIMEDOUT&#160;&#160;&#160;ETIMEDOUT</td>
+          <td class="memname">#define whist_ETIMEDOUT&#160;&#160;&#160;ETIMEDOUT</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -332,13 +332,13 @@ Server</h2>
 </div>
 </div>
 <a id="a930515ae12ecd7aa2ef0e36886daf0d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a930515ae12ecd7aa2ef0e36886daf0d2">&#9670;&nbsp;</a></span>FRACTAL_EWOULDBLOCK</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a930515ae12ecd7aa2ef0e36886daf0d2">&#9670;&nbsp;</a></span>whist_EWOULDBLOCK</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRACTAL_EWOULDBLOCK&#160;&#160;&#160;EWOULDBLOCK</td>
+          <td class="memname">#define whist_EWOULDBLOCK&#160;&#160;&#160;EWOULDBLOCK</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -346,13 +346,13 @@ Server</h2>
 </div>
 </div>
 <a id="aef4f8657ef95d300ddb3901a2efe020b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef4f8657ef95d300ddb3901a2efe020b">&#9670;&nbsp;</a></span>FRACTAL_IOCTL_SOCKET</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4f8657ef95d300ddb3901a2efe020b">&#9670;&nbsp;</a></span>whist_IOCTL_SOCKET</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRACTAL_IOCTL_SOCKET&#160;&#160;&#160;ioctl</td>
+          <td class="memname">#define whist_IOCTL_SOCKET&#160;&#160;&#160;ioctl</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -360,13 +360,13 @@ Server</h2>
 </div>
 </div>
 <a id="a33652a6c0f89aa7c48ed7512a2e6844a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33652a6c0f89aa7c48ed7512a2e6844a">&#9670;&nbsp;</a></span>FRACTAL_SHUTDOWN_SOCKET</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33652a6c0f89aa7c48ed7512a2e6844a">&#9670;&nbsp;</a></span>whist_SHUTDOWN_SOCKET</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRACTAL_SHUTDOWN_SOCKET</td>
+          <td class="memname">#define whist_SHUTDOWN_SOCKET</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">s</td><td>)</td>
@@ -398,7 +398,7 @@ Server</h2>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_PACKET_SIZE&#160;&#160;&#160;(sizeof(<a class="el" href="structFractalPacket.html">FractalPacket</a>))</td>
+          <td class="memname">#define MAX_PACKET_SIZE&#160;&#160;&#160;(sizeof(<a class="el" href="structWhistPacket.html">WhistPacket</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -440,7 +440,7 @@ Server</h2>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PACKET_HEADER_SIZE&#160;&#160;&#160;(sizeof(<a class="el" href="structFractalPacket.html">FractalPacket</a>) - <a class="el" href="fractal_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a> - 16)</td>
+          <td class="memname">#define PACKET_HEADER_SIZE&#160;&#160;&#160;(sizeof(<a class="el" href="structWhistPacket.html">WhistPacket</a>) - <a class="el" href="whist_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a> - 16)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -505,13 +505,13 @@ Server</h2>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a09a4a3c07926e40e3e7014120eb75bdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09a4a3c07926e40e3e7014120eb75bdb">&#9670;&nbsp;</a></span>FractalPacketType</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a4a3c07926e40e3e7014120eb75bdb">&#9670;&nbsp;</a></span>WhistPacketType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a></td>
+          <td class="memname">enum <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -532,7 +532,7 @@ Server</h2>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="fractal_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5b">StunRequestType</a></td>
+          <td class="memname">enum <a class="el" href="whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5b">StunRequestType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -567,7 +567,7 @@ Server</h2>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, and 0 on success Failure implies that the socket is broken or the TCP connection has ended, use <a class="el" href="fractal_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c" title="Get the most recent network error.">get_last_network_error()</a> to learn more about the error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, and 0 on success Failure implies that the socket is broken or the TCP connection has ended, use <a class="el" href="whist_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c" title="Get the most recent network error.">get_last_network_error()</a> to learn more about the error </dd></dl>
 
 </div>
 </div>
@@ -612,7 +612,7 @@ Server</h2>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>packet</em>&#160;</td>
         </tr>
         <tr>
@@ -623,11 +623,11 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>Frees a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> created by read_packet. </p>
+<p>Frees a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> created by read_packet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The socket context that created the packet </td></tr>
-    <tr><td class="paramname">packet</td><td>The <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> to free </td></tr>
+    <tr><td class="paramname">packet</td><td>The <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> to free </td></tr>
   </table>
   </dd>
 </dl>
@@ -663,14 +663,14 @@ Server</h2>
         <tr>
           <td class="memname">int get_packet_size </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the size of a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>. </p>
+<p>Get the size of a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td>The packet to get the size of</td></tr>
@@ -733,7 +733,7 @@ Server</h2>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structFractalPacket.html">FractalPacket</a>* read_packet </td>
+          <td class="memname"><a class="el" href="structWhistPacket.html">WhistPacket</a>* read_packet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -752,7 +752,7 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>Receive a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> from a <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>, if any such packet exists. </p>
+<p>Receive a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> from a <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>, if any such packet exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The socket context </td></tr>
@@ -760,7 +760,7 @@ Server</h2>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> on success, NULL on failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> on success, NULL on failure </dd></dl>
 
 </div>
 </div>
@@ -779,7 +779,7 @@ Server</h2>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>packet_type</em>, </td>
         </tr>
         <tr>
@@ -808,11 +808,11 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>Given a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> over the network. There is no restriction on the size of this packet, it will be fragmented if necessary. TODO: Fragment over UDP. </p>
+<p>Given a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> over the network. There is no restriction on the size of this packet, it will be fragmented if necessary. TODO: Fragment over UDP. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The socket context </td></tr>
-    <tr><td class="paramname">packet_type</td><td>The FractalPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
+    <tr><td class="paramname">packet_type</td><td>The WhistPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
     <tr><td class="paramname">payload</td><td>A pointer to the payload that is to be sent </td></tr>
     <tr><td class="paramname">payload_size</td><td>The size of the payload </td></tr>
     <tr><td class="paramname">packet_id</td><td>A Packet ID for the packet.</td></tr>
@@ -832,7 +832,7 @@ Server</h2>
         <tr>
           <td class="memname">void set_timeout </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td>
           <td class="paramname"><em>socket</em>, </td>
         </tr>
         <tr>
@@ -867,7 +867,7 @@ Server</h2>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fractal_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socketp_udp </td>
+          <td class="memname"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socketp_udp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -885,7 +885,7 @@ Server</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="fractal_2network_2network_8h.html">network.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="whist_2network_2network_8h.html">network.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

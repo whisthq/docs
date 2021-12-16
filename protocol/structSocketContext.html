@@ -99,11 +99,11 @@ Data Fields</h2></td></tr>
 <tr class="separator:af32e96cbec6ae787d7aa6174c4aaba98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a088a2da14c54575d914f99b1ac3bb68e"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a088a2da14c54575d914f99b1ac3bb68e">ack</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>)</td></tr>
 <tr class="separator:a088a2da14c54575d914f99b1ac3bb68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3632e6da5fb718777b30ee8dbb6d062"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#ab3632e6da5fb718777b30ee8dbb6d062">read_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, bool should_recv)</td></tr>
+<tr class="memitem:ab3632e6da5fb718777b30ee8dbb6d062"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistPacket.html">WhistPacket</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#ab3632e6da5fb718777b30ee8dbb6d062">read_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, bool should_recv)</td></tr>
 <tr class="separator:ab3632e6da5fb718777b30ee8dbb6d062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4484adf3ce34d636892bbf9938bd034"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#ad4484adf3ce34d636892bbf9938bd034">free_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet)</td></tr>
+<tr class="memitem:ad4484adf3ce34d636892bbf9938bd034"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#ad4484adf3ce34d636892bbf9938bd034">free_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
 <tr class="separator:ad4484adf3ce34d636892bbf9938bd034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a528ca29dbd429a6022a2daa66127696e"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a528ca29dbd429a6022a2daa66127696e">send_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len, int id)</td></tr>
+<tr class="memitem:a528ca29dbd429a6022a2daa66127696e"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a528ca29dbd429a6022a2daa66127696e">send_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int id)</td></tr>
 <tr class="separator:a528ca29dbd429a6022a2daa66127696e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dffab1bb0a4b08cff6c58232d34e2d"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a65dffab1bb0a4b08cff6c58232d34e2d">destroy_socket_context</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>)</td></tr>
 <tr class="separator:a65dffab1bb0a4b08cff6c58232d34e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +160,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* SocketContext::free_packet) (void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet)</td>
+          <td class="memname">void(* SocketContext::free_packet) (void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -174,7 +174,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structFractalPacket.html">FractalPacket</a>*(* SocketContext::read_packet) (void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, bool should_recv)</td>
+          <td class="memname"><a class="el" href="structWhistPacket.html">WhistPacket</a>*(* SocketContext::read_packet) (void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, bool should_recv)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -188,7 +188,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* SocketContext::send_packet) (void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len, int id)</td>
+          <td class="memname">int(* SocketContext::send_packet) (void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int id)</td>
         </tr>
       </table>
 </div><div class="memdoc">

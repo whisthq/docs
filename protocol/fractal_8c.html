@@ -121,10 +121,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a8715a52b4a7436f38ed03ec5705a9aff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a8715a52b4a7436f38ed03ec5705a9aff">read_hexadecimal_private_key</a> (char *hex_string, char *binary_private_key, char *hex_private_key)</td></tr>
 <tr class="memdesc:a8715a52b4a7436f38ed03ec5705a9aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a 16-byte hexidecimal string and copies it into private_key.  <a href="fractal_8c.html#a8715a52b4a7436f38ed03ec5705a9aff">More...</a><br /></td></tr>
 <tr class="separator:a8715a52b4a7436f38ed03ec5705a9aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b97a107ed4e99e174b0c8d245e868d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a36b97a107ed4e99e174b0c8d245e868d">get_fcmsg_size</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
-<tr class="memdesc:a36b97a107ed4e99e174b0c8d245e868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of a <a class="el" href="structFractalClientMessage.html" title="Client message.">FractalClientMessage</a> struct.  <a href="fractal_8c.html#a36b97a107ed4e99e174b0c8d245e868d">More...</a><br /></td></tr>
+<tr class="memitem:a36b97a107ed4e99e174b0c8d245e868d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a36b97a107ed4e99e174b0c8d245e868d">get_fcmsg_size</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
+<tr class="memdesc:a36b97a107ed4e99e174b0c8d245e868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of a <a class="el" href="structWhistClientMessage.html" title="Client message.">WhistClientMessage</a> struct.  <a href="fractal_8c.html#a36b97a107ed4e99e174b0c8d245e868d">More...</a><br /></td></tr>
 <tr class="separator:a36b97a107ed4e99e174b0c8d245e868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26b5a597b23ed194a2401b7dbc1bd502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a26b5a597b23ed194a2401b7dbc1bd502">terminate_protocol</a> (<a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">FractalExitCode</a> exit_code)</td></tr>
+<tr class="memitem:a26b5a597b23ed194a2401b7dbc1bd502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a26b5a597b23ed194a2401b7dbc1bd502">terminate_protocol</a> (<a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a> exit_code)</td></tr>
 <tr class="memdesc:a26b5a597b23ed194a2401b7dbc1bd502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the protocol.  <a href="fractal_8c.html#a26b5a597b23ed194a2401b7dbc1bd502">More...</a><br /></td></tr>
 <tr class="separator:a26b5a597b23ed194a2401b7dbc1bd502"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">safe_strncpy</a> (char *destination, const char *source, size_t num)</td></tr>
@@ -489,14 +489,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int get_fcmsg_size </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calculate the size of a <a class="el" href="structFractalClientMessage.html" title="Client message.">FractalClientMessage</a> struct. </p>
+<p>Calculate the size of a <a class="el" href="structWhistClientMessage.html" title="Client message.">WhistClientMessage</a> struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fcmsg</td><td>The Whist <a class="el" href="structClient.html">Client</a> Message to find the size</td></tr>
@@ -682,7 +682,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void terminate_protocol </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">FractalExitCode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_8h.html#a2cfee250c793df815c5216abc3f83621">WhistExitCode</a>&#160;</td>
           <td class="paramname"><em>exit_code</em></td><td>)</td>
           <td></td>
         </tr>

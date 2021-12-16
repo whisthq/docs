@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/video/codec/ffmpeg_encode.h File Reference</title>
+<title>Whist Protocol: whist/video/codec/ffmpeg_encode.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('ffmpeg__encode_8h.html',''); initResiz
 
 <p>This file contains the code to create and destroy FFmpeg encoders and use.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 </div>
 <p><a href="ffmpeg__encode_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -123,10 +123,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0fe709fad41e90091e23493ef5a6b058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a0fe709fad41e90091e23493ef5a6b058">create_ffmpeg_encoder</a> (int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
+<tr class="memitem:a0fe709fad41e90091e23493ef5a6b058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a0fe709fad41e90091e23493ef5a6b058">create_ffmpeg_encoder</a> (int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="memdesc:a0fe709fad41e90091e23493ef5a6b058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new encoder.  <a href="ffmpeg__encode_8h.html#a0fe709fad41e90091e23493ef5a6b058">More...</a><br /></td></tr>
 <tr class="separator:a0fe709fad41e90091e23493ef5a6b058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ac2dcffae1c9d12ec30438832b6dadc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a7ac2dcffae1c9d12ec30438832b6dadc">ffmpeg_reconfigure_encoder</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
+<tr class="memitem:a7ac2dcffae1c9d12ec30438832b6dadc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a7ac2dcffae1c9d12ec30438832b6dadc">ffmpeg_reconfigure_encoder</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, int in_width, int in_height, int out_width, int out_height, int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="separator:a7ac2dcffae1c9d12ec30438832b6dadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a0e2ca3b2e42c16087c14ed78d6d030b9">ffmpeg_encoder_frame_intake</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, void *rgb_pixels, int pitch)</td></tr>
 <tr class="memdesc:a0e2ca3b2e42c16087c14ed78d6d030b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into a software frame, and upload to a hardware frame if applicable.  <a href="ffmpeg__encode_8h.html#a0e2ca3b2e42c16087c14ed78d6d030b9">More...</a><br /></td></tr>
@@ -145,13 +145,13 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code to create and destroy FFmpeg encoders and use. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md238"></a>
 them to encode captured screens.</h1>
 <h1><a class="anchor" id="autotoc_md239"></a>
 Usage</h1>
 <p>Video is encoded to H264 via either a hardware encoder (currently, we use NVidia GPUs, so we use NVENC) or a software encoder if hardware encoding fails. H265 is also supported but not currently used. For encoders, create an H264 encoder via create_ffmpeg_encoder, and use it to encode frames via ffmpeg_encoder_send_frame. Retrieve encoded packets using ffmpeg_encoder_receive_packet. When finished, destroy the encoder using destroy_ffmpeg_encoder.</p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md240"></a>
 them to encode captured screens.</h1>
 <h1><a class="anchor" id="autotoc_md241"></a>
@@ -254,7 +254,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
           <td class="paramname"><em>codec_type</em>&#160;</td>
         </tr>
         <tr>
@@ -452,7 +452,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
           <td class="paramname"><em>codec_type</em>&#160;</td>
         </tr>
         <tr>
@@ -496,7 +496,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="ffmpeg__encode_8h.html">ffmpeg_encode.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="ffmpeg__encode_8h.html">ffmpeg_encode.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: fractal/core/fractal_memory.c File Reference</title>
+<title>Whist Protocol: whist/core/whist_memory.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('fractal__memory_8c.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('whist__memory_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -86,13 +86,13 @@ $(document).ready(function(){initNavTree('fractal__memory_8c.html',''); initResi
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">fractal_memory.c File Reference</div>  </div>
+<div class="title">whist_memory.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>This file contains custom memory handling for Whist.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal/core/fractal.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;sys/mman.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -105,60 +105,60 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a4c6d7bdba62c60dcd15111ecbf34edb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a4c6d7bdba62c60dcd15111ecbf34edb7">MAX_FREES</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memitem:a4c6d7bdba62c60dcd15111ecbf34edb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a4c6d7bdba62c60dcd15111ecbf34edb7">MAX_FREES</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a4c6d7bdba62c60dcd15111ecbf34edb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac05b79e314f4dfbdee20fe8a3f7a327a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a">TO_REGION_HEADER</a>(a)&#160;&#160;&#160;((void*)(((char*)a) - sizeof(<a class="el" href="structRegionHeader.html">RegionHeader</a>)))</td></tr>
+<tr class="memitem:ac05b79e314f4dfbdee20fe8a3f7a327a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a">TO_REGION_HEADER</a>(a)&#160;&#160;&#160;((void*)(((char*)a) - sizeof(<a class="el" href="structRegionHeader.html">RegionHeader</a>)))</td></tr>
 <tr class="separator:ac05b79e314f4dfbdee20fe8a3f7a327a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2907fe89fbb0732fb1bcd842ee3eda4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c">TO_REGION_DATA</a>(a)&#160;&#160;&#160;((void*)(((char*)a) + sizeof(<a class="el" href="structRegionHeader.html">RegionHeader</a>)))</td></tr>
+<tr class="memitem:a2907fe89fbb0732fb1bcd842ee3eda4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c">TO_REGION_DATA</a>(a)&#160;&#160;&#160;((void*)(((char*)a) + sizeof(<a class="el" href="structRegionHeader.html">RegionHeader</a>)))</td></tr>
 <tr class="separator:a2907fe89fbb0732fb1bcd842ee3eda4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac26280b92f7122e6f76a0407d26ae8e7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7">safe_malloc</a> (size_t size)</td></tr>
-<tr class="memdesc:ac26280b92f7122e6f76a0407d26ae8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around malloc that will correctly exit the protocol when malloc fails.  <a href="fractal__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7">More...</a><br /></td></tr>
+<tr class="memitem:ac26280b92f7122e6f76a0407d26ae8e7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7">safe_malloc</a> (size_t size)</td></tr>
+<tr class="memdesc:ac26280b92f7122e6f76a0407d26ae8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around malloc that will correctly exit the protocol when malloc fails.  <a href="whist__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7">More...</a><br /></td></tr>
 <tr class="separator:ac26280b92f7122e6f76a0407d26ae8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15cfd76dbebf81d90310d51c79e2a06a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a">safe_realloc</a> (void *buffer, size_t new_size)</td></tr>
-<tr class="memdesc:a15cfd76dbebf81d90310d51c79e2a06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around realloc that will correctly exit the protocol when realloc fails.  <a href="fractal__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a">More...</a><br /></td></tr>
+<tr class="memitem:a15cfd76dbebf81d90310d51c79e2a06a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a">safe_realloc</a> (void *buffer, size_t new_size)</td></tr>
+<tr class="memdesc:a15cfd76dbebf81d90310d51c79e2a06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around realloc that will correctly exit the protocol when realloc fails.  <a href="whist__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a">More...</a><br /></td></tr>
 <tr class="separator:a15cfd76dbebf81d90310d51c79e2a06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae51d43be8b22d6c3bf94077af0929bb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDynamicBuffer.html">DynamicBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#ae51d43be8b22d6c3bf94077af0929bb7">init_dynamic_buffer</a> (bool use_memory_regions)</td></tr>
-<tr class="memdesc:ae51d43be8b22d6c3bf94077af0929bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new dynamically sizing buffer. Note that accessing a dynamic buffer's buf outside of db-&gt;size is undefined behavior.  <a href="fractal__memory_8c.html#ae51d43be8b22d6c3bf94077af0929bb7">More...</a><br /></td></tr>
+<tr class="memitem:ae51d43be8b22d6c3bf94077af0929bb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDynamicBuffer.html">DynamicBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ae51d43be8b22d6c3bf94077af0929bb7">init_dynamic_buffer</a> (bool use_memory_regions)</td></tr>
+<tr class="memdesc:ae51d43be8b22d6c3bf94077af0929bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new dynamically sizing buffer. Note that accessing a dynamic buffer's buf outside of db-&gt;size is undefined behavior.  <a href="whist__memory_8c.html#ae51d43be8b22d6c3bf94077af0929bb7">More...</a><br /></td></tr>
 <tr class="separator:ae51d43be8b22d6c3bf94077af0929bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b12df5f9a53f9f8728b204aab6646d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a2b12df5f9a53f9f8728b204aab6646d0">resize_dynamic_buffer</a> (<a class="el" href="structDynamicBuffer.html">DynamicBuffer</a> *db, size_t new_size)</td></tr>
-<tr class="memdesc:a2b12df5f9a53f9f8728b204aab6646d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will resize the given <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> to the given size. This function may reallocate db-&gt;buf.  <a href="fractal__memory_8c.html#a2b12df5f9a53f9f8728b204aab6646d0">More...</a><br /></td></tr>
+<tr class="memitem:a2b12df5f9a53f9f8728b204aab6646d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a2b12df5f9a53f9f8728b204aab6646d0">resize_dynamic_buffer</a> (<a class="el" href="structDynamicBuffer.html">DynamicBuffer</a> *db, size_t new_size)</td></tr>
+<tr class="memdesc:a2b12df5f9a53f9f8728b204aab6646d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will resize the given <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> to the given size. This function may reallocate db-&gt;buf.  <a href="whist__memory_8c.html#a2b12df5f9a53f9f8728b204aab6646d0">More...</a><br /></td></tr>
 <tr class="separator:a2b12df5f9a53f9f8728b204aab6646d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae616f3a7d54d00a38e8739477fc7a785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#ae616f3a7d54d00a38e8739477fc7a785">free_dynamic_buffer</a> (<a class="el" href="structDynamicBuffer.html">DynamicBuffer</a> *db)</td></tr>
-<tr class="memdesc:ae616f3a7d54d00a38e8739477fc7a785"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will free the <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> and its contents.  <a href="fractal__memory_8c.html#ae616f3a7d54d00a38e8739477fc7a785">More...</a><br /></td></tr>
+<tr class="memitem:ae616f3a7d54d00a38e8739477fc7a785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ae616f3a7d54d00a38e8739477fc7a785">free_dynamic_buffer</a> (<a class="el" href="structDynamicBuffer.html">DynamicBuffer</a> *db)</td></tr>
+<tr class="memdesc:ae616f3a7d54d00a38e8739477fc7a785"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will free the <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> and its contents.  <a href="whist__memory_8c.html#ae616f3a7d54d00a38e8739477fc7a785">More...</a><br /></td></tr>
 <tr class="separator:ae616f3a7d54d00a38e8739477fc7a785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4834f7c2ad3291b85f97541702be50ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fractal__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a4834f7c2ad3291b85f97541702be50ec">create_block_allocator</a> (size_t block_size)</td></tr>
-<tr class="memdesc:a4834f7c2ad3291b85f97541702be50ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a block allocator that will create and free blocks of the given block_size. The block allocator will <em>not</em> interfere with the malloc heap.  <a href="fractal__memory_8c.html#a4834f7c2ad3291b85f97541702be50ec">More...</a><br /></td></tr>
+<tr class="memitem:a4834f7c2ad3291b85f97541702be50ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a4834f7c2ad3291b85f97541702be50ec">create_block_allocator</a> (size_t block_size)</td></tr>
+<tr class="memdesc:a4834f7c2ad3291b85f97541702be50ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a block allocator that will create and free blocks of the given block_size. The block allocator will <em>not</em> interfere with the malloc heap.  <a href="whist__memory_8c.html#a4834f7c2ad3291b85f97541702be50ec">More...</a><br /></td></tr>
 <tr class="separator:a4834f7c2ad3291b85f97541702be50ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a374c49f7975bd9b8dce5a1a21a5b0ef9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a374c49f7975bd9b8dce5a1a21a5b0ef9">allocate_block</a> (<a class="el" href="fractal__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *blk_allocator_in)</td></tr>
-<tr class="memdesc:a374c49f7975bd9b8dce5a1a21a5b0ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a block using the given block allocator.  <a href="fractal__memory_8c.html#a374c49f7975bd9b8dce5a1a21a5b0ef9">More...</a><br /></td></tr>
+<tr class="memitem:a374c49f7975bd9b8dce5a1a21a5b0ef9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a374c49f7975bd9b8dce5a1a21a5b0ef9">allocate_block</a> (<a class="el" href="whist__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *blk_allocator_in)</td></tr>
+<tr class="memdesc:a374c49f7975bd9b8dce5a1a21a5b0ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a block using the given block allocator.  <a href="whist__memory_8c.html#a374c49f7975bd9b8dce5a1a21a5b0ef9">More...</a><br /></td></tr>
 <tr class="separator:a374c49f7975bd9b8dce5a1a21a5b0ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ef503c387cd405908c007c53c6b0b3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a9ef503c387cd405908c007c53c6b0b3b">free_block</a> (<a class="el" href="fractal__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *blk_allocator_in, void *block)</td></tr>
-<tr class="memdesc:a9ef503c387cd405908c007c53c6b0b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a block allocated by allocate_block.  <a href="fractal__memory_8c.html#a9ef503c387cd405908c007c53c6b0b3b">More...</a><br /></td></tr>
+<tr class="memitem:a9ef503c387cd405908c007c53c6b0b3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a9ef503c387cd405908c007c53c6b0b3b">free_block</a> (<a class="el" href="whist__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *blk_allocator_in, void *block)</td></tr>
+<tr class="memdesc:a9ef503c387cd405908c007c53c6b0b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a block allocated by allocate_block.  <a href="whist__memory_8c.html#a9ef503c387cd405908c007c53c6b0b3b">More...</a><br /></td></tr>
 <tr class="separator:a9ef503c387cd405908c007c53c6b0b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a771d64932b7927ec99e09fe1a94d4e94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a771d64932b7927ec99e09fe1a94d4e94">get_page_size</a> ()</td></tr>
+<tr class="memitem:a771d64932b7927ec99e09fe1a94d4e94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a771d64932b7927ec99e09fe1a94d4e94">get_page_size</a> ()</td></tr>
 <tr class="separator:a771d64932b7927ec99e09fe1a94d4e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5cb37b0580474e152f2450c34979720"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#ac5cb37b0580474e152f2450c34979720">allocate_region</a> (size_t region_size)</td></tr>
-<tr class="memdesc:ac5cb37b0580474e152f2450c34979720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a region of memory, of the requested size. This region will be allocated independently of the malloc heap or any block allocator. Will be zero-initialized.  <a href="fractal__memory_8c.html#ac5cb37b0580474e152f2450c34979720">More...</a><br /></td></tr>
+<tr class="memitem:ac5cb37b0580474e152f2450c34979720"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ac5cb37b0580474e152f2450c34979720">allocate_region</a> (size_t region_size)</td></tr>
+<tr class="memdesc:ac5cb37b0580474e152f2450c34979720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a region of memory, of the requested size. This region will be allocated independently of the malloc heap or any block allocator. Will be zero-initialized.  <a href="whist__memory_8c.html#ac5cb37b0580474e152f2450c34979720">More...</a><br /></td></tr>
 <tr class="separator:ac5cb37b0580474e152f2450c34979720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b6692eaffcf106ffdecddfb77e8dbe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a3b6692eaffcf106ffdecddfb77e8dbe9">mark_unused_region</a> (void *region)</td></tr>
-<tr class="memdesc:a3b6692eaffcf106ffdecddfb77e8dbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the region as unused (for now). This will let other processes use it if they desire.  <a href="fractal__memory_8c.html#a3b6692eaffcf106ffdecddfb77e8dbe9">More...</a><br /></td></tr>
+<tr class="memitem:a3b6692eaffcf106ffdecddfb77e8dbe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a3b6692eaffcf106ffdecddfb77e8dbe9">mark_unused_region</a> (void *region)</td></tr>
+<tr class="memdesc:a3b6692eaffcf106ffdecddfb77e8dbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the region as unused (for now). This will let other processes use it if they desire.  <a href="whist__memory_8c.html#a3b6692eaffcf106ffdecddfb77e8dbe9">More...</a><br /></td></tr>
 <tr class="separator:a3b6692eaffcf106ffdecddfb77e8dbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad91ad1707c56178b66bd39a9b1b1e8a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7">mark_used_region</a> (void *region)</td></tr>
-<tr class="memdesc:ad91ad1707c56178b66bd39a9b1b1e8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the region as used again. This will grab new memory regions from the OS, only give other processes have taken the memory while it was unused.  <a href="fractal__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7">More...</a><br /></td></tr>
+<tr class="memitem:ad91ad1707c56178b66bd39a9b1b1e8a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7">mark_used_region</a> (void *region)</td></tr>
+<tr class="memdesc:ad91ad1707c56178b66bd39a9b1b1e8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the region as used again. This will grab new memory regions from the OS, only give other processes have taken the memory while it was unused.  <a href="whist__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7">More...</a><br /></td></tr>
 <tr class="separator:ad91ad1707c56178b66bd39a9b1b1e8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38cef2a2f287ce784dcd824293e4ebba"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a38cef2a2f287ce784dcd824293e4ebba">realloc_region</a> (void *region, size_t new_region_size)</td></tr>
-<tr class="memdesc:a38cef2a2f287ce784dcd824293e4ebba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the memory region.  <a href="fractal__memory_8c.html#a38cef2a2f287ce784dcd824293e4ebba">More...</a><br /></td></tr>
+<tr class="memitem:a38cef2a2f287ce784dcd824293e4ebba"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a38cef2a2f287ce784dcd824293e4ebba">realloc_region</a> (void *region, size_t new_region_size)</td></tr>
+<tr class="memdesc:a38cef2a2f287ce784dcd824293e4ebba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the memory region.  <a href="whist__memory_8c.html#a38cef2a2f287ce784dcd824293e4ebba">More...</a><br /></td></tr>
 <tr class="separator:a38cef2a2f287ce784dcd824293e4ebba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c0c0ab6aa54efc85fb5cdc1ea37e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fractal__memory_8c.html#a82c0c0ab6aa54efc85fb5cdc1ea37e1f">deallocate_region</a> (void *region)</td></tr>
-<tr class="memdesc:a82c0c0ab6aa54efc85fb5cdc1ea37e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give the region back to the OS.  <a href="fractal__memory_8c.html#a82c0c0ab6aa54efc85fb5cdc1ea37e1f">More...</a><br /></td></tr>
+<tr class="memitem:a82c0c0ab6aa54efc85fb5cdc1ea37e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a82c0c0ab6aa54efc85fb5cdc1ea37e1f">deallocate_region</a> (void *region)</td></tr>
+<tr class="memdesc:a82c0c0ab6aa54efc85fb5cdc1ea37e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give the region back to the OS.  <a href="whist__memory_8c.html#a82c0c0ab6aa54efc85fb5cdc1ea37e1f">More...</a><br /></td></tr>
 <tr class="separator:a82c0c0ab6aa54efc85fb5cdc1ea37e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains custom memory handling for Whist. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <hr  />
  <h1><a class="anchor" id="autotoc_md141"></a>
 Usage</h1>
@@ -224,7 +224,7 @@ Usage</h1>
         <tr>
           <td class="memname">void* allocate_block </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="whist__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *&#160;</td>
           <td class="paramname"><em>block_allocator</em></td><td>)</td>
           <td></td>
         </tr>
@@ -277,7 +277,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fractal__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a>* create_block_allocator </td>
+          <td class="memname"><a class="el" href="whist__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a>* create_block_allocator </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>block_size</em></td><td>)</td>
@@ -332,7 +332,7 @@ Usage</h1>
         <tr>
           <td class="memname">void free_block </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="whist__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449">BlockAllocator</a> *&#160;</td>
           <td class="paramname"><em>block_allocator</em>, </td>
         </tr>
         <tr>
@@ -626,7 +626,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">fractal</a></li><li class="navelem"><a class="el" href="dir_4a8c8719a23d19c67389effe97a80d8c.html">core</a></li><li class="navelem"><a class="el" href="fractal__memory_8c.html">fractal_memory.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_4a8c8719a23d19c67389effe97a80d8c.html">core</a></li><li class="navelem"><a class="el" href="whist__memory_8c.html">whist_memory.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

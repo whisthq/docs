@@ -111,13 +111,13 @@ Functions</h2></td></tr>
 <tr class="separator:a51d257115224205c814ba99a5964fd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af709002cd314953aa37e85dfa8288ed2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#af709002cd314953aa37e85dfa8288ed2">tcp_ack</a> (void *raw_context)</td></tr>
 <tr class="separator:af709002cd314953aa37e85dfa8288ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a9aeec62b27809f23a9d49bd7c641a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a1a9aeec62b27809f23a9d49bd7c641a4">tcp_read_packet</a> (void *raw_context, bool should_recv)</td></tr>
+<tr class="memitem:a1a9aeec62b27809f23a9d49bd7c641a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a1a9aeec62b27809f23a9d49bd7c641a4">tcp_read_packet</a> (void *raw_context, bool should_recv)</td></tr>
 <tr class="separator:a1a9aeec62b27809f23a9d49bd7c641a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ac857f8697c6275db865f531155fa29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a6ac857f8697c6275db865f531155fa29">tcp_free_packet</a> (void *raw_context, <a class="el" href="structFractalPacket.html">FractalPacket</a> *tcp_packet)</td></tr>
+<tr class="memitem:a6ac857f8697c6275db865f531155fa29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a6ac857f8697c6275db865f531155fa29">tcp_free_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *tcp_packet)</td></tr>
 <tr class="separator:a6ac857f8697c6275db865f531155fa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a72ab23ed5cae60a741054cfbcb28fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a8a72ab23ed5cae60a741054cfbcb28fc">tcp_send_constructed_packet</a> (void *raw_context, <a class="el" href="structFractalPacket.html">FractalPacket</a> *packet, size_t packet_size)</td></tr>
+<tr class="memitem:a8a72ab23ed5cae60a741054cfbcb28fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a8a72ab23ed5cae60a741054cfbcb28fc">tcp_send_constructed_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet, size_t packet_size)</td></tr>
 <tr class="separator:a8a72ab23ed5cae60a741054cfbcb28fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30eb82123ff662b77ca8ccdd3665ac1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ac30eb82123ff662b77ca8ccdd3665ac1">tcp_send_packet</a> (void *raw_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len, int id)</td></tr>
+<tr class="memitem:ac30eb82123ff662b77ca8ccdd3665ac1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ac30eb82123ff662b77ca8ccdd3665ac1">tcp_send_packet</a> (void *raw_context, <a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int id)</td></tr>
 <tr class="separator:ac30eb82123ff662b77ca8ccdd3665ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae89f86a9b2cc8965df295f78631d5a0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ae89f86a9b2cc8965df295f78631d5a0b">tcp_destroy_socket_context</a> (void *raw_context)</td></tr>
 <tr class="separator:ae89f86a9b2cc8965df295f78631d5a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -560,7 +560,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>tcp_packet</em>&#160;</td>
         </tr>
         <tr>
@@ -580,7 +580,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structFractalPacket.html">FractalPacket</a>* tcp_read_packet </td>
+          <td class="memname"><a class="el" href="structWhistPacket.html">WhistPacket</a>* tcp_read_packet </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>raw_context</em>, </td>
@@ -616,7 +616,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -650,7 +650,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>

@@ -1,9 +1,9 @@
 var fractalgetopt_8h =
 [
     [ "option", "structoption.html", "structoption" ],
-    [ "FRACTAL_GETOPT_H", "fractalgetopt_8h.html#a1bdfc7e950589c03db7c8395a76003ee", null ],
-    [ "FRACTAL_GETOPT_HELP_CHAR", "fractalgetopt_8h.html#a5d22901fcdfdcefd0cb2d6e7aaf16e2d", null ],
-    [ "FRACTAL_GETOPT_VERSION_CHAR", "fractalgetopt_8h.html#a8ddf967b3a8e609a71c037c4a3e0d54d", null ],
+    [ "WHIST_GETOPT_H", "fractalgetopt_8h.html#a1bdfc7e950589c03db7c8395a76003ee", null ],
+    [ "WHIST_GETOPT_HELP_CHAR", "fractalgetopt_8h.html#a5d22901fcdfdcefd0cb2d6e7aaf16e2d", null ],
+    [ "WHIST_GETOPT_VERSION_CHAR", "fractalgetopt_8h.html#a8ddf967b3a8e609a71c037c4a3e0d54d", null ],
     [ "no_argument", "fractalgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce", null ],
     [ "optional_argument", "fractalgetopt_8h.html#acca06c0a947656bd8b395bf1084ffb72", null ],
     [ "required_argument", "fractalgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc", null ],

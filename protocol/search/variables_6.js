@@ -5,7 +5,7 @@ var searchData=
   ['fd_5fabsmouse_2906',['fd_absmouse',['../structInputDevice.html#a3cf568b6e17d58b12beeb7098c7c0527',1,'InputDevice']]],
   ['fd_5fkeyboard_2907',['fd_keyboard',['../structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf',1,'InputDevice']]],
   ['fd_5frelmouse_2908',['fd_relmouse',['../structInputDevice.html#a1d3c4e4761cc5549826c66ace98566e7',1,'InputDevice']]],
-  ['fec_5fpacket_5fratio_2909',['fec_packet_ratio',['../structFractalClientMessage.html#ae885ea0bcfbe801892f78efc4d4c41e9',1,'FractalClientMessage::fec_packet_ratio()'],['../structSocketContextData.html#a5ab3a2583726416e38be92c4bab9dd8f',1,'SocketContextData::fec_packet_ratio()']]],
+  ['fec_5fpacket_5fratio_2909',['fec_packet_ratio',['../structWhistClientMessage.html#ae885ea0bcfbe801892f78efc4d4c41e9',1,'WhistClientMessage::fec_packet_ratio()'],['../structSocketContextData.html#a5ab3a2583726416e38be92c4bab9dd8f',1,'SocketContextData::fec_packet_ratio()']]],
   ['ffmpeg_5fencoder_2910',['ffmpeg_encoder',['../structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7',1,'VideoEncoder']]],
   ['filename_2911',['filename',['../structOSXFilenames.html#abea7caa7613ceaec2cb9ea802f27114d',1,'OSXFilenames']]],
   ['files_2912',['files',['../structClipboardFiles.html#ad6b3efc63acdc42cf8be3feadb55c908',1,'ClipboardFiles']]],
@@ -34,9 +34,9 @@ var searchData=
   ['free_5fblocks_2935',['free_blocks',['../structInternalBlockAllocator.html#a6946aeb65c44301d6efde99032ef67a2',1,'InternalBlockAllocator']]],
   ['free_5fpacket_2936',['free_packet',['../structSocketContext.html#ad4484adf3ce34d636892bbf9938bd034',1,'SocketContext']]],
   ['freelist_2937',['freelist',['../structBPMLists.html#a60b8d594291b80d962e9bfedbe90f372',1,'BPMLists']]],
-  ['frequency_2938',['frequency',['../structFractalServerMessage.html#aaf6636fbb52fa6d8246ffb882943cd1a',1,'FractalServerMessage']]],
+  ['frequency_2938',['frequency',['../structWhistServerMessage.html#aaf6636fbb52fa6d8246ffb882943cd1a',1,'WhistServerMessage']]],
   ['fullpath_2939',['fullPath',['../structOSXFilenames.html#afb130cc3d8df974472a08125d2ded88d',1,'OSXFilenames']]],
-  ['fullscreen_2940',['fullscreen',['../structFractalServerMessage.html#a0341dd498434c2b0f4fa192e610954ad',1,'FractalServerMessage']]],
+  ['fullscreen_2940',['fullscreen',['../structWhistServerMessage.html#a0341dd498434c2b0f4fa192e610954ad',1,'WhistServerMessage']]],
   ['fullscreen_5ftrigger_2941',['fullscreen_trigger',['../handle__server__message_8c.html#ad298bfb09c7b25b5d4ad072f4d605370',1,'fullscreen_trigger():&#160;handle_server_message.c'],['../client_2main_8c.html#ad298bfb09c7b25b5d4ad072f4d605370',1,'fullscreen_trigger():&#160;handle_server_message.c']]],
   ['fullscreen_5fvalue_2942',['fullscreen_value',['../handle__server__message_8c.html#aa0aea9909a758e1f73c276a4ca15f893',1,'fullscreen_value():&#160;handle_server_message.c'],['../client_2main_8c.html#aa0aea9909a758e1f73c276a4ca15f893',1,'fullscreen_value():&#160;handle_server_message.c']]]
 ];

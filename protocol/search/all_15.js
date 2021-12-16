@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['v_1831',['v',['../structFractalYUVColor.html#a4557abaf95d3273f9ad698a02c22f7de',1,'FractalYUVColor']]],
+  ['v_1831',['v',['../structWhistYUVColor.html#a4557abaf95d3273f9ad698a02c22f7de',1,'WhistYUVColor']]],
   ['val_1832',['val',['../structoption.html#a13bd155ec3b405d29c41ab8d0793be11',1,'option::val()'],['../structHash.html#a66918968854722efdf7ab5f8ac2c6c1d',1,'Hash::val()']]],
   ['verify_5fhmac_1833',['verify_hmac',['../aes_8c.html#af6179ed3556de6e9d700c01b0aaff5c4',1,'verify_hmac(void *hash, void *buf, int len, void *key):&#160;aes.c'],['../aes_8h.html#a76788983d3f213efe39bb8196fb18837',1,'verify_hmac(void *signature, void *buf, int len, void *key):&#160;aes.c']]],
   ['video_2ec_1834',['video.c',['../client_2video_8c.html',1,'(Global Namespace)'],['../server_2video_8c.html',1,'(Global Namespace)']]],

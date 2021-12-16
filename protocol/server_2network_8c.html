@@ -117,7 +117,7 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ad2f70f7fc3b9a767e873c9bc99cb7254"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#ad2f70f7fc3b9a767e873c9bc99cb7254">handle_discovery_port_message</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, bool *new_client)</td></tr>
 <tr class="separator:ad2f70f7fc3b9a767e873c9bc99cb7254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acba99990308644688fbe1b8ca9a6e1ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#acba99990308644688fbe1b8ca9a6e1ac">do_discovery_handshake</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg)</td></tr>
+<tr class="memitem:acba99990308644688fbe1b8ca9a6e1ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#acba99990308644688fbe1b8ca9a6e1ac">do_discovery_handshake</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
 <tr class="separator:acba99990308644688fbe1b8ca9a6e1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28fbab24cc6492d1f35414dfa9762b73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a28fbab24cc6492d1f35414dfa9762b73">connect_client</a> (bool <a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *binary_aes_private_key_input)</td></tr>
 <tr class="memdesc:a28fbab24cc6492d1f35414dfa9762b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes UDP and TCP connection to client.  <a href="server_2network_8c.html#a28fbab24cc6492d1f35414dfa9762b73">More...</a><br /></td></tr>
@@ -128,16 +128,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5b5686b7c49fe0d9f6049297416a558"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#ac5b5686b7c49fe0d9f6049297416a558">broadcast_ack</a> (void)</td></tr>
 <tr class="memdesc:ac5b5686b7c49fe0d9f6049297416a558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts acks to all active clients.  <a href="server_2network_8c.html#ac5b5686b7c49fe0d9f6049297416a558">More...</a><br /></td></tr>
 <tr class="separator:ac5b5686b7c49fe0d9f6049297416a558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafd8bd4c2226a90167764494f4738512"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#aafd8bd4c2226a90167764494f4738512">broadcast_udp_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len, int packet_id)</td></tr>
-<tr class="memdesc:aafd8bd4c2226a90167764494f4738512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> and accompanying FractalPacketType to all active clients, over UDP.  <a href="server_2network_8c.html#aafd8bd4c2226a90167764494f4738512">More...</a><br /></td></tr>
+<tr class="memitem:aafd8bd4c2226a90167764494f4738512"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#aafd8bd4c2226a90167764494f4738512">broadcast_udp_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int packet_id)</td></tr>
+<tr class="memdesc:aafd8bd4c2226a90167764494f4738512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over UDP.  <a href="server_2network_8c.html#aafd8bd4c2226a90167764494f4738512">More...</a><br /></td></tr>
 <tr class="separator:aafd8bd4c2226a90167764494f4738512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625cda3e571448de114b40c82ffc1e79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79">broadcast_tcp_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a> type, void *data, int len)</td></tr>
-<tr class="memdesc:a625cda3e571448de114b40c82ffc1e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> and accompanying FractalPacketType to all active clients, over TCP.  <a href="server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79">More...</a><br /></td></tr>
+<tr class="memitem:a625cda3e571448de114b40c82ffc1e79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79">broadcast_tcp_packet</a> (<a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len)</td></tr>
+<tr class="memdesc:a625cda3e571448de114b40c82ffc1e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over TCP.  <a href="server_2network_8c.html#a625cda3e571448de114b40c82ffc1e79">More...</a><br /></td></tr>
 <tr class="separator:a625cda3e571448de114b40c82ffc1e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d09b1c8c7de997b76720d4045ec518a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a5d09b1c8c7de997b76720d4045ec518a">try_get_next_message_tcp</a> (<a class="el" href="structFractalPacket.html">FractalPacket</a> **p_tcp_packet)</td></tr>
+<tr class="memitem:a5d09b1c8c7de997b76720d4045ec518a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a5d09b1c8c7de997b76720d4045ec518a">try_get_next_message_tcp</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> **p_tcp_packet)</td></tr>
 <tr class="memdesc:a5d09b1c8c7de997b76720d4045ec518a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read in next available TCP message from a given, active client.  <a href="server_2network_8c.html#a5d09b1c8c7de997b76720d4045ec518a">More...</a><br /></td></tr>
 <tr class="separator:a5d09b1c8c7de997b76720d4045ec518a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0379e02ab2bc4ccae18a02a005cdbd58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a0379e02ab2bc4ccae18a02a005cdbd58">try_get_next_message_udp</a> (<a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *fcmsg, size_t *fcmsg_size)</td></tr>
+<tr class="memitem:a0379e02ab2bc4ccae18a02a005cdbd58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a0379e02ab2bc4ccae18a02a005cdbd58">try_get_next_message_udp</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg, size_t *fcmsg_size)</td></tr>
 <tr class="memdesc:a0379e02ab2bc4ccae18a02a005cdbd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read in next available UDP message from a given, active client.  <a href="server_2network_8c.html#a0379e02ab2bc4ccae18a02a005cdbd58">More...</a><br /></td></tr>
 <tr class="separator:a0379e02ab2bc4ccae18a02a005cdbd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9712f3cdf71debf012d7fe26b23b40d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a9712f3cdf71debf012d7fe26b23b40d8">get_using_stun</a> ()</td></tr>
@@ -161,7 +161,7 @@ Variables</h2></td></tr>
 <tr class="separator:a527325650d66abd9626499785b3bafd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28d9e55fc917106b3014669bf9a52309"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a28d9e55fc917106b3014669bf9a52309">client_joined_after_window_name_broadcast</a></td></tr>
 <tr class="separator:a28d9e55fc917106b3014669bf9a52309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420">client_os</a></td></tr>
+<tr class="memitem:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420">client_os</a></td></tr>
 <tr class="separator:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87359d0492cce4252fa833844855438d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a87359d0492cce4252fa833844855438d">begin_time_to_exit</a> = 60</td></tr>
 <tr class="separator:a87359d0492cce4252fa833844855438d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +174,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains server-specific wrappers to low-level network. </p>
-<p>Copyright 2021 Fractal Computers, Inc., dba Whist</p>
+<p>Copyright 2021 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md92"></a>
 functions.</h1>
 <h1><a class="anchor" id="autotoc_md93"></a>
@@ -268,7 +268,7 @@ Usage</h1>
         <tr>
           <td class="memname">int broadcast_tcp_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -291,10 +291,10 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Sends a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> and accompanying FractalPacketType to all active clients, over TCP. </p>
+<p>Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over TCP. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>The FractalPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
+    <tr><td class="paramname">type</td><td>The WhistPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
     <tr><td class="paramname">data</td><td>A pointer to the data to be sent </td></tr>
     <tr><td class="paramname">len</td><td>The nubmer of bytes to send</td></tr>
   </table>
@@ -313,7 +313,7 @@ Usage</h1>
         <tr>
           <td class="memname">int broadcast_udp_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">FractalPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fractal_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -342,10 +342,10 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Sends a <a class="el" href="structFractalPacket.html" title="Packet of data to be sent over a SocketContextData.">FractalPacket</a> and accompanying FractalPacketType to all active clients, over UDP. </p>
+<p>Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over UDP. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>The FractalPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
+    <tr><td class="paramname">type</td><td>The WhistPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
     <tr><td class="paramname">data</td><td>A pointer to the data to be sent </td></tr>
     <tr><td class="paramname">len</td><td>The number of bytes to send </td></tr>
     <tr><td class="paramname">packet_id</td><td>An ID for the UDP data.</td></tr>
@@ -430,7 +430,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em>&#160;</td>
         </tr>
         <tr>
@@ -521,7 +521,7 @@ Usage</h1>
         <tr>
           <td class="memname">int try_get_next_message_tcp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalPacket.html">FractalPacket</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> **&#160;</td>
           <td class="paramname"><em>p_tcp_packet</em></td><td>)</td>
           <td></td>
         </tr>
@@ -549,7 +549,7 @@ Usage</h1>
         <tr>
           <td class="memname">int try_get_next_message_udp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFractalClientMessage.html">FractalClientMessage</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
           <td class="paramname"><em>fcmsg</em>, </td>
         </tr>
         <tr>
@@ -643,7 +643,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">FractalOSType</a> client_os</td>
+          <td class="memname">volatile <a class="el" href="fractal_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> client_os</td>
         </tr>
       </table>
 </div><div class="memdoc">
