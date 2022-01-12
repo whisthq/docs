@@ -112,6 +112,8 @@ Macros</h2></td></tr>
 <tr class="separator:a3812f9c42e2965d252530ec6ad3f62fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28deb91651998cb8a97e41dfe534bd7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a28deb91651998cb8a97e41dfe534bd7a">WARNING_LEVEL</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:a28deb91651998cb8a97e41dfe534bd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3cc8463f8cede44c8499b36bc47f9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a1a3cc8463f8cede44c8499b36bc47f9e">METRIC_LEVEL</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:a1a3cc8463f8cede44c8499b36bc47f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf9ba8e25f7240fb3b39383a66540a71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#acf9ba8e25f7240fb3b39383a66540a71">INFO_LEVEL</a>&#160;&#160;&#160;0x04</td></tr>
 <tr class="separator:acf9ba8e25f7240fb3b39383a66540a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2d33ccaf63f5d5b66552b95426c0137"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ac2d33ccaf63f5d5b66552b95426c0137">DEBUG_LEVEL</a>&#160;&#160;&#160;0x05</td></tr>
@@ -128,31 +130,37 @@ Macros</h2></td></tr>
 <tr class="separator:ae6f84e8321c3bc4f546cf4a2a4798064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eeca73435ee192b8d720a89e47b3c87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a1a969cdd9f7fe0c45ede957dcbfe7eb4">info_tag</a></td></tr>
 <tr class="separator:a1eeca73435ee192b8d720a89e47b3c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5445774555999e2d5b299937810fbd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ac5445774555999e2d5b299937810fbd6">METRIC_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a377bd3f622cd4f3843184eb213dc5229">metric_tag</a></td></tr>
+<tr class="separator:ac5445774555999e2d5b299937810fbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34cab68c5e544eb2a0f0fdf344e327e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a0112509c73897459c20ca3230308162c">warning_tag</a></td></tr>
 <tr class="separator:a34cab68c5e544eb2a0f0fdf344e327e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29007116d11e676da62a3ae1dae4402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a0583ea4d2c6f4bfb23c6d012d943a33f">error_tag</a></td></tr>
 <tr class="separator:aa29007116d11e676da62a3ae1dae4402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f40cf1096c9b0050980ce64a7b21d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a40d7fb6145e38bf69d8be9ef38ceebed">fatal_error_tag</a></td></tr>
 <tr class="separator:a8f40cf1096c9b0050980ce64a7b21d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3299be792c6fbb84cd15f782b46482a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ae3299be792c6fbb84cd15f782b46482a">LOG_DEBUG</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a>(<a class="el" href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a>, <a class="el" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="el" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="el" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="el" href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a>), ##__VA_ARGS__)</td></tr>
+<tr class="memitem:ae3299be792c6fbb84cd15f782b46482a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ae3299be792c6fbb84cd15f782b46482a">LOG_DEBUG</a>(message, ...)</td></tr>
 <tr class="separator:ae3299be792c6fbb84cd15f782b46482a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4f292beeb047fd27cd7eb3ba92f7f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0">LOG_INFO</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a>(<a class="el" href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a>, <a class="el" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="el" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="el" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="el" href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a>), ##__VA_ARGS__)</td></tr>
+<tr class="memitem:aff4f292beeb047fd27cd7eb3ba92f7f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0">LOG_INFO</a>(message, ...)</td></tr>
 <tr class="separator:aff4f292beeb047fd27cd7eb3ba92f7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad398f3e6ce3fb8dc44e88cf3ff0176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a4ad398f3e6ce3fb8dc44e88cf3ff0176">LOG_METRIC</a>(message, ...)</td></tr>
+<tr class="separator:a4ad398f3e6ce3fb8dc44e88cf3ff0176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9df5c6dc713c515884e63a80f499f6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b">LOG_WARNING</a>(message, ...)</td></tr>
 <tr class="separator:ad9df5c6dc713c515884e63a80f499f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9577456efe501c56575750444162a3dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a9577456efe501c56575750444162a3dd">LOG_ERROR</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a>(<a class="el" href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a>, <a class="el" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="el" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="el" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="el" href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a>), ##__VA_ARGS__);</td></tr>
+<tr class="memitem:a9577456efe501c56575750444162a3dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a9577456efe501c56575750444162a3dd">LOG_ERROR</a>(message, ...)</td></tr>
 <tr class="separator:a9577456efe501c56575750444162a3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44029e31f9ab552e79ca6164ca1eca94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a44029e31f9ab552e79ca6164ca1eca94">LOG_FATAL</a>(message, ...)</td></tr>
 <tr class="separator:a44029e31f9ab552e79ca6164ca1eca94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34722e01b6ee3b8e30834e2f8e6423a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ae34722e01b6ee3b8e30834e2f8e6423a">FATAL_ASSERT</a>(condition)</td></tr>
+<tr class="separator:ae34722e01b6ee3b8e30834e2f8e6423a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa2557ff6773a87316035e296caebed4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aa2557ff6773a87316035e296caebed4a">print_stacktrace</a> ()</td></tr>
 <tr class="memdesc:aa2557ff6773a87316035e296caebed4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the stacktrace of the calling function to stdout This will be registered as if it was logged as well.  <a href="logging_8h.html#aa2557ff6773a87316035e296caebed4a">More...</a><br /></td></tr>
 <tr class="separator:aa2557ff6773a87316035e296caebed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3d0e9567cfad5d6f83abc585beb520d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ab3d0e9567cfad5d6f83abc585beb520d">init_logger</a> ()</td></tr>
-<tr class="memdesc:ab3d0e9567cfad5d6f83abc585beb520d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logger.  <a href="logging_8h.html#ab3d0e9567cfad5d6f83abc585beb520d">More...</a><br /></td></tr>
-<tr class="separator:ab3d0e9567cfad5d6f83abc585beb520d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc08cec7aa7616dd61ce50424c2d3df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a2cc08cec7aa7616dd61ce50424c2d3df">whist_init_logger</a> ()</td></tr>
+<tr class="memdesc:a2cc08cec7aa7616dd61ce50424c2d3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logger.  <a href="logging_8h.html#a2cc08cec7aa7616dd61ce50424c2d3df">More...</a><br /></td></tr>
+<tr class="separator:a2cc08cec7aa7616dd61ce50424c2d3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70325569587d06c4e89314d4db8b2d32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a> (const char *tag, const char *fmt_str,...)</td></tr>
 <tr class="memdesc:a70325569587d06c4e89314d4db8b2d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the given format string This is an internal function that shouldn't be used, please use the macros LOG_INFO, LOG_WARNING, etc.  <a href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">More...</a><br /></td></tr>
 <tr class="separator:a70325569587d06c4e89314d4db8b2d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +177,8 @@ Variables</h2></td></tr>
 <tr class="separator:a2074b264c06107e25922c26e79c6c3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a969cdd9f7fe0c45ede957dcbfe7eb4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a1a969cdd9f7fe0c45ede957dcbfe7eb4">info_tag</a></td></tr>
 <tr class="separator:a1a969cdd9f7fe0c45ede957dcbfe7eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377bd3f622cd4f3843184eb213dc5229"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a377bd3f622cd4f3843184eb213dc5229">metric_tag</a></td></tr>
+<tr class="separator:a377bd3f622cd4f3843184eb213dc5229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0112509c73897459c20ca3230308162c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a0112509c73897459c20ca3230308162c">warning_tag</a></td></tr>
 <tr class="separator:a0112509c73897459c20ca3230308162c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0583ea4d2c6f4bfb23c6d012d943a33f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a0583ea4d2c6f4bfb23c6d012d943a33f">error_tag</a></td></tr>
@@ -178,10 +188,10 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the logging macros and utils to send Winlogon. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md172"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md176"></a>
 status and to send the logs to the webserver.</h1>
-<h1><a class="anchor" id="autotoc_md173"></a>
+<h1><a class="anchor" id="autotoc_md177"></a>
 Usage</h1>
 <p>We have several levels of logging.</p><ul>
 <li>NO_LOG: only log fatal errors. Fatal errors are irrecoverable and cause the protocol to immediately exit.</li>
@@ -262,6 +272,29 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="ae34722e01b6ee3b8e30834e2f8e6423a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae34722e01b6ee3b8e30834e2f8e6423a">&#9670;&nbsp;</a></span>FATAL_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FATAL_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">condition</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                     \</div>
+<div class="line">        if (!(condition)) {                                  \</div>
+<div class="line">            LOG_FATAL(<span class="stringliteral">&quot;Assertion [%s] Failed!&quot;</span>, #condition); \</div>
+<div class="line">        }                                                    \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8f40cf1096c9b0050980ce64a7b21d9a"></a>
@@ -345,11 +378,15 @@ Usage</h1>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a>(<a class="el" href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a>, <a class="el" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="el" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="el" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="el" href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a>), ##__VA_ARGS__)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                 \</div>
+<div class="line">        internal_logging_printf(<a class="code" href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a>, <a class="code" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="code" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="code" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="code" href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a>), \</div>
+<div class="line">                                ##__VA_ARGS__);                                          \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9577456efe501c56575750444162a3dd"></a>
@@ -373,11 +410,15 @@ Usage</h1>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a>(<a class="el" href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a>, <a class="el" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="el" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="el" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="el" href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a>), ##__VA_ARGS__);</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                 \</div>
+<div class="line">        internal_logging_printf(<a class="code" href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a>, <a class="code" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="code" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="code" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="code" href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a>), \</div>
+<div class="line">                                ##__VA_ARGS__);                                          \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a44029e31f9ab552e79ca6164ca1eca94"></a>
@@ -405,9 +446,11 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a>(<a class="code" href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a>, <a class="code" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="code" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="code" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="code" href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a>), \</div>
-<div class="line">                            ##__VA_ARGS__);                                                      \</div>
-<div class="line">    terminate_protocol(<a class="code" href="whist_8h.html#a2cfee250c793df815c5216abc3f83621a3a8ed25556c2f278287e6e8f9caad338">WHIST_EXIT_FAILURE</a>)</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                   \</div>
+<div class="line">        internal_logging_printf(<a class="code" href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a>, <a class="code" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="code" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>,  \</div>
+<div class="line">                                <a class="code" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="code" href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a>), ##__VA_ARGS__); \</div>
+<div class="line">        terminate_protocol(<a class="code" href="whist_8h.html#aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e">WHIST_EXIT_FAILURE</a>);                            \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -446,11 +489,15 @@ Usage</h1>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a>(<a class="el" href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a>, <a class="el" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="el" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="el" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="el" href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a>), ##__VA_ARGS__)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                               \</div>
+<div class="line">        internal_logging_printf(<a class="code" href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a>, <a class="code" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="code" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="code" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="code" href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a>), \</div>
+<div class="line">                                ##__VA_ARGS__);                                        \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0b87e0d3bf5853bcbb0b66a7c48fdc05"></a>
@@ -465,6 +512,37 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a4ad398f3e6ce3fb8dc44e88cf3ff0176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad398f3e6ce3fb8dc44e88cf3ff0176">&#9670;&nbsp;</a></span>LOG_METRIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_METRIC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                               \</div>
+<div class="line">        internal_logging_printf(<a class="code" href="logging_8h.html#ac5445774555999e2d5b299937810fbd6">METRIC_TAG</a>, <span class="stringliteral">&quot;{ &quot;</span> message <span class="stringliteral">&quot; }&quot;</span> <a class="code" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, ##__VA_ARGS__); \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad9df5c6dc713c515884e63a80f499f6b"></a>
@@ -492,8 +570,10 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a>(<a class="code" href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a>, <a class="code" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="code" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="code" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="code" href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a>), \</div>
-<div class="line">                            ##__VA_ARGS__);</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                     \</div>
+<div class="line">        internal_logging_printf(<a class="code" href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a>, <a class="code" href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a> message <a class="code" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>, <a class="code" href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a>(<a class="code" href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a>), \</div>
+<div class="line">                                ##__VA_ARGS__);                                              \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -519,6 +599,34 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define LOGGER_QUEUE_SIZE&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a3cc8463f8cede44c8499b36bc47f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a3cc8463f8cede44c8499b36bc47f9e">&#9670;&nbsp;</a></span>METRIC_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define METRIC_LEVEL&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5445774555999e2d5b299937810fbd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5445774555999e2d5b299937810fbd6">&#9670;&nbsp;</a></span>METRIC_TAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define METRIC_TAG&#160;&#160;&#160;<a class="el" href="logging_8h.html#a377bd3f622cd4f3843184eb213dc5229">metric_tag</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -620,25 +728,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ab3d0e9567cfad5d6f83abc585beb520d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3d0e9567cfad5d6f83abc585beb520d">&#9670;&nbsp;</a></span>init_logger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_logger </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the logger. </p>
-
-</div>
-</div>
 <a id="a70325569587d06c4e89314d4db8b2d32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70325569587d06c4e89314d4db8b2d32">&#9670;&nbsp;</a></span>internal_logging_printf()</h2>
 
@@ -701,6 +790,25 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a2cc08cec7aa7616dd61ce50424c2d3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc08cec7aa7616dd61ce50424c2d3df">&#9670;&nbsp;</a></span>whist_init_logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_init_logger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the logger. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a2074b264c06107e25922c26e79c6c3c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2074b264c06107e25922c26e79c6c3c5">&#9670;&nbsp;</a></span>debug_tag</h2>
@@ -758,6 +866,20 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a377bd3f622cd4f3843184eb213dc5229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a377bd3f622cd4f3843184eb213dc5229">&#9670;&nbsp;</a></span>metric_tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * metric_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0112509c73897459c20ca3230308162c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0112509c73897459c20ca3230308162c">&#9670;&nbsp;</a></span>warning_tag</h2>
 
@@ -774,17 +896,20 @@ Usage</h1>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="alogging_8h_html_af9fad048f611a1a810ffa672a007c917"><div class="ttname"><a href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a></div><div class="ttdeci">#define LOG_ARGS(LOG_TAG)</div><div class="ttdef"><b>Definition:</b> logging.h:65</div></div>
-<div class="ttc" id="alogging_8h_html_a8f40cf1096c9b0050980ce64a7b21d9a"><div class="ttname"><a href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a></div><div class="ttdeci">#define FATAL_ERROR_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:74</div></div>
-<div class="ttc" id="alogging_8h_html_ac4541472739b48ec14d768219540a13a"><div class="ttname"><a href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a></div><div class="ttdeci">#define LOG_FMT</div><div class="ttdef"><b>Definition:</b> logging.h:64</div></div>
-<div class="ttc" id="alogging_8h_html_a70325569587d06c4e89314d4db8b2d32"><div class="ttname"><a href="logging_8h.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a></div><div class="ttdeci">void internal_logging_printf(const char *tag, const char *fmt_str,...)</div><div class="ttdoc">Log the given format string This is an internal function that shouldn't be used, please use the macro...</div><div class="ttdef"><b>Definition:</b> logging.c:260</div></div>
-<div class="ttc" id="alogging_8h_html_a34cab68c5e544eb2a0f0fdf344e327e6"><div class="ttname"><a href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a></div><div class="ttdeci">#define WARNING_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:72</div></div>
-<div class="ttc" id="alogging_8h_html_a806511f4930171733227c99101dc0606"><div class="ttname"><a href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a></div><div class="ttdeci">#define NEWLINE</div><div class="ttdef"><b>Definition:</b> logging.h:67</div></div>
-<div class="ttc" id="awhist_8h_html_a2cfee250c793df815c5216abc3f83621a3a8ed25556c2f278287e6e8f9caad338"><div class="ttname"><a href="whist_8h.html#a2cfee250c793df815c5216abc3f83621a3a8ed25556c2f278287e6e8f9caad338">WHIST_EXIT_FAILURE</a></div><div class="ttdeci">@ WHIST_EXIT_FAILURE</div><div class="ttdef"><b>Definition:</b> whist.h:597</div></div>
+<div class="ttc" id="alogging_8h_html_af9fad048f611a1a810ffa672a007c917"><div class="ttname"><a href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a></div><div class="ttdeci">#define LOG_ARGS(LOG_TAG)</div><div class="ttdef"><b>Definition:</b> logging.h:66</div></div>
+<div class="ttc" id="alogging_8h_html_a8f40cf1096c9b0050980ce64a7b21d9a"><div class="ttname"><a href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a></div><div class="ttdeci">#define FATAL_ERROR_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:76</div></div>
+<div class="ttc" id="alogging_8h_html_ae6f84e8321c3bc4f546cf4a2a4798064"><div class="ttname"><a href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a></div><div class="ttdeci">#define DEBUG_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:71</div></div>
+<div class="ttc" id="alogging_8h_html_ac4541472739b48ec14d768219540a13a"><div class="ttname"><a href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a></div><div class="ttdeci">#define LOG_FMT</div><div class="ttdef"><b>Definition:</b> logging.h:65</div></div>
+<div class="ttc" id="alogging_8h_html_a1eeca73435ee192b8d720a89e47b3c87"><div class="ttname"><a href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a></div><div class="ttdeci">#define INFO_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:72</div></div>
+<div class="ttc" id="alogging_8h_html_aa29007116d11e676da62a3ae1dae4402"><div class="ttname"><a href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a></div><div class="ttdeci">#define ERROR_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:75</div></div>
+<div class="ttc" id="alogging_8h_html_a34cab68c5e544eb2a0f0fdf344e327e6"><div class="ttname"><a href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a></div><div class="ttdeci">#define WARNING_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:74</div></div>
+<div class="ttc" id="alogging_8h_html_ac5445774555999e2d5b299937810fbd6"><div class="ttname"><a href="logging_8h.html#ac5445774555999e2d5b299937810fbd6">METRIC_TAG</a></div><div class="ttdeci">#define METRIC_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:73</div></div>
+<div class="ttc" id="alogging_8h_html_a806511f4930171733227c99101dc0606"><div class="ttname"><a href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a></div><div class="ttdeci">#define NEWLINE</div><div class="ttdef"><b>Definition:</b> logging.h:68</div></div>
+<div class="ttc" id="awhist_8h_html_aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e"><div class="ttname"><a href="whist_8h.html#aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e">WHIST_EXIT_FAILURE</a></div><div class="ttdeci">@ WHIST_EXIT_FAILURE</div><div class="ttdef"><b>Definition:</b> whist.h:627</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_128beccb94ee56ef1e878679d37b9b34.html">logging</a></li><li class="navelem"><a class="el" href="logging_8h.html">logging.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_550e69c9c799797ced6dd0f8eb42fef6.html">logging</a></li><li class="navelem"><a class="el" href="logging_8h.html">logging.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

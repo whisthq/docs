@@ -88,52 +88,60 @@ $(document).ready(function(){initNavTree('client_2video_8h_source.html',''); ini
 <a href="client_2video_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CLIENT_VIDEO_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CLIENT_VIDEO_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">Includes</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="whist_8h.html">whist/core/whist.h</a>&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="whist_2network_2network_8h.html">whist/network/network.h</a>&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="decode_8h.html">whist/video/codec/decode.h</a>&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="avpacket__buffer_8h.html">whist/utils/avpacket_buffer.h</a>&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">Public Functions</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#a759f71f304c11873e67bf7cc3f2d08a8">init_video</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;int32_t <a class="code" href="client_2video_8h.html#a5db18738906fd04329094890a035cd11">receive_video</a>(<a class="code" href="structWhistPacket.html">WhistPacket</a>* packet);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#a39d6b8b70fbb92596ede52637c8b3282">update_video</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_2video_8h.html#a2a3e0af9f1b7b7468019171307f97a2f">init_video_renderer</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">Includes</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="whist_8h.html">whist/core/whist.h</a>&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">Defines</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifndef RENDERING_IN_VIRTUAL_ENVIRONMENT</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="client_2video_8h.html#aa05932bcd2b8049280c9e3a9149f985f">   56</a></span>&#160;<span class="preprocessor">#define RENDERING_IN_VIRTUAL_ENVIRONMENT 0</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">   59</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structVideoContext.html">VideoContext</a> <a class="code" href="structVideoContext.html">VideoContext</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_2video_8h.html#a31bb0ec0bca0c25284f57e357c6da8ab">render_video</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#a120d323bd5860a23810ea5174a8f2f36">destroy_video</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#a460fea5c8cd411b76d7b5c7e68ee0ede">set_video_active_resizing</a>(<span class="keywordtype">bool</span> is_resizing);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif  // CLIENT_VIDEO_H</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">Public Functions</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="structVideoContext.html">VideoContext</a>* <a class="code" href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136">init_video</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#a8ea4d907c436a15fadf10105fea3e954">receive_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context, <a class="code" href="structWhistPacket.html">WhistPacket</a>* packet);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#a36642bb10a0e6def2d693135279e54d1">update_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_2video_8h.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<a class="code" href="structNetworkStatistics.html">NetworkStatistics</a> <a class="code" href="client_2video_8h.html#a9be05a788c0ccc8513912da3dc7caf0c">get_video_network_statistics</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#af1d344158f4b8ed1ba11af1a86d27789">destroy_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif  // CLIENT_VIDEO_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aavpacket__buffer_8h_html"><div class="ttname"><a href="avpacket__buffer_8h.html">avpacket_buffer.h</a></div></div>
-<div class="ttc" id="aclient_2video_8h_html_a759f71f304c11873e67bf7cc3f2d08a8"><div class="ttname"><a href="client_2video_8h.html#a759f71f304c11873e67bf7cc3f2d08a8">init_video</a></div><div class="ttdeci">void init_video()</div><div class="ttdoc">Create the SDL video thread.</div><div class="ttdef"><b>Definition:</b> video.c:744</div></div>
+<div class="ttc" id="aclient_2video_8h_html_ad2c9432e82a29d685319fbc2725cd136"><div class="ttname"><a href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136">init_video</a></div><div class="ttdeci">VideoContext * init_video()</div><div class="ttdoc">This will initialize the video system. The video system will receive video packets,...</div><div class="ttdef"><b>Definition:</b> video.c:150</div></div>
+<div class="ttc" id="astructVideoContext_html"><div class="ttname"><a href="structVideoContext.html">VideoContext</a></div><div class="ttdef"><b>Definition:</b> video.c:57</div></div>
+<div class="ttc" id="aclient_2video_8h_html_a8ea4d907c436a15fadf10105fea3e954"><div class="ttname"><a href="client_2video_8h.html#a8ea4d907c436a15fadf10105fea3e954">receive_video</a></div><div class="ttdeci">void receive_video(VideoContext *video_context, WhistPacket *packet)</div><div class="ttdoc">Receive video packet.</div><div class="ttdef"><b>Definition:</b> video.c:245</div></div>
+<div class="ttc" id="aclient_2video_8h_html_a9be05a788c0ccc8513912da3dc7caf0c"><div class="ttname"><a href="client_2video_8h.html#a9be05a788c0ccc8513912da3dc7caf0c">get_video_network_statistics</a></div><div class="ttdeci">NetworkStatistics get_video_network_statistics(VideoContext *video_context)</div><div class="ttdoc">Gets any networking statistics from the video.</div><div class="ttdef"><b>Definition:</b> video.c:503</div></div>
+<div class="ttc" id="astructWhistPacket_html"><div class="ttname"><a href="structWhistPacket.html">WhistPacket</a></div><div class="ttdoc">Packet of data to be sent over a SocketContextData.</div><div class="ttdef"><b>Definition:</b> network.h:181</div></div>
+<div class="ttc" id="aclient_2video_8h_html_af1d344158f4b8ed1ba11af1a86d27789"><div class="ttname"><a href="client_2video_8h.html#af1d344158f4b8ed1ba11af1a86d27789">destroy_video</a></div><div class="ttdeci">void destroy_video(VideoContext *video_context)</div><div class="ttdoc">Destroy the video context.</div><div class="ttdef"><b>Definition:</b> video.c:187</div></div>
+<div class="ttc" id="aclient_2video_8h_html_ae91e2215c8c94bdb14b3c01430b8ca69"><div class="ttname"><a href="client_2video_8h.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a></div><div class="ttdeci">int render_video(VideoContext *video_context)</div><div class="ttdoc">Render the video frame (If any are available to render)</div><div class="ttdef"><b>Definition:</b> video.c:288</div></div>
 <div class="ttc" id="awhist_8h_html"><div class="ttname"><a href="whist_8h.html">whist.h</a></div><div class="ttdoc">This file contains the core of Whist custom structs and definitions used throughout.</div></div>
-<div class="ttc" id="aclient_2video_8h_html_a460fea5c8cd411b76d7b5c7e68ee0ede"><div class="ttname"><a href="client_2video_8h.html#a460fea5c8cd411b76d7b5c7e68ee0ede">set_video_active_resizing</a></div><div class="ttdeci">void set_video_active_resizing(bool is_resizing)</div><div class="ttdoc">Set the global variable 'resizing' to true if the SDL window is being resized, else false.</div><div class="ttdef"><b>Definition:</b> video.c:1291</div></div>
-<div class="ttc" id="astructWhistPacket_html"><div class="ttname"><a href="structWhistPacket.html">WhistPacket</a></div><div class="ttdoc">Packet of data to be sent over a SocketContextData.</div><div class="ttdef"><b>Definition:</b> network.h:183</div></div>
-<div class="ttc" id="adecode_8h_html"><div class="ttname"><a href="decode_8h.html">decode.h</a></div><div class="ttdoc">This file contains the code to create a video decoder and use that.</div></div>
-<div class="ttc" id="aclient_2video_8h_html_a120d323bd5860a23810ea5174a8f2f36"><div class="ttname"><a href="client_2video_8h.html#a120d323bd5860a23810ea5174a8f2f36">destroy_video</a></div><div class="ttdeci">void destroy_video()</div><div class="ttdoc">Free the video thread and VideoContext data to exit.</div><div class="ttdef"><b>Definition:</b> video.c:1231</div></div>
-<div class="ttc" id="awhist_2network_2network_8h_html"><div class="ttname"><a href="whist_2network_2network_8h.html">network.h</a></div><div class="ttdoc">This file contains all code that interacts directly with sockets.</div></div>
-<div class="ttc" id="aclient_2video_8h_html_a31bb0ec0bca0c25284f57e357c6da8ab"><div class="ttname"><a href="client_2video_8h.html#a31bb0ec0bca0c25284f57e357c6da8ab">render_video</a></div><div class="ttdeci">int render_video()</div><div class="ttdoc">Render the video frame (If any are available to render)</div><div class="ttdef"><b>Definition:</b> video.c:1036</div></div>
-<div class="ttc" id="aclient_2video_8h_html_a5db18738906fd04329094890a035cd11"><div class="ttname"><a href="client_2video_8h.html#a5db18738906fd04329094890a035cd11">receive_video</a></div><div class="ttdeci">int32_t receive_video(WhistPacket *packet)</div><div class="ttdoc">Receive video packet.</div><div class="ttdef"><b>Definition:</b> video.c:824</div></div>
-<div class="ttc" id="aclient_2video_8h_html_a2a3e0af9f1b7b7468019171307f97a2f"><div class="ttname"><a href="client_2video_8h.html#a2a3e0af9f1b7b7468019171307f97a2f">init_video_renderer</a></div><div class="ttdeci">int init_video_renderer()</div><div class="ttdoc">Initialize the video renderer.</div><div class="ttdef"><b>Definition:</b> video.c:894</div></div>
-<div class="ttc" id="aclient_2video_8h_html_a39d6b8b70fbb92596ede52637c8b3282"><div class="ttname"><a href="client_2video_8h.html#a39d6b8b70fbb92596ede52637c8b3282">update_video</a></div><div class="ttdeci">void update_video()</div><div class="ttdoc">Calculate statistics about bitrate, I-Frame, etc. and request video update from the server.</div><div class="ttdef"><b>Definition:</b> video.c:757</div></div>
+<div class="ttc" id="astructNetworkStatistics_html"><div class="ttname"><a href="structNetworkStatistics.html">NetworkStatistics</a></div><div class="ttdef"><b>Definition:</b> network_algorithm.h:52</div></div>
+<div class="ttc" id="aclient_2video_8h_html_a36642bb10a0e6def2d693135279e54d1"><div class="ttname"><a href="client_2video_8h.html#a36642bb10a0e6def2d693135279e54d1">update_video</a></div><div class="ttdeci">void update_video(VideoContext *video_context)</div><div class="ttdoc">Does any pending work the video context wants to do. (Including decoding frames, and calculating stat...</div><div class="ttdef"><b>Definition:</b> video.c:210</div></div>
+<div class="ttc" id="aclient_2video_8h_html_a14321021ee450305fdb8c787a3e1accc"><div class="ttname"><a href="client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a></div><div class="ttdeci">bool has_video_rendered_yet(VideoContext *video_context)</div><div class="ttdoc">Returns whether or not a video frame has been rendered. (NOT including any &quot;loading animation&quot; frames...</div><div class="ttdef"><b>Definition:</b> video.c:499</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

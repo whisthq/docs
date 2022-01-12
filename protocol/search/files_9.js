@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['linuxcapture_2ec_2084',['linuxcapture.c',['../linuxcapture_8c.html',1,'']]],
-  ['linuxcursor_2ec_2085',['linuxcursor.c',['../linuxcursor_8c.html',1,'']]],
-  ['lodepng_2ec_2086',['lodepng.c',['../lodepng_8c.html',1,'']]],
-  ['lodepng_2eh_2087',['lodepng.h',['../lodepng_8h.html',1,'']]],
-  ['log_5fstatistic_2ec_2088',['log_statistic.c',['../log__statistic_8c.html',1,'']]],
-  ['log_5fstatistic_2eh_2089',['log_statistic.h',['../log__statistic_8h.html',1,'']]],
-  ['logging_2ec_2090',['logging.c',['../logging_8c.html',1,'']]],
-  ['logging_2eh_2091',['logging.h',['../logging_8h.html',1,'']]]
+  ['mac_5fclipboard_2ec_2361',['mac_clipboard.c',['../mac__clipboard_8c.html',1,'']]],
+  ['mac_5futils_2ec_2362',['mac_utils.c',['../mac__utils_8c.html',1,'']]],
+  ['mac_5futils_2eh_2363',['mac_utils.h',['../mac__utils_8h.html',1,'']]],
+  ['main_2ec_2364',['main.c',['../client_2main_8c.html',1,'(Global Namespace)'],['../server_2main_8c.html',1,'(Global Namespace)']]]
 ];

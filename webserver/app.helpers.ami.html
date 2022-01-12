@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>app.helpers.ami package &#8212; Whist Webserver  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="app.helpers.aws package" href="app.helpers.aws.html" />
+    <link rel="prev" title="app.helpers package" href="app.helpers.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="app-helpers-ami-package">
+<h1>app.helpers.ami package<a class="headerlink" href="#app-helpers-ami-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-app.helpers.ami.ami_upgrade">
+<span id="app-helpers-ami-ami-upgrade-module"></span><h2>app.helpers.ami.ami_upgrade module<a class="headerlink" href="#module-app.helpers.ami.ami_upgrade" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.ami.ami_upgrade.create_ami_buffer">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.ami.ami_upgrade.</span></span><span class="sig-name descname"><span class="pre">create_ami_buffer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_commit_hash</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region_to_ami_id_mapping</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.ami.ami_upgrade.create_ami_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates new instances for the AMIs in the regions that are passed in as the keys of the
+region_to_ami_id_mapping</p>
+<dl class="simple">
+<dt>This happens in the following steps:</dt><dd><ul class="simple">
+<li><p>Get current active AMIs in the database, these will be marked as inactive once
+we have sufficient buffer capacity from the new AMIs</p></li>
+<li><p>Insert the new AMIs that are passed in as an argument to this function and associate them
+with the client_commit_hash.</p></li>
+<li><p>Launch new instances in regions with the new AMIs and wait until they are up and mark
+themselves as active in the instances table. Since this launching the instances is going
+to take time, we will be using a thread per each region to parallelize the process.</p></li>
+</ul>
+</dd>
+<dt>Edge cases:</dt><dd><ul class="simple">
+<li><p>What if the argument region_to_ami_id_mapping has more regions than we currently support.
+This should be fine as we use the regions passed in as the argument as a reference to
+spin up instances in new regions.</p></li>
+<li><p>What if the argument region_to_ami_id_mapping has less number of regions than we
+currently support. Then, we would update the AMIs in the regions that are passed in as
+the argument and mark the AMIs in missing regions as disabled. Also, we would be marking
+all the current running instances for draining. So, this would essentially purge the
+regions that are missing in the passed in arguments.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client_commit_hash</strong> – Commit hash of the client that is compatible with the AMIs that are
+going to be passed in as the other argument.</p></li>
+<li><p><strong>region_to_ami_id_mapping</strong> – String representation of Dict&lt;Region, AMI&gt;. Dict of regions to
+AMIs that are compatible with the &lt;client_commit_hash&gt;.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.ami.ami_upgrade.fetch_current_running_instances">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.ami.ami_upgrade.</span></span><span class="sig-name descname"><span class="pre">fetch_current_running_instances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amis_to_exclude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">app.database.models.cloud.InstanceInfo</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.ami.ami_upgrade.fetch_current_running_instances" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Fetches the instances that are either</dt><dd><dl class="simple">
+<dt>ACTIVE - Instances that were launched and have potentially users running their applications</dt><dd><p>on it.</p>
+</dd>
+<dt>PRE_CONNECTION - Instances that are launched few instants ago but haven’t</dt><dd><p>marked themselves active in the database through host service.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>to</strong> (<em>amis_to_exclude -&gt; List of new AMIs from this upgrade. We will be using this list</em>) – differentiate between the instances launched from new AMIs that we are going to upgrade
+to and the current/older AMIs. We can just mark all the running instances as DRAINING
+before we start the instances with new AMI but that is going to increase the length of
+our unavailable window for users. This reduces the window by the time it takes to spin
+up and warm up an AWS instance, which can be several minutes.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List[InstanceInfo] -&gt; List of instances that are currently running.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.ami.ami_upgrade.insert_new_amis">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.ami.ami_upgrade.</span></span><span class="sig-name descname"><span class="pre">insert_new_amis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_commit_hash</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region_to_ami_id_mapping</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">app.database.models.cloud.RegionToAmi</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.ami.ami_upgrade.insert_new_amis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts new AMIs (but doesn’t mark them as active) into the RegionToAmi table.
+Will be invoked from the Flask CLI command to upgrade the AMIs for regions.
+We should mark the new AMIs as active only after we cleanup the existing instances and AMIs.
+If an AMI is already present, returns its row.
+:param client_commit_hash: Commit hash of the client that is compatible with the AMIs</p>
+<blockquote>
+<div><p>that are going to be passed in as the other argument.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>region_to_ami_id_mapping</strong> – Dict&lt;Region, AMI&gt; Dict of regions to AMIs that are compatible
+with the &lt;client_commit_hash&gt;.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of the regionToAmi objects for this set of regions and commit hashes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.ami.ami_upgrade.launch_new_ami_buffer">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.ami.ami_upgrade.</span></span><span class="sig-name descname"><span class="pre">launch_new_ami_buffer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ami_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_in_thread_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flask_app</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">flask.app.Flask</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.ami.ami_upgrade.launch_new_ami_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will be invoked from the Flask CLI command to upgrade the AMIs for regions.
+Inserts new AMIs into the RegionToAmi table and blocks until the instance is started, and the
+host service is active and has marked the instance as active in the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>region_name</strong> – Name of the region in which new instances neeed to be launched.</p></li>
+<li><p><strong>ami_id</strong> – AMI for the instances that need to be launched.</p></li>
+<li><p><strong>index_in_thread_list</strong> – which bool in the thread list to set to true for exception tracking</p></li>
+<li><p><strong>flask_app</strong> – Needed for providing the context need for interacting with the database.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.helpers.ami.ami_upgrade.swapover_amis">
+<span class="sig-prename descclassname"><span class="pre">app.helpers.ami.ami_upgrade.</span></span><span class="sig-name descname"><span class="pre">swapover_amis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_amis_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amis_failed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.ami.ami_upgrade.swapover_amis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actually swaps over which AMIs are active, once a new buffer is spun up. The swapover only
+happens if there were no errors starting buffers for the new AMIs. That is, if even one fails
+to create a buffer, the whole swapover operation will fail and the new AMIs will be removed from
+the database, effectively making the upgrade flow atomic.</p>
+<dl class="simple">
+<dt>STEPS:</dt><dd><ol class="arabic simple">
+<li><p>Drains all instances of old AMIs</p></li>
+<li><p>Sets the old AMIs to inactive and the new ones to active.</p></li>
+</ol>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>new_amis</strong> – The new AMI rows we want to be active.</p></li>
+<li><p><strong>amis_failed</strong> – Indicates if any ami failed to create a buffer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-app.helpers.ami">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.helpers.ami" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Whist Webserver</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="authentication.html">Authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responsibilities.html">Webserver Responsibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripe.html">Stripe Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="services.html">Other Services</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Module Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="app.html">app package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">Module Documentation</a><ul>
+  <li><a href="app.html">app package</a><ul>
+  <li><a href="app.helpers.html">app.helpers package</a><ul>
+      <li>Previous: <a href="app.helpers.html" title="previous chapter">app.helpers package</a></li>
+      <li>Next: <a href="app.helpers.aws.html" title="next chapter">app.helpers.aws package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;Whist Technologies, Inc. 2020-2022.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/app.helpers.ami.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -42,7 +42,7 @@ var linuxcursor_8c =
       [ "HAND_GRABBING_CURSOR_HASH", "linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768acd4b0dd64f273d24dcebef05e507ae2e", null ],
       [ "CROSSHAIR_CURSOR_HASH", "linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768acbe3fdfaaa5d74cfd73639684c87c063", null ]
     ] ],
-    [ "get_current_cursor", "linuxcursor_8c.html#ac5aef5326566949f36f110411b227606", null ],
-    [ "get_cursor_id", "linuxcursor_8c.html#a018eb208fd425a42278419fbe6b0a6c8", null ],
+    [ "get_current_cursor", "linuxcursor_8c.html#adac79748ef15f0780a545d3b0c047986", null ],
+    [ "get_cursor_id", "linuxcursor_8c.html#aab4d52a3aeed2e3ef62ac0c759e42301", null ],
     [ "init_cursors", "linuxcursor_8c.html#a4df495b481d3b602c8a590693b51703c", null ]
 ];

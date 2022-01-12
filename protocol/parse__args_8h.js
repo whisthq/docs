@@ -1,4 +1,5 @@
 var parse__args_8h =
 [
-    [ "server_parse_args", "parse__args_8h.html#afdcf369ce8dfb7931f2925c42b744cfc", null ]
+    [ "whist_server_config", "parse__args_8h.html#aecd820e65ec855cf104d6f61bfe8f384", null ],
+    [ "server_parse_args", "parse__args_8h.html#a6413acffdbcf49f867f9f9288610939f", null ]
 ];

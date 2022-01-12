@@ -95,11 +95,23 @@ $(document).ready(function(){initNavTree('sdl__utils_8c.html',''); initResizable
 <div class="textblock"><code>#include &quot;<a class="el" href="sdl__utils_8h_source.html">sdl_utils.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="png_8h_source.html">whist/utils/png.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="lodepng_8h_source.html">whist/utils/lodepng.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="client__statistic_8h_source.html">client_statistic.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="color_8h_source.html">whist/utils/color.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="native__window__utils_8h_source.html">native_window_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="client__utils_8h_source.html">client_utils.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a10b761958b30d1f2611a3a7dfa0d9381"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a10b761958b30d1f2611a3a7dfa0d9381">CURSORIMAGE_A</a>&#160;&#160;&#160;0xff000000</td></tr>
+<tr class="separator:a10b761958b30d1f2611a3a7dfa0d9381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbf0790655d1cdb41690ef2c44626c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a0fbf0790655d1cdb41690ef2c44626c2">CURSORIMAGE_R</a>&#160;&#160;&#160;0x00ff0000</td></tr>
+<tr class="separator:a0fbf0790655d1cdb41690ef2c44626c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8c4b05a876fdaac747e4b3b85e5574"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a4e8c4b05a876fdaac747e4b3b85e5574">CURSORIMAGE_G</a>&#160;&#160;&#160;0x0000ff00</td></tr>
+<tr class="separator:a4e8c4b05a876fdaac747e4b3b85e5574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea5eab775ceae86f0aee1829a91c052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a7ea5eab775ceae86f0aee1829a91c052">CURSORIMAGE_B</a>&#160;&#160;&#160;0x000000ff</td></tr>
+<tr class="separator:a7ea5eab775ceae86f0aee1829a91c052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4f768ca0968a4e5944d25236f9a080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#ade4f768ca0968a4e5944d25236f9a080">NUMBER_LOADING_FRAMES</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:ade4f768ca0968a4e5944d25236f9a080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d249b006c12fe0b7622c0d3b2d1650d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a2d249b006c12fe0b7622c0d3b2d1650d">RGBA_MASK_A</a>&#160;&#160;&#160;0xff000000</td></tr>
 <tr class="separator:a2d249b006c12fe0b7622c0d3b2d1650d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae34216ffba563226782368f47bf81216"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#ae34216ffba563226782368f47bf81216">RGBA_MASK_B</a>&#160;&#160;&#160;0x00ff0000</td></tr>
@@ -111,40 +123,54 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7210c0d222c584be91c2f0584f8d6a10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a7210c0d222c584be91c2f0584f8d6a10">send_captured_key</a> (SDL_Keycode key, int type, int time)</td></tr>
-<tr class="separator:a7210c0d222c584be91c2f0584f8d6a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff48bb1fe7d404dc2d22473427fdc36d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#aff48bb1fe7d404dc2d22473427fdc36d">set_window_icon_from_png</a> (SDL_Window *sdl_window, char *filename)</td></tr>
-<tr class="separator:aff48bb1fe7d404dc2d22473427fdc36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3f05cea89b04346668e643601236a3"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a8a3f05cea89b04346668e643601236a3">sdl_surface_from_png_file</a> (char *filename)</td></tr>
+<tr class="memdesc:a8a3f05cea89b04346668e643601236a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an SDL_Surface from a png file.  <a href="sdl__utils_8c.html#a8a3f05cea89b04346668e643601236a3">More...</a><br /></td></tr>
+<tr class="separator:a8a3f05cea89b04346668e643601236a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33cb676d6c720b987d61393ae409b4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#aa33cb676d6c720b987d61393ae409b4a">sdl_free_png_file_rgb_surface</a> (SDL_Surface *surface)</td></tr>
+<tr class="memdesc:aa33cb676d6c720b987d61393ae409b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL_Surface created by sdl_surface_from_png_file.  <a href="sdl__utils_8c.html#aa33cb676d6c720b987d61393ae409b4a">More...</a><br /></td></tr>
+<tr class="separator:aa33cb676d6c720b987d61393ae409b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd539439cacc3bb4a8a93037ac724c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#adfd539439cacc3bb4a8a93037ac724c1">sdl_present_pending_framebuffer</a> ()</td></tr>
+<tr class="memdesc:adfd539439cacc3bb4a8a93037ac724c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the framebuffer from any pending framebuffer call, Then RenderPresent if sdl_render_framebuffer is pending.  <a href="sdl__utils_8c.html#adfd539439cacc3bb4a8a93037ac724c1">More...</a><br /></td></tr>
+<tr class="separator:adfd539439cacc3bb4a8a93037ac724c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd7f5dc9778e5a9f64354459f6ad8362"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362">init_sdl</a> (int target_output_width, int target_output_height, char *name, char *icon_filename)</td></tr>
 <tr class="memdesc:abd7f5dc9778e5a9f64354459f6ad8362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL window, with the currently running thread at the owner.  <a href="sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362">More...</a><br /></td></tr>
 <tr class="separator:abd7f5dc9778e5a9f64354459f6ad8362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af36c30a59cac797df9bd73e4531c58cd"><td class="memItemLeft" align="right" valign="top">SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#af36c30a59cac797df9bd73e4531c58cd">init_renderer</a> (SDL_Window *sdl_window)</td></tr>
-<tr class="memdesc:af36c30a59cac797df9bd73e4531c58cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL Renderer, using the current SDL <code>window</code>.  <a href="sdl__utils_8c.html#af36c30a59cac797df9bd73e4531c58cd">More...</a><br /></td></tr>
-<tr class="separator:af36c30a59cac797df9bd73e4531c58cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4745eeac1327707588a5a422ae5f9d81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81">destroy_sdl</a> (SDL_Window *window_param)</td></tr>
 <tr class="memdesc:a4745eeac1327707588a5a422ae5f9d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81">More...</a><br /></td></tr>
 <tr class="separator:a4745eeac1327707588a5a422ae5f9d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b2a1365885e6c3b0e2e42d9e38d56a8"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a1b2a1365885e6c3b0e2e42d9e38d56a8">sdl_surface_from_png_file</a> (char *filename)</td></tr>
-<tr class="memdesc:a1b2a1365885e6c3b0e2e42d9e38d56a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a PNG file to an SDL surface using lodepng.  <a href="sdl__utils_8c.html#a1b2a1365885e6c3b0e2e42d9e38d56a8">More...</a><br /></td></tr>
-<tr class="separator:a1b2a1365885e6c3b0e2e42d9e38d56a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1168ed24252f49c1e88570cce929ccb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a1168ed24252f49c1e88570cce929ccb1">free_sdl_rgb_surface</a> (SDL_Surface *surface)</td></tr>
-<tr class="memdesc:a1168ed24252f49c1e88570cce929ccb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the SDL_Surface and its pixels array. Only call this if the pixels array has been malloc'ed, and the surface was created via <code>SDL_CreateRGBSurfaceFrom</code>  <a href="sdl__utils_8c.html#a1168ed24252f49c1e88570cce929ccb1">More...</a><br /></td></tr>
-<tr class="separator:a1168ed24252f49c1e88570cce929ccb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87e59165386162d74cf290669cf1e5d8"><td class="memItemLeft" align="right" valign="top">SDL_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a87e59165386162d74cf290669cf1e5d8">safe_SDL_CreateMutex</a> ()</td></tr>
-<tr class="memdesc:a87e59165386162d74cf290669cf1e5d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around SDL_CreateMutex that will correctly exit the protocol when SDL_LockMutex fails.  <a href="sdl__utils_8c.html#a87e59165386162d74cf290669cf1e5d8">More...</a><br /></td></tr>
-<tr class="separator:a87e59165386162d74cf290669cf1e5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9dc00e8f51bb7c29c05499134fe2ddb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#ad9dc00e8f51bb7c29c05499134fe2ddb">safe_SDL_LockMutex</a> (SDL_mutex *mutex)</td></tr>
-<tr class="memdesc:ad9dc00e8f51bb7c29c05499134fe2ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around SDL_LockMutex that will correctly exit the protocol when SDL_LockMutex fails.  <a href="sdl__utils_8c.html#ad9dc00e8f51bb7c29c05499134fe2ddb">More...</a><br /></td></tr>
-<tr class="separator:ad9dc00e8f51bb7c29c05499134fe2ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bf4241c001c12d54c4b59d77f422183"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a1bf4241c001c12d54c4b59d77f422183">safe_SDL_TryLockMutex</a> (SDL_mutex *mutex)</td></tr>
-<tr class="memdesc:a1bf4241c001c12d54c4b59d77f422183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around SDL_TryLockMutex that will correctly exit the protocol when SDL_TryLockMutex fails.  <a href="sdl__utils_8c.html#a1bf4241c001c12d54c4b59d77f422183">More...</a><br /></td></tr>
-<tr class="separator:a1bf4241c001c12d54c4b59d77f422183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd0cc7567697175ece165e1495dcaef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#abbd0cc7567697175ece165e1495dcaef">safe_SDL_UnlockMutex</a> (SDL_mutex *mutex)</td></tr>
-<tr class="memdesc:abbd0cc7567697175ece165e1495dcaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around SDL_UnlockMutex that will correctly exit the protocol when SDL_UnlockMutex fails.  <a href="sdl__utils_8c.html#abbd0cc7567697175ece165e1495dcaef">More...</a><br /></td></tr>
-<tr class="separator:abbd0cc7567697175ece165e1495dcaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3bd5c19a5f8d2a5e39f067510ddd373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#aa3bd5c19a5f8d2a5e39f067510ddd373">safe_SDL_CondWait</a> (SDL_cond *cond, SDL_mutex *mutex)</td></tr>
-<tr class="memdesc:aa3bd5c19a5f8d2a5e39f067510ddd373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around SDL_CondWait that will correctly exit the protocol when SDL_LockMutex fails.  <a href="sdl__utils_8c.html#aa3bd5c19a5f8d2a5e39f067510ddd373">More...</a><br /></td></tr>
-<tr class="separator:aa3bd5c19a5f8d2a5e39f067510ddd373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a20ede981c49da978e972e7e61629d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a2a20ede981c49da978e972e7e61629d8">sdl_renderer_resize_window</a> (int width, int height)</td></tr>
+<tr class="memdesc:a2a20ede981c49da978e972e7e61629d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the window gets resized, call this function to update the internal rendering dimensions. This function will also sync the server to those dimensions.  <a href="sdl__utils_8c.html#a2a20ede981c49da978e972e7e61629d8">More...</a><br /></td></tr>
+<tr class="separator:a2a20ede981c49da978e972e7e61629d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1c03b128be02a97fe22c4744445f3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#aec1c03b128be02a97fe22c4744445f3a">sdl_update_framebuffer_loading_screen</a> (int idx)</td></tr>
+<tr class="memdesc:aec1c03b128be02a97fe22c4744445f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the framebuffer to a loading screen image. Remember to call sdl_render_framebuffer later.  <a href="sdl__utils_8c.html#aec1c03b128be02a97fe22c4744445f3a">More...</a><br /></td></tr>
+<tr class="separator:aec1c03b128be02a97fe22c4744445f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbcc14b6e31b62aedb3db07b1b45e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a9dbcc14b6e31b62aedb3db07b1b45e1f">sdl_update_framebuffer</a> (Uint8 *data[4], int linesize[4], int width, int height)</td></tr>
+<tr class="memdesc:a9dbcc14b6e31b62aedb3db07b1b45e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the renderer's framebuffer, using the provided texture.  <a href="sdl__utils_8c.html#a9dbcc14b6e31b62aedb3db07b1b45e1f">More...</a><br /></td></tr>
+<tr class="separator:a9dbcc14b6e31b62aedb3db07b1b45e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c518634170ca9adf73eb19549e272bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a3c518634170ca9adf73eb19549e272bc">sdl_render_framebuffer</a> ()</td></tr>
+<tr class="memdesc:a3c518634170ca9adf73eb19549e272bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will mark the framebuffer as ready-to-render, and <code>update_pending_sdl_tasks</code> will eventually render it.  <a href="sdl__utils_8c.html#a3c518634170ca9adf73eb19549e272bc">More...</a><br /></td></tr>
+<tr class="separator:a3c518634170ca9adf73eb19549e272bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc658fd7ea4e45e924bf963ec874a0bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#acc658fd7ea4e45e924bf963ec874a0bd">sdl_render_pending</a> ()</td></tr>
+<tr class="memdesc:acc658fd7ea4e45e924bf963ec874a0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not a framebuffer is pending to render.  <a href="sdl__utils_8c.html#acc658fd7ea4e45e924bf963ec874a0bd">More...</a><br /></td></tr>
+<tr class="separator:acc658fd7ea4e45e924bf963ec874a0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1753dd77cc8d93c348f4cfaa69a02c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a5b1753dd77cc8d93c348f4cfaa69a02c">sdl_update_cursor</a> (<a class="el" href="structWhistCursorImage.html">WhistCursorImage</a> *cursor)</td></tr>
+<tr class="memdesc:a5b1753dd77cc8d93c348f4cfaa69a02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the cursor.  <a href="sdl__utils_8c.html#a5b1753dd77cc8d93c348f4cfaa69a02c">More...</a><br /></td></tr>
+<tr class="separator:a5b1753dd77cc8d93c348f4cfaa69a02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1081ae59fbf90e16f9d12ef7a97f0555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a1081ae59fbf90e16f9d12ef7a97f0555">sdl_render_window_titlebar_color</a> (<a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> color)</td></tr>
+<tr class="memdesc:a1081ae59fbf90e16f9d12ef7a97f0555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the color of the window's titlebar.  <a href="sdl__utils_8c.html#a1081ae59fbf90e16f9d12ef7a97f0555">More...</a><br /></td></tr>
+<tr class="separator:a1081ae59fbf90e16f9d12ef7a97f0555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5740e1ea4968c3f393eff0873c596557"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a5740e1ea4968c3f393eff0873c596557">sdl_set_window_title</a> (const char *requested_window_title)</td></tr>
+<tr class="memdesc:a5740e1ea4968c3f393eff0873c596557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the title of the window.  <a href="sdl__utils_8c.html#a5740e1ea4968c3f393eff0873c596557">More...</a><br /></td></tr>
+<tr class="separator:a5740e1ea4968c3f393eff0873c596557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4115192313cdb78079bd69ca3fbf5606"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a4115192313cdb78079bd69ca3fbf5606">sdl_set_fullscreen</a> (bool is_fullscreen)</td></tr>
+<tr class="memdesc:a4115192313cdb78079bd69ca3fbf5606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the window's fullscreen state.  <a href="sdl__utils_8c.html#a4115192313cdb78079bd69ca3fbf5606">More...</a><br /></td></tr>
+<tr class="separator:a4115192313cdb78079bd69ca3fbf5606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586d6736d62d1a7ed201f4573fc99d3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a586d6736d62d1a7ed201f4573fc99d3f">sdl_is_window_visible</a> ()</td></tr>
+<tr class="memdesc:a586d6736d62d1a7ed201f4573fc99d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the window is currently visible.  <a href="sdl__utils_8c.html#a586d6736d62d1a7ed201f4573fc99d3f">More...</a><br /></td></tr>
+<tr class="separator:a586d6736d62d1a7ed201f4573fc99d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2d67075b53450c4364f252e34cd978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#ade2d67075b53450c4364f252e34cd978">sdl_update_pending_tasks</a> ()</td></tr>
+<tr class="memdesc:ade2d67075b53450c4364f252e34cd978"><td class="mdescLeft">&#160;</td><td class="mdescRight">The above functions may be expensive, and thus may have to be queued up. This function executes all of the currently internally queued actions.  <a href="sdl__utils_8c.html#ade2d67075b53450c4364f252e34cd978">More...</a><br /></td></tr>
+<tr class="separator:ade2d67075b53450c4364f252e34cd978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -154,18 +180,94 @@ Variables</h2></td></tr>
 <tr class="separator:a2a57d774e71166271bbff6c515111104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab491b7b6f8ad504dd96bdc5887d349e9"><td class="memItemLeft" align="right" valign="top">volatile SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a></td></tr>
 <tr class="separator:ab491b7b6f8ad504dd96bdc5887d349e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a242ea45e405e9d5ae92e440357e98c3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a242ea45e405e9d5ae92e440357e98c3c">skip_taskbar</a> = false</td></tr>
+<tr class="memitem:a242ea45e405e9d5ae92e440357e98c3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a242ea45e405e9d5ae92e440357e98c3c">skip_taskbar</a></td></tr>
 <tr class="separator:a242ea45e405e9d5ae92e440357e98c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557cdefd7d618aa9c5272f245dded55e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#aa9899c1c25688c008b90165331107ddf">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a557cdefd7d618aa9c5272f245dded55e">window_resize_mutex</a></td></tr>
+<tr class="separator:a557cdefd7d618aa9c5272f245dded55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5421dd315eda4c2e3347f85fc9c86c69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a5421dd315eda4c2e3347f85fc9c86c69">window_resize_timer</a></td></tr>
+<tr class="separator:a5421dd315eda4c2e3347f85fc9c86c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e35016b32376211dba7a8f028f3f88"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#af4e35016b32376211dba7a8f028f3f88">pending_resize_message</a> = false</td></tr>
+<tr class="separator:af4e35016b32376211dba7a8f028f3f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code to create and destroy SDL windows on the. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md64"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md62"></a>
 client.</h1>
-<h1><a class="anchor" id="autotoc_md65"></a>
+<h1><a class="anchor" id="autotoc_md63"></a>
 Usage</h1>
 <p>initSDL gets called first to create an SDL window, and destroySDL at the end to close the window. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a10b761958b30d1f2611a3a7dfa0d9381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10b761958b30d1f2611a3a7dfa0d9381">&#9670;&nbsp;</a></span>CURSORIMAGE_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURSORIMAGE_A&#160;&#160;&#160;0xff000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ea5eab775ceae86f0aee1829a91c052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ea5eab775ceae86f0aee1829a91c052">&#9670;&nbsp;</a></span>CURSORIMAGE_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURSORIMAGE_B&#160;&#160;&#160;0x000000ff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e8c4b05a876fdaac747e4b3b85e5574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8c4b05a876fdaac747e4b3b85e5574">&#9670;&nbsp;</a></span>CURSORIMAGE_G</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURSORIMAGE_G&#160;&#160;&#160;0x0000ff00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fbf0790655d1cdb41690ef2c44626c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fbf0790655d1cdb41690ef2c44626c2">&#9670;&nbsp;</a></span>CURSORIMAGE_R</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURSORIMAGE_R&#160;&#160;&#160;0x00ff0000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade4f768ca0968a4e5944d25236f9a080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4f768ca0968a4e5944d25236f9a080">&#9670;&nbsp;</a></span>NUMBER_LOADING_FRAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUMBER_LOADING_FRAMES&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2d249b006c12fe0b7622c0d3b2d1650d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d249b006c12fe0b7622c0d3b2d1650d">&#9670;&nbsp;</a></span>RGBA_MASK_A</h2>
 
@@ -249,58 +351,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a1168ed24252f49c1e88570cce929ccb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1168ed24252f49c1e88570cce929ccb1">&#9670;&nbsp;</a></span>free_sdl_rgb_surface()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void free_sdl_rgb_surface </td>
-          <td>(</td>
-          <td class="paramtype">SDL_Surface *&#160;</td>
-          <td class="paramname"><em>surface</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Free the SDL_Surface and its pixels array. Only call this if the pixels array has been malloc'ed, and the surface was created via <code>SDL_CreateRGBSurfaceFrom</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">surface</td><td>The SDL_Surface to be freed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af36c30a59cac797df9bd73e4531c58cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af36c30a59cac797df9bd73e4531c58cd">&#9670;&nbsp;</a></span>init_renderer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Renderer* init_renderer </td>
-          <td>(</td>
-          <td class="paramtype">SDL_Window *&#160;</td>
-          <td class="paramname"><em>sdl_window</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates the SDL Renderer, using the current SDL <code>window</code>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sdl_window</td><td>The SDL Window to use </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="abd7f5dc9778e5a9f64354459f6ad8362"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd7f5dc9778e5a9f64354459f6ad8362">&#9670;&nbsp;</a></span>init_sdl()</h2>
 
@@ -353,23 +403,156 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aa3bd5c19a5f8d2a5e39f067510ddd373"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3bd5c19a5f8d2a5e39f067510ddd373">&#9670;&nbsp;</a></span>safe_SDL_CondWait()</h2>
+<a id="aa33cb676d6c720b987d61393ae409b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33cb676d6c720b987d61393ae409b4a">&#9670;&nbsp;</a></span>sdl_free_png_file_rgb_surface()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void safe_SDL_CondWait </td>
+          <td class="memname">void sdl_free_png_file_rgb_surface </td>
           <td>(</td>
-          <td class="paramtype">SDL_cond *&#160;</td>
-          <td class="paramname"><em>cond</em>, </td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>surface</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys an SDL_Surface created by sdl_surface_from_png_file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">surface</td><td>The SDL_Surface to free </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a586d6736d62d1a7ed201f4573fc99d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586d6736d62d1a7ed201f4573fc99d3f">&#9670;&nbsp;</a></span>sdl_is_window_visible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sdl_is_window_visible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether or not the window is currently visible. </p>
+<dl class="section return"><dt>Returns</dt><dd>False if the window is occluded or minimized, True otherwise</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is virtually instantaneous </dd></dl>
+
+</div>
+</div>
+<a id="adfd539439cacc3bb4a8a93037ac724c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd539439cacc3bb4a8a93037ac724c1">&#9670;&nbsp;</a></span>sdl_present_pending_framebuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_present_pending_framebuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the framebuffer from any pending framebuffer call, Then RenderPresent if sdl_render_framebuffer is pending. </p>
+
+</div>
+</div>
+<a id="a3c518634170ca9adf73eb19549e272bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c518634170ca9adf73eb19549e272bc">&#9670;&nbsp;</a></span>sdl_render_framebuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_render_framebuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This will mark the framebuffer as ready-to-render, and <code>update_pending_sdl_tasks</code> will eventually render it. </p>
+<dl class="section note"><dt>Note</dt><dd>Will make <code>sdl_render_pending</code> return true, up until <code>update_pending_sdl_tasks</code> is called on the main thread. </dd></dl>
+
+</div>
+</div>
+<a id="acc658fd7ea4e45e924bf963ec874a0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc658fd7ea4e45e924bf963ec874a0bd">&#9670;&nbsp;</a></span>sdl_render_pending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sdl_render_pending </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether or not a framebuffer is pending to render. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if <code>sdl_render_framebuffer</code> has been called, but <code>update_pending_sdl_tasks</code> has not been called. </dd></dl>
+
+</div>
+</div>
+<a id="a1081ae59fbf90e16f9d12ef7a97f0555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1081ae59fbf90e16f9d12ef7a97f0555">&#9670;&nbsp;</a></span>sdl_render_window_titlebar_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_render_window_titlebar_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistRGBColor.html">WhistRGBColor</a>&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the color of the window's titlebar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>The color to set the titlebar too</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is virtually instantaneous </dd></dl>
+
+</div>
+</div>
+<a id="a2a20ede981c49da978e972e7e61629d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a20ede981c49da978e972e7e61629d8">&#9670;&nbsp;</a></span>sdl_renderer_resize_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_renderer_resize_window </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SDL_mutex *&#160;</td>
-          <td class="paramname"><em>mutex</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -379,97 +562,72 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Wrapper around SDL_CondWait that will correctly exit the protocol when SDL_LockMutex fails. </p>
+<p>When the window gets resized, call this function to update the internal rendering dimensions. This function will also sync the server to those dimensions. </p>
 
 </div>
 </div>
-<a id="a87e59165386162d74cf290669cf1e5d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87e59165386162d74cf290669cf1e5d8">&#9670;&nbsp;</a></span>safe_SDL_CreateMutex()</h2>
+<a id="a4115192313cdb78079bd69ca3fbf5606"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4115192313cdb78079bd69ca3fbf5606">&#9670;&nbsp;</a></span>sdl_set_fullscreen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SDL_mutex* safe_SDL_CreateMutex </td>
+          <td class="memname">void sdl_set_fullscreen </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_fullscreen</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Wrapper around SDL_CreateMutex that will correctly exit the protocol when SDL_LockMutex fails. </p>
+<p>Update the window's fullscreen state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_fullscreen</td><td>If True, the window will become fullscreen If False, the window will return to windowed mode</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is virtually instantaneous </dd></dl>
 
 </div>
 </div>
-<a id="ad9dc00e8f51bb7c29c05499134fe2ddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9dc00e8f51bb7c29c05499134fe2ddb">&#9670;&nbsp;</a></span>safe_SDL_LockMutex()</h2>
+<a id="a5740e1ea4968c3f393eff0873c596557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5740e1ea4968c3f393eff0873c596557">&#9670;&nbsp;</a></span>sdl_set_window_title()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void safe_SDL_LockMutex </td>
+          <td class="memname">void sdl_set_window_title </td>
           <td>(</td>
-          <td class="paramtype">SDL_mutex *&#160;</td>
-          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>window_title</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Wrapper around SDL_LockMutex that will correctly exit the protocol when SDL_LockMutex fails. </p>
+<p>Update the title of the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window_title</td><td>The string to set the window's title to</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is virtually instantaneous </dd></dl>
 
 </div>
 </div>
-<a id="a1bf4241c001c12d54c4b59d77f422183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bf4241c001c12d54c4b59d77f422183">&#9670;&nbsp;</a></span>safe_SDL_TryLockMutex()</h2>
+<a id="a8a3f05cea89b04346668e643601236a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a3f05cea89b04346668e643601236a3">&#9670;&nbsp;</a></span>sdl_surface_from_png_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int safe_SDL_TryLockMutex </td>
-          <td>(</td>
-          <td class="paramtype">SDL_mutex *&#160;</td>
-          <td class="paramname"><em>mutex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wrapper around SDL_TryLockMutex that will correctly exit the protocol when SDL_TryLockMutex fails. </p>
-
-</div>
-</div>
-<a id="abbd0cc7567697175ece165e1495dcaef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbd0cc7567697175ece165e1495dcaef">&#9670;&nbsp;</a></span>safe_SDL_UnlockMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void safe_SDL_UnlockMutex </td>
-          <td>(</td>
-          <td class="paramtype">SDL_mutex *&#160;</td>
-          <td class="paramname"><em>mutex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wrapper around SDL_UnlockMutex that will correctly exit the protocol when SDL_UnlockMutex fails. </p>
-
-</div>
-</div>
-<a id="a1b2a1365885e6c3b0e2e42d9e38d56a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b2a1365885e6c3b0e2e42d9e38d56a8">&#9670;&nbsp;</a></span>sdl_surface_from_png_file()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Surface* sdl_surface_from_png_file </td>
+          <td class="memname">SDL_Surface * sdl_surface_from_png_file </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -478,41 +636,73 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Load a PNG file to an SDL surface using lodepng. </p>
+<p>Creates an SDL_Surface from a png file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>PNG image file path</td></tr>
+    <tr><td class="paramname">filename</td><td>The filename of the png file that will be used</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The loaded surface on success, and NULL on failure</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>After a successful call to sdl_surface_from_png_file, remember to call <code>free_sdl_rgb_surface</code> when you're done using it! </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The SDL_Surface that got created from the png file </dd></dl>
 
 </div>
 </div>
-<a id="a7210c0d222c584be91c2f0584f8d6a10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7210c0d222c584be91c2f0584f8d6a10">&#9670;&nbsp;</a></span>send_captured_key()</h2>
+<a id="a5b1753dd77cc8d93c348f4cfaa69a02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1753dd77cc8d93c348f4cfaa69a02c">&#9670;&nbsp;</a></span>sdl_update_cursor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void send_captured_key </td>
+          <td class="memname">void sdl_update_cursor </td>
           <td>(</td>
-          <td class="paramtype">SDL_Keycode&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramtype"><a class="el" href="structWhistCursorImage.html">WhistCursorImage</a> *&#160;</td>
+          <td class="paramname"><em>cursor_image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the cursor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cursor_image</td><td>The <a class="el" href="structWhistCursorImage.html" title="Cursor image.">WhistCursorImage</a> to use for the new cursor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is virtually instantaneous </dd></dl>
+
+</div>
+</div>
+<a id="a9dbcc14b6e31b62aedb3db07b1b45e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dbcc14b6e31b62aedb3db07b1b45e1f">&#9670;&nbsp;</a></span>sdl_update_framebuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_update_framebuffer </td>
+          <td>(</td>
+          <td class="paramtype">Uint8 *&#160;</td>
+          <td class="paramname"><em>data</em>[4], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
+          <td class="paramname"><em>linesize</em>[4], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>time</em>&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -522,33 +712,63 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
+<p>Update the renderer's framebuffer, using the provided texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data pointers to the image The image must be of the format SDL_FRAMEBUFFER_PIXEL_FORMAT </td></tr>
+    <tr><td class="paramname">linesize</td><td>The linesize data for the image </td></tr>
+    <tr><td class="paramname">width</td><td>The width of the image </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The Uint8*'s pointed to by data[] MUST be kept alive, until after BOTH <code>sdl_render_framebuffer</code> is called, AND <code>sdl_render_pending</code> subsequently returns false. </dd></dl>
+
 </div>
 </div>
-<a id="aff48bb1fe7d404dc2d22473427fdc36d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff48bb1fe7d404dc2d22473427fdc36d">&#9670;&nbsp;</a></span>set_window_icon_from_png()</h2>
+<a id="aec1c03b128be02a97fe22c4744445f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec1c03b128be02a97fe22c4744445f3a">&#9670;&nbsp;</a></span>sdl_update_framebuffer_loading_screen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void set_window_icon_from_png </td>
+          <td class="memname">void sdl_update_framebuffer_loading_screen </td>
           <td>(</td>
-          <td class="paramtype">SDL_Window *&#160;</td>
-          <td class="paramname"><em>sdl_window</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>filename</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Updates the framebuffer to a loading screen image. Remember to call sdl_render_framebuffer later. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>The index of the animation to render. This should normally be strictly increasing or reset to 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade2d67075b53450c4364f252e34cd978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade2d67075b53450c4364f252e34cd978">&#9670;&nbsp;</a></span>sdl_update_pending_tasks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_update_pending_tasks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The above functions may be expensive, and thus may have to be queued up. This function executes all of the currently internally queued actions. </p>
+<dl class="section note"><dt>Note</dt><dd>This function must be called by the same thread that originally called init_sdl. This will also render out any pending framebuffer, thereby setting <code>sdl_render_pending</code> to false. </dd></dl>
 
 </div>
 </div>
@@ -581,6 +801,20 @@ Usage</h1>
 
 </div>
 </div>
+<a id="af4e35016b32376211dba7a8f028f3f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e35016b32376211dba7a8f028f3f88">&#9670;&nbsp;</a></span>pending_resize_message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool pending_resize_message = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a242ea45e405e9d5ae92e440357e98c3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a242ea45e405e9d5ae92e440357e98c3c">&#9670;&nbsp;</a></span>skip_taskbar</h2>
 
@@ -588,7 +822,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool skip_taskbar = false</td>
+          <td class="memname">bool skip_taskbar</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -603,6 +837,34 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile SDL_Window* window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a557cdefd7d618aa9c5272f245dded55e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557cdefd7d618aa9c5272f245dded55e">&#9670;&nbsp;</a></span>window_resize_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="threads_8h.html#aa9899c1c25688c008b90165331107ddf">WhistMutex</a> window_resize_mutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5421dd315eda4c2e3347f85fc9c86c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5421dd315eda4c2e3347f85fc9c86c69">&#9670;&nbsp;</a></span>window_resize_timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> window_resize_timer</td>
         </tr>
       </table>
 </div><div class="memdoc">

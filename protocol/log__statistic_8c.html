@@ -101,15 +101,11 @@ $(document).ready(function(){initNavTree('log__statistic_8c.html',''); initResiz
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatisticData.html">StatisticData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatisticContext.html">StatisticContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6f28818e6c7e0108bdc5658ae2df4bc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#a6f28818e6c7e0108bdc5658ae2df4bc2">MAX_DIFFERENT_STATISTICS</a>&#160;&#160;&#160;64</td></tr>
-<tr class="separator:a6f28818e6c7e0108bdc5658ae2df4bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa42dc4c7ca505ab3d2655a377755c1e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#aa42dc4c7ca505ab3d2655a377755c1e2">KEY_MAXLEN</a>&#160;&#160;&#160;127</td></tr>
-<tr class="separator:aa42dc4c7ca505ab3d2655a377755c1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a86dd20bcc32eecc3f09b3804fc31b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#a6a86dd20bcc32eecc3f09b3804fc31b7">PRINTING_FREQUENCY_IN_SEC</a>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:a6a86dd20bcc32eecc3f09b3804fc31b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b97cf4a994812e87eca5e55b2a7d6a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#a5b97cf4a994812e87eca5e55b2a7d6a1">LOG_STATISTICS</a>&#160;&#160;&#160;true</td></tr>
 <tr class="separator:a5b97cf4a994812e87eca5e55b2a7d6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -122,39 +118,25 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ab4db51f87c29fdc20a5bbc4c3c173446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#ab4db51f87c29fdc20a5bbc4c3c173446">unsafe_print_statistics</a> ()</td></tr>
 <tr class="separator:ab4db51f87c29fdc20a5bbc4c3c173446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21988a70aac47135f7c295ce2df1b612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#a21988a70aac47135f7c295ce2df1b612">init_statistic_logger</a> ()</td></tr>
-<tr class="memdesc:a21988a70aac47135f7c295ce2df1b612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the statistic logger.  <a href="log__statistic_8c.html#a21988a70aac47135f7c295ce2df1b612">More...</a><br /></td></tr>
-<tr class="separator:a21988a70aac47135f7c295ce2df1b612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba2e6b1588895d3034d89881e99a59a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#a2ba2e6b1588895d3034d89881e99a59a">log_double_statistic</a> (const char *key, double val)</td></tr>
-<tr class="memdesc:a2ba2e6b1588895d3034d89881e99a59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note a specific stat value associated with a key. If enough time has passed, also prints all statistics and flushes the data store.  <a href="log__statistic_8c.html#a2ba2e6b1588895d3034d89881e99a59a">More...</a><br /></td></tr>
-<tr class="separator:a2ba2e6b1588895d3034d89881e99a59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c8a8769158025ec9e929601b9df6439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#a3c8a8769158025ec9e929601b9df6439">print_statistics</a> ()</td></tr>
-<tr class="memdesc:a3c8a8769158025ec9e929601b9df6439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print all currently held statistics, and flush the data store.  <a href="log__statistic_8c.html#a3c8a8769158025ec9e929601b9df6439">More...</a><br /></td></tr>
-<tr class="separator:a3c8a8769158025ec9e929601b9df6439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462484146d0ca6bd35b234bca13cc9a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#a462484146d0ca6bd35b234bca13cc9a0">whist_init_statistic_logger</a> (uint32_t num_metrics, <a class="el" href="structStatisticInfo.html">StatisticInfo</a> *statistic_info, int interval)</td></tr>
+<tr class="memdesc:a462484146d0ca6bd35b234bca13cc9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the statistic logger.  <a href="log__statistic_8c.html#a462484146d0ca6bd35b234bca13cc9a0">More...</a><br /></td></tr>
+<tr class="separator:a462484146d0ca6bd35b234bca13cc9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab364d742d19a3ff2640b68884b171674"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#ab364d742d19a3ff2640b68884b171674">log_double_statistic</a> (uint32_t index, double val)</td></tr>
+<tr class="memdesc:ab364d742d19a3ff2640b68884b171674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note a specific stat value associated with a key. If enough time has passed, also prints all statistics and flushes the data store.  <a href="log__statistic_8c.html#ab364d742d19a3ff2640b68884b171674">More...</a><br /></td></tr>
+<tr class="separator:ab364d742d19a3ff2640b68884b171674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56488c6ba44b9551c7458067c1443991"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#a56488c6ba44b9551c7458067c1443991">destroy_statistic_logger</a> ()</td></tr>
+<tr class="memdesc:a56488c6ba44b9551c7458067c1443991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the statistic logger.  <a href="log__statistic_8c.html#a56488c6ba44b9551c7458067c1443991">More...</a><br /></td></tr>
+<tr class="separator:a56488c6ba44b9551c7458067c1443991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This contains logging utils to log repeated statistics, where we. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md166"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md170"></a>
 don't want to print every time.</h1>
-<h1><a class="anchor" id="autotoc_md167"></a>
+<h1><a class="anchor" id="autotoc_md171"></a>
 Usage</h1>
-<p>Call log_double_statistic(key, value) repeatedly within a loop with the same string <code>key</code> to store a double <code>val</code>. If it's been PRINTING_FREQUENCY_IN_SEC, the call will also print some statistics about the stored values for each key (up to MAX_DIFFERENT_STATISTICS keys) and flush the data. This can also be done manually with <a class="el" href="log__statistic_8c.html#a3c8a8769158025ec9e929601b9df6439" title="Print all currently held statistics, and flush the data store.">print_statistics()</a>. </p>
+<p>Call log_double_statistic(key, value) repeatedly within a loop with the same string <code>key</code> to store a double <code>val</code>. If it's been STATISTICS_FREQUENCY_IN_SEC, the call will also print some statistics about the stored values for each key and flush the data. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aa42dc4c7ca505ab3d2655a377755c1e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa42dc4c7ca505ab3d2655a377755c1e2">&#9670;&nbsp;</a></span>KEY_MAXLEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define KEY_MAXLEN&#160;&#160;&#160;127</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5b97cf4a994812e87eca5e55b2a7d6a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b97cf4a994812e87eca5e55b2a7d6a1">&#9670;&nbsp;</a></span>LOG_STATISTICS</h2>
 
@@ -163,34 +145,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define LOG_STATISTICS&#160;&#160;&#160;true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6f28818e6c7e0108bdc5658ae2df4bc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f28818e6c7e0108bdc5658ae2df4bc2">&#9670;&nbsp;</a></span>MAX_DIFFERENT_STATISTICS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_DIFFERENT_STATISTICS&#160;&#160;&#160;64</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6a86dd20bcc32eecc3f09b3804fc31b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a86dd20bcc32eecc3f09b3804fc31b7">&#9670;&nbsp;</a></span>PRINTING_FREQUENCY_IN_SEC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PRINTING_FREQUENCY_IN_SEC&#160;&#160;&#160;10</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,14 +167,14 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a21988a70aac47135f7c295ce2df1b612"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21988a70aac47135f7c295ce2df1b612">&#9670;&nbsp;</a></span>init_statistic_logger()</h2>
+<a id="a56488c6ba44b9551c7458067c1443991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56488c6ba44b9551c7458067c1443991">&#9670;&nbsp;</a></span>destroy_statistic_logger()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void init_statistic_logger </td>
+          <td class="memname">void destroy_statistic_logger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -228,12 +182,12 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the statistic logger. </p>
+<p>Destroy the statistic logger. </p>
 
 </div>
 </div>
-<a id="a2ba2e6b1588895d3034d89881e99a59a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ba2e6b1588895d3034d89881e99a59a">&#9670;&nbsp;</a></span>log_double_statistic()</h2>
+<a id="ab364d742d19a3ff2640b68884b171674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab364d742d19a3ff2640b68884b171674">&#9670;&nbsp;</a></span>log_double_statistic()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,8 +195,8 @@ Usage</h1>
         <tr>
           <td class="memname">void log_double_statistic </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -261,30 +215,11 @@ Usage</h1>
 <p>Note a specific stat value associated with a key. If enough time has passed, also prints all statistics and flushes the data store. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>The string to associate all values of the same statistic with each other. Will also be printed during <a class="el" href="log__statistic_8h.html#a3c8a8769158025ec9e929601b9df6439" title="Print all currently held statistics, and flush the data store.">print_statistics()</a>.</td></tr>
+    <tr><td class="paramname">index</td><td>The predefined index of the metric.</td></tr>
     <tr><td class="paramname">val</td><td>The double value to store. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a3c8a8769158025ec9e929601b9df6439"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c8a8769158025ec9e929601b9df6439">&#9670;&nbsp;</a></span>print_statistics()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print_statistics </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Print all currently held statistics, and flush the data store. </p>
 
 </div>
 </div>
@@ -305,12 +240,48 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a462484146d0ca6bd35b234bca13cc9a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462484146d0ca6bd35b234bca13cc9a0">&#9670;&nbsp;</a></span>whist_init_statistic_logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_init_statistic_logger </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_metrics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structStatisticInfo.html">StatisticInfo</a> *&#160;</td>
+          <td class="paramname"><em>statistic_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the statistic logger. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_128beccb94ee56ef1e878679d37b9b34.html">logging</a></li><li class="navelem"><a class="el" href="log__statistic_8c.html">log_statistic.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_550e69c9c799797ced6dd0f8eb42fef6.html">logging</a></li><li class="navelem"><a class="el" href="log__statistic_8c.html">log_statistic.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

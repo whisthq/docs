@@ -1,20 +1,5 @@
 var searchData=
 [
-  ['capture_2eh_2043',['capture.h',['../capture_8h.html',1,'']]],
-  ['client_2ec_2044',['client.c',['../client_8c.html',1,'']]],
-  ['client_2eh_2045',['client.h',['../client_8h.html',1,'']]],
-  ['client_5futils_2ec_2046',['client_utils.c',['../client__utils_8c.html',1,'']]],
-  ['client_5futils_2eh_2047',['client_utils.h',['../client__utils_8h.html',1,'']]],
-  ['clipboard_2ec_2048',['clipboard.c',['../clipboard_8c.html',1,'']]],
-  ['clipboard_2eh_2049',['clipboard.h',['../clipboard_8h.html',1,'']]],
-  ['clipboard_5fosx_2eh_2050',['clipboard_osx.h',['../clipboard__osx_8h.html',1,'']]],
-  ['clipboard_5fsynchronizer_2ec_2051',['clipboard_synchronizer.c',['../clipboard__synchronizer_8c.html',1,'']]],
-  ['clipboard_5fsynchronizer_2eh_2052',['clipboard_synchronizer.h',['../clipboard__synchronizer_8h.html',1,'']]],
-  ['clock_2ec_2053',['clock.c',['../clock_8c.html',1,'']]],
-  ['clock_2eh_2054',['clock.h',['../clock_8h.html',1,'']]],
-  ['color_2ec_2055',['color.c',['../color_8c.html',1,'']]],
-  ['color_2eh_2056',['color.h',['../color_8h.html',1,'']]],
-  ['cudacontext_2ec_2057',['cudacontext.c',['../cudacontext_8c.html',1,'']]],
-  ['cudacontext_2eh_2058',['cudacontext.h',['../cudacontext_8h.html',1,'']]],
-  ['cursor_2eh_2059',['cursor.h',['../cursor_8h.html',1,'']]]
+  ['decode_2ec_2331',['decode.c',['../decode_8c.html',1,'']]],
+  ['decode_2eh_2332',['decode.h',['../decode_8h.html',1,'']]]
 ];

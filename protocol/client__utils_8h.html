@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('client__utils_8h.html',''); initResiza
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ringbuffer_8h_source.html">whist/network/ringbuffer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 </div>
 <p><a href="client__utils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -119,39 +120,39 @@ Functions</h2></td></tr>
 <tr class="memitem:ad0e52afd70ec6e9b4961be465c729bde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ad0e52afd70ec6e9b4961be465c729bde">client_parse_args</a> (int argc, char *argv[])</td></tr>
 <tr class="memdesc:ad0e52afd70ec6e9b4961be465c729bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the arguments passed into the client application.  <a href="client__utils_8h.html#ad0e52afd70ec6e9b4961be465c729bde">More...</a><br /></td></tr>
 <tr class="separator:ad0e52afd70ec6e9b4961be465c729bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8ab011038590e9843336f4283bc8698"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#af8ab011038590e9843336f4283bc8698">read_piped_arguments</a> (bool *keep_waiting)</td></tr>
-<tr class="memdesc:af8ab011038590e9843336f4283bc8698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read arguments from the stdin pipe if <code>using_piped_arguments</code> is set to <code>true</code>.  <a href="client__utils_8h.html#af8ab011038590e9843336f4283bc8698">More...</a><br /></td></tr>
-<tr class="separator:af8ab011038590e9843336f4283bc8698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4870ff2e632a5999971c28e4a94eb32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ad4870ff2e632a5999971c28e4a94eb32">init_socket_library</a> (void)</td></tr>
-<tr class="memdesc:ad4870ff2e632a5999971c28e4a94eb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the Windows socket library (Does not do anything for non-Windows)  <a href="client__utils_8h.html#ad4870ff2e632a5999971c28e4a94eb32">More...</a><br /></td></tr>
-<tr class="separator:ad4870ff2e632a5999971c28e4a94eb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97e38bcbb9ae966f3fd035d2f310a215"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a97e38bcbb9ae966f3fd035d2f310a215">destroy_socket_library</a> (void)</td></tr>
-<tr class="memdesc:a97e38bcbb9ae966f3fd035d2f310a215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Windows socket library (Does not do anything for non-Windows)  <a href="client__utils_8h.html#a97e38bcbb9ae966f3fd035d2f310a215">More...</a><br /></td></tr>
-<tr class="separator:a97e38bcbb9ae966f3fd035d2f310a215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c155b9515a1ce8f319a5f18e5207ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ac2c155b9515a1ce8f319a5f18e5207ae">read_piped_arguments</a> (bool *keep_waiting, bool run_only_once)</td></tr>
+<tr class="memdesc:ac2c155b9515a1ce8f319a5f18e5207ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read arguments from the stdin pipe if <code>using_piped_arguments</code> is set to <code>true</code>.  <a href="client__utils_8h.html#ac2c155b9515a1ce8f319a5f18e5207ae">More...</a><br /></td></tr>
+<tr class="separator:ac2c155b9515a1ce8f319a5f18e5207ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9680bc0923e6e0149808036e92f33cd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a9680bc0923e6e0149808036e92f33cd4">alloc_parsed_args</a> (void)</td></tr>
 <tr class="memdesc:a9680bc0923e6e0149808036e92f33cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init any allocated memory for parsed args.  <a href="client__utils_8h.html#a9680bc0923e6e0149808036e92f33cd4">More...</a><br /></td></tr>
 <tr class="separator:a9680bc0923e6e0149808036e92f33cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44fd0b41f8dec9bae4a8e081703c014b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a44fd0b41f8dec9bae4a8e081703c014b">free_parsed_args</a> (void)</td></tr>
 <tr class="memdesc:a44fd0b41f8dec9bae4a8e081703c014b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free any allocated memory for parsed args.  <a href="client__utils_8h.html#a44fd0b41f8dec9bae4a8e081703c014b">More...</a><br /></td></tr>
 <tr class="separator:a44fd0b41f8dec9bae4a8e081703c014b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a68658df46ddef1ce1ea7ee3b1600bc6a">prepare_init_to_server</a> (<a class="el" href="structWhistDiscoveryRequestMessage.html">WhistDiscoveryRequestMessage</a> *fcmsg, char *email)</td></tr>
-<tr class="memdesc:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for initial request to server by setting user email and time data.  <a href="client__utils_8h.html#a68658df46ddef1ce1ea7ee3b1600bc6a">More...</a><br /></td></tr>
-<tr class="separator:a68658df46ddef1ce1ea7ee3b1600bc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b658f4f4780855471cbe000352ed97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ab8b658f4f4780855471cbe000352ed97">prepare_init_to_server</a> (<a class="el" href="structWhistDiscoveryRequestMessage.html">WhistDiscoveryRequestMessage</a> *wcmsg, char *email)</td></tr>
+<tr class="memdesc:ab8b658f4f4780855471cbe000352ed97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for initial request to server by setting user email and time data.  <a href="client__utils_8h.html#ab8b658f4f4780855471cbe000352ed97">More...</a><br /></td></tr>
+<tr class="separator:ab8b658f4f4780855471cbe000352ed97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd3d49fb422332aa7838542366bc87f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#afd3d49fb422332aa7838542366bc87f9">update_mouse_motion</a> ()</td></tr>
 <tr class="memdesc:afd3d49fb422332aa7838542366bc87f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update mouse location if the mouse state has updated since the last call to this function.  <a href="client__utils_8h.html#afd3d49fb422332aa7838542366bc87f9">More...</a><br /></td></tr>
 <tr class="separator:afd3d49fb422332aa7838542366bc87f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa474e56b998eeac46c72e779fd2701fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#aa474e56b998eeac46c72e779fd2701fa">send_message_dimensions</a> ()</td></tr>
 <tr class="memdesc:aa474e56b998eeac46c72e779fd2701fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends message to server with output dimensions and DPI.  <a href="client__utils_8h.html#aa474e56b998eeac46c72e779fd2701fa">More...</a><br /></td></tr>
 <tr class="separator:aa474e56b998eeac46c72e779fd2701fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3e9e1825d7ccb7641d84ffcafad5ec9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ad3e9e1825d7ccb7641d84ffcafad5ec9">nack_packet</a> (<a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> frame_type, int id, int index)</td></tr>
-<tr class="memdesc:ad3e9e1825d7ccb7641d84ffcafad5ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nack handler for the ring buffer.  <a href="client__utils_8h.html#ad3e9e1825d7ccb7641d84ffcafad5ec9">More...</a><br /></td></tr>
-<tr class="separator:ad3e9e1825d7ccb7641d84ffcafad5ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f5ca308305ae38e2cc598aac3886ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ac7f5ca308305ae38e2cc598aac3886ba">send_new_tab_url_if_needed</a> ()</td></tr>
+<tr class="memdesc:ac7f5ca308305ae38e2cc598aac3886ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends message to server with new tab URL to open, if the global new_tab_url is non-NULL.  <a href="client__utils_8h.html#ac7f5ca308305ae38e2cc598aac3886ba">More...</a><br /></td></tr>
+<tr class="separator:ac7f5ca308305ae38e2cc598aac3886ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043d84022be877e6d65dd154c5cb183f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a043d84022be877e6d65dd154c5cb183f">send_desired_network_settings</a> (<a class="el" href="structNetworkSettings.html">NetworkSettings</a> desired_network_settings)</td></tr>
+<tr class="memdesc:a043d84022be877e6d65dd154c5cb183f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends message to server with our desired network settings.  <a href="client__utils_8h.html#a043d84022be877e6d65dd154c5cb183f">More...</a><br /></td></tr>
+<tr class="separator:a043d84022be877e6d65dd154c5cb183f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf93038815981906d156fc5d2e00b2be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#adf93038815981906d156fc5d2e00b2be">nack_packet</a> (<a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> frame_type, int id, int index)</td></tr>
+<tr class="memdesc:adf93038815981906d156fc5d2e00b2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nack handler for the ring buffer.  <a href="client__utils_8h.html#adf93038815981906d156fc5d2e00b2be">More...</a><br /></td></tr>
+<tr class="separator:adf93038815981906d156fc5d2e00b2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md40"></a>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md36"></a>
 @brief TODO</h1>
-<h1><a class="anchor" id="autotoc_md41"></a>
+<h1><a class="anchor" id="autotoc_md37"></a>
 Usage</h1>
 <p>Call these functions from anywhere within client where they're needed. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -272,27 +273,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a97e38bcbb9ae966f3fd035d2f310a215"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97e38bcbb9ae966f3fd035d2f310a215">&#9670;&nbsp;</a></span>destroy_socket_library()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int destroy_socket_library </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destroy the Windows socket library (Does not do anything for non-Windows) </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
 <a id="a44fd0b41f8dec9bae4a8e081703c014b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44fd0b41f8dec9bae4a8e081703c014b">&#9670;&nbsp;</a></span>free_parsed_args()</h2>
 
@@ -314,29 +294,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ad4870ff2e632a5999971c28e4a94eb32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4870ff2e632a5999971c28e4a94eb32">&#9670;&nbsp;</a></span>init_socket_library()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int init_socket_library </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the Windows socket library (Does not do anything for non-Windows) </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
-<a id="ad3e9e1825d7ccb7641d84ffcafad5ec9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3e9e1825d7ccb7641d84ffcafad5ec9">&#9670;&nbsp;</a></span>nack_packet()</h2>
+<a id="adf93038815981906d156fc5d2e00b2be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf93038815981906d156fc5d2e00b2be">&#9670;&nbsp;</a></span>nack_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +303,7 @@ Usage</h1>
         <tr>
           <td class="memname">void nack_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>frame_type</em>, </td>
         </tr>
         <tr>
@@ -379,8 +338,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a68658df46ddef1ce1ea7ee3b1600bc6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68658df46ddef1ce1ea7ee3b1600bc6a">&#9670;&nbsp;</a></span>prepare_init_to_server()</h2>
+<a id="ab8b658f4f4780855471cbe000352ed97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b658f4f4780855471cbe000352ed97">&#9670;&nbsp;</a></span>prepare_init_to_server()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,7 +348,7 @@ Usage</h1>
           <td class="memname">int prepare_init_to_server </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistDiscoveryRequestMessage.html">WhistDiscoveryRequestMessage</a> *&#160;</td>
-          <td class="paramname"><em>fcmsg</em>, </td>
+          <td class="paramname"><em>wcmsg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -408,7 +367,7 @@ Usage</h1>
 <p>Prepare for initial request to server by setting user email and time data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fcmsg</td><td>Discovery request message packet to be sent to the server</td></tr>
+    <tr><td class="paramname">wcmsg</td><td>Discovery request message packet to be sent to the server</td></tr>
     <tr><td class="paramname">email</td><td>User email</td></tr>
   </table>
   </dd>
@@ -417,8 +376,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="af8ab011038590e9843336f4283bc8698"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8ab011038590e9843336f4283bc8698">&#9670;&nbsp;</a></span>read_piped_arguments()</h2>
+<a id="ac2c155b9515a1ce8f319a5f18e5207ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c155b9515a1ce8f319a5f18e5207ae">&#9670;&nbsp;</a></span>read_piped_arguments()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,8 +386,18 @@ Usage</h1>
           <td class="memname">int read_piped_arguments </td>
           <td>(</td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>keep_waiting</em></td><td>)</td>
+          <td class="paramname"><em>keep_waiting</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>run_only_once</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -436,11 +405,38 @@ Usage</h1>
 <p>Read arguments from the stdin pipe if <code>using_piped_arguments</code> is set to <code>true</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">keep_waiting</td><td>Pointer to a boolean indicating whether to continue waiting</td></tr>
+    <tr><td class="paramname">keep_waiting</td><td>Pointer to a boolean indicating whether to continue waiting </td></tr>
+    <tr><td class="paramname">run_only_once</td><td>A boolean controlling whether to keep polling for stdin updates or read from stdin only one time. Must use 'true' if this function is being called in a while loop.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success, 1 on args prompting graceful exit </dd></dl>
+
+</div>
+</div>
+<a id="a043d84022be877e6d65dd154c5cb183f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043d84022be877e6d65dd154c5cb183f">&#9670;&nbsp;</a></span>send_desired_network_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void send_desired_network_settings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td>
+          <td class="paramname"><em>desired_network_settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends message to server with our desired network settings. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desired_network_settings</td><td>The desired network settings </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -460,6 +456,25 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Sends message to server with output dimensions and DPI. </p>
+
+</div>
+</div>
+<a id="ac7f5ca308305ae38e2cc598aac3886ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f5ca308305ae38e2cc598aac3886ba">&#9670;&nbsp;</a></span>send_new_tab_url_if_needed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void send_new_tab_url_if_needed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends message to server with new tab URL to open, if the global new_tab_url is non-NULL. </p>
 
 </div>
 </div>

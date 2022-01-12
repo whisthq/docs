@@ -88,28 +88,66 @@ $(document).ready(function(){initNavTree('log__statistic_8h_source.html',''); in
 <a href="log__statistic_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LOG_STATISTIC_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LOG_STATISTIC_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">Public Functions</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="log__statistic_8h.html#a21988a70aac47135f7c295ce2df1b612">init_statistic_logger</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="log__statistic_8h.html#a3c8a8769158025ec9e929601b9df6439">print_statistics</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="log__statistic_8h.html#a2ba2e6b1588895d3034d89881e99a59a">log_double_statistic</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* key, <span class="keywordtype">double</span> val);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // LOG_STATISTIC_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">Public Constants</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="log__statistic_8h.html#afa6be6a1f15ad9d2c4ca359bfb1703e8">   25</a></span>&#160;<span class="preprocessor">#define STATISTICS_FREQUENCY_IN_SEC 10</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">Public Structures</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structStatisticInfo.html">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structStatisticInfo.html#ac3724c8df3f63fa03a1d37f8ab0ab1e3">   33</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structStatisticInfo.html#ac3724c8df3f63fa03a1d37f8ab0ab1e3">key</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structStatisticInfo.html#afe8574a434ae93aae0cdebddf61b66fe">   34</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structStatisticInfo.html#afe8574a434ae93aae0cdebddf61b66fe">is_max_needed</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structStatisticInfo.html#af3fc5970ad1d628ec277ae1b178ba353">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structStatisticInfo.html#af3fc5970ad1d628ec277ae1b178ba353">is_min_needed</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structStatisticInfo.html#a69d25e658ece7e3b613ece8601916bff">   36</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structStatisticInfo.html#a69d25e658ece7e3b613ece8601916bff">average_over_time</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <a class="code" href="structStatisticInfo.html">StatisticInfo</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">Macros</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65">   50</a></span>&#160;<span class="preprocessor">#define TIME_RUN(line, name, timer) \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">    start_timer(&amp;timer);            \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    line;                           \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    log_double_statistic(name, get_timer(timer) * MS_IN_SECOND);</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">Public Functions</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="log__statistic_8h.html#a462484146d0ca6bd35b234bca13cc9a0">whist_init_statistic_logger</a>(uint32_t num_metrics, <a class="code" href="structStatisticInfo.html">StatisticInfo</a> *statistic_info, <span class="keywordtype">int</span> interval);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> <a class="code" href="log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674">log_double_statistic</a>(uint32_t index, <span class="keywordtype">double</span> val);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> <a class="code" href="log__statistic_8h.html#a56488c6ba44b9551c7458067c1443991">destroy_statistic_logger</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif  // LOG_STATISTIC_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="alog__statistic_8h_html_a3c8a8769158025ec9e929601b9df6439"><div class="ttname"><a href="log__statistic_8h.html#a3c8a8769158025ec9e929601b9df6439">print_statistics</a></div><div class="ttdeci">void print_statistics()</div><div class="ttdoc">Print all currently held statistics, and flush the data store.</div><div class="ttdef"><b>Definition:</b> log_statistic.c:143</div></div>
-<div class="ttc" id="alog__statistic_8h_html_a2ba2e6b1588895d3034d89881e99a59a"><div class="ttname"><a href="log__statistic_8h.html#a2ba2e6b1588895d3034d89881e99a59a">log_double_statistic</a></div><div class="ttdeci">void log_double_statistic(const char *key, double val)</div><div class="ttdoc">Note a specific stat value associated with a key. If enough time has passed, also prints all statisti...</div><div class="ttdef"><b>Definition:</b> log_statistic.c:105</div></div>
-<div class="ttc" id="alog__statistic_8h_html_a21988a70aac47135f7c295ce2df1b612"><div class="ttname"><a href="log__statistic_8h.html#a21988a70aac47135f7c295ce2df1b612">init_statistic_logger</a></div><div class="ttdeci">void init_statistic_logger()</div><div class="ttdoc">Initialize the statistic logger.</div><div class="ttdef"><b>Definition:</b> log_statistic.c:95</div></div>
+<div class="ttc" id="astructStatisticInfo_html"><div class="ttname"><a href="structStatisticInfo.html">StatisticInfo</a></div><div class="ttdef"><b>Definition:</b> log_statistic.h:32</div></div>
+<div class="ttc" id="alog__statistic_8h_html_ab364d742d19a3ff2640b68884b171674"><div class="ttname"><a href="log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674">log_double_statistic</a></div><div class="ttdeci">void log_double_statistic(uint32_t index, double val)</div><div class="ttdoc">Note a specific stat value associated with a key. If enough time has passed, also prints all statisti...</div><div class="ttdef"><b>Definition:</b> log_statistic.c:127</div></div>
+<div class="ttc" id="astructStatisticInfo_html_afe8574a434ae93aae0cdebddf61b66fe"><div class="ttname"><a href="structStatisticInfo.html#afe8574a434ae93aae0cdebddf61b66fe">StatisticInfo::is_max_needed</a></div><div class="ttdeci">bool is_max_needed</div><div class="ttdef"><b>Definition:</b> log_statistic.h:34</div></div>
+<div class="ttc" id="astructStatisticInfo_html_af3fc5970ad1d628ec277ae1b178ba353"><div class="ttname"><a href="structStatisticInfo.html#af3fc5970ad1d628ec277ae1b178ba353">StatisticInfo::is_min_needed</a></div><div class="ttdeci">bool is_min_needed</div><div class="ttdef"><b>Definition:</b> log_statistic.h:35</div></div>
+<div class="ttc" id="alog__statistic_8h_html_a462484146d0ca6bd35b234bca13cc9a0"><div class="ttname"><a href="log__statistic_8h.html#a462484146d0ca6bd35b234bca13cc9a0">whist_init_statistic_logger</a></div><div class="ttdeci">void whist_init_statistic_logger(uint32_t num_metrics, StatisticInfo *statistic_info, int interval)</div><div class="ttdoc">Initialize the statistic logger.</div><div class="ttdef"><b>Definition:</b> log_statistic.c:102</div></div>
+<div class="ttc" id="astructStatisticInfo_html_a69d25e658ece7e3b613ece8601916bff"><div class="ttname"><a href="structStatisticInfo.html#a69d25e658ece7e3b613ece8601916bff">StatisticInfo::average_over_time</a></div><div class="ttdeci">bool average_over_time</div><div class="ttdef"><b>Definition:</b> log_statistic.h:36</div></div>
+<div class="ttc" id="alog__statistic_8h_html_a56488c6ba44b9551c7458067c1443991"><div class="ttname"><a href="log__statistic_8h.html#a56488c6ba44b9551c7458067c1443991">destroy_statistic_logger</a></div><div class="ttdeci">void destroy_statistic_logger()</div><div class="ttdoc">Destroy the statistic logger.</div><div class="ttdef"><b>Definition:</b> log_statistic.c:158</div></div>
+<div class="ttc" id="astructStatisticInfo_html_ac3724c8df3f63fa03a1d37f8ab0ab1e3"><div class="ttname"><a href="structStatisticInfo.html#ac3724c8df3f63fa03a1d37f8ab0ab1e3">StatisticInfo::key</a></div><div class="ttdeci">const char * key</div><div class="ttdef"><b>Definition:</b> log_statistic.h:33</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_128beccb94ee56ef1e878679d37b9b34.html">logging</a></li><li class="navelem"><a class="el" href="log__statistic_8h.html">log_statistic.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_550e69c9c799797ced6dd0f8eb42fef6.html">logging</a></li><li class="navelem"><a class="el" href="log__statistic_8h.html">log_statistic.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

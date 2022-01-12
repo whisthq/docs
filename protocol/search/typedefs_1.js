@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['bitarray_3322',['BitArray',['../whist_8h.html#a44f9a1312aeadcbf8ec7561cea0525e2',1,'whist.h']]],
-  ['bitratecalculator_3323',['BitrateCalculator',['../bitrate_8h.html#a7f47de9b111dac5c23739783f8afd762',1,'bitrate.h']]],
-  ['bitrates_3324',['Bitrates',['../bitrate_8h.html#a06286ea539886c40b9b5dd44babc8adb',1,'bitrate.h']]],
-  ['bitratestatistics_3325',['BitrateStatistics',['../bitrate_8h.html#a61320fc2a9c36a7b1331ac5e2e8476c6',1,'bitrate.h']]],
-  ['blockallocator_3326',['BlockAllocator',['../whist__memory_8h.html#a7174fb7f087c1ef9c5ec91e2583ff449',1,'whist_memory.h']]],
-  ['bpmlists_3327',['BPMLists',['../lodepng_8c.html#ac1ddd9af8cc0cc5910683a740609b278',1,'lodepng.c']]],
-  ['bpmnode_3328',['BPMNode',['../lodepng_8c.html#aa5b93f17d9f8d6bac5caf453b2387cc3',1,'lodepng.c']]]
+  ['bitarray_3725',['BitArray',['../whist_8h.html#a44f9a1312aeadcbf8ec7561cea0525e2',1,'whist.h']]],
+  ['blockallocator_3726',['BlockAllocator',['../whist__memory_8h.html#a67c1e0a523e229985b3090a2bfa7c1b9',1,'whist_memory.h']]],
+  ['bpmlists_3727',['BPMLists',['../lodepng_8c.html#ac1ddd9af8cc0cc5910683a740609b278',1,'lodepng.c']]],
+  ['bpmnode_3728',['BPMNode',['../lodepng_8c.html#aa5b93f17d9f8d6bac5caf453b2387cc3',1,'lodepng.c']]]
 ];

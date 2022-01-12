@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('client_2audio_8h.html',''); initResiza
 
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">audio.h File Reference</div>  </div>
@@ -97,41 +98,58 @@ $(document).ready(function(){initNavTree('client_2audio_8h.html',''); initResiza
 </div>
 <p><a href="client_2audio_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a8deb4e2212ccd32dcce7906ab4dd97a9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structAudioContext.html">AudioContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a8deb4e2212ccd32dcce7906ab4dd97a9">AudioContext</a></td></tr>
+<tr class="separator:a8deb4e2212ccd32dcce7906ab4dd97a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a72aef54bbf8430ce6d860206deb2d1ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a72aef54bbf8430ce6d860206deb2d1ce">init_audio</a> ()</td></tr>
-<tr class="memdesc:a72aef54bbf8430ce6d860206deb2d1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the FFmpeg AAC audio decoder, and set the proper audio parameters for receiving from the server.  <a href="client_2audio_8h.html#a72aef54bbf8430ce6d860206deb2d1ce">More...</a><br /></td></tr>
-<tr class="separator:a72aef54bbf8430ce6d860206deb2d1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd705e29913096ab550c6b98b5bb99c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a9cd705e29913096ab550c6b98b5bb99c">enable_audio_refresh</a> ()</td></tr>
-<tr class="memdesc:a9cd705e29913096ab550c6b98b5bb99c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will indicate to the audio file that an audio refresh event happened.  <a href="client_2audio_8h.html#a9cd705e29913096ab550c6b98b5bb99c">More...</a><br /></td></tr>
-<tr class="separator:a9cd705e29913096ab550c6b98b5bb99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a8d274c22a4b5d4fd452934377b547b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a2a8d274c22a4b5d4fd452934377b547b">set_audio_frequency</a> (int new_audio_frequency)</td></tr>
-<tr class="memdesc:a2a8d274c22a4b5d4fd452934377b547b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will change the audio sample rate.  <a href="client_2audio_8h.html#a2a8d274c22a4b5d4fd452934377b547b">More...</a><br /></td></tr>
-<tr class="separator:a2a8d274c22a4b5d4fd452934377b547b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a236e5d45cffaa8f66459086c20846b19"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a236e5d45cffaa8f66459086c20846b19">receive_audio</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="memdesc:a236e5d45cffaa8f66459086c20846b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> into an audio packet, and check if NACKing is necessary.  <a href="client_2audio_8h.html#a236e5d45cffaa8f66459086c20846b19">More...</a><br /></td></tr>
-<tr class="separator:a236e5d45cffaa8f66459086c20846b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38fc0b38a11f4b900d88f5e6ac1ce540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a38fc0b38a11f4b900d88f5e6ac1ce540">update_audio</a> ()</td></tr>
-<tr class="memdesc:a38fc0b38a11f4b900d88f5e6ac1ce540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the audio parameters to new parameters sent from server, if any, by reinitializing, and catch up if needed.  <a href="client_2audio_8h.html#a38fc0b38a11f4b900d88f5e6ac1ce540">More...</a><br /></td></tr>
-<tr class="separator:a38fc0b38a11f4b900d88f5e6ac1ce540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95fa7aa7ba4dd64b877dd328353b68e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a95fa7aa7ba4dd64b877dd328353b68e6">render_audio</a> ()</td></tr>
-<tr class="memdesc:a95fa7aa7ba4dd64b877dd328353b68e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will play any queued audio packets NOTE: Is thread-safe, and can be called no matter what other audio calls are being made.  <a href="client_2audio_8h.html#a95fa7aa7ba4dd64b877dd328353b68e6">More...</a><br /></td></tr>
-<tr class="separator:a95fa7aa7ba4dd64b877dd328353b68e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac90c07c746043c5102cd99c13376a6e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#ac90c07c746043c5102cd99c13376a6e7">destroy_audio</a> ()</td></tr>
-<tr class="memdesc:ac90c07c746043c5102cd99c13376a6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the SDL audio and the FFmpeg audio decoder.  <a href="client_2audio_8h.html#ac90c07c746043c5102cd99c13376a6e7">More...</a><br /></td></tr>
-<tr class="separator:ac90c07c746043c5102cd99c13376a6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91ba5cc900fa1417fa749bf079d9faf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#af91ba5cc900fa1417fa749bf079d9faf">init_audio</a> ()</td></tr>
+<tr class="memdesc:af91ba5cc900fa1417fa749bf079d9faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the audio system. The audio system will receive audio packets, and render the audio out to a playback device.  <a href="client_2audio_8h.html#af91ba5cc900fa1417fa749bf079d9faf">More...</a><br /></td></tr>
+<tr class="separator:af91ba5cc900fa1417fa749bf079d9faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4779d5da095b14e8e82fdcc84955c73c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a4779d5da095b14e8e82fdcc84955c73c">refresh_audio_device</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
+<tr class="memdesc:a4779d5da095b14e8e82fdcc84955c73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will refresh the audio device of the audio context prior to the next render. This must be called if a new playback device is plugged in or unplugged.  <a href="client_2audio_8h.html#a4779d5da095b14e8e82fdcc84955c73c">More...</a><br /></td></tr>
+<tr class="separator:a4779d5da095b14e8e82fdcc84955c73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d76a922763820b7572f785f1000827d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a1d76a922763820b7572f785f1000827d">receive_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
+<tr class="memdesc:a1d76a922763820b7572f785f1000827d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive audio packet.  <a href="client_2audio_8h.html#a1d76a922763820b7572f785f1000827d">More...</a><br /></td></tr>
+<tr class="separator:a1d76a922763820b7572f785f1000827d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c87cda83151b302a16a75a97a60eabe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a0c87cda83151b302a16a75a97a60eabe">update_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
+<tr class="memdesc:a0c87cda83151b302a16a75a97a60eabe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does any pending work the audio context wants to do. (Including decoding frames, and calculating statistics)  <a href="client_2audio_8h.html#a0c87cda83151b302a16a75a97a60eabe">More...</a><br /></td></tr>
+<tr class="separator:a0c87cda83151b302a16a75a97a60eabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02350b8accdbe0401e6a3861abb30320"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a02350b8accdbe0401e6a3861abb30320">render_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
+<tr class="memdesc:a02350b8accdbe0401e6a3861abb30320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the audio frame (If any are available to render)  <a href="client_2audio_8h.html#a02350b8accdbe0401e6a3861abb30320">More...</a><br /></td></tr>
+<tr class="separator:a02350b8accdbe0401e6a3861abb30320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db781c666ef3a1aaa82b5ab98f31218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a9db781c666ef3a1aaa82b5ab98f31218">destroy_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
+<tr class="memdesc:a9db781c666ef3a1aaa82b5ab98f31218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the audio context.  <a href="client_2audio_8h.html#a9db781c666ef3a1aaa82b5ab98f31218">More...</a><br /></td></tr>
+<tr class="separator:a9db781c666ef3a1aaa82b5ab98f31218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with processing. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
 <h1><a class="anchor" id="autotoc_md32"></a>
 audio packets on the client.</h1>
 <h1><a class="anchor" id="autotoc_md33"></a>
 Usage</h1>
-<p>initAudio() must be called first before receiving any audio packets. updateAudio() gets called immediately after to update the client to the server's audio format. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ac90c07c746043c5102cd99c13376a6e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac90c07c746043c5102cd99c13376a6e7">&#9670;&nbsp;</a></span>destroy_audio()</h2>
+<p>See video.h for similar usage </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8deb4e2212ccd32dcce7906ab4dd97a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8deb4e2212ccd32dcce7906ab4dd97a9">&#9670;&nbsp;</a></span>AudioContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structAudioContext.html">AudioContext</a> <a class="el" href="structAudioContext.html">AudioContext</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a9db781c666ef3a1aaa82b5ab98f31218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db781c666ef3a1aaa82b5ab98f31218">&#9670;&nbsp;</a></span>destroy_audio()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,83 +157,110 @@ Usage</h1>
         <tr>
           <td class="memname">void destroy_audio </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td>
+          <td class="paramname"><em>audio_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Close the SDL audio and the FFmpeg audio decoder. </p>
-
-</div>
-</div>
-<a id="a9cd705e29913096ab550c6b98b5bb99c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cd705e29913096ab550c6b98b5bb99c">&#9670;&nbsp;</a></span>enable_audio_refresh()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void enable_audio_refresh </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This will indicate to the audio file that an audio refresh event happened. </p>
-
-</div>
-</div>
-<a id="a72aef54bbf8430ce6d860206deb2d1ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72aef54bbf8430ce6d860206deb2d1ce">&#9670;&nbsp;</a></span>init_audio()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_audio </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This will initialize the FFmpeg AAC audio decoder, and set the proper audio parameters for receiving from the server. </p>
-
-</div>
-</div>
-<a id="a236e5d45cffaa8f66459086c20846b19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a236e5d45cffaa8f66459086c20846b19">&#9670;&nbsp;</a></span>receive_audio()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t receive_audio </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Receives a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> into an audio packet, and check if NACKing is necessary. </p>
+<p>Destroy the audio context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">packet</td><td>Packet of data that gets received over a <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a></td></tr>
+    <tr><td class="paramname">audio_context</td><td>The audio context to destroy </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 if received an incorrect packet, else 0 </dd></dl>
 
 </div>
 </div>
-<a id="a95fa7aa7ba4dd64b877dd328353b68e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95fa7aa7ba4dd64b877dd328353b68e6">&#9670;&nbsp;</a></span>render_audio()</h2>
+<a id="af91ba5cc900fa1417fa749bf079d9faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91ba5cc900fa1417fa749bf079d9faf">&#9670;&nbsp;</a></span>init_audio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAudioContext.html">AudioContext</a>* init_audio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This will initialize the audio system. The audio system will receive audio packets, and render the audio out to a playback device. </p>
+<dl class="section return"><dt>Returns</dt><dd>The new audio context </dd></dl>
+
+</div>
+</div>
+<a id="a1d76a922763820b7572f785f1000827d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d76a922763820b7572f785f1000827d">&#9670;&nbsp;</a></span>receive_audio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void receive_audio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td>
+          <td class="paramname"><em>audio_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive audio packet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audio_context</td><td>The audio context to give the audio packet to</td></tr>
+    <tr><td class="paramname">packet</td><td>Packet as received from the server</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths. </dd></dl>
+
+</div>
+</div>
+<a id="a4779d5da095b14e8e82fdcc84955c73c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4779d5da095b14e8e82fdcc84955c73c">&#9670;&nbsp;</a></span>refresh_audio_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void refresh_audio_device </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td>
+          <td class="paramname"><em>audio_context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This will refresh the audio device of the audio context prior to the next render. This must be called if a new playback device is plugged in or unplugged. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audio_context</td><td>The audio context to use</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is thread-safe, and may be called independently of the rest of the functions </dd></dl>
+
+</div>
+</div>
+<a id="a02350b8accdbe0401e6a3861abb30320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02350b8accdbe0401e6a3861abb30320">&#9670;&nbsp;</a></span>render_audio()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,38 +268,26 @@ Usage</h1>
         <tr>
           <td class="memname">void render_audio </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td>
+          <td class="paramname"><em>audio_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This will play any queued audio packets NOTE: Is thread-safe, and can be called no matter what other audio calls are being made. </p>
+<p>Render the audio frame (If any are available to render) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audio_context</td><td>The audio context that potentially wants to render audio</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is thread-safe, and may be called independently of the rest of the functions </dd></dl>
 
 </div>
 </div>
-<a id="a2a8d274c22a4b5d4fd452934377b547b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a8d274c22a4b5d4fd452934377b547b">&#9670;&nbsp;</a></span>set_audio_frequency()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void set_audio_frequency </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>new_audio_frequency</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This will change the audio sample rate. </p>
-
-</div>
-</div>
-<a id="a38fc0b38a11f4b900d88f5e6ac1ce540"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38fc0b38a11f4b900d88f5e6ac1ce540">&#9670;&nbsp;</a></span>update_audio()</h2>
+<a id="a0c87cda83151b302a16a75a97a60eabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c87cda83151b302a16a75a97a60eabe">&#9670;&nbsp;</a></span>update_audio()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,13 +295,23 @@ Usage</h1>
         <tr>
           <td class="memname">void update_audio </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td>
+          <td class="paramname"><em>audio_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update the audio parameters to new parameters sent from server, if any, by reinitializing, and catch up if needed. </p>
+<p>Does any pending work the audio context wants to do. (Including decoding frames, and calculating statistics) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audio_context</td><td>The audio context to update</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths.</dd>
+<dd>
+In order for audio to be responsive, this function <em>MUST</em> be called in a tight loop, at least once every millisecond. </dd></dl>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 var structCaptureDevice =
 [
-    [ "corner_color", "structCaptureDevice.html#a2c98177722c829280c8321793a269486", null ],
+    [ "corner_color", "structCaptureDevice.html#a21adf1c38ab9e91fc40131fc2edab8c4", null ],
     [ "frame_data", "structCaptureDevice.html#a6800f23c51341920773e2dbaab517fe8", null ],
     [ "height", "structCaptureDevice.html#a434ce48f6bf02c758f551cda2ffdfe6e", null ],
     [ "internal", "structCaptureDevice.html#ac7380b5b42caebd0a7401c17437d4ec2", null ],

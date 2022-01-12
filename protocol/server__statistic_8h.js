@@ -1,0 +1,25 @@
+var server__statistic_8h =
+[
+    [ "AUDIO_ENCODE_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafa0613b8b81df5f1855c9c68e3cfd5db", null ],
+    [ "CLIENT_HANDLE_USERINPUT_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba31c807d31f0487d03623aa1f63d178c8", null ],
+    [ "NETWORK_THROTTLED_PACKET_DELAY", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac258810ce39025e0cefc8e1f34fd2fa2", null ],
+    [ "NETWORK_THROTTLED_PACKET_DELAY_RATE", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae633d7b7ba7e153f9671a1691ef89b8c", null ],
+    [ "NETWORK_THROTTLED_PACKET_DELAY_LOOPS", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5c92f2ee11cc4e038a10445b3f749372", null ],
+    [ "VIDEO_CAPTURE_CREATE_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba21fa0c0a10c8063afb6215455922e5a8", null ],
+    [ "VIDEO_CAPTURE_UPDATE_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55badd2ffe606ca7edbe784ded18671646fb", null ],
+    [ "VIDEO_CAPTURE_SCREEN_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2e76a584d3eb368c555e0dd6291ed331", null ],
+    [ "VIDEO_CAPTURE_TRANSFER_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab7bfc273f402328983f2b07c56fb6907", null ],
+    [ "VIDEO_ENCODER_UPDATE_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba47c36f57176700447de96aa4282df965", null ],
+    [ "VIDEO_ENCODE_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55baeba71b4c50b5ac76b56b850f361cf65b", null ],
+    [ "VIDEO_FPS_SENT", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba323844dc44cfd54174da5de5c24d4d70", null ],
+    [ "VIDEO_FPS_SKIPPED_IN_CAPTURE", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55baeb3563683b3a0fc7176a7bfb9a0c6995", null ],
+    [ "VIDEO_FRAME_SIZE", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3a3771741a5ce4face7e45aad78b0345", null ],
+    [ "VIDEO_FRAME_PROCESSING_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba93b1e263ca2fc213189037e733630e2d", null ],
+    [ "VIDEO_GET_CURSOR_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae3169a4b1fdf75c4ce40d4a9e0bc2e1b", null ],
+    [ "VIDEO_INTER_FRAME_QP", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac3861f2aeda66d4bb75bb469ea42d211", null ],
+    [ "VIDEO_INTRA_FRAME_QP", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6f181840446f715c76ed2af1e4ba12ff", null ],
+    [ "VIDEO_SEND_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba70a3201279c8c051ceb67f98523c753f", null ],
+    [ "SERVER_NUM_METRICS", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8f4d3a01b92d6560e839b7bf874df3ee", null ],
+    [ "whist_init_server_statistics", "server__statistic_8h.html#a88fe8358dd91a9e94cf4521b284fd4c5", null ],
+    [ "server_statistic_info", "server__statistic_8h.html#aeb2697fdcecb4d884626826c24600b01", null ]
+];

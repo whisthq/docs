@@ -81,19 +81,205 @@ $(document).ready(function(){initNavTree('x11__window__info_8c.html',''); initRe
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">x11_window_info.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This file contains all the code for getting X11-specific window information.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="x11__window__info_8h_source.html">x11_window_info.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="window__info_8h_source.html">window_info.h</a>&quot;</code><br />
 <code>#include &lt;locale.h&gt;</code><br />
-</div></div><!-- contents -->
+<code>#include &lt;X11/Xlib.h&gt;</code><br />
+<code>#include &lt;X11/Xutil.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae57ca070d4616c73fd9f0782c1636398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#ae57ca070d4616c73fd9f0782c1636398">init_window_info_getter</a> ()</td></tr>
+<tr class="memdesc:ae57ca070d4616c73fd9f0782c1636398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize window info getter.  <a href="x11__window__info_8c.html#ae57ca070d4616c73fd9f0782c1636398">More...</a><br /></td></tr>
+<tr class="separator:ae57ca070d4616c73fd9f0782c1636398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b571ee2e018be79d827594eca8aa000"><td class="memItemLeft" align="right" valign="top">Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a2b571ee2e018be79d827594eca8aa000">get_focused_window</a> ()</td></tr>
+<tr class="separator:a2b571ee2e018be79d827594eca8aa000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ff5688ba3a77c405bd696b923f9d2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d">get_focused_window_name</a> (char **name_return)</td></tr>
+<tr class="memdesc:a03ff5688ba3a77c405bd696b923f9d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the focused window.  <a href="x11__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d">More...</a><br /></td></tr>
+<tr class="separator:a03ff5688ba3a77c405bd696b923f9d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d78923d5f9d0a0dac73ab76ad95fe4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a5d78923d5f9d0a0dac73ab76ad95fe4f">is_focused_window_fullscreen</a> ()</td></tr>
+<tr class="memdesc:a5d78923d5f9d0a0dac73ab76ad95fe4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether the focused window is fullscreen or not.  <a href="x11__window__info_8c.html#a5d78923d5f9d0a0dac73ab76ad95fe4f">More...</a><br /></td></tr>
+<tr class="separator:a5d78923d5f9d0a0dac73ab76ad95fe4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d460d984ec2b0af58a153995e866ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#ad8d460d984ec2b0af58a153995e866ce">destroy_window_info_getter</a> ()</td></tr>
+<tr class="memdesc:ad8d460d984ec2b0af58a153995e866ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy window info getter.  <a href="x11__window__info_8c.html#ad8d460d984ec2b0af58a153995e866ce">More...</a><br /></td></tr>
+<tr class="separator:ad8d460d984ec2b0af58a153995e866ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a854f9eb314f72feecf68ba03c6f0e5d5"><td class="memItemLeft" align="right" valign="top">Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a854f9eb314f72feecf68ba03c6f0e5d5">display</a></td></tr>
+<tr class="separator:a854f9eb314f72feecf68ba03c6f0e5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d654deed25f48f00c5cd33bb16a190"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a88d654deed25f48f00c5cd33bb16a190">last_window_name</a> [<a class="el" href="window__info_8h.html#a97052ef1526c9d27ad6d58b7d8d92fc0">WINDOW_NAME_MAXLEN</a>+1]</td></tr>
+<tr class="separator:a88d654deed25f48f00c5cd33bb16a190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e186ee129f949a66026ddbfb9c175c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#ad9e186ee129f949a66026ddbfb9c175c">last_window_name_valid</a></td></tr>
+<tr class="separator:ad9e186ee129f949a66026ddbfb9c175c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file contains all the code for getting X11-specific window information. </p>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ad8d460d984ec2b0af58a153995e866ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d460d984ec2b0af58a153995e866ce">&#9670;&nbsp;</a></span>destroy_window_info_getter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy_window_info_getter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy window info getter. </p>
+
+</div>
+</div>
+<a id="a2b571ee2e018be79d827594eca8aa000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b571ee2e018be79d827594eca8aa000">&#9670;&nbsp;</a></span>get_focused_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Window get_focused_window </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03ff5688ba3a77c405bd696b923f9d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ff5688ba3a77c405bd696b923f9d2d">&#9670;&nbsp;</a></span>get_focused_window_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool get_focused_window_name </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>name_return</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name of the focused window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_return</td><td>Address to write window title name to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the window name is new, false if the window name is the same or on failure </dd></dl>
+
+</div>
+</div>
+<a id="ae57ca070d4616c73fd9f0782c1636398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57ca070d4616c73fd9f0782c1636398">&#9670;&nbsp;</a></span>init_window_info_getter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_window_info_getter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize window info getter. </p>
+
+</div>
+</div>
+<a id="a5d78923d5f9d0a0dac73ab76ad95fe4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d78923d5f9d0a0dac73ab76ad95fe4f">&#9670;&nbsp;</a></span>is_focused_window_fullscreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_focused_window_fullscreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query whether the focused window is fullscreen or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>false if not fullscreen, true if fullscreen.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>By "fullscreen", we mean that the window is rendering directly to the screen, not through the window manager. Examples include fullscreen video playback in a browser, or fullscreen games. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a854f9eb314f72feecf68ba03c6f0e5d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a854f9eb314f72feecf68ba03c6f0e5d5">&#9670;&nbsp;</a></span>display</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Display* display</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88d654deed25f48f00c5cd33bb16a190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d654deed25f48f00c5cd33bb16a190">&#9670;&nbsp;</a></span>last_window_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char last_window_name[<a class="el" href="window__info_8h.html#a97052ef1526c9d27ad6d58b7d8d92fc0">WINDOW_NAME_MAXLEN</a>+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9e186ee129f949a66026ddbfb9c175c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e186ee129f949a66026ddbfb9c175c">&#9670;&nbsp;</a></span>last_window_name_valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool last_window_name_valid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_df322525ef19ea0172bad82237de04c3.html">utils</a></li><li class="navelem"><a class="el" href="x11__window__info_8c.html">x11_window_info.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_e68502ba7741b9477bffd325bfc1c340.html">utils</a></li><li class="navelem"><a class="el" href="x11__window__info_8c.html">x11_window_info.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

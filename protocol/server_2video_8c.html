@@ -83,8 +83,7 @@ $(document).ready(function(){initNavTree('server_2video_8c.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">video.c File Reference</div>  </div>
 </div><!--header-->
@@ -106,6 +105,8 @@ $(document).ready(function(){initNavTree('server_2video_8c.html',''); initResiza
 <code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2video_8h_source.html">video.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="server__statistic_8h_source.html">server_statistic.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -122,57 +123,34 @@ Functions</h2></td></tr>
 <tr class="separator:a27bfdcc708610481b47c9e7383c99241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34bd39d3decec9bb20a254ad91a8707d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a34bd39d3decec9bb20a254ad91a8707d">multithreaded_destroy_encoder</a> (void *opaque)</td></tr>
 <tr class="separator:a34bd39d3decec9bb20a254ad91a8707d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46dcd5b99eab1c1d974902d5491c4f33"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33">create_new_device</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> **device, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *rdevice, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> **encoder, uint32_t true_width, uint32_t true_height)</td></tr>
-<tr class="memdesc:a46dcd5b99eab1c1d974902d5491c4f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structCaptureDevice.html">CaptureDevice</a>.  <a href="server_2video_8c.html#a46dcd5b99eab1c1d974902d5491c4f33">More...</a><br /></td></tr>
-<tr class="separator:a46dcd5b99eab1c1d974902d5491c4f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f23919fade390e6daaa8985a386746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a92f23919fade390e6daaa8985a386746">send_populated_frames</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *server_frame_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int id)</td></tr>
-<tr class="memdesc:a92f23919fade390e6daaa8985a386746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the populated video frames to the client.  <a href="server_2video_8c.html#a92f23919fade390e6daaa8985a386746">More...</a><br /></td></tr>
-<tr class="separator:a92f23919fade390e6daaa8985a386746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6146b7e514266435cfb9f2192094d8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a6146b7e514266435cfb9f2192094d8f5">retry_capture_screen</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a6146b7e514266435cfb9f2192094d8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to capture the screen. Afterwards sets update_device to true.  <a href="server_2video_8c.html#a6146b7e514266435cfb9f2192094d8f5">More...</a><br /></td></tr>
-<tr class="separator:a6146b7e514266435cfb9f2192094d8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5863302048e034c334f453238443c658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a5863302048e034c334f453238443c658">update_current_device</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, uint32_t true_width, uint32_t true_height)</td></tr>
-<tr class="memdesc:a5863302048e034c334f453238443c658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates dimensions of capture device and sets update_encoder to true.  <a href="server_2video_8c.html#a5863302048e034c334f453238443c658">More...</a><br /></td></tr>
-<tr class="separator:a5863302048e034c334f453238443c658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5859368e99c5368c8673f27f8b64392d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a5859368e99c5368c8673f27f8b64392d">send_empty_frame</a> (int id)</td></tr>
-<tr class="memdesc:a5859368e99c5368c8673f27f8b64392d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an empty frame to the client.  <a href="server_2video_8c.html#a5859368e99c5368c8673f27f8b64392d">More...</a><br /></td></tr>
-<tr class="separator:a5859368e99c5368c8673f27f8b64392d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c">do_update_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the encoder upon request. Note that this function <em>returns</em> the updated encoder, due to the encoder factory.  <a href="server_2video_8c.html#a6a1d3a18d03d9029e12df0a96684cc4c">More...</a><br /></td></tr>
-<tr class="separator:a6a1d3a18d03d9029e12df0a96684cc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29866e3fa1927d662cbc0a8a00b0d88e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a29866e3fa1927d662cbc0a8a00b0d88e">create_new_device</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> **device, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *rdevice, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> **encoder, uint32_t true_width, uint32_t true_height)</td></tr>
+<tr class="memdesc:a29866e3fa1927d662cbc0a8a00b0d88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structCaptureDevice.html">CaptureDevice</a>.  <a href="server_2video_8c.html#a29866e3fa1927d662cbc0a8a00b0d88e">More...</a><br /></td></tr>
+<tr class="separator:a29866e3fa1927d662cbc0a8a00b0d88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ecebc9592e7dbb1c84c8001b89310ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a0ecebc9592e7dbb1c84c8001b89310ef">send_populated_frames</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *server_frame_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int id, <a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> client_input_timestamp, <a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> server_timestamp)</td></tr>
+<tr class="memdesc:a0ecebc9592e7dbb1c84c8001b89310ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the populated video frames to the client.  <a href="server_2video_8c.html#a0ecebc9592e7dbb1c84c8001b89310ef">More...</a><br /></td></tr>
+<tr class="separator:a0ecebc9592e7dbb1c84c8001b89310ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08857845add4e9b825d862919f089188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a08857845add4e9b825d862919f089188">retry_capture_screen</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:a08857845add4e9b825d862919f089188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to capture the screen. Afterwards sets update_device to true.  <a href="server_2video_8c.html#a08857845add4e9b825d862919f089188">More...</a><br /></td></tr>
+<tr class="separator:a08857845add4e9b825d862919f089188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba7b6059b4b202980792f6341195c0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a2ba7b6059b4b202980792f6341195c0d">update_current_device</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, uint32_t true_width, uint32_t true_height)</td></tr>
+<tr class="memdesc:a2ba7b6059b4b202980792f6341195c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates dimensions of capture device and sets update_encoder to true.  <a href="server_2video_8c.html#a2ba7b6059b4b202980792f6341195c0d">More...</a><br /></td></tr>
+<tr class="separator:a2ba7b6059b4b202980792f6341195c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#aade5b8fb0c17924c6ebe2c5ce9923e55">send_empty_frame</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, int id)</td></tr>
+<tr class="memdesc:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an empty frame to the client.  <a href="server_2video_8c.html#aade5b8fb0c17924c6ebe2c5ce9923e55">More...</a><br /></td></tr>
+<tr class="separator:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e33634bba81663467a6f2ca6cee38e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a1e33634bba81663467a6f2ca6cee38e3">do_update_encoder</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
+<tr class="memdesc:a1e33634bba81663467a6f2ca6cee38e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the encoder upon request. Note that this function <em>returns</em> the updated encoder, due to the encoder factory.  <a href="server_2video_8c.html#a1e33634bba81663467a6f2ca6cee38e3">More...</a><br /></td></tr>
+<tr class="separator:a1e33634bba81663467a6f2ca6cee38e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26603a17edf486ab02cf85b75e60eb08"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">multithreaded_send_video</a> (void *opaque)</td></tr>
 <tr class="memdesc:a26603a17edf486ab02cf85b75e60eb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This loops and captures video frames, encodes them if needed, and sends them to the client along with cursor images if necessary.  <a href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">More...</a><br /></td></tr>
 <tr class="separator:a26603a17edf486ab02cf85b75e60eb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a9aec5d9660ae8a0c8117f5d96b871606">exiting</a></td></tr>
-<tr class="separator:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad137585f4fddac5c02d6b3f99323385b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#ad137585f4fddac5c02d6b3f99323385b">max_bitrate</a></td></tr>
-<tr class="separator:ad137585f4fddac5c02d6b3f99323385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc5e4446971a6408d2505502c9bb3a0"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#accc5e4446971a6408d2505502c9bb3a0">client_width</a> = -1</td></tr>
-<tr class="separator:accc5e4446971a6408d2505502c9bb3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3d44b527e1617a4fa8324474f434cfb"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#ac3d44b527e1617a4fa8324474f434cfb">client_height</a> = -1</td></tr>
-<tr class="separator:ac3d44b527e1617a4fa8324474f434cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb23d13f6e3a74caa90ec0482ec2c947"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#acb23d13f6e3a74caa90ec0482ec2c947">client_dpi</a> = -1</td></tr>
-<tr class="separator:acb23d13f6e3a74caa90ec0482ec2c947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cb7ba1823d4d6f9fea456f96e729710"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a7cb7ba1823d4d6f9fea456f96e729710">client_codec_type</a> = <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a078edde93a764047c0ea92d4b2238a37">CODEC_TYPE_UNKNOWN</a></td></tr>
-<tr class="separator:a7cb7ba1823d4d6f9fea456f96e729710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0463a8762d54da9908315a54f9a740ea"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a0463a8762d54da9908315a54f9a740ea">update_device</a> = true</td></tr>
-<tr class="separator:a0463a8762d54da9908315a54f9a740ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae54fd77214dad6eaf2b542edb690d53"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#aae54fd77214dad6eaf2b542edb690d53">stop_streaming</a></td></tr>
-<tr class="separator:aae54fd77214dad6eaf2b542edb690d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c556bf7dad7ad139e553b7af6281656"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a2c556bf7dad7ad139e553b7af6281656">wants_iframe</a></td></tr>
-<tr class="separator:a2c556bf7dad7ad139e553b7af6281656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e07e0ac06cb165d61f1e475c82aaa73"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73">update_encoder</a></td></tr>
-<tr class="separator:a8e07e0ac06cb165d61f1e475c82aaa73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with processing. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md102"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md98"></a>
 video on the server.</h1>
-<h1><a class="anchor" id="autotoc_md103"></a>
+<h1><a class="anchor" id="autotoc_md99"></a>
 Usage</h1>
 <p><a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08" title="This loops and captures video frames, encodes them if needed, and sends them to the client along with...">multithreaded_send_video()</a> is called on its own thread and loops repeatedly to capture and send video. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -219,8 +197,8 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a46dcd5b99eab1c1d974902d5491c4f33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46dcd5b99eab1c1d974902d5491c4f33">&#9670;&nbsp;</a></span>create_new_device()</h2>
+<a id="a29866e3fa1927d662cbc0a8a00b0d88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29866e3fa1927d662cbc0a8a00b0d88e">&#9670;&nbsp;</a></span>create_new_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,6 +206,12 @@ Usage</h1>
         <tr>
           <td class="memname">int32_t create_new_device </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
           <td class="paramname"><em>statistics_timer</em>, </td>
         </tr>
@@ -272,6 +256,7 @@ Usage</h1>
 <p>Creates a new <a class="el" href="structCaptureDevice.html">CaptureDevice</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">state</td><td>The whist server state </td></tr>
     <tr><td class="paramname">statistics_timer</td><td>Pointer to statistics timer used for logging </td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
     <tr><td class="paramname">rdevice</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
@@ -285,8 +270,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a6a1d3a18d03d9029e12df0a96684cc4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a1d3a18d03d9029e12df0a96684cc4c">&#9670;&nbsp;</a></span>do_update_encoder()</h2>
+<a id="a1e33634bba81663467a6f2ca6cee38e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e33634bba81663467a6f2ca6cee38e3">&#9670;&nbsp;</a></span>do_update_encoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,6 +279,12 @@ Usage</h1>
         <tr>
           <td class="memname"><a class="el" href="structVideoEncoder.html">VideoEncoder</a>* do_update_encoder </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
           <td class="paramname"><em>encoder</em>, </td>
         </tr>
@@ -314,6 +305,7 @@ Usage</h1>
 <p>Updates the encoder upon request. Note that this function <em>returns</em> the updated encoder, due to the encoder factory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">state</td><td>the Whist server state </td></tr>
     <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer</td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer</td></tr>
   </table>
@@ -379,8 +371,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a6146b7e514266435cfb9f2192094d8f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6146b7e514266435cfb9f2192094d8f5">&#9670;&nbsp;</a></span>retry_capture_screen()</h2>
+<a id="a08857845add4e9b825d862919f089188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08857845add4e9b825d862919f089188">&#9670;&nbsp;</a></span>retry_capture_screen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,6 +380,12 @@ Usage</h1>
         <tr>
           <td class="memname">void retry_capture_screen </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
@@ -408,6 +406,7 @@ Usage</h1>
 <p>Attempts to capture the screen. Afterwards sets update_device to true. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">state</td><td>the Whist server state </td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
     <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
   </table>
@@ -416,8 +415,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a5859368e99c5368c8673f27f8b64392d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5859368e99c5368c8673f27f8b64392d">&#9670;&nbsp;</a></span>send_empty_frame()</h2>
+<a id="aade5b8fb0c17924c6ebe2c5ce9923e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade5b8fb0c17924c6ebe2c5ce9923e55">&#9670;&nbsp;</a></span>send_empty_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,9 +424,19 @@ Usage</h1>
         <tr>
           <td class="memname">void send_empty_frame </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -435,6 +444,7 @@ Usage</h1>
 <p>Sends an empty frame to the client. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">state</td><td>the Whist server state </td></tr>
     <tr><td class="paramname">id</td><td>Pointer to the frame id </td></tr>
   </table>
   </dd>
@@ -442,8 +452,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a92f23919fade390e6daaa8985a386746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92f23919fade390e6daaa8985a386746">&#9670;&nbsp;</a></span>send_populated_frames()</h2>
+<a id="a0ecebc9592e7dbb1c84c8001b89310ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ecebc9592e7dbb1c84c8001b89310ef">&#9670;&nbsp;</a></span>send_populated_frames()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,6 +461,12 @@ Usage</h1>
         <tr>
           <td class="memname">void send_populated_frames </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
           <td class="paramname"><em>statistics_timer</em>, </td>
         </tr>
@@ -476,7 +492,19 @@ Usage</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td>
+          <td class="paramname"><em>client_input_timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td>
+          <td class="paramname"><em>server_timestamp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -489,19 +517,22 @@ Usage</h1>
 <p>Sends the populated video frames to the client. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">state</td><td>server state </td></tr>
     <tr><td class="paramname">statistics_timer</td><td>Pointer to statistics timer used for logging </td></tr>
     <tr><td class="paramname">server_frame_timer</td><td>Pointer to server_frame_timer </td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
     <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
     <tr><td class="paramname">id</td><td>Pointer to frame id </td></tr>
+    <tr><td class="paramname">client_input_timestamp</td><td>Estimated client timestamp at which user input is sent </td></tr>
+    <tr><td class="paramname">server_timestamp</td><td>Server timestamp at which this frame is captured </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a5863302048e034c334f453238443c658"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5863302048e034c334f453238443c658">&#9670;&nbsp;</a></span>update_current_device()</h2>
+<a id="a2ba7b6059b4b202980792f6341195c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba7b6059b4b202980792f6341195c0d">&#9670;&nbsp;</a></span>update_current_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,6 +540,12 @@ Usage</h1>
         <tr>
           <td class="memname">void update_current_device </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
           <td class="paramname"><em>statistics_timer</em>, </td>
         </tr>
@@ -547,6 +584,7 @@ Usage</h1>
 <p>Updates dimensions of capture device and sets update_encoder to true. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">state</td><td>The server state </td></tr>
     <tr><td class="paramname">statistics_timer</td><td>Pointer to the timer used for statistics logging </td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
     <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
@@ -555,147 +593,6 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a7cb7ba1823d4d6f9fea456f96e729710"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cb7ba1823d4d6f9fea456f96e729710">&#9670;&nbsp;</a></span>client_codec_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> client_codec_type = <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a078edde93a764047c0ea92d4b2238a37">CODEC_TYPE_UNKNOWN</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acb23d13f6e3a74caa90ec0482ec2c947"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb23d13f6e3a74caa90ec0482ec2c947">&#9670;&nbsp;</a></span>client_dpi</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int client_dpi = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac3d44b527e1617a4fa8324474f434cfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3d44b527e1617a4fa8324474f434cfb">&#9670;&nbsp;</a></span>client_height</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int client_height = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="accc5e4446971a6408d2505502c9bb3a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc5e4446971a6408d2505502c9bb3a0">&#9670;&nbsp;</a></span>client_width</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int client_width = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9aec5d9660ae8a0c8117f5d96b871606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aec5d9660ae8a0c8117f5d96b871606">&#9670;&nbsp;</a></span>exiting</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool exiting</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad137585f4fddac5c02d6b3f99323385b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad137585f4fddac5c02d6b3f99323385b">&#9670;&nbsp;</a></span>max_bitrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int max_bitrate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aae54fd77214dad6eaf2b542edb690d53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae54fd77214dad6eaf2b542edb690d53">&#9670;&nbsp;</a></span>stop_streaming</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool stop_streaming</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0463a8762d54da9908315a54f9a740ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0463a8762d54da9908315a54f9a740ea">&#9670;&nbsp;</a></span>update_device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool update_device = true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8e07e0ac06cb165d61f1e475c82aaa73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e07e0ac06cb165d61f1e475c82aaa73">&#9670;&nbsp;</a></span>update_encoder</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool update_encoder</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2c556bf7dad7ad139e553b7af6281656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c556bf7dad7ad139e553b7af6281656">&#9670;&nbsp;</a></span>wants_iframe</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool wants_iframe</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

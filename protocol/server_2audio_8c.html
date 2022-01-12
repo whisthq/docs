@@ -82,8 +82,7 @@ $(document).ready(function(){initNavTree('server_2audio_8c.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">audio.c File Reference</div>  </div>
 </div><!--header-->
@@ -104,26 +103,21 @@ $(document).ready(function(){initNavTree('server_2audio_8c.html',''); initResiza
 <code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2audio_8h_source.html">audio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="server__statistic_8h_source.html">server_statistic.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5d4cd54c3652d2c734923079d07992b7"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7">multithreaded_send_audio</a> (void *opaque)</td></tr>
 <tr class="memdesc:a5d4cd54c3652d2c734923079d07992b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This loops and collects audio samples, encodes the frames, and sends them to the client.  <a href="server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7">More...</a><br /></td></tr>
 <tr class="separator:a5d4cd54c3652d2c734923079d07992b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2audio_8c.html#a9aec5d9660ae8a0c8117f5d96b871606">exiting</a></td></tr>
-<tr class="separator:a9aec5d9660ae8a0c8117f5d96b871606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a527325650d66abd9626499785b3bafd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2audio_8c.html#a527325650d66abd9626499785b3bafd2">sample_rate</a></td></tr>
-<tr class="separator:a527325650d66abd9626499785b3bafd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with processing. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md80"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md78"></a>
 audio on the server.</h1>
-<h1><a class="anchor" id="autotoc_md81"></a>
+<h1><a class="anchor" id="autotoc_md79"></a>
 Usage</h1>
 <p><a class="el" href="server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7" title="This loops and collects audio samples, encodes the frames, and sends them to the client.">multithreaded_send_audio()</a> is called on its own thread and loops repeatedly to capture and send audio. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -144,35 +138,6 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>This loops and collects audio samples, encodes the frames, and sends them to the client. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a9aec5d9660ae8a0c8117f5d96b871606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aec5d9660ae8a0c8117f5d96b871606">&#9670;&nbsp;</a></span>exiting</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool exiting</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a527325650d66abd9626499785b3bafd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a527325650d66abd9626499785b3bafd2">&#9670;&nbsp;</a></span>sample_rate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sample_rate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

@@ -1,6 +1,9 @@
 var log__statistic_8h =
 [
-    [ "init_statistic_logger", "log__statistic_8h.html#a21988a70aac47135f7c295ce2df1b612", null ],
-    [ "log_double_statistic", "log__statistic_8h.html#a2ba2e6b1588895d3034d89881e99a59a", null ],
-    [ "print_statistics", "log__statistic_8h.html#a3c8a8769158025ec9e929601b9df6439", null ]
+    [ "StatisticInfo", "structStatisticInfo.html", "structStatisticInfo" ],
+    [ "STATISTICS_FREQUENCY_IN_SEC", "log__statistic_8h.html#afa6be6a1f15ad9d2c4ca359bfb1703e8", null ],
+    [ "TIME_RUN", "log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65", null ],
+    [ "destroy_statistic_logger", "log__statistic_8h.html#a56488c6ba44b9551c7458067c1443991", null ],
+    [ "log_double_statistic", "log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674", null ],
+    [ "whist_init_statistic_logger", "log__statistic_8h.html#a462484146d0ca6bd35b234bca13cc9a0", null ]
 ];

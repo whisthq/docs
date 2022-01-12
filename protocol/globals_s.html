@@ -84,9 +84,27 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>safe_av_frame_alloc()
+: <a class="el" href="decode_8c.html#a462141beaad16ece4c3dc31c9e043293">decode.c</a>
+</li>
+<li>safe_close
+: <a class="el" href="whist_8h.html#af60bd661d5305321029fd3e69fd6006f">whist.h</a>
+</li>
+<li>safe_dup
+: <a class="el" href="whist_8h.html#a155785ade6f9b674db17d78410a66a43">whist.h</a>
+</li>
+<li>safe_dup2
+: <a class="el" href="whist_8h.html#ac32e52756343af64e6b1968a95139c8f">whist.h</a>
+</li>
 <li>safe_malloc()
 : <a class="el" href="whist__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7">whist_memory.c</a>
 , <a class="el" href="whist__memory_8h.html#ac26280b92f7122e6f76a0407d26ae8e7">whist_memory.h</a>
+</li>
+<li>safe_mkdir
+: <a class="el" href="whist_8h.html#a35c90ae9a8982d730fe7e45f3f7a3ca8">whist.h</a>
+</li>
+<li>safe_open
+: <a class="el" href="whist_8h.html#a745c362c94c9cb2dce7d0827d21ba3e8">whist.h</a>
 </li>
 <li>safe_printf
 : <a class="el" href="whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">whist.h</a>
@@ -95,82 +113,109 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="whist__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a">whist_memory.c</a>
 , <a class="el" href="whist__memory_8h.html#a15cfd76dbebf81d90310d51c79e2a06a">whist_memory.h</a>
 </li>
-<li>safe_SDL_CondWait()
-: <a class="el" href="sdl__utils_8c.html#aa3bd5c19a5f8d2a5e39f067510ddd373">sdl_utils.c</a>
-, <a class="el" href="sdl__utils_8h.html#aa3bd5c19a5f8d2a5e39f067510ddd373">sdl_utils.h</a>
-</li>
-<li>safe_SDL_CreateMutex()
-: <a class="el" href="sdl__utils_8c.html#a87e59165386162d74cf290669cf1e5d8">sdl_utils.c</a>
-, <a class="el" href="sdl__utils_8h.html#a87e59165386162d74cf290669cf1e5d8">sdl_utils.h</a>
-</li>
-<li>safe_SDL_LockMutex()
-: <a class="el" href="sdl__utils_8c.html#ad9dc00e8f51bb7c29c05499134fe2ddb">sdl_utils.c</a>
-, <a class="el" href="sdl__utils_8h.html#ad9dc00e8f51bb7c29c05499134fe2ddb">sdl_utils.h</a>
-</li>
-<li>safe_SDL_TryLockMutex()
-: <a class="el" href="sdl__utils_8c.html#a1bf4241c001c12d54c4b59d77f422183">sdl_utils.c</a>
-, <a class="el" href="sdl__utils_8h.html#a1bf4241c001c12d54c4b59d77f422183">sdl_utils.h</a>
-</li>
-<li>safe_SDL_UnlockMutex()
-: <a class="el" href="sdl__utils_8c.html#abbd0cc7567697175ece165e1495dcaef">sdl_utils.c</a>
-, <a class="el" href="sdl__utils_8h.html#abbd0cc7567697175ece165e1495dcaef">sdl_utils.h</a>
-</li>
 <li>safe_strncpy()
 : <a class="el" href="whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">whist.c</a>
 , <a class="el" href="whist_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e">whist.h</a>
 </li>
-<li>sample_rate
-: <a class="el" href="server_2audio_8c.html#a527325650d66abd9626499785b3bafd2">audio.c</a>
-, <a class="el" href="main_8h.html#a527325650d66abd9626499785b3bafd2">main.h</a>
-, <a class="el" href="server_2network_8c.html#a527325650d66abd9626499785b3bafd2">network.c</a>
-</li>
 <li>SDL_AUDIO_BUFFER_SIZE
 : <a class="el" href="client_2audio_8c.html#a25df0d469cd704cc31a72b895f3b67b4">audio.c</a>
 </li>
-<li>sdl_cursor
-: <a class="el" href="client_2video_8c.html#ac7b6f397fba3aca11063cdd5a2084994">video.c</a>
+<li>SDL_FRAMEBUFFER_PIXEL_FORMAT
+: <a class="el" href="sdl__utils_8h.html#ae68af5cd5b1c04c018ad7be58aa215b2">sdl_utils.h</a>
+</li>
+<li>sdl_free_png_file_rgb_surface()
+: <a class="el" href="sdl__utils_8c.html#aa33cb676d6c720b987d61393ae409b4a">sdl_utils.c</a>
+</li>
+<li>sdl_handle_events()
+: <a class="el" href="sdl__event__handler_8c.html#a5ec180d39ab3875c94b32e82fad5e14d">sdl_event_handler.c</a>
+, <a class="el" href="sdl__event__handler_8h.html#a5ec180d39ab3875c94b32e82fad5e14d">sdl_event_handler.h</a>
+</li>
+<li>sdl_is_window_visible()
+: <a class="el" href="sdl__utils_8c.html#a586d6736d62d1a7ed201f4573fc99d3f">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#a586d6736d62d1a7ed201f4573fc99d3f">sdl_utils.h</a>
 </li>
 <li>SDL_MAIN_HANDLED
 : <a class="el" href="client_2main_8c.html#a51f528deaaeb973f417b46a2ec36f850">main.c</a>
 , <a class="el" href="threads_8h.html#a51f528deaaeb973f417b46a2ec36f850">threads.h</a>
 </li>
-<li>sdl_surface_from_png_file()
-: <a class="el" href="sdl__utils_8c.html#a1b2a1365885e6c3b0e2e42d9e38d56a8">sdl_utils.c</a>
-, <a class="el" href="sdl__utils_8h.html#a1b2a1365885e6c3b0e2e42d9e38d56a8">sdl_utils.h</a>
+<li>sdl_pending_audio_device_update()
+: <a class="el" href="sdl__event__handler_8c.html#a4e088f546ed4cb02e0b133921c4f2b52">sdl_event_handler.c</a>
+, <a class="el" href="sdl__event__handler_8h.html#a4e088f546ed4cb02e0b133921c4f2b52">sdl_event_handler.h</a>
 </li>
-<li>SDLVideoContext
-: <a class="el" href="client_2video_8c.html#ae1ca498075131094d8d54ea592fae9f9">video.c</a>
+<li>sdl_present_pending_framebuffer()
+: <a class="el" href="sdl__utils_8c.html#adfd539439cacc3bb4a8a93037ac724c1">sdl_utils.c</a>
+</li>
+<li>sdl_render_framebuffer()
+: <a class="el" href="sdl__utils_8c.html#a3c518634170ca9adf73eb19549e272bc">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#a3c518634170ca9adf73eb19549e272bc">sdl_utils.h</a>
+</li>
+<li>sdl_render_pending()
+: <a class="el" href="sdl__utils_8c.html#acc658fd7ea4e45e924bf963ec874a0bd">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#acc658fd7ea4e45e924bf963ec874a0bd">sdl_utils.h</a>
+</li>
+<li>sdl_render_window_titlebar_color()
+: <a class="el" href="sdl__utils_8c.html#a1081ae59fbf90e16f9d12ef7a97f0555">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#a1081ae59fbf90e16f9d12ef7a97f0555">sdl_utils.h</a>
+</li>
+<li>sdl_renderer_resize_window()
+: <a class="el" href="sdl__utils_8c.html#a2a20ede981c49da978e972e7e61629d8">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#a2a20ede981c49da978e972e7e61629d8">sdl_utils.h</a>
+</li>
+<li>sdl_set_fullscreen()
+: <a class="el" href="sdl__utils_8c.html#a4115192313cdb78079bd69ca3fbf5606">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#a4115192313cdb78079bd69ca3fbf5606">sdl_utils.h</a>
+</li>
+<li>sdl_set_window_title()
+: <a class="el" href="sdl__utils_8c.html#a5740e1ea4968c3f393eff0873c596557">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#ab65ff6de4da0adc51ef3fa86636bef8c">sdl_utils.h</a>
+</li>
+<li>sdl_surface_from_png_file()
+: <a class="el" href="sdl__utils_8c.html#a8a3f05cea89b04346668e643601236a3">sdl_utils.c</a>
+</li>
+<li>sdl_update_cursor()
+: <a class="el" href="sdl__utils_8c.html#a5b1753dd77cc8d93c348f4cfaa69a02c">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#a822a897da1061934256086a254560d9c">sdl_utils.h</a>
+</li>
+<li>sdl_update_framebuffer()
+: <a class="el" href="sdl__utils_8c.html#a9dbcc14b6e31b62aedb3db07b1b45e1f">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#a9dbcc14b6e31b62aedb3db07b1b45e1f">sdl_utils.h</a>
+</li>
+<li>sdl_update_framebuffer_loading_screen()
+: <a class="el" href="sdl__utils_8c.html#aec1c03b128be02a97fe22c4744445f3a">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#aec1c03b128be02a97fe22c4744445f3a">sdl_utils.h</a>
+</li>
+<li>sdl_update_pending_tasks()
+: <a class="el" href="sdl__utils_8c.html#ade2d67075b53450c4364f252e34cd978">sdl_utils.c</a>
+, <a class="el" href="sdl__utils_8h.html#ade2d67075b53450c4364f252e34cd978">sdl_utils.h</a>
 </li>
 <li>SE_CURSOR_HASH
 : <a class="el" href="linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768adc8fba076ca60b5f7be3440a6f32e2d6">linuxcursor.c</a>
 </li>
-<li>send_captured_key()
-: <a class="el" href="sdl__utils_8c.html#a7210c0d222c584be91c2f0584f8d6a10">sdl_utils.c</a>
+<li>send_desired_network_settings()
+: <a class="el" href="client__utils_8c.html#a043d84022be877e6d65dd154c5cb183f">client_utils.c</a>
+, <a class="el" href="client__utils_8h.html#a043d84022be877e6d65dd154c5cb183f">client_utils.h</a>
 </li>
 <li>send_empty_frame()
-: <a class="el" href="server_2video_8c.html#a5859368e99c5368c8673f27f8b64392d">video.c</a>
-</li>
-<li>send_fcmsg()
-: <a class="el" href="client_2network_8h.html#aacae26c0e5cbef7e08f1c3011b07e58a">network.h</a>
-, <a class="el" href="client_2network_8c.html#aacae26c0e5cbef7e08f1c3011b07e58a">network.c</a>
+: <a class="el" href="server_2video_8c.html#aade5b8fb0c17924c6ebe2c5ce9923e55">video.c</a>
 </li>
 <li>send_message_dimensions()
 : <a class="el" href="client__utils_8c.html#aa474e56b998eeac46c72e779fd2701fa">client_utils.c</a>
 , <a class="el" href="client__utils_8h.html#aa474e56b998eeac46c72e779fd2701fa">client_utils.h</a>
 </li>
-<li>send_next_frame_to_decoder()
-: <a class="el" href="client_2audio_8c.html#aad5429e6eacbc35a49d36e87609f62ea">audio.c</a>
+<li>send_new_tab_url_if_needed()
+: <a class="el" href="client__utils_8c.html#ac7f5ca308305ae38e2cc598aac3886ba">client_utils.c</a>
+, <a class="el" href="client__utils_8h.html#ac7f5ca308305ae38e2cc598aac3886ba">client_utils.h</a>
 </li>
 <li>send_packet()
-: <a class="el" href="whist_2network_2network_8c.html#ac7d327a3e16a307766fb00cbdcaa9f0c">network.c</a>
-, <a class="el" href="whist_2network_2network_8h.html#ac7d327a3e16a307766fb00cbdcaa9f0c">network.h</a>
+: <a class="el" href="whist_2network_2network_8c.html#a5f140d8c615657cb2f510fea9bdcdc36">network.c</a>
+, <a class="el" href="whist_2network_2network_8h.html#a5f140d8c615657cb2f510fea9bdcdc36">network.h</a>
 </li>
 <li>send_ping()
 : <a class="el" href="client_2network_8c.html#a227a48ef77a55282ab59696435f3859b">network.c</a>
 , <a class="el" href="client_2network_8h.html#a227a48ef77a55282ab59696435f3859b">network.h</a>
 </li>
 <li>send_populated_frames()
-: <a class="el" href="server_2video_8c.html#a92f23919fade390e6daaa8985a386746">video.c</a>
+: <a class="el" href="server_2video_8c.html#a0ecebc9592e7dbb1c84c8001b89310ef">video.c</a>
 </li>
 <li>send_server_quit_messages()
 : <a class="el" href="client_2network_8c.html#aa8bf751ea26659195c59cd180956315a">network.c</a>
@@ -184,84 +229,82 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="client_2network_8c.html#acb29b0f743d1edcc94da3691d2867f76">network.c</a>
 , <a class="el" href="client_2network_8h.html#acb29b0f743d1edcc94da3691d2867f76">network.h</a>
 </li>
+<li>send_wcmsg()
+: <a class="el" href="client_2network_8c.html#a71973874dd00c57c855c77e4c870392a">network.c</a>
+, <a class="el" href="client_2network_8h.html#a71973874dd00c57c855c77e4c870392a">network.h</a>
+</li>
 <li>SENTRY_DSN
 : <a class="el" href="error__monitor_8c.html#a50fce9626b2a2a434fcdf1fbf944a40b">error_monitor.c</a>
 </li>
-<li>server_codec_type
-: <a class="el" href="client__utils_8c.html#a1c601e07e2ab0a163872f816a34fad9c">client_utils.c</a>
-, <a class="el" href="client_2main_8c.html#a1c601e07e2ab0a163872f816a34fad9c">main.c</a>
-, <a class="el" href="sync__packets_8c.html#a1c601e07e2ab0a163872f816a34fad9c">sync_packets.c</a>
-, <a class="el" href="client_2video_8c.html#a1c601e07e2ab0a163872f816a34fad9c">video.c</a>
+<li>SERVER_HANDLE_MESSAGE_TCP
+: <a class="el" href="client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32ab4c1f74cc9e93c9969611ff0beacfb37">client_statistic.h</a>
 </li>
-<li>server_height
-: <a class="el" href="client__utils_8c.html#a6f22535f72143edb1d30f2ae7b2063d7">client_utils.c</a>
-, <a class="el" href="client_2main_8c.html#a6f22535f72143edb1d30f2ae7b2063d7">main.c</a>
-, <a class="el" href="sync__packets_8c.html#a6f22535f72143edb1d30f2ae7b2063d7">sync_packets.c</a>
-, <a class="el" href="client_2video_8c.html#a6f22535f72143edb1d30f2ae7b2063d7">video.c</a>
+<li>SERVER_HANDLE_MESSAGE_UDP
+: <a class="el" href="client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a501593968a802affcaa0a84d644d5baa">client_statistic.h</a>
 </li>
 <li>server_ip
 : <a class="el" href="client__utils_8c.html#a07366317ac5c1d8d1ce9c82baf1d10c2">client_utils.c</a>
 , <a class="el" href="client_2main_8c.html#a07366317ac5c1d8d1ce9c82baf1d10c2">main.c</a>
 , <a class="el" href="client_2network_8c.html#a182d69acd4e02e6c0a027622a4556e53">network.c</a>
 </li>
+<li>SERVER_NUM_METRICS
+: <a class="el" href="server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8f4d3a01b92d6560e839b7bf874df3ee">server_statistic.h</a>
+</li>
 <li>server_parse_args()
-: <a class="el" href="parse__args_8c.html#afdcf369ce8dfb7931f2925c42b744cfc">parse_args.c</a>
-, <a class="el" href="parse__args_8h.html#afdcf369ce8dfb7931f2925c42b744cfc">parse_args.h</a>
+: <a class="el" href="parse__args_8c.html#a6413acffdbcf49f867f9f9288610939f">parse_args.c</a>
+, <a class="el" href="parse__args_8h.html#a6413acffdbcf49f867f9f9288610939f">parse_args.h</a>
 </li>
-<li>server_width
-: <a class="el" href="client_2video_8c.html#adb26e424f91b3e96e593c77ffff265f6">video.c</a>
-, <a class="el" href="client__utils_8c.html#adb26e424f91b3e96e593c77ffff265f6">client_utils.c</a>
-, <a class="el" href="client_2main_8c.html#adb26e424f91b3e96e593c77ffff265f6">main.c</a>
-, <a class="el" href="sync__packets_8c.html#adb26e424f91b3e96e593c77ffff265f6">sync_packets.c</a>
+<li>server_state
+: <a class="el" href="server_2main_8c.html#a4561ca5cc7a1663c82d4a54f0c9bae7c">main.c</a>
 </li>
-<li>set_audio_frequency()
-: <a class="el" href="client_2audio_8c.html#a2a8d274c22a4b5d4fd452934377b547b">audio.c</a>
-, <a class="el" href="client_2audio_8h.html#a2a8d274c22a4b5d4fd452934377b547b">audio.h</a>
-</li>
-<li>set_clipboard()
-: <a class="el" href="clipboard_8c.html#aeb1b2890ebe64e624e36b8db285ff340">clipboard.c</a>
-, <a class="el" href="clipboard_8h.html#aeb1b2890ebe64e624e36b8db285ff340">clipboard.h</a>
-</li>
-<li>SET_CLIPBOARD
-: <a class="el" href="clipboard_8h.html#a39e7c57aca05db0fb2a9ba9949a1ee5c">clipboard.h</a>
+<li>server_statistic_info
+: <a class="el" href="server__statistic_8h.html#aeb2697fdcecb4d884626826c24600b01">server_statistic.h</a>
+, <a class="el" href="server__statistic_8c.html#aeb2697fdcecb4d884626826c24600b01">server_statistic.c</a>
 </li>
 <li>set_decoder_opts()
 : <a class="el" href="decode_8c.html#acc3d03227fdb2a0b9281d06a18fac9de">decode.c</a>
 </li>
 <li>set_frame_cursor_image()
-: <a class="el" href="whist__frame_8h.html#a44e0b9e4c4e0d2feabc5fce2664e0601">whist_frame.h</a>
-, <a class="el" href="whist__frame_8c.html#a44e0b9e4c4e0d2feabc5fce2664e0601">whist_frame.c</a>
+: <a class="el" href="whist__frame_8c.html#a288d60dbd31108ae1c264072f1703d22">whist_frame.c</a>
+, <a class="el" href="whist__frame_8h.html#a288d60dbd31108ae1c264072f1703d22">whist_frame.h</a>
+</li>
+<li>set_keyboard_layout()
+: <a class="el" href="os__utils_8c.html#a2be1ff67174216005f67c4e62602af9e">os_utils.c</a>
+, <a class="el" href="os__utils_8h.html#a2be1ff67174216005f67c4e62602af9e">os_utils.h</a>
 </li>
 <li>set_native_window_color()
-: <a class="el" href="native__window__utils_8h.html#a4a1cc0cf009ac3e12e4ec1b4e65faded">native_window_utils.h</a>
-, <a class="el" href="native__window__utils__windows_8c.html#a4a1cc0cf009ac3e12e4ec1b4e65faded">native_window_utils_windows.c</a>
-, <a class="el" href="native__window__utils__x11_8c.html#a4a1cc0cf009ac3e12e4ec1b4e65faded">native_window_utils_x11.c</a>
+: <a class="el" href="native__window__utils_8h.html#a73fcb271dd56d8d4e85f009dfd47699d">native_window_utils.h</a>
+, <a class="el" href="native__window__utils__windows_8c.html#a73fcb271dd56d8d4e85f009dfd47699d">native_window_utils_windows.c</a>
+, <a class="el" href="native__window__utils__x11_8c.html#a73fcb271dd56d8d4e85f009dfd47699d">native_window_utils_x11.c</a>
 </li>
 <li>set_opt()
 : <a class="el" href="ffmpeg__encode_8c.html#a23175808cea25551852ec1ca64d32439">ffmpeg_encode.c</a>
 </li>
+<li>set_os_clipboard()
+: <a class="el" href="clipboard_8c.html#af6f6c69d5ac5ab4e3d267fc75de2d7d6">clipboard.c</a>
+, <a class="el" href="clipboard_8h.html#af6f6c69d5ac5ab4e3d267fc75de2d7d6">clipboard.h</a>
+</li>
+<li>SET_OS_CLIPBOARD
+: <a class="el" href="clipboard_8h.html#a7332985c65be1b32ec887fcb37750962">clipboard.h</a>
+</li>
 <li>set_rendering()
-: <a class="el" href="ringbuffer_8c.html#adc37000ecd47712d4a8cc8e83867a60d">ringbuffer.c</a>
-, <a class="el" href="ringbuffer_8h.html#adc37000ecd47712d4a8cc8e83867a60d">ringbuffer.h</a>
+: <a class="el" href="ringbuffer_8c.html#a29a4ef47e30f9faabce38d4df154494a">ringbuffer.c</a>
+, <a class="el" href="ringbuffer_8h.html#a29a4ef47e30f9faabce38d4df154494a">ringbuffer.h</a>
 </li>
 <li>set_timeout()
-: <a class="el" href="whist_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea">network.h</a>
-, <a class="el" href="whist_2network_2network_8c.html#a61c60fb86a89187155fb727e0dba01ea">network.c</a>
+: <a class="el" href="whist_2network_2network_8c.html#a61c60fb86a89187155fb727e0dba01ea">network.c</a>
+, <a class="el" href="whist_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea">network.h</a>
 </li>
-<li>set_video_active_resizing()
-: <a class="el" href="client_2video_8c.html#a460fea5c8cd411b76d7b5c7e68ee0ede">video.c</a>
-, <a class="el" href="client_2video_8h.html#a460fea5c8cd411b76d7b5c7e68ee0ede">video.h</a>
+<li>set_tos()
+: <a class="el" href="whist_2network_2network_8c.html#a6dadca57d3f2804a946e82a7abb69549">network.c</a>
+, <a class="el" href="whist_2network_2network_8h.html#a6dadca57d3f2804a946e82a7abb69549">network.h</a>
 </li>
-<li>set_window_icon_from_png()
-: <a class="el" href="sdl__utils_8c.html#aff48bb1fe7d404dc2d22473427fdc36d">sdl_utils.c</a>
+<li>setting_os_clipboard
+: <a class="el" href="clipboard__synchronizer_8c.html#a7810c7d9ded5059b12ecc89d491947f6">clipboard_synchronizer.c</a>
 </li>
 <li>should_preserve_local_clipboard()
 : <a class="el" href="clipboard_8c.html#afe398cfdec3f5ec983180edaa356f5df">clipboard.c</a>
 , <a class="el" href="clipboard_8h.html#afe398cfdec3f5ec983180edaa356f5df">clipboard.h</a>
-</li>
-<li>should_update_window_title
-: <a class="el" href="handle__server__message_8c.html#ae0c2ec06745b8cf1880f783b7f2edd40">handle_server_message.c</a>
-, <a class="el" href="client_2main_8c.html#ae0c2ec06745b8cf1880f783b7f2edd40">main.c</a>
 </li>
 <li>SHOW_DEBUG_FRAMES
 : <a class="el" href="nvidiacapture_8c.html#a2ea9d66437144f82c8eab8c5e89ef36c">nvidiacapture.c</a>
@@ -275,33 +318,33 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>skip_next_has_updated
 : <a class="el" href="clipboard_8c.html#a18701ca73dac19aa44da37086a65bddf">clipboard.c</a>
 </li>
-<li>skip_render
-: <a class="el" href="client_2video_8c.html#a90050e51c9e6cbc9502f5dd19e1c80d9">video.c</a>
-</li>
 <li>skip_taskbar
 : <a class="el" href="sdl__utils_8c.html#a242ea45e405e9d5ae92e440357e98c3c">sdl_utils.c</a>
 , <a class="el" href="client__utils_8c.html#a242ea45e405e9d5ae92e440357e98c3c">client_utils.c</a>
 </li>
-<li>skip_to_next_iframe()
-: <a class="el" href="client_2video_8c.html#a6c024f93309638b1e8f755f63c37f06d">video.c</a>
-</li>
 <li>SMESSAGE_CLIPBOARD
-: <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca86b5ce811becb248c9572438105db9aa">whist.h</a>
+: <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353a86b5ce811becb248c9572438105db9aa">whist.h</a>
+</li>
+<li>SMESSAGE_FILE_DATA
+: <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353af1edac653bbbf90d0ed4e295553b8363">whist.h</a>
+</li>
+<li>SMESSAGE_FILE_METADATA
+: <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353ab6f26910ff293a00e1a9ece3de4d5e90">whist.h</a>
 </li>
 <li>SMESSAGE_FULLSCREEN
-: <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca8bee600907e82ec0da4091d1c1a5abe5">whist.h</a>
+: <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353a8bee600907e82ec0da4091d1c1a5abe5">whist.h</a>
 </li>
 <li>SMESSAGE_NONE
-: <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140cafcd5317ecd005a890b1c3e70c96f5695">whist.h</a>
+: <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353afcd5317ecd005a890b1c3e70c96f5695">whist.h</a>
 </li>
 <li>SMESSAGE_OPEN_URI
-: <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca8aa255189138c9a25497f6e544c8f645">whist.h</a>
+: <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353a8aa255189138c9a25497f6e544c8f645">whist.h</a>
 </li>
 <li>SMESSAGE_QUIT
-: <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca62adb843bfd6857bbf5f634425c404d1">whist.h</a>
+: <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353a62adb843bfd6857bbf5f634425c404d1">whist.h</a>
 </li>
 <li>SMESSAGE_WINDOW_TITLE
-: <a class="el" href="whist_8h.html#aa56483762a863ec73e68c53c8fdf140ca350f6ac715ca8fba37c2967385fd1594">whist.h</a>
+: <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353a350f6ac715ca8fba37c2967385fd1594">whist.h</a>
 </li>
 <li>SOCKET
 : <a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">network.h</a>
@@ -310,8 +353,8 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="tcp_8c.html#a24ae7ead432330774ba9da1b075939c8">tcp.c</a>
 </li>
 <li>socketp_udp()
-: <a class="el" href="whist_2network_2network_8c.html#ab494a21469f6fa25ca60570bc2788461">network.c</a>
-, <a class="el" href="whist_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">network.h</a>
+: <a class="el" href="whist_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">network.h</a>
+, <a class="el" href="whist_2network_2network_8c.html#ab494a21469f6fa25ca60570bc2788461">network.c</a>
 </li>
 <li>SOFTWARE_ENCODE
 : <a class="el" href="ffmpeg__encode_8h.html#a710867b9460bb3ef175428fd1da3d41aa5f0e0a33b7479565a2829cde8be8b24e">ffmpeg_encode.h</a>
@@ -320,12 +363,15 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ffa01da13585122415fbe64a1d4961fcd35">whist.h</a>
 </li>
 <li>start_audio_device()
-: <a class="el" href="audiocapture_8h.html#ae340600cbb065245f427f7b023aeed9b">audiocapture.h</a>
-, <a class="el" href="alsacapture_8c.html#ae340600cbb065245f427f7b023aeed9b">alsacapture.c</a>
+: <a class="el" href="alsacapture_8c.html#ae340600cbb065245f427f7b023aeed9b">alsacapture.c</a>
+, <a class="el" href="audiocapture_8h.html#ae340600cbb065245f427f7b023aeed9b">audiocapture.h</a>
+</li>
+<li>start_clipboard_transfer()
+: <a class="el" href="clipboard__synchronizer_8c.html#a7222478cfc809f67bbbe8768b63908ef">clipboard_synchronizer.c</a>
 </li>
 <li>start_quitting_client()
-: <a class="el" href="client_8h.html#aa7b24c815e1583ea8f39ab7e809d0eab">client.h</a>
-, <a class="el" href="client_8c.html#aa7b24c815e1583ea8f39ab7e809d0eab">client.c</a>
+: <a class="el" href="client_8c.html#aedb5791800324d1914e5124d23f138c8">client.c</a>
+, <a class="el" href="client_8h.html#aedb5791800324d1914e5124d23f138c8">client.h</a>
 </li>
 <li>start_timer()
 : <a class="el" href="clock_8c.html#acd824f01e9b0a5671a7820c23c1eede1">clock.c</a>
@@ -335,27 +381,25 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 : <a class="el" href="x11__clipboard_8c.html#a274cba0b7864e3a3d3ad5d1c21b3914b">x11_clipboard.c</a>
 </li>
 <li>STARTING_BITRATE
-: <a class="el" href="whist_8h.html#af6e2306adac4a7fc41cc4c181d2e605b">whist.h</a>
+: <a class="el" href="network__algorithm_8h.html#af6e2306adac4a7fc41cc4c181d2e605b">network_algorithm.h</a>
 </li>
 <li>STARTING_BITRATE_RAW
-: <a class="el" href="whist_8h.html#af6ca2d6baec9e5c02bb2de6a3596ff72">whist.h</a>
+: <a class="el" href="network__algorithm_8h.html#af6ca2d6baec9e5c02bb2de6a3596ff72">network_algorithm.h</a>
 </li>
 <li>STARTING_BURST_BITRATE
-: <a class="el" href="whist_8h.html#a97888d50b51f804637c90a7dbee17c44">whist.h</a>
+: <a class="el" href="network__algorithm_8h.html#a97888d50b51f804637c90a7dbee17c44">network_algorithm.h</a>
 </li>
 <li>STARTING_BURST_BITRATE_RAW
-: <a class="el" href="whist_8h.html#a252287e91b6d572153c2a6e7ab1c342b">whist.h</a>
+: <a class="el" href="network__algorithm_8h.html#a252287e91b6d572153c2a6e7ab1c342b">network_algorithm.h</a>
 </li>
 <li>StatisticData
 : <a class="el" href="log__statistic_8c.html#af18319ff9a332fa7ddb284bd76b12c32">log_statistic.c</a>
 </li>
+<li>STATISTICS_FREQUENCY_IN_SEC
+: <a class="el" href="log__statistic_8h.html#afa6be6a1f15ad9d2c4ca359bfb1703e8">log_statistic.h</a>
+</li>
 <li>STATISTICS_SECONDS
 : <a class="el" href="client_2video_8c.html#a3190cca650071548d6b75370b0e5c41c">video.c</a>
-</li>
-<li>stop_streaming
-: <a class="el" href="handle__client__message_8c.html#aae54fd77214dad6eaf2b542edb690d53">handle_client_message.c</a>
-, <a class="el" href="main_8h.html#aae54fd77214dad6eaf2b542edb690d53">main.h</a>
-, <a class="el" href="server_2video_8c.html#aae54fd77214dad6eaf2b542edb690d53">video.c</a>
 </li>
 <li>str
 : <a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">whist.c</a>
@@ -372,11 +416,8 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>SW_CURSOR_HASH
 : <a class="el" href="linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a2eaca2d8017b22859c54aa2dcb33ed41">linuxcursor.c</a>
 </li>
-<li>sync_audio_device()
-: <a class="el" href="client_2audio_8c.html#ad820e90f52c1071a03b59d27617b711b">audio.c</a>
-</li>
-<li>sync_decoder_parameters()
-: <a class="el" href="client_2video_8c.html#a2b0a6d84fb4c5932cf794270360bc9de">video.c</a>
+<li>SWAP
+: <a class="el" href="rs_8c.html#adfdaf32eae545290273a12f93383a5eb">rs.c</a>
 </li>
 <li>sync_keyboard_state()
 : <a class="el" href="client_2main_8c.html#a74f5ea66e025554e86a5fdfed5892732">main.c</a>

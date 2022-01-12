@@ -82,8 +82,7 @@ $(document).ready(function(){initNavTree('handle__client__message_8c.html',''); 
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">handle_client_message.c File Reference</div>  </div>
 </div><!--header-->
@@ -98,56 +97,29 @@ $(document).ready(function(){initNavTree('handle__client__message_8c.html',''); 
 <code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="error__monitor_8h_source.html">whist/logging/error_monitor.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="handle__client__message_8h_source.html">handle_client_message.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="server__statistic_8h_source.html">server_statistic.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad3119895e2868283cc978ae8685b2f11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#ad3119895e2868283cc978ae8685b2f11">handle_client_message</a> (<a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
-<tr class="memdesc:ad3119895e2868283cc978ae8685b2f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles message received by the server from a client, on the server-side.  <a href="handle__client__message_8c.html#ad3119895e2868283cc978ae8685b2f11">More...</a><br /></td></tr>
-<tr class="separator:ad3119895e2868283cc978ae8685b2f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:afb3a99353e3c50b4339ceb1efd4e00b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClient.html">Client</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#afb3a99353e3c50b4339ceb1efd4e00b1">client</a></td></tr>
-<tr class="separator:afb3a99353e3c50b4339ceb1efd4e00b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad137585f4fddac5c02d6b3f99323385b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#ad137585f4fddac5c02d6b3f99323385b">max_bitrate</a></td></tr>
-<tr class="separator:ad137585f4fddac5c02d6b3f99323385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc5e4446971a6408d2505502c9bb3a0"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#accc5e4446971a6408d2505502c9bb3a0">client_width</a></td></tr>
-<tr class="separator:accc5e4446971a6408d2505502c9bb3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3d44b527e1617a4fa8324474f434cfb"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#ac3d44b527e1617a4fa8324474f434cfb">client_height</a></td></tr>
-<tr class="separator:ac3d44b527e1617a4fa8324474f434cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb23d13f6e3a74caa90ec0482ec2c947"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#acb23d13f6e3a74caa90ec0482ec2c947">client_dpi</a></td></tr>
-<tr class="separator:acb23d13f6e3a74caa90ec0482ec2c947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cb7ba1823d4d6f9fea456f96e729710"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#a7cb7ba1823d4d6f9fea456f96e729710">client_codec_type</a></td></tr>
-<tr class="separator:a7cb7ba1823d4d6f9fea456f96e729710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0463a8762d54da9908315a54f9a740ea"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#a0463a8762d54da9908315a54f9a740ea">update_device</a></td></tr>
-<tr class="separator:a0463a8762d54da9908315a54f9a740ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#ac13d90362a4bbfdd5d1d04e6c2d16420">client_os</a></td></tr>
-<tr class="separator:ac13d90362a4bbfdd5d1d04e6c2d16420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae54fd77214dad6eaf2b542edb690d53"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#aae54fd77214dad6eaf2b542edb690d53">stop_streaming</a></td></tr>
-<tr class="separator:aae54fd77214dad6eaf2b542edb690d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c556bf7dad7ad139e553b7af6281656"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#a2c556bf7dad7ad139e553b7af6281656">wants_iframe</a></td></tr>
-<tr class="separator:a2c556bf7dad7ad139e553b7af6281656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e07e0ac06cb165d61f1e475c82aaa73"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#a8e07e0ac06cb165d61f1e475c82aaa73">update_encoder</a></td></tr>
-<tr class="separator:a8e07e0ac06cb165d61f1e475c82aaa73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0cefee7dcd4ec6bdd40ff87edaa96fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a></td></tr>
-<tr class="separator:aa0cefee7dcd4ec6bdd40ff87edaa96fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd4e9daf88116b596d5ae5839f38b3ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#afd4e9daf88116b596d5ae5839f38b3ba">host_id</a></td></tr>
-<tr class="separator:afd4e9daf88116b596d5ae5839f38b3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ce2c891cb4866c134f9f094ab48fef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__client__message_8c.html#ae1ce2c891cb4866c134f9f094ab48fef">handle_client_message</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *wcmsg)</td></tr>
+<tr class="memdesc:ae1ce2c891cb4866c134f9f094ab48fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles message received by the server from a client, on the server-side.  <a href="handle__client__message_8c.html#ae1ce2c891cb4866c134f9f094ab48fef">More...</a><br /></td></tr>
+<tr class="separator:ae1ce2c891cb4866c134f9f094ab48fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all the code for server-side processing of messages. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md84"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md82"></a>
 received from a client</h1>
-<h1><a class="anchor" id="autotoc_md85"></a>
+<h1><a class="anchor" id="autotoc_md83"></a>
 Usage</h1>
-<p><a class="el" href="handle__client__message_8c.html#ad3119895e2868283cc978ae8685b2f11" title="Handles message received by the server from a client, on the server-side.">handle_client_message()</a> must be called on any received message from a client. </p>
+<p><a class="el" href="handle__client__message_8c.html#ae1ce2c891cb4866c134f9f094ab48fef" title="Handles message received by the server from a client, on the server-side.">handle_client_message()</a> must be called on any received message from a client. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ad3119895e2868283cc978ae8685b2f11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3119895e2868283cc978ae8685b2f11">&#9670;&nbsp;</a></span>handle_client_message()</h2>
+<a id="ae1ce2c891cb4866c134f9f094ab48fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ce2c891cb4866c134f9f094ab48fef">&#9670;&nbsp;</a></span>handle_client_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,9 +127,19 @@ Usage</h1>
         <tr>
           <td class="memname">int handle_client_message </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
-          <td class="paramname"><em>fcmsg</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *&#160;</td>
+          <td class="paramname"><em>wcmsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -166,194 +148,12 @@ Usage</h1>
 <p>Replays keyboard and mouse input, replies to pings, or performs whatever side-effects appropriate in handling message from client. Logs errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fcmsg</td><td>Message from client</td></tr>
+    <tr><td class="paramname">state</td><td>Server's state </td></tr>
+    <tr><td class="paramname">wcmsg</td><td>Message from client</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="afb3a99353e3c50b4339ceb1efd4e00b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb3a99353e3c50b4339ceb1efd4e00b1">&#9670;&nbsp;</a></span>client</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structClient.html">Client</a> client</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7cb7ba1823d4d6f9fea456f96e729710"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cb7ba1823d4d6f9fea456f96e729710">&#9670;&nbsp;</a></span>client_codec_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> client_codec_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acb23d13f6e3a74caa90ec0482ec2c947"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb23d13f6e3a74caa90ec0482ec2c947">&#9670;&nbsp;</a></span>client_dpi</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int client_dpi</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac3d44b527e1617a4fa8324474f434cfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3d44b527e1617a4fa8324474f434cfb">&#9670;&nbsp;</a></span>client_height</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int client_height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac13d90362a4bbfdd5d1d04e6c2d16420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac13d90362a4bbfdd5d1d04e6c2d16420">&#9670;&nbsp;</a></span>client_os</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> client_os</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="accc5e4446971a6408d2505502c9bb3a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc5e4446971a6408d2505502c9bb3a0">&#9670;&nbsp;</a></span>client_width</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int client_width</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afd4e9daf88116b596d5ae5839f38b3ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd4e9daf88116b596d5ae5839f38b3ba">&#9670;&nbsp;</a></span>host_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int host_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa0cefee7dcd4ec6bdd40ff87edaa96fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0cefee7dcd4ec6bdd40ff87edaa96fd">&#9670;&nbsp;</a></span>input_device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structInputDevice.html">InputDevice</a>* input_device</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad137585f4fddac5c02d6b3f99323385b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad137585f4fddac5c02d6b3f99323385b">&#9670;&nbsp;</a></span>max_bitrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int max_bitrate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aae54fd77214dad6eaf2b542edb690d53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae54fd77214dad6eaf2b542edb690d53">&#9670;&nbsp;</a></span>stop_streaming</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool stop_streaming</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0463a8762d54da9908315a54f9a740ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0463a8762d54da9908315a54f9a740ea">&#9670;&nbsp;</a></span>update_device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool update_device</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8e07e0ac06cb165d61f1e475c82aaa73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e07e0ac06cb165d61f1e475c82aaa73">&#9670;&nbsp;</a></span>update_encoder</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool update_encoder</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2c556bf7dad7ad139e553b7af6281656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c556bf7dad7ad139e553b7af6281656">&#9670;&nbsp;</a></span>wants_iframe</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool wants_iframe</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

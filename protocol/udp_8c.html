@@ -91,34 +91,39 @@ $(document).ready(function(){initNavTree('udp_8c.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="udp_8h_source.html">udp.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="aes_8h_source.html">whist/utils/aes.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fec_8h_source.html">whist/utils/fec.h</a>&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a4f283368e88ac298d92d1506dd4c0abb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb">RETRIES_ON_BUFFER_FULL</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a4f283368e88ac298d92d1506dd4c0abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5222d03fdb5004f2ebc781d1041f0e04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5222d03fdb5004f2ebc781d1041f0e04">UDP_NETWORK_THROTTLER_BUCKET_MS</a>&#160;&#160;&#160;0.5</td></tr>
+<tr class="separator:a5222d03fdb5004f2ebc781d1041f0e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890ae089e185134fdcefbc84329a6115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a890ae089e185134fdcefbc84329a6115">MAX_TOTAL_PACKETS</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:a890ae089e185134fdcefbc84329a6115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a713e2bb65b6a99478cc9002660e22ece"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a713e2bb65b6a99478cc9002660e22ece">udp_ack</a> (void *raw_context)</td></tr>
 <tr class="separator:a713e2bb65b6a99478cc9002660e22ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac27f4dfb76e41f1fb173e669776ca04f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ac27f4dfb76e41f1fb173e669776ca04f">udp_read_packet</a> (void *raw_context, bool should_recv)</td></tr>
-<tr class="separator:ac27f4dfb76e41f1fb173e669776ca04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a893c09bd1b4e0af49efa7fe9436347de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a893c09bd1b4e0af49efa7fe9436347de">udp_free_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *udp_packet)</td></tr>
-<tr class="separator:a893c09bd1b4e0af49efa7fe9436347de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cfb343ad75614f609c353f2bb665c2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a0cfb343ad75614f609c353f2bb665c2a">udp_send_constructed_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet, size_t packet_size)</td></tr>
-<tr class="separator:a0cfb343ad75614f609c353f2bb665c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b06c51c64deb9e8cf3ad46ccd209c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a45b06c51c64deb9e8cf3ad46ccd209c9">udp_send_packet</a> (void *raw_context, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
-<tr class="separator:a45b06c51c64deb9e8cf3ad46ccd209c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0536d5d147eec256e32e8812ac9848f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a0536d5d147eec256e32e8812ac9848f4">udp_read_packet</a> (void *raw_context, bool should_recv)</td></tr>
+<tr class="separator:a0536d5d147eec256e32e8812ac9848f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7184dda306762c2e9d3b8504602f06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aed7184dda306762c2e9d3b8504602f06">udp_free_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *udp_packet)</td></tr>
+<tr class="separator:aed7184dda306762c2e9d3b8504602f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5099a5462b041ab6c8a6ee4b2ee53681"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5099a5462b041ab6c8a6ee4b2ee53681">udp_send_constructed_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet, size_t packet_size)</td></tr>
+<tr class="separator:a5099a5462b041ab6c8a6ee4b2ee53681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93348568fe6c2acd6d4be7fa5918dde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aa93348568fe6c2acd6d4be7fa5918dde">udp_send_packet</a> (void *raw_context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
+<tr class="separator:aa93348568fe6c2acd6d4be7fa5918dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5ada1e657a06b0f0168556f83ed1f6dc">udp_update_bitrate_settings</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, int burst_bitrate, double fec_packet_ratio)</td></tr>
-<tr class="memdesc:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a5ada1e657a06b0f0168556f83ed1f6dc">More...</a><br /></td></tr>
+<tr class="memdesc:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a5ada1e657a06b0f0168556f83ed1f6dc">More...</a><br /></td></tr>
 <tr class="separator:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a015631fd2787d70710cce93d321f862e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a015631fd2787d70710cce93d321f862e">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
-<tr class="memdesc:a015631fd2787d70710cce93d321f862e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a015631fd2787d70710cce93d321f862e">More...</a><br /></td></tr>
-<tr class="separator:a015631fd2787d70710cce93d321f862e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a500f7f3663deeffbbe690baac3425d44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a500f7f3663deeffbbe690baac3425d44">udp_nack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, int packet_id, int packet_index)</td></tr>
-<tr class="memdesc:a500f7f3663deeffbbe690baac3425d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a nack for a given ID/Index NOTE: This function is thread-safe with send_packet.  <a href="udp_8c.html#a500f7f3663deeffbbe690baac3425d44">More...</a><br /></td></tr>
-<tr class="separator:a500f7f3663deeffbbe690baac3425d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5f450b0434a42cec5d03a819d29eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aed5f450b0434a42cec5d03a819d29eb3">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
+<tr class="memdesc:aed5f450b0434a42cec5d03a819d29eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#aed5f450b0434a42cec5d03a819d29eb3">More...</a><br /></td></tr>
+<tr class="separator:aed5f450b0434a42cec5d03a819d29eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30c3eae76f71a7c30b9b41ea209d4d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab30c3eae76f71a7c30b9b41ea209d4d0">udp_nack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int packet_id, int packet_index)</td></tr>
+<tr class="memdesc:ab30c3eae76f71a7c30b9b41ea209d4d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a nack for a given ID/Index NOTE: This function is thread-safe with send_packet.  <a href="udp_8c.html#ab30c3eae76f71a7c30b9b41ea209d4d0">More...</a><br /></td></tr>
+<tr class="separator:ab30c3eae76f71a7c30b9b41ea209d4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2db373aa7821bd661df6fbd19bf6ac5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab2db373aa7821bd661df6fbd19bf6ac5">udp_destroy_socket_context</a> (void *raw_context)</td></tr>
 <tr class="separator:ab2db373aa7821bd661df6fbd19bf6ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa0745e4600fb1898e4acdb00ea8ddad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#afa0745e4600fb1898e4acdb00ea8ddad">create_udp_server_context</a> (void *raw_context, int port, int recvfrom_timeout_ms, int stun_timeout_ms)</td></tr>
@@ -129,9 +134,12 @@ Functions</h2></td></tr>
 <tr class="separator:a433731b91ca2a984a715798f98f1bf03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61da695d4aa29c2a0346a0ffe543bbed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a61da695d4aa29c2a0346a0ffe543bbed">create_udp_client_context_stun</a> (<a class="el" href="structSocketContextData.html">SocketContextData</a> *context, char *destination, int port, int recvfrom_timeout_ms, int stun_timeout_ms)</td></tr>
 <tr class="separator:a61da695d4aa29c2a0346a0ffe543bbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f44d3016a420229546215957d9bca7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a9f44d3016a420229546215957d9bca7f">create_udp_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *network_context, char *destination, int port, int recvfrom_timeout_ms, int connection_timeout_ms, bool <a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *<a class="el" href="parse__args_8c.html#ac2159c75ccc892bf05ef04748882e025">binary_aes_private_key</a>)</td></tr>
+<tr class="memitem:a9f44d3016a420229546215957d9bca7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a9f44d3016a420229546215957d9bca7f">create_udp_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *network_context, char *destination, int port, int recvfrom_timeout_ms, int connection_timeout_ms, bool <a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *<a class="el" href="client_2main_8c.html#a8178ac994435a95792a29745aa7a77a0">binary_aes_private_key</a>)</td></tr>
 <tr class="memdesc:a9f44d3016a420229546215957d9bca7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a udp network context and initializes a UDP connection between a server and a client.  <a href="udp_8c.html#a9f44d3016a420229546215957d9bca7f">More...</a><br /></td></tr>
 <tr class="separator:a9f44d3016a420229546215957d9bca7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab227c787d07a796738fef8cc10a1a0ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab227c787d07a796738fef8cc10a1a0ad">create_udp_listen_socket</a> (<a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> *sock, int port, int timeout_ms)</td></tr>
+<tr class="memdesc:ab227c787d07a796738fef8cc10a1a0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a udp listen socket, that can be used in <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#ab227c787d07a796738fef8cc10a1a0ad">More...</a><br /></td></tr>
+<tr class="separator:ab227c787d07a796738fef8cc10a1a0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -139,6 +147,20 @@ Variables</h2></td></tr>
 <tr class="separator:aabcebffcda90f6aab9a64d4fb9d75d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a890ae089e185134fdcefbc84329a6115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a890ae089e185134fdcefbc84329a6115">&#9670;&nbsp;</a></span>MAX_TOTAL_PACKETS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TOTAL_PACKETS&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4f283368e88ac298d92d1506dd4c0abb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f283368e88ac298d92d1506dd4c0abb">&#9670;&nbsp;</a></span>RETRIES_ON_BUFFER_FULL</h2>
 
@@ -147,6 +169,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define RETRIES_ON_BUFFER_FULL&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5222d03fdb5004f2ebc781d1041f0e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5222d03fdb5004f2ebc781d1041f0e04">&#9670;&nbsp;</a></span>UDP_NETWORK_THROTTLER_BUCKET_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UDP_NETWORK_THROTTLER_BUCKET_MS&#160;&#160;&#160;0.5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -243,6 +279,51 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab227c787d07a796738fef8cc10a1a0ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab227c787d07a796738fef8cc10a1a0ad">&#9670;&nbsp;</a></span>create_udp_listen_socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int create_udp_listen_socket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> *&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a udp listen socket, that can be used in <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>The socket that will be initialized </td></tr>
+    <tr><td class="paramname">port</td><td>The port to listen on </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>The timeout for socket </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise failure. </dd></dl>
 
 </div>
 </div>
@@ -435,8 +516,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a893c09bd1b4e0af49efa7fe9436347de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a893c09bd1b4e0af49efa7fe9436347de">&#9670;&nbsp;</a></span>udp_free_packet()</h2>
+<a id="aed7184dda306762c2e9d3b8504602f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7184dda306762c2e9d3b8504602f06">&#9670;&nbsp;</a></span>udp_free_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,8 +544,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a500f7f3663deeffbbe690baac3425d44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a500f7f3663deeffbbe690baac3425d44">&#9670;&nbsp;</a></span>udp_nack()</h2>
+<a id="ab30c3eae76f71a7c30b9b41ea209d4d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab30c3eae76f71a7c30b9b41ea209d4d0">&#9670;&nbsp;</a></span>udp_nack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,7 +559,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -504,7 +585,7 @@ Variables</h2></td></tr>
 <p>Respond to a nack for a given ID/Index NOTE: This function is thread-safe with send_packet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> to nack from </td></tr>
+    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> to nack from </td></tr>
     <tr><td class="paramname">type</td><td>The WhistPacketType of the nack'ed packet </td></tr>
     <tr><td class="paramname">id</td><td>The ID of the nack'ed packet </td></tr>
     <tr><td class="paramname">index</td><td>The index of the nack'ed packet (The UDP packet index into the larger <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>) </td></tr>
@@ -514,8 +595,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac27f4dfb76e41f1fb173e669776ca04f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac27f4dfb76e41f1fb173e669776ca04f">&#9670;&nbsp;</a></span>udp_read_packet()</h2>
+<a id="a0536d5d147eec256e32e8812ac9848f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0536d5d147eec256e32e8812ac9848f4">&#9670;&nbsp;</a></span>udp_read_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,8 +623,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a015631fd2787d70710cce93d321f862e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a015631fd2787d70710cce93d321f862e">&#9670;&nbsp;</a></span>udp_register_nack_buffer()</h2>
+<a id="aed5f450b0434a42cec5d03a819d29eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed5f450b0434a42cec5d03a819d29eb3">&#9670;&nbsp;</a></span>udp_register_nack_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +638,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -580,10 +661,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>. </p>
+<p>Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> that will have a nack buffer </td></tr>
+    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> that will have a nack buffer </td></tr>
     <tr><td class="paramname">type</td><td>The WhistPacketType that this nack buffer will be used for </td></tr>
     <tr><td class="paramname">max_payload_size</td><td>The largest payload that will be saved in the nack buffer </td></tr>
     <tr><td class="paramname">num_buffers</td><td>The number of buffers that will be stored in the nack buffer </td></tr>
@@ -593,8 +674,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0cfb343ad75614f609c353f2bb665c2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cfb343ad75614f609c353f2bb665c2a">&#9670;&nbsp;</a></span>udp_send_constructed_packet()</h2>
+<a id="a5099a5462b041ab6c8a6ee4b2ee53681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5099a5462b041ab6c8a6ee4b2ee53681">&#9670;&nbsp;</a></span>udp_send_constructed_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,8 +708,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a45b06c51c64deb9e8cf3ad46ccd209c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45b06c51c64deb9e8cf3ad46ccd209c9">&#9670;&nbsp;</a></span>udp_send_packet()</h2>
+<a id="aa93348568fe6c2acd6d4be7fa5918dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa93348568fe6c2acd6d4be7fa5918dde">&#9670;&nbsp;</a></span>udp_send_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -642,7 +723,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>packet_type</em>, </td>
         </tr>
         <tr>
@@ -705,10 +786,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a>. </p>
+<p>Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the avaliable functions and socket context of a network protocol.">SocketContext</a> that we'll be adjusting the burst bitrate for </td></tr>
+    <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> that we'll be adjusting the burst bitrate for </td></tr>
     <tr><td class="paramname">burst_bitrate</td><td>The new burst bitrate, in MBPS </td></tr>
     <tr><td class="paramname">fec_packet_ratio</td><td>The percentage of packets that should be FEC </td></tr>
   </table>
@@ -737,7 +818,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="udp_8c.html">udp.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_190dac40e16f649d163a778d134d4659.html">network</a></li><li class="navelem"><a class="el" href="udp_8c.html">udp.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['encodedaudio_1964',['EncodedAudio',['../structEncodedAudio.html',1,'']]]
+  ['decodedframedata_2222',['DecodedFrameData',['../structDecodedFrameData.html',1,'']]],
+  ['dynamicbuffer_2223',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
 ];

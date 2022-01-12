@@ -104,14 +104,14 @@ Functions</h2></td></tr>
 <tr class="separator:a5664c155680604dda1fb4d43e99ad5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f7c69fcb26be1f0547b02ff86a7ea4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mac__clipboard_8c.html#a7f7c69fcb26be1f0547b02ff86a7ea4c">unsafe_destroy_clipboard</a> ()</td></tr>
 <tr class="separator:a7f7c69fcb26be1f0547b02ff86a7ea4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a65413d3b0c2f07391609a170dc14b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mac__clipboard_8c.html#a85a65413d3b0c2f07391609a170dc14b">unsafe_has_clipboard_updated</a> ()</td></tr>
-<tr class="separator:a85a65413d3b0c2f07391609a170dc14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40bf7c75239a7071b828779dc528187b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mac__clipboard_8c.html#a40bf7c75239a7071b828779dc528187b">unsafe_free_clipboard</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *cb)</td></tr>
-<tr class="separator:a40bf7c75239a7071b828779dc528187b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2f4fad1b03ba4ffe22d595715139589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mac__clipboard_8c.html#ac2f4fad1b03ba4ffe22d595715139589">unsafe_get_clipboard</a> ()</td></tr>
-<tr class="separator:ac2f4fad1b03ba4ffe22d595715139589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe8854daee3b27fbb4d5aaa19fde461f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mac__clipboard_8c.html#abe8854daee3b27fbb4d5aaa19fde461f">unsafe_set_clipboard</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *cb)</td></tr>
-<tr class="separator:abe8854daee3b27fbb4d5aaa19fde461f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847cc544e94acb267115f4caa0f8ec3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mac__clipboard_8c.html#a847cc544e94acb267115f4caa0f8ec3f">unsafe_has_os_clipboard_updated</a> ()</td></tr>
+<tr class="separator:a847cc544e94acb267115f4caa0f8ec3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd908a405c1888d1306899a3ad598ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mac__clipboard_8c.html#abd908a405c1888d1306899a3ad598ea3">unsafe_free_clipboard_buffer</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *cb)</td></tr>
+<tr class="separator:abd908a405c1888d1306899a3ad598ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91dc0057aec6c267c2ef69c1decefaf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mac__clipboard_8c.html#a91dc0057aec6c267c2ef69c1decefaf6">unsafe_get_os_clipboard</a> ()</td></tr>
+<tr class="separator:a91dc0057aec6c267c2ef69c1decefaf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ea9ab2e117355993bc245c691731cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mac__clipboard_8c.html#a71ea9ab2e117355993bc245c691731cc">unsafe_set_os_clipboard</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *cb)</td></tr>
+<tr class="separator:a71ea9ab2e117355993bc245c691731cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -124,12 +124,12 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the general clipboard functions for a shared. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md134"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md130"></a>
 client-server clipboard on MacOS clients.</h1>
-<h1><a class="anchor" id="autotoc_md135"></a>
+<h1><a class="anchor" id="autotoc_md131"></a>
 Usage</h1>
-<p>GET_CLIPBOARD and SET_CLIPBOARD will return strings representing directories important for getting and setting file clipboards. When GetClipboard() is called and it returns a CLIPBOARD_FILES type, then GET_CLIPBOARD will be filled with symlinks to the clipboard files. When SetClipboard(cb) is called and is given a clipboard with a CLIPBOARD_FILES type, then the clipboard will be set to whatever files are in the SET_CLIPBOARD directory. </p>
+<p>GET_OS_CLIPBOARD and SET_OS_CLIPBOARD will return strings representing directories important for getting and setting file clipboards. When <a class="el" href="clipboard_8c.html#a44ddb807136f265382274f822c589f98" title="Get the current OS clipboard data.">get_os_clipboard()</a> is called and it returns a CLIPBOARD_FILES type, then GET_OS_CLIPBOARD will be filled with symlinks to the clipboard files. When set_os_clipboard(cb) is called and is given a clipboard with a CLIPBOARD_FILES type, then the clipboard will be set to whatever files are in the SET_OS_CLIPBOARD directory. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7f7c69fcb26be1f0547b02ff86a7ea4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f7c69fcb26be1f0547b02ff86a7ea4c">&#9670;&nbsp;</a></span>unsafe_destroy_clipboard()</h2>
@@ -148,14 +148,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a40bf7c75239a7071b828779dc528187b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40bf7c75239a7071b828779dc528187b">&#9670;&nbsp;</a></span>unsafe_free_clipboard()</h2>
+<a id="abd908a405c1888d1306899a3ad598ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd908a405c1888d1306899a3ad598ea3">&#9670;&nbsp;</a></span>unsafe_free_clipboard_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unsafe_free_clipboard </td>
+          <td class="memname">void unsafe_free_clipboard_buffer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td>
           <td class="paramname"><em>cb</em></td><td>)</td>
@@ -166,14 +166,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ac2f4fad1b03ba4ffe22d595715139589"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2f4fad1b03ba4ffe22d595715139589">&#9670;&nbsp;</a></span>unsafe_get_clipboard()</h2>
+<a id="a91dc0057aec6c267c2ef69c1decefaf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91dc0057aec6c267c2ef69c1decefaf6">&#9670;&nbsp;</a></span>unsafe_get_os_clipboard()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structClipboardData.html">ClipboardData</a>* unsafe_get_clipboard </td>
+          <td class="memname"><a class="el" href="structClipboardData.html">ClipboardData</a>* unsafe_get_os_clipboard </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -183,14 +183,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a85a65413d3b0c2f07391609a170dc14b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85a65413d3b0c2f07391609a170dc14b">&#9670;&nbsp;</a></span>unsafe_has_clipboard_updated()</h2>
+<a id="a847cc544e94acb267115f4caa0f8ec3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847cc544e94acb267115f4caa0f8ec3f">&#9670;&nbsp;</a></span>unsafe_has_os_clipboard_updated()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool unsafe_has_clipboard_updated </td>
+          <td class="memname">bool unsafe_has_os_clipboard_updated </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -217,14 +217,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="abe8854daee3b27fbb4d5aaa19fde461f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe8854daee3b27fbb4d5aaa19fde461f">&#9670;&nbsp;</a></span>unsafe_set_clipboard()</h2>
+<a id="a71ea9ab2e117355993bc245c691731cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ea9ab2e117355993bc245c691731cc">&#9670;&nbsp;</a></span>unsafe_set_os_clipboard()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unsafe_set_clipboard </td>
+          <td class="memname">void unsafe_set_os_clipboard </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td>
           <td class="paramname"><em>cb</em></td><td>)</td>
@@ -283,7 +283,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_18a87b5a2e3bb90143f55fb2a95e2152.html">clipboard</a></li><li class="navelem"><a class="el" href="mac__clipboard_8c.html">mac_clipboard.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_8010e21146f516d4a149b849de47b294.html">clipboard</a></li><li class="navelem"><a class="el" href="mac__clipboard_8c.html">mac_clipboard.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

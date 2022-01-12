@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['queue_5fcond_3191',['queue_cond',['../structNetworkThrottleContextInternal.html#ad22d4ba58b0408d220495c80a15fcabe',1,'NetworkThrottleContextInternal']]],
-  ['queue_5flock_3192',['queue_lock',['../structNetworkThrottleContextInternal.html#a7581ad3b869684326e0e62aa417f1b7e',1,'NetworkThrottleContextInternal']]]
+  ['queue_5fcond_3577',['queue_cond',['../structNetworkThrottleContext.html#a13eec5c3fadad9f30633223b56d5c1ce',1,'NetworkThrottleContext']]],
+  ['queue_5flock_3578',['queue_lock',['../structNetworkThrottleContext.html#a69dea2b223bc14a52deed273c831e389',1,'NetworkThrottleContext']]],
+  ['queued_5fos_5fclipboard_5fsetter_5fthread_5fid_3579',['queued_os_clipboard_setter_thread_id',['../clipboard__synchronizer_8c.html#ad1df6c2a369cf1164bf2616b22a8172a',1,'clipboard_synchronizer.c']]]
 ];

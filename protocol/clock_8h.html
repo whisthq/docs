@@ -90,7 +90,8 @@ $(document).ready(function(){initNavTree('clock_8h.html',''); initResizable(); }
 <div class="title">clock.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;sys/time.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
 </div>
 <p><a href="clock_8h_source.html">Go to the source code of this file.</a></p>
@@ -102,15 +103,19 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a362207a7d85ed7142c966f9a509d80f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;&#160;&#160;struct timeval</td></tr>
+<tr class="memitem:a362207a7d85ed7142c966f9a509d80f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;&#160;&#160;struct timespec</td></tr>
 <tr class="separator:a362207a7d85ed7142c966f9a509d80f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d77dc21527a9a603cd9af39efb41429"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a5d77dc21527a9a603cd9af39efb41429">timeout_clock</a>&#160;&#160;&#160;struct timeval</td></tr>
+<tr class="separator:a5d77dc21527a9a603cd9af39efb41429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98e33cc8b935fa0d5154d8a3f557c39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">TZ_NAME_MAXLEN</a>&#160;&#160;&#160;200</td></tr>
 <tr class="separator:ac98e33cc8b935fa0d5154d8a3f557c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a3097682819e03c2a9bf3586ae6a4295f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistTimeData.html">WhistTimeData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a3097682819e03c2a9bf3586ae6a4295f">WhistTimeData</a></td></tr>
-<tr class="separator:a3097682819e03c2a9bf3586ae6a4295f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d947f0fa2fb7e03ff678e83295a86b3"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a></td></tr>
+<tr class="separator:a9d947f0fa2fb7e03ff678e83295a86b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b8b80230f2b83f112c3c8a8e046c11"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistTimeData.html">WhistTimeData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a02b8b80230f2b83f112c3c8a8e046c11">WhistTimeData</a></td></tr>
+<tr class="separator:a02b8b80230f2b83f112c3c8a8e046c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -120,24 +125,27 @@ Functions</h2></td></tr>
 <tr class="memitem:ac6c1f208b451cecf8667af4ce182fd2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#ac6c1f208b451cecf8667af4ce182fd2d">get_timer</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> timer)</td></tr>
 <tr class="memdesc:ac6c1f208b451cecf8667af4ce182fd2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of elapsed time in seconds since the last start_timer.  <a href="clock_8h.html#ac6c1f208b451cecf8667af4ce182fd2d">More...</a><br /></td></tr>
 <tr class="separator:ac6c1f208b451cecf8667af4ce182fd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe610bbf5d6a9399ecd3c090302673d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#abe610bbf5d6a9399ecd3c090302673d8">create_clock</a> (int timeout_ms)</td></tr>
-<tr class="memdesc:abe610bbf5d6a9399ecd3c090302673d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a clock that represents the given timeout in milliseconds.  <a href="clock_8h.html#abe610bbf5d6a9399ecd3c090302673d8">More...</a><br /></td></tr>
-<tr class="separator:abe610bbf5d6a9399ecd3c090302673d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04e5e700e3e31336405356dbe102bbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5d77dc21527a9a603cd9af39efb41429">timeout_clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#aa04e5e700e3e31336405356dbe102bbb">create_timeout_clock</a> (int timeout_ms)</td></tr>
+<tr class="memdesc:aa04e5e700e3e31336405356dbe102bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a clock that represents the given timeout in milliseconds.  <a href="clock_8h.html#aa04e5e700e3e31336405356dbe102bbb">More...</a><br /></td></tr>
+<tr class="separator:aa04e5e700e3e31336405356dbe102bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3bcd57394b521f42dea529fe0043557"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#ad3bcd57394b521f42dea529fe0043557">current_time_str</a> ()</td></tr>
 <tr class="memdesc:ad3bcd57394b521f42dea529fe0043557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time as a string.  <a href="clock_8h.html#ad3bcd57394b521f42dea529fe0043557">More...</a><br /></td></tr>
 <tr class="separator:ad3bcd57394b521f42dea529fe0043557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ac044eb61f1517aadc2fba53e9785c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a64ac044eb61f1517aadc2fba53e9785c">current_time_us</a> ()</td></tr>
+<tr class="memdesc:a64ac044eb61f1517aadc2fba53e9785c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of microseconds elapsed since epoch.  <a href="clock_8h.html#a64ac044eb61f1517aadc2fba53e9785c">More...</a><br /></td></tr>
+<tr class="separator:a64ac044eb61f1517aadc2fba53e9785c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md194"></a>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md202"></a>
 @brief This file contains the helper functions for timing code.</h1>
-<h1><a class="anchor" id="autotoc_md195"></a>
+<h1><a class="anchor" id="autotoc_md203"></a>
 Usage</h1>
 <p>You can use start_timer and get_timer to time specific pieces of code, or to relate different events across server and client.</p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md206"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md218"></a>
 @brief Helper functions for png to bmp and bmp to png</h1>
-<h1><a class="anchor" id="autotoc_md207"></a>
+<h1><a class="anchor" id="autotoc_md219"></a>
 Usage</h1>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a362207a7d85ed7142c966f9a509d80f3"></a>
@@ -147,7 +155,21 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define clock&#160;&#160;&#160;struct timeval</td>
+          <td class="memname">#define clock&#160;&#160;&#160;struct timespec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d77dc21527a9a603cd9af39efb41429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d77dc21527a9a603cd9af39efb41429">&#9670;&nbsp;</a></span>timeout_clock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define timeout_clock&#160;&#160;&#160;struct timeval</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -169,8 +191,22 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a3097682819e03c2a9bf3586ae6a4295f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3097682819e03c2a9bf3586ae6a4295f">&#9670;&nbsp;</a></span>WhistTimeData</h2>
+<a id="a9d947f0fa2fb7e03ff678e83295a86b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d947f0fa2fb7e03ff678e83295a86b3">&#9670;&nbsp;</a></span>timestamp_us</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint64_t <a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02b8b80230f2b83f112c3c8a8e046c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b8b80230f2b83f112c3c8a8e046c11">&#9670;&nbsp;</a></span>WhistTimeData</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,14 +220,14 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abe610bbf5d6a9399ecd3c090302673d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe610bbf5d6a9399ecd3c090302673d8">&#9670;&nbsp;</a></span>create_clock()</h2>
+<a id="aa04e5e700e3e31336405356dbe102bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04e5e700e3e31336405356dbe102bbb">&#9670;&nbsp;</a></span>create_timeout_clock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> create_clock </td>
+          <td class="memname"><a class="el" href="clock_8h.html#a5d77dc21527a9a603cd9af39efb41429">timeout_clock</a> create_timeout_clock </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>timeout_ms</em></td><td>)</td>
@@ -228,6 +264,26 @@ Usage</h1>
 
 <p>Returns the current time as a string. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current time as a string </dd></dl>
+
+</div>
+</div>
+<a id="a64ac044eb61f1517aadc2fba53e9785c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ac044eb61f1517aadc2fba53e9785c">&#9670;&nbsp;</a></span>current_time_us()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> current_time_us </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of microseconds elapsed since epoch. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of microseconds elapsed since epoch </dd></dl>
 
 </div>
 </div>
@@ -288,7 +344,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_df322525ef19ea0172bad82237de04c3.html">utils</a></li><li class="navelem"><a class="el" href="clock_8h.html">clock.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_e68502ba7741b9477bffd325bfc1c340.html">utils</a></li><li class="navelem"><a class="el" href="clock_8h.html">clock.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

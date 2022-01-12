@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['sdlvideocontext_2014',['SDLVideoContext',['../structSDLVideoContext.html',1,'']]],
-  ['signaturedata_2015',['SignatureData',['../structSignatureData.html',1,'']]],
-  ['socketcontext_2016',['SocketContext',['../structSocketContext.html',1,'']]],
-  ['socketcontextdata_2017',['SocketContextData',['../structSocketContextData.html',1,'']]],
-  ['statisticdata_2018',['StatisticData',['../structStatisticData.html',1,'']]],
-  ['stunentry_2019',['StunEntry',['../structStunEntry.html',1,'']]],
-  ['stunrequest_2020',['StunRequest',['../structStunRequest.html',1,'']]]
+  ['regionheader_2258',['RegionHeader',['../structRegionHeader.html',1,'']]],
+  ['registeredresource_2259',['RegisteredResource',['../structRegisteredResource.html',1,'']]],
+  ['ringbuffer_2260',['RingBuffer',['../structRingBuffer.html',1,'']]],
+  ['rwlock_2261',['RWLock',['../structRWLock.html',1,'']]]
 ];

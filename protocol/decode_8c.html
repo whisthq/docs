@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="decode_8h_source.html">decode.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="client__statistic_8h_source.html">client/client_statistic.h</a>&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -118,6 +119,8 @@ Functions</h2></td></tr>
 <tr class="separator:a52410082c8bdc9b39a7d8df228c7caf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a300fe3797438293a2f86900366f062dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a300fe3797438293a2f86900366f062dd">destroy_video_decoder_members</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="separator:a300fe3797438293a2f86900366f062dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462141beaad16ece4c3dc31c9e043293"><td class="memItemLeft" align="right" valign="top">AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a462141beaad16ece4c3dc31c9e043293">safe_av_frame_alloc</a> ()</td></tr>
+<tr class="separator:a462141beaad16ece4c3dc31c9e043293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ccfebe79578d850afc048e916aba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">create_video_decoder</a> (int width, int height, bool use_hardware, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="memdesc:a20ccfebe79578d850afc048e916aba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the FFmpeg H264 or H265 video decoder, and set the proper video parameters for receiving from the server.  <a href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">More...</a><br /></td></tr>
 <tr class="separator:a20ccfebe79578d850afc048e916aba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,12 +130,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a4d0a703f38ea832b5b5186b309499dc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a4d0a703f38ea832b5b5186b309499dc8">video_decoder_send_packets</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, int buffer_size)</td></tr>
 <tr class="memdesc:a4d0a703f38ea832b5b5186b309499dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the packets contained in buffer into the decoder.  <a href="decode_8c.html#a4d0a703f38ea832b5b5186b309499dc8">More...</a><br /></td></tr>
 <tr class="separator:a4d0a703f38ea832b5b5186b309499dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac97bfc32b5f8336fe1de7829e9ded566"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ac97bfc32b5f8336fe1de7829e9ded566">video_decoder_get_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
-<tr class="memdesc:ac97bfc32b5f8336fe1de7829e9ded566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next decoded frame from the decoder, which will be placed in decoder-&gt;sw_frame.  <a href="decode_8c.html#ac97bfc32b5f8336fe1de7829e9ded566">More...</a><br /></td></tr>
-<tr class="separator:ac97bfc32b5f8336fe1de7829e9ded566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4190e21d736599dcdbda2180df6d3ff7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a4190e21d736599dcdbda2180df6d3ff7">video_decoder_decode</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, int buffer_size)</td></tr>
-<tr class="memdesc:a4190e21d736599dcdbda2180df6d3ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a compressed video frame using the FFmpeg decoder.  <a href="decode_8c.html#a4190e21d736599dcdbda2180df6d3ff7">More...</a><br /></td></tr>
-<tr class="separator:a4190e21d736599dcdbda2180df6d3ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e08542a8a988ca8371797bfe93f25f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a29e08542a8a988ca8371797bfe93f25f">video_decoder_decode_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
+<tr class="memdesc:a29e08542a8a988ca8371797bfe93f25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the next available frame from the decoder.  <a href="decode_8c.html#a29e08542a8a988ca8371797bfe93f25f">More...</a><br /></td></tr>
+<tr class="separator:a29e08542a8a988ca8371797bfe93f25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6084356bbeab34505db4c75bc46fd9c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDecodedFrameData.html">DecodedFrameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a6084356bbeab34505db4c75bc46fd9c4">video_decoder_get_last_decoded_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
+<tr class="memdesc:a6084356bbeab34505db4c75bc46fd9c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>. <code>video_decoder_decode_frame</code> must return 0 first, at least once.  <a href="decode_8c.html#a6084356bbeab34505db4c75bc46fd9c4">More...</a><br /></td></tr>
+<tr class="separator:a6084356bbeab34505db4c75bc46fd9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985c67900df09a3cf893e4ba76d030c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a985c67900df09a3cf893e4ba76d030c7">video_decoder_free_decoded_frame</a> (<a class="el" href="structDecodedFrameData.html">DecodedFrameData</a> *decoded_frame_data)</td></tr>
+<tr class="memdesc:a985c67900df09a3cf893e4ba76d030c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the frame returned by video_decoder_get_last_decoded_frame, Or do nothing if a zero'd struct is passed in.  <a href="decode_8c.html#a985c67900df09a3cf893e4ba76d030c7">More...</a><br /></td></tr>
+<tr class="separator:a985c67900df09a3cf893e4ba76d030c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -141,10 +147,10 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the code to create a video decoder and use that. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md230"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md240"></a>
 decoder to decode frames.</h1>
-<h1><a class="anchor" id="autotoc_md231"></a>
+<h1><a class="anchor" id="autotoc_md241"></a>
 Usage</h1>
 <p>Video is decoded from H264 via ffmpeg; H265 is supported, but not currently used. Hardware-accelerated decoders are given priority, but if those fail, we decode on the CPU. All frames are eventually moved to the CPU for scaling and color conversion. Create a decoder via create_video_decoder. To decode a frame, call video_decoder_decode on the decoder and the encoded packets. To destroy the decoder when finished, destroy the encoder using video_decoder_decode. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -363,6 +369,23 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a462141beaad16ece4c3dc31c9e043293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462141beaad16ece4c3dc31c9e043293">&#9670;&nbsp;</a></span>safe_av_frame_alloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AVFrame* safe_av_frame_alloc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acc3d03227fdb2a0b9281d06a18fac9de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc3d03227fdb2a0b9281d06a18fac9de">&#9670;&nbsp;</a></span>set_decoder_opts()</h2>
 
@@ -399,59 +422,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a4190e21d736599dcdbda2180df6d3ff7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4190e21d736599dcdbda2180df6d3ff7">&#9670;&nbsp;</a></span>video_decoder_decode()</h2>
+<a id="a29e08542a8a988ca8371797bfe93f25f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e08542a8a988ca8371797bfe93f25f">&#9670;&nbsp;</a></span>video_decoder_decode_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool video_decoder_decode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td>
-          <td class="paramname"><em>decoder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>buffer_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Decode a compressed video frame using the FFmpeg decoder. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">decoder</td><td>The initialized FFmepg decoder used to decode </td></tr>
-    <tr><td class="paramname">buffer</td><td>The buffer containing the frame to decode </td></tr>
-    <tr><td class="paramname">buffer_size</td><td>The size of the buffer containing the frame to decode</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if it decoded successfully, else False </dd></dl>
-
-</div>
-</div>
-<a id="ac97bfc32b5f8336fe1de7829e9ded566"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac97bfc32b5f8336fe1de7829e9ded566">&#9670;&nbsp;</a></span>video_decoder_get_frame()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int video_decoder_get_frame </td>
+          <td class="memname">int video_decoder_decode_frame </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td>
           <td class="paramname"><em>decoder</em></td><td>)</td>
@@ -460,7 +438,7 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Get the next decoded frame from the decoder, which will be placed in decoder-&gt;sw_frame. </p>
+<p>Decode the next available frame from the decoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>The decoder we are using for decoding</td></tr>
@@ -468,6 +446,60 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success (can call again), 1 on EAGAIN (send more input before calling again), -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a985c67900df09a3cf893e4ba76d030c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985c67900df09a3cf893e4ba76d030c7">&#9670;&nbsp;</a></span>video_decoder_free_decoded_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void video_decoder_free_decoded_frame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDecodedFrameData.html">DecodedFrameData</a> *&#160;</td>
+          <td class="paramname"><em>decoded_frame_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free the frame returned by video_decoder_get_last_decoded_frame, Or do nothing if a zero'd struct is passed in. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoded_frame_data</td><td>The decoded frame to free. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6084356bbeab34505db4c75bc46fd9c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6084356bbeab34505db4c75bc46fd9c4">&#9670;&nbsp;</a></span>video_decoder_get_last_decoded_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDecodedFrameData.html">DecodedFrameData</a> video_decoder_get_last_decoded_frame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>. <code>video_decoder_decode_frame</code> must return 0 first, at least once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder</td><td>The decoder we are using for decoding</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The last decoded frame data.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Once this is called once, the decoder loses its reference to the framedata. So, it cannot be called again unless <code>video_decoder_decode_frame</code> returns 0 again. </dd></dl>
 
 </div>
 </div>
@@ -536,7 +568,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="decode_8c.html">decode.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_91458d29fc8ea5e0d5bbd615c495719c.html">video</a></li><li class="navelem"><a class="el" href="dir_00798b83412e2ad2d1abd2a4d4fd2fcf.html">codec</a></li><li class="navelem"><a class="el" href="decode_8c.html">decode.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

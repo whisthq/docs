@@ -96,18 +96,51 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 <li>fd_relmouse
 : <a class="el" href="structInputDevice.html#a1d3c4e4761cc5549826c66ace98566e7">InputDevice</a>
 </li>
+<li>fec_decoder
+: <a class="el" href="structFrameData.html#a7ca16f755e18b1448860ddebaa6f96bd">FrameData</a>
+</li>
+<li>fec_frame_buffer
+: <a class="el" href="structFrameData.html#aec551b669a213996989740f84bb40947">FrameData</a>
+</li>
 <li>fec_packet_ratio
-: <a class="el" href="structWhistClientMessage.html#ae885ea0bcfbe801892f78efc4d4c41e9">WhistClientMessage</a>
-, <a class="el" href="structSocketContextData.html#a5ab3a2583726416e38be92c4bab9dd8f">SocketContextData</a>
+: <a class="el" href="structSocketContextData.html#a5ab3a2583726416e38be92c4bab9dd8f">SocketContextData</a>
+</li>
+<li>fec_packets_received
+: <a class="el" href="structFrameData.html#a1ebb5927b1a380da36425ae408088d41">FrameData</a>
 </li>
 <li>ffmpeg_encoder
 : <a class="el" href="structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7">VideoEncoder</a>
 </li>
+<li>file
+: <a class="el" href="structWhistClientMessage.html#ac483bcd64751c9834cdea881ae71cd38">WhistClientMessage</a>
+, <a class="el" href="structWhistServerMessage.html#a19ad9000bba61691ee739f5f7c0c6204">WhistServerMessage</a>
+</li>
+<li>file_handle
+: <a class="el" href="structTransferringFile.html#ab6afdda15b69e6cd306f37fa7959f2ef">TransferringFile</a>
+</li>
+<li>file_metadata
+: <a class="el" href="structWhistClientMessage.html#a0116954edece6194206d1b8431f15654">WhistClientMessage</a>
+, <a class="el" href="structWhistServerMessage.html#a00e3a51de925d637b8804879c570850a">WhistServerMessage</a>
+</li>
+<li>file_path
+: <a class="el" href="structTransferringFile.html#a3cd233d6a7a99c173e80bf053ef9ea9e">TransferringFile</a>
+</li>
+<li>file_size
+: <a class="el" href="structFileMetadata.html#afb510a43dd707205e8c5d08caf82f348">FileMetadata</a>
+</li>
 <li>filename
-: <a class="el" href="structOSXFilenames.html#abea7caa7613ceaec2cb9ea802f27114d">OSXFilenames</a>
+: <a class="el" href="structFileMetadata.html#a5adeabce6a8f9971217be7f8e63ae7a3">FileMetadata</a>
+, <a class="el" href="structOSXFilenames.html#abea7caa7613ceaec2cb9ea802f27114d">OSXFilenames</a>
+, <a class="el" href="structTransferringFile.html#a9c77e8433776c7138b4f1a983e8aa6d3">TransferringFile</a>
+</li>
+<li>filename_len
+: <a class="el" href="structFileMetadata.html#aa9cefde9d4df6e01b1547cbb592f639e">FileMetadata</a>
 </li>
 <li>files
 : <a class="el" href="structClipboardFiles.html#ad6b3efc63acdc42cf8be3feadb55c908">ClipboardFiles</a>
+</li>
+<li>fill_bucket_initially
+: <a class="el" href="structNetworkThrottleContext.html#abe25a6e122fb22056628eb3973d347ba">NetworkThrottleContext</a>
 </li>
 <li>filter_graph
 : <a class="el" href="structFFmpegEncoder.html#a87716d35f72c5cb126e537a423f750d3">FFmpegEncoder</a>
@@ -130,6 +163,9 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 <li>filtered_frame
 : <a class="el" href="structFFmpegEncoder.html#a1b49e75193b03bc28367669a3757e37d">FFmpegEncoder</a>
 </li>
+<li>finished
+: <a class="el" href="structClipboardThread.html#abd12e47d78149eb49150219c8b73690e">ClipboardThread</a>
+</li>
 <li>first
 : <a class="el" href="structX11CaptureDevice.html#ab7bc7bf3b5ddab2a71587ac8212587bc">X11CaptureDevice</a>
 </li>
@@ -139,6 +175,9 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 <li>force_palette
 : <a class="el" href="structLodePNGEncoderSettings.html#a04dc9622ccd1d7c74c56291409aa512a">LodePNGEncoderSettings</a>
 </li>
+<li>fps
+: <a class="el" href="structNetworkSettings.html#ad765e7a2b5566832dbe65cf0192b942f">NetworkSettings</a>
+</li>
 <li>frame
 : <a class="el" href="structAudioDecoder.html#afa1eb71c5c3a651f012993d7838fe994">AudioDecoder</a>
 , <a class="el" href="structAudioEncoder.html#af69024a62ca659d729c8e80fd8d37827">AudioEncoder</a>
@@ -147,8 +186,8 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 <li>frame_buffer
 : <a class="el" href="structFrameData.html#aa52523581ed94b51f298010cf33d338f">FrameData</a>
 </li>
-<li>frame_buffer_allocator
-: <a class="el" href="structRingBuffer.html#a64c42ca0af0052ed9c9670b7aebd542c">RingBuffer</a>
+<li>frame_buffer_size
+: <a class="el" href="structFrameData.html#a3eb54c2889e57b3083c7c2adc0c5f1bf">FrameData</a>
 </li>
 <li>frame_count
 : <a class="el" href="structAudioEncoder.html#a7ee3acefd7cd64d0b67a86d0479af1c7">AudioEncoder</a>
@@ -165,39 +204,32 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 </li>
 <li>frame_size
 : <a class="el" href="structAudioDevice.html#aebb487115eacc7d3ff71ac78934f4955">AudioDevice</a>
-, <a class="el" href="structFrameData.html#a8aa6d7083971af8bef3ef4e11cfb3629">FrameData</a>
 , <a class="el" href="structNvidiaEncoder.html#a955fc9b03169bd06a8bdc33f366e916b">NvidiaEncoder</a>
-</li>
-<li>frame_timer
-: <a class="el" href="structVideoData.html#a85b51e8bc003728490c68d4e653ddfa4">VideoData</a>
 </li>
 <li>frames_available
 : <a class="el" href="structAudioDevice.html#a1005c08f0e07d2de573f04a57166ca2e">AudioDevice</a>
 </li>
 <li>frames_received
 : <a class="el" href="structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717">RingBuffer</a>
-, <a class="el" href="structVideoData.html#a5b0a69c681a1128045f84bac08ad6505">VideoData</a>
+, <a class="el" href="structVideoContext.html#af1865961efe3a0414361f027d49ddd1a">VideoContext</a>
 </li>
 <li>frames_since_last_iframe
 : <a class="el" href="structFFmpegEncoder.html#aeb3727e6ee67ad19e50da029cb77634f">FFmpegEncoder</a>
 </li>
 <li>free_blocks
-: <a class="el" href="structInternalBlockAllocator.html#a6946aeb65c44301d6efde99032ef67a2">InternalBlockAllocator</a>
+: <a class="el" href="structBlockAllocator.html#ab3fc7d5e5c511c89f438a7a912d12c18">BlockAllocator</a>
 </li>
 <li>free_packet
-: <a class="el" href="structSocketContext.html#ad4484adf3ce34d636892bbf9938bd034">SocketContext</a>
+: <a class="el" href="structSocketContext.html#a13e38641f602f77146c6d006223bccd3">SocketContext</a>
 </li>
 <li>freelist
 : <a class="el" href="structBPMLists.html#a60b8d594291b80d962e9bfedbe90f372">BPMLists</a>
-</li>
-<li>frequency
-: <a class="el" href="structWhistServerMessage.html#aaf6636fbb52fa6d8246ffb882943cd1a">WhistServerMessage</a>
 </li>
 <li>fullPath
 : <a class="el" href="structOSXFilenames.html#afb130cc3d8df974472a08125d2ded88d">OSXFilenames</a>
 </li>
 <li>fullscreen
-: <a class="el" href="structWhistServerMessage.html#a0341dd498434c2b0f4fa192e610954ad">WhistServerMessage</a>
+: <a class="el" href="structWhistServerMessage.html#af052192dfa180856263906915f286b9d">WhistServerMessage</a>
 </li>
 </ul>
 </div><!-- contents -->

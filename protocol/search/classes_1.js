@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['bitarray_1953',['BitArray',['../structBitArray.html',1,'']]],
-  ['bitrates_1954',['Bitrates',['../structBitrates.html',1,'']]],
-  ['bitratestatistics_1955',['BitrateStatistics',['../structBitrateStatistics.html',1,'']]],
-  ['bpmlists_1956',['BPMLists',['../structBPMLists.html',1,'']]],
-  ['bpmnode_1957',['BPMNode',['../structBPMNode.html',1,'']]]
+  ['audiocontext_2206',['AudioContext',['../structAudioContext.html',1,'']]],
+  ['audiodecoder_2207',['AudioDecoder',['../structAudioDecoder.html',1,'']]],
+  ['audiodevice_2208',['AudioDevice',['../structAudioDevice.html',1,'']]],
+  ['audioencoder_2209',['AudioEncoder',['../structAudioEncoder.html',1,'']]],
+  ['audioframe_2210',['AudioFrame',['../structAudioFrame.html',1,'']]]
 ];

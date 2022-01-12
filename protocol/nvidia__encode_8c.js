@@ -1,8 +1,8 @@
 var nvidia__encode_8c =
 [
-    [ "WHIST_PRESET", "nvidia__encode_8c.html#abbbe58e3859f0548fa71d04730576640", null ],
-    [ "WHIST_TUNING", "nvidia__encode_8c.html#a33f96b66ba3592ba12f9ad6972c937f1", null ],
     [ "LIB_ENCODEAPI_NAME", "nvidia__encode_8c.html#a413f8f4298cddd83945cbe786aae3a98", null ],
+    [ "WHIST_PRESET", "nvidia__encode_8c.html#a4cb2e767184a4d54dbe262b29790a754", null ],
+    [ "WHIST_TUNING", "nvidia__encode_8c.html#a4a33a804728a7698b34609ab428c22ac", null ],
     [ "create_nvidia_encoder", "nvidia__encode_8c.html#a2652e81003368f8bf0501290ac82bfe8", null ],
     [ "destroy_nvidia_encoder", "nvidia__encode_8c.html#a1dfb7e3e77454fb585140ba00684a59b", null ],
     [ "get_codec_guid", "nvidia__encode_8c.html#a30e1d4db419af47348131f5909917d29", null ],

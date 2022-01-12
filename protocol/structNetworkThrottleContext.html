@@ -87,23 +87,181 @@ $(document).ready(function(){initNavTree('structNetworkThrottleContext.html','')
 <div class="title">NetworkThrottleContext Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="throttle_8h_source.html">throttle.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a34161261b52c6754ca48ee7419a42048"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#a34161261b52c6754ca48ee7419a42048">internal</a></td></tr>
-<tr class="separator:a34161261b52c6754ca48ee7419a42048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c2eab3eee36855d004e7e6b536c980"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#ae8c2eab3eee36855d004e7e6b536c980">coin_bucket_ms</a></td></tr>
+<tr class="separator:ae8c2eab3eee36855d004e7e6b536c980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb52ea1e4b57ca03b477b37662ff3503"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#acb52ea1e4b57ca03b477b37662ff3503">coin_bucket_max</a></td></tr>
+<tr class="separator:acb52ea1e4b57ca03b477b37662ff3503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f6e9cfbfba894f68ec993df63da754"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#aa1f6e9cfbfba894f68ec993df63da754">coin_bucket</a></td></tr>
+<tr class="separator:aa1f6e9cfbfba894f68ec993df63da754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42005e1a558e4013b2bebb66158019bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#a42005e1a558e4013b2bebb66158019bb">burst_bitrate</a></td></tr>
+<tr class="separator:a42005e1a558e4013b2bebb66158019bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69dea2b223bc14a52deed273c831e389"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#aa9899c1c25688c008b90165331107ddf">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#a69dea2b223bc14a52deed273c831e389">queue_lock</a></td></tr>
+<tr class="separator:a69dea2b223bc14a52deed273c831e389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13eec5c3fadad9f30633223b56d5c1ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#a9aea633c2ea88a28697f0324d0cf4eaa">WhistCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#a13eec5c3fadad9f30633223b56d5c1ce">queue_cond</a></td></tr>
+<tr class="separator:a13eec5c3fadad9f30633223b56d5c1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8203e38ee009c553845c9295070930"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#a3a8203e38ee009c553845c9295070930">coin_bucket_last_fill</a></td></tr>
+<tr class="separator:a3a8203e38ee009c553845c9295070930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec93f61e4b7f4c51e6bca52059d22f5a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#aec93f61e4b7f4c51e6bca52059d22f5a">next_queue_id</a></td></tr>
+<tr class="separator:aec93f61e4b7f4c51e6bca52059d22f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b80c67f598df42a1074a76853da8529"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#a6b80c67f598df42a1074a76853da8529">current_queue_id</a></td></tr>
+<tr class="separator:a6b80c67f598df42a1074a76853da8529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1394b5623dc1b94889bba028f636fe4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#af1394b5623dc1b94889bba028f636fe4">destroying</a></td></tr>
+<tr class="separator:af1394b5623dc1b94889bba028f636fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe25a6e122fb22056628eb3973d347ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#abe25a6e122fb22056628eb3973d347ba">fill_bucket_initially</a></td></tr>
+<tr class="separator:abe25a6e122fb22056628eb3973d347ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a34161261b52c6754ca48ee7419a42048"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34161261b52c6754ca48ee7419a42048">&#9670;&nbsp;</a></span>internal</h2>
+<a id="a42005e1a558e4013b2bebb66158019bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42005e1a558e4013b2bebb66158019bb">&#9670;&nbsp;</a></span>burst_bitrate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* NetworkThrottleContext::internal</td>
+          <td class="memname">int NetworkThrottleContext::burst_bitrate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1f6e9cfbfba894f68ec993df63da754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f6e9cfbfba894f68ec993df63da754">&#9670;&nbsp;</a></span>coin_bucket</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t NetworkThrottleContext::coin_bucket</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a8203e38ee009c553845c9295070930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a8203e38ee009c553845c9295070930">&#9670;&nbsp;</a></span>coin_bucket_last_fill</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> NetworkThrottleContext::coin_bucket_last_fill</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb52ea1e4b57ca03b477b37662ff3503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb52ea1e4b57ca03b477b37662ff3503">&#9670;&nbsp;</a></span>coin_bucket_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t NetworkThrottleContext::coin_bucket_max</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8c2eab3eee36855d004e7e6b536c980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c2eab3eee36855d004e7e6b536c980">&#9670;&nbsp;</a></span>coin_bucket_ms</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NetworkThrottleContext::coin_bucket_ms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b80c67f598df42a1074a76853da8529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b80c67f598df42a1074a76853da8529">&#9670;&nbsp;</a></span>current_queue_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int NetworkThrottleContext::current_queue_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1394b5623dc1b94889bba028f636fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1394b5623dc1b94889bba028f636fe4">&#9670;&nbsp;</a></span>destroying</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NetworkThrottleContext::destroying</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe25a6e122fb22056628eb3973d347ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe25a6e122fb22056628eb3973d347ba">&#9670;&nbsp;</a></span>fill_bucket_initially</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NetworkThrottleContext::fill_bucket_initially</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec93f61e4b7f4c51e6bca52059d22f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec93f61e4b7f4c51e6bca52059d22f5a">&#9670;&nbsp;</a></span>next_queue_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int NetworkThrottleContext::next_queue_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13eec5c3fadad9f30633223b56d5c1ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13eec5c3fadad9f30633223b56d5c1ce">&#9670;&nbsp;</a></span>queue_cond</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="threads_8h.html#a9aea633c2ea88a28697f0324d0cf4eaa">WhistCondition</a> NetworkThrottleContext::queue_cond</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69dea2b223bc14a52deed273c831e389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69dea2b223bc14a52deed273c831e389">&#9670;&nbsp;</a></span>queue_lock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="threads_8h.html#aa9899c1c25688c008b90165331107ddf">WhistMutex</a> NetworkThrottleContext::queue_lock</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -111,7 +269,7 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>whist/network/<a class="el" href="throttle_8h_source.html">throttle.h</a></li>
+<li>whist/network/<a class="el" href="throttle_8c.html">throttle.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

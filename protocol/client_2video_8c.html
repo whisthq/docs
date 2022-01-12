@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('client_2video_8c.html',''); initResiza
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -98,23 +97,23 @@ $(document).ready(function(){initNavTree('client_2video_8c.html',''); initResiza
 <code>#include &quot;<a class="el" href="sdl__utils_8h_source.html">sdl_utils.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ringbuffer_8h_source.html">whist/network/ringbuffer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="decode_8h_source.html">whist/video/codec/decode.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist__frame_8h_source.html">whist/core/whist_frame.h</a>&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;SDL2/SDL.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="color_8h_source.html">whist/utils/color.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="png_8h_source.html">whist/utils/png.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="rwlock_8h_source.html">whist/utils/rwlock.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="sdlscreeninfo_8h_source.html">sdlscreeninfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="native__window__utils_8h_source.html">native_window_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_2network_8h_source.html">network.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="bitrate_8h_source.html">bitrate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client__utils_8h_source.html">client_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="client__statistic_8h_source.html">client_statistic.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoData.html">VideoData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSDLVideoContext.html">SDLVideoContext</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html">VideoContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -123,254 +122,55 @@ Macros</h2></td></tr>
 <tr class="separator:aad2b19cec36db1f64bc8992a5aa8cbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afecb135e60c0c94fbb354b03bfb643a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#afecb135e60c0c94fbb354b03bfb643a9">NO_NACKS_DURING_IFRAME</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:afecb135e60c0c94fbb354b03bfb643a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63712ce21a04379372836cb9a38e657a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a63712ce21a04379372836cb9a38e657a">MAX_UNSYNCED_FRAMES</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:a63712ce21a04379372836cb9a38e657a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5c848a99cdfaef94195c539e073a5c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#aa5c848a99cdfaef94195c539e073a5c1">MAX_UNSYNCED_FRAMES_RENDER</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:aa5c848a99cdfaef94195c539e073a5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c417a4f8fcc4608ad1f0b63b26e634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a45c417a4f8fcc4608ad1f0b63b26e634">IFRAME_REQUEST_INTERVAL_MS</a>&#160;&#160;&#160;(50)</td></tr>
-<tr class="separator:a45c417a4f8fcc4608ad1f0b63b26e634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aff4cf33f3934d5e66be8a92bd10b69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a1aff4cf33f3934d5e66be8a92bd10b69">BITRATE_BUCKET_SIZE</a>&#160;&#160;&#160;500000</td></tr>
-<tr class="separator:a1aff4cf33f3934d5e66be8a92bd10b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade4f768ca0968a4e5944d25236f9a080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ade4f768ca0968a4e5944d25236f9a080">NUMBER_LOADING_FRAMES</a>&#160;&#160;&#160;50</td></tr>
-<tr class="separator:ade4f768ca0968a4e5944d25236f9a080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b761958b30d1f2611a3a7dfa0d9381"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a10b761958b30d1f2611a3a7dfa0d9381">CURSORIMAGE_A</a>&#160;&#160;&#160;0xff000000</td></tr>
-<tr class="separator:a10b761958b30d1f2611a3a7dfa0d9381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fbf0790655d1cdb41690ef2c44626c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a0fbf0790655d1cdb41690ef2c44626c2">CURSORIMAGE_R</a>&#160;&#160;&#160;0x00ff0000</td></tr>
-<tr class="separator:a0fbf0790655d1cdb41690ef2c44626c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8c4b05a876fdaac747e4b3b85e5574"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a4e8c4b05a876fdaac747e4b3b85e5574">CURSORIMAGE_G</a>&#160;&#160;&#160;0x0000ff00</td></tr>
-<tr class="separator:a4e8c4b05a876fdaac747e4b3b85e5574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ea5eab775ceae86f0aee1829a91c052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a7ea5eab775ceae86f0aee1829a91c052">CURSORIMAGE_B</a>&#160;&#160;&#160;0x000000ff</td></tr>
-<tr class="separator:a7ea5eab775ceae86f0aee1829a91c052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25c15f9233eff2796785d6f51159b56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ae25c15f9233eff2796785d6f51159b56">RECV_FRAMES_BUFFER_SIZE</a>&#160;&#160;&#160;275</td></tr>
 <tr class="separator:ae25c15f9233eff2796785d6f51159b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3190cca650071548d6b75370b0e5c41c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a3190cca650071548d6b75370b0e5c41c">STATISTICS_SECONDS</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a3190cca650071548d6b75370b0e5c41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad4426f54d5a54f1fd41dee912d228ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#aad4426f54d5a54f1fd41dee912d228ab">FPS_LOG_FREQUENCY_IN_SEC</a>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:aad4426f54d5a54f1fd41dee912d228ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ae1ca498075131094d8d54ea592fae9f9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structSDLVideoContext.html">SDLVideoContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ae1ca498075131094d8d54ea592fae9f9">SDLVideoContext</a></td></tr>
-<tr class="separator:ae1ca498075131094d8d54ea592fae9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c417a4f8fcc4608ad1f0b63b26e634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a45c417a4f8fcc4608ad1f0b63b26e634">IFRAME_REQUEST_INTERVAL_MS</a>&#160;&#160;&#160;5.0</td></tr>
+<tr class="separator:a45c417a4f8fcc4608ad1f0b63b26e634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63712ce21a04379372836cb9a38e657a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a63712ce21a04379372836cb9a38e657a">MAX_UNSYNCED_FRAMES</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a63712ce21a04379372836cb9a38e657a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd197c54018ce2a383af80e9459cde64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#afd197c54018ce2a383af80e9459cde64">MAX_TO_RENDER_STALENESS</a>&#160;&#160;&#160;100.0</td></tr>
+<tr class="separator:afd197c54018ce2a383af80e9459cde64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a14db20d88e6fccf6c7fbcfe15c23a6a1"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a14db20d88e6fccf6c7fbcfe15c23a6a1">get_true_render_rect</a> ()</td></tr>
-<tr class="separator:a14db20d88e6fccf6c7fbcfe15c23a6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54d5932861898faf7b5c01c781d21f26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a54d5932861898faf7b5c01c781d21f26">update_cursor</a> (<a class="el" href="structVideoFrame.html">VideoFrame</a> *frame)</td></tr>
-<tr class="separator:a54d5932861898faf7b5c01c781d21f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5aea0d4f78ee4e42747ef06360a3502"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ad5aea0d4f78ee4e42747ef06360a3502">new_sdl_rect</a> (int x, int y, int w, int h)</td></tr>
-<tr class="separator:ad5aea0d4f78ee4e42747ef06360a3502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdeec29d6bcb1d597b3561dd73d1f292"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#afdeec29d6bcb1d597b3561dd73d1f292">multithreaded_destroy_decoder</a> (void *opaque)</td></tr>
-<tr class="separator:afdeec29d6bcb1d597b3561dd73d1f292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af10ceff84c2bb458ae18a8bd2af3d4b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#af10ceff84c2bb458ae18a8bd2af3d4b5">update_decoder_parameters</a> (int width, int height, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
-<tr class="separator:af10ceff84c2bb458ae18a8bd2af3d4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6657fb884f41e0f0e26825773f0c3cd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a6657fb884f41e0f0e26825773f0c3cd6">loading_sdl</a> (SDL_Renderer *renderer, int loading_index)</td></tr>
-<tr class="separator:a6657fb884f41e0f0e26825773f0c3cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b630131017e1bc6f8780995bc72c8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a59b630131017e1bc6f8780995bc72c8a">log_frame_statistics</a> (<a class="el" href="structVideoFrame.html">VideoFrame</a> *frame)</td></tr>
-<tr class="separator:a59b630131017e1bc6f8780995bc72c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9287c6b500b1230a70d7afc95bab9d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ac9287c6b500b1230a70d7afc95bab9d9">request_iframe</a> ()</td></tr>
-<tr class="separator:ac9287c6b500b1230a70d7afc95bab9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabb884892684a55f0c14740f1e82b46f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#aabb884892684a55f0c14740f1e82b46f">update_sws_context</a> ()</td></tr>
-<tr class="separator:aabb884892684a55f0c14740f1e82b46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05762f440c9779950682d48749194672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a05762f440c9779950682d48749194672">update_sws_pixel_format</a> ()</td></tr>
-<tr class="separator:a05762f440c9779950682d48749194672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f3c19f9efe89a7ba6d148b6ec0f18a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a14f3c19f9efe89a7ba6d148b6ec0f18a">finalize_video_context_data</a> ()</td></tr>
-<tr class="separator:a14f3c19f9efe89a7ba6d148b6ec0f18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aca8731f3a28e96c0743be91d481a21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a6aca8731f3a28e96c0743be91d481a21">replace_texture</a> ()</td></tr>
-<tr class="separator:a6aca8731f3a28e96c0743be91d481a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a861b3439ce18c75608120608d0fb55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a6a861b3439ce18c75608120608d0fb55">clear_sdl</a> (SDL_Renderer *renderer)</td></tr>
-<tr class="separator:a6a861b3439ce18c75608120608d0fb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdd03a9a8632c1d1f80a3a113d5ba8d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#abdd03a9a8632c1d1f80a3a113d5ba8d1">calculate_statistics</a> ()</td></tr>
-<tr class="separator:abdd03a9a8632c1d1f80a3a113d5ba8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c024f93309638b1e8f755f63c37f06d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a6c024f93309638b1e8f755f63c37f06d">skip_to_next_iframe</a> ()</td></tr>
-<tr class="separator:a6c024f93309638b1e8f755f63c37f06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0a6d84fb4c5932cf794270360bc9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a2b0a6d84fb4c5932cf794270360bc9de">sync_decoder_parameters</a> (<a class="el" href="structVideoFrame.html">VideoFrame</a> *frame)</td></tr>
-<tr class="separator:a2b0a6d84fb4c5932cf794270360bc9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad143c356edf6de20d4d405981f347ad4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ad143c356edf6de20d4d405981f347ad4">try_request_iframe_to_catch_up</a> ()</td></tr>
-<tr class="separator:ad143c356edf6de20d4d405981f347ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83a182739f09f49351bd1722f6e596a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a83a182739f09f49351bd1722f6e596a0">update_window_titlebar_color</a> (<a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> color)</td></tr>
-<tr class="separator:a83a182739f09f49351bd1722f6e596a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a759f71f304c11873e67bf7cc3f2d08a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a759f71f304c11873e67bf7cc3f2d08a8">init_video</a> ()</td></tr>
-<tr class="memdesc:a759f71f304c11873e67bf7cc3f2d08a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the SDL video thread.  <a href="client_2video_8c.html#a759f71f304c11873e67bf7cc3f2d08a8">More...</a><br /></td></tr>
-<tr class="separator:a759f71f304c11873e67bf7cc3f2d08a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d6b8b70fbb92596ede52637c8b3282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a39d6b8b70fbb92596ede52637c8b3282">update_video</a> ()</td></tr>
-<tr class="memdesc:a39d6b8b70fbb92596ede52637c8b3282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate statistics about bitrate, I-Frame, etc. and request video update from the server.  <a href="client_2video_8c.html#a39d6b8b70fbb92596ede52637c8b3282">More...</a><br /></td></tr>
-<tr class="separator:a39d6b8b70fbb92596ede52637c8b3282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db18738906fd04329094890a035cd11"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a5db18738906fd04329094890a035cd11">receive_video</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="memdesc:a5db18738906fd04329094890a035cd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8c.html#a5db18738906fd04329094890a035cd11">More...</a><br /></td></tr>
-<tr class="separator:a5db18738906fd04329094890a035cd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f0975d7a4c5a45353941aa88171b1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a14f0975d7a4c5a45353941aa88171b1c">resizing_event_watcher</a> (void *data, SDL_Event *event)</td></tr>
-<tr class="separator:a14f0975d7a4c5a45353941aa88171b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a3e0af9f1b7b7468019171307f97a2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a2a3e0af9f1b7b7468019171307f97a2f">init_video_renderer</a> ()</td></tr>
-<tr class="memdesc:a2a3e0af9f1b7b7468019171307f97a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the video renderer.  <a href="client_2video_8c.html#a2a3e0af9f1b7b7468019171307f97a2f">More...</a><br /></td></tr>
-<tr class="separator:a2a3e0af9f1b7b7468019171307f97a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31bb0ec0bca0c25284f57e357c6da8ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a31bb0ec0bca0c25284f57e357c6da8ab">render_video</a> ()</td></tr>
-<tr class="memdesc:a31bb0ec0bca0c25284f57e357c6da8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video frame (If any are available to render)  <a href="client_2video_8c.html#a31bb0ec0bca0c25284f57e357c6da8ab">More...</a><br /></td></tr>
-<tr class="separator:a31bb0ec0bca0c25284f57e357c6da8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120d323bd5860a23810ea5174a8f2f36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a120d323bd5860a23810ea5174a8f2f36">destroy_video</a> ()</td></tr>
-<tr class="memdesc:a120d323bd5860a23810ea5174a8f2f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the video thread and VideoContext data to exit.  <a href="client_2video_8c.html#a120d323bd5860a23810ea5174a8f2f36">More...</a><br /></td></tr>
-<tr class="separator:a120d323bd5860a23810ea5174a8f2f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a460fea5c8cd411b76d7b5c7e68ee0ede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a460fea5c8cd411b76d7b5c7e68ee0ede">set_video_active_resizing</a> (bool is_resizing)</td></tr>
-<tr class="memdesc:a460fea5c8cd411b76d7b5c7e68ee0ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global variable 'resizing' to true if the SDL window is being resized, else false.  <a href="client_2video_8c.html#a460fea5c8cd411b76d7b5c7e68ee0ede">More...</a><br /></td></tr>
-<tr class="separator:a460fea5c8cd411b76d7b5c7e68ee0ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c9432e82a29d685319fbc2725cd136"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ad2c9432e82a29d685319fbc2725cd136">init_video</a> ()</td></tr>
+<tr class="memdesc:ad2c9432e82a29d685319fbc2725cd136"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the video system. The video system will receive video packets, and render the video out to the window.  <a href="client_2video_8c.html#ad2c9432e82a29d685319fbc2725cd136">More...</a><br /></td></tr>
+<tr class="separator:ad2c9432e82a29d685319fbc2725cd136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d344158f4b8ed1ba11af1a86d27789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#af1d344158f4b8ed1ba11af1a86d27789">destroy_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:af1d344158f4b8ed1ba11af1a86d27789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the video context.  <a href="client_2video_8c.html#af1d344158f4b8ed1ba11af1a86d27789">More...</a><br /></td></tr>
+<tr class="separator:af1d344158f4b8ed1ba11af1a86d27789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36642bb10a0e6def2d693135279e54d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a36642bb10a0e6def2d693135279e54d1">update_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:a36642bb10a0e6def2d693135279e54d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does any pending work the video context wants to do. (Including decoding frames, and calculating statistics)  <a href="client_2video_8c.html#a36642bb10a0e6def2d693135279e54d1">More...</a><br /></td></tr>
+<tr class="separator:a36642bb10a0e6def2d693135279e54d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea4d907c436a15fadf10105fea3e954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a8ea4d907c436a15fadf10105fea3e954">receive_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
+<tr class="memdesc:a8ea4d907c436a15fadf10105fea3e954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8c.html#a8ea4d907c436a15fadf10105fea3e954">More...</a><br /></td></tr>
+<tr class="separator:a8ea4d907c436a15fadf10105fea3e954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video frame (If any are available to render)  <a href="client_2video_8c.html#ae91e2215c8c94bdb14b3c01430b8ca69">More...</a><br /></td></tr>
+<tr class="separator:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14321021ee450305fdb8c787a3e1accc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:a14321021ee450305fdb8c787a3e1accc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not a video frame has been rendered. (NOT including any "loading animation" frames) This can be false even after calling render_video, if there simply weren't enough packets yet or if the video is still being decoded.  <a href="client_2video_8c.html#a14321021ee450305fdb8c787a3e1accc">More...</a><br /></td></tr>
+<tr class="separator:a14321021ee450305fdb8c787a3e1accc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be05a788c0ccc8513912da3dc7caf0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a9be05a788c0ccc8513912da3dc7caf0c">get_video_network_statistics</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:a9be05a788c0ccc8513912da3dc7caf0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets any networking statistics from the video.  <a href="client_2video_8c.html#a9be05a788c0ccc8513912da3dc7caf0c">More...</a><br /></td></tr>
+<tr class="separator:a9be05a788c0ccc8513912da3dc7caf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab491b7b6f8ad504dd96bdc5887d349e9"><td class="memItemLeft" align="right" valign="top">volatile SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a></td></tr>
-<tr class="separator:ab491b7b6f8ad504dd96bdc5887d349e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb26e424f91b3e96e593c77ffff265f6"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#adb26e424f91b3e96e593c77ffff265f6">server_width</a></td></tr>
-<tr class="separator:adb26e424f91b3e96e593c77ffff265f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f22535f72143edb1d30f2ae7b2063d7"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a6f22535f72143edb1d30f2ae7b2063d7">server_height</a></td></tr>
-<tr class="separator:a6f22535f72143edb1d30f2ae7b2063d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c601e07e2ab0a163872f816a34fad9c"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a1c601e07e2ab0a163872f816a34fad9c">server_codec_type</a></td></tr>
-<tr class="separator:a1c601e07e2ab0a163872f816a34fad9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f3dcad51272bd3610f3a94361d6cda"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a31f3dcad51272bd3610f3a94361d6cda">client_max_bitrate</a></td></tr>
-<tr class="separator:a31f3dcad51272bd3610f3a94361d6cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a5269d876b9e07618d093dbd293141c"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a8a5269d876b9e07618d093dbd293141c">max_burst_bitrate</a></td></tr>
-<tr class="separator:a8a5269d876b9e07618d093dbd293141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a80ed277e1f61a1fe7d7b91250e8d5"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5">update_bitrate</a></td></tr>
-<tr class="separator:a29a80ed277e1f61a1fe7d7b91250e8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaacc5ce7ced4977cd893708f5d789df4"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a></td></tr>
-<tr class="separator:aaacc5ce7ced4977cd893708f5d789df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a57d774e71166271bbff6c515111104"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a></td></tr>
-<tr class="separator:a2a57d774e71166271bbff6c515111104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb9ee7b2e8381606788de51e5548b57f"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#adb9ee7b2e8381606788de51e5548b57f">output_codec_type</a></td></tr>
-<tr class="separator:adb9ee7b2e8381606788de51e5548b57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5120ece93dfddf5638a59e495e9c6d46"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a></td></tr>
 <tr class="separator:a5120ece93dfddf5638a59e495e9c6d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab47696269ce2ea4b6deaa9145a677892"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ab47696269ce2ea4b6deaa9145a677892">native_window_color</a> = NULL</td></tr>
-<tr class="separator:ab47696269ce2ea4b6deaa9145a677892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a5f1af397e2937ecbd7c0a77f0766b"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a27a5f1af397e2937ecbd7c0a77f0766b">native_window_color_update</a> = false</td></tr>
-<tr class="separator:a27a5f1af397e2937ecbd7c0a77f0766b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c07149072d05b0b806023079dc6e56"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326">WhistCursorState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a32c07149072d05b0b806023079dc6e56">cursor_state</a> = <a class="el" href="cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326aa335fef0c5a110ab9ab94094f5c6b419">CURSOR_STATE_VISIBLE</a></td></tr>
-<tr class="separator:a32c07149072d05b0b806023079dc6e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7b6f397fba3aca11063cdd5a2084994"><td class="memItemLeft" align="right" valign="top">volatile SDL_Cursor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ac7b6f397fba3aca11063cdd5a2084994">sdl_cursor</a> = NULL</td></tr>
-<tr class="separator:ac7b6f397fba3aca11063cdd5a2084994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e234f4a448ca7f7daa67b626e77a55"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6">WhistCursorID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ac8e234f4a448ca7f7daa67b626e77a55">last_cursor</a> = (<a class="el" href="cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6">WhistCursorID</a>)SDL_SYSTEM_CURSOR_ARROW</td></tr>
-<tr class="separator:ac8e234f4a448ca7f7daa67b626e77a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796b8cac0f8d0bbd5631cb445592ef3d"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a796b8cac0f8d0bbd5631cb445592ef3d">pending_sws_update</a> = false</td></tr>
-<tr class="separator:a796b8cac0f8d0bbd5631cb445592ef3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7196a73360e82c197c4f5511e5330602"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a7196a73360e82c197c4f5511e5330602">pending_texture_update</a> = false</td></tr>
-<tr class="separator:a7196a73360e82c197c4f5511e5330602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa45c8c727f4e8281da516c35852647b"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#aaa45c8c727f4e8281da516c35852647b">pending_resize_render</a> = false</td></tr>
-<tr class="separator:aaa45c8c727f4e8281da516c35852647b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a947c12c205b904c1c05c1d4128524f49"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a947c12c205b904c1c05c1d4128524f49">initialized_video_renderer</a> = false</td></tr>
-<tr class="separator:a947c12c205b904c1c05c1d4128524f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affcdcf13d5f462454b3f176c90a6a896"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#affcdcf13d5f462454b3f176c90a6a896">initialized_video_buffer</a> = false</td></tr>
-<tr class="separator:affcdcf13d5f462454b3f176c90a6a896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1d41049bf49cadb43ab9beb0a606bd6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structVideoData.html">VideoData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#aa1d41049bf49cadb43ab9beb0a606bd6">video_data</a></td></tr>
-<tr class="separator:aa1d41049bf49cadb43ab9beb0a606bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92efa63e6b242933ea86e3570b23840"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSDLVideoContext.html">SDLVideoContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#aa92efa63e6b242933ea86e3570b23840">video_context</a></td></tr>
-<tr class="separator:aa92efa63e6b242933ea86e3570b23840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0edcb0ee9dd163c66de486f96baba311"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a0edcb0ee9dd163c66de486f96baba311">working_mbps</a></td></tr>
-<tr class="separator:a0edcb0ee9dd163c66de486f96baba311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90050e51c9e6cbc9502f5dd19e1c80d9"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a90050e51c9e6cbc9502f5dd19e1c80d9">skip_render</a> = false</td></tr>
-<tr class="separator:a90050e51c9e6cbc9502f5dd19e1c80d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85ae5e613843de1252d2e83d7aa9ab1b"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a85ae5e613843de1252d2e83d7aa9ab1b">can_render</a></td></tr>
-<tr class="separator:a85ae5e613843de1252d2e83d7aa9ab1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7e05cadf3d910a6b4ee5ce818cc523d"><td class="memItemLeft" align="right" valign="top">SDL_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ac7e05cadf3d910a6b4ee5ce818cc523d">render_mutex</a></td></tr>
-<tr class="separator:ac7e05cadf3d910a6b4ee5ce818cc523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13382d6ace95cd2168630e8ccc1db493"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a13382d6ace95cd2168630e8ccc1db493">video_ring_buffer</a></td></tr>
-<tr class="separator:a13382d6ace95cd2168630e8ccc1db493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1d250e7203e002261d585e56d000f0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ab1d250e7203e002261d585e56d000f0a">has_video_rendered_yet</a> = false</td></tr>
-<tr class="separator:ab1d250e7203e002261d585e56d000f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09c580dd8c6a9b1970d21366a7db9d2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a09c580dd8c6a9b1970d21366a7db9d2c">last_rendered_index</a> = 0</td></tr>
-<tr class="separator:a09c580dd8c6a9b1970d21366a7db9d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with receiving and. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md76"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md74"></a>
 processing video packets on the client.</h1>
-<h1><a class="anchor" id="autotoc_md77"></a>
+<h1><a class="anchor" id="autotoc_md75"></a>
 Usage</h1>
 <p>initVideo() gets called before any video packet can be received. The video packets are received as standard WhistPackets by ReceiveVideo(WhistPacket* packet), before being saved in a proper video frame format. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a1aff4cf33f3934d5e66be8a92bd10b69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1aff4cf33f3934d5e66be8a92bd10b69">&#9670;&nbsp;</a></span>BITRATE_BUCKET_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BITRATE_BUCKET_SIZE&#160;&#160;&#160;500000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a10b761958b30d1f2611a3a7dfa0d9381"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10b761958b30d1f2611a3a7dfa0d9381">&#9670;&nbsp;</a></span>CURSORIMAGE_A</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CURSORIMAGE_A&#160;&#160;&#160;0xff000000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7ea5eab775ceae86f0aee1829a91c052"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ea5eab775ceae86f0aee1829a91c052">&#9670;&nbsp;</a></span>CURSORIMAGE_B</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CURSORIMAGE_B&#160;&#160;&#160;0x000000ff</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4e8c4b05a876fdaac747e4b3b85e5574"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e8c4b05a876fdaac747e4b3b85e5574">&#9670;&nbsp;</a></span>CURSORIMAGE_G</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CURSORIMAGE_G&#160;&#160;&#160;0x0000ff00</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0fbf0790655d1cdb41690ef2c44626c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fbf0790655d1cdb41690ef2c44626c2">&#9670;&nbsp;</a></span>CURSORIMAGE_R</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CURSORIMAGE_R&#160;&#160;&#160;0x00ff0000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aad4426f54d5a54f1fd41dee912d228ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad4426f54d5a54f1fd41dee912d228ab">&#9670;&nbsp;</a></span>FPS_LOG_FREQUENCY_IN_SEC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FPS_LOG_FREQUENCY_IN_SEC&#160;&#160;&#160;10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a45c417a4f8fcc4608ad1f0b63b26e634"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45c417a4f8fcc4608ad1f0b63b26e634">&#9670;&nbsp;</a></span>IFRAME_REQUEST_INTERVAL_MS</h2>
 
@@ -378,7 +178,21 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IFRAME_REQUEST_INTERVAL_MS&#160;&#160;&#160;(50)</td>
+          <td class="memname">#define IFRAME_REQUEST_INTERVAL_MS&#160;&#160;&#160;5.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd197c54018ce2a383af80e9459cde64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd197c54018ce2a383af80e9459cde64">&#9670;&nbsp;</a></span>MAX_TO_RENDER_STALENESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TO_RENDER_STALENESS&#160;&#160;&#160;100.0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -399,20 +213,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aa5c848a99cdfaef94195c539e073a5c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5c848a99cdfaef94195c539e073a5c1">&#9670;&nbsp;</a></span>MAX_UNSYNCED_FRAMES_RENDER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_UNSYNCED_FRAMES_RENDER&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="afecb135e60c0c94fbb354b03bfb643a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afecb135e60c0c94fbb354b03bfb643a9">&#9670;&nbsp;</a></span>NO_NACKS_DURING_IFRAME</h2>
 
@@ -421,20 +221,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define NO_NACKS_DURING_IFRAME&#160;&#160;&#160;false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade4f768ca0968a4e5944d25236f9a080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade4f768ca0968a4e5944d25236f9a080">&#9670;&nbsp;</a></span>NUMBER_LOADING_FRAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NUMBER_LOADING_FRAMES&#160;&#160;&#160;50</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -483,59 +269,9 @@ Usage</h1>
 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ae1ca498075131094d8d54ea592fae9f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1ca498075131094d8d54ea592fae9f9">&#9670;&nbsp;</a></span>SDLVideoContext</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structSDLVideoContext.html">SDLVideoContext</a> <a class="el" href="structSDLVideoContext.html">SDLVideoContext</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abdd03a9a8632c1d1f80a3a113d5ba8d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdd03a9a8632c1d1f80a3a113d5ba8d1">&#9670;&nbsp;</a></span>calculate_statistics()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void calculate_statistics </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6a861b3439ce18c75608120608d0fb55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a861b3439ce18c75608120608d0fb55">&#9670;&nbsp;</a></span>clear_sdl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void clear_sdl </td>
-          <td>(</td>
-          <td class="paramtype">SDL_Renderer *&#160;</td>
-          <td class="paramname"><em>renderer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a120d323bd5860a23810ea5174a8f2f36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a120d323bd5860a23810ea5174a8f2f36">&#9670;&nbsp;</a></span>destroy_video()</h2>
+<a id="af1d344158f4b8ed1ba11af1a86d27789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d344158f4b8ed1ba11af1a86d27789">&#9670;&nbsp;</a></span>destroy_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -543,24 +279,85 @@ Usage</h1>
         <tr>
           <td class="memname">void destroy_video </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Free the video thread and VideoContext data to exit. </p>
+<p>Destroy the video context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">video_context</td><td>The video context to destroy </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a14f3c19f9efe89a7ba6d148b6ec0f18a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14f3c19f9efe89a7ba6d148b6ec0f18a">&#9670;&nbsp;</a></span>finalize_video_context_data()</h2>
+<a id="a9be05a788c0ccc8513912da3dc7caf0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be05a788c0ccc8513912da3dc7caf0c">&#9670;&nbsp;</a></span>get_video_network_statistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void finalize_video_context_data </td>
+          <td class="memname"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> get_video_network_statistics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets any networking statistics from the video. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">video_context</td><td>The video context</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Any networking statistics from the video context </dd></dl>
+
+</div>
+</div>
+<a id="a14321021ee450305fdb8c787a3e1accc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14321021ee450305fdb8c787a3e1accc">&#9670;&nbsp;</a></span>has_video_rendered_yet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_video_rendered_yet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether or not a video frame has been rendered. (NOT including any "loading animation" frames) This can be false even after calling render_video, if there simply weren't enough packets yet or if the video is still being decoded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">video_context</td><td>The video context that has potentially rendered a frame</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true iff a video frame has actually been rendered out to the SDL framebuffer. (NOT including any "loading animation" frames) </dd></dl>
+
+</div>
+</div>
+<a id="ad2c9432e82a29d685319fbc2725cd136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c9432e82a29d685319fbc2725cd136">&#9670;&nbsp;</a></span>init_video()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVideoContext.html">VideoContext</a>* init_video </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -568,179 +365,33 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
+<p>This will initialize the video system. The video system will receive video packets, and render the video out to the window. </p>
+<dl class="section return"><dt>Returns</dt><dd>The new video context </dd></dl>
+
 </div>
 </div>
-<a id="a14db20d88e6fccf6c7fbcfe15c23a6a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14db20d88e6fccf6c7fbcfe15c23a6a1">&#9670;&nbsp;</a></span>get_true_render_rect()</h2>
+<a id="a8ea4d907c436a15fadf10105fea3e954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea4d907c436a15fadf10105fea3e954">&#9670;&nbsp;</a></span>receive_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SDL_Rect get_true_render_rect </td>
+          <td class="memname">void receive_video </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a759f71f304c11873e67bf7cc3f2d08a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a759f71f304c11873e67bf7cc3f2d08a8">&#9670;&nbsp;</a></span>init_video()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_video </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create the SDL video thread. </p>
-
-</div>
-</div>
-<a id="a2a3e0af9f1b7b7468019171307f97a2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a3e0af9f1b7b7468019171307f97a2f">&#9670;&nbsp;</a></span>init_video_renderer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int init_video_renderer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the video renderer. </p>
-
-</div>
-</div>
-<a id="a6657fb884f41e0f0e26825773f0c3cd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6657fb884f41e0f0e26825773f0c3cd6">&#9670;&nbsp;</a></span>loading_sdl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void loading_sdl </td>
-          <td>(</td>
-          <td class="paramtype">SDL_Renderer *&#160;</td>
-          <td class="paramname"><em>renderer</em>, </td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>loading_index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a59b630131017e1bc6f8780995bc72c8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59b630131017e1bc6f8780995bc72c8a">&#9670;&nbsp;</a></span>log_frame_statistics()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log_frame_statistics </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoFrame.html">VideoFrame</a> *&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afdeec29d6bcb1d597b3561dd73d1f292"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdeec29d6bcb1d597b3561dd73d1f292">&#9670;&nbsp;</a></span>multithreaded_destroy_decoder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t multithreaded_destroy_decoder </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>opaque</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad5aea0d4f78ee4e42747ef06360a3502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5aea0d4f78ee4e42747ef06360a3502">&#9670;&nbsp;</a></span>new_sdl_rect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Rect new_sdl_rect </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5db18738906fd04329094890a035cd11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5db18738906fd04329094890a035cd11">&#9670;&nbsp;</a></span>receive_video()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t receive_video </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -748,16 +399,17 @@ Usage</h1>
 <p>Receive video packet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">packet</td><td>Packet received from the server, which gets stored as video packet with proper parameters</td></tr>
+    <tr><td class="paramname">video_context</td><td>The video context to give a video packet to</td></tr>
+    <tr><td class="paramname">packet</td><td>Packet as received from the server</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return -1 if failed to receive packet into video frame, else 0 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths. </dd></dl>
 
 </div>
 </div>
-<a id="a31bb0ec0bca0c25284f57e357c6da8ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31bb0ec0bca0c25284f57e357c6da8ab">&#9670;&nbsp;</a></span>render_video()</h2>
+<a id="ae91e2215c8c94bdb14b3c01430b8ca69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae91e2215c8c94bdb14b3c01430b8ca69">&#9670;&nbsp;</a></span>render_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -765,244 +417,26 @@ Usage</h1>
         <tr>
           <td class="memname">int render_video </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Render the video frame (If any are available to render) </p>
-
-</div>
-</div>
-<a id="a6aca8731f3a28e96c0743be91d481a21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6aca8731f3a28e96c0743be91d481a21">&#9670;&nbsp;</a></span>replace_texture()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void replace_texture </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac9287c6b500b1230a70d7afc95bab9d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9287c6b500b1230a70d7afc95bab9d9">&#9670;&nbsp;</a></span>request_iframe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool request_iframe </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14f0975d7a4c5a45353941aa88171b1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14f0975d7a4c5a45353941aa88171b1c">&#9670;&nbsp;</a></span>resizing_event_watcher()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int resizing_event_watcher </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SDL_Event *&#160;</td>
-          <td class="paramname"><em>event</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a460fea5c8cd411b76d7b5c7e68ee0ede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a460fea5c8cd411b76d7b5c7e68ee0ede">&#9670;&nbsp;</a></span>set_video_active_resizing()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void set_video_active_resizing </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_resizing</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the global variable 'resizing' to true if the SDL window is being resized, else false. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">is_resizing</td><td>Boolean indicating whether or not the SDL window is being resized </td></tr>
+    <tr><td class="paramname">video_context</td><td>The video context that wants to render a frame</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>This function is thread-safe, and may be called in a way that overlaps other functions that use the vide context. </dd></dl>
 
 </div>
 </div>
-<a id="a6c024f93309638b1e8f755f63c37f06d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c024f93309638b1e8f755f63c37f06d">&#9670;&nbsp;</a></span>skip_to_next_iframe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void skip_to_next_iframe </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2b0a6d84fb4c5932cf794270360bc9de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b0a6d84fb4c5932cf794270360bc9de">&#9670;&nbsp;</a></span>sync_decoder_parameters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sync_decoder_parameters </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoFrame.html">VideoFrame</a> *&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad143c356edf6de20d4d405981f347ad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad143c356edf6de20d4d405981f347ad4">&#9670;&nbsp;</a></span>try_request_iframe_to_catch_up()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool try_request_iframe_to_catch_up </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a54d5932861898faf7b5c01c781d21f26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54d5932861898faf7b5c01c781d21f26">&#9670;&nbsp;</a></span>update_cursor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_cursor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoFrame.html">VideoFrame</a> *&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af10ceff84c2bb458ae18a8bd2af3d4b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af10ceff84c2bb458ae18a8bd2af3d4b5">&#9670;&nbsp;</a></span>update_decoder_parameters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_decoder_parameters </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
-          <td class="paramname"><em>codec_type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aabb884892684a55f0c14740f1e82b46f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabb884892684a55f0c14740f1e82b46f">&#9670;&nbsp;</a></span>update_sws_context()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_sws_context </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05762f440c9779950682d48749194672"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05762f440c9779950682d48749194672">&#9670;&nbsp;</a></span>update_sws_pixel_format()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_sws_pixel_format </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39d6b8b70fbb92596ede52637c8b3282"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39d6b8b70fbb92596ede52637c8b3282">&#9670;&nbsp;</a></span>update_video()</h2>
+<a id="a36642bb10a0e6def2d693135279e54d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36642bb10a0e6def2d693135279e54d1">&#9670;&nbsp;</a></span>update_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1010,147 +444,27 @@ Usage</h1>
         <tr>
           <td class="memname">void update_video </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calculate statistics about bitrate, I-Frame, etc. and request video update from the server. </p>
-
-</div>
-</div>
-<a id="a83a182739f09f49351bd1722f6e596a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83a182739f09f49351bd1722f6e596a0">&#9670;&nbsp;</a></span>update_window_titlebar_color()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_window_titlebar_color </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistRGBColor.html">WhistRGBColor</a>&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Does any pending work the video context wants to do. (Including decoding frames, and calculating statistics) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">video_context</td><td>The video context to update</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths.</dd>
+<dd>
+In order for video to be responsive, this function <em>MUST</em> be called in a tight loop, at least once every millisecond. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a85ae5e613843de1252d2e83d7aa9ab1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85ae5e613843de1252d2e83d7aa9ab1b">&#9670;&nbsp;</a></span>can_render</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool can_render</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a31f3dcad51272bd3610f3a94361d6cda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31f3dcad51272bd3610f3a94361d6cda">&#9670;&nbsp;</a></span>client_max_bitrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int client_max_bitrate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a32c07149072d05b0b806023079dc6e56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32c07149072d05b0b806023079dc6e56">&#9670;&nbsp;</a></span>cursor_state</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326">WhistCursorState</a> cursor_state = <a class="el" href="cursor_8h.html#a47831c6b50bdb5ee84190aedab5d2326aa335fef0c5a110ab9ab94094f5c6b419">CURSOR_STATE_VISIBLE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab1d250e7203e002261d585e56d000f0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1d250e7203e002261d585e56d000f0a">&#9670;&nbsp;</a></span>has_video_rendered_yet</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool has_video_rendered_yet = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="affcdcf13d5f462454b3f176c90a6a896"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affcdcf13d5f462454b3f176c90a6a896">&#9670;&nbsp;</a></span>initialized_video_buffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool initialized_video_buffer = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a947c12c205b904c1c05c1d4128524f49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a947c12c205b904c1c05c1d4128524f49">&#9670;&nbsp;</a></span>initialized_video_renderer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool initialized_video_renderer = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac8e234f4a448ca7f7daa67b626e77a55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8e234f4a448ca7f7daa67b626e77a55">&#9670;&nbsp;</a></span>last_cursor</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6">WhistCursorID</a> last_cursor = (<a class="el" href="cursor_8h.html#a67271f31c1d43841cd1ac4d154a797d6">WhistCursorID</a>)SDL_SYSTEM_CURSOR_ARROW</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a09c580dd8c6a9b1970d21366a7db9d2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09c580dd8c6a9b1970d21366a7db9d2c">&#9670;&nbsp;</a></span>last_rendered_index</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int last_rendered_index = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5120ece93dfddf5638a59e495e9c6d46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5120ece93dfddf5638a59e495e9c6d46">&#9670;&nbsp;</a></span>latency</h2>
 
@@ -1159,300 +473,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile double latency</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8a5269d876b9e07618d093dbd293141c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a5269d876b9e07618d093dbd293141c">&#9670;&nbsp;</a></span>max_burst_bitrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int max_burst_bitrate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab47696269ce2ea4b6deaa9145a677892"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab47696269ce2ea4b6deaa9145a677892">&#9670;&nbsp;</a></span>native_window_color</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a>* native_window_color = NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a27a5f1af397e2937ecbd7c0a77f0766b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27a5f1af397e2937ecbd7c0a77f0766b">&#9670;&nbsp;</a></span>native_window_color_update</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool native_window_color_update = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adb9ee7b2e8381606788de51e5548b57f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb9ee7b2e8381606788de51e5548b57f">&#9670;&nbsp;</a></span>output_codec_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> output_codec_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2a57d774e71166271bbff6c515111104"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a57d774e71166271bbff6c515111104">&#9670;&nbsp;</a></span>output_height</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int output_height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaacc5ce7ced4977cd893708f5d789df4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaacc5ce7ced4977cd893708f5d789df4">&#9670;&nbsp;</a></span>output_width</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int output_width</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa45c8c727f4e8281da516c35852647b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa45c8c727f4e8281da516c35852647b">&#9670;&nbsp;</a></span>pending_resize_render</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool pending_resize_render = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a796b8cac0f8d0bbd5631cb445592ef3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a796b8cac0f8d0bbd5631cb445592ef3d">&#9670;&nbsp;</a></span>pending_sws_update</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool pending_sws_update = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7196a73360e82c197c4f5511e5330602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7196a73360e82c197c4f5511e5330602">&#9670;&nbsp;</a></span>pending_texture_update</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool pending_texture_update = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac7e05cadf3d910a6b4ee5ce818cc523d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7e05cadf3d910a6b4ee5ce818cc523d">&#9670;&nbsp;</a></span>render_mutex</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_mutex* render_mutex</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac7b6f397fba3aca11063cdd5a2084994"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7b6f397fba3aca11063cdd5a2084994">&#9670;&nbsp;</a></span>sdl_cursor</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile SDL_Cursor* sdl_cursor = NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1c601e07e2ab0a163872f816a34fad9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c601e07e2ab0a163872f816a34fad9c">&#9670;&nbsp;</a></span>server_codec_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> server_codec_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6f22535f72143edb1d30f2ae7b2063d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f22535f72143edb1d30f2ae7b2063d7">&#9670;&nbsp;</a></span>server_height</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int server_height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adb26e424f91b3e96e593c77ffff265f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb26e424f91b3e96e593c77ffff265f6">&#9670;&nbsp;</a></span>server_width</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int server_width</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a90050e51c9e6cbc9502f5dd19e1c80d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90050e51c9e6cbc9502f5dd19e1c80d9">&#9670;&nbsp;</a></span>skip_render</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool skip_render = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a29a80ed277e1f61a1fe7d7b91250e8d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29a80ed277e1f61a1fe7d7b91250e8d5">&#9670;&nbsp;</a></span>update_bitrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool update_bitrate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa92efa63e6b242933ea86e3570b23840"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa92efa63e6b242933ea86e3570b23840">&#9670;&nbsp;</a></span>video_context</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structSDLVideoContext.html">SDLVideoContext</a> video_context</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa1d41049bf49cadb43ab9beb0a606bd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1d41049bf49cadb43ab9beb0a606bd6">&#9670;&nbsp;</a></span>video_data</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structVideoData.html">VideoData</a> video_data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a13382d6ace95cd2168630e8ccc1db493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13382d6ace95cd2168630e8ccc1db493">&#9670;&nbsp;</a></span>video_ring_buffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structRingBuffer.html">RingBuffer</a>* video_ring_buffer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab491b7b6f8ad504dd96bdc5887d349e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab491b7b6f8ad504dd96bdc5887d349e9">&#9670;&nbsp;</a></span>window</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile SDL_Window* window</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0edcb0ee9dd163c66de486f96baba311"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0edcb0ee9dd163c66de486f96baba311">&#9670;&nbsp;</a></span>working_mbps</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile double working_mbps</td>
         </tr>
       </table>
 </div><div class="memdoc">

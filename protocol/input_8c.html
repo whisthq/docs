@@ -92,49 +92,50 @@ $(document).ready(function(){initNavTree('input_8c.html',''); initResizable(); }
 
 <p>This file defines general input-processing functions and toggles.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="input__driver_8h_source.html">input_driver.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="os__utils_8h_source.html">whist/utils/os_utils.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="input__driver_8h_source.html">input_driver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="keyboard__mapping_8h_source.html">keyboard_mapping.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a93b594668eda259d72c7b36972f64952"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a93b594668eda259d72c7b36972f64952">KeyUp</a>(<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>,  whist_keycode)&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#aec6d0da6165b52bfcd168bace7e3c889">emit_key_event</a>(<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, whist_keycode, 0)</td></tr>
-<tr class="separator:a93b594668eda259d72c7b36972f64952"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4098920e17bb63ca9093bbb73a7d2fa1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a4098920e17bb63ca9093bbb73a7d2fa1">KeyDown</a>(<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>,  whist_keycode)&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#aec6d0da6165b52bfcd168bace7e3c889">emit_key_event</a>(<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, whist_keycode, 1)</td></tr>
-<tr class="separator:a4098920e17bb63ca9093bbb73a7d2fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf86ea08826ebef87866ae548288a21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#acaf86ea08826ebef87866ae548288a21">KeyUp</a>(input_device,  whist_keycode)&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#ae20354ac9fa2cbeac2a1067ef9f79b06">emit_key_event</a>(input_device, whist_keycode, 0)</td></tr>
+<tr class="separator:acaf86ea08826ebef87866ae548288a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c4518fbdddd4fff00490ee954359d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a27c4518fbdddd4fff00490ee954359d5">KeyDown</a>(input_device,  whist_keycode)&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#ae20354ac9fa2cbeac2a1067ef9f79b06">emit_key_event</a>(input_device, whist_keycode, 1)</td></tr>
+<tr class="separator:a27c4518fbdddd4fff00490ee954359d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac6b0ab1da4398d0245d6673c76f5d452"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#ac6b0ab1da4398d0245d6673c76f5d452">reset_input</a> (<a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> os_type)</td></tr>
-<tr class="memdesc:ac6b0ab1da4398d0245d6673c76f5d452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input system. Should be used prior to every new client connection that will send inputs.  <a href="input_8c.html#ac6b0ab1da4398d0245d6673c76f5d452">More...</a><br /></td></tr>
-<tr class="separator:ac6b0ab1da4398d0245d6673c76f5d452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce9f1ba55b6872bce873cfa1833475d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a7ce9f1ba55b6872bce873cfa1833475d">update_keyboard_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
-<tr class="memdesc:a7ce9f1ba55b6872bce873cfa1833475d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the keyboard state on the server to match the client's.  <a href="input_8c.html#a7ce9f1ba55b6872bce873cfa1833475d">More...</a><br /></td></tr>
-<tr class="separator:a7ce9f1ba55b6872bce873cfa1833475d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8d58d465e3ed2d47bccfbc997125e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a6a8d58d465e3ed2d47bccfbc997125e6">replay_user_input</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
-<tr class="memdesc:a6a8d58d465e3ed2d47bccfbc997125e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replayed a received user action on a server, by sending it to the OS.  <a href="input_8c.html#a6a8d58d465e3ed2d47bccfbc997125e6">More...</a><br /></td></tr>
-<tr class="separator:a6a8d58d465e3ed2d47bccfbc997125e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0265028ef5575ba2fd1ccc17aca7a8bf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a0265028ef5575ba2fd1ccc17aca7a8bf">input_keycodes</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> *keycodes, size_t count)</td></tr>
-<tr class="memdesc:a0265028ef5575ba2fd1ccc17aca7a8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the keyboard state on the server to match the client's.  <a href="input_8c.html#a0265028ef5575ba2fd1ccc17aca7a8bf">More...</a><br /></td></tr>
-<tr class="separator:a0265028ef5575ba2fd1ccc17aca7a8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8b658314de05df828b42e6f7bf4b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#acd8b658314de05df828b42e6f7bf4b63">reset_input</a> (<a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4">WhistOSType</a> os_type)</td></tr>
+<tr class="memdesc:acd8b658314de05df828b42e6f7bf4b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input system. Should be used prior to every new client connection that will send inputs.  <a href="input_8c.html#acd8b658314de05df828b42e6f7bf4b63">More...</a><br /></td></tr>
+<tr class="separator:acd8b658314de05df828b42e6f7bf4b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7c52f6a54afd0f516d4070bc92be6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a3c7c52f6a54afd0f516d4070bc92be6c">update_keyboard_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
+<tr class="memdesc:a3c7c52f6a54afd0f516d4070bc92be6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the keyboard state on the server to match the client's.  <a href="input_8c.html#a3c7c52f6a54afd0f516d4070bc92be6c">More...</a><br /></td></tr>
+<tr class="separator:a3c7c52f6a54afd0f516d4070bc92be6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8488d358a602273c7b7f96ad01e8c886"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a8488d358a602273c7b7f96ad01e8c886">replay_user_input</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *fcmsg)</td></tr>
+<tr class="memdesc:a8488d358a602273c7b7f96ad01e8c886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replayed a received user action on a server, by sending it to the OS.  <a href="input_8c.html#a8488d358a602273c7b7f96ad01e8c886">More...</a><br /></td></tr>
+<tr class="separator:a8488d358a602273c7b7f96ad01e8c886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa6a54738e93c117f2b412775dfba8c8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#afa6a54738e93c117f2b412775dfba8c8">input_keycodes</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> *keycodes, size_t count)</td></tr>
+<tr class="memdesc:afa6a54738e93c117f2b412775dfba8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the keyboard state on the server to match the client's.  <a href="input_8c.html#afa6a54738e93c117f2b412775dfba8c8">More...</a><br /></td></tr>
+<tr class="separator:afa6a54738e93c117f2b412775dfba8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ad7febba9db49c6ef29d4bfc0b011086f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#ad7febba9db49c6ef29d4bfc0b011086f">last_input_fcmsg_id</a> = 0</td></tr>
 <tr class="separator:ad7febba9db49c6ef29d4bfc0b011086f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9173ccd812e4863075474f077ae12cd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a9173ccd812e4863075474f077ae12cd2">input_os_type</a> = <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d">WHIST_UNKNOWN_OS</a></td></tr>
-<tr class="separator:a9173ccd812e4863075474f077ae12cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b887b6c671588eb2b209d96e86d235c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a3b887b6c671588eb2b209d96e86d235c">input_os_type</a> = <a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a218fc679b8e1f15dded103a17a676cc4">WHIST_UNKNOWN_OS</a></td></tr>
+<tr class="separator:a3b887b6c671588eb2b209d96e86d235c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file defines general input-processing functions and toggles. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md148"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md152"></a>
 between Windows and Linux servers.</h1>
-<h1><a class="anchor" id="autotoc_md149"></a>
+<h1><a class="anchor" id="autotoc_md153"></a>
 Usage</h1>
 <p>Toggles dynamically between input receiving on Windows or Linux Ubuntu computers. You can create an input device to receive input (keystrokes, mouse clicks, etc.) via CreateInputDevice. You can then send input to the Windows OS via ReplayUserInput, and use UpdateKeyboardState to sync keyboard state between local and remote computers (say, sync them to both have CapsLock activated). Lastly, you can input an array of keycodes using <code>InputKeycodes</code>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a4098920e17bb63ca9093bbb73a7d2fa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4098920e17bb63ca9093bbb73a7d2fa1">&#9670;&nbsp;</a></span>KeyDown</h2>
+<a id="a27c4518fbdddd4fff00490ee954359d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c4518fbdddd4fff00490ee954359d5">&#9670;&nbsp;</a></span>KeyDown</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +144,7 @@ Usage</h1>
           <td class="memname">#define KeyDown</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, </td>
+          <td class="paramname">input_device, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -154,15 +155,15 @@ Usage</h1>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#aec6d0da6165b52bfcd168bace7e3c889">emit_key_event</a>(<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, whist_keycode, 1)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#ae20354ac9fa2cbeac2a1067ef9f79b06">emit_key_event</a>(input_device, whist_keycode, 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a93b594668eda259d72c7b36972f64952"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93b594668eda259d72c7b36972f64952">&#9670;&nbsp;</a></span>KeyUp</h2>
+<a id="acaf86ea08826ebef87866ae548288a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaf86ea08826ebef87866ae548288a21">&#9670;&nbsp;</a></span>KeyUp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +172,7 @@ Usage</h1>
           <td class="memname">#define KeyUp</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, </td>
+          <td class="paramname">input_device, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -182,7 +183,7 @@ Usage</h1>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#aec6d0da6165b52bfcd168bace7e3c889">emit_key_event</a>(<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, whist_keycode, 0)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#ae20354ac9fa2cbeac2a1067ef9f79b06">emit_key_event</a>(input_device, whist_keycode, 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -190,8 +191,8 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0265028ef5575ba2fd1ccc17aca7a8bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0265028ef5575ba2fd1ccc17aca7a8bf">&#9670;&nbsp;</a></span>input_keycodes()</h2>
+<a id="afa6a54738e93c117f2b412775dfba8c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa6a54738e93c117f2b412775dfba8c8">&#9670;&nbsp;</a></span>input_keycodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +206,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> *&#160;</td>
           <td class="paramname"><em>keycodes</em>, </td>
         </tr>
         <tr>
@@ -235,8 +236,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a6a8d58d465e3ed2d47bccfbc997125e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a8d58d465e3ed2d47bccfbc997125e6">&#9670;&nbsp;</a></span>replay_user_input()</h2>
+<a id="a8488d358a602273c7b7f96ad01e8c886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8488d358a602273c7b7f96ad01e8c886">&#9670;&nbsp;</a></span>replay_user_input()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,8 +274,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ac6b0ab1da4398d0245d6673c76f5d452"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6b0ab1da4398d0245d6673c76f5d452">&#9670;&nbsp;</a></span>reset_input()</h2>
+<a id="acd8b658314de05df828b42e6f7bf4b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8b658314de05df828b42e6f7bf4b63">&#9670;&nbsp;</a></span>reset_input()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +283,7 @@ Usage</h1>
         <tr>
           <td class="memname">void reset_input </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4">WhistOSType</a>&#160;</td>
           <td class="paramname"><em>os_type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -299,8 +300,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a7ce9f1ba55b6872bce873cfa1833475d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ce9f1ba55b6872bce873cfa1833475d">&#9670;&nbsp;</a></span>update_keyboard_state()</h2>
+<a id="a3c7c52f6a54afd0f516d4070bc92be6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c7c52f6a54afd0f516d4070bc92be6c">&#9670;&nbsp;</a></span>update_keyboard_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,14 +338,14 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a9173ccd812e4863075474f077ae12cd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9173ccd812e4863075474f077ae12cd2">&#9670;&nbsp;</a></span>input_os_type</h2>
+<a id="a3b887b6c671588eb2b209d96e86d235c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b887b6c671588eb2b209d96e86d235c">&#9670;&nbsp;</a></span>input_os_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34">WhistOSType</a> input_os_type = <a class="el" href="whist_8h.html#a9161a926090d029e22f75f083d664f34ac15b37844722a1c4de2db8e29ee3024d">WHIST_UNKNOWN_OS</a></td>
+          <td class="memname"><a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4">WhistOSType</a> input_os_type = <a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a218fc679b8e1f15dded103a17a676cc4">WHIST_UNKNOWN_OS</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -370,7 +371,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_e288031044ae90885cb3e2f59036aeb8.html">input</a></li><li class="navelem"><a class="el" href="input_8c.html">input.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_c245b961ad2279e6a24b2b9b76ed7f31.html">input</a></li><li class="navelem"><a class="el" href="input_8c.html">input.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

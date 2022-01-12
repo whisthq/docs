@@ -1,12 +1,23 @@
 var searchData=
 [
-  ['encoded_5fframe_5fsize_2895',['encoded_frame_size',['../structAudioEncoder.html#a0f6a97fd6950b9d51cc451259c484568',1,'AudioEncoder::encoded_frame_size()'],['../structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f',1,'VideoEncoder::encoded_frame_size()'],['../structFFmpegEncoder.html#a10c0f1aa6e49c582ff5e79a5859a282a',1,'FFmpegEncoder::encoded_frame_size()']]],
-  ['encoder_2896',['encoder',['../structLodePNGState.html#ac63d91db835129d02eb83bbe81de347e',1,'LodePNGState']]],
-  ['encoder_5fparams_2897',['encoder_params',['../structNvidiaEncoder.html#abaedbb50f564c663cae9bd38b2bd05e3',1,'NvidiaEncoder']]],
-  ['encrypted_5ftcp_5fpacket_5fbuffer_2898',['encrypted_tcp_packet_buffer',['../structSocketContextData.html#a3a5c8cf04fc3bab3e56bf2f9364f276c',1,'SocketContextData']]],
-  ['entry_2899',['entry',['../structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282',1,'StunRequest']]],
-  ['error_2900',['error',['../structLodePNGState.html#a1a00a050da588cf3c2b7a6252bebb0cd',1,'LodePNGState']]],
-  ['error_5ftag_2901',['error_tag',['../logging_8c.html#a3dff165e9f1a40dfc76a953fec589061',1,'error_tag():&#160;logging.c'],['../logging_8h.html#a0583ea4d2c6f4bfb23c6d012d943a33f',1,'error_tag():&#160;logging.h']]],
-  ['event_2902',['event',['../structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb',1,'X11CaptureDevice']]],
-  ['exiting_2903',['exiting',['../server_2audio_8c.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.h'],['../main_8h.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.h'],['../server_2network_8c.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.h'],['../server_2video_8c.html#a9aec5d9660ae8a0c8117f5d96b871606',1,'exiting():&#160;main.h']]]
+  ['enc_5fmatrix_3228',['enc_matrix',['../structfec__parms.html#aba672647b42905b8e11b1faea9213fd1',1,'fec_parms']]],
+  ['encode_5fperformed_3229',['encode_performed',['../structInternalFECEncoder.html#ab426db34f7d123eb5330067773393425',1,'InternalFECEncoder']]],
+  ['encoded_5fframe_5fsize_3230',['encoded_frame_size',['../structAudioEncoder.html#a0f6a97fd6950b9d51cc451259c484568',1,'AudioEncoder::encoded_frame_size()'],['../structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f',1,'VideoEncoder::encoded_frame_size()'],['../structFFmpegEncoder.html#a10c0f1aa6e49c582ff5e79a5859a282a',1,'FFmpegEncoder::encoded_frame_size()']]],
+  ['encoder_3231',['encoder',['../structLodePNGState.html#ac63d91db835129d02eb83bbe81de347e',1,'LodePNGState']]],
+  ['encoder_5ffactory_5fbitrate_3232',['encoder_factory_bitrate',['../struct__whist__server__state.html#ae6c75e36b53bb41f862b2dec3b825ef1',1,'_whist_server_state']]],
+  ['encoder_5ffactory_5fclient_5fh_3233',['encoder_factory_client_h',['../struct__whist__server__state.html#ae9f6aca81e0317ac71d254d445e5f783',1,'_whist_server_state']]],
+  ['encoder_5ffactory_5fclient_5fw_3234',['encoder_factory_client_w',['../struct__whist__server__state.html#a65b1ff45f802eae80ea8d87c8fca671e',1,'_whist_server_state']]],
+  ['encoder_5ffactory_5fcodec_5ftype_3235',['encoder_factory_codec_type',['../struct__whist__server__state.html#afed39bd44bdd29c7fa76a7d929c8565d',1,'_whist_server_state']]],
+  ['encoder_5ffactory_5fresult_3236',['encoder_factory_result',['../struct__whist__server__state.html#a9863d05bf12f75a515468831ff382bc7',1,'_whist_server_state']]],
+  ['encoder_5ffactory_5fserver_5fh_3237',['encoder_factory_server_h',['../struct__whist__server__state.html#a2045913794c305c89eee94730115bf09',1,'_whist_server_state']]],
+  ['encoder_5ffactory_5fserver_5fw_3238',['encoder_factory_server_w',['../struct__whist__server__state.html#a73135920c72eca5945418fb4ee829c2a',1,'_whist_server_state']]],
+  ['encoder_5ffinished_3239',['encoder_finished',['../struct__whist__server__state.html#a5e1b1507f23bda87142d4907a51885de',1,'_whist_server_state']]],
+  ['encoder_5fparams_3240',['encoder_params',['../structNvidiaEncoder.html#abaedbb50f564c663cae9bd38b2bd05e3',1,'NvidiaEncoder']]],
+  ['encrypted_5ftcp_5fpacket_5fbuffer_3241',['encrypted_tcp_packet_buffer',['../structSocketContextData.html#a3a5c8cf04fc3bab3e56bf2f9364f276c',1,'SocketContextData']]],
+  ['entry_3242',['entry',['../structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282',1,'StunRequest']]],
+  ['error_3243',['error',['../structLodePNGState.html#a1a00a050da588cf3c2b7a6252bebb0cd',1,'LodePNGState']]],
+  ['error_5ftag_3244',['error_tag',['../logging_8c.html#a3dff165e9f1a40dfc76a953fec589061',1,'error_tag():&#160;logging.c'],['../logging_8h.html#a0583ea4d2c6f4bfb23c6d012d943a33f',1,'error_tag():&#160;logging.h']]],
+  ['event_3245',['event',['../structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb',1,'X11CaptureDevice']]],
+  ['event_5finfo_3246',['event_info',['../structFileMetadata.html#a771dd5a12976a9a0142f36f2d58333fa',1,'FileMetadata::event_info()'],['../structTransferringFile.html#a7a8dd8d494ed61ed36fa0b39b6cd0fca',1,'TransferringFile::event_info()']]],
+  ['exiting_3247',['exiting',['../struct__whist__server__state.html#a900ee419fd1e1dcdebecbc683ee1173c',1,'_whist_server_state']]]
 ];

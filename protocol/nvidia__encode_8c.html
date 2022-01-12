@@ -90,6 +90,8 @@ $(document).ready(function(){initNavTree('nvidia__encode_8c.html',''); initResiz
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="nvidia__encode_8h_source.html">nvidia_encode.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cudacontext_8h_source.html">../cudacontext.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="server__statistic_8h_source.html">server/server_statistic.h</a>&gt;</code><br />
 <code>#include &lt;dlfcn.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -97,10 +99,10 @@ $(document).ready(function(){initNavTree('nvidia__encode_8c.html',''); initResiz
 Macros</h2></td></tr>
 <tr class="memitem:a413f8f4298cddd83945cbe786aae3a98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a413f8f4298cddd83945cbe786aae3a98">LIB_ENCODEAPI_NAME</a>&#160;&#160;&#160;&quot;libnvidia-encode.so.1&quot;</td></tr>
 <tr class="separator:a413f8f4298cddd83945cbe786aae3a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbbe58e3859f0548fa71d04730576640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#abbbe58e3859f0548fa71d04730576640">WHIST_PRESET</a>&#160;&#160;&#160;NV_ENC_PRESET_P2_GUID</td></tr>
-<tr class="separator:abbbe58e3859f0548fa71d04730576640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33f96b66ba3592ba12f9ad6972c937f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a33f96b66ba3592ba12f9ad6972c937f1">WHIST_TUNING</a>&#160;&#160;&#160;NV_ENC_TUNING_INFO_LOW_LATENCY</td></tr>
-<tr class="separator:a33f96b66ba3592ba12f9ad6972c937f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb2e767184a4d54dbe262b29790a754"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a4cb2e767184a4d54dbe262b29790a754">WHIST_PRESET</a>&#160;&#160;&#160;NV_ENC_PRESET_P2_GUID</td></tr>
+<tr class="separator:a4cb2e767184a4d54dbe262b29790a754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a33a804728a7698b34609ab428c22ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a4a33a804728a7698b34609ab428c22ac">WHIST_TUNING</a>&#160;&#160;&#160;NV_ENC_TUNING_INFO_LOW_LATENCY</td></tr>
+<tr class="separator:a4a33a804728a7698b34609ab428c22ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -134,8 +136,22 @@ Functions</h2></td></tr>
 <tr class="separator:a1dfb7e3e77454fb585140ba00684a59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="abbbe58e3859f0548fa71d04730576640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbbe58e3859f0548fa71d04730576640">&#9670;&nbsp;</a></span>WHIST_PRESET</h2>
+<a id="a413f8f4298cddd83945cbe786aae3a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a413f8f4298cddd83945cbe786aae3a98">&#9670;&nbsp;</a></span>LIB_ENCODEAPI_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIB_ENCODEAPI_NAME&#160;&#160;&#160;&quot;libnvidia-encode.so.1&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cb2e767184a4d54dbe262b29790a754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb2e767184a4d54dbe262b29790a754">&#9670;&nbsp;</a></span>WHIST_PRESET</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,28 +164,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a33f96b66ba3592ba12f9ad6972c937f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33f96b66ba3592ba12f9ad6972c937f1">&#9670;&nbsp;</a></span>WHIST_TUNING</h2>
+<a id="a4a33a804728a7698b34609ab428c22ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a33a804728a7698b34609ab428c22ac">&#9670;&nbsp;</a></span>WHIST_TUNING</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define WHIST_TUNING&#160;&#160;&#160;NV_ENC_TUNING_INFO_LOW_LATENCY</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a413f8f4298cddd83945cbe786aae3a98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a413f8f4298cddd83945cbe786aae3a98">&#9670;&nbsp;</a></span>LIB_ENCODEAPI_NAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LIB_ENCODEAPI_NAME&#160;&#160;&#160;&quot;libnvidia-encode.so.1&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -549,7 +551,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_1f883672603d7d4f5b9de53c12fbfed0.html">video</a></li><li class="navelem"><a class="el" href="dir_b9b700e18727e46fa49505d4e021260b.html">codec</a></li><li class="navelem"><a class="el" href="nvidia__encode_8c.html">nvidia_encode.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_91458d29fc8ea5e0d5bbd615c495719c.html">video</a></li><li class="navelem"><a class="el" href="dir_00798b83412e2ad2d1abd2a4d4fd2fcf.html">codec</a></li><li class="navelem"><a class="el" href="nvidia__encode_8c.html">nvidia_encode.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

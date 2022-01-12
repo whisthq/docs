@@ -82,23 +82,17 @@ $(document).ready(function(){initNavTree('throttle_8h.html',''); initResizable()
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">throttle.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
 </div>
 <p><a href="throttle_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a375c9c414e1b142f3dd40bf3eadc00ab"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle_8h.html#a375c9c414e1b142f3dd40bf3eadc00ab">NetworkThrottleContext</a></td></tr>
@@ -106,9 +100,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac061cfa926230ca0f7218d4ce3955a85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle_8h.html#ac061cfa926230ca0f7218d4ce3955a85">network_throttler_create</a> ()</td></tr>
-<tr class="memdesc:ac061cfa926230ca0f7218d4ce3955a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new network throttler.  <a href="throttle_8h.html#ac061cfa926230ca0f7218d4ce3955a85">More...</a><br /></td></tr>
-<tr class="separator:ac061cfa926230ca0f7218d4ce3955a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d1e46b80f2d5561c2af0087a22eb76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle_8h.html#a35d1e46b80f2d5561c2af0087a22eb76">network_throttler_create</a> (double coin_bucket_ms, bool fill_bucket_initially)</td></tr>
+<tr class="memdesc:a35d1e46b80f2d5561c2af0087a22eb76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new network throttler.  <a href="throttle_8h.html#a35d1e46b80f2d5561c2af0087a22eb76">More...</a><br /></td></tr>
+<tr class="separator:a35d1e46b80f2d5561c2af0087a22eb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdd485a4dd0b32148884b04e1d92eb1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle_8h.html#abdd485a4dd0b32148884b04e1d92eb1f">network_throttler_destroy</a> (<a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a> *ctx)</td></tr>
 <tr class="memdesc:abdd485a4dd0b32148884b04e1d92eb1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a network throttler.  <a href="throttle_8h.html#abdd485a4dd0b32148884b04e1d92eb1f">More...</a><br /></td></tr>
 <tr class="separator:abdd485a4dd0b32148884b04e1d92eb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,8 +129,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac061cfa926230ca0f7218d4ce3955a85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac061cfa926230ca0f7218d4ce3955a85">&#9670;&nbsp;</a></span>network_throttler_create()</h2>
+<a id="a35d1e46b80f2d5561c2af0087a22eb76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d1e46b80f2d5561c2af0087a22eb76">&#9670;&nbsp;</a></span>network_throttler_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,13 +138,31 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a>* network_throttler_create </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>coin_bucket_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fill_bucket_initially</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Initialize a new network throttler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coin_bucket_ms</td><td>The size of the coin bucket in milliseconds. </td></tr>
+    <tr><td class="paramname">fill_bucket_initially</td><td>Whether the coin bucket should be filled up initially.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The created network throttler context. </dd></dl>
 
 </div>
@@ -260,7 +272,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="throttle_8h.html">throttle.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_190dac40e16f649d163a778d134d4659.html">network</a></li><li class="navelem"><a class="el" href="throttle_8h.html">throttle.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

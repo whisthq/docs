@@ -97,42 +97,42 @@ Functions</h2></td></tr>
 <tr class="memitem:ae155e1e686b6e1dcc9e006fb07789532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#ae155e1e686b6e1dcc9e006fb07789532">create_input_device</a> ()</td></tr>
 <tr class="memdesc:ae155e1e686b6e1dcc9e006fb07789532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an input device struct to receive user actions to be replayed on a server.  <a href="input__driver_8h.html#ae155e1e686b6e1dcc9e006fb07789532">More...</a><br /></td></tr>
 <tr class="separator:ae155e1e686b6e1dcc9e006fb07789532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">destroy_input_device</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>)</td></tr>
+<tr class="memitem:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">destroy_input_device</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device)</td></tr>
 <tr class="memdesc:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy and free the memory of an input device struct.  <a href="input__driver_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">More...</a><br /></td></tr>
 <tr class="separator:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7e6d0c554f4813e884048112739364e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#ab7e6d0c554f4813e884048112739364e">get_keyboard_modifier_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> whist_keycode)</td></tr>
-<tr class="memdesc:ab7e6d0c554f4813e884048112739364e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the active/inactive state of a key modifier (caps lock, num lock, etc.)  <a href="input__driver_8h.html#ab7e6d0c554f4813e884048112739364e">More...</a><br /></td></tr>
-<tr class="separator:ab7e6d0c554f4813e884048112739364e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0633914f59dda19225c4514fca35da42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a0633914f59dda19225c4514fca35da42">get_keyboard_key_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> whist_keycode)</td></tr>
-<tr class="memdesc:a0633914f59dda19225c4514fca35da42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pressed/unpressed state of a keyboard key.  <a href="input__driver_8h.html#a0633914f59dda19225c4514fca35da42">More...</a><br /></td></tr>
-<tr class="separator:a0633914f59dda19225c4514fca35da42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfaf9acde8e1ba3a330060e06beb242f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#adfaf9acde8e1ba3a330060e06beb242f">ignore_key_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> whist_keycode, bool <a class="el" href="sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48">active_pinch</a>)</td></tr>
-<tr class="memdesc:adfaf9acde8e1ba3a330060e06beb242f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether to ignore the client key state.  <a href="input__driver_8h.html#adfaf9acde8e1ba3a330060e06beb242f">More...</a><br /></td></tr>
-<tr class="separator:adfaf9acde8e1ba3a330060e06beb242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec6d0da6165b52bfcd168bace7e3c889"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#aec6d0da6165b52bfcd168bace7e3c889">emit_key_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a> whist_keycode, int pressed)</td></tr>
-<tr class="memdesc:aec6d0da6165b52bfcd168bace7e3c889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a keyboard press/unpress event.  <a href="input__driver_8h.html#aec6d0da6165b52bfcd168bace7e3c889">More...</a><br /></td></tr>
-<tr class="separator:aec6d0da6165b52bfcd168bace7e3c889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a20be24877768539ac4cb85fc4a190"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#ac8a20be24877768539ac4cb85fc4a190">emit_mouse_motion_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, int32_t x, int32_t y, int relative)</td></tr>
+<tr class="memitem:a858ccae3f36f88e26fa4aa62de7d522a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a858ccae3f36f88e26fa4aa62de7d522a">get_keyboard_modifier_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode)</td></tr>
+<tr class="memdesc:a858ccae3f36f88e26fa4aa62de7d522a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the active/inactive state of a key modifier (caps lock, num lock, etc.)  <a href="input__driver_8h.html#a858ccae3f36f88e26fa4aa62de7d522a">More...</a><br /></td></tr>
+<tr class="separator:a858ccae3f36f88e26fa4aa62de7d522a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1b945261b8a7ad602f0368c2bd0c4d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#aac1b945261b8a7ad602f0368c2bd0c4d">get_keyboard_key_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode)</td></tr>
+<tr class="memdesc:aac1b945261b8a7ad602f0368c2bd0c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pressed/unpressed state of a keyboard key.  <a href="input__driver_8h.html#aac1b945261b8a7ad602f0368c2bd0c4d">More...</a><br /></td></tr>
+<tr class="separator:aac1b945261b8a7ad602f0368c2bd0c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73b454cce63412dd6f829e91dc02072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#ac73b454cce63412dd6f829e91dc02072">ignore_key_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode, bool <a class="el" href="sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48">active_pinch</a>)</td></tr>
+<tr class="memdesc:ac73b454cce63412dd6f829e91dc02072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether to ignore the client key state.  <a href="input__driver_8h.html#ac73b454cce63412dd6f829e91dc02072">More...</a><br /></td></tr>
+<tr class="separator:ac73b454cce63412dd6f829e91dc02072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20354ac9fa2cbeac2a1067ef9f79b06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#ae20354ac9fa2cbeac2a1067ef9f79b06">emit_key_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode, int pressed)</td></tr>
+<tr class="memdesc:ae20354ac9fa2cbeac2a1067ef9f79b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a keyboard press/unpress event.  <a href="input__driver_8h.html#ae20354ac9fa2cbeac2a1067ef9f79b06">More...</a><br /></td></tr>
+<tr class="separator:ae20354ac9fa2cbeac2a1067ef9f79b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a20be24877768539ac4cb85fc4a190"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#ac8a20be24877768539ac4cb85fc4a190">emit_mouse_motion_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, int32_t x, int32_t y, int relative)</td></tr>
 <tr class="memdesc:ac8a20be24877768539ac4cb85fc4a190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a relative/absolute mouse motion event.  <a href="input__driver_8h.html#ac8a20be24877768539ac4cb85fc4a190">More...</a><br /></td></tr>
 <tr class="separator:ac8a20be24877768539ac4cb85fc4a190"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76dd6d88fb55f29a3a7feb7c8ef060a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a76dd6d88fb55f29a3a7feb7c8ef060a6">emit_mouse_button_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, <a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a> button, int pressed)</td></tr>
-<tr class="memdesc:a76dd6d88fb55f29a3a7feb7c8ef060a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a mouse button press/unpress event.  <a href="input__driver_8h.html#a76dd6d88fb55f29a3a7feb7c8ef060a6">More...</a><br /></td></tr>
-<tr class="separator:a76dd6d88fb55f29a3a7feb7c8ef060a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bc9755bb1311b40ecb6432bc0d1a58a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a5bc9755bb1311b40ecb6432bc0d1a58a">emit_low_res_mouse_wheel_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, int32_t x, int32_t y)</td></tr>
+<tr class="memitem:a6318f9a9f9816b21cf90962162f9f437"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a6318f9a9f9816b21cf90962162f9f437">emit_mouse_button_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#afa47769b22f4e68bdbf79565f9852032">WhistMouseButton</a> button, int pressed)</td></tr>
+<tr class="memdesc:a6318f9a9f9816b21cf90962162f9f437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a mouse button press/unpress event.  <a href="input__driver_8h.html#a6318f9a9f9816b21cf90962162f9f437">More...</a><br /></td></tr>
+<tr class="separator:a6318f9a9f9816b21cf90962162f9f437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc9755bb1311b40ecb6432bc0d1a58a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a5bc9755bb1311b40ecb6432bc0d1a58a">emit_low_res_mouse_wheel_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, int32_t x, int32_t y)</td></tr>
 <tr class="memdesc:a5bc9755bb1311b40ecb6432bc0d1a58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a low-resolution vertical or horizontal mouse scroll event, for click-wheel mouse inputs.  <a href="input__driver_8h.html#a5bc9755bb1311b40ecb6432bc0d1a58a">More...</a><br /></td></tr>
 <tr class="separator:a5bc9755bb1311b40ecb6432bc0d1a58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68d952af97dc08e94a465fc1eb9934c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a68d952af97dc08e94a465fc1eb9934c7">emit_high_res_mouse_wheel_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, float x, float y)</td></tr>
+<tr class="memitem:a68d952af97dc08e94a465fc1eb9934c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a68d952af97dc08e94a465fc1eb9934c7">emit_high_res_mouse_wheel_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float x, float y)</td></tr>
 <tr class="memdesc:a68d952af97dc08e94a465fc1eb9934c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a high-resolution vertical or horizontal mouse scroll event, for trackpads or smooth mouse wheels.  <a href="input__driver_8h.html#a68d952af97dc08e94a465fc1eb9934c7">More...</a><br /></td></tr>
 <tr class="separator:a68d952af97dc08e94a465fc1eb9934c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf3126a0a279878f9e39e78d128cb0fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#abf3126a0a279878f9e39e78d128cb0fa">emit_multigesture_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *<a class="el" href="main_8h.html#aa0cefee7dcd4ec6bdd40ff87edaa96fd">input_device</a>, float d_theta, float d_dist, <a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a> gesture_type, bool active_gesture)</td></tr>
-<tr class="memdesc:abf3126a0a279878f9e39e78d128cb0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a trackpad multigesture event (e.g. pinch)  <a href="input__driver_8h.html#abf3126a0a279878f9e39e78d128cb0fa">More...</a><br /></td></tr>
-<tr class="separator:abf3126a0a279878f9e39e78d128cb0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669ecfca5e7aaad9db1f33b392a613c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a669ecfca5e7aaad9db1f33b392a613c7">emit_multigesture_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float d_theta, float d_dist, <a class="el" href="whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153">WhistMultigestureType</a> gesture_type, bool active_gesture)</td></tr>
+<tr class="memdesc:a669ecfca5e7aaad9db1f33b392a613c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a trackpad multigesture event (e.g. pinch)  <a href="input__driver_8h.html#a669ecfca5e7aaad9db1f33b392a613c7">More...</a><br /></td></tr>
+<tr class="separator:a669ecfca5e7aaad9db1f33b392a613c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md152"></a>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md156"></a>
 @brief This file defines the methods required to implement an input driver</h1>
-<h1><a class="anchor" id="autotoc_md153"></a>
+<h1><a class="anchor" id="autotoc_md157"></a>
 Usage</h1>
 <p>Create an input device by calling <code>CreateInputDevice()</code>. Now, you may use this device to query keyboard state, or to emit mouse button, mouse motion, scroll, and keyboard events. These methods are used, for example, in <a class="el" href="input_8c.html" title="This file defines general input-processing functions and toggles.">input.c</a>, to build <code><a class="el" href="structWhistClientMessage.html" title="Client message.">WhistClientMessage</a></code> handlers and to generate keyboard input from an arbitrary string. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -227,8 +227,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aec6d0da6165b52bfcd168bace7e3c889"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec6d0da6165b52bfcd168bace7e3c889">&#9670;&nbsp;</a></span>emit_key_event()</h2>
+<a id="ae20354ac9fa2cbeac2a1067ef9f79b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20354ac9fa2cbeac2a1067ef9f79b06">&#9670;&nbsp;</a></span>emit_key_event()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a>&#160;</td>
           <td class="paramname"><em>whist_keycode</em>, </td>
         </tr>
         <tr>
@@ -317,8 +317,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a76dd6d88fb55f29a3a7feb7c8ef060a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76dd6d88fb55f29a3a7feb7c8ef060a6">&#9670;&nbsp;</a></span>emit_mouse_button_event()</h2>
+<a id="a6318f9a9f9816b21cf90962162f9f437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6318f9a9f9816b21cf90962162f9f437">&#9670;&nbsp;</a></span>emit_mouse_button_event()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,7 +332,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#afb444b468c03623255b00447dada0f15">WhistMouseButton</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#afa47769b22f4e68bdbf79565f9852032">WhistMouseButton</a>&#160;</td>
           <td class="paramname"><em>button</em>, </td>
         </tr>
         <tr>
@@ -414,8 +414,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="abf3126a0a279878f9e39e78d128cb0fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf3126a0a279878f9e39e78d128cb0fa">&#9670;&nbsp;</a></span>emit_multigesture_event()</h2>
+<a id="a669ecfca5e7aaad9db1f33b392a613c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669ecfca5e7aaad9db1f33b392a613c7">&#9670;&nbsp;</a></span>emit_multigesture_event()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -441,7 +441,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a69973fa63511c3fd057755fcae4b8527">WhistMultigestureType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153">WhistMultigestureType</a>&#160;</td>
           <td class="paramname"><em>gesture_type</em>, </td>
         </tr>
         <tr>
@@ -473,8 +473,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a0633914f59dda19225c4514fca35da42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0633914f59dda19225c4514fca35da42">&#9670;&nbsp;</a></span>get_keyboard_key_state()</h2>
+<a id="aac1b945261b8a7ad602f0368c2bd0c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1b945261b8a7ad602f0368c2bd0c4d">&#9670;&nbsp;</a></span>get_keyboard_key_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +488,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a>&#160;</td>
           <td class="paramname"><em>whist_keycode</em>&#160;</td>
         </tr>
         <tr>
@@ -511,8 +511,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ab7e6d0c554f4813e884048112739364e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7e6d0c554f4813e884048112739364e">&#9670;&nbsp;</a></span>get_keyboard_modifier_state()</h2>
+<a id="a858ccae3f36f88e26fa4aa62de7d522a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858ccae3f36f88e26fa4aa62de7d522a">&#9670;&nbsp;</a></span>get_keyboard_modifier_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -526,7 +526,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a>&#160;</td>
           <td class="paramname"><em>whist_keycode</em>&#160;</td>
         </tr>
         <tr>
@@ -549,8 +549,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="adfaf9acde8e1ba3a330060e06beb242f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfaf9acde8e1ba3a330060e06beb242f">&#9670;&nbsp;</a></span>ignore_key_state()</h2>
+<a id="ac73b454cce63412dd6f829e91dc02072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73b454cce63412dd6f829e91dc02072">&#9670;&nbsp;</a></span>ignore_key_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,7 +564,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a19e7f1b27cb5354c7031d5aef9163484">WhistKeycode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a>&#160;</td>
           <td class="paramname"><em>whist_keycode</em>, </td>
         </tr>
         <tr>
@@ -599,7 +599,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_e288031044ae90885cb3e2f59036aeb8.html">input</a></li><li class="navelem"><a class="el" href="input__driver_8h.html">input_driver.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_c245b961ad2279e6a24b2b9b76ed7f31.html">input</a></li><li class="navelem"><a class="el" href="input__driver_8h.html">input_driver.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

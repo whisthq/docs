@@ -94,81 +94,97 @@ $(document).ready(function(){initNavTree('clock_8h_source.html',''); initResizab
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">============================</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">Defines</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define clock LARGE_INTEGER</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">   37</a></span>&#160;<span class="preprocessor">#define clock struct timeval</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">Custom Types</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">   46</a></span>&#160;<span class="preprocessor">#define TZ_NAME_MAXLEN 200</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structWhistTimeData.html">   48</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structWhistTimeData.html">WhistTimeData</a> {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// UTC offset for setting time</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#ac9183f2e134e14fa0de41a2d6f3d22b8">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#ac9183f2e134e14fa0de41a2d6f3d22b8">use_win_name</a>;   </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#a058114405e433ec692f12256de3fd86c">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#a058114405e433ec692f12256de3fd86c">use_linux_name</a>; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#ac07263eb68eb04a539f1fc29218eb423">   52</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#ac07263eb68eb04a539f1fc29218eb423">use_utc_offset</a>; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#a6878c191a70b9217cb415ee5cf7bc0c4">   53</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#a6878c191a70b9217cb415ee5cf7bc0c4">utc_offset</a>;     </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#a96e232a6ac81648d920006235bea848a">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#a96e232a6ac81648d920006235bea848a">dst_flag</a>;       </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#ab2f79655c810eb70cc9b5e71a56ee161">   55</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structWhistTimeData.html#ab2f79655c810eb70cc9b5e71a56ee161">win_tz_name</a>[<a class="code" href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">TZ_NAME_MAXLEN</a> + 1]; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">char</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#af19603a50cb4f8e2860afae303a5c864">   57</a></span>&#160;        <a class="code" href="structWhistTimeData.html#af19603a50cb4f8e2860afae303a5c864">linux_tz_name</a>[<a class="code" href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">TZ_NAME_MAXLEN</a> + 1]; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <a class="code" href="clock_8h.html#a3097682819e03c2a9bf3586ae6a4295f">WhistTimeData</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">Public Functions</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="clock_8h.html#acd824f01e9b0a5671a7820c23c1eede1">start_timer</a>(<a class="code" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>* timer);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">double</span> <a class="code" href="clock_8h.html#ac6c1f208b451cecf8667af4ce182fd2d">get_timer</a>(<a class="code" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> timer);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> <a class="code" href="clock_8h.html#abe610bbf5d6a9399ecd3c090302673d8">create_clock</a>(<span class="keywordtype">int</span> timeout_ms);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="clock_8h.html#ad3bcd57394b521f42dea529fe0043557">current_time_str</a>();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">Defines</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define clock LARGE_INTEGER</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#elif defined(__APPLE__)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define clock struct timeval</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">   40</a></span>&#160;<span class="preprocessor">#define clock struct timespec</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define timeout_clock LARGE_INTEGER</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="clock_8h.html#a5d77dc21527a9a603cd9af39efb41429">   46</a></span>&#160;<span class="preprocessor">#define timeout_clock struct timeval</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">Custom Types</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">   55</a></span>&#160;<span class="preprocessor">#define TZ_NAME_MAXLEN 200</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">   57</a></span>&#160;<span class="keyword">typedef</span> uint64_t <a class="code" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structWhistTimeData.html">   59</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structWhistTimeData.html">WhistTimeData</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// UTC offset for setting time</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#a2fe09940debbe61df20888e6e82e829d">   61</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#a2fe09940debbe61df20888e6e82e829d">use_win_name</a>;   </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#a940056cd03269ec323338ca882240604">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#a940056cd03269ec323338ca882240604">use_linux_name</a>; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#a7238b75fd8ec41ea170e13d232cd7821">   63</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#a7238b75fd8ec41ea170e13d232cd7821">use_utc_offset</a>; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#a576bf539a4b6584af38d2371222afd49">   64</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#a576bf539a4b6584af38d2371222afd49">utc_offset</a>;     </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#ad58a61835ace4541df7c2ba8340a872d">   65</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structWhistTimeData.html#ad58a61835ace4541df7c2ba8340a872d">dst_flag</a>;       </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#a36ab2235f34c8d9b98a4c68c454bfe57">   66</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structWhistTimeData.html#a36ab2235f34c8d9b98a4c68c454bfe57">win_tz_name</a>[<a class="code" href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">TZ_NAME_MAXLEN</a> + 1]; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">char</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structWhistTimeData.html#aedca79bc1a0c0c97a86b92e5aa59c0a0">   68</a></span>&#160;        <a class="code" href="structWhistTimeData.html#aedca79bc1a0c0c97a86b92e5aa59c0a0">linux_tz_name</a>[<a class="code" href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">TZ_NAME_MAXLEN</a> + 1]; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <a class="code" href="clock_8h.html#a02b8b80230f2b83f112c3c8a8e046c11">WhistTimeData</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">Public Functions</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span> <a class="code" href="clock_8h.html#acd824f01e9b0a5671a7820c23c1eede1">start_timer</a>(<a class="code" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>* timer);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">double</span> <a class="code" href="clock_8h.html#ac6c1f208b451cecf8667af4ce182fd2d">get_timer</a>(<a class="code" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> timer);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="clock_8h.html#a5d77dc21527a9a603cd9af39efb41429">timeout_clock</a> <a class="code" href="clock_8h.html#aa04e5e700e3e31336405356dbe102bbb">create_timeout_clock</a>(<span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="clock_8h.html#ad3bcd57394b521f42dea529fe0043557">current_time_str</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<a class="code" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> <a class="code" href="clock_8h.html#a64ac044eb61f1517aadc2fba53e9785c">current_time_us</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclock_8h_html_abe610bbf5d6a9399ecd3c090302673d8"><div class="ttname"><a href="clock_8h.html#abe610bbf5d6a9399ecd3c090302673d8">create_clock</a></div><div class="ttdeci">clock create_clock(int timeout_ms)</div><div class="ttdoc">Create a clock that represents the given timeout in milliseconds.</div><div class="ttdef"><b>Definition:</b> clock.c:63</div></div>
-<div class="ttc" id="aclock_8h_html_acd824f01e9b0a5671a7820c23c1eede1"><div class="ttname"><a href="clock_8h.html#acd824f01e9b0a5671a7820c23c1eede1">start_timer</a></div><div class="ttdeci">void start_timer(clock *timer)</div><div class="ttdoc">Start the given timer at the current time, as a stopwatch.</div><div class="ttdef"><b>Definition:</b> clock.c:29</div></div>
-<div class="ttc" id="astructWhistTimeData_html_a96e232a6ac81648d920006235bea848a"><div class="ttname"><a href="structWhistTimeData.html#a96e232a6ac81648d920006235bea848a">WhistTimeData::dst_flag</a></div><div class="ttdeci">int dst_flag</div><div class="ttdef"><b>Definition:</b> clock.h:54</div></div>
-<div class="ttc" id="aclock_8h_html_ad3bcd57394b521f42dea529fe0043557"><div class="ttname"><a href="clock_8h.html#ad3bcd57394b521f42dea529fe0043557">current_time_str</a></div><div class="ttdeci">char * current_time_str()</div><div class="ttdoc">Returns the current time as a string.</div><div class="ttdef"><b>Definition:</b> clock.c:74</div></div>
-<div class="ttc" id="astructWhistTimeData_html_a058114405e433ec692f12256de3fd86c"><div class="ttname"><a href="structWhistTimeData.html#a058114405e433ec692f12256de3fd86c">WhistTimeData::use_linux_name</a></div><div class="ttdeci">int use_linux_name</div><div class="ttdef"><b>Definition:</b> clock.h:51</div></div>
-<div class="ttc" id="aclock_8h_html_a362207a7d85ed7142c966f9a509d80f3"><div class="ttname"><a href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a></div><div class="ttdeci">#define clock</div><div class="ttdef"><b>Definition:</b> clock.h:37</div></div>
-<div class="ttc" id="aclock_8h_html_ac98e33cc8b935fa0d5154d8a3f557c39"><div class="ttname"><a href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">TZ_NAME_MAXLEN</a></div><div class="ttdeci">#define TZ_NAME_MAXLEN</div><div class="ttdef"><b>Definition:</b> clock.h:46</div></div>
+<div class="ttc" id="aclock_8h_html_acd824f01e9b0a5671a7820c23c1eede1"><div class="ttname"><a href="clock_8h.html#acd824f01e9b0a5671a7820c23c1eede1">start_timer</a></div><div class="ttdeci">void start_timer(clock *timer)</div><div class="ttdoc">Start the given timer at the current time, as a stopwatch.</div><div class="ttdef"><b>Definition:</b> clock.c:27</div></div>
+<div class="ttc" id="astructWhistTimeData_html_a36ab2235f34c8d9b98a4c68c454bfe57"><div class="ttname"><a href="structWhistTimeData.html#a36ab2235f34c8d9b98a4c68c454bfe57">WhistTimeData::win_tz_name</a></div><div class="ttdeci">char win_tz_name[TZ_NAME_MAXLEN+1]</div><div class="ttdef"><b>Definition:</b> clock.h:66</div></div>
+<div class="ttc" id="aclock_8h_html_a02b8b80230f2b83f112c3c8a8e046c11"><div class="ttname"><a href="clock_8h.html#a02b8b80230f2b83f112c3c8a8e046c11">WhistTimeData</a></div><div class="ttdeci">struct WhistTimeData WhistTimeData</div></div>
+<div class="ttc" id="astructWhistTimeData_html_aedca79bc1a0c0c97a86b92e5aa59c0a0"><div class="ttname"><a href="structWhistTimeData.html#aedca79bc1a0c0c97a86b92e5aa59c0a0">WhistTimeData::linux_tz_name</a></div><div class="ttdeci">char linux_tz_name[TZ_NAME_MAXLEN+1]</div><div class="ttdef"><b>Definition:</b> clock.h:68</div></div>
+<div class="ttc" id="astructWhistTimeData_html_a576bf539a4b6584af38d2371222afd49"><div class="ttname"><a href="structWhistTimeData.html#a576bf539a4b6584af38d2371222afd49">WhistTimeData::utc_offset</a></div><div class="ttdeci">int utc_offset</div><div class="ttdef"><b>Definition:</b> clock.h:64</div></div>
+<div class="ttc" id="astructWhistTimeData_html_a940056cd03269ec323338ca882240604"><div class="ttname"><a href="structWhistTimeData.html#a940056cd03269ec323338ca882240604">WhistTimeData::use_linux_name</a></div><div class="ttdeci">int use_linux_name</div><div class="ttdef"><b>Definition:</b> clock.h:62</div></div>
+<div class="ttc" id="aclock_8h_html_ad3bcd57394b521f42dea529fe0043557"><div class="ttname"><a href="clock_8h.html#ad3bcd57394b521f42dea529fe0043557">current_time_str</a></div><div class="ttdeci">char * current_time_str()</div><div class="ttdoc">Returns the current time as a string.</div><div class="ttdef"><b>Definition:</b> clock.c:84</div></div>
+<div class="ttc" id="astructWhistTimeData_html"><div class="ttname"><a href="structWhistTimeData.html">WhistTimeData</a></div><div class="ttdef"><b>Definition:</b> clock.h:59</div></div>
+<div class="ttc" id="aclock_8h_html_aa04e5e700e3e31336405356dbe102bbb"><div class="ttname"><a href="clock_8h.html#aa04e5e700e3e31336405356dbe102bbb">create_timeout_clock</a></div><div class="ttdeci">timeout_clock create_timeout_clock(int timeout_ms)</div><div class="ttdoc">Create a clock that represents the given timeout in milliseconds.</div><div class="ttdef"><b>Definition:</b> clock.c:73</div></div>
+<div class="ttc" id="astructWhistTimeData_html_a2fe09940debbe61df20888e6e82e829d"><div class="ttname"><a href="structWhistTimeData.html#a2fe09940debbe61df20888e6e82e829d">WhistTimeData::use_win_name</a></div><div class="ttdeci">int use_win_name</div><div class="ttdef"><b>Definition:</b> clock.h:61</div></div>
+<div class="ttc" id="aclock_8h_html_a362207a7d85ed7142c966f9a509d80f3"><div class="ttname"><a href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a></div><div class="ttdeci">#define clock</div><div class="ttdef"><b>Definition:</b> clock.h:40</div></div>
+<div class="ttc" id="aclock_8h_html_ac98e33cc8b935fa0d5154d8a3f557c39"><div class="ttname"><a href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">TZ_NAME_MAXLEN</a></div><div class="ttdeci">#define TZ_NAME_MAXLEN</div><div class="ttdef"><b>Definition:</b> clock.h:55</div></div>
 <div class="ttc" id="aclock_8h_html_ac6c1f208b451cecf8667af4ce182fd2d"><div class="ttname"><a href="clock_8h.html#ac6c1f208b451cecf8667af4ce182fd2d">get_timer</a></div><div class="ttdeci">double get_timer(clock timer)</div><div class="ttdoc">Get the amount of elapsed time in seconds since the last start_timer.</div><div class="ttdef"><b>Definition:</b> clock.c:38</div></div>
-<div class="ttc" id="astructWhistTimeData_html"><div class="ttname"><a href="structWhistTimeData.html">WhistTimeData</a></div><div class="ttdef"><b>Definition:</b> clock.h:48</div></div>
-<div class="ttc" id="astructWhistTimeData_html_ac9183f2e134e14fa0de41a2d6f3d22b8"><div class="ttname"><a href="structWhistTimeData.html#ac9183f2e134e14fa0de41a2d6f3d22b8">WhistTimeData::use_win_name</a></div><div class="ttdeci">int use_win_name</div><div class="ttdef"><b>Definition:</b> clock.h:50</div></div>
-<div class="ttc" id="astructWhistTimeData_html_a6878c191a70b9217cb415ee5cf7bc0c4"><div class="ttname"><a href="structWhistTimeData.html#a6878c191a70b9217cb415ee5cf7bc0c4">WhistTimeData::utc_offset</a></div><div class="ttdeci">int utc_offset</div><div class="ttdef"><b>Definition:</b> clock.h:53</div></div>
-<div class="ttc" id="astructWhistTimeData_html_af19603a50cb4f8e2860afae303a5c864"><div class="ttname"><a href="structWhistTimeData.html#af19603a50cb4f8e2860afae303a5c864">WhistTimeData::linux_tz_name</a></div><div class="ttdeci">char linux_tz_name[TZ_NAME_MAXLEN+1]</div><div class="ttdef"><b>Definition:</b> clock.h:57</div></div>
-<div class="ttc" id="astructWhistTimeData_html_ab2f79655c810eb70cc9b5e71a56ee161"><div class="ttname"><a href="structWhistTimeData.html#ab2f79655c810eb70cc9b5e71a56ee161">WhistTimeData::win_tz_name</a></div><div class="ttdeci">char win_tz_name[TZ_NAME_MAXLEN+1]</div><div class="ttdef"><b>Definition:</b> clock.h:55</div></div>
-<div class="ttc" id="aclock_8h_html_a3097682819e03c2a9bf3586ae6a4295f"><div class="ttname"><a href="clock_8h.html#a3097682819e03c2a9bf3586ae6a4295f">WhistTimeData</a></div><div class="ttdeci">struct WhistTimeData WhistTimeData</div></div>
-<div class="ttc" id="astructWhistTimeData_html_ac07263eb68eb04a539f1fc29218eb423"><div class="ttname"><a href="structWhistTimeData.html#ac07263eb68eb04a539f1fc29218eb423">WhistTimeData::use_utc_offset</a></div><div class="ttdeci">int use_utc_offset</div><div class="ttdef"><b>Definition:</b> clock.h:52</div></div>
+<div class="ttc" id="astructWhistTimeData_html_a7238b75fd8ec41ea170e13d232cd7821"><div class="ttname"><a href="structWhistTimeData.html#a7238b75fd8ec41ea170e13d232cd7821">WhistTimeData::use_utc_offset</a></div><div class="ttdeci">int use_utc_offset</div><div class="ttdef"><b>Definition:</b> clock.h:63</div></div>
+<div class="ttc" id="aclock_8h_html_a5d77dc21527a9a603cd9af39efb41429"><div class="ttname"><a href="clock_8h.html#a5d77dc21527a9a603cd9af39efb41429">timeout_clock</a></div><div class="ttdeci">#define timeout_clock</div><div class="ttdef"><b>Definition:</b> clock.h:46</div></div>
+<div class="ttc" id="astructWhistTimeData_html_ad58a61835ace4541df7c2ba8340a872d"><div class="ttname"><a href="structWhistTimeData.html#ad58a61835ace4541df7c2ba8340a872d">WhistTimeData::dst_flag</a></div><div class="ttdeci">int dst_flag</div><div class="ttdef"><b>Definition:</b> clock.h:65</div></div>
+<div class="ttc" id="aclock_8h_html_a9d947f0fa2fb7e03ff678e83295a86b3"><div class="ttname"><a href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a></div><div class="ttdeci">uint64_t timestamp_us</div><div class="ttdef"><b>Definition:</b> clock.h:57</div></div>
+<div class="ttc" id="aclock_8h_html_a64ac044eb61f1517aadc2fba53e9785c"><div class="ttname"><a href="clock_8h.html#a64ac044eb61f1517aadc2fba53e9785c">current_time_us</a></div><div class="ttdeci">timestamp_us current_time_us()</div><div class="ttdoc">Returns the number of microseconds elapsed since epoch.</div><div class="ttdef"><b>Definition:</b> clock.c:118</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_df322525ef19ea0172bad82237de04c3.html">utils</a></li><li class="navelem"><a class="el" href="clock_8h.html">clock.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_e68502ba7741b9477bffd325bfc1c340.html">utils</a></li><li class="navelem"><a class="el" href="clock_8h.html">clock.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -88,28 +88,30 @@ $(document).ready(function(){initNavTree('structSocketContext.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>Interface describing the avaliable functions and socket context of a network protocol.  
+<p>Interface describing the available functions and socket context of a network protocol.  
  <a href="structSocketContext.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">network.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:a3ccefc0ecf6553addb273426d2286f7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a3ccefc0ecf6553addb273426d2286f7d">listen_socket</a></td></tr>
+<tr class="separator:a3ccefc0ecf6553addb273426d2286f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32e96cbec6ae787d7aa6174c4aaba98"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a></td></tr>
 <tr class="separator:af32e96cbec6ae787d7aa6174c4aaba98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a088a2da14c54575d914f99b1ac3bb68e"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a088a2da14c54575d914f99b1ac3bb68e">ack</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>)</td></tr>
 <tr class="separator:a088a2da14c54575d914f99b1ac3bb68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3632e6da5fb718777b30ee8dbb6d062"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistPacket.html">WhistPacket</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#ab3632e6da5fb718777b30ee8dbb6d062">read_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, bool should_recv)</td></tr>
-<tr class="separator:ab3632e6da5fb718777b30ee8dbb6d062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4484adf3ce34d636892bbf9938bd034"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#ad4484adf3ce34d636892bbf9938bd034">free_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="separator:ad4484adf3ce34d636892bbf9938bd034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a528ca29dbd429a6022a2daa66127696e"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a528ca29dbd429a6022a2daa66127696e">send_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int id)</td></tr>
-<tr class="separator:a528ca29dbd429a6022a2daa66127696e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71dc28bc1f757f13b02966c7d8f2cc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistPacket.html">WhistPacket</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#ac71dc28bc1f757f13b02966c7d8f2cc6">read_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, bool should_recv)</td></tr>
+<tr class="separator:ac71dc28bc1f757f13b02966c7d8f2cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e38641f602f77146c6d006223bccd3"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a13e38641f602f77146c6d006223bccd3">free_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
+<tr class="separator:a13e38641f602f77146c6d006223bccd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88de0457d36f187c50cdecb984ae50df"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a88de0457d36f187c50cdecb984ae50df">send_packet</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, void *data, int len, int id)</td></tr>
+<tr class="separator:a88de0457d36f187c50cdecb984ae50df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dffab1bb0a4b08cff6c58232d34e2d"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSocketContext.html#a65dffab1bb0a4b08cff6c58232d34e2d">destroy_socket_context</a> )(void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>)</td></tr>
 <tr class="separator:a65dffab1bb0a4b08cff6c58232d34e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface describing the avaliable functions and socket context of a network protocol. </p>
+<div class="textblock"><p>Interface describing the available functions and socket context of a network protocol. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a088a2da14c54575d914f99b1ac3bb68e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a088a2da14c54575d914f99b1ac3bb68e">&#9670;&nbsp;</a></span>ack</h2>
@@ -153,8 +155,8 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4484adf3ce34d636892bbf9938bd034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4484adf3ce34d636892bbf9938bd034">&#9670;&nbsp;</a></span>free_packet</h2>
+<a id="a13e38641f602f77146c6d006223bccd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e38641f602f77146c6d006223bccd3">&#9670;&nbsp;</a></span>free_packet</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,8 +169,22 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ab3632e6da5fb718777b30ee8dbb6d062"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3632e6da5fb718777b30ee8dbb6d062">&#9670;&nbsp;</a></span>read_packet</h2>
+<a id="a3ccefc0ecf6553addb273426d2286f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ccefc0ecf6553addb273426d2286f7d">&#9670;&nbsp;</a></span>listen_socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>* SocketContext::listen_socket</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac71dc28bc1f757f13b02966c7d8f2cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71dc28bc1f757f13b02966c7d8f2cc6">&#9670;&nbsp;</a></span>read_packet</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,14 +197,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a528ca29dbd429a6022a2daa66127696e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a528ca29dbd429a6022a2daa66127696e">&#9670;&nbsp;</a></span>send_packet</h2>
+<a id="a88de0457d36f187c50cdecb984ae50df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88de0457d36f187c50cdecb984ae50df">&#9670;&nbsp;</a></span>send_packet</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* SocketContext::send_packet) (void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, void *data, int len, int id)</td>
+          <td class="memname">int(* SocketContext::send_packet) (void *<a class="el" href="structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98">context</a>, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, void *data, int len, int id)</td>
         </tr>
       </table>
 </div><div class="memdoc">

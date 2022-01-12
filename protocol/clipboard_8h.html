@@ -109,10 +109,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:acf1d14716f8f17fb982f48300e3e0c38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#acf1d14716f8f17fb982f48300e3e0c38">GET_CLIPBOARD</a>&#160;&#160;&#160;&quot;./get_clipboard&quot;</td></tr>
-<tr class="separator:acf1d14716f8f17fb982f48300e3e0c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39e7c57aca05db0fb2a9ba9949a1ee5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a39e7c57aca05db0fb2a9ba9949a1ee5c">SET_CLIPBOARD</a>&#160;&#160;&#160;&quot;./set_clipboard&quot;</td></tr>
-<tr class="separator:a39e7c57aca05db0fb2a9ba9949a1ee5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c178b5d0555aaa30f3138716271e3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a65c178b5d0555aaa30f3138716271e3a">GET_OS_CLIPBOARD</a>&#160;&#160;&#160;&quot;./get_os_clipboard&quot;</td></tr>
+<tr class="separator:a65c178b5d0555aaa30f3138716271e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7332985c65be1b32ec887fcb37750962"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a7332985c65be1b32ec887fcb37750962">SET_OS_CLIPBOARD</a>&#160;&#160;&#160;&quot;./set_os_clipboard&quot;</td></tr>
+<tr class="separator:a7332985c65be1b32ec887fcb37750962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade76749524806bb7873dd724056c4ba9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#ade76749524806bb7873dd724056c4ba9">PATH_MAXLEN</a>&#160;&#160;&#160;PATH_MAX - 1</td></tr>
 <tr class="separator:ade76749524806bb7873dd724056c4ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -155,40 +155,40 @@ Functions</h2></td></tr>
 <tr class="memitem:afe398cfdec3f5ec983180edaa356f5df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#afe398cfdec3f5ec983180edaa356f5df">should_preserve_local_clipboard</a> ()</td></tr>
 <tr class="memdesc:afe398cfdec3f5ec983180edaa356f5df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the local clipboard should be preserved in the shared clipboard between server and client.  <a href="clipboard_8h.html#afe398cfdec3f5ec983180edaa356f5df">More...</a><br /></td></tr>
 <tr class="separator:afe398cfdec3f5ec983180edaa356f5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a942dc96afda0f75aa1e24fd812c6839f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a942dc96afda0f75aa1e24fd812c6839f">get_clipboard</a> ()</td></tr>
-<tr class="memdesc:a942dc96afda0f75aa1e24fd812c6839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current clipboard data.  <a href="clipboard_8h.html#a942dc96afda0f75aa1e24fd812c6839f">More...</a><br /></td></tr>
-<tr class="separator:a942dc96afda0f75aa1e24fd812c6839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1b2890ebe64e624e36b8db285ff340"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#aeb1b2890ebe64e624e36b8db285ff340">set_clipboard</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *cb)</td></tr>
-<tr class="memdesc:aeb1b2890ebe64e624e36b8db285ff340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the clipboard to the given clipboard data.  <a href="clipboard_8h.html#aeb1b2890ebe64e624e36b8db285ff340">More...</a><br /></td></tr>
-<tr class="separator:aeb1b2890ebe64e624e36b8db285ff340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398ec136a785d6d115bb0bce77b4d33e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a398ec136a785d6d115bb0bce77b4d33e">free_clipboard</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *<a class="el" href="clipboard__synchronizer_8c.html#a04e7b44d1106aeaa4a8f93b1026150ce">clipboard</a>)</td></tr>
-<tr class="memdesc:a398ec136a785d6d115bb0bce77b4d33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a Clipboard that was generated by get_clipboard.  <a href="clipboard_8h.html#a398ec136a785d6d115bb0bce77b4d33e">More...</a><br /></td></tr>
-<tr class="separator:a398ec136a785d6d115bb0bce77b4d33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef10c4ae8b7620034273ff2105e097fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#aef10c4ae8b7620034273ff2105e097fd">has_clipboard_updated</a> ()</td></tr>
-<tr class="memdesc:aef10c4ae8b7620034273ff2105e097fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the clipboard has new data.  <a href="clipboard_8h.html#aef10c4ae8b7620034273ff2105e097fd">More...</a><br /></td></tr>
-<tr class="separator:aef10c4ae8b7620034273ff2105e097fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ddb807136f265382274f822c589f98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a44ddb807136f265382274f822c589f98">get_os_clipboard</a> ()</td></tr>
+<tr class="memdesc:a44ddb807136f265382274f822c589f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current OS clipboard data.  <a href="clipboard_8h.html#a44ddb807136f265382274f822c589f98">More...</a><br /></td></tr>
+<tr class="separator:a44ddb807136f265382274f822c589f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f6c69d5ac5ab4e3d267fc75de2d7d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#af6f6c69d5ac5ab4e3d267fc75de2d7d6">set_os_clipboard</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *cb)</td></tr>
+<tr class="memdesc:af6f6c69d5ac5ab4e3d267fc75de2d7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the OS clipboard to the given clipboard data.  <a href="clipboard_8h.html#af6f6c69d5ac5ab4e3d267fc75de2d7d6">More...</a><br /></td></tr>
+<tr class="separator:af6f6c69d5ac5ab4e3d267fc75de2d7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca776393db57c979fec121683597c59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a0ca776393db57c979fec121683597c59">free_clipboard_buffer</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *clipboard)</td></tr>
+<tr class="memdesc:a0ca776393db57c979fec121683597c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a <a class="el" href="structClipboardData.html" title="A packet of data referring to and containing the information of a clipboard.">ClipboardData</a> that was generated by get_os_clipboard.  <a href="clipboard_8h.html#a0ca776393db57c979fec121683597c59">More...</a><br /></td></tr>
+<tr class="separator:a0ca776393db57c979fec121683597c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719ec07011888c1326cc0eeb03f127ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a719ec07011888c1326cc0eeb03f127ed">has_os_clipboard_updated</a> ()</td></tr>
+<tr class="memdesc:a719ec07011888c1326cc0eeb03f127ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the OS clipboard has new data.  <a href="clipboard_8h.html#a719ec07011888c1326cc0eeb03f127ed">More...</a><br /></td></tr>
+<tr class="separator:a719ec07011888c1326cc0eeb03f127ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116350034e4b2089cf066fcb75f7306a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a116350034e4b2089cf066fcb75f7306a">destroy_clipboard</a> ()</td></tr>
 <tr class="memdesc:a116350034e4b2089cf066fcb75f7306a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy current clipboard.  <a href="clipboard_8h.html#a116350034e4b2089cf066fcb75f7306a">More...</a><br /></td></tr>
 <tr class="separator:a116350034e4b2089cf066fcb75f7306a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the general clipboard functions for a shared. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md126"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md122"></a>
 client-server clipboard.</h1>
-<h1><a class="anchor" id="autotoc_md127"></a>
+<h1><a class="anchor" id="autotoc_md123"></a>
 Usage</h1>
-<p>GET_CLIPBOARD and SET_CLIPBOARD will return strings representing directories important for getting and setting file clipboards. When GetClipboard() is called and it returns a CLIPBOARD_FILES type, then GET_CLIPBOARD will be filled with symlinks to the clipboard files. When SetClipboard(cb) is called and is given a clipboard with a CLIPBOARD_FILES type, then the clipboard will be set to whatever files are in the SET_CLIPBOARD directory.</p>
-<p>LGET_CLIPBOARD and LSET_CLIPBOARD are the wide-character versions of these strings, for use on windows OS's </p>
+<p>GET_OS_CLIPBOARD and SET_OS_CLIPBOARD will return strings representing directories important for getting and setting file clipboards. When <a class="el" href="clipboard_8h.html#a44ddb807136f265382274f822c589f98" title="Get the current OS clipboard data.">get_os_clipboard()</a> is called and it returns a CLIPBOARD_FILES type, then GET_OS_CLIPBOARD will be filled with symlinks to the clipboard files. When set_os_clipboard(cb) is called and is given a clipboard with a CLIPBOARD_FILES type, then the clipboard will be set to whatever files are in the SET_OS_CLIPBOARD directory.</p>
+<p>LGET_OS_CLIPBOARD and LSET_OS_CLIPBOARD are the wide-character versions of these strings, for use on windows OS's </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="acf1d14716f8f17fb982f48300e3e0c38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf1d14716f8f17fb982f48300e3e0c38">&#9670;&nbsp;</a></span>GET_CLIPBOARD</h2>
+<a id="a65c178b5d0555aaa30f3138716271e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c178b5d0555aaa30f3138716271e3a">&#9670;&nbsp;</a></span>GET_OS_CLIPBOARD</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GET_CLIPBOARD&#160;&#160;&#160;&quot;./get_clipboard&quot;</td>
+          <td class="memname">#define GET_OS_CLIPBOARD&#160;&#160;&#160;&quot;./get_os_clipboard&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -209,14 +209,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a39e7c57aca05db0fb2a9ba9949a1ee5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39e7c57aca05db0fb2a9ba9949a1ee5c">&#9670;&nbsp;</a></span>SET_CLIPBOARD</h2>
+<a id="a7332985c65be1b32ec887fcb37750962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7332985c65be1b32ec887fcb37750962">&#9670;&nbsp;</a></span>SET_OS_CLIPBOARD</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SET_CLIPBOARD&#160;&#160;&#160;&quot;./set_clipboard&quot;</td>
+          <td class="memname">#define SET_OS_CLIPBOARD&#160;&#160;&#160;&quot;./set_os_clipboard&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -352,14 +352,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a398ec136a785d6d115bb0bce77b4d33e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a398ec136a785d6d115bb0bce77b4d33e">&#9670;&nbsp;</a></span>free_clipboard()</h2>
+<a id="a0ca776393db57c979fec121683597c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca776393db57c979fec121683597c59">&#9670;&nbsp;</a></span>free_clipboard_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void free_clipboard </td>
+          <td class="memname">void free_clipboard_buffer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td>
           <td class="paramname"><em>clipboard</em></td><td>)</td>
@@ -368,24 +368,24 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Frees a Clipboard that was generated by get_clipboard. </p>
+<p>Frees a <a class="el" href="structClipboardData.html" title="A packet of data referring to and containing the information of a clipboard.">ClipboardData</a> that was generated by get_os_clipboard. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">clipboard</td><td>The clipboard to free </td></tr>
+    <tr><td class="paramname">clipboard</td><td>The clipboard buffer to free </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a942dc96afda0f75aa1e24fd812c6839f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a942dc96afda0f75aa1e24fd812c6839f">&#9670;&nbsp;</a></span>get_clipboard()</h2>
+<a id="a44ddb807136f265382274f822c589f98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ddb807136f265382274f822c589f98">&#9670;&nbsp;</a></span>get_os_clipboard()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structClipboardData.html">ClipboardData</a>* get_clipboard </td>
+          <td class="memname"><a class="el" href="structClipboardData.html">ClipboardData</a>* get_os_clipboard </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -393,19 +393,19 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Get the current clipboard data. </p>
+<p>Get the current OS clipboard data. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the current clipboard data as a <a class="el" href="structClipboardData.html" title="A packet of data referring to and containing the information of a clipboard.">ClipboardData</a> struct </dd></dl>
 
 </div>
 </div>
-<a id="aef10c4ae8b7620034273ff2105e097fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef10c4ae8b7620034273ff2105e097fd">&#9670;&nbsp;</a></span>has_clipboard_updated()</h2>
+<a id="a719ec07011888c1326cc0eeb03f127ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719ec07011888c1326cc0eeb03f127ed">&#9670;&nbsp;</a></span>has_os_clipboard_updated()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool has_clipboard_updated </td>
+          <td class="memname">bool has_os_clipboard_updated </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -413,7 +413,7 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Check whether the clipboard has new data. </p>
+<p>Check whether the OS clipboard has new data. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if new clipboard data, false if else </dd></dl>
 
 </div>
@@ -444,14 +444,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aeb1b2890ebe64e624e36b8db285ff340"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1b2890ebe64e624e36b8db285ff340">&#9670;&nbsp;</a></span>set_clipboard()</h2>
+<a id="af6f6c69d5ac5ab4e3d267fc75de2d7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f6c69d5ac5ab4e3d267fc75de2d7d6">&#9670;&nbsp;</a></span>set_os_clipboard()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void set_clipboard </td>
+          <td class="memname">void set_os_clipboard </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td>
           <td class="paramname"><em>cb</em></td><td>)</td>
@@ -460,7 +460,7 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Set the clipboard to the given clipboard data. </p>
+<p>Set the OS clipboard to the given clipboard data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb</td><td>Pointer to a clipboard data struct to set the clipboard to </td></tr>
@@ -495,7 +495,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_18a87b5a2e3bb90143f55fb2a95e2152.html">clipboard</a></li><li class="navelem"><a class="el" href="clipboard_8h.html">clipboard.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_8010e21146f516d4a149b849de47b294.html">clipboard</a></li><li class="navelem"><a class="el" href="clipboard_8h.html">clipboard.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -1,17 +1,16 @@
 var client_8c =
 [
-    [ "add_thread_to_client_active_dependents", "client_8c.html#a29042e5606a07696cb4a51f8353b7bb1", null ],
-    [ "destroy_clients", "client_8c.html#ab87075b04dd30af0da1713a6140c99eb", null ],
-    [ "init_client", "client_8c.html#a07496953b070830ab60efddb18c960cc", null ],
-    [ "quit_client", "client_8c.html#a79916ea22b8643d863a371aa727a3fd8", null ],
-    [ "reap_timed_out_client", "client_8c.html#aee5b77bb95702e63a178b1075f081c94", null ],
-    [ "remove_thread_from_holding_active_count", "client_8c.html#a319e67224c0a72563c0900db64ff487c", null ],
-    [ "reset_threads_holding_active_count", "client_8c.html#a0740741ea55ddddb53fa36aaae2d9d88", null ],
-    [ "start_quitting_client", "client_8c.html#aa7b24c815e1583ea8f39ab7e809d0eab", null ],
-    [ "threads_still_holding_active", "client_8c.html#a8f2aca1eee229215f79c4a4ce41a54f8", null ],
-    [ "update_client_active_status", "client_8c.html#a7d430eadcbe00e1328952cadfc1d9547", null ],
-    [ "active_holding_write_mutex", "client_8c.html#a8109f210eda138f4236f671fb3d46092", null ],
-    [ "client", "client_8c.html#afb3a99353e3c50b4339ceb1efd4e00b1", null ],
+    [ "add_thread_to_client_active_dependents", "client_8c.html#a4095d2d382a7e5c347db88558a546df8", null ],
+    [ "destroy_clients", "client_8c.html#a0c9deb4b0da1b5a671935d8537da0b70", null ],
+    [ "init_client", "client_8c.html#a8dcced7ed6c7f9284bf91463b0d658b0", null ],
+    [ "quit_client", "client_8c.html#aaa052b4dfa62a068a43c72a8782c474e", null ],
+    [ "reap_timed_out_client", "client_8c.html#a427e1e94a2dc52f60bac8c668ad7af61", null ],
+    [ "remove_thread_from_holding_active_count", "client_8c.html#a77e28c6a1a8307f136466ad8b5f6e8e3", null ],
+    [ "reset_threads_holding_active_count", "client_8c.html#a0a15c68449ffb14ea62db6087d27fa4c", null ],
+    [ "start_quitting_client", "client_8c.html#aedb5791800324d1914e5124d23f138c8", null ],
+    [ "threads_still_holding_active", "client_8c.html#ab77ef71b6fc7e7ee283d110f553f2272", null ],
+    [ "update_client_active_status", "client_8c.html#a910e3ffb86024ba2864d8c0594f9623f", null ],
+    [ "active_holding_write_mutex", "client_8c.html#ac3a5f49bcfa5247ef5cbed330a9121e2", null ],
     [ "threads_holding_active", "client_8c.html#a030d89da314e66f72903838a18d5934a", null ],
     [ "threads_needing_active", "client_8c.html#af475a5bf35f3ea675cbc37ed28a1daac", null ]
 ];

@@ -105,9 +105,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a720d85cec99cf15e5b82801d081e32a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#a720d85cec99cf15e5b82801d081e32a3">error_monitor_set_connection_id</a> (int id)</td></tr>
 <tr class="memdesc:a720d85cec99cf15e5b82801d081e32a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the connection id tag for error monitor reports.  <a href="error__monitor_8h.html#a720d85cec99cf15e5b82801d081e32a3">More...</a><br /></td></tr>
 <tr class="separator:a720d85cec99cf15e5b82801d081e32a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f41217150d754fbef4f32e948748e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#a34f41217150d754fbef4f32e948748e3">error_monitor_initialize</a> (bool is_client)</td></tr>
-<tr class="memdesc:a34f41217150d754fbef4f32e948748e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the error monitor.  <a href="error__monitor_8h.html#a34f41217150d754fbef4f32e948748e3">More...</a><br /></td></tr>
-<tr class="separator:a34f41217150d754fbef4f32e948748e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff05302e466bdf62b862bbd7bdc407a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#aff05302e466bdf62b862bbd7bdc407a1">whist_error_monitor_initialize</a> (bool is_client)</td></tr>
+<tr class="memdesc:aff05302e466bdf62b862bbd7bdc407a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the error monitor.  <a href="error__monitor_8h.html#aff05302e466bdf62b862bbd7bdc407a1">More...</a><br /></td></tr>
+<tr class="separator:aff05302e466bdf62b862bbd7bdc407a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5509b96231f401ea288eec740f85eed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#ab5509b96231f401ea288eec740f85eed">error_monitor_shutdown</a> ()</td></tr>
 <tr class="memdesc:ab5509b96231f401ea288eec740f85eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down the error monitor.  <a href="error__monitor_8h.html#ab5509b96231f401ea288eec740f85eed">More...</a><br /></td></tr>
 <tr class="separator:ab5509b96231f401ea288eec740f85eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,44 +120,17 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the functions to configure and report breadcrumbs. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md164"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md168"></a>
 and error events to tools such as Sentry.</h1>
-<h1><a class="anchor" id="autotoc_md165"></a>
+<h1><a class="anchor" id="autotoc_md169"></a>
 Usage</h1>
 <p>The error monitor needs to have an environment configured before it can be started up. This environment should be development/staging/production, and is passed in as a command-line parameter. Once the value is known, we may call <code><a class="el" href="error__monitor_8h.html#a5f24be79dfc9dd371d5dd40856a59a85" title="Configures the error monitor to use the provided environment.">error_monitor_set_environment()</a></code> to configure it.</p>
 <p>If no environment is set, the error monitor will fail to initialize. This is because we don't want it to complain in personal setups and manual connections when developing, but it's important to note the side-effect that we will not report to the error monitoring service if environment isn't passed in.</p>
-<p>To initialize the error monitor, we call <code><a class="el" href="error__monitor_8h.html#a34f41217150d754fbef4f32e948748e3" title="Initializes the error monitor.">error_monitor_initialize()</a></code>. After doing so, we can configure the error logging metadata with <code><a class="el" href="error__monitor_8h.html#ac79b8627dca780eb8e77b089904e9720" title="Configures the username tag for error monitor reports.">error_monitor_set_username()</a></code> and <code><a class="el" href="error__monitor_8h.html#a720d85cec99cf15e5b82801d081e32a3" title="Configures the connection id tag for error monitor reports.">error_monitor_set_connection_id()</a></code>.</p>
+<p>To initialize the error monitor, we call <code>error_monitor_initialize()</code>. After doing so, we can configure the error logging metadata with <code><a class="el" href="error__monitor_8h.html#ac79b8627dca780eb8e77b089904e9720" title="Configures the username tag for error monitor reports.">error_monitor_set_username()</a></code> and <code><a class="el" href="error__monitor_8h.html#a720d85cec99cf15e5b82801d081e32a3" title="Configures the connection id tag for error monitor reports.">error_monitor_set_connection_id()</a></code>.</p>
 <p>At this point, calling <code><a class="el" href="error__monitor_8h.html#aa6769fc9b7fd37709668f93f23735132" title="Logs a breadcrumb to the error monitor.">error_monitor_log_breadcrumb()</a></code> and <code><a class="el" href="error__monitor_8h.html#afd75d2bc78de7ef5c6d782337e3f96a4" title="Logs an error event to the error monitor.">error_monitor_log_error()</a></code> will report a trace of non-error events and report a detailed breakdown for error-level events to the error monitor service, respectively. Importantly, <em>you should almost never be calling this function by itself</em>. Instead, simply use the <code>LOG_*()</code> functions from <a class="el" href="logging_8h.html" title="This file contains the logging macros and utils to send Winlogon.">logging.h</a>, which will automatically send error monitor breadcrumbs and error reports as needed.</p>
 <p>Because of this integration with our logging setup, we run into race conditions in <code><a class="el" href="error__monitor_8h.html#ab5509b96231f401ea288eec740f85eed" title="Shuts down the error monitor.">error_monitor_shutdown()</a></code>, which may cause us to fail to report our last few breadcrumbs and error events. In order to avoid this, we must call <code><a class="el" href="error__monitor_8h.html#ab5509b96231f401ea288eec740f85eed" title="Shuts down the error monitor.">error_monitor_shutdown()</a></code> after calling <code><a class="el" href="logging_8c.html#aa702fa9ec966709ebb51bef79be7b33e" title="Destroy the logger object.">destroy_logger()</a></code>, to allow for any pending error monitor log calls to be handled. Eventually, we should set up a more robust solution for synchronizing these calls. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a34f41217150d754fbef4f32e948748e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34f41217150d754fbef4f32e948748e3">&#9670;&nbsp;</a></span>error_monitor_initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void error_monitor_initialize </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_client</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the error monitor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">is_client</td><td>True if this is the client protocol, else false.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>This will do nothing if the environment has not already been set. </dd></dl>
-
-</div>
-</div>
 <a id="aa6769fc9b7fd37709668f93f23735132"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6769fc9b7fd37709668f93f23735132">&#9670;&nbsp;</a></span>error_monitor_log_breadcrumb()</h2>
 
@@ -246,7 +219,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This should only be called after calling <code><a class="el" href="error__monitor_8h.html#a34f41217150d754fbef4f32e948748e3" title="Initializes the error monitor.">error_monitor_initialize()</a></code>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This should only be called after calling <code>error_monitor_initialize()</code>. </dd></dl>
 
 </div>
 </div>
@@ -273,7 +246,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This should only be called before calling <code><a class="el" href="error__monitor_8h.html#a34f41217150d754fbef4f32e948748e3" title="Initializes the error monitor.">error_monitor_initialize()</a></code>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This should only be called before calling <code>error_monitor_initialize()</code>. </dd></dl>
 
 </div>
 </div>
@@ -300,7 +273,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This should only be called after calling <code><a class="el" href="error__monitor_8h.html#a34f41217150d754fbef4f32e948748e3" title="Initializes the error monitor.">error_monitor_initialize()</a></code>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This should only be called after calling <code>error_monitor_initialize()</code>. </dd></dl>
 
 </div>
 </div>
@@ -324,12 +297,39 @@ Usage</h1>
 
 </div>
 </div>
+<a id="aff05302e466bdf62b862bbd7bdc407a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff05302e466bdf62b862bbd7bdc407a1">&#9670;&nbsp;</a></span>whist_error_monitor_initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_error_monitor_initialize </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the error monitor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_client</td><td>True if this is the client protocol, else false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This will do nothing if the environment has not already been set. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_128beccb94ee56ef1e878679d37b9b34.html">logging</a></li><li class="navelem"><a class="el" href="error__monitor_8h.html">error_monitor.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_550e69c9c799797ced6dd0f8eb42fef6.html">logging</a></li><li class="navelem"><a class="el" href="error__monitor_8h.html">error_monitor.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

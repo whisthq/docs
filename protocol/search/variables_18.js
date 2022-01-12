@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['y_3311',['y',['../structWhistMouseWheelMessage.html#abf553852527eb98a28971050f309f30c',1,'WhistMouseWheelMessage::y()'],['../structWhistMouseMotionMessage.html#adf18f8fc1964bea50d90e710710dd4f5',1,'WhistMouseMotionMessage::y()'],['../structWhistMultigestureMessage.html#ad3c82e6c702c861ed4d8f67aa98ecde8',1,'WhistMultigestureMessage::y()'],['../structWhistYUVColor.html#a6f50df6de770dfed4506bcaa8f4fdb63',1,'WhistYUVColor::y()']]],
-  ['y_5fnonrel_3312',['y_nonrel',['../structMouseMotionAccumulation.html#a30694ffc525d4d5c8fc34a806e455aba',1,'MouseMotionAccumulation::y_nonrel()'],['../structWhistMouseMotionMessage.html#aa9f0ef9df613b9901c4e84a3f9d6f1d8',1,'WhistMouseMotionMessage::y_nonrel()']]],
-  ['y_5frel_3313',['y_rel',['../structMouseMotionAccumulation.html#a2694caa5e5928916a7b7647f4fe27f08',1,'MouseMotionAccumulation']]],
-  ['year_3314',['year',['../structLodePNGTime.html#a32b68342f39f3d38ba91a721b1149b8f',1,'LodePNGTime']]]
+  ['y_3714',['y',['../structWhistMouseWheelMessage.html#adace3b9b1b420da62a09f99de7309605',1,'WhistMouseWheelMessage::y()'],['../structWhistMouseMotionMessage.html#ade2e9fc2a99456fc6888c324bca64508',1,'WhistMouseMotionMessage::y()'],['../structWhistMultigestureMessage.html#a314d1437b3bcf4709868b8660090c5f1',1,'WhistMultigestureMessage::y()'],['../unionFileEventInfo.html#a7c2f61fd8d5d21937890a9f33b470d77',1,'FileEventInfo::y()'],['../structWhistYUVColor.html#a19784573e8a520f0e550040670c9d4ef',1,'WhistYUVColor::y()']]],
+  ['y_5fnonrel_3715',['y_nonrel',['../structMouseMotionAccumulation.html#a30694ffc525d4d5c8fc34a806e455aba',1,'MouseMotionAccumulation::y_nonrel()'],['../structWhistMouseMotionMessage.html#aa3f76ca2fff34baeb5caca83c5717a43',1,'WhistMouseMotionMessage::y_nonrel()']]],
+  ['y_5frel_3716',['y_rel',['../structMouseMotionAccumulation.html#a2694caa5e5928916a7b7647f4fe27f08',1,'MouseMotionAccumulation']]],
+  ['year_3717',['year',['../structLodePNGTime.html#a32b68342f39f3d38ba91a721b1149b8f',1,'LodePNGTime']]]
 ];

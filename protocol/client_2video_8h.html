@@ -82,6 +82,8 @@ $(document).ready(function(){initNavTree('client_2video_8h.html',''); initResiza
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">video.h File Reference</div>  </div>
@@ -91,47 +93,89 @@ $(document).ready(function(){initNavTree('client_2video_8h.html',''); initResiza
 <p>This file contains all code that interacts directly with receiving and.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="decode_8h_source.html">whist/video/codec/decode.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="avpacket__buffer_8h_source.html">whist/utils/avpacket_buffer.h</a>&gt;</code><br />
 </div>
 <p><a href="client_2video_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aa05932bcd2b8049280c9e3a9149f985f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#aa05932bcd2b8049280c9e3a9149f985f">RENDERING_IN_VIRTUAL_ENVIRONMENT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aa05932bcd2b8049280c9e3a9149f985f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a7c391c98414dbde70dd227b02996ab00"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structVideoContext.html">VideoContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a></td></tr>
+<tr class="separator:a7c391c98414dbde70dd227b02996ab00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a759f71f304c11873e67bf7cc3f2d08a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a759f71f304c11873e67bf7cc3f2d08a8">init_video</a> ()</td></tr>
-<tr class="memdesc:a759f71f304c11873e67bf7cc3f2d08a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the SDL video thread.  <a href="client_2video_8h.html#a759f71f304c11873e67bf7cc3f2d08a8">More...</a><br /></td></tr>
-<tr class="separator:a759f71f304c11873e67bf7cc3f2d08a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db18738906fd04329094890a035cd11"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a5db18738906fd04329094890a035cd11">receive_video</a> (<a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="memdesc:a5db18738906fd04329094890a035cd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8h.html#a5db18738906fd04329094890a035cd11">More...</a><br /></td></tr>
-<tr class="separator:a5db18738906fd04329094890a035cd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d6b8b70fbb92596ede52637c8b3282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a39d6b8b70fbb92596ede52637c8b3282">update_video</a> ()</td></tr>
-<tr class="memdesc:a39d6b8b70fbb92596ede52637c8b3282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate statistics about bitrate, I-Frame, etc. and request video update from the server.  <a href="client_2video_8h.html#a39d6b8b70fbb92596ede52637c8b3282">More...</a><br /></td></tr>
-<tr class="separator:a39d6b8b70fbb92596ede52637c8b3282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a3e0af9f1b7b7468019171307f97a2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a2a3e0af9f1b7b7468019171307f97a2f">init_video_renderer</a> ()</td></tr>
-<tr class="memdesc:a2a3e0af9f1b7b7468019171307f97a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the video renderer.  <a href="client_2video_8h.html#a2a3e0af9f1b7b7468019171307f97a2f">More...</a><br /></td></tr>
-<tr class="separator:a2a3e0af9f1b7b7468019171307f97a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31bb0ec0bca0c25284f57e357c6da8ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a31bb0ec0bca0c25284f57e357c6da8ab">render_video</a> ()</td></tr>
-<tr class="memdesc:a31bb0ec0bca0c25284f57e357c6da8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video frame (If any are available to render)  <a href="client_2video_8h.html#a31bb0ec0bca0c25284f57e357c6da8ab">More...</a><br /></td></tr>
-<tr class="separator:a31bb0ec0bca0c25284f57e357c6da8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120d323bd5860a23810ea5174a8f2f36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a120d323bd5860a23810ea5174a8f2f36">destroy_video</a> ()</td></tr>
-<tr class="memdesc:a120d323bd5860a23810ea5174a8f2f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the video thread and VideoContext data to exit.  <a href="client_2video_8h.html#a120d323bd5860a23810ea5174a8f2f36">More...</a><br /></td></tr>
-<tr class="separator:a120d323bd5860a23810ea5174a8f2f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a460fea5c8cd411b76d7b5c7e68ee0ede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a460fea5c8cd411b76d7b5c7e68ee0ede">set_video_active_resizing</a> (bool is_resizing)</td></tr>
-<tr class="memdesc:a460fea5c8cd411b76d7b5c7e68ee0ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global variable 'resizing' to true if the SDL window is being resized, else false.  <a href="client_2video_8h.html#a460fea5c8cd411b76d7b5c7e68ee0ede">More...</a><br /></td></tr>
-<tr class="separator:a460fea5c8cd411b76d7b5c7e68ee0ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c9432e82a29d685319fbc2725cd136"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136">init_video</a> ()</td></tr>
+<tr class="memdesc:ad2c9432e82a29d685319fbc2725cd136"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the video system. The video system will receive video packets, and render the video out to the window.  <a href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136">More...</a><br /></td></tr>
+<tr class="separator:ad2c9432e82a29d685319fbc2725cd136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea4d907c436a15fadf10105fea3e954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a8ea4d907c436a15fadf10105fea3e954">receive_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
+<tr class="memdesc:a8ea4d907c436a15fadf10105fea3e954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8h.html#a8ea4d907c436a15fadf10105fea3e954">More...</a><br /></td></tr>
+<tr class="separator:a8ea4d907c436a15fadf10105fea3e954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36642bb10a0e6def2d693135279e54d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a36642bb10a0e6def2d693135279e54d1">update_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:a36642bb10a0e6def2d693135279e54d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does any pending work the video context wants to do. (Including decoding frames, and calculating statistics)  <a href="client_2video_8h.html#a36642bb10a0e6def2d693135279e54d1">More...</a><br /></td></tr>
+<tr class="separator:a36642bb10a0e6def2d693135279e54d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video frame (If any are available to render)  <a href="client_2video_8h.html#ae91e2215c8c94bdb14b3c01430b8ca69">More...</a><br /></td></tr>
+<tr class="separator:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14321021ee450305fdb8c787a3e1accc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:a14321021ee450305fdb8c787a3e1accc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not a video frame has been rendered. (NOT including any "loading animation" frames) This can be false even after calling render_video, if there simply weren't enough packets yet or if the video is still being decoded.  <a href="client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc">More...</a><br /></td></tr>
+<tr class="separator:a14321021ee450305fdb8c787a3e1accc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be05a788c0ccc8513912da3dc7caf0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a9be05a788c0ccc8513912da3dc7caf0c">get_video_network_statistics</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:a9be05a788c0ccc8513912da3dc7caf0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets any networking statistics from the video.  <a href="client_2video_8h.html#a9be05a788c0ccc8513912da3dc7caf0c">More...</a><br /></td></tr>
+<tr class="separator:a9be05a788c0ccc8513912da3dc7caf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d344158f4b8ed1ba11af1a86d27789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#af1d344158f4b8ed1ba11af1a86d27789">destroy_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memdesc:af1d344158f4b8ed1ba11af1a86d27789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the video context.  <a href="client_2video_8h.html#af1d344158f4b8ed1ba11af1a86d27789">More...</a><br /></td></tr>
+<tr class="separator:af1d344158f4b8ed1ba11af1a86d27789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with receiving and. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md78"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md76"></a>
 processing video packets on the client.</h1>
-<h1><a class="anchor" id="autotoc_md79"></a>
+<h1><a class="anchor" id="autotoc_md77"></a>
 Usage</h1>
-<p>initVideo() gets called before any video packet can be received. The video packets are received as standard WhistPackets by ReceiveVideo(WhistPacket* packet), before being saved in a proper video frame format. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a120d323bd5860a23810ea5174a8f2f36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a120d323bd5860a23810ea5174a8f2f36">&#9670;&nbsp;</a></span>destroy_video()</h2>
+<p>NOTE: Only ONE thread can call a function on video_context at a time, unless a function says otherwise.</p>
+<p>VideoContext* video_context = <a class="el" href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136" title="This will initialize the video system. The video system will receive video packets,...">init_video()</a>;</p>
+<p>In one thread: update_video(video_context); receive_video(video_context, packet_1); update_video(video_context); update_video(video_context); receive_video(video_context, packet_2); update_video(video_context); update_video(video_context); receive_video(video_context, packet_3); update_video(video_context); update_video(video_context);</p>
+<p>In another thread: (NOTE: ONLY render_video is thread-safe. The rest of the functions are not) render_video(video_context); render_video(video_context); render_video(video_context); render_video(video_context);</p>
+<p>~~ Join both threads..</p>
+<p>destroy_video(video_context); </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aa05932bcd2b8049280c9e3a9149f985f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05932bcd2b8049280c9e3a9149f985f">&#9670;&nbsp;</a></span>RENDERING_IN_VIRTUAL_ENVIRONMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RENDERING_IN_VIRTUAL_ENVIRONMENT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a7c391c98414dbde70dd227b02996ab00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c391c98414dbde70dd227b02996ab00">&#9670;&nbsp;</a></span>VideoContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structVideoContext.html">VideoContext</a> <a class="el" href="structVideoContext.html">VideoContext</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="af1d344158f4b8ed1ba11af1a86d27789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d344158f4b8ed1ba11af1a86d27789">&#9670;&nbsp;</a></span>destroy_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,24 +183,85 @@ Usage</h1>
         <tr>
           <td class="memname">void destroy_video </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Free the video thread and VideoContext data to exit. </p>
+<p>Destroy the video context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">video_context</td><td>The video context to destroy </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a759f71f304c11873e67bf7cc3f2d08a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a759f71f304c11873e67bf7cc3f2d08a8">&#9670;&nbsp;</a></span>init_video()</h2>
+<a id="a9be05a788c0ccc8513912da3dc7caf0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be05a788c0ccc8513912da3dc7caf0c">&#9670;&nbsp;</a></span>get_video_network_statistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void init_video </td>
+          <td class="memname"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> get_video_network_statistics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets any networking statistics from the video. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">video_context</td><td>The video context</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Any networking statistics from the video context </dd></dl>
+
+</div>
+</div>
+<a id="a14321021ee450305fdb8c787a3e1accc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14321021ee450305fdb8c787a3e1accc">&#9670;&nbsp;</a></span>has_video_rendered_yet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_video_rendered_yet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether or not a video frame has been rendered. (NOT including any "loading animation" frames) This can be false even after calling render_video, if there simply weren't enough packets yet or if the video is still being decoded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">video_context</td><td>The video context that has potentially rendered a frame</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true iff a video frame has actually been rendered out to the SDL framebuffer. (NOT including any "loading animation" frames) </dd></dl>
+
+</div>
+</div>
+<a id="ad2c9432e82a29d685319fbc2725cd136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c9432e82a29d685319fbc2725cd136">&#9670;&nbsp;</a></span>init_video()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVideoContext.html">VideoContext</a>* init_video </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -164,41 +269,33 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Create the SDL video thread. </p>
+<p>This will initialize the video system. The video system will receive video packets, and render the video out to the window. </p>
+<dl class="section return"><dt>Returns</dt><dd>The new video context </dd></dl>
 
 </div>
 </div>
-<a id="a2a3e0af9f1b7b7468019171307f97a2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a3e0af9f1b7b7468019171307f97a2f">&#9670;&nbsp;</a></span>init_video_renderer()</h2>
+<a id="a8ea4d907c436a15fadf10105fea3e954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea4d907c436a15fadf10105fea3e954">&#9670;&nbsp;</a></span>receive_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int init_video_renderer </td>
+          <td class="memname">void receive_video </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the video renderer. </p>
-
-</div>
-</div>
-<a id="a5db18738906fd04329094890a035cd11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5db18738906fd04329094890a035cd11">&#9670;&nbsp;</a></span>receive_video()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">int32_t receive_video </td>
-          <td>(</td>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -206,16 +303,17 @@ Usage</h1>
 <p>Receive video packet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">packet</td><td>Packet received from the server, which gets stored as video packet with proper parameters</td></tr>
+    <tr><td class="paramname">video_context</td><td>The video context to give a video packet to</td></tr>
+    <tr><td class="paramname">packet</td><td>Packet as received from the server</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return -1 if failed to receive packet into video frame, else 0 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths. </dd></dl>
 
 </div>
 </div>
-<a id="a31bb0ec0bca0c25284f57e357c6da8ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31bb0ec0bca0c25284f57e357c6da8ab">&#9670;&nbsp;</a></span>render_video()</h2>
+<a id="ae91e2215c8c94bdb14b3c01430b8ca69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae91e2215c8c94bdb14b3c01430b8ca69">&#9670;&nbsp;</a></span>render_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,44 +321,26 @@ Usage</h1>
         <tr>
           <td class="memname">int render_video </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Render the video frame (If any are available to render) </p>
-
-</div>
-</div>
-<a id="a460fea5c8cd411b76d7b5c7e68ee0ede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a460fea5c8cd411b76d7b5c7e68ee0ede">&#9670;&nbsp;</a></span>set_video_active_resizing()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void set_video_active_resizing </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_resizing</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the global variable 'resizing' to true if the SDL window is being resized, else false. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">is_resizing</td><td>Boolean indicating whether or not the SDL window is being resized </td></tr>
+    <tr><td class="paramname">video_context</td><td>The video context that wants to render a frame</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>This function is thread-safe, and may be called in a way that overlaps other functions that use the vide context. </dd></dl>
 
 </div>
 </div>
-<a id="a39d6b8b70fbb92596ede52637c8b3282"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39d6b8b70fbb92596ede52637c8b3282">&#9670;&nbsp;</a></span>update_video()</h2>
+<a id="a36642bb10a0e6def2d693135279e54d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36642bb10a0e6def2d693135279e54d1">&#9670;&nbsp;</a></span>update_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,13 +348,23 @@ Usage</h1>
         <tr>
           <td class="memname">void update_video </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calculate statistics about bitrate, I-Frame, etc. and request video update from the server. </p>
+<p>Does any pending work the video context wants to do. (Including decoding frames, and calculating statistics) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">video_context</td><td>The video context to update</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths.</dd>
+<dd>
+In order for video to be responsive, this function <em>MUST</em> be called in a tight loop, at least once every millisecond. </dd></dl>
 
 </div>
 </div>

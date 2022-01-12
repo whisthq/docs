@@ -100,11 +100,11 @@ High-Level Overview</h1>
 <ul>
 <li><code>create_capture_device</code> from either <code>./whist/video/dxgicapture.c</code> or <code>./whist/video/x11capture.c</code> is called, the former is for Windows and the latter is for Linux. Then, <code>capture_screen</code> is called in <code>./server/main.c</code> to capture the screen.</li>
 <li><code>encoder_t</code> from <code>videoencode.c</code> will be used to encode the screenshot using h264, if needed. If Nvidia Capture SDK is being used (<code>USING_GPU_CAPTURE == true</code> and on linux), then the image will already be encoded upon capture, and this is not necessary.</li>
-<li>A <code>Frame*</code> is created and the members of the <code>Frame</code> struct is filled in, see <code>./server/main.c</code> for the code and <code>./whist/core/whist.h</code> for the <code>Frame</code> struct.</li>
-<li><code>broadcast_udp_packet_from_payload</code> from <code>./server/network.c</code>is called with the <code>Frame*</code> passed in. This will break-up the <code>Frame*</code> into hundreds of individual network packets.</li>
+<li>A <code>VideoFrame*</code> is created and the members of the <code><a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a></code> struct is filled in, see <code>./server/main.c</code> for the code and <code>./whist/core/whist_frame.h</code> for the <code><a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a></code> struct.</li>
+<li><code>broadcast_udp_packet_from_payload</code> from <code>./server/network.c</code> is called with the <code>VideoFrame*</code> passed in. This will break-up the <code>Frame*</code> into hundreds of individual network packets.</li>
 <li>On the client, these packets are received in <code>./client/main.c</code> and passed into <code>receive_video</code> in <code>./client/video.c</code>.</li>
-<li><code>receive_video</code> will receive video packets and will save them in a buffer (packet 17 will be stored at <code>buffer + PACKET_SIZE*(17-1)</code>, so that the packets go into their correct slot until the entire <code>Frame*</code> is recreated). <code>video.c</code> keeps track of the ID of the most recently rendered frame, ie ID 247. Once all of the packets of ID 248 are received, it will take the pointer to the beginning of the buffer and then render it. Each packet will contain the number of packets for the <code>Frame*</code>, so once one is received, the client will know when all of them have been received.</li>
-<li>Once a <code>Frame*</code> has been accumulated, <code>render_screen</code> in <code>./server/video.c</code> will trigger, and <code>video_decoder_decode</code> from <code>./whist/video/videodecode.c</code> will be called. Any cursor image will be rendered on-top, along with <code>sws_scale</code>'ing if the frame is not the same resolution as the client. Peruse <code>render_screen</code> for further details.</li>
+<li><code>receive_video</code> will receive video packets and will save them in a buffer (packet 17 will be stored at <code>buffer + PACKET_SIZE*(17-1)</code>, so that the packets go into their correct slot until the entire <code>VideoFrame*</code> is recreated). <code>video.c</code> keeps track of the ID of the most recently rendered frame, ie ID 247. Once all of the packets of ID 248 are received, it will take the pointer to the beginning of the buffer and then render it. Each packet will contain the number of packets for the <code>VideoFrame*</code>, so once one is received, the client will know when all of them have been received.</li>
+<li>Once a <code>VideoFrame*</code> has been accumulated, <code>render_screen</code> in <code>./server/video.c</code> will trigger, and <code>video_decoder_decode</code> from <code>./whist/video/videodecode.c</code> will be called. Any cursor image will be rendered on-top, along with <code>sws_scale</code>'ing if the frame is not the same resolution as the client. Peruse <code>render_screen</code> for further details.</li>
 <li>Finally, <code>SDL_RenderPresent</code> will be called, rendering the Frame.</li>
 <li>If no packet from the expected ID is received within a couple hundred milliseconds, or if a subset of packets have been received and it's been a couple hundred milliseconds since the last seen packet, then the <code>./client/video.c</code>protocol will send a <code>nack()</code> to the server in order to get a copy of the presumably dropped or missed packet. The server keeps the last couple <code>Frame*</code>'s in a buffer in order to respond to <code>nack()</code>'s.</li>
 </ul>
@@ -128,13 +128,18 @@ File Structure</h1>
 <div class="fragment"><div class="line">./protocol</div>
 <div class="line">├── client</div>
 <div class="line">│   ├── audio.c &lt;- Handle and play audio packets</div>
+<div class="line">│   ├── bitrate.c &lt;- Protocols for calculating adaptive bitrate</div>
+<div class="line">│   ├── client_statistic.c &lt;- Client-side metrics</div>
 <div class="line">│   ├── client_utils.c &lt;- cmdline options, among others</div>
 <div class="line">│   ├── handle_server_message.c &lt;- Handle server fcmsg&#39;s</div>
 <div class="line">│   ├── main.c &lt;- SDL Event loop, receive and categorize packets as fcmsg/audio/video</div>
+<div class="line">│   ├── native_window_utils_windows.c &lt;- Functions to modify SDL window on Windows</div>
+<div class="line">│   ├── native_window_utils_x11.c &lt;- Functions to modify SDL window for X11</div>
 <div class="line">│   ├── network.c &lt;- Functions to connect to server, and send_fcmsg</div>
 <div class="line">│   ├── sdl_event_handler.c &lt;- Handle SDL Events</div>
-<div class="line">│   ├── sdl_utils.c &lt;- Set window icon, resize handler</div>
 <div class="line">│   ├── sdlscreeninfo.c &lt;- Get monitor/window width/height functions</div>
+<div class="line">│   ├── sdl_utils.c &lt;- Set window icon, resize handler</div>
+<div class="line">│   ├── sync_packets.c &lt;- Syncs info betwen client/server including clipboard data, files, and bitrate</div>
 <div class="line">│   └── video.c &lt;- Handle and render video packets</div>
 <div class="line">├── whist</div>
 <div class="line">│   ├── audio</div>
@@ -151,18 +156,31 @@ File Structure</h1>
 <div class="line">│   │   └── x11_clipboard.c &lt;- Linux implementation of {get,set}_clipboard</div>
 <div class="line">│   ├── core</div>
 <div class="line">│   │   ├── whist.c &lt;- Various helpers</div>
-<div class="line">│   │   └── whistgetopt.c &lt;- Cross-platform getopt</div>
+<div class="line">│   │   └── whist_frame.c &lt;- VideoFrame and AudioFrame</div>
+<div class="line">│   │   ├── whistgetopt.c &lt;- Cross-platform getopt</div>
+<div class="line">│   │   └── whist_memory.c &lt;- Memory handling</div>
 <div class="line">│   ├── cursor</div>
 <div class="line">│   │   ├── linuxcursor.c &lt;- get_current_cursor for Linux</div>
 <div class="line">│   │   └── windowscursor.c &lt;- get_current_cursor for Windows</div>
+<div class="line">│   ├── file</div>
+<div class="line">│   │   ├── file_drop.c &lt;- Handles dropping a file into window</div>
+<div class="line">│   │   └── file_synchronizer.c.c &lt;- Sync file transfer between client and server</div>
 <div class="line">│   ├── input</div>
 <div class="line">│   │   ├── input.c &lt;- Trigger keyboard/mouse press and sync, wraps raw input_driver.h calls</div>
 <div class="line">│   │   ├── input_driver.h -&gt; The following three c files share this h file</div>
 <div class="line">│   │   ├── winapi_input_driver.c &lt;- Windows keyboard/mouse-press code</div>
 <div class="line">│   │   ├── uinput_input_driver.c &lt;- Linux uinput keyboard/mouse-press/touchpad code</div>
 <div class="line">│   │   └── xtest_input_driver.c &lt;- Linux X11 keyboard/mouse-press code</div>
+<div class="line">│   ├── logging</div>
+<div class="line">│   │   ├── error_monitor.c &lt;- Error reporting</div>
+<div class="line">│   │   └── logging.c.c &lt;- Logging tools</div>
+<div class="line">│   │   └── log_statistic.c.c &lt;- Logging tools for repeated stats</div>
 <div class="line">│   ├── network</div>
 <div class="line">│   │   └── network.c &lt;- send udp/tcp/http packets.</div>
+<div class="line">│   │   └── ringbuffer.c &lt;- Ring buffer for receiving audio/video</div>
+<div class="line">│   │   └── tcp.c &lt;- Sending tcp packets</div>
+<div class="line">│   │   └── throttle.c &lt;- Network throttler</div>
+<div class="line">│   │   └── udp.c &lt;- Sending udp packets</div>
 <div class="line">│   ├── utils</div>
 <div class="line">│   │   ├── aes.c &lt;- Generic encrypt/decrypt of network packets</div>
 <div class="line">│   │   ├── clock.c &lt;- Clock</div>
@@ -177,23 +195,34 @@ File Structure</h1>
 <div class="line">│   │   ├── window_name.c &lt;- Linux Getter for the window name of the application</div>
 <div class="line">│   │   └── windows_utils.c &lt;- Log-in past windows start screen</div>
 <div class="line">│   └── video</div>
-<div class="line">│       ├── cudacontext.c &lt;- Set up CUDA context for NVIDIA encoder</div>
+<div class="line">│       ├── capture</div>
+<div class="line">│       │   └── linuxcapture.c &lt;- Capture screen on linux</div>
+<div class="line">│       │   └── nvidiacaapture.c &lt;- Screen capture via Nvidia FBC SDK</div>
+<div class="line">│       │   └── windowscapture.c &lt;- Capture screen on Windows</div>
+<div class="line">│       │   └── x11capture.c &lt;- Capture screen using X11</div>
+<div class="line">│       ├── codec</div>
+<div class="line">│       │   └── decode.c  &lt;- Decode image</div>
+<div class="line">│       │   └── encode.c &lt;- Compress image using h264/h265</div>
+<div class="line">│       │   └── ffmpeg_encode.c  &lt;- FFmpeg encoding</div>
+<div class="line">│       │   └── nvidia_encode.c &lt;- NVIDIA encoding</div>
+<div class="line">│       ├── cudacontext.c &lt;- Set up CUDA context for Nvidia encoder</div>
 <div class="line">│       ├── dxgicapture.c &lt;- Capture screen using DXGI</div>
 <div class="line">│       ├── nvidia-linux</div>
 <div class="line">│       │   └── NvFBCUtils.c (NVDA Header)</div>
 <div class="line">│       ├── transfercapture.c &lt;- Implements CPU or CUDA transfer of frame from device to encoder</div>
-<div class="line">│       ├── videodecode.c &lt;- Decompress image using h264/h265</div>
-<div class="line">│       ├── videoencode.c &lt;- Compress image using h264/h265</div>
-<div class="line">│       ├── x11capture.c &lt;- Capture screen using X11</div>
 <div class="line">│       └── x11nvidiacapture.c &lt;- Capture h264/h265 compressed screen with NvidiaCaptureSDK</div>
-<div class="line">└── server</div>
-<div class="line">|    ├── client.c &lt;- Handle multiclient messages</div>
-<div class="line">|    ├── handle_client_message.c &lt;- Handle client fmsg&#39;s</div>
-<div class="line">|    ├── main.c &lt;- Initialize server, receive packets and pass to where it needs to go</div>
-<div class="line">|    ├── network.c &lt;- Networking code for multiclient</div>
+<div class="line">├── server</div>
+<div class="line">│   ├── audio.c &lt;- Send audio</div>
+<div class="line">│   ├── client.c &lt;- Handle multiclient messages</div>
+<div class="line">│   ├── handle_client_message.c &lt;- Handle client fmsg&#39;s</div>
+<div class="line">│   ├── main.c &lt;- Initialize server, receive packets and pass to where it needs to go</div>
+<div class="line">│   ├── network.c &lt;- Networking code for multiclient</div>
+<div class="line">│   ├── parse_args.c &lt;- Arg parsing for server</div>
+<div class="line">│   ├── server_statistic.c &lt;- Server-side metrics</div>
+<div class="line">│   └── video.c &lt;- Send video</div>
 <div class="line">└── test</div>
 <div class="line">    ├── images &lt;- images for unit testing</div>
-<div class="line">    └── ProtocolTest.cpp &lt;- tests code in whist module</div>
+<div class="line">    └── protocol_test.cpp &lt;- tests code in whist/ module</div>
 </div><!-- fragment --><p>The above files are fairly static. If you add or remove a file, or change what a file does, please update this directory so we can keep track of it all!</p>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Development</h1>
@@ -203,9 +232,8 @@ Installation of Dependencies</h2>
 <p>On all three platforms, you will need to install and log into the <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html">AWS CLI</a> before you can build the protocol. On command line, you should run <code>aws configure</code>, and pass in your AWS Access Key ID, AWS Secret Access Key, Region of us-east-1, and default output format.</p>
 <h3><a class="anchor" id="autotoc_md9"></a>
 Linux</h3>
-<p>If you are using a rolling release distro, e.g. Arch, then you can likely install the newest version using pacman or your distro's package manager. If you are running 20.04 the version in the Ubuntu package lists is fine. If you are running 18.04 the package lists only has 3.11. You can install the newest version from the developer with:</p>
-<div class="fragment"><div class="line">sudo snap install cmake --classic</div>
-</div><!-- fragment --><p>You can install cppcheck via your package manager, e.g. <code>sudo apt-get install cppcheck</code>.</p>
+<p>If you are using a rolling release distro, e.g. Arch, then you can likely install the newest version using pacman or your distro's package manager. If you are running 20.04 the version in the Ubuntu package lists is fine, otherwise you may need to install the <code>--classic</code> version with <code>snap</code>.</p>
+<p>You can install cppcheck via your package manager, e.g. <code>sudo apt-get install cppcheck</code>.</p>
 <p>Finally, run <code>./setup-linux-build-environment.sh</code> to install the system dependencies needed by the protocol.</p>
 <h3><a class="anchor" id="autotoc_md10"></a>
 MacOS</h3>
@@ -224,7 +252,7 @@ Windows</h4>
 <p>After doing this all this, you might have to restart your terminal or IDE, after which you'll be able to build using CMake.</p>
 <h2><a class="anchor" id="autotoc_md14"></a>
 Building the Protocol</h2>
-<p>In order to save time recompiling dependencies repeatedly (and use CI to update them), we store some precompiled libraries in <a href="https://s3.console.aws.amazon.com/s3/buckets/whist-protocol-shared-libs?region=us-east-1&amp;tab=objects">AWS S3</a>. Downloading them will require the AWS CLI to be installed and set up on your machine. Instructions for installing and configuring awscli can be found above.</p>
+<p>In order to save time recompiling dependencies repeatedly (and use CI to update them), we store some precompiled libraries in <a href="https://s3.console.aws.amazon.com/s3/buckets/fractal-protocol-shared-libs?region=us-east-1&amp;tab=objects">AWS S3</a>. Downloading them will require the AWS CLI to be installed and set up on your machine. Instructions for installing and configuring awscli can be found above.</p>
 <p>If you want to manually retrieve the binaries yourself (Not Recommended), download the files from S3 into the proper locations (see <code>download-binaries.sh</code>), and <em>then</em> run <code>cmake</code> with the <code>-D DOWNLOAD_BINARIES=OFF</code> option. The order of these operations is important.</p>
 <p>To compile on MacOS/Linux, run:</p>
 <div class="fragment"><div class="line">mkdir build</div>
@@ -240,12 +268,12 @@ Building the Protocol</h2>
 Running the Protocol</h2>
 <p>From the build directory (usually <code>/build</code>), you can simply run:</p>
 <div class="fragment"><div class="line"># Windows:</div>
-<div class="line">fclient IP_ADDRESS [OPTION]...</div>
-<div class="line">fserver [OPTION]...</div>
+<div class="line">wclient IP_ADDRESS [OPTION]...</div>
+<div class="line">wserver [OPTION]...</div>
 <div class="line"> </div>
 <div class="line"># MacOS/Linux:</div>
-<div class="line">./fclient IP_ADDRESS [OPTION]...</div>
-<div class="line">./fserver [OPTION]...</div>
+<div class="line">./wclient IP_ADDRESS [OPTION]...</div>
+<div class="line">./wserver [OPTION]...</div>
 </div><!-- fragment --><p>For the specific option flags for the client, see the <a class="el" href="md_client_README.html">client-specific README</a>. If you want to see the specific option flags for the server, you're straight out of luck.</p>
 <p>For a useful workflow for server development on Linux, see the <a class="el" href="md_server_README.html">server-specific README</a>.</p>
 <p><b>Important:</b> When running the protocol, please ensure that the client and server are both running on the exact same git commit. If you run into issues, check <code>git log</code> on both client and server to ensure the top git hash matches, and ensure that both sides have been compiled.</p>
@@ -268,9 +296,22 @@ Linux CLI</h3>
 <p>A helpful TUI for configuring the build is <code>ccmake</code>. To use it, run <code>ccmake .</code> in the root of the protocol repo. You will initially see a blank screen because no cache has been built yet. Hit <code>c</code> to configure. This will populate the cache and show you a page with various settings. The setting you will likely care about is <code>CMAKE_BUILD_TYPE</code> which is one of <code>Debug</code> or <code>Release</code>.</p>
 <p>Next hit <code>c</code> again to reconfigure with your possibly new settings, then hit <code>g</code> to generate the makefile. This makefile has all of the build targets, including <code>WhistClient</code>, <code>WhistServer</code> and all of our libraries. It also includes CMake targets to clean, edit, and rebuild the cache.</p>
 <p>Only running <code>make</code> defaults to building WhistClient and WhistServer if you set both of these to ON in your configuration. GCC only supports one type of build at a time, so if you are currently building Release, but want to build Debug, you need to edit the cache and regenerate the makefile.</p>
+<p>When making <code>Debug</code> builds, it is often desirable to run them with sanitizers - these are compiler tools which add extra run-time checks into the code to find common errors and report them. Enable one or more of these with the <code>SANITIZE</code> cmake option.</p>
+<ul>
+<li><code>address</code> (ASan): finds memory errors like array overruns and use-after-free, and also reports on memory leaks once the program ends.</li>
+<li><code>undefined</code> (UBSan): finds undefined behaviour like integer overflow and misaligned pointers.</li>
+<li><code>thread</code> (TSan): finds data-races, including unsafe use of mutexes and file descriptors across threads.</li>
+<li><code>OFF</code>: disable all (set to clear a previously-cached value).</li>
+<li>Other options also exist, consult the documentation for the compiler you are using:<ul>
+<li><a href="https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html#index-fsanitize_003daddress">gcc instrumentation options</a>.</li>
+<li><a href="https://clang.llvm.org/docs/UsersManual.html#controlling-code-generation">clang code generation operations</a>.</li>
+</ul>
+</li>
+</ul>
+<p>These can be combined in the <code>SANITIZER</code> option by separating them with <code>+</code>, though some combinations (such as TSan and ASan together) are not supported. CI currently runs tests with <code>address+undefined</code> set, and will fail if they generate any errors.</p>
 <h2><a class="anchor" id="autotoc_md21"></a>
 Further documentation</h2>
-<p>We also use Doxygen in this repository. The Doxy file is <code>docs/Doxyfile</code>. To generate it, you should first install <code>doxygen</code>, and then run <code>doxygen Doxyfile</code>. This will generate the docs and put them in <code>docs/html</code> and <code>docs/latex</code>. You can view the html docs by opening the index.html page with a web browser. We keep the docs <code>.gitignore</code>d to avoid clutter on the repository. They are also published at <code>docs.whist.com</code>, but updating the documentation with CI is still a <a href="https://github.com/whist/whist/issues/1976">TODO</a>.</p>
+<p>We also use Doxygen in this repository. The Doxy file is <code>docs/Doxyfile</code>. To generate it, you should first install <code>doxygen</code>, and then run <code>doxygen Doxyfile</code>. This will generate the docs and put them in <code>docs/html</code> and <code>docs/latex</code>. You can view the html docs by opening the index.html page with a web browser. We keep the docs <code>.gitignore</code>d to avoid clutter on the repository. They are also published at <code>docs.whist.com</code>.</p>
 <h1><a class="anchor" id="autotoc_md22"></a>
 CI &amp; CD</h1>
 <h3><a class="anchor" id="autotoc_md23"></a>
@@ -280,7 +321,7 @@ Checks &amp; Tests</h3>
 <p>To see the warnings in context go to the Actions tab, click on your PR/push that launched the action, select an OS it ran on and then select build. This expands the build log, where you can clearly see the warnings/errors generated.</p>
 <h3><a class="anchor" id="autotoc_md24"></a>
 Unit Testing</h3>
-<p>The protocol currently uses gtest to create and execute unit tests for the <code>protocol</code> repository. To add tests for the <code>protocol</code> module, add tests to the <code>ProtocolTest.cpp</code> file in the test folder.</p>
+<p>The protocol currently uses gtest to create and execute unit tests for the <code>protocol</code> repository. To add tests for the <code>protocol</code> module, add tests to the <code>protocol_test.cpp</code> file in the test folder.</p>
 <p>To run all unit tests, recompile the protocol by going into the <code>protocol/build</code> directory and running <code>make -j</code>. This is assuming you have already ran <code>cmake -S .. -B .</code> from the Building the Protocol section. If you have not done that, do so before running <code>make -j</code>.</p>
 <p>Next, run <code>cd test</code>. Now:</p>
 <p>To run the unit tests for the protocol, run <code>./WhistProtocolTest</code></p>
@@ -323,15 +364,16 @@ clang-tidy</h2>
 <p>Macro constants will NOT be checked by this script because of the variety of implementations of <code>#define</code>. Please be sure to follow appropriate standards for <code>#define</code>s when committing code.</p>
 <h2><a class="anchor" id="autotoc_md29"></a>
 Logz.io</h2>
-<p>We currently use logz.io to store our logs. To get the logs for a session_id, navigate to the <code>whist/protocol</code> directory, then type in: <code>python3 logs-to-text.py &lt;&lt;sesion_id&gt;&gt;</code> where <code>&lt;&lt;session_id&gt;&gt;</code> is the id of the currently running session.</p>
+<p>We currently use Logz.io to store our logs. To get the logs for a session_id, navigate to the <code>whist/protocol</code> directory, then type in: <code>python3 logz-to-text.py &lt;&lt;sesion_id&gt;&gt;</code> where <code>&lt;&lt;session_id&gt;&gt;</code> is the id of the currently running session.</p>
 <p>This will output two files:</p>
 <ol type="1">
-<li><code>&lt;&lt;session_id&gt;&gt;-client.txt</code>: These are the sorted logs for the client from that session_id</li>
-<li><code>&lt;&lt;session_id&gt;&gt;-server.txt</code>: These are the sorted logs for the server from that session_id</li>
+<li><code>&lt;&lt;session_id&gt;&gt;-client-&lt;&lt;account&gt;&gt;.txt</code>: These are the sorted logs for the client from that session_id</li>
+<li><code>&lt;&lt;session_id&gt;&gt;-server-&lt;&lt;account&gt;&gt;.txt</code>: These are the sorted logs for the server from that session_id</li>
 </ol>
-<p>You will need an logz.io API key to use this. Please contact Phil to get this or to get an admin account so you can generate your own. After this, set an environment variable "LOGZ_IO_API_KEY" to your API key via:</p>
-<p><code>export LOGZ_IO_API_KEY=&lt;&lt;your api key&gt;&gt;</code></p>
-<p>Note: logz.io currently only retains logs for 5 days, as of 10/29/2021. That said, this will only return the logs from 5 days ago. If this changes, please modify the <code>RETENTION_PERIOD_DAYS</code> constant in the top of <code>logs-to-text.py</code> to reflect this change. </p>
+<p>Where <code>&lt;&lt;account&gt;&gt;</code> is a logz_io account (prod, dev, staging, base).</p>
+<p>In addition, you can choose the download destination via the <code>LOGS_DOWNLOAD_FOLDER</code> environment variable. This determines the destination folder to download the logs. Importantly, this folder is RELATIVE to the protocol folder you are executing the script from.</p>
+<p>If this is not set, it will default to downloading the log files to the protocol directory.</p>
+<p>Note: logz.io currently only retains logs for 7 days, as of 10/29/2021. That said, this will only return the logs from 5 days ago. If this changes, please modify the <code>RETENTION_PERIOD_DAYS</code> constant in the top of <code>logz-to-text.py</code> to reflect this change. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

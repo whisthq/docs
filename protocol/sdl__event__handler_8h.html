@@ -96,61 +96,62 @@ $(document).ready(function(){initNavTree('sdl__event__handler_8h.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0174a28e7af130d71bc1fbc09695fbfa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8h.html#a0174a28e7af130d71bc1fbc09695fbfa">try_handle_sdl_event</a> (void)</td></tr>
-<tr class="memdesc:a0174a28e7af130d71bc1fbc09695fbfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops latest client-side SDL event, if there is one, and handles the event, on the client-side.  <a href="sdl__event__handler_8h.html#a0174a28e7af130d71bc1fbc09695fbfa">More...</a><br /></td></tr>
-<tr class="separator:a0174a28e7af130d71bc1fbc09695fbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66ddd1c4bf7788031a36578e95ad1b94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8h.html#a66ddd1c4bf7788031a36578e95ad1b94">handle_sdl_event</a> (SDL_Event *event)</td></tr>
-<tr class="memdesc:a66ddd1c4bf7788031a36578e95ad1b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles a client-side SDL event, on the client-side.  <a href="sdl__event__handler_8h.html#a66ddd1c4bf7788031a36578e95ad1b94">More...</a><br /></td></tr>
-<tr class="separator:a66ddd1c4bf7788031a36578e95ad1b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec180d39ab3875c94b32e82fad5e14d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8h.html#a5ec180d39ab3875c94b32e82fad5e14d">sdl_handle_events</a> ()</td></tr>
+<tr class="memdesc:a5ec180d39ab3875c94b32e82fad5e14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the SDL event queue, and handles all of the pending events. Calling this function repeatedly is necessary, otherwise "Application not responding" or a Mac beachball may appear.  <a href="sdl__event__handler_8h.html#a5ec180d39ab3875c94b32e82fad5e14d">More...</a><br /></td></tr>
+<tr class="separator:a5ec180d39ab3875c94b32e82fad5e14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e088f546ed4cb02e0b133921c4f2b52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8h.html#a4e088f546ed4cb02e0b133921c4f2b52">sdl_pending_audio_device_update</a> ()</td></tr>
+<tr class="memdesc:a4e088f546ed4cb02e0b133921c4f2b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function will let you know if an audio device has been plugged in or unplugged since the last time you called this function.  <a href="sdl__event__handler_8h.html#a4e088f546ed4cb02e0b133921c4f2b52">More...</a><br /></td></tr>
+<tr class="separator:a4e088f546ed4cb02e0b133921c4f2b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains client-specific wrappers to low-level network. </p>
-<p>Copyright 2021 Whist Technologies, Inc.</p>
-<h1><a class="anchor" id="autotoc_md62"></a>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<h1><a class="anchor" id="autotoc_md60"></a>
 functions.</h1>
-<h1><a class="anchor" id="autotoc_md63"></a>
+<h1><a class="anchor" id="autotoc_md61"></a>
 Usage</h1>
-<p>handleSDLEvent() must be called on any SDL event that occurs. Any action trigged an SDL event must be triggered in <a class="el" href="sdl__event__handler_8c.html" title="This file contains client-specific wrappers to low-level network.">sdl_event_handler.c</a> </p>
+<p>handleSDLEvent() must be called on any SDL event that occurs. Any action trigged an SDL event must be triggered in <a class="el" href="sdl__event__handler_8c.html" title="This file contains client-specific wrappers to low-level network.">sdl_event_handler.c</a></p>
+<p>TODO: Combine this with <a class="el" href="sdl__utils_8h.html" title="This file contains the code to create and destroy SDL windows on the.">sdl_utils.h</a> in some way </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a66ddd1c4bf7788031a36578e95ad1b94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66ddd1c4bf7788031a36578e95ad1b94">&#9670;&nbsp;</a></span>handle_sdl_event()</h2>
+<a id="a5ec180d39ab3875c94b32e82fad5e14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec180d39ab3875c94b32e82fad5e14d">&#9670;&nbsp;</a></span>sdl_handle_events()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int handle_sdl_event </td>
+          <td class="memname">bool sdl_handle_events </td>
           <td>(</td>
-          <td class="paramtype">SDL_Event *&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handles a client-side SDL event, on the client-side. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
-<a id="a0174a28e7af130d71bc1fbc09695fbfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0174a28e7af130d71bc1fbc09695fbfa">&#9670;&nbsp;</a></span>try_handle_sdl_event()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int try_handle_sdl_event </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pops latest client-side SDL event, if there is one, and handles the event, on the client-side. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 if no SDL event is available or an error occurs, 0 on success </dd></dl>
+<p>Flushes the SDL event queue, and handles all of the pending events. Calling this function repeatedly is necessary, otherwise "Application not responding" or a Mac beachball may appear. </p>
+<dl class="section return"><dt>Returns</dt><dd>True on success, False on failure</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function call MAY occasionally hang for an indefinitely long time. To see an example of this, simply drag the window on MSWindows, or hold down the minimize button on Mac. To see more information on this issue, and my related rant, go to <a href="https://github.com/libsdl-org/SDL/issues/1059">https://github.com/libsdl-org/SDL/issues/1059</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4e088f546ed4cb02e0b133921c4f2b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e088f546ed4cb02e0b133921c4f2b52">&#9670;&nbsp;</a></span>sdl_pending_audio_device_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sdl_pending_audio_device_update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The function will let you know if an audio device has been plugged in or unplugged since the last time you called this function. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if there's been an audio device update since the last time you called this function, False otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is thread-safe with any other sdl function call. </dd></dl>
 
 </div>
 </div>

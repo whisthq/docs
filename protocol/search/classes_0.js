@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['audiocontext_1948',['AudioContext',['../structAudioContext.html',1,'']]],
-  ['audiodecoder_1949',['AudioDecoder',['../structAudioDecoder.html',1,'']]],
-  ['audiodevice_1950',['AudioDevice',['../structAudioDevice.html',1,'']]],
-  ['audioencoder_1951',['AudioEncoder',['../structAudioEncoder.html',1,'']]],
-  ['audioframe_1952',['AudioFrame',['../structAudioFrame.html',1,'']]]
+  ['_5fwhist_5fserver_5fconfig_2204',['_whist_server_config',['../struct__whist__server__config.html',1,'']]],
+  ['_5fwhist_5fserver_5fstate_2205',['_whist_server_state',['../struct__whist__server__state.html',1,'']]]
 ];

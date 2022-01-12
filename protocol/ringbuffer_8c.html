@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('ringbuffer_8c.html',''); initResizable
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="ringbuffer_8h_source.html">ringbuffer.h</a>&quot;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="fec_8h_source.html">whist/utils/fec.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -101,6 +102,8 @@ Macros</h2></td></tr>
 <tr class="separator:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a035f1eb6db73cb497f6de67cad4ade33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33">MAX_UNORDERED_PACKETS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a035f1eb6db73cb497f6de67cad4ade33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bcbf05a79de1a8a42492a8e5169c22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ae2bcbf05a79de1a8a42492a8e5169c22">MAX_PACKETS</a>&#160;&#160;&#160;(<a class="el" href="fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4">get_num_fec_packets</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>, <a class="el" href="ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>), <a class="el" href="whist_8h.html#a9671b09366aac047f771b3d49b3b99a4">MAX_FEC_RATIO</a>))</td></tr>
+<tr class="separator:ae2bcbf05a79de1a8a42492a8e5169c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf06ce5e31c557cd5e3342811904c911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911">MAX_PACKET_NACKS</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:adf06ce5e31c557cd5e3342811904c911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1394526c365da140a30aa8d28887fda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ae1394526c365da140a30aa8d28887fda">MAX_NACK_AVG_MBPS</a>&#160;&#160;&#160;2200000</td></tr>
@@ -112,38 +115,39 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aaae4a29416ec3cb8ae72b86ce57f3638"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#aaae4a29416ec3cb8ae72b86ce57f3638">reset_ring_buffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
 <tr class="separator:aaae4a29416ec3cb8ae72b86ce57f3638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fc73c796f6b71709d750033c1b58b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a1fc73c796f6b71709d750033c1b58b63">init_frame</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int num_indices)</td></tr>
-<tr class="separator:a1fc73c796f6b71709d750033c1b58b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d3111ad316a218e1f16161844501e7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a9d3111ad316a218e1f16161844501e7a">allocate_frame_buffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *frame_data)</td></tr>
-<tr class="separator:a9d3111ad316a218e1f16161844501e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c50544e0beb60fdcf23b5b30e9a34c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ab9c50544e0beb60fdcf23b5b30e9a34c">destroy_frame_buffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *frame_data)</td></tr>
-<tr class="separator:ab9c50544e0beb60fdcf23b5b30e9a34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee7588c05580e80dd58f21f0c7b8765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a6ee7588c05580e80dd58f21f0c7b8765">init_frame</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int num_original_indices, int num_fec_indices)</td></tr>
+<tr class="separator:a6ee7588c05580e80dd58f21f0c7b8765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac90027614c72dd29204b9f884e0a0493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ac90027614c72dd29204b9f884e0a0493">reset_bitrate_stat_members</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
 <tr class="separator:ac90027614c72dd29204b9f884e0a0493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb417345ec29cff5507ee356644fe579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#acb417345ec29cff5507ee356644fe579">init_ring_buffer</a> (<a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a> type, int ring_buffer_size, <a class="el" href="ringbuffer_8h.html#a72e75176c308e3d89a2f3d8b7d6d6158">NackPacketFn</a> <a class="el" href="client__utils_8h.html#ad3e9e1825d7ccb7641d84ffcafad5ec9">nack_packet</a>)</td></tr>
-<tr class="memdesc:acb417345ec29cff5507ee356644fe579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a ring buffer of the specified size and type.  <a href="ringbuffer_8c.html#acb417345ec29cff5507ee356644fe579">More...</a><br /></td></tr>
-<tr class="separator:acb417345ec29cff5507ee356644fe579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04705cc4b1c966ce7556662c365dd77b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a04705cc4b1c966ce7556662c365dd77b">init_ring_buffer</a> (<a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int ring_buffer_size, <a class="el" href="ringbuffer_8h.html#aff4834501397a369e48ba31168000123">NackPacketFn</a> <a class="el" href="client__utils_8h.html#adf93038815981906d156fc5d2e00b2be">nack_packet</a>)</td></tr>
+<tr class="memdesc:a04705cc4b1c966ce7556662c365dd77b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a ring buffer of the specified size and type.  <a href="ringbuffer_8c.html#a04705cc4b1c966ce7556662c365dd77b">More...</a><br /></td></tr>
+<tr class="separator:a04705cc4b1c966ce7556662c365dd77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5">get_frame_at_id</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
 <tr class="memdesc:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrives the frame at the given ID in the ring buffer.  <a href="ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5">More...</a><br /></td></tr>
 <tr class="separator:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4415bb2d50c63ca97a0eafa97964188d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a4415bb2d50c63ca97a0eafa97964188d">reset_frame</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *frame_data)</td></tr>
 <tr class="memdesc:a4415bb2d50c63ca97a0eafa97964188d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the frame, both metadata and frame buffer.  <a href="ringbuffer_8c.html#a4415bb2d50c63ca97a0eafa97964188d">More...</a><br /></td></tr>
 <tr class="separator:a4415bb2d50c63ca97a0eafa97964188d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc37000ecd47712d4a8cc8e83867a60d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#adc37000ecd47712d4a8cc8e83867a60d">set_rendering</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
-<tr class="memdesc:adc37000ecd47712d4a8cc8e83867a60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. The ring buffer will not write to the currently rendering frame.  <a href="ringbuffer_8c.html#adc37000ecd47712d4a8cc8e83867a60d">More...</a><br /></td></tr>
-<tr class="separator:adc37000ecd47712d4a8cc8e83867a60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f7e1e295ea3891d8b9b342fab21db03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a2f7e1e295ea3891d8b9b342fab21db03">receive_packet</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="memdesc:a2f7e1e295ea3891d8b9b342fab21db03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a packet to the ring buffer, and initialize the corresponding frame if necessary. Also nacks for missing packets or frames.  <a href="ringbuffer_8c.html#a2f7e1e295ea3891d8b9b342fab21db03">More...</a><br /></td></tr>
-<tr class="separator:a2f7e1e295ea3891d8b9b342fab21db03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85adc5260440db047e54bd933c1b2f78"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a85adc5260440db047e54bd933c1b2f78">get_framebuffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *current_frame)</td></tr>
+<tr class="separator:a85adc5260440db047e54bd933c1b2f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22897ddd74ba2d11192502d98a4c7227"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a22897ddd74ba2d11192502d98a4c7227">is_ready_to_render</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
+<tr class="memdesc:a22897ddd74ba2d11192502d98a4c7227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. The ring buffer will not write to the currently rendering frame.  <a href="ringbuffer_8c.html#a22897ddd74ba2d11192502d98a4c7227">More...</a><br /></td></tr>
+<tr class="separator:a22897ddd74ba2d11192502d98a4c7227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a4ef47e30f9faabce38d4df154494a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a29a4ef47e30f9faabce38d4df154494a">set_rendering</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
+<tr class="memdesc:a29a4ef47e30f9faabce38d4df154494a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. The ring buffer will not write to the currently rendering frame.  <a href="ringbuffer_8c.html#a29a4ef47e30f9faabce38d4df154494a">More...</a><br /></td></tr>
+<tr class="separator:a29a4ef47e30f9faabce38d4df154494a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a8c1cc512edc5afc5174f2e2693b3bfae">receive_packet</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
+<tr class="memdesc:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a packet to the ring buffer, and initialize the corresponding frame if necessary. Also nacks for missing packets or frames.  <a href="ringbuffer_8c.html#a8c1cc512edc5afc5174f2e2693b3bfae">More...</a><br /></td></tr>
+<tr class="separator:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06579df66400790c9af75c806b484aba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a06579df66400790c9af75c806b484aba">nack_single_packet</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int index)</td></tr>
 <tr class="separator:a06579df66400790c9af75c806b484aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73e418ff63c607877e2cf30c280003b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a73e418ff63c607877e2cf30c280003b8">nack_bitarray_packets</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int start_index, <a class="el" href="structBitArray.html">BitArray</a> *bit_arr)</td></tr>
 <tr class="separator:a73e418ff63c607877e2cf30c280003b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0048b36c977f38b40533fa7eea0f974c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a0048b36c977f38b40533fa7eea0f974c">nack_missing_packets_up_to_index</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *frame_data, int end_index, int max_packets_to_nack)</td></tr>
 <tr class="separator:a0048b36c977f38b40533fa7eea0f974c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33faf8c99a7bcd3260eb86367ce9b7ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a33faf8c99a7bcd3260eb86367ce9b7ad">try_nacking</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double <a class="el" href="client_2video_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a>)</td></tr>
-<tr class="memdesc:a33faf8c99a7bcd3260eb86367ce9b7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">If any packets are still missing, and it's been too long, try nacking for them. Ideally, this gets called quite rapidly, it has internal timers to throttle nacks. The more rapidly the better, just need to balance CPU usage, 5-10ms should be fine.  <a href="ringbuffer_8c.html#a33faf8c99a7bcd3260eb86367ce9b7ad">More...</a><br /></td></tr>
-<tr class="separator:a33faf8c99a7bcd3260eb86367ce9b7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537f83ad6061d7205282ec209d66d9d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a537f83ad6061d7205282ec209d66d9d5">try_nacking</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double <a class="el" href="client_2video_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a>)</td></tr>
+<tr class="memdesc:a537f83ad6061d7205282ec209d66d9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If any packets are still missing, and it's been too long, try nacking for them. Ideally, this gets called quite rapidly, it has internal timers to throttle nacks. The more rapidly the better, just need to balance CPU usage, 5-10ms should be fine.  <a href="ringbuffer_8c.html#a537f83ad6061d7205282ec209d66d9d5">More...</a><br /></td></tr>
+<tr class="separator:a537f83ad6061d7205282ec209d66d9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af514843307356fd516b1a96211c9d986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#af514843307356fd516b1a96211c9d986">destroy_ring_buffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
 <tr class="memdesc:af514843307356fd516b1a96211c9d986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the ring buffer and all its constituent frames.  <a href="ringbuffer_8c.html#af514843307356fd516b1a96211c9d986">More...</a><br /></td></tr>
 <tr class="separator:af514843307356fd516b1a96211c9d986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,6 +209,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae2bcbf05a79de1a8a42492a8e5169c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2bcbf05a79de1a8a42492a8e5169c22">&#9670;&nbsp;</a></span>MAX_PACKETS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PACKETS&#160;&#160;&#160;(<a class="el" href="fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4">get_num_fec_packets</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>, <a class="el" href="ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>), <a class="el" href="whist_8h.html#a9671b09366aac047f771b3d49b3b99a4">MAX_FEC_RATIO</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ace58ba786751c3524bcbb1bc4f8846ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace58ba786751c3524bcbb1bc4f8846ce">&#9670;&nbsp;</a></span>MAX_RING_BUFFER_SIZE</h2>
 
@@ -248,62 +266,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9d3111ad316a218e1f16161844501e7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d3111ad316a218e1f16161844501e7a">&#9670;&nbsp;</a></span>allocate_frame_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void allocate_frame_buffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
-          <td class="paramname"><em>ring_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td>
-          <td class="paramname"><em>frame_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab9c50544e0beb60fdcf23b5b30e9a34c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9c50544e0beb60fdcf23b5b30e9a34c">&#9670;&nbsp;</a></span>destroy_frame_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void destroy_frame_buffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
-          <td class="paramname"><em>ring_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td>
-          <td class="paramname"><em>frame_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af514843307356fd516b1a96211c9d986"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af514843307356fd516b1a96211c9d986">&#9670;&nbsp;</a></span>destroy_ring_buffer()</h2>
 
@@ -368,8 +330,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1fc73c796f6b71709d750033c1b58b63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fc73c796f6b71709d750033c1b58b63">&#9670;&nbsp;</a></span>init_frame()</h2>
+<a id="a85adc5260440db047e54bd933c1b2f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85adc5260440db047e54bd933c1b2f78">&#9670;&nbsp;</a></span>get_framebuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* get_framebuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
+          <td class="paramname"><em>ring_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td>
+          <td class="paramname"><em>current_frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ee7588c05580e80dd58f21f0c7b8765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee7588c05580e80dd58f21f0c7b8765">&#9670;&nbsp;</a></span>init_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,7 +380,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_indices</em>&#160;</td>
+          <td class="paramname"><em>num_original_indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_fec_indices</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -402,8 +398,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acb417345ec29cff5507ee356644fe579"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb417345ec29cff5507ee356644fe579">&#9670;&nbsp;</a></span>init_ring_buffer()</h2>
+<a id="a04705cc4b1c966ce7556662c365dd77b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04705cc4b1c966ce7556662c365dd77b">&#9670;&nbsp;</a></span>init_ring_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -411,7 +407,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structRingBuffer.html">RingBuffer</a>* init_ring_buffer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#a09a4a3c07926e40e3e7014120eb75bdb">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -423,7 +419,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ringbuffer_8h.html#a72e75176c308e3d89a2f3d8b7d6d6158">NackPacketFn</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="ringbuffer_8h.html#aff4834501397a369e48ba31168000123">NackPacketFn</a>&#160;</td>
           <td class="paramname"><em>nack_packet</em>&#160;</td>
         </tr>
         <tr>
@@ -444,6 +440,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created ring buffer. All frames in the new ring buffer have ID -1. </dd></dl>
+
+</div>
+</div>
+<a id="a22897ddd74ba2d11192502d98a4c7227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22897ddd74ba2d11192502d98a4c7227">&#9670;&nbsp;</a></span>is_ready_to_render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_ready_to_render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
+          <td class="paramname"><em>ring_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. The ring buffer will not write to the currently rendering frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ring_buffer</td><td>Ring buffer containing the frame</td></tr>
+    <tr><td class="paramname">id</td><td>ID of the frame we want to render</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the frame is ready, false if it's not </dd></dl>
 
 </div>
 </div>
@@ -561,8 +595,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f7e1e295ea3891d8b9b342fab21db03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f7e1e295ea3891d8b9b342fab21db03">&#9670;&nbsp;</a></span>receive_packet()</h2>
+<a id="a8c1cc512edc5afc5174f2e2693b3bfae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1cc512edc5afc5174f2e2693b3bfae">&#9670;&nbsp;</a></span>receive_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,14 +706,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adc37000ecd47712d4a8cc8e83867a60d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc37000ecd47712d4a8cc8e83867a60d">&#9670;&nbsp;</a></span>set_rendering()</h2>
+<a id="a29a4ef47e30f9faabce38d4df154494a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a4ef47e30f9faabce38d4df154494a">&#9670;&nbsp;</a></span>set_rendering()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void set_rendering </td>
+          <td class="memname"><a class="el" href="structFrameData.html">FrameData</a>* set_rendering </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
           <td class="paramname"><em>ring_buffer</em>, </td>
@@ -702,21 +736,22 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ring_buffer</td><td>Ring buffer containing the frame</td></tr>
-    <tr><td class="paramname">id</td><td>ID of the frame we are currently rendering. </td></tr>
+    <tr><td class="paramname">id</td><td>ID of the frame we are currently rendering.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A new pointer to the frame buffer that's now being rendered. This pointer will be invalidated on the next call to set_rendering. Use -&gt;frame_buffer to read the contents of the captured frame </dd></dl>
 
 </div>
 </div>
-<a id="a33faf8c99a7bcd3260eb86367ce9b7ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33faf8c99a7bcd3260eb86367ce9b7ad">&#9670;&nbsp;</a></span>try_nacking()</h2>
+<a id="a537f83ad6061d7205282ec209d66d9d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537f83ad6061d7205282ec209d66d9d5">&#9670;&nbsp;</a></span>try_nacking()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void try_nacking </td>
+          <td class="memname">bool try_nacking </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
           <td class="paramname"><em>ring_buffer</em>, </td>
@@ -739,10 +774,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ring_buffer</td><td>The ring buffer to try nacking with</td></tr>
-    <tr><td class="paramname">latency</td><td>The round-trip latency of the connection. Helpful with nacking logic </td></tr>
+    <tr><td class="paramname">latency</td><td>The round-trip latency of the connection. Helpful with nacking logic</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if nacking succeded, False if we've bandwidth saturated our ability to nack. </dd></dl>
 
 </div>
 </div>
@@ -751,7 +787,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2993051f07ff2cebc55eadc6068be547.html">whist</a></li><li class="navelem"><a class="el" href="dir_7aaf2645552d365887d375b974e2a94f.html">network</a></li><li class="navelem"><a class="el" href="ringbuffer_8c.html">ringbuffer.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_190dac40e16f649d163a778d134d4659.html">network</a></li><li class="navelem"><a class="el" href="ringbuffer_8c.html">ringbuffer.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
