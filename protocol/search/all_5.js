@@ -12,7 +12,7 @@ var searchData=
   ['enc_5fmatrix_475',['enc_matrix',['../structfec__parms.html#aba672647b42905b8e11b1faea9213fd1',1,'fec_parms']]],
   ['encode_2ec_476',['encode.c',['../encode_8c.html',1,'']]],
   ['encode_2eh_477',['encode.h',['../encode_8h.html',1,'']]],
-  ['encode_5fperformed_478',['encode_performed',['../structInternalFECEncoder.html#ab426db34f7d123eb5330067773393425',1,'InternalFECEncoder']]],
+  ['encode_5fperformed_478',['encode_performed',['../structFECEncoder.html#a0ff7a434a1838639035b6c6a04b1c50c',1,'FECEncoder']]],
   ['encoded_5fframe_5fsize_479',['encoded_frame_size',['../structAudioEncoder.html#a0f6a97fd6950b9d51cc451259c484568',1,'AudioEncoder::encoded_frame_size()'],['../structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f',1,'VideoEncoder::encoded_frame_size()'],['../structFFmpegEncoder.html#a10c0f1aa6e49c582ff5e79a5859a282a',1,'FFmpegEncoder::encoded_frame_size()']]],
   ['encodedaudio_480',['EncodedAudio',['../structEncodedAudio.html',1,'EncodedAudio'],['../audioencode_8h.html#a8858004dfad5279aa1854de4a5dd3988',1,'EncodedAudio():&#160;audioencode.h']]],
   ['encoder_481',['encoder',['../structLodePNGState.html#ac63d91db835129d02eb83bbe81de347e',1,'LodePNGState']]],

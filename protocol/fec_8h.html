@@ -96,68 +96,68 @@ $(document).ready(function(){initNavTree('fec_8h.html',''); initResizable(); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:af22c80c2defeb06864b91227772d1f41"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a></td></tr>
-<tr class="separator:af22c80c2defeb06864b91227772d1f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d896da614e01cb0756e891bdbc9edcd"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a7d896da614e01cb0756e891bdbc9edcd">FECDecoder</a></td></tr>
-<tr class="separator:a7d896da614e01cb0756e891bdbc9edcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e67058045b3c7cb5c339ccff7be639"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFECEncoder.html">FECEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a61e67058045b3c7cb5c339ccff7be639">FECEncoder</a></td></tr>
+<tr class="separator:a61e67058045b3c7cb5c339ccff7be639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75d0ee67237ef49743695d984572e63"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFECDecoder.html">FECDecoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#ac75d0ee67237ef49743695d984572e63">FECDecoder</a></td></tr>
+<tr class="separator:ac75d0ee67237ef49743695d984572e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4">get_num_fec_packets</a> (int num_real_packets, double fec_packet_ratio)</td></tr>
 <tr class="memdesc:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an fec packet ratio, into the number of fec packets.  <a href="fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4">More...</a><br /></td></tr>
 <tr class="separator:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ae850e2e0baba3686a0b85f23949893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a9ae850e2e0baba3686a0b85f23949893">create_fec_encoder</a> (int num_real_buffers, int num_fec_buffers, int max_buffer_size)</td></tr>
+<tr class="memitem:a9ae850e2e0baba3686a0b85f23949893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFECEncoder.html">FECEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a9ae850e2e0baba3686a0b85f23949893">create_fec_encoder</a> (int num_real_buffers, int num_fec_buffers, int max_buffer_size)</td></tr>
 <tr class="memdesc:a9ae850e2e0baba3686a0b85f23949893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an FEC Encoder.  <a href="fec_8h.html#a9ae850e2e0baba3686a0b85f23949893">More...</a><br /></td></tr>
 <tr class="separator:a9ae850e2e0baba3686a0b85f23949893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8d45fea9c101fa77f55eef426979ff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#af8d45fea9c101fa77f55eef426979ff9">fec_encoder_register_buffer</a> (<a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a> *fec_encoder, void *buffer, int buffer_size)</td></tr>
+<tr class="memitem:af8d45fea9c101fa77f55eef426979ff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#af8d45fea9c101fa77f55eef426979ff9">fec_encoder_register_buffer</a> (<a class="el" href="structFECEncoder.html">FECEncoder</a> *fec_encoder, void *buffer, int buffer_size)</td></tr>
 <tr class="memdesc:af8d45fea9c101fa77f55eef426979ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a buffer into the encoder. The encoder expects this function to be called <code>num_real_buffers</code> times.  <a href="fec_8h.html#af8d45fea9c101fa77f55eef426979ff9">More...</a><br /></td></tr>
 <tr class="separator:af8d45fea9c101fa77f55eef426979ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a685b2d430114a8b257ef3a28a2ceb14b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a685b2d430114a8b257ef3a28a2ceb14b">fec_get_encoded_buffers</a> (<a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a> *fec_encoder, void **buffers, int *buffer_sizes)</td></tr>
+<tr class="memitem:a685b2d430114a8b257ef3a28a2ceb14b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a685b2d430114a8b257ef3a28a2ceb14b">fec_get_encoded_buffers</a> (<a class="el" href="structFECEncoder.html">FECEncoder</a> *fec_encoder, void **buffers, int *buffer_sizes)</td></tr>
 <tr class="memdesc:a685b2d430114a8b257ef3a28a2ceb14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoded buffers.  <a href="fec_8h.html#a685b2d430114a8b257ef3a28a2ceb14b">More...</a><br /></td></tr>
 <tr class="separator:a685b2d430114a8b257ef3a28a2ceb14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a246098d155f96b3db062f15323996bb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a246098d155f96b3db062f15323996bb4">destroy_fec_encoder</a> (<a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a> *fec_encoder)</td></tr>
+<tr class="memitem:a246098d155f96b3db062f15323996bb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a246098d155f96b3db062f15323996bb4">destroy_fec_encoder</a> (<a class="el" href="structFECEncoder.html">FECEncoder</a> *fec_encoder)</td></tr>
 <tr class="memdesc:a246098d155f96b3db062f15323996bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an FEC Encoder.  <a href="fec_8h.html#a246098d155f96b3db062f15323996bb4">More...</a><br /></td></tr>
 <tr class="separator:a246098d155f96b3db062f15323996bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca05f25f6a922833842317722b908ddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fec_8h.html#a7d896da614e01cb0756e891bdbc9edcd">FECDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#aca05f25f6a922833842317722b908ddc">create_fec_decoder</a> (int num_real_buffers, int num_fec_buffers, int max_buffer_size)</td></tr>
+<tr class="memitem:aca05f25f6a922833842317722b908ddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFECDecoder.html">FECDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#aca05f25f6a922833842317722b908ddc">create_fec_decoder</a> (int num_real_buffers, int num_fec_buffers, int max_buffer_size)</td></tr>
 <tr class="memdesc:aca05f25f6a922833842317722b908ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an FEC Decoder.  <a href="fec_8h.html#aca05f25f6a922833842317722b908ddc">More...</a><br /></td></tr>
 <tr class="separator:aca05f25f6a922833842317722b908ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f81d0fc1e9b9aa2aa823812e02dfe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a15f81d0fc1e9b9aa2aa823812e02dfe5">fec_decoder_register_buffer</a> (<a class="el" href="fec_8h.html#a7d896da614e01cb0756e891bdbc9edcd">FECDecoder</a> *fec_decoder, int index, void *buffer, int buffer_size)</td></tr>
+<tr class="memitem:a15f81d0fc1e9b9aa2aa823812e02dfe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a15f81d0fc1e9b9aa2aa823812e02dfe5">fec_decoder_register_buffer</a> (<a class="el" href="structFECDecoder.html">FECDecoder</a> *fec_decoder, int index, void *buffer, int buffer_size)</td></tr>
 <tr class="memdesc:a15f81d0fc1e9b9aa2aa823812e02dfe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a buffer into the decoder.  <a href="fec_8h.html#a15f81d0fc1e9b9aa2aa823812e02dfe5">More...</a><br /></td></tr>
 <tr class="separator:a15f81d0fc1e9b9aa2aa823812e02dfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68e2a970d7c3d4b81353174da6809b7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a68e2a970d7c3d4b81353174da6809b7a">fec_get_decoded_buffer</a> (<a class="el" href="fec_8h.html#a7d896da614e01cb0756e891bdbc9edcd">FECDecoder</a> *fec_decoder, void *buffer)</td></tr>
+<tr class="memitem:a68e2a970d7c3d4b81353174da6809b7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a68e2a970d7c3d4b81353174da6809b7a">fec_get_decoded_buffer</a> (<a class="el" href="structFECDecoder.html">FECDecoder</a> *fec_decoder, void *buffer)</td></tr>
 <tr class="memdesc:a68e2a970d7c3d4b81353174da6809b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a buffer into the decoder.  <a href="fec_8h.html#a68e2a970d7c3d4b81353174da6809b7a">More...</a><br /></td></tr>
 <tr class="separator:a68e2a970d7c3d4b81353174da6809b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaaf3f047270d2984d8a3bbee5463e7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#abaaf3f047270d2984d8a3bbee5463e7d">destroy_fec_decoder</a> (<a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a> *fec_decoder)</td></tr>
-<tr class="memdesc:abaaf3f047270d2984d8a3bbee5463e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an FEC Decoder.  <a href="fec_8h.html#abaaf3f047270d2984d8a3bbee5463e7d">More...</a><br /></td></tr>
-<tr class="separator:abaaf3f047270d2984d8a3bbee5463e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96fb53e52299e011cf2bf7299b849c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#aa96fb53e52299e011cf2bf7299b849c8">destroy_fec_decoder</a> (<a class="el" href="structFECDecoder.html">FECDecoder</a> *fec_decoder)</td></tr>
+<tr class="memdesc:aa96fb53e52299e011cf2bf7299b849c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an FEC Decoder.  <a href="fec_8h.html#aa96fb53e52299e011cf2bf7299b849c8">More...</a><br /></td></tr>
+<tr class="separator:aa96fb53e52299e011cf2bf7299b849c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the FEC API Interface. </p>
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
 <dl class="section note"><dt>Note</dt><dd>See protocol_test.cpp for usage </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a7d896da614e01cb0756e891bdbc9edcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d896da614e01cb0756e891bdbc9edcd">&#9670;&nbsp;</a></span>FECDecoder</h2>
+<a id="ac75d0ee67237ef49743695d984572e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75d0ee67237ef49743695d984572e63">&#9670;&nbsp;</a></span>FECDecoder</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void <a class="el" href="fec_8h.html#a7d896da614e01cb0756e891bdbc9edcd">FECDecoder</a></td>
+          <td class="memname">typedef struct <a class="el" href="structFECDecoder.html">FECDecoder</a> <a class="el" href="structFECDecoder.html">FECDecoder</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af22c80c2defeb06864b91227772d1f41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af22c80c2defeb06864b91227772d1f41">&#9670;&nbsp;</a></span>FECEncoder</h2>
+<a id="a61e67058045b3c7cb5c339ccff7be639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e67058045b3c7cb5c339ccff7be639">&#9670;&nbsp;</a></span>FECEncoder</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void <a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a></td>
+          <td class="memname">typedef struct <a class="el" href="structFECEncoder.html">FECEncoder</a> <a class="el" href="structFECEncoder.html">FECEncoder</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -172,7 +172,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fec_8h.html#a7d896da614e01cb0756e891bdbc9edcd">FECDecoder</a>* create_fec_decoder </td>
+          <td class="memname"><a class="el" href="structFECDecoder.html">FECDecoder</a>* create_fec_decoder </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>num_real_buffers</em>, </td>
@@ -218,7 +218,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a>* create_fec_encoder </td>
+          <td class="memname"><a class="el" href="structFECEncoder.html">FECEncoder</a>* create_fec_encoder </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>num_real_buffers</em>, </td>
@@ -256,8 +256,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abaaf3f047270d2984d8a3bbee5463e7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaaf3f047270d2984d8a3bbee5463e7d">&#9670;&nbsp;</a></span>destroy_fec_decoder()</h2>
+<a id="aa96fb53e52299e011cf2bf7299b849c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa96fb53e52299e011cf2bf7299b849c8">&#9670;&nbsp;</a></span>destroy_fec_decoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +265,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void destroy_fec_decoder </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structFECDecoder.html">FECDecoder</a> *&#160;</td>
           <td class="paramname"><em>fec_decoder</em></td><td>)</td>
           <td></td>
         </tr>
@@ -292,7 +292,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void destroy_fec_encoder </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structFECEncoder.html">FECEncoder</a> *&#160;</td>
           <td class="paramname"><em>fec_encoder</em></td><td>)</td>
           <td></td>
         </tr>
@@ -319,7 +319,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void fec_decoder_register_buffer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fec_8h.html#a7d896da614e01cb0756e891bdbc9edcd">FECDecoder</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structFECDecoder.html">FECDecoder</a> *&#160;</td>
           <td class="paramname"><em>fec_decoder</em>, </td>
         </tr>
         <tr>
@@ -372,7 +372,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void fec_encoder_register_buffer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structFECEncoder.html">FECEncoder</a> *&#160;</td>
           <td class="paramname"><em>fec_encoder</em>, </td>
         </tr>
         <tr>
@@ -417,7 +417,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int fec_get_decoded_buffer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fec_8h.html#a7d896da614e01cb0756e891bdbc9edcd">FECDecoder</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structFECDecoder.html">FECDecoder</a> *&#160;</td>
           <td class="paramname"><em>fec_decoder</em>, </td>
         </tr>
         <tr>
@@ -456,7 +456,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void fec_get_encoded_buffers </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fec_8h.html#af22c80c2defeb06864b91227772d1f41">FECEncoder</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structFECEncoder.html">FECEncoder</a> *&#160;</td>
           <td class="paramname"><em>fec_encoder</em>, </td>
         </tr>
         <tr>

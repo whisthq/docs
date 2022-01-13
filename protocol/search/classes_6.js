@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['fec_5fparms_2225',['fec_parms',['../structfec__parms.html',1,'']]],
+  ['fec_5fparms_2223',['fec_parms',['../structfec__parms.html',1,'']]],
+  ['fecdecoder_2224',['FECDecoder',['../structFECDecoder.html',1,'']]],
+  ['fecencoder_2225',['FECEncoder',['../structFECEncoder.html',1,'']]],
   ['ffmpegencoder_2226',['FFmpegEncoder',['../structFFmpegEncoder.html',1,'']]],
   ['filedata_2227',['FileData',['../structFileData.html',1,'']]],
   ['fileeventinfo_2228',['FileEventInfo',['../unionFileEventInfo.html',1,'']]],
