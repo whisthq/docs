@@ -95,7 +95,8 @@ var annotated_dup =
     [ "WhistRenderer", "structWhistRenderer.html", "structWhistRenderer" ],
     [ "WhistRGBColor", "structWhistRGBColor.html", "structWhistRGBColor" ],
     [ "WhistServerMessage", "structWhistServerMessage.html", "structWhistServerMessage" ],
-    [ "WhistTimeData", "structWhistTimeData.html", "structWhistTimeData" ],
+    [ "WhistTimerInternal", "structWhistTimerInternal.html", "structWhistTimerInternal" ],
+    [ "WhistTimerOpaque", "structWhistTimerOpaque.html", "structWhistTimerOpaque" ],
     [ "WhistYUVColor", "structWhistYUVColor.html", "structWhistYUVColor" ],
     [ "X11CaptureDevice", "structX11CaptureDevice.html", "structX11CaptureDevice" ]
 ];

@@ -123,18 +123,18 @@ Functions</h2></td></tr>
 <tr class="separator:a27bfdcc708610481b47c9e7383c99241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34bd39d3decec9bb20a254ad91a8707d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a34bd39d3decec9bb20a254ad91a8707d">multithreaded_destroy_encoder</a> (void *opaque)</td></tr>
 <tr class="separator:a34bd39d3decec9bb20a254ad91a8707d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29866e3fa1927d662cbc0a8a00b0d88e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a29866e3fa1927d662cbc0a8a00b0d88e">create_new_device</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> **device, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *rdevice, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> **encoder, uint32_t true_width, uint32_t true_height)</td></tr>
-<tr class="memdesc:a29866e3fa1927d662cbc0a8a00b0d88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structCaptureDevice.html">CaptureDevice</a>.  <a href="server_2video_8c.html#a29866e3fa1927d662cbc0a8a00b0d88e">More...</a><br /></td></tr>
-<tr class="separator:a29866e3fa1927d662cbc0a8a00b0d88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ecebc9592e7dbb1c84c8001b89310ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a0ecebc9592e7dbb1c84c8001b89310ef">send_populated_frames</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *server_frame_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int id, <a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> client_input_timestamp, <a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> server_timestamp)</td></tr>
-<tr class="memdesc:a0ecebc9592e7dbb1c84c8001b89310ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the populated video frames to the client.  <a href="server_2video_8c.html#a0ecebc9592e7dbb1c84c8001b89310ef">More...</a><br /></td></tr>
-<tr class="separator:a0ecebc9592e7dbb1c84c8001b89310ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18311b6f172c85a7fa2e8f3008a5ce2f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a18311b6f172c85a7fa2e8f3008a5ce2f">create_new_device</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> **device, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *rdevice, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> **encoder, uint32_t true_width, uint32_t true_height)</td></tr>
+<tr class="memdesc:a18311b6f172c85a7fa2e8f3008a5ce2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structCaptureDevice.html">CaptureDevice</a>.  <a href="server_2video_8c.html#a18311b6f172c85a7fa2e8f3008a5ce2f">More...</a><br /></td></tr>
+<tr class="separator:a18311b6f172c85a7fa2e8f3008a5ce2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e4dbedd66527cf78fabdcd0ba83eca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#af8e4dbedd66527cf78fabdcd0ba83eca">send_populated_frames</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *statistics_timer, <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *server_frame_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int id, <a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> client_input_timestamp, <a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> server_timestamp)</td></tr>
+<tr class="memdesc:af8e4dbedd66527cf78fabdcd0ba83eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the populated video frames to the client.  <a href="server_2video_8c.html#af8e4dbedd66527cf78fabdcd0ba83eca">More...</a><br /></td></tr>
+<tr class="separator:af8e4dbedd66527cf78fabdcd0ba83eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08857845add4e9b825d862919f089188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a08857845add4e9b825d862919f089188">retry_capture_screen</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a08857845add4e9b825d862919f089188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to capture the screen. Afterwards sets update_device to true.  <a href="server_2video_8c.html#a08857845add4e9b825d862919f089188">More...</a><br /></td></tr>
 <tr class="separator:a08857845add4e9b825d862919f089188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba7b6059b4b202980792f6341195c0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a2ba7b6059b4b202980792f6341195c0d">update_current_device</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, uint32_t true_width, uint32_t true_height)</td></tr>
-<tr class="memdesc:a2ba7b6059b4b202980792f6341195c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates dimensions of capture device and sets update_encoder to true.  <a href="server_2video_8c.html#a2ba7b6059b4b202980792f6341195c0d">More...</a><br /></td></tr>
-<tr class="separator:a2ba7b6059b4b202980792f6341195c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0870f52a4d0fd47af04ae0efa8806840"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a0870f52a4d0fd47af04ae0efa8806840">update_current_device</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, uint32_t true_width, uint32_t true_height)</td></tr>
+<tr class="memdesc:a0870f52a4d0fd47af04ae0efa8806840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates dimensions of capture device and sets update_encoder to true.  <a href="server_2video_8c.html#a0870f52a4d0fd47af04ae0efa8806840">More...</a><br /></td></tr>
+<tr class="separator:a0870f52a4d0fd47af04ae0efa8806840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#aade5b8fb0c17924c6ebe2c5ce9923e55">send_empty_frame</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, int id)</td></tr>
 <tr class="memdesc:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an empty frame to the client.  <a href="server_2video_8c.html#aade5b8fb0c17924c6ebe2c5ce9923e55">More...</a><br /></td></tr>
 <tr class="separator:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,8 +197,8 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a29866e3fa1927d662cbc0a8a00b0d88e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29866e3fa1927d662cbc0a8a00b0d88e">&#9670;&nbsp;</a></span>create_new_device()</h2>
+<a id="a18311b6f172c85a7fa2e8f3008a5ce2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18311b6f172c85a7fa2e8f3008a5ce2f">&#9670;&nbsp;</a></span>create_new_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +212,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
           <td class="paramname"><em>statistics_timer</em>, </td>
         </tr>
         <tr>
@@ -452,8 +452,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a0ecebc9592e7dbb1c84c8001b89310ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ecebc9592e7dbb1c84c8001b89310ef">&#9670;&nbsp;</a></span>send_populated_frames()</h2>
+<a id="af8e4dbedd66527cf78fabdcd0ba83eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e4dbedd66527cf78fabdcd0ba83eca">&#9670;&nbsp;</a></span>send_populated_frames()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,13 +467,13 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
           <td class="paramname"><em>statistics_timer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
           <td class="paramname"><em>server_frame_timer</em>, </td>
         </tr>
         <tr>
@@ -531,8 +531,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a2ba7b6059b4b202980792f6341195c0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ba7b6059b4b202980792f6341195c0d">&#9670;&nbsp;</a></span>update_current_device()</h2>
+<a id="a0870f52a4d0fd47af04ae0efa8806840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0870f52a4d0fd47af04ae0efa8806840">&#9670;&nbsp;</a></span>update_current_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,7 +546,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
           <td class="paramname"><em>statistics_timer</em>, </td>
         </tr>
         <tr>

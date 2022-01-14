@@ -34,5 +34,5 @@ var client_2main_8c =
     [ "using_stun", "client_2main_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66", null ],
     [ "window", "client_2main_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9", null ],
     [ "window_resize_mutex", "client_2main_8c.html#a557cdefd7d618aa9c5272f245dded55e", null ],
-    [ "window_resize_timer", "client_2main_8c.html#a5421dd315eda4c2e3347f85fc9c86c69", null ]
+    [ "window_resize_timer", "client_2main_8c.html#a81dcd68e9914f757c90910b1bdff05c5", null ]
 ];

@@ -17,6 +17,5 @@ var server_2network_8c =
     [ "try_get_next_message_udp", "server_2network_8c.html#aa19516f461c45f3ca2d93a4b1f7fc2f6", null ],
     [ "begin_time_to_exit", "server_2network_8c.html#a87359d0492cce4252fa833844855438d", null ],
     [ "has_read", "server_2network_8c.html#a5d17c2bed3efc45988b308faa8392bc8", null ],
-    [ "last_input_id", "server_2network_8c.html#afa6cd825000f909352154f55a6ac0df0", null ],
-    [ "last_tcp_read", "server_2network_8c.html#aa1f8977f45967a160b8f3ed1d93c9754", null ]
+    [ "last_input_id", "server_2network_8c.html#afa6cd825000f909352154f55a6ac0df0", null ]
 ];

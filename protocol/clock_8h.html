@@ -83,7 +83,6 @@ $(document).ready(function(){initNavTree('clock_8h.html',''); initResizable(); }
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -98,36 +97,26 @@ $(document).ready(function(){initNavTree('clock_8h.html',''); initResizable(); }
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistTimeData.html">WhistTimeData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistTimerOpaque.html">WhistTimerOpaque</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a timer.  <a href="structWhistTimerOpaque.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a362207a7d85ed7142c966f9a509d80f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;&#160;&#160;struct timespec</td></tr>
-<tr class="separator:a362207a7d85ed7142c966f9a509d80f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d77dc21527a9a603cd9af39efb41429"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a5d77dc21527a9a603cd9af39efb41429">timeout_clock</a>&#160;&#160;&#160;struct timeval</td></tr>
-<tr class="separator:a5d77dc21527a9a603cd9af39efb41429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98e33cc8b935fa0d5154d8a3f557c39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#ac98e33cc8b935fa0d5154d8a3f557c39">TZ_NAME_MAXLEN</a>&#160;&#160;&#160;200</td></tr>
-<tr class="separator:ac98e33cc8b935fa0d5154d8a3f557c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a5fcc7de94503598536c4c335cdaaa627"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistTimerOpaque.html">WhistTimerOpaque</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a></td></tr>
+<tr class="memdesc:a5fcc7de94503598536c4c335cdaaa627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a timer.  <a href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">More...</a><br /></td></tr>
+<tr class="separator:a5fcc7de94503598536c4c335cdaaa627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d947f0fa2fb7e03ff678e83295a86b3"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a></td></tr>
 <tr class="separator:a9d947f0fa2fb7e03ff678e83295a86b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02b8b80230f2b83f112c3c8a8e046c11"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistTimeData.html">WhistTimeData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a02b8b80230f2b83f112c3c8a8e046c11">WhistTimeData</a></td></tr>
-<tr class="separator:a02b8b80230f2b83f112c3c8a8e046c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acd824f01e9b0a5671a7820c23c1eede1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#acd824f01e9b0a5671a7820c23c1eede1">start_timer</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *timer)</td></tr>
-<tr class="memdesc:acd824f01e9b0a5671a7820c23c1eede1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the given timer at the current time, as a stopwatch.  <a href="clock_8h.html#acd824f01e9b0a5671a7820c23c1eede1">More...</a><br /></td></tr>
-<tr class="separator:acd824f01e9b0a5671a7820c23c1eede1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6c1f208b451cecf8667af4ce182fd2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#ac6c1f208b451cecf8667af4ce182fd2d">get_timer</a> (<a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> timer)</td></tr>
-<tr class="memdesc:ac6c1f208b451cecf8667af4ce182fd2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of elapsed time in seconds since the last start_timer.  <a href="clock_8h.html#ac6c1f208b451cecf8667af4ce182fd2d">More...</a><br /></td></tr>
-<tr class="separator:ac6c1f208b451cecf8667af4ce182fd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa04e5e700e3e31336405356dbe102bbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5d77dc21527a9a603cd9af39efb41429">timeout_clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#aa04e5e700e3e31336405356dbe102bbb">create_timeout_clock</a> (int timeout_ms)</td></tr>
-<tr class="memdesc:aa04e5e700e3e31336405356dbe102bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a clock that represents the given timeout in milliseconds.  <a href="clock_8h.html#aa04e5e700e3e31336405356dbe102bbb">More...</a><br /></td></tr>
-<tr class="separator:aa04e5e700e3e31336405356dbe102bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d2bb9cbe037b8677ed25be7aa41c5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#ac8d2bb9cbe037b8677ed25be7aa41c5c">start_timer</a> (<a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *timer)</td></tr>
+<tr class="memdesc:ac8d2bb9cbe037b8677ed25be7aa41c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the given timer at the current time, as a stopwatch.  <a href="clock_8h.html#ac8d2bb9cbe037b8677ed25be7aa41c5c">More...</a><br /></td></tr>
+<tr class="separator:ac8d2bb9cbe037b8677ed25be7aa41c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17cc946c0eba05b7aafbb2c953db93e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a17cc946c0eba05b7aafbb2c953db93e5">get_timer</a> (const <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *timer)</td></tr>
+<tr class="memdesc:a17cc946c0eba05b7aafbb2c953db93e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of elapsed time in seconds since the last start_timer.  <a href="clock_8h.html#a17cc946c0eba05b7aafbb2c953db93e5">More...</a><br /></td></tr>
+<tr class="separator:a17cc946c0eba05b7aafbb2c953db93e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3bcd57394b521f42dea529fe0043557"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#ad3bcd57394b521f42dea529fe0043557">current_time_str</a> ()</td></tr>
 <tr class="memdesc:ad3bcd57394b521f42dea529fe0043557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time as a string.  <a href="clock_8h.html#ad3bcd57394b521f42dea529fe0043557">More...</a><br /></td></tr>
 <tr class="separator:ad3bcd57394b521f42dea529fe0043557"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,50 +136,7 @@ Usage</h1>
 @brief Helper functions for png to bmp and bmp to png</h1>
 <h1><a class="anchor" id="autotoc_md219"></a>
 Usage</h1>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a362207a7d85ed7142c966f9a509d80f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a362207a7d85ed7142c966f9a509d80f3">&#9670;&nbsp;</a></span>clock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define clock&#160;&#160;&#160;struct timespec</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d77dc21527a9a603cd9af39efb41429"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d77dc21527a9a603cd9af39efb41429">&#9670;&nbsp;</a></span>timeout_clock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define timeout_clock&#160;&#160;&#160;struct timeval</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac98e33cc8b935fa0d5154d8a3f557c39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac98e33cc8b935fa0d5154d8a3f557c39">&#9670;&nbsp;</a></span>TZ_NAME_MAXLEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TZ_NAME_MAXLEN&#160;&#160;&#160;200</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a9d947f0fa2fb7e03ff678e83295a86b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d947f0fa2fb7e03ff678e83295a86b3">&#9670;&nbsp;</a></span>timestamp_us</h2>
 
@@ -205,48 +151,24 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a02b8b80230f2b83f112c3c8a8e046c11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02b8b80230f2b83f112c3c8a8e046c11">&#9670;&nbsp;</a></span>WhistTimeData</h2>
+<a id="a5fcc7de94503598536c4c335cdaaa627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcc7de94503598536c4c335cdaaa627">&#9670;&nbsp;</a></span>WhistTimer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structWhistTimeData.html">WhistTimeData</a> <a class="el" href="structWhistTimeData.html">WhistTimeData</a></td>
+          <td class="memname">typedef struct <a class="el" href="structWhistTimerOpaque.html">WhistTimerOpaque</a> <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Structure representing a timer. </p>
+<p>Start the timer with <a class="el" href="clock_8c.html#ac96c3819ace7869ee5dc023e0ba47626" title="Start the given timer at the current time, as a stopwatch.">start_timer()</a>, get the time elapsed since it was started with <a class="el" href="clock_8c.html#a0a3a3c28088edf0e0cbadb564d21ea3b" title="Get the amount of elapsed time in seconds since the last start_timer.">get_timer()</a>. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aa04e5e700e3e31336405356dbe102bbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa04e5e700e3e31336405356dbe102bbb">&#9670;&nbsp;</a></span>create_timeout_clock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="clock_8h.html#a5d77dc21527a9a603cd9af39efb41429">timeout_clock</a> create_timeout_clock </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout_ms</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a clock that represents the given timeout in milliseconds. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout_ms</td><td>The number of milliseconds for the clock</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The desired clock </dd></dl>
-
-</div>
-</div>
 <a id="ad3bcd57394b521f42dea529fe0043557"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3bcd57394b521f42dea529fe0043557">&#9670;&nbsp;</a></span>current_time_str()</h2>
 
@@ -287,8 +209,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ac6c1f208b451cecf8667af4ce182fd2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6c1f208b451cecf8667af4ce182fd2d">&#9670;&nbsp;</a></span>get_timer()</h2>
+<a id="a17cc946c0eba05b7aafbb2c953db93e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17cc946c0eba05b7aafbb2c953db93e5">&#9670;&nbsp;</a></span>get_timer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,7 +218,7 @@ Usage</h1>
         <tr>
           <td class="memname">double get_timer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
           <td class="paramname"><em>timer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -306,15 +228,15 @@ Usage</h1>
 <p>Get the amount of elapsed time in seconds since the last start_timer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timer</td><td>The timer in question </td></tr>
+    <tr><td class="paramname">timer</td><td>Pointer to the timer to query. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="acd824f01e9b0a5671a7820c23c1eede1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd824f01e9b0a5671a7820c23c1eede1">&#9670;&nbsp;</a></span>start_timer()</h2>
+<a id="ac8d2bb9cbe037b8677ed25be7aa41c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d2bb9cbe037b8677ed25be7aa41c5c">&#9670;&nbsp;</a></span>start_timer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,7 +244,7 @@ Usage</h1>
         <tr>
           <td class="memname">void start_timer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="clock_8h.html#a362207a7d85ed7142c966f9a509d80f3">clock</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
           <td class="paramname"><em>timer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -332,7 +254,7 @@ Usage</h1>
 <p>Start the given timer at the current time, as a stopwatch. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timer</td><td>Pointer to the the timer in question </td></tr>
+    <tr><td class="paramname">timer</td><td>Pointer to the timer to start. </td></tr>
   </table>
   </dd>
 </dl>

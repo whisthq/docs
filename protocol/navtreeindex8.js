@@ -1,12 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[8,0,38,6],
-"structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[8,0,38,2],
-"structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[8,0,38,3],
-"structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[8,0,38,0],
-"structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6":[8,0,38,4],
-"structLodePNGColorStats.html":[8,0,39],
-"structLodePNGColorStats.html#a162ce4d4ee804a0136814ba469c82294":[8,0,39,5],
 "structLodePNGColorStats.html#a33724b799caf608319113a946c91406d":[8,0,39,6],
 "structLodePNGColorStats.html#a7eda029397c945602ecf49d5277c936e":[8,0,39,11],
 "structLodePNGColorStats.html#a8db59a808dc9f57ccaba638be2a2946d":[8,0,39,3],
@@ -135,10 +128,10 @@ var NAVTREEINDEX8 =
 "structNetworkStatistics.html#addbfa6a799e3953e081a574f93b350fa":[8,0,50,5],
 "structNetworkThrottleContext.html":[8,0,51],
 "structNetworkThrottleContext.html#a13eec5c3fadad9f30633223b56d5c1ce":[8,0,51,9],
-"structNetworkThrottleContext.html#a3a8203e38ee009c553845c9295070930":[8,0,51,2],
 "structNetworkThrottleContext.html#a42005e1a558e4013b2bebb66158019bb":[8,0,51,0],
 "structNetworkThrottleContext.html#a69dea2b223bc14a52deed273c831e389":[8,0,51,10],
 "structNetworkThrottleContext.html#a6b80c67f598df42a1074a76853da8529":[8,0,51,5],
+"structNetworkThrottleContext.html#a91a41f7d0acf21dee553262b9ae0643a":[8,0,51,2],
 "structNetworkThrottleContext.html#aa1f6e9cfbfba894f68ec993df63da754":[8,0,51,1],
 "structNetworkThrottleContext.html#abe25a6e122fb22056628eb3973d347ba":[8,0,51,7],
 "structNetworkThrottleContext.html#acb52ea1e4b57ca03b477b37662ff3503":[8,0,51,3],
@@ -249,5 +242,12 @@ var NAVTREEINDEX8 =
 "structStatisticContext.html#a59817a676e14fafd99431f4f1608aed1":[8,0,65,2],
 "structStatisticContext.html#a9a9d75b2a01da6ce695283c248937100":[8,0,65,0],
 "structStatisticContext.html#aee371be5235bf0ec71acf7a1b8e3bca7":[8,0,65,1],
-"structStatisticData.html":[8,0,66]
+"structStatisticData.html":[8,0,66],
+"structStatisticData.html#a285604f80595a5dec886ece325a8253d":[8,0,66,2],
+"structStatisticData.html#a4674dd9ea84c2c1f62a3b93930a3af05":[8,0,66,0],
+"structStatisticData.html#ad0f0b77f038851d9dd2bbeefa49c4500":[8,0,66,1],
+"structStatisticData.html#add2670d9360e9e131ab795fe99e0f605":[8,0,66,3],
+"structStatisticInfo.html":[8,0,67],
+"structStatisticInfo.html#a69d25e658ece7e3b613ece8601916bff":[8,0,67,0],
+"structStatisticInfo.html#ac3724c8df3f63fa03a1d37f8ab0ab1e3":[8,0,67,3]
 };

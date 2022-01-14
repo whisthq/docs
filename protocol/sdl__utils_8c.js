@@ -31,5 +31,5 @@ var sdl__utils_8c =
     [ "skip_taskbar", "sdl__utils_8c.html#a242ea45e405e9d5ae92e440357e98c3c", null ],
     [ "window", "sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9", null ],
     [ "window_resize_mutex", "sdl__utils_8c.html#a557cdefd7d618aa9c5272f245dded55e", null ],
-    [ "window_resize_timer", "sdl__utils_8c.html#a5421dd315eda4c2e3347f85fc9c86c69", null ]
+    [ "window_resize_timer", "sdl__utils_8c.html#a81dcd68e9914f757c90910b1bdff05c5", null ]
 ];

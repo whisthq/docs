@@ -2,7 +2,7 @@ var structNetworkThrottleContext =
 [
     [ "burst_bitrate", "structNetworkThrottleContext.html#a42005e1a558e4013b2bebb66158019bb", null ],
     [ "coin_bucket", "structNetworkThrottleContext.html#aa1f6e9cfbfba894f68ec993df63da754", null ],
-    [ "coin_bucket_last_fill", "structNetworkThrottleContext.html#a3a8203e38ee009c553845c9295070930", null ],
+    [ "coin_bucket_last_fill", "structNetworkThrottleContext.html#a91a41f7d0acf21dee553262b9ae0643a", null ],
     [ "coin_bucket_max", "structNetworkThrottleContext.html#acb52ea1e4b57ca03b477b37662ff3503", null ],
     [ "coin_bucket_ms", "structNetworkThrottleContext.html#ae8c2eab3eee36855d004e7e6b536c980", null ],
     [ "current_queue_id", "structNetworkThrottleContext.html#a6b80c67f598df42a1074a76853da8529", null ],
