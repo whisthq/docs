@@ -1,5 +1,12 @@
 var NAVTREEINDEX9 =
 {
+"structStatisticData.html#a285604f80595a5dec886ece325a8253d":[8,0,66,2],
+"structStatisticData.html#a4674dd9ea84c2c1f62a3b93930a3af05":[8,0,66,0],
+"structStatisticData.html#ad0f0b77f038851d9dd2bbeefa49c4500":[8,0,66,1],
+"structStatisticData.html#add2670d9360e9e131ab795fe99e0f605":[8,0,66,3],
+"structStatisticInfo.html":[8,0,67],
+"structStatisticInfo.html#a69d25e658ece7e3b613ece8601916bff":[8,0,67,0],
+"structStatisticInfo.html#ac3724c8df3f63fa03a1d37f8ab0ab1e3":[8,0,67,3],
 "structStatisticInfo.html#af3fc5970ad1d628ec277ae1b178ba353":[8,0,67,2],
 "structStatisticInfo.html#afe8574a434ae93aae0cdebddf61b66fe":[8,0,67,1],
 "structStunEntry.html":[8,0,68],
@@ -242,12 +249,5 @@ var NAVTREEINDEX9 =
 "structWhistTimerOpaque.html#a0b61f5d730590a53da49bb7357541244":[8,0,96,0],
 "structWhistYUVColor.html":[8,0,97],
 "structWhistYUVColor.html#a19784573e8a520f0e550040670c9d4ef":[8,0,97,2],
-"structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[8,0,97,1],
-"structWhistYUVColor.html#af66d5846b6864345bcd70f469a0af5dc":[8,0,97,0],
-"structX11CaptureDevice.html":[8,0,98],
-"structX11CaptureDevice.html#a14f8b043bd98da409064ec5b58a3a2ac":[8,0,98,11],
-"structX11CaptureDevice.html#a1c4f6b1f91d40bc223efabf1b8f5c974":[8,0,98,12],
-"structX11CaptureDevice.html#a47bfa7fe3830e8f7ffc8b7a48fc78870":[8,0,98,3],
-"structX11CaptureDevice.html#a5686470157715e6cb4e48bd4c17c1d28":[8,0,98,9],
-"structX11CaptureDevice.html#a74d01856486376e69cdbce519e5a9174":[8,0,98,2]
+"structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[8,0,97,1]
 };

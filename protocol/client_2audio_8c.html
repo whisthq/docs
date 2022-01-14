@@ -84,7 +84,8 @@ $(document).ready(function(){initNavTree('client_2audio_8c.html',''); initResiza
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">audio.c File Reference</div>  </div>
 </div><!--header-->
@@ -109,20 +110,32 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:aba13441b998b179fbf9483152582b6e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#aba13441b998b179fbf9483152582b6e2">LOG_AUDIO</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:aba13441b998b179fbf9483152582b6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb531a12d8aa31b007d796faa1b86ba8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#aeb531a12d8aa31b007d796faa1b86ba8">AUDIO_QUEUE_LOWER_LIMIT</a>&#160;&#160;&#160;18000</td></tr>
-<tr class="separator:aeb531a12d8aa31b007d796faa1b86ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b51aebc7a5e5a59313acb9df88ee462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a5b51aebc7a5e5a59313acb9df88ee462">AUDIO_QUEUE_UPPER_LIMIT</a>&#160;&#160;&#160;59000</td></tr>
-<tr class="separator:a5b51aebc7a5e5a59313acb9df88ee462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46ecf2f50530a713dc8a1bf4719f125b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a46ecf2f50530a713dc8a1bf4719f125b">TARGET_AUDIO_QUEUE_LIMIT</a>&#160;&#160;&#160;28000</td></tr>
-<tr class="separator:a46ecf2f50530a713dc8a1bf4719f125b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c549fa2648eea555b6c8a93ee4dc3aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">MAX_NUM_AUDIO_FRAMES</a>&#160;&#160;&#160;25</td></tr>
+<tr class="memitem:a8746ae57f53e99e184ab1e64e71d24c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a8746ae57f53e99e184ab1e64e71d24c5">SAMPLES_PER_FRAME</a>&#160;&#160;&#160;960</td></tr>
+<tr class="separator:a8746ae57f53e99e184ab1e64e71d24c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25065cd833bcfecfb404093aed3edaca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a25065cd833bcfecfb404093aed3edaca">BYTES_PER_SAMPLE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a25065cd833bcfecfb404093aed3edaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5597ce31d23d11493e6e674fe257d73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#ae5597ce31d23d11493e6e674fe257d73">NUM_CHANNELS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ae5597ce31d23d11493e6e674fe257d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a0fddf083e0292dfc3b801f715e7e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a8746ae57f53e99e184ab1e64e71d24c5">SAMPLES_PER_FRAME</a> * <a class="el" href="client_2audio_8c.html#a25065cd833bcfecfb404093aed3edaca">BYTES_PER_SAMPLE</a> * <a class="el" href="client_2audio_8c.html#ae5597ce31d23d11493e6e674fe257d73">NUM_CHANNELS</a>)</td></tr>
+<tr class="separator:a45a0fddf083e0292dfc3b801f715e7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c549fa2648eea555b6c8a93ee4dc3aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">MAX_NUM_AUDIO_FRAMES</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a8c549fa2648eea555b6c8a93ee4dc3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25df0d469cd704cc31a72b895f3b67b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a25df0d469cd704cc31a72b895f3b67b4">SDL_AUDIO_BUFFER_SIZE</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memitem:a89398809c1e33d6d7bab82e61263d2fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a89398809c1e33d6d7bab82e61263d2fd">AUDIO_QUEUE_LOWER_LIMIT_FRAMES</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a89398809c1e33d6d7bab82e61263d2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35a892e66fbb0590f73364b6eb70791"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#ab35a892e66fbb0590f73364b6eb70791">AUDIO_QUEUE_UPPER_LIMIT_FRAMES</a>&#160;&#160;&#160;<a class="el" href="client_2audio_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">MAX_NUM_AUDIO_FRAMES</a></td></tr>
+<tr class="separator:ab35a892e66fbb0590f73364b6eb70791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3266ef0f041fe2239dd2426d3b6ff094"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a3266ef0f041fe2239dd2426d3b6ff094">TARGET_AUDIO_QUEUE_LIMIT_FRAMES</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a3266ef0f041fe2239dd2426d3b6ff094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb531a12d8aa31b007d796faa1b86ba8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#aeb531a12d8aa31b007d796faa1b86ba8">AUDIO_QUEUE_LOWER_LIMIT</a>&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a89398809c1e33d6d7bab82e61263d2fd">AUDIO_QUEUE_LOWER_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td></tr>
+<tr class="separator:aeb531a12d8aa31b007d796faa1b86ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b51aebc7a5e5a59313acb9df88ee462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a5b51aebc7a5e5a59313acb9df88ee462">AUDIO_QUEUE_UPPER_LIMIT</a>&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#ab35a892e66fbb0590f73364b6eb70791">AUDIO_QUEUE_UPPER_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td></tr>
+<tr class="separator:a5b51aebc7a5e5a59313acb9df88ee462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ecf2f50530a713dc8a1bf4719f125b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a46ecf2f50530a713dc8a1bf4719f125b">TARGET_AUDIO_QUEUE_LIMIT</a>&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a3266ef0f041fe2239dd2426d3b6ff094">TARGET_AUDIO_QUEUE_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td></tr>
+<tr class="separator:a46ecf2f50530a713dc8a1bf4719f125b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25df0d469cd704cc31a72b895f3b67b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a25df0d469cd704cc31a72b895f3b67b4">SDL_AUDIO_BUFFER_SIZE</a>&#160;&#160;&#160;<a class="el" href="client_2audio_8c.html#a8746ae57f53e99e184ab1e64e71d24c5">SAMPLES_PER_FRAME</a></td></tr>
 <tr class="separator:a25df0d469cd704cc31a72b895f3b67b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f1abe07c4d92ce70925be770153bb5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a9f1abe07c4d92ce70925be770153bb5d">MAX_FREQ</a>&#160;&#160;&#160;128000</td></tr>
 <tr class="separator:a9f1abe07c4d92ce70925be770153bb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45a0fddf083e0292dfc3b801f715e7e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>&#160;&#160;&#160;8192</td></tr>
-<tr class="separator:a45a0fddf083e0292dfc3b801f715e7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -144,6 +157,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a02350b8accdbe0401e6a3861abb30320"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a02350b8accdbe0401e6a3861abb30320">render_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
 <tr class="memdesc:a02350b8accdbe0401e6a3861abb30320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the audio frame (If any are available to render)  <a href="client_2audio_8c.html#a02350b8accdbe0401e6a3861abb30320">More...</a><br /></td></tr>
 <tr class="separator:a02350b8accdbe0401e6a3861abb30320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab1d250e7203e002261d585e56d000f0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#ab1d250e7203e002261d585e56d000f0a">has_video_rendered_yet</a></td></tr>
+<tr class="separator:ab1d250e7203e002261d585e56d000f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all code that interacts directly with processing. </p>
@@ -161,7 +179,21 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define AUDIO_QUEUE_LOWER_LIMIT&#160;&#160;&#160;18000</td>
+          <td class="memname">#define AUDIO_QUEUE_LOWER_LIMIT&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a89398809c1e33d6d7bab82e61263d2fd">AUDIO_QUEUE_LOWER_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89398809c1e33d6d7bab82e61263d2fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89398809c1e33d6d7bab82e61263d2fd">&#9670;&nbsp;</a></span>AUDIO_QUEUE_LOWER_LIMIT_FRAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AUDIO_QUEUE_LOWER_LIMIT_FRAMES&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -175,7 +207,35 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define AUDIO_QUEUE_UPPER_LIMIT&#160;&#160;&#160;59000</td>
+          <td class="memname">#define AUDIO_QUEUE_UPPER_LIMIT&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#ab35a892e66fbb0590f73364b6eb70791">AUDIO_QUEUE_UPPER_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab35a892e66fbb0590f73364b6eb70791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35a892e66fbb0590f73364b6eb70791">&#9670;&nbsp;</a></span>AUDIO_QUEUE_UPPER_LIMIT_FRAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AUDIO_QUEUE_UPPER_LIMIT_FRAMES&#160;&#160;&#160;<a class="el" href="client_2audio_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">MAX_NUM_AUDIO_FRAMES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25065cd833bcfecfb404093aed3edaca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25065cd833bcfecfb404093aed3edaca">&#9670;&nbsp;</a></span>BYTES_PER_SAMPLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BYTES_PER_SAMPLE&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,7 +249,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DECODED_BYTES_PER_FRAME&#160;&#160;&#160;8192</td>
+          <td class="memname">#define DECODED_BYTES_PER_FRAME&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a8746ae57f53e99e184ab1e64e71d24c5">SAMPLES_PER_FRAME</a> * <a class="el" href="client_2audio_8c.html#a25065cd833bcfecfb404093aed3edaca">BYTES_PER_SAMPLE</a> * <a class="el" href="client_2audio_8c.html#ae5597ce31d23d11493e6e674fe257d73">NUM_CHANNELS</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,7 +291,35 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_NUM_AUDIO_FRAMES&#160;&#160;&#160;25</td>
+          <td class="memname">#define MAX_NUM_AUDIO_FRAMES&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5597ce31d23d11493e6e674fe257d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5597ce31d23d11493e6e674fe257d73">&#9670;&nbsp;</a></span>NUM_CHANNELS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUM_CHANNELS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8746ae57f53e99e184ab1e64e71d24c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8746ae57f53e99e184ab1e64e71d24c5">&#9670;&nbsp;</a></span>SAMPLES_PER_FRAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAMPLES_PER_FRAME&#160;&#160;&#160;960</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,7 +333,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SDL_AUDIO_BUFFER_SIZE&#160;&#160;&#160;1024</td>
+          <td class="memname">#define SDL_AUDIO_BUFFER_SIZE&#160;&#160;&#160;<a class="el" href="client_2audio_8c.html#a8746ae57f53e99e184ab1e64e71d24c5">SAMPLES_PER_FRAME</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -259,7 +347,21 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TARGET_AUDIO_QUEUE_LIMIT&#160;&#160;&#160;28000</td>
+          <td class="memname">#define TARGET_AUDIO_QUEUE_LIMIT&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a3266ef0f041fe2239dd2426d3b6ff094">TARGET_AUDIO_QUEUE_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3266ef0f041fe2239dd2426d3b6ff094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3266ef0f041fe2239dd2426d3b6ff094">&#9670;&nbsp;</a></span>TARGET_AUDIO_QUEUE_LIMIT_FRAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TARGET_AUDIO_QUEUE_LIMIT_FRAMES&#160;&#160;&#160;3</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -431,6 +533,21 @@ Usage</h1>
 <dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths.</dd>
 <dd>
 In order for audio to be responsive, this function <em>MUST</em> be called in a tight loop, at least once every millisecond. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ab1d250e7203e002261d585e56d000f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d250e7203e002261d585e56d000f0a">&#9670;&nbsp;</a></span>has_video_rendered_yet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_video_rendered_yet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

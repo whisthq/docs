@@ -1,5 +1,12 @@
 var NAVTREEINDEX10 =
 {
+"structWhistYUVColor.html#af66d5846b6864345bcd70f469a0af5dc":[8,0,97,0],
+"structX11CaptureDevice.html":[8,0,98],
+"structX11CaptureDevice.html#a14f8b043bd98da409064ec5b58a3a2ac":[8,0,98,11],
+"structX11CaptureDevice.html#a1c4f6b1f91d40bc223efabf1b8f5c974":[8,0,98,12],
+"structX11CaptureDevice.html#a47bfa7fe3830e8f7ffc8b7a48fc78870":[8,0,98,3],
+"structX11CaptureDevice.html#a5686470157715e6cb4e48bd4c17c1d28":[8,0,98,9],
+"structX11CaptureDevice.html#a74d01856486376e69cdbce519e5a9174":[8,0,98,2],
 "structX11CaptureDevice.html#a87365b648364394b27725fea96f7b913":[8,0,98,8],
 "structX11CaptureDevice.html#aa45126adf5d331cfef4d57a9382cc0d5":[8,0,98,0],
 "structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb":[8,0,98,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX10 =
 "uinput__input__driver_8c.html#a68d952af97dc08e94a465fc1eb9934c7":[9,0,2,5,4,6],
 "uinput__input__driver_8c.html#a691c68b4dbd3dcae603eaf120fdbfdd2":[9,0,2,5,4,1],
 "uinput__input__driver_8c.html#a7536f547f053d81b807aa2b1141eb193":[9,0,2,5,4,18],
-"uinput__input__driver_8c.html#a858ccae3f36f88e26fa4aa62de7d522a":[9,0,2,5,4,14],
-"uinput__input__driver_8c.html#aac1b945261b8a7ad602f0368c2bd0c4d":[9,0,2,5,4,13],
-"uinput__input__driver_8c.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7":[9,0,2,5,4,5],
-"uinput__input__driver_8c.html#ac73b454cce63412dd6f829e91dc02072":[9,0,2,5,4,15],
-"uinput__input__driver_8c.html#ac8a20be24877768539ac4cb85fc4a190":[9,0,2,5,4,11],
-"uinput__input__driver_8c.html#acd90bbe9de979b23743f9377a615f29c":[9,0,2,5,4,16],
-"uinput__input__driver_8c.html#adefd940015375948bd0912f7080b63ac":[9,0,2,5,4,0],
-"uinput__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532":[9,0,2,5,4,4]
+"uinput__input__driver_8c.html#a858ccae3f36f88e26fa4aa62de7d522a":[9,0,2,5,4,14]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX7 =
 {
+"structAudioContext.html#a558707606e44318c3099e736a1f0adae":[8,0,6,5],
+"structAudioContext.html#ab376e8c4f33f0344e5d17613b53aeeb2":[8,0,6,6],
+"structAudioContext.html#af1a8cf4f6ec0486f9628144db0bfa6e1":[8,0,6,7],
+"structAudioContext.html#afca80ad4c112b7f35f98b217d4d4b178":[8,0,6,1],
+"structAudioDecoder.html":[8,0,7],
+"structAudioDecoder.html#a4a55dceb13b37b190d1e4f8e9743f794":[8,0,7,4],
+"structAudioDecoder.html#a827784bdad17fdd71ab71de887f34837":[8,0,7,3],
 "structAudioDecoder.html#a92369d78c0cbda3c14eb66369caaa498":[8,0,7,0],
 "structAudioDecoder.html#ac82173b481da4e3df0fa9d208faca4f2":[8,0,7,5],
 "structAudioDecoder.html#afa1eb71c5c3a651f012993d7838fe994":[8,0,7,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX7 =
 "structLodePNGColorMode.html":[8,0,38],
 "structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50":[8,0,38,5],
 "structLodePNGColorMode.html#a407557f056168682d9319aeb60866dcc":[8,0,38,7],
-"structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[8,0,38,1],
-"structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[8,0,38,6],
-"structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[8,0,38,2],
-"structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[8,0,38,3],
-"structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[8,0,38,0],
-"structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6":[8,0,38,4],
-"structLodePNGColorStats.html":[8,0,39],
-"structLodePNGColorStats.html#a162ce4d4ee804a0136814ba469c82294":[8,0,39,5]
+"structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[8,0,38,1]
 };

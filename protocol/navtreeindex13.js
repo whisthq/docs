@@ -1,5 +1,12 @@
 var NAVTREEINDEX13 =
 {
+"whistgetopt_8h.html#a819ea2030ed843a933bf5c3afce4f89a":[9,0,2,2,7,4],
+"whistgetopt_8h.html#a8616b8a74ae6c01a7ad95ad2876226ec":[9,0,2,2,7,9],
+"whistgetopt_8h.html#a9e4dd83987628ef30baf79370993f55a":[9,0,2,2,7,5],
+"whistgetopt_8h.html#ac07930413317507d5c51c19b3ac6ed20":[9,0,2,2,7,10],
+"whistgetopt_8h.html#acca06c0a947656bd8b395bf1084ffb72":[9,0,2,2,7,2],
+"whistgetopt_8h.html#ad5e1c16213bbee2d5e8cc363309f418c":[9,0,2,2,7,13],
+"whistgetopt_8h.html#adb50a0eab9fed92fc3bfc7dfa4f2c410":[9,0,2,2,7,11],
 "whistgetopt_8h.html#ae30f05ee1e2e5652f174a35c7875d25e":[9,0,2,2,7,12],
 "whistgetopt_8h_source.html":[9,0,2,2,7],
 "win__clipboard_8c.html":[9,0,2,1,6],
