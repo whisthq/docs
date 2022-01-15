@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"structStatisticContext.html#aee371be5235bf0ec71acf7a1b8e3bca7":[8,0,65,1],
+"structStatisticData.html":[8,0,66],
 "structStatisticData.html#a285604f80595a5dec886ece325a8253d":[8,0,66,2],
 "structStatisticData.html#a4674dd9ea84c2c1f62a3b93930a3af05":[8,0,66,0],
 "structStatisticData.html#ad0f0b77f038851d9dd2bbeefa49c4500":[8,0,66,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "structWhistTimerInternal.html#a06135bf82c1c28ab7deb81a07ae68645":[8,0,95,0],
 "structWhistTimerOpaque.html":[8,0,96],
 "structWhistTimerOpaque.html#a0b61f5d730590a53da49bb7357541244":[8,0,96,0],
-"structWhistYUVColor.html":[8,0,97],
-"structWhistYUVColor.html#a19784573e8a520f0e550040670c9d4ef":[8,0,97,2],
-"structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[8,0,97,1]
+"structWhistYUVColor.html":[8,0,97]
 };

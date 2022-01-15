@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"structLodePNGColorMode.html#a407557f056168682d9319aeb60866dcc":[8,0,38,7],
+"structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[8,0,38,1],
 "structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[8,0,38,6],
 "structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[8,0,38,2],
 "structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[8,0,38,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "structStatisticContext.html":[8,0,65],
 "structStatisticContext.html#a28c9da6af9eec8514fd0877585382f3d":[8,0,65,3],
 "structStatisticContext.html#a59817a676e14fafd99431f4f1608aed1":[8,0,65,2],
-"structStatisticContext.html#a9a9d75b2a01da6ce695283c248937100":[8,0,65,0],
-"structStatisticContext.html#aee371be5235bf0ec71acf7a1b8e3bca7":[8,0,65,1],
-"structStatisticData.html":[8,0,66]
+"structStatisticContext.html#a9a9d75b2a01da6ce695283c248937100":[8,0,65,0]
 };

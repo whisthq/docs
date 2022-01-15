@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"structWhistYUVColor.html#a19784573e8a520f0e550040670c9d4ef":[8,0,97,2],
+"structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[8,0,97,1],
 "structWhistYUVColor.html#af66d5846b6864345bcd70f469a0af5dc":[8,0,97,0],
 "structX11CaptureDevice.html":[8,0,98],
 "structX11CaptureDevice.html#a14f8b043bd98da409064ec5b58a3a2ac":[8,0,98,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "uinput__input__driver_8c.html#a6318f9a9f9816b21cf90962162f9f437":[9,0,2,5,4,10],
 "uinput__input__driver_8c.html#a669ecfca5e7aaad9db1f33b392a613c7":[9,0,2,5,4,12],
 "uinput__input__driver_8c.html#a68d952af97dc08e94a465fc1eb9934c7":[9,0,2,5,4,6],
-"uinput__input__driver_8c.html#a691c68b4dbd3dcae603eaf120fdbfdd2":[9,0,2,5,4,1],
-"uinput__input__driver_8c.html#a7536f547f053d81b807aa2b1141eb193":[9,0,2,5,4,18],
-"uinput__input__driver_8c.html#a858ccae3f36f88e26fa4aa62de7d522a":[9,0,2,5,4,14]
+"uinput__input__driver_8c.html#a691c68b4dbd3dcae603eaf120fdbfdd2":[9,0,2,5,4,1]
 };

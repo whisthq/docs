@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"structAudioContext.html#a333d813e153e9a5457e1a66be50a6d93":[8,0,6,0],
+"structAudioContext.html#a47e4f8566820b049f0e11ac111ce8fc2":[8,0,6,2],
 "structAudioContext.html#a558707606e44318c3099e736a1f0adae":[8,0,6,5],
 "structAudioContext.html#ab376e8c4f33f0344e5d17613b53aeeb2":[8,0,6,6],
 "structAudioContext.html#af1a8cf4f6ec0486f9628144db0bfa6e1":[8,0,6,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[8,0,37,0],
 "structLodePNGBitWriter.html#aeabd9ce60873a85f587df7df46548d04":[8,0,37,1],
 "structLodePNGColorMode.html":[8,0,38],
-"structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50":[8,0,38,5],
-"structLodePNGColorMode.html#a407557f056168682d9319aeb60866dcc":[8,0,38,7],
-"structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[8,0,38,1]
+"structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50":[8,0,38,5]
 };
