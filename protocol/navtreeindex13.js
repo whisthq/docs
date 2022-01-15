@@ -1,5 +1,16 @@
 var NAVTREEINDEX13 =
 {
+"whistgetopt_8c.html#aa66fa298ed3187720cb609e15cd7d22c":[9,0,2,2,6,2],
+"whistgetopt_8c.html#ac393ec775622430dfe25cd2ac9dec9f4":[9,0,2,2,6,4],
+"whistgetopt_8c.html#ad5e1c16213bbee2d5e8cc363309f418c":[9,0,2,2,6,10],
+"whistgetopt_8c.html#adb50a0eab9fed92fc3bfc7dfa4f2c410":[9,0,2,2,6,8],
+"whistgetopt_8c.html#ae30f05ee1e2e5652f174a35c7875d25e":[9,0,2,2,6,9],
+"whistgetopt_8c.html#af6a17143a11464662febd04a959012ed":[9,0,2,2,6,1],
+"whistgetopt_8h.html":[9,0,2,2,7],
+"whistgetopt_8h.html#a0b015baad8c3389d0cbdb22cd82b85d7":[9,0,2,2,7,6],
+"whistgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce":[9,0,2,2,7,1],
+"whistgetopt_8h.html#a475b8db98445da73e5f62a1ef6324b95":[9,0,2,2,7,14],
+"whistgetopt_8h.html#a60428225710059ca135c6b2a8941855f":[9,0,2,2,7,7],
 "whistgetopt_8h.html#a6c5b232cca42dab05f40b47f69715f8b":[9,0,2,2,7,8],
 "whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc":[9,0,2,2,7,3],
 "whistgetopt_8h.html#a819ea2030ed843a933bf5c3afce4f89a":[9,0,2,2,7,4],

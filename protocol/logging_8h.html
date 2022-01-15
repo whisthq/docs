@@ -104,7 +104,9 @@ Macros</h2></td></tr>
 <tr class="separator:a5efcbb4a78eb37e2945e61e61f235a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a884a960393b267876a1e3bfc114f4032"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a884a960393b267876a1e3bfc114f4032">LOGGER_BUF_SIZE</a>&#160;&#160;&#160;1000</td></tr>
 <tr class="separator:a884a960393b267876a1e3bfc114f4032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a917888c1c6e773d709495236eaf46fc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a917888c1c6e773d709495236eaf46fc5">_FILE</a>&#160;&#160;&#160;((sizeof(__ROOT_FILE__) &lt; sizeof(__FILE__)) ? (&amp;__FILE__[sizeof(__ROOT_FILE__)]) : &quot;&quot;)</td></tr>
+<tr class="memitem:a12e53bbf839e9aaff9c29e349920ac10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a12e53bbf839e9aaff9c29e349920ac10">__ROOT_FILE__</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
+<tr class="separator:a12e53bbf839e9aaff9c29e349920ac10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917888c1c6e773d709495236eaf46fc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a917888c1c6e773d709495236eaf46fc5">_FILE</a>&#160;&#160;&#160;((sizeof(<a class="el" href="logging_8h.html#a12e53bbf839e9aaff9c29e349920ac10">__ROOT_FILE__</a>) &lt; sizeof(__FILE__)) ? (&amp;__FILE__[sizeof(<a class="el" href="logging_8h.html#a12e53bbf839e9aaff9c29e349920ac10">__ROOT_FILE__</a>)]) : &quot;&quot;)</td></tr>
 <tr class="separator:a917888c1c6e773d709495236eaf46fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166c2449cbc8389076f29f5a1360338e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a166c2449cbc8389076f29f5a1360338e">NO_LOG</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="separator:a166c2449cbc8389076f29f5a1360338e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +206,20 @@ Usage</h1>
 <p>Note that these macros do not need an additional <br  />
  character at the end of your format strings. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a12e53bbf839e9aaff9c29e349920ac10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e53bbf839e9aaff9c29e349920ac10">&#9670;&nbsp;</a></span>__ROOT_FILE__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __ROOT_FILE__&#160;&#160;&#160;&quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a917888c1c6e773d709495236eaf46fc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a917888c1c6e773d709495236eaf46fc5">&#9670;&nbsp;</a></span>_FILE</h2>
 
@@ -211,7 +227,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define _FILE&#160;&#160;&#160;((sizeof(__ROOT_FILE__) &lt; sizeof(__FILE__)) ? (&amp;__FILE__[sizeof(__ROOT_FILE__)]) : &quot;&quot;)</td>
+          <td class="memname">#define _FILE&#160;&#160;&#160;((sizeof(<a class="el" href="logging_8h.html#a12e53bbf839e9aaff9c29e349920ac10">__ROOT_FILE__</a>) &lt; sizeof(__FILE__)) ? (&amp;__FILE__[sizeof(<a class="el" href="logging_8h.html#a12e53bbf839e9aaff9c29e349920ac10">__ROOT_FILE__</a>)]) : &quot;&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -896,16 +912,16 @@ Usage</h1>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="alogging_8h_html_af9fad048f611a1a810ffa672a007c917"><div class="ttname"><a href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a></div><div class="ttdeci">#define LOG_ARGS(LOG_TAG)</div><div class="ttdef"><b>Definition:</b> logging.h:66</div></div>
-<div class="ttc" id="alogging_8h_html_a8f40cf1096c9b0050980ce64a7b21d9a"><div class="ttname"><a href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a></div><div class="ttdeci">#define FATAL_ERROR_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:76</div></div>
-<div class="ttc" id="alogging_8h_html_ae6f84e8321c3bc4f546cf4a2a4798064"><div class="ttname"><a href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a></div><div class="ttdeci">#define DEBUG_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:71</div></div>
-<div class="ttc" id="alogging_8h_html_ac4541472739b48ec14d768219540a13a"><div class="ttname"><a href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a></div><div class="ttdeci">#define LOG_FMT</div><div class="ttdef"><b>Definition:</b> logging.h:65</div></div>
-<div class="ttc" id="alogging_8h_html_a1eeca73435ee192b8d720a89e47b3c87"><div class="ttname"><a href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a></div><div class="ttdeci">#define INFO_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:72</div></div>
-<div class="ttc" id="alogging_8h_html_aa29007116d11e676da62a3ae1dae4402"><div class="ttname"><a href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a></div><div class="ttdeci">#define ERROR_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:75</div></div>
-<div class="ttc" id="alogging_8h_html_a34cab68c5e544eb2a0f0fdf344e327e6"><div class="ttname"><a href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a></div><div class="ttdeci">#define WARNING_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:74</div></div>
-<div class="ttc" id="alogging_8h_html_ac5445774555999e2d5b299937810fbd6"><div class="ttname"><a href="logging_8h.html#ac5445774555999e2d5b299937810fbd6">METRIC_TAG</a></div><div class="ttdeci">#define METRIC_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:73</div></div>
-<div class="ttc" id="alogging_8h_html_a806511f4930171733227c99101dc0606"><div class="ttname"><a href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a></div><div class="ttdeci">#define NEWLINE</div><div class="ttdef"><b>Definition:</b> logging.h:68</div></div>
-<div class="ttc" id="awhist_8h_html_aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e"><div class="ttname"><a href="whist_8h.html#aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e">WHIST_EXIT_FAILURE</a></div><div class="ttdeci">@ WHIST_EXIT_FAILURE</div><div class="ttdef"><b>Definition:</b> whist.h:627</div></div>
+<div class="ttc" id="alogging_8h_html_af9fad048f611a1a810ffa672a007c917"><div class="ttname"><a href="logging_8h.html#af9fad048f611a1a810ffa672a007c917">LOG_ARGS</a></div><div class="ttdeci">#define LOG_ARGS(LOG_TAG)</div><div class="ttdef"><b>Definition:</b> logging.h:69</div></div>
+<div class="ttc" id="alogging_8h_html_a8f40cf1096c9b0050980ce64a7b21d9a"><div class="ttname"><a href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a></div><div class="ttdeci">#define FATAL_ERROR_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:79</div></div>
+<div class="ttc" id="alogging_8h_html_ae6f84e8321c3bc4f546cf4a2a4798064"><div class="ttname"><a href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a></div><div class="ttdeci">#define DEBUG_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:74</div></div>
+<div class="ttc" id="alogging_8h_html_ac4541472739b48ec14d768219540a13a"><div class="ttname"><a href="logging_8h.html#ac4541472739b48ec14d768219540a13a">LOG_FMT</a></div><div class="ttdeci">#define LOG_FMT</div><div class="ttdef"><b>Definition:</b> logging.h:68</div></div>
+<div class="ttc" id="alogging_8h_html_a1eeca73435ee192b8d720a89e47b3c87"><div class="ttname"><a href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a></div><div class="ttdeci">#define INFO_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:75</div></div>
+<div class="ttc" id="alogging_8h_html_aa29007116d11e676da62a3ae1dae4402"><div class="ttname"><a href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a></div><div class="ttdeci">#define ERROR_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:78</div></div>
+<div class="ttc" id="alogging_8h_html_a34cab68c5e544eb2a0f0fdf344e327e6"><div class="ttname"><a href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a></div><div class="ttdeci">#define WARNING_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:77</div></div>
+<div class="ttc" id="alogging_8h_html_ac5445774555999e2d5b299937810fbd6"><div class="ttname"><a href="logging_8h.html#ac5445774555999e2d5b299937810fbd6">METRIC_TAG</a></div><div class="ttdeci">#define METRIC_TAG</div><div class="ttdef"><b>Definition:</b> logging.h:76</div></div>
+<div class="ttc" id="alogging_8h_html_a806511f4930171733227c99101dc0606"><div class="ttname"><a href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a></div><div class="ttdeci">#define NEWLINE</div><div class="ttdef"><b>Definition:</b> logging.h:71</div></div>
+<div class="ttc" id="awhist_8h_html_aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e"><div class="ttname"><a href="whist_8h.html#aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e">WHIST_EXIT_FAILURE</a></div><div class="ttdeci">@ WHIST_EXIT_FAILURE</div><div class="ttdef"><b>Definition:</b> whist.h:626</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

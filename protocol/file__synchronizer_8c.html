@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('file__synchronizer_8c.html',''); initR
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -93,7 +94,17 @@ $(document).ready(function(){initNavTree('file__synchronizer_8c.html',''); initR
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="file__synchronizer_8h_source.html">file_synchronizer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="file__drop_8h_source.html">file_drop.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="file__download_8h_source.html">file_download.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a29dc4d703cdee256beaa13f533ca0c87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a29dc4d703cdee256beaa13f533ca0c87">sep</a>&#160;&#160;&#160;'/'</td></tr>
+<tr class="separator:a29dc4d703cdee256beaa13f533ca0c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae3d57b8d2870eaca793651615f4ea7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#aeae3d57b8d2870eaca793651615f4ea7">HOME_ENV_VAR</a>&#160;&#160;&#160;&quot;HOME&quot;</td></tr>
+<tr class="separator:aeae3d57b8d2870eaca793651615f4ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad40a68e29db0caa3d4c78079fa0f6a4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#ad40a68e29db0caa3d4c78079fa0f6a4b">reset_transferring_file</a> (int file_index)</td></tr>
@@ -147,7 +158,36 @@ Usage</h1>
 <p>FileChunk* our_chunk_to_send; file_synchronizer_read_next_file_chunk(0, &amp;our_chunk_to_send);</p>
 <p>if (our_chunk_to_send) { We have a new file chunk, this should be sent to the server Send(our_chunk_to_send); } else { There is no new file chunk }</p>
 <p><a class="el" href="file__synchronizer_8c.html#a134717220224cdb4af9e94e85f401a58" title="Cleanup the file synchronizer.">destroy_file_synchronizer()</a>; </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aeae3d57b8d2870eaca793651615f4ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae3d57b8d2870eaca793651615f4ea7">&#9670;&nbsp;</a></span>HOME_ENV_VAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HOME_ENV_VAR&#160;&#160;&#160;&quot;HOME&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29dc4d703cdee256beaa13f533ca0c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29dc4d703cdee256beaa13f533ca0c87">&#9670;&nbsp;</a></span>sep</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sep&#160;&#160;&#160;'/'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a134717220224cdb4af9e94e85f401a58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a134717220224cdb4af9e94e85f401a58">&#9670;&nbsp;</a></span>destroy_file_synchronizer()</h2>
 

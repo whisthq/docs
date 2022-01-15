@@ -1,5 +1,7 @@
 var file__synchronizer_8c =
 [
+    [ "HOME_ENV_VAR", "file__synchronizer_8c.html#aeae3d57b8d2870eaca793651615f4ea7", null ],
+    [ "sep", "file__synchronizer_8c.html#a29dc4d703cdee256beaa13f533ca0c87", null ],
     [ "destroy_file_synchronizer", "file__synchronizer_8c.html#a134717220224cdb4af9e94e85f401a58", null ],
     [ "file_synchronizer_open_file_for_reading", "file__synchronizer_8c.html#aaab672043abddfb4a1f0c5860579b0ce", null ],
     [ "file_synchronizer_open_file_for_writing", "file__synchronizer_8c.html#af0472d183a72e82a9a2de524dca1cd99", null ],

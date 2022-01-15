@@ -1,5 +1,16 @@
 var NAVTREEINDEX8 =
 {
+"structLodePNGBitReader.html":[8,0,36],
+"structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[8,0,36,0],
+"structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[8,0,36,3],
+"structLodePNGBitReader.html#a80a148b29e36301da77f3d2432cbd608":[8,0,36,4],
+"structLodePNGBitReader.html#aac5615d1bb15682c3bc6e9e52b8cd5aa":[8,0,36,1],
+"structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f":[8,0,36,2],
+"structLodePNGBitWriter.html":[8,0,37],
+"structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[8,0,37,0],
+"structLodePNGBitWriter.html#aeabd9ce60873a85f587df7df46548d04":[8,0,37,1],
+"structLodePNGColorMode.html":[8,0,38],
+"structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50":[8,0,38,5],
 "structLodePNGColorMode.html#a407557f056168682d9319aeb60866dcc":[8,0,38,7],
 "structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[8,0,38,1],
 "structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[8,0,38,6],
@@ -238,16 +249,5 @@ var NAVTREEINDEX8 =
 "structSocketContextData.html#a53214358998840a3029a770e482f4c59":[8,0,64,0],
 "structSocketContextData.html#a5ab3a2583726416e38be92c4bab9dd8f":[8,0,64,7],
 "structSocketContextData.html#a6b8eab56b0bbc0d20ab04d3e0dca7df7":[8,0,64,13],
-"structSocketContextData.html#a853db879046aba333069aa98c1340235":[8,0,64,10],
-"structSocketContextData.html#abd81aa98e7dbbac8eed5843e63b7b153":[8,0,64,14],
-"structSocketContextData.html#ac797b2bf6b4b85379cb724761e72db24":[8,0,64,15],
-"structSocketContextData.html#ac8f5e1a798ac91586e1e8dd794e34ab5":[8,0,64,9],
-"structSocketContextData.html#ac9e273bf6db80ca12e8ca4be65eca693":[8,0,64,2],
-"structSocketContextData.html#acf98c1bd41fbf75eef86c5b1a22213a9":[8,0,64,11],
-"structSocketContextData.html#aea18305c91f93d1f1f0259210cfd457e":[8,0,64,12],
-"structSocketContextData.html#aedce534a3eb3d7bd001b6e0e5115ce2c":[8,0,64,5],
-"structStatisticContext.html":[8,0,65],
-"structStatisticContext.html#a28c9da6af9eec8514fd0877585382f3d":[8,0,65,3],
-"structStatisticContext.html#a59817a676e14fafd99431f4f1608aed1":[8,0,65,2],
-"structStatisticContext.html#a9a9d75b2a01da6ce695283c248937100":[8,0,65,0]
+"structSocketContextData.html#a853db879046aba333069aa98c1340235":[8,0,64,10]
 };

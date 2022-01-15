@@ -1,5 +1,6 @@
 var logging_8h =
 [
+    [ "__ROOT_FILE__", "logging_8h.html#a12e53bbf839e9aaff9c29e349920ac10", null ],
     [ "_FILE", "logging_8h.html#a917888c1c6e773d709495236eaf46fc5", null ],
     [ "DEBUG_LEVEL", "logging_8h.html#ac2d33ccaf63f5d5b66552b95426c0137", null ],
     [ "DEBUG_TAG", "logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064", null ],
