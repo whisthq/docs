@@ -2,7 +2,7 @@ var searchData=
 [
   ['fallback_5fbitrate_514',['fallback_bitrate',['../network__algorithm_8c.html#aed048552071ecaa1b07110cb497b451a',1,'network_algorithm.c']]],
   ['fatal_5fassert_515',['FATAL_ASSERT',['../logging_8h.html#ae34722e01b6ee3b8e30834e2f8e6423a',1,'logging.h']]],
-  ['fatal_5ferror_5ftag_516',['fatal_error_tag',['../logging_8c.html#a7839ef37dc31d9ce82b1698801a6a75c',1,'fatal_error_tag():&#160;logging.c'],['../logging_8h.html#a40d7fb6145e38bf69d8be9ef38ceebed',1,'fatal_error_tag():&#160;logging.h'],['../logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a',1,'FATAL_ERROR_TAG():&#160;logging.h']]],
+  ['fatal_5ferror_5ftag_516',['FATAL_ERROR_TAG',['../logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a',1,'FATAL_ERROR_TAG():&#160;logging.h'],['../logging_8c.html#a7839ef37dc31d9ce82b1698801a6a75c',1,'fatal_error_tag():&#160;logging.c'],['../logging_8h.html#a40d7fb6145e38bf69d8be9ef38ceebed',1,'fatal_error_tag():&#160;logging.h']]],
   ['fbc_5fhandle_517',['fbc_handle',['../structNvidiaCaptureDevice.html#a16517c3ba7cca2be8aa32b766742721b',1,'NvidiaCaptureDevice']]],
   ['fd_5fabsmouse_518',['fd_absmouse',['../structInputDevice.html#a3cf568b6e17d58b12beeb7098c7c0527',1,'InputDevice']]],
   ['fd_5fkeyboard_519',['fd_keyboard',['../structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf',1,'InputDevice']]],

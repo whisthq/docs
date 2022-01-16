@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafa0613b8b81df5f1855c9c68e3cfd5db":[9,0,1,12,0],
 "server__statistic_8h.html#a88fe8358dd91a9e94cf4521b284fd4c5":[9,0,1,12,20],
 "server__statistic_8h.html#aeb2697fdcecb4d884626826c24600b01":[9,0,1,12,21],
 "server__statistic_8h_source.html":[9,0,1,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345":[8,0,35,5],
 "structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf":[8,0,35,3],
 "structInputDevice.html#aa2884b4093f9359cea2435e600461164":[8,0,35,6],
-"structInputDevice.html#ab1e5788638481214330b017d325ed424":[8,0,35,0],
-"structInputDevice.html#adff9edaffeec725015ee98790864532a":[8,0,35,7]
+"structInputDevice.html#ab1e5788638481214330b017d325ed424":[8,0,35,0]
 };

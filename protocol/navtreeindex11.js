@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"udp_8h.html#acd5303599f69de58b96be9dca5ddcb6d":[9,0,2,7,11,4],
 "udp_8h_source.html":[9,0,2,7,11],
 "uinput__input__driver_8c.html":[9,0,2,5,4],
 "uinput__input__driver_8c.html#a05a281131f961593c1ca1e39123f31b7":[9,0,2,5,4,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "whist_8h.html#a9b26cd4ece83eb114a81877bd849e28b":[9,0,2,2,1,23],
 "whist_8h.html#a9bcfa4a6fecd23535df2dd7cc000ea23":[9,0,2,2,1,38],
 "whist_8h.html#a9e8ab2261deed9913cbe2af14256eda4":[9,0,2,2,1,89],
-"whist_8h.html#aa005f29266f2ddf76cb57dc510516839":[9,0,2,2,1,119],
-"whist_8h.html#aa1728270d73c5d1598de1fd691762eb1":[9,0,2,2,1,50]
+"whist_8h.html#aa005f29266f2ddf76cb57dc510516839":[9,0,2,2,1,119]
 };
