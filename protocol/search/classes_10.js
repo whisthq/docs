@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['transferringfile_2276',['TransferringFile',['../structTransferringFile.html',1,'']]]
+  ['transferringfile_2278',['TransferringFile',['../structTransferringFile.html',1,'']]]
 ];

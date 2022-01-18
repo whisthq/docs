@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"structWhistServerMessage.html#a19ad9000bba61691ee739f5f7c0c6204":[8,0,94,2],
+"structWhistServerMessage.html#a1dc1e890e71bcd562450093ace01facc":[8,0,94,7],
 "structWhistServerMessage.html#a2f9fd642f6d8e5faab29f7a75bf2c8eb":[8,0,94,1],
 "structWhistServerMessage.html#a35d9e11e822bcc44793734ef5703de72":[8,0,94,6],
 "structWhistServerMessage.html#a360c2ce20921cf4aeecd5952134d0043":[8,0,94,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "udp_8c.html#afa0745e4600fb1898e4acdb00ea8ddad":[9,0,2,7,10,6],
 "udp_8h.html":[9,0,2,7,11],
 "udp_8h.html#a497472418eb2d897f80004378d81eb17":[9,0,2,7,11,1],
-"udp_8h.html#a77d9098b90040bad70ccff2783f32408":[9,0,2,7,11,3],
-"udp_8h.html#ab227c787d07a796738fef8cc10a1a0ad":[9,0,2,7,11,0],
-"udp_8h.html#ac56b1bf85aa12b5b0790a9402c9ba916":[9,0,2,7,11,2]
+"udp_8h.html#a77d9098b90040bad70ccff2783f32408":[9,0,2,7,11,3]
 };

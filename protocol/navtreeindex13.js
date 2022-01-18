@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"whistgetopt_8c.html#a62231492adf03e02ff80d0bfb3b3ebd6":[9,0,2,2,6,12],
+"whistgetopt_8c.html#a74a6cf8aca7b02b89ba78a4c356e1fcf":[9,0,2,2,6,7],
 "whistgetopt_8c.html#aa4f67375c41298a870c5fb75367076e8":[9,0,2,2,6,0],
 "whistgetopt_8c.html#aa66fa298ed3187720cb609e15cd7d22c":[9,0,2,2,6,2],
 "whistgetopt_8c.html#ac393ec775622430dfe25cd2ac9dec9f4":[9,0,2,2,6,4],

@@ -99,6 +99,8 @@ Macros</h2></td></tr>
 <tr class="separator:ad83e1b0ff67583d4f6f2a1e612c2ba01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c0cd0c8e96081bbfaadddeb0a9b232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#aa4c0cd0c8e96081bbfaadddeb0a9b232">BAD_BURST_BITRATE</a>&#160;&#160;&#160;31800000</td></tr>
 <tr class="separator:aa4c0cd0c8e96081bbfaadddeb0a9b232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f898a5d3f32ed5a20587d3b97383a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a72f898a5d3f32ed5a20587d3b97383a2">EWMA_STATS_SECONDS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a72f898a5d3f32ed5a20587d3b97383a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -108,6 +110,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8b19e59aec257dd9ce2dbc9cc17c44b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedd260a3c19ffe815276936a34578934"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#aedd260a3c19ffe815276936a34578934">ewma_ratio_bitrate</a> (<a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> stats)</td></tr>
 <tr class="separator:aedd260a3c19ffe815276936a34578934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514ba7746992c1c82a8ddb53628aba87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a514ba7746992c1c82a8ddb53628aba87">timed_ewma_ratio_bitrate</a> (<a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> stats)</td></tr>
+<tr class="separator:a514ba7746992c1c82a8ddb53628aba87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fca7d6bd4c3f135046f727ee8224bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a5fca7d6bd4c3f135046f727ee8224bf7">get_desired_network_settings</a> (<a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> stats)</td></tr>
 <tr class="memdesc:a5fca7d6bd4c3f135046f727ee8224bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will calculate what network settings are desired, in response to any network statistics given.  <a href="network__algorithm_8c.html#a5fca7d6bd4c3f135046f727ee8224bf7">More...</a><br /></td></tr>
 <tr class="separator:a5fca7d6bd4c3f135046f727ee8224bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +149,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define BAD_BURST_BITRATE&#160;&#160;&#160;31800000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72f898a5d3f32ed5a20587d3b97383a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f898a5d3f32ed5a20587d3b97383a2">&#9670;&nbsp;</a></span>EWMA_STATS_SECONDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EWMA_STATS_SECONDS&#160;&#160;&#160;5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -230,6 +248,24 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A network settings struct </dd></dl>
+
+</div>
+</div>
+<a id="a514ba7746992c1c82a8ddb53628aba87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514ba7746992c1c82a8ddb53628aba87">&#9670;&nbsp;</a></span>timed_ewma_ratio_bitrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNetworkSettings.html">NetworkSettings</a> timed_ewma_ratio_bitrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td>
+          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -43,7 +43,8 @@ var searchData=
   ['ew_5fcursor_5fhash_508',['EW_CURSOR_HASH',['../linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a065fa00c7f5b77c2726146dfe2ee569b',1,'linuxcursor.c']]],
   ['ewma_5fbitrate_509',['ewma_bitrate',['../network__algorithm_8c.html#a8b19e59aec257dd9ce2dbc9cc17c44b4',1,'network_algorithm.c']]],
   ['ewma_5fratio_5fbitrate_510',['ewma_ratio_bitrate',['../network__algorithm_8c.html#aedd260a3c19ffe815276936a34578934',1,'network_algorithm.c']]],
-  ['exclusive_5fcontrol_511',['EXCLUSIVE_CONTROL',['../whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ffab170611b776a9ab381c9572a4b9a8aea',1,'whist.h']]],
-  ['exiting_512',['exiting',['../struct__whist__server__state.html#a900ee419fd1e1dcdebecbc683ee1173c',1,'_whist_server_state']]],
-  ['extract_5favpackets_5ffrom_5fbuffer_513',['extract_avpackets_from_buffer',['../avpacket__buffer_8c.html#a8e9da8d2e41ac3a5dd5a76d2ece752d2',1,'extract_avpackets_from_buffer(void *buffer, int buffer_size, AVPacket *packets):&#160;avpacket_buffer.c'],['../avpacket__buffer_8h.html#a8e9da8d2e41ac3a5dd5a76d2ece752d2',1,'extract_avpackets_from_buffer(void *buffer, int buffer_size, AVPacket *packets):&#160;avpacket_buffer.c']]]
+  ['ewma_5fstats_5fseconds_511',['EWMA_STATS_SECONDS',['../network__algorithm_8c.html#a72f898a5d3f32ed5a20587d3b97383a2',1,'network_algorithm.c']]],
+  ['exclusive_5fcontrol_512',['EXCLUSIVE_CONTROL',['../whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ffab170611b776a9ab381c9572a4b9a8aea',1,'whist.h']]],
+  ['exiting_513',['exiting',['../struct__whist__server__state.html#a900ee419fd1e1dcdebecbc683ee1173c',1,'_whist_server_state']]],
+  ['extract_5favpackets_5ffrom_5fbuffer_514',['extract_avpackets_from_buffer',['../avpacket__buffer_8c.html#a8e9da8d2e41ac3a5dd5a76d2ece752d2',1,'extract_avpackets_from_buffer(void *buffer, int buffer_size, AVPacket *packets):&#160;avpacket_buffer.c'],['../avpacket__buffer_8h.html#a8e9da8d2e41ac3a5dd5a76d2ece752d2',1,'extract_avpackets_from_buffer(void *buffer, int buffer_size, AVPacket *packets):&#160;avpacket_buffer.c']]]
 ];
