@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structSocketContextData.html#a53214358998840a3029a770e482f4c59":[8,0,64,0],
 "structSocketContextData.html#a5ab3a2583726416e38be92c4bab9dd8f":[8,0,64,7],
 "structSocketContextData.html#a6b8eab56b0bbc0d20ab04d3e0dca7df7":[8,0,64,13],
 "structSocketContextData.html#a853db879046aba333069aa98c1340235":[8,0,64,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structWhistRenderer.html#aaf5ee8919593842551053750e8d33056":[8,0,92,8],
 "structWhistRenderer.html#ac74afa8525b364ea7321c148573ba7f6":[8,0,92,6],
 "structWhistRenderer.html#aed7260c7a7868b1bb86ed2f461b404db":[8,0,92,7],
-"structWhistServerMessage.html":[8,0,94],
-"structWhistServerMessage.html#a00e3a51de925d637b8804879c570850a":[8,0,94,3]
+"structWhistServerMessage.html":[8,0,94]
 };

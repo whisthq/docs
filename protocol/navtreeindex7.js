@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae633d7b7ba7e153f9671a1691ef89b8c":[9,0,1,12,3],
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55baeb3563683b3a0fc7176a7bfb9a0c6995":[9,0,1,12,12],
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55baeba71b4c50b5ac76b56b850f361cf65b":[9,0,1,12,10],
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafa0613b8b81df5f1855c9c68e3cfd5db":[9,0,1,12,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structInputDevice.html#a244a8cb189577e83579480f90143f96f":[8,0,35,8],
 "structInputDevice.html#a3cf568b6e17d58b12beeb7098c7c0527":[8,0,35,2],
 "structInputDevice.html#a4fa4d386a10f209982638cc8bd1e79fb":[8,0,35,1],
-"structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345":[8,0,35,5],
-"structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf":[8,0,35,3]
+"structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345":[8,0,35,5]
 };
