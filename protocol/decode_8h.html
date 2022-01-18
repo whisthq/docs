@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('decode_8h.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the code to create a video decoder and use that.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="avpacket__buffer_8h_source.html">whist/utils/avpacket_buffer.h</a>&gt;</code><br />
@@ -105,7 +105,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that <code>get_current_decoded_frame</code> returns.  <a href="structDecodedFrameData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html">VideoDecoder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for decoding frames via ffmpeg. Decoding is handled by the codec and context, and after decoding finishes, the decoded frame will be in sw_frame, regardless of whether or not we used hardware-accelerated decoding.  <a href="structVideoDecoder.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for decoding frames via ffmpeg.  <a href="structVideoDecoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -116,13 +116,13 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a6ad22d055a2a6874154984511a83cde5"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a6ad22d055a2a6874154984511a83cde5">DecodeType</a></td></tr>
-<tr class="memdesc:a6ad22d055a2a6874154984511a83cde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating the types of decoding we are doing. Type is initially set to DECODE_TYPE_NONE, then set to one of the below 4. QSV and HARDWARE_OLDER are separate types because they require different configurations than standard hardware-accelerated decoding.  <a href="decode_8h.html#a6ad22d055a2a6874154984511a83cde5">More...</a><br /></td></tr>
+<tr class="memdesc:a6ad22d055a2a6874154984511a83cde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating the types of decoding we are doing.  <a href="decode_8h.html#a6ad22d055a2a6874154984511a83cde5">More...</a><br /></td></tr>
 <tr class="separator:a6ad22d055a2a6874154984511a83cde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36d6cfdbfc751cb80e087e6d6605e6be"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDecodedFrameData.html">DecodedFrameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a36d6cfdbfc751cb80e087e6d6605e6be">DecodedFrameData</a></td></tr>
 <tr class="memdesc:a36d6cfdbfc751cb80e087e6d6605e6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that <code>get_current_decoded_frame</code> returns.  <a href="decode_8h.html#a36d6cfdbfc751cb80e087e6d6605e6be">More...</a><br /></td></tr>
 <tr class="separator:a36d6cfdbfc751cb80e087e6d6605e6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a931b433c839c4e0eddb5109d6e205a90"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structVideoDecoder.html">VideoDecoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a931b433c839c4e0eddb5109d6e205a90">VideoDecoder</a></td></tr>
-<tr class="memdesc:a931b433c839c4e0eddb5109d6e205a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for decoding frames via ffmpeg. Decoding is handled by the codec and context, and after decoding finishes, the decoded frame will be in sw_frame, regardless of whether or not we used hardware-accelerated decoding.  <a href="decode_8h.html#a931b433c839c4e0eddb5109d6e205a90">More...</a><br /></td></tr>
+<tr class="memdesc:a931b433c839c4e0eddb5109d6e205a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for decoding frames via ffmpeg.  <a href="decode_8h.html#a931b433c839c4e0eddb5109d6e205a90">More...</a><br /></td></tr>
 <tr class="separator:a931b433c839c4e0eddb5109d6e205a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -136,7 +136,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9ba03ca5c85d60d2ccb6bc5d67fc4d6485f">DECODE_TYPE_HARDWARE_OLDER</a> = 4
 <br />
  }</td></tr>
-<tr class="memdesc:a9262b421a57418a04c809f94041b2f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating the types of decoding we are doing. Type is initially set to DECODE_TYPE_NONE, then set to one of the below 4. QSV and HARDWARE_OLDER are separate types because they require different configurations than standard hardware-accelerated decoding.  <a href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">More...</a><br /></td></tr>
+<tr class="memdesc:a9262b421a57418a04c809f94041b2f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating the types of decoding we are doing.  <a href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">More...</a><br /></td></tr>
 <tr class="separator:a9262b421a57418a04c809f94041b2f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -154,15 +154,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a29e08542a8a988ca8371797bfe93f25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the next available frame from the decoder.  <a href="decode_8h.html#a29e08542a8a988ca8371797bfe93f25f">More...</a><br /></td></tr>
 <tr class="separator:a29e08542a8a988ca8371797bfe93f25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6084356bbeab34505db4c75bc46fd9c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDecodedFrameData.html">DecodedFrameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a6084356bbeab34505db4c75bc46fd9c4">video_decoder_get_last_decoded_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
-<tr class="memdesc:a6084356bbeab34505db4c75bc46fd9c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>. <code>video_decoder_decode_frame</code> must return 0 first, at least once.  <a href="decode_8h.html#a6084356bbeab34505db4c75bc46fd9c4">More...</a><br /></td></tr>
+<tr class="memdesc:a6084356bbeab34505db4c75bc46fd9c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>.  <a href="decode_8h.html#a6084356bbeab34505db4c75bc46fd9c4">More...</a><br /></td></tr>
 <tr class="separator:a6084356bbeab34505db4c75bc46fd9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a985c67900df09a3cf893e4ba76d030c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a985c67900df09a3cf893e4ba76d030c7">video_decoder_free_decoded_frame</a> (<a class="el" href="structDecodedFrameData.html">DecodedFrameData</a> *decoded_frame_data)</td></tr>
 <tr class="memdesc:a985c67900df09a3cf893e4ba76d030c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the frame returned by video_decoder_get_last_decoded_frame, Or do nothing if a zero'd struct is passed in.  <a href="decode_8h.html#a985c67900df09a3cf893e4ba76d030c7">More...</a><br /></td></tr>
 <tr class="separator:a985c67900df09a3cf893e4ba76d030c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the code to create a video decoder and use that. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the code to create a video decoder and use that </p>
 <h1><a class="anchor" id="autotoc_md242"></a>
 decoder to decode frames.</h1>
 <h1><a class="anchor" id="autotoc_md243"></a>
@@ -219,7 +219,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Enum indicating the types of decoding we are doing. Type is initially set to DECODE_TYPE_NONE, then set to one of the below 4. QSV and HARDWARE_OLDER are separate types because they require different configurations than standard hardware-accelerated decoding. </p>
+<p>Enum indicating the types of decoding we are doing. </p>
+<p>Type is initially set to DECODE_TYPE_NONE, then set to one of the below 4. QSV and HARDWARE_OLDER are separate types because they require different configurations than standard hardware-accelerated decoding. </p>
 
 </div>
 </div>
@@ -235,7 +236,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Struct for decoding frames via ffmpeg. Decoding is handled by the codec and context, and after decoding finishes, the decoded frame will be in sw_frame, regardless of whether or not we used hardware-accelerated decoding. </p>
+<p>Struct for decoding frames via ffmpeg. </p>
+<p>Decoding is handled by the codec and context, and after decoding finishes, the decoded frame will be in sw_frame, regardless of whether or not we used hardware-accelerated decoding. </p>
 
 </div>
 </div>
@@ -252,7 +254,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Enum indicating the types of decoding we are doing. Type is initially set to DECODE_TYPE_NONE, then set to one of the below 4. QSV and HARDWARE_OLDER are separate types because they require different configurations than standard hardware-accelerated decoding. </p>
+<p>Enum indicating the types of decoding we are doing. </p>
+<p>Type is initially set to DECODE_TYPE_NONE, then set to one of the below 4. QSV and HARDWARE_OLDER are separate types because they require different configurations than standard hardware-accelerated decoding. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9262b421a57418a04c809f94041b2f9ba50199f09c30d5c0d3105a38f8e390f74"></a>DECODE_TYPE_NONE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9262b421a57418a04c809f94041b2f9bac43764b121b87a7d5492c657e5796ab1"></a>DECODE_TYPE_SOFTWARE&#160;</td><td class="fielddoc"></td></tr>
@@ -411,7 +414,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>. <code>video_decoder_decode_frame</code> must return 0 first, at least once. </p>
+<p>Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>. </p>
+<p><code>video_decoder_decode_frame</code> must return 0 first, at least once.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>The decoder we are using for decoding</td></tr>

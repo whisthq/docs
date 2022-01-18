@@ -87,6 +87,9 @@ $(document).ready(function(){initNavTree('input__driver_8h.html',''); initResiza
 <div class="title">input_driver.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="winapi__input__driver_8h_source.html">winapi_input_driver.h</a>&quot;</code><br />
 </div>
@@ -125,16 +128,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a68d952af97dc08e94a465fc1eb9934c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a high-resolution vertical or horizontal mouse scroll event, for trackpads or smooth mouse wheels.  <a href="input__driver_8h.html#a68d952af97dc08e94a465fc1eb9934c7">More...</a><br /></td></tr>
 <tr class="separator:a68d952af97dc08e94a465fc1eb9934c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a669ecfca5e7aaad9db1f33b392a613c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input__driver_8h.html#a669ecfca5e7aaad9db1f33b392a613c7">emit_multigesture_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float d_theta, float d_dist, <a class="el" href="whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153">WhistMultigestureType</a> gesture_type, bool active_gesture)</td></tr>
-<tr class="memdesc:a669ecfca5e7aaad9db1f33b392a613c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a trackpad multigesture event (e.g. pinch)  <a href="input__driver_8h.html#a669ecfca5e7aaad9db1f33b392a613c7">More...</a><br /></td></tr>
+<tr class="memdesc:a669ecfca5e7aaad9db1f33b392a613c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a trackpad multigesture event (e.g.  <a href="input__driver_8h.html#a669ecfca5e7aaad9db1f33b392a613c7">More...</a><br /></td></tr>
 <tr class="separator:a669ecfca5e7aaad9db1f33b392a613c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <h1><a class="anchor" id="autotoc_md156"></a>
 @brief This file defines the methods required to implement an input driver</h1>
 <h1><a class="anchor" id="autotoc_md157"></a>
 Usage</h1>
-<p>Create an input device by calling <code>CreateInputDevice()</code>. Now, you may use this device to query keyboard state, or to emit mouse button, mouse motion, scroll, and keyboard events. These methods are used, for example, in <a class="el" href="input_8c.html" title="This file defines general input-processing functions and toggles.">input.c</a>, to build <code><a class="el" href="structWhistClientMessage.html" title="Client message.">WhistClientMessage</a></code> handlers and to generate keyboard input from an arbitrary string. </p>
+<p>Create an input device by calling <code>CreateInputDevice()</code>. Now, you may use this device to query keyboard state, or to emit mouse button, mouse motion, scroll, and keyboard events. These methods are used, for example, in <a class="el" href="input_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">input.c</a>, to build <code><a class="el" href="structWhistClientMessage.html" title="Client message.">WhistClientMessage</a></code> handlers and to generate keyboard input from an arbitrary string. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae155e1e686b6e1dcc9e006fb07789532"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae155e1e686b6e1dcc9e006fb07789532">&#9670;&nbsp;</a></span>create_input_device()</h2>
@@ -458,7 +461,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Emit a trackpad multigesture event (e.g. pinch) </p>
+<p>Emit a trackpad multigesture event (e.g. </p>
+<p>pinch)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input_device</td><td>The initialized input device to write</td></tr>

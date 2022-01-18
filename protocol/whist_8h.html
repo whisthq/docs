@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('whist_8h.html',''); initResizable(); }
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the core of Whist custom structs and definitions used throughout.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
@@ -300,7 +300,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">safe_printf</a>&#160;&#160;&#160;UNINITIALIZED_LOG</td></tr>
-<tr class="memdesc:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will exit on error, and log a warning if this function is used when the logger is already initialized. If the logger is initialized, please use LOG_INFO.  <a href="whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">More...</a><br /></td></tr>
+<tr class="memdesc:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will exit on error, and log a warning if this function is used when the logger is already initialized.  <a href="whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">More...</a><br /></td></tr>
 <tr class="separator:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -309,7 +309,7 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a9740e3eb33500c4ba6d6efade68933d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec types.  <a href="whist_8h.html#a9740e3eb33500c4ba6d6efade68933d2">More...</a><br /></td></tr>
 <tr class="separator:a9740e3eb33500c4ba6d6efade68933d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac56de0da721105f54191ba968635836"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aac56de0da721105f54191ba968635836">CaptureDeviceType</a></td></tr>
-<tr class="memdesc:aac56de0da721105f54191ba968635836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below.  <a href="whist_8h.html#aac56de0da721105f54191ba968635836">More...</a><br /></td></tr>
+<tr class="memdesc:aac56de0da721105f54191ba968635836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device.  <a href="whist_8h.html#aac56de0da721105f54191ba968635836">More...</a><br /></td></tr>
 <tr class="separator:aac56de0da721105f54191ba968635836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938f13e5d5f81ccdc1d4ed590663905e"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a938f13e5d5f81ccdc1d4ed590663905e">WhistKeycode</a></td></tr>
 <tr class="memdesc:a938f13e5d5f81ccdc1d4ed590663905e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keycodes.  <a href="whist_8h.html#a938f13e5d5f81ccdc1d4ed590663905e">More...</a><br /></td></tr>
@@ -388,7 +388,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">CaptureDeviceType</a> { <a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c">NVIDIA_DEVICE</a>, 
 <a class="el" href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621">X11_DEVICE</a>
  }</td></tr>
-<tr class="memdesc:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below.  <a href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">More...</a><br /></td></tr>
+<tr class="memdesc:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating whether we are using the Nvidia or X11 capture device.  <a href="whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600">More...</a><br /></td></tr>
 <tr class="separator:a405cbf3c7e9ae25dc03ad4fcf563f600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad1832f9d718bfd4d4e414729ea4369b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> { <br />
 &#160;&#160;<a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369baab0bb0036eaae33892ed0665cb12bcea">FK_UNKNOWN</a> = 0, 
@@ -701,7 +701,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 0 in the bit array passed as a parameter.  <a href="whist_8h.html#a7d59f1d85585b3ff640a8ece33c6da5b">More...</a><br /></td></tr>
 <tr class="separator:a7d59f1d85585b3ff640a8ece33c6da5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8643207a604b19f3fefe5046bd3c0290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a8643207a604b19f3fefe5046bd3c0290">trim_utf8_string</a> (char *<a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>)</td></tr>
-<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.  <a href="whist_8h.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
+<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation.  <a href="whist_8h.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
 <tr class="separator:a8643207a604b19f3fefe5046bd3c0290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa005f29266f2ddf76cb57dc510516839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aa005f29266f2ddf76cb57dc510516839">bit_array_set_all</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba)</td></tr>
 <tr class="memdesc:aa005f29266f2ddf76cb57dc510516839"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets every bit to 1 in the bit array passed as a parameter.  <a href="whist_8h.html#aa005f29266f2ddf76cb57dc510516839">More...</a><br /></td></tr>
@@ -713,15 +713,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a70ea629de5b3e424ab213f0be58279fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns a pointer to the array of unsigned char containing actual bits.  <a href="whist_8h.html#a70ea629de5b3e424ab213f0be58279fe">More...</a><br /></td></tr>
 <tr class="separator:a70ea629de5b3e424ab213f0be58279fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31fd6c4678d06a79702a5781fb54b43b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a31fd6c4678d06a79702a5781fb54b43b">bit_array_test_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
-<tr class="memdesc:a31fd6c4678d06a79702a5781fb54b43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tests the specified bit in the bit array passed as a parameter. A non-zero will be returned if the tested bit is set.  <a href="whist_8h.html#a31fd6c4678d06a79702a5781fb54b43b">More...</a><br /></td></tr>
+<tr class="memdesc:a31fd6c4678d06a79702a5781fb54b43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tests the specified bit in the bit array passed as a parameter.  <a href="whist_8h.html#a31fd6c4678d06a79702a5781fb54b43b">More...</a><br /></td></tr>
 <tr class="separator:a31fd6c4678d06a79702a5781fb54b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753f5e2101d29a87275db58d21de8971"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a753f5e2101d29a87275db58d21de8971">whist_git_revision</a> ()</td></tr>
 <tr class="memdesc:a753f5e2101d29a87275db58d21de8971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short string representing the current git commit of whist at the time of compilation.  <a href="whist_8h.html#a753f5e2101d29a87275db58d21de8971">More...</a><br /></td></tr>
 <tr class="separator:a753f5e2101d29a87275db58d21de8971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the core of Whist custom structs and definitions used throughout. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the core of Whist custom structs and definitions used throughout. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a407e78922a862311fd4f35eeef889630"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a407e78922a862311fd4f35eeef889630">&#9670;&nbsp;</a></span>ACK_REFRESH_MS</h2>
@@ -1473,7 +1473,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This will exit on error, and log a warning if this function is used when the logger is already initialized. If the logger is initialized, please use LOG_INFO. </p>
+<p>This will exit on error, and log a warning if this function is used when the logger is already initialized. </p>
+<p>If the logger is initialized, please use LOG_INFO.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fmt</td><td>The format string </td></tr>
@@ -1753,7 +1754,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below. </p>
+<p>Enum indicating whether we are using the Nvidia or X11 capture device. </p>
+<p>If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below. </p>
 
 </div>
 </div>
@@ -2141,7 +2143,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enum indicating whether we are using the Nvidia or X11 capture device. If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below. </p>
+<p>Enum indicating whether we are using the Nvidia or X11 capture device. </p>
+<p>If we discover a third option for capturing, update this enum and the <a class="el" href="structCaptureDevice.html">CaptureDevice</a> struct below. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c"></a>NVIDIA_DEVICE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621"></a>X11_DEVICE&#160;</td><td class="fielddoc"></td></tr>
@@ -2902,7 +2905,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function tests the specified bit in the bit array passed as a parameter. A non-zero will be returned if the tested bit is set. </p>
+<p>This function tests the specified bit in the bit array passed as a parameter. </p>
+<p>A non-zero will be returned if the tested bit is set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ba</td><td>The pointer to bit array</td></tr>
@@ -3164,7 +3168,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed. </p>
+<p>This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. </p>
+<p>This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The utf8 string to be trimmed. </td></tr>

@@ -1,9 +1,5 @@
 var annotated_dup =
 [
-    [ "Checks & Tests", "index.html#autotoc_md23", null ],
-    [ "Unit Testing", "index.html#autotoc_md24", null ],
-    [ "Option Flags", "md_client_README.html#autotoc_md55", null ],
-    [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md97", null ],
     [ "_whist_server_config", "struct__whist__server__config.html", "struct__whist__server__config" ],
     [ "_whist_server_state", "struct__whist__server__state.html", "struct__whist__server__state" ],
     [ "AudioContext", "structAudioContext.html", "structAudioContext" ],
@@ -36,6 +32,7 @@ var annotated_dup =
     [ "Hash", "structHash.html", "structHash" ],
     [ "HuffmanTree", "structHuffmanTree.html", "structHuffmanTree" ],
     [ "InputDevice", "structInputDevice.html", "structInputDevice" ],
+    [ "LinkedList", "structLinkedList.html", "structLinkedList" ],
     [ "LodePNGBitReader", "structLodePNGBitReader.html", "structLodePNGBitReader" ],
     [ "LodePNGBitWriter", "structLodePNGBitWriter.html", "structLodePNGBitWriter" ],
     [ "LodePNGColorMode", "structLodePNGColorMode.html", "structLodePNGColorMode" ],

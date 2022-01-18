@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('native__window__utils__x11_8c.html',''
 </div><!--header-->
 <div class="contents">
 
-<p>This file implements X11 APIs for native window.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="native__window__utils_8h_source.html">native_window_utils.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('native__window__utils__x11_8c.html',''
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a637fdd1a1f351d7b4e338afbdbda5ab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__window__utils__x11_8c.html#a637fdd1a1f351d7b4e338afbdbda5ab6">hide_native_window_taskbar</a> ()</td></tr>
-<tr class="memdesc:a637fdd1a1f351d7b4e338afbdbda5ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide the taskbar icon for the app. This only works on macOS (for Windows and Linux, SDL already implements this in the <code>SDL_WINDOW_SKIP_TASKBAR</code> flag).  <a href="native__window__utils__x11_8c.html#a637fdd1a1f351d7b4e338afbdbda5ab6">More...</a><br /></td></tr>
+<tr class="memdesc:a637fdd1a1f351d7b4e338afbdbda5ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide the taskbar icon for the app.  <a href="native__window__utils__x11_8c.html#a637fdd1a1f351d7b4e338afbdbda5ab6">More...</a><br /></td></tr>
 <tr class="separator:a637fdd1a1f351d7b4e338afbdbda5ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73fcb271dd56d8d4e85f009dfd47699d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__window__utils__x11_8c.html#a73fcb271dd56d8d4e85f009dfd47699d">set_native_window_color</a> (SDL_Window *<a class="el" href="sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a>, <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> color)</td></tr>
 <tr class="memdesc:a73fcb271dd56d8d4e85f009dfd47699d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the color of the titlebar of the provided window, and the corresponding titlebar text as well.  <a href="native__window__utils__x11_8c.html#a73fcb271dd56d8d4e85f009dfd47699d">More...</a><br /></td></tr>
 <tr class="separator:a73fcb271dd56d8d4e85f009dfd47699d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcad58a70865afc364a653e027ef0b72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__window__utils__x11_8c.html#afcad58a70865afc364a653e027ef0b72">init_native_window_options</a> (SDL_Window *<a class="el" href="sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a>)</td></tr>
-<tr class="memdesc:afcad58a70865afc364a653e027ef0b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the customized native window. This is called from the main thread right after the window finishes loading.  <a href="native__window__utils__x11_8c.html#afcad58a70865afc364a653e027ef0b72">More...</a><br /></td></tr>
+<tr class="memdesc:afcad58a70865afc364a653e027ef0b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the customized native window.  <a href="native__window__utils__x11_8c.html#afcad58a70865afc364a653e027ef0b72">More...</a><br /></td></tr>
 <tr class="separator:afcad58a70865afc364a653e027ef0b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d8fabea8bfc30077f88bad5a81c776"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__window__utils__x11_8c.html#a74d8fabea8bfc30077f88bad5a81c776">get_native_window_dpi</a> (SDL_Window *<a class="el" href="sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a>)</td></tr>
 <tr class="memdesc:a74d8fabea8bfc30077f88bad5a81c776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the DPI for the display of the provided window.  <a href="native__window__utils__x11_8c.html#a74d8fabea8bfc30077f88bad5a81c776">More...</a><br /></td></tr>
@@ -114,8 +114,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa5e85f401416fce58db1ca2448883855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file implements X11 APIs for native window. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file implements X11 APIs for native window </p>
 <h1><a class="anchor" id="autotoc_md48"></a>
 modifications not handled by SDL.</h1>
 <h1><a class="anchor" id="autotoc_md49"></a>
@@ -183,7 +183,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Hide the taskbar icon for the app. This only works on macOS (for Windows and Linux, SDL already implements this in the <code>SDL_WINDOW_SKIP_TASKBAR</code> flag). </p>
+<p>Hide the taskbar icon for the app. </p>
+<p>This only works on macOS (for Windows and Linux, SDL already implements this in the <code>SDL_WINDOW_SKIP_TASKBAR</code> flag). </p>
 
 </div>
 </div>
@@ -203,7 +204,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the customized native window. This is called from the main thread right after the window finishes loading. </p>
+<p>Initialize the customized native window. </p>
+<p>This is called from the main thread right after the window finishes loading.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">window</td><td>The SDL window wrapper for the NSWindow to customize. </td></tr>

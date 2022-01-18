@@ -88,6 +88,9 @@ $(document).ready(function(){initNavTree('nvidiacapture_8h.html',''); initResiza
 <div class="title">nvidiacapture.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;../nvidia-linux/NvFBCUtils.h&quot;</code><br />
 <code>#include &quot;../nvidia-linux/nvEncodeAPI.h&quot;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
@@ -98,7 +101,7 @@ $(document).ready(function(){initNavTree('nvidiacapture_8h.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to handle using Nvidia for capturing the screen. p_fbc_fn contains pointers to the API functions, and dw_texture_index keeps track of the GL texture that the capture is stored on.  <a href="structNvidiaCaptureDevice.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to handle using Nvidia for capturing the screen.  <a href="structNvidiaCaptureDevice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -107,7 +110,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3e7227af44e244f049aa253a20e01a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an nvidia capture device.  <a href="nvidiacapture_8h.html#a3e7227af44e244f049aa253a20e01a0c">More...</a><br /></td></tr>
 <tr class="separator:a3e7227af44e244f049aa253a20e01a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb8b929d289578199244fb8e82bdceac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac">nvidia_capture_screen</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:aeb8b929d289578199244fb8e82bdceac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures the screen into GPU pointers. This will also set width/height to the dimensions of the captured image.  <a href="nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac">More...</a><br /></td></tr>
+<tr class="memdesc:aeb8b929d289578199244fb8e82bdceac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures the screen into GPU pointers.  <a href="nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac">More...</a><br /></td></tr>
 <tr class="separator:aeb8b929d289578199244fb8e82bdceac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab166537ddb313de0c8583c84a6f79d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d">destroy_nvidia_capture_device</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
 <tr class="memdesc:a6ab166537ddb313de0c8583c84a6f79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the nvidia capture device.  <a href="nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d">More...</a><br /></td></tr>
@@ -118,18 +121,17 @@ Functions</h2></td></tr>
 <tr class="separator:a5940a21cbe50f63624e278862d61db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <h1><a class="anchor" id="autotoc_md232"></a>
 @brief This file contains the code to do screen capture via the Nvidia FBC SDK on Linux Ubuntu.</h1>
 <h1><a class="anchor" id="autotoc_md233"></a>
 Usage</h1>
-<p><a class="el" href="structNvidiaCaptureDevice.html" title="Struct to handle using Nvidia for capturing the screen. p_fbc_fn contains pointers to the API functio...">NvidiaCaptureDevice</a> contains all the information used to interface with the Nvidia FBC SDK and the data of a frame. Call create_nvidia_capture_device to initialize a device, nvidia_capture_screen to capture the screen with said device, and destroy_nvidia_capture_device when done capturing frames.</p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<p><a class="el" href="structNvidiaCaptureDevice.html" title="Struct to handle using Nvidia for capturing the screen.">NvidiaCaptureDevice</a> contains all the information used to interface with the Nvidia FBC SDK and the data of a frame. Call create_nvidia_capture_device to initialize a device, nvidia_capture_screen to capture the screen with said device, and destroy_nvidia_capture_device when done capturing frames.</p>
 <h1><a class="anchor" id="autotoc_md234"></a>
 @brief This file contains the code to do screen capture via the Nvidia FBC SDK on Linux Ubuntu.</h1>
 <h1><a class="anchor" id="autotoc_md235"></a>
 Usage</h1>
-<p><a class="el" href="structNvidiaCaptureDevice.html" title="Struct to handle using Nvidia for capturing the screen. p_fbc_fn contains pointers to the API functio...">NvidiaCaptureDevice</a> contains all the information used to interface with the Nvidia FBC SDK and the data of a frame. Call create_nvidia_capture_device to initialize a device, nvidia_capture_screen to capture the screen with said device, and destroy_nvidia_capture_device when done capturing frames. </p>
+<p><a class="el" href="structNvidiaCaptureDevice.html" title="Struct to handle using Nvidia for capturing the screen.">NvidiaCaptureDevice</a> contains all the information used to interface with the Nvidia FBC SDK and the data of a frame. Call create_nvidia_capture_device to initialize a device, nvidia_capture_screen to capture the screen with said device, and destroy_nvidia_capture_device when done capturing frames. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a3e7227af44e244f049aa253a20e01a0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e7227af44e244f049aa253a20e01a0c">&#9670;&nbsp;</a></span>create_nvidia_capture_device()</h2>
@@ -217,7 +219,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Captures the screen into GPU pointers. This will also set width/height to the dimensions of the captured image. </p>
+<p>Captures the screen into GPU pointers. </p>
+<p>This will also set width/height to the dimensions of the captured image.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>Capture device to capture with</td></tr>

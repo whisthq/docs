@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('ffmpeg__encode_8h.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the code to create and destroy FFmpeg encoders and use.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 </div>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('ffmpeg__encode_8h.html',''); initResiz
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for handling ffmpeg encoding of video frames. If software encoding, the codec and context determine the properties of the output frames, and scaling is done using the filter_graph. Frames encoded on the GPU are stored in hw_frame, while frames encoded on the CPU are stored in sw_frame.  <a href="structFFmpegEncoder.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for handling ffmpeg encoding of video frames.  <a href="structFFmpegEncoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -109,7 +109,7 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:ada48e386bb7b231d0e76179937e1df97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode type.  <a href="ffmpeg__encode_8h.html#ada48e386bb7b231d0e76179937e1df97">More...</a><br /></td></tr>
 <tr class="separator:ada48e386bb7b231d0e76179937e1df97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a084ea8995d45f2fd7b4a3f29c9e618c2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a084ea8995d45f2fd7b4a3f29c9e618c2">FFmpegEncoder</a></td></tr>
-<tr class="memdesc:a084ea8995d45f2fd7b4a3f29c9e618c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for handling ffmpeg encoding of video frames. If software encoding, the codec and context determine the properties of the output frames, and scaling is done using the filter_graph. Frames encoded on the GPU are stored in hw_frame, while frames encoded on the CPU are stored in sw_frame.  <a href="ffmpeg__encode_8h.html#a084ea8995d45f2fd7b4a3f29c9e618c2">More...</a><br /></td></tr>
+<tr class="memdesc:a084ea8995d45f2fd7b4a3f29c9e618c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for handling ffmpeg encoding of video frames.  <a href="ffmpeg__encode_8h.html#a084ea8995d45f2fd7b4a3f29c9e618c2">More...</a><br /></td></tr>
 <tr class="separator:a084ea8995d45f2fd7b4a3f29c9e618c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -134,7 +134,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a731cbac96e0dceaef41b44d4e3928a37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a731cbac96e0dceaef41b44d4e3928a37">ffmpeg_encoder_receive_packet</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, AVPacket *packet)</td></tr>
 <tr class="separator:a731cbac96e0dceaef41b44d4e3928a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fac5117dccdd791ebfc6455df47af85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a4fac5117dccdd791ebfc6455df47af85">ffmpeg_encoder_send_frame</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a4fac5117dccdd791ebfc6455df47af85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the frame in <code>encoder-&gt;sw_frame</code> or <code>encoder-&gt;hw_frame</code>. The encoded packet(s) are stored in <code>encoder-&gt;packets</code>, and the size of the buffer necessary to store them is stored in <code>encoder-&gt;encoded_frame_size</code>  <a href="ffmpeg__encode_8h.html#a4fac5117dccdd791ebfc6455df47af85">More...</a><br /></td></tr>
+<tr class="memdesc:a4fac5117dccdd791ebfc6455df47af85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the frame in <code>encoder-&gt;sw_frame</code> or <code>encoder-&gt;hw_frame</code>.  <a href="ffmpeg__encode_8h.html#a4fac5117dccdd791ebfc6455df47af85">More...</a><br /></td></tr>
 <tr class="separator:a4fac5117dccdd791ebfc6455df47af85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7523bd870defc17734a03f7e88034161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8h.html#a7523bd870defc17734a03f7e88034161">ffmpeg_set_iframe</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a7523bd870defc17734a03f7e88034161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well.  <a href="ffmpeg__encode_8h.html#a7523bd870defc17734a03f7e88034161">More...</a><br /></td></tr>
@@ -144,14 +144,14 @@ Functions</h2></td></tr>
 <tr class="separator:a588b81c7a9be9daa76b2527e7368b10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the code to create and destroy FFmpeg encoders and use. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the code to create and destroy FFmpeg encoders and use </p>
 <h1><a class="anchor" id="autotoc_md248"></a>
 them to encode captured screens.</h1>
 <h1><a class="anchor" id="autotoc_md249"></a>
 Usage</h1>
 <p>Video is encoded to H264 via either a hardware encoder (currently, we use NVidia GPUs, so we use NVENC) or a software encoder if hardware encoding fails. H265 is also supported but not currently used. For encoders, create an H264 encoder via create_ffmpeg_encoder, and use it to encode frames via ffmpeg_encoder_send_frame. Retrieve encoded packets using ffmpeg_encoder_receive_packet. When finished, destroy the encoder using destroy_ffmpeg_encoder.</p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<p>This file contains the code to create and destroy FFmpeg encoders and use </p>
 <h1><a class="anchor" id="autotoc_md250"></a>
 them to encode captured screens.</h1>
 <h1><a class="anchor" id="autotoc_md251"></a>
@@ -170,7 +170,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Struct for handling ffmpeg encoding of video frames. If software encoding, the codec and context determine the properties of the output frames, and scaling is done using the filter_graph. Frames encoded on the GPU are stored in hw_frame, while frames encoded on the CPU are stored in sw_frame. </p>
+<p>Struct for handling ffmpeg encoding of video frames. </p>
+<p>If software encoding, the codec and context determine the properties of the output frames, and scaling is done using the filter_graph. Frames encoded on the GPU are stored in hw_frame, while frames encoded on the CPU are stored in sw_frame. </p>
 
 </div>
 </div>
@@ -396,7 +397,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Encode the frame in <code>encoder-&gt;sw_frame</code> or <code>encoder-&gt;hw_frame</code>. The encoded packet(s) are stored in <code>encoder-&gt;packets</code>, and the size of the buffer necessary to store them is stored in <code>encoder-&gt;encoded_frame_size</code> </p>
+<p>Encode the frame in <code>encoder-&gt;sw_frame</code> or <code>encoder-&gt;hw_frame</code>. </p>
+<p>The encoded packet(s) are stored in <code>encoder-&gt;packets</code>, and the size of the buffer necessary to store them is stored in <code>encoder-&gt;encoded_frame_size</code></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>The encoder to use</td></tr>

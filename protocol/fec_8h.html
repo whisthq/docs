@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('fec_8h.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the FEC API Interface.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 
 <p><a href="fec_8h_source.html">Go to the source code of this file.</a></p>
@@ -110,7 +110,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9ae850e2e0baba3686a0b85f23949893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an FEC Encoder.  <a href="fec_8h.html#a9ae850e2e0baba3686a0b85f23949893">More...</a><br /></td></tr>
 <tr class="separator:a9ae850e2e0baba3686a0b85f23949893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8d45fea9c101fa77f55eef426979ff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#af8d45fea9c101fa77f55eef426979ff9">fec_encoder_register_buffer</a> (<a class="el" href="structFECEncoder.html">FECEncoder</a> *fec_encoder, void *buffer, int buffer_size)</td></tr>
-<tr class="memdesc:af8d45fea9c101fa77f55eef426979ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a buffer into the encoder. The encoder expects this function to be called <code>num_real_buffers</code> times.  <a href="fec_8h.html#af8d45fea9c101fa77f55eef426979ff9">More...</a><br /></td></tr>
+<tr class="memdesc:af8d45fea9c101fa77f55eef426979ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a buffer into the encoder.  <a href="fec_8h.html#af8d45fea9c101fa77f55eef426979ff9">More...</a><br /></td></tr>
 <tr class="separator:af8d45fea9c101fa77f55eef426979ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685b2d430114a8b257ef3a28a2ceb14b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a685b2d430114a8b257ef3a28a2ceb14b">fec_get_encoded_buffers</a> (<a class="el" href="structFECEncoder.html">FECEncoder</a> *fec_encoder, void **buffers, int *buffer_sizes)</td></tr>
 <tr class="memdesc:a685b2d430114a8b257ef3a28a2ceb14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoded buffers.  <a href="fec_8h.html#a685b2d430114a8b257ef3a28a2ceb14b">More...</a><br /></td></tr>
@@ -132,9 +132,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa96fb53e52299e011cf2bf7299b849c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the FEC API Interface. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
-<dl class="section note"><dt>Note</dt><dd>See protocol_test.cpp for usage </dd></dl>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the FEC API Interface </p><dl class="section note"><dt>Note</dt><dd>See protocol_test.cpp for usage </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="ac75d0ee67237ef49743695d984572e63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac75d0ee67237ef49743695d984572e63">&#9670;&nbsp;</a></span>FECDecoder</h2>
@@ -395,7 +394,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Registers a buffer into the encoder. The encoder expects this function to be called <code>num_real_buffers</code> times. </p>
+<p>Registers a buffer into the encoder. </p>
+<p>The encoder expects this function to be called <code>num_real_buffers</code> times.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fec_encoder</td><td>The FEC encoder to use</td></tr>

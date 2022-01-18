@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('server_2video_8c.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains all code that interacts directly with processing.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -132,7 +132,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:af8e4dbedd66527cf78fabdcd0ba83eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the populated video frames to the client.  <a href="server_2video_8c.html#af8e4dbedd66527cf78fabdcd0ba83eca">More...</a><br /></td></tr>
 <tr class="separator:af8e4dbedd66527cf78fabdcd0ba83eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08857845add4e9b825d862919f089188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a08857845add4e9b825d862919f089188">retry_capture_screen</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a08857845add4e9b825d862919f089188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to capture the screen. Afterwards sets update_device to true.  <a href="server_2video_8c.html#a08857845add4e9b825d862919f089188">More...</a><br /></td></tr>
+<tr class="memdesc:a08857845add4e9b825d862919f089188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to capture the screen.  <a href="server_2video_8c.html#a08857845add4e9b825d862919f089188">More...</a><br /></td></tr>
 <tr class="separator:a08857845add4e9b825d862919f089188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0870f52a4d0fd47af04ae0efa8806840"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a0870f52a4d0fd47af04ae0efa8806840">update_current_device</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *statistics_timer, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, uint32_t true_width, uint32_t true_height)</td></tr>
 <tr class="memdesc:a0870f52a4d0fd47af04ae0efa8806840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates dimensions of capture device and sets update_encoder to true.  <a href="server_2video_8c.html#a0870f52a4d0fd47af04ae0efa8806840">More...</a><br /></td></tr>
@@ -141,15 +141,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an empty frame to the client.  <a href="server_2video_8c.html#aade5b8fb0c17924c6ebe2c5ce9923e55">More...</a><br /></td></tr>
 <tr class="separator:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e33634bba81663467a6f2ca6cee38e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a1e33634bba81663467a6f2ca6cee38e3">do_update_encoder</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:a1e33634bba81663467a6f2ca6cee38e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the encoder upon request. Note that this function <em>returns</em> the updated encoder, due to the encoder factory.  <a href="server_2video_8c.html#a1e33634bba81663467a6f2ca6cee38e3">More...</a><br /></td></tr>
+<tr class="memdesc:a1e33634bba81663467a6f2ca6cee38e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the encoder upon request.  <a href="server_2video_8c.html#a1e33634bba81663467a6f2ca6cee38e3">More...</a><br /></td></tr>
 <tr class="separator:a1e33634bba81663467a6f2ca6cee38e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26603a17edf486ab02cf85b75e60eb08"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">multithreaded_send_video</a> (void *opaque)</td></tr>
 <tr class="memdesc:a26603a17edf486ab02cf85b75e60eb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This loops and captures video frames, encodes them if needed, and sends them to the client along with cursor images if necessary.  <a href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">More...</a><br /></td></tr>
 <tr class="separator:a26603a17edf486ab02cf85b75e60eb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains all code that interacts directly with processing. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains all code that interacts directly with processing </p>
 <h1><a class="anchor" id="autotoc_md98"></a>
 video on the server.</h1>
 <h1><a class="anchor" id="autotoc_md99"></a>
@@ -276,7 +276,7 @@ Usage</h1>
     <tr><td class="paramname">statistics_timer</td><td>Pointer to statistics timer used for logging </td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
     <tr><td class="paramname">rdevice</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
-    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct.">VideoEncoder</a> pointer </td></tr>
     <tr><td class="paramname">true_width</td><td>True width of client screen </td></tr>
     <tr><td class="paramname">true_height</td><td>True height of client screen </td></tr>
   </table>
@@ -318,11 +318,12 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Updates the encoder upon request. Note that this function <em>returns</em> the updated encoder, due to the encoder factory. </p>
+<p>Updates the encoder upon request. </p>
+<p>Note that this function <em>returns</em> the updated encoder, due to the encoder factory.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>the Whist server state </td></tr>
-    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer</td></tr>
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct.">VideoEncoder</a> pointer</td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer</td></tr>
   </table>
   </dd>
@@ -419,12 +420,13 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Attempts to capture the screen. Afterwards sets update_device to true. </p>
+<p>Attempts to capture the screen. </p>
+<p>Afterwards sets update_device to true</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>the Whist server state </td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
-    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct.">VideoEncoder</a> pointer </td></tr>
   </table>
   </dd>
 </dl>
@@ -537,7 +539,7 @@ Usage</h1>
     <tr><td class="paramname">statistics_timer</td><td>Pointer to statistics timer used for logging </td></tr>
     <tr><td class="paramname">server_frame_timer</td><td>Pointer to server_frame_timer </td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
-    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct.">VideoEncoder</a> pointer </td></tr>
     <tr><td class="paramname">id</td><td>Pointer to frame id </td></tr>
     <tr><td class="paramname">client_input_timestamp</td><td>Estimated client timestamp at which user input is sent </td></tr>
     <tr><td class="paramname">server_timestamp</td><td>Server timestamp at which this frame is captured </td></tr>
@@ -603,7 +605,7 @@ Usage</h1>
     <tr><td class="paramname">state</td><td>The server state </td></tr>
     <tr><td class="paramname">statistics_timer</td><td>Pointer to the timer used for statistics logging </td></tr>
     <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer </td></tr>
-    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct. Contains pointers to Nvidia and FFmpeg encoders as well as packet + fra...">VideoEncoder</a> pointer </td></tr>
+    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct.">VideoEncoder</a> pointer </td></tr>
     <tr><td class="paramname">true_width</td><td>True width of client screen </td></tr>
     <tr><td class="paramname">true_height</td><td>True height of client screen </td></tr>
   </table>

@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('client_8c.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the code for interacting with the client buffer.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="rwlock_8h_source.html">whist/utils/rwlock.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
@@ -104,7 +104,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0c9deb4b0da1b5a671935d8537da0b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initializes all clients objects in the client buffer.  <a href="client_8c.html#a0c9deb4b0da1b5a671935d8537da0b70">More...</a><br /></td></tr>
 <tr class="separator:a0c9deb4b0da1b5a671935d8537da0b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedb5791800324d1914e5124d23f138c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#aedb5791800324d1914e5124d23f138c8">start_quitting_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
-<tr class="memdesc:aedb5791800324d1914e5124d23f138c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins deactivating client, but does not clean up its resources yet. Must be called before <code>quit_client</code>.  <a href="client_8c.html#aedb5791800324d1914e5124d23f138c8">More...</a><br /></td></tr>
+<tr class="memdesc:aedb5791800324d1914e5124d23f138c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins deactivating client, but does not clean up its resources yet.  <a href="client_8c.html#aedb5791800324d1914e5124d23f138c8">More...</a><br /></td></tr>
 <tr class="separator:aedb5791800324d1914e5124d23f138c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa052b4dfa62a068a43c72a8782c474e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#aaa052b4dfa62a068a43c72a8782c474e">quit_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
 <tr class="memdesc:aaa052b4dfa62a068a43c72a8782c474e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates active client.  <a href="client_8c.html#aaa052b4dfa62a068a43c72a8782c474e">More...</a><br /></td></tr>
@@ -120,7 +120,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a0a15c68449ffb14ea62db6087d27fa4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a0a15c68449ffb14ea62db6087d27fa4c">reset_threads_holding_active_count</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
 <tr class="separator:a0a15c68449ffb14ea62db6087d27fa4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a910e3ffb86024ba2864d8c0594f9623f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a910e3ffb86024ba2864d8c0594f9623f">update_client_active_status</a> (<a class="el" href="structClient.html">Client</a> *client, bool *is_thread_assuming_active)</td></tr>
-<tr class="memdesc:a910e3ffb86024ba2864d8c0594f9623f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows a thread to update its status on whether it believes the client is active or not. If a client is deactivating, we want the thread to stop believing that the client is active, but otherwise will leave the status as is.  <a href="client_8c.html#a910e3ffb86024ba2864d8c0594f9623f">More...</a><br /></td></tr>
+<tr class="memdesc:a910e3ffb86024ba2864d8c0594f9623f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows a thread to update its status on whether it believes the client is active or not.  <a href="client_8c.html#a910e3ffb86024ba2864d8c0594f9623f">More...</a><br /></td></tr>
 <tr class="separator:a910e3ffb86024ba2864d8c0594f9623f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab77ef71b6fc7e7ee283d110f553f2272"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ab77ef71b6fc7e7ee283d110f553f2272">threads_still_holding_active</a> (void)</td></tr>
 <tr class="memdesc:ab77ef71b6fc7e7ee283d110f553f2272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether there remain any threads that are assuming that the client is active.  <a href="client_8c.html#ab77ef71b6fc7e7ee283d110f553f2272">More...</a><br /></td></tr>
@@ -136,8 +136,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac3a5f49bcfa5247ef5cbed330a9121e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the code for interacting with the client buffer. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the code for interacting with the client buffer.</p>
 <p>See <a href="https://www.notion.so/whisthq/4d91593ea0e0438b8bdb14c25c219d55?v=0c3983cf062d4c3d96ac2a65eb31761b&p=755123dad01244f3a0a3ced5139228a3">https://www.notion.so/whisthq/4d91593ea0e0438b8bdb14c25c219d55?v=0c3983cf062d4c3d96ac2a65eb31761b&amp;p=755123dad01244f3a0a3ced5139228a3</a> for the specification for multi-client code </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a4095d2d382a7e5c347db88558a546df8"></a>
@@ -333,7 +333,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Begins deactivating client, but does not clean up its resources yet. Must be called before <code>quit_client</code>. </p>
+<p>Begins deactivating client, but does not clean up its resources yet. </p>
+<p>Must be called before <code>quit_client</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>Target client </td></tr>
@@ -389,7 +390,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allows a thread to update its status on whether it believes the client is active or not. If a client is deactivating, we want the thread to stop believing that the client is active, but otherwise will leave the status as is. </p>
+<p>Allows a thread to update its status on whether it believes the client is active or not. </p>
+<p>If a client is deactivating, we want the thread to stop believing that the client is active, but otherwise will leave the status as is.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>Target client </td></tr>

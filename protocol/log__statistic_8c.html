@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('log__statistic_8c.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>This contains logging utils to log repeated statistics, where we.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="logging_8h_source.html">logging.h</a>&quot;</code><br />
@@ -122,15 +122,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a462484146d0ca6bd35b234bca13cc9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the statistic logger.  <a href="log__statistic_8c.html#a462484146d0ca6bd35b234bca13cc9a0">More...</a><br /></td></tr>
 <tr class="separator:a462484146d0ca6bd35b234bca13cc9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab364d742d19a3ff2640b68884b171674"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#ab364d742d19a3ff2640b68884b171674">log_double_statistic</a> (uint32_t index, double val)</td></tr>
-<tr class="memdesc:ab364d742d19a3ff2640b68884b171674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note a specific stat value associated with a key. If enough time has passed, also prints all statistics and flushes the data store.  <a href="log__statistic_8c.html#ab364d742d19a3ff2640b68884b171674">More...</a><br /></td></tr>
+<tr class="memdesc:ab364d742d19a3ff2640b68884b171674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note a specific stat value associated with a key.  <a href="log__statistic_8c.html#ab364d742d19a3ff2640b68884b171674">More...</a><br /></td></tr>
 <tr class="separator:ab364d742d19a3ff2640b68884b171674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56488c6ba44b9551c7458067c1443991"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8c.html#a56488c6ba44b9551c7458067c1443991">destroy_statistic_logger</a> ()</td></tr>
 <tr class="memdesc:a56488c6ba44b9551c7458067c1443991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the statistic logger.  <a href="log__statistic_8c.html#a56488c6ba44b9551c7458067c1443991">More...</a><br /></td></tr>
 <tr class="separator:a56488c6ba44b9551c7458067c1443991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This contains logging utils to log repeated statistics, where we. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This contains logging utils to log repeated statistics, where we </p>
 <h1><a class="anchor" id="autotoc_md170"></a>
 don't want to print every time.</h1>
 <h1><a class="anchor" id="autotoc_md171"></a>
@@ -212,7 +212,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Note a specific stat value associated with a key. If enough time has passed, also prints all statistics and flushes the data store. </p>
+<p>Note a specific stat value associated with a key. </p>
+<p>If enough time has passed, also prints all statistics and flushes the data store.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>The predefined index of the metric.</td></tr>

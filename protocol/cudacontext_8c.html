@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('cudacontext_8c.html',''); initResizabl
 <div class="title">cudacontext.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;dlfcn.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="cudacontext_8h_source.html">cudacontext.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -117,6 +120,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa03821ea384d1614612f1b625aa7d0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the CUDA context given.  <a href="cudacontext_8c.html#aa03821ea384d1614612f1b625aa7d0bd">More...</a><br /></td></tr>
 <tr class="separator:aa03821ea384d1614612f1b625aa7d0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a9e5066d4daf827ca3ec0fd0ee7aae0"><td class="memItemLeft" align="right" valign="top">NVFBC_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#a8a9e5066d4daf827ca3ec0fd0ee7aae0">cuda_init</a> (CUcontext *cuda_context)</td></tr>
+<tr class="memdesc:a8a9e5066d4daf827ca3ec0fd0ee7aae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes CUDA and creates a CUDA context.  <a href="cudacontext_8c.html#a8a9e5066d4daf827ca3ec0fd0ee7aae0">More...</a><br /></td></tr>
 <tr class="separator:a8a9e5066d4daf827ca3ec0fd0ee7aae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af407668744bbd4b8febfe21cdd4e8da5"><td class="memItemLeft" align="right" valign="top">CUcontext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8c.html#af407668744bbd4b8febfe21cdd4e8da5">get_video_thread_cuda_context_ptr</a> ()</td></tr>
 <tr class="memdesc:af407668744bbd4b8febfe21cdd4e8da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the CUDA context that will be used next by the video thread.  <a href="cudacontext_8c.html#af407668744bbd4b8febfe21cdd4e8da5">More...</a><br /></td></tr>
@@ -143,12 +147,12 @@ Variables</h2></td></tr>
 <tr class="separator:adb3e65e6da803fd2897d61923c68cdb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <h1><a class="anchor" id="autotoc_md252"></a>
 @brief This file contains the code to create a CUDA context</h1>
 <h1><a class="anchor" id="autotoc_md253"></a>
 Usage</h1>
-<p>The CUDA context is required for the NVIDIA encoder. First call <code><a class="el" href="cudacontext_8c.html#a8a9e5066d4daf827ca3ec0fd0ee7aae0">cuda_init()</a></code> and then use the initialized CUDA context by calling <code>get_active_cuda_context_ptr()</code>. </p>
+<p>The CUDA context is required for the NVIDIA encoder. First call <code><a class="el" href="cudacontext_8c.html#a8a9e5066d4daf827ca3ec0fd0ee7aae0" title="Initializes CUDA and creates a CUDA context.">cuda_init()</a></code> and then use the initialized CUDA context by calling <code>get_active_cuda_context_ptr()</code>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a917eb3f03688dde30d8567cf341399f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a917eb3f03688dde30d8567cf341399f8">&#9670;&nbsp;</a></span>LIB_CUDA_NAME</h2>
@@ -278,7 +282,8 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes CUDA and creates a CUDA context.</p>
+
+<p>Initializes CUDA and creates a CUDA context. </p>
 <dl class="section return"><dt>Returns</dt><dd>NVFBC_TRUE in case of success, NVFBC_FALSE otherwise. </dd></dl>
 
 </div>

@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('whist__memory_8c.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains custom memory handling for Whist.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
@@ -121,16 +121,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a15cfd76dbebf81d90310d51c79e2a06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around realloc that will correctly exit the protocol when realloc fails.  <a href="whist__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a">More...</a><br /></td></tr>
 <tr class="separator:a15cfd76dbebf81d90310d51c79e2a06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae51d43be8b22d6c3bf94077af0929bb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDynamicBuffer.html">DynamicBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ae51d43be8b22d6c3bf94077af0929bb7">init_dynamic_buffer</a> (bool use_memory_regions)</td></tr>
-<tr class="memdesc:ae51d43be8b22d6c3bf94077af0929bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new dynamically sizing buffer. Note that accessing a dynamic buffer's buf outside of db-&gt;size is undefined behavior.  <a href="whist__memory_8c.html#ae51d43be8b22d6c3bf94077af0929bb7">More...</a><br /></td></tr>
+<tr class="memdesc:ae51d43be8b22d6c3bf94077af0929bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new dynamically sizing buffer.  <a href="whist__memory_8c.html#ae51d43be8b22d6c3bf94077af0929bb7">More...</a><br /></td></tr>
 <tr class="separator:ae51d43be8b22d6c3bf94077af0929bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b12df5f9a53f9f8728b204aab6646d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a2b12df5f9a53f9f8728b204aab6646d0">resize_dynamic_buffer</a> (<a class="el" href="structDynamicBuffer.html">DynamicBuffer</a> *db, size_t new_size)</td></tr>
-<tr class="memdesc:a2b12df5f9a53f9f8728b204aab6646d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will resize the given <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> to the given size. This function may reallocate db-&gt;buf.  <a href="whist__memory_8c.html#a2b12df5f9a53f9f8728b204aab6646d0">More...</a><br /></td></tr>
+<tr class="memdesc:a2b12df5f9a53f9f8728b204aab6646d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will resize the given <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> to the given size.  <a href="whist__memory_8c.html#a2b12df5f9a53f9f8728b204aab6646d0">More...</a><br /></td></tr>
 <tr class="separator:a2b12df5f9a53f9f8728b204aab6646d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae616f3a7d54d00a38e8739477fc7a785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ae616f3a7d54d00a38e8739477fc7a785">free_dynamic_buffer</a> (<a class="el" href="structDynamicBuffer.html">DynamicBuffer</a> *db)</td></tr>
 <tr class="memdesc:ae616f3a7d54d00a38e8739477fc7a785"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will free the <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> and its contents.  <a href="whist__memory_8c.html#ae616f3a7d54d00a38e8739477fc7a785">More...</a><br /></td></tr>
 <tr class="separator:ae616f3a7d54d00a38e8739477fc7a785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4834f7c2ad3291b85f97541702be50ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBlockAllocator.html">BlockAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a4834f7c2ad3291b85f97541702be50ec">create_block_allocator</a> (size_t block_size)</td></tr>
-<tr class="memdesc:a4834f7c2ad3291b85f97541702be50ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a block allocator that will create and free blocks of the given block_size. The block allocator will <em>not</em> interfere with the malloc heap.  <a href="whist__memory_8c.html#a4834f7c2ad3291b85f97541702be50ec">More...</a><br /></td></tr>
+<tr class="memdesc:a4834f7c2ad3291b85f97541702be50ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a block allocator that will create and free blocks of the given block_size.  <a href="whist__memory_8c.html#a4834f7c2ad3291b85f97541702be50ec">More...</a><br /></td></tr>
 <tr class="separator:a4834f7c2ad3291b85f97541702be50ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f0e2ca8809d1074ecaeaa684c4edfc"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ac8f0e2ca8809d1074ecaeaa684c4edfc">allocate_block</a> (<a class="el" href="structBlockAllocator.html">BlockAllocator</a> *blk_allocator)</td></tr>
 <tr class="memdesc:ac8f0e2ca8809d1074ecaeaa684c4edfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a block using the given block allocator.  <a href="whist__memory_8c.html#ac8f0e2ca8809d1074ecaeaa684c4edfc">More...</a><br /></td></tr>
@@ -139,18 +139,18 @@ Functions</h2></td></tr>
 <tr class="memdesc:add7f4d5c9a5776f2f27de64e939b7445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a block allocated by allocate_block.  <a href="whist__memory_8c.html#add7f4d5c9a5776f2f27de64e939b7445">More...</a><br /></td></tr>
 <tr class="separator:add7f4d5c9a5776f2f27de64e939b7445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e651aa84c25b3dba71f17080742285e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a7e651aa84c25b3dba71f17080742285e">destroy_block_allocator</a> (<a class="el" href="structBlockAllocator.html">BlockAllocator</a> *blk_allocator)</td></tr>
-<tr class="memdesc:a7e651aa84c25b3dba71f17080742285e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a block allocator. All blocks allocated from this instance must have been freed before calling this!  <a href="whist__memory_8c.html#a7e651aa84c25b3dba71f17080742285e">More...</a><br /></td></tr>
+<tr class="memdesc:a7e651aa84c25b3dba71f17080742285e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a block allocator.  <a href="whist__memory_8c.html#a7e651aa84c25b3dba71f17080742285e">More...</a><br /></td></tr>
 <tr class="separator:a7e651aa84c25b3dba71f17080742285e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a771d64932b7927ec99e09fe1a94d4e94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a771d64932b7927ec99e09fe1a94d4e94">get_page_size</a> ()</td></tr>
 <tr class="separator:a771d64932b7927ec99e09fe1a94d4e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5cb37b0580474e152f2450c34979720"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ac5cb37b0580474e152f2450c34979720">allocate_region</a> (size_t region_size)</td></tr>
-<tr class="memdesc:ac5cb37b0580474e152f2450c34979720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a region of memory, of the requested size. This region will be allocated independently of the malloc heap or any block allocator. Will be zero-initialized.  <a href="whist__memory_8c.html#ac5cb37b0580474e152f2450c34979720">More...</a><br /></td></tr>
+<tr class="memdesc:ac5cb37b0580474e152f2450c34979720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a region of memory, of the requested size.  <a href="whist__memory_8c.html#ac5cb37b0580474e152f2450c34979720">More...</a><br /></td></tr>
 <tr class="separator:ac5cb37b0580474e152f2450c34979720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b6692eaffcf106ffdecddfb77e8dbe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a3b6692eaffcf106ffdecddfb77e8dbe9">mark_unused_region</a> (void *region)</td></tr>
-<tr class="memdesc:a3b6692eaffcf106ffdecddfb77e8dbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the region as unused (for now). This will let other processes use it if they desire.  <a href="whist__memory_8c.html#a3b6692eaffcf106ffdecddfb77e8dbe9">More...</a><br /></td></tr>
+<tr class="memdesc:a3b6692eaffcf106ffdecddfb77e8dbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the region as unused (for now).  <a href="whist__memory_8c.html#a3b6692eaffcf106ffdecddfb77e8dbe9">More...</a><br /></td></tr>
 <tr class="separator:a3b6692eaffcf106ffdecddfb77e8dbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad91ad1707c56178b66bd39a9b1b1e8a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7">mark_used_region</a> (void *region)</td></tr>
-<tr class="memdesc:ad91ad1707c56178b66bd39a9b1b1e8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the region as used again. This will grab new memory regions from the OS, only give other processes have taken the memory while it was unused.  <a href="whist__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7">More...</a><br /></td></tr>
+<tr class="memdesc:ad91ad1707c56178b66bd39a9b1b1e8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the region as used again.  <a href="whist__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7">More...</a><br /></td></tr>
 <tr class="separator:ad91ad1707c56178b66bd39a9b1b1e8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38cef2a2f287ce784dcd824293e4ebba"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a38cef2a2f287ce784dcd824293e4ebba">realloc_region</a> (void *region, size_t new_region_size)</td></tr>
 <tr class="memdesc:a38cef2a2f287ce784dcd824293e4ebba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the memory region.  <a href="whist__memory_8c.html#a38cef2a2f287ce784dcd824293e4ebba">More...</a><br /></td></tr>
@@ -160,8 +160,8 @@ Functions</h2></td></tr>
 <tr class="separator:a82c0c0ab6aa54efc85fb5cdc1ea37e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains custom memory handling for Whist. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains custom memory handling for Whist.</p>
 <hr  />
  <h1><a class="anchor" id="autotoc_md137"></a>
 Usage</h1>
@@ -261,7 +261,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Allocates a region of memory, of the requested size. This region will be allocated independently of the malloc heap or any block allocator. Will be zero-initialized. </p>
+<p>Allocates a region of memory, of the requested size. </p>
+<p>This region will be allocated independently of the malloc heap or any block allocator. Will be zero-initialized.</p>
 <p>This will only increase reported memory usage, once the pages are actually read or written to</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -289,7 +290,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a block allocator that will create and free blocks of the given block_size. The block allocator will <em>not</em> interfere with the malloc heap. </p>
+<p>Creates a block allocator that will create and free blocks of the given block_size. </p>
+<p>The block allocator will <em>not</em> interfere with the malloc heap.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">block_size</td><td>The size of blocks that this block allocator will allocate/free</td></tr>
@@ -342,7 +344,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Destroys a block allocator. All blocks allocated from this instance must have been freed before calling this! </p>
+<p>Destroys a block allocator. </p>
+<p>All blocks allocated from this instance must have been freed before calling this!</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">block_allocator</td><td>The block allocator to destroy </td></tr>
@@ -448,7 +451,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes a new dynamically sizing buffer. Note that accessing a dynamic buffer's buf outside of db-&gt;size is undefined behavior. </p>
+<p>Initializes a new dynamically sizing buffer. </p>
+<p>Note that accessing a dynamic buffer's buf outside of db-&gt;size is undefined behavior</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">use_memory_regions</td><td>If true, will use OS-level memory regions [See allocate_region] If false, will use malloc for db-&gt;buf The <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> struct itself will always use malloc</td></tr>
@@ -475,7 +479,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Marks the region as unused (for now). This will let other processes use it if they desire. </p>
+<p>Marks the region as unused (for now). </p>
+<p>This will let other processes use it if they desire.</p>
 <p>This will decrease the reported memory usage, by the size of the region that was used</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -502,7 +507,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Marks the region as used again. This will grab new memory regions from the OS, only give other processes have taken the memory while it was unused. </p>
+<p>Marks the region as used again. </p>
+<p>This will grab new memory regions from the OS, only give other processes have taken the memory while it was unused</p>
 <p>This will only increase the reported memory usage, once the pages are used</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -580,7 +586,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>This will resize the given <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> to the given size. This function may reallocate db-&gt;buf. </p>
+<p>This will resize the given <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> to the given size. </p>
+<p>This function may reallocate db-&gt;buf</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">db</td><td>The <a class="el" href="structDynamicBuffer.html" title="Dynamic buffer.">DynamicBuffer</a> to resize</td></tr>

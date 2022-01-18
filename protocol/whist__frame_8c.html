@@ -101,7 +101,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:acdeb42e88b9e2069dbb195e4a28efa61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the videodata inside of the VideoFrame* Prerequisites for writing to the returned buffer pointer: frame-&gt;videodata_length must be set set_frame_cursor_image must be called Please only read/write up to frame-&gt;videodata_length bytes from the returned buffer.  <a href="whist__frame_8c.html#acdeb42e88b9e2069dbb195e4a28efa61">More...</a><br /></td></tr>
 <tr class="separator:acdeb42e88b9e2069dbb195e4a28efa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ab7e2f70fc8e9de982bf5f0f422eb2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__frame_8c.html#a3ab7e2f70fc8e9de982bf5f0f422eb2d">get_total_frame_size</a> (<a class="el" href="structVideoFrame.html">VideoFrame</a> *frame)</td></tr>
-<tr class="memdesc:a3ab7e2f70fc8e9de982bf5f0f422eb2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a> size, including all of the data embedded in the <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a>'s buffer. Even if the VideoFrame* is being stored in a much larger buffer, this function returns only the number of bytes needed for the data inside the VideoFrame* to be read correctly. I.e., these are the only bytes that need to be sent over for example a network connection.  <a href="whist__frame_8c.html#a3ab7e2f70fc8e9de982bf5f0f422eb2d">More...</a><br /></td></tr>
+<tr class="memdesc:a3ab7e2f70fc8e9de982bf5f0f422eb2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a> size, including all of the data embedded in the <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a>'s buffer.  <a href="whist__frame_8c.html#a3ab7e2f70fc8e9de982bf5f0f422eb2d">More...</a><br /></td></tr>
 <tr class="separator:a3ab7e2f70fc8e9de982bf5f0f422eb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -175,7 +175,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the total <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a> size, including all of the data embedded in the <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a>'s buffer. Even if the VideoFrame* is being stored in a much larger buffer, this function returns only the number of bytes needed for the data inside the VideoFrame* to be read correctly. I.e., these are the only bytes that need to be sent over for example a network connection. </p>
+<p>Get the total <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a> size, including all of the data embedded in the <a class="el" href="structVideoFrame.html" title="VideoFrame struct.">VideoFrame</a>'s buffer. </p>
+<p>Even if the VideoFrame* is being stored in a much larger buffer, this function returns only the number of bytes needed for the data inside the VideoFrame* to be read correctly. I.e., these are the only bytes that need to be sent over for example a network connection.</p>
 <dl class="section return"><dt>Returns</dt><dd>The number of bytes that the frame uses up. </dd></dl>
 
 </div>

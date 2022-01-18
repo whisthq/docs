@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('encode_8c.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the code to create and destroy Encoders and use.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="encode_8h_source.html">encode.h</a>&quot;</code><br />
 <code>#include &lt;libavfilter/avfilter.h&gt;</code><br />
@@ -105,7 +105,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac8fa01e9eea92339d1c54398ad7c202c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new encoder.  <a href="encode_8c.html#ac8fa01e9eea92339d1c54398ad7c202c">More...</a><br /></td></tr>
 <tr class="separator:ac8fa01e9eea92339d1c54398ad7c202c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a444edd5dc4cb990b7441ba96964936fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8c.html#a444edd5dc4cb990b7441ba96964936fa">video_encoder_encode</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a444edd5dc4cb990b7441ba96964936fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a frame. This will call the necessary encoding functions depending on the encoder type, then record metadata and the encoded packets into encoder-&gt;packets.  <a href="encode_8c.html#a444edd5dc4cb990b7441ba96964936fa">More...</a><br /></td></tr>
+<tr class="memdesc:a444edd5dc4cb990b7441ba96964936fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a frame.  <a href="encode_8c.html#a444edd5dc4cb990b7441ba96964936fa">More...</a><br /></td></tr>
 <tr class="separator:a444edd5dc4cb990b7441ba96964936fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad77b802583b571a3de0d17c5d6393655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8c.html#ad77b802583b571a3de0d17c5d6393655">reconfigure_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, int width, int height, int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec)</td></tr>
 <tr class="memdesc:ad77b802583b571a3de0d17c5d6393655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconfigure the encoder using new parameters.  <a href="encode_8c.html#ad77b802583b571a3de0d17c5d6393655">More...</a><br /></td></tr>
@@ -118,13 +118,13 @@ Functions</h2></td></tr>
 <tr class="separator:a7f0817add564fea3dbb260a90cef9132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the code to create and destroy Encoders and use. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the code to create and destroy Encoders and use </p>
 <h1><a class="anchor" id="autotoc_md244"></a>
 them to encode captured screens.</h1>
 <h1><a class="anchor" id="autotoc_md245"></a>
 Usage</h1>
-<p>Video is encoded to H264 via either a hardware encoder (currently, we use NVidia GPUs, so we use NVENC) or a software encoder. H265 is also supported but not currently used. Since NVidia allows us to both capture and encode the screen, most of the functions will be called in <a class="el" href="server_2main_8c.html" title="This file contains the main code that runs a Whist server on a.">server/main.c</a> with an empty dummy encoder. For encoders, create an H264 encoder via create_video_encode, and use it to encode frames via video_encoder_encode. Write the encoded output via video_encoder_write_buffer, and when finished, destroy the encoder using destroy_video_encoder. </p>
+<p>Video is encoded to H264 via either a hardware encoder (currently, we use NVidia GPUs, so we use NVENC) or a software encoder. H265 is also supported but not currently used. Since NVidia allows us to both capture and encode the screen, most of the functions will be called in <a class="el" href="server_2main_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">server/main.c</a> with an empty dummy encoder. For encoders, create an H264 encoder via create_video_encode, and use it to encode frames via video_encoder_encode. Write the encoded output via video_encoder_write_buffer, and when finished, destroy the encoder using destroy_video_encoder. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ac8fa01e9eea92339d1c54398ad7c202c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8fa01e9eea92339d1c54398ad7c202c">&#9670;&nbsp;</a></span>create_video_encoder()</h2>
@@ -329,7 +329,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Encode a frame. This will call the necessary encoding functions depending on the encoder type, then record metadata and the encoded packets into encoder-&gt;packets. </p>
+<p>Encode a frame. </p>
+<p>This will call the necessary encoding functions depending on the encoder type, then record metadata and the encoded packets into encoder-&gt;packets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>Encoder to use</td></tr>

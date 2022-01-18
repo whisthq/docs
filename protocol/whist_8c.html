@@ -131,7 +131,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a string from source to destination.  <a href="whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">More...</a><br /></td></tr>
 <tr class="separator:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8643207a604b19f3fefe5046bd3c0290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a8643207a604b19f3fefe5046bd3c0290">trim_utf8_string</a> (char *<a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>)</td></tr>
-<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.  <a href="whist_8c.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
+<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation.  <a href="whist_8c.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
 <tr class="separator:a8643207a604b19f3fefe5046bd3c0290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBitArray.html">BitArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">bit_array_create</a> (const unsigned int bits)</td></tr>
 <tr class="memdesc:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structBitArray.html">BitArray</a> object.  <a href="whist_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">More...</a><br /></td></tr>
@@ -152,7 +152,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a70ea629de5b3e424ab213f0be58279fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns a pointer to the array of unsigned char containing actual bits.  <a href="whist_8c.html#a70ea629de5b3e424ab213f0be58279fe">More...</a><br /></td></tr>
 <tr class="separator:a70ea629de5b3e424ab213f0be58279fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31fd6c4678d06a79702a5781fb54b43b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a31fd6c4678d06a79702a5781fb54b43b">bit_array_test_bit</a> (const <a class="el" href="structBitArray.html">BitArray</a> *const ba, const unsigned int bit)</td></tr>
-<tr class="memdesc:a31fd6c4678d06a79702a5781fb54b43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tests the specified bit in the bit array passed as a parameter. A non-zero will be returned if the tested bit is set.  <a href="whist_8c.html#a31fd6c4678d06a79702a5781fb54b43b">More...</a><br /></td></tr>
+<tr class="memdesc:a31fd6c4678d06a79702a5781fb54b43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tests the specified bit in the bit array passed as a parameter.  <a href="whist_8c.html#a31fd6c4678d06a79702a5781fb54b43b">More...</a><br /></td></tr>
 <tr class="separator:a31fd6c4678d06a79702a5781fb54b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753f5e2101d29a87275db58d21de8971"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a753f5e2101d29a87275db58d21de8971">whist_git_revision</a> ()</td></tr>
 <tr class="memdesc:a753f5e2101d29a87275db58d21de8971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short string representing the current git commit of whist at the time of compilation.  <a href="whist_8c.html#a753f5e2101d29a87275db58d21de8971">More...</a><br /></td></tr>
@@ -448,7 +448,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function tests the specified bit in the bit array passed as a parameter. A non-zero will be returned if the tested bit is set. </p>
+<p>This function tests the specified bit in the bit array passed as a parameter. </p>
+<p>A non-zero will be returned if the tested bit is set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ba</td><td>The pointer to bit array</td></tr>
@@ -689,7 +690,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. This is necessary because dangling unicode characters will cause horrible crashes if they are not removed. </p>
+<p>This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. </p>
+<p>This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The utf8 string to be trimmed. </td></tr>

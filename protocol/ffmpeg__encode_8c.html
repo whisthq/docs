@@ -136,7 +136,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a588b81c7a9be9daa76b2527e7368b10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy encoder.  <a href="ffmpeg__encode_8c.html#a588b81c7a9be9daa76b2527e7368b10b">More...</a><br /></td></tr>
 <tr class="separator:a588b81c7a9be9daa76b2527e7368b10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fac5117dccdd791ebfc6455df47af85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a4fac5117dccdd791ebfc6455df47af85">ffmpeg_encoder_send_frame</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a4fac5117dccdd791ebfc6455df47af85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the frame in <code>encoder-&gt;sw_frame</code> or <code>encoder-&gt;hw_frame</code>. The encoded packet(s) are stored in <code>encoder-&gt;packets</code>, and the size of the buffer necessary to store them is stored in <code>encoder-&gt;encoded_frame_size</code>  <a href="ffmpeg__encode_8c.html#a4fac5117dccdd791ebfc6455df47af85">More...</a><br /></td></tr>
+<tr class="memdesc:a4fac5117dccdd791ebfc6455df47af85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the frame in <code>encoder-&gt;sw_frame</code> or <code>encoder-&gt;hw_frame</code>.  <a href="ffmpeg__encode_8c.html#a4fac5117dccdd791ebfc6455df47af85">More...</a><br /></td></tr>
 <tr class="separator:a4fac5117dccdd791ebfc6455df47af85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a731cbac96e0dceaef41b44d4e3928a37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ffmpeg__encode_8c.html#a731cbac96e0dceaef41b44d4e3928a37">ffmpeg_encoder_receive_packet</a> (<a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *encoder, AVPacket *packet)</td></tr>
 <tr class="separator:a731cbac96e0dceaef41b44d4e3928a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -579,7 +579,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encode the frame in <code>encoder-&gt;sw_frame</code> or <code>encoder-&gt;hw_frame</code>. The encoded packet(s) are stored in <code>encoder-&gt;packets</code>, and the size of the buffer necessary to store them is stored in <code>encoder-&gt;encoded_frame_size</code> </p>
+<p>Encode the frame in <code>encoder-&gt;sw_frame</code> or <code>encoder-&gt;hw_frame</code>. </p>
+<p>The encoded packet(s) are stored in <code>encoder-&gt;packets</code>, and the size of the buffer necessary to store them is stored in <code>encoder-&gt;encoded_frame_size</code></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>The encoder to use</td></tr>

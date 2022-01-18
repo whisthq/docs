@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the code to create a video decoder and use that.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="decode_8h_source.html">decode.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
@@ -134,7 +134,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a29e08542a8a988ca8371797bfe93f25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the next available frame from the decoder.  <a href="decode_8c.html#a29e08542a8a988ca8371797bfe93f25f">More...</a><br /></td></tr>
 <tr class="separator:a29e08542a8a988ca8371797bfe93f25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6084356bbeab34505db4c75bc46fd9c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDecodedFrameData.html">DecodedFrameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a6084356bbeab34505db4c75bc46fd9c4">video_decoder_get_last_decoded_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
-<tr class="memdesc:a6084356bbeab34505db4c75bc46fd9c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>. <code>video_decoder_decode_frame</code> must return 0 first, at least once.  <a href="decode_8c.html#a6084356bbeab34505db4c75bc46fd9c4">More...</a><br /></td></tr>
+<tr class="memdesc:a6084356bbeab34505db4c75bc46fd9c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>.  <a href="decode_8c.html#a6084356bbeab34505db4c75bc46fd9c4">More...</a><br /></td></tr>
 <tr class="separator:a6084356bbeab34505db4c75bc46fd9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a985c67900df09a3cf893e4ba76d030c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a985c67900df09a3cf893e4ba76d030c7">video_decoder_free_decoded_frame</a> (<a class="el" href="structDecodedFrameData.html">DecodedFrameData</a> *decoded_frame_data)</td></tr>
 <tr class="memdesc:a985c67900df09a3cf893e4ba76d030c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the frame returned by video_decoder_get_last_decoded_frame, Or do nothing if a zero'd struct is passed in.  <a href="decode_8c.html#a985c67900df09a3cf893e4ba76d030c7">More...</a><br /></td></tr>
@@ -146,8 +146,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac8c9bf0bd41abed7a451183729ea39a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the code to create a video decoder and use that. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the code to create a video decoder and use that </p>
 <h1><a class="anchor" id="autotoc_md240"></a>
 decoder to decode frames.</h1>
 <h1><a class="anchor" id="autotoc_md241"></a>
@@ -491,7 +491,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>. <code>video_decoder_decode_frame</code> must return 0 first, at least once. </p>
+<p>Get the most recently decoded frame from the decoder, which will be the sw_frame or hw_frame in <a class="el" href="structDecodedFrameData.html" title="Struct that get_current_decoded_frame returns.">DecodedFrameData</a>. </p>
+<p><code>video_decoder_decode_frame</code> must return 0 first, at least once.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>The decoder we are using for decoding</td></tr>

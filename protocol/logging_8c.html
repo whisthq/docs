@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('logging_8c.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the logging macros and utils to send Winlogon.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;dlfcn.h&gt;</code><br />
 <code>#include &lt;execinfo.h&gt;</code><br />
@@ -140,6 +140,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac3647cebf30fdb7695db0d5fd4dfec5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will immediately flush all of the logs, rather than slowly pushing the logs through from another thread.  <a href="logging_8c.html#ac3647cebf30fdb7695db0d5fd4dfec5e">More...</a><br /></td></tr>
 <tr class="separator:ac3647cebf30fdb7695db0d5fd4dfec5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af60cc877da6dc64161638b755348664f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#af60cc877da6dc64161638b755348664f">escape_string</a> (const char *old_string, bool escape_all)</td></tr>
+<tr class="memdesc:af60cc877da6dc64161638b755348664f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function escapes certain escape sequences in a log.  <a href="logging_8c.html#af60cc877da6dc64161638b755348664f">More...</a><br /></td></tr>
 <tr class="separator:af60cc877da6dc64161638b755348664f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70325569587d06c4e89314d4db8b2d32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a> (const char *tag, const char *fmt_str,...)</td></tr>
 <tr class="memdesc:a70325569587d06c4e89314d4db8b2d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the given format string This is an internal function that shouldn't be used, please use the macros LOG_INFO, LOG_WARNING, etc.  <a href="logging_8c.html#a70325569587d06c4e89314d4db8b2d32">More...</a><br /></td></tr>
@@ -170,8 +171,8 @@ Variables</h2></td></tr>
 <tr class="separator:adea4f212597ea19d60a38a00cc042416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the logging macros and utils to send Winlogon. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the logging macros and utils to send Winlogon </p>
 <h1><a class="anchor" id="autotoc_md174"></a>
 status and to send the logs to the webserver.</h1>
 <h1><a class="anchor" id="autotoc_md175"></a>
@@ -287,7 +288,9 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function escapes certain escape sequences in a log. It allocates heap memory that must be later freed. Specifically, it by-default escapes "\b", "\f", "\r", "\t" (Note: This comment is finicky with doxygen when it comes to escape sequences, so double-check the doxygen docs if you're changing this documentation comment)</p>
+
+<p>This function escapes certain escape sequences in a log. </p>
+<p>It allocates heap memory that must be later freed. Specifically, it by-default escapes "\b", "\f", "\r", "\t" (Note: This comment is finicky with doxygen when it comes to escape sequences, so double-check the doxygen docs if you're changing this documentation comment)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">old_string</td><td>A string with sequences we want escaped, e.g "some\tstring\r\n\r\n" </td></tr>

@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('client_2video_8h.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains all code that interacts directly with receiving and.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 </div>
@@ -109,19 +109,19 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad2c9432e82a29d685319fbc2725cd136"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136">init_video</a> ()</td></tr>
-<tr class="memdesc:ad2c9432e82a29d685319fbc2725cd136"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the video system. The video system will receive video packets, and render the video out to the window.  <a href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136">More...</a><br /></td></tr>
+<tr class="memdesc:ad2c9432e82a29d685319fbc2725cd136"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the video system.  <a href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136">More...</a><br /></td></tr>
 <tr class="separator:ad2c9432e82a29d685319fbc2725cd136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ea4d907c436a15fadf10105fea3e954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a8ea4d907c436a15fadf10105fea3e954">receive_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
 <tr class="memdesc:a8ea4d907c436a15fadf10105fea3e954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8h.html#a8ea4d907c436a15fadf10105fea3e954">More...</a><br /></td></tr>
 <tr class="separator:a8ea4d907c436a15fadf10105fea3e954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36642bb10a0e6def2d693135279e54d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a36642bb10a0e6def2d693135279e54d1">update_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
-<tr class="memdesc:a36642bb10a0e6def2d693135279e54d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does any pending work the video context wants to do. (Including decoding frames, and calculating statistics)  <a href="client_2video_8h.html#a36642bb10a0e6def2d693135279e54d1">More...</a><br /></td></tr>
+<tr class="memdesc:a36642bb10a0e6def2d693135279e54d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does any pending work the video context wants to do.  <a href="client_2video_8h.html#a36642bb10a0e6def2d693135279e54d1">More...</a><br /></td></tr>
 <tr class="separator:a36642bb10a0e6def2d693135279e54d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
 <tr class="memdesc:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video frame (If any are available to render)  <a href="client_2video_8h.html#ae91e2215c8c94bdb14b3c01430b8ca69">More...</a><br /></td></tr>
 <tr class="separator:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14321021ee450305fdb8c787a3e1accc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
-<tr class="memdesc:a14321021ee450305fdb8c787a3e1accc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not a video frame has been rendered. (NOT including any "loading animation" frames) This can be false even after calling render_video, if there simply weren't enough packets yet or if the video is still being decoded.  <a href="client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc">More...</a><br /></td></tr>
+<tr class="memdesc:a14321021ee450305fdb8c787a3e1accc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not a video frame has been rendered.  <a href="client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc">More...</a><br /></td></tr>
 <tr class="separator:a14321021ee450305fdb8c787a3e1accc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be05a788c0ccc8513912da3dc7caf0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a9be05a788c0ccc8513912da3dc7caf0c">get_video_network_statistics</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
 <tr class="memdesc:a9be05a788c0ccc8513912da3dc7caf0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets any networking statistics from the video.  <a href="client_2video_8h.html#a9be05a788c0ccc8513912da3dc7caf0c">More...</a><br /></td></tr>
@@ -131,14 +131,14 @@ Functions</h2></td></tr>
 <tr class="separator:af1d344158f4b8ed1ba11af1a86d27789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains all code that interacts directly with receiving and. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains all code that interacts directly with receiving and </p>
 <h1><a class="anchor" id="autotoc_md76"></a>
 processing video packets on the client.</h1>
 <h1><a class="anchor" id="autotoc_md77"></a>
 Usage</h1>
 <p>NOTE: Only ONE thread can call a function on video_context at a time, unless a function says otherwise.</p>
-<p>VideoContext* video_context = <a class="el" href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136" title="This will initialize the video system. The video system will receive video packets,...">init_video()</a>;</p>
+<p>VideoContext* video_context = <a class="el" href="client_2video_8h.html#ad2c9432e82a29d685319fbc2725cd136" title="This will initialize the video system.">init_video()</a>;</p>
 <p>In one thread: update_video(video_context); receive_video(video_context, packet_1); update_video(video_context); update_video(video_context); receive_video(video_context, packet_2); update_video(video_context); update_video(video_context); receive_video(video_context, packet_3); update_video(video_context); update_video(video_context);</p>
 <p>In another thread: (NOTE: ONLY render_video is thread-safe. The rest of the functions are not) render_video(video_context); render_video(video_context); render_video(video_context); render_video(video_context);</p>
 <p>~~ Join both threads..</p>
@@ -243,7 +243,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Returns whether or not a video frame has been rendered. (NOT including any "loading animation" frames) This can be false even after calling render_video, if there simply weren't enough packets yet or if the video is still being decoded. </p>
+<p>Returns whether or not a video frame has been rendered. </p>
+<p>(NOT including any "loading animation" frames) This can be false even after calling render_video, if there simply weren't enough packets yet or if the video is still being decoded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">video_context</td><td>The video context that has potentially rendered a frame</td></tr>
@@ -269,7 +270,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>This will initialize the video system. The video system will receive video packets, and render the video out to the window. </p>
+<p>This will initialize the video system. </p>
+<p>The video system will receive video packets, and render the video out to the window</p>
 <dl class="section return"><dt>Returns</dt><dd>The new video context </dd></dl>
 
 </div>
@@ -355,7 +357,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Does any pending work the video context wants to do. (Including decoding frames, and calculating statistics) </p>
+<p>Does any pending work the video context wants to do. </p>
+<p>(Including decoding frames, and calculating statistics)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">video_context</td><td>The video context to update</td></tr>

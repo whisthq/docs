@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('udp_8h.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the network interface code for UDP protocol.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 </div>
@@ -106,15 +106,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:acd5303599f69de58b96be9dca5ddcb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8h.html#acd5303599f69de58b96be9dca5ddcb6d">More...</a><br /></td></tr>
 <tr class="separator:acd5303599f69de58b96be9dca5ddcb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d9098b90040bad70ccff2783f32408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a77d9098b90040bad70ccff2783f32408">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
-<tr class="memdesc:a77d9098b90040bad70ccff2783f32408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8h.html#a77d9098b90040bad70ccff2783f32408">More...</a><br /></td></tr>
+<tr class="memdesc:a77d9098b90040bad70ccff2783f32408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled.  <a href="udp_8h.html#a77d9098b90040bad70ccff2783f32408">More...</a><br /></td></tr>
 <tr class="separator:a77d9098b90040bad70ccff2783f32408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac56b1bf85aa12b5b0790a9402c9ba916"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#ac56b1bf85aa12b5b0790a9402c9ba916">udp_nack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int id, int index)</td></tr>
 <tr class="memdesc:ac56b1bf85aa12b5b0790a9402c9ba916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a nack for a given ID/Index NOTE: This function is thread-safe with send_packet.  <a href="udp_8h.html#ac56b1bf85aa12b5b0790a9402c9ba916">More...</a><br /></td></tr>
 <tr class="separator:ac56b1bf85aa12b5b0790a9402c9ba916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the network interface code for UDP protocol. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the network interface code for UDP protocol</p>
 <hr  />
  <h1><a class="anchor" id="autotoc_md193"></a>
 Usage</h1>
@@ -330,7 +330,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Registers a nack buffer, so that future nacks can be handled. It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>. </p>
+<p>Registers a nack buffer, so that future nacks can be handled. </p>
+<p>It will be able to respond to nacks from the most recent <code>buffer_size</code> ID's that have been send via send_packet NOTE: This function is not thread-safe on <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> that will have a nack buffer </td></tr>

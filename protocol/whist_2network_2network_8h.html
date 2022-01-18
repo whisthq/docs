@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('whist_2network_2network_8h.html',''); 
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains all code that interacts directly with sockets.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;arpa/inet.h&gt;</code><br />
 <code>#include &lt;netdb.h&gt;</code><br />
@@ -160,7 +160,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a012b4d8cb21e36920d69db1287776ace"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_2network_2network_8h.html#a19538dc4b7d9fdf4b3a195bb3dd18a41">WhistTOSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a012b4d8cb21e36920d69db1287776ace">WhistTOSValue</a></td></tr>
-<tr class="memdesc:a012b4d8cb21e36920d69db1287776ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum represents a TOS header which is used to set the type of service of a socket. Routers may handle packets differently based on the choice of TOS. See <a href="https://en.wikipedia.org/wiki/Differentiated_services">https://en.wikipedia.org/wiki/Differentiated_services</a> for DiffServ (DSCP) values, and <a href="https://www.tucny.com/Home/dscp-tos">https://www.tucny.com/Home/dscp-tos</a> for their corresponding TOS values.  <a href="whist_2network_2network_8h.html#a012b4d8cb21e36920d69db1287776ace">More...</a><br /></td></tr>
+<tr class="memdesc:a012b4d8cb21e36920d69db1287776ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum represents a TOS header which is used to set the type of service of a socket.  <a href="whist_2network_2network_8h.html#a012b4d8cb21e36920d69db1287776ace">More...</a><br /></td></tr>
 <tr class="separator:a012b4d8cb21e36920d69db1287776ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -179,13 +179,13 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a19538dc4b7d9fdf4b3a195bb3dd18a41"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a19538dc4b7d9fdf4b3a195bb3dd18a41">WhistTOSValue</a> { <a class="el" href="whist_2network_2network_8h.html#a19538dc4b7d9fdf4b3a195bb3dd18a41ae1dfec92dc51082074334f644d9b6109">TOS_DSCP_STANDARD_FORWARDING</a> = 0x00, 
 <a class="el" href="whist_2network_2network_8h.html#a19538dc4b7d9fdf4b3a195bb3dd18a41a2b353e30d491c744aa99e078066ffedf">TOS_DSCP_EXPEDITED_FORWARDING</a>
  }</td></tr>
-<tr class="memdesc:a19538dc4b7d9fdf4b3a195bb3dd18a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum represents a TOS header which is used to set the type of service of a socket. Routers may handle packets differently based on the choice of TOS. See <a href="https://en.wikipedia.org/wiki/Differentiated_services">https://en.wikipedia.org/wiki/Differentiated_services</a> for DiffServ (DSCP) values, and <a href="https://www.tucny.com/Home/dscp-tos">https://www.tucny.com/Home/dscp-tos</a> for their corresponding TOS values.  <a href="whist_2network_2network_8h.html#a19538dc4b7d9fdf4b3a195bb3dd18a41">More...</a><br /></td></tr>
+<tr class="memdesc:a19538dc4b7d9fdf4b3a195bb3dd18a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum represents a TOS header which is used to set the type of service of a socket.  <a href="whist_2network_2network_8h.html#a19538dc4b7d9fdf4b3a195bb3dd18a41">More...</a><br /></td></tr>
 <tr class="separator:a19538dc4b7d9fdf4b3a195bb3dd18a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a716fd11de9d48aa6f307185a3e9d130b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b">ack</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
-<tr class="memdesc:a716fd11de9d48aa6f307185a3e9d130b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 0-length packet over the socket. Used to keep-alive over NATs, and to check on the validity of the socket.  <a href="whist_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b">More...</a><br /></td></tr>
+<tr class="memdesc:a716fd11de9d48aa6f307185a3e9d130b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 0-length packet over the socket.  <a href="whist_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b">More...</a><br /></td></tr>
 <tr class="separator:a716fd11de9d48aa6f307185a3e9d130b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af80adc6d47b9e13698de5e6bda6becff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#af80adc6d47b9e13698de5e6bda6becff">read_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, bool should_recv)</td></tr>
 <tr class="memdesc:af80adc6d47b9e13698de5e6bda6becff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> from a <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>, if any such packet exists.  <a href="whist_2network_2network_8h.html#af80adc6d47b9e13698de5e6bda6becff">More...</a><br /></td></tr>
@@ -194,7 +194,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a419e4818e56de9f9a6c5c2d9d6e3283b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> created by read_packet.  <a href="whist_2network_2network_8h.html#a419e4818e56de9f9a6c5c2d9d6e3283b">More...</a><br /></td></tr>
 <tr class="separator:a419e4818e56de9f9a6c5c2d9d6e3283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f140d8c615657cb2f510fea9bdcdc36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a5f140d8c615657cb2f510fea9bdcdc36">send_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
-<tr class="memdesc:a5f140d8c615657cb2f510fea9bdcdc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> over the network. There is no restriction on the size of this packet, it will be fragmented if necessary. TODO: Fragment over UDP.  <a href="whist_2network_2network_8h.html#a5f140d8c615657cb2f510fea9bdcdc36">More...</a><br /></td></tr>
+<tr class="memdesc:a5f140d8c615657cb2f510fea9bdcdc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> over the network.  <a href="whist_2network_2network_8h.html#a5f140d8c615657cb2f510fea9bdcdc36">More...</a><br /></td></tr>
 <tr class="separator:a5f140d8c615657cb2f510fea9bdcdc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af30fe25b1472f12966debaa6535b4339"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339">destroy_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
 <tr class="memdesc:af30fe25b1472f12966debaa6535b4339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an allocated and initialized <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="whist_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339">More...</a><br /></td></tr>
@@ -211,10 +211,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a61c60fb86a89187155fb727e0dba01ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will set <code>socket</code> to have timeout timeout_ms.  <a href="whist_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea">More...</a><br /></td></tr>
 <tr class="separator:a61c60fb86a89187155fb727e0dba01ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dadca57d3f2804a946e82a7abb69549"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a6dadca57d3f2804a946e82a7abb69549">set_tos</a> (<a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socket, <a class="el" href="whist_2network_2network_8h.html#a19538dc4b7d9fdf4b3a195bb3dd18a41">WhistTOSValue</a> tos)</td></tr>
-<tr class="memdesc:a6dadca57d3f2804a946e82a7abb69549"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will set <code>socket</code> to have the specified TOS value. This is used to set the type of service header in the packet, which is used by routers to determine routing/queueing/dropping behavior.  <a href="whist_2network_2network_8h.html#a6dadca57d3f2804a946e82a7abb69549">More...</a><br /></td></tr>
+<tr class="memdesc:a6dadca57d3f2804a946e82a7abb69549"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will set <code>socket</code> to have the specified TOS value.  <a href="whist_2network_2network_8h.html#a6dadca57d3f2804a946e82a7abb69549">More...</a><br /></td></tr>
 <tr class="separator:a6dadca57d3f2804a946e82a7abb69549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab494a21469f6fa25ca60570bc2788461"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">socketp_udp</a> ()</td></tr>
-<tr class="memdesc:ab494a21469f6fa25ca60570bc2788461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a UDP socket() syscall and set fds to use flag FD_CLOEXEC if needed. This prevents child processes from holding onto the socket, preventing the socket's closure.  <a href="whist_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">More...</a><br /></td></tr>
+<tr class="memdesc:ab494a21469f6fa25ca60570bc2788461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a UDP socket() syscall and set fds to use flag FD_CLOEXEC if needed.  <a href="whist_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461">More...</a><br /></td></tr>
 <tr class="separator:ab494a21469f6fa25ca60570bc2788461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34d93b58103186e725fb1ee4de7f32b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a34d93b58103186e725fb1ee4de7f32b5">handshake_private_key</a> (<a class="el" href="structSocketContextData.html">SocketContextData</a> *context)</td></tr>
 <tr class="memdesc:a34d93b58103186e725fb1ee4de7f32b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform socket syscalls and set fds to use flag FD_CLOEXEC.  <a href="whist_2network_2network_8h.html#a34d93b58103186e725fb1ee4de7f32b5">More...</a><br /></td></tr>
@@ -227,8 +227,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7d89a649d45c2db168a33b01eee3bb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains all code that interacts directly with sockets. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains all code that interacts directly with sockets </p>
 <h1><a class="anchor" id="autotoc_md178"></a>
 under-the-hood.</h1>
 <h1><a class="anchor" id="autotoc_md179"></a>
@@ -522,7 +522,8 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>This enum represents a TOS header which is used to set the type of service of a socket. Routers may handle packets differently based on the choice of TOS. See <a href="https://en.wikipedia.org/wiki/Differentiated_services">https://en.wikipedia.org/wiki/Differentiated_services</a> for DiffServ (DSCP) values, and <a href="https://www.tucny.com/Home/dscp-tos">https://www.tucny.com/Home/dscp-tos</a> for their corresponding TOS values. </p>
+<p>This enum represents a TOS header which is used to set the type of service of a socket. </p>
+<p>Routers may handle packets differently based on the choice of TOS. See <a href="https://en.wikipedia.org/wiki/Differentiated_services">https://en.wikipedia.org/wiki/Differentiated_services</a> for DiffServ (DSCP) values, and <a href="https://www.tucny.com/Home/dscp-tos">https://www.tucny.com/Home/dscp-tos</a> for their corresponding TOS values. </p>
 
 </div>
 </div>
@@ -579,7 +580,8 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>This enum represents a TOS header which is used to set the type of service of a socket. Routers may handle packets differently based on the choice of TOS. See <a href="https://en.wikipedia.org/wiki/Differentiated_services">https://en.wikipedia.org/wiki/Differentiated_services</a> for DiffServ (DSCP) values, and <a href="https://www.tucny.com/Home/dscp-tos">https://www.tucny.com/Home/dscp-tos</a> for their corresponding TOS values. </p>
+<p>This enum represents a TOS header which is used to set the type of service of a socket. </p>
+<p>Routers may handle packets differently based on the choice of TOS. See <a href="https://en.wikipedia.org/wiki/Differentiated_services">https://en.wikipedia.org/wiki/Differentiated_services</a> for DiffServ (DSCP) values, and <a href="https://www.tucny.com/Home/dscp-tos">https://www.tucny.com/Home/dscp-tos</a> for their corresponding TOS values. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a19538dc4b7d9fdf4b3a195bb3dd18a41ae1dfec92dc51082074334f644d9b6109"></a>TOS_DSCP_STANDARD_FORWARDING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a19538dc4b7d9fdf4b3a195bb3dd18a41a2b353e30d491c744aa99e078066ffedf"></a>TOS_DSCP_EXPEDITED_FORWARDING&#160;</td><td class="fielddoc"></td></tr>
@@ -604,7 +606,8 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>Send a 0-length packet over the socket. Used to keep-alive over NATs, and to check on the validity of the socket. </p>
+<p>Send a 0-length packet over the socket. </p>
+<p>Used to keep-alive over NATs, and to check on the validity of the socket</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The socket context</td></tr>
@@ -933,7 +936,8 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>Given a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> over the network. There is no restriction on the size of this packet, it will be fragmented if necessary. TODO: Fragment over UDP. </p>
+<p>Given a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>'s type, payload, payload_len, and id, This function will send the <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> over the network. </p>
+<p>There is no restriction on the size of this packet, it will be fragmented if necessary. TODO: Fragment over UDP</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The socket context </td></tr>
@@ -1011,7 +1015,8 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>This will set <code>socket</code> to have the specified TOS value. This is used to set the type of service header in the packet, which is used by routers to determine routing/queueing/dropping behavior. </p>
+<p>This will set <code>socket</code> to have the specified TOS value. </p>
+<p>This is used to set the type of service header in the packet, which is used by routers to determine routing/queueing/dropping behavior.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">socket</td><td>The SOCKET to be configured </td></tr>
@@ -1037,7 +1042,8 @@ Server</h2>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a UDP socket() syscall and set fds to use flag FD_CLOEXEC if needed. This prevents child processes from holding onto the socket, preventing the socket's closure. </p>
+<p>Perform a UDP socket() syscall and set fds to use flag FD_CLOEXEC if needed. </p>
+<p>This prevents child processes from holding onto the socket, preventing the socket's closure.</p>
 <dl class="section return"><dt>Returns</dt><dd>The socket file descriptor, -1 on failure </dd></dl>
 
 </div>

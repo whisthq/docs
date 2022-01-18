@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('x11capture_8h.html',''); initResizable
 <div class="title">x11capture.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;X11/Xlib.h&gt;</code><br />
 <code>#include &lt;X11/extensions/XShm.h&gt;</code><br />
 <code>#include &lt;X11/extensions/Xdamage.h&gt;</code><br />
@@ -101,13 +104,13 @@ $(document).ready(function(){initNavTree('x11capture_8h.html',''); initResizable
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.  <a href="structX11CaptureDevice.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to handle using X11 for capturing the screen.  <a href="structX11CaptureDevice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aeea69005fc267aff603dc2ff610aa95f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#aeea69005fc267aff603dc2ff610aa95f">X11CaptureDevice</a></td></tr>
-<tr class="memdesc:aeea69005fc267aff603dc2ff610aa95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.  <a href="x11capture_8h.html#aeea69005fc267aff603dc2ff610aa95f">More...</a><br /></td></tr>
+<tr class="memdesc:aeea69005fc267aff603dc2ff610aa95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to handle using X11 for capturing the screen.  <a href="x11capture_8h.html#aeea69005fc267aff603dc2ff610aa95f">More...</a><br /></td></tr>
 <tr class="separator:aeea69005fc267aff603dc2ff610aa95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -118,25 +121,24 @@ Functions</h2></td></tr>
 <tr class="memitem:af248ecd1f0808e45436a7be65f238b8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#af248ecd1f0808e45436a7be65f238b8b">reconfigure_x11_capture_device</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device, uint32_t width, uint32_t height, uint32_t dpi)</td></tr>
 <tr class="separator:af248ecd1f0808e45436a7be65f238b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14556ad435b66ddf880360717fbc0ba2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#a14556ad435b66ddf880360717fbc0ba2">x11_capture_screen</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:a14556ad435b66ddf880360717fbc0ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture the screen with given device. Afterwards, the frame capture is stored in frame_data.  <a href="x11capture_8h.html#a14556ad435b66ddf880360717fbc0ba2">More...</a><br /></td></tr>
+<tr class="memdesc:a14556ad435b66ddf880360717fbc0ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture the screen with given device.  <a href="x11capture_8h.html#a14556ad435b66ddf880360717fbc0ba2">More...</a><br /></td></tr>
 <tr class="separator:a14556ad435b66ddf880360717fbc0ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c091e3659e09d9e8968dab45486f057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8h.html#a8c091e3659e09d9e8968dab45486f057">destroy_x11_capture_device</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:a8c091e3659e09d9e8968dab45486f057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the given <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> and free it.  <a href="x11capture_8h.html#a8c091e3659e09d9e8968dab45486f057">More...</a><br /></td></tr>
+<tr class="memdesc:a8c091e3659e09d9e8968dab45486f057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the given <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen.">X11CaptureDevice</a> and free it.  <a href="x11capture_8h.html#a8c091e3659e09d9e8968dab45486f057">More...</a><br /></td></tr>
 <tr class="separator:a8c091e3659e09d9e8968dab45486f057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <h1><a class="anchor" id="autotoc_md236"></a>
 @brief This file contains the code to do screen capture via the X11 API on Linux Ubuntu.</h1>
 <h1><a class="anchor" id="autotoc_md237"></a>
 Usage</h1>
-<p><a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> contains all the information used to interface with the X11 screen capture API and the data of a frame. Call create_x11_capture_device to initialize a device, x11_capture_screen to capture the screen with said device, and destroy_x11_capture_device when done capturing frames.</p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<p><a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen.">X11CaptureDevice</a> contains all the information used to interface with the X11 screen capture API and the data of a frame. Call create_x11_capture_device to initialize a device, x11_capture_screen to capture the screen with said device, and destroy_x11_capture_device when done capturing frames.</p>
 <h1><a class="anchor" id="autotoc_md238"></a>
 @brief This file contains the code to do screen capture via the X11 API on Linux Ubuntu.</h1>
 <h1><a class="anchor" id="autotoc_md239"></a>
 Usage</h1>
-<p><a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> contains all the information used to interface with the X11 screen capture API and the data of a frame. Call create_x11_capture_device to initialize a device, x11_capture_screen to capture the screen with said device, and destroy_x11_capture_device when done capturing frames. </p>
+<p><a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen.">X11CaptureDevice</a> contains all the information used to interface with the X11 screen capture API and the data of a frame. Call create_x11_capture_device to initialize a device, x11_capture_screen to capture the screen with said device, and destroy_x11_capture_device when done capturing frames. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="aeea69005fc267aff603dc2ff610aa95f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeea69005fc267aff603dc2ff610aa95f">&#9670;&nbsp;</a></span>X11CaptureDevice</h2>
@@ -150,7 +152,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data. </p>
+<p>Struct to handle using X11 for capturing the screen. </p>
+<p>The screen capture data is saved in frame_data. </p>
 
 </div>
 </div>
@@ -196,7 +199,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen.">X11CaptureDevice</a> </dd></dl>
 
 </div>
 </div>
@@ -216,7 +219,7 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Destroy the given <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen. The screen capture data is saved in frame_data.">X11CaptureDevice</a> and free it. </p>
+<p>Destroy the given <a class="el" href="structX11CaptureDevice.html" title="Struct to handle using X11 for capturing the screen.">X11CaptureDevice</a> and free it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>Device to destroy </td></tr>
@@ -282,7 +285,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Capture the screen with given device. Afterwards, the frame capture is stored in frame_data. </p>
+<p>Capture the screen with given device. </p>
+<p>Afterwards, the frame capture is stored in frame_data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>Device to use for screen captures</td></tr>

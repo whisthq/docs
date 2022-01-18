@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('client_2network_8c.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains client-specific wrappers to low-level network.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="client_2network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
@@ -113,7 +113,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6">discover_ports</a> (bool *with_stun)</td></tr>
-<tr class="memdesc:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client. Must be called before <code><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c" title="Connect to the server. Must be called after discover_ports().">connect_to_server()</a></code>.  <a href="client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6">More...</a><br /></td></tr>
+<tr class="memdesc:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client.  <a href="client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6">More...</a><br /></td></tr>
 <tr class="separator:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a227a48ef77a55282ab59696435f3859b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a227a48ef77a55282ab59696435f3859b">send_ping</a> (int ping_id)</td></tr>
 <tr class="memdesc:a227a48ef77a55282ab59696435f3859b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a ping with ID ping_id to the server.  <a href="client_2network_8c.html#a227a48ef77a55282ab59696435f3859b">More...</a><br /></td></tr>
@@ -128,7 +128,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a TCP pong (ping acknowledgement) with ID pong_id.  <a href="client_2network_8c.html#ab324d1a3aeb074f72b3cde078ef3e0bb">More...</a><br /></td></tr>
 <tr class="separator:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a496027e8f78ee5662198a6397295446e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a496027e8f78ee5662198a6397295446e">connect_to_server</a> (bool with_stun)</td></tr>
-<tr class="memdesc:a496027e8f78ee5662198a6397295446e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server. Must be called after <code><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8" title="Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the clie...">discover_ports()</a></code>.  <a href="client_2network_8c.html#a496027e8f78ee5662198a6397295446e">More...</a><br /></td></tr>
+<tr class="memdesc:a496027e8f78ee5662198a6397295446e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <a href="client_2network_8c.html#a496027e8f78ee5662198a6397295446e">More...</a><br /></td></tr>
 <tr class="separator:a496027e8f78ee5662198a6397295446e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb29b0f743d1edcc94da3691d2867f76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#acb29b0f743d1edcc94da3691d2867f76">send_tcp_reconnect_message</a> ()</td></tr>
 <tr class="memdesc:acb29b0f743d1edcc94da3691d2867f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a TCP socket reset message to the server, regardless of the initiator of the lost connection.  <a href="client_2network_8c.html#acb29b0f743d1edcc94da3691d2867f76">More...</a><br /></td></tr>
@@ -182,8 +182,8 @@ Variables</h2></td></tr>
 <tr class="separator:ada1ccf82a54161562999eaee52e4b328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains client-specific wrappers to low-level network. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains client-specific wrappers to low-level network </p>
 <h1><a class="anchor" id="autotoc_md50"></a>
 functions.</h1>
 <h1><a class="anchor" id="autotoc_md51"></a>
@@ -282,7 +282,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Connect to the server. Must be called after <code><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8" title="Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the clie...">discover_ports()</a></code>. </p>
+<p>Connect to the server. </p>
+<p>Must be called after <code><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8" title="Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the clie...">discover_ports()</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">using_stun</td><td>Whether we are using the STUN server</td></tr>
@@ -309,7 +310,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client. Must be called before <code><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c" title="Connect to the server. Must be called after discover_ports().">connect_to_server()</a></code>. </p>
+<p>Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client. </p>
+<p>Must be called before <code><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c" title="Connect to the server.">connect_to_server()</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">using_stun</td><td>Whether we are using the STUN server</td></tr>

@@ -59,6 +59,7 @@ var NAVTREE =
     ] ],
     [ "Whist Desktop Clients", "md_client_README.html", null ],
     [ "Whist Windows/Linux Ubuntu Servers", "md_server_README.html", null ],
+    [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -88,16 +89,16 @@ var NAVTREEINDEX =
 "client_8c.html#a910e3ffb86024ba2864d8c0594f9623f",
 "cursor_8h.html#acbd9a23a669810691b3befd88521249fa28856c3448bdcfdd362aee043cd0f91d",
 "functions_f.html",
-"linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a5208f2ea943633b6ff9de82b9cdc81f2",
-"log__statistic_8c.html#a462484146d0ca6bd35b234bca13cc9a0",
-"ringbuffer_8c.html#ae1394526c365da140a30aa8d28887fda",
-"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55badd2ffe606ca7edbe784ded18671646fb",
-"structInputDevice.html#a4fa4d386a10f209982638cc8bd1e79fb",
-"structSocketContextData.html#a43b0a5dcbf177e0e9147072f10c871ba",
-"structWhistRenderer.html#aed7260c7a7868b1bb86ed2f461b404db",
-"udp_8h.html",
-"whist_8h.html#a99cc5a998dfeebc3567baec59b4a77a3",
-"whistgetopt_8c.html#a36733c034e80354c237395bb6e48d2a1"
+"input_8h.html#a3c7c52f6a54afd0f516d4070bc92be6c",
+"lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102a61da4464d66b2f215f7fc03c20c2418c",
+"parse__args_8c.html#a3ad4b4a7eff6f2ec3337dd55564ce031",
+"server_2network_8c.html#aa19516f461c45f3ca2d93a4b1f7fc2f6",
+"structFFmpegEncoder.html#ad4d170bef27ad9a721e99f9508cfec09",
+"structOSXFilenames.html#afb130cc3d8df974472a08125d2ded88d",
+"structWhistKeyboardMessage.html#aef9959093210638b97b2ecd11bb212f2",
+"threads_8h.html#a6608fce809c2742a93830d040eea0ac9",
+"whist_8h.html#a76bf238d14734ada3ef9fadfdea45ca7",
+"whist_8h.html#affe776513b24d84b39af8ab0930fef7f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

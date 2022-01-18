@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('ringbuffer_8h.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the code to create a ring buffer and use it for handling received.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fec_8h_source.html">whist/utils/fec.h</a>&gt;</code><br />
@@ -126,27 +126,27 @@ Functions</h2></td></tr>
 <tr class="memdesc:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrives the frame at the given ID in the ring buffer.  <a href="ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5">More...</a><br /></td></tr>
 <tr class="separator:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a8c1cc512edc5afc5174f2e2693b3bfae">receive_packet</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="memdesc:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a packet to the ring buffer, and initialize the corresponding frame if necessary. Also nacks for missing packets or frames.  <a href="ringbuffer_8h.html#a8c1cc512edc5afc5174f2e2693b3bfae">More...</a><br /></td></tr>
+<tr class="memdesc:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a packet to the ring buffer, and initialize the corresponding frame if necessary.  <a href="ringbuffer_8h.html#a8c1cc512edc5afc5174f2e2693b3bfae">More...</a><br /></td></tr>
 <tr class="separator:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af514843307356fd516b1a96211c9d986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#af514843307356fd516b1a96211c9d986">destroy_ring_buffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
 <tr class="memdesc:af514843307356fd516b1a96211c9d986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the ring buffer and all its constituent frames.  <a href="ringbuffer_8h.html#af514843307356fd516b1a96211c9d986">More...</a><br /></td></tr>
 <tr class="separator:af514843307356fd516b1a96211c9d986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a537f83ad6061d7205282ec209d66d9d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a537f83ad6061d7205282ec209d66d9d5">try_nacking</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double <a class="el" href="client_2video_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a>)</td></tr>
-<tr class="memdesc:a537f83ad6061d7205282ec209d66d9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If any packets are still missing, and it's been too long, try nacking for them. Ideally, this gets called quite rapidly, it has internal timers to throttle nacks. The more rapidly the better, just need to balance CPU usage, 5-10ms should be fine.  <a href="ringbuffer_8h.html#a537f83ad6061d7205282ec209d66d9d5">More...</a><br /></td></tr>
+<tr class="memdesc:a537f83ad6061d7205282ec209d66d9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If any packets are still missing, and it's been too long, try nacking for them.  <a href="ringbuffer_8h.html#a537f83ad6061d7205282ec209d66d9d5">More...</a><br /></td></tr>
 <tr class="separator:a537f83ad6061d7205282ec209d66d9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4415bb2d50c63ca97a0eafa97964188d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a4415bb2d50c63ca97a0eafa97964188d">reset_frame</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *frame_data)</td></tr>
 <tr class="memdesc:a4415bb2d50c63ca97a0eafa97964188d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the frame, both metadata and frame buffer.  <a href="ringbuffer_8h.html#a4415bb2d50c63ca97a0eafa97964188d">More...</a><br /></td></tr>
 <tr class="separator:a4415bb2d50c63ca97a0eafa97964188d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22897ddd74ba2d11192502d98a4c7227"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a22897ddd74ba2d11192502d98a4c7227">is_ready_to_render</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
-<tr class="memdesc:a22897ddd74ba2d11192502d98a4c7227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. The ring buffer will not write to the currently rendering frame.  <a href="ringbuffer_8h.html#a22897ddd74ba2d11192502d98a4c7227">More...</a><br /></td></tr>
+<tr class="memdesc:a22897ddd74ba2d11192502d98a4c7227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame.  <a href="ringbuffer_8h.html#a22897ddd74ba2d11192502d98a4c7227">More...</a><br /></td></tr>
 <tr class="separator:a22897ddd74ba2d11192502d98a4c7227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a4ef47e30f9faabce38d4df154494a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a29a4ef47e30f9faabce38d4df154494a">set_rendering</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
-<tr class="memdesc:a29a4ef47e30f9faabce38d4df154494a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. The ring buffer will not write to the currently rendering frame.  <a href="ringbuffer_8h.html#a29a4ef47e30f9faabce38d4df154494a">More...</a><br /></td></tr>
+<tr class="memdesc:a29a4ef47e30f9faabce38d4df154494a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame.  <a href="ringbuffer_8h.html#a29a4ef47e30f9faabce38d4df154494a">More...</a><br /></td></tr>
 <tr class="separator:a29a4ef47e30f9faabce38d4df154494a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the code to create a ring buffer and use it for handling received. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the code to create a ring buffer and use it for handling received </p>
 <h1><a class="anchor" id="autotoc_md188"></a>
 audio/video.</h1>
 <h1><a class="anchor" id="autotoc_md189"></a>
@@ -197,7 +197,7 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p><a class="el" href="structRingBuffer.html" title="RingBuffer struct for abstracting away frame reconstruction and frame retrieval.">RingBuffer</a> struct for abstracting away frame reconstruction and frame retrieval. </p>
-<p>This is used by <a class="el" href="client_2audio_8c.html" title="This file contains all code that interacts directly with processing.">client/audio.c</a> and <a class="el" href="client_2video_8c.html" title="This file contains all code that interacts directly with receiving and.">client/video.c</a> to keep track of frames as the client receives packets. It handles inserting new packets into the ring buffer and nacking for missing packets. </p>
+<p>This is used by <a class="el" href="client_2audio_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">client/audio.c</a> and <a class="el" href="client_2video_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">client/video.c</a> to keep track of frames as the client receives packets. It handles inserting new packets into the ring buffer and nacking for missing packets. </p>
 
 </div>
 </div>
@@ -337,7 +337,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. The ring buffer will not write to the currently rendering frame. </p>
+<p>Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. </p>
+<p>The ring buffer will not write to the currently rendering frame.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ring_buffer</td><td>Ring buffer containing the frame</td></tr>
@@ -375,7 +376,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Add a packet to the ring buffer, and initialize the corresponding frame if necessary. Also nacks for missing packets or frames. </p>
+<p>Add a packet to the ring buffer, and initialize the corresponding frame if necessary. </p>
+<p>Also nacks for missing packets or frames.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ring_buffer</td><td>Ring buffer to place packet into</td></tr>
@@ -450,7 +452,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. The ring buffer will not write to the currently rendering frame. </p>
+<p>Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame. </p>
+<p>The ring buffer will not write to the currently rendering frame.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ring_buffer</td><td>Ring buffer containing the frame</td></tr>
@@ -488,7 +491,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>If any packets are still missing, and it's been too long, try nacking for them. Ideally, this gets called quite rapidly, it has internal timers to throttle nacks. The more rapidly the better, just need to balance CPU usage, 5-10ms should be fine. </p>
+<p>If any packets are still missing, and it's been too long, try nacking for them. </p>
+<p>Ideally, this gets called quite rapidly, it has internal timers to throttle nacks. The more rapidly the better, just need to balance CPU usage, 5-10ms should be fine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ring_buffer</td><td>The ring buffer to try nacking with</td></tr>

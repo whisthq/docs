@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('audioencode_8h.html',''); initResizabl
 <div class="title">audioencode.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;libavformat/avformat.h&gt;</code><br />
 <code>#include &lt;libavutil/audio_fifo.h&gt;</code><br />
 <code>#include &lt;libswresample/swresample.h&gt;</code><br />
@@ -100,7 +103,7 @@ $(document).ready(function(){initNavTree('audioencode_8h.html',''); initResizabl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioEncoder.html">AudioEncoder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for handling encoding and resampling of audio. the FFmpeg codec and context handle encoding packets sent through audio_fifo, and audio is resampled from system audio using swr_context. The encoded frame is located in encoded_frame_data.  <a href="structAudioEncoder.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for handling encoding and resampling of audio.  <a href="structAudioEncoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEncodedAudio.html">EncodedAudio</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encoded audio struct (unused)  <a href="structEncodedAudio.html#details">More...</a><br /></td></tr>
@@ -114,7 +117,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a52972e0e53486d805d5a8f20dd35544d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structAudioEncoder.html">AudioEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioencode_8h.html#a52972e0e53486d805d5a8f20dd35544d">AudioEncoder</a></td></tr>
-<tr class="memdesc:a52972e0e53486d805d5a8f20dd35544d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for handling encoding and resampling of audio. the FFmpeg codec and context handle encoding packets sent through audio_fifo, and audio is resampled from system audio using swr_context. The encoded frame is located in encoded_frame_data.  <a href="audioencode_8h.html#a52972e0e53486d805d5a8f20dd35544d">More...</a><br /></td></tr>
+<tr class="memdesc:a52972e0e53486d805d5a8f20dd35544d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for handling encoding and resampling of audio.  <a href="audioencode_8h.html#a52972e0e53486d805d5a8f20dd35544d">More...</a><br /></td></tr>
 <tr class="separator:a52972e0e53486d805d5a8f20dd35544d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8858004dfad5279aa1854de4a5dd3988"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structEncodedAudio.html">EncodedAudio</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioencode_8h.html#a8858004dfad5279aa1854de4a5dd3988">EncodedAudio</a></td></tr>
 <tr class="memdesc:a8858004dfad5279aa1854de4a5dd3988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encoded audio struct (unused)  <a href="audioencode_8h.html#a8858004dfad5279aa1854de4a5dd3988">More...</a><br /></td></tr>
@@ -136,7 +139,7 @@ Functions</h2></td></tr>
 <tr class="separator:a744903e56d2e118b3ffe8bb99bbb92f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <h1><a class="anchor" id="autotoc_md114"></a>
 @brief This file contains the code to encode AAC-encoded audio using FFmpeg.</h1>
 <h1><a class="anchor" id="autotoc_md115"></a>
@@ -170,7 +173,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Struct for handling encoding and resampling of audio. the FFmpeg codec and context handle encoding packets sent through audio_fifo, and audio is resampled from system audio using swr_context. The encoded frame is located in encoded_frame_data. </p>
+<p>Struct for handling encoding and resampling of audio. </p>
+<p>the FFmpeg codec and context handle encoding packets sent through audio_fifo, and audio is resampled from system audio using swr_context. The encoded frame is located in encoded_frame_data. </p>
 
 </div>
 </div>

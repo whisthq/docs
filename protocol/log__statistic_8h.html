@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('log__statistic_8h.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>This contains logging utils to log repeated statistics, where we.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
@@ -107,7 +107,7 @@ Macros</h2></td></tr>
 <tr class="memitem:afa6be6a1f15ad9d2c4ca359bfb1703e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#afa6be6a1f15ad9d2c4ca359bfb1703e8">STATISTICS_FREQUENCY_IN_SEC</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:afa6be6a1f15ad9d2c4ca359bfb1703e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c8f42babfe110a848d8fdd6ebabd65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65">TIME_RUN</a>(line,  name,  timer)</td></tr>
-<tr class="memdesc:a04c8f42babfe110a848d8fdd6ebabd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro runs the code in <code>line</code>, timing it, and then logging the result with <code>log_double_statistic</code>. It depends on a <code>clock</code> being passed in as a parameter to compute the time delta.  <a href="log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65">More...</a><br /></td></tr>
+<tr class="memdesc:a04c8f42babfe110a848d8fdd6ebabd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro runs the code in <code>line</code>, timing it, and then logging the result with <code>log_double_statistic</code>.  <a href="log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65">More...</a><br /></td></tr>
 <tr class="separator:a04c8f42babfe110a848d8fdd6ebabd65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -116,15 +116,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a462484146d0ca6bd35b234bca13cc9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the statistic logger.  <a href="log__statistic_8h.html#a462484146d0ca6bd35b234bca13cc9a0">More...</a><br /></td></tr>
 <tr class="separator:a462484146d0ca6bd35b234bca13cc9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab364d742d19a3ff2640b68884b171674"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674">log_double_statistic</a> (uint32_t index, double val)</td></tr>
-<tr class="memdesc:ab364d742d19a3ff2640b68884b171674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note a specific stat value associated with a key. If enough time has passed, also prints all statistics and flushes the data store.  <a href="log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674">More...</a><br /></td></tr>
+<tr class="memdesc:ab364d742d19a3ff2640b68884b171674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note a specific stat value associated with a key.  <a href="log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674">More...</a><br /></td></tr>
 <tr class="separator:ab364d742d19a3ff2640b68884b171674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56488c6ba44b9551c7458067c1443991"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#a56488c6ba44b9551c7458067c1443991">destroy_statistic_logger</a> ()</td></tr>
 <tr class="memdesc:a56488c6ba44b9551c7458067c1443991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the statistic logger.  <a href="log__statistic_8h.html#a56488c6ba44b9551c7458067c1443991">More...</a><br /></td></tr>
 <tr class="separator:a56488c6ba44b9551c7458067c1443991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This contains logging utils to log repeated statistics, where we. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This contains logging utils to log repeated statistics, where we </p>
 <h1><a class="anchor" id="autotoc_md172"></a>
 don't want to print every time.</h1>
 <h1><a class="anchor" id="autotoc_md173"></a>
@@ -180,7 +180,8 @@ Usage</h1>
 <div class="line">    line;                           \</div>
 <div class="line">    log_double_statistic(name, <a class="code" href="clock_8c.html#a0a3a3c28088edf0e0cbadb564d21ea3b">get_timer</a>(&amp;timer) * <a class="code" href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a>);</div>
 </div><!-- fragment -->
-<p>This macro runs the code in <code>line</code>, timing it, and then logging the result with <code>log_double_statistic</code>. It depends on a <code>clock</code> being passed in as a parameter to compute the time delta. </p>
+<p>This macro runs the code in <code>line</code>, timing it, and then logging the result with <code>log_double_statistic</code>. </p>
+<p>It depends on a <code>clock</code> being passed in as a parameter to compute the time delta. </p>
 
 </div>
 </div>
@@ -230,7 +231,8 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Note a specific stat value associated with a key. If enough time has passed, also prints all statistics and flushes the data store. </p>
+<p>Note a specific stat value associated with a key. </p>
+<p>If enough time has passed, also prints all statistics and flushes the data store.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>The predefined index of the metric.</td></tr>

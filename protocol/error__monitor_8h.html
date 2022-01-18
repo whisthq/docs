@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('error__monitor_8h.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>This file contains the functions to configure and report breadcrumbs.  
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 </div>
@@ -122,8 +122,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7b77c56b0a8ee0bd57ac755005564f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file contains the functions to configure and report breadcrumbs. </p>
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<p>This file contains the functions to configure and report breadcrumbs </p>
 <h1><a class="anchor" id="autotoc_md168"></a>
 and error events to tools such as Sentry.</h1>
 <h1><a class="anchor" id="autotoc_md169"></a>
@@ -131,7 +131,7 @@ Usage</h1>
 <p>The error monitor needs to have an environment configured before it can be started up. This environment should be development/staging/production, and is passed in as a command-line parameter. Once the value is known, we may call <code><a class="el" href="error__monitor_8h.html#aa77d946ab088382421644c601afceb78" title="Configures the error monitor to use the provided environment.">whist_error_monitor_set_environment()</a></code> to configure it.</p>
 <p>If no environment is set, the error monitor will fail to initialize. This is because we don't want it to complain in personal setups and manual connections when developing, but it's important to note the side-effect that we will not report to the error monitoring service if environment isn't passed in.</p>
 <p>To initialize the error monitor, we call <code>error_monitor_initialize()</code>. After doing so, we can configure the error logging metadata with <code><a class="el" href="error__monitor_8h.html#abdaad5042382d0cc47ea2e1b670b2270" title="Configures the username tag for error monitor reports.">whist_error_monitor_set_username()</a></code> and <code><a class="el" href="error__monitor_8h.html#aa63504b8ebaddf4daf11d2eb7c7b7828" title="Configures the connection id tag for error monitor reports.">whist_error_monitor_set_connection_id()</a></code>.</p>
-<p>At this point, calling <code><a class="el" href="error__monitor_8h.html#a8fc14226804709f16463b3f49bf4e275" title="Logs a breadcrumb to the error monitor.">whist_error_monitor_log_breadcrumb()</a></code> and <code><a class="el" href="error__monitor_8h.html#a7b77c56b0a8ee0bd57ac755005564f53" title="Logs an error event to the error monitor.">whist_error_monitor_log_error()</a></code> will report a trace of non-error events and report a detailed breakdown for error-level events to the error monitor service, respectively. Importantly, <em>you should almost never be calling this function by itself</em>. Instead, simply use the <code>LOG_*()</code> functions from <a class="el" href="logging_8h.html" title="This file contains the logging macros and utils to send Winlogon.">logging.h</a>, which will automatically send error monitor breadcrumbs and error reports as needed.</p>
+<p>At this point, calling <code><a class="el" href="error__monitor_8h.html#a8fc14226804709f16463b3f49bf4e275" title="Logs a breadcrumb to the error monitor.">whist_error_monitor_log_breadcrumb()</a></code> and <code><a class="el" href="error__monitor_8h.html#a7b77c56b0a8ee0bd57ac755005564f53" title="Logs an error event to the error monitor.">whist_error_monitor_log_error()</a></code> will report a trace of non-error events and report a detailed breakdown for error-level events to the error monitor service, respectively. Importantly, <em>you should almost never be calling this function by itself</em>. Instead, simply use the <code>LOG_*()</code> functions from <a class="el" href="logging_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">logging.h</a>, which will automatically send error monitor breadcrumbs and error reports as needed.</p>
 <p>Because of this integration with our logging setup, we run into race conditions in <code><a class="el" href="error__monitor_8h.html#a554f8376bcf2245639e8d260f2d6f836" title="Shuts down the error monitor.">whist_error_monitor_shutdown()</a></code>, which may cause us to fail to report our last few breadcrumbs and error events. In order to avoid this, we must call <code><a class="el" href="error__monitor_8h.html#a554f8376bcf2245639e8d260f2d6f836" title="Shuts down the error monitor.">whist_error_monitor_shutdown()</a></code> after calling <code><a class="el" href="logging_8c.html#aa702fa9ec966709ebb51bef79be7b33e" title="Destroy the logger object.">destroy_logger()</a></code>, to allow for any pending error monitor log calls to be handled. Eventually, we should set up a more robust solution for synchronizing these calls. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="aff05302e466bdf62b862bbd7bdc407a1"></a>
@@ -215,7 +215,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This is automatically called from the <code>LOG_*</code> functions from <a class="el" href="logging_8h.html" title="This file contains the logging macros and utils to send Winlogon.">logging.h</a>, and should almost never be called alone. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is automatically called from the <code>LOG_*</code> functions from <a class="el" href="logging_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">logging.h</a>, and should almost never be called alone. </dd></dl>
 
 </div>
 </div>
@@ -242,7 +242,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This is automatically called from the <code>LOG_*</code> functions from <a class="el" href="logging_8h.html" title="This file contains the logging macros and utils to send Winlogon.">logging.h</a>, and should almost never be called alone. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is automatically called from the <code>LOG_*</code> functions from <a class="el" href="logging_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">logging.h</a>, and should almost never be called alone. </dd></dl>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Shuts down the error monitor. </p>
-<dl class="section note"><dt>Note</dt><dd>This should only be called after calling <a class="el" href="logging_8h.html" title="This file contains the logging macros and utils to send Winlogon.">logging.h</a>'s <code><a class="el" href="logging_8c.html#aa702fa9ec966709ebb51bef79be7b33e" title="Destroy the logger object.">destroy_logger()</a></code>. See the "Usage" section above for details. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This should only be called after calling <a class="el" href="logging_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">logging.h</a>'s <code><a class="el" href="logging_8c.html#aa702fa9ec966709ebb51bef79be7b33e" title="Destroy the logger object.">destroy_logger()</a></code>. See the "Usage" section above for details. </dd></dl>
 
 </div>
 </div>

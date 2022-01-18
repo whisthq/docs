@@ -35,7 +35,7 @@ var searchData=
   ['error_5flevel_500',['ERROR_LEVEL',['../logging_8h.html#a3812f9c42e2965d252530ec6ad3f62fd',1,'logging.h']]],
   ['error_5fmonitor_2ec_501',['error_monitor.c',['../error__monitor_8c.html',1,'']]],
   ['error_5fmonitor_2eh_502',['error_monitor.h',['../error__monitor_8h.html',1,'']]],
-  ['error_5ftag_503',['error_tag',['../logging_8c.html#a3dff165e9f1a40dfc76a953fec589061',1,'error_tag():&#160;logging.c'],['../logging_8h.html#a0583ea4d2c6f4bfb23c6d012d943a33f',1,'error_tag():&#160;logging.h'],['../logging_8h.html#aa29007116d11e676da62a3ae1dae4402',1,'ERROR_TAG():&#160;logging.h']]],
+  ['error_5ftag_503',['ERROR_TAG',['../logging_8h.html#aa29007116d11e676da62a3ae1dae4402',1,'ERROR_TAG():&#160;logging.h'],['../logging_8c.html#a3dff165e9f1a40dfc76a953fec589061',1,'error_tag():&#160;logging.c'],['../logging_8h.html#a0583ea4d2c6f4bfb23c6d012d943a33f',1,'error_tag():&#160;logging.h']]],
   ['escape_5fstring_504',['escape_string',['../logging_8c.html#af60cc877da6dc64161638b755348664f',1,'logging.c']]],
   ['evaluate_5farg_505',['evaluate_arg',['../client__utils_8c.html#a75e80d1fa4b30805a90363e84266a603',1,'client_utils.c']]],
   ['event_506',['event',['../structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb',1,'X11CaptureDevice']]],
