@@ -91,13 +91,13 @@ var NAVTREEINDEX =
 "linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a5208f2ea943633b6ff9de82b9cdc81f2",
 "log__statistic_8c.html#a462484146d0ca6bd35b234bca13cc9a0",
 "ringbuffer_8c.html#ae1394526c365da140a30aa8d28887fda",
-"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae633d7b7ba7e153f9671a1691ef89b8c",
-"structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf",
-"structSocketContextData.html#a53214358998840a3029a770e482f4c59",
-"structWhistServerMessage.html#a00e3a51de925d637b8804879c570850a",
-"udp_8h.html#a77d9098b90040bad70ccff2783f32408",
-"whist_8h.html#a9bcfa4a6fecd23535df2dd7cc000ea23",
-"whistgetopt_8c.html#a588cd574594646450dcebb4f26d85391"
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55badd2ffe606ca7edbe784ded18671646fb",
+"structInputDevice.html#a4fa4d386a10f209982638cc8bd1e79fb",
+"structSocketContextData.html#a43b0a5dcbf177e0e9147072f10c871ba",
+"structWhistRenderer.html#aed7260c7a7868b1bb86ed2f461b404db",
+"udp_8h.html",
+"whist_8h.html#a99cc5a998dfeebc3567baec59b4a77a3",
+"whistgetopt_8c.html#a36733c034e80354c237395bb6e48d2a1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

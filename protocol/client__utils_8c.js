@@ -31,5 +31,5 @@ var client__utils_8c =
     [ "user_email", "client__utils_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd", null ],
     [ "using_piped_arguments", "client__utils_8c.html#a7ff422af60ed8780f0dbfca8c92ec337", null ],
     [ "using_stun", "client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66", null ],
-    [ "window", "client__utils_8c.html#abf8ae4dc2e6b1697c9776a8acbf4b407", null ]
+    [ "window", "client__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9", null ]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"structInputDevice.html#a4fa4d386a10f209982638cc8bd1e79fb":[8,0,35,1],
+"structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345":[8,0,35,5],
 "structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf":[8,0,35,3],
 "structInputDevice.html#aa2884b4093f9359cea2435e600461164":[8,0,35,6],
 "structInputDevice.html#ab1e5788638481214330b017d325ed424":[8,0,35,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "structSocketContextData.html#a182f82f77edbaa734fe7a396c206e4db":[8,0,64,4],
 "structSocketContextData.html#a28dc999f762a8b2ceb46f1c108521b3c":[8,0,64,8],
 "structSocketContextData.html#a383f157574c25155e32fd2dc8a5f89c4":[8,0,64,3],
-"structSocketContextData.html#a3a5c8cf04fc3bab3e56bf2f9364f276c":[8,0,64,6],
-"structSocketContextData.html#a43b0a5dcbf177e0e9147072f10c871ba":[8,0,64,17],
-"structSocketContextData.html#a5238468950851acc56a05a4507ce660d":[8,0,64,16]
+"structSocketContextData.html#a3a5c8cf04fc3bab3e56bf2f9364f276c":[8,0,64,6]
 };

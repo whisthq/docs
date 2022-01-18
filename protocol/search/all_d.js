@@ -87,7 +87,7 @@ var searchData=
   ['message_5ftcp_5frecovery_1272',['MESSAGE_TCP_RECOVERY',['../whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a349edcec26ba49767cf95f929499760c',1,'whist.h']]],
   ['message_5fudp_5fping_1273',['MESSAGE_UDP_PING',['../whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a10f11477e60990f80f4ea41813f50caa',1,'whist.h']]],
   ['metric_5flevel_1274',['METRIC_LEVEL',['../logging_8h.html#a1a3cc8463f8cede44c8499b36bc47f9e',1,'logging.h']]],
-  ['metric_5ftag_1275',['metric_tag',['../logging_8c.html#ae3a7a1fe9dc2b4ad3367abaf4af31a12',1,'metric_tag():&#160;logging.c'],['../logging_8h.html#a377bd3f622cd4f3843184eb213dc5229',1,'metric_tag():&#160;logging.h'],['../logging_8h.html#ac5445774555999e2d5b299937810fbd6',1,'METRIC_TAG():&#160;logging.h']]],
+  ['metric_5ftag_1275',['METRIC_TAG',['../logging_8h.html#ac5445774555999e2d5b299937810fbd6',1,'METRIC_TAG():&#160;logging.h'],['../logging_8c.html#ae3a7a1fe9dc2b4ad3367abaf4af31a12',1,'metric_tag():&#160;logging.c'],['../logging_8h.html#a377bd3f622cd4f3843184eb213dc5229',1,'metric_tag():&#160;logging.h']]],
   ['min_1276',['min',['../structStatisticData.html#a285604f80595a5dec886ece325a8253d',1,'StatisticData::min()'],['../whist_8h.html#ac6afabdc09a49a433ee19d8a9486056d',1,'min():&#160;whist.h']]],
   ['min_5ffps_1277',['MIN_FPS',['../whist_8h.html#a07497cbfeb7eff3e5798235291f978c6',1,'whist.h']]],
   ['min_5fnvenc_5fheight_1278',['MIN_NVENC_HEIGHT',['../ffmpeg__encode_8c.html#a37c3ae16b80743dbd8cc6d3c00851df5',1,'ffmpeg_encode.c']]],
