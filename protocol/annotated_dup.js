@@ -88,6 +88,7 @@ var annotated_dup =
     [ "WhistMouseMotionMessage", "structWhistMouseMotionMessage.html", "structWhistMouseMotionMessage" ],
     [ "WhistMouseWheelMessage", "structWhistMouseWheelMessage.html", "structWhistMouseWheelMessage" ],
     [ "WhistMultigestureMessage", "structWhistMultigestureMessage.html", "structWhistMultigestureMessage" ],
+    [ "WhistNotification", "structWhistNotification.html", "structWhistNotification" ],
     [ "WhistPacket", "structWhistPacket.html", "structWhistPacket" ],
     [ "WhistRenderer", "structWhistRenderer.html", "structWhistRenderer" ],
     [ "WhistRGBColor", "structWhistRGBColor.html", "structWhistRGBColor" ],

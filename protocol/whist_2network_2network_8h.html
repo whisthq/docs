@@ -165,10 +165,14 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:abc95f4cc09d4297e52acd3113483a47d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> { <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47da3701057450c7a09aa316bb880f2db6ac">PACKET_AUDIO</a> = 0, 
+<tr class="memitem:abc95f4cc09d4297e52acd3113483a47d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> { <br />
+&#160;&#160;<a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47da3701057450c7a09aa316bb880f2db6ac">PACKET_AUDIO</a> = 0, 
 <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47dab3488b238f3094f2bcfaa19a393be226">PACKET_VIDEO</a> = 1, 
 <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47da501ce71c96f98746319edaf14fd43aef">PACKET_MESSAGE</a> = 2, 
-<a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a> = 3
+<a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47da1c385693f69466d8467f20619fac97bb">PACKET_NOTIFICATION</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a> = 4
+<br />
  }</td></tr>
 <tr class="memdesc:abc95f4cc09d4297e52acd3113483a47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data packet description.  <a href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">More...</a><br /></td></tr>
 <tr class="separator:abc95f4cc09d4297e52acd3113483a47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,9 +233,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains all code that interacts directly with sockets </p>
-<h1><a class="anchor" id="autotoc_md178"></a>
+<h1><a class="anchor" id="autotoc_md184"></a>
 under-the-hood.</h1>
-<h1><a class="anchor" id="autotoc_md179"></a>
+<h1><a class="anchor" id="autotoc_md185"></a>
 Usage</h1>
 <p><a class="el" href="structSocketContextData.html">SocketContextData</a>: This type represents a socket.</p><ul>
 <li>To use a socket, call CreateUDPContext or CreateTCPContext with the desired parameters</li>
@@ -249,7 +253,7 @@ Usage</h1>
 <li>To reconstruct the original datagram from a sequence of WhistPackets, concatenated the data[] streams (From 0 to payload_size - 1) for each index from 0 to num_indices - 1</li>
 </ul>
 <hr  />
- <h2><a class="anchor" id="autotoc_md181"></a>
+ <h2><a class="anchor" id="autotoc_md187"></a>
 Client</h2>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> context; create_tcp_socket_context(&amp;context, "10.0.0.5", 5055, 500, 250);</p>
 <p>char* msg = "Hello this is a message!"; send_packet(&amp;context, PACKET_MESSAGE, msg, strlen(msg) + 1);</p>
@@ -258,7 +262,7 @@ Client</h2>
 <p>free_packet(packet);</p>
 <p>destroy_socket_context(&amp;context);</p>
 <hr  />
- <h2><a class="anchor" id="autotoc_md183"></a>
+ <h2><a class="anchor" id="autotoc_md189"></a>
 Server</h2>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> context; creaqte_tcp_socket_context(&amp;context, NULL, 5055, 500, 250);</p>
 <p>WhistPacket* packet = NULL; while(packet == NULL) { packet = read_packet(&amp;context); }</p>
@@ -563,6 +567,7 @@ Server</h2>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abc95f4cc09d4297e52acd3113483a47da3701057450c7a09aa316bb880f2db6ac"></a>PACKET_AUDIO&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abc95f4cc09d4297e52acd3113483a47dab3488b238f3094f2bcfaa19a393be226"></a>PACKET_VIDEO&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abc95f4cc09d4297e52acd3113483a47da501ce71c96f98746319edaf14fd43aef"></a>PACKET_MESSAGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abc95f4cc09d4297e52acd3113483a47da1c385693f69466d8467f20619fac97bb"></a>PACKET_NOTIFICATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994"></a>NUM_PACKET_TYPES&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
