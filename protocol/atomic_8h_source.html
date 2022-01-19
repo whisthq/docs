@@ -150,12 +150,12 @@ $(document).ready(function(){initNavTree('atomic_8h_source.html',''); initResiza
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> atomic_fetch_add(<span class="keyword">volatile</span> atomic_int *<span class="keywordtype">object</span>, <span class="keywordtype">int</span> operand) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> InterlockedAdd(&amp;object-&gt;value, operand);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> InterlockedExchangeAdd(&amp;object-&gt;value, operand);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> atomic_fetch_sub(<span class="keyword">volatile</span> atomic_int *<span class="keywordtype">object</span>, <span class="keywordtype">int</span> operand) {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// No separate atomic subtract, so negate the value and add it.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> InterlockedAdd(&amp;object-&gt;value, -operand);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> InterlockedExchangeAdd(&amp;object-&gt;value, -operand);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> atomic_fetch_or(<span class="keyword">volatile</span> atomic_int *<span class="keywordtype">object</span>, <span class="keywordtype">int</span> operand) {</div>
