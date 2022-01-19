@@ -137,9 +137,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the functions to configure and report breadcrumbs </p>
-<h1><a class="anchor" id="autotoc_md172"></a>
+<h1><a class="anchor" id="autotoc_md166"></a>
 and error events to tools such as Sentry.</h1>
-<h1><a class="anchor" id="autotoc_md173"></a>
+<h1><a class="anchor" id="autotoc_md167"></a>
 Usage</h1>
 <p>The error monitor needs to have an environment configured before it can be started up. This environment should be development/staging/production, and is passed in as a command-line parameter. Once the value is known, we may call <code><a class="el" href="error__monitor_8c.html#aa77d946ab088382421644c601afceb78" title="Configures the error monitor to use the provided environment.">whist_error_monitor_set_environment()</a></code> to configure it.</p>
 <p>If no environment is set, the error monitor will fail to initialize. This is because we don't want it to complain in personal setups and manual connections when developing, but it's important to note the side-effect that we will not report to the error monitoring service if environment isn't passed in.</p>

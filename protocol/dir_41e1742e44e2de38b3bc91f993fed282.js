@@ -9,8 +9,6 @@ var dir_41e1742e44e2de38b3bc91f993fed282 =
     [ "main.c", "server_2main_8c.html", "server_2main_8c" ],
     [ "network.c", "server_2network_8c.html", "server_2network_8c" ],
     [ "network.h", "server_2network_8h.html", "server_2network_8h" ],
-    [ "notifications.c", "server_2notifications_8c.html", "server_2notifications_8c" ],
-    [ "notifications.h", "server_2notifications_8h.html", "server_2notifications_8h" ],
     [ "parse_args.c", "parse__args_8c.html", "parse__args_8c" ],
     [ "parse_args.h", "parse__args_8h.html", "parse__args_8h" ],
     [ "server_statistic.c", "server__statistic_8c.html", "server__statistic_8c" ],

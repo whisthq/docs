@@ -24,7 +24,6 @@ var whist_8h =
     [ "CAPTURE_SPECIAL_WINDOWS_KEYS", "whist_8h.html#a881d9eef8e780a05fe9cd24eab5514d8", null ],
     [ "CHUNK_SIZE", "whist_8h.html#aea3cfda4f3a9f978ec759f206cf186fe", null ],
     [ "CONSECUTIVE_IDENTICAL_FRAMES", "whist_8h.html#a9b26cd4ece83eb114a81877bd849e28b", null ],
-    [ "DBUS_ADDRESS_MAXLEN", "whist_8h.html#a3f3913fffc95a27d40fd3c649d4803b6", null ],
     [ "DEFAULT_BINARY_PRIVATE_KEY", "whist_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41", null ],
     [ "DEFAULT_DPI", "whist_8h.html#a794e0417bdd7ebdad81c59a929932761", null ],
     [ "DEFAULT_HEX_PRIVATE_KEY", "whist_8h.html#a151518969977796d7b0c7d40e9ced62f", null ],

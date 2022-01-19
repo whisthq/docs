@@ -29,7 +29,6 @@ var dir_e68502ba7741b9477bffd325bfc1c340 =
     [ "sysinfo.h", "sysinfo_8h.html", "sysinfo_8h" ],
     [ "threads.c", "threads_8c.html", "threads_8c" ],
     [ "threads.h", "threads_8h.html", "threads_8h" ],
-    [ "whist_notification.h", "whist__notification_8h.html", "whist__notification_8h" ],
     [ "window_info.h", "window__info_8h.html", "window__info_8h" ],
     [ "windows_window_info.c", "windows__window__info_8c.html", "windows__window__info_8c" ],
     [ "x11_window_info.c", "x11__window__info_8c.html", "x11__window__info_8c" ]
