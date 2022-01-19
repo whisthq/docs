@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "_whist_server_config", "struct__whist__server__config.html", "struct__whist__server__config" ],
     [ "_whist_server_state", "struct__whist__server__state.html", "struct__whist__server__state" ],
+    [ "AESMetadata", "structAESMetadata.html", "structAESMetadata" ],
     [ "AudioContext", "structAudioContext.html", "structAudioContext" ],
     [ "AudioDecoder", "structAudioDecoder.html", "structAudioDecoder" ],
     [ "AudioDevice", "structAudioDevice.html", "structAudioDevice" ],
@@ -67,8 +68,10 @@ var annotated_dup =
     [ "StatisticInfo", "structStatisticInfo.html", "structStatisticInfo" ],
     [ "StunEntry", "structStunEntry.html", "structStunEntry" ],
     [ "StunRequest", "structStunRequest.html", "structStunRequest" ],
+    [ "TCPPacket", "structTCPPacket.html", "structTCPPacket" ],
     [ "TransferringFile", "structTransferringFile.html", "structTransferringFile" ],
     [ "ucvector", "structucvector.html", "structucvector" ],
+    [ "UDPPacket", "structUDPPacket.html", "structUDPPacket" ],
     [ "uivector", "structuivector.html", "structuivector" ],
     [ "VideoContext", "structVideoContext.html", "structVideoContext" ],
     [ "VideoDecoder", "structVideoDecoder.html", "structVideoDecoder" ],

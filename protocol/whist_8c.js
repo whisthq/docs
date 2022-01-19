@@ -20,5 +20,6 @@ var whist_8c =
     [ "safe_strncpy", "whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e", null ],
     [ "terminate_protocol", "whist_8c.html#a637da5470a9f4107a59054c340442a7f", null ],
     [ "trim_utf8_string", "whist_8c.html#a8643207a604b19f3fefe5046bd3c0290", null ],
-    [ "whist_git_revision", "whist_8c.html#a753f5e2101d29a87275db58d21de8971", null ]
+    [ "whist_git_revision", "whist_8c.html#a753f5e2101d29a87275db58d21de8971", null ],
+    [ "whist_init_subsystems", "whist_8c.html#ab8edd19a6dbb0b24662d13113ca2e0eb", null ]
 ];

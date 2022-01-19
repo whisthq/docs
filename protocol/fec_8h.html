@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('fec_8h.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -94,6 +95,11 @@ $(document).ready(function(){initNavTree('fec_8h.html',''); initResizable(); });
 
 <p><a href="fec_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a3c9778b56862875471dba66573fc4b17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a3c9778b56862875471dba66573fc4b17">FEC_HEADER_SIZE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a3c9778b56862875471dba66573fc4b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a61e67058045b3c7cb5c339ccff7be639"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFECEncoder.html">FECEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a61e67058045b3c7cb5c339ccff7be639">FECEncoder</a></td></tr>
@@ -103,6 +109,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0b17fb5c4682b0e0a3aa266596759368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a0b17fb5c4682b0e0a3aa266596759368">init_fec</a> ()</td></tr>
+<tr class="memdesc:a0b17fb5c4682b0e0a3aa266596759368"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global initialization function that should be called before calling anything else in <a class="el" href="fec_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">fec.h</a>.  <a href="fec_8h.html#a0b17fb5c4682b0e0a3aa266596759368">More...</a><br /></td></tr>
+<tr class="separator:a0b17fb5c4682b0e0a3aa266596759368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4">get_num_fec_packets</a> (int num_real_packets, double fec_packet_ratio)</td></tr>
 <tr class="memdesc:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an fec packet ratio, into the number of fec packets.  <a href="fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4">More...</a><br /></td></tr>
 <tr class="separator:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,7 +143,22 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the FEC API Interface </p><dl class="section note"><dt>Note</dt><dd>See protocol_test.cpp for usage </dd></dl>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3c9778b56862875471dba66573fc4b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c9778b56862875471dba66573fc4b17">&#9670;&nbsp;</a></span>FEC_HEADER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FEC_HEADER_SIZE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="ac75d0ee67237ef49743695d984572e63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac75d0ee67237ef49743695d984572e63">&#9670;&nbsp;</a></span>FECDecoder</h2>
 
@@ -395,16 +419,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Registers a buffer into the encoder. </p>
-<p>The encoder expects this function to be called <code>num_real_buffers</code> times.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fec_encoder</td><td>The FEC encoder to use</td></tr>
     <tr><td class="paramname">buffer</td><td>The buffer to register</td></tr>
-    <tr><td class="paramname">buffer_size</td><td>The size of the buffer that's being registered</td></tr>
+    <tr><td class="paramname">buffer_size</td><td>The size of the buffer that's being registered, must be &lt;= <code>max_buffer_size</code>*<code>num_real_buffers</code></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The data pointed to by the buffer being passed in, must be held alive for as long as the fec_encoder is alive. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The data pointed to by the buffer being passed in, which must be held alive for as long as the fec_encoder is alive. </dd></dl>
 
 </div>
 </div>
@@ -527,6 +550,25 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of fec packets </dd></dl>
+
+</div>
+</div>
+<a id="a0b17fb5c4682b0e0a3aa266596759368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b17fb5c4682b0e0a3aa266596759368">&#9670;&nbsp;</a></span>init_fec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_fec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A global initialization function that should be called before calling anything else in <a class="el" href="fec_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">fec.h</a>. </p>
 
 </div>
 </div>

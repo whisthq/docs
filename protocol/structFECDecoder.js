@@ -9,5 +9,5 @@ var structFECDecoder =
     [ "num_buffers", "structFECDecoder.html#aed01be6046b4488b7efca00abeb4cf38", null ],
     [ "num_real_buffers", "structFECDecoder.html#a3dbec9c03cc4aa5d7f45cb5c116b8607", null ],
     [ "recovery_performed", "structFECDecoder.html#a78be5ff74069feea4d605ad00ddd37aa", null ],
-    [ "rs_code", "structFECDecoder.html#af01188019dfcd58cf3fb847032b6f5aa", null ]
+    [ "rs_code", "structFECDecoder.html#a9f267583421236833c21ece3a2ec219f", null ]
 ];

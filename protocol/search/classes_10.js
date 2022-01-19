@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['transferringfile_2306',['TransferringFile',['../structTransferringFile.html',1,'']]]
+  ['tcppacket_2320',['TCPPacket',['../structTCPPacket.html',1,'']]],
+  ['transferringfile_2321',['TransferringFile',['../structTransferringFile.html',1,'']]]
 ];

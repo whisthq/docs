@@ -1,12 +1,9 @@
 var rs_8h =
 [
-    [ "GF_BITS", "rs_8h.html#a89a5ee5c8840406c120aadb8bef742ab", null ],
-    [ "GF_SIZE", "rs_8h.html#a7967273c74d8ae96b68a3b84c6951ca4", null ],
-    [ "fec_decode", "rs_8h.html#ace5f8022bf0d99006807e1ebef2e6fbf", null ],
-    [ "fec_encode", "rs_8h.html#a0c0212c4deb7a07c09c1e7ca765fcc7f", null ],
-    [ "fec_free", "rs_8h.html#a48d5b2758216b9bdd03d61729cb11877", null ],
-    [ "fec_get_k", "rs_8h.html#a8540be6e76ef03112755f68a727453bd", null ],
-    [ "fec_get_n", "rs_8h.html#aa8abe22299115707c971f131ad461cc9", null ],
-    [ "fec_new", "rs_8h.html#a528bf7f081db82cb9bdb23c84f94aa62", null ],
-    [ "init_fec", "rs_8h.html#a0b17fb5c4682b0e0a3aa266596759368", null ]
+    [ "RSCode", "rs_8h.html#a7cece3323ee9930d430f831fd2bc5822", null ],
+    [ "init_rs", "rs_8h.html#a56f8ba3b3040480c038d9c428422eaae", null ],
+    [ "rs_decode", "rs_8h.html#a2cc7b60529146b19ed2e654db4f484da", null ],
+    [ "rs_encode", "rs_8h.html#ab35c8f002ffe9a16c3d0b1ff8fc52775", null ],
+    [ "rs_free", "rs_8h.html#a27c610d82f22fa7bb52c5c10830ff4cb", null ],
+    [ "rs_new", "rs_8h.html#ae11f19af5f46120677b14217e359c626", null ]
 ];

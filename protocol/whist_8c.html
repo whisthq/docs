@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('whist_8c.html',''); initResizable(); }
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="whist_8h_source.html">whist.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fec_8h_source.html">whist/utils/fec.h</a>&gt;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="sysinfo_8h_source.html">../utils/sysinfo.h</a>&quot;</code><br />
@@ -112,6 +113,9 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a3dbb8a0134508906bb2e9dc92039a97e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a3dbb8a0134508906bb2e9dc92039a97e">multithreaded_print_system_info</a> (void *opaque)</td></tr>
 <tr class="separator:a3dbb8a0134508906bb2e9dc92039a97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8edd19a6dbb0b24662d13113ca2e0eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#ab8edd19a6dbb0b24662d13113ca2e0eb">whist_init_subsystems</a> ()</td></tr>
+<tr class="memdesc:ab8edd19a6dbb0b24662d13113ca2e0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize any and all static state that needs to be initialized.  <a href="whist_8c.html#ab8edd19a6dbb0b24662d13113ca2e0eb">More...</a><br /></td></tr>
+<tr class="separator:ab8edd19a6dbb0b24662d13113ca2e0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#ae9289a8d97634e052cb0341ff8ae7a5b">print_system_info</a> ()</td></tr>
 <tr class="memdesc:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the system info of the computer.  <a href="whist_8c.html#ae9289a8d97634e052cb0341ff8ae7a5b">More...</a><br /></td></tr>
 <tr class="separator:ae9289a8d97634e052cb0341ff8ae7a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -718,6 +722,28 @@ Functions</h2></td></tr>
 
 <p>Returns a short string representing the current git commit of whist at the time of compilation. </p>
 <dl class="section return"><dt>Returns</dt><dd>The git commit </dd></dl>
+
+</div>
+</div>
+<a id="ab8edd19a6dbb0b24662d13113ca2e0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8edd19a6dbb0b24662d13113ca2e0eb">&#9670;&nbsp;</a></span>whist_init_subsystems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_init_subsystems </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize any and all static state that needs to be initialized. </p>
+<dl class="section note"><dt>Note</dt><dd>This must be called after parsing arguments</dd>
+<dd>
+TODO: Make this function take in parsed arguments as a struct, rather than having parse_arguments manipulate <code>extern</code> globals </dd></dl>
 
 </div>
 </div>

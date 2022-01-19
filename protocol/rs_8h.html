@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('rs_8h.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rs.h File Reference</div>  </div>
@@ -91,53 +91,33 @@ $(document).ready(function(){initNavTree('rs_8h.html',''); initResizable(); });
 
 <p><a href="rs_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a89a5ee5c8840406c120aadb8bef742ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>&#160;&#160;&#160;8	/* code over GF(2**GF_BITS) - change to suit */</td></tr>
-<tr class="separator:a89a5ee5c8840406c120aadb8bef742ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a7967273c74d8ae96b68a3b84c6951ca4">GF_SIZE</a>&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8h.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td></tr>
-<tr class="separator:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a7cece3323ee9930d430f831fd2bc5822"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structfec__parms.html">fec_parms</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a></td></tr>
+<tr class="separator:a7cece3323ee9930d430f831fd2bc5822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a48d5b2758216b9bdd03d61729cb11877"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a48d5b2758216b9bdd03d61729cb11877">fec_free</a> (void *p)</td></tr>
-<tr class="separator:a48d5b2758216b9bdd03d61729cb11877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a528bf7f081db82cb9bdb23c84f94aa62"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a528bf7f081db82cb9bdb23c84f94aa62">fec_new</a> (int k, int n)</td></tr>
-<tr class="separator:a528bf7f081db82cb9bdb23c84f94aa62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b17fb5c4682b0e0a3aa266596759368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a0b17fb5c4682b0e0a3aa266596759368">init_fec</a> ()</td></tr>
-<tr class="separator:a0b17fb5c4682b0e0a3aa266596759368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0212c4deb7a07c09c1e7ca765fcc7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a0c0212c4deb7a07c09c1e7ca765fcc7f">fec_encode</a> (void *code, void *src[], void *dst, int index, int sz)</td></tr>
-<tr class="separator:a0c0212c4deb7a07c09c1e7ca765fcc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace5f8022bf0d99006807e1ebef2e6fbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#ace5f8022bf0d99006807e1ebef2e6fbf">fec_decode</a> (void *code, void *pkt[], int index[], int sz)</td></tr>
-<tr class="separator:ace5f8022bf0d99006807e1ebef2e6fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8540be6e76ef03112755f68a727453bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a8540be6e76ef03112755f68a727453bd">fec_get_k</a> (void *code)</td></tr>
-<tr class="separator:a8540be6e76ef03112755f68a727453bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8abe22299115707c971f131ad461cc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#aa8abe22299115707c971f131ad461cc9">fec_get_n</a> (void *code)</td></tr>
-<tr class="separator:aa8abe22299115707c971f131ad461cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c610d82f22fa7bb52c5c10830ff4cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a27c610d82f22fa7bb52c5c10830ff4cb">rs_free</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *rs_code)</td></tr>
+<tr class="separator:a27c610d82f22fa7bb52c5c10830ff4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11f19af5f46120677b14217e359c626"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#ae11f19af5f46120677b14217e359c626">rs_new</a> (int k, int n)</td></tr>
+<tr class="separator:ae11f19af5f46120677b14217e359c626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f8ba3b3040480c038d9c428422eaae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a56f8ba3b3040480c038d9c428422eaae">init_rs</a> ()</td></tr>
+<tr class="separator:a56f8ba3b3040480c038d9c428422eaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35c8f002ffe9a16c3d0b1ff8fc52775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#ab35c8f002ffe9a16c3d0b1ff8fc52775">rs_encode</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *rs_code, void *src[], void *dst, int index, int sz)</td></tr>
+<tr class="separator:ab35c8f002ffe9a16c3d0b1ff8fc52775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc7b60529146b19ed2e654db4f484da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a2cc7b60529146b19ed2e654db4f484da">rs_decode</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *rs_code, void *pkt[], int index[], int sz)</td></tr>
+<tr class="separator:a2cc7b60529146b19ed2e654db4f484da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a89a5ee5c8840406c120aadb8bef742ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89a5ee5c8840406c120aadb8bef742ab">&#9670;&nbsp;</a></span>GF_BITS</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a7cece3323ee9930d430f831fd2bc5822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cece3323ee9930d430f831fd2bc5822">&#9670;&nbsp;</a></span>RSCode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GF_BITS&#160;&#160;&#160;8	/* code over GF(2**GF_BITS) - change to suit */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7967273c74d8ae96b68a3b84c6951ca4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7967273c74d8ae96b68a3b84c6951ca4">&#9670;&nbsp;</a></span>GF_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GF_SIZE&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8h.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td>
+          <td class="memname">typedef struct <a class="el" href="structfec__parms.html">fec_parms</a> <a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -145,17 +125,34 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ace5f8022bf0d99006807e1ebef2e6fbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace5f8022bf0d99006807e1ebef2e6fbf">&#9670;&nbsp;</a></span>fec_decode()</h2>
+<a id="a56f8ba3b3040480c038d9c428422eaae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f8ba3b3040480c038d9c428422eaae">&#9670;&nbsp;</a></span>init_rs()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fec_decode </td>
+          <td class="memname">void init_rs </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>code</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cc7b60529146b19ed2e654db4f484da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc7b60529146b19ed2e654db4f484da">&#9670;&nbsp;</a></span>rs_decode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs_decode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramname"><em>rs_code</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -185,17 +182,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0c0212c4deb7a07c09c1e7ca765fcc7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c0212c4deb7a07c09c1e7ca765fcc7f">&#9670;&nbsp;</a></span>fec_encode()</h2>
+<a id="ab35c8f002ffe9a16c3d0b1ff8fc52775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35c8f002ffe9a16c3d0b1ff8fc52775">&#9670;&nbsp;</a></span>rs_encode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fec_encode </td>
+          <td class="memname">void rs_encode </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>code</em>, </td>
+          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramname"><em>rs_code</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -231,17 +228,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a48d5b2758216b9bdd03d61729cb11877"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48d5b2758216b9bdd03d61729cb11877">&#9670;&nbsp;</a></span>fec_free()</h2>
+<a id="a27c610d82f22fa7bb52c5c10830ff4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c610d82f22fa7bb52c5c10830ff4cb">&#9670;&nbsp;</a></span>rs_free()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fec_free </td>
+          <td class="memname">void rs_free </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramname"><em>rs_code</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -249,50 +246,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8540be6e76ef03112755f68a727453bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8540be6e76ef03112755f68a727453bd">&#9670;&nbsp;</a></span>fec_get_k()</h2>
+<a id="ae11f19af5f46120677b14217e359c626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11f19af5f46120677b14217e359c626">&#9670;&nbsp;</a></span>rs_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fec_get_k </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>code</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa8abe22299115707c971f131ad461cc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8abe22299115707c971f131ad461cc9">&#9670;&nbsp;</a></span>fec_get_n()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fec_get_n </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>code</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a528bf7f081db82cb9bdb23c84f94aa62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a528bf7f081db82cb9bdb23c84f94aa62">&#9670;&nbsp;</a></span>fec_new()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* fec_new </td>
+          <td class="memname"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a>* rs_new </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>k</em>, </td>
@@ -307,23 +268,6 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0b17fb5c4682b0e0a3aa266596759368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b17fb5c4682b0e0a3aa266596759368">&#9670;&nbsp;</a></span>init_fec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_fec </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

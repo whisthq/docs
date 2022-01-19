@@ -10,6 +10,7 @@ var rs_8c =
     [ "gf_mul", "rs_8c.html#aa1d3271c0183779d5adb17b4c12b8adc", null ],
     [ "GF_MULC0", "rs_8c.html#a4ed05df084490d459a89f7fd151e8f53", null ],
     [ "GF_SIZE", "rs_8c.html#a7967273c74d8ae96b68a3b84c6951ca4", null ],
+    [ "GF_SIZE", "rs_8c.html#a7967273c74d8ae96b68a3b84c6951ca4", null ],
     [ "NEW_GF_MATRIX", "rs_8c.html#ac8e186fd13be78f0aa88537e1c19f672", null ],
     [ "SWAP", "rs_8c.html#adfdaf32eae545290273a12f93383a5eb", null ],
     [ "TICK", "rs_8c.html#ac04e1397a4feea024faaa833e7d6eaad", null ],
@@ -18,12 +19,12 @@ var rs_8c =
     [ "USE_GF_MULC", "rs_8c.html#aea929fad0524938efe9b4895d36e4353", null ],
     [ "gf", "rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508", null ],
     [ "u_long", "rs_8c.html#a8f25a50daf29ce2cee1ec038a4d744ea", null ],
-    [ "fec_decode", "rs_8c.html#a139b3af855ea95c6fd4fd8232aed8bf2", null ],
-    [ "fec_encode", "rs_8c.html#a3e93a2d6466f274a569d9a24a215f744", null ],
-    [ "fec_free", "rs_8c.html#a6874cd23a53ccd64e1acfae274d5fbdd", null ],
-    [ "fec_get_k", "rs_8c.html#ac9183798f048ac4e86b6c76ba6673155", null ],
-    [ "fec_get_n", "rs_8c.html#ae76aa540734ea573804ae64f7cb2f87e", null ],
-    [ "fec_new", "rs_8c.html#adc95c839841e3437c258439af53ccbaf", null ],
-    [ "init_fec", "rs_8c.html#a0b17fb5c4682b0e0a3aa266596759368", null ],
-    [ "invert_vdm", "rs_8c.html#aa5895aa20e442b5bcaa7103e9023d0e2", null ]
+    [ "init_rs", "rs_8c.html#a56f8ba3b3040480c038d9c428422eaae", null ],
+    [ "invert_vdm", "rs_8c.html#aa5895aa20e442b5bcaa7103e9023d0e2", null ],
+    [ "rs_decode", "rs_8c.html#a681b19d03a43dfea82ea78fc5a4857b0", null ],
+    [ "rs_encode", "rs_8c.html#ab5a2f7985991c78259d9f095b38f7d1a", null ],
+    [ "rs_free", "rs_8c.html#a481f66afa97a9acf1a285a9ca3d0fcf2", null ],
+    [ "rs_get_k", "rs_8c.html#ab6c9f19d913a6df4d6a794bdb31e6347", null ],
+    [ "rs_get_n", "rs_8c.html#abcbd5376aaa5e759610cfe68318e21e3", null ],
+    [ "rs_new", "rs_8c.html#ae11f19af5f46120677b14217e359c626", null ]
 ];

@@ -119,11 +119,11 @@ $(document).ready(function(){initNavTree('whist_8h.html',''); initResizable(); }
 <code>#include &lt;<a class="el" href="clipboard__synchronizer_8h_source.html">whist/clipboard/clipboard_synchronizer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="file__synchronizer_8h_source.html">whist/file/file_synchronizer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="color_8h_source.html">whist/utils/color.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="clock_8h_source.html">whist/utils/clock.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="os__utils_8h_source.html">whist/utils/os_utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="network__algorithm_8h_source.html">whist/network/network_algorithm.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="whist__frame_8h_source.html">whist_frame.h</a>&quot;</code><br />
 </div>
 <p><a href="whist_8h_source.html">Go to the source code of this file.</a></p>
@@ -257,7 +257,7 @@ Macros</h2></td></tr>
 <tr class="separator:a2b2575d308f4dcd72c988a83a6ea138d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5707c89933e682d000495637c8dc45fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a5707c89933e682d000495637c8dc45fd">OUTPUT_HEIGHT</a>&#160;&#160;&#160;720</td></tr>
 <tr class="separator:a5707c89933e682d000495637c8dc45fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1235010ccd0a75e6b2f1e805e7ab3a41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41">DEFAULT_BINARY_PRIVATE_KEY</a>&#160;&#160;&#160;&quot;\xED\x5E\xF3\x3C\xD7\x28\xD1\x7D\xB8\x06\x45\x81\x42\x8D\x19\xEF&quot;</td></tr>
+<tr class="memitem:a1235010ccd0a75e6b2f1e805e7ab3a41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41">DEFAULT_BINARY_PRIVATE_KEY</a>&#160;&#160;&#160;((const void*)&quot;\xED\x5E\xF3\x3C\xD7\x28\xD1\x7D\xB8\x06\x45\x81\x42\x8D\x19\xEF&quot;)</td></tr>
 <tr class="separator:a1235010ccd0a75e6b2f1e805e7ab3a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a151518969977796d7b0c7d40e9ced62f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a151518969977796d7b0c7d40e9ced62f">DEFAULT_HEX_PRIVATE_KEY</a>&#160;&#160;&#160;&quot;ED5EF33CD728D17DB8064581428D19EF&quot;</td></tr>
 <tr class="separator:a151518969977796d7b0c7d40e9ced62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -667,6 +667,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab8edd19a6dbb0b24662d13113ca2e0eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ab8edd19a6dbb0b24662d13113ca2e0eb">whist_init_subsystems</a> ()</td></tr>
+<tr class="memdesc:ab8edd19a6dbb0b24662d13113ca2e0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize any and all static state that needs to be initialized.  <a href="whist_8h.html#ab8edd19a6dbb0b24662d13113ca2e0eb">More...</a><br /></td></tr>
+<tr class="separator:ab8edd19a6dbb0b24662d13113ca2e0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18e1848dd1f6ac2ef3a214ef6b157af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a18e1848dd1f6ac2ef3a214ef6b157af2">print_memory_info</a> ()</td></tr>
 <tr class="memdesc:a18e1848dd1f6ac2ef3a214ef6b157af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the memory trace of a process.  <a href="whist_8h.html#a18e1848dd1f6ac2ef3a214ef6b157af2">More...</a><br /></td></tr>
 <tr class="separator:a18e1848dd1f6ac2ef3a214ef6b157af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -882,7 +885,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEFAULT_BINARY_PRIVATE_KEY&#160;&#160;&#160;&quot;\xED\x5E\xF3\x3C\xD7\x28\xD1\x7D\xB8\x06\x45\x81\x42\x8D\x19\xEF&quot;</td>
+          <td class="memname">#define DEFAULT_BINARY_PRIVATE_KEY&#160;&#160;&#160;((const void*)&quot;\xED\x5E\xF3\x3C\xD7\x28\xD1\x7D\xB8\x06\x45\x81\x42\x8D\x19\xEF&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3196,6 +3199,28 @@ Functions</h2></td></tr>
 
 <p>Returns a short string representing the current git commit of whist at the time of compilation. </p>
 <dl class="section return"><dt>Returns</dt><dd>The git commit </dd></dl>
+
+</div>
+</div>
+<a id="ab8edd19a6dbb0b24662d13113ca2e0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8edd19a6dbb0b24662d13113ca2e0eb">&#9670;&nbsp;</a></span>whist_init_subsystems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_init_subsystems </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize any and all static state that needs to be initialized. </p>
+<dl class="section note"><dt>Note</dt><dd>This must be called after parsing arguments</dd>
+<dd>
+TODO: Make this function take in parsed arguments as a struct, rather than having parse_arguments manipulate <code>extern</code> globals </dd></dl>
 
 </div>
 </div>

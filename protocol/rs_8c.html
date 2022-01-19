@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('rs_8c.html',''); initResizable(); });
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="rs_8h_source.html">rs.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -103,6 +104,8 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a89a5ee5c8840406c120aadb8bef742ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>&#160;&#160;&#160;8	/* code over GF(2**GF_BITS) - change to suit */</td></tr>
 <tr class="separator:a89a5ee5c8840406c120aadb8bef742ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a7967273c74d8ae96b68a3b84c6951ca4">GF_SIZE</a>&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td></tr>
+<tr class="separator:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc35b6331381230180ce730d1591e08f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#afc35b6331381230180ce730d1591e08f">DEB</a>(x)</td></tr>
 <tr class="separator:afc35b6331381230180ce730d1591e08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8295f13841c6a2f892f522778ae9d261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a8295f13841c6a2f892f522778ae9d261">DDB</a>(x)</td></tr>
@@ -111,7 +114,7 @@ Macros</h2></td></tr>
 <tr class="separator:ac04e1397a4feea024faaa833e7d6eaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac19e93f7614ce87ea43e4366c9fb596c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ac19e93f7614ce87ea43e4366c9fb596c">TOCK</a>(x)</td></tr>
 <tr class="separator:ac19e93f7614ce87ea43e4366c9fb596c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a7967273c74d8ae96b68a3b84c6951ca4">GF_SIZE</a>&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8h.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td></tr>
+<tr class="memitem:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a7967273c74d8ae96b68a3b84c6951ca4">GF_SIZE</a>&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td></tr>
 <tr class="separator:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfdaf32eae545290273a12f93383a5eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#adfdaf32eae545290273a12f93383a5eb">SWAP</a>(a,  b,  t)&#160;&#160;&#160;{t tmp; tmp=a; a=b; b=tmp;}</td></tr>
 <tr class="separator:adfdaf32eae545290273a12f93383a5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,20 +146,20 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aa5895aa20e442b5bcaa7103e9023d0e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#aa5895aa20e442b5bcaa7103e9023d0e2">invert_vdm</a> (<a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> *src, int k)</td></tr>
 <tr class="separator:aa5895aa20e442b5bcaa7103e9023d0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b17fb5c4682b0e0a3aa266596759368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a0b17fb5c4682b0e0a3aa266596759368">init_fec</a> ()</td></tr>
-<tr class="separator:a0b17fb5c4682b0e0a3aa266596759368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6874cd23a53ccd64e1acfae274d5fbdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a6874cd23a53ccd64e1acfae274d5fbdd">fec_free</a> (void *p0)</td></tr>
-<tr class="separator:a6874cd23a53ccd64e1acfae274d5fbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc95c839841e3437c258439af53ccbaf"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structfec__parms.html">fec_parms</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#adc95c839841e3437c258439af53ccbaf">fec_new</a> (int k, int n)</td></tr>
-<tr class="separator:adc95c839841e3437c258439af53ccbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e93a2d6466f274a569d9a24a215f744"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a3e93a2d6466f274a569d9a24a215f744">fec_encode</a> (void *code0, void *src0[], void *fec0, int index, int sz)</td></tr>
-<tr class="separator:a3e93a2d6466f274a569d9a24a215f744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a139b3af855ea95c6fd4fd8232aed8bf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a139b3af855ea95c6fd4fd8232aed8bf2">fec_decode</a> (void *code0, void *pkt0[], int index[], int sz)</td></tr>
-<tr class="separator:a139b3af855ea95c6fd4fd8232aed8bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae76aa540734ea573804ae64f7cb2f87e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ae76aa540734ea573804ae64f7cb2f87e">fec_get_n</a> (void *code0)</td></tr>
-<tr class="separator:ae76aa540734ea573804ae64f7cb2f87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9183798f048ac4e86b6c76ba6673155"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ac9183798f048ac4e86b6c76ba6673155">fec_get_k</a> (void *code0)</td></tr>
-<tr class="separator:ac9183798f048ac4e86b6c76ba6673155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f8ba3b3040480c038d9c428422eaae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a56f8ba3b3040480c038d9c428422eaae">init_rs</a> ()</td></tr>
+<tr class="separator:a56f8ba3b3040480c038d9c428422eaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481f66afa97a9acf1a285a9ca3d0fcf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a481f66afa97a9acf1a285a9ca3d0fcf2">rs_free</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *p)</td></tr>
+<tr class="separator:a481f66afa97a9acf1a285a9ca3d0fcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11f19af5f46120677b14217e359c626"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ae11f19af5f46120677b14217e359c626">rs_new</a> (int k, int n)</td></tr>
+<tr class="separator:ae11f19af5f46120677b14217e359c626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a2f7985991c78259d9f095b38f7d1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ab5a2f7985991c78259d9f095b38f7d1a">rs_encode</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *code, void *src0[], void *fec0, int index, int sz)</td></tr>
+<tr class="separator:ab5a2f7985991c78259d9f095b38f7d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681b19d03a43dfea82ea78fc5a4857b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a681b19d03a43dfea82ea78fc5a4857b0">rs_decode</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *code, void *pkt0[], int index[], int sz)</td></tr>
+<tr class="separator:a681b19d03a43dfea82ea78fc5a4857b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbd5376aaa5e759610cfe68318e21e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#abcbd5376aaa5e759610cfe68318e21e3">rs_get_n</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *code)</td></tr>
+<tr class="separator:abcbd5376aaa5e759610cfe68318e21e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c9f19d913a6df4d6a794bdb31e6347"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ab6c9f19d913a6df4d6a794bdb31e6347">rs_get_k</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *code)</td></tr>
+<tr class="separator:ab6c9f19d913a6df4d6a794bdb31e6347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ae0cd0f1d47314d011206cb5b59579e15"></a>
@@ -338,13 +341,27 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7967273c74d8ae96b68a3b84c6951ca4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7967273c74d8ae96b68a3b84c6951ca4">&#9670;&nbsp;</a></span>GF_SIZE</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7967273c74d8ae96b68a3b84c6951ca4">&#9670;&nbsp;</a></span>GF_SIZE <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GF_SIZE&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8h.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td>
+          <td class="memname">#define GF_SIZE&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7967273c74d8ae96b68a3b84c6951ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7967273c74d8ae96b68a3b84c6951ca4">&#9670;&nbsp;</a></span>GF_SIZE <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GF_SIZE&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -507,17 +524,62 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a139b3af855ea95c6fd4fd8232aed8bf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a139b3af855ea95c6fd4fd8232aed8bf2">&#9670;&nbsp;</a></span>fec_decode()</h2>
+<a id="a56f8ba3b3040480c038d9c428422eaae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f8ba3b3040480c038d9c428422eaae">&#9670;&nbsp;</a></span>init_rs()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fec_decode </td>
+          <td class="memname">void init_rs </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>code0</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5895aa20e442b5bcaa7103e9023d0e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5895aa20e442b5bcaa7103e9023d0e2">&#9670;&nbsp;</a></span>invert_vdm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int invert_vdm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a681b19d03a43dfea82ea78fc5a4857b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a681b19d03a43dfea82ea78fc5a4857b0">&#9670;&nbsp;</a></span>rs_decode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs_decode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -547,17 +609,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e93a2d6466f274a569d9a24a215f744"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e93a2d6466f274a569d9a24a215f744">&#9670;&nbsp;</a></span>fec_encode()</h2>
+<a id="ab5a2f7985991c78259d9f095b38f7d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a2f7985991c78259d9f095b38f7d1a">&#9670;&nbsp;</a></span>rs_encode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fec_encode </td>
+          <td class="memname">void rs_encode </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>code0</em>, </td>
+          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -593,17 +655,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6874cd23a53ccd64e1acfae274d5fbdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6874cd23a53ccd64e1acfae274d5fbdd">&#9670;&nbsp;</a></span>fec_free()</h2>
+<a id="a481f66afa97a9acf1a285a9ca3d0fcf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481f66afa97a9acf1a285a9ca3d0fcf2">&#9670;&nbsp;</a></span>rs_free()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fec_free </td>
+          <td class="memname">void rs_free </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p0</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -611,17 +673,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac9183798f048ac4e86b6c76ba6673155"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9183798f048ac4e86b6c76ba6673155">&#9670;&nbsp;</a></span>fec_get_k()</h2>
+<a id="ab6c9f19d913a6df4d6a794bdb31e6347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c9f19d913a6df4d6a794bdb31e6347">&#9670;&nbsp;</a></span>rs_get_k()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fec_get_k </td>
+          <td class="memname">int rs_get_k </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>code0</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -629,17 +691,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae76aa540734ea573804ae64f7cb2f87e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae76aa540734ea573804ae64f7cb2f87e">&#9670;&nbsp;</a></span>fec_get_n()</h2>
+<a id="abcbd5376aaa5e759610cfe68318e21e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbd5376aaa5e759610cfe68318e21e3">&#9670;&nbsp;</a></span>rs_get_n()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fec_get_n </td>
+          <td class="memname">int rs_get_n </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>code0</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -647,14 +709,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adc95c839841e3437c258439af53ccbaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc95c839841e3437c258439af53ccbaf">&#9670;&nbsp;</a></span>fec_new()</h2>
+<a id="ae11f19af5f46120677b14217e359c626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11f19af5f46120677b14217e359c626">&#9670;&nbsp;</a></span>rs_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structfec__parms.html">fec_parms</a>* fec_new </td>
+          <td class="memname"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a>* rs_new </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>k</em>, </td>
@@ -664,51 +726,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0b17fb5c4682b0e0a3aa266596759368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b17fb5c4682b0e0a3aa266596759368">&#9670;&nbsp;</a></span>init_fec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_fec </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa5895aa20e442b5bcaa7103e9023d0e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5895aa20e442b5bcaa7103e9023d0e2">&#9670;&nbsp;</a></span>invert_vdm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int invert_vdm </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>k</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

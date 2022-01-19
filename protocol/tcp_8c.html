@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('tcp_8c.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -93,8 +94,15 @@ $(document).ready(function(){initNavTree('tcp_8c.html',''); initResizable(); });
 <code>#include &lt;<a class="el" href="aes_8h_source.html">whist/utils/aes.h</a>&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPPacket.html">TCPPacket</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a30121dbabe3ae898665d4d915808db27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a30121dbabe3ae898665d4d915808db27">get_tcp_packet_size</a>(tcp_packet)&#160;&#160;&#160;((size_t)(sizeof(<a class="el" href="structTCPPacket.html">TCPPacket</a>) + (tcp_packet)-&gt;payload_size))</td></tr>
+<tr class="separator:a30121dbabe3ae898665d4d915808db27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c6b65188e80c3ec91782df45b9f787"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ab8c6b65188e80c3ec91782df45b9f787">TCP_SEGMENT_SIZE</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:ab8c6b65188e80c3ec91782df45b9f787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -115,8 +123,8 @@ Functions</h2></td></tr>
 <tr class="separator:aef70808ba7a7a05357b77e1b9a3694d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2100f9362c4b432373d2bc6edf7f2c0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a2100f9362c4b432373d2bc6edf7f2c0b">tcp_free_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *tcp_packet)</td></tr>
 <tr class="separator:a2100f9362c4b432373d2bc6edf7f2c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18d3133bd50a1dc17427f5d951669467"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a18d3133bd50a1dc17427f5d951669467">tcp_send_constructed_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet, size_t packet_size)</td></tr>
-<tr class="separator:a18d3133bd50a1dc17427f5d951669467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6728079a46c3107464f7e06f19377e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#afb6728079a46c3107464f7e06f19377e">tcp_send_constructed_packet</a> (void *raw_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
+<tr class="separator:afb6728079a46c3107464f7e06f19377e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a083747876b8901eaa0645baa018d5465"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a083747876b8901eaa0645baa018d5465">tcp_send_packet</a> (void *raw_context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, void *data, int len, int id)</td></tr>
 <tr class="separator:a083747876b8901eaa0645baa018d5465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae89f86a9b2cc8965df295f78631d5a0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ae89f86a9b2cc8965df295f78631d5a0b">tcp_destroy_socket_context</a> (void *raw_context)</td></tr>
@@ -142,6 +150,24 @@ Variables</h2></td></tr>
 <tr class="separator:aabcebffcda90f6aab9a64d4fb9d75d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a30121dbabe3ae898665d4d915808db27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30121dbabe3ae898665d4d915808db27">&#9670;&nbsp;</a></span>get_tcp_packet_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define get_tcp_packet_size</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tcp_packet</td><td>)</td>
+          <td>&#160;&#160;&#160;((size_t)(sizeof(<a class="el" href="structTCPPacket.html">TCPPacket</a>) + (tcp_packet)-&gt;payload_size))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab8c6b65188e80c3ec91782df45b9f787"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8c6b65188e80c3ec91782df45b9f787">&#9670;&nbsp;</a></span>TCP_SEGMENT_SIZE</h2>
 
@@ -649,8 +675,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a18d3133bd50a1dc17427f5d951669467"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d3133bd50a1dc17427f5d951669467">&#9670;&nbsp;</a></span>tcp_send_constructed_packet()</h2>
+<a id="afb6728079a46c3107464f7e06f19377e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6728079a46c3107464f7e06f19377e">&#9670;&nbsp;</a></span>tcp_send_constructed_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -665,13 +691,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>packet_size</em>&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

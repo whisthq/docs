@@ -4,5 +4,5 @@ var udp_8h =
     [ "create_udp_socket_context", "udp_8h.html#a497472418eb2d897f80004378d81eb17", null ],
     [ "udp_nack", "udp_8h.html#ac56b1bf85aa12b5b0790a9402c9ba916", null ],
     [ "udp_register_nack_buffer", "udp_8h.html#a77d9098b90040bad70ccff2783f32408", null ],
-    [ "udp_update_bitrate_settings", "udp_8h.html#acd5303599f69de58b96be9dca5ddcb6d", null ]
+    [ "udp_update_network_settings", "udp_8h.html#a92d6940888454f83b29ed4cbc1760020", null ]
 ];

@@ -102,9 +102,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab227c787d07a796738fef8cc10a1a0ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#ab227c787d07a796738fef8cc10a1a0ad">create_udp_listen_socket</a> (<a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> *sock, int port, int timeout_ms)</td></tr>
 <tr class="memdesc:ab227c787d07a796738fef8cc10a1a0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a udp listen socket, that can be used in <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8h.html#ab227c787d07a796738fef8cc10a1a0ad">More...</a><br /></td></tr>
 <tr class="separator:ab227c787d07a796738fef8cc10a1a0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd5303599f69de58b96be9dca5ddcb6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#acd5303599f69de58b96be9dca5ddcb6d">udp_update_bitrate_settings</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, int burst_bitrate, double fec_packet_ratio)</td></tr>
-<tr class="memdesc:acd5303599f69de58b96be9dca5ddcb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8h.html#acd5303599f69de58b96be9dca5ddcb6d">More...</a><br /></td></tr>
-<tr class="separator:acd5303599f69de58b96be9dca5ddcb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d6940888454f83b29ed4cbc1760020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a92d6940888454f83b29ed4cbc1760020">udp_update_network_settings</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> network_settings)</td></tr>
+<tr class="memdesc:a92d6940888454f83b29ed4cbc1760020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8h.html#a92d6940888454f83b29ed4cbc1760020">More...</a><br /></td></tr>
+<tr class="separator:a92d6940888454f83b29ed4cbc1760020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d9098b90040bad70ccff2783f32408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a77d9098b90040bad70ccff2783f32408">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
 <tr class="memdesc:a77d9098b90040bad70ccff2783f32408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled.  <a href="udp_8h.html#a77d9098b90040bad70ccff2783f32408">More...</a><br /></td></tr>
 <tr class="separator:a77d9098b90040bad70ccff2783f32408"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,14 +344,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="acd5303599f69de58b96be9dca5ddcb6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd5303599f69de58b96be9dca5ddcb6d">&#9670;&nbsp;</a></span>udp_update_bitrate_settings()</h2>
+<a id="a92d6940888454f83b29ed4cbc1760020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d6940888454f83b29ed4cbc1760020">&#9670;&nbsp;</a></span>udp_update_network_settings()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void udp_update_bitrate_settings </td>
+          <td class="memname">void udp_update_network_settings </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -359,14 +359,8 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>burst_bitrate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>fec_packet_ratio</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td>
+          <td class="paramname"><em>network_settings</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -380,8 +374,7 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> that we'll be adjusting the burst bitrate for </td></tr>
-    <tr><td class="paramname">burst_bitrate</td><td>The new burst bitrate, in MBPS </td></tr>
-    <tr><td class="paramname">fec_packet_ratio</td><td>The percentage of packets that should be FEC </td></tr>
+    <tr><td class="paramname">network_settings</td><td>The new network settings </td></tr>
   </table>
   </dd>
 </dl>

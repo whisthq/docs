@@ -95,12 +95,6 @@ $(document).ready(function(){initNavTree('structWhistPacket.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a323266e228b6430c75a8a20e8fd45c07"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistPacket.html#a323266e228b6430c75a8a20e8fd45c07">hash</a> [16]</td></tr>
-<tr class="separator:a323266e228b6430c75a8a20e8fd45c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03bbdfe769edc82a6e19b64792e6247"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistPacket.html#af03bbdfe769edc82a6e19b64792e6247">cipher_len</a></td></tr>
-<tr class="separator:af03bbdfe769edc82a6e19b64792e6247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d8de6a78e932c4e83109b74157c9588"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistPacket.html#a1d8de6a78e932c4e83109b74157c9588">iv</a> [16]</td></tr>
-<tr class="separator:a1d8de6a78e932c4e83109b74157c9588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ba67b2205cb40c2833d820d13cd0137"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistPacket.html#a4ba67b2205cb40c2833d820d13cd0137">type</a></td></tr>
 <tr class="separator:a4ba67b2205cb40c2833d820d13cd0137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a53d1d04a58635f351f9f22f0ca0e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistPacket.html#ae9a53d1d04a58635f351f9f22f0ca0e9">id</a></td></tr>
@@ -117,26 +111,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a204c97f1e3ba4b811ab244cda6e075bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e208847aec731ce22671355b4e9ba0e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistPacket.html#a9e208847aec731ce22671355b4e9ba0e">data</a> [<a class="el" href="whist_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a>]</td></tr>
 <tr class="separator:a9e208847aec731ce22671355b4e9ba0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c324aa160edd1a5ccfd98c714d23afa"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistPacket.html#a6c324aa160edd1a5ccfd98c714d23afa">overflow</a> [16]</td></tr>
-<tr class="separator:a6c324aa160edd1a5ccfd98c714d23afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Packet of data to be sent over a <a class="el" href="structSocketContextData.html">SocketContextData</a>. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="af03bbdfe769edc82a6e19b64792e6247"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af03bbdfe769edc82a6e19b64792e6247">&#9670;&nbsp;</a></span>cipher_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int WhistPacket::cipher_len</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9e208847aec731ce22671355b4e9ba0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e208847aec731ce22671355b4e9ba0e">&#9670;&nbsp;</a></span>data</h2>
 
@@ -145,20 +123,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint8_t WhistPacket::data[<a class="el" href="whist_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">MAX_PAYLOAD_SIZE</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a323266e228b6430c75a8a20e8fd45c07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a323266e228b6430c75a8a20e8fd45c07">&#9670;&nbsp;</a></span>hash</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char WhistPacket::hash[16]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -207,20 +171,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d8de6a78e932c4e83109b74157c9588"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d8de6a78e932c4e83109b74157c9588">&#9670;&nbsp;</a></span>iv</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char WhistPacket::iv[16]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a8de1ff09def979706a4f1ba7ee40df93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8de1ff09def979706a4f1ba7ee40df93">&#9670;&nbsp;</a></span>num_fec_indices</h2>
 
@@ -243,20 +193,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">short WhistPacket::num_indices</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6c324aa160edd1a5ccfd98c714d23afa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c324aa160edd1a5ccfd98c714d23afa">&#9670;&nbsp;</a></span>overflow</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t WhistPacket::overflow[16]</td>
         </tr>
       </table>
 </div><div class="memdoc">

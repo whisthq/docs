@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('udp_8c.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -94,8 +95,17 @@ $(document).ready(function(){initNavTree('udp_8c.html',''); initResizable(); });
 <code>#include &lt;<a class="el" href="fec_8h_source.html">whist/utils/fec.h</a>&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPPacket.html">UDPPacket</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a8e1def3cbc674766ac38ae62219778e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a8e1def3cbc674766ac38ae62219778e5">UDPPACKET_HEADER_SIZE</a>&#160;&#160;&#160;((int)sizeof(<a class="el" href="structUDPPacket.html">UDPPacket</a>) - (int)sizeof((<a class="el" href="structUDPPacket.html">UDPPacket</a>){0}.payload))</td></tr>
+<tr class="separator:a8e1def3cbc674766ac38ae62219778e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d27884f9f6430c61afbe6425de982d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4d27884f9f6430c61afbe6425de982d3">MAX_UDPPACKET_PAYLOAD_SIZE</a>&#160;&#160;&#160;((int)sizeof((<a class="el" href="structUDPPacket.html">UDPPacket</a>){0}.payload))</td></tr>
+<tr class="separator:a4d27884f9f6430c61afbe6425de982d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f283368e88ac298d92d1506dd4c0abb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb">RETRIES_ON_BUFFER_FULL</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a4f283368e88ac298d92d1506dd4c0abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5222d03fdb5004f2ebc781d1041f0e04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5222d03fdb5004f2ebc781d1041f0e04">UDP_NETWORK_THROTTLER_BUCKET_MS</a>&#160;&#160;&#160;0.5</td></tr>
@@ -115,9 +125,9 @@ Functions</h2></td></tr>
 <tr class="separator:a5099a5462b041ab6c8a6ee4b2ee53681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa93348568fe6c2acd6d4be7fa5918dde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aa93348568fe6c2acd6d4be7fa5918dde">udp_send_packet</a> (void *raw_context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, void *payload, int payload_size, int packet_id)</td></tr>
 <tr class="separator:aa93348568fe6c2acd6d4be7fa5918dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5ada1e657a06b0f0168556f83ed1f6dc">udp_update_bitrate_settings</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, int burst_bitrate, double fec_packet_ratio)</td></tr>
-<tr class="memdesc:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a5ada1e657a06b0f0168556f83ed1f6dc">More...</a><br /></td></tr>
-<tr class="separator:a5ada1e657a06b0f0168556f83ed1f6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af26b40bdba749caeea5f50a0a57824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a1af26b40bdba749caeea5f50a0a57824">udp_update_network_settings</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> network_settings)</td></tr>
+<tr class="memdesc:a1af26b40bdba749caeea5f50a0a57824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the burst bitrate for the given UDP <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="udp_8c.html#a1af26b40bdba749caeea5f50a0a57824">More...</a><br /></td></tr>
+<tr class="separator:a1af26b40bdba749caeea5f50a0a57824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed5f450b0434a42cec5d03a819d29eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aed5f450b0434a42cec5d03a819d29eb3">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
 <tr class="memdesc:aed5f450b0434a42cec5d03a819d29eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled.  <a href="udp_8c.html#aed5f450b0434a42cec5d03a819d29eb3">More...</a><br /></td></tr>
 <tr class="separator:aed5f450b0434a42cec5d03a819d29eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +171,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a4d27884f9f6430c61afbe6425de982d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d27884f9f6430c61afbe6425de982d3">&#9670;&nbsp;</a></span>MAX_UDPPACKET_PAYLOAD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_UDPPACKET_PAYLOAD_SIZE&#160;&#160;&#160;((int)sizeof((<a class="el" href="structUDPPacket.html">UDPPacket</a>){0}.payload))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4f283368e88ac298d92d1506dd4c0abb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f283368e88ac298d92d1506dd4c0abb">&#9670;&nbsp;</a></span>RETRIES_ON_BUFFER_FULL</h2>
 
@@ -183,6 +207,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define UDP_NETWORK_THROTTLER_BUCKET_MS&#160;&#160;&#160;0.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e1def3cbc674766ac38ae62219778e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1def3cbc674766ac38ae62219778e5">&#9670;&nbsp;</a></span>UDPPACKET_HEADER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UDPPACKET_HEADER_SIZE&#160;&#160;&#160;((int)sizeof(<a class="el" href="structUDPPacket.html">UDPPacket</a>) - (int)sizeof((<a class="el" href="structUDPPacket.html">UDPPacket</a>){0}.payload))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -755,14 +793,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ada1e657a06b0f0168556f83ed1f6dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ada1e657a06b0f0168556f83ed1f6dc">&#9670;&nbsp;</a></span>udp_update_bitrate_settings()</h2>
+<a id="a1af26b40bdba749caeea5f50a0a57824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af26b40bdba749caeea5f50a0a57824">&#9670;&nbsp;</a></span>udp_update_network_settings()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void udp_update_bitrate_settings </td>
+          <td class="memname">void udp_update_network_settings </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -770,14 +808,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>burst_bitrate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>fec_packet_ratio</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td>
+          <td class="paramname"><em>network_settings</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -791,8 +823,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> that we'll be adjusting the burst bitrate for </td></tr>
-    <tr><td class="paramname">burst_bitrate</td><td>The new burst bitrate, in MBPS </td></tr>
-    <tr><td class="paramname">fec_packet_ratio</td><td>The percentage of packets that should be FEC </td></tr>
+    <tr><td class="paramname">network_settings</td><td>The new network settings </td></tr>
   </table>
   </dd>
 </dl>
