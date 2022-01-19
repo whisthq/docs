@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structWhistDiscoveryReplyMessage.html#a5010ab80314947d80e285eb3c4add74c":[9,0,82,1],
 "structWhistDiscoveryReplyMessage.html#a68c05fd25d7d21048d5a96cf7980e1e8":[9,0,82,0],
 "structWhistDiscoveryReplyMessage.html#a6f1e52730f24a6f45eaf402c7bcf467b":[9,0,82,2],
 "structWhistDiscoveryRequestMessage.html":[9,0,83],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "threads_8h.html#a1115df039c0afbf5b8772c02ffc4bf08":[10,0,2,8,28,11],
 "threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68f":[10,0,2,8,28,8],
 "threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa3e29ca1fc08f66aa2c30322cb83573c7":[10,0,2,8,28,8,3],
-"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa46bca4d319b954f24e633fc697c329ca":[10,0,2,8,28,8,0],
-"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa77da5472368e0d04f463db32588a27dc":[10,0,2,8,28,8,1]
+"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa46bca4d319b954f24e633fc697c329ca":[10,0,2,8,28,8,0]
 };

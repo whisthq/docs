@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structNvidiaEncoder.html#adb88613a9ef984d97367a5e8f48933e8":[9,0,51,10],
 "structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d":[9,0,51,14],
 "structNvidiaEncoder.html#af5f260d715aee66892c981d206ae5e32":[9,0,51,9],
 "structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[9,0,51,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structWhistDestination.html":[9,0,81],
 "structWhistDestination.html#a19cb90aba2a4e5d1adfcf736c5745654":[9,0,81,0],
 "structWhistDestination.html#a3a08e145ea3b4af5f48e9d83bf8804b8":[9,0,81,1],
-"structWhistDiscoveryReplyMessage.html":[9,0,82],
-"structWhistDiscoveryReplyMessage.html#a5010ab80314947d80e285eb3c4add74c":[9,0,82,1]
+"structWhistDiscoveryReplyMessage.html":[9,0,82]
 };

@@ -8,6 +8,7 @@ var structClipboardActivity =
     [ "complete_ptr", "structClipboardActivity.html#a2652ad105332873d06a68c1c04c21fae", null ],
     [ "continue_action_condvar", "structClipboardActivity.html#a3666a27e284054620949308790dc703d", null ],
     [ "is_initialized", "structClipboardActivity.html#aa3562a7e49b1489f8a28b4a4047dd9ba", null ],
+    [ "is_start_done", "structClipboardActivity.html#aa25fa4e8a335f09572fcf773b67d7d40", null ],
     [ "pulled_bytes", "structClipboardActivity.html#a639205c1cac965778c2905435b72eb93", null ],
     [ "thread_setup_semaphore", "structClipboardActivity.html#aba76bb7668f1438d4e3296cc162503ff", null ]
 ];

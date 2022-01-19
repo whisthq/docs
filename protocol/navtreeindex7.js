@@ -179,12 +179,13 @@ var NAVTREEINDEX7 =
 "structClipboardActivity.html#a2652ad105332873d06a68c1c04c21fae":[9,0,14,5],
 "structClipboardActivity.html#a3666a27e284054620949308790dc703d":[9,0,14,6],
 "structClipboardActivity.html#a5bde40f87228f275a0ee8e8a8004dc61":[9,0,14,3],
-"structClipboardActivity.html#a639205c1cac965778c2905435b72eb93":[9,0,14,8],
+"structClipboardActivity.html#a639205c1cac965778c2905435b72eb93":[9,0,14,9],
 "structClipboardActivity.html#a6c0cc745f1f5428cada870e7f05e3d35":[9,0,14,1],
 "structClipboardActivity.html#a8a1cbf25229796ec4f5999d08c1c8de6":[9,0,14,4],
 "structClipboardActivity.html#a9d9b48fa62bad0bbfb529e266453bf75":[9,0,14,0],
+"structClipboardActivity.html#aa25fa4e8a335f09572fcf773b67d7d40":[9,0,14,8],
 "structClipboardActivity.html#aa3562a7e49b1489f8a28b4a4047dd9ba":[9,0,14,7],
-"structClipboardActivity.html#aba76bb7668f1438d4e3296cc162503ff":[9,0,14,9],
+"structClipboardActivity.html#aba76bb7668f1438d4e3296cc162503ff":[9,0,14,10],
 "structClipboardData.html":[9,0,15],
 "structClipboardData.html#a8206090576aadfd57a86acc49c076640":[9,0,15,1],
 "structClipboardData.html#aad609297cebff188b34474d1c0ae634d":[9,0,15,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structFFmpegEncoder.html#a71883d3f943064de6c4a4d350d727890":[9,0,25,12],
 "structFFmpegEncoder.html#a87716d35f72c5cb126e537a423f750d3":[9,0,25,5],
 "structFFmpegEncoder.html#a9a074395cf5a4d86e88dbc33887246c8":[9,0,25,13],
-"structFFmpegEncoder.html#aa0355dad999dc4488e7232a6ae7e7985":[9,0,25,2],
-"structFFmpegEncoder.html#aa06d046f88e26f184006e1d04149bb22":[9,0,25,19]
+"structFFmpegEncoder.html#aa0355dad999dc4488e7232a6ae7e7985":[9,0,25,2]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"structFFmpegEncoder.html#aa06d046f88e26f184006e1d04149bb22":[9,0,25,19],
 "structFFmpegEncoder.html#ab0a0bffa578b5cdda3e3a2df79559235":[9,0,25,1],
 "structFFmpegEncoder.html#abd7c3cc4015ba4461719dad0ba536dfd":[9,0,25,20],
 "structFFmpegEncoder.html#ace0c3501fa100509441e629ed50be608":[9,0,25,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709":[9,0,51,16],
 "structNvidiaEncoder.html#abaedbb50f564c663cae9bd38b2bd05e3":[9,0,51,4],
 "structNvidiaEncoder.html#abf286092a0fcee802960d70b27e32bbf":[9,0,51,2],
-"structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26":[9,0,51,8],
-"structNvidiaEncoder.html#adb88613a9ef984d97367a5e8f48933e8":[9,0,51,10]
+"structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26":[9,0,51,8]
 };
