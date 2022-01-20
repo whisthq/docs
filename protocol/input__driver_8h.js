@@ -1,6 +1,6 @@
 var input__driver_8h =
 [
-    [ "create_input_device", "input__driver_8h.html#ae155e1e686b6e1dcc9e006fb07789532", null ],
+    [ "create_input_device", "input__driver_8h.html#a436e7f1ba7cd31ca76b754b019d928bb", null ],
     [ "destroy_input_device", "input__driver_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7", null ],
     [ "emit_high_res_mouse_wheel_event", "input__driver_8h.html#a68d952af97dc08e94a465fc1eb9934c7", null ],
     [ "emit_key_event", "input__driver_8h.html#ae20354ac9fa2cbeac2a1067ef9f79b06", null ],

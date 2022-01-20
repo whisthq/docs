@@ -20,6 +20,6 @@ var server__statistic_8h =
     [ "VIDEO_INTRA_FRAME_QP", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6f181840446f715c76ed2af1e4ba12ff", null ],
     [ "VIDEO_SEND_TIME", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba70a3201279c8c051ceb67f98523c753f", null ],
     [ "SERVER_NUM_METRICS", "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8f4d3a01b92d6560e839b7bf874df3ee", null ],
-    [ "whist_init_server_statistics", "server__statistic_8h.html#a88fe8358dd91a9e94cf4521b284fd4c5", null ],
+    [ "whist_init_server_statistics", "server__statistic_8h.html#ae70f42219f0dab09323155863c7bc5b8", null ],
     [ "server_statistic_info", "server__statistic_8h.html#aeb2697fdcecb4d884626826c24600b01", null ]
 ];

@@ -100,26 +100,11 @@ $(document).ready(function(){initNavTree('aes_8c.html',''); initResizable(); });
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a35088ce83db647ff502b8e3c6b63d4c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#a35088ce83db647ff502b8e3c6b63d4c4">HANDLE_SSL_ERROR</a>(void)</td></tr>
-<tr class="separator:a35088ce83db647ff502b8e3c6b63d4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e2146efd9a61b0c937abfcaea8bbb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#ae2e2146efd9a61b0c937abfcaea8bbb3">HANDLE_SSL_ERROR</a>()</td></tr>
+<tr class="separator:ae2e2146efd9a61b0c937abfcaea8bbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae5aea0f3919043830bfe936fbc32d6b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#ae5aea0f3919043830bfe936fbc32d6b8">aes_encrypt</a> (void *ciphertext, const void *plaintext, int plaintext_len, const void *private_key, const void *iv)</td></tr>
-<tr class="memdesc:ae5aea0f3919043830bfe936fbc32d6b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES Encrypt plaintext data, given the iv/key This won't sign the packet, however.  <a href="aes_8c.html#ae5aea0f3919043830bfe936fbc32d6b8">More...</a><br /></td></tr>
-<tr class="separator:ae5aea0f3919043830bfe936fbc32d6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b6b94b71238da62e9658bddddaaaef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#a14b6b94b71238da62e9658bddddaaaef">aes_decrypt</a> (void *plaintext_buffer, int plaintext_len, const void *ciphertext, int ciphertext_len, const void *private_key, const void *iv)</td></tr>
-<tr class="memdesc:a14b6b94b71238da62e9658bddddaaaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES Decrypt ciphertext data, given the iv/key.  <a href="aes_8c.html#a14b6b94b71238da62e9658bddddaaaef">More...</a><br /></td></tr>
-<tr class="separator:a14b6b94b71238da62e9658bddddaaaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e802e62d4f90243322a8c1379ce98db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#a3e802e62d4f90243322a8c1379ce98db">hmac_aes_data</a> (void *hash_buffer, const <a class="el" href="structAESMetadata.html">AESMetadata</a> *aes_metadata, const void *ciphertext, int ciphertext_len, const void *private_key)</td></tr>
-<tr class="memdesc:a3e802e62d4f90243322a8c1379ce98db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an HMAC from the AES encrypted information.  <a href="aes_8c.html#a3e802e62d4f90243322a8c1379ce98db">More...</a><br /></td></tr>
-<tr class="separator:a3e802e62d4f90243322a8c1379ce98db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26879eb785b03d54d0a5ceb837527a8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#a26879eb785b03d54d0a5ceb837527a8c">print_ssl_errors</a> ()</td></tr>
-<tr class="memdesc:a26879eb785b03d54d0a5ceb837527a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes any OpenSSL errors to stderr, and then fatally terminates the protocol.  <a href="aes_8c.html#a26879eb785b03d54d0a5ceb837527a8c">More...</a><br /></td></tr>
-<tr class="separator:a26879eb785b03d54d0a5ceb837527a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e93d1c0239e4c37df9cb445fe2a1b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#a33e93d1c0239e4c37df9cb445fe2a1b0">openssl_callback</a> (const char *<a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>, size_t len, void *opaque)</td></tr>
-<tr class="memdesc:a33e93d1c0239e4c37df9cb445fe2a1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An OpenSSL callback function, see <code>ERR_print_errors_cb</code>  <a href="aes_8c.html#a33e93d1c0239e4c37df9cb445fe2a1b0">More...</a><br /></td></tr>
-<tr class="separator:a33e93d1c0239e4c37df9cb445fe2a1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adee10f97863e084d66130b41a7c21f5d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#adee10f97863e084d66130b41a7c21f5d">hash</a> (const void *buf, size_t len)</td></tr>
 <tr class="memdesc:adee10f97863e084d66130b41a7c21f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structHash.html">Hash</a> a buffer to a pseudorandomly unique ID This will not be cryptographically secure against preimage/collision attacks, it is intended to be fast instead.  <a href="aes_8c.html#adee10f97863e084d66130b41a7c21f5d">More...</a><br /></td></tr>
 <tr class="separator:adee10f97863e084d66130b41a7c21f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,8 +130,8 @@ encryption (using AES encryption).</h1>
 Usage</h1>
 <p>The function encrypt_packet gets called when a new packet of data needs to be sent over the network, while decrypt_packet, which calls decrypt_packet_n, gets called on the receiving end to re-obtain the data and process it. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a35088ce83db647ff502b8e3c6b63d4c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35088ce83db647ff502b8e3c6b63d4c4">&#9670;&nbsp;</a></span>HANDLE_SSL_ERROR</h2>
+<a id="ae2e2146efd9a61b0c937abfcaea8bbb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e2146efd9a61b0c937abfcaea8bbb3">&#9670;&nbsp;</a></span>HANDLE_SSL_ERROR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,8 +139,7 @@ Usage</h1>
         <tr>
           <td class="memname">#define HANDLE_SSL_ERROR</td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">void</td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -169,131 +153,6 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a14b6b94b71238da62e9658bddddaaaef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b6b94b71238da62e9658bddddaaaef">&#9670;&nbsp;</a></span>aes_decrypt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int aes_decrypt </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>plaintext_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>plaintext_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>ciphertext</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ciphertext_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>private_key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>iv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>AES Decrypt ciphertext data, given the iv/key. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">plaintext_buffer</td><td>Pointer to buffer for receiving plaintext </td></tr>
-    <tr><td class="paramname">plaintext_len</td><td>The size of the <code>plaintext</code> buffer </td></tr>
-    <tr><td class="paramname">ciphertext</td><td>Pointer to the ciphertext to encrypt </td></tr>
-    <tr><td class="paramname">ciphertext_len</td><td>Length of the ciphertext </td></tr>
-    <tr><td class="paramname">private_key</td><td>AES Private Key used to encrypt the plaintext must be KEY_SIZE bytes </td></tr>
-    <tr><td class="paramname">iv</td><td>IV used to seed the AES encryption must be IV_SIZE bytes</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return the length of the decrypted result, or -1 on failure </dd></dl>
-
-</div>
-</div>
-<a id="ae5aea0f3919043830bfe936fbc32d6b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5aea0f3919043830bfe936fbc32d6b8">&#9670;&nbsp;</a></span>aes_encrypt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int aes_encrypt </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ciphertext</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>plaintext</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>plaintext_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>private_key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>iv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>AES Encrypt plaintext data, given the iv/key This won't sign the packet, however. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ciphertext</td><td>Pointer to buffer for receiving ciphertext </td></tr>
-    <tr><td class="paramname">plaintext</td><td>Pointer to the plaintext to encrypt </td></tr>
-    <tr><td class="paramname">plaintext_len</td><td>Length of the plaintext </td></tr>
-    <tr><td class="paramname">private_key</td><td>AES Private Key used to encrypt the plaintext must be KEY_SIZE bytes </td></tr>
-    <tr><td class="paramname">iv</td><td>IV used to seed the AES encryption must be IV_SIZE bytes</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Will return -1 on failure, else will return the length of the encrypted result </dd></dl>
-
-</div>
-</div>
 <a id="ae949f1dbc78b6baeaf0a98484d995641"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae949f1dbc78b6baeaf0a98484d995641">&#9670;&nbsp;</a></span>decrypt_packet()</h2>
 
@@ -531,127 +390,6 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a3e802e62d4f90243322a8c1379ce98db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e802e62d4f90243322a8c1379ce98db">&#9670;&nbsp;</a></span>hmac_aes_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void hmac_aes_data </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>hash_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structAESMetadata.html">AESMetadata</a> *&#160;</td>
-          <td class="paramname"><em>aes_metadata</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>ciphertext</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ciphertext_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>private_key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get an HMAC from the AES encrypted information. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hash_buffer</td><td>This buffer will have HMAC_SIZE bytes written to it </td></tr>
-    <tr><td class="paramname">aes_metadata</td><td>AES Metadata about the encrypted packet, where important information will be signed as well </td></tr>
-    <tr><td class="paramname">ciphertext</td><td>Pointer to the ciphertext to sign </td></tr>
-    <tr><td class="paramname">ciphertext_len</td><td>Length of the ciphertext </td></tr>
-    <tr><td class="paramname">private_key</td><td>The shared private key between client and server must be KEY_SIZE bytes </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a33e93d1c0239e4c37df9cb445fe2a1b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33e93d1c0239e4c37df9cb445fe2a1b0">&#9670;&nbsp;</a></span>openssl_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int openssl_callback </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>opaque</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An OpenSSL callback function, see <code>ERR_print_errors_cb</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>The string for the openssl error </td></tr>
-    <tr><td class="paramname">len</td><td>The length of the string </td></tr>
-    <tr><td class="paramname">opaque</td><td>Ignored </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a26879eb785b03d54d0a5ceb837527a8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26879eb785b03d54d0a5ceb837527a8c">&#9670;&nbsp;</a></span>print_ssl_errors()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print_ssl_errors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes any OpenSSL errors to stderr, and then fatally terminates the protocol. </p>
 
 </div>
 </div>

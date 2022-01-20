@@ -12,7 +12,6 @@ var whist__memory_8c =
     [ "destroy_block_allocator", "whist__memory_8c.html#a7e651aa84c25b3dba71f17080742285e", null ],
     [ "free_block", "whist__memory_8c.html#add7f4d5c9a5776f2f27de64e939b7445", null ],
     [ "free_dynamic_buffer", "whist__memory_8c.html#ae616f3a7d54d00a38e8739477fc7a785", null ],
-    [ "get_page_size", "whist__memory_8c.html#a771d64932b7927ec99e09fe1a94d4e94", null ],
     [ "init_dynamic_buffer", "whist__memory_8c.html#ae51d43be8b22d6c3bf94077af0929bb7", null ],
     [ "mark_unused_region", "whist__memory_8c.html#a3b6692eaffcf106ffdecddfb77e8dbe9", null ],
     [ "mark_used_region", "whist__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7", null ],

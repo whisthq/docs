@@ -26,5 +26,5 @@ var cursor_8h =
       [ "CURSOR_STATE_VISIBLE", "cursor_8h.html#a760fb07d906fd578c48427c04171f16faa335fef0c5a110ab9ab94094f5c6b419", null ]
     ] ],
     [ "get_current_cursor", "cursor_8h.html#adac79748ef15f0780a545d3b0c047986", null ],
-    [ "init_cursors", "cursor_8h.html#a4df495b481d3b602c8a590693b51703c", null ]
+    [ "init_cursors", "cursor_8h.html#a6bd12f0e51951988813d790d1e1bb484", null ]
 ];

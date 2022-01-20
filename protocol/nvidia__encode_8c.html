@@ -106,16 +106,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a56c9acc53836e6c0e86ffc98791cf424"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a56c9acc53836e6c0e86ffc98791cf424">initialize_preset_config</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, NV_ENC_PRESET_CONFIG *p_preset_config)</td></tr>
-<tr class="separator:a56c9acc53836e6c0e86ffc98791cf424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30e1d4db419af47348131f5909917d29"><td class="memItemLeft" align="right" valign="top">GUID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a30e1d4db419af47348131f5909917d29">get_codec_guid</a> (<a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec)</td></tr>
-<tr class="separator:a30e1d4db419af47348131f5909917d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa846f530346de8312a49572115d99eaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aa846f530346de8312a49572115d99eaf">register_resource</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, <a class="el" href="structRegisteredResource.html">RegisteredResource</a> *resource_to_register)</td></tr>
-<tr class="separator:aa846f530346de8312a49572115d99eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9391956a5fdb145023447edaa6a5cda3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a9391956a5fdb145023447edaa6a5cda3">unregister_resource</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, <a class="el" href="structRegisteredResource.html">RegisteredResource</a> registered_resource)</td></tr>
-<tr class="separator:a9391956a5fdb145023447edaa6a5cda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb48d23ded788334a3091c23fc41fd79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aeb48d23ded788334a3091c23fc41fd79">try_free_frame</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder)</td></tr>
-<tr class="separator:aeb48d23ded788334a3091c23fc41fd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2652e81003368f8bf0501290ac82bfe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a2652e81003368f8bf0501290ac82bfe8">create_nvidia_encoder</a> (int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int out_width, int out_height, CUcontext cuda_context)</td></tr>
 <tr class="memdesc:a2652e81003368f8bf0501290ac82bfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new nvidia encoder.  <a href="nvidia__encode_8c.html#a2652e81003368f8bf0501290ac82bfe8">More...</a><br /></td></tr>
 <tr class="separator:a2652e81003368f8bf0501290ac82bfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,64 +251,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a30e1d4db419af47348131f5909917d29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30e1d4db419af47348131f5909917d29">&#9670;&nbsp;</a></span>get_codec_guid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GUID get_codec_guid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
-          <td class="paramname"><em>codec</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a56c9acc53836e6c0e86ffc98791cf424"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56c9acc53836e6c0e86ffc98791cf424">&#9670;&nbsp;</a></span>initialize_preset_config()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int initialize_preset_config </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bitrate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
-          <td class="paramname"><em>codec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NV_ENC_PRESET_CONFIG *&#160;</td>
-          <td class="paramname"><em>p_preset_config</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -469,80 +401,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="aa846f530346de8312a49572115d99eaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa846f530346de8312a49572115d99eaf">&#9670;&nbsp;</a></span>register_resource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int register_resource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structRegisteredResource.html">RegisteredResource</a> *&#160;</td>
-          <td class="paramname"><em>resource_to_register</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeb48d23ded788334a3091c23fc41fd79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb48d23ded788334a3091c23fc41fd79">&#9670;&nbsp;</a></span>try_free_frame()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void try_free_frame </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9391956a5fdb145023447edaa6a5cda3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9391956a5fdb145023447edaa6a5cda3">&#9670;&nbsp;</a></span>unregister_resource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unregister_resource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structRegisteredResource.html">RegisteredResource</a>&#160;</td>
-          <td class="paramname"><em>registered_resource</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

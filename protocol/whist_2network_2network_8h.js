@@ -40,7 +40,7 @@ var whist_2network_2network_8h =
     [ "ack", "whist_2network_2network_8h.html#a716fd11de9d48aa6f307185a3e9d130b", null ],
     [ "destroy_socket_context", "whist_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339", null ],
     [ "free_packet", "whist_2network_2network_8h.html#a419e4818e56de9f9a6c5c2d9d6e3283b", null ],
-    [ "get_last_network_error", "whist_2network_2network_8h.html#ae3a12244c910bce55bfdcbd9bd5d687c", null ],
+    [ "get_last_network_error", "whist_2network_2network_8h.html#a39b0d3ed2dd945eb408751439d2b6299", null ],
     [ "get_packet_size", "whist_2network_2network_8h.html#ac326362f3ab91f34c0271d6585c27373", null ],
     [ "handshake_private_key", "whist_2network_2network_8h.html#a34d93b58103186e725fb1ee4de7f32b5", null ],
     [ "read_packet", "whist_2network_2network_8h.html#af80adc6d47b9e13698de5e6bda6becff", null ],
@@ -49,6 +49,6 @@ var whist_2network_2network_8h =
     [ "send_packet", "whist_2network_2network_8h.html#a5f140d8c615657cb2f510fea9bdcdc36", null ],
     [ "set_timeout", "whist_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea", null ],
     [ "set_tos", "whist_2network_2network_8h.html#a6dadca57d3f2804a946e82a7abb69549", null ],
-    [ "socketp_udp", "whist_2network_2network_8h.html#ab494a21469f6fa25ca60570bc2788461", null ],
-    [ "whist_init_networking", "whist_2network_2network_8h.html#adddaf9b590b48263e634387b069cc228", null ]
+    [ "socketp_udp", "whist_2network_2network_8h.html#a7474fff42d0f5ea949a1030750c139ce", null ],
+    [ "whist_init_networking", "whist_2network_2network_8h.html#a6af622f9cda2d3e496cc83b6a7f9d86b", null ]
 ];

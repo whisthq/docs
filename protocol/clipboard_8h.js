@@ -20,11 +20,11 @@ var clipboard_8h =
       [ "CLIPBOARD_IMAGE", "clipboard_8h.html#a9676c44d0c2a676fe59a136a6e71b161ad8ad73692a6e046a0114f1afdaf24060", null ],
       [ "CLIPBOARD_FILES", "clipboard_8h.html#a9676c44d0c2a676fe59a136a6e71b161a6eb8655d4ec3cb74b7a09de6518393ff", null ]
     ] ],
-    [ "destroy_clipboard", "clipboard_8h.html#a116350034e4b2089cf066fcb75f7306a", null ],
+    [ "destroy_clipboard", "clipboard_8h.html#a5e7275d9113d0b5c292e1d24ed794762", null ],
     [ "free_clipboard_buffer", "clipboard_8h.html#a0ca776393db57c979fec121683597c59", null ],
-    [ "get_os_clipboard", "clipboard_8h.html#a44ddb807136f265382274f822c589f98", null ],
-    [ "has_os_clipboard_updated", "clipboard_8h.html#a719ec07011888c1326cc0eeb03f127ed", null ],
+    [ "get_os_clipboard", "clipboard_8h.html#a5d00bf978f550b702d0a2b0d80728166", null ],
+    [ "has_os_clipboard_updated", "clipboard_8h.html#a18933b18bea8ba9b256fcaa596d41cbe", null ],
     [ "init_clipboard", "clipboard_8h.html#a59184da75bd1f55c8c08284de9934079", null ],
     [ "set_os_clipboard", "clipboard_8h.html#af6f6c69d5ac5ab4e3d267fc75de2d7d6", null ],
-    [ "should_preserve_local_clipboard", "clipboard_8h.html#afe398cfdec3f5ec983180edaa356f5df", null ]
+    [ "should_preserve_local_clipboard", "clipboard_8h.html#aa1df94617b3cac91ee4e3305cfee15f5", null ]
 ];

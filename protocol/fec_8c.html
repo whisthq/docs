@@ -121,15 +121,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adcc08c684586d367ab8e837cbe9af2ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#adcc08c684586d367ab8e837cbe9af2ab">get_rs_code</a> (int k, int n)</td></tr>
-<tr class="memdesc:adcc08c684586d367ab8e837cbe9af2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an rs_code.  <a href="fec_8c.html#adcc08c684586d367ab8e837cbe9af2ab">More...</a><br /></td></tr>
-<tr class="separator:adcc08c684586d367ab8e837cbe9af2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34b0af45149bef41ca2273fbff79e485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a34b0af45149bef41ca2273fbff79e485">free_rs_code_table</a> (void *opaque)</td></tr>
-<tr class="memdesc:a34b0af45149bef41ca2273fbff79e485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an RSTable.  <a href="fec_8c.html#a34b0af45149bef41ca2273fbff79e485">More...</a><br /></td></tr>
-<tr class="separator:a34b0af45149bef41ca2273fbff79e485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b17fb5c4682b0e0a3aa266596759368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a0b17fb5c4682b0e0a3aa266596759368">init_fec</a> ()</td></tr>
-<tr class="memdesc:a0b17fb5c4682b0e0a3aa266596759368"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global initialization function that should be called before calling anything else in <a class="el" href="fec_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">fec.h</a>.  <a href="fec_8c.html#a0b17fb5c4682b0e0a3aa266596759368">More...</a><br /></td></tr>
-<tr class="separator:a0b17fb5c4682b0e0a3aa266596759368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae853bbe2fc7aa8db4ad35abce80e8dce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#ae853bbe2fc7aa8db4ad35abce80e8dce">init_fec</a> (void)</td></tr>
+<tr class="memdesc:ae853bbe2fc7aa8db4ad35abce80e8dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global initialization function that should be called before calling anything else in <a class="el" href="fec_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">fec.h</a>.  <a href="fec_8c.html#ae853bbe2fc7aa8db4ad35abce80e8dce">More...</a><br /></td></tr>
+<tr class="separator:ae853bbe2fc7aa8db4ad35abce80e8dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#ac95c4d80f01a85593a7dfd5b4989f2a4">get_num_fec_packets</a> (int num_real_packets, double fec_packet_ratio)</td></tr>
 <tr class="memdesc:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an fec packet ratio, into the number of fec packets.  <a href="fec_8c.html#ac95c4d80f01a85593a7dfd5b4989f2a4">More...</a><br /></td></tr>
 <tr class="separator:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -558,32 +552,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a34b0af45149bef41ca2273fbff79e485"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34b0af45149bef41ca2273fbff79e485">&#9670;&nbsp;</a></span>free_rs_code_table()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void free_rs_code_table </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>opaque</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frees an RSTable. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">opaque</td><td>The RSTable* to free </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ac95c4d80f01a85593a7dfd5b4989f2a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac95c4d80f01a85593a7dfd5b4989f2a4">&#9670;&nbsp;</a></span>get_num_fec_packets()</h2>
 
@@ -622,46 +590,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adcc08c684586d367ab8e837cbe9af2ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcc08c684586d367ab8e837cbe9af2ab">&#9670;&nbsp;</a></span>get_rs_code()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> * get_rs_code </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>k</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets an rs_code. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">k</td><td>The number of original packets </td></tr>
-    <tr><td class="paramname">n</td><td>The total number of packets</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The RSCode for that (n, k) tuple </dd></dl>
-
-</div>
-</div>
-<a id="a0b17fb5c4682b0e0a3aa266596759368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b17fb5c4682b0e0a3aa266596759368">&#9670;&nbsp;</a></span>init_fec()</h2>
+<a id="ae853bbe2fc7aa8db4ad35abce80e8dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae853bbe2fc7aa8db4ad35abce80e8dce">&#9670;&nbsp;</a></span>init_fec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -669,6 +599,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void init_fec </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

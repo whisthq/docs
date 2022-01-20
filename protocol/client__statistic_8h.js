@@ -23,6 +23,6 @@ var client__statistic_8h =
       [ "VIDEO_UPDATE_TIME", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a6f123a94d6cc479a05d86bb5c37eceb6", null ],
       [ "CLIENT_NUM_METRICS", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a75253dcbab7e29f26e86f47e46078856", null ]
     ] ],
-    [ "init_client_statistics", "client__statistic_8h.html#a057cec9f7b9e7a3df6b208340b7cc09d", null ],
+    [ "init_client_statistics", "client__statistic_8h.html#a1ea5068b820775eac9cbb685aca5ee51", null ],
     [ "client_statistic_info", "client__statistic_8h.html#a3e7fd0da8e2cbfaa2e145560f58fb79a", null ]
 ];

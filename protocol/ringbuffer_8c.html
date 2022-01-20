@@ -117,8 +117,6 @@ Functions</h2></td></tr>
 <tr class="separator:aaae4a29416ec3cb8ae72b86ce57f3638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ee7588c05580e80dd58f21f0c7b8765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a6ee7588c05580e80dd58f21f0c7b8765">init_frame</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int num_original_indices, int num_fec_indices)</td></tr>
 <tr class="separator:a6ee7588c05580e80dd58f21f0c7b8765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac90027614c72dd29204b9f884e0a0493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ac90027614c72dd29204b9f884e0a0493">reset_bitrate_stat_members</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
-<tr class="separator:ac90027614c72dd29204b9f884e0a0493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04705cc4b1c966ce7556662c365dd77b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a04705cc4b1c966ce7556662c365dd77b">init_ring_buffer</a> (<a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int ring_buffer_size, <a class="el" href="ringbuffer_8h.html#aff4834501397a369e48ba31168000123">NackPacketFn</a> <a class="el" href="client__utils_8h.html#adf93038815981906d156fc5d2e00b2be">nack_packet</a>)</td></tr>
 <tr class="memdesc:a04705cc4b1c966ce7556662c365dd77b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a ring buffer of the specified size and type.  <a href="ringbuffer_8c.html#a04705cc4b1c966ce7556662c365dd77b">More...</a><br /></td></tr>
 <tr class="separator:a04705cc4b1c966ce7556662c365dd77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,8 +126,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a4415bb2d50c63ca97a0eafa97964188d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a4415bb2d50c63ca97a0eafa97964188d">reset_frame</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *frame_data)</td></tr>
 <tr class="memdesc:a4415bb2d50c63ca97a0eafa97964188d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the frame, both metadata and frame buffer.  <a href="ringbuffer_8c.html#a4415bb2d50c63ca97a0eafa97964188d">More...</a><br /></td></tr>
 <tr class="separator:a4415bb2d50c63ca97a0eafa97964188d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85adc5260440db047e54bd933c1b2f78"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a85adc5260440db047e54bd933c1b2f78">get_framebuffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *current_frame)</td></tr>
-<tr class="separator:a85adc5260440db047e54bd933c1b2f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22897ddd74ba2d11192502d98a4c7227"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a22897ddd74ba2d11192502d98a4c7227">is_ready_to_render</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
 <tr class="memdesc:a22897ddd74ba2d11192502d98a4c7227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame.  <a href="ringbuffer_8c.html#a22897ddd74ba2d11192502d98a4c7227">More...</a><br /></td></tr>
 <tr class="separator:a22897ddd74ba2d11192502d98a4c7227"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,12 +135,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a8c1cc512edc5afc5174f2e2693b3bfae">receive_packet</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
 <tr class="memdesc:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a packet to the ring buffer, and initialize the corresponding frame if necessary.  <a href="ringbuffer_8c.html#a8c1cc512edc5afc5174f2e2693b3bfae">More...</a><br /></td></tr>
 <tr class="separator:a8c1cc512edc5afc5174f2e2693b3bfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06579df66400790c9af75c806b484aba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a06579df66400790c9af75c806b484aba">nack_single_packet</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int index)</td></tr>
-<tr class="separator:a06579df66400790c9af75c806b484aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e418ff63c607877e2cf30c280003b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a73e418ff63c607877e2cf30c280003b8">nack_bitarray_packets</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int start_index, <a class="el" href="structBitArray.html">BitArray</a> *bit_arr)</td></tr>
-<tr class="separator:a73e418ff63c607877e2cf30c280003b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0048b36c977f38b40533fa7eea0f974c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a0048b36c977f38b40533fa7eea0f974c">nack_missing_packets_up_to_index</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *frame_data, int end_index, int max_packets_to_nack)</td></tr>
-<tr class="separator:a0048b36c977f38b40533fa7eea0f974c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a537f83ad6061d7205282ec209d66d9d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a537f83ad6061d7205282ec209d66d9d5">try_nacking</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double <a class="el" href="client_2video_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a>)</td></tr>
 <tr class="memdesc:a537f83ad6061d7205282ec209d66d9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If any packets are still missing, and it's been too long, try nacking for them.  <a href="ringbuffer_8c.html#a537f83ad6061d7205282ec209d66d9d5">More...</a><br /></td></tr>
 <tr class="separator:a537f83ad6061d7205282ec209d66d9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,34 +320,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a85adc5260440db047e54bd933c1b2f78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85adc5260440db047e54bd933c1b2f78">&#9670;&nbsp;</a></span>get_framebuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* get_framebuffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
-          <td class="paramname"><em>ring_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td>
-          <td class="paramname"><em>current_frame</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a6ee7588c05580e80dd58f21f0c7b8765"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ee7588c05580e80dd58f21f0c7b8765">&#9670;&nbsp;</a></span>init_frame()</h2>
 
@@ -482,120 +444,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a73e418ff63c607877e2cf30c280003b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73e418ff63c607877e2cf30c280003b8">&#9670;&nbsp;</a></span>nack_bitarray_packets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nack_bitarray_packets </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
-          <td class="paramname"><em>ring_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start_index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structBitArray.html">BitArray</a> *&#160;</td>
-          <td class="paramname"><em>bit_arr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0048b36c977f38b40533fa7eea0f974c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0048b36c977f38b40533fa7eea0f974c">&#9670;&nbsp;</a></span>nack_missing_packets_up_to_index()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int nack_missing_packets_up_to_index </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
-          <td class="paramname"><em>ring_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td>
-          <td class="paramname"><em>frame_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>end_index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>max_packets_to_nack</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a06579df66400790c9af75c806b484aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06579df66400790c9af75c806b484aba">&#9670;&nbsp;</a></span>nack_single_packet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nack_single_packet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
-          <td class="paramname"><em>ring_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a8c1cc512edc5afc5174f2e2693b3bfae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c1cc512edc5afc5174f2e2693b3bfae">&#9670;&nbsp;</a></span>receive_packet()</h2>
 
@@ -632,24 +480,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
-
-</div>
-</div>
-<a id="ac90027614c72dd29204b9f884e0a0493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac90027614c72dd29204b9f884e0a0493">&#9670;&nbsp;</a></span>reset_bitrate_stat_members()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reset_bitrate_stat_members </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
-          <td class="paramname"><em>ring_buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

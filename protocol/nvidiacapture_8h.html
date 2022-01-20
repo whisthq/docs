@@ -106,9 +106,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3e7227af44e244f049aa253a20e01a0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#a3e7227af44e244f049aa253a20e01a0c">create_nvidia_capture_device</a> ()</td></tr>
-<tr class="memdesc:a3e7227af44e244f049aa253a20e01a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an nvidia capture device.  <a href="nvidiacapture_8h.html#a3e7227af44e244f049aa253a20e01a0c">More...</a><br /></td></tr>
-<tr class="separator:a3e7227af44e244f049aa253a20e01a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5fbabb8eef6586c644555e8269aaaa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#af5fbabb8eef6586c644555e8269aaaa9">create_nvidia_capture_device</a> (void)</td></tr>
+<tr class="memdesc:af5fbabb8eef6586c644555e8269aaaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an nvidia capture device.  <a href="nvidiacapture_8h.html#af5fbabb8eef6586c644555e8269aaaa9">More...</a><br /></td></tr>
+<tr class="separator:af5fbabb8eef6586c644555e8269aaaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb8b929d289578199244fb8e82bdceac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac">nvidia_capture_screen</a> (<a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a> *device)</td></tr>
 <tr class="memdesc:aeb8b929d289578199244fb8e82bdceac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures the screen into GPU pointers.  <a href="nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac">More...</a><br /></td></tr>
 <tr class="separator:aeb8b929d289578199244fb8e82bdceac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +133,8 @@ Usage</h1>
 Usage</h1>
 <p><a class="el" href="structNvidiaCaptureDevice.html" title="Struct to handle using Nvidia for capturing the screen.">NvidiaCaptureDevice</a> contains all the information used to interface with the Nvidia FBC SDK and the data of a frame. Call create_nvidia_capture_device to initialize a device, nvidia_capture_screen to capture the screen with said device, and destroy_nvidia_capture_device when done capturing frames. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a3e7227af44e244f049aa253a20e01a0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e7227af44e244f049aa253a20e01a0c">&#9670;&nbsp;</a></span>create_nvidia_capture_device()</h2>
+<a id="af5fbabb8eef6586c644555e8269aaaa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5fbabb8eef6586c644555e8269aaaa9">&#9670;&nbsp;</a></span>create_nvidia_capture_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,6 +142,7 @@ Usage</h1>
         <tr>
           <td class="memname"><a class="el" href="structNvidiaCaptureDevice.html">NvidiaCaptureDevice</a>* create_nvidia_capture_device </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -149,13 +150,7 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Creates an nvidia capture device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>Capture device struct to hold the capture device</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The new capture device. </dd></dl>
 
 </div>
 </div>

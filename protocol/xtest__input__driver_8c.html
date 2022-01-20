@@ -83,8 +83,7 @@ $(document).ready(function(){initNavTree('xtest__input__driver_8c.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">xtest_input_driver.c File Reference</div>  </div>
 </div><!--header-->
@@ -102,14 +101,14 @@ Macros</h2></td></tr>
 <tr class="separator:aeab6a095afeed0b9e64e415c5a5c669a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf12940a9966c4ae305f7495e1a37e3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xtest__input__driver_8c.html#adf12940a9966c4ae305f7495e1a37e3b">XK_3270</a></td></tr>
 <tr class="separator:adf12940a9966c4ae305f7495e1a37e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af52a094ced65a85478c81ea188fb1158"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xtest__input__driver_8c.html#af52a094ced65a85478c81ea188fb1158">GetX11KeySym</a>(whist_keycode)&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#acff3b962a684552cbf6677b3e397b121">x11_keysyms</a>[whist_keycode]</td></tr>
+<tr class="memitem:af52a094ced65a85478c81ea188fb1158"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xtest__input__driver_8c.html#af52a094ced65a85478c81ea188fb1158">GetX11KeySym</a>(whist_keycode)&#160;&#160;&#160;x11_keysyms[whist_keycode]</td></tr>
 <tr class="separator:af52a094ced65a85478c81ea188fb1158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae155e1e686b6e1dcc9e006fb07789532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xtest__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532">create_input_device</a> ()</td></tr>
-<tr class="memdesc:ae155e1e686b6e1dcc9e006fb07789532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an input device struct to receive user actions to be replayed on a server.  <a href="xtest__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532">More...</a><br /></td></tr>
-<tr class="separator:ae155e1e686b6e1dcc9e006fb07789532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436e7f1ba7cd31ca76b754b019d928bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xtest__input__driver_8c.html#a436e7f1ba7cd31ca76b754b019d928bb">create_input_device</a> (void)</td></tr>
+<tr class="memdesc:a436e7f1ba7cd31ca76b754b019d928bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an input device struct to receive user actions to be replayed on a server.  <a href="xtest__input__driver_8c.html#a436e7f1ba7cd31ca76b754b019d928bb">More...</a><br /></td></tr>
+<tr class="separator:a436e7f1ba7cd31ca76b754b019d928bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03938957e953f5634c8fadb231c001d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xtest__input__driver_8c.html#a03938957e953f5634c8fadb231c001d0">get_input_dimensions</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, int32_t *w, int32_t *h)</td></tr>
 <tr class="separator:a03938957e953f5634c8fadb231c001d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xtest__input__driver_8c.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">destroy_input_device</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device)</td></tr>
@@ -142,11 +141,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a669ecfca5e7aaad9db1f33b392a613c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xtest__input__driver_8c.html#a669ecfca5e7aaad9db1f33b392a613c7">emit_multigesture_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float d_theta, float d_dist, <a class="el" href="whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153">WhistMultigestureType</a> gesture_type, bool active_gesture)</td></tr>
 <tr class="memdesc:a669ecfca5e7aaad9db1f33b392a613c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a trackpad multigesture event (e.g.  <a href="xtest__input__driver_8c.html#a669ecfca5e7aaad9db1f33b392a613c7">More...</a><br /></td></tr>
 <tr class="separator:a669ecfca5e7aaad9db1f33b392a613c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:acff3b962a684552cbf6677b3e397b121"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xtest__input__driver_8c.html#acff3b962a684552cbf6677b3e397b121">x11_keysyms</a> [<a class="el" href="whist_8h.html#a61a115e1297596f9885f9a0dbb6a63b7">KEYCODE_UPPERBOUND</a>]</td></tr>
-<tr class="separator:acff3b962a684552cbf6677b3e397b121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af52a094ced65a85478c81ea188fb1158"></a>
@@ -160,7 +154,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">whist_keycode</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="xtest__input__driver_8c.html#acff3b962a684552cbf6677b3e397b121">x11_keysyms</a>[whist_keycode]</td>
+          <td>&#160;&#160;&#160;x11_keysyms[whist_keycode]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -210,8 +204,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae155e1e686b6e1dcc9e006fb07789532"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae155e1e686b6e1dcc9e006fb07789532">&#9670;&nbsp;</a></span>create_input_device()</h2>
+<a id="a436e7f1ba7cd31ca76b754b019d928bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436e7f1ba7cd31ca76b754b019d928bb">&#9670;&nbsp;</a></span>create_input_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,6 +213,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structInputDevice.html">InputDevice</a>* create_input_device </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -700,21 +695,6 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if we ignore the client key state, 0 if we take the client key state </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="acff3b962a684552cbf6677b3e397b121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acff3b962a684552cbf6677b3e397b121">&#9670;&nbsp;</a></span>x11_keysyms</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int x11_keysyms[<a class="el" href="whist_8h.html#a61a115e1297596f9885f9a0dbb6a63b7">KEYCODE_UPPERBOUND</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

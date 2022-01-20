@@ -83,8 +83,7 @@ $(document).ready(function(){initNavTree('winapi__input__driver_8c.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">winapi_input_driver.c File Reference</div>  </div>
 </div><!--header-->
@@ -100,16 +99,16 @@ Macros</h2></td></tr>
 <tr class="separator:aba49b09f8d4131835017618fc0250711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bbb820890306899ed9271a555fa0ba8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winapi__input__driver_8c.html#a9bbb820890306899ed9271a555fa0ba8">WINAPI_MOUSE_COORDINATE_RANGE</a>&#160;&#160;&#160;0xFFFF</td></tr>
 <tr class="separator:a9bbb820890306899ed9271a555fa0ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c1317c0c5e8cd8590e4212d12136017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winapi__input__driver_8c.html#a2c1317c0c5e8cd8590e4212d12136017">GetWindowsKeyCode</a>(whist_keycode)&#160;&#160;&#160;<a class="el" href="winapi__input__driver_8c.html#a79ab71d32b9f112962007b8dc84c3507">windows_keycodes</a>[whist_keycode]</td></tr>
+<tr class="memitem:a2c1317c0c5e8cd8590e4212d12136017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winapi__input__driver_8c.html#a2c1317c0c5e8cd8590e4212d12136017">GetWindowsKeyCode</a>(whist_keycode)&#160;&#160;&#160;windows_keycodes[whist_keycode]</td></tr>
 <tr class="separator:a2c1317c0c5e8cd8590e4212d12136017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f5cf036b3e33bbbf8dae8893fbcd83e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winapi__input__driver_8c.html#a7f5cf036b3e33bbbf8dae8893fbcd83e">KEYPRESS_MASK</a>&#160;&#160;&#160;0x8000</td></tr>
 <tr class="separator:a7f5cf036b3e33bbbf8dae8893fbcd83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae155e1e686b6e1dcc9e006fb07789532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winapi__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532">create_input_device</a> ()</td></tr>
-<tr class="memdesc:ae155e1e686b6e1dcc9e006fb07789532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an input device struct to receive user actions to be replayed on a server.  <a href="winapi__input__driver_8c.html#ae155e1e686b6e1dcc9e006fb07789532">More...</a><br /></td></tr>
-<tr class="separator:ae155e1e686b6e1dcc9e006fb07789532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436e7f1ba7cd31ca76b754b019d928bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winapi__input__driver_8c.html#a436e7f1ba7cd31ca76b754b019d928bb">create_input_device</a> (void)</td></tr>
+<tr class="memdesc:a436e7f1ba7cd31ca76b754b019d928bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an input device struct to receive user actions to be replayed on a server.  <a href="winapi__input__driver_8c.html#a436e7f1ba7cd31ca76b754b019d928bb">More...</a><br /></td></tr>
+<tr class="separator:a436e7f1ba7cd31ca76b754b019d928bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winapi__input__driver_8c.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">destroy_input_device</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device)</td></tr>
 <tr class="memdesc:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy and free the memory of an input device struct.  <a href="winapi__input__driver_8c.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">More...</a><br /></td></tr>
 <tr class="separator:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,12 +141,6 @@ Functions</h2></td></tr>
 <tr class="separator:a669ecfca5e7aaad9db1f33b392a613c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a3d50e0d683c62c15523fef3ba8e7a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winapi__input__driver_8c.html#a4a3d50e0d683c62c15523fef3ba8e7a3">enter_win_string</a> (enum <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> *keycodes, int len)</td></tr>
 <tr class="separator:a4a3d50e0d683c62c15523fef3ba8e7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a79ab71d32b9f112962007b8dc84c3507"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winapi__input__driver_8c.html#a79ab71d32b9f112962007b8dc84c3507">windows_keycodes</a> [<a class="el" href="whist_8h.html#a61a115e1297596f9885f9a0dbb6a63b7">KEYCODE_UPPERBOUND</a>]</td></tr>
-<tr class="memdesc:a79ab71d32b9f112962007b8dc84c3507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows keycodes for replaying Whist user inputs on server.  <a href="winapi__input__driver_8c.html#a79ab71d32b9f112962007b8dc84c3507">More...</a><br /></td></tr>
-<tr class="separator:a79ab71d32b9f112962007b8dc84c3507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -168,7 +161,7 @@ Usage</h1>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">whist_keycode</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="winapi__input__driver_8c.html#a79ab71d32b9f112962007b8dc84c3507">windows_keycodes</a>[whist_keycode]</td>
+          <td>&#160;&#160;&#160;windows_keycodes[whist_keycode]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -218,8 +211,8 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae155e1e686b6e1dcc9e006fb07789532"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae155e1e686b6e1dcc9e006fb07789532">&#9670;&nbsp;</a></span>create_input_device()</h2>
+<a id="a436e7f1ba7cd31ca76b754b019d928bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436e7f1ba7cd31ca76b754b019d928bb">&#9670;&nbsp;</a></span>create_input_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,6 +220,7 @@ Usage</h1>
         <tr>
           <td class="memname"><a class="el" href="structInputDevice.html">InputDevice</a>* create_input_device </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -702,24 +696,6 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if we ignore the client key state, 0 if we take the client key state </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a79ab71d32b9f112962007b8dc84c3507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79ab71d32b9f112962007b8dc84c3507">&#9670;&nbsp;</a></span>windows_keycodes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int windows_keycodes[<a class="el" href="whist_8h.html#a61a115e1297596f9885f9a0dbb6a63b7">KEYCODE_UPPERBOUND</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Windows keycodes for replaying Whist user inputs on server. </p>
-<p>index is Whist keycode, value is Windows keycode </p>
 
 </div>
 </div>

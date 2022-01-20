@@ -43,6 +43,5 @@ var linuxcursor_8c =
       [ "CROSSHAIR_CURSOR_HASH", "linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768acbe3fdfaaa5d74cfd73639684c87c063", null ]
     ] ],
     [ "get_current_cursor", "linuxcursor_8c.html#adac79748ef15f0780a545d3b0c047986", null ],
-    [ "get_cursor_id", "linuxcursor_8c.html#aab4d52a3aeed2e3ef62ac0c759e42301", null ],
-    [ "init_cursors", "linuxcursor_8c.html#a4df495b481d3b602c8a590693b51703c", null ]
+    [ "init_cursors", "linuxcursor_8c.html#a6bd12f0e51951988813d790d1e1bb484", null ]
 ];

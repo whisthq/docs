@@ -15,8 +15,6 @@ var fec_8c =
     [ "fec_encoder_register_buffer", "fec_8c.html#af8d45fea9c101fa77f55eef426979ff9", null ],
     [ "fec_get_decoded_buffer", "fec_8c.html#a68e2a970d7c3d4b81353174da6809b7a", null ],
     [ "fec_get_encoded_buffers", "fec_8c.html#a685b2d430114a8b257ef3a28a2ceb14b", null ],
-    [ "free_rs_code_table", "fec_8c.html#a34b0af45149bef41ca2273fbff79e485", null ],
     [ "get_num_fec_packets", "fec_8c.html#ac95c4d80f01a85593a7dfd5b4989f2a4", null ],
-    [ "get_rs_code", "fec_8c.html#adcc08c684586d367ab8e837cbe9af2ab", null ],
-    [ "init_fec", "fec_8c.html#a0b17fb5c4682b0e0a3aa266596759368", null ]
+    [ "init_fec", "fec_8c.html#ae853bbe2fc7aa8db4ad35abce80e8dce", null ]
 ];

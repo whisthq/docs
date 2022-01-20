@@ -83,8 +83,7 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">decode.c File Reference</div>  </div>
 </div><!--header-->
@@ -102,25 +101,11 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 Macros</h2></td></tr>
 <tr class="memitem:ab9604aff2a5d55f9963036a266e1eb91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ab9604aff2a5d55f9963036a266e1eb91">SHOW_DECODER_LOGS</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:ab9604aff2a5d55f9963036a266e1eb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab22f9042c8cab794fbf43ab56b286d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ab22f9042c8cab794fbf43ab56b286d2d">NUM_DECODER_TYPES</a>&#160;&#160;&#160;(sizeof(<a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>) / sizeof(<a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>[0]))</td></tr>
+<tr class="memitem:ab22f9042c8cab794fbf43ab56b286d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ab22f9042c8cab794fbf43ab56b286d2d">NUM_DECODER_TYPES</a>&#160;&#160;&#160;(sizeof(decoder_precedence) / sizeof(decoder_precedence[0]))</td></tr>
 <tr class="separator:ab22f9042c8cab794fbf43ab56b286d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acc3d03227fdb2a0b9281d06a18fac9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#acc3d03227fdb2a0b9281d06a18fac9de">set_decoder_opts</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
-<tr class="separator:acc3d03227fdb2a0b9281d06a18fac9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecbd5bf901b4689e39c2b50406bde3f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#aecbd5bf901b4689e39c2b50406bde3f1">hw_decoder_init</a> (AVCodecContext *ctx, const enum AVHWDeviceType type)</td></tr>
-<tr class="separator:aecbd5bf901b4689e39c2b50406bde3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190657db24a19ecbc06305a156c2f1ca"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a190657db24a19ecbc06305a156c2f1ca">match_format</a> (AVCodecContext *ctx, const enum AVPixelFormat *pix_fmts, enum AVPixelFormat match_pix_fmt)</td></tr>
-<tr class="separator:a190657db24a19ecbc06305a156c2f1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62f833af702daca27e921024987fb3a5"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a62f833af702daca27e921024987fb3a5">get_format</a> (AVCodecContext *ctx, const enum AVPixelFormat *pix_fmts)</td></tr>
-<tr class="separator:a62f833af702daca27e921024987fb3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52410082c8bdc9b39a7d8df228c7caf3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a52410082c8bdc9b39a7d8df228c7caf3">try_setup_video_decoder</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
-<tr class="separator:a52410082c8bdc9b39a7d8df228c7caf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a300fe3797438293a2f86900366f062dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a300fe3797438293a2f86900366f062dd">destroy_video_decoder_members</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
-<tr class="separator:a300fe3797438293a2f86900366f062dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a462141beaad16ece4c3dc31c9e043293"><td class="memItemLeft" align="right" valign="top">AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a462141beaad16ece4c3dc31c9e043293">safe_av_frame_alloc</a> ()</td></tr>
-<tr class="separator:a462141beaad16ece4c3dc31c9e043293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ccfebe79578d850afc048e916aba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">create_video_decoder</a> (int width, int height, bool use_hardware, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="memdesc:a20ccfebe79578d850afc048e916aba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the FFmpeg H264 or H265 video decoder, and set the proper video parameters for receiving from the server.  <a href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">More...</a><br /></td></tr>
 <tr class="separator:a20ccfebe79578d850afc048e916aba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,11 +124,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a985c67900df09a3cf893e4ba76d030c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a985c67900df09a3cf893e4ba76d030c7">video_decoder_free_decoded_frame</a> (<a class="el" href="structDecodedFrameData.html">DecodedFrameData</a> *decoded_frame_data)</td></tr>
 <tr class="memdesc:a985c67900df09a3cf893e4ba76d030c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the frame returned by video_decoder_get_last_decoded_frame, Or do nothing if a zero'd struct is passed in.  <a href="decode_8c.html#a985c67900df09a3cf893e4ba76d030c7">More...</a><br /></td></tr>
 <tr class="separator:a985c67900df09a3cf893e4ba76d030c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ac8c9bf0bd41abed7a451183729ea39a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a> [] = { <a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9bac43764b121b87a7d5492c657e5796ab1">DECODE_TYPE_SOFTWARE</a>}</td></tr>
-<tr class="separator:ac8c9bf0bd41abed7a451183729ea39a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -161,7 +141,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NUM_DECODER_TYPES&#160;&#160;&#160;(sizeof(<a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>) / sizeof(<a class="el" href="decode_8c.html#ac8c9bf0bd41abed7a451183729ea39a3">decoder_precedence</a>[0]))</td>
+          <td class="memname">#define NUM_DECODER_TYPES&#160;&#160;&#160;(sizeof(decoder_precedence) / sizeof(decoder_precedence[0]))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -258,167 +238,6 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a300fe3797438293a2f86900366f062dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a300fe3797438293a2f86900366f062dd">&#9670;&nbsp;</a></span>destroy_video_decoder_members()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void destroy_video_decoder_members </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td>
-          <td class="paramname"><em>decoder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a62f833af702daca27e921024987fb3a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62f833af702daca27e921024987fb3a5">&#9670;&nbsp;</a></span>get_format()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum AVPixelFormat get_format </td>
-          <td>(</td>
-          <td class="paramtype">AVCodecContext *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const enum AVPixelFormat *&#160;</td>
-          <td class="paramname"><em>pix_fmts</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aecbd5bf901b4689e39c2b50406bde3f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecbd5bf901b4689e39c2b50406bde3f1">&#9670;&nbsp;</a></span>hw_decoder_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int hw_decoder_init </td>
-          <td>(</td>
-          <td class="paramtype">AVCodecContext *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const enum AVHWDeviceType&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a190657db24a19ecbc06305a156c2f1ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a190657db24a19ecbc06305a156c2f1ca">&#9670;&nbsp;</a></span>match_format()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum AVPixelFormat match_format </td>
-          <td>(</td>
-          <td class="paramtype">AVCodecContext *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const enum AVPixelFormat *&#160;</td>
-          <td class="paramname"><em>pix_fmts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum AVPixelFormat&#160;</td>
-          <td class="paramname"><em>match_pix_fmt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a462141beaad16ece4c3dc31c9e043293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a462141beaad16ece4c3dc31c9e043293">&#9670;&nbsp;</a></span>safe_av_frame_alloc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AVFrame* safe_av_frame_alloc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acc3d03227fdb2a0b9281d06a18fac9de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc3d03227fdb2a0b9281d06a18fac9de">&#9670;&nbsp;</a></span>set_decoder_opts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void set_decoder_opts </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td>
-          <td class="paramname"><em>decoder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a52410082c8bdc9b39a7d8df228c7caf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52410082c8bdc9b39a7d8df228c7caf3">&#9670;&nbsp;</a></span>try_setup_video_decoder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int try_setup_video_decoder </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td>
-          <td class="paramname"><em>decoder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -546,21 +365,6 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ac8c9bf0bd41abed7a451183729ea39a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8c9bf0bd41abed7a451183729ea39a3">&#9670;&nbsp;</a></span>decoder_precedence</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a> decoder_precedence[] = { <a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9bac43764b121b87a7d5492c657e5796ab1">DECODE_TYPE_SOFTWARE</a>}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

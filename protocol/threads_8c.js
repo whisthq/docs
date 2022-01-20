@@ -1,8 +1,8 @@
 var threads_8c =
 [
     [ "whist_broadcast_cond", "threads_8c.html#a8ba2c9ff2d132e66bdd18238bf6cff02", null ],
-    [ "whist_create_cond", "threads_8c.html#a6608fce809c2742a93830d040eea0ac9", null ],
-    [ "whist_create_mutex", "threads_8c.html#a1115df039c0afbf5b8772c02ffc4bf08", null ],
+    [ "whist_create_cond", "threads_8c.html#a5522431ddad671a58f6c1b17d117bccc", null ],
+    [ "whist_create_mutex", "threads_8c.html#a344b7ec7a60cb317c8eba43ff8f739e6", null ],
     [ "whist_create_semaphore", "threads_8c.html#aca90f72fb631347a63885ab6640cb845", null ],
     [ "whist_create_thread", "threads_8c.html#adb966589bbcb5060c1742352f7fee9df", null ],
     [ "whist_destroy_cond", "threads_8c.html#accf861df01894d3473ca8faaf0a83938", null ],
@@ -10,7 +10,7 @@ var threads_8c =
     [ "whist_destroy_semaphore", "threads_8c.html#a80bcec3e51b2a80703b0cbff042456b4", null ],
     [ "whist_detach_thread", "threads_8c.html#a07d93732827bed3bf6107b5e9f0bfd0a", null ],
     [ "whist_get_thread_id", "threads_8c.html#ac25e11beb639abfa163edd1cbd2c16de", null ],
-    [ "whist_init_multithreading", "threads_8c.html#a9b26bcaed6aac45f348828a08a8a8665", null ],
+    [ "whist_init_multithreading", "threads_8c.html#a5cade4228b0827b784005954836fa1fd", null ],
     [ "whist_lock_mutex", "threads_8c.html#af4922365dbafb9468c981a1a16ceffc7", null ],
     [ "whist_post_semaphore", "threads_8c.html#a28f8cf464a1c071bb3992c5754286c1a", null ],
     [ "whist_set_thread_priority", "threads_8c.html#a72d531550fc8b439130e5d6c118267fe", null ],

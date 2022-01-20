@@ -95,9 +95,9 @@ $(document).ready(function(){initNavTree('file__drop_8c.html',''); initResizable
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a21d0089fde41ac7bd4097bd30cd39a7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__drop_8c.html#a21d0089fde41ac7bd4097bd30cd39a7e">init_file_drop_handler</a> ()</td></tr>
-<tr class="memdesc:a21d0089fde41ac7bd4097bd30cd39a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the file drop handler if supported.  <a href="file__drop_8c.html#a21d0089fde41ac7bd4097bd30cd39a7e">More...</a><br /></td></tr>
-<tr class="separator:a21d0089fde41ac7bd4097bd30cd39a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9da52dbec37f6de43b10adc766efddf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__drop_8c.html#ac9da52dbec37f6de43b10adc766efddf">init_file_drop_handler</a> (void)</td></tr>
+<tr class="memdesc:ac9da52dbec37f6de43b10adc766efddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the file drop handler if supported.  <a href="file__drop_8c.html#ac9da52dbec37f6de43b10adc766efddf">More...</a><br /></td></tr>
+<tr class="separator:ac9da52dbec37f6de43b10adc766efddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d6b3072b259592756b6e7ca5cc530f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__drop_8c.html#a61d6b3072b259592756b6e7ca5cc530f">drop_file_into_active_window</a> (<a class="el" href="structTransferringFile.html">TransferringFile</a> *drop_file)</td></tr>
 <tr class="memdesc:a61d6b3072b259592756b6e7ca5cc530f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the XDND protocol to execute a drag and drop of <code>drop_file</code> onto the active X11 window.  <a href="file__drop_8c.html#a61d6b3072b259592756b6e7ca5cc530f">More...</a><br /></td></tr>
 <tr class="separator:a61d6b3072b259592756b6e7ca5cc530f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,9 +107,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8d87e019667d248dfa08dbc5d0bb450e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__drop_8c.html#a8d87e019667d248dfa08dbc5d0bb450e">file_drop_mark_ready</a> (int unique_id)</td></tr>
 <tr class="memdesc:a8d87e019667d248dfa08dbc5d0bb450e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the ready file that indicates that the file has been fully written and the FUSE node is ready.  <a href="file__drop_8c.html#a8d87e019667d248dfa08dbc5d0bb450e">More...</a><br /></td></tr>
 <tr class="separator:a8d87e019667d248dfa08dbc5d0bb450e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f2f1af8ffcdaa19385a4a6fbbbd0dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__drop_8c.html#a98f2f1af8ffcdaa19385a4a6fbbbd0dc">destroy_file_drop_handler</a> ()</td></tr>
-<tr class="memdesc:a98f2f1af8ffcdaa19385a4a6fbbbd0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the file drop handler.  <a href="file__drop_8c.html#a98f2f1af8ffcdaa19385a4a6fbbbd0dc">More...</a><br /></td></tr>
-<tr class="separator:a98f2f1af8ffcdaa19385a4a6fbbbd0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2a8b52e7ce309dbe46fbf7f9df43f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__drop_8c.html#a4f2a8b52e7ce309dbe46fbf7f9df43f8">destroy_file_drop_handler</a> (void)</td></tr>
+<tr class="memdesc:a4f2a8b52e7ce309dbe46fbf7f9df43f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the file drop handler.  <a href="file__drop_8c.html#a4f2a8b52e7ce309dbe46fbf7f9df43f8">More...</a><br /></td></tr>
+<tr class="separator:a4f2a8b52e7ce309dbe46fbf7f9df43f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -117,12 +117,12 @@ Functions</h2></td></tr>
 @brief This file contains all the code for dropping a file into a window.</h1>
 <h1><a class="anchor" id="autotoc_md145"></a>
 Usage</h1>
-<p><a class="el" href="file__drop_8c.html#a21d0089fde41ac7bd4097bd30cd39a7e" title="Initialize the file drop handler if supported.">init_file_drop_handler()</a>;</p>
+<p><a class="el" href="file__drop_8c.html#ac9da52dbec37f6de43b10adc766efddf" title="Initialize the file drop handler if supported.">init_file_drop_handler()</a>;</p>
 <p>TransferringFile* drop_file; &mdash; GET FILE INFO &mdash; drop_file_into_active_window(drop_file);</p>
-<p><a class="el" href="file__drop_8c.html#a98f2f1af8ffcdaa19385a4a6fbbbd0dc" title="Clean up the file drop handler.">destroy_file_drop_handler()</a>; </p>
+<p><a class="el" href="file__drop_8c.html#a4f2a8b52e7ce309dbe46fbf7f9df43f8" title="Clean up the file drop handler.">destroy_file_drop_handler()</a>; </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a98f2f1af8ffcdaa19385a4a6fbbbd0dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98f2f1af8ffcdaa19385a4a6fbbbd0dc">&#9670;&nbsp;</a></span>destroy_file_drop_handler()</h2>
+<a id="a4f2a8b52e7ce309dbe46fbf7f9df43f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f2a8b52e7ce309dbe46fbf7f9df43f8">&#9670;&nbsp;</a></span>destroy_file_drop_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,6 +130,7 @@ Usage</h1>
         <tr>
           <td class="memname">void destroy_file_drop_handler </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -234,8 +235,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a21d0089fde41ac7bd4097bd30cd39a7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21d0089fde41ac7bd4097bd30cd39a7e">&#9670;&nbsp;</a></span>init_file_drop_handler()</h2>
+<a id="ac9da52dbec37f6de43b10adc766efddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9da52dbec37f6de43b10adc766efddf">&#9670;&nbsp;</a></span>init_file_drop_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,6 +244,7 @@ Usage</h1>
         <tr>
           <td class="memname">bool init_file_drop_handler </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

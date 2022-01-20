@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('audiocapture_8h.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a85321c477a1aa1a1fd700a67a4772ff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioDevice.html">AudioDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audiocapture_8h.html#a85321c477a1aa1a1fd700a67a4772ff8">create_audio_device</a> ()</td></tr>
-<tr class="memdesc:a85321c477a1aa1a1fd700a67a4772ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an audio device to capture audio on Windows or Linux Ubuntu.  <a href="audiocapture_8h.html#a85321c477a1aa1a1fd700a67a4772ff8">More...</a><br /></td></tr>
-<tr class="separator:a85321c477a1aa1a1fd700a67a4772ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86d119c556225b71a0045838451de66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioDevice.html">AudioDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audiocapture_8h.html#ad86d119c556225b71a0045838451de66">create_audio_device</a> (void)</td></tr>
+<tr class="memdesc:ad86d119c556225b71a0045838451de66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an audio device to capture audio on Windows or Linux Ubuntu.  <a href="audiocapture_8h.html#ad86d119c556225b71a0045838451de66">More...</a><br /></td></tr>
+<tr class="separator:ad86d119c556225b71a0045838451de66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae340600cbb065245f427f7b023aeed9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audiocapture_8h.html#ae340600cbb065245f427f7b023aeed9b">start_audio_device</a> (<a class="el" href="structAudioDevice.html">AudioDevice</a> *audio_device)</td></tr>
 <tr class="memdesc:ae340600cbb065245f427f7b023aeed9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the audio device to start capturing audio.  <a href="audiocapture_8h.html#ae340600cbb065245f427f7b023aeed9b">More...</a><br /></td></tr>
 <tr class="separator:ae340600cbb065245f427f7b023aeed9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,8 +130,8 @@ dynamically toggling Windows and Linux.</h1>
 Usage</h1>
 <p>Audio is captured as a stream. You first need to create an audio device via CreateAudioDevice. You can then start it via StartAudioDevice and it will capture all audio data it finds. It captures nothing if there is no audio playing. You can use GetNextPacket to retrieve the next packet of audio data from the stream,, and GetBuffer to grab the data. Packets will keep coming whether you grab them or not. Once you are done, you need to destroy the audio device via DestroyAudioDevice. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a85321c477a1aa1a1fd700a67a4772ff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85321c477a1aa1a1fd700a67a4772ff8">&#9670;&nbsp;</a></span>create_audio_device()</h2>
+<a id="ad86d119c556225b71a0045838451de66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86d119c556225b71a0045838451de66">&#9670;&nbsp;</a></span>create_audio_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,6 +139,7 @@ Usage</h1>
         <tr>
           <td class="memname"><a class="el" href="structAudioDevice.html">AudioDevice</a>* create_audio_device </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

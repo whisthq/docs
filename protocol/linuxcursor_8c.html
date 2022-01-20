@@ -161,12 +161,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4df495b481d3b602c8a590693b51703c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linuxcursor_8c.html#a4df495b481d3b602c8a590693b51703c">init_cursors</a> ()</td></tr>
-<tr class="memdesc:a4df495b481d3b602c8a590693b51703c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all cursors.  <a href="linuxcursor_8c.html#a4df495b481d3b602c8a590693b51703c">More...</a><br /></td></tr>
-<tr class="separator:a4df495b481d3b602c8a590693b51703c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab4d52a3aeed2e3ef62ac0c759e42301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cursor_8h.html#acbd9a23a669810691b3befd88521249f">WhistCursorID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linuxcursor_8c.html#aab4d52a3aeed2e3ef62ac0c759e42301">get_cursor_id</a> (XFixesCursorImage *cursor_image)</td></tr>
-<tr class="memdesc:aab4d52a3aeed2e3ef62ac0c759e42301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matches the cursor image from the screen to a WhistCursorID.  <a href="linuxcursor_8c.html#aab4d52a3aeed2e3ef62ac0c759e42301">More...</a><br /></td></tr>
-<tr class="separator:aab4d52a3aeed2e3ef62ac0c759e42301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd12f0e51951988813d790d1e1bb484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linuxcursor_8c.html#a6bd12f0e51951988813d790d1e1bb484">init_cursors</a> (void)</td></tr>
+<tr class="memdesc:a6bd12f0e51951988813d790d1e1bb484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all cursors.  <a href="linuxcursor_8c.html#a6bd12f0e51951988813d790d1e1bb484">More...</a><br /></td></tr>
+<tr class="separator:a6bd12f0e51951988813d790d1e1bb484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac79748ef15f0780a545d3b0c047986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linuxcursor_8c.html#adac79748ef15f0780a545d3b0c047986">get_current_cursor</a> (<a class="el" href="structWhistCursorImage.html">WhistCursorImage</a> *image)</td></tr>
 <tr class="memdesc:adac79748ef15f0780a545d3b0c047986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current cursor image.  <a href="linuxcursor_8c.html#adac79748ef15f0780a545d3b0c047986">More...</a><br /></td></tr>
 <tr class="separator:adac79748ef15f0780a545d3b0c047986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,36 +273,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aab4d52a3aeed2e3ef62ac0c759e42301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab4d52a3aeed2e3ef62ac0c759e42301">&#9670;&nbsp;</a></span>get_cursor_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="cursor_8h.html#acbd9a23a669810691b3befd88521249f">WhistCursorID</a> get_cursor_id </td>
-          <td>(</td>
-          <td class="paramtype">XFixesCursorImage *&#160;</td>
-          <td class="paramname"><em>cursor_image</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Matches the cursor image from the screen to a WhistCursorID. </p>
-<p>TODO: (abecohen) X11 cursor fonts are overridden by the running application. In this case, chrome will override the cursor library and use its own. If we can find where that cursor file is located, get X11 to use that as its theme, we may be able to just match the cursor via the name parameter in cursor_image.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cursor_image</td><td>the cursor image from XFixesGetCursorImage </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WhistCursorID, INVALID when no matching WhistCursorID found </dd></dl>
-
-</div>
-</div>
-<a id="a4df495b481d3b602c8a590693b51703c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4df495b481d3b602c8a590693b51703c">&#9670;&nbsp;</a></span>init_cursors()</h2>
+<a id="a6bd12f0e51951988813d790d1e1bb484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bd12f0e51951988813d790d1e1bb484">&#9670;&nbsp;</a></span>init_cursors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,6 +282,7 @@ Usage</h1>
         <tr>
           <td class="memname">void init_cursors </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
