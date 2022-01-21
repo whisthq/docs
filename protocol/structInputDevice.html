@@ -88,159 +88,195 @@ $(document).ready(function(){initNavTree('structInputDevice.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="uinput__input__driver_8h_source.html">uinput_input_driver.h</a>&gt;</code></p>
+<p>base <a class="el" href="structInputDevice.html" title="base InputDevice">InputDevice</a>  
+ <a href="structInputDevice.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="input_8h_source.html">input.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a3cf568b6e17d58b12beeb7098c7c0527"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a3cf568b6e17d58b12beeb7098c7c0527">fd_absmouse</a></td></tr>
-<tr class="separator:a3cf568b6e17d58b12beeb7098c7c0527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d3c4e4761cc5549826c66ace98566e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a1d3c4e4761cc5549826c66ace98566e7">fd_relmouse</a></td></tr>
-<tr class="separator:a1d3c4e4761cc5549826c66ace98566e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fee696158396dfffd2f6fb56d578baf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf">fd_keyboard</a></td></tr>
-<tr class="separator:a5fee696158396dfffd2f6fb56d578baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b8af4441a1ba411ee14e5f8481aa345"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345">keyboard_state</a> [<a class="el" href="whist_8h.html#a61a115e1297596f9885f9a0dbb6a63b7">KEYCODE_UPPERBOUND</a>]</td></tr>
-<tr class="separator:a5b8af4441a1ba411ee14e5f8481aa345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1e5788638481214330b017d325ed424"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#ab1e5788638481214330b017d325ed424">caps_lock</a></td></tr>
-<tr class="separator:ab1e5788638481214330b017d325ed424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adff9edaffeec725015ee98790864532a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#adff9edaffeec725015ee98790864532a">num_lock</a></td></tr>
-<tr class="separator:adff9edaffeec725015ee98790864532a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2884b4093f9359cea2435e600461164"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#aa2884b4093f9359cea2435e600461164">mouse_has_moved</a></td></tr>
-<tr class="separator:aa2884b4093f9359cea2435e600461164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa4d386a10f209982638cc8bd1e79fb"><td class="memItemLeft" align="right" valign="top">Display *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a4fa4d386a10f209982638cc8bd1e79fb">display</a></td></tr>
-<tr class="separator:a4fa4d386a10f209982638cc8bd1e79fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244a8cb189577e83579480f90143f96f"><td class="memItemLeft" align="right" valign="top">Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a244a8cb189577e83579480f90143f96f">root</a></td></tr>
-<tr class="separator:a244a8cb189577e83579480f90143f96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa00d68759f1577b838f2cf7c7107bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">InputDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a4fa00d68759f1577b838f2cf7c7107bc">device_type</a></td></tr>
+<tr class="separator:a4fa00d68759f1577b838f2cf7c7107bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c3a90ceb67031ce709cae79143b9a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#aefc7bef812e4dbcaf260b2e009e8b1dd">InputDeviceGetKeyboardKeyStateFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#ab5c3a90ceb67031ce709cae79143b9a5">get_keyboard_key_state</a></td></tr>
+<tr class="separator:ab5c3a90ceb67031ce709cae79143b9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd92c4c04933141e3784b84435745434"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#ac240633f53769f7bf6595539a4b3b36d">InputDeviceGetKeyboardModifierStateFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#afd92c4c04933141e3784b84435745434">get_keyboard_modifier_state</a></td></tr>
+<tr class="separator:afd92c4c04933141e3784b84435745434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322dc6da4585c96bff07c5440cb2325d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#a14d0ea58397bf2e9aa0716d2f32046af">InputDeviceIgnoreKeyStateFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a322dc6da4585c96bff07c5440cb2325d">ignore_key_state</a></td></tr>
+<tr class="separator:a322dc6da4585c96bff07c5440cb2325d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6e555a8bbadab4469766e43fcb63ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#a7b04c975592e47841b78128e8c4aee74">InputDeviceEmitKeyEventFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#afb6e555a8bbadab4469766e43fcb63ac">emit_key_event</a></td></tr>
+<tr class="separator:afb6e555a8bbadab4469766e43fcb63ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806774bab2feb80399e101a29f4f707e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#a9e2b20d34f06fdd159862e7540ac5358">InputDeviceEmitMouseMotionEventFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a806774bab2feb80399e101a29f4f707e">emit_mouse_motion_event</a></td></tr>
+<tr class="separator:a806774bab2feb80399e101a29f4f707e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1040f56ee63c7908b3c5e5fe3e74619"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#a46faed06f2ff8c4918f341ad4ab64704">InputDeviceEmitMouseButtonEventFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#ac1040f56ee63c7908b3c5e5fe3e74619">emit_mouse_button_event</a></td></tr>
+<tr class="separator:ac1040f56ee63c7908b3c5e5fe3e74619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70434199b458179138e987128954e939"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#ac40884c78b2ae6cf5d3e5856923143d2">InputDeviceEmitLowResMouseWheelEventFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a70434199b458179138e987128954e939">emit_low_res_mouse_wheel_event</a></td></tr>
+<tr class="separator:a70434199b458179138e987128954e939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5ec0e96d37e2d644a9099ed9312e82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#a4d03dc9798d9f005cca86b9d3a1f2571">InputDeviceEmitHighResMouseWheelEventFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a8f5ec0e96d37e2d644a9099ed9312e82">emit_high_res_mouse_wheel_event</a></td></tr>
+<tr class="separator:a8f5ec0e96d37e2d644a9099ed9312e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c69b0e4689e2b1e2809d697c8c86f20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#a953fa92042c38f4a967678343075d63b">InputDeviceEmitMultiGestureEventFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a6c69b0e4689e2b1e2809d697c8c86f20">emit_multigesture_event</a></td></tr>
+<tr class="separator:a6c69b0e4689e2b1e2809d697c8c86f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90427693ff669f98a1f9e5ea33375c35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="input_8h.html#a0c05e2cc3118cd22a2b6a614135ecb5e">InputDeviceDestroyFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html#a90427693ff669f98a1f9e5ea33375c35">destroy</a></td></tr>
+<tr class="separator:a90427693ff669f98a1f9e5ea33375c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="ab1e5788638481214330b017d325ed424"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1e5788638481214330b017d325ed424">&#9670;&nbsp;</a></span>caps_lock</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>base <a class="el" href="structInputDevice.html" title="base InputDevice">InputDevice</a> </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a90427693ff669f98a1f9e5ea33375c35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90427693ff669f98a1f9e5ea33375c35">&#9670;&nbsp;</a></span>destroy</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool InputDevice::caps_lock</td>
+          <td class="memname"><a class="el" href="input_8h.html#a0c05e2cc3118cd22a2b6a614135ecb5e">InputDeviceDestroyFn</a> InputDevice::destroy</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4fa4d386a10f209982638cc8bd1e79fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fa4d386a10f209982638cc8bd1e79fb">&#9670;&nbsp;</a></span>display</h2>
+<a id="a4fa00d68759f1577b838f2cf7c7107bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa00d68759f1577b838f2cf7c7107bc">&#9670;&nbsp;</a></span>device_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Display* InputDevice::display</td>
+          <td class="memname"><a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">InputDeviceType</a> InputDevice::device_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a3cf568b6e17d58b12beeb7098c7c0527"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cf568b6e17d58b12beeb7098c7c0527">&#9670;&nbsp;</a></span>fd_absmouse</h2>
+<a id="a8f5ec0e96d37e2d644a9099ed9312e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f5ec0e96d37e2d644a9099ed9312e82">&#9670;&nbsp;</a></span>emit_high_res_mouse_wheel_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int InputDevice::fd_absmouse</td>
+          <td class="memname"><a class="el" href="input_8h.html#a4d03dc9798d9f005cca86b9d3a1f2571">InputDeviceEmitHighResMouseWheelEventFn</a> InputDevice::emit_high_res_mouse_wheel_event</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5fee696158396dfffd2f6fb56d578baf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fee696158396dfffd2f6fb56d578baf">&#9670;&nbsp;</a></span>fd_keyboard</h2>
+<a id="afb6e555a8bbadab4469766e43fcb63ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6e555a8bbadab4469766e43fcb63ac">&#9670;&nbsp;</a></span>emit_key_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int InputDevice::fd_keyboard</td>
+          <td class="memname"><a class="el" href="input_8h.html#a7b04c975592e47841b78128e8c4aee74">InputDeviceEmitKeyEventFn</a> InputDevice::emit_key_event</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a1d3c4e4761cc5549826c66ace98566e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d3c4e4761cc5549826c66ace98566e7">&#9670;&nbsp;</a></span>fd_relmouse</h2>
+<a id="a70434199b458179138e987128954e939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70434199b458179138e987128954e939">&#9670;&nbsp;</a></span>emit_low_res_mouse_wheel_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int InputDevice::fd_relmouse</td>
+          <td class="memname"><a class="el" href="input_8h.html#ac40884c78b2ae6cf5d3e5856923143d2">InputDeviceEmitLowResMouseWheelEventFn</a> InputDevice::emit_low_res_mouse_wheel_event</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5b8af4441a1ba411ee14e5f8481aa345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b8af4441a1ba411ee14e5f8481aa345">&#9670;&nbsp;</a></span>keyboard_state</h2>
+<a id="ac1040f56ee63c7908b3c5e5fe3e74619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1040f56ee63c7908b3c5e5fe3e74619">&#9670;&nbsp;</a></span>emit_mouse_button_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int InputDevice::keyboard_state</td>
+          <td class="memname"><a class="el" href="input_8h.html#a46faed06f2ff8c4918f341ad4ab64704">InputDeviceEmitMouseButtonEventFn</a> InputDevice::emit_mouse_button_event</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa2884b4093f9359cea2435e600461164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2884b4093f9359cea2435e600461164">&#9670;&nbsp;</a></span>mouse_has_moved</h2>
+<a id="a806774bab2feb80399e101a29f4f707e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806774bab2feb80399e101a29f4f707e">&#9670;&nbsp;</a></span>emit_mouse_motion_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool InputDevice::mouse_has_moved</td>
+          <td class="memname"><a class="el" href="input_8h.html#a9e2b20d34f06fdd159862e7540ac5358">InputDeviceEmitMouseMotionEventFn</a> InputDevice::emit_mouse_motion_event</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="adff9edaffeec725015ee98790864532a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adff9edaffeec725015ee98790864532a">&#9670;&nbsp;</a></span>num_lock</h2>
+<a id="a6c69b0e4689e2b1e2809d697c8c86f20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c69b0e4689e2b1e2809d697c8c86f20">&#9670;&nbsp;</a></span>emit_multigesture_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool InputDevice::num_lock</td>
+          <td class="memname"><a class="el" href="input_8h.html#a953fa92042c38f4a967678343075d63b">InputDeviceEmitMultiGestureEventFn</a> InputDevice::emit_multigesture_event</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a244a8cb189577e83579480f90143f96f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a244a8cb189577e83579480f90143f96f">&#9670;&nbsp;</a></span>root</h2>
+<a id="ab5c3a90ceb67031ce709cae79143b9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c3a90ceb67031ce709cae79143b9a5">&#9670;&nbsp;</a></span>get_keyboard_key_state</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Window InputDevice::root</td>
+          <td class="memname"><a class="el" href="input_8h.html#aefc7bef812e4dbcaf260b2e009e8b1dd">InputDeviceGetKeyboardKeyStateFn</a> InputDevice::get_keyboard_key_state</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li>whist/input/<a class="el" href="uinput__input__driver_8h_source.html">uinput_input_driver.h</a></li>
-<li>whist/input/<a class="el" href="xtest__input__driver_8h_source.html">xtest_input_driver.h</a></li>
+<a id="afd92c4c04933141e3784b84435745434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd92c4c04933141e3784b84435745434">&#9670;&nbsp;</a></span>get_keyboard_modifier_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="input_8h.html#ac240633f53769f7bf6595539a4b3b36d">InputDeviceGetKeyboardModifierStateFn</a> InputDevice::get_keyboard_modifier_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a322dc6da4585c96bff07c5440cb2325d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322dc6da4585c96bff07c5440cb2325d">&#9670;&nbsp;</a></span>ignore_key_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="input_8h.html#a14d0ea58397bf2e9aa0716d2f32046af">InputDeviceIgnoreKeyStateFn</a> InputDevice::ignore_key_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>whist/input/<a class="el" href="input_8h_source.html">input.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

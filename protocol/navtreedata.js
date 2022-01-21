@@ -89,16 +89,16 @@ var NAVTREEINDEX =
 "client_8h.html",
 "cursor_8h.html#acbd9a23a669810691b3befd88521249fad9ae8c0abd60a332831fc045d4d59200",
 "functions_vars_i.html",
-"linuxcapture_8c.html#aa962953cfc3fdb9ed34703ab4a9afe42",
-"lodepng_8h.html#ad52897a6aecee7dde053c468c6bedda2",
-"ringbuffer_8c.html#ae2bcbf05a79de1a8a42492a8e5169c22",
-"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55baeb3563683b3a0fc7176a7bfb9a0c6995",
-"structInputDevice.html#a244a8cb189577e83579480f90143f96f",
-"structSocketContextData.html",
-"structWhistRenderer.html#a43207d1dae6eb773ef861afc90ac886c",
-"uinput__input__driver_8c.html#a669ecfca5e7aaad9db1f33b392a613c7",
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba08a34812a9e004d02bd110aefb077081",
-"whistgetopt_8h.html#a9e4dd83987628ef30baf79370993f55a"
+"input_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7",
+"lodepng_8h.html#aab7a41a03154aa8d9ef65f2d434641b6",
+"renderer_8h.html",
+"server_2video_8c.html#ad846e33fa77d9246e697aa1142e2bd5c",
+"structFrameData.html#a85439ab4bc5294bf3d4a0e681b72fa9c",
+"structRWLock.html",
+"structWhistKeyboardMessage.html#aef9959093210638b97b2ecd11bb212f2",
+"threads_8h.html#af474288fd6c797f86d80dc32476bd86d",
+"whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a958702106aca85abadfa7e016b678a9e",
+"whist__memory_8h.html#a4834f7c2ad3291b85f97541702be50ec"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

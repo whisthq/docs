@@ -82,6 +82,9 @@ $(document).ready(function(){initNavTree('input_8h.html',''); initResizable(); }
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">input.h File Reference</div>  </div>
@@ -90,12 +93,86 @@ $(document).ready(function(){initNavTree('input_8h.html',''); initResizable(); }
 
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="input__driver_8h_source.html">input_driver.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 </div>
 <p><a href="input_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInputDevice.html">InputDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base <a class="el" href="structInputDevice.html" title="base InputDevice">InputDevice</a>  <a href="structInputDevice.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a6a1dbc5faad2bff5d15369a25ff9f142"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structInputDevice.html">InputDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a6a1dbc5faad2bff5d15369a25ff9f142">InputDevice</a></td></tr>
+<tr class="separator:a6a1dbc5faad2bff5d15369a25ff9f142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac240633f53769f7bf6595539a4b3b36d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ac240633f53769f7bf6595539a4b3b36d">InputDeviceGetKeyboardModifierStateFn</a>) (<a class="el" href="structInputDevice.html">InputDevice</a> *dev, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> keycode)</td></tr>
+<tr class="separator:ac240633f53769f7bf6595539a4b3b36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc7bef812e4dbcaf260b2e009e8b1dd"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#aefc7bef812e4dbcaf260b2e009e8b1dd">InputDeviceGetKeyboardKeyStateFn</a>) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> keycode)</td></tr>
+<tr class="separator:aefc7bef812e4dbcaf260b2e009e8b1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d0ea58397bf2e9aa0716d2f32046af"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a14d0ea58397bf2e9aa0716d2f32046af">InputDeviceIgnoreKeyStateFn</a>) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode, bool <a class="el" href="sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48">active_pinch</a>)</td></tr>
+<tr class="separator:a14d0ea58397bf2e9aa0716d2f32046af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b04c975592e47841b78128e8c4aee74"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a7b04c975592e47841b78128e8c4aee74">InputDeviceEmitKeyEventFn</a>) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode, int pressed)</td></tr>
+<tr class="separator:a7b04c975592e47841b78128e8c4aee74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2b20d34f06fdd159862e7540ac5358"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a9e2b20d34f06fdd159862e7540ac5358">InputDeviceEmitMouseMotionEventFn</a>) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, int32_t x, int32_t y, int relative)</td></tr>
+<tr class="separator:a9e2b20d34f06fdd159862e7540ac5358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46faed06f2ff8c4918f341ad4ab64704"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a46faed06f2ff8c4918f341ad4ab64704">InputDeviceEmitMouseButtonEventFn</a>) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#afa47769b22f4e68bdbf79565f9852032">WhistMouseButton</a> button, int pressed)</td></tr>
+<tr class="separator:a46faed06f2ff8c4918f341ad4ab64704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40884c78b2ae6cf5d3e5856923143d2"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ac40884c78b2ae6cf5d3e5856923143d2">InputDeviceEmitLowResMouseWheelEventFn</a>) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, int32_t x, int32_t y)</td></tr>
+<tr class="separator:ac40884c78b2ae6cf5d3e5856923143d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d03dc9798d9f005cca86b9d3a1f2571"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a4d03dc9798d9f005cca86b9d3a1f2571">InputDeviceEmitHighResMouseWheelEventFn</a>) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float x, float y)</td></tr>
+<tr class="separator:a4d03dc9798d9f005cca86b9d3a1f2571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953fa92042c38f4a967678343075d63b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a953fa92042c38f4a967678343075d63b">InputDeviceEmitMultiGestureEventFn</a>) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float d_theta, float d_dist, <a class="el" href="whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153">WhistMultigestureType</a> gesture_type, bool active_gesture)</td></tr>
+<tr class="separator:a953fa92042c38f4a967678343075d63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c05e2cc3118cd22a2b6a614135ecb5e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a0c05e2cc3118cd22a2b6a614135ecb5e">InputDeviceDestroyFn</a>) ()</td></tr>
+<tr class="separator:a0c05e2cc3118cd22a2b6a614135ecb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ac9348deae9297ebe302759b9171a75d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">InputDeviceType</a> { <a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0a23e454c0b0addb41b9375863ecd983fa">WHIST_INPUT_DEVICE_XTEST</a>, 
+<a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0a66daed792d689e06e78bfaffd4367254">WHIST_INPUT_DEVICE_UINPUT</a>, 
+<a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0a23fb4b0f4211757addd078a60509227a">WHIST_INPUT_DEVICE_WIN32</a>, 
+<a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0a6ae4bde72bc7fbd84260f34a7377ff67">WHIST_INPUT_DEVICE_WESTON</a>
+ }</td></tr>
+<tr class="memdesc:ac9348deae9297ebe302759b9171a75d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of <a class="el" href="structInputDevice.html" title="base InputDevice">InputDevice</a>  <a href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">More...</a><br /></td></tr>
+<tr class="separator:ac9348deae9297ebe302759b9171a75d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a258d904a706388022e32b82aec4baad2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a258d904a706388022e32b82aec4baad2">create_input_device</a> (<a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">InputDeviceType</a> kind)</td></tr>
+<tr class="memdesc:a258d904a706388022e32b82aec4baad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an input device struct to receive user actions to be replayed on a server.  <a href="input_8h.html#a258d904a706388022e32b82aec4baad2">More...</a><br /></td></tr>
+<tr class="separator:a258d904a706388022e32b82aec4baad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">destroy_input_device</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device)</td></tr>
+<tr class="memdesc:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy and free the memory of an input device struct.  <a href="input_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">More...</a><br /></td></tr>
+<tr class="separator:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858ccae3f36f88e26fa4aa62de7d522a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a858ccae3f36f88e26fa4aa62de7d522a">get_keyboard_modifier_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode)</td></tr>
+<tr class="memdesc:a858ccae3f36f88e26fa4aa62de7d522a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the active/inactive state of a key modifier (caps lock, num lock, etc.)  <a href="input_8h.html#a858ccae3f36f88e26fa4aa62de7d522a">More...</a><br /></td></tr>
+<tr class="separator:a858ccae3f36f88e26fa4aa62de7d522a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1b945261b8a7ad602f0368c2bd0c4d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#aac1b945261b8a7ad602f0368c2bd0c4d">get_keyboard_key_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode)</td></tr>
+<tr class="memdesc:aac1b945261b8a7ad602f0368c2bd0c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pressed/unpressed state of a keyboard key.  <a href="input_8h.html#aac1b945261b8a7ad602f0368c2bd0c4d">More...</a><br /></td></tr>
+<tr class="separator:aac1b945261b8a7ad602f0368c2bd0c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73b454cce63412dd6f829e91dc02072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ac73b454cce63412dd6f829e91dc02072">ignore_key_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode, bool <a class="el" href="sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48">active_pinch</a>)</td></tr>
+<tr class="memdesc:ac73b454cce63412dd6f829e91dc02072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether to ignore the client key state.  <a href="input_8h.html#ac73b454cce63412dd6f829e91dc02072">More...</a><br /></td></tr>
+<tr class="separator:ac73b454cce63412dd6f829e91dc02072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20354ac9fa2cbeac2a1067ef9f79b06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ae20354ac9fa2cbeac2a1067ef9f79b06">emit_key_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode, int pressed)</td></tr>
+<tr class="memdesc:ae20354ac9fa2cbeac2a1067ef9f79b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a keyboard press/unpress event.  <a href="input_8h.html#ae20354ac9fa2cbeac2a1067ef9f79b06">More...</a><br /></td></tr>
+<tr class="separator:ae20354ac9fa2cbeac2a1067ef9f79b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a20be24877768539ac4cb85fc4a190"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ac8a20be24877768539ac4cb85fc4a190">emit_mouse_motion_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, int32_t x, int32_t y, int relative)</td></tr>
+<tr class="memdesc:ac8a20be24877768539ac4cb85fc4a190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a relative/absolute mouse motion event.  <a href="input_8h.html#ac8a20be24877768539ac4cb85fc4a190">More...</a><br /></td></tr>
+<tr class="separator:ac8a20be24877768539ac4cb85fc4a190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6318f9a9f9816b21cf90962162f9f437"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a6318f9a9f9816b21cf90962162f9f437">emit_mouse_button_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#afa47769b22f4e68bdbf79565f9852032">WhistMouseButton</a> button, int pressed)</td></tr>
+<tr class="memdesc:a6318f9a9f9816b21cf90962162f9f437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a mouse button press/unpress event.  <a href="input_8h.html#a6318f9a9f9816b21cf90962162f9f437">More...</a><br /></td></tr>
+<tr class="separator:a6318f9a9f9816b21cf90962162f9f437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc9755bb1311b40ecb6432bc0d1a58a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a5bc9755bb1311b40ecb6432bc0d1a58a">emit_low_res_mouse_wheel_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, int32_t x, int32_t y)</td></tr>
+<tr class="memdesc:a5bc9755bb1311b40ecb6432bc0d1a58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a low-resolution vertical or horizontal mouse scroll event, for click-wheel mouse inputs.  <a href="input_8h.html#a5bc9755bb1311b40ecb6432bc0d1a58a">More...</a><br /></td></tr>
+<tr class="separator:a5bc9755bb1311b40ecb6432bc0d1a58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d952af97dc08e94a465fc1eb9934c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a68d952af97dc08e94a465fc1eb9934c7">emit_high_res_mouse_wheel_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float x, float y)</td></tr>
+<tr class="memdesc:a68d952af97dc08e94a465fc1eb9934c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a high-resolution vertical or horizontal mouse scroll event, for trackpads or smooth mouse wheels.  <a href="input_8h.html#a68d952af97dc08e94a465fc1eb9934c7">More...</a><br /></td></tr>
+<tr class="separator:a68d952af97dc08e94a465fc1eb9934c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669ecfca5e7aaad9db1f33b392a613c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a669ecfca5e7aaad9db1f33b392a613c7">emit_multigesture_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float d_theta, float d_dist, <a class="el" href="whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153">WhistMultigestureType</a> gesture_type, bool active_gesture)</td></tr>
+<tr class="memdesc:a669ecfca5e7aaad9db1f33b392a613c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a trackpad multigesture event (e.g.  <a href="input_8h.html#a669ecfca5e7aaad9db1f33b392a613c7">More...</a><br /></td></tr>
+<tr class="separator:a669ecfca5e7aaad9db1f33b392a613c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd8b658314de05df828b42e6f7bf4b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#acd8b658314de05df828b42e6f7bf4b63">reset_input</a> (<a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4">WhistOSType</a> os_type)</td></tr>
 <tr class="memdesc:acd8b658314de05df828b42e6f7bf4b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input system.  <a href="input_8h.html#acd8b658314de05df828b42e6f7bf4b63">More...</a><br /></td></tr>
 <tr class="separator:acd8b658314de05df828b42e6f7bf4b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,7 +194,651 @@ between Windows and Linux servers.</h1>
 <h1><a class="anchor" id="autotoc_md155"></a>
 Usage</h1>
 <p>Toggles dynamically between input receiving on Windows or Linux Ubuntu computers. You can create an input device to receive input (keystrokes, mouse clicks, etc.) via CreateInputDevice. You can then send input to the Windows OS via ReplayUserInput, and use UpdateKeyboardState to sync keyboard state between local and remote computers (say, sync them to both have CapsLock activated). Lastly, you can input an array of keycodes using <code>InputKeycodes</code>. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a6a1dbc5faad2bff5d15369a25ff9f142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a1dbc5faad2bff5d15369a25ff9f142">&#9670;&nbsp;</a></span>InputDevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structInputDevice.html">InputDevice</a> <a class="el" href="structInputDevice.html">InputDevice</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c05e2cc3118cd22a2b6a614135ecb5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c05e2cc3118cd22a2b6a614135ecb5e">&#9670;&nbsp;</a></span>InputDeviceDestroyFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* InputDeviceDestroyFn) ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d03dc9798d9f005cca86b9d3a1f2571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d03dc9798d9f005cca86b9d3a1f2571">&#9670;&nbsp;</a></span>InputDeviceEmitHighResMouseWheelEventFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* InputDeviceEmitHighResMouseWheelEventFn) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float x, float y)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b04c975592e47841b78128e8c4aee74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b04c975592e47841b78128e8c4aee74">&#9670;&nbsp;</a></span>InputDeviceEmitKeyEventFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* InputDeviceEmitKeyEventFn) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode, int pressed)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac40884c78b2ae6cf5d3e5856923143d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40884c78b2ae6cf5d3e5856923143d2">&#9670;&nbsp;</a></span>InputDeviceEmitLowResMouseWheelEventFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* InputDeviceEmitLowResMouseWheelEventFn) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, int32_t x, int32_t y)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46faed06f2ff8c4918f341ad4ab64704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46faed06f2ff8c4918f341ad4ab64704">&#9670;&nbsp;</a></span>InputDeviceEmitMouseButtonEventFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* InputDeviceEmitMouseButtonEventFn) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#afa47769b22f4e68bdbf79565f9852032">WhistMouseButton</a> button, int pressed)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e2b20d34f06fdd159862e7540ac5358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2b20d34f06fdd159862e7540ac5358">&#9670;&nbsp;</a></span>InputDeviceEmitMouseMotionEventFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* InputDeviceEmitMouseMotionEventFn) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, int32_t x, int32_t y, int relative)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a953fa92042c38f4a967678343075d63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953fa92042c38f4a967678343075d63b">&#9670;&nbsp;</a></span>InputDeviceEmitMultiGestureEventFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* InputDeviceEmitMultiGestureEventFn) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, float d_theta, float d_dist, <a class="el" href="whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153">WhistMultigestureType</a> gesture_type, bool active_gesture)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefc7bef812e4dbcaf260b2e009e8b1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc7bef812e4dbcaf260b2e009e8b1dd">&#9670;&nbsp;</a></span>InputDeviceGetKeyboardKeyStateFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* InputDeviceGetKeyboardKeyStateFn) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> keycode)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac240633f53769f7bf6595539a4b3b36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac240633f53769f7bf6595539a4b3b36d">&#9670;&nbsp;</a></span>InputDeviceGetKeyboardModifierStateFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* InputDeviceGetKeyboardModifierStateFn) (<a class="el" href="structInputDevice.html">InputDevice</a> *dev, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> keycode)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14d0ea58397bf2e9aa0716d2f32046af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d0ea58397bf2e9aa0716d2f32046af">&#9670;&nbsp;</a></span>InputDeviceIgnoreKeyStateFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* InputDeviceIgnoreKeyStateFn) (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device, <a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> whist_keycode, bool <a class="el" href="sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48">active_pinch</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ac9348deae9297ebe302759b9171a75d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9348deae9297ebe302759b9171a75d0">&#9670;&nbsp;</a></span>InputDeviceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">InputDeviceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>type of <a class="el" href="structInputDevice.html" title="base InputDevice">InputDevice</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac9348deae9297ebe302759b9171a75d0a23e454c0b0addb41b9375863ecd983fa"></a>WHIST_INPUT_DEVICE_XTEST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac9348deae9297ebe302759b9171a75d0a66daed792d689e06e78bfaffd4367254"></a>WHIST_INPUT_DEVICE_UINPUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac9348deae9297ebe302759b9171a75d0a23fb4b0f4211757addd078a60509227a"></a>WHIST_INPUT_DEVICE_WIN32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac9348deae9297ebe302759b9171a75d0a6ae4bde72bc7fbd84260f34a7377ff67"></a>WHIST_INPUT_DEVICE_WESTON&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a258d904a706388022e32b82aec4baad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258d904a706388022e32b82aec4baad2">&#9670;&nbsp;</a></span>create_input_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structInputDevice.html">InputDevice</a>* create_input_device </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">InputDeviceType</a>&#160;</td>
+          <td class="paramname"><em>kind</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an input device struct to receive user actions to be replayed on a server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kind</td><td>type of input device to create</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Initialized input device struct defining mouse and keyboard states </dd></dl>
+
+</div>
+</div>
+<a id="ab0cbe20f9bdd3ea16fe403d31b5b73d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cbe20f9bdd3ea16fe403d31b5b73d7">&#9670;&nbsp;</a></span>destroy_input_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy_input_device </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy and free the memory of an input device struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>A pointer to the initialized input device struct to destroy and free the memory of. The pointer is nullified after the call. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a68d952af97dc08e94a465fc1eb9934c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d952af97dc08e94a465fc1eb9934c7">&#9670;&nbsp;</a></span>emit_high_res_mouse_wheel_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int emit_high_res_mouse_wheel_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Emit a high-resolution vertical or horizontal mouse scroll event, for trackpads or smooth mouse wheels. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>The initialized input device to write</td></tr>
+    <tr><td class="paramname">x</td><td>Horizontal scroll value as a float</td></tr>
+    <tr><td class="paramname">y</td><td>Vertical scroll value as a float</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="ae20354ac9fa2cbeac2a1067ef9f79b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20354ac9fa2cbeac2a1067ef9f79b06">&#9670;&nbsp;</a></span>emit_key_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int emit_key_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a>&#160;</td>
+          <td class="paramname"><em>whist_keycode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pressed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Emit a keyboard press/unpress event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>The initialized input device to write</td></tr>
+    <tr><td class="paramname">whist_keycode</td><td>The Whist keycode to modify</td></tr>
+    <tr><td class="paramname">pressed</td><td>1 for a key press, 0 for a key unpress</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a5bc9755bb1311b40ecb6432bc0d1a58a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc9755bb1311b40ecb6432bc0d1a58a">&#9670;&nbsp;</a></span>emit_low_res_mouse_wheel_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int emit_low_res_mouse_wheel_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Emit a low-resolution vertical or horizontal mouse scroll event, for click-wheel mouse inputs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>The initialized input device to write</td></tr>
+    <tr><td class="paramname">x</td><td>Horizontal scroll direction/amount (-1,0,+1 always work)</td></tr>
+    <tr><td class="paramname">y</td><td>Vertical scroll direction/amount (-1,0,+1 always work)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a6318f9a9f9816b21cf90962162f9f437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6318f9a9f9816b21cf90962162f9f437">&#9670;&nbsp;</a></span>emit_mouse_button_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int emit_mouse_button_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#afa47769b22f4e68bdbf79565f9852032">WhistMouseButton</a>&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pressed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Emit a mouse button press/unpress event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>The initialized input device to write</td></tr>
+    <tr><td class="paramname">button</td><td>The mouse button (left, right, or center) to press</td></tr>
+    <tr><td class="paramname">pressed</td><td>1 for a button press, 0 for a button unpress</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="ac8a20be24877768539ac4cb85fc4a190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8a20be24877768539ac4cb85fc4a190">&#9670;&nbsp;</a></span>emit_mouse_motion_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int emit_mouse_motion_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>relative</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Emit a relative/absolute mouse motion event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>The initialized input device to write</td></tr>
+    <tr><td class="paramname">x</td><td>The normalized x coordinate of the mouse event, on a scale from 0 to <code>MOUSE_SCALING_FACTOR</code> in the case of absolute mouse motion, or signed in pixels in the case of relative mouse motion</td></tr>
+    <tr><td class="paramname">y</td><td>The normalized y coordinate of the mouse event, on a scale from 0 to <code>MOUSE_SCALING_FACTOR</code> in the case of absolute mouse motion, or signed in pixels in the case of relative mouse motion</td></tr>
+    <tr><td class="paramname">relative</td><td>1 for relative, 0 for absolute</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a669ecfca5e7aaad9db1f33b392a613c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669ecfca5e7aaad9db1f33b392a613c7">&#9670;&nbsp;</a></span>emit_multigesture_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int emit_multigesture_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>d_theta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>d_dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153">WhistMultigestureType</a>&#160;</td>
+          <td class="paramname"><em>gesture_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>active_gesture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Emit a trackpad multigesture event (e.g. </p>
+<p>pinch)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>The initialized input device to write</td></tr>
+    <tr><td class="paramname">d_theta</td><td>How much the fingers rotated during this motion</td></tr>
+    <tr><td class="paramname">d_dist</td><td>How much the fingers pinched during this motion</td></tr>
+    <tr><td class="paramname">gesture_type</td><td>The gesture type (rotate, pinch open, pinch close)</td></tr>
+    <tr><td class="paramname">active_gesture</td><td>Whether this event happened mid-multigesture</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="aac1b945261b8a7ad602f0368c2bd0c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1b945261b8a7ad602f0368c2bd0c4d">&#9670;&nbsp;</a></span>get_keyboard_key_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_keyboard_key_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a>&#160;</td>
+          <td class="paramname"><em>whist_keycode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the pressed/unpressed state of a keyboard key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>The initialized input device to query</td></tr>
+    <tr><td class="paramname">whist_keycode</td><td>The Whist keycode to query</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the queried key is pressed, 0 if unpressed, and -1 on error </dd></dl>
+
+</div>
+</div>
+<a id="a858ccae3f36f88e26fa4aa62de7d522a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858ccae3f36f88e26fa4aa62de7d522a">&#9670;&nbsp;</a></span>get_keyboard_modifier_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_keyboard_modifier_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a>&#160;</td>
+          <td class="paramname"><em>whist_keycode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the active/inactive state of a key modifier (caps lock, num lock, etc.) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>The initialized input device to query</td></tr>
+    <tr><td class="paramname">whist_keycode</td><td>The Whist keycode of the modifier to query (<code>FK_CAPSLOCK</code> or <code>FK_NUMLOCK</code>)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the queried modifier is active, 0 if inactive, and -1 on error </dd></dl>
+
+</div>
+</div>
+<a id="ac73b454cce63412dd6f829e91dc02072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73b454cce63412dd6f829e91dc02072">&#9670;&nbsp;</a></span>ignore_key_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ignore_key_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td>
+          <td class="paramname"><em>input_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a>&#160;</td>
+          <td class="paramname"><em>whist_keycode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>active_pinch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether to ignore the client key state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_device</td><td>The initialized input device to query</td></tr>
+    <tr><td class="paramname">whist_keycode</td><td>The Whist keycode to query</td></tr>
+    <tr><td class="paramname">active_pinch</td><td>Whether the client has an active pinch gesture</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if we ignore the client key state, 0 if we take the client key state </dd></dl>
+
+</div>
+</div>
 <a id="afa6a54738e93c117f2b412775dfba8c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa6a54738e93c117f2b412775dfba8c8">&#9670;&nbsp;</a></span>input_keycodes()</h2>
 
