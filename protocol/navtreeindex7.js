@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55baeb3563683b3a0fc7176a7bfb9a0c6995":[10,0,1,12,12],
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55baeba71b4c50b5ac76b56b850f361cf65b":[10,0,1,12,10],
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafa0613b8b81df5f1855c9c68e3cfd5db":[10,0,1,12,0],
+"server__statistic_8h.html#ae70f42219f0dab09323155863c7bc5b8":[10,0,1,12,20],
 "server__statistic_8h.html#aeb2697fdcecb4d884626826c24600b01":[10,0,1,12,21],
 "server__statistic_8h_source.html":[10,0,1,12],
 "state_8h.html":[10,0,1,13],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "structHuffmanTree.html#aef81d45a5c56276c5699a8e9a575021d":[9,0,31,1],
 "structHuffmanTree.html#af4717fb7948ba21daca651dc5d1abad6":[9,0,31,0],
 "structInputDevice.html":[9,0,32],
-"structInputDevice.html#a1d3c4e4761cc5549826c66ace98566e7":[9,0,32,4],
-"structInputDevice.html#a244a8cb189577e83579480f90143f96f":[9,0,32,8],
-"structInputDevice.html#a3cf568b6e17d58b12beeb7098c7c0527":[9,0,32,2],
-"structInputDevice.html#a4fa4d386a10f209982638cc8bd1e79fb":[9,0,32,1],
-"structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345":[9,0,32,5]
+"structInputDevice.html#a1d3c4e4761cc5549826c66ace98566e7":[9,0,32,4]
 };

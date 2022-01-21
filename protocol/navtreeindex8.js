@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"structInputDevice.html#a244a8cb189577e83579480f90143f96f":[9,0,32,8],
+"structInputDevice.html#a3cf568b6e17d58b12beeb7098c7c0527":[9,0,32,2],
+"structInputDevice.html#a4fa4d386a10f209982638cc8bd1e79fb":[9,0,32,1],
+"structInputDevice.html#a5b8af4441a1ba411ee14e5f8481aa345":[9,0,32,5],
 "structInputDevice.html#a5fee696158396dfffd2f6fb56d578baf":[9,0,32,3],
 "structInputDevice.html#aa2884b4093f9359cea2435e600461164":[9,0,32,6],
 "structInputDevice.html#ab1e5788638481214330b017d325ed424":[9,0,32,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "structSocketContext.html#a65dffab1bb0a4b08cff6c58232d34e2d":[9,0,61,2],
 "structSocketContext.html#a88de0457d36f187c50cdecb984ae50df":[9,0,61,6],
 "structSocketContext.html#ac71dc28bc1f757f13b02966c7d8f2cc6":[9,0,61,5],
-"structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98":[9,0,61,1],
-"structSocketContextData.html":[9,0,62],
-"structSocketContextData.html#a036eefecf0aef61bddb53b24438f872c":[9,0,62,1],
-"structSocketContextData.html#a182f82f77edbaa734fe7a396c206e4db":[9,0,62,3],
-"structSocketContextData.html#a28dc999f762a8b2ceb46f1c108521b3c":[9,0,62,7]
+"structSocketContext.html#af32e96cbec6ae787d7aa6174c4aaba98":[9,0,61,1]
 };

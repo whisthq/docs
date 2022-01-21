@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"structSocketContextData.html":[9,0,62],
+"structSocketContextData.html#a036eefecf0aef61bddb53b24438f872c":[9,0,62,1],
+"structSocketContextData.html#a182f82f77edbaa734fe7a396c206e4db":[9,0,62,3],
+"structSocketContextData.html#a28dc999f762a8b2ceb46f1c108521b3c":[9,0,62,7],
 "structSocketContextData.html#a3a5c8cf04fc3bab3e56bf2f9364f276c":[9,0,62,5],
 "structSocketContextData.html#a43b0a5dcbf177e0e9147072f10c871ba":[9,0,62,16],
 "structSocketContextData.html#a5238468950851acc56a05a4507ce660d":[9,0,62,15],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "structWhistRGBColor.html#a409a89b608bb582fb4ec2eef64405542":[9,0,93,1],
 "structWhistRGBColor.html#a9ad0f88a0dae8cb141d6b7289f4b287f":[9,0,93,0],
 "structWhistRGBColor.html#ad865914d36b4d29edc315446fcff66ba":[9,0,93,2],
-"structWhistRenderer.html":[9,0,92],
-"structWhistRenderer.html#a43207d1dae6eb773ef861afc90ac886c":[9,0,92,4],
-"structWhistRenderer.html#a4a8f116b51761d8c11410812bf93e55b":[9,0,92,5],
-"structWhistRenderer.html#a525bae96914dfc1abcd43cec401ac461":[9,0,92,9],
-"structWhistRenderer.html#a5811affb1b7ebe314184e3e179e7708d":[9,0,92,2]
+"structWhistRenderer.html":[9,0,92]
 };
