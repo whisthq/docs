@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('parse__args_8c.html',''); initResizabl
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:afd594c44778892211fe8892be8852c1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__args_8c.html#afd594c44778892211fe8892be8852c1d">OPTION_STRING</a>&#160;&#160;&#160;&quot;k:i:w:e:t:&quot;</td></tr>
+<tr class="memitem:afd594c44778892211fe8892be8852c1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__args_8c.html#afd594c44778892211fe8892be8852c1d">OPTION_STRING</a>&#160;&#160;&#160;&quot;k:i:w:e:t:d&quot;</td></tr>
 <tr class="separator:afd594c44778892211fe8892be8852c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -118,9 +118,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the code that parses the args for </p>
-<h1><a class="anchor" id="autotoc_md92"></a>
+<h1><a class="anchor" id="autotoc_md98"></a>
 the server protocol.</h1>
-<h1><a class="anchor" id="autotoc_md93"></a>
+<h1><a class="anchor" id="autotoc_md99"></a>
 Usage</h1>
 <p><a class="el" href="parse__args_8c.html#a6413acffdbcf49f867f9f9288610939f" title="server_parse_args() parses the arguments passed on the command line and fill the server_config struct">server_parse_args()</a> checks and parses the args for <a class="el" href="server_2main_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">server/main.c</a> </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -131,7 +131,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define OPTION_STRING&#160;&#160;&#160;&quot;k:i:w:e:t:&quot;</td>
+          <td class="memname">#define OPTION_STRING&#160;&#160;&#160;&quot;k:i:w:e:t:d&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,6 +200,7 @@ Usage</h1>
 <div class="line">                                     {<span class="stringliteral">&quot;identifier&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;i&#39;</span>},</div>
 <div class="line">                                     {<span class="stringliteral">&quot;environment&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;e&#39;</span>},</div>
 <div class="line">                                     {<span class="stringliteral">&quot;timeout&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;t&#39;</span>},</div>
+<div class="line">                                     {<span class="stringliteral">&quot;dbus-address&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;d&#39;</span>},</div>
 <div class="line">                                     </div>
 <div class="line">                                     {<span class="stringliteral">&quot;help&quot;</span>, <a class="code" href="whistgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <a class="code" href="whistgetopt_8h.html#a9e4dd83987628ef30baf79370993f55a">WHIST_GETOPT_HELP_CHAR</a>},</div>
 <div class="line">                                     {<span class="stringliteral">&quot;version&quot;</span>, <a class="code" href="whistgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <a class="code" href="whistgetopt_8h.html#a0b015baad8c3389d0cbdb22cd82b85d7">WHIST_GETOPT_VERSION_CHAR</a>},</div>

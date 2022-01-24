@@ -31,6 +31,7 @@ var whist_2network_2network_8h =
       [ "PACKET_AUDIO", "whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47da3701057450c7a09aa316bb880f2db6ac", null ],
       [ "PACKET_VIDEO", "whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47dab3488b238f3094f2bcfaa19a393be226", null ],
       [ "PACKET_MESSAGE", "whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47da501ce71c96f98746319edaf14fd43aef", null ],
+      [ "PACKET_NOTIFICATION", "whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47da1c385693f69466d8467f20619fac97bb", null ],
       [ "NUM_PACKET_TYPES", "whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994", null ]
     ] ],
     [ "WhistTOSValue", "whist_2network_2network_8h.html#a19538dc4b7d9fdf4b3a195bb3dd18a41", [
