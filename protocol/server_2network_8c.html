@@ -126,13 +126,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aa918041d94839af26011b20a2d370ea1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#aa918041d94839af26011b20a2d370ea1">disconnect_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
 <tr class="memdesc:aa918041d94839af26011b20a2d370ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes client's UDP and TCP sockets.  <a href="server_2network_8c.html#aa918041d94839af26011b20a2d370ea1">More...</a><br /></td></tr>
 <tr class="separator:aa918041d94839af26011b20a2d370ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70454fd5fac58b9b258ff017d3ee20b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a70454fd5fac58b9b258ff017d3ee20b3">broadcast_ack</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
-<tr class="memdesc:a70454fd5fac58b9b258ff017d3ee20b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts acks to all active clients.  <a href="server_2network_8c.html#a70454fd5fac58b9b258ff017d3ee20b3">More...</a><br /></td></tr>
-<tr class="separator:a70454fd5fac58b9b258ff017d3ee20b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab30deb14aa029bb4aa5a518ae8e5e392"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#ab30deb14aa029bb4aa5a518ae8e5e392">broadcast_udp_packet</a> (<a class="el" href="structClient.html">Client</a> *client, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, void *data, int len, int packet_id)</td></tr>
+<tr class="memitem:ab30deb14aa029bb4aa5a518ae8e5e392"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#ab30deb14aa029bb4aa5a518ae8e5e392">broadcast_udp_packet</a> (<a class="el" href="structClient.html">Client</a> *client, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, void *data, int len, int packet_id)</td></tr>
 <tr class="memdesc:ab30deb14aa029bb4aa5a518ae8e5e392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over UDP.  <a href="server_2network_8c.html#ab30deb14aa029bb4aa5a518ae8e5e392">More...</a><br /></td></tr>
 <tr class="separator:ab30deb14aa029bb4aa5a518ae8e5e392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92945656b1ce85210852298c0fe199d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a92945656b1ce85210852298c0fe199d4">broadcast_tcp_packet</a> (<a class="el" href="structClient.html">Client</a> *client, <a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, void *data, int len)</td></tr>
+<tr class="memitem:a92945656b1ce85210852298c0fe199d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a92945656b1ce85210852298c0fe199d4">broadcast_tcp_packet</a> (<a class="el" href="structClient.html">Client</a> *client, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, void *data, int len)</td></tr>
 <tr class="memdesc:a92945656b1ce85210852298c0fe199d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over TCP.  <a href="server_2network_8c.html#a92945656b1ce85210852298c0fe199d4">More...</a><br /></td></tr>
 <tr class="separator:a92945656b1ce85210852298c0fe199d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a830962c14e11805b393b4b1e671fec58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a830962c14e11805b393b4b1e671fec58">try_get_next_message_tcp</a> (<a class="el" href="structClient.html">Client</a> *client, <a class="el" href="structWhistPacket.html">WhistPacket</a> **p_tcp_packet)</td></tr>
@@ -154,15 +151,13 @@ Variables</h2></td></tr>
 <tr class="separator:a87359d0492cce4252fa833844855438d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa6cd825000f909352154f55a6ac0df0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#afa6cd825000f909352154f55a6ac0df0">last_input_id</a> = -1</td></tr>
 <tr class="separator:afa6cd825000f909352154f55a6ac0df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d17c2bed3efc45988b308faa8392bc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8c.html#a5d17c2bed3efc45988b308faa8392bc8">has_read</a> = false</td></tr>
-<tr class="separator:a5d17c2bed3efc45988b308faa8392bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains server-specific wrappers to low-level network </p>
-<h1><a class="anchor" id="autotoc_md92"></a>
+<h1><a class="anchor" id="autotoc_md88"></a>
 functions.</h1>
-<h1><a class="anchor" id="autotoc_md93"></a>
+<h1><a class="anchor" id="autotoc_md89"></a>
 Usage</h1>
 <p>Use these functions for any server-specific networking needs. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -223,27 +218,6 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a70454fd5fac58b9b258ff017d3ee20b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70454fd5fac58b9b258ff017d3ee20b3">&#9670;&nbsp;</a></span>broadcast_ack()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int broadcast_ack </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
-          <td class="paramname"><em>client</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Broadcasts acks to all active clients. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
 <a id="a92945656b1ce85210852298c0fe199d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92945656b1ce85210852298c0fe199d4">&#9670;&nbsp;</a></span>broadcast_tcp_packet()</h2>
 
@@ -259,7 +233,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -311,7 +285,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -632,20 +606,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">int begin_time_to_exit = 60</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d17c2bed3efc45988b308faa8392bc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d17c2bed3efc45988b308faa8392bc8">&#9670;&nbsp;</a></span>has_read</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool has_read = false</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,7 +1,6 @@
 var server_2network_8h =
 [
     [ "CLIENT_PING_TIMEOUT_SEC", "server_2network_8h.html#ac12625c51cdfeeee6a82de27704b21b6", null ],
-    [ "broadcast_ack", "server_2network_8h.html#a70454fd5fac58b9b258ff017d3ee20b3", null ],
     [ "broadcast_tcp_packet", "server_2network_8h.html#a92945656b1ce85210852298c0fe199d4", null ],
     [ "broadcast_udp_packet", "server_2network_8h.html#ab30deb14aa029bb4aa5a518ae8e5e392", null ],
     [ "connect_client", "server_2network_8h.html#a6841ea030f4fc705b6383782a9db69ce", null ],

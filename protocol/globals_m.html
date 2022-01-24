@@ -151,9 +151,6 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MAX_FREES
 : <a class="el" href="whist__memory_8c.html#a4c6d7bdba62c60dcd15111ecbf34edb7">whist_memory.c</a>
 </li>
-<li>MAX_FREQ
-: <a class="el" href="client_2audio_8c.html#a9f1abe07c4d92ce70925be770153bb5d">audio.c</a>
-</li>
 <li>MAX_INIT_CONNECTION_ATTEMPTS
 : <a class="el" href="client__utils_8h.html#a44eb83ec64358b8e2db0f94e7b85b8f2">client_utils.h</a>
 </li>
@@ -166,14 +163,9 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MAX_NACK_BURST_MBPS
 : <a class="el" href="ringbuffer_8c.html#a68c68baaea63ef075d65c8f5a3885d75">ringbuffer.c</a>
 </li>
-<li>MAX_NOTIF_MSG_LEN
-: <a class="el" href="whist__notification_8h.html#a4f63b2c2e0ef286befaaf2813e33ec12">whist_notification.h</a>
-</li>
-<li>MAX_NOTIF_TITLE_LEN
-: <a class="el" href="whist__notification_8h.html#ab08c30fcd992ab4c9c4ddaf0f7d851bc">whist_notification.h</a>
-</li>
 <li>MAX_NUM_AUDIO_FRAMES
-: <a class="el" href="client_2audio_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">audio.c</a>
+: <a class="el" href="udp_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">udp.c</a>
+, <a class="el" href="client_2audio_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">audio.c</a>
 </li>
 <li>MAX_NUM_AUDIO_PACKETS
 : <a class="el" href="audioencode_8h.html#a092749887921c4ed1c2548d05fed835d">audioencode.h</a>
@@ -183,6 +175,9 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 </li>
 <li>MAX_PACKET_NACKS
 : <a class="el" href="ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911">ringbuffer.c</a>
+</li>
+<li>MAX_PACKET_SEGMENT_SIZE
+: <a class="el" href="udp_8h.html#a9b54f844079db47f8762b331092ab9b8">udp.h</a>
 </li>
 <li>MAX_PACKET_SIZE
 : <a class="el" href="whist_2network_2network_8h.html#a879456c3b8e2853f7044d764e9c180d4">network.h</a>
@@ -211,20 +206,20 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MAX_SCREEN_WIDTH
 : <a class="el" href="whist_8h.html#a56ab8e1d2af6f308d5612205ba3d9e6b">whist.h</a>
 </li>
+<li>MAX_TCP_PAYLOAD
+: <a class="el" href="tcp_8c.html#a6e8717e0a577f2779aac89a0c33d8c2f">tcp.c</a>
+</li>
 <li>MAX_TO_RENDER_STALENESS
-: <a class="el" href="client_2video_8c.html#afd197c54018ce2a383af80e9459cde64">video.c</a>
+: <a class="el" href="ringbuffer_8c.html#afd197c54018ce2a383af80e9459cde64">ringbuffer.c</a>
 </li>
 <li>MAX_TOTAL_PACKETS
 : <a class="el" href="udp_8c.html#a890ae089e185134fdcefbc84329a6115">udp.c</a>
-</li>
-<li>MAX_UDPPACKET_PAYLOAD_SIZE
-: <a class="el" href="udp_8c.html#a4d27884f9f6430c61afbe6425de982d3">udp.c</a>
 </li>
 <li>MAX_UNORDERED_PACKETS
 : <a class="el" href="ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33">ringbuffer.c</a>
 </li>
 <li>MAX_UNSYNCED_FRAMES
-: <a class="el" href="client_2video_8c.html#a63712ce21a04379372836cb9a38e657a">video.c</a>
+: <a class="el" href="ringbuffer_8c.html#a63712ce21a04379372836cb9a38e657a">ringbuffer.c</a>
 </li>
 <li>MAX_URL_LENGTH
 : <a class="el" href="whist_8h.html#a3a0a3a9d3952e2b57333ed6daceb163e">whist.h</a>
@@ -311,9 +306,6 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MESSAGE_TCP_RECOVERY
 : <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a349edcec26ba49767cf95f929499760c">whist.h</a>
 </li>
-<li>MESSAGE_UDP_PING
-: <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a10f11477e60990f80f4ea41813f50caa">whist.h</a>
-</li>
 <li>METRIC_LEVEL
 : <a class="el" href="logging_8h.html#a1a3cc8463f8cede44c8499b36bc47f9e">logging.h</a>
 </li>
@@ -392,8 +384,8 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 </li>
 <li>mouse_state
 : <a class="el" href="client__utils_8c.html#a9f5f2b90e5441717b0499669e2e742d3">client_utils.c</a>
-, <a class="el" href="client_2main_8c.html#a9f5f2b90e5441717b0499669e2e742d3">main.c</a>
 , <a class="el" href="sdl__event__handler_8c.html#a9f5f2b90e5441717b0499669e2e742d3">sdl_event_handler.c</a>
+, <a class="el" href="client_2main_8c.html#a9f5f2b90e5441717b0499669e2e742d3">main.c</a>
 </li>
 <li>MOUSE_X1
 : <a class="el" href="whist_8h.html#afa47769b22f4e68bdbf79565f9852032a77991fd820fa0879001c745a758be452">whist.h</a>
@@ -452,12 +444,12 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 : <a class="el" href="renderer_8c.html#a50ca81e13392bb11097488f5aa92bde7">renderer.c</a>
 </li>
 <li>multithreaded_send_audio()
-: <a class="el" href="server_2audio_8h.html#a5d4cd54c3652d2c734923079d07992b7">audio.h</a>
-, <a class="el" href="server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7">audio.c</a>
+: <a class="el" href="server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7">audio.c</a>
+, <a class="el" href="server_2audio_8h.html#a5d4cd54c3652d2c734923079d07992b7">audio.h</a>
 </li>
 <li>multithreaded_send_video()
-: <a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">video.c</a>
-, <a class="el" href="server_2video_8h.html#a26603a17edf486ab02cf85b75e60eb08">video.h</a>
+: <a class="el" href="server_2video_8h.html#a26603a17edf486ab02cf85b75e60eb08">video.h</a>
+, <a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">video.c</a>
 </li>
 <li>multithreaded_sync_tcp_packets()
 : <a class="el" href="server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51">main.c</a>

@@ -94,8 +94,6 @@ Data Fields</h2></td></tr>
 <tr class="separator:a47e4f8566820b049f0e11ac111ce8fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a558707606e44318c3099e736a1f0adae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html#a558707606e44318c3099e736a1f0adae">pending_refresh</a></td></tr>
 <tr class="separator:a558707606e44318c3099e736a1f0adae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a236aa5711297d5344ef003d397084beb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html#a236aa5711297d5344ef003d397084beb">ring_buffer</a></td></tr>
-<tr class="separator:a236aa5711297d5344ef003d397084beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2869e97966d53b5f9fc23f9ccb9e7743"><td class="memItemLeft" align="right" valign="top">SDL_AudioDeviceID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html#a2869e97966d53b5f9fc23f9ccb9e7743">dev</a></td></tr>
 <tr class="separator:a2869e97966d53b5f9fc23f9ccb9e7743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a333d813e153e9a5457e1a66be50a6d93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioDecoder.html">AudioDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html#a333d813e153e9a5457e1a66be50a6d93">audio_decoder</a></td></tr>
@@ -104,10 +102,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:af1a8cf4f6ec0486f9628144db0bfa6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab376e8c4f33f0344e5d17613b53aeeb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html#ab376e8c4f33f0344e5d17613b53aeeb2">pending_render_context</a></td></tr>
 <tr class="separator:ab376e8c4f33f0344e5d17613b53aeeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074af55e9aa8aeac0908dd4c3ef3209a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html#a074af55e9aa8aeac0908dd4c3ef3209a">last_played_id</a></td></tr>
-<tr class="separator:a074af55e9aa8aeac0908dd4c3ef3209a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afca80ad4c112b7f35f98b217d4d4b178"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html#afca80ad4c112b7f35f98b217d4d4b178">audio_flush_triggered</a></td></tr>
-<tr class="separator:afca80ad4c112b7f35f98b217d4d4b178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611797a6b8f80bef57ee5c5e3a6821a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html#a611797a6b8f80bef57ee5c5e3a6821a0">is_flushing_audio</a></td></tr>
+<tr class="separator:a611797a6b8f80bef57ee5c5e3a6821a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff34c71ce802ee0d7c5d01943e350a11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html#aff34c71ce802ee0d7c5d01943e350a11">is_buffering_audio</a></td></tr>
+<tr class="separator:aff34c71ce802ee0d7c5d01943e350a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a333d813e153e9a5457e1a66be50a6d93"></a>
@@ -118,20 +116,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structAudioDecoder.html">AudioDecoder</a>* AudioContext::audio_decoder</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afca80ad4c112b7f35f98b217d4d4b178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afca80ad4c112b7f35f98b217d4d4b178">&#9670;&nbsp;</a></span>audio_flush_triggered</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AudioContext::audio_flush_triggered</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -166,14 +150,28 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a074af55e9aa8aeac0908dd4c3ef3209a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a074af55e9aa8aeac0908dd4c3ef3209a">&#9670;&nbsp;</a></span>last_played_id</h2>
+<a id="aff34c71ce802ee0d7c5d01943e350a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff34c71ce802ee0d7c5d01943e350a11">&#9670;&nbsp;</a></span>is_buffering_audio</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int AudioContext::last_played_id</td>
+          <td class="memname">bool AudioContext::is_buffering_audio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a611797a6b8f80bef57ee5c5e3a6821a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a611797a6b8f80bef57ee5c5e3a6821a0">&#9670;&nbsp;</a></span>is_flushing_audio</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioContext::is_flushing_audio</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -216,20 +214,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structAudioFrame.html">AudioFrame</a>* AudioContext::render_context</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a236aa5711297d5344ef003d397084beb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a236aa5711297d5344ef003d397084beb">&#9670;&nbsp;</a></span>ring_buffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structRingBuffer.html">RingBuffer</a>* AudioContext::ring_buffer</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -13,5 +13,6 @@ var server_2main_8c =
     [ "handle_whist_client_message", "server_2main_8c.html#aa43ad2829c56ad4fb8bc9616030a93f3", null ],
     [ "main", "server_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
     [ "multithreaded_sync_tcp_packets", "server_2main_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51", null ],
+    [ "connected", "server_2main_8c.html#ae4e4ce6a658b77aa4bb7753403794776", null ],
     [ "server_state", "server_2main_8c.html#a4561ca5cc7a1663c82d4a54f0c9bae7c", null ]
 ];

@@ -90,8 +90,6 @@ $(document).ready(function(){initNavTree('structVideoContext.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a8d00487596099ce62966bf2c88771ef8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a8d00487596099ce62966bf2c88771ef8">ring_buffer</a></td></tr>
-<tr class="separator:a8d00487596099ce62966bf2c88771ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38d4a1ec97c8f513aea77dc2c4cb97eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a38d4a1ec97c8f513aea77dc2c4cb97eb">decoder</a></td></tr>
 <tr class="separator:a38d4a1ec97c8f513aea77dc2c4cb97eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef51bd7b5ad4534530db7321196db88"><td class="memItemLeft" align="right" valign="top">struct SwsContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#aaef51bd7b5ad4534530db7321196db88">sws</a></td></tr>
@@ -102,52 +100,18 @@ Data Fields</h2></td></tr>
 <tr class="separator:ae2ecf8ab8ca51e05c70a58b5f2b5edbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92f47c777428469b2d71064604aed6ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a92f47c777428469b2d71064604aed6ba">last_frame_codec</a></td></tr>
 <tr class="separator:a92f47c777428469b2d71064604aed6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6afe432228cd81cbf525136b704232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#aae6afe432228cd81cbf525136b704232">pending_ctx</a></td></tr>
-<tr class="separator:aae6afe432228cd81cbf525136b704232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1865961efe3a0414361f027d49ddd1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#af1865961efe3a0414361f027d49ddd1a">frames_received</a></td></tr>
-<tr class="separator:af1865961efe3a0414361f027d49ddd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911937362cbaf29681eeaea0ea7f4cba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a911937362cbaf29681eeaea0ea7f4cba">bytes_transferred</a></td></tr>
-<tr class="separator:a911937362cbaf29681eeaea0ea7f4cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4235b70d88233f28ce8fc53f6f37a6c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a4235b70d88233f28ce8fc53f6f37a6c3">last_statistics_id</a></td></tr>
-<tr class="separator:a4235b70d88233f28ce8fc53f6f37a6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc8315c00f2db77a6078c3a4d6b889aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#afc8315c00f2db77a6078c3a4d6b889aa">last_rendered_id</a></td></tr>
-<tr class="separator:afc8315c00f2db77a6078c3a4d6b889aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71e383ac95bf400aa6ee1c523714c65c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a71e383ac95bf400aa6ee1c523714c65c">most_recent_iframe</a></td></tr>
-<tr class="separator:a71e383ac95bf400aa6ee1c523714c65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610f6e9a4cd8eedf2d0dee7f7176a743"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a610f6e9a4cd8eedf2d0dee7f7176a743">last_iframe_request_timer</a></td></tr>
-<tr class="separator:a610f6e9a4cd8eedf2d0dee7f7176a743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6ad567902fb8be9aeb2d4e07742632"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a2c6ad567902fb8be9aeb2d4e07742632">loading_index</a></td></tr>
 <tr class="separator:a2c6ad567902fb8be9aeb2d4e07742632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ee46c5e6fe261db0516f7884e7f6f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a4ee46c5e6fe261db0516f7884e7f6f95">last_loading_frame_timer</a></td></tr>
 <tr class="separator:a4ee46c5e6fe261db0516f7884e7f6f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c9e8b01403f827111d32763d19eb51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a88c9e8b01403f827111d32763d19eb51">has_video_rendered_yet</a></td></tr>
 <tr class="separator:a88c9e8b01403f827111d32763d19eb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a254b394aeb2e14d1ce735d8339ee582f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a254b394aeb2e14d1ce735d8339ee582f">render_context</a></td></tr>
-<tr class="separator:a254b394aeb2e14d1ce735d8339ee582f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a8e97a49198655704030e8a4ed2505f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a8a8e97a49198655704030e8a4ed2505f">pushing_render_context</a></td></tr>
-<tr class="separator:a8a8e97a49198655704030e8a4ed2505f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23fae00e69c8e45e9e2842ce0324a2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a23fae00e69c8e45e9e2842ce0324a2ff">network_statistics_timer</a></td></tr>
-<tr class="separator:a23fae00e69c8e45e9e2842ce0324a2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af74c670993805efa23659ace853dd1f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#af74c670993805efa23659ace853dd1f0">network_statistics</a></td></tr>
-<tr class="separator:af74c670993805efa23659ace853dd1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6815736feae91545b46cb0ab9fc09dac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a6815736feae91545b46cb0ab9fc09dac">statistics_initialized</a></td></tr>
-<tr class="separator:a6815736feae91545b46cb0ab9fc09dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade7431d3bfc2d5005adebb440eab779"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoFrame.html">VideoFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#aade7431d3bfc2d5005adebb440eab779">render_context</a></td></tr>
+<tr class="separator:aade7431d3bfc2d5005adebb440eab779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c9e9ad8521d06c6448911d5911f107"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html#a03c9e9ad8521d06c6448911d5911f107">pending_render_context</a></td></tr>
+<tr class="separator:a03c9e9ad8521d06c6448911d5911f107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a911937362cbaf29681eeaea0ea7f4cba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a911937362cbaf29681eeaea0ea7f4cba">&#9670;&nbsp;</a></span>bytes_transferred</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int VideoContext::bytes_transferred</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a38d4a1ec97c8f513aea77dc2c4cb97eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38d4a1ec97c8f513aea77dc2c4cb97eb">&#9670;&nbsp;</a></span>decoder</h2>
 
@@ -156,20 +120,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structVideoDecoder.html">VideoDecoder</a>* VideoContext::decoder</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af1865961efe3a0414361f027d49ddd1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1865961efe3a0414361f027d49ddd1a">&#9670;&nbsp;</a></span>frames_received</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int VideoContext::frames_received</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -232,20 +182,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a610f6e9a4cd8eedf2d0dee7f7176a743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a610f6e9a4cd8eedf2d0dee7f7176a743">&#9670;&nbsp;</a></span>last_iframe_request_timer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> VideoContext::last_iframe_request_timer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4ee46c5e6fe261db0516f7884e7f6f95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ee46c5e6fe261db0516f7884e7f6f95">&#9670;&nbsp;</a></span>last_loading_frame_timer</h2>
 
@@ -254,34 +190,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> VideoContext::last_loading_frame_timer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afc8315c00f2db77a6078c3a4d6b889aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc8315c00f2db77a6078c3a4d6b889aa">&#9670;&nbsp;</a></span>last_rendered_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int VideoContext::last_rendered_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4235b70d88233f28ce8fc53f6f37a6c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4235b70d88233f28ce8fc53f6f37a6c3">&#9670;&nbsp;</a></span>last_statistics_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int VideoContext::last_statistics_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -302,112 +210,28 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a71e383ac95bf400aa6ee1c523714c65c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71e383ac95bf400aa6ee1c523714c65c">&#9670;&nbsp;</a></span>most_recent_iframe</h2>
+<a id="a03c9e9ad8521d06c6448911d5911f107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c9e9ad8521d06c6448911d5911f107">&#9670;&nbsp;</a></span>pending_render_context</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int VideoContext::most_recent_iframe</td>
+          <td class="memname">bool VideoContext::pending_render_context</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af74c670993805efa23659ace853dd1f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af74c670993805efa23659ace853dd1f0">&#9670;&nbsp;</a></span>network_statistics</h2>
+<a id="aade7431d3bfc2d5005adebb440eab779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade7431d3bfc2d5005adebb440eab779">&#9670;&nbsp;</a></span>render_context</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> VideoContext::network_statistics</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a23fae00e69c8e45e9e2842ce0324a2ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23fae00e69c8e45e9e2842ce0324a2ff">&#9670;&nbsp;</a></span>network_statistics_timer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> VideoContext::network_statistics_timer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aae6afe432228cd81cbf525136b704232"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae6afe432228cd81cbf525136b704232">&#9670;&nbsp;</a></span>pending_ctx</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structFrameData.html">FrameData</a>* VideoContext::pending_ctx</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8a8e97a49198655704030e8a4ed2505f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a8e97a49198655704030e8a4ed2505f">&#9670;&nbsp;</a></span>pushing_render_context</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool VideoContext::pushing_render_context</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a254b394aeb2e14d1ce735d8339ee582f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a254b394aeb2e14d1ce735d8339ee582f">&#9670;&nbsp;</a></span>render_context</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structFrameData.html">FrameData</a>* VideoContext::render_context</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8d00487596099ce62966bf2c88771ef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d00487596099ce62966bf2c88771ef8">&#9670;&nbsp;</a></span>ring_buffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structRingBuffer.html">RingBuffer</a>* VideoContext::ring_buffer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6815736feae91545b46cb0ab9fc09dac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6815736feae91545b46cb0ab9fc09dac">&#9670;&nbsp;</a></span>statistics_initialized</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool VideoContext::statistics_initialized</td>
+          <td class="memname"><a class="el" href="structVideoFrame.html">VideoFrame</a>* VideoContext::render_context</td>
         </tr>
       </table>
 </div><div class="memdoc">

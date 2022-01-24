@@ -124,14 +124,6 @@ Macros</h2></td></tr>
 <tr class="separator:afecb135e60c0c94fbb354b03bfb643a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25c15f9233eff2796785d6f51159b56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ae25c15f9233eff2796785d6f51159b56">RECV_FRAMES_BUFFER_SIZE</a>&#160;&#160;&#160;275</td></tr>
 <tr class="separator:ae25c15f9233eff2796785d6f51159b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3190cca650071548d6b75370b0e5c41c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a3190cca650071548d6b75370b0e5c41c">STATISTICS_SECONDS</a>&#160;&#160;&#160;5</td></tr>
-<tr class="separator:a3190cca650071548d6b75370b0e5c41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c417a4f8fcc4608ad1f0b63b26e634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a45c417a4f8fcc4608ad1f0b63b26e634">IFRAME_REQUEST_INTERVAL_MS</a>&#160;&#160;&#160;5.0</td></tr>
-<tr class="separator:a45c417a4f8fcc4608ad1f0b63b26e634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63712ce21a04379372836cb9a38e657a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a63712ce21a04379372836cb9a38e657a">MAX_UNSYNCED_FRAMES</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:a63712ce21a04379372836cb9a38e657a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd197c54018ce2a383af80e9459cde64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#afd197c54018ce2a383af80e9459cde64">MAX_TO_RENDER_STALENESS</a>&#160;&#160;&#160;100.0</td></tr>
-<tr class="separator:afd197c54018ce2a383af80e9459cde64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -141,21 +133,18 @@ Functions</h2></td></tr>
 <tr class="memitem:af1d344158f4b8ed1ba11af1a86d27789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#af1d344158f4b8ed1ba11af1a86d27789">destroy_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
 <tr class="memdesc:af1d344158f4b8ed1ba11af1a86d27789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the video context.  <a href="client_2video_8c.html#af1d344158f4b8ed1ba11af1a86d27789">More...</a><br /></td></tr>
 <tr class="separator:af1d344158f4b8ed1ba11af1a86d27789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36642bb10a0e6def2d693135279e54d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a36642bb10a0e6def2d693135279e54d1">update_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
-<tr class="memdesc:a36642bb10a0e6def2d693135279e54d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does any pending work the video context wants to do.  <a href="client_2video_8c.html#a36642bb10a0e6def2d693135279e54d1">More...</a><br /></td></tr>
-<tr class="separator:a36642bb10a0e6def2d693135279e54d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ea4d907c436a15fadf10105fea3e954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a8ea4d907c436a15fadf10105fea3e954">receive_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="memdesc:a8ea4d907c436a15fadf10105fea3e954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8c.html#a8ea4d907c436a15fadf10105fea3e954">More...</a><br /></td></tr>
-<tr class="separator:a8ea4d907c436a15fadf10105fea3e954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9096cfd63b981190cf4aa333c2ee6d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a9096cfd63b981190cf4aa333c2ee6d20">receive_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context, <a class="el" href="structVideoFrame.html">VideoFrame</a> *video_frame)</td></tr>
+<tr class="memdesc:a9096cfd63b981190cf4aa333c2ee6d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8c.html#a9096cfd63b981190cf4aa333c2ee6d20">More...</a><br /></td></tr>
+<tr class="separator:a9096cfd63b981190cf4aa333c2ee6d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
 <tr class="memdesc:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video frame (If any are available to render)  <a href="client_2video_8c.html#ae91e2215c8c94bdb14b3c01430b8ca69">More...</a><br /></td></tr>
 <tr class="separator:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14321021ee450305fdb8c787a3e1accc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
 <tr class="memdesc:a14321021ee450305fdb8c787a3e1accc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not a video frame has been rendered.  <a href="client_2video_8c.html#a14321021ee450305fdb8c787a3e1accc">More...</a><br /></td></tr>
 <tr class="separator:a14321021ee450305fdb8c787a3e1accc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be05a788c0ccc8513912da3dc7caf0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a9be05a788c0ccc8513912da3dc7caf0c">get_video_network_statistics</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
-<tr class="memdesc:a9be05a788c0ccc8513912da3dc7caf0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets any networking statistics from the video.  <a href="client_2video_8c.html#a9be05a788c0ccc8513912da3dc7caf0c">More...</a><br /></td></tr>
-<tr class="separator:a9be05a788c0ccc8513912da3dc7caf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a7e49bb43bc35c6da847bb03f83117"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a91a7e49bb43bc35c6da847bb03f83117">video_ready_for_frame</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *context)</td></tr>
+<tr class="memdesc:a91a7e49bb43bc35c6da847bb03f83117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the video context is ready to render a new frame.  <a href="client_2video_8c.html#a91a7e49bb43bc35c6da847bb03f83117">More...</a><br /></td></tr>
+<tr class="separator:a91a7e49bb43bc35c6da847bb03f83117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -165,54 +154,12 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains all code that interacts directly with receiving and </p>
-<h1><a class="anchor" id="autotoc_md78"></a>
+<h1><a class="anchor" id="autotoc_md74"></a>
 processing video packets on the client.</h1>
-<h1><a class="anchor" id="autotoc_md79"></a>
+<h1><a class="anchor" id="autotoc_md75"></a>
 Usage</h1>
 <p>initVideo() gets called before any video packet can be received. The video packets are received as standard WhistPackets by ReceiveVideo(WhistPacket* packet), before being saved in a proper video frame format. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a45c417a4f8fcc4608ad1f0b63b26e634"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45c417a4f8fcc4608ad1f0b63b26e634">&#9670;&nbsp;</a></span>IFRAME_REQUEST_INTERVAL_MS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IFRAME_REQUEST_INTERVAL_MS&#160;&#160;&#160;5.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afd197c54018ce2a383af80e9459cde64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd197c54018ce2a383af80e9459cde64">&#9670;&nbsp;</a></span>MAX_TO_RENDER_STALENESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_TO_RENDER_STALENESS&#160;&#160;&#160;100.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a63712ce21a04379372836cb9a38e657a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63712ce21a04379372836cb9a38e657a">&#9670;&nbsp;</a></span>MAX_UNSYNCED_FRAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_UNSYNCED_FRAMES&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="afecb135e60c0c94fbb354b03bfb643a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afecb135e60c0c94fbb354b03bfb643a9">&#9670;&nbsp;</a></span>NO_NACKS_DURING_IFRAME</h2>
 
@@ -235,20 +182,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define RECV_FRAMES_BUFFER_SIZE&#160;&#160;&#160;275</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3190cca650071548d6b75370b0e5c41c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3190cca650071548d6b75370b0e5c41c">&#9670;&nbsp;</a></span>STATISTICS_SECONDS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATISTICS_SECONDS&#160;&#160;&#160;5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -293,33 +226,6 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a9be05a788c0ccc8513912da3dc7caf0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9be05a788c0ccc8513912da3dc7caf0c">&#9670;&nbsp;</a></span>get_video_network_statistics()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> get_video_network_statistics </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
-          <td class="paramname"><em>video_context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets any networking statistics from the video. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">video_context</td><td>The video context</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Any networking statistics from the video context </dd></dl>
 
 </div>
 </div>
@@ -372,8 +278,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a8ea4d907c436a15fadf10105fea3e954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ea4d907c436a15fadf10105fea3e954">&#9670;&nbsp;</a></span>receive_video()</h2>
+<a id="a9096cfd63b981190cf4aa333c2ee6d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9096cfd63b981190cf4aa333c2ee6d20">&#9670;&nbsp;</a></span>receive_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,8 +293,8 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structVideoFrame.html">VideoFrame</a> *&#160;</td>
+          <td class="paramname"><em>video_frame</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -402,7 +308,7 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">video_context</td><td>The video context to give a video packet to</td></tr>
-    <tr><td class="paramname">packet</td><td>Packet as received from the server</td></tr>
+    <tr><td class="paramname">video_frame</td><td>The video frame</td></tr>
   </table>
   </dd>
 </dl>
@@ -437,14 +343,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a36642bb10a0e6def2d693135279e54d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36642bb10a0e6def2d693135279e54d1">&#9670;&nbsp;</a></span>update_video()</h2>
+<a id="a91a7e49bb43bc35c6da847bb03f83117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a7e49bb43bc35c6da847bb03f83117">&#9670;&nbsp;</a></span>video_ready_for_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void update_video </td>
+          <td class="memname">bool video_ready_for_frame </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
           <td class="paramname"><em>video_context</em></td><td>)</td>
@@ -453,17 +359,13 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Does any pending work the video context wants to do. </p>
-<p>(Including decoding frames, and calculating statistics)</p>
+<p>Whether or not the video context is ready to render a new frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">video_context</td><td>The video context to update</td></tr>
+    <tr><td class="paramname">video_context</td><td>The video context to query </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths.</dd>
-<dd>
-In order for video to be responsive, this function <em>MUST</em> be called in a tight loop, at least once every millisecond. </dd></dl>
 
 </div>
 </div>

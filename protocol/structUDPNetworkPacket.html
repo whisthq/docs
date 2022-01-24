@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: client/notif_utils/display_notifs_linux.c File Reference</title>
+<title>Whist Protocol: UDPNetworkPacket Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('display__notifs__linux_8c.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structUDPNetworkPacket.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -82,74 +82,73 @@ $(document).ready(function(){initNavTree('display__notifs__linux_8c.html',''); i
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">display_notifs_linux.c File Reference</div>  </div>
+<div class="title">UDPNetworkPacket Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Copyright 2022 Whist Technologies, Inc.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="display__notifs_8h_source.html">display_notifs.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a6dc4d8b4d7b9dfc100a55ddc7389f07a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="display__notifs__linux_8c.html#a6dc4d8b4d7b9dfc100a55ddc7389f07a">native_show_notification</a> (char *title, char *msg)</td></tr>
-<tr class="memdesc:a6dc4d8b4d7b9dfc100a55ddc7389f07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays notification on the client side.  <a href="display__notifs__linux_8c.html#a6dc4d8b4d7b9dfc100a55ddc7389f07a">More...</a><br /></td></tr>
-<tr class="separator:a6dc4d8b4d7b9dfc100a55ddc7389f07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a135e1fa43afee52a831053abd60b3e3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAESMetadata.html">AESMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPNetworkPacket.html#a135e1fa43afee52a831053abd60b3e3a">aes_metadata</a></td></tr>
+<tr class="separator:a135e1fa43afee52a831053abd60b3e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c0802b12d09c95b75424e41c1cd6ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPNetworkPacket.html#ae0c0802b12d09c95b75424e41c1cd6ec">payload_size</a></td></tr>
+<tr class="separator:ae0c0802b12d09c95b75424e41c1cd6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d998cf16e2327d21864ad30ac6602c3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPNetworkPacket.html#a9d998cf16e2327d21864ad30ac6602c3">payload</a> [sizeof(<a class="el" href="structUDPPacket.html">UDPPacket</a>)+<a class="el" href="aes_8h.html#ab2dbea0ebc498b1422ac21f80b3adb50">MAX_ENCRYPTION_SIZE_INCREASE</a>]</td></tr>
+<tr class="separator:a9d998cf16e2327d21864ad30ac6602c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright 2022 Whist Technologies, Inc. </p>
-<p>Handles client-side notification display on Linux</p>
-<p>Interfaces with native libraries to display notifications thrown from the server application. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a6dc4d8b4d7b9dfc100a55ddc7389f07a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dc4d8b4d7b9dfc100a55ddc7389f07a">&#9670;&nbsp;</a></span>native_show_notification()</h2>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a135e1fa43afee52a831053abd60b3e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a135e1fa43afee52a831053abd60b3e3a">&#9670;&nbsp;</a></span>aes_metadata</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int native_show_notification </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>title</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>msg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="structAESMetadata.html">AESMetadata</a> UDPNetworkPacket::aes_metadata</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Displays notification on the client side. </p>
-<p>Specific implementation depends on operating system (OSX/Windows/Linux).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">title</td><td>Notification title </td></tr>
-    <tr><td class="paramname">msg</td><td>Notification body</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int 0 if success, -1 if failure</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is ONLY implemented for MacOS. Linux and Windows impls are stubs. </dd></dl>
+</div>
+</div>
+<a id="a9d998cf16e2327d21864ad30ac6602c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d998cf16e2327d21864ad30ac6602c3">&#9670;&nbsp;</a></span>payload</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char UDPNetworkPacket::payload[sizeof(<a class="el" href="structUDPPacket.html">UDPPacket</a>)+<a class="el" href="aes_8h.html#ab2dbea0ebc498b1422ac21f80b3adb50">MAX_ENCRYPTION_SIZE_INCREASE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
+<a id="ae0c0802b12d09c95b75424e41c1cd6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c0802b12d09c95b75424e41c1cd6ec">&#9670;&nbsp;</a></span>payload_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UDPNetworkPacket::payload_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>whist/network/<a class="el" href="udp_8c.html">udp.c</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a class="el" href="dir_2e744448d0d3c4a0d9790bface648f88.html">notif_utils</a></li><li class="navelem"><a class="el" href="display__notifs__linux_8c.html">display_notifs_linux.c</a></li>
+    <li class="navelem"><a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

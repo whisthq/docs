@@ -87,9 +87,8 @@ $(document).ready(function(){initNavTree('functions_l.html',''); initResizable()
 <li>largest_frame_size
 : <a class="el" href="structRingBuffer.html#a44ac04c74f6f5e1a9c140d599df24ac5">RingBuffer</a>
 </li>
-<li>last_failed_id
-: <a class="el" href="struct__whist__server__state.html#a18a806a7547c036b2cf9685d0c87ad7e">_whist_server_state</a>
-, <a class="el" href="structWhistClientMessage.html#aaa8830c16e8c834bedf813691773dce1">WhistClientMessage</a>
+<li>last_ack_timer
+: <a class="el" href="structTCPContext.html#a5a4d6b886a2bef5474057c78d2c60635">TCPContext</a>
 </li>
 <li>last_frame_codec
 : <a class="el" href="structVideoContext.html#a92f47c777428469b2d71064604aed6ba">VideoContext</a>
@@ -100,17 +99,14 @@ $(document).ready(function(){initNavTree('functions_l.html',''); initResizable()
 <li>last_frame_width
 : <a class="el" href="structVideoContext.html#ac3ddd6fa817d78ddcbec5a61287d9b6d">VideoContext</a>
 </li>
-<li>last_iframe_id
-: <a class="el" href="struct__whist__server__state.html#a4afd5a25dfcfadb40ece82225fcf3e60">_whist_server_state</a>
-</li>
-<li>last_iframe_request_timer
-: <a class="el" href="structVideoContext.html#a610f6e9a4cd8eedf2d0dee7f7176a743">VideoContext</a>
-</li>
 <li>last_loading_frame_timer
 : <a class="el" href="structVideoContext.html#a4ee46c5e6fe261db0516f7884e7f6f95">VideoContext</a>
 </li>
 <li>last_missing_frame_nack
 : <a class="el" href="structRingBuffer.html#a6e2f7541e6a30aad26fcc4f24934d32f">RingBuffer</a>
+</li>
+<li>last_nack_possibility
+: <a class="el" href="structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247">RingBuffer</a>
 </li>
 <li>last_nacked_index
 : <a class="el" href="structFrameData.html#aa204dd1d41815bff9f3df1576e4bd3ad">FrameData</a>
@@ -121,6 +117,12 @@ $(document).ready(function(){initNavTree('functions_l.html',''); initResizable()
 <li>last_network_settings
 : <a class="el" href="structWhistRenderer.html#a8e0c0700c1f2455c9ddc44d0e9b83e5b">WhistRenderer</a>
 </li>
+<li>last_network_settings_time
+: <a class="el" href="structUDPContext.html#a8017af7992ccbdb7140391fb7b6bebc3">UDPContext</a>
+</li>
+<li>last_new_ping_timer
+: <a class="el" href="structUDPContext.html#ad80630f9c73e382c55c08c0563d42e5d">UDPContext</a>
+</li>
 <li>last_nonnack_packet_timer
 : <a class="el" href="structFrameData.html#a7804671e5e00601c971a1857d3bc930d">FrameData</a>
 </li>
@@ -128,20 +130,34 @@ $(document).ready(function(){initNavTree('functions_l.html',''); initResizable()
 : <a class="el" href="structClient.html#ae57236cf6ca1cc672964f7e439f35142">Client</a>
 </li>
 <li>last_ping_client_time
-: <a class="el" href="structClient.html#ae01b86c0f67237d391f69b6ce53d70f4">Client</a>
+: <a class="el" href="structUDPContext.html#a5fb0477415beb03b238f2ba44ddcb2aa">UDPContext</a>
+</li>
+<li>last_ping_id
+: <a class="el" href="structUDPContext.html#aa328141dc3a1e9664cb80a508f1be0c6">UDPContext</a>
 </li>
 <li>last_ping_server_time
-: <a class="el" href="structClient.html#a813154cf3406818a2a02c3cca0fbf6f8">Client</a>
+: <a class="el" href="structUDPContext.html#a73436144e9dd4628a2a01dec1ac885f5">UDPContext</a>
 </li>
-<li>last_played_id
-: <a class="el" href="structAudioContext.html#a074af55e9aa8aeac0908dd4c3ef3209a">AudioContext</a>
+<li>last_ping_timer
+: <a class="el" href="structUDPContext.html#a6f97de88ba8b28f5f5c123500d46c47d">UDPContext</a>
+</li>
+<li>last_pong_id
+: <a class="el" href="structUDPContext.html#a92e5cc06ac01cf0a06c0e7252da6e304">UDPContext</a>
+</li>
+<li>last_received_ping_timer
+: <a class="el" href="structUDPContext.html#a75f754f3238c0dc4fcbe0501d33bd946">UDPContext</a>
+</li>
+<li>last_recvp
+: <a class="el" href="structTCPContext.html#a6552539ca4d5038657418b8bcae1c1a2">TCPContext</a>
 </li>
 <li>last_rendered_id
 : <a class="el" href="structRingBuffer.html#a451ff9ab8f3632cc408ac1242dd1dbf1">RingBuffer</a>
-, <a class="el" href="structVideoContext.html#afc8315c00f2db77a6078c3a4d6b889aa">VideoContext</a>
 </li>
-<li>last_statistics_id
-: <a class="el" href="structVideoContext.html#a4235b70d88233f28ce8fc53f6f37a6c3">VideoContext</a>
+<li>last_start_of_stream_id
+: <a class="el" href="structUDPContext.html#abca5469b9d15bdae869d0dde887e69a1">UDPContext</a>
+</li>
+<li>last_stream_reset_request_timer
+: <a class="el" href="structRingBuffer.html#a0cae5252355a6928ab60412187d215c2">RingBuffer</a>
 </li>
 <li>last_tcp_ping
 : <a class="el" href="structClient.html#ac0c56295342de2dffb48761f9802b818">Client</a>

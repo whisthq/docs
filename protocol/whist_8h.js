@@ -1,6 +1,5 @@
 var whist_8h =
 [
-    [ "NetworkSettings", "structNetworkSettings.html", "structNetworkSettings" ],
     [ "WhistCursor", "structWhistCursor.html", "structWhistCursor" ],
     [ "WhistKeyboardMessage", "structWhistKeyboardMessage.html", "structWhistKeyboardMessage" ],
     [ "WhistMouseButtonMessage", "structWhistMouseButtonMessage.html", "structWhistMouseButtonMessage" ],
@@ -24,7 +23,6 @@ var whist_8h =
     [ "CAPTURE_SPECIAL_WINDOWS_KEYS", "whist_8h.html#a881d9eef8e780a05fe9cd24eab5514d8", null ],
     [ "CHUNK_SIZE", "whist_8h.html#aea3cfda4f3a9f978ec759f206cf186fe", null ],
     [ "CONSECUTIVE_IDENTICAL_FRAMES", "whist_8h.html#a9b26cd4ece83eb114a81877bd849e28b", null ],
-    [ "DBUS_ADDRESS_MAXLEN", "whist_8h.html#a3f3913fffc95a27d40fd3c649d4803b6", null ],
     [ "DEFAULT_BINARY_PRIVATE_KEY", "whist_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41", null ],
     [ "DEFAULT_DPI", "whist_8h.html#a794e0417bdd7ebdad81c59a929932761", null ],
     [ "DEFAULT_HEX_PRIVATE_KEY", "whist_8h.html#a151518969977796d7b0c7d40e9ced62f", null ],
@@ -131,7 +129,6 @@ var whist_8h =
       [ "MESSAGE_STOP_STREAMING", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ab09c156101b732de51304e3be78103e7", null ],
       [ "MESSAGE_START_STREAMING", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128aef24dabe7e8ee67e35c2bd80cce17ced", null ],
       [ "MESSAGE_NETWORK_SETTINGS", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a19284287cfa42761fb3f73e942505549", null ],
-      [ "MESSAGE_UDP_PING", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a10f11477e60990f80f4ea41813f50caa", null ],
       [ "MESSAGE_TCP_PING", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a7dc3a20041a5307d6ca698071014c81b", null ],
       [ "MESSAGE_DIMENSIONS", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a320f73bbf3e5c9abb3285eb70a278b35", null ],
       [ "MESSAGE_NACK", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a56281630a2dddf4896eb7c456f13f053", null ],
@@ -311,6 +308,12 @@ var whist_8h =
       [ "WHIST_WINDOWS", "whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4ac5948829519c1111545c429c63e94eb5", null ],
       [ "WHIST_APPLE", "whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a888be77ea9a3448aa6f07eb48e78d175", null ],
       [ "WHIST_LINUX", "whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a55c44a4934d9e5a4b8d13c79d110fd69", null ]
+    ] ],
+    [ "WhistPacketType", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47d", [
+      [ "PACKET_AUDIO", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47da3701057450c7a09aa316bb880f2db6ac", null ],
+      [ "PACKET_VIDEO", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47dab3488b238f3094f2bcfaa19a393be226", null ],
+      [ "PACKET_MESSAGE", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47da501ce71c96f98746319edaf14fd43aef", null ],
+      [ "NUM_PACKET_TYPES", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994", null ]
     ] ],
     [ "WhistServerMessageType", "whist_8h.html#a7c0601110e75dab446fcca0c02609353", [
       [ "SMESSAGE_NONE", "whist_8h.html#a7c0601110e75dab446fcca0c02609353afcd5317ecd005a890b1c3e70c96f5695", null ],

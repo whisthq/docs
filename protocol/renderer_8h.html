@@ -110,11 +110,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a635aebdffc1d0a5d6dd6835b7f80fe32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#a635aebdffc1d0a5d6dd6835b7f80fe32">renderer_update</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer)</td></tr>
 <tr class="memdesc:a635aebdffc1d0a5d6dd6835b7f80fe32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does any pending work the renderer wants to do.  <a href="renderer_8h.html#a635aebdffc1d0a5d6dd6835b7f80fe32">More...</a><br /></td></tr>
 <tr class="separator:a635aebdffc1d0a5d6dd6835b7f80fe32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a250d7961d0ccedb7d8472501ee5aaeef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#a250d7961d0ccedb7d8472501ee5aaeef">renderer_receive_packet</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="memdesc:a250d7961d0ccedb7d8472501ee5aaeef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video or audio packet.  <a href="renderer_8h.html#a250d7961d0ccedb7d8472501ee5aaeef">More...</a><br /></td></tr>
-<tr class="separator:a250d7961d0ccedb7d8472501ee5aaeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb94491a6b615aa71f713b853324205e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#aeb94491a6b615aa71f713b853324205e">renderer_wants_frame</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, int num_buffered_frames)</td></tr>
+<tr class="memdesc:aeb94491a6b615aa71f713b853324205e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the renderer wants a frame of that type.  <a href="renderer_8h.html#aeb94491a6b615aa71f713b853324205e">More...</a><br /></td></tr>
+<tr class="separator:aeb94491a6b615aa71f713b853324205e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4f833673fdffc6791de6f73ff8e163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#adb4f833673fdffc6791de6f73ff8e163">renderer_receive_frame</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, void *frame)</td></tr>
+<tr class="memdesc:adb4f833673fdffc6791de6f73ff8e163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video or audio frame.  <a href="renderer_8h.html#adb4f833673fdffc6791de6f73ff8e163">More...</a><br /></td></tr>
+<tr class="separator:adb4f833673fdffc6791de6f73ff8e163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f7efeecdf0f0eb50993d2054cc51d51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#a9f7efeecdf0f0eb50993d2054cc51d51">renderer_try_render</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer)</td></tr>
-<tr class="memdesc:a9f7efeecdf0f0eb50993d2054cc51d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video frame (If any are available to render)  <a href="renderer_8h.html#a9f7efeecdf0f0eb50993d2054cc51d51">More...</a><br /></td></tr>
+<tr class="memdesc:a9f7efeecdf0f0eb50993d2054cc51d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video/audio frames (If any are available to render)  <a href="renderer_8h.html#a9f7efeecdf0f0eb50993d2054cc51d51">More...</a><br /></td></tr>
 <tr class="separator:a9f7efeecdf0f0eb50993d2054cc51d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9262636b11f7ef525cea6ee8abf8cb45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#a9262636b11f7ef525cea6ee8abf8cb45">destroy_renderer</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer)</td></tr>
 <tr class="memdesc:a9262636b11f7ef525cea6ee8abf8cb45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the given whist renderer.  <a href="renderer_8h.html#a9262636b11f7ef525cea6ee8abf8cb45">More...</a><br /></td></tr>
@@ -123,9 +126,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains all code that interacts </p>
-<h1><a class="anchor" id="autotoc_md60"></a>
+<h1><a class="anchor" id="autotoc_md56"></a>
 with receiving and rendering video/audio packets</h1>
-<h1><a class="anchor" id="autotoc_md61"></a>
+<h1><a class="anchor" id="autotoc_md57"></a>
 Usage</h1>
 <p>NOTE: Only ONE thread can call a function on whist renderer at a time, unless a function says otherwise.</p>
 <p>See video.h for similar usage </p>
@@ -191,14 +194,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a250d7961d0ccedb7d8472501ee5aaeef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a250d7961d0ccedb7d8472501ee5aaeef">&#9670;&nbsp;</a></span>renderer_receive_packet()</h2>
+<a id="adb4f833673fdffc6791de6f73ff8e163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb4f833673fdffc6791de6f73ff8e163">&#9670;&nbsp;</a></span>renderer_receive_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void renderer_receive_packet </td>
+          <td class="memname">void renderer_receive_frame </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistRenderer.html">WhistRenderer</a> *&#160;</td>
           <td class="paramname"><em>renderer</em>, </td>
@@ -206,8 +209,14 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
+          <td class="paramname"><em>packet_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -217,15 +226,18 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Receive video or audio packet. </p>
+<p>Receive video or audio frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">renderer</td><td>The renderer context to give a packet to</td></tr>
-    <tr><td class="paramname">packet</td><td>Packet as received from the server</td></tr>
+    <tr><td class="paramname">renderer</td><td>The renderer context to give a frame to</td></tr>
+    <tr><td class="paramname">packet_type</td><td>Packet type, either Video or Audio</td></tr>
+    <tr><td class="paramname">frame</td><td>The VideoFrame* / AudioFrame*</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths.</dd>
+<dd>
+The whist_renderer needs you to keep the data in frame alive, until renderer_wants_frame later returns True, since that implies it's done with the old packet and wants a new one TODO: Use a memcpy to simplify this logic </dd></dl>
 
 </div>
 </div>
@@ -245,7 +257,7 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Render the video frame (If any are available to render) </p>
+<p>Render the video/audio frames (If any are available to render) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">renderer</td><td>The video context that wants to render a frame</td></tr>
@@ -286,6 +298,52 @@ This function is optional to call, but it's provided so that rendering work can 
 <dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths.</dd>
 <dd>
 In order for video and audio to be responsive, this function <em>MUST</em> be called in a tight loop, at least once every millisecond. </dd></dl>
+
+</div>
+</div>
+<a id="aeb94491a6b615aa71f713b853324205e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb94491a6b615aa71f713b853324205e">&#9670;&nbsp;</a></span>renderer_wants_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool renderer_wants_frame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistRenderer.html">WhistRenderer</a> *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
+          <td class="paramname"><em>packet_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_buffered_frames</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether or not the renderer wants a frame of that type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderer</td><td>The renderer context to give a packet to</td></tr>
+    <tr><td class="paramname">packet_type</td><td>The type of packet that the renderer may or may not want</td></tr>
+    <tr><td class="paramname">num_buffered_frames</td><td>The number of frames of type packet_type, that are waiting in the network buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the renderer wants a frame of that type, False otherwise</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths. </dd></dl>
 
 </div>
 </div>

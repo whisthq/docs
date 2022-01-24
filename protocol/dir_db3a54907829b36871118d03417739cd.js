@@ -1,6 +1,5 @@
 var dir_db3a54907829b36871118d03417739cd =
 [
-    [ "notif_utils", "dir_2e744448d0d3c4a0d9790bface648f88.html", "dir_2e744448d0d3c4a0d9790bface648f88" ],
     [ "audio.c", "client_2audio_8c.html", "client_2audio_8c" ],
     [ "audio.h", "client_2audio_8h.html", "client_2audio_8h" ],
     [ "client_statistic.c", "client__statistic_8c.html", "client__statistic_8c" ],
@@ -15,8 +14,6 @@ var dir_db3a54907829b36871118d03417739cd =
     [ "native_window_utils_x11.c", "native__window__utils__x11_8c.html", "native__window__utils__x11_8c" ],
     [ "network.c", "client_2network_8c.html", "client_2network_8c" ],
     [ "network.h", "client_2network_8h.html", "client_2network_8h" ],
-    [ "notifications.c", "client_2notifications_8c.html", "client_2notifications_8c" ],
-    [ "notifications.h", "client_2notifications_8h.html", "client_2notifications_8h" ],
     [ "renderer.c", "renderer_8c.html", "renderer_8c" ],
     [ "renderer.h", "renderer_8h.html", "renderer_8h" ],
     [ "sdl_event_handler.c", "sdl__event__handler_8c.html", "sdl__event__handler_8c" ],

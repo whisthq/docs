@@ -7,5 +7,6 @@ var network__algorithm_8c =
     [ "ewma_ratio_bitrate", "network__algorithm_8c.html#aedd260a3c19ffe815276936a34578934", null ],
     [ "fallback_bitrate", "network__algorithm_8c.html#aed048552071ecaa1b07110cb497b451a", null ],
     [ "get_desired_network_settings", "network__algorithm_8c.html#a5fca7d6bd4c3f135046f727ee8224bf7", null ],
-    [ "timed_ewma_ratio_bitrate", "network__algorithm_8c.html#a514ba7746992c1c82a8ddb53628aba87", null ]
+    [ "timed_ewma_ratio_bitrate", "network__algorithm_8c.html#a514ba7746992c1c82a8ddb53628aba87", null ],
+    [ "default_network_settings", "network__algorithm_8c.html#a3e77a9007eebeaf7e4a1e461b045771c", null ]
 ];

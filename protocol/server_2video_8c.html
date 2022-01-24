@@ -102,6 +102,8 @@ $(document).ready(function(){initNavTree('server_2video_8c.html',''); initResiza
 <code>#include &lt;<a class="el" href="encode_8h_source.html">whist/video/codec/encode.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="avpacket__buffer_8h_source.html">whist/utils/avpacket_buffer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="network__algorithm_8h_source.html">whist/network/network_algorithm.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="throttle_8h_source.html">whist/network/throttle.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2video_8h_source.html">video.h</a>&quot;</code><br />
@@ -140,9 +142,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#aade5b8fb0c17924c6ebe2c5ce9923e55">send_empty_frame</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, int id)</td></tr>
 <tr class="memdesc:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an empty frame to the client.  <a href="server_2video_8c.html#aade5b8fb0c17924c6ebe2c5ce9923e55">More...</a><br /></td></tr>
 <tr class="separator:aade5b8fb0c17924c6ebe2c5ce9923e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e33634bba81663467a6f2ca6cee38e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a1e33634bba81663467a6f2ca6cee38e3">do_update_encoder</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
-<tr class="memdesc:a1e33634bba81663467a6f2ca6cee38e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the encoder upon request.  <a href="server_2video_8c.html#a1e33634bba81663467a6f2ca6cee38e3">More...</a><br /></td></tr>
-<tr class="separator:a1e33634bba81663467a6f2ca6cee38e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb784823071f44fd145f236e748f9264"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#abb784823071f44fd145f236e748f9264">update_video_encoder</a> (<a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *state, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, <a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int fps)</td></tr>
+<tr class="memdesc:abb784823071f44fd145f236e748f9264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the encoder upon request.  <a href="server_2video_8c.html#abb784823071f44fd145f236e748f9264">More...</a><br /></td></tr>
+<tr class="separator:abb784823071f44fd145f236e748f9264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26603a17edf486ab02cf85b75e60eb08"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">multithreaded_send_video</a> (void *opaque)</td></tr>
 <tr class="memdesc:a26603a17edf486ab02cf85b75e60eb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This loops and captures video frames, encodes them if needed, and sends them to the client along with cursor images if necessary.  <a href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">More...</a><br /></td></tr>
 <tr class="separator:a26603a17edf486ab02cf85b75e60eb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,9 +152,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains all code that interacts directly with processing </p>
-<h1><a class="anchor" id="autotoc_md104"></a>
+<h1><a class="anchor" id="autotoc_md98"></a>
 video on the server.</h1>
-<h1><a class="anchor" id="autotoc_md105"></a>
+<h1><a class="anchor" id="autotoc_md99"></a>
 Usage</h1>
 <p><a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08" title="This loops and captures video frames, encodes them if needed, and sends them to the client along with...">multithreaded_send_video()</a> is called on its own thread and loops repeatedly to capture and send video. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -283,52 +285,6 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>On success, 0. On failure, -1. </dd></dl>
-
-</div>
-</div>
-<a id="a1e33634bba81663467a6f2ca6cee38e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e33634bba81663467a6f2ca6cee38e3">&#9670;&nbsp;</a></span>do_update_encoder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVideoEncoder.html">VideoEncoder</a>* do_update_encoder </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Updates the encoder upon request. </p>
-<p>Note that this function <em>returns</em> the updated encoder, due to the encoder factory.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">state</td><td>the Whist server state </td></tr>
-    <tr><td class="paramname">encoder</td><td><a class="el" href="structVideoEncoder.html" title="Master video encoding struct.">VideoEncoder</a> pointer</td></tr>
-    <tr><td class="paramname">device</td><td><a class="el" href="structCaptureDevice.html">CaptureDevice</a> pointer</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The new encoder </dd></dl>
 
 </div>
 </div>
@@ -611,6 +567,73 @@ Usage</h1>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abb784823071f44fd145f236e748f9264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb784823071f44fd145f236e748f9264">&#9670;&nbsp;</a></span>update_video_encoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVideoEncoder.html">VideoEncoder</a>* update_video_encoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">whist_server_state</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bitrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
+          <td class="paramname"><em>codec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the encoder upon request. </p>
+<p>Note that this function <em>returns</em> the updated encoder, due to the encoder factory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The Whist server state </td></tr>
+    <tr><td class="paramname">encoder</td><td>The previous <a class="el" href="structVideoEncoder.html" title="Master video encoding struct.">VideoEncoder</a> </td></tr>
+    <tr><td class="paramname">device</td><td>The <a class="el" href="structCaptureDevice.html">CaptureDevice</a> </td></tr>
+    <tr><td class="paramname">bitrate</td><td>The bitrate to encode at </td></tr>
+    <tr><td class="paramname">codec</td><td>The codec to use </td></tr>
+    <tr><td class="paramname">fps</td><td>The FPS to use</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new encoder </dd></dl>
 
 </div>
 </div>

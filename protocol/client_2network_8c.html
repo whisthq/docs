@@ -115,15 +115,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6">discover_ports</a> (bool *with_stun)</td></tr>
 <tr class="memdesc:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client.  <a href="client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6">More...</a><br /></td></tr>
 <tr class="separator:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227a48ef77a55282ab59696435f3859b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a227a48ef77a55282ab59696435f3859b">send_ping</a> (int ping_id)</td></tr>
-<tr class="memdesc:a227a48ef77a55282ab59696435f3859b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a ping with ID ping_id to the server.  <a href="client_2network_8c.html#a227a48ef77a55282ab59696435f3859b">More...</a><br /></td></tr>
-<tr class="separator:a227a48ef77a55282ab59696435f3859b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbcee4b22977f8b164eb393f8dd4187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a0fbcee4b22977f8b164eb393f8dd4187">send_tcp_ping</a> (int ping_id)</td></tr>
 <tr class="memdesc:a0fbcee4b22977f8b164eb393f8dd4187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a TCP ping with to the server with the given <code>ping_id</code>.  <a href="client_2network_8c.html#a0fbcee4b22977f8b164eb393f8dd4187">More...</a><br /></td></tr>
 <tr class="separator:a0fbcee4b22977f8b164eb393f8dd4187"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b09717d72f228e3e98a8345a00c9e3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a5b09717d72f228e3e98a8345a00c9e3a">receive_pong</a> (int pong_id)</td></tr>
-<tr class="memdesc:a5b09717d72f228e3e98a8345a00c9e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a pong (ping acknowledgement) with ID pong_id.  <a href="client_2network_8c.html#a5b09717d72f228e3e98a8345a00c9e3a">More...</a><br /></td></tr>
-<tr class="separator:a5b09717d72f228e3e98a8345a00c9e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ab324d1a3aeb074f72b3cde078ef3e0bb">receive_tcp_pong</a> (int pong_id)</td></tr>
 <tr class="memdesc:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a TCP pong (ping acknowledgement) with ID pong_id.  <a href="client_2network_8c.html#ab324d1a3aeb074f72b3cde078ef3e0bb">More...</a><br /></td></tr>
 <tr class="separator:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,24 +156,14 @@ Variables</h2></td></tr>
 <tr class="separator:a60a34315f460179939054acaf3ed8163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f4a0eca6c500b41c87fc2ba4375b66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a></td></tr>
 <tr class="separator:a78f4a0eca6c500b41c87fc2ba4375b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5120ece93dfddf5638a59e495e9c6d46"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a></td></tr>
-<tr class="separator:a5120ece93dfddf5638a59e495e9c6d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f37bf5887ffe229a056308ad6bf2687"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a7f37bf5887ffe229a056308ad6bf2687">last_ping_timer</a></td></tr>
-<tr class="separator:a7f37bf5887ffe229a056308ad6bf2687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a938f00d5159f28e5a4b38048d65170aa"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a938f00d5159f28e5a4b38048d65170aa">last_udp_ping_id</a></td></tr>
-<tr class="separator:a938f00d5159f28e5a4b38048d65170aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2911d7953d5ab4e5039f396fa8be10b4"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a2911d7953d5ab4e5039f396fa8be10b4">udp_ping_failures</a></td></tr>
-<tr class="separator:a2911d7953d5ab4e5039f396fa8be10b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93c95007afdb95d25df4c786ae6c83dc"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a93c95007afdb95d25df4c786ae6c83dc">last_udp_pong_id</a></td></tr>
-<tr class="separator:a93c95007afdb95d25df4c786ae6c83dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f8192863dd9302fba7bbe585f96c804"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a5f8192863dd9302fba7bbe585f96c804">ping_lambda</a> = 0.8</td></tr>
-<tr class="separator:a5f8192863dd9302fba7bbe585f96c804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec7aa66309a290d0448fcfcc9d887ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#aec7aa66309a290d0448fcfcc9d887ab8">last_tcp_ping_timer</a></td></tr>
 <tr class="separator:aec7aa66309a290d0448fcfcc9d887ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ab641f9b4a601bc5ff7e2aa2941142e"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a5ab641f9b4a601bc5ff7e2aa2941142e">last_tcp_ping_id</a></td></tr>
 <tr class="separator:a5ab641f9b4a601bc5ff7e2aa2941142e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1ccf82a54161562999eaee52e4b328"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ada1ccf82a54161562999eaee52e4b328">last_tcp_pong_id</a></td></tr>
 <tr class="separator:ada1ccf82a54161562999eaee52e4b328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e4ce6a658b77aa4bb7753403794776"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ae4e4ce6a658b77aa4bb7753403794776">connected</a> = false</td></tr>
+<tr class="separator:ae4e4ce6a658b77aa4bb7753403794776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -322,32 +306,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a5b09717d72f228e3e98a8345a00c9e3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b09717d72f228e3e98a8345a00c9e3a">&#9670;&nbsp;</a></span>receive_pong()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void receive_pong </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pong_id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handle a pong (ping acknowledgement) with ID pong_id. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pong_id</td><td>ID of the received pong </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ab324d1a3aeb074f72b3cde078ef3e0bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab324d1a3aeb074f72b3cde078ef3e0bb">&#9670;&nbsp;</a></span>receive_tcp_pong()</h2>
 
@@ -371,26 +329,6 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a227a48ef77a55282ab59696435f3859b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a227a48ef77a55282ab59696435f3859b">&#9670;&nbsp;</a></span>send_ping()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void send_ping </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ping_id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Send a ping with ID ping_id to the server. </p>
 
 </div>
 </div>
@@ -510,14 +448,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a7f37bf5887ffe229a056308ad6bf2687"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f37bf5887ffe229a056308ad6bf2687">&#9670;&nbsp;</a></span>last_ping_timer</h2>
+<a id="ae4e4ce6a658b77aa4bb7753403794776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e4ce6a658b77aa4bb7753403794776">&#9670;&nbsp;</a></span>connected</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> last_ping_timer</td>
+          <td class="memname">volatile bool connected = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -566,48 +504,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a938f00d5159f28e5a4b38048d65170aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a938f00d5159f28e5a4b38048d65170aa">&#9670;&nbsp;</a></span>last_udp_ping_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int last_udp_ping_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a93c95007afdb95d25df4c786ae6c83dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93c95007afdb95d25df4c786ae6c83dc">&#9670;&nbsp;</a></span>last_udp_pong_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int last_udp_pong_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5120ece93dfddf5638a59e495e9c6d46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5120ece93dfddf5638a59e495e9c6d46">&#9670;&nbsp;</a></span>latency</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile double latency</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab052ae0d87ab16898c020aed81f21aa0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab052ae0d87ab16898c020aed81f21aa0">&#9670;&nbsp;</a></span>packet_tcp_context</h2>
 
@@ -636,20 +532,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a5f8192863dd9302fba7bbe585f96c804"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f8192863dd9302fba7bbe585f96c804">&#9670;&nbsp;</a></span>ping_lambda</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double ping_lambda = 0.8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a182d69acd4e02e6c0a027622a4556e53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a182d69acd4e02e6c0a027622a4556e53">&#9670;&nbsp;</a></span>server_ip</h2>
 
@@ -672,20 +554,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">int tcp_port = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2911d7953d5ab4e5039f396fa8be10b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2911d7953d5ab4e5039f396fa8be10b4">&#9670;&nbsp;</a></span>udp_ping_failures</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int udp_ping_failures</td>
         </tr>
       </table>
 </div><div class="memdoc">

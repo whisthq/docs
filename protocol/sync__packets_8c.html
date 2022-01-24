@@ -103,12 +103,9 @@ $(document).ready(function(){initNavTree('sync__packets_8c.html',''); initResiza
 <code>#include &quot;<a class="el" href="sync__packets_8h_source.html">sync_packets.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client__utils_8h_source.html">client_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client__statistic_8h_source.html">client_statistic.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="client_2notifications_8h_source.html">notifications.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae6622b69f724d312e46353eda6c9123e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#ae6622b69f724d312e46353eda6c9123e">update_ping</a> ()</td></tr>
-<tr class="separator:ae6622b69f724d312e46353eda6c9123e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79697ae49f97b9202cf93728ba9c6063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a79697ae49f97b9202cf93728ba9c6063">update_tcp_ping</a> ()</td></tr>
 <tr class="separator:a79697ae49f97b9202cf93728ba9c6063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98dda3fd63338635cde0ad01133e5e2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a98dda3fd63338635cde0ad01133e5e2b">multithreaded_sync_udp_packets</a> (void *opaque)</td></tr>
@@ -130,16 +127,8 @@ Variables</h2></td></tr>
 <tr class="separator:abef30726c0347177718a4ec7a32e57ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab052ae0d87ab16898c020aed81f21aa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSocketContext.html">SocketContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#ab052ae0d87ab16898c020aed81f21aa0">packet_tcp_context</a></td></tr>
 <tr class="separator:ab052ae0d87ab16898c020aed81f21aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36823025f12a809217f7771125658c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#ab36823025f12a809217f7771125658c2">connected</a> = true</td></tr>
-<tr class="separator:ab36823025f12a809217f7771125658c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f37bf5887ffe229a056308ad6bf2687"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a7f37bf5887ffe229a056308ad6bf2687">last_ping_timer</a></td></tr>
-<tr class="separator:a7f37bf5887ffe229a056308ad6bf2687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a938f00d5159f28e5a4b38048d65170aa"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a938f00d5159f28e5a4b38048d65170aa">last_udp_ping_id</a></td></tr>
-<tr class="separator:a938f00d5159f28e5a4b38048d65170aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93c95007afdb95d25df4c786ae6c83dc"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a93c95007afdb95d25df4c786ae6c83dc">last_udp_pong_id</a></td></tr>
-<tr class="separator:a93c95007afdb95d25df4c786ae6c83dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2911d7953d5ab4e5039f396fa8be10b4"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a2911d7953d5ab4e5039f396fa8be10b4">udp_ping_failures</a></td></tr>
-<tr class="separator:a2911d7953d5ab4e5039f396fa8be10b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e4ce6a658b77aa4bb7753403794776"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#ae4e4ce6a658b77aa4bb7753403794776">connected</a></td></tr>
+<tr class="separator:ae4e4ce6a658b77aa4bb7753403794776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec7aa66309a290d0448fcfcc9d887ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#aec7aa66309a290d0448fcfcc9d887ab8">last_tcp_ping_timer</a></td></tr>
 <tr class="separator:aec7aa66309a290d0448fcfcc9d887ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ab641f9b4a601bc5ff7e2aa2941142e"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a5ab641f9b4a601bc5ff7e2aa2941142e">last_tcp_ping_id</a></td></tr>
@@ -151,9 +140,9 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
-<h1><a class="anchor" id="autotoc_md74"></a>
+<h1><a class="anchor" id="autotoc_md70"></a>
 @brief This file contains code for high-level communication with the server</h1>
-<h1><a class="anchor" id="autotoc_md75"></a>
+<h1><a class="anchor" id="autotoc_md71"></a>
 Usage</h1>
 <p>Use multithreaded_sync_udp_packets to send and receive UDP messages to and from the server, such as audio and video packets. Use multithreaded_sync_tcp_packets to send and receive TCP messages, mostly clipboard packets. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -266,23 +255,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ae6622b69f724d312e46353eda6c9123e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6622b69f724d312e46353eda6c9123e">&#9670;&nbsp;</a></span>update_ping()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_ping </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a79697ae49f97b9202cf93728ba9c6063"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79697ae49f97b9202cf93728ba9c6063">&#9670;&nbsp;</a></span>update_tcp_ping()</h2>
 
@@ -301,28 +273,14 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ab36823025f12a809217f7771125658c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab36823025f12a809217f7771125658c2">&#9670;&nbsp;</a></span>connected</h2>
+<a id="ae4e4ce6a658b77aa4bb7753403794776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e4ce6a658b77aa4bb7753403794776">&#9670;&nbsp;</a></span>connected</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool connected = true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7f37bf5887ffe229a056308ad6bf2687"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f37bf5887ffe229a056308ad6bf2687">&#9670;&nbsp;</a></span>last_ping_timer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> last_ping_timer</td>
+          <td class="memname">volatile bool connected</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -371,34 +329,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a938f00d5159f28e5a4b38048d65170aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a938f00d5159f28e5a4b38048d65170aa">&#9670;&nbsp;</a></span>last_udp_ping_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int last_udp_ping_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a93c95007afdb95d25df4c786ae6c83dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93c95007afdb95d25df4c786ae6c83dc">&#9670;&nbsp;</a></span>last_udp_pong_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int last_udp_pong_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5120ece93dfddf5638a59e495e9c6d46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5120ece93dfddf5638a59e495e9c6d46">&#9670;&nbsp;</a></span>latency</h2>
 
@@ -435,20 +365,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structSocketContext.html">SocketContext</a> packet_udp_context</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2911d7953d5ab4e5039f396fa8be10b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2911d7953d5ab4e5039f396fa8be10b4">&#9670;&nbsp;</a></span>udp_ping_failures</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int udp_ping_failures</td>
         </tr>
       </table>
 </div><div class="memdoc">

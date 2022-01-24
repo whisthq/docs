@@ -122,7 +122,6 @@ $(document).ready(function(){initNavTree('whist_8h.html',''); initResizable(); }
 <code>#include &lt;<a class="el" href="clock_8h_source.html">whist/utils/clock.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="os__utils_8h_source.html">whist/utils/os_utils.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="network__algorithm_8h_source.html">whist/network/network_algorithm.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="whist__frame_8h_source.html">whist_frame.h</a>&quot;</code><br />
 </div>
@@ -130,8 +129,6 @@ $(document).ready(function(){initNavTree('whist_8h.html',''); initResizable(); }
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkSettings.html">NetworkSettings</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistCursor.html">WhistCursor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursor properties.  <a href="structWhistCursor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,8 +262,6 @@ Macros</h2></td></tr>
 <tr class="separator:a76bf238d14734ada3ef9fadfdea45ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a30c0b9e28fae7471d7ee8e2a229c7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a7a30c0b9e28fae7471d7ee8e2a229c7d">WHIST_IDENTIFIER_MAXLEN</a>&#160;&#160;&#160;31</td></tr>
 <tr class="separator:a7a30c0b9e28fae7471d7ee8e2a229c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f3913fffc95a27d40fd3c649d4803b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a3f3913fffc95a27d40fd3c649d4803b6">DBUS_ADDRESS_MAXLEN</a>&#160;&#160;&#160;100</td></tr>
-<tr class="separator:a3f3913fffc95a27d40fd3c649d4803b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4cb1dd583cf9e199f899068ca725a1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>&#160;&#160;&#160;255</td></tr>
 <tr class="separator:aa4cb1dd583cf9e199f899068ca725a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a0a3a9d3952e2b57333ed6daceb163e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a3a0a3a9d3952e2b57333ed6daceb163e">MAX_URL_LENGTH</a>&#160;&#160;&#160;2048</td></tr>
@@ -380,6 +375,13 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:abc95f4cc09d4297e52acd3113483a47d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> { <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47da3701057450c7a09aa316bb880f2db6ac">PACKET_AUDIO</a> = 0, 
+<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dab3488b238f3094f2bcfaa19a393be226">PACKET_VIDEO</a> = 1, 
+<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47da501ce71c96f98746319edaf14fd43aef">PACKET_MESSAGE</a> = 2, 
+<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a> = 3
+ }</td></tr>
+<tr class="memdesc:abc95f4cc09d4297e52acd3113483a47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data packet description.  <a href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">More...</a><br /></td></tr>
+<tr class="separator:abc95f4cc09d4297e52acd3113483a47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b4b6ae5fb82af68d46aaea3d3e4d79"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> { <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a078edde93a764047c0ea92d4b2238a37">CODEC_TYPE_UNKNOWN</a> = 0, 
 <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a27612f02539b2da18de5bdc23cda876f">CODEC_TYPE_H264</a> = 264, 
 <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79af4b1406cb3a6d27c1582480586f29f82">CODEC_TYPE_H265</a> = 265, 
@@ -622,20 +624,19 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ab09c156101b732de51304e3be78103e7">MESSAGE_STOP_STREAMING</a> = 105, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128aef24dabe7e8ee67e35c2bd80cce17ced">MESSAGE_START_STREAMING</a> = 106, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a19284287cfa42761fb3f73e942505549">MESSAGE_NETWORK_SETTINGS</a> = 107, 
-<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a10f11477e60990f80f4ea41813f50caa">MESSAGE_UDP_PING</a> = 108, 
+<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a7dc3a20041a5307d6ca698071014c81b">MESSAGE_TCP_PING</a> = 109, 
 <br />
-&#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a7dc3a20041a5307d6ca698071014c81b">MESSAGE_TCP_PING</a> = 109, 
-<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a320f73bbf3e5c9abb3285eb70a278b35">MESSAGE_DIMENSIONS</a> = 110, 
+&#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a320f73bbf3e5c9abb3285eb70a278b35">MESSAGE_DIMENSIONS</a> = 110, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a56281630a2dddf4896eb7c456f13f053">MESSAGE_NACK</a> = 111, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a535a324c90ea58fb2754d8ad02370c49">MESSAGE_BITARRAY_NACK</a> = 112, 
+<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8285383cb763af7a4747b8a516103e4c">CMESSAGE_CLIPBOARD</a> = 113, 
 <br />
-&#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8285383cb763af7a4747b8a516103e4c">CMESSAGE_CLIPBOARD</a> = 113, 
-<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a9b35f1410b548685be643591a7e1e499">MESSAGE_STREAM_RESET_REQUEST</a> = 114, 
+&#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a9b35f1410b548685be643591a7e1e499">MESSAGE_STREAM_RESET_REQUEST</a> = 114, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128aad0e41f01fe989967ccf13dba65c7041">MESSAGE_DISCOVERY_REQUEST</a> = 115, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a349edcec26ba49767cf95f929499760c">MESSAGE_TCP_RECOVERY</a> = 116, 
+<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ab7e896a962e10356358a9cc068226810">MESSAGE_OPEN_URL</a> = 117, 
 <br />
-&#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ab7e896a962e10356358a9cc068226810">MESSAGE_OPEN_URL</a> = 117, 
-<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a6cd55b7e8fdb1c2fea42622087fc0331">CMESSAGE_FILE_METADATA</a> = 119, 
+&#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a6cd55b7e8fdb1c2fea42622087fc0331">CMESSAGE_FILE_METADATA</a> = 119, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8954648f56bc98bef82ab55cfaad9449">CMESSAGE_FILE_DATA</a> = 120, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
 <br />
@@ -871,20 +872,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define CONSECUTIVE_IDENTICAL_FRAMES&#160;&#160;&#160;300</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3f3913fffc95a27d40fd3c649d4803b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f3913fffc95a27d40fd3c649d4803b6">&#9670;&nbsp;</a></span>DBUS_ADDRESS_MAXLEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DBUS_ADDRESS_MAXLEN&#160;&#160;&#160;100</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2249,7 +2236,6 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a19284287cfa42761fb3f73e942505549"></a>MESSAGE_NETWORK_SETTINGS&#160;</td><td class="fielddoc"><p><code>network_settings</code> struct is valid in FractClientMessage. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a10f11477e60990f80f4ea41813f50caa"></a>MESSAGE_UDP_PING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a7dc3a20041a5307d6ca698071014c81b"></a>MESSAGE_TCP_PING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a320f73bbf3e5c9abb3285eb70a278b35"></a>MESSAGE_DIMENSIONS&#160;</td><td class="fielddoc"><p><code>dimensions.width</code> int and <code>dimensions.height</code> int is valid in FractClientMessage </p>
 </td></tr>
@@ -2687,6 +2673,28 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a6e760c662b6b1560542cc151a2ac01b4ac5948829519c1111545c429c63e94eb5"></a>WHIST_WINDOWS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6e760c662b6b1560542cc151a2ac01b4a888be77ea9a3448aa6f07eb48e78d175"></a>WHIST_APPLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6e760c662b6b1560542cc151a2ac01b4a55c44a4934d9e5a4b8d13c79d110fd69"></a>WHIST_LINUX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="abc95f4cc09d4297e52acd3113483a47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc95f4cc09d4297e52acd3113483a47d">&#9670;&nbsp;</a></span>WhistPacketType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data packet description. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abc95f4cc09d4297e52acd3113483a47da3701057450c7a09aa316bb880f2db6ac"></a>PACKET_AUDIO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abc95f4cc09d4297e52acd3113483a47dab3488b238f3094f2bcfaa19a393be226"></a>PACKET_VIDEO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abc95f4cc09d4297e52acd3113483a47da501ce71c96f98746319edaf14fd43aef"></a>PACKET_MESSAGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994"></a>NUM_PACKET_TYPES&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

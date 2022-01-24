@@ -144,12 +144,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ac7f5ca308305ae38e2cc598aac3886ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ac7f5ca308305ae38e2cc598aac3886ba">send_new_tab_url_if_needed</a> ()</td></tr>
 <tr class="memdesc:ac7f5ca308305ae38e2cc598aac3886ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends message to server with new tab URL to open, if the global new_tab_url is non-NULL.  <a href="client__utils_8h.html#ac7f5ca308305ae38e2cc598aac3886ba">More...</a><br /></td></tr>
 <tr class="separator:ac7f5ca308305ae38e2cc598aac3886ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a043d84022be877e6d65dd154c5cb183f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a043d84022be877e6d65dd154c5cb183f">send_desired_network_settings</a> (<a class="el" href="structNetworkSettings.html">NetworkSettings</a> desired_network_settings)</td></tr>
-<tr class="memdesc:a043d84022be877e6d65dd154c5cb183f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends message to server with our desired network settings.  <a href="client__utils_8h.html#a043d84022be877e6d65dd154c5cb183f">More...</a><br /></td></tr>
-<tr class="separator:a043d84022be877e6d65dd154c5cb183f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf93038815981906d156fc5d2e00b2be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#adf93038815981906d156fc5d2e00b2be">nack_packet</a> (<a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> frame_type, int id, int index)</td></tr>
-<tr class="memdesc:adf93038815981906d156fc5d2e00b2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nack handler for the ring buffer.  <a href="client__utils_8h.html#adf93038815981906d156fc5d2e00b2be">More...</a><br /></td></tr>
-<tr class="separator:adf93038815981906d156fc5d2e00b2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -297,50 +291,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="adf93038815981906d156fc5d2e00b2be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf93038815981906d156fc5d2e00b2be">&#9670;&nbsp;</a></span>nack_packet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nack_packet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
-          <td class="paramname"><em>frame_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Nack handler for the ring buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frame_type</td><td>The packet type </td></tr>
-    <tr><td class="paramname">id</td><td>The ID of the packet </td></tr>
-    <tr><td class="paramname">index</td><td>The index of the packet </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ab8b658f4f4780855471cbe000352ed97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8b658f4f4780855471cbe000352ed97">&#9670;&nbsp;</a></span>prepare_init_to_server()</h2>
 
@@ -414,32 +364,6 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success, 1 on args prompting graceful exit </dd></dl>
-
-</div>
-</div>
-<a id="a043d84022be877e6d65dd154c5cb183f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a043d84022be877e6d65dd154c5cb183f">&#9670;&nbsp;</a></span>send_desired_network_settings()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void send_desired_network_settings </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td>
-          <td class="paramname"><em>desired_network_settings</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sends message to server with our desired network settings. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">desired_network_settings</td><td>The desired network settings </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

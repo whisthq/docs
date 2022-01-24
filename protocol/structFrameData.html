@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('structFrameData.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a41088cd4c0cdaa7dd31184446e0ef124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a41088cd4c0cdaa7dd31184446e0ef124">type</a></td></tr>
+<tr class="memitem:a41088cd4c0cdaa7dd31184446e0ef124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a41088cd4c0cdaa7dd31184446e0ef124">type</a></td></tr>
 <tr class="separator:a41088cd4c0cdaa7dd31184446e0ef124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78648a23cf6d7bec7ba095e79c90bcce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a78648a23cf6d7bec7ba095e79c90bcce">num_original_packets</a></td></tr>
 <tr class="separator:a78648a23cf6d7bec7ba095e79c90bcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,7 +138,8 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structFrameData.html" title="FrameData struct containing content and metadata of encoded frames.">FrameData</a> struct containing content and metadata of encoded frames. </p>
-<p>This is used to handle reconstruction of encoded frames from UDP packets. It contains metadata to keep track of what packets we have received and nacked for, as well as a buffer for holding the concatenated UDP packets. </p>
+<p>This is used to handle reconstruction of encoded frames from UDP packets. It contains metadata to keep track of what packets we have received and nacked for, as well as a buffer for holding the concatenated UDP packets.</p>
+<p>TODO: Pull this into RingBuffer.c, and stop exposing it to the client </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a7ca16f755e18b1448860ddebaa6f96bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ca16f755e18b1448860ddebaa6f96bd">&#9670;&nbsp;</a></span>fec_decoder</h2>
@@ -413,7 +414,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="whist_2network_2network_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> FrameData::type</td>
+          <td class="memname"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> FrameData::type</td>
         </tr>
       </table>
 </div><div class="memdoc">

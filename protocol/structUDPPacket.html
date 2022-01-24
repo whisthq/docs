@@ -90,50 +90,322 @@ $(document).ready(function(){initNavTree('structUDPPacket.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:abd62b3085756324e8648ad7b2a543ee5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAESMetadata.html">AESMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPPacket.html#abd62b3085756324e8648ad7b2a543ee5">aes_metadata</a></td></tr>
-<tr class="separator:abd62b3085756324e8648ad7b2a543ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4208dc5d10f5b4ef103a5548aa41eea0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPPacket.html#a4208dc5d10f5b4ef103a5548aa41eea0">payload_size</a></td></tr>
-<tr class="separator:a4208dc5d10f5b4ef103a5548aa41eea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab83f61bc49db9466a59aae66226fe4e0"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPPacket.html#ab83f61bc49db9466a59aae66226fe4e0">payload</a> [sizeof(<a class="el" href="structWhistPacket.html">WhistPacket</a>)+<a class="el" href="aes_8h.html#ab2dbea0ebc498b1422ac21f80b3adb50">MAX_ENCRYPTION_SIZE_INCREASE</a>]</td></tr>
-<tr class="separator:ab83f61bc49db9466a59aae66226fe4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2994f5c6c546484de47449bc7100afbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="udp_8c.html#af026caee3b8fbd9791a41cd1af78046a">UDPPacketType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPPacket.html#a2994f5c6c546484de47449bc7100afbf">type</a></td></tr>
+<tr class="separator:a2994f5c6c546484de47449bc7100afbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36984f7eeaa9d12f19c175a4882c423b"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a11dc05a6934a41bf5df08363877f1b4b"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structWhistSegment.html">WhistSegment</a>&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#afef458c276a4f280f97b3d6edecd25d5">udp_whist_segment_data</a></td></tr>
+<tr class="separator:a11dc05a6934a41bf5df08363877f1b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d72fdd4aafca3768f8e426434163194"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ababe4f1d44df44d3b7548c205c8da9e6"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a32de45f5c2b5fa80cccde2bf4a2b4c66">whist_type</a></td></tr>
+<tr class="separator:ababe4f1d44df44d3b7548c205c8da9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19d3f50caa0d51b96993ac47c046198"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a248091c90d08e6aa85ec427e3e68eadf">id</a></td></tr>
+<tr class="separator:aa19d3f50caa0d51b96993ac47c046198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584345640e3955234d1310833ff11865"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned short&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#ad3912bb034a085420e5be62e9147de8b">index</a></td></tr>
+<tr class="separator:a584345640e3955234d1310833ff11865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d72fdd4aafca3768f8e426434163194"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a2c38d45a8a97d6eb58669a99cf9fad2b">udp_nack_data</a></td></tr>
+<tr class="separator:a1d72fdd4aafca3768f8e426434163194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f8472ffdcbca27fe5bfd7b909c68c8"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a598ff18d6b7dcb546400f6316ea57b39"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#ad492793b61c2f4bcaec79cb4ea5c7018">type</a></td></tr>
+<tr class="separator:a598ff18d6b7dcb546400f6316ea57b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ee2b3ea5cf1a6bcceaeb9f486a3659"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a248091c90d08e6aa85ec427e3e68eadf">id</a></td></tr>
+<tr class="separator:a90ee2b3ea5cf1a6bcceaeb9f486a3659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9984e850d302898330334f565e7b74"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a897005c8e9655cbc58fde204c2b2be96">index</a></td></tr>
+<tr class="separator:a3d9984e850d302898330334f565e7b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482253a7e61f8b05be8d8b3a1f0671fc"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a092b46960ea776417059e2f77878f174">numBits</a></td></tr>
+<tr class="separator:a482253a7e61f8b05be8d8b3a1f0671fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb01414239a421329c205cdb2772eb1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned char&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a20c28f810560ec34ec156fe940d31926">ba_raw</a> [<a class="el" href="whist_8h.html#a60d7c1ddafff24bb11e440ffaf1ebbcf">BITS_TO_CHARS</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>))]</td></tr>
+<tr class="separator:a2cb01414239a421329c205cdb2772eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f8472ffdcbca27fe5bfd7b909c68c8"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a567c9608e05d427a8dffddc9901bb359">udp_bitarray_nack_data</a></td></tr>
+<tr class="separator:ad9f8472ffdcbca27fe5bfd7b909c68c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f5c0405c5d3f5bfa516c387dabbf1c"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:adebd1c387336568c4e0fad39891b0bec"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a32de45f5c2b5fa80cccde2bf4a2b4c66">whist_type</a></td></tr>
+<tr class="separator:adebd1c387336568c4e0fad39891b0bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb3a0d2a767192584de87e0c9e86211"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#aab12ec95c44b6aa53c38349e4b904be5">greatest_failed_id</a></td></tr>
+<tr class="separator:afbb3a0d2a767192584de87e0c9e86211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f5c0405c5d3f5bfa516c387dabbf1c"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#af2279d632018f8c9bf0b7a23c813c103">udp_stream_reset_data</a></td></tr>
+<tr class="separator:a48f5c0405c5d3f5bfa516c387dabbf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079999e43c37546501ae28742bfbad5e"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a58b32898e6cb066f425c214c1a1066eb"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a248091c90d08e6aa85ec427e3e68eadf">id</a></td></tr>
+<tr class="separator:a58b32898e6cb066f425c214c1a1066eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70c7b7fc82372f626c9e4ceef6dc088"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a39118f6f4d75e3ba9a36cc23b4e900ac">original_timestamp</a></td></tr>
+<tr class="separator:ac70c7b7fc82372f626c9e4ceef6dc088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079999e43c37546501ae28742bfbad5e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#afa496b5422a18f2aaa8f21cebfad6c96">udp_ping_data</a></td></tr>
+<tr class="separator:a079999e43c37546501ae28742bfbad5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8551d7a790adb412a803152bf6b2b4e"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a54214b28a9c55a2022d2233be41bc611"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a248091c90d08e6aa85ec427e3e68eadf">id</a></td></tr>
+<tr class="separator:a54214b28a9c55a2022d2233be41bc611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8551d7a790adb412a803152bf6b2b4e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a709cf65aa1bf2e12f3ac989286ca3131">udp_pong_data</a></td></tr>
+<tr class="separator:aa8551d7a790adb412a803152bf6b2b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25de71708e89a88c16c3b84a0363614"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a544d040ad77c33dccabd6d2f1c924eb9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#a138b4ffd2f1235bc8a287e121583ccc5">network_settings</a></td></tr>
+<tr class="separator:a544d040ad77c33dccabd6d2f1c924eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25de71708e89a88c16c3b84a0363614"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structUDPPacket.html#ad79026cd315f35fd26d7dff2d5186f04">udp_network_settings_data</a></td></tr>
+<tr class="separator:ac25de71708e89a88c16c3b84a0363614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36984f7eeaa9d12f19c175a4882c423b"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a36984f7eeaa9d12f19c175a4882c423b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="abd62b3085756324e8648ad7b2a543ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd62b3085756324e8648ad7b2a543ee5">&#9670;&nbsp;</a></span>aes_metadata</h2>
+<a id="a36984f7eeaa9d12f19c175a4882c423b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36984f7eeaa9d12f19c175a4882c423b">&#9670;&nbsp;</a></span>@13</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structAESMetadata.html">AESMetadata</a> UDPPacket::aes_metadata</td>
+          <td class="memname">union { ... } </td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab83f61bc49db9466a59aae66226fe4e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab83f61bc49db9466a59aae66226fe4e0">&#9670;&nbsp;</a></span>payload</h2>
+<a id="a20c28f810560ec34ec156fe940d31926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c28f810560ec34ec156fe940d31926">&#9670;&nbsp;</a></span>ba_raw</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char UDPPacket::payload[sizeof(<a class="el" href="structWhistPacket.html">WhistPacket</a>)+<a class="el" href="aes_8h.html#ab2dbea0ebc498b1422ac21f80b3adb50">MAX_ENCRYPTION_SIZE_INCREASE</a>]</td>
+          <td class="memname">unsigned char UDPPacket::ba_raw[<a class="el" href="whist_8h.html#a60d7c1ddafff24bb11e440ffaf1ebbcf">BITS_TO_CHARS</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>, <a class="el" href="ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>))]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4208dc5d10f5b4ef103a5548aa41eea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4208dc5d10f5b4ef103a5548aa41eea0">&#9670;&nbsp;</a></span>payload_size</h2>
+<a id="aab12ec95c44b6aa53c38349e4b904be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab12ec95c44b6aa53c38349e4b904be5">&#9670;&nbsp;</a></span>greatest_failed_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int UDPPacket::payload_size</td>
+          <td class="memname">int UDPPacket::greatest_failed_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a248091c90d08e6aa85ec427e3e68eadf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248091c90d08e6aa85ec427e3e68eadf">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UDPPacket::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3912bb034a085420e5be62e9147de8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3912bb034a085420e5be62e9147de8b">&#9670;&nbsp;</a></span>index <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short UDPPacket::index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a897005c8e9655cbc58fde204c2b2be96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897005c8e9655cbc58fde204c2b2be96">&#9670;&nbsp;</a></span>index <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UDPPacket::index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a138b4ffd2f1235bc8a287e121583ccc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138b4ffd2f1235bc8a287e121583ccc5">&#9670;&nbsp;</a></span>network_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNetworkSettings.html">NetworkSettings</a> UDPPacket::network_settings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a092b46960ea776417059e2f77878f174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092b46960ea776417059e2f77878f174">&#9670;&nbsp;</a></span>numBits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UDPPacket::numBits</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39118f6f4d75e3ba9a36cc23b4e900ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39118f6f4d75e3ba9a36cc23b4e900ac">&#9670;&nbsp;</a></span>original_timestamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> UDPPacket::original_timestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2994f5c6c546484de47449bc7100afbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2994f5c6c546484de47449bc7100afbf">&#9670;&nbsp;</a></span>type <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="udp_8c.html#af026caee3b8fbd9791a41cd1af78046a">UDPPacketType</a> UDPPacket::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad492793b61c2f4bcaec79cb4ea5c7018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad492793b61c2f4bcaec79cb4ea5c7018">&#9670;&nbsp;</a></span>type <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> UDPPacket::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a567c9608e05d427a8dffddc9901bb359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567c9608e05d427a8dffddc9901bb359">&#9670;&nbsp;</a></span>udp_bitarray_nack_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  UDPPacket::udp_bitarray_nack_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c38d45a8a97d6eb58669a99cf9fad2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c38d45a8a97d6eb58669a99cf9fad2b">&#9670;&nbsp;</a></span>udp_nack_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  UDPPacket::udp_nack_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad79026cd315f35fd26d7dff2d5186f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad79026cd315f35fd26d7dff2d5186f04">&#9670;&nbsp;</a></span>udp_network_settings_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  UDPPacket::udp_network_settings_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa496b5422a18f2aaa8f21cebfad6c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa496b5422a18f2aaa8f21cebfad6c96">&#9670;&nbsp;</a></span>udp_ping_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  UDPPacket::udp_ping_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a709cf65aa1bf2e12f3ac989286ca3131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709cf65aa1bf2e12f3ac989286ca3131">&#9670;&nbsp;</a></span>udp_pong_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  UDPPacket::udp_pong_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2279d632018f8c9bf0b7a23c813c103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2279d632018f8c9bf0b7a23c813c103">&#9670;&nbsp;</a></span>udp_stream_reset_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  UDPPacket::udp_stream_reset_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afef458c276a4f280f97b3d6edecd25d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef458c276a4f280f97b3d6edecd25d5">&#9670;&nbsp;</a></span>udp_whist_segment_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structWhistSegment.html">WhistSegment</a> UDPPacket::udp_whist_segment_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32de45f5c2b5fa80cccde2bf4a2b4c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32de45f5c2b5fa80cccde2bf4a2b4c66">&#9670;&nbsp;</a></span>whist_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> UDPPacket::whist_type</td>
         </tr>
       </table>
 </div><div class="memdoc">

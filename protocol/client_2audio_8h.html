@@ -111,9 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4779d5da095b14e8e82fdcc84955c73c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a4779d5da095b14e8e82fdcc84955c73c">refresh_audio_device</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
 <tr class="memdesc:a4779d5da095b14e8e82fdcc84955c73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will refresh the audio device of the audio context prior to the next render.  <a href="client_2audio_8h.html#a4779d5da095b14e8e82fdcc84955c73c">More...</a><br /></td></tr>
 <tr class="separator:a4779d5da095b14e8e82fdcc84955c73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d76a922763820b7572f785f1000827d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a1d76a922763820b7572f785f1000827d">receive_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="memdesc:a1d76a922763820b7572f785f1000827d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive audio packet.  <a href="client_2audio_8h.html#a1d76a922763820b7572f785f1000827d">More...</a><br /></td></tr>
-<tr class="separator:a1d76a922763820b7572f785f1000827d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3239255d7dbd09d8d67bdfdf22fd4a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a3239255d7dbd09d8d67bdfdf22fd4a1e">receive_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context, <a class="el" href="structAudioFrame.html">AudioFrame</a> *audio_frame)</td></tr>
+<tr class="memdesc:a3239255d7dbd09d8d67bdfdf22fd4a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive audio packet.  <a href="client_2audio_8h.html#a3239255d7dbd09d8d67bdfdf22fd4a1e">More...</a><br /></td></tr>
+<tr class="separator:a3239255d7dbd09d8d67bdfdf22fd4a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c87cda83151b302a16a75a97a60eabe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a0c87cda83151b302a16a75a97a60eabe">update_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
 <tr class="memdesc:a0c87cda83151b302a16a75a97a60eabe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does any pending work the audio context wants to do.  <a href="client_2audio_8h.html#a0c87cda83151b302a16a75a97a60eabe">More...</a><br /></td></tr>
 <tr class="separator:a0c87cda83151b302a16a75a97a60eabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +123,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9db781c666ef3a1aaa82b5ab98f31218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a9db781c666ef3a1aaa82b5ab98f31218">destroy_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
 <tr class="memdesc:a9db781c666ef3a1aaa82b5ab98f31218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the audio context.  <a href="client_2audio_8h.html#a9db781c666ef3a1aaa82b5ab98f31218">More...</a><br /></td></tr>
 <tr class="separator:a9db781c666ef3a1aaa82b5ab98f31218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4541eef45b2a1b1b5f4baa3b3f233e53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a4541eef45b2a1b1b5f4baa3b3f233e53">audio_ready_for_frame</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context, int num_frames_buffered)</td></tr>
+<tr class="memdesc:a4541eef45b2a1b1b5f4baa3b3f233e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the audio context is ready to render a new frame.  <a href="client_2audio_8h.html#a4541eef45b2a1b1b5f4baa3b3f233e53">More...</a><br /></td></tr>
+<tr class="separator:a4541eef45b2a1b1b5f4baa3b3f233e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -148,6 +151,43 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a4541eef45b2a1b1b5f4baa3b3f233e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4541eef45b2a1b1b5f4baa3b3f233e53">&#9670;&nbsp;</a></span>audio_ready_for_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool audio_ready_for_frame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td>
+          <td class="paramname"><em>audio_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_frames_buffered</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether or not the audio context is ready to render a new frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audio_context</td><td>The audio context to query </td></tr>
+    <tr><td class="paramname">num_frames_buffered</td><td>The number of frames buffered and waiting to be given </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9db781c666ef3a1aaa82b5ab98f31218"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9db781c666ef3a1aaa82b5ab98f31218">&#9670;&nbsp;</a></span>destroy_audio()</h2>
 
@@ -195,8 +235,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a1d76a922763820b7572f785f1000827d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d76a922763820b7572f785f1000827d">&#9670;&nbsp;</a></span>receive_audio()</h2>
+<a id="a3239255d7dbd09d8d67bdfdf22fd4a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3239255d7dbd09d8d67bdfdf22fd4a1e">&#9670;&nbsp;</a></span>receive_audio()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,8 +250,8 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structAudioFrame.html">AudioFrame</a> *&#160;</td>
+          <td class="paramname"><em>audio_frame</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -224,8 +264,8 @@ Usage</h1>
 <p>Receive audio packet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">audio_context</td><td>The audio context to give the audio packet to</td></tr>
-    <tr><td class="paramname">packet</td><td>Packet as received from the server</td></tr>
+    <tr><td class="paramname">audio_context</td><td>The audio context to give the audio frame to</td></tr>
+    <tr><td class="paramname">audio_frame</td><td>Audio Frame to give to the audio context</td></tr>
   </table>
   </dd>
 </dl>
