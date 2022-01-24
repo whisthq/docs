@@ -96,12 +96,15 @@ $(document).ready(function(){initNavTree('error__monitor_8h.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa77d946ab088382421644c601afceb78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#aa77d946ab088382421644c601afceb78">whist_error_monitor_set_environment</a> (char *environment)</td></tr>
-<tr class="memdesc:aa77d946ab088382421644c601afceb78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the error monitor to use the provided environment.  <a href="error__monitor_8h.html#aa77d946ab088382421644c601afceb78">More...</a><br /></td></tr>
-<tr class="separator:aa77d946ab088382421644c601afceb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdaad5042382d0cc47ea2e1b670b2270"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#abdaad5042382d0cc47ea2e1b670b2270">whist_error_monitor_set_username</a> (char *username)</td></tr>
-<tr class="memdesc:abdaad5042382d0cc47ea2e1b670b2270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the username tag for error monitor reports.  <a href="error__monitor_8h.html#abdaad5042382d0cc47ea2e1b670b2270">More...</a><br /></td></tr>
-<tr class="separator:abdaad5042382d0cc47ea2e1b670b2270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59902f0ce1004eb4c8dea71aa00da83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#ad59902f0ce1004eb4c8dea71aa00da83">whist_error_monitor_set_environment</a> (const char *environment)</td></tr>
+<tr class="memdesc:ad59902f0ce1004eb4c8dea71aa00da83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the error monitor to use the provided environment.  <a href="error__monitor_8h.html#ad59902f0ce1004eb4c8dea71aa00da83">More...</a><br /></td></tr>
+<tr class="separator:ad59902f0ce1004eb4c8dea71aa00da83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d3a48686ebdbbef8777dbf6f776913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#af5d3a48686ebdbbef8777dbf6f776913">whist_error_monitor_set_session_id</a> (const char *session_id)</td></tr>
+<tr class="memdesc:af5d3a48686ebdbbef8777dbf6f776913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the error monitor to report the provided session-id on logs.  <a href="error__monitor_8h.html#af5d3a48686ebdbbef8777dbf6f776913">More...</a><br /></td></tr>
+<tr class="separator:af5d3a48686ebdbbef8777dbf6f776913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87373a8de9cd85e0d9a318bd826e19d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#ac87373a8de9cd85e0d9a318bd826e19d">whist_error_monitor_set_username</a> (const char *username)</td></tr>
+<tr class="memdesc:ac87373a8de9cd85e0d9a318bd826e19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the username tag for error monitor reports.  <a href="error__monitor_8h.html#ac87373a8de9cd85e0d9a318bd826e19d">More...</a><br /></td></tr>
+<tr class="separator:ac87373a8de9cd85e0d9a318bd826e19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa63504b8ebaddf4daf11d2eb7c7b7828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8h.html#aa63504b8ebaddf4daf11d2eb7c7b7828">whist_error_monitor_set_connection_id</a> (int id)</td></tr>
 <tr class="memdesc:aa63504b8ebaddf4daf11d2eb7c7b7828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the connection id tag for error monitor reports.  <a href="error__monitor_8h.html#aa63504b8ebaddf4daf11d2eb7c7b7828">More...</a><br /></td></tr>
 <tr class="separator:aa63504b8ebaddf4daf11d2eb7c7b7828"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,9 +131,9 @@ Functions</h2></td></tr>
 and error events to tools such as Sentry.</h1>
 <h1><a class="anchor" id="autotoc_md161"></a>
 Usage</h1>
-<p>The error monitor needs to have an environment configured before it can be started up. This environment should be development/staging/production, and is passed in as a command-line parameter. Once the value is known, we may call <code><a class="el" href="error__monitor_8h.html#aa77d946ab088382421644c601afceb78" title="Configures the error monitor to use the provided environment.">whist_error_monitor_set_environment()</a></code> to configure it.</p>
+<p>The error monitor needs to have an environment configured before it can be started up. This environment should be development/staging/production, and is passed in as a command-line parameter. Once the value is known, we may call <code><a class="el" href="error__monitor_8h.html#ad59902f0ce1004eb4c8dea71aa00da83" title="Configures the error monitor to use the provided environment.">whist_error_monitor_set_environment()</a></code> to configure it.</p>
 <p>If no environment is set, the error monitor will fail to initialize. This is because we don't want it to complain in personal setups and manual connections when developing, but it's important to note the side-effect that we will not report to the error monitoring service if environment isn't passed in.</p>
-<p>To initialize the error monitor, we call <code>error_monitor_initialize()</code>. After doing so, we can configure the error logging metadata with <code><a class="el" href="error__monitor_8h.html#abdaad5042382d0cc47ea2e1b670b2270" title="Configures the username tag for error monitor reports.">whist_error_monitor_set_username()</a></code> and <code><a class="el" href="error__monitor_8h.html#aa63504b8ebaddf4daf11d2eb7c7b7828" title="Configures the connection id tag for error monitor reports.">whist_error_monitor_set_connection_id()</a></code>.</p>
+<p>To initialize the error monitor, we call <code>error_monitor_initialize()</code>. After doing so, we can configure the error logging metadata with <code><a class="el" href="error__monitor_8h.html#ac87373a8de9cd85e0d9a318bd826e19d" title="Configures the username tag for error monitor reports.">whist_error_monitor_set_username()</a></code> and <code><a class="el" href="error__monitor_8h.html#aa63504b8ebaddf4daf11d2eb7c7b7828" title="Configures the connection id tag for error monitor reports.">whist_error_monitor_set_connection_id()</a></code>.</p>
 <p>At this point, calling <code><a class="el" href="error__monitor_8h.html#a8fc14226804709f16463b3f49bf4e275" title="Logs a breadcrumb to the error monitor.">whist_error_monitor_log_breadcrumb()</a></code> and <code><a class="el" href="error__monitor_8h.html#a7b77c56b0a8ee0bd57ac755005564f53" title="Logs an error event to the error monitor.">whist_error_monitor_log_error()</a></code> will report a trace of non-error events and report a detailed breakdown for error-level events to the error monitor service, respectively. Importantly, <em>you should almost never be calling this function by itself</em>. Instead, simply use the <code>LOG_*()</code> functions from <a class="el" href="logging_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">logging.h</a>, which will automatically send error monitor breadcrumbs and error reports as needed.</p>
 <p>Because of this integration with our logging setup, we run into race conditions in <code><a class="el" href="error__monitor_8h.html#a30318e80305b568bc60bfec9397802f4" title="Shuts down the error monitor.">whist_error_monitor_shutdown()</a></code>, which may cause us to fail to report our last few breadcrumbs and error events. In order to avoid this, we must call <code><a class="el" href="error__monitor_8h.html#a30318e80305b568bc60bfec9397802f4" title="Shuts down the error monitor.">whist_error_monitor_shutdown()</a></code> after calling <code><a class="el" href="logging_8c.html#a4dfcbd491525c8782dc0f4a373f29fd6" title="Destroy the logger object.">destroy_logger()</a></code>, to allow for any pending error monitor log calls to be handled. Eventually, we should set up a more robust solution for synchronizing these calls. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -274,8 +277,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aa77d946ab088382421644c601afceb78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa77d946ab088382421644c601afceb78">&#9670;&nbsp;</a></span>whist_error_monitor_set_environment()</h2>
+<a id="ad59902f0ce1004eb4c8dea71aa00da83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59902f0ce1004eb4c8dea71aa00da83">&#9670;&nbsp;</a></span>whist_error_monitor_set_environment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +286,7 @@ Usage</h1>
         <tr>
           <td class="memname">void whist_error_monitor_set_environment </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>environment</em></td><td>)</td>
           <td></td>
         </tr>
@@ -301,8 +304,35 @@ Usage</h1>
 
 </div>
 </div>
-<a id="abdaad5042382d0cc47ea2e1b670b2270"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdaad5042382d0cc47ea2e1b670b2270">&#9670;&nbsp;</a></span>whist_error_monitor_set_username()</h2>
+<a id="af5d3a48686ebdbbef8777dbf6f776913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d3a48686ebdbbef8777dbf6f776913">&#9670;&nbsp;</a></span>whist_error_monitor_set_session_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_error_monitor_set_session_id </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>session_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configures the error monitor to report the provided session-id on logs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">session_id</td><td>The session id to set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This should only be called before calling <code>error_monitor_initialize()</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ac87373a8de9cd85e0d9a318bd826e19d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac87373a8de9cd85e0d9a318bd826e19d">&#9670;&nbsp;</a></span>whist_error_monitor_set_username()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +340,7 @@ Usage</h1>
         <tr>
           <td class="memname">void whist_error_monitor_set_username </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>username</em></td><td>)</td>
           <td></td>
         </tr>

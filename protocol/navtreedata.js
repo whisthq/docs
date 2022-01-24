@@ -88,17 +88,17 @@ var NAVTREEINDEX =
 "aes_8c.html",
 "client__statistic_8h.html",
 "decode_8h.html#a29e08542a8a988ca8371797bfe93f25f",
-"functions_y.html",
-"keyboard__mapping_8h_source.html",
-"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa4cda3cf50239032689e5f5ec3c209531",
-"ringbuffer_8c.html#a6ee7588c05580e80dd58f21f0c7b8765",
-"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba31c807d31f0487d03623aa1f63d178c8",
-"structHash.html#a7247caa3e23eaba8f0d199ec5010c931",
-"structRegisteredResource.html#a4d549b8fc69a8bce4e28a6f9a16129be",
-"structWhistCursorTypes.html#add5730ca3b7f23d4c2391e005342ac7d",
-"threads_8h.html#a21dd6f7d5adc54fcf746c046eec8594e",
-"whist_8h.html#a70ea629de5b3e424ab213f0be58279fe",
-"whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb"
+"functions_w.html",
+"keyboard__mapping_8h.html#a9c07cd272a17b23d528679a0d450bfe0",
+"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa3cea29523d6a09283fec1c24ada6fd6b",
+"ringbuffer_8c.html#a68c68baaea63ef075d65c8f5a3885d75",
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba21fa0c0a10c8063afb6215455922e5a8",
+"structHash.html#a3ed8f51297a858686e11a1a295a3a39c",
+"structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643",
+"structWhistCursorTypes.html#ac6e155e961b82612385b3edde9ad428a",
+"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa77da5472368e0d04f463db32588a27dc",
+"whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4ac5948829519c1111545c429c63e94eb5",
+"whist_8h.html#af60bd661d5305321029fd3e69fd6006f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

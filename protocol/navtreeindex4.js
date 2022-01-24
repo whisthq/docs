@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"keyboard__mapping_8h.html#a9c07cd272a17b23d528679a0d450bfe0":[10,0,2,5,2,0],
+"keyboard__mapping_8h.html#ac9131067e39f888649da99f8ad85d4e5":[10,0,2,5,2,1],
 "keyboard__mapping_8h_source.html":[10,0,2,5,2],
 "linked__list_8c.html":[10,0,2,8,12],
 "linked__list_8h.html":[10,0,2,8,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "lodepng_8h.html#ac5a9e38fc392fc26897610a6d824cc21":[10,0,2,8,15,34],
 "lodepng_8h.html#acfea24109b86e348320636a5df7fa0d6":[10,0,2,8,15,18],
 "lodepng_8h.html#ad4b9dc33569e24062e077f5a69ead178":[10,0,2,8,15,86],
-"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254f":[10,0,2,8,15,29],
-"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa3cea29523d6a09283fec1c24ada6fd6b":[10,0,2,8,15,29,8],
-"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa3f175c084b5cf4e0f7d7736b19eef551":[10,0,2,8,15,29,3]
+"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254f":[10,0,2,8,15,29]
 };
