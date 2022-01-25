@@ -94,11 +94,11 @@ var NAVTREEINDEX =
 "ringbuffer_8c.html#a68c68baaea63ef075d65c8f5a3885d75",
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba21fa0c0a10c8063afb6215455922e5a8",
 "structHash.html#a3ed8f51297a858686e11a1a295a3a39c",
-"structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643",
-"structWhistCursorTypes.html#ac6e155e961b82612385b3edde9ad428a",
-"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa77da5472368e0d04f463db32588a27dc",
-"whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4ac5948829519c1111545c429c63e94eb5",
-"whist_8h.html#af60bd661d5305321029fd3e69fd6006f"
+"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24",
+"structWhistCursorTypes.html#aaf891f2bc707a56ef1b40fc733e96de0",
+"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa46bca4d319b954f24e633fc697c329ca",
+"whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a888be77ea9a3448aa6f07eb48e78d175",
+"whist_8h.html#af5dee4ca10145450350dc01575070732"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structWhistCursorTypes.html#aaf891f2bc707a56ef1b40fc733e96de0":[9,0,86,12],
 "structWhistCursorTypes.html#ac6e155e961b82612385b3edde9ad428a":[9,0,86,2],
 "structWhistCursorTypes.html#ad0c882ceb0f9ec8d5190c93a6dfe0c3e":[9,0,86,9],
 "structWhistCursorTypes.html#add5730ca3b7f23d4c2391e005342ac7d":[9,0,86,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "threads_8h.html":[10,0,2,8,29],
 "threads_8h.html#a07d93732827bed3bf6107b5e9f0bfd0a":[10,0,2,8,29,17],
 "threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68f":[10,0,2,8,29,8],
-"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa3e29ca1fc08f66aa2c30322cb83573c7":[10,0,2,8,29,8,3],
-"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa46bca4d319b954f24e633fc697c329ca":[10,0,2,8,29,8,0]
+"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68fa3e29ca1fc08f66aa2c30322cb83573c7":[10,0,2,8,29,8,3]
 };

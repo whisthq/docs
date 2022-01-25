@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('logging_8c.html',''); initResizable();
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -99,40 +98,38 @@ $(document).ready(function(){initNavTree('logging_8c.html',''); initResizable();
 <code>#include &lt;signal.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="atomic_8h_source.html">whist/utils/atomic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="linked__list_8h_source.html">whist/utils/linked_list.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="logging_8h_source.html">logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="error__monitor_8h_source.html">error_monitor.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggerQueueItem.html">LoggerQueueItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for a single log item in the logger queue.  <a href="structLoggerQueueItem.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a369266c24eacffb87046522897a570d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a369266c24eacffb87046522897a570d5">_GNU_SOURCE</a></td></tr>
 <tr class="separator:a369266c24eacffb87046522897a570d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d5ba6a5a4c97127dc3bb65c4a6fe5bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a4d5ba6a5a4c97127dc3bb65c4a6fe5bd">LOG_CACHE_SIZE</a>&#160;&#160;&#160;1000000</td></tr>
-<tr class="separator:a4d5ba6a5a4c97127dc3bb65c4a6fe5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75b79c4739a390fe7788f3673880afa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a75b79c4739a390fe7788f3673880afa2">HANDLER_ARRAY_SIZE</a>&#160;&#160;&#160;100</td></tr>
 <tr class="separator:a75b79c4739a390fe7788f3673880afa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:af61f6b2d47842e1ee680b45fe4e3a1f6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structLoggerQueueItem.html">LoggerQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#af61f6b2d47842e1ee680b45fe4e3a1f6">LoggerQueueItem</a></td></tr>
-<tr class="separator:af61f6b2d47842e1ee680b45fe4e3a1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a74138e514d79a0449c832cc913b86f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a74138e514d79a0449c832cc913b86f49">flush_logs</a> (void)</td></tr>
+<tr class="memdesc:a74138e514d79a0449c832cc913b86f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will immediately flush all of the logs, rather than slowly pushing the logs through from another thread.  <a href="logging_8c.html#a74138e514d79a0449c832cc913b86f49">More...</a><br /></td></tr>
+<tr class="separator:a74138e514d79a0449c832cc913b86f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54581b1f2ee2b138b99408b358df690b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a54581b1f2ee2b138b99408b358df690b">test_set_pause_state_on_logger_thread</a> (bool pause)</td></tr>
+<tr class="memdesc:a54581b1f2ee2b138b99408b358df690b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pause state on logging thread.  <a href="logging_8c.html#a54581b1f2ee2b138b99408b358df690b">More...</a><br /></td></tr>
+<tr class="separator:a54581b1f2ee2b138b99408b358df690b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec2b3c8a4110db3dacd0a0de88e5d556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#aec2b3c8a4110db3dacd0a0de88e5d556">whist_init_logger</a> (void)</td></tr>
 <tr class="memdesc:aec2b3c8a4110db3dacd0a0de88e5d556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logger.  <a href="logging_8c.html#aec2b3c8a4110db3dacd0a0de88e5d556">More...</a><br /></td></tr>
 <tr class="separator:aec2b3c8a4110db3dacd0a0de88e5d556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dfcbd491525c8782dc0f4a373f29fd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a4dfcbd491525c8782dc0f4a373f29fd6">destroy_logger</a> (void)</td></tr>
 <tr class="memdesc:a4dfcbd491525c8782dc0f4a373f29fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the logger object.  <a href="logging_8c.html#a4dfcbd491525c8782dc0f4a373f29fd6">More...</a><br /></td></tr>
 <tr class="separator:a4dfcbd491525c8782dc0f4a373f29fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74138e514d79a0449c832cc913b86f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a74138e514d79a0449c832cc913b86f49">flush_logs</a> (void)</td></tr>
-<tr class="memdesc:a74138e514d79a0449c832cc913b86f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will immediately flush all of the logs, rather than slowly pushing the logs through from another thread.  <a href="logging_8c.html#a74138e514d79a0449c832cc913b86f49">More...</a><br /></td></tr>
-<tr class="separator:a74138e514d79a0449c832cc913b86f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70325569587d06c4e89314d4db8b2d32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a70325569587d06c4e89314d4db8b2d32">internal_logging_printf</a> (const char *tag, const char *fmt_str,...)</td></tr>
 <tr class="memdesc:a70325569587d06c4e89314d4db8b2d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the given format string This is an internal function that shouldn't be used, please use the macros LOG_INFO, LOG_WARNING, etc.  <a href="logging_8c.html#a70325569587d06c4e89314d4db8b2d32">More...</a><br /></td></tr>
 <tr class="separator:a70325569587d06c4e89314d4db8b2d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,35 +190,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define HANDLER_ARRAY_SIZE&#160;&#160;&#160;100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4d5ba6a5a4c97127dc3bb65c4a6fe5bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d5ba6a5a4c97127dc3bb65c4a6fe5bd">&#9670;&nbsp;</a></span>LOG_CACHE_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LOG_CACHE_SIZE&#160;&#160;&#160;1000000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="af61f6b2d47842e1ee680b45fe4e3a1f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af61f6b2d47842e1ee680b45fe4e3a1f6">&#9670;&nbsp;</a></span>LoggerQueueItem</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structLoggerQueueItem.html">LoggerQueueItem</a> <a class="el" href="structLoggerQueueItem.html">LoggerQueueItem</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -329,6 +297,33 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Print the stacktrace of the calling function to stdout This will be registered as if it was logged as well. </p>
+
+</div>
+</div>
+<a id="a54581b1f2ee2b138b99408b358df690b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54581b1f2ee2b138b99408b358df690b">&#9670;&nbsp;</a></span>test_set_pause_state_on_logger_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_set_pause_state_on_logger_thread </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pause</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set pause state on logging thread. </p>
+<p>While pause is set, the logging thread will not process any messages. This should only be used for test purposes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pause</td><td>Pause state to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

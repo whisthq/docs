@@ -31,6 +31,7 @@ var logging_8h =
     [ "flush_logs", "logging_8h.html#a74138e514d79a0449c832cc913b86f49", null ],
     [ "internal_logging_printf", "logging_8h.html#a70325569587d06c4e89314d4db8b2d32", null ],
     [ "print_stacktrace", "logging_8h.html#aab45aa94b75eeb446eaed8a8ad1c65a6", null ],
+    [ "test_set_pause_state_on_logger_thread", "logging_8h.html#a54581b1f2ee2b138b99408b358df690b", null ],
     [ "whist_init_logger", "logging_8h.html#aec2b3c8a4110db3dacd0a0de88e5d556", null ],
     [ "debug_tag", "logging_8h.html#abf8797be9592c40509360ecfb19d8f46", null ],
     [ "error_tag", "logging_8h.html#a3589fb13fa885b89676847ffb2697f0e", null ],

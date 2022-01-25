@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[9,0,60,5],
 "structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[9,0,60,0],
 "structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[9,0,60,2],
 "structRegisteredResource.html#a4d549b8fc69a8bce4e28a6f9a16129be":[9,0,60,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structWhistCursorTypes.html#a69dba5c5d2b4ddceb912fd8c1028267f":[9,0,86,7],
 "structWhistCursorTypes.html#a6e5628c8d46f718f7193ee645093e924":[9,0,86,5],
 "structWhistCursorTypes.html#aac785feb2e6a41fc6c083984988cf40e":[9,0,86,3],
-"structWhistCursorTypes.html#aad110973807c121e3ec44d12fba9061f":[9,0,86,13],
-"structWhistCursorTypes.html#aaf891f2bc707a56ef1b40fc733e96de0":[9,0,86,12]
+"structWhistCursorTypes.html#aad110973807c121e3ec44d12fba9061f":[9,0,86,13]
 };

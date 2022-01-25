@@ -168,8 +168,9 @@ var NAVTREEINDEX8 =
 "structLodePNGTime.html#ac3045de79728f29fc61f534b062e0f13":[9,0,47,2],
 "structLodePNGTime.html#ac99cb7f3ce16a85f9f505b7f5f6e0aa7":[9,0,47,1],
 "structLoggerQueueItem.html":[9,0,48],
+"structLoggerQueueItem.html#a1bd0aea38606ebe49974c1c43cfde1ab":[9,0,48,1],
 "structLoggerQueueItem.html#a35797499deb09b7eeba3cd102c8ae2a4":[9,0,48,0],
-"structLoggerQueueItem.html#ab5eb451eaf5444b7235532d3396ce286":[9,0,48,1],
+"structLoggerQueueItem.html#ab5eb451eaf5444b7235532d3396ce286":[9,0,48,2],
 "structMouseMotionAccumulation.html":[9,0,49],
 "structMouseMotionAccumulation.html#a2694caa5e5928916a7b7647f4fe27f08":[9,0,49,5],
 "structMouseMotionAccumulation.html#a30694ffc525d4d5c8fc34a806e455aba":[9,0,49,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structRWLock.html#aa4e0cbe7e94c4f95bd65e0b8ca934e9d":[9,0,62,8],
 "structRegionHeader.html":[9,0,59],
 "structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[9,0,59,0],
-"structRegisteredResource.html":[9,0,60],
-"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[9,0,60,5]
+"structRegisteredResource.html":[9,0,60]
 };
