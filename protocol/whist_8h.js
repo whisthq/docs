@@ -14,6 +14,7 @@ var whist_8h =
     [ "WhistDestination", "structWhistDestination.html", "structWhistDestination" ],
     [ "BitArray", "structBitArray.html", "structBitArray" ],
     [ "ACK_REFRESH_MS", "whist_8h.html#a407e78922a862311fd4f35eeef889630", null ],
+    [ "AUDIO_FREQUENCY", "whist_8h.html#aae969438a57a86fddf0cf53106c9b6b4", null ],
     [ "BASE_TCP_PORT", "whist_8h.html#adc0ff2e968cb733b9d5b1370fec443f5", null ],
     [ "BASE_UDP_PORT", "whist_8h.html#abf13ea9a5895c46f8309ca5a57d176dd", null ],
     [ "BIT_CHAR", "whist_8h.html#ac4ac0c784aec9caf76934889e1ac04c5", null ],

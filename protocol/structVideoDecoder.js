@@ -9,6 +9,7 @@ var structVideoDecoder =
     [ "height", "structVideoDecoder.html#aa313589a298c3baf90bfdc4810073868", null ],
     [ "match_fmt", "structVideoDecoder.html#a82a30f5137d2829eeb2ee326700b52f0", null ],
     [ "packets", "structVideoDecoder.html#a19f8e3f82f466acb503f53aedbf14065", null ],
+    [ "received_a_frame", "structVideoDecoder.html#ad8958e312b1ad0b3b66b3a89cb6d7ef1", null ],
     [ "ref", "structVideoDecoder.html#aeaa22ea0c3bd326be6742c450c0e10a6", null ],
     [ "type", "structVideoDecoder.html#a72697a2594afce2d1dbd80eeedd5ec9a", null ],
     [ "using_hw", "structVideoDecoder.html#ab375188aa45f13bc3a7e80b6a42ac939", null ],
