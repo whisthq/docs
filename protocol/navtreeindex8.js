@@ -1,8 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"structHash.html#a3ed8f51297a858686e11a1a295a3a39c":[9,0,30,3],
-"structHash.html#a66918968854722efdf7ab5f8ac2c6c1d":[9,0,30,4],
-"structHash.html#a7247caa3e23eaba8f0d199ec5010c931":[9,0,30,5],
 "structHash.html#abf6ad3db2f652a19cc4ff0792e477899":[9,0,30,0],
 "structHuffmanTree.html":[9,0,31],
 "structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137":[9,0,31,5],
@@ -195,13 +192,13 @@ var NAVTREEINDEX8 =
 "structNetworkThrottleContext.html#a13eec5c3fadad9f30633223b56d5c1ce":[9,0,52,9],
 "structNetworkThrottleContext.html#a42005e1a558e4013b2bebb66158019bb":[9,0,52,0],
 "structNetworkThrottleContext.html#a69dea2b223bc14a52deed273c831e389":[9,0,52,10],
-"structNetworkThrottleContext.html#a6b80c67f598df42a1074a76853da8529":[9,0,52,5],
+"structNetworkThrottleContext.html#a8341b4524dde3671837f9732cf92b7e6":[9,0,52,8],
 "structNetworkThrottleContext.html#a91a41f7d0acf21dee553262b9ae0643a":[9,0,52,2],
 "structNetworkThrottleContext.html#aa1f6e9cfbfba894f68ec993df63da754":[9,0,52,1],
 "structNetworkThrottleContext.html#abe25a6e122fb22056628eb3973d347ba":[9,0,52,7],
 "structNetworkThrottleContext.html#acb52ea1e4b57ca03b477b37662ff3503":[9,0,52,3],
+"structNetworkThrottleContext.html#ad80a14b417b12772cbf7281efb1606f9":[9,0,52,5],
 "structNetworkThrottleContext.html#ae8c2eab3eee36855d004e7e6b536c980":[9,0,52,4],
-"structNetworkThrottleContext.html#aec93f61e4b7f4c51e6bca52059d22f5a":[9,0,52,8],
 "structNetworkThrottleContext.html#af1394b5623dc1b94889bba028f636fe4":[9,0,52,6],
 "structNvidiaCaptureDevice.html":[9,0,53],
 "structNvidiaCaptureDevice.html#a16517c3ba7cca2be8aa32b766742721b":[9,0,53,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX8 =
 "structRWLock.html#aa4e0cbe7e94c4f95bd65e0b8ca934e9d":[9,0,62,8],
 "structRegionHeader.html":[9,0,59],
 "structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[9,0,59,0],
-"structRegisteredResource.html":[9,0,60]
+"structRegisteredResource.html":[9,0,60],
+"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[9,0,60,5],
+"structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[9,0,60,0],
+"structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[9,0,60,2]
 };

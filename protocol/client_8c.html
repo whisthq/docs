@@ -82,8 +82,7 @@ $(document).ready(function(){initNavTree('client_8c.html',''); initResizable(); 
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">client.c File Reference</div>  </div>
 </div><!--header-->
@@ -91,7 +90,8 @@ $(document).ready(function(){initNavTree('client_8c.html',''); initResizable(); 
 
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="rwlock_8h_source.html">whist/utils/rwlock.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="atomic_8h_source.html">whist/utils/atomic.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="rwlock_8h_source.html">whist/utils/rwlock.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -125,15 +125,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ab77ef71b6fc7e7ee283d110f553f2272"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ab77ef71b6fc7e7ee283d110f553f2272">threads_still_holding_active</a> (void)</td></tr>
 <tr class="memdesc:ab77ef71b6fc7e7ee283d110f553f2272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether there remain any threads that are assuming that the client is active.  <a href="client_8c.html#ab77ef71b6fc7e7ee283d110f553f2272">More...</a><br /></td></tr>
 <tr class="separator:ab77ef71b6fc7e7ee283d110f553f2272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:af475a5bf35f3ea675cbc37ed28a1daac"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#af475a5bf35f3ea675cbc37ed28a1daac">threads_needing_active</a> = 0</td></tr>
-<tr class="separator:af475a5bf35f3ea675cbc37ed28a1daac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a030d89da314e66f72903838a18d5934a"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a030d89da314e66f72903838a18d5934a">threads_holding_active</a> = 0</td></tr>
-<tr class="separator:a030d89da314e66f72903838a18d5934a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3a5f49bcfa5247ef5cbed330a9121e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="threads_8h.html#aa9899c1c25688c008b90165331107ddf">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ac3a5f49bcfa5247ef5cbed330a9121e2">active_holding_write_mutex</a></td></tr>
-<tr class="separator:ac3a5f49bcfa5247ef5cbed330a9121e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -399,49 +390,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ac3a5f49bcfa5247ef5cbed330a9121e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3a5f49bcfa5247ef5cbed330a9121e2">&#9670;&nbsp;</a></span>active_holding_write_mutex</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="threads_8h.html#aa9899c1c25688c008b90165331107ddf">WhistMutex</a> active_holding_write_mutex</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a030d89da314e66f72903838a18d5934a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a030d89da314e66f72903838a18d5934a">&#9670;&nbsp;</a></span>threads_holding_active</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int threads_holding_active = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af475a5bf35f3ea675cbc37ed28a1daac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af475a5bf35f3ea675cbc37ed28a1daac">&#9670;&nbsp;</a></span>threads_needing_active</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int threads_needing_active = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

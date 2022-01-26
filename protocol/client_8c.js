@@ -9,8 +9,5 @@ var client_8c =
     [ "reset_threads_holding_active_count", "client_8c.html#a0a15c68449ffb14ea62db6087d27fa4c", null ],
     [ "start_quitting_client", "client_8c.html#aedb5791800324d1914e5124d23f138c8", null ],
     [ "threads_still_holding_active", "client_8c.html#ab77ef71b6fc7e7ee283d110f553f2272", null ],
-    [ "update_client_active_status", "client_8c.html#a910e3ffb86024ba2864d8c0594f9623f", null ],
-    [ "active_holding_write_mutex", "client_8c.html#ac3a5f49bcfa5247ef5cbed330a9121e2", null ],
-    [ "threads_holding_active", "client_8c.html#a030d89da314e66f72903838a18d5934a", null ],
-    [ "threads_needing_active", "client_8c.html#af475a5bf35f3ea675cbc37ed28a1daac", null ]
+    [ "update_client_active_status", "client_8c.html#a910e3ffb86024ba2864d8c0594f9623f", null ]
 ];

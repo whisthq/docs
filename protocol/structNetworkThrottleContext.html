@@ -104,10 +104,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a13eec5c3fadad9f30633223b56d5c1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a41f7d0acf21dee553262b9ae0643a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#a91a41f7d0acf21dee553262b9ae0643a">coin_bucket_last_fill</a></td></tr>
 <tr class="separator:a91a41f7d0acf21dee553262b9ae0643a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec93f61e4b7f4c51e6bca52059d22f5a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#aec93f61e4b7f4c51e6bca52059d22f5a">next_queue_id</a></td></tr>
-<tr class="separator:aec93f61e4b7f4c51e6bca52059d22f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b80c67f598df42a1074a76853da8529"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#a6b80c67f598df42a1074a76853da8529">current_queue_id</a></td></tr>
-<tr class="separator:a6b80c67f598df42a1074a76853da8529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8341b4524dde3671837f9732cf92b7e6"><td class="memItemLeft" align="right" valign="top">atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#a8341b4524dde3671837f9732cf92b7e6">next_queue_id</a></td></tr>
+<tr class="separator:a8341b4524dde3671837f9732cf92b7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80a14b417b12772cbf7281efb1606f9"><td class="memItemLeft" align="right" valign="top">atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#ad80a14b417b12772cbf7281efb1606f9">current_queue_id</a></td></tr>
+<tr class="separator:ad80a14b417b12772cbf7281efb1606f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1394b5623dc1b94889bba028f636fe4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#af1394b5623dc1b94889bba028f636fe4">destroying</a></td></tr>
 <tr class="separator:af1394b5623dc1b94889bba028f636fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe25a6e122fb22056628eb3973d347ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkThrottleContext.html#abe25a6e122fb22056628eb3973d347ba">fill_bucket_initially</a></td></tr>
@@ -184,14 +184,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b80c67f598df42a1074a76853da8529"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b80c67f598df42a1074a76853da8529">&#9670;&nbsp;</a></span>current_queue_id</h2>
+<a id="ad80a14b417b12772cbf7281efb1606f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80a14b417b12772cbf7281efb1606f9">&#9670;&nbsp;</a></span>current_queue_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int NetworkThrottleContext::current_queue_id</td>
+          <td class="memname">atomic_int NetworkThrottleContext::current_queue_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -226,14 +226,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="aec93f61e4b7f4c51e6bca52059d22f5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec93f61e4b7f4c51e6bca52059d22f5a">&#9670;&nbsp;</a></span>next_queue_id</h2>
+<a id="a8341b4524dde3671837f9732cf92b7e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8341b4524dde3671837f9732cf92b7e6">&#9670;&nbsp;</a></span>next_queue_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int NetworkThrottleContext::next_queue_id</td>
+          <td class="memname">atomic_int NetworkThrottleContext::next_queue_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
