@@ -1,5 +1,6 @@
 var sync__packets_8c =
 [
+    [ "SYNC_TCP_LOOP_TARGET_PERIOD_MS", "sync__packets_8c.html#a43f8b24e694575df3b5eb61cbe5f98a4", null ],
     [ "create_and_send_tcp_wcmsg", "sync__packets_8c.html#a8016ced97cc0966c2e837a9510657bd0", null ],
     [ "destroy_packet_synchronizers", "sync__packets_8c.html#adac54202546ce1fc2fafa9587f5a9862", null ],
     [ "init_packet_synchronizers", "sync__packets_8c.html#a845bbd8479d8723f4eccde3034135a26", null ],
