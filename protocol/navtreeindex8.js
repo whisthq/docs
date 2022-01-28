@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"structHash.html#a3ed8f51297a858686e11a1a295a3a39c":[9,0,30,3],
+"structHash.html#a66918968854722efdf7ab5f8ac2c6c1d":[9,0,30,4],
+"structHash.html#a7247caa3e23eaba8f0d199ec5010c931":[9,0,30,5],
 "structHash.html#abf6ad3db2f652a19cc4ff0792e477899":[9,0,30,0],
 "structHuffmanTree.html":[9,0,31],
 "structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137":[9,0,31,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "structRWLock.html#aa4e0cbe7e94c4f95bd65e0b8ca934e9d":[9,0,62,8],
 "structRegionHeader.html":[9,0,59],
 "structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[9,0,59,0],
-"structRegisteredResource.html":[9,0,60],
-"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[9,0,60,5],
-"structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[9,0,60,0],
-"structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[9,0,60,2]
+"structRegisteredResource.html":[9,0,60]
 };

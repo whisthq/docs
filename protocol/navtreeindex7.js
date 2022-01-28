@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba21fa0c0a10c8063afb6215455922e5a8":[10,0,1,12,5],
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2e76a584d3eb368c555e0dd6291ed331":[10,0,1,12,7],
+"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba31c807d31f0487d03623aa1f63d178c8":[10,0,1,12,1],
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba323844dc44cfd54174da5de5c24d4d70":[10,0,1,12,11],
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3a3771741a5ce4face7e45aad78b0345":[10,0,1,12,13],
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba47c36f57176700447de96aa4282df965":[10,0,1,12,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "structFrameData.html#aec551b669a213996989740f84bb40947":[9,0,29,1],
 "structHash.html":[9,0,30],
 "structHash.html#a04ef237e7bc2fa99bc7305fb2352084d":[9,0,30,1],
-"structHash.html#a0977cf12b1d8e6bbc784b5e0877926f5":[9,0,30,2],
-"structHash.html#a3ed8f51297a858686e11a1a295a3a39c":[9,0,30,3],
-"structHash.html#a66918968854722efdf7ab5f8ac2c6c1d":[9,0,30,4],
-"structHash.html#a7247caa3e23eaba8f0d199ec5010c931":[9,0,30,5]
+"structHash.html#a0977cf12b1d8e6bbc784b5e0877926f5":[9,0,30,2]
 };

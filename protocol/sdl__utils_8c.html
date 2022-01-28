@@ -110,6 +110,8 @@ Macros</h2></td></tr>
 <tr class="separator:a4e8c4b05a876fdaac747e4b3b85e5574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ea5eab775ceae86f0aee1829a91c052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a7ea5eab775ceae86f0aee1829a91c052">CURSORIMAGE_B</a>&#160;&#160;&#160;0x000000ff</td></tr>
 <tr class="separator:a7ea5eab775ceae86f0aee1829a91c052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4a3c1a038655a1d50c5ad3dae0fe57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a3e4a3c1a038655a1d50c5ad3dae0fe57">LOADING_SOLID_COLOR</a>&#160;&#160;&#160;true</td></tr>
+<tr class="separator:a3e4a3c1a038655a1d50c5ad3dae0fe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade4f768ca0968a4e5944d25236f9a080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#ade4f768ca0968a4e5944d25236f9a080">NUMBER_LOADING_FRAMES</a>&#160;&#160;&#160;50</td></tr>
 <tr class="separator:ade4f768ca0968a4e5944d25236f9a080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d249b006c12fe0b7622c0d3b2d1650d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a2d249b006c12fe0b7622c0d3b2d1650d">RGBA_MASK_A</a>&#160;&#160;&#160;0xff000000</td></tr>
@@ -132,6 +134,12 @@ Functions</h2></td></tr>
 <tr class="memitem:adfd539439cacc3bb4a8a93037ac724c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#adfd539439cacc3bb4a8a93037ac724c1">sdl_present_pending_framebuffer</a> ()</td></tr>
 <tr class="memdesc:adfd539439cacc3bb4a8a93037ac724c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the framebuffer from any pending framebuffer call, Then RenderPresent if sdl_render_framebuffer is pending.  <a href="sdl__utils_8c.html#adfd539439cacc3bb4a8a93037ac724c1">More...</a><br /></td></tr>
 <tr class="separator:adfd539439cacc3bb4a8a93037ac724c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7590f33d331a39f70259c24d8dfb0c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#ab7590f33d331a39f70259c24d8dfb0c7">sdl_render_loading_screen</a> ()</td></tr>
+<tr class="memdesc:ab7590f33d331a39f70259c24d8dfb0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders out the loading screen.  <a href="sdl__utils_8c.html#ab7590f33d331a39f70259c24d8dfb0c7">More...</a><br /></td></tr>
+<tr class="separator:ab7590f33d331a39f70259c24d8dfb0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa120a5e16f5c7f9a3f9e6b6f7cc245c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#aa120a5e16f5c7f9a3f9e6b6f7cc245c3">sdl_render_nv12data</a> ()</td></tr>
+<tr class="memdesc:aa120a5e16f5c7f9a3f9e6b6f7cc245c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders out any pending nv12 data.  <a href="sdl__utils_8c.html#aa120a5e16f5c7f9a3f9e6b6f7cc245c3">More...</a><br /></td></tr>
+<tr class="separator:aa120a5e16f5c7f9a3f9e6b6f7cc245c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd7f5dc9778e5a9f64354459f6ad8362"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362">init_sdl</a> (int target_output_width, int target_output_height, char *name, char *icon_filename)</td></tr>
 <tr class="memdesc:abd7f5dc9778e5a9f64354459f6ad8362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL window, with the currently running thread at the owner.  <a href="sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362">More...</a><br /></td></tr>
 <tr class="separator:abd7f5dc9778e5a9f64354459f6ad8362"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,6 +259,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define CURSORIMAGE_R&#160;&#160;&#160;0x00ff0000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e4a3c1a038655a1d50c5ad3dae0fe57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4a3c1a038655a1d50c5ad3dae0fe57">&#9670;&nbsp;</a></span>LOADING_SOLID_COLOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOADING_SOLID_COLOR&#160;&#160;&#160;true</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -492,6 +514,46 @@ Usage</h1>
 
 </div>
 </div>
+<a id="ab7590f33d331a39f70259c24d8dfb0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7590f33d331a39f70259c24d8dfb0c7">&#9670;&nbsp;</a></span>sdl_render_loading_screen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_render_loading_screen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renders out the loading screen. </p>
+<dl class="section note"><dt>Note</dt><dd>Must be called on the main thread </dd></dl>
+
+</div>
+</div>
+<a id="aa120a5e16f5c7f9a3f9e6b6f7cc245c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa120a5e16f5c7f9a3f9e6b6f7cc245c3">&#9670;&nbsp;</a></span>sdl_render_nv12data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_render_nv12data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renders out any pending nv12 data. </p>
+<dl class="section note"><dt>Note</dt><dd>Must be called on the main thread </dd></dl>
+
+</div>
+</div>
 <a id="acc658fd7ea4e45e924bf963ec874a0bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc658fd7ea4e45e924bf963ec874a0bd">&#9670;&nbsp;</a></span>sdl_render_pending()</h2>
 
@@ -647,7 +709,8 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The SDL_Surface that got created from the png file </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The SDL_Surface that got created from the png file</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><code>sdl_free_png_file_rgb_surface</code> must eventually be called! </dd></dl>
 
 </div>
 </div>
