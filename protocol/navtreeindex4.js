@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"keyboard__mapping_8h_source.html":[10,0,2,5,2],
 "linked__list_8c.html":[10,0,2,8,12],
 "linked__list_8h.html":[10,0,2,8,13],
 "linked__list_8h_source.html":[10,0,2,8,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "lodepng_8h.html#ad4b9dc33569e24062e077f5a69ead178":[10,0,2,8,15,86],
 "lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254f":[10,0,2,8,15,29],
 "lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa3cea29523d6a09283fec1c24ada6fd6b":[10,0,2,8,15,29,8],
-"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa3f175c084b5cf4e0f7d7736b19eef551":[10,0,2,8,15,29,3],
-"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa4cda3cf50239032689e5f5ec3c209531":[10,0,2,8,15,29,7]
+"lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa3f175c084b5cf4e0f7d7736b19eef551":[10,0,2,8,15,29,3]
 };

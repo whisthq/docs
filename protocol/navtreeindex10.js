@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structWhistCursorTypes.html#aac785feb2e6a41fc6c083984988cf40e":[9,0,86,3],
 "structWhistCursorTypes.html#aad110973807c121e3ec44d12fba9061f":[9,0,86,13],
 "structWhistCursorTypes.html#aaf891f2bc707a56ef1b40fc733e96de0":[9,0,86,12],
 "structWhistCursorTypes.html#ac6e155e961b82612385b3edde9ad428a":[9,0,86,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "threads_8c.html#af474288fd6c797f86d80dc32476bd86d":[10,0,2,8,28,14],
 "threads_8c.html#af4922365dbafb9468c981a1a16ceffc7":[10,0,2,8,28,11],
 "threads_8h.html":[10,0,2,8,29],
-"threads_8h.html#a07d93732827bed3bf6107b5e9f0bfd0a":[10,0,2,8,29,17],
-"threads_8h.html#a1eedf1deef6e272cb639c0bc15a3e68f":[10,0,2,8,29,8]
+"threads_8h.html#a07d93732827bed3bf6107b5e9f0bfd0a":[10,0,2,8,29,17]
 };

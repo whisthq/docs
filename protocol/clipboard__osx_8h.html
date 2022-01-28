@@ -124,6 +124,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a498a69e4ec42e6e9ac9bd89ff9bbe2d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__osx_8h.html#a498a69e4ec42e6e9ac9bd89ff9bbe2d6">check_clipboard_has_string</a> ()</td></tr>
 <tr class="memdesc:a498a69e4ec42e6e9ac9bd89ff9bbe2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the clipboard has a string stored.  <a href="clipboard__osx_8h.html#a498a69e4ec42e6e9ac9bd89ff9bbe2d6">More...</a><br /></td></tr>
 <tr class="separator:a498a69e4ec42e6e9ac9bd89ff9bbe2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ac3a9c08359e1726d42d503de65a85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__osx_8h.html#a80ac3a9c08359e1726d42d503de65a85">check_clipboard_has_data_ready</a> ()</td></tr>
+<tr class="memdesc:a80ac3a9c08359e1726d42d503de65a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the clipboard is storing anything.  <a href="clipboard__osx_8h.html#a80ac3a9c08359e1726d42d503de65a85">More...</a><br /></td></tr>
+<tr class="separator:a80ac3a9c08359e1726d42d503de65a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0a848a63c3eac773c68850cefb48f1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard__osx_8h.html#ae0a848a63c3eac773c68850cefb48f1f">check_clipboard_has_image</a> ()</td></tr>
 <tr class="memdesc:ae0a848a63c3eac773c68850cefb48f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the clipboard has an image stored.  <a href="clipboard__osx_8h.html#ae0a848a63c3eac773c68850cefb48f1f">More...</a><br /></td></tr>
 <tr class="separator:ae0a848a63c3eac773c68850cefb48f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,6 +206,27 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a80ac3a9c08359e1726d42d503de65a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ac3a9c08359e1726d42d503de65a85">&#9670;&nbsp;</a></span>check_clipboard_has_data_ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check_clipboard_has_data_ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the clipboard is storing anything. </p>
+<p>When the clipboard has items in it this will always return true! However, when some other applications writes to the clipboard they will first claim ownership and change the clipboard change_count which will be reflected in <a class="el" href="clipboard__osx_8h.html#a49f431de50c9c405ea662ca93b26d450" title="Check if the clipboard has updated since last time we checked it.">get_clipboard_changecount()</a>. This also clears all of the data on the clipboard - this is when it returns false. We use this to wait out the delay between an ownership change and the actual writing/availability of the data on that clipboard.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if clipboard has resident(s), false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a5a760211883082cc9bdcb959120e892a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a760211883082cc9bdcb959120e892a">&#9670;&nbsp;</a></span>check_clipboard_has_files()</h2>
 

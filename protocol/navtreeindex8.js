@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"structHash.html#a0977cf12b1d8e6bbc784b5e0877926f5":[9,0,30,2],
 "structHash.html#a3ed8f51297a858686e11a1a295a3a39c":[9,0,30,3],
 "structHash.html#a66918968854722efdf7ab5f8ac2c6c1d":[9,0,30,4],
 "structHash.html#a7247caa3e23eaba8f0d199ec5010c931":[9,0,30,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structRWLock.html#aa2fc41b979e58996c9dbe25e3bfe9ef3":[9,0,62,1],
 "structRWLock.html#aa4e0cbe7e94c4f95bd65e0b8ca934e9d":[9,0,62,8],
 "structRegionHeader.html":[9,0,59],
-"structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[9,0,59,0],
-"structRegisteredResource.html":[9,0,60]
+"structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[9,0,59,0]
 };
