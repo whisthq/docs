@@ -11,6 +11,7 @@ var structRingBuffer =
     [ "last_missing_frame_nack", "structRingBuffer.html#a6e2f7541e6a30aad26fcc4f24934d32f", null ],
     [ "last_nack_possibility", "structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247", null ],
     [ "last_rendered_id", "structRingBuffer.html#a451ff9ab8f3632cc408ac1242dd1dbf1", null ],
+    [ "last_stream_reset_request_id", "structRingBuffer.html#a0260e103fd1adae06fed275672381b86", null ],
     [ "last_stream_reset_request_timer", "structRingBuffer.html#a0cae5252355a6928ab60412187d215c2", null ],
     [ "max_id", "structRingBuffer.html#a222e926e44d53e0f8bec5e58bbccfc64", null ],
     [ "most_recent_reset_id", "structRingBuffer.html#af8ef859b9ddbbcdb7d95801ff4781632", null ],

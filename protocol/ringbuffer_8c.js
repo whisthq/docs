@@ -1,12 +1,12 @@
 var ringbuffer_8c =
 [
+    [ "MAX_ACCEPTABLE_STALENESS_MS", "ringbuffer_8c.html#a262db33739dbfd7b25d97c2ba2754986", null ],
     [ "MAX_AUDIO_PACKETS", "ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe", null ],
     [ "MAX_NACK_AVG_MBPS", "ringbuffer_8c.html#ae1394526c365da140a30aa8d28887fda", null ],
     [ "MAX_NACK_BURST_MBPS", "ringbuffer_8c.html#a68c68baaea63ef075d65c8f5a3885d75", null ],
     [ "MAX_PACKET_NACKS", "ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911", null ],
     [ "MAX_PACKETS", "ringbuffer_8c.html#ae2bcbf05a79de1a8a42492a8e5169c22", null ],
     [ "MAX_RING_BUFFER_SIZE", "ringbuffer_8c.html#ace58ba786751c3524bcbb1bc4f8846ce", null ],
-    [ "MAX_TO_RENDER_STALENESS", "ringbuffer_8c.html#afd197c54018ce2a383af80e9459cde64", null ],
     [ "MAX_UNORDERED_PACKETS", "ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33", null ],
     [ "MAX_UNSYNCED_FRAMES", "ringbuffer_8c.html#a63712ce21a04379372836cb9a38e657a", null ],
     [ "MAX_VIDEO_PACKETS", "ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b", null ],

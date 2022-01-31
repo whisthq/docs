@@ -91,14 +91,14 @@ var NAVTREEINDEX =
 "functions_y.html",
 "keyboard__mapping_8h_source.html",
 "lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254fa4cda3cf50239032689e5f5ec3c209531",
-"ringbuffer_8c.html#a6ee7588c05580e80dd58f21f0c7b8765",
+"ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5",
 "server__statistic_8h.html",
 "structHash.html#a0977cf12b1d8e6bbc784b5e0877926f5",
 "structRegisteredResource.html",
-"structWhistCursorTypes.html#aac785feb2e6a41fc6c083984988cf40e",
-"threads_8h.html#a07d93732827bed3bf6107b5e9f0bfd0a",
-"whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4",
-"whist_8h.html#aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e"
+"structWhistCursorTypes.html#a6e5628c8d46f718f7193ee645093e924",
+"threads_8h.html",
+"whist_8h.html#a690e9b7e2e4f08889666b8c98d25ff52",
+"whist_8h.html#aef166b266f8d5b853ec64a90756fafb6a1e9b2a03b386a7ed2cdf948c46161579"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
