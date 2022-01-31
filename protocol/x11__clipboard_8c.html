@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('x11__clipboard_8c.html',''); initResiz
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="clipboard_8h_source.html">clipboard.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="clipboard__internal_8h_source.html">clipboard_internal.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="png_8h_source.html">../utils/png.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -112,10 +113,6 @@ Functions</h2></td></tr>
 <tr class="separator:a5867e7500d780fb08c54a5e18768d79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87781954b181bfe0cc6d212f1e155d47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__clipboard_8c.html#a87781954b181bfe0cc6d212f1e155d47">unsafe_destroy_clipboard</a> (void)</td></tr>
 <tr class="separator:a87781954b181bfe0cc6d212f1e155d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cbc67557d29cfbed594f87b67da6d12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__clipboard_8c.html#a0cbc67557d29cfbed594f87b67da6d12">get_os_clipboard_string</a> (void)</td></tr>
-<tr class="separator:a0cbc67557d29cfbed594f87b67da6d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ccd96c463406eceba62f3320127843b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__clipboard_8c.html#a2ccd96c463406eceba62f3320127843b">get_os_clipboard_files</a> (void)</td></tr>
-<tr class="separator:a2ccd96c463406eceba62f3320127843b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd908a405c1888d1306899a3ad598ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__clipboard_8c.html#abd908a405c1888d1306899a3ad598ea3">unsafe_free_clipboard_buffer</a> (<a class="el" href="structClipboardData.html">ClipboardData</a> *cb)</td></tr>
 <tr class="separator:abd908a405c1888d1306899a3ad598ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a8e7cc53b2b0d020dcb3cc14a2c294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClipboardData.html">ClipboardData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__clipboard_8c.html#af1a8e7cc53b2b0d020dcb3cc14a2c294">unsafe_get_os_clipboard</a> (void)</td></tr>
@@ -134,42 +131,6 @@ client-server clipboard on Linux clients/servers.</h1>
 Usage</h1>
 <p>GET_OS_CLIPBOARD and SET_OS_CLIPBOARD will return strings representing directories important for getting and setting file clipboards. When <a class="el" href="clipboard_8c.html#a5d00bf978f550b702d0a2b0d80728166" title="Get the current OS clipboard data.">get_os_clipboard()</a> is called and it returns a CLIPBOARD_FILES type, then GET_OS_CLIPBOARD will be filled with symlinks to the clipboard files. When set_os_clipboard(cb) is called and is given a clipboard with a CLIPBOARD_FILES type, then the clipboard will be set to whatever files are in the SET_OS_CLIPBOARD directory. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a2ccd96c463406eceba62f3320127843b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ccd96c463406eceba62f3320127843b">&#9670;&nbsp;</a></span>get_os_clipboard_files()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structClipboardData.html">ClipboardData</a>* get_os_clipboard_files </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0cbc67557d29cfbed594f87b67da6d12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cbc67557d29cfbed594f87b67da6d12">&#9670;&nbsp;</a></span>get_os_clipboard_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structClipboardData.html">ClipboardData</a>* get_os_clipboard_string </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a87781954b181bfe0cc6d212f1e155d47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87781954b181bfe0cc6d212f1e155d47">&#9670;&nbsp;</a></span>unsafe_destroy_clipboard()</h2>
 

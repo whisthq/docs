@@ -15,9 +15,8 @@ var client_2audio_8c =
     [ "TARGET_AUDIO_QUEUE_LIMIT_FRAMES", "client_2audio_8c.html#a3266ef0f041fe2239dd2426d3b6ff094", null ],
     [ "audio_ready_for_frame", "client_2audio_8c.html#a4541eef45b2a1b1b5f4baa3b3f233e53", null ],
     [ "destroy_audio", "client_2audio_8c.html#a9db781c666ef3a1aaa82b5ab98f31218", null ],
-    [ "init_audio", "client_2audio_8c.html#af91ba5cc900fa1417fa749bf079d9faf", null ],
+    [ "init_audio", "client_2audio_8c.html#ac2f1955a13466e6619735015547bf83b", null ],
     [ "receive_audio", "client_2audio_8c.html#a3239255d7dbd09d8d67bdfdf22fd4a1e", null ],
     [ "refresh_audio_device", "client_2audio_8c.html#a4779d5da095b14e8e82fdcc84955c73c", null ],
-    [ "render_audio", "client_2audio_8c.html#a02350b8accdbe0401e6a3861abb30320", null ],
-    [ "safe_get_audio_queue", "client_2audio_8c.html#a98d2b2d057e50db7c240caf1ca21bad8", null ]
+    [ "render_audio", "client_2audio_8c.html#a02350b8accdbe0401e6a3861abb30320", null ]
 ];

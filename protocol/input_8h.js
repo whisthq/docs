@@ -1,17 +1,6 @@
 var input_8h =
 [
-    [ "InputDevice", "structInputDevice.html", "structInputDevice" ],
     [ "InputDevice", "input_8h.html#a6a1dbc5faad2bff5d15369a25ff9f142", null ],
-    [ "InputDeviceDestroyFn", "input_8h.html#a0c05e2cc3118cd22a2b6a614135ecb5e", null ],
-    [ "InputDeviceEmitHighResMouseWheelEventFn", "input_8h.html#a4d03dc9798d9f005cca86b9d3a1f2571", null ],
-    [ "InputDeviceEmitKeyEventFn", "input_8h.html#a7b04c975592e47841b78128e8c4aee74", null ],
-    [ "InputDeviceEmitLowResMouseWheelEventFn", "input_8h.html#ac40884c78b2ae6cf5d3e5856923143d2", null ],
-    [ "InputDeviceEmitMouseButtonEventFn", "input_8h.html#a46faed06f2ff8c4918f341ad4ab64704", null ],
-    [ "InputDeviceEmitMouseMotionEventFn", "input_8h.html#a9e2b20d34f06fdd159862e7540ac5358", null ],
-    [ "InputDeviceEmitMultiGestureEventFn", "input_8h.html#a953fa92042c38f4a967678343075d63b", null ],
-    [ "InputDeviceGetKeyboardKeyStateFn", "input_8h.html#aefc7bef812e4dbcaf260b2e009e8b1dd", null ],
-    [ "InputDeviceGetKeyboardModifierStateFn", "input_8h.html#ac240633f53769f7bf6595539a4b3b36d", null ],
-    [ "InputDeviceIgnoreKeyStateFn", "input_8h.html#a14d0ea58397bf2e9aa0716d2f32046af", null ],
     [ "InputDeviceType", "input_8h.html#ac9348deae9297ebe302759b9171a75d0", [
       [ "WHIST_INPUT_DEVICE_XTEST", "input_8h.html#ac9348deae9297ebe302759b9171a75d0a23e454c0b0addb41b9375863ecd983fa", null ],
       [ "WHIST_INPUT_DEVICE_UINPUT", "input_8h.html#ac9348deae9297ebe302759b9171a75d0a66daed792d689e06e78bfaffd4367254", null ],

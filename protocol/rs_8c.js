@@ -20,11 +20,8 @@ var rs_8c =
     [ "gf", "rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508", null ],
     [ "u_long", "rs_8c.html#a8f25a50daf29ce2cee1ec038a4d744ea", null ],
     [ "init_rs", "rs_8c.html#a56f8ba3b3040480c038d9c428422eaae", null ],
-    [ "invert_vdm", "rs_8c.html#aa5895aa20e442b5bcaa7103e9023d0e2", null ],
     [ "rs_decode", "rs_8c.html#a681b19d03a43dfea82ea78fc5a4857b0", null ],
     [ "rs_encode", "rs_8c.html#ab5a2f7985991c78259d9f095b38f7d1a", null ],
     [ "rs_free", "rs_8c.html#a481f66afa97a9acf1a285a9ca3d0fcf2", null ],
-    [ "rs_get_k", "rs_8c.html#ab6c9f19d913a6df4d6a794bdb31e6347", null ],
-    [ "rs_get_n", "rs_8c.html#abcbd5376aaa5e759610cfe68318e21e3", null ],
     [ "rs_new", "rs_8c.html#ae11f19af5f46120677b14217e359c626", null ]
 ];

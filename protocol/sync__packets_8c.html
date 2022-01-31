@@ -112,20 +112,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a79697ae49f97b9202cf93728ba9c6063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a79697ae49f97b9202cf93728ba9c6063">update_tcp_ping</a> ()</td></tr>
-<tr class="separator:a79697ae49f97b9202cf93728ba9c6063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98dda3fd63338635cde0ad01133e5e2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a98dda3fd63338635cde0ad01133e5e2b">multithreaded_sync_udp_packets</a> (void *opaque)</td></tr>
-<tr class="separator:a98dda3fd63338635cde0ad01133e5e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8016ced97cc0966c2e837a9510657bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a8016ced97cc0966c2e837a9510657bd0">create_and_send_tcp_wcmsg</a> (<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128">WhistClientMessageType</a> message_type, char *payload)</td></tr>
-<tr class="separator:a8016ced97cc0966c2e837a9510657bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bc6e5d2c6baa8b2b71ed64392e01d51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a3bc6e5d2c6baa8b2b71ed64392e01d51">multithreaded_sync_tcp_packets</a> (void *opaque)</td></tr>
-<tr class="separator:a3bc6e5d2c6baa8b2b71ed64392e01d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845bbd8479d8723f4eccde3034135a26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#a845bbd8479d8723f4eccde3034135a26">init_packet_synchronizers</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer)</td></tr>
 <tr class="memdesc:a845bbd8479d8723f4eccde3034135a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the packet synchronizer threads for UDP and TCP.  <a href="sync__packets_8c.html#a845bbd8479d8723f4eccde3034135a26">More...</a><br /></td></tr>
 <tr class="separator:a845bbd8479d8723f4eccde3034135a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adac54202546ce1fc2fafa9587f5a9862"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#adac54202546ce1fc2fafa9587f5a9862">destroy_packet_synchronizers</a> ()</td></tr>
-<tr class="memdesc:adac54202546ce1fc2fafa9587f5a9862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the packet synchronizer threads for UDP and TCP.  <a href="sync__packets_8c.html#adac54202546ce1fc2fafa9587f5a9862">More...</a><br /></td></tr>
-<tr class="separator:adac54202546ce1fc2fafa9587f5a9862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d6038e1b38f6c9e1c5ce82dd944e5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8c.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e">destroy_packet_synchronizers</a> (void)</td></tr>
+<tr class="memdesc:ac9d6038e1b38f6c9e1c5ce82dd944e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the packet synchronizer threads for UDP and TCP.  <a href="sync__packets_8c.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e">More...</a><br /></td></tr>
+<tr class="separator:ac9d6038e1b38f6c9e1c5ce82dd944e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -167,36 +159,8 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a8016ced97cc0966c2e837a9510657bd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8016ced97cc0966c2e837a9510657bd0">&#9670;&nbsp;</a></span>create_and_send_tcp_wcmsg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void create_and_send_tcp_wcmsg </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128">WhistClientMessageType</a>&#160;</td>
-          <td class="paramname"><em>message_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>payload</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adac54202546ce1fc2fafa9587f5a9862"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adac54202546ce1fc2fafa9587f5a9862">&#9670;&nbsp;</a></span>destroy_packet_synchronizers()</h2>
+<a id="ac9d6038e1b38f6c9e1c5ce82dd944e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d6038e1b38f6c9e1c5ce82dd944e5e">&#9670;&nbsp;</a></span>destroy_packet_synchronizers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,6 +168,7 @@ Usage</h1>
         <tr>
           <td class="memname">void destroy_packet_synchronizers </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -237,59 +202,6 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a3bc6e5d2c6baa8b2b71ed64392e01d51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bc6e5d2c6baa8b2b71ed64392e01d51">&#9670;&nbsp;</a></span>multithreaded_sync_tcp_packets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int multithreaded_sync_tcp_packets </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>opaque</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98dda3fd63338635cde0ad01133e5e2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98dda3fd63338635cde0ad01133e5e2b">&#9670;&nbsp;</a></span>multithreaded_sync_udp_packets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int multithreaded_sync_udp_packets </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>opaque</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a79697ae49f97b9202cf93728ba9c6063"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79697ae49f97b9202cf93728ba9c6063">&#9670;&nbsp;</a></span>update_tcp_ping()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_tcp_ping </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

@@ -5,8 +5,6 @@ var whistgetopt_8c =
     [ "BADARG", "whistgetopt_8c.html#aa66fa298ed3187720cb609e15cd7d22c", null ],
     [ "BADCH", "whistgetopt_8c.html#a1c8c2c090f7416155b04f9d6eb50faa0", null ],
     [ "EMSG", "whistgetopt_8c.html#ac393ec775622430dfe25cd2ac9dec9f4", null ],
-    [ "__P", "whistgetopt_8c.html#a588cd574594646450dcebb4f26d85391", null ],
-    [ "getopt_internal", "whistgetopt_8c.html#a36733c034e80354c237395bb6e48d2a1", null ],
     [ "getopt_long", "whistgetopt_8c.html#a74a6cf8aca7b02b89ba78a4c356e1fcf", null ],
     [ "optarg", "whistgetopt_8c.html#adb50a0eab9fed92fc3bfc7dfa4f2c410", null ],
     [ "opterr", "whistgetopt_8c.html#ae30f05ee1e2e5652f174a35c7875d25e", null ],

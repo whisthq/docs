@@ -7,6 +7,6 @@ var client_2network_8h =
     [ "send_ping", "client_2network_8h.html#a227a48ef77a55282ab59696435f3859b", null ],
     [ "send_server_quit_messages", "client_2network_8h.html#aa8bf751ea26659195c59cd180956315a", null ],
     [ "send_tcp_ping", "client_2network_8h.html#a0fbcee4b22977f8b164eb393f8dd4187", null ],
-    [ "send_tcp_reconnect_message", "client_2network_8h.html#acb29b0f743d1edcc94da3691d2867f76", null ],
+    [ "send_tcp_reconnect_message", "client_2network_8h.html#a99b7254c0bbc05e1c57f43a75f5bc15d", null ],
     [ "send_wcmsg", "client_2network_8h.html#a71973874dd00c57c855c77e4c870392a", null ]
 ];

@@ -83,7 +83,6 @@ $(document).ready(function(){initNavTree('clipboard_8h.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -106,15 +105,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structClipboardFiles.html">ClipboardFiles</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clipboard file data packet description.  <a href="structClipboardFiles.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a65c178b5d0555aaa30f3138716271e3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a65c178b5d0555aaa30f3138716271e3a">GET_OS_CLIPBOARD</a>&#160;&#160;&#160;&quot;./get_os_clipboard&quot;</td></tr>
-<tr class="separator:a65c178b5d0555aaa30f3138716271e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7332985c65be1b32ec887fcb37750962"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a7332985c65be1b32ec887fcb37750962">SET_OS_CLIPBOARD</a>&#160;&#160;&#160;&quot;./set_os_clipboard&quot;</td></tr>
-<tr class="separator:a7332985c65be1b32ec887fcb37750962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade76749524806bb7873dd724056c4ba9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#ade76749524806bb7873dd724056c4ba9">PATH_MAXLEN</a>&#160;&#160;&#160;PATH_MAX - 1</td></tr>
-<tr class="separator:ade76749524806bb7873dd724056c4ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -180,50 +170,7 @@ client-server clipboard.</h1>
 Usage</h1>
 <p>GET_OS_CLIPBOARD and SET_OS_CLIPBOARD will return strings representing directories important for getting and setting file clipboards. When <a class="el" href="clipboard_8h.html#a5d00bf978f550b702d0a2b0d80728166" title="Get the current OS clipboard data.">get_os_clipboard()</a> is called and it returns a CLIPBOARD_FILES type, then GET_OS_CLIPBOARD will be filled with symlinks to the clipboard files. When set_os_clipboard(cb) is called and is given a clipboard with a CLIPBOARD_FILES type, then the clipboard will be set to whatever files are in the SET_OS_CLIPBOARD directory.</p>
 <p>LGET_OS_CLIPBOARD and LSET_OS_CLIPBOARD are the wide-character versions of these strings, for use on windows OS's </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a65c178b5d0555aaa30f3138716271e3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65c178b5d0555aaa30f3138716271e3a">&#9670;&nbsp;</a></span>GET_OS_CLIPBOARD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GET_OS_CLIPBOARD&#160;&#160;&#160;&quot;./get_os_clipboard&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade76749524806bb7873dd724056c4ba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade76749524806bb7873dd724056c4ba9">&#9670;&nbsp;</a></span>PATH_MAXLEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PATH_MAXLEN&#160;&#160;&#160;PATH_MAX - 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7332985c65be1b32ec887fcb37750962"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7332985c65be1b32ec887fcb37750962">&#9670;&nbsp;</a></span>SET_OS_CLIPBOARD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SET_OS_CLIPBOARD&#160;&#160;&#160;&quot;./set_os_clipboard&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a7d9aaa1f2170fa8b774f6d0136bd58e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d9aaa1f2170fa8b774f6d0136bd58e7">&#9670;&nbsp;</a></span>ClipboardChunkType</h2>
 

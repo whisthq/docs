@@ -181,8 +181,6 @@ Functions</h2></td></tr>
 <tr class="separator:af0b16abca7a6a20ff4980e9f04374c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a837bf136ff32ee3efed5df4105ccedf7"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lodepng_8c.html#a837bf136ff32ee3efed5df4105ccedf7">lodepng_save_file</a> (const unsigned char *buffer, size_t buffersize, const char *filename)</td></tr>
 <tr class="separator:a837bf136ff32ee3efed5df4105ccedf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a819a931fbc4f082d1095275a1eca588d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lodepng_8c.html#a819a931fbc4f082d1095275a1eca588d">lode_png_test_bitreader</a> (const unsigned char *data, size_t size, size_t numsteps, const size_t *steps, unsigned *result)</td></tr>
-<tr class="separator:a819a931fbc4f082d1095275a1eca588d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c0c408213e5bbb4a8d0edbaeffc97f"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lodepng_8c.html#a82c0c408213e5bbb4a8d0edbaeffc97f">lodepng_huffman_code_lengths</a> (unsigned *lengths, const unsigned *frequencies, size_t numcodes, unsigned maxbitlen)</td></tr>
 <tr class="separator:a82c0c408213e5bbb4a8d0edbaeffc97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c2f61923ad2ce3d47354923ba6df62d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lodepng_8c.html#a9c2f61923ad2ce3d47354923ba6df62d">lodepng_inflate</a> (unsigned char **out, size_t *outsize, const unsigned char *in, size_t insize, const <a class="el" href="structLodePNGDecompressSettings.html">LodePNGDecompressSettings</a> *settings)</td></tr>
@@ -279,8 +277,6 @@ Functions</h2></td></tr>
 <tr class="separator:a14a4dc4c26e03acb5ab36880aacbd85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd20ba96aa7a2e3d782204c604baab09"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lodepng_8c.html#abd20ba96aa7a2e3d782204c604baab09">lodepng_convert</a> (unsigned char *out, const unsigned char *in, const <a class="el" href="structLodePNGColorMode.html">LodePNGColorMode</a> *mode_out, const <a class="el" href="structLodePNGColorMode.html">LodePNGColorMode</a> *mode_in, unsigned w, unsigned h)</td></tr>
 <tr class="separator:abd20ba96aa7a2e3d782204c604baab09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b6b02797d16ae69cd8d3049c13dd365"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lodepng_8c.html#a6b6b02797d16ae69cd8d3049c13dd365">lodepng_convert_rgb</a> (unsigned *r_out, unsigned *g_out, unsigned *b_out, unsigned r_in, unsigned g_in, unsigned b_in, const <a class="el" href="structLodePNGColorMode.html">LodePNGColorMode</a> *mode_out, const <a class="el" href="structLodePNGColorMode.html">LodePNGColorMode</a> *mode_in)</td></tr>
-<tr class="separator:a6b6b02797d16ae69cd8d3049c13dd365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8262a8a17b785f72034b585ae13aafcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lodepng_8c.html#a8262a8a17b785f72034b585ae13aafcf">lodepng_color_stats_init</a> (<a class="el" href="structLodePNGColorStats.html">LodePNGColorStats</a> *stats)</td></tr>
 <tr class="separator:a8262a8a17b785f72034b585ae13aafcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab96a2d19bba9abe1fdcb278492b3f46"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lodepng_8c.html#aab96a2d19bba9abe1fdcb278492b3f46">lodepng_compute_color_stats</a> (<a class="el" href="structLodePNGColorStats.html">LodePNGColorStats</a> *stats, const unsigned char *in, unsigned w, unsigned h, const <a class="el" href="structLodePNGColorMode.html">LodePNGColorMode</a> *mode_in)</td></tr>
@@ -827,52 +823,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a819a931fbc4f082d1095275a1eca588d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a819a931fbc4f082d1095275a1eca588d">&#9670;&nbsp;</a></span>lode_png_test_bitreader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned lode_png_test_bitreader </td>
-          <td>(</td>
-          <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>numsteps</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const size_t *&#160;</td>
-          <td class="paramname"><em>steps</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned *&#160;</td>
-          <td class="paramname"><em>result</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aad7cb0e06093d0111bd599a279360f98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad7cb0e06093d0111bd599a279360f98">&#9670;&nbsp;</a></span>lodepng_add_itext()</h2>
 
@@ -1644,70 +1594,6 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>h</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b6b02797d16ae69cd8d3049c13dd365"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b6b02797d16ae69cd8d3049c13dd365">&#9670;&nbsp;</a></span>lodepng_convert_rgb()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned lodepng_convert_rgb </td>
-          <td>(</td>
-          <td class="paramtype">unsigned *&#160;</td>
-          <td class="paramname"><em>r_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned *&#160;</td>
-          <td class="paramname"><em>g_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned *&#160;</td>
-          <td class="paramname"><em>b_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>r_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>g_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>b_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structLodePNGColorMode.html">LodePNGColorMode</a> *&#160;</td>
-          <td class="paramname"><em>mode_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structLodePNGColorMode.html">LodePNGColorMode</a> *&#160;</td>
-          <td class="paramname"><em>mode_in</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3286,7 +3172,7 @@ Variables</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="alodepng_8c_html_a947faf188804eb1b43158cd836333a6f"><div class="ttname"><a href="lodepng_8c.html#a947faf188804eb1b43158cd836333a6f">DEFAULT_WINDOWSIZE</a></div><div class="ttdeci">#define DEFAULT_WINDOWSIZE</div><div class="ttdef"><b>Definition:</b> lodepng.c:2447</div></div>
+<div class="ttc" id="alodepng_8c_html_a947faf188804eb1b43158cd836333a6f"><div class="ttname"><a href="lodepng_8c.html#a947faf188804eb1b43158cd836333a6f">DEFAULT_WINDOWSIZE</a></div><div class="ttdeci">#define DEFAULT_WINDOWSIZE</div><div class="ttdef"><b>Definition:</b> lodepng.c:2423</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
