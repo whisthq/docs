@@ -37,7 +37,7 @@ var searchData=
   ['networkstatistics_1336',['NetworkStatistics',['../structNetworkStatistics.html',1,'']]],
   ['networkthrottlecontext_1337',['NetworkThrottleContext',['../structNetworkThrottleContext.html',1,'NetworkThrottleContext'],['../throttle_8h.html#a375c9c414e1b142f3dd40bf3eadc00ab',1,'NetworkThrottleContext():&#160;throttle.h']]],
   ['new_5fgf_5fmatrix_1338',['NEW_GF_MATRIX',['../rs_8c.html#ac8e186fd13be78f0aa88537e1c19f672',1,'rs.c']]],
-  ['new_5ftab_5furl_1339',['new_tab_url',['../client__utils_8c.html#a6284762fa051e3b50b9b5fe0d91c95f6',1,'new_tab_url():&#160;client_utils.c'],['../client_2main_8c.html#a6284762fa051e3b50b9b5fe0d91c95f6',1,'new_tab_url():&#160;client_utils.c']]],
+  ['new_5ftab_5furl_1339',['new_tab_url',['../client__utils_8c.html#a6284762fa051e3b50b9b5fe0d91c95f6',1,'new_tab_url():&#160;client_utils.c'],['../whist__client_8c.html#a6284762fa051e3b50b9b5fe0d91c95f6',1,'new_tab_url():&#160;client_utils.c']]],
   ['newline_1340',['NEWLINE',['../logging_8h.html#a806511f4930171733227c99101dc0606',1,'logging.h']]],
   ['next_5fqueue_5fid_1341',['next_queue_id',['../structNetworkThrottleContext.html#a8341b4524dde3671837f9732cf92b7e6',1,'NetworkThrottleContext']]],
   ['nextfree_1342',['nextfree',['../structBPMLists.html#a2b4910e1d17b09862e8455fe37f733d9',1,'BPMLists']]],

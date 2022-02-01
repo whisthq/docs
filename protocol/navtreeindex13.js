@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"whist__memory_8c.html#a82c0c0ab6aa54efc85fb5cdc1ea37e1f":[10,0,2,2,4,8],
+"whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a":[10,0,2,2,4,4],
+"whist__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7":[10,0,2,2,4,17],
+"whist__memory_8c.html#ac5cb37b0580474e152f2450c34979720":[10,0,2,2,4,6],
+"whist__memory_8c.html#ac8f0e2ca8809d1074ecaeaa684c4edfc":[10,0,2,2,4,5],
 "whist__memory_8c.html#ad91ad1707c56178b66bd39a9b1b1e8a7":[10,0,2,2,4,14],
 "whist__memory_8c.html#add7f4d5c9a5776f2f27de64e939b7445":[10,0,2,2,4,10],
 "whist__memory_8c.html#ae51d43be8b22d6c3bf94077af0929bb7":[10,0,2,2,4,12],

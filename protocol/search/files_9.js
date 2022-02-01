@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['mac_5fclipboard_2ec_2333',['mac_clipboard.c',['../mac__clipboard_8c.html',1,'']]],
-  ['mac_5futils_2ec_2334',['mac_utils.c',['../mac__utils_8c.html',1,'']]],
-  ['mac_5futils_2eh_2335',['mac_utils.h',['../mac__utils_8h.html',1,'']]],
-  ['main_2ec_2336',['main.c',['../client_2main_8c.html',1,'(Global Namespace)'],['../server_2main_8c.html',1,'(Global Namespace)']]]
+  ['mac_5fclipboard_2ec_2336',['mac_clipboard.c',['../mac__clipboard_8c.html',1,'']]],
+  ['mac_5futils_2ec_2337',['mac_utils.c',['../mac__utils_8c.html',1,'']]],
+  ['mac_5futils_2eh_2338',['mac_utils.h',['../mac__utils_8h.html',1,'']]],
+  ['main_2ec_2339',['main.c',['../client_2main_8c.html',1,'(Global Namespace)'],['../server_2main_8c.html',1,'(Global Namespace)']]]
 ];

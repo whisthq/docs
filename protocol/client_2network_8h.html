@@ -96,10 +96,10 @@ $(document).ready(function(){initNavTree('client_2network_8h.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7f1688e7fd60c0b361b449db233bc0c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8">discover_ports</a> (bool *<a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
+<tr class="memitem:a7f1688e7fd60c0b361b449db233bc0c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8">discover_ports</a> (bool *<a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
 <tr class="memdesc:a7f1688e7fd60c0b361b449db233bc0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client.  <a href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8">More...</a><br /></td></tr>
 <tr class="separator:a7f1688e7fd60c0b361b449db233bc0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">connect_to_server</a> (bool <a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
+<tr class="memitem:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">connect_to_server</a> (bool <a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
 <tr class="memdesc:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <a href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">More...</a><br /></td></tr>
 <tr class="separator:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b7254c0bbc05e1c57f43a75f5bc15d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a99b7254c0bbc05e1c57f43a75f5bc15d">send_tcp_reconnect_message</a> (void)</td></tr>
@@ -126,9 +126,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains client-specific wrappers to low-level network </p>
-<h1><a class="anchor" id="autotoc_md52"></a>
+<h1><a class="anchor" id="autotoc_md50"></a>
 functions.</h1>
-<h1><a class="anchor" id="autotoc_md53"></a>
+<h1><a class="anchor" id="autotoc_md51"></a>
 Usage</h1>
 <p>discover_ports, connect_to_server, close_connections, and send_server_quit_messages are used to start and end connections to the Whist server. To connect, call discover_ports, then connect_to_server. To disconnect, send_server_quit_messages and then close_connections.</p>
 <p>To communicate with the server, use send_wcmsg to send Whist messages to the server. Large wcmsg's (e.g. clipboard messages) are sent over TCP; otherwise, messages are sent over UDP. Use update_ping to ping the server at regular intervals, and receive_pong to receive pongs (ping acknowledgements) from the server. </p>
