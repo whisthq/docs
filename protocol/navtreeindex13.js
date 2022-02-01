@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"whist__memory_8c.html#a7e651aa84c25b3dba71f17080742285e":[10,0,2,2,4,9],
 "whist__memory_8c.html#a82c0c0ab6aa54efc85fb5cdc1ea37e1f":[10,0,2,2,4,8],
 "whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a":[10,0,2,2,4,4],
 "whist__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7":[10,0,2,2,4,17],

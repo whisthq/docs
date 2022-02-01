@@ -97,8 +97,8 @@ var NAVTREEINDEX =
 "structStunEntry.html#a10839151cc119dbc37f661fb95c781a2",
 "structWhistRGBColor.html#a9ad0f88a0dae8cb141d6b7289f4b287f",
 "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aa6fd310c3defc3750b4439e52bc32b075",
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa70ca6445f95771c474d23af06fdbabb1",
-"whist__memory_8c.html#a82c0c0ab6aa54efc85fb5cdc1ea37e1f"
+"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa2ad9ffa4003974a07ace4b717bc9cb54",
+"whist__memory_8c.html#a7e651aa84c25b3dba71f17080742285e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

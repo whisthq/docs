@@ -72,7 +72,8 @@ var searchData=
   ['auto_5fconvert_77',['auto_convert',['../structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a',1,'LodePNGEncoderSettings']]],
   ['average_5fover_5ftime_78',['average_over_time',['../structStatisticInfo.html#a69d25e658ece7e3b613ece8601916bff',1,'StatisticInfo']]],
   ['avg_5fcounter_79',['avg_counter',['../structRingBuffer.html#a3229bb03ce787b257fbaef7b25a7eef5',1,'RingBuffer']]],
-  ['avg_5ftimer_80',['avg_timer',['../structRingBuffer.html#a84793599d9ac862828c7c130a6593466',1,'RingBuffer']]],
-  ['avpacket_5fbuffer_2ec_81',['avpacket_buffer.c',['../avpacket__buffer_8c.html',1,'']]],
-  ['avpacket_5fbuffer_2eh_82',['avpacket_buffer.h',['../avpacket__buffer_8h.html',1,'']]]
+  ['avg_5ffps_5fduration_80',['AVG_FPS_DURATION',['../whist_8h.html#a6fb202279d179dd749b095338241329b',1,'whist.h']]],
+  ['avg_5ftimer_81',['avg_timer',['../structRingBuffer.html#a84793599d9ac862828c7c130a6593466',1,'RingBuffer']]],
+  ['avpacket_5fbuffer_2ec_82',['avpacket_buffer.c',['../avpacket__buffer_8c.html',1,'']]],
+  ['avpacket_5fbuffer_2eh_83',['avpacket_buffer.h',['../avpacket__buffer_8h.html',1,'']]]
 ];
