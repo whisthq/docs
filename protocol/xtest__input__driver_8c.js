@@ -6,5 +6,5 @@ var xtest__input__driver_8c =
     [ "XK_LATIN1", "xtest__input__driver_8c.html#aec71542ec6598ecc619a2921296d5511", null ],
     [ "XK_MISCELLANY", "xtest__input__driver_8c.html#aeab6a095afeed0b9e64e415c5a5c669a", null ],
     [ "InputDeviceXTest", "xtest__input__driver_8c.html#a7ad45af5a4274005d299a2ee5e522169", null ],
-    [ "xtest_create_input_device", "xtest__input__driver_8c.html#a41ebc4eff5600506ebeb6e7200bd181f", null ]
+    [ "xtest_create_input_device", "xtest__input__driver_8c.html#a5e523715f5e41d25f7df8dc0e2fb443c", null ]
 ];

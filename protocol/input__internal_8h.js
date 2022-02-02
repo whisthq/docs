@@ -11,7 +11,8 @@ var input__internal_8h =
     [ "InputDeviceGetKeyboardKeyStateFn", "input__internal_8h.html#aefc7bef812e4dbcaf260b2e009e8b1dd", null ],
     [ "InputDeviceGetKeyboardModifierStateFn", "input__internal_8h.html#ac240633f53769f7bf6595539a4b3b36d", null ],
     [ "InputDeviceIgnoreKeyStateFn", "input__internal_8h.html#a14d0ea58397bf2e9aa0716d2f32046af", null ],
-    [ "uinput_create_input_device", "input__internal_8h.html#a83786803b6c5b98fb0a165027ced1f3e", null ],
-    [ "win_create_input_device", "input__internal_8h.html#a099d6a15e194555809ee1676b63dd7c4", null ],
-    [ "xtest_create_input_device", "input__internal_8h.html#a41ebc4eff5600506ebeb6e7200bd181f", null ]
+    [ "uinput_create_input_device", "input__internal_8h.html#ad8ba535dd7a5c25adaf10e093faf0a2f", null ],
+    [ "weston_create_input_device", "input__internal_8h.html#aa569af2fa64b87218795cc9caeea86fa", null ],
+    [ "win_create_input_device", "input__internal_8h.html#ab57f18ba31c22febfe43ecf4e82dbdc4", null ],
+    [ "xtest_create_input_device", "input__internal_8h.html#a5e523715f5e41d25f7df8dc0e2fb443c", null ]
 ];

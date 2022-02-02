@@ -9,7 +9,7 @@ var searchData=
   ['bad_5fburst_5fbitrate_90',['BAD_BURST_BITRATE',['../network__algorithm_8c.html#aa4c0cd0c8e96081bbfaadddeb0a9b232',1,'network_algorithm.c']]],
   ['badarg_91',['BADARG',['../whistgetopt_8c.html#aa66fa298ed3187720cb609e15cd7d22c',1,'whistgetopt.c']]],
   ['badch_92',['BADCH',['../whistgetopt_8c.html#a1c8c2c090f7416155b04f9d6eb50faa0',1,'whistgetopt.c']]],
-  ['base_93',['base',['../structInputDeviceUInput.html#adcc569c155f6e24e8aa0739fca91104d',1,'InputDeviceUInput::base()'],['../structInputDeviceWin.html#a8a0ea5d5e5054afdc9d638b391a4073b',1,'InputDeviceWin::base()'],['../structInputDeviceXTest.html#a55a75dcac9c38d75ce24cb39af075d19',1,'InputDeviceXTest::base()']]],
+  ['base_93',['base',['../structInputDeviceUInput.html#adcc569c155f6e24e8aa0739fca91104d',1,'InputDeviceUInput::base()'],['../structInputDeviceWeston.html#a26df9ca3c4693c0e941fe44c57a8f2a2',1,'InputDeviceWeston::base()'],['../structInputDeviceWin.html#a8a0ea5d5e5054afdc9d638b391a4073b',1,'InputDeviceWin::base()'],['../structInputDeviceXTest.html#a55a75dcac9c38d75ce24cb39af075d19',1,'InputDeviceXTest::base()']]],
   ['base_5ftcp_5fport_94',['BASE_TCP_PORT',['../whist_8h.html#adc0ff2e968cb733b9d5b1370fec443f5',1,'whist.h']]],
   ['base_5fudp_5fport_95',['BASE_UDP_PORT',['../whist_8h.html#abf13ea9a5895c46f8309ca5a57d176dd',1,'whist.h']]],
   ['begin_5ftime_5fto_5fexit_96',['begin_time_to_exit',['../struct__whist__server__config.html#a370d33931f5bc174dc8db5a9e5a230f0',1,'_whist_server_config::begin_time_to_exit()'],['../server_2network_8c.html#a87359d0492cce4252fa833844855438d',1,'begin_time_to_exit():&#160;network.c']]],

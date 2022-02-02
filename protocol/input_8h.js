@@ -7,7 +7,7 @@ var input_8h =
       [ "WHIST_INPUT_DEVICE_WIN32", "input_8h.html#ac9348deae9297ebe302759b9171a75d0a23fb4b0f4211757addd078a60509227a", null ],
       [ "WHIST_INPUT_DEVICE_WESTON", "input_8h.html#ac9348deae9297ebe302759b9171a75d0a6ae4bde72bc7fbd84260f34a7377ff67", null ]
     ] ],
-    [ "create_input_device", "input_8h.html#a258d904a706388022e32b82aec4baad2", null ],
+    [ "create_input_device", "input_8h.html#aeb9fb4ff3dd7e79ea855d6f84d0ed5dd", null ],
     [ "destroy_input_device", "input_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7", null ],
     [ "emit_high_res_mouse_wheel_event", "input_8h.html#a68d952af97dc08e94a465fc1eb9934c7", null ],
     [ "emit_key_event", "input_8h.html#ae20354ac9fa2cbeac2a1067ef9f79b06", null ],

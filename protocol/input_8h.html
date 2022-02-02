@@ -113,9 +113,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a258d904a706388022e32b82aec4baad2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a258d904a706388022e32b82aec4baad2">create_input_device</a> (<a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">InputDeviceType</a> kind)</td></tr>
-<tr class="memdesc:a258d904a706388022e32b82aec4baad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an input device struct to receive user actions to be replayed on a server.  <a href="input_8h.html#a258d904a706388022e32b82aec4baad2">More...</a><br /></td></tr>
-<tr class="separator:a258d904a706388022e32b82aec4baad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9fb4ff3dd7e79ea855d6f84d0ed5dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#aeb9fb4ff3dd7e79ea855d6f84d0ed5dd">create_input_device</a> (<a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">InputDeviceType</a> kind, void *data)</td></tr>
+<tr class="memdesc:aeb9fb4ff3dd7e79ea855d6f84d0ed5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an input device struct to receive user actions to be replayed on a server.  <a href="input_8h.html#aeb9fb4ff3dd7e79ea855d6f84d0ed5dd">More...</a><br /></td></tr>
+<tr class="separator:aeb9fb4ff3dd7e79ea855d6f84d0ed5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">destroy_input_device</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *input_device)</td></tr>
 <tr class="memdesc:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy and free the memory of an input device struct.  <a href="input_8h.html#ab0cbe20f9bdd3ea16fe403d31b5b73d7">More...</a><br /></td></tr>
 <tr class="separator:ab0cbe20f9bdd3ea16fe403d31b5b73d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,8 +206,8 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a258d904a706388022e32b82aec4baad2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a258d904a706388022e32b82aec4baad2">&#9670;&nbsp;</a></span>create_input_device()</h2>
+<a id="aeb9fb4ff3dd7e79ea855d6f84d0ed5dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9fb4ff3dd7e79ea855d6f84d0ed5dd">&#9670;&nbsp;</a></span>create_input_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,8 +216,18 @@ Usage</h1>
           <td class="memname"><a class="el" href="structInputDevice.html">InputDevice</a>* create_input_device </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="input_8h.html#ac9348deae9297ebe302759b9171a75d0">InputDeviceType</a>&#160;</td>
-          <td class="paramname"><em>kind</em></td><td>)</td>
+          <td class="paramname"><em>kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -226,6 +236,7 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">kind</td><td>type of input device to create</td></tr>
+    <tr><td class="paramname">data</td><td>an opaque data to pass to the input device creation routine, highly dependent on the type of input</td></tr>
   </table>
   </dd>
 </dl>

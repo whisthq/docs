@@ -117,6 +117,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac26280b92f7122e6f76a0407d26ae8e7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7">safe_malloc</a> (size_t size)</td></tr>
 <tr class="memdesc:ac26280b92f7122e6f76a0407d26ae8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around malloc that will correctly exit the protocol when malloc fails.  <a href="whist__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7">More...</a><br /></td></tr>
 <tr class="separator:ac26280b92f7122e6f76a0407d26ae8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd116b308d584201926444baa5897882"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#afd116b308d584201926444baa5897882">safe_zalloc</a> (size_t size)</td></tr>
+<tr class="memdesc:afd116b308d584201926444baa5897882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around calloc that will correctly exit the protocol when calloc fails.  <a href="whist__memory_8c.html#afd116b308d584201926444baa5897882">More...</a><br /></td></tr>
+<tr class="separator:afd116b308d584201926444baa5897882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15cfd76dbebf81d90310d51c79e2a06a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a">safe_realloc</a> (void *buffer, size_t new_size)</td></tr>
 <tr class="memdesc:a15cfd76dbebf81d90310d51c79e2a06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around realloc that will correctly exit the protocol when realloc fails.  <a href="whist__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a">More...</a><br /></td></tr>
 <tr class="separator:a15cfd76dbebf81d90310d51c79e2a06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -635,6 +638,27 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reallocated memory space </dd></dl>
+
+</div>
+</div>
+<a id="afd116b308d584201926444baa5897882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd116b308d584201926444baa5897882">&#9670;&nbsp;</a></span>safe_zalloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* safe_zalloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper around calloc that will correctly exit the protocol when calloc fails. </p>
+<dl class="section return"><dt>Returns</dt><dd>Allocated memory space </dd></dl>
 
 </div>
 </div>

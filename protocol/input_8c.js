@@ -2,7 +2,7 @@ var input_8c =
 [
     [ "KeyDown", "input_8c.html#a27c4518fbdddd4fff00490ee954359d5", null ],
     [ "KeyUp", "input_8c.html#acaf86ea08826ebef87866ae548288a21", null ],
-    [ "create_input_device", "input_8c.html#a258d904a706388022e32b82aec4baad2", null ],
+    [ "create_input_device", "input_8c.html#aeb9fb4ff3dd7e79ea855d6f84d0ed5dd", null ],
     [ "destroy_input_device", "input_8c.html#a88d9d98602ae6cc18aa520e0a6c2fba5", null ],
     [ "emit_high_res_mouse_wheel_event", "input_8c.html#ae83fac9e0a913337972cc5c502a78bb8", null ],
     [ "emit_key_event", "input_8c.html#a36682fd871f2721bff37eb96562a1e74", null ],

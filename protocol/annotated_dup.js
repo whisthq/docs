@@ -34,6 +34,7 @@ var annotated_dup =
     [ "HuffmanTree", "structHuffmanTree.html", "structHuffmanTree" ],
     [ "InputDevice", "structInputDevice.html", "structInputDevice" ],
     [ "InputDeviceUInput", "structInputDeviceUInput.html", "structInputDeviceUInput" ],
+    [ "InputDeviceWeston", "structInputDeviceWeston.html", "structInputDeviceWeston" ],
     [ "InputDeviceWin", "structInputDeviceWin.html", "structInputDeviceWin" ],
     [ "InputDeviceXTest", "structInputDeviceXTest.html", "structInputDeviceXTest" ],
     [ "LinkedList", "structLinkedList.html", "structLinkedList" ],

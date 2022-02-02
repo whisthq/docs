@@ -18,5 +18,6 @@ var whist__memory_8c =
     [ "realloc_region", "whist__memory_8c.html#a38cef2a2f287ce784dcd824293e4ebba", null ],
     [ "resize_dynamic_buffer", "whist__memory_8c.html#a2b12df5f9a53f9f8728b204aab6646d0", null ],
     [ "safe_malloc", "whist__memory_8c.html#ac26280b92f7122e6f76a0407d26ae8e7", null ],
-    [ "safe_realloc", "whist__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a", null ]
+    [ "safe_realloc", "whist__memory_8c.html#a15cfd76dbebf81d90310d51c79e2a06a", null ],
+    [ "safe_zalloc", "whist__memory_8c.html#afd116b308d584201926444baa5897882", null ]
 ];
