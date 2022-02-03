@@ -21,6 +21,7 @@ var client__statistic_8h =
       [ "VIDEO_SDL_WRITE_TIME", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a73df5a3e8d98d623a4ebe54716890c06", null ],
       [ "VIDEO_TIME_BETWEEN_FRAMES", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32af72c3ce78e30c28bd78013e2cbcdfae0", null ],
       [ "VIDEO_UPDATE_TIME", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a6f123a94d6cc479a05d86bb5c37eceb6", null ],
+      [ "NOTIFICATIONS_RECEIVED", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32aef844b9ebeccdf9ea1353890aa96ed39", null ],
       [ "CLIENT_NUM_METRICS", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a75253dcbab7e29f26e86f47e46078856", null ]
     ] ],
     [ "init_client_statistics", "client__statistic_8h.html#a1ea5068b820775eac9cbb685aca5ee51", null ],

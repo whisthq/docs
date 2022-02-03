@@ -25,6 +25,7 @@ var whist_8h =
     [ "CAPTURE_SPECIAL_WINDOWS_KEYS", "whist_8h.html#a881d9eef8e780a05fe9cd24eab5514d8", null ],
     [ "CHUNK_SIZE", "whist_8h.html#aea3cfda4f3a9f978ec759f206cf186fe", null ],
     [ "CONSECUTIVE_IDENTICAL_FRAMES", "whist_8h.html#a9b26cd4ece83eb114a81877bd849e28b", null ],
+    [ "DBUS_ADDRESS_MAXLEN", "whist_8h.html#a3f3913fffc95a27d40fd3c649d4803b6", null ],
     [ "DEFAULT_BINARY_PRIVATE_KEY", "whist_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41", null ],
     [ "DEFAULT_DPI", "whist_8h.html#a794e0417bdd7ebdad81c59a929932761", null ],
     [ "DEFAULT_HEX_PRIVATE_KEY", "whist_8h.html#a151518969977796d7b0c7d40e9ced62f", null ],
@@ -327,6 +328,7 @@ var whist_8h =
       [ "SMESSAGE_FULLSCREEN", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a8bee600907e82ec0da4091d1c1a5abe5", null ],
       [ "SMESSAGE_FILE_METADATA", "whist_8h.html#a7c0601110e75dab446fcca0c02609353ab6f26910ff293a00e1a9ece3de4d5e90", null ],
       [ "SMESSAGE_FILE_DATA", "whist_8h.html#a7c0601110e75dab446fcca0c02609353af1edac653bbbf90d0ed4e295553b8363", null ],
+      [ "SMESSAGE_NOTIFICATION", "whist_8h.html#a7c0601110e75dab446fcca0c02609353acdb4f2543875b75aaa97161302076490", null ],
       [ "SMESSAGE_QUIT", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a62adb843bfd6857bbf5f634425c404d1", null ]
     ] ],
     [ "bit_array_clear_all", "whist_8h.html#a7d59f1d85585b3ff640a8ece33c6da5b", null ],
