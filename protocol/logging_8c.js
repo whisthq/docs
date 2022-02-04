@@ -5,7 +5,7 @@ var logging_8c =
     [ "HANDLER_ARRAY_SIZE", "logging_8c.html#a75b79c4739a390fe7788f3673880afa2", null ],
     [ "destroy_logger", "logging_8c.html#a4dfcbd491525c8782dc0f4a373f29fd6", null ],
     [ "flush_logs", "logging_8c.html#a74138e514d79a0449c832cc913b86f49", null ],
-    [ "internal_logging_printf", "logging_8c.html#a70325569587d06c4e89314d4db8b2d32", null ],
+    [ "internal_logging_printf", "logging_8c.html#aab5eb353926ac1f060cf87f4306d334f", null ],
     [ "print_stacktrace", "logging_8c.html#aab45aa94b75eeb446eaed8a8ad1c65a6", null ],
     [ "test_set_pause_state_on_logger_thread", "logging_8c.html#a54581b1f2ee2b138b99408b358df690b", null ],
     [ "whist_init_logger", "logging_8c.html#aec2b3c8a4110db3dacd0a0de88e5d556", null ],
