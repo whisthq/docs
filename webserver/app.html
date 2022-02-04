@@ -50,12 +50,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="app.helpers.html">app.helpers package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="app.helpers.html#subpackages">Subpackages</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="app.helpers.ami.html">app.helpers.ami package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="app.helpers.ami.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="app.helpers.ami.html#module-app.helpers.ami.ami_upgrade">app.helpers.ami.ami_upgrade module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="app.helpers.ami.html#module-app.helpers.ami">Module contents</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="app.helpers.aws.html">app.helpers.aws package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="app.helpers.aws.html#submodules">Submodules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="app.helpers.aws.html#module-app.helpers.aws.aws_instance_post">app.helpers.aws.aws_instance_post module</a></li>
@@ -770,6 +764,297 @@ process’s execution environment, optionally falling back on the configuration 
 </section>
 <section id="app-entry-web-module">
 <h2>app.entry_web module<a class="headerlink" href="#app-entry-web-module" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-app.models">
+<span id="app-models-module"></span><h2>app.models module<a class="headerlink" href="#module-app.models" title="Permalink to this headline">¶</a></h2>
+<p>SQLAlchemy models</p>
+<p>This module defines Python models that represent tables in our PostgreSQL database. Each model’s
+attributes are automatically loaded from database column names when we call
+<code class="docutils literal notranslate"><span class="pre">DeferredReflection.prepare()</span></code> in <code class="docutils literal notranslate"><span class="pre">app/utils/flask/factory.py</span></code>.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.CloudProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">CloudProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.CloudProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#app.models.NoValue" title="app.models.NoValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.NoValue</span></code></a></p>
+<p>The cloud provider that runs the instance.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.CloudProvider.AWS">
+<span class="sig-name descname"><span class="pre">AWS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#app.models.CloudProvider.AWS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.Image">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">Image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.Image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.ext.declarative.extensions.DeferredReflection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
+<p>A virtual machine image that can be used to launch Mandelbox hosts.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Image.provider">
+<span class="sig-name descname"><span class="pre">provider</span></span><a class="headerlink" href="#app.models.Image.provider" title="Permalink to this definition">¶</a></dt>
+<dd><p>The cloud provider that manages the image.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Image.region">
+<span class="sig-name descname"><span class="pre">region</span></span><a class="headerlink" href="#app.models.Image.region" title="Permalink to this definition">¶</a></dt>
+<dd><p>The region in which the image can be used to launch instances.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Image.image_id">
+<span class="sig-name descname"><span class="pre">image_id</span></span><a class="headerlink" href="#app.models.Image.image_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The unique string that its cloud provider uses to identify the image.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Image.client_sha">
+<span class="sig-name descname"><span class="pre">client_sha</span></span><a class="headerlink" href="#app.models.Image.client_sha" title="Permalink to this definition">¶</a></dt>
+<dd><p>The source commit hash from which the image was built.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Image.updated_at">
+<span class="sig-name descname"><span class="pre">updated_at</span></span><a class="headerlink" href="#app.models.Image.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>The time at which the row was last updated.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">provider</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Column('provider',</span> <span class="pre">Enum('AWS',</span> <span class="pre">name='cloudprovider'),</span> <span class="pre">table=&lt;images&gt;,</span> <span class="pre">primary_key=True,</span> <span class="pre">nullable=False)</span></em><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.Instance">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.Instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.ext.declarative.extensions.DeferredReflection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
+<p>A virtual machine that can host Mandelboxes.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#app.models.Instance.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The unique string that the its cloud provider uses to identify the instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.provider">
+<span class="sig-name descname"><span class="pre">provider</span></span><a class="headerlink" href="#app.models.Instance.provider" title="Permalink to this definition">¶</a></dt>
+<dd><p>The cloud provider that runs the instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.region">
+<span class="sig-name descname"><span class="pre">region</span></span><a class="headerlink" href="#app.models.Instance.region" title="Permalink to this definition">¶</a></dt>
+<dd><p>The region in which the instance is running.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.image_id">
+<span class="sig-name descname"><span class="pre">image_id</span></span><a class="headerlink" href="#app.models.Instance.image_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A unique string that the cloud provider uses to identify the image from which the
+instance was launched.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.client_sha">
+<span class="sig-name descname"><span class="pre">client_sha</span></span><a class="headerlink" href="#app.models.Instance.client_sha" title="Permalink to this definition">¶</a></dt>
+<dd><p>The source commit hash from which the image from which the instance was
+launched was built.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.ip_addr">
+<span class="sig-name descname"><span class="pre">ip_addr</span></span><a class="headerlink" href="#app.models.Instance.ip_addr" title="Permalink to this definition">¶</a></dt>
+<dd><p>The instance’s public IPv4 address.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.instance_type">
+<span class="sig-name descname"><span class="pre">instance_type</span></span><a class="headerlink" href="#app.models.Instance.instance_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>A cloud-provider-specific string that its cloud provider uses to identify
+the instance’s type.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.remaining_capacity">
+<span class="sig-name descname"><span class="pre">remaining_capacity</span></span><a class="headerlink" href="#app.models.Instance.remaining_capacity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of additional Mandelboxes that the instance can accomodate.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#app.models.Instance.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>The connection status of the host service running on the instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.created_at">
+<span class="sig-name descname"><span class="pre">created_at</span></span><a class="headerlink" href="#app.models.Instance.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>The time at which the instance was launched.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.updated_at">
+<span class="sig-name descname"><span class="pre">updated_at</span></span><a class="headerlink" href="#app.models.Instance.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>The time at which the row was last updated.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Instance.mandelboxes">
+<span class="sig-name descname"><span class="pre">mandelboxes</span></span><a class="headerlink" href="#app.models.Instance.mandelboxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Mandelboxes that are running on this instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">mandelboxes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;RelationshipProperty</span> <span class="pre">at</span> <span class="pre">0x7f49ef4ce040;</span> <span class="pre">no</span> <span class="pre">key&gt;</span></em><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">provider</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Column('provider',</span> <span class="pre">Enum('AWS',</span> <span class="pre">name='cloudprovider'),</span> <span class="pre">table=&lt;instances&gt;,</span> <span class="pre">nullable=False)</span></em><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Column('status',</span> <span class="pre">Enum('PRE_CONNECTION',</span> <span class="pre">'ACTIVE',</span> <span class="pre">'DRAINING',</span> <span class="pre">name='mandelboxhoststate'),</span> <span class="pre">table=&lt;instances&gt;,</span> <span class="pre">nullable=False)</span></em><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.Mandelbox">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">Mandelbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.Mandelbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.ext.declarative.extensions.DeferredReflection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.decl_api.Model</span></code></p>
+<p>A container from which a Whist application is being streamed.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Mandelbox.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#app.models.Mandelbox.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A unique string that identifies the Mandelbox’s underlying Docker container.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Mandelbox.app">
+<span class="sig-name descname"><span class="pre">app</span></span><a class="headerlink" href="#app.models.Mandelbox.app" title="Permalink to this definition">¶</a></dt>
+<dd><p>The application that is being streamed from within the Mandelbox.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Mandelbox.instance_id">
+<span class="sig-name descname"><span class="pre">instance_id</span></span><a class="headerlink" href="#app.models.Mandelbox.instance_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A foreign key to the instances table. The primary key of the instance on which
+the Mandelbox is running.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Mandelbox.user_id">
+<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#app.models.Mandelbox.user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A string that identifies the user who launched the Mandelbox.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Mandelbox.session_id">
+<span class="sig-name descname"><span class="pre">session_id</span></span><a class="headerlink" href="#app.models.Mandelbox.session_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>???</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Mandelbox.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#app.models.Mandelbox.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>The lifecycle state of the Mandelbox.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Mandelbox.created_at">
+<span class="sig-name descname"><span class="pre">created_at</span></span><a class="headerlink" href="#app.models.Mandelbox.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>The time at which the Mandelbox was launched.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">app</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Column('app',</span> <span class="pre">Enum('CHROME',</span> <span class="pre">name='whistapplication'),</span> <span class="pre">table=&lt;mandelboxes&gt;,</span> <span class="pre">nullable=False)</span></em><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.Mandelbox.host">
+<span class="sig-name descname"><span class="pre">host</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;RelationshipProperty</span> <span class="pre">at</span> <span class="pre">0x7f49ef4ce5c0;</span> <span class="pre">no</span> <span class="pre">key&gt;</span></em><a class="headerlink" href="#app.models.Mandelbox.host" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Column('status',</span> <span class="pre">Enum('ALLOCATED',</span> <span class="pre">'CONNECTING',</span> <span class="pre">'RUNNING',</span> <span class="pre">'DYING',</span> <span class="pre">name='mandelboxstate'),</span> <span class="pre">table=&lt;mandelboxes&gt;,</span> <span class="pre">nullable=False)</span></em><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.MandelboxHostState">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">MandelboxHostState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.MandelboxHostState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#app.models.NoValue" title="app.models.NoValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.NoValue</span></code></a></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxHostState.ACTIVE">
+<span class="sig-name descname"><span class="pre">ACTIVE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#app.models.MandelboxHostState.ACTIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxHostState.DRAINING">
+<span class="sig-name descname"><span class="pre">DRAINING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#app.models.MandelboxHostState.DRAINING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxHostState.PRE_CONNECTION">
+<span class="sig-name descname"><span class="pre">PRE_CONNECTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#app.models.MandelboxHostState.PRE_CONNECTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.MandelboxState">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">MandelboxState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.MandelboxState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#app.models.NoValue" title="app.models.NoValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.NoValue</span></code></a></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxState.ALLOCATED">
+<span class="sig-name descname"><span class="pre">ALLOCATED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#app.models.MandelboxState.ALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxState.CONNECTING">
+<span class="sig-name descname"><span class="pre">CONNECTING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#app.models.MandelboxState.CONNECTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxState.DYING">
+<span class="sig-name descname"><span class="pre">DYING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#app.models.MandelboxState.DYING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.MandelboxState.RUNNING">
+<span class="sig-name descname"><span class="pre">RUNNING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#app.models.MandelboxState.RUNNING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.NoValue">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">NoValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.NoValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.models.WhistApplication">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.models.</span></span><span class="sig-name descname"><span class="pre">WhistApplication</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.WhistApplication" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#app.models.NoValue" title="app.models.NoValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">app.models.NoValue</span></code></a></p>
+<p>The application that is being streamed by a Mandelbox.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.models.WhistApplication.CHROME">
+<span class="sig-name descname"><span class="pre">CHROME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#app.models.WhistApplication.CHROME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="module-app">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app" title="Permalink to this headline">¶</a></h2>

@@ -16,7 +16,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="app.helpers.tests package" href="app.helpers.tests.html" />
-    <link rel="prev" title="app.helpers.ami package" href="app.helpers.ami.html" />
+    <link rel="prev" title="app.helpers package" href="app.helpers.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -41,34 +41,6 @@
 <section id="module-app.helpers.aws.aws_instance_post">
 <span id="app-helpers-aws-aws-instance-post-module"></span><h2>app.helpers.aws.aws_instance_post module<a class="headerlink" href="#module-app.helpers.aws.aws_instance_post" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.check_and_handle_instances_with_old_commit_hash">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">check_and_handle_instances_with_old_commit_hash</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.check_and_handle_instances_with_old_commit_hash" title="Permalink to this definition">¶</a></dt>
-<dd><p>Drain all instances associated with old commit hashes
-:returns: None</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.check_and_handle_lingering_instances">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">check_and_handle_lingering_instances</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.check_and_handle_lingering_instances" title="Permalink to this definition">¶</a></dt>
-<dd><p>Drains all lingering instances when called.
-:returns: None</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.check_instance_exists">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">check_instance_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.check_instance_exists" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks whether a specified instance actually exists and is not
-stopped/terminated, using the AWS client
-:param instance_id: the id of the instance to query
-:param location: the region to check in</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>True if the instance actually exists and is not stopped/terminated, else False</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
 <dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.do_scale_up_if_necessary">
 <span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">do_scale_up_if_necessary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ami</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_buffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.do_scale_up_if_necessary" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scales up new instances as needed, given a region and AMI to check
@@ -83,27 +55,8 @@ names.
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.drain_instance">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">drain_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">app.database.models.cloud.InstanceInfo</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.drain_instance" title="Permalink to this definition">¶</a></dt>
-<dd><p>Marks an instance as draining, removing from the database if the instance
-in question does not actually exist. Note that we will terminate instances
-that do not have a valid IP (since host service is not up/connected yet).</p>
-<p>After marking the instance as draining, the host service should react to this
-change and terminate itself.</p>
-<p>If the instance is of NoneType then we will skip draining.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>instance</strong> – The instance to drain</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>None</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
 <dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.find_enabled_regions">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">find_enabled_regions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.find_enabled_regions" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">find_enabled_regions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.find_enabled_regions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a list of regions that are currently active</p>
 </dd></dl>
 
@@ -127,50 +80,6 @@ Else, returns None
 <dd class="field-odd"><p>How many containers can it hold</p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.get_current_commit_hash">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">get_current_commit_hash</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.get_current_commit_hash" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a current commit hash</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.get_instance_id">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">get_instance_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">app.database.models.cloud.InstanceInfo</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.get_instance_id" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the ID for an instance in the DB, using the AWS client
-:param which instance whose ID to get:</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>the EC2 ID of that instance</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.terminate_instance">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">terminate_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">app.database.models.cloud.InstanceInfo</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.terminate_instance" title="Permalink to this definition">¶</a></dt>
-<dd><p>Terminates a given instance using the AWS client
-:param instance: which instance to terminate</p>
-<p>Returns: None</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.try_scale_down_if_necessary">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">try_scale_down_if_necessary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ami</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.try_scale_down_if_necessary" title="Permalink to this definition">¶</a></dt>
-<dd><p>Scales down new instances as needed, given a region and AMI to check
-Specifically, if we want to remove X instances (_get_num_new_instances
-returns -X), we get as many inactive instances as we can (up to X)
-and stop them.
-:param region: which region to check for scaling
-:param ami: which AMI to scale with</p>
-<p>Returns: None</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.helpers.aws.aws_instance_post.try_scale_down_if_necessary_all_regions">
-<span class="sig-prename descclassname"><span class="pre">app.helpers.aws.aws_instance_post.</span></span><span class="sig-name descname"><span class="pre">try_scale_down_if_necessary_all_regions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.helpers.aws.aws_instance_post.try_scale_down_if_necessary_all_regions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Runs try_scale_down_if_necessary on every region/AMI pair in our db</p>
 </dd></dl>
 
 </section>
@@ -230,7 +139,7 @@ Is it’s own function for ease of testing.
   <li><a href="modules.html">Module Documentation</a><ul>
   <li><a href="app.html">app package</a><ul>
   <li><a href="app.helpers.html">app.helpers package</a><ul>
-      <li>Previous: <a href="app.helpers.ami.html" title="previous chapter">app.helpers.ami package</a></li>
+      <li>Previous: <a href="app.helpers.html" title="previous chapter">app.helpers package</a></li>
       <li>Next: <a href="app.helpers.tests.html" title="next chapter">app.helpers.tests package</a></li>
   </ul></li>
   </ul></li>
