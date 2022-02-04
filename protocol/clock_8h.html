@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('clock_8h.html',''); initResizable(); }
 </div><!--header-->
 <div class="contents">
 
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
+<p>This file contains the helper functions for timing code.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;sys/time.h&gt;</code><br />
@@ -106,184 +106,37 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a5fcc7de94503598536c4c335cdaaa627"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistTimerOpaque.html">WhistTimerOpaque</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a></td></tr>
-<tr class="memdesc:a5fcc7de94503598536c4c335cdaaa627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a timer.  <a href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">More...</a><br /></td></tr>
-<tr class="separator:a5fcc7de94503598536c4c335cdaaa627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d947f0fa2fb7e03ff678e83295a86b3"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a></td></tr>
-<tr class="separator:a9d947f0fa2fb7e03ff678e83295a86b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fcc7de94503598536c4c335cdaaa627"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistTimerOpaque.html">WhistTimerOpaque</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a></td></tr>
+<tr class="memdesc:ga5fcc7de94503598536c4c335cdaaa627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a timer.  <a href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">More...</a><br /></td></tr>
+<tr class="separator:ga5fcc7de94503598536c4c335cdaaa627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d947f0fa2fb7e03ff678e83295a86b3"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a></td></tr>
+<tr class="memdesc:ga9d947f0fa2fb7e03ff678e83295a86b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp type.  <a href="group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3">More...</a><br /></td></tr>
+<tr class="separator:ga9d947f0fa2fb7e03ff678e83295a86b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac8d2bb9cbe037b8677ed25be7aa41c5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#ac8d2bb9cbe037b8677ed25be7aa41c5c">start_timer</a> (<a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *timer)</td></tr>
-<tr class="memdesc:ac8d2bb9cbe037b8677ed25be7aa41c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the given timer at the current time, as a stopwatch.  <a href="clock_8h.html#ac8d2bb9cbe037b8677ed25be7aa41c5c">More...</a><br /></td></tr>
-<tr class="separator:ac8d2bb9cbe037b8677ed25be7aa41c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17cc946c0eba05b7aafbb2c953db93e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a17cc946c0eba05b7aafbb2c953db93e5">get_timer</a> (const <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *timer)</td></tr>
-<tr class="memdesc:a17cc946c0eba05b7aafbb2c953db93e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of elapsed time in seconds since the last start_timer.  <a href="clock_8h.html#a17cc946c0eba05b7aafbb2c953db93e5">More...</a><br /></td></tr>
-<tr class="separator:a17cc946c0eba05b7aafbb2c953db93e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac67515d5dd09a5158f3ce7d1f799405"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#aac67515d5dd09a5158f3ce7d1f799405">current_time_str</a> (char *buffer, size_t size)</td></tr>
-<tr class="memdesc:aac67515d5dd09a5158f3ce7d1f799405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string representing the current time.  <a href="clock_8h.html#aac67515d5dd09a5158f3ce7d1f799405">More...</a><br /></td></tr>
-<tr class="separator:aac67515d5dd09a5158f3ce7d1f799405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b4df196d108adb68d0096d720915cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8h.html#a36b4df196d108adb68d0096d720915cf">current_time_us</a> (void)</td></tr>
-<tr class="memdesc:a36b4df196d108adb68d0096d720915cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of microseconds elapsed since epoch.  <a href="clock_8h.html#a36b4df196d108adb68d0096d720915cf">More...</a><br /></td></tr>
-<tr class="separator:a36b4df196d108adb68d0096d720915cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8d2bb9cbe037b8677ed25be7aa41c5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#gac8d2bb9cbe037b8677ed25be7aa41c5c">start_timer</a> (<a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *timer)</td></tr>
+<tr class="memdesc:gac8d2bb9cbe037b8677ed25be7aa41c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the given timer at the current time, as a stopwatch.  <a href="group__timers.html#gac8d2bb9cbe037b8677ed25be7aa41c5c">More...</a><br /></td></tr>
+<tr class="separator:gac8d2bb9cbe037b8677ed25be7aa41c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17cc946c0eba05b7aafbb2c953db93e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5">get_timer</a> (const <a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *timer)</td></tr>
+<tr class="memdesc:ga17cc946c0eba05b7aafbb2c953db93e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of elapsed time in seconds since the last start_timer.  <a href="group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5">More...</a><br /></td></tr>
+<tr class="separator:ga17cc946c0eba05b7aafbb2c953db93e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac67515d5dd09a5158f3ce7d1f799405"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#gaac67515d5dd09a5158f3ce7d1f799405">current_time_str</a> (char *buffer, size_t size)</td></tr>
+<tr class="memdesc:gaac67515d5dd09a5158f3ce7d1f799405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string representing the current time.  <a href="group__timers.html#gaac67515d5dd09a5158f3ce7d1f799405">More...</a><br /></td></tr>
+<tr class="separator:gaac67515d5dd09a5158f3ce7d1f799405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36b4df196d108adb68d0096d720915cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#ga36b4df196d108adb68d0096d720915cf">current_time_us</a> (void)</td></tr>
+<tr class="memdesc:ga36b4df196d108adb68d0096d720915cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of microseconds elapsed since epoch.  <a href="group__timers.html#ga36b4df196d108adb68d0096d720915cf">More...</a><br /></td></tr>
+<tr class="separator:ga36b4df196d108adb68d0096d720915cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
-<h1><a class="anchor" id="autotoc_md196"></a>
-@brief This file contains the helper functions for timing code.</h1>
-<h1><a class="anchor" id="autotoc_md197"></a>
-Usage</h1>
-<p>You can use start_timer and get_timer to time specific pieces of code, or to relate different events across server and client.</p>
-<h1><a class="anchor" id="autotoc_md212"></a>
+<div class="textblock"><p>This file contains the helper functions for timing code. </p>
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.</p>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021-2022 Whist Technologies, Inc.</dd></dl>
+<h1><a class="anchor" id="autotoc_md210"></a>
 @brief Helper functions for png to bmp and bmp to png</h1>
-<h1><a class="anchor" id="autotoc_md213"></a>
+<h1><a class="anchor" id="autotoc_md211"></a>
 Usage</h1>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a9d947f0fa2fb7e03ff678e83295a86b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d947f0fa2fb7e03ff678e83295a86b3">&#9670;&nbsp;</a></span>timestamp_us</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef uint64_t <a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5fcc7de94503598536c4c335cdaaa627"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fcc7de94503598536c4c335cdaaa627">&#9670;&nbsp;</a></span>WhistTimer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structWhistTimerOpaque.html">WhistTimerOpaque</a> <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Structure representing a timer. </p>
-<p>Start the timer with <a class="el" href="clock_8c.html#ac96c3819ace7869ee5dc023e0ba47626" title="Start the given timer at the current time, as a stopwatch.">start_timer()</a>, get the time elapsed since it was started with <a class="el" href="clock_8c.html#a0a3a3c28088edf0e0cbadb564d21ea3b" title="Get the amount of elapsed time in seconds since the last start_timer.">get_timer()</a>. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="aac67515d5dd09a5158f3ce7d1f799405"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac67515d5dd09a5158f3ce7d1f799405">&#9670;&nbsp;</a></span>current_time_str()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int current_time_str </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write a string representing the current time. </p>
-<p>The format is "hh:mm:ss.uuuuuu", giving sixteen bytes including the terminator.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>Buffer to write to. </td></tr>
-    <tr><td class="paramname">size</td><td>Size of the buffer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Length of the time string, like snprintf(). </dd></dl>
-
-</div>
-</div>
-<a id="a36b4df196d108adb68d0096d720915cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36b4df196d108adb68d0096d720915cf">&#9670;&nbsp;</a></span>current_time_us()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="clock_8h.html#a9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> current_time_us </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the number of microseconds elapsed since epoch. </p>
-<dl class="section return"><dt>Returns</dt><dd>Number of microseconds elapsed since epoch </dd></dl>
-
-</div>
-</div>
-<a id="a17cc946c0eba05b7aafbb2c953db93e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17cc946c0eba05b7aafbb2c953db93e5">&#9670;&nbsp;</a></span>get_timer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double get_timer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
-          <td class="paramname"><em>timer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the amount of elapsed time in seconds since the last start_timer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timer</td><td>Pointer to the timer to query. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac8d2bb9cbe037b8677ed25be7aa41c5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8d2bb9cbe037b8677ed25be7aa41c5c">&#9670;&nbsp;</a></span>start_timer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void start_timer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="clock_8h.html#a5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
-          <td class="paramname"><em>timer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start the given timer at the current time, as a stopwatch. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timer</td><td>Pointer to the timer to start. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,9 +1,5 @@
 var group__linked__list =
 [
-    [ "Checks & Tests", "index.html#autotoc_md23", null ],
-    [ "Unit Testing", "index.html#autotoc_md24", null ],
-    [ "Option Flags", "md_client_README.html#autotoc_md53", null ],
-    [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md99", null ],
     [ "LinkedList", "structLinkedList.html", [
       [ "head", "structLinkedList.html#a0e9e6eceb815129e0e149cefd6992f4f", null ],
       [ "items", "structLinkedList.html#a578d4830c047fbd8f7a1d9712d24329b", null ],

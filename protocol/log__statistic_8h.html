@@ -176,9 +176,9 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="clock_8c.html#ac96c3819ace7869ee5dc023e0ba47626">start_timer</a>(&amp;timer);            \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="group__timers.html#gac8d2bb9cbe037b8677ed25be7aa41c5c">start_timer</a>(&amp;timer);            \</div>
 <div class="line">    line;                           \</div>
-<div class="line">    log_double_statistic(name, <a class="code" href="clock_8c.html#a0a3a3c28088edf0e0cbadb564d21ea3b">get_timer</a>(&amp;timer) * <a class="code" href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a>);</div>
+<div class="line">    log_double_statistic(name, <a class="code" href="group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5">get_timer</a>(&amp;timer) * <a class="code" href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a>);</div>
 </div><!-- fragment -->
 <p>This macro runs the code in <code>line</code>, timing it, and then logging the result with <code>log_double_statistic</code>. </p>
 <p>It depends on a <code>clock</code> being passed in as a parameter to compute the time delta. </p>
@@ -282,9 +282,9 @@ Usage</h1>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclock_8c_html_a0a3a3c28088edf0e0cbadb564d21ea3b"><div class="ttname"><a href="clock_8c.html#a0a3a3c28088edf0e0cbadb564d21ea3b">get_timer</a></div><div class="ttdeci">double get_timer(const WhistTimer *timer_opaque)</div><div class="ttdoc">Get the amount of elapsed time in seconds since the last start_timer.</div><div class="ttdef"><b>Definition:</b> clock.c:45</div></div>
 <div class="ttc" id="awhist_8h_html_ab06727ebbc110e7071dc8090ced33373"><div class="ttname"><a href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a></div><div class="ttdeci">#define MS_IN_SECOND</div><div class="ttdef"><b>Definition:</b> whist.h:196</div></div>
-<div class="ttc" id="aclock_8c_html_ac96c3819ace7869ee5dc023e0ba47626"><div class="ttname"><a href="clock_8c.html#ac96c3819ace7869ee5dc023e0ba47626">start_timer</a></div><div class="ttdeci">void start_timer(WhistTimer *timer_opaque)</div><div class="ttdoc">Start the given timer at the current time, as a stopwatch.</div><div class="ttdef"><b>Definition:</b> clock.c:29</div></div>
+<div class="ttc" id="agroup__timers_html_ga17cc946c0eba05b7aafbb2c953db93e5"><div class="ttname"><a href="group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5">get_timer</a></div><div class="ttdeci">double get_timer(const WhistTimer *timer_opaque)</div><div class="ttdoc">Get the amount of elapsed time in seconds since the last start_timer.</div><div class="ttdef"><b>Definition:</b> clock.c:45</div></div>
+<div class="ttc" id="agroup__timers_html_gac8d2bb9cbe037b8677ed25be7aa41c5c"><div class="ttname"><a href="group__timers.html#gac8d2bb9cbe037b8677ed25be7aa41c5c">start_timer</a></div><div class="ttdeci">void start_timer(WhistTimer *timer_opaque)</div><div class="ttdoc">Start the given timer at the current time, as a stopwatch.</div><div class="ttdef"><b>Definition:</b> clock.c:29</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
