@@ -12,7 +12,5 @@ var server_2network_8c =
     [ "get_using_stun", "server_2network_8c.html#ad881eeb396b9af8437f12ddd01820042", null ],
     [ "multithreaded_manage_client", "server_2network_8c.html#a38cc5da4bd5acfde815f921746a28da7", null ],
     [ "try_get_next_message_tcp", "server_2network_8c.html#a830962c14e11805b393b4b1e671fec58", null ],
-    [ "try_get_next_message_udp", "server_2network_8c.html#aa19516f461c45f3ca2d93a4b1f7fc2f6", null ],
-    [ "begin_time_to_exit", "server_2network_8c.html#a87359d0492cce4252fa833844855438d", null ],
-    [ "last_input_id", "server_2network_8c.html#afa6cd825000f909352154f55a6ac0df0", null ]
+    [ "try_get_next_message_udp", "server_2network_8c.html#aa19516f461c45f3ca2d93a4b1f7fc2f6", null ]
 ];

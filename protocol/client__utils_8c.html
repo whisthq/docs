@@ -172,10 +172,6 @@ Variables</h2></td></tr>
 <tr class="separator:aabcebffcda90f6aab9a64d4fb9d75d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ff422af60ed8780f0dbfca8c92ec337"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8c.html#a7ff422af60ed8780f0dbfca8c92ec337">using_piped_arguments</a></td></tr>
 <tr class="separator:a7ff422af60ed8780f0dbfca8c92ec337"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca3b0e75685656148991c5c702c37cb2"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structoption.html">option</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8c.html#aca3b0e75685656148991c5c702c37cb2">client_cmd_options</a> []</td></tr>
-<tr class="separator:aca3b0e75685656148991c5c702c37cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef1bd6ad890a110b466cb0e8088507a2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8c.html#aef1bd6ad890a110b466cb0e8088507a2">usage</a></td></tr>
-<tr class="separator:aef1bd6ad890a110b466cb0e8088507a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -446,42 +442,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aca3b0e75685656148991c5c702c37cb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca3b0e75685656148991c5c702c37cb2">&#9670;&nbsp;</a></span>client_cmd_options</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const struct <a class="el" href="structoption.html">option</a> client_cmd_options[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    {<span class="stringliteral">&quot;width&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;w&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;height&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;h&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;bitrate&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;b&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;override-bitrate&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;o&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;codec&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;c&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;private-key&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;k&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;user&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;u&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;environment&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;e&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;icon&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;i&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;ports&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;p&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;name&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;n&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;read-pipe&quot;</span>, <a class="code" href="whistgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <span class="charliteral">&#39;r&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;loading&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;l&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;skip-taskbar&quot;</span>, <a class="code" href="whistgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <span class="charliteral">&#39;s&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;session-id&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;d&#39;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;new-tab-url&quot;</span>, <a class="code" href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a>, NULL, <span class="charliteral">&#39;x&#39;</span>},</div>
-<div class="line">    </div>
-<div class="line">    {<span class="stringliteral">&quot;help&quot;</span>, <a class="code" href="whistgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <a class="code" href="whistgetopt_8h.html#a9e4dd83987628ef30baf79370993f55a">WHIST_GETOPT_HELP_CHAR</a>},</div>
-<div class="line">    {<span class="stringliteral">&quot;version&quot;</span>, <a class="code" href="whistgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a>, NULL, <a class="code" href="whistgetopt_8h.html#a0b015baad8c3389d0cbdb22cd82b85d7">WHIST_GETOPT_VERSION_CHAR</a>},</div>
-<div class="line">    </div>
-<div class="line">    {0, 0, 0, 0}}</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a3ad091a6a05f5c843767589afcd41b7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ad091a6a05f5c843767589afcd41b7a">&#9670;&nbsp;</a></span>client_hex_aes_private_key</h2>
 
@@ -636,20 +596,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aef1bd6ad890a110b466cb0e8088507a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef1bd6ad890a110b466cb0e8088507a2">&#9670;&nbsp;</a></span>usage</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* usage</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1b9f74cf18927b18cbab7bedbdbe65fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b9f74cf18927b18cbab7bedbdbe65fd">&#9670;&nbsp;</a></span>user_email</h2>
 
@@ -708,10 +654,6 @@ Usage</h1>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="awhistgetopt_8h_html_a6ece8d8dfa8378778f7290fdaba5b8bc"><div class="ttname"><a href="whistgetopt_8h.html#a6ece8d8dfa8378778f7290fdaba5b8bc">required_argument</a></div><div class="ttdeci">#define required_argument</div><div class="ttdef"><b>Definition:</b> whistgetopt.h:23</div></div>
-<div class="ttc" id="awhistgetopt_8h_html_a3bc1d5f667b5b4ca4b4abb685dc874ce"><div class="ttname"><a href="whistgetopt_8h.html#a3bc1d5f667b5b4ca4b4abb685dc874ce">no_argument</a></div><div class="ttdeci">#define no_argument</div><div class="ttdef"><b>Definition:</b> whistgetopt.h:22</div></div>
-<div class="ttc" id="awhistgetopt_8h_html_a0b015baad8c3389d0cbdb22cd82b85d7"><div class="ttname"><a href="whistgetopt_8h.html#a0b015baad8c3389d0cbdb22cd82b85d7">WHIST_GETOPT_VERSION_CHAR</a></div><div class="ttdeci">#define WHIST_GETOPT_VERSION_CHAR</div><div class="ttdef"><b>Definition:</b> whistgetopt.h:28</div></div>
-<div class="ttc" id="awhistgetopt_8h_html_a9e4dd83987628ef30baf79370993f55a"><div class="ttname"><a href="whistgetopt_8h.html#a9e4dd83987628ef30baf79370993f55a">WHIST_GETOPT_HELP_CHAR</a></div><div class="ttdeci">#define WHIST_GETOPT_HELP_CHAR</div><div class="ttdef"><b>Definition:</b> whistgetopt.h:27</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

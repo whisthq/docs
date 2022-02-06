@@ -9,6 +9,5 @@ var client_2video_8c =
     [ "init_video", "client_2video_8c.html#a2e523fcb8237b36c265860c9c123fcca", null ],
     [ "receive_video", "client_2video_8c.html#a9096cfd63b981190cf4aa333c2ee6d20", null ],
     [ "render_video", "client_2video_8c.html#ae91e2215c8c94bdb14b3c01430b8ca69", null ],
-    [ "video_ready_for_frame", "client_2video_8c.html#a91a7e49bb43bc35c6da847bb03f83117", null ],
-    [ "latency", "client_2video_8c.html#a5120ece93dfddf5638a59e495e9c6d46", null ]
+    [ "video_ready_for_frame", "client_2video_8c.html#a91a7e49bb43bc35c6da847bb03f83117", null ]
 ];

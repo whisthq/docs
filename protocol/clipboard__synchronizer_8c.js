@@ -11,9 +11,5 @@ var clipboard__synchronizer_8c =
     [ "pull_clipboard_thread_function", "clipboard__synchronizer_8c.html#a0d0758c62d8ee06303317b94c70b1176", null ],
     [ "push_clipboard_chunk", "clipboard__synchronizer_8c.html#aa1799454cb5583fc45f5cdb4b8721352", null ],
     [ "push_clipboard_thread_function", "clipboard__synchronizer_8c.html#a9402c84978ad554049f543e65906dedb", null ],
-    [ "start_clipboard_transfer", "clipboard__synchronizer_8c.html#a7222478cfc809f67bbbe8768b63908ef", null ],
-    [ "current_clipboard_activity", "clipboard__synchronizer_8c.html#a2bd2648fb9caf1e010e54d9bb05b3eb6", null ],
-    [ "os_clipboard_setting_condvar", "clipboard__synchronizer_8c.html#acd98e660db2bb56bffeb28fd76cc5d97", null ],
-    [ "queued_os_clipboard_setter_thread_id", "clipboard__synchronizer_8c.html#ad1df6c2a369cf1164bf2616b22a8172a", null ],
-    [ "setting_os_clipboard", "clipboard__synchronizer_8c.html#a7810c7d9ded5059b12ecc89d491947f6", null ]
+    [ "start_clipboard_transfer", "clipboard__synchronizer_8c.html#a7222478cfc809f67bbbe8768b63908ef", null ]
 ];
