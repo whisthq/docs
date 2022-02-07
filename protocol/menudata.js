@@ -185,6 +185,7 @@ var menudata={children:[
 {text:"i",url:"globals_enum.html#index_i"},
 {text:"l",url:"globals_enum.html#index_l"},
 {text:"s",url:"globals_enum.html#index_s"},
+{text:"t",url:"globals_enum.html#index_t"},
 {text:"u",url:"globals_enum.html#index_u"},
 {text:"v",url:"globals_enum.html#index_v"},
 {text:"w",url:"globals_enum.html#index_w"}]},

@@ -74,6 +74,7 @@ var annotated_dup =
     [ "StunEntry", "structStunEntry.html", "structStunEntry" ],
     [ "StunRequest", "structStunRequest.html", "structStunRequest" ],
     [ "TCPContext", "structTCPContext.html", "structTCPContext" ],
+    [ "TCPNetworkPacket", "structTCPNetworkPacket.html", "structTCPNetworkPacket" ],
     [ "TCPPacket", "structTCPPacket.html", "structTCPPacket" ],
     [ "TransferringFile", "structTransferringFile.html", "structTransferringFile" ],
     [ "ucvector", "structucvector.html", "structucvector" ],

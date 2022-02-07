@@ -109,9 +109,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aaa052b4dfa62a068a43c72a8782c474e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#aaa052b4dfa62a068a43c72a8782c474e">quit_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
 <tr class="memdesc:aaa052b4dfa62a068a43c72a8782c474e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates active client.  <a href="client_8c.html#aaa052b4dfa62a068a43c72a8782c474e">More...</a><br /></td></tr>
 <tr class="separator:aaa052b4dfa62a068a43c72a8782c474e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427e1e94a2dc52f60bac8c668ad7af61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a427e1e94a2dc52f60bac8c668ad7af61">reap_timed_out_client</a> (<a class="el" href="structClient.html">Client</a> *client, double timeout)</td></tr>
-<tr class="memdesc:a427e1e94a2dc52f60bac8c668ad7af61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quit client if timed out.  <a href="client_8c.html#a427e1e94a2dc52f60bac8c668ad7af61">More...</a><br /></td></tr>
-<tr class="separator:a427e1e94a2dc52f60bac8c668ad7af61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4095d2d382a7e5c347db88558a546df8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a4095d2d382a7e5c347db88558a546df8">add_thread_to_client_active_dependents</a> (void)</td></tr>
 <tr class="memdesc:a4095d2d382a7e5c347db88558a546df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add thread to count of those dependent on client being active.  <a href="client_8c.html#a4095d2d382a7e5c347db88558a546df8">More...</a><br /></td></tr>
 <tr class="separator:a4095d2d382a7e5c347db88558a546df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,44 +227,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
-<a id="a427e1e94a2dc52f60bac8c668ad7af61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a427e1e94a2dc52f60bac8c668ad7af61">&#9670;&nbsp;</a></span>reap_timed_out_client()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int reap_timed_out_client </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Quit client if timed out. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">client</td><td>Target client </td></tr>
-    <tr><td class="paramname">timeout</td><td>Duration (in seconds) after which a client is deemed timed out if the server has not received a ping from the client.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success. </dd></dl>
 
 </div>
 </div>

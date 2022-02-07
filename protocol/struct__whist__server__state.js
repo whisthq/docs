@@ -8,7 +8,6 @@ var struct__whist__server__state =
     [ "client_width", "struct__whist__server__state.html#aeef9b6cf8b58c5601c21aad953750788", null ],
     [ "config", "struct__whist__server__state.html#ada51c733dc984f0386d42893a9c2faf9", null ],
     [ "connection_id", "struct__whist__server__state.html#a33b19dd43ae3332ef52b64d32b9aa46e", null ],
-    [ "discovery_listen", "struct__whist__server__state.html#a074d0f5b5c3648573db3b2ecda1814d2", null ],
     [ "encoder_factory_bitrate", "struct__whist__server__state.html#ae6c75e36b53bb41f862b2dec3b825ef1", null ],
     [ "encoder_factory_client_h", "struct__whist__server__state.html#ae9f6aca81e0317ac71d254d445e5f783", null ],
     [ "encoder_factory_client_w", "struct__whist__server__state.html#a65b1ff45f802eae80ea8d87c8fca671e", null ],
@@ -21,8 +20,6 @@ var struct__whist__server__state =
     [ "input_device", "struct__whist__server__state.html#a67256a4bfb719a4477601ed8d1f56659", null ],
     [ "pending_encoder", "struct__whist__server__state.html#afa4098b918e96a4121863b69092f2d61", null ],
     [ "stop_streaming", "struct__whist__server__state.html#a9fad694db9e302f0b79657087b4a8255", null ],
-    [ "tcp_listen", "struct__whist__server__state.html#ad34e55c13a975fbb742e400a7e3986c1", null ],
-    [ "udp_listen", "struct__whist__server__state.html#a5dc0136222d5286e98b7de12000db2da", null ],
     [ "update_device", "struct__whist__server__state.html#a5c0edcc9c97922ba1d576c54856e0dd2", null ],
     [ "update_encoder", "struct__whist__server__state.html#ac7eac597e298e1c86e687f2296307752", null ],
     [ "wants_iframe", "struct__whist__server__state.html#a8502bbff070bb18297909e496bd69ca0", null ]

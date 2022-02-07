@@ -118,6 +118,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:ad80630f9c73e382c55c08c0563d42e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75f754f3238c0dc4fcbe0501d33bd946"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a75f754f3238c0dc4fcbe0501d33bd946">last_received_ping_timer</a></td></tr>
 <tr class="separator:a75f754f3238c0dc4fcbe0501d33bd946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e721559680e4bb20ddb141acce49b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a57e721559680e4bb20ddb141acce49b2">connection_lost</a></td></tr>
+<tr class="separator:a57e721559680e4bb20ddb141acce49b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21a8e7e2bfc6d6362ca6b1ed216b8794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#gaa9899c1c25688c008b90165331107ddf">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a21a8e7e2bfc6d6362ca6b1ed216b8794">timestamp_mutex</a></td></tr>
 <tr class="separator:a21a8e7e2bfc6d6362ca6b1ed216b8794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fb0477415beb03b238f2ba44ddcb2aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a5fb0477415beb03b238f2ba44ddcb2aa">last_ping_client_time</a></td></tr>
@@ -128,6 +130,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:abca5469b9d15bdae869d0dde887e69a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add40a820f85710da36f9198bc825c5f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUDPPacket.html">UDPPacket</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#add40a820f85710da36f9198bc825c5f5">nack_buffers</a> [<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td></tr>
 <tr class="separator:add40a820f85710da36f9198bc825c5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c4b94cf91d19760434b8c5c45ea104"><td class="memItemLeft" align="right" valign="top">bool **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#aa2c4b94cf91d19760434b8c5c45ea104">nack_buffer_valid</a> [<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td></tr>
+<tr class="separator:aa2c4b94cf91d19760434b8c5c45ea104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad42afbb6f02d3eb6c0219c1e3e1e01b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#gaa9899c1c25688c008b90165331107ddf">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#ad42afbb6f02d3eb6c0219c1e3e1e01b1">nack_mutex</a> [<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td></tr>
 <tr class="separator:ad42afbb6f02d3eb6c0219c1e3e1e01b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac34557c2e7fab720a1b69457a8ad02b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#ac34557c2e7fab720a1b69457a8ad02b3">nack_num_buffers</a> [<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td></tr>
@@ -188,6 +192,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">char UDPContext::binary_aes_private_key[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57e721559680e4bb20ddb141acce49b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e721559680e4bb20ddb141acce49b2">&#9670;&nbsp;</a></span>connection_lost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UDPContext::connection_lost</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -426,6 +444,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int UDPContext::nack_buffer_max_payload_size[<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2c4b94cf91d19760434b8c5c45ea104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c4b94cf91d19760434b8c5c45ea104">&#9670;&nbsp;</a></span>nack_buffer_valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool** UDPContext::nack_buffer_valid[<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">

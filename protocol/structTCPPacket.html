@@ -90,50 +90,101 @@ $(document).ready(function(){initNavTree('structTCPPacket.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ac46e6406123780f3bf5c06de8ee745d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAESMetadata.html">AESMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPPacket.html#ac46e6406123780f3bf5c06de8ee745d0">aes_metadata</a></td></tr>
-<tr class="separator:ac46e6406123780f3bf5c06de8ee745d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28839b12eb31dd92947a51111ccfd162"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPPacket.html#a28839b12eb31dd92947a51111ccfd162">payload_size</a></td></tr>
-<tr class="separator:a28839b12eb31dd92947a51111ccfd162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8845f7563eba203f7bb0d54a152869c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPPacket.html#af8845f7563eba203f7bb0d54a152869c">payload</a> []</td></tr>
-<tr class="separator:af8845f7563eba203f7bb0d54a152869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8b233261fa1785b0afe4697eaa9433"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tcp_8c.html#a2bd49552cbb68048f6e89df2ec3cf12b">TCPPacketType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPPacket.html#a9f8b233261fa1785b0afe4697eaa9433">type</a></td></tr>
+<tr class="separator:a9f8b233261fa1785b0afe4697eaa9433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f1180d223e562771320270fa7279e4"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a808472c3ace52285c323bae4a0da2856"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:adf30a3e1532137438642b60f10e3c72e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structTCPPacket.html#a8c183a88d7fba1353b1aa0b79f36618f">ping_id</a></td></tr>
+<tr class="separator:adf30a3e1532137438642b60f10e3c72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808472c3ace52285c323bae4a0da2856"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structTCPPacket.html#ab4f31b4f8a9b380e9a31b1561bdc776b">tcp_ping_data</a></td></tr>
+<tr class="separator:a808472c3ace52285c323bae4a0da2856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b642464828a404029b73121bc1df490"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:add204200f473d311f517e2482a2fc4be"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;char&#160;&#160;&#160;<a class="el" href="structTCPPacket.html#a7af9890a4235702b9c52933fba0e2465">whist_packet</a> [0]</td></tr>
+<tr class="separator:add204200f473d311f517e2482a2fc4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b642464828a404029b73121bc1df490"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structTCPPacket.html#a12cff67bcf496eee9388f0dfeff8ebfe">whist_packet_data</a></td></tr>
+<tr class="separator:a7b642464828a404029b73121bc1df490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f1180d223e562771320270fa7279e4"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a15f1180d223e562771320270fa7279e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="ac46e6406123780f3bf5c06de8ee745d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac46e6406123780f3bf5c06de8ee745d0">&#9670;&nbsp;</a></span>aes_metadata</h2>
+<a id="a15f1180d223e562771320270fa7279e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f1180d223e562771320270fa7279e4">&#9670;&nbsp;</a></span>@12</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structAESMetadata.html">AESMetadata</a> TCPPacket::aes_metadata</td>
+          <td class="memname">union { ... } </td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af8845f7563eba203f7bb0d54a152869c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8845f7563eba203f7bb0d54a152869c">&#9670;&nbsp;</a></span>payload</h2>
+<a id="a8c183a88d7fba1353b1aa0b79f36618f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c183a88d7fba1353b1aa0b79f36618f">&#9670;&nbsp;</a></span>ping_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char TCPPacket::payload[]</td>
+          <td class="memname">int TCPPacket::ping_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a28839b12eb31dd92947a51111ccfd162"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28839b12eb31dd92947a51111ccfd162">&#9670;&nbsp;</a></span>payload_size</h2>
+<a id="ab4f31b4f8a9b380e9a31b1561bdc776b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f31b4f8a9b380e9a31b1561bdc776b">&#9670;&nbsp;</a></span>tcp_ping_data</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int TCPPacket::payload_size</td>
+          <td class="memname">struct { ... }  TCPPacket::tcp_ping_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f8b233261fa1785b0afe4697eaa9433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8b233261fa1785b0afe4697eaa9433">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tcp_8c.html#a2bd49552cbb68048f6e89df2ec3cf12b">TCPPacketType</a> TCPPacket::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7af9890a4235702b9c52933fba0e2465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af9890a4235702b9c52933fba0e2465">&#9670;&nbsp;</a></span>whist_packet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char TCPPacket::whist_packet[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12cff67bcf496eee9388f0dfeff8ebfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12cff67bcf496eee9388f0dfeff8ebfe">&#9670;&nbsp;</a></span>whist_packet_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  TCPPacket::whist_packet_data</td>
         </tr>
       </table>
 </div><div class="memdoc">

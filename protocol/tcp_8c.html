@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('tcp_8c.html',''); initResizable(); });
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -100,19 +101,35 @@ $(document).ready(function(){initNavTree('tcp_8c.html',''); initResizable(); });
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPPacket.html">TCPPacket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPNetworkPacket.html">TCPNetworkPacket</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html">TCPContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6e8717e0a577f2779aac89a0c33d8c2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a6e8717e0a577f2779aac89a0c33d8c2f">MAX_TCP_PAYLOAD</a>&#160;&#160;&#160;1000000000</td></tr>
-<tr class="separator:a6e8717e0a577f2779aac89a0c33d8c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30121dbabe3ae898665d4d915808db27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a30121dbabe3ae898665d4d915808db27">get_tcp_packet_size</a>(tcp_packet)&#160;&#160;&#160;((size_t)(sizeof(<a class="el" href="structTCPPacket.html">TCPPacket</a>) + (tcp_packet)-&gt;payload_size))</td></tr>
-<tr class="separator:a30121dbabe3ae898665d4d915808db27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05417ed69492c5ff5801b3d4044e8e46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a05417ed69492c5ff5801b3d4044e8e46">MAX_TCP_PAYLOAD_SIZE</a>&#160;&#160;&#160;1000000000</td></tr>
+<tr class="separator:a05417ed69492c5ff5801b3d4044e8e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a0edf99fe1dafd97dd6a11b124dae2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a60a0edf99fe1dafd97dd6a11b124dae2">get_tcp_network_packet_size</a>(tcp_packet)&#160;&#160;&#160;((size_t)(sizeof(<a class="el" href="structTCPNetworkPacket.html">TCPNetworkPacket</a>) + (tcp_packet)-&gt;payload_size))</td></tr>
+<tr class="separator:a60a0edf99fe1dafd97dd6a11b124dae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78e28007d2dd606c10f050f5e250d7ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a78e28007d2dd606c10f050f5e250d7ec">RECV_INTERVAL_MS</a>&#160;&#160;&#160;30</td></tr>
 <tr class="separator:a78e28007d2dd606c10f050f5e250d7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbeb452faafcf031336bf61a563fa09a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#abbeb452faafcf031336bf61a563fa09a">TCP_PING_INTERVAL_SEC</a>&#160;&#160;&#160;2.0</td></tr>
+<tr class="separator:abbeb452faafcf031336bf61a563fa09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f11564d710626f752cb6977e324b6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a50f11564d710626f752cb6977e324b6a">TCP_PING_MAX_WAIT_SEC</a>&#160;&#160;&#160;5.0</td></tr>
+<tr class="separator:a50f11564d710626f752cb6977e324b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8e2cde1b1ed4dcefbdfd99c5feb076"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a8e8e2cde1b1ed4dcefbdfd99c5feb076">TCP_PING_MAX_RECONNECTION_TIME_SEC</a>&#160;&#160;&#160;3.0</td></tr>
+<tr class="separator:a8e8e2cde1b1ed4dcefbdfd99c5feb076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c6b65188e80c3ec91782df45b9f787"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ab8c6b65188e80c3ec91782df45b9f787">TCP_SEGMENT_SIZE</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:ab8c6b65188e80c3ec91782df45b9f787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a2bd49552cbb68048f6e89df2ec3cf12b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a2bd49552cbb68048f6e89df2ec3cf12b">TCPPacketType</a> { <a class="el" href="tcp_8c.html#a2bd49552cbb68048f6e89df2ec3cf12bae65436446abb83b56cbc1c6c8e013b33">TCP_PING</a>, 
+<a class="el" href="tcp_8c.html#a2bd49552cbb68048f6e89df2ec3cf12baed29c730c6815b0d33f7f13fc4516368">TCP_PONG</a>, 
+<a class="el" href="tcp_8c.html#a2bd49552cbb68048f6e89df2ec3cf12ba3850c403f3507bd5c17af3e55bb6593d">TCP_WHIST_PACKET</a>
+ }</td></tr>
+<tr class="separator:a2bd49552cbb68048f6e89df2ec3cf12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -122,9 +139,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adcb0a40a65b2680c94a628a3acb7f8e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#adcb0a40a65b2680c94a628a3acb7f8e6">create_tcp_client_context</a> (<a class="el" href="structTCPContext.html">TCPContext</a> *context, char *destination, int port, int connection_timeout_ms)</td></tr>
 <tr class="memdesc:adcb0a40a65b2680c94a628a3acb7f8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a TCP <a class="el" href="structClient.html">Client</a> Context, which will try to connect for connection_timeout_ms.  <a href="tcp_8c.html#adcb0a40a65b2680c94a628a3acb7f8e6">More...</a><br /></td></tr>
 <tr class="separator:adcb0a40a65b2680c94a628a3acb7f8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00ffed9011a97a46e91b0b97a12ed95a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a00ffed9011a97a46e91b0b97a12ed95a">tcp_send_constructed_packet</a> (<a class="el" href="structTCPContext.html">TCPContext</a> *context, <a class="el" href="structWhistPacket.html">WhistPacket</a> *packet)</td></tr>
-<tr class="memdesc:a00ffed9011a97a46e91b0b97a12ed95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a fully constructed <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>.  <a href="tcp_8c.html#a00ffed9011a97a46e91b0b97a12ed95a">More...</a><br /></td></tr>
-<tr class="separator:a00ffed9011a97a46e91b0b97a12ed95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b23798b36b0fadb93d5be69327ce64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a30b23798b36b0fadb93d5be69327ce64">tcp_send_constructed_packet</a> (<a class="el" href="structTCPContext.html">TCPContext</a> *context, <a class="el" href="structTCPPacket.html">TCPPacket</a> *packet)</td></tr>
+<tr class="memdesc:a30b23798b36b0fadb93d5be69327ce64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a fully constructed <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>.  <a href="tcp_8c.html#a30b23798b36b0fadb93d5be69327ce64">More...</a><br /></td></tr>
+<tr class="separator:a30b23798b36b0fadb93d5be69327ce64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc320ee9c1c48f1764c5eff0b90f565f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#abc320ee9c1c48f1764c5eff0b90f565f">create_tcp_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *network_context, char *destination, int port, int recvfrom_timeout_ms, int connection_timeout_ms, bool <a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *<a class="el" href="whist__client_8c.html#a8178ac994435a95792a29745aa7a77a0">binary_aes_private_key</a>)</td></tr>
 <tr class="memdesc:abc320ee9c1c48f1764c5eff0b90f565f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tcp network context and initializes a TCP connection between a server and a client.  <a href="tcp_8c.html#abc320ee9c1c48f1764c5eff0b90f565f">More...</a><br /></td></tr>
 <tr class="separator:abc320ee9c1c48f1764c5eff0b90f565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,32 +155,32 @@ Variables</h2></td></tr>
 <tr class="separator:aabcebffcda90f6aab9a64d4fb9d75d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a30121dbabe3ae898665d4d915808db27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30121dbabe3ae898665d4d915808db27">&#9670;&nbsp;</a></span>get_tcp_packet_size</h2>
+<a id="a60a0edf99fe1dafd97dd6a11b124dae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60a0edf99fe1dafd97dd6a11b124dae2">&#9670;&nbsp;</a></span>get_tcp_network_packet_size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_tcp_packet_size</td>
+          <td class="memname">#define get_tcp_network_packet_size</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">tcp_packet</td><td>)</td>
-          <td>&#160;&#160;&#160;((size_t)(sizeof(<a class="el" href="structTCPPacket.html">TCPPacket</a>) + (tcp_packet)-&gt;payload_size))</td>
+          <td>&#160;&#160;&#160;((size_t)(sizeof(<a class="el" href="structTCPNetworkPacket.html">TCPNetworkPacket</a>) + (tcp_packet)-&gt;payload_size))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6e8717e0a577f2779aac89a0c33d8c2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e8717e0a577f2779aac89a0c33d8c2f">&#9670;&nbsp;</a></span>MAX_TCP_PAYLOAD</h2>
+<a id="a05417ed69492c5ff5801b3d4044e8e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05417ed69492c5ff5801b3d4044e8e46">&#9670;&nbsp;</a></span>MAX_TCP_PAYLOAD_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_TCP_PAYLOAD&#160;&#160;&#160;1000000000</td>
+          <td class="memname">#define MAX_TCP_PAYLOAD_SIZE&#160;&#160;&#160;1000000000</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,6 +201,48 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="abbeb452faafcf031336bf61a563fa09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbeb452faafcf031336bf61a563fa09a">&#9670;&nbsp;</a></span>TCP_PING_INTERVAL_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TCP_PING_INTERVAL_SEC&#160;&#160;&#160;2.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e8e2cde1b1ed4dcefbdfd99c5feb076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8e2cde1b1ed4dcefbdfd99c5feb076">&#9670;&nbsp;</a></span>TCP_PING_MAX_RECONNECTION_TIME_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TCP_PING_MAX_RECONNECTION_TIME_SEC&#160;&#160;&#160;3.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50f11564d710626f752cb6977e324b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f11564d710626f752cb6977e324b6a">&#9670;&nbsp;</a></span>TCP_PING_MAX_WAIT_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TCP_PING_MAX_WAIT_SEC&#160;&#160;&#160;5.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab8c6b65188e80c3ec91782df45b9f787"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8c6b65188e80c3ec91782df45b9f787">&#9670;&nbsp;</a></span>TCP_SEGMENT_SIZE</h2>
 
@@ -195,6 +254,26 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a2bd49552cbb68048f6e89df2ec3cf12b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bd49552cbb68048f6e89df2ec3cf12b">&#9670;&nbsp;</a></span>TCPPacketType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="tcp_8c.html#a2bd49552cbb68048f6e89df2ec3cf12b">TCPPacketType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2bd49552cbb68048f6e89df2ec3cf12bae65436446abb83b56cbc1c6c8e013b33"></a>TCP_PING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2bd49552cbb68048f6e89df2ec3cf12baed29c730c6815b0d33f7f13fc4516368"></a>TCP_PONG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2bd49552cbb68048f6e89df2ec3cf12ba3850c403f3507bd5c17af3e55bb6593d"></a>TCP_WHIST_PACKET&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -416,8 +495,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a00ffed9011a97a46e91b0b97a12ed95a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00ffed9011a97a46e91b0b97a12ed95a">&#9670;&nbsp;</a></span>tcp_send_constructed_packet()</h2>
+<a id="a30b23798b36b0fadb93d5be69327ce64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b23798b36b0fadb93d5be69327ce64">&#9670;&nbsp;</a></span>tcp_send_constructed_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,7 +510,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structWhistPacket.html">WhistPacket</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structTCPPacket.html">TCPPacket</a> *&#160;</td>
           <td class="paramname"><em>packet</em>&#160;</td>
         </tr>
         <tr>

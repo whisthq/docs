@@ -138,7 +138,6 @@ var whist_8h =
       [ "CMESSAGE_CLIPBOARD", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8285383cb763af7a4747b8a516103e4c", null ],
       [ "MESSAGE_STREAM_RESET_REQUEST", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a9b35f1410b548685be643591a7e1e499", null ],
       [ "MESSAGE_DISCOVERY_REQUEST", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128aad0e41f01fe989967ccf13dba65c7041", null ],
-      [ "MESSAGE_TCP_RECOVERY", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a349edcec26ba49767cf95f929499760c", null ],
       [ "MESSAGE_OPEN_URL", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ab7e896a962e10356358a9cc068226810", null ],
       [ "CMESSAGE_FILE_METADATA", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a6cd55b7e8fdb1c2fea42622087fc0331", null ],
       [ "CMESSAGE_FILE_DATA", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8954648f56bc98bef82ab55cfaad9449", null ],

@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('structTCPContext.html',''); initResiza
 Data Fields</h2></td></tr>
 <tr class="memitem:a69b86d5b5ba97f16a584a8c1da5e76ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a69b86d5b5ba97f16a584a8c1da5e76ea">timeout</a></td></tr>
 <tr class="separator:a69b86d5b5ba97f16a584a8c1da5e76ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f9a82d818d2e3569410a06641915cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a64f9a82d818d2e3569410a06641915cd">listen_socket</a></td></tr>
+<tr class="separator:a64f9a82d818d2e3569410a06641915cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2715e6f456b612ad042feceff65744a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#ac2715e6f456b612ad042feceff65744a">socket</a></td></tr>
 <tr class="separator:ac2715e6f456b612ad042feceff65744a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7f69bf9020bd2b2abdf4c3c904aa1d"><td class="memItemLeft" align="right" valign="top">struct sockaddr_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a9c7f69bf9020bd2b2abdf4c3c904aa1d">addr</a></td></tr>
@@ -106,8 +108,16 @@ Data Fields</h2></td></tr>
 <tr class="separator:a560c996f7a2b8ef09ad6b93ea5d0e782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69392ee0ce512416b23034532fd8c11d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a69392ee0ce512416b23034532fd8c11d">network_throttler</a></td></tr>
 <tr class="separator:a69392ee0ce512416b23034532fd8c11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a4d6b886a2bef5474057c78d2c60635"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a5a4d6b886a2bef5474057c78d2c60635">last_ack_timer</a></td></tr>
-<tr class="separator:a5a4d6b886a2bef5474057c78d2c60635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9324d244b8b76d948b6b9ac4ccc3b7e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a9324d244b8b76d948b6b9ac4ccc3b7e3">is_server</a></td></tr>
+<tr class="separator:a9324d244b8b76d948b6b9ac4ccc3b7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c1133a74eca1753b44db8ca5d3104a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#ac2c1133a74eca1753b44db8ca5d3104a">last_ping_id</a></td></tr>
+<tr class="separator:ac2c1133a74eca1753b44db8ca5d3104a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2e44b81919ba874066bc64142122cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a9b2e44b81919ba874066bc64142122cd">last_pong_id</a></td></tr>
+<tr class="separator:a9b2e44b81919ba874066bc64142122cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5bc2ddd88a33524974192c1a595f2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a4a5bc2ddd88a33524974192c1a595f2f">last_ping_timer</a></td></tr>
+<tr class="separator:a4a5bc2ddd88a33524974192c1a595f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8018a749970470e09e4afbb9f13f445f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a8018a749970470e09e4afbb9f13f445f">connection_lost</a></td></tr>
+<tr class="separator:a8018a749970470e09e4afbb9f13f445f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6552539ca4d5038657418b8bcae1c1a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a6552539ca4d5038657418b8bcae1c1a2">last_recvp</a></td></tr>
 <tr class="separator:a6552539ca4d5038657418b8bcae1c1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -140,6 +150,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a8018a749970470e09e4afbb9f13f445f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8018a749970470e09e4afbb9f13f445f">&#9670;&nbsp;</a></span>connection_lost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPContext::connection_lost</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a560c996f7a2b8ef09ad6b93ea5d0e782"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a560c996f7a2b8ef09ad6b93ea5d0e782">&#9670;&nbsp;</a></span>encrypted_tcp_packet_buffer</h2>
 
@@ -154,14 +178,56 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a4d6b886a2bef5474057c78d2c60635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a4d6b886a2bef5474057c78d2c60635">&#9670;&nbsp;</a></span>last_ack_timer</h2>
+<a id="a9324d244b8b76d948b6b9ac4ccc3b7e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9324d244b8b76d948b6b9ac4ccc3b7e3">&#9670;&nbsp;</a></span>is_server</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> TCPContext::last_ack_timer</td>
+          <td class="memname">bool TCPContext::is_server</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2c1133a74eca1753b44db8ca5d3104a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c1133a74eca1753b44db8ca5d3104a">&#9670;&nbsp;</a></span>last_ping_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TCPContext::last_ping_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a5bc2ddd88a33524974192c1a595f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5bc2ddd88a33524974192c1a595f2f">&#9670;&nbsp;</a></span>last_ping_timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> TCPContext::last_ping_timer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b2e44b81919ba874066bc64142122cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b2e44b81919ba874066bc64142122cd">&#9670;&nbsp;</a></span>last_pong_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TCPContext::last_pong_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -176,6 +242,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> TCPContext::last_recvp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64f9a82d818d2e3569410a06641915cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f9a82d818d2e3569410a06641915cd">&#9670;&nbsp;</a></span>listen_socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> TCPContext::listen_socket</td>
         </tr>
       </table>
 </div><div class="memdoc">

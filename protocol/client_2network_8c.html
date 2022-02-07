@@ -115,18 +115,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6">discover_ports</a> (bool *with_stun)</td></tr>
 <tr class="memdesc:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client.  <a href="client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6">More...</a><br /></td></tr>
 <tr class="separator:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fbcee4b22977f8b164eb393f8dd4187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a0fbcee4b22977f8b164eb393f8dd4187">send_tcp_ping</a> (int ping_id)</td></tr>
-<tr class="memdesc:a0fbcee4b22977f8b164eb393f8dd4187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a TCP ping with to the server with the given <code>ping_id</code>.  <a href="client_2network_8c.html#a0fbcee4b22977f8b164eb393f8dd4187">More...</a><br /></td></tr>
-<tr class="separator:a0fbcee4b22977f8b164eb393f8dd4187"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ab324d1a3aeb074f72b3cde078ef3e0bb">receive_tcp_pong</a> (int pong_id)</td></tr>
-<tr class="memdesc:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a TCP pong (ping acknowledgement) with ID pong_id.  <a href="client_2network_8c.html#ab324d1a3aeb074f72b3cde078ef3e0bb">More...</a><br /></td></tr>
-<tr class="separator:ab324d1a3aeb074f72b3cde078ef3e0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a496027e8f78ee5662198a6397295446e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a496027e8f78ee5662198a6397295446e">connect_to_server</a> (bool with_stun)</td></tr>
 <tr class="memdesc:a496027e8f78ee5662198a6397295446e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <a href="client_2network_8c.html#a496027e8f78ee5662198a6397295446e">More...</a><br /></td></tr>
 <tr class="separator:a496027e8f78ee5662198a6397295446e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99b7254c0bbc05e1c57f43a75f5bc15d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a99b7254c0bbc05e1c57f43a75f5bc15d">send_tcp_reconnect_message</a> (void)</td></tr>
-<tr class="memdesc:a99b7254c0bbc05e1c57f43a75f5bc15d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a TCP socket reset message to the server, regardless of the initiator of the lost connection.  <a href="client_2network_8c.html#a99b7254c0bbc05e1c57f43a75f5bc15d">More...</a><br /></td></tr>
-<tr class="separator:a99b7254c0bbc05e1c57f43a75f5bc15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac9ba3b2a752a8ba9805b539765a2e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#abac9ba3b2a752a8ba9805b539765a2e4">close_connections</a> (void)</td></tr>
 <tr class="separator:abac9ba3b2a752a8ba9805b539765a2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8bf751ea26659195c59cd180956315a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#aa8bf751ea26659195c59cd180956315a">send_server_quit_messages</a> (int num_messages)</td></tr>
@@ -156,12 +147,6 @@ Variables</h2></td></tr>
 <tr class="separator:a60a34315f460179939054acaf3ed8163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f4a0eca6c500b41c87fc2ba4375b66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a></td></tr>
 <tr class="separator:a78f4a0eca6c500b41c87fc2ba4375b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec7aa66309a290d0448fcfcc9d887ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#aec7aa66309a290d0448fcfcc9d887ab8">last_tcp_ping_timer</a></td></tr>
-<tr class="separator:aec7aa66309a290d0448fcfcc9d887ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ab641f9b4a601bc5ff7e2aa2941142e"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a5ab641f9b4a601bc5ff7e2aa2941142e">last_tcp_ping_id</a></td></tr>
-<tr class="separator:a5ab641f9b4a601bc5ff7e2aa2941142e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada1ccf82a54161562999eaee52e4b328"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ada1ccf82a54161562999eaee52e4b328">last_tcp_pong_id</a></td></tr>
-<tr class="separator:ada1ccf82a54161562999eaee52e4b328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e4ce6a658b77aa4bb7753403794776"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ae4e4ce6a658b77aa4bb7753403794776">connected</a> = false</td></tr>
 <tr class="separator:ae4e4ce6a658b77aa4bb7753403794776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -173,7 +158,7 @@ functions.</h1>
 <h1><a class="anchor" id="autotoc_md49"></a>
 Usage</h1>
 <p>discover_ports, connect_to_server, close_connections, and send_server_quit_messages are used to start and end connections to the Whist server. To connect, call discover_ports, then connect_to_server. To disconnect, send_server_quit_messages and then close_connections.</p>
-<p>To communicate with the server, use send_wcmsg to send Whist messages to the server. Large wcmsg's (e.g. clipboard messages) are sent over TCP; otherwise, messages are sent over UDP. Use update_ping to ping the server at regular intervals, and receive_pong to receive pongs (ping acknowledgements) from the server. </p>
+<p>To communicate with the server, use send_wcmsg to send Whist messages to the server. Large wcmsg's (e.g. clipboard messages) are sent over TCP; otherwise, messages are sent over UDP. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a635ecd17e7464eb39a48fbab171ddeb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a635ecd17e7464eb39a48fbab171ddeb6">&#9670;&nbsp;</a></span>TCP_CONNECTION_TIMEOUT</h2>
@@ -306,32 +291,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ab324d1a3aeb074f72b3cde078ef3e0bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab324d1a3aeb074f72b3cde078ef3e0bb">&#9670;&nbsp;</a></span>receive_tcp_pong()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void receive_tcp_pong </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pong_id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handle a TCP pong (ping acknowledgement) with ID pong_id. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pong_id</td><td>ID of the received TCP pong </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aa8bf751ea26659195c59cd180956315a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8bf751ea26659195c59cd180956315a">&#9670;&nbsp;</a></span>send_server_quit_messages()</h2>
 
@@ -356,53 +315,6 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
-<a id="a0fbcee4b22977f8b164eb393f8dd4187"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fbcee4b22977f8b164eb393f8dd4187">&#9670;&nbsp;</a></span>send_tcp_ping()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void send_tcp_ping </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ping_id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Send a TCP ping with to the server with the given <code>ping_id</code>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ping_id</td><td>Ping ID to send to the server </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a99b7254c0bbc05e1c57f43a75f5bc15d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99b7254c0bbc05e1c57f43a75f5bc15d">&#9670;&nbsp;</a></span>send_tcp_reconnect_message()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int send_tcp_reconnect_message </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Send a TCP socket reset message to the server, regardless of the initiator of the lost connection. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
 
 </div>
@@ -457,48 +369,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">volatile bool connected = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5ab641f9b4a601bc5ff7e2aa2941142e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ab641f9b4a601bc5ff7e2aa2941142e">&#9670;&nbsp;</a></span>last_tcp_ping_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int last_tcp_ping_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aec7aa66309a290d0448fcfcc9d887ab8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec7aa66309a290d0448fcfcc9d887ab8">&#9670;&nbsp;</a></span>last_tcp_ping_timer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> last_tcp_ping_timer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ada1ccf82a54161562999eaee52e4b328"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada1ccf82a54161562999eaee52e4b328">&#9670;&nbsp;</a></span>last_tcp_pong_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int last_tcp_pong_id</td>
         </tr>
       </table>
 </div><div class="memdoc">

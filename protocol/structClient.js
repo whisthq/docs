@@ -2,8 +2,6 @@ var structClient =
 [
     [ "is_active", "structClient.html#a17ecd3431f124e939332167e67d588a7", null ],
     [ "is_deactivating", "structClient.html#afe6de735904a6a1c6b2d8b46cb58c238", null ],
-    [ "last_ping", "structClient.html#ae57236cf6ca1cc672964f7e439f35142", null ],
-    [ "last_tcp_ping", "structClient.html#ac0c56295342de2dffb48761f9802b818", null ],
     [ "tcp_context", "structClient.html#ae0a5a253676a6b7ce3d327b85d16a24c", null ],
     [ "tcp_port", "structClient.html#ad98f130c7a4b2974841f09a39e41ba53", null ],
     [ "tcp_rwlock", "structClient.html#a77177b559115520f217f957fc94b8cee", null ],
