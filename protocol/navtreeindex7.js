@@ -1,5 +1,13 @@
 var NAVTREEINDEX7 =
 {
+"sdl__utils_8c.html#afbc958cd698c7d076d069dc24c6e9a78":[10,0,0,18,9],
+"sdl__utils_8h.html":[10,0,0,19],
+"sdl__utils_8h.html#a1081ae59fbf90e16f9d12ef7a97f0555":[10,0,0,19,6],
+"sdl__utils_8h.html#a2a20ede981c49da978e972e7e61629d8":[10,0,0,19,7],
+"sdl__utils_8h.html#a4115192313cdb78079bd69ca3fbf5606":[10,0,0,19,8],
+"sdl__utils_8h.html#a822a897da1061934256086a254560d9c":[10,0,0,19,10],
+"sdl__utils_8h.html#a993a121aa7c5869498703f17d41262ab":[10,0,0,19,4],
+"sdl__utils_8h.html#a9dbcc14b6e31b62aedb3db07b1b45e1f":[10,0,0,19,11],
 "sdl__utils_8h.html#ab65ff6de4da0adc51ef3fa86636bef8c":[10,0,0,19,9],
 "sdl__utils_8h.html#abf404550e168d933d326c980202e21e7":[10,0,0,19,1],
 "sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a":[10,0,0,19,14],
@@ -241,13 +249,5 @@ var NAVTREEINDEX7 =
 "structColorTree.html#a46a3b1d9239f5fd467ec97cd067b9a96":[9,0,18,0],
 "structColorTree.html#ab3836a4a5981a7cf4ef553d25d9b0361":[9,0,18,1],
 "structDecodedFrameData.html":[9,0,19],
-"structDecodedFrameData.html#a4b9999ad62fc81cba381d10728bc2598":[9,0,19,3],
-"structDecodedFrameData.html#a5f6c1b087be41c2cd65bccee5a0838ad":[9,0,19,2],
-"structDecodedFrameData.html#a66788ca3580272abce0db59473100b55":[9,0,19,4],
-"structDecodedFrameData.html#a88dd4ffb3f9846ec887568a91eda2f3d":[9,0,19,1],
-"structDecodedFrameData.html#a9d101bb9cda6e9feb3a1be64b2827575":[9,0,19,0],
-"structDynamicBuffer.html":[8,0,6],
-"structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac":[8,0,6,3],
-"structDynamicBuffer.html#a938f2c8aa90ab824c05372f1903b9ac3":[8,0,6,0],
-"structDynamicBuffer.html#ab086b6e22e3b2018e9cb35aaf637e22c":[8,0,6,1]
+"structDecodedFrameData.html#a4b9999ad62fc81cba381d10728bc2598":[9,0,19,3]
 };

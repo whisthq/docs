@@ -124,6 +124,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="capture_8h.html#abbd0ff16d9ee7c3353340b1d2529f8c7">destroy_capture_device</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device)</td></tr>
 <tr class="memdesc:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys and frees the memory of a capture device.  <a href="capture_8h.html#abbd0ff16d9ee7c3353340b1d2529f8c7">More...</a><br /></td></tr>
 <tr class="separator:abbd0ff16d9ee7c3353340b1d2529f8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1e23440c0ec1dd6be52dd807888033"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="capture_8h.html#ade1e23440c0ec1dd6be52dd807888033">file_capture_set_input_filename</a> (const char *filename)</td></tr>
+<tr class="memdesc:ade1e23440c0ec1dd6be52dd807888033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set filename used by the file-capture test device.  <a href="capture_8h.html#ade1e23440c0ec1dd6be52dd807888033">More...</a><br /></td></tr>
+<tr class="separator:ade1e23440c0ec1dd6be52dd807888033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -248,6 +251,33 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>The capture device to free </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade1e23440c0ec1dd6be52dd807888033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1e23440c0ec1dd6be52dd807888033">&#9670;&nbsp;</a></span>file_capture_set_input_filename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void file_capture_set_input_filename </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set filename used by the file-capture test device. </p>
+<p>TODO: this should be passed via <a class="el" href="capture_8h.html#aa962953cfc3fdb9ed34703ab4a9afe42" title="Creates a screen capture device.">create_capture_device()</a> rather than separately like this.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Filename to use the next time the file-capture device is opened. Must be a static string. </td></tr>
   </table>
   </dd>
 </dl>

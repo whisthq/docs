@@ -26,6 +26,7 @@ var annotated_dup =
     [ "FECDecoder", "structFECDecoder.html", "structFECDecoder" ],
     [ "FECEncoder", "structFECEncoder.html", "structFECEncoder" ],
     [ "FFmpegEncoder", "structFFmpegEncoder.html", "structFFmpegEncoder" ],
+    [ "FileCaptureDevice", "structFileCaptureDevice.html", "structFileCaptureDevice" ],
     [ "FileData", "structFileData.html", "structFileData" ],
     [ "FileEventInfo", "unionFileEventInfo.html", "unionFileEventInfo" ],
     [ "FileMetadata", "structFileMetadata.html", "structFileMetadata" ],
