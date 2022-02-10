@@ -126,23 +126,23 @@ $(document).ready(function(){initNavTree('client_8h_source.html',''); initResiza
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">============================</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_8h.html#a8dcced7ed6c7f9284bf91463b0d658b0">init_client</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_8h.html#a0c9deb4b0da1b5a671935d8537da0b70">destroy_clients</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_8h.html#aedb5791800324d1914e5124d23f138c8">start_quitting_client</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_8h.html#aaa052b4dfa62a068a43c72a8782c474e">quit_client</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_8h.html#a4095d2d382a7e5c347db88558a546df8">add_thread_to_client_active_dependents</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_8h.html#a0a15c68449ffb14ea62db6087d27fa4c">reset_threads_holding_active_count</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_8h.html#a910e3ffb86024ba2864d8c0594f9623f">update_client_active_status</a>(<a class="code" href="structClient.html">Client</a>* client, <span class="keywordtype">bool</span>* is_thread_assuming_active);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="client_8h.html#ab77ef71b6fc7e7ee283d110f553f2272">threads_still_holding_active</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif  // SERVER_CLIENT_H</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_8h.html#a8dcced7ed6c7f9284bf91463b0d658b0">init_client</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_8h.html#a0c9deb4b0da1b5a671935d8537da0b70">destroy_clients</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_8h.html#aedb5791800324d1914e5124d23f138c8">start_quitting_client</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_8h.html#aaa052b4dfa62a068a43c72a8782c474e">quit_client</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_8h.html#a4095d2d382a7e5c347db88558a546df8">add_thread_to_client_active_dependents</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_8h.html#a0a15c68449ffb14ea62db6087d27fa4c">reset_threads_holding_active_count</a>(<a class="code" href="structClient.html">Client</a>* client);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_8h.html#a910e3ffb86024ba2864d8c0594f9623f">update_client_active_status</a>(<a class="code" href="structClient.html">Client</a>* client, <span class="keywordtype">bool</span>* is_thread_assuming_active);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="client_8h.html#ab77ef71b6fc7e7ee283d110f553f2272">threads_still_holding_active</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif  // SERVER_CLIENT_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclient_8h_html_a910e3ffb86024ba2864d8c0594f9623f"><div class="ttname"><a href="client_8h.html#a910e3ffb86024ba2864d8c0594f9623f">update_client_active_status</a></div><div class="ttdeci">void update_client_active_status(Client *client, bool *is_thread_assuming_active)</div><div class="ttdoc">Allows a thread to update its status on whether it believes the client is active or not.</div><div class="ttdef"><b>Definition:</b> client.c:140</div></div>

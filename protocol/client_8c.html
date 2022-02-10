@@ -144,6 +144,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add thread to count of those dependent on client being active. </p>
+<p>This function only needs to be called if the thread depends on any members of <code><a class="el" href="structClient.html">Client</a></code>. For example, if a thread uses <a class="el" href="structClient.html#a6d3700d67550763757c5c4e3fdaa8827">Client.udp_context</a>, we don't want the resource to be destroyed while the thread continues to think that the client is active. This also means that the thread has to call <code>remove_thread_from_holding_active_count</code> eventually to release its hold on the active client. This is typically done through a call to <code>update_client_active_status</code> in the thread loop. </p>
 
 </div>
 </div>
@@ -192,7 +193,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes client object. </p>
-<p>Must be called before the client object can be used. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Must be called before the client object can be used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>the client context to initialize</td></tr>
   </table>
