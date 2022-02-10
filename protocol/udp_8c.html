@@ -98,8 +98,8 @@ $(document).ready(function(){initNavTree('udp_8c.html',''); initResizable(); });
 <code>#include &lt;<a class="el" href="ringbuffer_8h_source.html">whist/network/ringbuffer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="throttle_8h_source.html">whist/network/throttle.h</a>&gt;</code><br />
-<code>#include &lt;fcntl.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -114,7 +114,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6afbd3875118f98013f7cc49969dac90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a6afbd3875118f98013f7cc49969dac90">UDPNETWORKPACKET_HEADER_SIZE</a>&#160;&#160;&#160;((int)sizeof(<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>) - (int)sizeof((<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>){0}.payload))</td></tr>
+<tr class="memitem:a6afbd3875118f98013f7cc49969dac90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a6afbd3875118f98013f7cc49969dac90">UDPNETWORKPACKET_HEADER_SIZE</a>&#160;&#160;&#160;((int)(offsetof(<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>, payload)))</td></tr>
 <tr class="separator:a6afbd3875118f98013f7cc49969dac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f283368e88ac298d92d1506dd4c0abb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb">RETRIES_ON_BUFFER_FULL</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a4f283368e88ac298d92d1506dd4c0abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +126,10 @@ Macros</h2></td></tr>
 <tr class="separator:a8c549fa2648eea555b6c8a93ee4dc3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2b8eb0b122983fbf3da1da372e479c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#af2b8eb0b122983fbf3da1da372e479c2">PING_LAMBDA</a>&#160;&#160;&#160;0.75</td></tr>
 <tr class="separator:af2b8eb0b122983fbf3da1da372e479c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364162751f11cecfec916c6db2e7419c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a364162751f11cecfec916c6db2e7419c">CONNECTION_ATTEMPT_INTERVAL_MS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a364162751f11cecfec916c6db2e7419c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e6533153a99e7fa4b81352018a5b2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ad3e6533153a99e7fa4b81352018a5b2a">NUM_CONFIRMATION_MESSAGES</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ad3e6533153a99e7fa4b81352018a5b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890ae089e185134fdcefbc84329a6115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a890ae089e185134fdcefbc84329a6115">MAX_TOTAL_PACKETS</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:a890ae089e185134fdcefbc84329a6115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -139,7 +143,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="udp_8c.html#af026caee3b8fbd9791a41cd1af78046aaaf85f8903848380196ea4d2191612722">UDP_PING</a>, 
 <a class="el" href="udp_8c.html#af026caee3b8fbd9791a41cd1af78046aa943a78dd44b99e0c0c7983c3cbd8272c">UDP_PONG</a>, 
-<a class="el" href="udp_8c.html#af026caee3b8fbd9791a41cd1af78046aacbc850e6bd5e6825df3a8e09ffa97f0f">UDP_NETWORK_SETTINGS</a>
+<a class="el" href="udp_8c.html#af026caee3b8fbd9791a41cd1af78046aacbc850e6bd5e6825df3a8e09ffa97f0f">UDP_NETWORK_SETTINGS</a>, 
+<a class="el" href="udp_8c.html#af026caee3b8fbd9791a41cd1af78046aaa441979ecd6d4b97d1d0a6e8139325db">UDP_CONNECTION_ATTEMPT</a>, 
+<br />
+&#160;&#160;<a class="el" href="udp_8c.html#af026caee3b8fbd9791a41cd1af78046aa5cb78e7d73c46eaae227c5a39c184c5a">UDP_CONNECTION_CONFIRMATION</a>
 <br />
  }</td></tr>
 <tr class="separator:af026caee3b8fbd9791a41cd1af78046a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +191,20 @@ Variables</h2></td></tr>
 <tr class="separator:a5120ece93dfddf5638a59e495e9c6d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a364162751f11cecfec916c6db2e7419c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364162751f11cecfec916c6db2e7419c">&#9670;&nbsp;</a></span>CONNECTION_ATTEMPT_INTERVAL_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONNECTION_ATTEMPT_INTERVAL_MS&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8c549fa2648eea555b6c8a93ee4dc3aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c549fa2648eea555b6c8a93ee4dc3aa">&#9670;&nbsp;</a></span>MAX_NUM_AUDIO_FRAMES</h2>
 
@@ -206,6 +227,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MAX_TOTAL_PACKETS&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3e6533153a99e7fa4b81352018a5b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e6533153a99e7fa4b81352018a5b2a">&#9670;&nbsp;</a></span>NUM_CONFIRMATION_MESSAGES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUM_CONFIRMATION_MESSAGES&#160;&#160;&#160;10</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -275,7 +310,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UDPNETWORKPACKET_HEADER_SIZE&#160;&#160;&#160;((int)sizeof(<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>) - (int)sizeof((<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>){0}.payload))</td>
+          <td class="memname">#define UDPNETWORKPACKET_HEADER_SIZE&#160;&#160;&#160;((int)(offsetof(<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>, payload)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -302,6 +337,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="af026caee3b8fbd9791a41cd1af78046aaaf85f8903848380196ea4d2191612722"></a>UDP_PING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af026caee3b8fbd9791a41cd1af78046aa943a78dd44b99e0c0c7983c3cbd8272c"></a>UDP_PONG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af026caee3b8fbd9791a41cd1af78046aacbc850e6bd5e6825df3a8e09ffa97f0f"></a>UDP_NETWORK_SETTINGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af026caee3b8fbd9791a41cd1af78046aaa441979ecd6d4b97d1d0a6e8139325db"></a>UDP_CONNECTION_ATTEMPT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af026caee3b8fbd9791a41cd1af78046aa5cb78e7d73c46eaae227c5a39c184c5a"></a>UDP_CONNECTION_CONFIRMATION&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

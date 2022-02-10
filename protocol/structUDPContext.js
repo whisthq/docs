@@ -1,14 +1,16 @@
 var structUDPContext =
 [
     [ "ack", "structUDPContext.html#a462c0356a2e1df8937f2a7549936300c", null ],
-    [ "addr", "structUDPContext.html#aea26f65d7fa904304d39d55d47aa89e4", null ],
     [ "binary_aes_private_key", "structUDPContext.html#a219c1b5d7a17f22088da8baec323968d", null ],
+    [ "connected", "structUDPContext.html#aa9b4d7a74a655df817fb09b3603b06a9", null ],
+    [ "connection_addr", "structUDPContext.html#aa4b662ee521d634b8b5f7822c6252418", null ],
     [ "connection_lost", "structUDPContext.html#a57e721559680e4bb20ddb141acce49b2", null ],
     [ "consecutive_ping_failures", "structUDPContext.html#af473354931fbdcd2f63cefc1c2d9b7eb", null ],
     [ "current_network_settings", "structUDPContext.html#ad7c756eb5de79b2b4cff799ac64fdc92", null ],
     [ "desired_network_settings", "structUDPContext.html#a4edfc1e8a21abf03d8dd297694aa4c97", null ],
     [ "fec_packet_ratios", "structUDPContext.html#a69c3219f43a22c2c1638dcbabd7b4dbd", null ],
     [ "has_pending_packet", "structUDPContext.html#a057d91b6c4e23d9af04a76a3af20deff", null ],
+    [ "last_addr", "structUDPContext.html#acf1aa26022ad9c0e212a57dbaedd12bb", null ],
     [ "last_network_settings_time", "structUDPContext.html#a8017af7992ccbdb7140391fb7b6bebc3", null ],
     [ "last_new_ping_timer", "structUDPContext.html#ad80630f9c73e382c55c08c0563d42e5d", null ],
     [ "last_ping_client_time", "structUDPContext.html#a5fb0477415beb03b238f2ba44ddcb2aa", null ],

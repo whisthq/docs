@@ -12,7 +12,7 @@ var searchData=
   ['add_5fid_16',['add_id',['../structLodePNGEncoderSettings.html#a893aa542aa7c122c32ee36dd716fbcb2',1,'LodePNGEncoderSettings']]],
   ['add_5fthread_5fto_5fclient_5factive_5fdependents_17',['add_thread_to_client_active_dependents',['../client_8c.html#a4095d2d382a7e5c347db88558a546df8',1,'add_thread_to_client_active_dependents(void):&#160;client.c'],['../client_8h.html#a4095d2d382a7e5c347db88558a546df8',1,'add_thread_to_client_active_dependents(void):&#160;client.c']]],
   ['addmul_18',['addmul',['../rs_8c.html#ae0cd0f1d47314d011206cb5b59579e15',1,'rs.c']]],
-  ['addr_19',['addr',['../structTCPContext.html#a9c7f69bf9020bd2b2abdf4c3c904aa1d',1,'TCPContext::addr()'],['../structUDPContext.html#aea26f65d7fa904304d39d55d47aa89e4',1,'UDPContext::addr()']]],
+  ['addr_19',['addr',['../structTCPContext.html#a9c7f69bf9020bd2b2abdf4c3c904aa1d',1,'TCPContext']]],
   ['aes_2ec_20',['aes.c',['../aes_8c.html',1,'']]],
   ['aes_2eh_21',['aes.h',['../aes_8h.html',1,'']]],
   ['aes_5fmetadata_22',['aes_metadata',['../structTCPNetworkPacket.html#aabd8d785ec899bd039e4266514907948',1,'TCPNetworkPacket::aes_metadata()'],['../structUDPNetworkPacket.html#a135e1fa43afee52a831053abd60b3e3a',1,'UDPNetworkPacket::aes_metadata()']]],

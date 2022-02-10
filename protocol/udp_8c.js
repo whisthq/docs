@@ -4,8 +4,10 @@ var udp_8c =
     [ "UDPNetworkPacket", "structUDPNetworkPacket.html", "structUDPNetworkPacket" ],
     [ "StreamResetData", "structStreamResetData.html", "structStreamResetData" ],
     [ "UDPContext", "structUDPContext.html", "structUDPContext" ],
+    [ "CONNECTION_ATTEMPT_INTERVAL_MS", "udp_8c.html#a364162751f11cecfec916c6db2e7419c", null ],
     [ "MAX_NUM_AUDIO_FRAMES", "udp_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa", null ],
     [ "MAX_TOTAL_PACKETS", "udp_8c.html#a890ae089e185134fdcefbc84329a6115", null ],
+    [ "NUM_CONFIRMATION_MESSAGES", "udp_8c.html#ad3e6533153a99e7fa4b81352018a5b2a", null ],
     [ "PING_LAMBDA", "udp_8c.html#af2b8eb0b122983fbf3da1da372e479c2", null ],
     [ "RETRIES_ON_BUFFER_FULL", "udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb", null ],
     [ "STATISTICS_SECONDS", "udp_8c.html#a3190cca650071548d6b75370b0e5c41c", null ],
@@ -18,7 +20,9 @@ var udp_8c =
       [ "UDP_STREAM_RESET", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aa2e7a29c59a9899ba6873b03f0e8e49c0", null ],
       [ "UDP_PING", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aaaf85f8903848380196ea4d2191612722", null ],
       [ "UDP_PONG", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aa943a78dd44b99e0c0c7983c3cbd8272c", null ],
-      [ "UDP_NETWORK_SETTINGS", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aacbc850e6bd5e6825df3a8e09ffa97f0f", null ]
+      [ "UDP_NETWORK_SETTINGS", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aacbc850e6bd5e6825df3a8e09ffa97f0f", null ],
+      [ "UDP_CONNECTION_ATTEMPT", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aaa441979ecd6d4b97d1d0a6e8139325db", null ],
+      [ "UDP_CONNECTION_CONFIRMATION", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aa5cb78e7d73c46eaae227c5a39c184c5a", null ]
     ] ],
     [ "create_udp_client_context", "udp_8c.html#affe81b4f24423445ea0cb2d330506d39", null ],
     [ "create_udp_listen_socket", "udp_8c.html#ab227c787d07a796738fef8cc10a1a0ad", null ],
