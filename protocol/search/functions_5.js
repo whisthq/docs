@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['fallback_5fbitrate_2575',['fallback_bitrate',['../network__algorithm_8c.html#aed048552071ecaa1b07110cb497b451a',1,'network_algorithm.c']]],
   ['fec_5fdecoder_5fregister_5fbuffer_2576',['fec_decoder_register_buffer',['../fec_8c.html#a15f81d0fc1e9b9aa2aa823812e02dfe5',1,'fec_decoder_register_buffer(FECDecoder *fec_decoder, int index, void *buffer, int buffer_size):&#160;fec.c'],['../fec_8h.html#a15f81d0fc1e9b9aa2aa823812e02dfe5',1,'fec_decoder_register_buffer(FECDecoder *fec_decoder, int index, void *buffer, int buffer_size):&#160;fec.c']]],
   ['fec_5fencoder_5fregister_5fbuffer_2577',['fec_encoder_register_buffer',['../fec_8c.html#af8d45fea9c101fa77f55eef426979ff9',1,'fec_encoder_register_buffer(FECEncoder *fec_encoder, void *buffer, int buffer_size):&#160;fec.c'],['../fec_8h.html#af8d45fea9c101fa77f55eef426979ff9',1,'fec_encoder_register_buffer(FECEncoder *fec_encoder, void *buffer, int buffer_size):&#160;fec.c']]],
   ['fec_5fget_5fdecoded_5fbuffer_2578',['fec_get_decoded_buffer',['../fec_8c.html#a68e2a970d7c3d4b81353174da6809b7a',1,'fec_get_decoded_buffer(FECDecoder *fec_decoder, void *buffer):&#160;fec.c'],['../fec_8h.html#a68e2a970d7c3d4b81353174da6809b7a',1,'fec_get_decoded_buffer(FECDecoder *fec_decoder, void *buffer):&#160;fec.c']]],

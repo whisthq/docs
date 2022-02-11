@@ -157,9 +157,6 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MAX_INIT_CONNECTION_ATTEMPTS
 : <a class="el" href="client__utils_8h.html#a44eb83ec64358b8e2db0f94e7b85b8f2">client_utils.h</a>
 </li>
-<li>MAX_INTRA_QP
-: <a class="el" href="whist_8h.html#a9bcfa4a6fecd23535df2dd7cc000ea23">whist.h</a>
-</li>
 <li>MAX_NACK_AVG_MBPS
 : <a class="el" href="ringbuffer_8c.html#ae1394526c365da140a30aa8d28887fda">ringbuffer.c</a>
 </li>
@@ -196,9 +193,6 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 </li>
 <li>MAX_PAYLOAD_SIZE
 : <a class="el" href="whist_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b">network.h</a>
-</li>
-<li>MAX_QP
-: <a class="el" href="whist_8h.html#a36731cc1007cd643f55b66d1f573d659">whist.h</a>
 </li>
 <li>MAX_RECONNECTION_ATTEMPTS
 : <a class="el" href="client__utils_8h.html#a45c9f7618494cb2ee1ec3d579e1feb9f">client_utils.h</a>
@@ -244,10 +238,16 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 : <a class="el" href="whist__frame_8h.html#a11350fab34a6d336dd5296535080bcea">whist_frame.h</a>
 </li>
 <li>MAXIMUM_BITRATE
-: <a class="el" href="network__algorithm_8h.html#af99345a216f300c72251d94158573c1c">network_algorithm.h</a>
+: <a class="el" href="network__algorithm_8c.html#af99345a216f300c72251d94158573c1c">network_algorithm.c</a>
+</li>
+<li>MAXIMUM_BITRATE_PER_PIXEL
+: <a class="el" href="network__algorithm_8c.html#a682172562c46e8d38687ea33bc1c3a59">network_algorithm.c</a>
 </li>
 <li>MAXIMUM_BURST_BITRATE
-: <a class="el" href="network__algorithm_8h.html#a7d1a6f11ba27fccd22c0a937de148e8b">network_algorithm.h</a>
+: <a class="el" href="network__algorithm_8c.html#a7d1a6f11ba27fccd22c0a937de148e8b">network_algorithm.c</a>
+</li>
+<li>MAXIMUM_VIDEO_BITRATE
+: <a class="el" href="network__algorithm_8c.html#a9487eb82cca323384b13c40bdcdfac95">network_algorithm.c</a>
 </li>
 <li>MESSAGE_BITARRAY_NACK
 : <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a535a324c90ea58fb2754d8ad02370c49">whist.h</a>
@@ -338,10 +338,16 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 : <a class="el" href="whist_8h.html#a127a432b98b2684fb0d592970c125b41">whist.h</a>
 </li>
 <li>MINIMUM_BITRATE
-: <a class="el" href="network__algorithm_8h.html#ac2aaa80882bbda0541e0a62c9a6125ec">network_algorithm.h</a>
+: <a class="el" href="network__algorithm_8c.html#ac2aaa80882bbda0541e0a62c9a6125ec">network_algorithm.c</a>
+</li>
+<li>MINIMUM_BITRATE_PER_PIXEL
+: <a class="el" href="network__algorithm_8c.html#a19fab23ebc323ed532349e0a5829885b">network_algorithm.c</a>
 </li>
 <li>MINIMUM_BURST_BITRATE
-: <a class="el" href="network__algorithm_8h.html#a766f336f01ead55fa462053310ece2df">network_algorithm.h</a>
+: <a class="el" href="network__algorithm_8c.html#a766f336f01ead55fa462053310ece2df">network_algorithm.c</a>
+</li>
+<li>MINIMUM_VIDEO_BITRATE
+: <a class="el" href="network__algorithm_8c.html#a2276d7266bc6e01db7be449725a63d3a">network_algorithm.c</a>
 </li>
 <li>MOD_CAPS
 : <a class="el" href="whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa0ff99e5c7ebd39669a13e66271cf8c4d">whist.h</a>
@@ -386,9 +392,9 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 : <a class="el" href="whist_8h.html#a76bf238d14734ada3ef9fadfdea45ca7">whist.h</a>
 </li>
 <li>mouse_state
-: <a class="el" href="client__utils_8c.html#a9f5f2b90e5441717b0499669e2e742d3">client_utils.c</a>
+: <a class="el" href="whist__client_8c.html#a9f5f2b90e5441717b0499669e2e742d3">whist_client.c</a>
 , <a class="el" href="sdl__event__handler_8c.html#a9f5f2b90e5441717b0499669e2e742d3">sdl_event_handler.c</a>
-, <a class="el" href="whist__client_8c.html#a9f5f2b90e5441717b0499669e2e742d3">whist_client.c</a>
+, <a class="el" href="client__utils_8c.html#a9f5f2b90e5441717b0499669e2e742d3">client_utils.c</a>
 </li>
 <li>MOUSE_X1
 : <a class="el" href="whist_8h.html#afa47769b22f4e68bdbf79565f9852032a77991fd820fa0879001c745a758be452">whist.h</a>
@@ -431,19 +437,19 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 : <a class="el" href="whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153a1ab59eb574b1e82f729c76699e3218bf">whist.h</a>
 </li>
 <li>multithreaded_manage_client()
-: <a class="el" href="server_2network_8h.html#a38cc5da4bd5acfde815f921746a28da7">network.h</a>
-, <a class="el" href="server_2network_8c.html#a38cc5da4bd5acfde815f921746a28da7">network.c</a>
+: <a class="el" href="server_2network_8c.html#a38cc5da4bd5acfde815f921746a28da7">network.c</a>
+, <a class="el" href="server_2network_8h.html#a38cc5da4bd5acfde815f921746a28da7">network.h</a>
 </li>
 <li>multithreaded_renderer()
 : <a class="el" href="renderer_8c.html#a50ca81e13392bb11097488f5aa92bde7">renderer.c</a>
 </li>
 <li>multithreaded_send_audio()
-: <a class="el" href="server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7">audio.c</a>
-, <a class="el" href="server_2audio_8h.html#a5d4cd54c3652d2c734923079d07992b7">audio.h</a>
+: <a class="el" href="server_2audio_8h.html#a5d4cd54c3652d2c734923079d07992b7">audio.h</a>
+, <a class="el" href="server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7">audio.c</a>
 </li>
 <li>multithreaded_send_video()
-: <a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">video.c</a>
-, <a class="el" href="server_2video_8h.html#a26603a17edf486ab02cf85b75e60eb08">video.h</a>
+: <a class="el" href="server_2video_8h.html#a26603a17edf486ab02cf85b75e60eb08">video.h</a>
+, <a class="el" href="server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08">video.c</a>
 </li>
 </ul>
 </div><!-- contents -->
