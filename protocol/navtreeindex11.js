@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"struct__whist__server__state.html#a5e1b1507f23bda87142d4907a51885de":[9,0,1,15],
 "struct__whist__server__state.html#a65b1ff45f802eae80ea8d87c8fca671e":[9,0,1,10],
 "struct__whist__server__state.html#a67256a4bfb719a4477601ed8d1f56659":[9,0,1,17],
 "struct__whist__server__state.html#a73135920c72eca5945418fb4ee829c2a":[9,0,1,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "whist_8c.html#a99cc5a998dfeebc3567baec59b4a77a3":[10,0,2,2,0,1],
 "whist_8c.html#aa005f29266f2ddf76cb57dc510516839":[10,0,2,2,0,9],
 "whist_8c.html#ac4ac0c784aec9caf76934889e1ac04c5":[10,0,2,2,0,0],
-"whist_8c.html#ac53d33c8e6e74a072be3b2319b56cb75":[10,0,2,2,0,20],
-"whist_8c.html#acd2a6b85af00a5afce40e6c334575ec0":[10,0,2,2,0,19]
+"whist_8c.html#ac53d33c8e6e74a072be3b2319b56cb75":[10,0,2,2,0,20]
 };

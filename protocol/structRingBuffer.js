@@ -14,6 +14,7 @@ var structRingBuffer =
     [ "last_stream_reset_request_id", "structRingBuffer.html#a0260e103fd1adae06fed275672381b86", null ],
     [ "last_stream_reset_request_timer", "structRingBuffer.html#a0cae5252355a6928ab60412187d215c2", null ],
     [ "max_id", "structRingBuffer.html#a222e926e44d53e0f8bec5e58bbccfc64", null ],
+    [ "min_id", "structRingBuffer.html#a54dd2f672cecf37fd14988783fc1370d", null ],
     [ "most_recent_reset_id", "structRingBuffer.html#af8ef859b9ddbbcdb7d95801ff4781632", null ],
     [ "nack_packet", "structRingBuffer.html#ac10e312643f764cc1ce77fa1e01fe830", null ],
     [ "network_statistics_timer", "structRingBuffer.html#a9a530d5ffefea570684d49434bf29675", null ],
