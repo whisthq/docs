@@ -2,7 +2,6 @@ var whist_2network_2network_8c =
 [
     [ "PrivateKeyData", "structPrivateKeyData.html", "structPrivateKeyData" ],
     [ "SignatureData", "structSignatureData.html", "structSignatureData" ],
-    [ "BITS_IN_BYTE", "whist_2network_2network_8c.html#ac54bd5b32c8baefaf13608a9296a7564", null ],
     [ "MS_IN_SECOND", "whist_2network_2network_8c.html#ab06727ebbc110e7071dc8090ced33373", null ],
     [ "destroy_socket_context", "whist_2network_2network_8c.html#af30fe25b1472f12966debaa6535b4339", null ],
     [ "free_packet", "whist_2network_2network_8c.html#a419e4818e56de9f9a6c5c2d9d6e3283b", null ],

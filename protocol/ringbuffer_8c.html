@@ -112,10 +112,8 @@ Macros</h2></td></tr>
 <tr class="separator:a262db33739dbfd7b25d97c2ba2754986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf06ce5e31c557cd5e3342811904c911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911">MAX_PACKET_NACKS</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:adf06ce5e31c557cd5e3342811904c911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1394526c365da140a30aa8d28887fda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ae1394526c365da140a30aa8d28887fda">MAX_NACK_AVG_MBPS</a>&#160;&#160;&#160;2200000</td></tr>
-<tr class="separator:ae1394526c365da140a30aa8d28887fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c68baaea63ef075d65c8f5a3885d75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a68c68baaea63ef075d65c8f5a3885d75">MAX_NACK_BURST_MBPS</a>&#160;&#160;&#160;4800000</td></tr>
-<tr class="separator:a68c68baaea63ef075d65c8f5a3885d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7825c4f2de173c071d97a296ec96d24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ad7825c4f2de173c071d97a296ec96d24">MAX_NACK_BITRATE_RATIO</a>&#160;&#160;&#160;0.8</td></tr>
+<tr class="separator:ad7825c4f2de173c071d97a296ec96d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -142,9 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab1bbfe97860061cb1cc4d55514ca4855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ab1bbfe97860061cb1cc4d55514ca4855">reset_stream</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
 <tr class="memdesc:ab1bbfe97860061cb1cc4d55514ca4855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip the ring buffer to ID id, dropping all packets prior to that id.  <a href="ringbuffer_8c.html#ab1bbfe97860061cb1cc4d55514ca4855">More...</a><br /></td></tr>
 <tr class="separator:ab1bbfe97860061cb1cc4d55514ca4855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8222c9dd415a49e906517f8d2cb0f2f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a8222c9dd415a49e906517f8d2cb0f2f6">try_recovering_missing_packets_or_frames</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double <a class="el" href="udp_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a>)</td></tr>
-<tr class="memdesc:a8222c9dd415a49e906517f8d2cb0f2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try nacking or requesting a stream reset.  <a href="ringbuffer_8c.html#a8222c9dd415a49e906517f8d2cb0f2f6">More...</a><br /></td></tr>
-<tr class="separator:a8222c9dd415a49e906517f8d2cb0f2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae922939964486b252032077c87fc4ae1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ae922939964486b252032077c87fc4ae1">try_recovering_missing_packets_or_frames</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double <a class="el" href="udp_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a>, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
+<tr class="memdesc:ae922939964486b252032077c87fc4ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try nacking or requesting a stream reset.  <a href="ringbuffer_8c.html#ae922939964486b252032077c87fc4ae1">More...</a><br /></td></tr>
+<tr class="separator:ae922939964486b252032077c87fc4ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6f19b91298c7e3a227df3c5da891cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a7a6f19b91298c7e3a227df3c5da891cc">get_network_statistics</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
 <tr class="memdesc:a7a6f19b91298c7e3a227df3c5da891cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get network statistics from the ringbuffer.  <a href="ringbuffer_8c.html#a7a6f19b91298c7e3a227df3c5da891cc">More...</a><br /></td></tr>
 <tr class="separator:a7a6f19b91298c7e3a227df3c5da891cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,28 +179,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1394526c365da140a30aa8d28887fda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1394526c365da140a30aa8d28887fda">&#9670;&nbsp;</a></span>MAX_NACK_AVG_MBPS</h2>
+<a id="ad7825c4f2de173c071d97a296ec96d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7825c4f2de173c071d97a296ec96d24">&#9670;&nbsp;</a></span>MAX_NACK_BITRATE_RATIO</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_NACK_AVG_MBPS&#160;&#160;&#160;2200000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a68c68baaea63ef075d65c8f5a3885d75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68c68baaea63ef075d65c8f5a3885d75">&#9670;&nbsp;</a></span>MAX_NACK_BURST_MBPS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_NACK_BURST_MBPS&#160;&#160;&#160;4800000</td>
+          <td class="memname">#define MAX_NACK_BITRATE_RATIO&#160;&#160;&#160;0.8</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -699,8 +683,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8222c9dd415a49e906517f8d2cb0f2f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8222c9dd415a49e906517f8d2cb0f2f6">&#9670;&nbsp;</a></span>try_recovering_missing_packets_or_frames()</h2>
+<a id="ae922939964486b252032077c87fc4ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae922939964486b252032077c87fc4ae1">&#9670;&nbsp;</a></span>try_recovering_missing_packets_or_frames()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -715,7 +699,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>latency</em>&#160;</td>
+          <td class="paramname"><em>latency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structNetworkSettings.html">NetworkSettings</a> *&#160;</td>
+          <td class="paramname"><em>network_settings</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -729,7 +719,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ring_buffer</td><td>Ring buffer to use </td></tr>
-    <tr><td class="paramname">latency</td><td>The latency, used in figuring out when to nack / stream reset</td></tr>
+    <tr><td class="paramname">latency</td><td>The latency, used in figuring out when to nack / stream reset </td></tr>
+    <tr><td class="paramname">network_settings</td><td><a class="el" href="structNetworkSettings.html" title="The networking state of a socket.">NetworkSettings</a> structure containing the current bitrate and burst bitrate</td></tr>
   </table>
   </dd>
 </dl>

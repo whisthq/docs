@@ -1,7 +1,6 @@
 var throttle_8c =
 [
     [ "NetworkThrottleContext", "structNetworkThrottleContext.html", "structNetworkThrottleContext" ],
-    [ "BITS_IN_BYTE", "throttle_8c.html#ac54bd5b32c8baefaf13608a9296a7564", null ],
     [ "STARTING_THROTTLER_BITRATE", "throttle_8c.html#af82ac32d8ffd0755c473a9551177fb91", null ],
     [ "network_throttler_create", "throttle_8c.html#a35d1e46b80f2d5561c2af0087a22eb76", null ],
     [ "network_throttler_destroy", "throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f", null ],

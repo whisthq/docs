@@ -18,6 +18,7 @@ var network__algorithm_8c =
     [ "ewma_ratio_bitrate", "network__algorithm_8c.html#aedd260a3c19ffe815276936a34578934", null ],
     [ "get_default_network_settings", "network__algorithm_8c.html#a5351a05abacbcd55adae121fb380508c", null ],
     [ "get_desired_network_settings", "network__algorithm_8c.html#a5fca7d6bd4c3f135046f727ee8224bf7", null ],
+    [ "get_starting_network_settings", "network__algorithm_8c.html#a3164d3eec2e8fbcedab1f454e2442483", null ],
     [ "timed_ewma_ratio_bitrate", "network__algorithm_8c.html#a514ba7746992c1c82a8ddb53628aba87", null ],
     [ "output_height", "network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104", null ],
     [ "output_width", "network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ]

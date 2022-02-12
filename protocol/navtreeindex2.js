@@ -141,8 +141,8 @@ var NAVTREEINDEX2 =
 "filecapture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf":[10,0,2,9,0,1,1],
 "filecapture_8c.html#ade1e23440c0ec1dd6be52dd807888033":[10,0,2,9,0,1,4],
 "files.html":[10,0],
-"functions.html":[9,2,0,0],
 "functions.html":[9,2,0],
+"functions.html":[9,2,0,0],
 "functions_a.html":[9,2,0,1],
 "functions_b.html":[9,2,0,2],
 "functions_c.html":[9,2,0,3],
@@ -247,7 +247,7 @@ var NAVTREEINDEX2 =
 "globals_eval_w.html":[10,1,5,16],
 "globals_eval_x.html":[10,1,5,17],
 "globals_f.html":[10,1,0,6],
-"globals_func.html":[10,1,1],
 "globals_func.html":[10,1,1,0],
+"globals_func.html":[10,1,1],
 "globals_func_b.html":[10,1,1,1]
 };

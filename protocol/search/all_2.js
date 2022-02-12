@@ -25,7 +25,7 @@ var searchData=
   ['bitdepth_104',['bitdepth',['../structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253',1,'LodePNGColorMode']]],
   ['bitrate_105',['bitrate',['../structNetworkSettings.html#a591fa891e5a74d47eefd519b9a056698',1,'NetworkSettings::bitrate()'],['../structFFmpegEncoder.html#a2ae0fedf9d315657a953e4af4deb2bb9',1,'FFmpegEncoder::bitrate()'],['../structNvidiaEncoder.html#a6148961323d7c225188fecad61d2358d',1,'NvidiaEncoder::bitrate()']]],
   ['bits_106',['bits',['../structLodePNGColorStats.html#a8db59a808dc9f57ccaba638be2a2946d',1,'LodePNGColorStats']]],
-  ['bits_5fin_5fbyte_107',['BITS_IN_BYTE',['../server_2network_8c.html#ac54bd5b32c8baefaf13608a9296a7564',1,'BITS_IN_BYTE():&#160;network.c'],['../server_2video_8c.html#ac54bd5b32c8baefaf13608a9296a7564',1,'BITS_IN_BYTE():&#160;video.c'],['../whist_2network_2network_8c.html#ac54bd5b32c8baefaf13608a9296a7564',1,'BITS_IN_BYTE():&#160;network.c'],['../throttle_8c.html#ac54bd5b32c8baefaf13608a9296a7564',1,'BITS_IN_BYTE():&#160;throttle.c']]],
+  ['bits_5fin_5fbyte_107',['BITS_IN_BYTE',['../whist_8h.html#ac54bd5b32c8baefaf13608a9296a7564',1,'whist.h']]],
   ['bits_5fto_5fchars_108',['BITS_TO_CHARS',['../whist_8c.html#a60d7c1ddafff24bb11e440ffaf1ebbcf',1,'BITS_TO_CHARS():&#160;whist.c'],['../whist_8h.html#a60d7c1ddafff24bb11e440ffaf1ebbcf',1,'BITS_TO_CHARS():&#160;whist.h']]],
   ['bitsize_109',['bitsize',['../structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f',1,'LodePNGBitReader']]],
   ['block_20allocator_110',['Block Allocator',['../group__block__allocator.html',1,'']]],

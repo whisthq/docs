@@ -20,6 +20,7 @@ var whist_8h =
     [ "BASE_UDP_PORT", "whist_8h.html#abf13ea9a5895c46f8309ca5a57d176dd", null ],
     [ "BIT_CHAR", "whist_8h.html#ac4ac0c784aec9caf76934889e1ac04c5", null ],
     [ "BIT_IN_CHAR", "whist_8h.html#a99cc5a998dfeebc3567baec59b4a77a3", null ],
+    [ "BITS_IN_BYTE", "whist_8h.html#ac54bd5b32c8baefaf13608a9296a7564", null ],
     [ "BITS_TO_CHARS", "whist_8h.html#a60d7c1ddafff24bb11e440ffaf1ebbcf", null ],
     [ "BYTES_IN_KILOBYTE", "whist_8h.html#ae8e4c0175929d141a35aca839fea9693", null ],
     [ "CAPTURE_SPECIAL_WINDOWS_KEYS", "whist_8h.html#a881d9eef8e780a05fe9cd24eab5514d8", null ],

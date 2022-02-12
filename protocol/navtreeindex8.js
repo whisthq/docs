@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3":[9,0,21,1],
 "structEncodedAudio.html#a9f0b62fc01a231f73c90321f98c65e96":[9,0,21,0],
 "structFECDecoder.html":[9,0,23],
 "structFECDecoder.html#a2d2fe518ed5bb1b909dcb78baa107202":[9,0,23,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "structLodePNGInfo.html#a9e6af4de8972b039ecb137fb32167505":[9,0,47,5],
 "structLodePNGInfo.html#aa94c65344af02472adb9c71eae2e765f":[9,0,47,1],
 "structLodePNGInfo.html#aac321d27e65c54e56d6092d3a6400a81":[9,0,47,36],
-"structLodePNGInfo.html#abf638e191edaeaa2b02c371a381e3a89":[9,0,47,2]
+"structLodePNGInfo.html#abf638e191edaeaa2b02c371a381e3a89":[9,0,47,2],
+"structLodePNGInfo.html#ad6f2171d9f87716e5010f6c5352f9855":[9,0,47,29]
 };

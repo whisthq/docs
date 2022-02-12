@@ -14,5 +14,5 @@ var ringbuffer_8h =
     [ "reset_stream", "ringbuffer_8h.html#ab1bbfe97860061cb1cc4d55514ca4855", null ],
     [ "ring_buffer_receive_segment", "ringbuffer_8h.html#ad6d41e44cd0ec6c84560a14d86108a9a", null ],
     [ "set_rendering", "ringbuffer_8h.html#a29a4ef47e30f9faabce38d4df154494a", null ],
-    [ "try_recovering_missing_packets_or_frames", "ringbuffer_8h.html#a8222c9dd415a49e906517f8d2cb0f2f6", null ]
+    [ "try_recovering_missing_packets_or_frames", "ringbuffer_8h.html#ae922939964486b252032077c87fc4ae1", null ]
 ];
