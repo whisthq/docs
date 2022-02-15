@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"structUDPContext.html#add40a820f85710da36f9198bc825c5f5":[9,0,78,24],
+"structUDPContext.html#aebe86e1f7098e65958116ec39f3f5a0e":[9,0,78,29],
 "structUDPContext.html#aec2b6de3cefd940f259e6d8e019a9066":[9,0,78,28],
 "structUDPContext.html#af473354931fbdcd2f63cefc1c2d9b7eb":[9,0,78,5],
 "structUDPNetworkPacket.html":[9,0,79],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "structX11CaptureDevice.html#aa45126adf5d331cfef4d57a9382cc0d5":[9,0,110,0],
 "structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb":[9,0,110,4],
 "structX11CaptureDevice.html#ab7bc7bf3b5ddab2a71587ac8212587bc":[9,0,110,5],
-"structX11CaptureDevice.html#abfd36ca31e71e058cc8b63592b2415df":[9,0,110,1],
-"structX11CaptureDevice.html#ac49a89635daec815ee50fb42c1d4d444":[9,0,110,7],
-"structX11CaptureDevice.html#ac5a5c7b0909308e3712a2b691e932460":[9,0,110,6]
+"structX11CaptureDevice.html#abfd36ca31e71e058cc8b63592b2415df":[9,0,110,1]
 };

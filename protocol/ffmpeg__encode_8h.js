@@ -8,7 +8,7 @@ var ffmpeg__encode_8h =
       [ "NVENC_ENCODE", "ffmpeg__encode_8h.html#a710867b9460bb3ef175428fd1da3d41aa4eaed9aa42e53ca6e33b4d923ff362a5", null ],
       [ "QSV_ENCODE", "ffmpeg__encode_8h.html#a710867b9460bb3ef175428fd1da3d41aab6091c0afddff42230d17d45dcfa27d2", null ]
     ] ],
-    [ "create_ffmpeg_encoder", "ffmpeg__encode_8h.html#a0fe709fad41e90091e23493ef5a6b058", null ],
+    [ "create_ffmpeg_encoder", "ffmpeg__encode_8h.html#a662e227bcf51cd6f24f7c88c4116ac79", null ],
     [ "destroy_ffmpeg_encoder", "ffmpeg__encode_8h.html#a588b81c7a9be9daa76b2527e7368b10b", null ],
     [ "ffmpeg_encoder_frame_intake", "ffmpeg__encode_8h.html#a0e2ca3b2e42c16087c14ed78d6d030b9", null ],
     [ "ffmpeg_encoder_receive_packet", "ffmpeg__encode_8h.html#a731cbac96e0dceaef41b44d4e3928a37", null ],

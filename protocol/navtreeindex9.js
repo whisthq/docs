@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structLodePNGInfo.html#a7394fc7407c168180b2cf64896fbe7fc":[9,0,47,4],
 "structLodePNGInfo.html#a80207e3e53c959b2285636496a3dd3f1":[9,0,47,22],
 "structLodePNGInfo.html#a8347476da7fc2fc6af4ec7ed44b638c6":[9,0,47,39],
 "structLodePNGInfo.html#a8ada4ce0104dcb58bb7d0cbc8146c9eb":[9,0,47,6],
@@ -78,19 +79,20 @@ var NAVTREEINDEX9 =
 "structNvidiaEncoder.html#a1c0e30efa3e1851f4fa9f733d0a0de7f":[9,0,56,6],
 "structNvidiaEncoder.html#a21f14692352db418bda380e0a03c9b95":[9,0,56,15],
 "structNvidiaEncoder.html#a3f18f1a0ee86b589b302abbdd1869512":[9,0,56,13],
+"structNvidiaEncoder.html#a40c5605f9abc56c722b376041190aa34":[9,0,56,16],
 "structNvidiaEncoder.html#a4f15a9b84f8c8dc8e2e55869feb0e085":[9,0,56,3],
 "structNvidiaEncoder.html#a6148961323d7c225188fecad61d2358d":[9,0,56,0],
 "structNvidiaEncoder.html#a69451df151eec51e0f4f7a258dec8e5d":[9,0,56,1],
 "structNvidiaEncoder.html#a955fc9b03169bd06a8bdc33f366e916b":[9,0,56,7],
 "structNvidiaEncoder.html#aa54fc34114bd9f8f7521bccde9760418":[9,0,56,5],
-"structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709":[9,0,56,16],
+"structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709":[9,0,56,17],
 "structNvidiaEncoder.html#abaedbb50f564c663cae9bd38b2bd05e3":[9,0,56,4],
 "structNvidiaEncoder.html#abf286092a0fcee802960d70b27e32bbf":[9,0,56,2],
 "structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26":[9,0,56,8],
 "structNvidiaEncoder.html#adb88613a9ef984d97367a5e8f48933e8":[9,0,56,10],
 "structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d":[9,0,56,14],
 "structNvidiaEncoder.html#af5f260d715aee66892c981d206ae5e32":[9,0,56,9],
-"structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[9,0,56,17],
+"structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[9,0,56,18],
 "structOSXFilenames.html":[9,0,58],
 "structOSXFilenames.html#abea7caa7613ceaec2cb9ea802f27114d":[9,0,58,0],
 "structOSXFilenames.html#afb130cc3d8df974472a08125d2ded88d":[9,0,58,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "structUDPContext.html#ad42afbb6f02d3eb6c0219c1e3e1e01b1":[9,0,78,25],
 "structUDPContext.html#ad6bee4990811e47999fe14af48dec4ff":[9,0,78,30],
 "structUDPContext.html#ad7c756eb5de79b2b4cff799ac64fdc92":[9,0,78,6],
-"structUDPContext.html#ad80630f9c73e382c55c08c0563d42e5d":[9,0,78,12],
-"structUDPContext.html#add40a820f85710da36f9198bc825c5f5":[9,0,78,24],
-"structUDPContext.html#aebe86e1f7098e65958116ec39f3f5a0e":[9,0,78,29]
+"structUDPContext.html#ad80630f9c73e382c55c08c0563d42e5d":[9,0,78,12]
 };

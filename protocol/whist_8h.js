@@ -74,7 +74,6 @@ var whist_8h =
     [ "USING_NVIDIA_CAPTURE", "whist_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6", null ],
     [ "USING_NVIDIA_ENCODE", "whist_8h.html#a8c14c321fd244515ad04ff39026feb75", null ],
     [ "USING_SERVERSIDE_SCALE", "whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb", null ],
-    [ "VBV_BUF_SIZE_IN_MS", "whist_8h.html#a0a898e70d28851bfeacea7bec51df54d", null ],
     [ "VSYNC_ON", "whist_8h.html#a08b5ca53d7a67e07145271921a829015", null ],
     [ "WHIST_ARGS_MAXLEN", "whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f", null ],
     [ "WHIST_IDENTIFIER_MAXLEN", "whist_8h.html#a7a30c0b9e28fae7471d7ee8e2a229c7d", null ],

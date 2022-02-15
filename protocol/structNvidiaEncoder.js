@@ -16,6 +16,7 @@ var structNvidiaEncoder =
     [ "pitch", "structNvidiaEncoder.html#a3f18f1a0ee86b589b302abbdd1869512", null ],
     [ "registered_resource", "structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d", null ],
     [ "resource_cache", "structNvidiaEncoder.html#a21f14692352db418bda380e0a03c9b95", null ],
+    [ "vbv_size", "structNvidiaEncoder.html#a40c5605f9abc56c722b376041190aa34", null ],
     [ "wants_iframe", "structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709", null ],
     [ "width", "structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015", null ]
 ];

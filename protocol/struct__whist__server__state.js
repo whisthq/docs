@@ -15,6 +15,7 @@ var struct__whist__server__state =
     [ "encoder_factory_result", "struct__whist__server__state.html#a9863d05bf12f75a515468831ff382bc7", null ],
     [ "encoder_factory_server_h", "struct__whist__server__state.html#a2045913794c305c89eee94730115bf09", null ],
     [ "encoder_factory_server_w", "struct__whist__server__state.html#a73135920c72eca5945418fb4ee829c2a", null ],
+    [ "encoder_factory_vbv_size", "struct__whist__server__state.html#a722215d0f5954fd907c82cc2500d775b", null ],
     [ "encoder_finished", "struct__whist__server__state.html#a5e1b1507f23bda87142d4907a51885de", null ],
     [ "exiting", "struct__whist__server__state.html#a900ee419fd1e1dcdebecbc683ee1173c", null ],
     [ "input_device", "struct__whist__server__state.html#a67256a4bfb719a4477601ed8d1f56659", null ],

@@ -84,10 +84,11 @@ var NAVTREEINDEX7 =
 "server_2network_8h.html#ad881eeb396b9af8437f12ddd01820042":[10,0,1,8,5],
 "server_2network_8h_source.html":[10,0,1,8],
 "server_2video_8c.html":[10,0,1,16],
-"server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08":[10,0,1,16,3],
+"server_2video_8c.html#a26603a17edf486ab02cf85b75e60eb08":[10,0,1,16,4],
 "server_2video_8c.html#a4d16244d4d928bf1d3fc27543bd7a03e":[10,0,1,16,0],
 "server_2video_8c.html#a54eafd80e10b63aa9cf7feaa7bce061d":[10,0,1,16,1],
 "server_2video_8c.html#ad846e33fa77d9246e697aa1142e2bd5c":[10,0,1,16,2],
+"server_2video_8c.html#afe040a2939d34d74411e333c579894f1":[10,0,1,16,3],
 "server_2video_8h.html":[10,0,1,17],
 "server_2video_8h.html#a26603a17edf486ab02cf85b75e60eb08":[10,0,1,17,0],
 "server_2video_8h_source.html":[10,0,1,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structClipboardThread.html#abd12e47d78149eb49150219c8b73690e":[9,0,17,0],
 "structColorTree.html":[9,0,18],
 "structColorTree.html#a46a3b1d9239f5fd467ec97cd067b9a96":[9,0,18,0],
-"structColorTree.html#ab3836a4a5981a7cf4ef553d25d9b0361":[9,0,18,1],
-"structDecodedFrameData.html":[9,0,19]
+"structColorTree.html#ab3836a4a5981a7cf4ef553d25d9b0361":[9,0,18,1]
 };

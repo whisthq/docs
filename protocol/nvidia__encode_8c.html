@@ -106,18 +106,18 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2652e81003368f8bf0501290ac82bfe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a2652e81003368f8bf0501290ac82bfe8">create_nvidia_encoder</a> (int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int out_width, int out_height, CUcontext cuda_context)</td></tr>
-<tr class="memdesc:a2652e81003368f8bf0501290ac82bfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new nvidia encoder.  <a href="nvidia__encode_8c.html#a2652e81003368f8bf0501290ac82bfe8">More...</a><br /></td></tr>
-<tr class="separator:a2652e81003368f8bf0501290ac82bfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8842228e3e58bd05e44a6c8f1d665d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#ad8842228e3e58bd05e44a6c8f1d665d7">create_nvidia_encoder</a> (int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec, int out_width, int out_height, int vbv_size, CUcontext cuda_context)</td></tr>
+<tr class="memdesc:ad8842228e3e58bd05e44a6c8f1d665d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new nvidia encoder.  <a href="nvidia__encode_8c.html#ad8842228e3e58bd05e44a6c8f1d665d7">More...</a><br /></td></tr>
+<tr class="separator:ad8842228e3e58bd05e44a6c8f1d665d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a526f8efc8ebb82f02cf739318642d291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a526f8efc8ebb82f02cf739318642d291">nvidia_encoder_frame_intake</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, <a class="el" href="structRegisteredResource.html">RegisteredResource</a> resource_to_register)</td></tr>
 <tr class="memdesc:a526f8efc8ebb82f02cf739318642d291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the input data into the nvidia encoder.  <a href="nvidia__encode_8c.html#a526f8efc8ebb82f02cf739318642d291">More...</a><br /></td></tr>
 <tr class="separator:a526f8efc8ebb82f02cf739318642d291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e">nvidia_encoder_encode</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the most recently intake'd frame.  <a href="nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e">More...</a><br /></td></tr>
 <tr class="separator:aaa3ec6c4cf2408824bdb8c7be1cc809e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9a101c14673529050b3bf984b92194"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a4b9a101c14673529050b3bf984b92194">nvidia_reconfigure_encoder</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, int width, int height, int bitrate, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec)</td></tr>
-<tr class="memdesc:a4b9a101c14673529050b3bf984b92194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will reconfigure an nvidia encoder.  <a href="nvidia__encode_8c.html#a4b9a101c14673529050b3bf984b92194">More...</a><br /></td></tr>
-<tr class="separator:a4b9a101c14673529050b3bf984b92194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82502cbe7aca39dfde299b071c4e2e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#ad82502cbe7aca39dfde299b071c4e2e4">nvidia_reconfigure_encoder</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder, int width, int height, int bitrate, int vbv_size, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec)</td></tr>
+<tr class="memdesc:ad82502cbe7aca39dfde299b071c4e2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will reconfigure an nvidia encoder.  <a href="nvidia__encode_8c.html#ad82502cbe7aca39dfde299b071c4e2e4">More...</a><br /></td></tr>
+<tr class="separator:ad82502cbe7aca39dfde299b071c4e2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12a20bac4fd4d9b21cc2bbcd9c559ba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a12a20bac4fd4d9b21cc2bbcd9c559ba4">nvidia_set_iframe</a> (<a class="el" href="structNvidiaEncoder.html">NvidiaEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a12a20bac4fd4d9b21cc2bbcd9c559ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well.  <a href="nvidia__encode_8c.html#a12a20bac4fd4d9b21cc2bbcd9c559ba4">More...</a><br /></td></tr>
 <tr class="separator:a12a20bac4fd4d9b21cc2bbcd9c559ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,8 +169,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2652e81003368f8bf0501290ac82bfe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2652e81003368f8bf0501290ac82bfe8">&#9670;&nbsp;</a></span>create_nvidia_encoder()</h2>
+<a id="ad8842228e3e58bd05e44a6c8f1d665d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8842228e3e58bd05e44a6c8f1d665d7">&#9670;&nbsp;</a></span>create_nvidia_encoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,6 +202,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vbv_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">CUcontext&#160;</td>
           <td class="paramname"><em>cuda_context</em>&#160;</td>
         </tr>
@@ -220,6 +226,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">codec</td><td>Which codec type (h264 or h265) to use </td></tr>
     <tr><td class="paramname">out_width</td><td>Width of the output frame </td></tr>
     <tr><td class="paramname">out_height</td><td>Height of the output frame </td></tr>
+    <tr><td class="paramname">vbv_size</td><td>VBV size in bits </td></tr>
     <tr><td class="paramname">cuda_context</td><td>The CUDA context to use for the encoding session</td></tr>
   </table>
   </dd>
@@ -319,8 +326,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b9a101c14673529050b3bf984b92194"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b9a101c14673529050b3bf984b92194">&#9670;&nbsp;</a></span>nvidia_reconfigure_encoder()</h2>
+<a id="ad82502cbe7aca39dfde299b071c4e2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82502cbe7aca39dfde299b071c4e2e4">&#9670;&nbsp;</a></span>nvidia_reconfigure_encoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,6 +359,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vbv_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td>
           <td class="paramname"><em>codec</em>&#160;</td>
         </tr>
@@ -368,6 +381,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>The nvidia encoder to reconfigure </td></tr>
     <tr><td class="paramname">bitrate</td><td>The new bitrate </td></tr>
+    <tr><td class="paramname">vbv_size</td><td>The new VBV size in bits </td></tr>
     <tr><td class="paramname">codec</td><td>The new codec </td></tr>
     <tr><td class="paramname">out_width</td><td>The new output width </td></tr>
     <tr><td class="paramname">out_height</td><td>The new output height</td></tr>

@@ -93,12 +93,12 @@ var NAVTREEINDEX =
 "lodepng_8c.html#ad4b9dc33569e24062e077f5a69ead178",
 "network__algorithm_8c.html#a6bc7db7cee0d6147c36c148905241b66",
 "sdl__utils_8c.html#aec1c03b128be02a97fe22c4744445f3a",
-"structDecodedFrameData.html#a4b9999ad62fc81cba381d10728bc2598",
-"structLodePNGInfo.html#a80207e3e53c959b2285636496a3dd3f1",
-"structUDPContext.html#aec2b6de3cefd940f259e6d8e019a9066",
-"structX11CaptureDevice.html#acef1859db60b99af218e316f7cec5772",
-"whist_8c.html#a37f44bf45880153c07ddf47a4dcaf135",
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bac33759fb0db0773e945f540a5de345f1"
+"structDecodedFrameData.html",
+"structLodePNGInfo.html#a7394fc7407c168180b2cf64896fbe7fc",
+"structUDPContext.html#add40a820f85710da36f9198bc825c5f5",
+"structX11CaptureDevice.html#ac49a89635daec815ee50fb42c1d4d444",
+"whist_8c.html#a11339a4842b7eb0c8b38dd9593eb9d4f",
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bac1a909c4b1cf9ea2b873063026410cf9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
