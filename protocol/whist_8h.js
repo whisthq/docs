@@ -328,6 +328,7 @@ var whist_8h =
       [ "SMESSAGE_FILE_METADATA", "whist_8h.html#a7c0601110e75dab446fcca0c02609353ab6f26910ff293a00e1a9ece3de4d5e90", null ],
       [ "SMESSAGE_FILE_DATA", "whist_8h.html#a7c0601110e75dab446fcca0c02609353af1edac653bbbf90d0ed4e295553b8363", null ],
       [ "SMESSAGE_NOTIFICATION", "whist_8h.html#a7c0601110e75dab446fcca0c02609353acdb4f2543875b75aaa97161302076490", null ],
+      [ "SMESSAGE_INITIATE_UPLOAD", "whist_8h.html#a7c0601110e75dab446fcca0c02609353acf00baeb65865f3b051c90e9644ab67d", null ],
       [ "SMESSAGE_QUIT", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a62adb843bfd6857bbf5f634425c404d1", null ]
     ] ],
     [ "bit_array_clear_all", "whist_8h.html#a7d59f1d85585b3ff640a8ece33c6da5b", null ],

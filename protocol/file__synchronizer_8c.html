@@ -115,9 +115,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae5f437d386ac037bd7b4fb512f516034"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#ae5f437d386ac037bd7b4fb512f516034">file_synchronizer_write_file_chunk</a> (<a class="el" href="structFileData.html">FileData</a> *file_chunk)</td></tr>
 <tr class="memdesc:ae5f437d386ac037bd7b4fb512f516034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a file chunk to a transferring file.  <a href="file__synchronizer_8c.html#ae5f437d386ac037bd7b4fb512f516034">More...</a><br /></td></tr>
 <tr class="separator:ae5f437d386ac037bd7b4fb512f516034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addd9f652a0879ce1d5f93015f35785ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#addd9f652a0879ce1d5f93015f35785ab">file_synchronizer_set_file_reading_basic_metadata</a> (char *file_path, <a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a> transfer_type, <a class="el" href="unionFileEventInfo.html">FileEventInfo</a> *event_info)</td></tr>
-<tr class="memdesc:addd9f652a0879ce1d5f93015f35785ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the basic file information in the file synchrony array for a file to be read.  <a href="file__synchronizer_8c.html#addd9f652a0879ce1d5f93015f35785ab">More...</a><br /></td></tr>
-<tr class="separator:addd9f652a0879ce1d5f93015f35785ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31285427e995937b17de7bc429c47bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#ac31285427e995937b17de7bc429c47bf">file_synchronizer_set_file_reading_basic_metadata</a> (const char *file_path, <a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a> transfer_type, <a class="el" href="unionFileEventInfo.html">FileEventInfo</a> *event_info)</td></tr>
+<tr class="memdesc:ac31285427e995937b17de7bc429c47bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the basic file information in the file synchrony array for a file to be read.  <a href="file__synchronizer_8c.html#ac31285427e995937b17de7bc429c47bf">More...</a><br /></td></tr>
+<tr class="separator:ac31285427e995937b17de7bc429c47bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaab672043abddfb4a1f0c5860579b0ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#aaab672043abddfb4a1f0c5860579b0ce">file_synchronizer_open_file_for_reading</a> (int file_index, <a class="el" href="structFileMetadata.html">FileMetadata</a> **file_metadata_ptr)</td></tr>
 <tr class="memdesc:aaab672043abddfb4a1f0c5860579b0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file and generate the Open a file for reading and generate the <a class="el" href="structFileMetadata.html" title="A packet of data containing a file&#39;s metadata.">FileMetadata</a>.  <a href="file__synchronizer_8c.html#aaab672043abddfb4a1f0c5860579b0ce">More...</a><br /></td></tr>
 <tr class="separator:aaab672043abddfb4a1f0c5860579b0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,8 +294,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="addd9f652a0879ce1d5f93015f35785ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addd9f652a0879ce1d5f93015f35785ab">&#9670;&nbsp;</a></span>file_synchronizer_set_file_reading_basic_metadata()</h2>
+<a id="ac31285427e995937b17de7bc429c47bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31285427e995937b17de7bc429c47bf">&#9670;&nbsp;</a></span>file_synchronizer_set_file_reading_basic_metadata()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +303,7 @@ Usage</h1>
         <tr>
           <td class="memname">void file_synchronizer_set_file_reading_basic_metadata </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>file_path</em>, </td>
         </tr>
         <tr>
