@@ -13,6 +13,7 @@ var whist_8h =
     [ "WhistServerMessage", "structWhistServerMessage.html", "structWhistServerMessage" ],
     [ "WhistDestination", "structWhistDestination.html", "structWhistDestination" ],
     [ "BitArray", "structBitArray.html", "structBitArray" ],
+    [ "WhistSubsystemParams", "structWhistSubsystemParams.html", "structWhistSubsystemParams" ],
     [ "ACK_REFRESH_MS", "whist_8h.html#a407e78922a862311fd4f35eeef889630", null ],
     [ "AUDIO_FREQUENCY", "whist_8h.html#aae969438a57a86fddf0cf53106c9b6b4", null ],
     [ "AVG_FPS_DURATION", "whist_8h.html#a6fb202279d179dd749b095338241329b", null ],
@@ -104,6 +105,7 @@ var whist_8h =
     [ "WhistOSType", "whist_8h.html#a00a12b04c002bc1d820fc3fdbe717cae", null ],
     [ "WhistServerMessage", "whist_8h.html#af354d3977701249a8ad159d0eeda62ff", null ],
     [ "WhistServerMessageType", "whist_8h.html#a5885a6725785a59084164ccfedb1073a", null ],
+    [ "WhistSubsystemParams", "whist_8h.html#a90c5910ec08151168704244ea8256f1a", null ],
     [ "CaptureDeviceType", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600", [
       [ "NVIDIA_DEVICE", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c", null ],
       [ "X11_DEVICE", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621", null ]
@@ -347,5 +349,5 @@ var whist_8h =
     [ "terminate_protocol", "whist_8h.html#adc70ab64077706c3578a5d50fb4820d5", null ],
     [ "trim_utf8_string", "whist_8h.html#a8643207a604b19f3fefe5046bd3c0290", null ],
     [ "whist_git_revision", "whist_8h.html#acd2a6b85af00a5afce40e6c334575ec0", null ],
-    [ "whist_init_subsystems", "whist_8h.html#ac53d33c8e6e74a072be3b2319b56cb75", null ]
+    [ "whist_init_subsystems", "whist_8h.html#a11339a4842b7eb0c8b38dd9593eb9d4f", null ]
 ];

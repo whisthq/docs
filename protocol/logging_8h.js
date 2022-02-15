@@ -32,7 +32,7 @@ var logging_8h =
     [ "internal_logging_printf", "logging_8h.html#aab5eb353926ac1f060cf87f4306d334f", null ],
     [ "print_stacktrace", "logging_8h.html#aab45aa94b75eeb446eaed8a8ad1c65a6", null ],
     [ "test_set_pause_state_on_logger_thread", "logging_8h.html#a54581b1f2ee2b138b99408b358df690b", null ],
-    [ "whist_init_logger", "logging_8h.html#aec2b3c8a4110db3dacd0a0de88e5d556", null ],
+    [ "whist_init_logger", "logging_8h.html#aa06a92c6184d9ab370f2702832334893", null ],
     [ "debug_tag", "logging_8h.html#abf8797be9592c40509360ecfb19d8f46", null ],
     [ "error_tag", "logging_8h.html#a3589fb13fa885b89676847ffb2697f0e", null ],
     [ "fatal_error_tag", "logging_8h.html#aff25ab76e46fc4d636541212d924974a", null ],

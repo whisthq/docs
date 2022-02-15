@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_5fwhist_5fserver_5fconfig_2210',['_whist_server_config',['../struct__whist__server__config.html',1,'']]],
-  ['_5fwhist_5fserver_5fstate_2211',['_whist_server_state',['../struct__whist__server__state.html',1,'']]]
+  ['_5fwhist_5fserver_5fconfig_2213',['_whist_server_config',['../struct__whist__server__config.html',1,'']]],
+  ['_5fwhist_5fserver_5fstate_2214',['_whist_server_state',['../struct__whist__server__state.html',1,'']]]
 ];

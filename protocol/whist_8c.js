@@ -20,5 +20,5 @@ var whist_8c =
     [ "terminate_protocol", "whist_8c.html#a637da5470a9f4107a59054c340442a7f", null ],
     [ "trim_utf8_string", "whist_8c.html#a8643207a604b19f3fefe5046bd3c0290", null ],
     [ "whist_git_revision", "whist_8c.html#acd2a6b85af00a5afce40e6c334575ec0", null ],
-    [ "whist_init_subsystems", "whist_8c.html#ac53d33c8e6e74a072be3b2319b56cb75", null ]
+    [ "whist_init_subsystems", "whist_8c.html#a11339a4842b7eb0c8b38dd9593eb9d4f", null ]
 ];
