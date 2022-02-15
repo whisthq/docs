@@ -1,5 +1,11 @@
 var NAVTREEINDEX8 =
 {
+"structDynamicBuffer.html#a938f2c8aa90ab824c05372f1903b9ac3":[8,0,6,0],
+"structDynamicBuffer.html#ab086b6e22e3b2018e9cb35aaf637e22c":[8,0,6,1],
+"structDynamicBuffer.html#ad80cc8f3a40b8681fa9ede1f2aa19c79":[8,0,6,2],
+"structEncodedAudio.html":[9,0,21],
+"structEncodedAudio.html#a5955d96098e033891a5bae062868cd05":[9,0,21,2],
+"structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3":[9,0,21,1],
 "structEncodedAudio.html#a9f0b62fc01a231f73c90321f98c65e96":[9,0,21,0],
 "structFECDecoder.html":[9,0,23],
 "structFECDecoder.html#a2d2fe518ed5bb1b909dcb78baa107202":[9,0,23,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX8 =
 "structLodePNGInfo.html#a93a8e823ac715dbdd625f023d8fdebc2":[9,0,47,27],
 "structLodePNGInfo.html#a98b59c3760bda184bb16c9713b430bc3":[9,0,47,3],
 "structLodePNGInfo.html#a994de0c74ef1092f056ff534e00dfa0d":[9,0,47,0],
-"structLodePNGInfo.html#a9adb9f74ab90716ae107b99da5384424":[9,0,47,38],
-"structLodePNGInfo.html#a9b8e29b7e7b4908a2de0275e01a828ed":[9,0,47,28],
-"structLodePNGInfo.html#a9e6af4de8972b039ecb137fb32167505":[9,0,47,5],
-"structLodePNGInfo.html#aa94c65344af02472adb9c71eae2e765f":[9,0,47,1],
-"structLodePNGInfo.html#aac321d27e65c54e56d6092d3a6400a81":[9,0,47,36],
-"structLodePNGInfo.html#abf638e191edaeaa2b02c371a381e3a89":[9,0,47,2],
-"structLodePNGInfo.html#ad6f2171d9f87716e5010f6c5352f9855":[9,0,47,29]
+"structLodePNGInfo.html#a9adb9f74ab90716ae107b99da5384424":[9,0,47,38]
 };

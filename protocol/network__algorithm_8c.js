@@ -1,6 +1,10 @@
 var network__algorithm_8c =
 [
     [ "BURST_BITRATE_RATIO", "network__algorithm_8c.html#a9b3aee73161a6fead286063d1bd7b829", null ],
+    [ "DPI_BITRATE_PER_PIXEL", "network__algorithm_8c.html#a9b56288712fb54f074f73824d2cff80c", null ],
+    [ "DPI_RATIO", "network__algorithm_8c.html#a32dc93d4d3d6bc3e10bd7183d9f7d80f", null ],
+    [ "DPI_RATIO_EXPONENT", "network__algorithm_8c.html#ad3e8baf17cd31cb0e77a1218204cdbe5", null ],
+    [ "DPI_SCALING_FACTOR", "network__algorithm_8c.html#adc187fa1849cfbfb9186287f45ae876a", null ],
     [ "EWMA_STATS_SECONDS", "network__algorithm_8c.html#a72f898a5d3f32ed5a20587d3b97383a2", null ],
     [ "MAXIMUM_BITRATE", "network__algorithm_8c.html#af99345a216f300c72251d94158573c1c", null ],
     [ "MAXIMUM_BITRATE_PER_PIXEL", "network__algorithm_8c.html#a682172562c46e8d38687ea33bc1c3a59", null ],
@@ -16,9 +20,10 @@ var network__algorithm_8c =
     [ "STARTING_VIDEO_BITRATE", "network__algorithm_8c.html#a6bc7db7cee0d6147c36c148905241b66", null ],
     [ "TOTAL_AUDIO_BITRATE", "network__algorithm_8c.html#addd3ad8c921714260551309e58328c37", null ],
     [ "ewma_ratio_bitrate", "network__algorithm_8c.html#aedd260a3c19ffe815276936a34578934", null ],
-    [ "get_default_network_settings", "network__algorithm_8c.html#a5351a05abacbcd55adae121fb380508c", null ],
+    [ "get_default_network_settings", "network__algorithm_8c.html#a8d6eec9a8b9f1a0f058443026cbab210", null ],
     [ "get_desired_network_settings", "network__algorithm_8c.html#a5fca7d6bd4c3f135046f727ee8224bf7", null ],
     [ "get_starting_network_settings", "network__algorithm_8c.html#a3164d3eec2e8fbcedab1f454e2442483", null ],
+    [ "network_algo_set_dpi", "network__algorithm_8c.html#ab99c00916505d0add8934a3d218f40d5", null ],
     [ "timed_ewma_ratio_bitrate", "network__algorithm_8c.html#a514ba7746992c1c82a8ddb53628aba87", null ],
     [ "output_height", "network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104", null ],
     [ "output_width", "network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ]

@@ -1,5 +1,11 @@
 var NAVTREEINDEX7 =
 {
+"sdl__utils_8h.html":[10,0,0,19],
+"sdl__utils_8h.html#a1081ae59fbf90e16f9d12ef7a97f0555":[10,0,0,19,6],
+"sdl__utils_8h.html#a2a20ede981c49da978e972e7e61629d8":[10,0,0,19,7],
+"sdl__utils_8h.html#a4115192313cdb78079bd69ca3fbf5606":[10,0,0,19,8],
+"sdl__utils_8h.html#a822a897da1061934256086a254560d9c":[10,0,0,19,10],
+"sdl__utils_8h.html#a993a121aa7c5869498703f17d41262ab":[10,0,0,19,4],
 "sdl__utils_8h.html#a9dbcc14b6e31b62aedb3db07b1b45e1f":[10,0,0,19,11],
 "sdl__utils_8h.html#ab65ff6de4da0adc51ef3fa86636bef8c":[10,0,0,19,9],
 "sdl__utils_8h.html#abf404550e168d933d326c980202e21e7":[10,0,0,19,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX7 =
 "structDecodedFrameData.html#a88dd4ffb3f9846ec887568a91eda2f3d":[9,0,19,1],
 "structDecodedFrameData.html#a9d101bb9cda6e9feb3a1be64b2827575":[9,0,19,0],
 "structDynamicBuffer.html":[8,0,6],
-"structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac":[8,0,6,3],
-"structDynamicBuffer.html#a938f2c8aa90ab824c05372f1903b9ac3":[8,0,6,0],
-"structDynamicBuffer.html#ab086b6e22e3b2018e9cb35aaf637e22c":[8,0,6,1],
-"structDynamicBuffer.html#ad80cc8f3a40b8681fa9ede1f2aa19c79":[8,0,6,2],
-"structEncodedAudio.html":[9,0,21],
-"structEncodedAudio.html#a5955d96098e033891a5bae062868cd05":[9,0,21,2],
-"structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3":[9,0,21,1]
+"structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac":[8,0,6,3]
 };

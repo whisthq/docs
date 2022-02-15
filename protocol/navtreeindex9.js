@@ -1,5 +1,11 @@
 var NAVTREEINDEX9 =
 {
+"structLodePNGInfo.html#a9b8e29b7e7b4908a2de0275e01a828ed":[9,0,47,28],
+"structLodePNGInfo.html#a9e6af4de8972b039ecb137fb32167505":[9,0,47,5],
+"structLodePNGInfo.html#aa94c65344af02472adb9c71eae2e765f":[9,0,47,1],
+"structLodePNGInfo.html#aac321d27e65c54e56d6092d3a6400a81":[9,0,47,36],
+"structLodePNGInfo.html#abf638e191edaeaa2b02c371a381e3a89":[9,0,47,2],
+"structLodePNGInfo.html#ad6f2171d9f87716e5010f6c5352f9855":[9,0,47,29],
 "structLodePNGInfo.html#adecaa88e64ed563ad05acd66a36d9a55":[9,0,47,8],
 "structLodePNGInfo.html#ae9f9f594e63c910d467a14f550960837":[9,0,47,24],
 "structLodePNGInfo.html#afcfedb61356a1c9b328e4098f03216af":[9,0,47,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX9 =
 "structUDPNetworkPacket.html#a135e1fa43afee52a831053abd60b3e3a":[9,0,79,0],
 "structUDPNetworkPacket.html#a9d998cf16e2327d21864ad30ac6602c3":[9,0,79,1],
 "structUDPNetworkPacket.html#ae0c0802b12d09c95b75424e41c1cd6ec":[9,0,79,2],
-"structUDPPacket.html":[9,0,80],
-"structUDPPacket.html#a059d34ead450788a50719ee8c643f296":[9,0,80,13],
-"structUDPPacket.html#a092b46960ea776417059e2f77878f174":[9,0,80,6],
-"structUDPPacket.html#a138b4ffd2f1235bc8a287e121583ccc5":[9,0,80,5],
-"structUDPPacket.html#a20c28f810560ec34ec156fe940d31926":[9,0,80,0],
-"structUDPPacket.html#a248091c90d08e6aa85ec427e3e68eadf":[9,0,80,2],
-"structUDPPacket.html#a2994f5c6c546484de47449bc7100afbf":[9,0,80,8]
+"structUDPPacket.html":[9,0,80]
 };
