@@ -35,7 +35,6 @@ var udp_8c =
     [ "udp_register_nack_buffer", "udp_8c.html#aed5f450b0434a42cec5d03a819d29eb3", null ],
     [ "udp_register_ring_buffer", "udp_8c.html#a82678fad4b2b94e4a1e6e73bd07c9fcf", null ],
     [ "udp_resend_packet", "udp_8c.html#aee4b4dae17ebfff109828253768fec80", null ],
-    [ "connected", "udp_8c.html#ae4e4ce6a658b77aa4bb7753403794776", null ],
     [ "latency", "udp_8c.html#a5120ece93dfddf5638a59e495e9c6d46", null ],
     [ "port_mappings", "udp_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a", null ]
 ];
