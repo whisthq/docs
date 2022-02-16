@@ -96,13 +96,14 @@ $(document).ready(function(){initNavTree('cursor_8h.html',''); initResizable(); 
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
 </div>
 <p><a href="cursor_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistCursorImage.html">WhistCursorImage</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursor image.  <a href="structWhistCursorImage.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursor image.  <a href="structWhistCursorInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -120,9 +121,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ac55c1567bb95b2e5a707008809f256bc"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="cursor_8h.html#acbd9a23a669810691b3befd88521249f">WhistCursorID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#ac55c1567bb95b2e5a707008809f256bc">WhistCursorID</a></td></tr>
 <tr class="memdesc:ac55c1567bb95b2e5a707008809f256bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursor ID.  <a href="cursor_8h.html#ac55c1567bb95b2e5a707008809f256bc">More...</a><br /></td></tr>
 <tr class="separator:ac55c1567bb95b2e5a707008809f256bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87ca58e119691de8ec932d8bdaea2183"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistCursorImage.html">WhistCursorImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#a87ca58e119691de8ec932d8bdaea2183">WhistCursorImage</a></td></tr>
-<tr class="memdesc:a87ca58e119691de8ec932d8bdaea2183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursor image.  <a href="cursor_8h.html#a87ca58e119691de8ec932d8bdaea2183">More...</a><br /></td></tr>
-<tr class="separator:a87ca58e119691de8ec932d8bdaea2183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86edff3667e2c1dfd06afb826d9c383f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#a86edff3667e2c1dfd06afb826d9c383f">WhistCursorInfo</a></td></tr>
+<tr class="memdesc:a86edff3667e2c1dfd06afb826d9c383f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursor image.  <a href="cursor_8h.html#a86edff3667e2c1dfd06afb826d9c383f">More...</a><br /></td></tr>
+<tr class="separator:a86edff3667e2c1dfd06afb826d9c383f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -158,15 +159,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a6bd12f0e51951988813d790d1e1bb484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#a6bd12f0e51951988813d790d1e1bb484">init_cursors</a> (void)</td></tr>
 <tr class="memdesc:a6bd12f0e51951988813d790d1e1bb484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all cursors.  <a href="cursor_8h.html#a6bd12f0e51951988813d790d1e1bb484">More...</a><br /></td></tr>
 <tr class="separator:a6bd12f0e51951988813d790d1e1bb484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adac79748ef15f0780a545d3b0c047986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#adac79748ef15f0780a545d3b0c047986">get_current_cursor</a> (<a class="el" href="structWhistCursorImage.html">WhistCursorImage</a> *image)</td></tr>
-<tr class="memdesc:adac79748ef15f0780a545d3b0c047986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current cursor image.  <a href="cursor_8h.html#adac79748ef15f0780a545d3b0c047986">More...</a><br /></td></tr>
-<tr class="separator:adac79748ef15f0780a545d3b0c047986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208ea035645f4e2e9ebab713196a54a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#a208ea035645f4e2e9ebab713196a54a4">get_current_cursor</a> (void)</td></tr>
+<tr class="memdesc:a208ea035645f4e2e9ebab713196a54a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current cursor image.  <a href="cursor_8h.html#a208ea035645f4e2e9ebab713196a54a4">More...</a><br /></td></tr>
+<tr class="separator:a208ea035645f4e2e9ebab713196a54a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed660fcbbbbe081a3d827915035c35b7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#aed660fcbbbbe081a3d827915035c35b7">get_cursor_info_size</a> (<a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *image)</td></tr>
+<tr class="memdesc:aed660fcbbbbe081a3d827915035c35b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct.  <a href="cursor_8h.html#aed660fcbbbbe081a3d827915035c35b7">More...</a><br /></td></tr>
+<tr class="separator:aed660fcbbbbe081a3d827915035c35b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
-<h1><a class="anchor" id="autotoc_md140"></a>
+<h1><a class="anchor" id="autotoc_md142"></a>
 @brief This file defines the cursor types, functions, init and get.</h1>
-<h1><a class="anchor" id="autotoc_md141"></a>
+<h1><a class="anchor" id="autotoc_md143"></a>
 Usage</h1>
 <p>Use InitCursor to load the appropriate cursor images for a specific OS, and then GetCurrentCursor to retrieve what the cursor shold be on the OS (drag-window, arrow, etc.). </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -216,14 +220,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a87ca58e119691de8ec932d8bdaea2183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87ca58e119691de8ec932d8bdaea2183">&#9670;&nbsp;</a></span>WhistCursorImage</h2>
+<a id="a86edff3667e2c1dfd06afb826d9c383f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86edff3667e2c1dfd06afb826d9c383f">&#9670;&nbsp;</a></span>WhistCursorInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structWhistCursorImage.html">WhistCursorImage</a> <a class="el" href="structWhistCursorImage.html">WhistCursorImage</a></td>
+          <td class="memname">typedef struct <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -305,29 +309,51 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="adac79748ef15f0780a545d3b0c047986"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adac79748ef15f0780a545d3b0c047986">&#9670;&nbsp;</a></span>get_current_cursor()</h2>
+<a id="a208ea035645f4e2e9ebab713196a54a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208ea035645f4e2e9ebab713196a54a4">&#9670;&nbsp;</a></span>get_current_cursor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void get_current_cursor </td>
+          <td class="memname"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a>* get_current_cursor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistCursorImage.html">WhistCursorImage</a> *&#160;</td>
-          <td class="paramname"><em>image</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Returns the current cursor image. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current cursor image </dd></dl>
+
+</div>
+</div>
+<a id="aed660fcbbbbe081a3d827915035c35b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed660fcbbbbe081a3d827915035c35b7">&#9670;&nbsp;</a></span>get_cursor_info_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t get_cursor_info_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the size of the <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td><a class="el" href="structWhistCursorImage.html" title="Cursor image.">WhistCursorImage</a> buffer to write to </td></tr>
+    <tr><td class="paramname">image</td><td>The <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct </dd></dl>
 
 </div>
 </div>

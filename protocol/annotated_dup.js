@@ -88,7 +88,7 @@ var annotated_dup =
     [ "VideoFrame", "structVideoFrame.html", "structVideoFrame" ],
     [ "WhistClientMessage", "structWhistClientMessage.html", "structWhistClientMessage" ],
     [ "WhistCursor", "structWhistCursor.html", "structWhistCursor" ],
-    [ "WhistCursorImage", "structWhistCursorImage.html", "structWhistCursorImage" ],
+    [ "WhistCursorInfo", "structWhistCursorInfo.html", "structWhistCursorInfo" ],
     [ "WhistCursorTypes", "structWhistCursorTypes.html", "structWhistCursorTypes" ],
     [ "WhistDestination", "structWhistDestination.html", "structWhistDestination" ],
     [ "WhistDiscoveryReplyMessage", "structWhistDiscoveryReplyMessage.html", "structWhistDiscoveryReplyMessage" ],
