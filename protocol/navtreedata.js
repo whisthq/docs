@@ -92,13 +92,14 @@ var NAVTREEINDEX =
 "group__timers.html#gaac67515d5dd09a5158f3ce7d1f799405",
 "lodepng_8c.html#ac432c606cccae0b22f9ec10948f56ec4",
 "network__algorithm_8c.html#a682172562c46e8d38687ea33bc1c3a59",
-"sdl__utils_8c.html#aec1c03b128be02a97fe22c4744445f3a",
-"structDecodedFrameData.html",
-"structLodePNGInfo.html#a7394fc7407c168180b2cf64896fbe7fc",
-"structUDPContext.html#add40a820f85710da36f9198bc825c5f5",
-"structX11CaptureDevice.html#ab7bc7bf3b5ddab2a71587ac8212587bc",
-"whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4",
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bab85a53812275166e0e89119914f32dab"
+"sdl__utils_8c.html#ade4f768ca0968a4e5944d25236f9a080",
+"structColorTree.html#a46a3b1d9239f5fd467ec97cd067b9a96",
+"structLodePNGInfo.html#a7014fd40ffeb1d482f72d33c020cf73e",
+"structUDPContext.html#abca5469b9d15bdae869d0dde887e69a1",
+"structX11CaptureDevice.html",
+"whist_2network_2network_8h.html#a95ee2117f941ce83f97cf7884e0dc41b",
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba9ac8de279413c83847392c6db0870cf9",
+"xtest__input__driver_8c.html#af52a094ced65a85478c81ea188fb1158"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

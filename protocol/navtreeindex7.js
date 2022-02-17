@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"sdl__utils_8c.html#ade4f768ca0968a4e5944d25236f9a080":[10,0,0,18,5],
+"sdl__utils_8c.html#ae34216ffba563226782368f47bf81216":[10,0,0,18,7],
 "sdl__utils_8c.html#aec1c03b128be02a97fe22c4744445f3a":[10,0,0,18,21],
 "sdl__utils_8c.html#af2046b7a00305043eb5d40f35eae00e2":[10,0,0,18,12],
 "sdl__utils_8c.html#af40ebe55bffaca1810f4d4e8d8dfa596":[10,0,0,18,22],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "structClipboardThread.html#a6cd482e9fcaea6bfecdbb9ed29db6b83":[9,0,17,1],
 "structClipboardThread.html#a966aeafbdcc3e15278ef3c6f24d9f883":[9,0,17,2],
 "structClipboardThread.html#abd12e47d78149eb49150219c8b73690e":[9,0,17,0],
-"structColorTree.html":[9,0,18],
-"structColorTree.html#a46a3b1d9239f5fd467ec97cd067b9a96":[9,0,18,0],
-"structColorTree.html#ab3836a4a5981a7cf4ef553d25d9b0361":[9,0,18,1]
+"structColorTree.html":[9,0,18]
 };

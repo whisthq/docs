@@ -102,10 +102,14 @@ Macros</h2></td></tr>
 <tr class="separator:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a035f1eb6db73cb497f6de67cad4ade33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33">MAX_UNORDERED_PACKETS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a035f1eb6db73cb497f6de67cad4ade33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf55b2f848a5a671949daa34c01d0d71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#aaf55b2f848a5a671949daa34c01d0d71">NACK_PACKETS_MISSING_FRAME</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:aaf55b2f848a5a671949daa34c01d0d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2bcbf05a79de1a8a42492a8e5169c22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ae2bcbf05a79de1a8a42492a8e5169c22">MAX_PACKETS</a>&#160;&#160;&#160;(<a class="el" href="fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4">get_num_fec_packets</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>, <a class="el" href="ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>), <a class="el" href="whist_8h.html#a9671b09366aac047f771b3d49b3b99a4">MAX_FEC_RATIO</a>))</td></tr>
 <tr class="separator:ae2bcbf05a79de1a8a42492a8e5169c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae1c510758ee20c3ab1c53b1bc895786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#aae1c510758ee20c3ab1c53b1bc895786">ESTIMATED_JITTER_LATENCY_RATIO</a>&#160;&#160;&#160;0.3</td></tr>
 <tr class="separator:aae1c510758ee20c3ab1c53b1bc895786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3c2ea61f618a92f70234842e1d8ab8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a7b3c2ea61f618a92f70234842e1d8ab8">NACK_STATISTICS_SEC</a>&#160;&#160;&#160;5.0</td></tr>
+<tr class="separator:a7b3c2ea61f618a92f70234842e1d8ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ebb72b79427224fce1402fe69cda5c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a8ebb72b79427224fce1402fe69cda5c1">STREAM_RESET_REQUEST_INTERVAL_MS</a>&#160;&#160;&#160;5.0</td></tr>
 <tr class="separator:a8ebb72b79427224fce1402fe69cda5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63712ce21a04379372836cb9a38e657a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a63712ce21a04379372836cb9a38e657a">MAX_UNSYNCED_FRAMES</a>&#160;&#160;&#160;6</td></tr>
@@ -303,6 +307,34 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MIN_ACCEPTABLE_STALENESS_MS&#160;&#160;&#160;100.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf55b2f848a5a671949daa34c01d0d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf55b2f848a5a671949daa34c01d0d71">&#9670;&nbsp;</a></span>NACK_PACKETS_MISSING_FRAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NACK_PACKETS_MISSING_FRAME&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b3c2ea61f618a92f70234842e1d8ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b3c2ea61f618a92f70234842e1d8ab8">&#9670;&nbsp;</a></span>NACK_STATISTICS_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NACK_STATISTICS_SEC&#160;&#160;&#160;5.0</td>
         </tr>
       </table>
 </div><div class="memdoc">

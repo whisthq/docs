@@ -133,6 +133,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a451ff9ab8f3632cc408ac1242dd1dbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e2f7541e6a30aad26fcc4f24934d32f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a6e2f7541e6a30aad26fcc4f24934d32f">last_missing_frame_nack</a></td></tr>
 <tr class="separator:a6e2f7541e6a30aad26fcc4f24934d32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa43faa0738f96fdf82f2bb0cb263002"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#afa43faa0738f96fdf82f2bb0cb263002">last_missing_frame_nack_index</a></td></tr>
+<tr class="separator:afa43faa0738f96fdf82f2bb0cb263002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8ef859b9ddbbcdb7d95801ff4781632"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#af8ef859b9ddbbcdb7d95801ff4781632">most_recent_reset_id</a></td></tr>
 <tr class="separator:af8ef859b9ddbbcdb7d95801ff4781632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cae5252355a6928ab60412187d215c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a0cae5252355a6928ab60412187d215c2">last_stream_reset_request_timer</a></td></tr>
@@ -149,6 +151,18 @@ Data Fields</h2></td></tr>
 <tr class="separator:a3229bb03ce787b257fbaef7b25a7eef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5a3ab868190bc667d4076c61454247"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247">last_nack_possibility</a></td></tr>
 <tr class="separator:a6c5a3ab868190bc667d4076c61454247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd4310b6b45c7f5df472a784e625b87"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a1bd4310b6b45c7f5df472a784e625b87">num_nacks_received</a></td></tr>
+<tr class="separator:a1bd4310b6b45c7f5df472a784e625b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad9ec2694ba2cb33f5b9abc0bdb00f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#aaad9ec2694ba2cb33f5b9abc0bdb00f6">num_original_packets_received</a></td></tr>
+<tr class="separator:aaad9ec2694ba2cb33f5b9abc0bdb00f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98690129a3aadb85db96a39252d01a9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a98690129a3aadb85db96a39252d01a9f">num_unnecessary_original_packets_received</a></td></tr>
+<tr class="separator:a98690129a3aadb85db96a39252d01a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4040ea10a7ec97c33893f20c63084a7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a4040ea10a7ec97c33893f20c63084a7a">num_unnecessary_nacks_received</a></td></tr>
+<tr class="separator:a4040ea10a7ec97c33893f20c63084a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a556b9ab1825fe65ce09864185a027d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a6a556b9ab1825fe65ce09864185a027d">num_times_nacking_saturated</a></td></tr>
+<tr class="separator:a6a556b9ab1825fe65ce09864185a027d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14941089c8847eb375cbaaa66c82eea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#ab14941089c8847eb375cbaaa66c82eea">last_nack_statistics_timer</a></td></tr>
+<tr class="separator:ab14941089c8847eb375cbaaa66c82eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structRingBuffer.html" title="RingBuffer struct for abstracting away frame reconstruction and frame retrieval.">RingBuffer</a> struct for abstracting away frame reconstruction and frame retrieval. </p>
@@ -280,6 +294,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="afa43faa0738f96fdf82f2bb0cb263002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa43faa0738f96fdf82f2bb0cb263002">&#9670;&nbsp;</a></span>last_missing_frame_nack_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuffer::last_missing_frame_nack_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6c5a3ab868190bc667d4076c61454247"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c5a3ab868190bc667d4076c61454247">&#9670;&nbsp;</a></span>last_nack_possibility</h2>
 
@@ -288,6 +316,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool RingBuffer::last_nack_possibility</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab14941089c8847eb375cbaaa66c82eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14941089c8847eb375cbaaa66c82eea">&#9670;&nbsp;</a></span>last_nack_statistics_timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> RingBuffer::last_nack_statistics_timer</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -420,6 +462,34 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a1bd4310b6b45c7f5df472a784e625b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd4310b6b45c7f5df472a784e625b87">&#9670;&nbsp;</a></span>num_nacks_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuffer::num_nacks_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaad9ec2694ba2cb33f5b9abc0bdb00f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad9ec2694ba2cb33f5b9abc0bdb00f6">&#9670;&nbsp;</a></span>num_original_packets_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuffer::num_original_packets_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a43c8b6829b64fd8b7f0aa7dbf7847a07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43c8b6829b64fd8b7f0aa7dbf7847a07">&#9670;&nbsp;</a></span>num_packets_nacked</h2>
 
@@ -442,6 +512,48 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int RingBuffer::num_packets_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a556b9ab1825fe65ce09864185a027d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a556b9ab1825fe65ce09864185a027d">&#9670;&nbsp;</a></span>num_times_nacking_saturated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuffer::num_times_nacking_saturated</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4040ea10a7ec97c33893f20c63084a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4040ea10a7ec97c33893f20c63084a7a">&#9670;&nbsp;</a></span>num_unnecessary_nacks_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuffer::num_unnecessary_nacks_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98690129a3aadb85db96a39252d01a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98690129a3aadb85db96a39252d01a9f">&#9670;&nbsp;</a></span>num_unnecessary_original_packets_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RingBuffer::num_unnecessary_original_packets_received</td>
         </tr>
       </table>
 </div><div class="memdoc">
