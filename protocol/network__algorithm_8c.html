@@ -110,23 +110,13 @@ Macros</h2></td></tr>
 <tr class="separator:a9b3aee73161a6fead286063d1bd7b829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd3ad8c921714260551309e58328c37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#addd3ad8c921714260551309e58328c37">TOTAL_AUDIO_BITRATE</a>&#160;&#160;&#160;((<a class="el" href="whist_8h.html#afbfb9cdb4ef2d7262efa8aa2f0a5df25">NUM_PREV_AUDIO_FRAMES_RESEND</a> + 1) * <a class="el" href="whist_2network_2network_8h.html#a4dd2e9c562db4c9c333b1ddcbea5f7cc">AUDIO_BITRATE</a>)</td></tr>
 <tr class="separator:addd3ad8c921714260551309e58328c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32dc93d4d3d6bc3e10bd7183d9f7d80f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a32dc93d4d3d6bc3e10bd7183d9f7d80f">DPI_RATIO</a>&#160;&#160;&#160;<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="whist_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>((double)<a class="el" href="network__algorithm_8c.html#a9b56288712fb54f074f73824d2cff80c">DPI_BITRATE_PER_PIXEL</a> / dpi, 2.0), 0.5)</td></tr>
-<tr class="separator:a32dc93d4d3d6bc3e10bd7183d9f7d80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e8baf17cd31cb0e77a1218204cdbe5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#ad3e8baf17cd31cb0e77a1218204cdbe5">DPI_RATIO_EXPONENT</a>&#160;&#160;&#160;1.6</td></tr>
 <tr class="separator:ad3e8baf17cd31cb0e77a1218204cdbe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc187fa1849cfbfb9186287f45ae876a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#adc187fa1849cfbfb9186287f45ae876a">DPI_SCALING_FACTOR</a>&#160;&#160;&#160;pow(<a class="el" href="network__algorithm_8c.html#a32dc93d4d3d6bc3e10bd7183d9f7d80f">DPI_RATIO</a>, <a class="el" href="network__algorithm_8c.html#ad3e8baf17cd31cb0e77a1218204cdbe5">DPI_RATIO_EXPONENT</a>)</td></tr>
-<tr class="separator:adc187fa1849cfbfb9186287f45ae876a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2276d7266bc6e01db7be449725a63d3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a2276d7266bc6e01db7be449725a63d3a">MINIMUM_VIDEO_BITRATE</a>&#160;&#160;&#160;(int)(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a> * <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a> * <a class="el" href="network__algorithm_8c.html#a19fab23ebc323ed532349e0a5829885b">MINIMUM_BITRATE_PER_PIXEL</a> * <a class="el" href="network__algorithm_8c.html#adc187fa1849cfbfb9186287f45ae876a">DPI_SCALING_FACTOR</a>)</td></tr>
-<tr class="separator:a2276d7266bc6e01db7be449725a63d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9487eb82cca323384b13c40bdcdfac95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a9487eb82cca323384b13c40bdcdfac95">MAXIMUM_VIDEO_BITRATE</a>&#160;&#160;&#160;(int)(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a> * <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a> * <a class="el" href="network__algorithm_8c.html#a682172562c46e8d38687ea33bc1c3a59">MAXIMUM_BITRATE_PER_PIXEL</a> * <a class="el" href="network__algorithm_8c.html#adc187fa1849cfbfb9186287f45ae876a">DPI_SCALING_FACTOR</a>)</td></tr>
-<tr class="separator:a9487eb82cca323384b13c40bdcdfac95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc7db7cee0d6147c36c148905241b66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a6bc7db7cee0d6147c36c148905241b66">STARTING_VIDEO_BITRATE</a>&#160;&#160;&#160;(int)(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a> * <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a> * <a class="el" href="network__algorithm_8c.html#ae222bb0ef7f01c6582a99910b013606d">STARTING_BITRATE_PER_PIXEL</a> * <a class="el" href="network__algorithm_8c.html#adc187fa1849cfbfb9186287f45ae876a">DPI_SCALING_FACTOR</a>)</td></tr>
-<tr class="separator:a6bc7db7cee0d6147c36c148905241b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2aaa80882bbda0541e0a62c9a6125ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#ac2aaa80882bbda0541e0a62c9a6125ec">MINIMUM_BITRATE</a>&#160;&#160;&#160;(<a class="el" href="network__algorithm_8c.html#a2276d7266bc6e01db7be449725a63d3a">MINIMUM_VIDEO_BITRATE</a> + <a class="el" href="network__algorithm_8c.html#addd3ad8c921714260551309e58328c37">TOTAL_AUDIO_BITRATE</a>)</td></tr>
+<tr class="memitem:ac2aaa80882bbda0541e0a62c9a6125ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#ac2aaa80882bbda0541e0a62c9a6125ec">MINIMUM_BITRATE</a>&#160;&#160;&#160;get_total_bitrate(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, dpi, <a class="el" href="network__algorithm_8c.html#a19fab23ebc323ed532349e0a5829885b">MINIMUM_BITRATE_PER_PIXEL</a>)</td></tr>
 <tr class="separator:ac2aaa80882bbda0541e0a62c9a6125ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99345a216f300c72251d94158573c1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#af99345a216f300c72251d94158573c1c">MAXIMUM_BITRATE</a>&#160;&#160;&#160;(<a class="el" href="network__algorithm_8c.html#a9487eb82cca323384b13c40bdcdfac95">MAXIMUM_VIDEO_BITRATE</a> + <a class="el" href="network__algorithm_8c.html#addd3ad8c921714260551309e58328c37">TOTAL_AUDIO_BITRATE</a>)</td></tr>
+<tr class="memitem:af99345a216f300c72251d94158573c1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#af99345a216f300c72251d94158573c1c">MAXIMUM_BITRATE</a>&#160;&#160;&#160;get_total_bitrate(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, dpi, <a class="el" href="network__algorithm_8c.html#a682172562c46e8d38687ea33bc1c3a59">MAXIMUM_BITRATE_PER_PIXEL</a>)</td></tr>
 <tr class="separator:af99345a216f300c72251d94158573c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6e2306adac4a7fc41cc4c181d2e605b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#af6e2306adac4a7fc41cc4c181d2e605b">STARTING_BITRATE</a>&#160;&#160;&#160;(<a class="el" href="network__algorithm_8c.html#a6bc7db7cee0d6147c36c148905241b66">STARTING_VIDEO_BITRATE</a> + <a class="el" href="network__algorithm_8c.html#addd3ad8c921714260551309e58328c37">TOTAL_AUDIO_BITRATE</a>)</td></tr>
+<tr class="memitem:af6e2306adac4a7fc41cc4c181d2e605b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#af6e2306adac4a7fc41cc4c181d2e605b">STARTING_BITRATE</a>&#160;&#160;&#160;get_total_bitrate(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, dpi, <a class="el" href="network__algorithm_8c.html#ae222bb0ef7f01c6582a99910b013606d">STARTING_BITRATE_PER_PIXEL</a>)</td></tr>
 <tr class="separator:af6e2306adac4a7fc41cc4c181d2e605b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a766f336f01ead55fa462053310ece2df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a766f336f01ead55fa462053310ece2df">MINIMUM_BURST_BITRATE</a>&#160;&#160;&#160;(<a class="el" href="network__algorithm_8c.html#ac2aaa80882bbda0541e0a62c9a6125ec">MINIMUM_BITRATE</a> * <a class="el" href="network__algorithm_8c.html#a9b3aee73161a6fead286063d1bd7b829">BURST_BITRATE_RATIO</a>)</td></tr>
 <tr class="separator:a766f336f01ead55fa462053310ece2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,20 +190,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a32dc93d4d3d6bc3e10bd7183d9f7d80f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32dc93d4d3d6bc3e10bd7183d9f7d80f">&#9670;&nbsp;</a></span>DPI_RATIO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DPI_RATIO&#160;&#160;&#160;<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="whist_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>((double)<a class="el" href="network__algorithm_8c.html#a9b56288712fb54f074f73824d2cff80c">DPI_BITRATE_PER_PIXEL</a> / dpi, 2.0), 0.5)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad3e8baf17cd31cb0e77a1218204cdbe5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3e8baf17cd31cb0e77a1218204cdbe5">&#9670;&nbsp;</a></span>DPI_RATIO_EXPONENT</h2>
 
@@ -222,20 +198,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define DPI_RATIO_EXPONENT&#160;&#160;&#160;1.6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adc187fa1849cfbfb9186287f45ae876a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc187fa1849cfbfb9186287f45ae876a">&#9670;&nbsp;</a></span>DPI_SCALING_FACTOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DPI_SCALING_FACTOR&#160;&#160;&#160;pow(<a class="el" href="network__algorithm_8c.html#a32dc93d4d3d6bc3e10bd7183d9f7d80f">DPI_RATIO</a>, <a class="el" href="network__algorithm_8c.html#ad3e8baf17cd31cb0e77a1218204cdbe5">DPI_RATIO_EXPONENT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -263,7 +225,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAXIMUM_BITRATE&#160;&#160;&#160;(<a class="el" href="network__algorithm_8c.html#a9487eb82cca323384b13c40bdcdfac95">MAXIMUM_VIDEO_BITRATE</a> + <a class="el" href="network__algorithm_8c.html#addd3ad8c921714260551309e58328c37">TOTAL_AUDIO_BITRATE</a>)</td>
+          <td class="memname">#define MAXIMUM_BITRATE&#160;&#160;&#160;get_total_bitrate(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, dpi, <a class="el" href="network__algorithm_8c.html#a682172562c46e8d38687ea33bc1c3a59">MAXIMUM_BITRATE_PER_PIXEL</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -298,20 +260,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a9487eb82cca323384b13c40bdcdfac95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9487eb82cca323384b13c40bdcdfac95">&#9670;&nbsp;</a></span>MAXIMUM_VIDEO_BITRATE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAXIMUM_VIDEO_BITRATE&#160;&#160;&#160;(int)(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a> * <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a> * <a class="el" href="network__algorithm_8c.html#a682172562c46e8d38687ea33bc1c3a59">MAXIMUM_BITRATE_PER_PIXEL</a> * <a class="el" href="network__algorithm_8c.html#adc187fa1849cfbfb9186287f45ae876a">DPI_SCALING_FACTOR</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac2aaa80882bbda0541e0a62c9a6125ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2aaa80882bbda0541e0a62c9a6125ec">&#9670;&nbsp;</a></span>MINIMUM_BITRATE</h2>
 
@@ -319,7 +267,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MINIMUM_BITRATE&#160;&#160;&#160;(<a class="el" href="network__algorithm_8c.html#a2276d7266bc6e01db7be449725a63d3a">MINIMUM_VIDEO_BITRATE</a> + <a class="el" href="network__algorithm_8c.html#addd3ad8c921714260551309e58328c37">TOTAL_AUDIO_BITRATE</a>)</td>
+          <td class="memname">#define MINIMUM_BITRATE&#160;&#160;&#160;get_total_bitrate(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, dpi, <a class="el" href="network__algorithm_8c.html#a19fab23ebc323ed532349e0a5829885b">MINIMUM_BITRATE_PER_PIXEL</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -354,20 +302,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a2276d7266bc6e01db7be449725a63d3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2276d7266bc6e01db7be449725a63d3a">&#9670;&nbsp;</a></span>MINIMUM_VIDEO_BITRATE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MINIMUM_VIDEO_BITRATE&#160;&#160;&#160;(int)(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a> * <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a> * <a class="el" href="network__algorithm_8c.html#a19fab23ebc323ed532349e0a5829885b">MINIMUM_BITRATE_PER_PIXEL</a> * <a class="el" href="network__algorithm_8c.html#adc187fa1849cfbfb9186287f45ae876a">DPI_SCALING_FACTOR</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af6e2306adac4a7fc41cc4c181d2e605b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6e2306adac4a7fc41cc4c181d2e605b">&#9670;&nbsp;</a></span>STARTING_BITRATE</h2>
 
@@ -375,7 +309,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STARTING_BITRATE&#160;&#160;&#160;(<a class="el" href="network__algorithm_8c.html#a6bc7db7cee0d6147c36c148905241b66">STARTING_VIDEO_BITRATE</a> + <a class="el" href="network__algorithm_8c.html#addd3ad8c921714260551309e58328c37">TOTAL_AUDIO_BITRATE</a>)</td>
+          <td class="memname">#define STARTING_BITRATE&#160;&#160;&#160;get_total_bitrate(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, dpi, <a class="el" href="network__algorithm_8c.html#ae222bb0ef7f01c6582a99910b013606d">STARTING_BITRATE_PER_PIXEL</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -404,20 +338,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define STARTING_BURST_BITRATE&#160;&#160;&#160;(<a class="el" href="network__algorithm_8c.html#af6e2306adac4a7fc41cc4c181d2e605b">STARTING_BITRATE</a> * <a class="el" href="network__algorithm_8c.html#a9b3aee73161a6fead286063d1bd7b829">BURST_BITRATE_RATIO</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6bc7db7cee0d6147c36c148905241b66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bc7db7cee0d6147c36c148905241b66">&#9670;&nbsp;</a></span>STARTING_VIDEO_BITRATE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STARTING_VIDEO_BITRATE&#160;&#160;&#160;(int)(<a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a> * <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a> * <a class="el" href="network__algorithm_8c.html#ae222bb0ef7f01c6582a99910b013606d">STARTING_BITRATE_PER_PIXEL</a> * <a class="el" href="network__algorithm_8c.html#adc187fa1849cfbfb9186287f45ae876a">DPI_SCALING_FACTOR</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

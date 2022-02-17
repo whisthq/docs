@@ -88,12 +88,10 @@ var searchData=
   ['downloaded_5ffilename_5fmaxlen_438',['DOWNLOADED_FILENAME_MAXLEN',['../server_2main_8c.html#a688f608a1c5bc4e4309281cab6670184',1,'main.c']]],
   ['dpi_439',['dpi',['../structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6',1,'WhistClientMessage']]],
   ['dpi_5fbitrate_5fper_5fpixel_440',['DPI_BITRATE_PER_PIXEL',['../network__algorithm_8c.html#a9b56288712fb54f074f73824d2cff80c',1,'network_algorithm.c']]],
-  ['dpi_5fratio_441',['DPI_RATIO',['../network__algorithm_8c.html#a32dc93d4d3d6bc3e10bd7183d9f7d80f',1,'network_algorithm.c']]],
-  ['dpi_5fratio_5fexponent_442',['DPI_RATIO_EXPONENT',['../network__algorithm_8c.html#ad3e8baf17cd31cb0e77a1218204cdbe5',1,'network_algorithm.c']]],
-  ['dpi_5fscaling_5ffactor_443',['DPI_SCALING_FACTOR',['../network__algorithm_8c.html#adc187fa1849cfbfb9186287f45ae876a',1,'network_algorithm.c']]],
-  ['drop_5ffile_5finto_5factive_5fwindow_444',['drop_file_into_active_window',['../file__drop_8c.html#a61d6b3072b259592756b6e7ca5cc530f',1,'drop_file_into_active_window(TransferringFile *drop_file):&#160;file_drop.c'],['../file__drop_8h.html#a61d6b3072b259592756b6e7ca5cc530f',1,'drop_file_into_active_window(TransferringFile *drop_file):&#160;file_drop.c']]],
-  ['dummy_5fstate_445',['dummy_state',['../structAudioDevice.html#abea55870545de19e8142a33e10b3a0aa',1,'AudioDevice']]],
-  ['dwflags_446',['dwFlags',['../structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb',1,'AudioDevice']]],
-  ['dwwaitresult_447',['dwWaitResult',['../structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb',1,'AudioDevice']]],
-  ['dynamicbuffer_448',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
+  ['dpi_5fratio_5fexponent_441',['DPI_RATIO_EXPONENT',['../network__algorithm_8c.html#ad3e8baf17cd31cb0e77a1218204cdbe5',1,'network_algorithm.c']]],
+  ['drop_5ffile_5finto_5factive_5fwindow_442',['drop_file_into_active_window',['../file__drop_8c.html#a61d6b3072b259592756b6e7ca5cc530f',1,'drop_file_into_active_window(TransferringFile *drop_file):&#160;file_drop.c'],['../file__drop_8h.html#a61d6b3072b259592756b6e7ca5cc530f',1,'drop_file_into_active_window(TransferringFile *drop_file):&#160;file_drop.c']]],
+  ['dummy_5fstate_443',['dummy_state',['../structAudioDevice.html#abea55870545de19e8142a33e10b3a0aa',1,'AudioDevice']]],
+  ['dwflags_444',['dwFlags',['../structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb',1,'AudioDevice']]],
+  ['dwwaitresult_445',['dwWaitResult',['../structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb',1,'AudioDevice']]],
+  ['dynamicbuffer_446',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
 ];
