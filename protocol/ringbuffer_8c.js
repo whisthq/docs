@@ -1,5 +1,6 @@
 var ringbuffer_8c =
 [
+    [ "ESTIMATED_JITTER_LATENCY_RATIO", "ringbuffer_8c.html#aae1c510758ee20c3ab1c53b1bc895786", null ],
     [ "MAX_ACCEPTABLE_STALENESS_MS", "ringbuffer_8c.html#a262db33739dbfd7b25d97c2ba2754986", null ],
     [ "MAX_AUDIO_PACKETS", "ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe", null ],
     [ "MAX_NACK_BITRATE_RATIO", "ringbuffer_8c.html#ad7825c4f2de173c071d97a296ec96d24", null ],
@@ -9,6 +10,7 @@ var ringbuffer_8c =
     [ "MAX_UNORDERED_PACKETS", "ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33", null ],
     [ "MAX_UNSYNCED_FRAMES", "ringbuffer_8c.html#a63712ce21a04379372836cb9a38e657a", null ],
     [ "MAX_VIDEO_PACKETS", "ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b", null ],
+    [ "MIN_ACCEPTABLE_STALENESS_MS", "ringbuffer_8c.html#a75c6966e527a4abe2c6e4f27f819f7a0", null ],
     [ "STREAM_RESET_REQUEST_INTERVAL_MS", "ringbuffer_8c.html#a8ebb72b79427224fce1402fe69cda5c1", null ],
     [ "destroy_ring_buffer", "ringbuffer_8c.html#af514843307356fd516b1a96211c9d986", null ],
     [ "get_frame_at_id", "ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5", null ],
