@@ -47,7 +47,7 @@ var searchData=
   ['audio_5fencode_5ftime_51',['AUDIO_ENCODE_TIME',['../server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafa0613b8b81df5f1855c9c68e3cfd5db',1,'server_statistic.h']]],
   ['audio_5fencoder_5fencode_5fframe_52',['audio_encoder_encode_frame',['../audioencode_8c.html#a828b5818961ffdb85d2ca58a845ec74c',1,'audio_encoder_encode_frame(AudioEncoder *encoder):&#160;audioencode.c'],['../audioencode_8h.html#a828b5818961ffdb85d2ca58a845ec74c',1,'audio_encoder_encode_frame(AudioEncoder *encoder):&#160;audioencode.c']]],
   ['audio_5fencoder_5ffifo_5fintake_53',['audio_encoder_fifo_intake',['../audioencode_8c.html#ac6d549477baf80680dd8af8d4b7dcc93',1,'audio_encoder_fifo_intake(AudioEncoder *encoder, uint8_t *data, int len):&#160;audioencode.c'],['../audioencode_8h.html#ac6d549477baf80680dd8af8d4b7dcc93',1,'audio_encoder_fifo_intake(AudioEncoder *encoder, uint8_t *data, int len):&#160;audioencode.c']]],
-  ['audio_5ffec_5fratio_54',['audio_fec_ratio',['../structNetworkSettings.html#a962c6ece3541c1680711bd0ae96a89af',1,'NetworkSettings::audio_fec_ratio()'],['../network__algorithm_8h.html#ab552496cd2c29c203e6d9f31ebda77b0',1,'AUDIO_FEC_RATIO():&#160;network_algorithm.h']]],
+  ['audio_5ffec_5fratio_54',['audio_fec_ratio',['../structNetworkSettings.html#a962c6ece3541c1680711bd0ae96a89af',1,'NetworkSettings::audio_fec_ratio()'],['../structDebugConsoleOverrideValues.html#a8b256cd1bcc979b4523e067484656a13',1,'DebugConsoleOverrideValues::audio_fec_ratio()'],['../network__algorithm_8h.html#ab552496cd2c29c203e6d9f31ebda77b0',1,'AUDIO_FEC_RATIO():&#160;network_algorithm.h']]],
   ['audio_5ffifo_55',['audio_fifo',['../structAudioEncoder.html#a7339881e33afb0c60b85c11717d00b91',1,'AudioEncoder']]],
   ['audio_5ffps_5fskipped_56',['AUDIO_FPS_SKIPPED',['../client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a82ae9bf8e320a1bf5f04c34e363d70ef',1,'client_statistic.h']]],
   ['audio_5ffrequency_57',['audio_frequency',['../structAudioContext.html#a47e4f8566820b049f0e11ac111ce8fc2',1,'AudioContext::audio_frequency()'],['../structAudioFrame.html#addab4cb46993f3cb0786a2a9d6234b58',1,'AudioFrame::audio_frequency()'],['../handle__server__message_8c.html#a227c64b79cf6b3b8986b03c1fcea78ec',1,'audio_frequency():&#160;handle_server_message.c'],['../whist_8h.html#aae969438a57a86fddf0cf53106c9b6b4',1,'AUDIO_FREQUENCY():&#160;whist.h']]],
@@ -76,5 +76,6 @@ var searchData=
   ['avg_5fframe_5fduration_5fin_5fus_80',['AVG_FRAME_DURATION_IN_US',['../whist_8h.html#accb8ea6004024e6e62e60d954d52a4fb',1,'whist.h']]],
   ['avg_5ftimer_81',['avg_timer',['../structRingBuffer.html#a84793599d9ac862828c7c130a6593466',1,'RingBuffer']]],
   ['avpacket_5fbuffer_2ec_82',['avpacket_buffer.c',['../avpacket__buffer_8c.html',1,'']]],
-  ['avpacket_5fbuffer_2eh_83',['avpacket_buffer.h',['../avpacket__buffer_8h.html',1,'']]]
+  ['avpacket_5fbuffer_2eh_83',['avpacket_buffer.h',['../avpacket__buffer_8h.html',1,'']]],
+  ['a_20glimpse_20of_20debug_20console_20_2b_20protocol_20analyzer_84',['A Glimpse of Debug Console + Protocol Analyzer',['../md_whist_tools_README.html',1,'']]]
 ];

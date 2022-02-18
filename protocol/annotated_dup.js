@@ -19,6 +19,7 @@ var annotated_dup =
     [ "ClipboardFiles", "structClipboardFiles.html", "structClipboardFiles" ],
     [ "ClipboardThread", "structClipboardThread.html", "structClipboardThread" ],
     [ "ColorTree", "structColorTree.html", "structColorTree" ],
+    [ "DebugConsoleOverrideValues", "structDebugConsoleOverrideValues.html", "structDebugConsoleOverrideValues" ],
     [ "DecodedFrameData", "structDecodedFrameData.html", "structDecodedFrameData" ],
     [ "DynamicBuffer", "structDynamicBuffer.html", "structDynamicBuffer" ],
     [ "EncodedAudio", "structEncodedAudio.html", "structEncodedAudio" ],

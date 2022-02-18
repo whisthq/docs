@@ -1,9 +1,5 @@
 var group__memory =
 [
-    [ "Checks & Tests", "index.html#autotoc_md23", null ],
-    [ "Unit Testing", "index.html#autotoc_md24", null ],
-    [ "Option Flags", "md_client_README.html#autotoc_md53", null ],
-    [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md99", null ],
     [ "Block Allocator", "group__block__allocator.html", "group__block__allocator" ],
     [ "Region Allocator", "group__region__allocator.html", "group__region__allocator" ],
     [ "DynamicBuffer", "structDynamicBuffer.html", [

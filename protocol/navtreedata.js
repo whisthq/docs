@@ -59,6 +59,39 @@ var NAVTREE =
     ] ],
     [ "Whist Desktop Clients", "md_client_README.html", null ],
     [ "Whist Windows/Linux Ubuntu Servers", "md_server_README.html", null ],
+    [ "A Glimpse of Debug Console + Protocol Analyzer", "md_whist_tools_README.html", [
+      [ "Debug Console", "md_whist_tools_README.html#autotoc_md195", [
+        [ "Checks & Tests", "index.html#autotoc_md23", null ],
+        [ "Unit Testing", "index.html#autotoc_md24", null ],
+        [ "Option Flags", "md_client_README.html#autotoc_md53", null ],
+        [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md99", null ],
+        [ "Overview", "md_whist_tools_README.html#autotoc_md196", null ],
+        [ "How to enable", "md_whist_tools_README.html#autotoc_md197", null ],
+        [ "How to access", "md_whist_tools_README.html#autotoc_md198", null ],
+        [ "Support Commands", "md_whist_tools_README.html#autotoc_md199", [
+          [ "<tt>report_XXX</tt>", "md_whist_tools_README.html#autotoc_md200", null ],
+          [ "<tt>set</tt>", "md_whist_tools_README.html#autotoc_md201", null ],
+          [ "<tt>info</tt>", "md_whist_tools_README.html#autotoc_md202", null ],
+          [ "<tt>insert_atexit_handler</tt> or <tt>insert</tt>", "md_whist_tools_README.html#autotoc_md203", null ]
+        ] ]
+      ] ],
+      [ "Protocol Analyzer", "md_whist_tools_README.html#autotoc_md204", [
+        [ "Overview", "md_whist_tools_README.html#autotoc_md205", null ],
+        [ "How to run", "md_whist_tools_README.html#autotoc_md206", null ],
+        [ "Report format", "md_whist_tools_README.html#autotoc_md207", [
+          [ "high level information/statistic", "md_whist_tools_README.html#autotoc_md208", null ],
+          [ "break down of frames", "md_whist_tools_README.html#autotoc_md209", [
+            [ "breakdown of segments", "md_whist_tools_README.html#autotoc_md210", null ]
+          ] ]
+        ] ],
+        [ "Implementation", "md_whist_tools_README.html#autotoc_md211", [
+          [ "Data structures", "md_whist_tools_README.html#autotoc_md212", null ],
+          [ "Hooks", "md_whist_tools_README.html#autotoc_md213", null ],
+          [ "Statistics generator", "md_whist_tools_README.html#autotoc_md214", null ],
+          [ "Pretty printer for frame breakdown", "md_whist_tools_README.html#autotoc_md215", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -87,19 +120,19 @@ var NAVTREEINDEX =
 [
 "aes_8c.html",
 "client__utils_8c.html#ac2c155b9515a1ce8f319a5f18e5207ae",
-"error__monitor_8c.html#ad59902f0ce1004eb4c8dea71aa00da83",
-"globals_eval_s.html",
-"group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3",
-"lodepng_8c.html#ac1ddd9af8cc0cc5910683a740609b278",
-"native__window__utils_8h.html#a6ac3f14e6cefdf8a345287a35f502dba",
-"sdl__utils_8c.html",
-"structClipboardActivity.html#a16a11d43e8a1ae64e5a43fdbfb78fc1d",
-"structLodePNGCompressSettings.html#a70bc37e21eeffead6e9c8d67e163a591",
-"structTCPContext.html#a5fb196ddcc9d6c8bb85fe1e780411761",
-"structWhistMultigestureMessage.html#a7df7946abfa59ed15348e22702480330",
-"unionFileEventInfo.html#a3e2f870ea2490633e18d8ce9c8b65371",
-"whist_8h.html#aac56de0da721105f54191ba968635836",
-"whistgetopt_8c.html#af6a17143a11464662febd04a959012ed"
+"error__monitor_8c.html#a611aea3d89115184e7b59a56c33e5d09",
+"globals_eval_h.html",
+"group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5",
+"lodepng_8c.html#ab1c7709a984d5842ab314cf5d2dc2dcc",
+"md_client_README.html",
+"rs_8c.html#adfdaf32eae545290273a12f93383a5eb",
+"structAudioEncoder.html#af69024a62ca659d729c8e80fd8d37827",
+"structLTRState.html#a28eb5a2cfe8c9a618a891e9af70adfce",
+"structRingBuffer.html#ab14941089c8847eb375cbaaa66c82eea",
+"structWhistCursorTypes.html#ac6e155e961b82612385b3edde9ad428a",
+"transfercapture_8h_source.html",
+"whist_8h.html#a83bbf59667cbb81c5c7d11df72ca7dfe",
+"whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
