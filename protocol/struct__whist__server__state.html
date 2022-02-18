@@ -113,8 +113,16 @@ Data Fields</h2></td></tr>
 <tr class="separator:ac7eac597e298e1c86e687f2296307752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67256a4bfb719a4477601ed8d1f56659"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputDevice.html">InputDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__whist__server__state.html#a67256a4bfb719a4477601ed8d1f56659">input_device</a></td></tr>
 <tr class="separator:a67256a4bfb719a4477601ed8d1f56659"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8502bbff070bb18297909e496bd69ca0"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__whist__server__state.html#a8502bbff070bb18297909e496bd69ca0">wants_iframe</a></td></tr>
-<tr class="separator:a8502bbff070bb18297909e496bd69ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada54a0c2ba82b92f135917e8f49643de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__whist__server__state.html#ada54a0c2ba82b92f135917e8f49643de">stream_needs_restart</a></td></tr>
+<tr class="separator:ada54a0c2ba82b92f135917e8f49643de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee5b1064a64969f495b8e005cdf2683"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__whist__server__state.html#a6ee5b1064a64969f495b8e005cdf2683">stream_needs_recovery</a></td></tr>
+<tr class="separator:a6ee5b1064a64969f495b8e005cdf2683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f524acd358f367c900fa98b3a87b1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLTRState.html">LTRState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__whist__server__state.html#a90f524acd358f367c900fa98b3a87b1a">ltr_context</a></td></tr>
+<tr class="separator:a90f524acd358f367c900fa98b3a87b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f79547ca36910e49ec900529b818ceb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__whist__server__state.html#a2f79547ca36910e49ec900529b818ceb">frame_ack_id</a></td></tr>
+<tr class="separator:a2f79547ca36910e49ec900529b818ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353216258464e93cfc600c0c9172d2c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__whist__server__state.html#a353216258464e93cfc600c0c9172d2c4">update_frame_ack</a></td></tr>
+<tr class="separator:a353216258464e93cfc600c0c9172d2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeef9b6cf8b58c5601c21aad953750788"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__whist__server__state.html#aeef9b6cf8b58c5601c21aad953750788">client_width</a></td></tr>
 <tr class="separator:aeef9b6cf8b58c5601c21aad953750788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab38047281362ce32ceec7678585ff6b4"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__whist__server__state.html#ab38047281362ce32ceec7678585ff6b4">client_height</a></td></tr>
@@ -399,6 +407,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a2f79547ca36910e49ec900529b818ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f79547ca36910e49ec900529b818ceb">&#9670;&nbsp;</a></span>frame_ack_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t _whist_server_state::frame_ack_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a67256a4bfb719a4477601ed8d1f56659"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67256a4bfb719a4477601ed8d1f56659">&#9670;&nbsp;</a></span>input_device</h2>
 
@@ -407,6 +429,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structInputDevice.html">InputDevice</a>* _whist_server_state::input_device</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90f524acd358f367c900fa98b3a87b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f524acd358f367c900fa98b3a87b1a">&#9670;&nbsp;</a></span>ltr_context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structLTRState.html">LTRState</a>* _whist_server_state::ltr_context</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -441,6 +477,34 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a6ee5b1064a64969f495b8e005cdf2683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee5b1064a64969f495b8e005cdf2683">&#9670;&nbsp;</a></span>stream_needs_recovery</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _whist_server_state::stream_needs_recovery</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada54a0c2ba82b92f135917e8f49643de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada54a0c2ba82b92f135917e8f49643de">&#9670;&nbsp;</a></span>stream_needs_restart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _whist_server_state::stream_needs_restart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5c0edcc9c97922ba1d576c54856e0dd2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c0edcc9c97922ba1d576c54856e0dd2">&#9670;&nbsp;</a></span>update_device</h2>
 
@@ -469,14 +533,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a8502bbff070bb18297909e496bd69ca0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8502bbff070bb18297909e496bd69ca0">&#9670;&nbsp;</a></span>wants_iframe</h2>
+<a id="a353216258464e93cfc600c0c9172d2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353216258464e93cfc600c0c9172d2c4">&#9670;&nbsp;</a></span>update_frame_ack</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool _whist_server_state::wants_iframe</td>
+          <td class="memname">bool _whist_server_state::update_frame_ack</td>
         </tr>
       </table>
 </div><div class="memdoc">

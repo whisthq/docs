@@ -6,6 +6,7 @@ var structWhistClientMessage =
     [ "dpi", "structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6", null ],
     [ "file", "structWhistClientMessage.html#ac483bcd64751c9834cdea881ae71cd38", null ],
     [ "file_metadata", "structWhistClientMessage.html#a0116954edece6194206d1b8431f15654", null ],
+    [ "frame_ack", "structWhistClientMessage.html#ab8a5a9f3b59ec3de93fd01d469b5f690", null ],
     [ "height", "structWhistClientMessage.html#a383576764f0064035ae78a2c8de45917", null ],
     [ "id", "structWhistClientMessage.html#a504bb34b77aa11d05bdfb559a23f69e2", null ],
     [ "keyboard", "structWhistClientMessage.html#ac63ab66af86b47e03cfa523225c7bf3c", null ],

@@ -111,8 +111,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a8737b2047d311ccad803628b61a24ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756d26cde728bccea40f70df0c05f3d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a756d26cde728bccea40f70df0c05f3d6">out_height</a></td></tr>
 <tr class="separator:a756d26cde728bccea40f70df0c05f3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38a7c99b35edd4115d20a1b4e8c7bc82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a38a7c99b35edd4115d20a1b4e8c7bc82">is_iframe</a></td></tr>
-<tr class="separator:a38a7c99b35edd4115d20a1b4e8c7bc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00fce726b4e64667934a7f5c35c9f7f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2video_2video_8h.html#a3fc7f0fa0e803591461ebc389c333583">VideoFrameType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a00fce726b4e64667934a7f5c35c9f7f8">frame_type</a></td></tr>
+<tr class="separator:a00fce726b4e64667934a7f5c35c9f7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f66dc262b79b50a4c5e3901424c01f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f">encoded_frame_size</a></td></tr>
 <tr class="separator:ad7f66dc262b79b50a4c5e3901424c01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53618bc02044fef89a820bab1e2a1ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9">codec_type</a></td></tr>
@@ -122,6 +122,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:af56f705c8349a76f221e7b09c4316d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9307f198076d55ba94d55ab275c2c7d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFFmpegEncoder.html">FFmpegEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7">ffmpeg_encoder</a></td></tr>
 <tr class="separator:a9307f198076d55ba94d55ab275c2c7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d449c7390f5c23e993a2bfa970efab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLTRAction.html">LTRAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a4d449c7390f5c23e993a2bfa970efab3">next_ltr_action</a></td></tr>
+<tr class="separator:a4d449c7390f5c23e993a2bfa970efab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Master video encoding struct. </p>
@@ -199,6 +201,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a00fce726b4e64667934a7f5c35c9f7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00fce726b4e64667934a7f5c35c9f7f8">&#9670;&nbsp;</a></span>frame_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="whist_2video_2video_8h.html#a3fc7f0fa0e803591461ebc389c333583">VideoFrameType</a> VideoEncoder::frame_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9bd4d8cfca88434dbd276a6bfacfe027"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bd4d8cfca88434dbd276a6bfacfe027">&#9670;&nbsp;</a></span>in_height</h2>
 
@@ -227,14 +243,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a38a7c99b35edd4115d20a1b4e8c7bc82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38a7c99b35edd4115d20a1b4e8c7bc82">&#9670;&nbsp;</a></span>is_iframe</h2>
+<a id="a4d449c7390f5c23e993a2bfa970efab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d449c7390f5c23e993a2bfa970efab3">&#9670;&nbsp;</a></span>next_ltr_action</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool VideoEncoder::is_iframe</td>
+          <td class="memname"><a class="el" href="structLTRAction.html">LTRAction</a> VideoEncoder::next_ltr_action</td>
         </tr>
       </table>
 </div><div class="memdoc">

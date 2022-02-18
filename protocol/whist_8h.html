@@ -155,6 +155,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistKeyboardState.html">WhistKeyboardState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistFrameAckMessage.html">WhistFrameAckMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame acknowledgement message.  <a href="structWhistFrameAckMessage.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message.  <a href="structWhistClientMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +199,8 @@ Macros</h2></td></tr>
 <tr class="separator:a06c3a7c646b3ccbd02f0b98fa5c7b28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0b6fc03c4691990ac064ede518dd2c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#af0b6fc03c4691990ac064ede518dd2c3">LOG_NETWORKING</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:af0b6fc03c4691990ac064ede518dd2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c8087b20bce00278ae45c0081275db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a64c8087b20bce00278ae45c0081275db">LOG_LONG_TERM_REFERENCE_FRAMES</a>&#160;&#160;&#160;false</td></tr>
+<tr class="separator:a64c8087b20bce00278ae45c0081275db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3688d82ca0322b9f939340cd50023c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a5e3688d82ca0322b9f939340cd50023c">WINAPI_INPUT_DRIVER</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a5e3688d82ca0322b9f939340cd50023c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5f9a5f50ab08d080df02684e783ab66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ae5f9a5f50ab08d080df02684e783ab66">XTEST_INPUT_DRIVER</a>&#160;&#160;&#160;2</td></tr>
@@ -248,6 +253,8 @@ Macros</h2></td></tr>
 <tr class="separator:a9b26cd4ece83eb114a81877bd849e28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa432070c422ef782d49e2dc35b8a6e56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aa432070c422ef782d49e2dc35b8a6e56">DISABLED_ENCODER_FPS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:aa432070c422ef782d49e2dc35b8a6e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab6b32ac9785da5182536056a7216b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a5ab6b32ac9785da5182536056a7216b3">USE_LONG_TERM_REFERENCE_FRAMES</a>&#160;&#160;&#160;false</td></tr>
+<tr class="separator:a5ab6b32ac9785da5182536056a7216b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b2575d308f4dcd72c988a83a6ea138d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a2b2575d308f4dcd72c988a83a6ea138d">OUTPUT_WIDTH</a>&#160;&#160;&#160;1280</td></tr>
 <tr class="separator:a2b2575d308f4dcd72c988a83a6ea138d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5707c89933e682d000495637c8dc45fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a5707c89933e682d000495637c8dc45fd">OUTPUT_HEIGHT</a>&#160;&#160;&#160;720</td></tr>
@@ -645,6 +652,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a6cd55b7e8fdb1c2fea42622087fc0331">CMESSAGE_FILE_METADATA</a> = 119, 
 <br />
 &#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8954648f56bc98bef82ab55cfaad9449">CMESSAGE_FILE_DATA</a> = 120, 
+<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a5bf98efc21bd1951b7550666d352edea">MESSAGE_FRAME_ACK</a> = 121, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
 <br />
  }</td></tr>
@@ -1050,6 +1058,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define KEYCODE_UPPERBOUND&#160;&#160;&#160;265</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64c8087b20bce00278ae45c0081275db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c8087b20bce00278ae45c0081275db">&#9670;&nbsp;</a></span>LOG_LONG_TERM_REFERENCE_FRAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_LONG_TERM_REFERENCE_FRAMES&#160;&#160;&#160;false</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1608,6 +1630,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define US_IN_SECOND&#160;&#160;&#160;1000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ab6b32ac9785da5182536056a7216b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab6b32ac9785da5182536056a7216b3">&#9670;&nbsp;</a></span>USE_LONG_TERM_REFERENCE_FRAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_LONG_TERM_REFERENCE_FRAMES&#160;&#160;&#160;false</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2300,6 +2336,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a6cd55b7e8fdb1c2fea42622087fc0331"></a>CMESSAGE_FILE_METADATA&#160;</td><td class="fielddoc"><p>file metadata </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a8954648f56bc98bef82ab55cfaad9449"></a>CMESSAGE_FILE_DATA&#160;</td><td class="fielddoc"><p>file chunk </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a5bf98efc21bd1951b7550666d352edea"></a>MESSAGE_FRAME_ACK&#160;</td><td class="fielddoc"><p>Frame has been received. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a8a219f29b07f2bab02d8cd3112df3a28"></a>CMESSAGE_QUIT&#160;</td><td class="fielddoc"></td></tr>
 </table>

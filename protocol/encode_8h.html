@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('encode_8h.html',''); initResizable(); 
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="ltr_8h_source.html">whist/video/ltr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nvidia__encode_8h_source.html">nvidia_encode.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ffmpeg__encode_8h_source.html">ffmpeg_encode.h</a>&quot;</code><br />
 </div>
@@ -142,6 +143,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a22d76272235619a7657b984487f1412a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8h.html#a22d76272235619a7657b984487f1412a">video_encoder_set_iframe</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a22d76272235619a7657b984487f1412a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next frame to be an IDR-frame, with SPS/PPS headers included as well.  <a href="encode_8h.html#a22d76272235619a7657b984487f1412a">More...</a><br /></td></tr>
 <tr class="separator:a22d76272235619a7657b984487f1412a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6847aa337e72c4bb027d3af9a85624c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8h.html#a6847aa337e72c4bb027d3af9a85624c1">video_encoder_set_ltr_action</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, const <a class="el" href="structLTRAction.html">LTRAction</a> *action)</td></tr>
+<tr class="memdesc:a6847aa337e72c4bb027d3af9a85624c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LTR action for the next frame.  <a href="encode_8h.html#a6847aa337e72c4bb027d3af9a85624c1">More...</a><br /></td></tr>
+<tr class="separator:a6847aa337e72c4bb027d3af9a85624c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f0817add564fea3dbb260a90cef9132"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8h.html#a7f0817add564fea3dbb260a90cef9132">destroy_video_encoder</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a7f0817add564fea3dbb260a90cef9132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy encoder.  <a href="encode_8h.html#a7f0817add564fea3dbb260a90cef9132">More...</a><br /></td></tr>
 <tr class="separator:a7f0817add564fea3dbb260a90cef9132"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,6 +452,43 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>Encoder to be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6847aa337e72c4bb027d3af9a85624c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6847aa337e72c4bb027d3af9a85624c1">&#9670;&nbsp;</a></span>video_encoder_set_ltr_action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void video_encoder_set_ltr_action </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structLTRAction.html">LTRAction</a> *&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set LTR action for the next frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encoder</td><td>Encoder to set action on. </td></tr>
+    <tr><td class="paramname">action</td><td>LTR action to use with next frame. </td></tr>
   </table>
   </dd>
 </dl>

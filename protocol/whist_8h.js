@@ -9,6 +9,7 @@ var whist_8h =
     [ "WhistDiscoveryRequestMessage", "structWhistDiscoveryRequestMessage.html", "structWhistDiscoveryRequestMessage" ],
     [ "WhistDiscoveryReplyMessage", "structWhistDiscoveryReplyMessage.html", "structWhistDiscoveryReplyMessage" ],
     [ "WhistKeyboardState", "structWhistKeyboardState.html", "structWhistKeyboardState" ],
+    [ "WhistFrameAckMessage", "structWhistFrameAckMessage.html", "structWhistFrameAckMessage" ],
     [ "WhistClientMessage", "structWhistClientMessage.html", "structWhistClientMessage" ],
     [ "WhistServerMessage", "structWhistServerMessage.html", "structWhistServerMessage" ],
     [ "WhistDestination", "structWhistDestination.html", "structWhistDestination" ],
@@ -36,6 +37,7 @@ var whist_8h =
     [ "ENCRYPTING_PACKETS", "whist_8h.html#ac5a4d8d35aab3f2cd853e52c407e0d9c", null ],
     [ "INPUT_DRIVER", "whist_8h.html#a514734c0c6acc3c2f2076323d45676d8", null ],
     [ "KEYCODE_UPPERBOUND", "whist_8h.html#a61a115e1297596f9885f9a0dbb6a63b7", null ],
+    [ "LOG_LONG_TERM_REFERENCE_FRAMES", "whist_8h.html#a64c8087b20bce00278ae45c0081275db", null ],
     [ "LOG_NACKING", "whist_8h.html#a06c3a7c646b3ccbd02f0b98fa5c7b28a", null ],
     [ "LOG_NETWORKING", "whist_8h.html#af0b6fc03c4691990ac064ede518dd2c3", null ],
     [ "LOG_VIDEO", "whist_8h.html#af0923737dee5ff7a8f1a17c4b9c1f2fe", null ],
@@ -70,6 +72,7 @@ var whist_8h =
     [ "UNUSED", "whist_8h.html#a5f64c424fc4e04a8b3afd79a1e245625", null ],
     [ "US_IN_MS", "whist_8h.html#aeac12c17b335ba3ce62aa2cc8f1746ec", null ],
     [ "US_IN_SECOND", "whist_8h.html#a726a4c9e22de3eff123ba0ada25d7d4c", null ],
+    [ "USE_LONG_TERM_REFERENCE_FRAMES", "whist_8h.html#a5ab6b32ac9785da5182536056a7216b3", null ],
     [ "USING_AUDIO_ENCODE_DECODE", "whist_8h.html#a1aabd41fc3d6e2687cf1cda5a88dd6d3", null ],
     [ "USING_FFMPEG_IFRAME_FLAG", "whist_8h.html#ac98c653bb06a80c855ad7013dccb3f26", null ],
     [ "USING_NVIDIA_CAPTURE", "whist_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6", null ],
@@ -143,6 +146,7 @@ var whist_8h =
       [ "MESSAGE_OPEN_URL", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ab7e896a962e10356358a9cc068226810", null ],
       [ "CMESSAGE_FILE_METADATA", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a6cd55b7e8fdb1c2fea42622087fc0331", null ],
       [ "CMESSAGE_FILE_DATA", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8954648f56bc98bef82ab55cfaad9449", null ],
+      [ "MESSAGE_FRAME_ACK", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a5bf98efc21bd1951b7550666d352edea", null ],
       [ "CMESSAGE_QUIT", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8a219f29b07f2bab02d8cd3112df3a28", null ]
     ] ],
     [ "WhistExitCode", "whist_8h.html#aef166b266f8d5b853ec64a90756fafb6", [

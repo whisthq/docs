@@ -18,10 +18,14 @@ var struct__whist__server__state =
     [ "encoder_factory_vbv_size", "struct__whist__server__state.html#a722215d0f5954fd907c82cc2500d775b", null ],
     [ "encoder_finished", "struct__whist__server__state.html#a5e1b1507f23bda87142d4907a51885de", null ],
     [ "exiting", "struct__whist__server__state.html#a900ee419fd1e1dcdebecbc683ee1173c", null ],
+    [ "frame_ack_id", "struct__whist__server__state.html#a2f79547ca36910e49ec900529b818ceb", null ],
     [ "input_device", "struct__whist__server__state.html#a67256a4bfb719a4477601ed8d1f56659", null ],
+    [ "ltr_context", "struct__whist__server__state.html#a90f524acd358f367c900fa98b3a87b1a", null ],
     [ "pending_encoder", "struct__whist__server__state.html#afa4098b918e96a4121863b69092f2d61", null ],
     [ "stop_streaming", "struct__whist__server__state.html#a9fad694db9e302f0b79657087b4a8255", null ],
+    [ "stream_needs_recovery", "struct__whist__server__state.html#a6ee5b1064a64969f495b8e005cdf2683", null ],
+    [ "stream_needs_restart", "struct__whist__server__state.html#ada54a0c2ba82b92f135917e8f49643de", null ],
     [ "update_device", "struct__whist__server__state.html#a5c0edcc9c97922ba1d576c54856e0dd2", null ],
     [ "update_encoder", "struct__whist__server__state.html#ac7eac597e298e1c86e687f2296307752", null ],
-    [ "wants_iframe", "struct__whist__server__state.html#a8502bbff070bb18297909e496bd69ca0", null ]
+    [ "update_frame_ack", "struct__whist__server__state.html#a353216258464e93cfc600c0c9172d2c4", null ]
 ];
