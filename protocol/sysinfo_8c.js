@@ -1,5 +1,6 @@
 var sysinfo_8c =
 [
+    [ "get_cpu_usage", "sysinfo_8c.html#ac10b93ba7e62f74920ce08effc4f9dbb", null ],
     [ "print_cpu_info", "sysinfo_8c.html#a538a4414821926cda2c9e989764c00fd", null ],
     [ "print_hard_drive_info", "sysinfo_8c.html#a97742e7c6864fa884d35d5c21a4a901a", null ],
     [ "print_memory_info", "sysinfo_8c.html#a07db1ac3fcee0bea1bef088a1a2fff55", null ],

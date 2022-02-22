@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"structLTRState.html#a0d434c380ab79693b1b7452e555a1481":[10,0,54,3],
+"structLTRState.html#a217e660a132e759384ab745dad777dc0":[10,0,54,2],
 "structLTRState.html#a28eb5a2cfe8c9a618a891e9af70adfce":[10,0,54,10],
 "structLTRState.html#a4e091248de0c9670e317a49365514113":[10,0,54,4],
 "structLTRState.html#a5aacfd8377d37dcd64be6be3c9754486":[10,0,54,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "structRingBuffer.html#a82a70174568113a76b153e9f67b72532":[10,0,67,31],
 "structRingBuffer.html#a84793599d9ac862828c7c130a6593466":[10,0,67,1],
 "structRingBuffer.html#a86b2c0292a3058f1fff12cfd4d355556":[10,0,67,3],
-"structRingBuffer.html#a98690129a3aadb85db96a39252d01a9f":[10,0,67,27],
-"structRingBuffer.html#a9a530d5ffefea570684d49434bf29675":[10,0,67,19],
-"structRingBuffer.html#aaad9ec2694ba2cb33f5b9abc0bdb00f6":[10,0,67,22]
+"structRingBuffer.html#a98690129a3aadb85db96a39252d01a9f":[10,0,67,27]
 };

@@ -1,6 +1,5 @@
 var client_2video_8h =
 [
-    [ "RENDERING_IN_VIRTUAL_ENVIRONMENT", "client_2video_8h.html#aa05932bcd2b8049280c9e3a9149f985f", null ],
     [ "VideoContext", "client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00", null ],
     [ "destroy_video", "client_2video_8h.html#af1d344158f4b8ed1ba11af1a86d27789", null ],
     [ "has_video_rendered_yet", "client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc", null ],

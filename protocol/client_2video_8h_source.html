@@ -102,31 +102,27 @@ $(document).ready(function(){initNavTree('client_2video_8h_source.html',''); ini
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">============================</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifndef RENDERING_IN_VIRTUAL_ENVIRONMENT</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="client_2video_8h.html#aa05932bcd2b8049280c9e3a9149f985f">   56</a></span>&#160;<span class="preprocessor">#define RENDERING_IN_VIRTUAL_ENVIRONMENT 0</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">   59</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structVideoContext.html">VideoContext</a> <a class="code" href="structVideoContext.html">VideoContext</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">Public Functions</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="structVideoContext.html">VideoContext</a>* <a class="code" href="client_2video_8h.html#a2e523fcb8237b36c265860c9c123fcca">init_video</a>(<span class="keywordtype">int</span> initial_width, <span class="keywordtype">int</span> initial_height);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#a9096cfd63b981190cf4aa333c2ee6d20">receive_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context, <a class="code" href="structVideoFrame.html">VideoFrame</a>* video_frame);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_2video_8h.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#af1d344158f4b8ed1ba11af1a86d27789">destroy_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="client_2video_8h.html#a1c2adfcc9ce8106e32f65be5820e9d51">video_ready_for_frame</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif  // CLIENT_VIDEO_H</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">   55</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structVideoContext.html">VideoContext</a> <a class="code" href="structVideoContext.html">VideoContext</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">Public Functions</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="structVideoContext.html">VideoContext</a>* <a class="code" href="client_2video_8h.html#a2e523fcb8237b36c265860c9c123fcca">init_video</a>(<span class="keywordtype">int</span> initial_width, <span class="keywordtype">int</span> initial_height);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#a9096cfd63b981190cf4aa333c2ee6d20">receive_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context, <a class="code" href="structVideoFrame.html">VideoFrame</a>* video_frame);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_2video_8h.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="client_2video_8h.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> <a class="code" href="client_2video_8h.html#af1d344158f4b8ed1ba11af1a86d27789">destroy_video</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="client_2video_8h.html#a1c2adfcc9ce8106e32f65be5820e9d51">video_ready_for_frame</a>(<a class="code" href="structVideoContext.html">VideoContext</a>* video_context);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif  // CLIENT_VIDEO_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructVideoContext_html"><div class="ttname"><a href="structVideoContext.html">VideoContext</a></div><div class="ttdef"><b>Definition:</b> video.c:54</div></div>

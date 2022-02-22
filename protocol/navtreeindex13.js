@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"whist_8h.html#a7df5b12dc65193d6bb632bc012c8dfdaa6b12aa8b149748637abe609a4dac0ff9":[11,0,2,2,1,117,0],
+"whist_8h.html#a7df5b12dc65193d6bb632bc012c8dfdaac35d891e7f97f5c677ac573ad418b6bf":[11,0,2,2,1,117,2],
+"whist_8h.html#a7f7831898702a4f2e35b1a91830983d2":[11,0,2,2,1,98],
+"whist_8h.html#a7f7b6515a213cae1e32be37d0e5ddd77":[11,0,2,2,1,101],
 "whist_8h.html#a83bbf59667cbb81c5c7d11df72ca7dfe":[11,0,2,2,1,42],
 "whist_8h.html#a83bf3347e926abd1e2d06dbf885fb6f1":[11,0,2,2,1,44],
 "whist_8h.html#a8643207a604b19f3fefe5046bd3c0290":[11,0,2,2,1,136],
@@ -237,17 +241,13 @@ var NAVTREEINDEX13 =
 "whist_8h.html#affe776513b24d84b39af8ab0930fef7f":[11,0,2,2,1,41],
 "whist_8h_source.html":[11,0,2,2,1],
 "whist__client_8c.html":[11,0,0,26],
-"whist__client_8c.html#a07366317ac5c1d8d1ce9c82baf1d10c2":[11,0,0,26,17],
-"whist__client_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd":[11,0,0,26,22],
-"whist__client_8c.html#a2a57d774e71166271bbff6c515111104":[11,0,0,26,12],
-"whist__client_8c.html#a31e60ed488fac41f2eb7f3865937fc14":[11,0,0,26,16],
+"whist__client_8c.html#a07366317ac5c1d8d1ce9c82baf1d10c2":[11,0,0,26,18],
+"whist__client_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd":[11,0,0,26,23],
+"whist__client_8c.html#a2a57d774e71166271bbff6c515111104":[11,0,0,26,13],
+"whist__client_8c.html#a31e60ed488fac41f2eb7f3865937fc14":[11,0,0,26,17],
+"whist__client_8c.html#a32364be58c0044b63dc47aeb962254b4":[11,0,0,26,1],
 "whist__client_8c.html#a3a90209de834d7d87f20ea1f1d3408f4":[11,0,0,26,0],
-"whist__client_8c.html#a51f528deaaeb973f417b46a2ec36f850":[11,0,0,26,1],
-"whist__client_8c.html#a557cdefd7d618aa9c5272f245dded55e":[11,0,0,26,25],
-"whist__client_8c.html#a5b2d8acba46a3a8d41972491e3e06b01":[11,0,0,26,9],
-"whist__client_8c.html#a60a34315f460179939054acaf3ed8163":[11,0,0,26,20],
-"whist__client_8c.html#a6284762fa051e3b50b9b5fe0d91c95f6":[11,0,0,26,11],
-"whist__client_8c.html#a6436c1f61f3702e1e59a9a016c131d93":[11,0,0,26,2],
-"whist__client_8c.html#a724e6f14a5eaffd21dc3012771360af3":[11,0,0,26,15],
-"whist__client_8c.html#a75a4346875818556d440efbf4084be2c":[11,0,0,26,8]
+"whist__client_8c.html#a51f528deaaeb973f417b46a2ec36f850":[11,0,0,26,2],
+"whist__client_8c.html#a557cdefd7d618aa9c5272f245dded55e":[11,0,0,26,26],
+"whist__client_8c.html#a5b2d8acba46a3a8d41972491e3e06b01":[11,0,0,26,10]
 };
