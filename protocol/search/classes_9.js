@@ -1,19 +1,9 @@
 var searchData=
 [
-  ['linkedlist_2351',['LinkedList',['../structLinkedList.html',1,'']]],
-  ['lodepngbitreader_2352',['LodePNGBitReader',['../structLodePNGBitReader.html',1,'']]],
-  ['lodepngbitwriter_2353',['LodePNGBitWriter',['../structLodePNGBitWriter.html',1,'']]],
-  ['lodepngcolormode_2354',['LodePNGColorMode',['../structLodePNGColorMode.html',1,'']]],
-  ['lodepngcolorstats_2355',['LodePNGColorStats',['../structLodePNGColorStats.html',1,'']]],
-  ['lodepngcompresssettings_2356',['LodePNGCompressSettings',['../structLodePNGCompressSettings.html',1,'']]],
-  ['lodepngdecodersettings_2357',['LodePNGDecoderSettings',['../structLodePNGDecoderSettings.html',1,'']]],
-  ['lodepngdecompresssettings_2358',['LodePNGDecompressSettings',['../structLodePNGDecompressSettings.html',1,'']]],
-  ['lodepngencodersettings_2359',['LodePNGEncoderSettings',['../structLodePNGEncoderSettings.html',1,'']]],
-  ['lodepnginfo_2360',['LodePNGInfo',['../structLodePNGInfo.html',1,'']]],
-  ['lodepngstate_2361',['LodePNGState',['../structLodePNGState.html',1,'']]],
-  ['lodepngtime_2362',['LodePNGTime',['../structLodePNGTime.html',1,'']]],
-  ['loggerqueueitem_2363',['LoggerQueueItem',['../structLoggerQueueItem.html',1,'']]],
-  ['ltraction_2364',['LTRAction',['../structLTRAction.html',1,'']]],
-  ['ltrframe_2365',['LTRFrame',['../structLTRFrame.html',1,'']]],
-  ['ltrstate_2366',['LTRState',['../structLTRState.html',1,'']]]
+  ['incomingbitrate_2389',['IncomingBitrate',['../structIncomingBitrate.html',1,'']]],
+  ['inputdevice_2390',['InputDevice',['../structInputDevice.html',1,'']]],
+  ['inputdeviceuinput_2391',['InputDeviceUInput',['../structInputDeviceUInput.html',1,'']]],
+  ['inputdeviceweston_2392',['InputDeviceWeston',['../structInputDeviceWeston.html',1,'']]],
+  ['inputdevicewin_2393',['InputDeviceWin',['../structInputDeviceWin.html',1,'']]],
+  ['inputdevicextest_2394',['InputDeviceXTest',['../structInputDeviceXTest.html',1,'']]]
 ];

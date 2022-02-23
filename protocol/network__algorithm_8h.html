@@ -113,6 +113,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5fca7d6bd4c3f135046f727ee8224bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8h.html#a5fca7d6bd4c3f135046f727ee8224bf7">get_desired_network_settings</a> (<a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> stats)</td></tr>
 <tr class="memdesc:a5fca7d6bd4c3f135046f727ee8224bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will calculate what network settings are desired, in response to any network statistics given.  <a href="network__algorithm_8h.html#a5fca7d6bd4c3f135046f727ee8224bf7">More...</a><br /></td></tr>
 <tr class="separator:a5fca7d6bd4c3f135046f727ee8224bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b690342b05bb87cddd488dd4a71a2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8h.html#ae7b690342b05bb87cddd488dd4a71a2f">whist_congestion_controller</a> (<a class="el" href="structGroupStats.html">GroupStats</a> *curr_group_stats, <a class="el" href="structGroupStats.html">GroupStats</a> *prev_group_stats, int incoming_bitrate, double packet_loss_ratio, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
+<tr class="memdesc:ae7b690342b05bb87cddd488dd4a71a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will estimate the new bitrate based on whist congestion control algo.  <a href="network__algorithm_8h.html#ae7b690342b05bb87cddd488dd4a71a2f">More...</a><br /></td></tr>
+<tr class="separator:ae7b690342b05bb87cddd488dd4a71a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1bf4e1ceafb2cefbb54eb37c85336e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8h.html#ad1bf4e1ceafb2cefbb54eb37c85336e4">get_default_network_settings</a> (int width, int height, int dpi)</td></tr>
 <tr class="memdesc:ad1bf4e1ceafb2cefbb54eb37c85336e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will return the default network settings for a given video resolution.  <a href="network__algorithm_8h.html#ad1bf4e1ceafb2cefbb54eb37c85336e4">More...</a><br /></td></tr>
 <tr class="separator:ad1bf4e1ceafb2cefbb54eb37c85336e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,6 +282,65 @@ Usage</h1>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae7b690342b05bb87cddd488dd4a71a2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b690342b05bb87cddd488dd4a71a2f">&#9670;&nbsp;</a></span>whist_congestion_controller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool whist_congestion_controller </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGroupStats.html">GroupStats</a> *&#160;</td>
+          <td class="paramname"><em>curr_group_stats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structGroupStats.html">GroupStats</a> *&#160;</td>
+          <td class="paramname"><em>prev_group_stats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>incoming_bitrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>packet_loss_ratio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structNetworkSettings.html">NetworkSettings</a> *&#160;</td>
+          <td class="paramname"><em>network_settings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function will estimate the new bitrate based on whist congestion control algo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curr_group_stats</td><td>Pointer to struct containing any current group of packets' departure time and arrival time</td></tr>
+    <tr><td class="paramname">prev_group_stats</td><td>Pointer to struct containing any previous group of packets' departure time and arrival time</td></tr>
+    <tr><td class="paramname">incoming_bitrate</td><td>Bitrate received over the last few hundred milliseconds. Exact duration is specified in <a class="el" href="WCC_8md.html">WCC.md</a></td></tr>
+    <tr><td class="paramname">packet_loss_ratio</td><td>Packet loss ratio over last 250ms or so</td></tr>
+    <tr><td class="paramname">network_settings</td><td>Pointer to the struct containing previous network_settings. Also the new network settings will be updated in this struct.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether network_settings struct was updated with new values or not </dd></dl>
 
 </div>
 </div>

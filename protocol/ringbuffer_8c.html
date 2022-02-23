@@ -127,9 +127,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6ee7588c05580e80dd58f21f0c7b8765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a6ee7588c05580e80dd58f21f0c7b8765">init_frame</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int num_original_indices, int num_fec_indices)</td></tr>
-<tr class="memdesc:a6ee7588c05580e80dd58f21f0c7b8765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the frame with the given parameters.  <a href="ringbuffer_8c.html#a6ee7588c05580e80dd58f21f0c7b8765">More...</a><br /></td></tr>
-<tr class="separator:a6ee7588c05580e80dd58f21f0c7b8765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9ac6a8afe3feb85dbe26a071789f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#aed9ac6a8afe3feb85dbe26a071789f49">init_frame</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id, int num_original_indices, int num_fec_indices, int prev_frame_num_duplicates)</td></tr>
+<tr class="memdesc:aed9ac6a8afe3feb85dbe26a071789f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the frame with the given parameters.  <a href="ringbuffer_8c.html#aed9ac6a8afe3feb85dbe26a071789f49">More...</a><br /></td></tr>
+<tr class="separator:aed9ac6a8afe3feb85dbe26a071789f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d1fd0baacc62d8497fe0512cd5fce99"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a7d1fd0baacc62d8497fe0512cd5fce99">get_framebuffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structFrameData.html">FrameData</a> *current_frame)</td></tr>
 <tr class="separator:a7d1fd0baacc62d8497fe0512cd5fce99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76af721a0fc6c100fde1cf9634ffccad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a76af721a0fc6c100fde1cf9634ffccad">init_ring_buffer</a> (<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int max_frame_size, int ring_buffer_size, <a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="ringbuffer_8h.html#ac5e078b6495f58a5fe5e6bdc519e33f8">NackPacketFn</a> nack_packet, <a class="el" href="ringbuffer_8h.html#a190efbf6a90b9051959f49975b879bd8">StreamResetFn</a> request_stream_reset)</td></tr>
@@ -141,6 +141,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5">get_frame_at_id</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
 <tr class="memdesc:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrives the frame at the given ID in the ring buffer.  <a href="ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5">More...</a><br /></td></tr>
 <tr class="separator:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0263a542b2b625b41edd57f30dfa1b28"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a0263a542b2b625b41edd57f30dfa1b28">get_packet_loss_ratio</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
+<tr class="memdesc:a0263a542b2b625b41edd57f30dfa1b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the packet loss ratio of non-rendered frames in the last 250ms.  <a href="ringbuffer_8c.html#a0263a542b2b625b41edd57f30dfa1b28">More...</a><br /></td></tr>
+<tr class="separator:a0263a542b2b625b41edd57f30dfa1b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22897ddd74ba2d11192502d98a4c7227"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a22897ddd74ba2d11192502d98a4c7227">is_ready_to_render</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
 <tr class="memdesc:a22897ddd74ba2d11192502d98a4c7227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame.  <a href="ringbuffer_8c.html#a22897ddd74ba2d11192502d98a4c7227">More...</a><br /></td></tr>
 <tr class="separator:a22897ddd74ba2d11192502d98a4c7227"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -477,8 +480,35 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6ee7588c05580e80dd58f21f0c7b8765"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ee7588c05580e80dd58f21f0c7b8765">&#9670;&nbsp;</a></span>init_frame()</h2>
+<a id="a0263a542b2b625b41edd57f30dfa1b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0263a542b2b625b41edd57f30dfa1b28">&#9670;&nbsp;</a></span>get_packet_loss_ratio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double get_packet_loss_ratio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
+          <td class="paramname"><em>ring_buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the packet loss ratio of non-rendered frames in the last 250ms. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ring_buffer</td><td>Ring buffer to access</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Packet loss ratio of non-rendered frames in the last 250ms. </dd></dl>
+
+</div>
+</div>
+<a id="aed9ac6a8afe3feb85dbe26a071789f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9ac6a8afe3feb85dbe26a071789f49">&#9670;&nbsp;</a></span>init_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,7 +535,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_fec_indices</em>&#160;</td>
+          <td class="paramname"><em>num_fec_indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prev_frame_num_duplicates</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -522,6 +558,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">id</td><td>The ID of the frame to initialize </td></tr>
     <tr><td class="paramname">num_original_indices</td><td>The number of original indices </td></tr>
     <tr><td class="paramname">num_fec_indices</td><td>The number of FEC indices </td></tr>
+    <tr><td class="paramname">prev_frame_num_duplicates</td><td>The number of duplicate filler packets that were sent for previous frame </td></tr>
   </table>
   </dd>
 </dl>

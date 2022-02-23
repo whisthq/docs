@@ -16,8 +16,10 @@ var structFrameData =
     [ "num_times_nacked", "structFrameData.html#ade9910f3dfd891166f811094e39a0556", null ],
     [ "original_packets_received", "structFrameData.html#ae09b582d87f5fc19170e0221843fd167", null ],
     [ "packet_buffer", "structFrameData.html#ab0caf5e0d07141306d014b80f81ef1f7", null ],
+    [ "prev_frame_num_duplicate_packets", "structFrameData.html#a87ebab727011af41f4092ac0cf3bb695", null ],
     [ "received_indices", "structFrameData.html#a28cffb0c17e4f704b491f31b166e544d", null ],
     [ "recovery_mode", "structFrameData.html#a1bdb1b932824acc61d24b6b1643de4aa", null ],
+    [ "redundant_packets_received", "structFrameData.html#a2447a770d31a00749fd429b595ac97aa", null ],
     [ "successful_fec_recovery", "structFrameData.html#a89c89782c514acba9e4f8a91fcde782b", null ],
     [ "type", "structFrameData.html#a41088cd4c0cdaa7dd31184446e0ef124", null ]
 ];

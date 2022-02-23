@@ -144,6 +144,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:acf9e3ecc4bb5e19ca3d47c05729b79a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4be681157f186a43a1decd7a1c918641"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a4be681157f186a43a1decd7a1c918641">nack_buffer_max_payload_size</a> [<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td></tr>
 <tr class="separator:a4be681157f186a43a1decd7a1c918641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6961610b70c2f096694f7816cca89960"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a6961610b70c2f096694f7816cca89960">num_duplicate_packets</a> [<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td></tr>
+<tr class="separator:a6961610b70c2f096694f7816cca89960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6bee4990811e47999fe14af48dec4ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#ad6bee4990811e47999fe14af48dec4ff">ring_buffers</a> [<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td></tr>
 <tr class="separator:ad6bee4990811e47999fe14af48dec4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe86e1f7098e65958116ec39f3f5a0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structStreamResetData.html">StreamResetData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#aebe86e1f7098e65958116ec39f3f5a0e">reset_data</a> [<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td></tr>
@@ -158,6 +160,14 @@ Data Fields</h2></td></tr>
 <tr class="separator:a4edfc1e8a21abf03d8dd297694aa4c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8017af7992ccbdb7140391fb7b6bebc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a8017af7992ccbdb7140391fb7b6bebc3">last_network_settings_time</a></td></tr>
 <tr class="separator:a8017af7992ccbdb7140391fb7b6bebc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b91bd614bfb8426289d6fd04078d85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGroupStats.html">GroupStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#ac9b91bd614bfb8426289d6fd04078d85">group_stats</a> [<a class="el" href="udp_8c.html#ab2e2a8a17401043534915047cfff9d83">MAX_GROUP_STATS</a>]</td></tr>
+<tr class="separator:ac9b91bd614bfb8426289d6fd04078d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa117fa441350d75022bfaf770770955f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#aa117fa441350d75022bfaf770770955f">prev_group_id</a></td></tr>
+<tr class="separator:aa117fa441350d75022bfaf770770955f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4bf0d850759e6919ea18f047cd06c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a2d4bf0d850759e6919ea18f047cd06c6">curr_group_id</a></td></tr>
+<tr class="separator:a2d4bf0d850759e6919ea18f047cd06c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34cc29657e97fef7c521159da10987c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIncomingBitrate.html">IncomingBitrate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a34cc29657e97fef7c521159da10987c2">incoming_bitrate_buckets</a> [<a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a>]</td></tr>
+<tr class="separator:a34cc29657e97fef7c521159da10987c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a462c0356a2e1df8937f2a7549936300c"></a>
@@ -244,6 +254,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a2d4bf0d850759e6919ea18f047cd06c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4bf0d850759e6919ea18f047cd06c6">&#9670;&nbsp;</a></span>curr_group_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UDPContext::curr_group_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad7c756eb5de79b2b4cff799ac64fdc92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7c756eb5de79b2b4cff799ac64fdc92">&#9670;&nbsp;</a></span>current_network_settings</h2>
 
@@ -286,6 +310,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="ac9b91bd614bfb8426289d6fd04078d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b91bd614bfb8426289d6fd04078d85">&#9670;&nbsp;</a></span>group_stats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structGroupStats.html">GroupStats</a> UDPContext::group_stats[<a class="el" href="udp_8c.html#ab2e2a8a17401043534915047cfff9d83">MAX_GROUP_STATS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a057d91b6c4e23d9af04a76a3af20deff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a057d91b6c4e23d9af04a76a3af20deff">&#9670;&nbsp;</a></span>has_pending_packet</h2>
 
@@ -294,6 +332,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool UDPContext::has_pending_packet[<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34cc29657e97fef7c521159da10987c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34cc29657e97fef7c521159da10987c2">&#9670;&nbsp;</a></span>incoming_bitrate_buckets</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structIncomingBitrate.html">IncomingBitrate</a> UDPContext::incoming_bitrate_buckets[<a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -552,6 +604,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a6961610b70c2f096694f7816cca89960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6961610b70c2f096694f7816cca89960">&#9670;&nbsp;</a></span>num_duplicate_packets</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UDPContext::num_duplicate_packets[<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aec2b6de3cefd940f259e6d8e019a9066"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec2b6de3cefd940f259e6d8e019a9066">&#9670;&nbsp;</a></span>pending_packets</h2>
 
@@ -560,6 +626,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structWhistPacket.html">WhistPacket</a> UDPContext::pending_packets[<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994">NUM_PACKET_TYPES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa117fa441350d75022bfaf770770955f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa117fa441350d75022bfaf770770955f">&#9670;&nbsp;</a></span>prev_group_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UDPContext::prev_group_id</td>
         </tr>
       </table>
 </div><div class="memdoc">

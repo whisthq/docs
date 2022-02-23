@@ -116,6 +116,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga17cc946c0eba05b7aafbb2c953db93e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5">get_timer</a> (const <a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *timer)</td></tr>
 <tr class="memdesc:ga17cc946c0eba05b7aafbb2c953db93e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of elapsed time in seconds since the last start_timer.  <a href="group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5">More...</a><br /></td></tr>
 <tr class="separator:ga17cc946c0eba05b7aafbb2c953db93e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36d3842866523095ef393c383b4fcb5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#ga36d3842866523095ef393c383b4fcb5b">adjust_timer</a> (<a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *timer, int num_seconds)</td></tr>
+<tr class="memdesc:ga36d3842866523095ef393c383b4fcb5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the value of the timer by a configurable number of seconds.  <a href="group__timers.html#ga36d3842866523095ef393c383b4fcb5b">More...</a><br /></td></tr>
+<tr class="separator:ga36d3842866523095ef393c383b4fcb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac67515d5dd09a5158f3ce7d1f799405"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#gaac67515d5dd09a5158f3ce7d1f799405">current_time_str</a> (char *buffer, size_t size)</td></tr>
 <tr class="memdesc:gaac67515d5dd09a5158f3ce7d1f799405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string representing the current time.  <a href="group__timers.html#gaac67515d5dd09a5158f3ce7d1f799405">More...</a><br /></td></tr>
 <tr class="separator:gaac67515d5dd09a5158f3ce7d1f799405"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +169,43 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga36d3842866523095ef393c383b4fcb5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36d3842866523095ef393c383b4fcb5b">&#9670;&nbsp;</a></span>adjust_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adjust_timer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_seconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add the value of the timer by a configurable number of seconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Pointer to the timer to query.</td></tr>
+    <tr><td class="paramname">num_seconds</td><td>Number of seconds to be added to the timer value. This parameter can be negative as well. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gaac67515d5dd09a5158f3ce7d1f799405"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaac67515d5dd09a5158f3ce7d1f799405">&#9670;&nbsp;</a></span>current_time_str()</h2>
 

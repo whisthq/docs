@@ -26,6 +26,7 @@ var group__threading =
     [ "whist_init_multithreading", "group__threading.html#ga5cade4228b0827b784005954836fa1fd", null ],
     [ "whist_lock_mutex", "group__threading.html#gaf4922365dbafb9468c981a1a16ceffc7", null ],
     [ "whist_post_semaphore", "group__threading.html#ga28f8cf464a1c071bb3992c5754286c1a", null ],
+    [ "whist_semaphore_value", "group__threading.html#ga2c05ac3e4875259afed56183b880a655", null ],
     [ "whist_set_thread_priority", "group__threading.html#ga72d531550fc8b439130e5d6c118267fe", null ],
     [ "whist_sleep", "group__threading.html#gaf474288fd6c797f86d80dc32476bd86d", null ],
     [ "whist_try_lock_mutex", "group__threading.html#ga3a8aaf7e89673b313c796680ecb61f43", null ],

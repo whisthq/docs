@@ -22,6 +22,7 @@ var struct__whist__server__state =
     [ "input_device", "struct__whist__server__state.html#a67256a4bfb719a4477601ed8d1f56659", null ],
     [ "ltr_context", "struct__whist__server__state.html#a90f524acd358f367c900fa98b3a87b1a", null ],
     [ "pending_encoder", "struct__whist__server__state.html#afa4098b918e96a4121863b69092f2d61", null ],
+    [ "saturate_bandwidth", "struct__whist__server__state.html#ada194d09cc9bbea34d10b47bcc761be8", null ],
     [ "stop_streaming", "struct__whist__server__state.html#a9fad694db9e302f0b79657087b4a8255", null ],
     [ "stream_needs_recovery", "struct__whist__server__state.html#a6ee5b1064a64969f495b8e005cdf2683", null ],
     [ "stream_needs_restart", "struct__whist__server__state.html#ada54a0c2ba82b92f135917e8f49643de", null ],

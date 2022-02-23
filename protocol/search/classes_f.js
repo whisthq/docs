@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['signaturedata_2381',['SignatureData',['../structSignatureData.html',1,'']]],
-  ['socketcontext_2382',['SocketContext',['../structSocketContext.html',1,'']]],
-  ['statisticcontext_2383',['StatisticContext',['../structStatisticContext.html',1,'']]],
-  ['statisticdata_2384',['StatisticData',['../structStatisticData.html',1,'']]],
-  ['statisticinfo_2385',['StatisticInfo',['../structStatisticInfo.html',1,'']]],
-  ['streamresetdata_2386',['StreamResetData',['../structStreamResetData.html',1,'']]],
-  ['stunentry_2387',['StunEntry',['../structStunEntry.html',1,'']]],
-  ['stunrequest_2388',['StunRequest',['../structStunRequest.html',1,'']]]
+  ['regionheader_2421',['RegionHeader',['../structRegionHeader.html',1,'']]],
+  ['registeredresource_2422',['RegisteredResource',['../structRegisteredResource.html',1,'']]],
+  ['ringbuffer_2423',['RingBuffer',['../structRingBuffer.html',1,'']]],
+  ['rwlock_2424',['RWLock',['../structRWLock.html',1,'']]]
 ];

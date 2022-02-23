@@ -8,6 +8,7 @@ var structNetworkThrottleContext =
     [ "current_queue_id", "structNetworkThrottleContext.html#ad80a14b417b12772cbf7281efb1606f9", null ],
     [ "destroying", "structNetworkThrottleContext.html#af1394b5623dc1b94889bba028f636fe4", null ],
     [ "fill_bucket_initially", "structNetworkThrottleContext.html#abe25a6e122fb22056628eb3973d347ba", null ],
+    [ "group_id", "structNetworkThrottleContext.html#a1fe39b1aae4a545de97636193b904f98", null ],
     [ "next_queue_id", "structNetworkThrottleContext.html#a8341b4524dde3671837f9732cf92b7e6", null ],
     [ "queue_cond", "structNetworkThrottleContext.html#a13eec5c3fadad9f30633223b56d5c1ce", null ],
     [ "queue_lock", "structNetworkThrottleContext.html#a69dea2b223bc14a52deed273c831e389", null ]

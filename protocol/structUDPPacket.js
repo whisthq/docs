@@ -2,6 +2,7 @@ var structUDPPacket =
 [
     [ "ba_raw", "structUDPPacket.html#a20c28f810560ec34ec156fe940d31926", null ],
     [ "greatest_failed_id", "structUDPPacket.html#aab12ec95c44b6aa53c38349e4b904be5", null ],
+    [ "group_id", "structUDPPacket.html#ac85002574953bffb5683c563de3ff76e", null ],
     [ "id", "structUDPPacket.html#a248091c90d08e6aa85ec427e3e68eadf", null ],
     [ "index", "structUDPPacket.html#ad3912bb034a085420e5be62e9147de8b", null ],
     [ "index", "structUDPPacket.html#a897005c8e9655cbc58fde204c2b2be96", null ],

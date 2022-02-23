@@ -9,6 +9,7 @@ var ringbuffer_8h =
     [ "destroy_ring_buffer", "ringbuffer_8h.html#af514843307356fd516b1a96211c9d986", null ],
     [ "get_frame_at_id", "ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5", null ],
     [ "get_network_statistics", "ringbuffer_8h.html#a7a6f19b91298c7e3a227df3c5da891cc", null ],
+    [ "get_packet_loss_ratio", "ringbuffer_8h.html#a0263a542b2b625b41edd57f30dfa1b28", null ],
     [ "init_ring_buffer", "ringbuffer_8h.html#a76af721a0fc6c100fde1cf9634ffccad", null ],
     [ "is_ready_to_render", "ringbuffer_8h.html#a22897ddd74ba2d11192502d98a4c7227", null ],
     [ "reset_stream", "ringbuffer_8h.html#ab1bbfe97860061cb1cc4d55514ca4855", null ],

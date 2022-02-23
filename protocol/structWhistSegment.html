@@ -94,6 +94,8 @@ $(document).ready(function(){initNavTree('structWhistSegment.html',''); initResi
 Data Fields</h2></td></tr>
 <tr class="memitem:a91a6a7c036e337a8e3dec0c1561559b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistSegment.html#a91a6a7c036e337a8e3dec0c1561559b4">whist_type</a></td></tr>
 <tr class="separator:a91a6a7c036e337a8e3dec0c1561559b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7458dad8e329073c61e31af4a30ce3b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistSegment.html#a7458dad8e329073c61e31af4a30ce3b1">departure_time</a></td></tr>
+<tr class="separator:a7458dad8e329073c61e31af4a30ce3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a410652275ca39dba57539cc3f42c688e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistSegment.html#a410652275ca39dba57539cc3f42c688e">id</a></td></tr>
 <tr class="separator:a410652275ca39dba57539cc3f42c688e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee4dcc172007f35c5807a70c6bd1783a"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistSegment.html#aee4dcc172007f35c5807a70c6bd1783a">index</a></td></tr>
@@ -104,12 +106,30 @@ Data Fields</h2></td></tr>
 <tr class="separator:ae8a274706d1f95f69c184b0f1fd17aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7818e2ea09bd0aae89c053cd19ce63fe"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistSegment.html#a7818e2ea09bd0aae89c053cd19ce63fe">segment_size</a></td></tr>
 <tr class="separator:a7818e2ea09bd0aae89c053cd19ce63fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4ad445e35e23637eb01565b0826d2e"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistSegment.html#add4ad445e35e23637eb01565b0826d2e">prev_frame_num_duplicates</a></td></tr>
+<tr class="separator:add4ad445e35e23637eb01565b0826d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcc57b496a49e09f3b5e1c0a3a7319f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistSegment.html#afcc57b496a49e09f3b5e1c0a3a7319f2">is_a_nack</a></td></tr>
 <tr class="separator:afcc57b496a49e09f3b5e1c0a3a7319f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25caac38f7cc71d0c89575440b3711a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistSegment.html#ad25caac38f7cc71d0c89575440b3711a">is_a_duplicate</a></td></tr>
+<tr class="separator:ad25caac38f7cc71d0c89575440b3711a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa144ea4f8284ddbf58f80f5055f4e47d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistSegment.html#aa144ea4f8284ddbf58f80f5055f4e47d">segment_data</a> [<a class="el" href="udp_8h.html#a9b54f844079db47f8762b331092ab9b8">MAX_PACKET_SEGMENT_SIZE</a>]</td></tr>
 <tr class="separator:aa144ea4f8284ddbf58f80f5055f4e47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a7458dad8e329073c61e31af4a30ce3b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7458dad8e329073c61e31af4a30ce3b1">&#9670;&nbsp;</a></span>departure_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a> WhistSegment::departure_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a410652275ca39dba57539cc3f42c688e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a410652275ca39dba57539cc3f42c688e">&#9670;&nbsp;</a></span>id</h2>
 
@@ -132,6 +152,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">unsigned short WhistSegment::index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad25caac38f7cc71d0c89575440b3711a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25caac38f7cc71d0c89575440b3711a">&#9670;&nbsp;</a></span>is_a_duplicate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WhistSegment::is_a_duplicate</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -174,6 +208,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">unsigned short WhistSegment::num_indices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add4ad445e35e23637eb01565b0826d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4ad445e35e23637eb01565b0826d2e">&#9670;&nbsp;</a></span>prev_frame_num_duplicates</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short WhistSegment::prev_frame_num_duplicates</td>
         </tr>
       </table>
 </div><div class="memdoc">

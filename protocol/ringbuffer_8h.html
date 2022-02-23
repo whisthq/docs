@@ -131,6 +131,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5">get_frame_at_id</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
 <tr class="memdesc:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrives the frame at the given ID in the ring buffer.  <a href="ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5">More...</a><br /></td></tr>
 <tr class="separator:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0263a542b2b625b41edd57f30dfa1b28"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a0263a542b2b625b41edd57f30dfa1b28">get_packet_loss_ratio</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
+<tr class="memdesc:a0263a542b2b625b41edd57f30dfa1b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the packet loss ratio of non-rendered frames in the last 250ms.  <a href="ringbuffer_8h.html#a0263a542b2b625b41edd57f30dfa1b28">More...</a><br /></td></tr>
+<tr class="separator:a0263a542b2b625b41edd57f30dfa1b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22897ddd74ba2d11192502d98a4c7227"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a22897ddd74ba2d11192502d98a4c7227">is_ready_to_render</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int id)</td></tr>
 <tr class="memdesc:a22897ddd74ba2d11192502d98a4c7227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame.  <a href="ringbuffer_8h.html#a22897ddd74ba2d11192502d98a4c7227">More...</a><br /></td></tr>
 <tr class="separator:a22897ddd74ba2d11192502d98a4c7227"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,6 +314,33 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Statistics will be taken from the time between the current time, and the last call to get_network_statistics (Or, from init_ring_buffer, on the first call) </dd></dl>
+
+</div>
+</div>
+<a id="a0263a542b2b625b41edd57f30dfa1b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0263a542b2b625b41edd57f30dfa1b28">&#9670;&nbsp;</a></span>get_packet_loss_ratio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double get_packet_loss_ratio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
+          <td class="paramname"><em>ring_buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the packet loss ratio of non-rendered frames in the last 250ms. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ring_buffer</td><td>Ring buffer to access</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Packet loss ratio of non-rendered frames in the last 250ms. </dd></dl>
 
 </div>
 </div>

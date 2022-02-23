@@ -119,9 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a719afae66ac2bd9da6f064fe111e8345"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle_8c.html#a719afae66ac2bd9da6f064fe111e8345">network_throttler_set_burst_bitrate</a> (<a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a> *ctx, int burst_bitrate)</td></tr>
 <tr class="memdesc:a719afae66ac2bd9da6f064fe111e8345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the bandwidth for the network throttler.  <a href="throttle_8c.html#a719afae66ac2bd9da6f064fe111e8345">More...</a><br /></td></tr>
 <tr class="separator:a719afae66ac2bd9da6f064fe111e8345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8094ca0422b39ccb3302aaaf740b959d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle_8c.html#a8094ca0422b39ccb3302aaaf740b959d">network_throttler_wait_byte_allocation</a> (<a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a> *ctx, size_t bytes)</td></tr>
-<tr class="memdesc:a8094ca0422b39ccb3302aaaf740b959d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block the current thread until the network throttler can accept more data.  <a href="throttle_8c.html#a8094ca0422b39ccb3302aaaf740b959d">More...</a><br /></td></tr>
-<tr class="separator:a8094ca0422b39ccb3302aaaf740b959d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7d937741746a5c2a34e5250841339c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle_8c.html#a9a7d937741746a5c2a34e5250841339c">network_throttler_wait_byte_allocation</a> (<a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a> *ctx, size_t bytes)</td></tr>
+<tr class="memdesc:a9a7d937741746a5c2a34e5250841339c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block the current thread until the network throttler can accept more data.  <a href="throttle_8c.html#a9a7d937741746a5c2a34e5250841339c">More...</a><br /></td></tr>
+<tr class="separator:a9a7d937741746a5c2a34e5250841339c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af82ac32d8ffd0755c473a9551177fb91"></a>
@@ -240,14 +240,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8094ca0422b39ccb3302aaaf740b959d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8094ca0422b39ccb3302aaaf740b959d">&#9670;&nbsp;</a></span>network_throttler_wait_byte_allocation()</h2>
+<a id="a9a7d937741746a5c2a34e5250841339c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a7d937741746a5c2a34e5250841339c">&#9670;&nbsp;</a></span>network_throttler_wait_byte_allocation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void network_throttler_wait_byte_allocation </td>
+          <td class="memname">int network_throttler_wait_byte_allocation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structNetworkThrottleContext.html">NetworkThrottleContext</a> *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
@@ -270,10 +270,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>The network throttler context. </td></tr>
-    <tr><td class="paramname">bytes</td><td>The number of bytes that will be sent. </td></tr>
+    <tr><td class="paramname">bytes</td><td>The number of bytes that will be sent.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns if ID of group of packets that are being sent in the current burst interval </dd></dl>
 
 </div>
 </div>

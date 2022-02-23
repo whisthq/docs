@@ -1,28 +1,7 @@
 var searchData=
 [
-  ['whistclientmessage_2402',['WhistClientMessage',['../structWhistClientMessage.html',1,'']]],
-  ['whistcursor_2403',['WhistCursor',['../structWhistCursor.html',1,'']]],
-  ['whistcursorinfo_2404',['WhistCursorInfo',['../structWhistCursorInfo.html',1,'']]],
-  ['whistcursortypes_2405',['WhistCursorTypes',['../structWhistCursorTypes.html',1,'']]],
-  ['whistdestination_2406',['WhistDestination',['../structWhistDestination.html',1,'']]],
-  ['whistdiscoveryreplymessage_2407',['WhistDiscoveryReplyMessage',['../structWhistDiscoveryReplyMessage.html',1,'']]],
-  ['whistdiscoveryrequestmessage_2408',['WhistDiscoveryRequestMessage',['../structWhistDiscoveryRequestMessage.html',1,'']]],
-  ['whistframeackmessage_2409',['WhistFrameAckMessage',['../structWhistFrameAckMessage.html',1,'']]],
-  ['whistkeyboardlayout_2410',['WhistKeyboardLayout',['../structWhistKeyboardLayout.html',1,'']]],
-  ['whistkeyboardmessage_2411',['WhistKeyboardMessage',['../structWhistKeyboardMessage.html',1,'']]],
-  ['whistkeyboardstate_2412',['WhistKeyboardState',['../structWhistKeyboardState.html',1,'']]],
-  ['whistmousebuttonmessage_2413',['WhistMouseButtonMessage',['../structWhistMouseButtonMessage.html',1,'']]],
-  ['whistmousemotionmessage_2414',['WhistMouseMotionMessage',['../structWhistMouseMotionMessage.html',1,'']]],
-  ['whistmousewheelmessage_2415',['WhistMouseWheelMessage',['../structWhistMouseWheelMessage.html',1,'']]],
-  ['whistmultigesturemessage_2416',['WhistMultigestureMessage',['../structWhistMultigestureMessage.html',1,'']]],
-  ['whistnotification_2417',['WhistNotification',['../structWhistNotification.html',1,'']]],
-  ['whistpacket_2418',['WhistPacket',['../structWhistPacket.html',1,'']]],
-  ['whistrenderer_2419',['WhistRenderer',['../structWhistRenderer.html',1,'']]],
-  ['whistrgbcolor_2420',['WhistRGBColor',['../structWhistRGBColor.html',1,'']]],
-  ['whistsegment_2421',['WhistSegment',['../structWhistSegment.html',1,'']]],
-  ['whistservermessage_2422',['WhistServerMessage',['../structWhistServerMessage.html',1,'']]],
-  ['whistsubsystemparams_2423',['WhistSubsystemParams',['../structWhistSubsystemParams.html',1,'']]],
-  ['whisttimerinternal_2424',['WhistTimerInternal',['../structWhistTimerInternal.html',1,'']]],
-  ['whisttimeropaque_2425',['WhistTimerOpaque',['../structWhistTimerOpaque.html',1,'']]],
-  ['whistyuvcolor_2426',['WhistYUVColor',['../structWhistYUVColor.html',1,'']]]
+  ['videocontext_2442',['VideoContext',['../structVideoContext.html',1,'']]],
+  ['videodecoder_2443',['VideoDecoder',['../structVideoDecoder.html',1,'']]],
+  ['videoencoder_2444',['VideoEncoder',['../structVideoEncoder.html',1,'']]],
+  ['videoframe_2445',['VideoFrame',['../structVideoFrame.html',1,'']]]
 ];

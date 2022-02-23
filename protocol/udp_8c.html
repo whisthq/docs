@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('udp_8c.html',''); initResizable(); });
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -109,16 +110,28 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStreamResetData.html">StreamResetData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIncomingBitrate.html">IncomingBitrate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html">UDPContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ab25946be235ad67662b9d4d6573e4808"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab25946be235ad67662b9d4d6573e4808">USE_WHIST_CONGESTION_CONTROL</a>&#160;&#160;&#160;true</td></tr>
+<tr class="separator:ab25946be235ad67662b9d4d6573e4808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6afbd3875118f98013f7cc49969dac90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a6afbd3875118f98013f7cc49969dac90">UDPNETWORKPACKET_HEADER_SIZE</a>&#160;&#160;&#160;((int)(offsetof(<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>, payload)))</td></tr>
 <tr class="separator:a6afbd3875118f98013f7cc49969dac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e2a8a17401043534915047cfff9d83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab2e2a8a17401043534915047cfff9d83">MAX_GROUP_STATS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ab2e2a8a17401043534915047cfff9d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affae1647f8735441fd62ee64b5e7df26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#affae1647f8735441fd62ee64b5e7df26">INCOMING_BITRATE_WINDOW_MS</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:affae1647f8735441fd62ee64b5e7df26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc8fe2cb2b7395c1b877074136fdf03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:adfc8fe2cb2b7395c1b877074136fdf03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcdc6500e6e706775619f219f6ff9df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df">DURATION_PER_BUCKET</a>&#160;&#160;&#160;(<a class="el" href="udp_8c.html#affae1647f8735441fd62ee64b5e7df26">INCOMING_BITRATE_WINDOW_MS</a> / <a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a>)</td></tr>
+<tr class="separator:a5fcdc6500e6e706775619f219f6ff9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f283368e88ac298d92d1506dd4c0abb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb">RETRIES_ON_BUFFER_FULL</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a4f283368e88ac298d92d1506dd4c0abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5222d03fdb5004f2ebc781d1041f0e04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5222d03fdb5004f2ebc781d1041f0e04">UDP_NETWORK_THROTTLER_BUCKET_MS</a>&#160;&#160;&#160;0.5</td></tr>
+<tr class="memitem:a5222d03fdb5004f2ebc781d1041f0e04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5222d03fdb5004f2ebc781d1041f0e04">UDP_NETWORK_THROTTLER_BUCKET_MS</a>&#160;&#160;&#160;5.0</td></tr>
 <tr class="separator:a5222d03fdb5004f2ebc781d1041f0e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3190cca650071548d6b75370b0e5c41c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a3190cca650071548d6b75370b0e5c41c">STATISTICS_SECONDS</a>&#160;&#160;&#160;5.0</td></tr>
 <tr class="separator:a3190cca650071548d6b75370b0e5c41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,8 +143,15 @@ Macros</h2></td></tr>
 <tr class="separator:a364162751f11cecfec916c6db2e7419c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e6533153a99e7fa4b81352018a5b2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ad3e6533153a99e7fa4b81352018a5b2a">NUM_CONFIRMATION_MESSAGES</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:ad3e6533153a99e7fa4b81352018a5b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d54d6aa9e07ea55a20c0cb0a4705d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a16d54d6aa9e07ea55a20c0cb0a4705d1">get_bucket_id</a>(time)&#160;&#160;&#160;((time) / <a class="el" href="whist_8h.html#aeac12c17b335ba3ce62aa2cc8f1746ec">US_IN_MS</a>) / <a class="el" href="udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df">DURATION_PER_BUCKET</a>;</td></tr>
+<tr class="separator:a16d54d6aa9e07ea55a20c0cb0a4705d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890ae089e185134fdcefbc84329a6115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a890ae089e185134fdcefbc84329a6115">MAX_TOTAL_PACKETS</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:a890ae089e185134fdcefbc84329a6115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a29939ea78796274439d3cfe923d8af28"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structIncomingBitrate.html">IncomingBitrate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a29939ea78796274439d3cfe923d8af28">IncomingBitrate</a></td></tr>
+<tr class="separator:a29939ea78796274439d3cfe923d8af28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -179,9 +199,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a6ae4764e36a830e303b387952859739f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a6ae4764e36a830e303b387952859739f">udp_get_client_input_timestamp</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context)</td></tr>
 <tr class="separator:a6ae4764e36a830e303b387952859739f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee4b4dae17ebfff109828253768fec80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aee4b4dae17ebfff109828253768fec80">udp_resend_packet</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int id, int index)</td></tr>
+<tr class="memdesc:aee4b4dae17ebfff109828253768fec80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resends the audio/video packet of specified frame id and packet index.  <a href="udp_8c.html#aee4b4dae17ebfff109828253768fec80">More...</a><br /></td></tr>
 <tr class="separator:aee4b4dae17ebfff109828253768fec80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6db631a1374534b6342f5bd19d7f0df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ac6db631a1374534b6342f5bd19d7f0df">udp_reset_duplicate_packet_counter</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type)</td></tr>
+<tr class="memdesc:ac6db631a1374534b6342f5bd19d7f0df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the duplicate packet counter for the specified frame type.  <a href="udp_8c.html#ac6db631a1374534b6342f5bd19d7f0df">More...</a><br /></td></tr>
+<tr class="separator:ac6db631a1374534b6342f5bd19d7f0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5673dcb479fc273bc4b03c74929028f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aa5673dcb479fc273bc4b03c74929028f">udp_get_num_indices</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int packet_id)</td></tr>
+<tr class="memdesc:aa5673dcb479fc273bc4b03c74929028f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of indices(packets) for the specified frame type and id.  <a href="udp_8c.html#aa5673dcb479fc273bc4b03c74929028f">More...</a><br /></td></tr>
+<tr class="separator:aa5673dcb479fc273bc4b03c74929028f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afef7e30cfe7786aa52b75f8cd9c68445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#afef7e30cfe7786aa52b75f8cd9c68445">udp_handle_network_settings</a> (void *raw_context, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> network_settings)</td></tr>
 <tr class="separator:afef7e30cfe7786aa52b75f8cd9c68445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bd961b505875950fc33444b170f72c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a53bd961b505875950fc33444b170f72c">udp_packet_max_size</a> (void)</td></tr>
+<tr class="separator:a53bd961b505875950fc33444b170f72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -199,6 +228,80 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define CONNECTION_ATTEMPT_INTERVAL_MS&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fcdc6500e6e706775619f219f6ff9df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcdc6500e6e706775619f219f6ff9df">&#9670;&nbsp;</a></span>DURATION_PER_BUCKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DURATION_PER_BUCKET&#160;&#160;&#160;(<a class="el" href="udp_8c.html#affae1647f8735441fd62ee64b5e7df26">INCOMING_BITRATE_WINDOW_MS</a> / <a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16d54d6aa9e07ea55a20c0cb0a4705d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d54d6aa9e07ea55a20c0cb0a4705d1">&#9670;&nbsp;</a></span>get_bucket_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define get_bucket_id</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">time</td><td>)</td>
+          <td>&#160;&#160;&#160;((time) / <a class="el" href="whist_8h.html#aeac12c17b335ba3ce62aa2cc8f1746ec">US_IN_MS</a>) / <a class="el" href="udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df">DURATION_PER_BUCKET</a>;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfc8fe2cb2b7395c1b877074136fdf03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc8fe2cb2b7395c1b877074136fdf03">&#9670;&nbsp;</a></span>INCOMING_BITRATE_NUM_BUCKETS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INCOMING_BITRATE_NUM_BUCKETS&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affae1647f8735441fd62ee64b5e7df26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affae1647f8735441fd62ee64b5e7df26">&#9670;&nbsp;</a></span>INCOMING_BITRATE_WINDOW_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INCOMING_BITRATE_WINDOW_MS&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2e2a8a17401043534915047cfff9d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e2a8a17401043534915047cfff9d83">&#9670;&nbsp;</a></span>MAX_GROUP_STATS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_GROUP_STATS&#160;&#160;&#160;8</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -296,7 +399,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UDP_NETWORK_THROTTLER_BUCKET_MS&#160;&#160;&#160;0.5</td>
+          <td class="memname">#define UDP_NETWORK_THROTTLER_BUCKET_MS&#160;&#160;&#160;5.0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,6 +414,35 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define UDPNETWORKPACKET_HEADER_SIZE&#160;&#160;&#160;((int)(offsetof(<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>, payload)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab25946be235ad67662b9d4d6573e4808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25946be235ad67662b9d4d6573e4808">&#9670;&nbsp;</a></span>USE_WHIST_CONGESTION_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_WHIST_CONGESTION_CONTROL&#160;&#160;&#160;true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a29939ea78796274439d3cfe923d8af28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29939ea78796274439d3cfe923d8af28">&#9670;&nbsp;</a></span>IncomingBitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structIncomingBitrate.html">IncomingBitrate</a> <a class="el" href="structIncomingBitrate.html">IncomingBitrate</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -597,6 +729,51 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aa5673dcb479fc273bc4b03c74929028f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5673dcb479fc273bc4b03c74929028f">&#9670;&nbsp;</a></span>udp_get_num_indices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int udp_get_num_indices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of indices(packets) for the specified frame type and id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The UDP Socket Context </td></tr>
+    <tr><td class="paramname">type</td><td>The type of frames to query for </td></tr>
+    <tr><td class="paramname">id</td><td>Frame ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of indices(packets) </dd></dl>
+
+</div>
+</div>
 <a id="ae5ba49cf201e631db0cb9b475efafe5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5ba49cf201e631db0cb9b475efafe5d">&#9670;&nbsp;</a></span>udp_get_num_pending_frames()</h2>
 
@@ -657,6 +834,24 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53bd961b505875950fc33444b170f72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53bd961b505875950fc33444b170f72c">&#9670;&nbsp;</a></span>udp_packet_max_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t udp_packet_max_size </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -777,7 +972,7 @@ Variables</h2></td></tr>
           <td class="memname">void udp_resend_packet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
-          <td class="paramname"><em>socket_context</em>, </td>
+          <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -804,6 +999,54 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Resends the audio/video packet of specified frame id and packet index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The UDP Socket Context </td></tr>
+    <tr><td class="paramname">type</td><td>The type of frames to resend </td></tr>
+    <tr><td class="paramname">id</td><td>Frame ID </td></tr>
+    <tr><td class="paramname">index</td><td>Packet index </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac6db631a1374534b6342f5bd19d7f0df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6db631a1374534b6342f5bd19d7f0df">&#9670;&nbsp;</a></span>udp_reset_duplicate_packet_counter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void udp_reset_duplicate_packet_counter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the duplicate packet counter for the specified frame type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The UDP Socket Context </td></tr>
+    <tr><td class="paramname">type</td><td>The type of frames to reset </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

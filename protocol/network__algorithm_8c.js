@@ -1,15 +1,25 @@
 var network__algorithm_8c =
 [
+    [ "BANDWITH_USED_THRESHOLD", "network__algorithm_8c.html#a8726652b2320a2409f312b5fabf88962", null ],
     [ "BURST_BITRATE_RATIO", "network__algorithm_8c.html#a9b3aee73161a6fead286063d1bd7b829", null ],
+    [ "CONVERGENCE_THRESHOLD_HIGH", "network__algorithm_8c.html#af7f5dbcaa2e24dbde278ba76b88c6204", null ],
+    [ "CONVERGENCE_THRESHOLD_LOW", "network__algorithm_8c.html#a0728ebe5223d23094bbbbbc81248f628", null ],
+    [ "DECREASE_RATIO", "network__algorithm_8c.html#a85ca41c173686c9a4b799af197448552", null ],
+    [ "DELAY_VARIATION_THRESHOLD_IN_SEC", "network__algorithm_8c.html#a7a91a83e513d563048ee6f49c6386728", null ],
     [ "DPI_BITRATE_PER_PIXEL", "network__algorithm_8c.html#a9b56288712fb54f074f73824d2cff80c", null ],
     [ "DPI_RATIO_EXPONENT", "network__algorithm_8c.html#ad3e8baf17cd31cb0e77a1218204cdbe5", null ],
+    [ "EWMA_FACTOR", "network__algorithm_8c.html#aa3af14bab81dee35828959d2200a6c97", null ],
     [ "EWMA_STATS_SECONDS", "network__algorithm_8c.html#a72f898a5d3f32ed5a20587d3b97383a2", null ],
+    [ "INITIAL_INCREASE_PERCENTAGE", "network__algorithm_8c.html#aee40551c4d1eba56dcfa94b361d4364b", null ],
+    [ "INITIAL_PRE_BURST_MODE_COUNT", "network__algorithm_8c.html#afa8955c7d6aad3df78df935726b34188", null ],
     [ "MAXIMUM_BITRATE", "network__algorithm_8c.html#af99345a216f300c72251d94158573c1c", null ],
     [ "MAXIMUM_BITRATE_PER_PIXEL", "network__algorithm_8c.html#a682172562c46e8d38687ea33bc1c3a59", null ],
     [ "MAXIMUM_BURST_BITRATE", "network__algorithm_8c.html#a7d1a6f11ba27fccd22c0a937de148e8b", null ],
     [ "MINIMUM_BITRATE", "network__algorithm_8c.html#ac2aaa80882bbda0541e0a62c9a6125ec", null ],
     [ "MINIMUM_BITRATE_PER_PIXEL", "network__algorithm_8c.html#a19fab23ebc323ed532349e0a5829885b", null ],
     [ "MINIMUM_BURST_BITRATE", "network__algorithm_8c.html#a766f336f01ead55fa462053310ece2df", null ],
+    [ "NEW_BITRATE_DURATION_IN_SEC", "network__algorithm_8c.html#a036bacb65f7a940624f7ed7ce3156540", null ],
+    [ "OVERUSE_TIME_THRESHOLD_IN_SEC", "network__algorithm_8c.html#a7e3e9fa66062f28a7bd133ae3fa7ffad", null ],
     [ "STARTING_BITRATE", "network__algorithm_8c.html#af6e2306adac4a7fc41cc4c181d2e605b", null ],
     [ "STARTING_BITRATE_PER_PIXEL", "network__algorithm_8c.html#ae222bb0ef7f01c6582a99910b013606d", null ],
     [ "STARTING_BURST_BITRATE", "network__algorithm_8c.html#a97888d50b51f804637c90a7dbee17c44", null ],
@@ -20,6 +30,7 @@ var network__algorithm_8c =
     [ "get_starting_network_settings", "network__algorithm_8c.html#a3164d3eec2e8fbcedab1f454e2442483", null ],
     [ "network_algo_set_dpi", "network__algorithm_8c.html#ab99c00916505d0add8934a3d218f40d5", null ],
     [ "timed_ewma_ratio_bitrate", "network__algorithm_8c.html#a514ba7746992c1c82a8ddb53628aba87", null ],
+    [ "whist_congestion_controller", "network__algorithm_8c.html#ae7b690342b05bb87cddd488dd4a71a2f", null ],
     [ "output_height", "network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104", null ],
     [ "output_width", "network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ]
 ];
