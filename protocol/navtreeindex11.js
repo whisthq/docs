@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"structVideoDecoder.html#a5b3d785474b5a99d64e5baf87bb0abed":[11,0,89,13],
+"structVideoDecoder.html#a72441c34541e71b1a2cabd4fe28128d0":[11,0,89,3],
 "structVideoDecoder.html#a72697a2594afce2d1dbd80eeedd5ec9a":[11,0,89,11],
 "structVideoDecoder.html#a76aaea9423c65a4ed985d8c92bb8709c":[11,0,89,1],
 "structVideoDecoder.html#a82a30f5137d2829eeb2ee326700b52f0":[11,0,89,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "struct__whist__server__state.html#ada54a0c2ba82b92f135917e8f49643de":[11,0,1,25],
 "struct__whist__server__state.html#ae6c75e36b53bb41f862b2dec3b825ef1":[11,0,1,8],
 "struct__whist__server__state.html#ae9f6aca81e0317ac71d254d445e5f783":[11,0,1,9],
-"struct__whist__server__state.html#aeef9b6cf8b58c5601c21aad953750788":[11,0,1,5],
-"struct__whist__server__state.html#afa4098b918e96a4121863b69092f2d61":[11,0,1,21],
-"struct__whist__server__state.html#afed39bd44bdd29c7fa76a7d929c8565d":[11,0,1,11]
+"struct__whist__server__state.html#aeef9b6cf8b58c5601c21aad953750788":[11,0,1,5]
 };
