@@ -147,8 +147,8 @@ var NAVTREEINDEX =
 "structAudioDecoder.html#aff3ae75c61f4666b4347763ca6ac9f3d",
 "structInputDevice.html#a4fa00d68759f1577b838f2cf7c7107bc",
 "structOSXFilenames.html#afb130cc3d8df974472a08125d2ded88d",
-"structWhistClientMessage.html",
-"sysinfo_8c.html#a538a4414821926cda2c9e989764c00fd",
+"structWhistClientMessage.html#a0f5e0baec5bb2d55c15eab4e4d78a372",
+"sysinfo_8c.html#a9283304a24c69f120bdcc1f50aa355d4",
 "whist_8h.html#a18de2db2f97ace4d6129993e3d10e7f2",
 "whist_8h.html#aae969438a57a86fddf0cf53106c9b6b4"
 ];

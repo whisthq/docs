@@ -110,18 +110,12 @@ Data Fields</h2></td></tr>
 <tr class="separator:acf1aa26022ad9c0e212a57dbaedd12bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b662ee521d634b8b5f7822c6252418"><td class="memItemLeft" align="right" valign="top">struct sockaddr_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#aa4b662ee521d634b8b5f7822c6252418">connection_addr</a></td></tr>
 <tr class="separator:aa4b662ee521d634b8b5f7822c6252418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af473354931fbdcd2f63cefc1c2d9b7eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#af473354931fbdcd2f63cefc1c2d9b7eb">consecutive_ping_failures</a></td></tr>
-<tr class="separator:af473354931fbdcd2f63cefc1c2d9b7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa328141dc3a1e9664cb80a508f1be0c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#aa328141dc3a1e9664cb80a508f1be0c6">last_ping_id</a></td></tr>
 <tr class="separator:aa328141dc3a1e9664cb80a508f1be0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e5cc06ac01cf0a06c0e7252da6e304"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a92e5cc06ac01cf0a06c0e7252da6e304">last_pong_id</a></td></tr>
-<tr class="separator:a92e5cc06ac01cf0a06c0e7252da6e304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f97de88ba8b28f5f5c123500d46c47d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a6f97de88ba8b28f5f5c123500d46c47d">last_ping_timer</a></td></tr>
 <tr class="separator:a6f97de88ba8b28f5f5c123500d46c47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad80630f9c73e382c55c08c0563d42e5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#ad80630f9c73e382c55c08c0563d42e5d">last_new_ping_timer</a></td></tr>
-<tr class="separator:ad80630f9c73e382c55c08c0563d42e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f754f3238c0dc4fcbe0501d33bd946"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a75f754f3238c0dc4fcbe0501d33bd946">last_received_ping_timer</a></td></tr>
-<tr class="separator:a75f754f3238c0dc4fcbe0501d33bd946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e2bff530936c72b8fbc0f0cdc9a1af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#aa6e2bff530936c72b8fbc0f0cdc9a1af">last_pong_timer</a></td></tr>
+<tr class="separator:aa6e2bff530936c72b8fbc0f0cdc9a1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e721559680e4bb20ddb141acce49b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a57e721559680e4bb20ddb141acce49b2">connection_lost</a></td></tr>
 <tr class="separator:a57e721559680e4bb20ddb141acce49b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21a8e7e2bfc6d6362ca6b1ed216b8794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#gaa9899c1c25688c008b90165331107ddf">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUDPContext.html#a21a8e7e2bfc6d6362ca6b1ed216b8794">timestamp_mutex</a></td></tr>
@@ -234,20 +228,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool UDPContext::connection_lost</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af473354931fbdcd2f63cefc1c2d9b7eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af473354931fbdcd2f63cefc1c2d9b7eb">&#9670;&nbsp;</a></span>consecutive_ping_failures</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int UDPContext::consecutive_ping_failures</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -380,20 +360,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ad80630f9c73e382c55c08c0563d42e5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad80630f9c73e382c55c08c0563d42e5d">&#9670;&nbsp;</a></span>last_new_ping_timer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> UDPContext::last_new_ping_timer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5fb0477415beb03b238f2ba44ddcb2aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fb0477415beb03b238f2ba44ddcb2aa">&#9670;&nbsp;</a></span>last_ping_client_time</h2>
 
@@ -450,28 +416,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a92e5cc06ac01cf0a06c0e7252da6e304"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e5cc06ac01cf0a06c0e7252da6e304">&#9670;&nbsp;</a></span>last_pong_id</h2>
+<a id="aa6e2bff530936c72b8fbc0f0cdc9a1af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e2bff530936c72b8fbc0f0cdc9a1af">&#9670;&nbsp;</a></span>last_pong_timer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int UDPContext::last_pong_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a75f754f3238c0dc4fcbe0501d33bd946"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f754f3238c0dc4fcbe0501d33bd946">&#9670;&nbsp;</a></span>last_received_ping_timer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> UDPContext::last_received_ping_timer</td>
+          <td class="memname"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> UDPContext::last_pong_timer</td>
         </tr>
       </table>
 </div><div class="memdoc">

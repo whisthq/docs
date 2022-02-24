@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structWhistClientMessage.html":[11,0,92],
-"structWhistClientMessage.html#a0116954edece6194206d1b8431f15654":[11,0,92,5],
 "structWhistClientMessage.html#a0f5e0baec5bb2d55c15eab4e4d78a372":[11,0,92,13],
 "structWhistClientMessage.html#a2fee554ec5cf871bae33201f64cb08e2":[11,0,92,15],
 "structWhistClientMessage.html#a3616705f841a5254f6ddbd5a6e884314":[11,0,92,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "sync__packets_8h_source.html":[12,0,0,23],
 "sysinfo_8c.html":[12,0,2,9,26],
 "sysinfo_8c.html#a07db1ac3fcee0bea1bef088a1a2fff55":[12,0,2,9,26,3],
-"sysinfo_8c.html#a1b67e2497c140a3b704c33c865a4140f":[12,0,2,9,26,4]
+"sysinfo_8c.html#a1b67e2497c140a3b704c33c865a4140f":[12,0,2,9,26,4],
+"sysinfo_8c.html#a538a4414821926cda2c9e989764c00fd":[12,0,2,9,26,1],
+"sysinfo_8c.html#a59cfaf693b4362662c1d6b252f11bd72":[12,0,2,9,26,5]
 };
