@@ -1,5 +1,16 @@
 var NAVTREEINDEX8 =
 {
+"structAudioContext.html#a558707606e44318c3099e736a1f0adae":[11,0,3,5],
+"structAudioContext.html#a611797a6b8f80bef57ee5c5e3a6821a0":[11,0,3,4],
+"structAudioContext.html#ab376e8c4f33f0344e5d17613b53aeeb2":[11,0,3,6],
+"structAudioContext.html#af1a8cf4f6ec0486f9628144db0bfa6e1":[11,0,3,7],
+"structAudioContext.html#aff34c71ce802ee0d7c5d01943e350a11":[11,0,3,3],
+"structAudioDecoder.html":[11,0,4],
+"structAudioDecoder.html#a4a55dceb13b37b190d1e4f8e9743f794":[11,0,4,4],
+"structAudioDecoder.html#a827784bdad17fdd71ab71de887f34837":[11,0,4,3],
+"structAudioDecoder.html#a92369d78c0cbda3c14eb66369caaa498":[11,0,4,0],
+"structAudioDecoder.html#ac82173b481da4e3df0fa9d208faca4f2":[11,0,4,5],
+"structAudioDecoder.html#afa1eb71c5c3a651f012993d7838fe994":[11,0,4,2],
 "structAudioDecoder.html#aff3ae75c61f4666b4347763ca6ac9f3d":[11,0,4,1],
 "structAudioDevice.html":[11,0,5],
 "structAudioDevice.html#a012200fa5d0cb415fa8eb68c429305b9":[11,0,5,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX8 =
 "structHash.html#a66918968854722efdf7ab5f8ac2c6c1d":[11,0,33,4],
 "structHash.html#a7247caa3e23eaba8f0d199ec5010c931":[11,0,33,5],
 "structHash.html#abf6ad3db2f652a19cc4ff0792e477899":[11,0,33,0],
-"structHuffmanTree.html":[11,0,34],
-"structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137":[11,0,34,5],
-"structHuffmanTree.html#a232198073ccf061fd9fe1d18d346e220":[11,0,34,4],
-"structHuffmanTree.html#a608df5a24f60d1077a5cde19d5149e1f":[11,0,34,3],
-"structHuffmanTree.html#adf034ca9ce62a4ebfffaaeaba4378a26":[11,0,34,2],
-"structHuffmanTree.html#aef81d45a5c56276c5699a8e9a575021d":[11,0,34,1],
-"structHuffmanTree.html#af4717fb7948ba21daca651dc5d1abad6":[11,0,34,0],
-"structIncomingBitrate.html":[11,0,35],
-"structIncomingBitrate.html#a2d274c0b126bc9d5a6cde5da0884ada8":[11,0,35,0],
-"structIncomingBitrate.html#aeadf3be19db31f02e701441aa279d3b4":[11,0,35,1],
-"structInputDevice.html":[11,0,36],
-"structInputDevice.html#a322dc6da4585c96bff07c5440cb2325d":[11,0,36,10]
+"structHuffmanTree.html":[11,0,34]
 };

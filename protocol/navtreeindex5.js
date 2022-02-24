@@ -1,5 +1,16 @@
 var NAVTREEINDEX5 =
 {
+"lodepng_8c.html#a90e82b0ccc75cfb27ccc9756c8d96f07":[12,0,2,9,14,76],
+"lodepng_8c.html#a912814217b12a5e7a07f5ae745fc0701":[12,0,2,9,14,65],
+"lodepng_8c.html#a9220280c647e2a90a9b05d20038f1c6d":[12,0,2,9,14,73],
+"lodepng_8c.html#a9347ade4708cc43170e18bb1e69491d1":[12,0,2,9,14,23],
+"lodepng_8c.html#a93f12a150968449f016fe93decc1e074":[12,0,2,9,14,37],
+"lodepng_8c.html#a947faf188804eb1b43158cd836333a6f":[12,0,2,9,14,13],
+"lodepng_8c.html#a9b069a52f02ce6d2873c2a45d9fbdb8f":[12,0,2,9,14,48],
+"lodepng_8c.html#a9c2f61923ad2ce3d47354923ba6df62d":[12,0,2,9,14,90],
+"lodepng_8c.html#aa1f269b50d2f73c8f3fc17c500c742c1":[12,0,2,9,14,49],
+"lodepng_8c.html#aa255d9a2e4054fc2888bf7670dac4107":[12,0,2,9,14,96],
+"lodepng_8c.html#aa5b93f17d9f8d6bac5caf453b2387cc3":[12,0,2,9,14,29],
 "lodepng_8c.html#aab7a41a03154aa8d9ef65f2d434641b6":[12,0,2,9,14,110],
 "lodepng_8c.html#aab96a2d19bba9abe1fdcb278492b3f46":[12,0,2,9,14,63],
 "lodepng_8c.html#aabe8616184aa2adaa2a74ad989e6fb41":[12,0,2,9,14,38],
@@ -238,16 +249,5 @@ var NAVTREEINDEX5 =
 "ltr_8h.html#ac07057d351894088f53514403e31379c":[12,0,2,10,5,4],
 "ltr_8h.html#ac83cb9f23bd9933211fa984d4b2d5c7a":[12,0,2,10,5,2],
 "ltr_8h.html#af9fe681a43a0180eabac67caae77d07c":[12,0,2,10,5,8],
-"ltr_8h_source.html":[12,0,2,10,5],
-"mac__clipboard_8c.html":[12,0,2,1,6],
-"mac__clipboard_8c.html#a1f4649cb97b683e29d202d4a5d6ffc32":[12,0,2,1,6,3],
-"mac__clipboard_8c.html#a5867e7500d780fb08c54a5e18768d79f":[12,0,2,1,6,4],
-"mac__clipboard_8c.html#a71ea9ab2e117355993bc245c691731cc":[12,0,2,1,6,5],
-"mac__clipboard_8c.html#a87781954b181bfe0cc6d212f1e155d47":[12,0,2,1,6,0],
-"mac__clipboard_8c.html#abd908a405c1888d1306899a3ad598ea3":[12,0,2,1,6,1],
-"mac__clipboard_8c.html#af1a8e7cc53b2b0d020dcb3cc14a2c294":[12,0,2,1,6,2],
-"mac__utils_8c.html":[12,0,2,9,16],
-"mac__utils_8c.html#a37f291d7f4536e64c60fd8dea0a01c45":[12,0,2,9,16,1],
-"mac__utils_8c.html#a5900c193b1ca3157b8c55576ede670ac":[12,0,2,9,16,2],
-"mac__utils_8c.html#a8f5a2e7c6e05726548f68fe93ba677cb":[12,0,2,9,16,0]
+"ltr_8h_source.html":[12,0,2,10,5]
 };

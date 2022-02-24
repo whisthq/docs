@@ -1,5 +1,16 @@
 var NAVTREEINDEX9 =
 {
+"structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137":[11,0,34,5],
+"structHuffmanTree.html#a232198073ccf061fd9fe1d18d346e220":[11,0,34,4],
+"structHuffmanTree.html#a608df5a24f60d1077a5cde19d5149e1f":[11,0,34,3],
+"structHuffmanTree.html#adf034ca9ce62a4ebfffaaeaba4378a26":[11,0,34,2],
+"structHuffmanTree.html#aef81d45a5c56276c5699a8e9a575021d":[11,0,34,1],
+"structHuffmanTree.html#af4717fb7948ba21daca651dc5d1abad6":[11,0,34,0],
+"structIncomingBitrate.html":[11,0,35],
+"structIncomingBitrate.html#a2d274c0b126bc9d5a6cde5da0884ada8":[11,0,35,0],
+"structIncomingBitrate.html#aeadf3be19db31f02e701441aa279d3b4":[11,0,35,1],
+"structInputDevice.html":[11,0,36],
+"structInputDevice.html#a322dc6da4585c96bff07c5440cb2325d":[11,0,36,10],
 "structInputDevice.html#a4fa00d68759f1577b838f2cf7c7107bc":[11,0,36,1],
 "structInputDevice.html#a6c69b0e4689e2b1e2809d697c8c86f20":[11,0,36,7],
 "structInputDevice.html#a70434199b458179138e987128954e939":[11,0,36,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX9 =
 "structNvidiaEncoder.html#a4f15a9b84f8c8dc8e2e55869feb0e085":[11,0,62,3],
 "structNvidiaEncoder.html#a6148961323d7c225188fecad61d2358d":[11,0,62,0],
 "structNvidiaEncoder.html#a69451df151eec51e0f4f7a258dec8e5d":[11,0,62,1],
-"structNvidiaEncoder.html#a832b3dd35a47459f6383ea505aceb877":[11,0,62,11],
-"structNvidiaEncoder.html#a955fc9b03169bd06a8bdc33f366e916b":[11,0,62,7],
-"structNvidiaEncoder.html#aa54fc34114bd9f8f7521bccde9760418":[11,0,62,5],
-"structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709":[11,0,62,18],
-"structNvidiaEncoder.html#abaedbb50f564c663cae9bd38b2bd05e3":[11,0,62,4],
-"structNvidiaEncoder.html#abf286092a0fcee802960d70b27e32bbf":[11,0,62,2],
-"structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26":[11,0,62,9],
-"structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d":[11,0,62,15],
-"structNvidiaEncoder.html#af5f260d715aee66892c981d206ae5e32":[11,0,62,10],
-"structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[11,0,62,19],
-"structOSXFilenames.html":[11,0,64],
-"structOSXFilenames.html#abea7caa7613ceaec2cb9ea802f27114d":[11,0,64,0]
+"structNvidiaEncoder.html#a832b3dd35a47459f6383ea505aceb877":[11,0,62,11]
 };

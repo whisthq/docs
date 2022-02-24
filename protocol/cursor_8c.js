@@ -1,4 +1,5 @@
 var cursor_8c =
 [
-    [ "get_cursor_info_size", "cursor_8c.html#a28bb2a2fe4d4823021bf8e4a5c80f3cc", null ]
+    [ "whist_cursor_info_get_size", "cursor_8c.html#a7eacbb409180a8765941e40a84b89c5e", null ],
+    [ "whist_cursor_info_to_rgba", "cursor_8c.html#a91c004f271aaf4c5096588566325a583", null ]
 ];

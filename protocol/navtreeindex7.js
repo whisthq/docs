@@ -1,5 +1,16 @@
 var NAVTREEINDEX7 =
 {
+"ringbuffer_8c.html#aaf55b2f848a5a671949daa34c01d0d71":[12,0,2,7,4,11],
+"ringbuffer_8c.html#ab1bbfe97860061cb1cc4d55514ca4855":[12,0,2,7,4,22],
+"ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b":[12,0,2,7,4,9],
+"ringbuffer_8c.html#ace58ba786751c3524bcbb1bc4f8846ce":[12,0,2,7,4,6],
+"ringbuffer_8c.html#ad6d41e44cd0ec6c84560a14d86108a9a":[12,0,2,7,4,23],
+"ringbuffer_8c.html#ad7825c4f2de173c071d97a296ec96d24":[12,0,2,7,4,3],
+"ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911":[12,0,2,7,4,4],
+"ringbuffer_8c.html#ae2bcbf05a79de1a8a42492a8e5169c22":[12,0,2,7,4,5],
+"ringbuffer_8c.html#ae922939964486b252032077c87fc4ae1":[12,0,2,7,4,25],
+"ringbuffer_8c.html#aed9ac6a8afe3feb85dbe26a071789f49":[12,0,2,7,4,19],
+"ringbuffer_8c.html#af514843307356fd516b1a96211c9d986":[12,0,2,7,4,14],
 "ringbuffer_8h.html":[12,0,2,7,5],
 "ringbuffer_8h.html#a0263a542b2b625b41edd57f30dfa1b28":[12,0,2,7,5,9],
 "ringbuffer_8h.html#a190efbf6a90b9051959f49975b879bd8":[12,0,2,7,5,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX7 =
 "structAudioContext.html":[11,0,3],
 "structAudioContext.html#a2869e97966d53b5f9fc23f9ccb9e7743":[11,0,3,2],
 "structAudioContext.html#a333d813e153e9a5457e1a66be50a6d93":[11,0,3,0],
-"structAudioContext.html#a47e4f8566820b049f0e11ac111ce8fc2":[11,0,3,1],
-"structAudioContext.html#a558707606e44318c3099e736a1f0adae":[11,0,3,5],
-"structAudioContext.html#a611797a6b8f80bef57ee5c5e3a6821a0":[11,0,3,4],
-"structAudioContext.html#ab376e8c4f33f0344e5d17613b53aeeb2":[11,0,3,6],
-"structAudioContext.html#af1a8cf4f6ec0486f9628144db0bfa6e1":[11,0,3,7],
-"structAudioContext.html#aff34c71ce802ee0d7c5d01943e350a11":[11,0,3,3],
-"structAudioDecoder.html":[11,0,4],
-"structAudioDecoder.html#a4a55dceb13b37b190d1e4f8e9743f794":[11,0,4,4],
-"structAudioDecoder.html#a827784bdad17fdd71ab71de887f34837":[11,0,4,3],
-"structAudioDecoder.html#a92369d78c0cbda3c14eb66369caaa498":[11,0,4,0],
-"structAudioDecoder.html#ac82173b481da4e3df0fa9d208faca4f2":[11,0,4,5],
-"structAudioDecoder.html#afa1eb71c5c3a651f012993d7838fe994":[11,0,4,2]
+"structAudioContext.html#a47e4f8566820b049f0e11ac111ce8fc2":[11,0,3,1]
 };

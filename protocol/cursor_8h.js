@@ -25,7 +25,9 @@ var cursor_8h =
       [ "CURSOR_STATE_HIDDEN", "cursor_8h.html#a760fb07d906fd578c48427c04171f16faf7afb8c1e22791f6d3f51cc98b83af44", null ],
       [ "CURSOR_STATE_VISIBLE", "cursor_8h.html#a760fb07d906fd578c48427c04171f16faa335fef0c5a110ab9ab94094f5c6b419", null ]
     ] ],
-    [ "get_current_cursor", "cursor_8h.html#a208ea035645f4e2e9ebab713196a54a4", null ],
-    [ "get_cursor_info_size", "cursor_8h.html#aed660fcbbbbe081a3d827915035c35b7", null ],
-    [ "init_cursors", "cursor_8h.html#a6bd12f0e51951988813d790d1e1bb484", null ]
+    [ "whist_cursor_capture", "cursor_8h.html#adad7a7d0b31603dd588ccf0f2d0fe0fe", null ],
+    [ "whist_cursor_capture_destroy", "cursor_8h.html#a878422ca18535f9bc2033156becbf937", null ],
+    [ "whist_cursor_capture_init", "cursor_8h.html#ac1fb51bdd5f5a29790a411f489ddb747", null ],
+    [ "whist_cursor_info_get_size", "cursor_8h.html#ad55423ddf1306990b4f34ccf347a42b3", null ],
+    [ "whist_cursor_info_to_rgba", "cursor_8h.html#a91c004f271aaf4c5096588566325a583", null ]
 ];

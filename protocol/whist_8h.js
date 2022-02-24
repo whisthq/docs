@@ -1,6 +1,5 @@
 var whist_8h =
 [
-    [ "WhistCursor", "structWhistCursor.html", "structWhistCursor" ],
     [ "WhistKeyboardMessage", "structWhistKeyboardMessage.html", "structWhistKeyboardMessage" ],
     [ "WhistMouseButtonMessage", "structWhistMouseButtonMessage.html", "structWhistMouseButtonMessage" ],
     [ "WhistMouseWheelMessage", "structWhistMouseWheelMessage.html", "structWhistMouseWheelMessage" ],
@@ -87,10 +86,8 @@ var whist_8h =
     [ "BitArray", "whist_8h.html#a44f9a1312aeadcbf8ec7561cea0525e2", null ],
     [ "CaptureDeviceType", "whist_8h.html#aac56de0da721105f54191ba968635836", null ],
     [ "CodecType", "whist_8h.html#a9740e3eb33500c4ba6d6efade68933d2", null ],
-    [ "InteractionMode", "whist_8h.html#ae6ec9f8304ad463cd3dfbf626d60fe85", null ],
     [ "WhistClientMessage", "whist_8h.html#acd1f1977b3974cb6c601d4afa132746d", null ],
     [ "WhistClientMessageType", "whist_8h.html#abee4d25da023dd4b08278e8f43382679", null ],
-    [ "WhistCursor", "whist_8h.html#a0f92d8a6eefb6ff25670720bb76e9447", null ],
     [ "WhistDestination", "whist_8h.html#a33aec66994449daf44983b7fb2051a5a", null ],
     [ "WhistDiscoveryReplyMessage", "whist_8h.html#ac013126753384e4b82ed7a90ce723c61", null ],
     [ "WhistDiscoveryRequestMessage", "whist_8h.html#adafdcc229f1d62c495e2b36e02d76864", null ],
@@ -118,11 +115,6 @@ var whist_8h =
       [ "CODEC_TYPE_H264", "whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a27612f02539b2da18de5bdc23cda876f", null ],
       [ "CODEC_TYPE_H265", "whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79af4b1406cb3a6d27c1582480586f29f82", null ],
       [ "CODEC_TYPE_MAKE_32", "whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a6c65cd14a81a7975b603684e07b1c3cb", null ]
-    ] ],
-    [ "InteractionMode", "whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ff", [
-      [ "CONTROL", "whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ffaf722a5faa36087c914da53ebe4711f08", null ],
-      [ "SPECTATE", "whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ffa01da13585122415fbe64a1d4961fcd35", null ],
-      [ "EXCLUSIVE_CONTROL", "whist_8h.html#acf8e584d95cf66831f54e2d9c933b2ffab170611b776a9ab381c9572a4b9a8aea", null ]
     ] ],
     [ "WhistClientMessageType", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128", [
       [ "CMESSAGE_NONE", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a02c0c7ec56775f79f4ee20ce24b2f5dc", null ],

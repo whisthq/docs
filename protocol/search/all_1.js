@@ -33,7 +33,7 @@ var searchData=
   ['app_5fversion_37',['APP_VERSION',['../nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806',1,'nvidiacapture.c']]],
   ['array_38',['array',['../structBitArray.html#aa3d7594ec48d0e37b897bf7ced3e0047',1,'BitArray']]],
   ['arrival_5ftime_39',['arrival_time',['../structGroupStats.html#ae3c647e5eb51590ab29adc7476b94b5a',1,'GroupStats']]],
-  ['arrow_5fcursor_5fhash_40',['ARROW_CURSOR_HASH',['../linuxcursor_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a7109b5b109c7f920637ded7d0b742b11',1,'linuxcursor.c']]],
+  ['arrow_5fcursor_5fhash_40',['ARROW_CURSOR_HASH',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a7109b5b109c7f920637ded7d0b742b11',1,'linux_cursor_capture.c']]],
   ['ask_5finfo_41',['ASK_INFO',['../whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5baae4deeb65aaa4dd474e53c0860d1d51a',1,'network.h']]],
   ['atomic_2eh_42',['atomic.h',['../atomic_8h.html',1,'']]],
   ['audio_2ec_43',['audio.c',['../client_2audio_8c.html',1,'(Global Namespace)'],['../server_2audio_8c.html',1,'(Global Namespace)']]],

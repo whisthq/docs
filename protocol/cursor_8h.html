@@ -156,15 +156,21 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6bd12f0e51951988813d790d1e1bb484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#a6bd12f0e51951988813d790d1e1bb484">init_cursors</a> (void)</td></tr>
-<tr class="memdesc:a6bd12f0e51951988813d790d1e1bb484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all cursors.  <a href="cursor_8h.html#a6bd12f0e51951988813d790d1e1bb484">More...</a><br /></td></tr>
-<tr class="separator:a6bd12f0e51951988813d790d1e1bb484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a208ea035645f4e2e9ebab713196a54a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#a208ea035645f4e2e9ebab713196a54a4">get_current_cursor</a> (void)</td></tr>
-<tr class="memdesc:a208ea035645f4e2e9ebab713196a54a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current cursor image.  <a href="cursor_8h.html#a208ea035645f4e2e9ebab713196a54a4">More...</a><br /></td></tr>
-<tr class="separator:a208ea035645f4e2e9ebab713196a54a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed660fcbbbbe081a3d827915035c35b7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#aed660fcbbbbe081a3d827915035c35b7">get_cursor_info_size</a> (<a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *image)</td></tr>
-<tr class="memdesc:aed660fcbbbbe081a3d827915035c35b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct.  <a href="cursor_8h.html#aed660fcbbbbe081a3d827915035c35b7">More...</a><br /></td></tr>
-<tr class="separator:aed660fcbbbbe081a3d827915035c35b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1fb51bdd5f5a29790a411f489ddb747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#ac1fb51bdd5f5a29790a411f489ddb747">whist_cursor_capture_init</a> (void)</td></tr>
+<tr class="memdesc:ac1fb51bdd5f5a29790a411f489ddb747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize cursor capturing.  <a href="cursor_8h.html#ac1fb51bdd5f5a29790a411f489ddb747">More...</a><br /></td></tr>
+<tr class="separator:ac1fb51bdd5f5a29790a411f489ddb747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878422ca18535f9bc2033156becbf937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#a878422ca18535f9bc2033156becbf937">whist_cursor_capture_destroy</a> (void)</td></tr>
+<tr class="memdesc:a878422ca18535f9bc2033156becbf937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down cursor capturing.  <a href="cursor_8h.html#a878422ca18535f9bc2033156becbf937">More...</a><br /></td></tr>
+<tr class="separator:a878422ca18535f9bc2033156becbf937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55423ddf1306990b4f34ccf347a42b3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#ad55423ddf1306990b4f34ccf347a42b3">whist_cursor_info_get_size</a> (<a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *image)</td></tr>
+<tr class="memdesc:ad55423ddf1306990b4f34ccf347a42b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct.  <a href="cursor_8h.html#ad55423ddf1306990b4f34ccf347a42b3">More...</a><br /></td></tr>
+<tr class="separator:ad55423ddf1306990b4f34ccf347a42b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c004f271aaf4c5096588566325a583"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#a91c004f271aaf4c5096588566325a583">whist_cursor_info_to_rgba</a> (const <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *info)</td></tr>
+<tr class="memdesc:a91c004f271aaf4c5096588566325a583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return RGBA pixel data from a <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct.  <a href="cursor_8h.html#a91c004f271aaf4c5096588566325a583">More...</a><br /></td></tr>
+<tr class="separator:a91c004f271aaf4c5096588566325a583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad7a7d0b31603dd588ccf0f2d0fe0fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8h.html#adad7a7d0b31603dd588ccf0f2d0fe0fe">whist_cursor_capture</a> (void)</td></tr>
+<tr class="memdesc:adad7a7d0b31603dd588ccf0f2d0fe0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current cursor image.  <a href="cursor_8h.html#adad7a7d0b31603dd588ccf0f2d0fe0fe">More...</a><br /></td></tr>
+<tr class="separator:adad7a7d0b31603dd588ccf0f2d0fe0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -309,14 +315,14 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a208ea035645f4e2e9ebab713196a54a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a208ea035645f4e2e9ebab713196a54a4">&#9670;&nbsp;</a></span>get_current_cursor()</h2>
+<a id="adad7a7d0b31603dd588ccf0f2d0fe0fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adad7a7d0b31603dd588ccf0f2d0fe0fe">&#9670;&nbsp;</a></span>whist_cursor_capture()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a>* get_current_cursor </td>
+          <td class="memname"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a>* whist_cursor_capture </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -326,18 +332,58 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Returns the current cursor image. </p>
-<dl class="section return"><dt>Returns</dt><dd>The current cursor image </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The current cursor image as a pointer to a <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct, which must be freed by the caller. </dd></dl>
 
 </div>
 </div>
-<a id="aed660fcbbbbe081a3d827915035c35b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed660fcbbbbe081a3d827915035c35b7">&#9670;&nbsp;</a></span>get_cursor_info_size()</h2>
+<a id="a878422ca18535f9bc2033156becbf937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a878422ca18535f9bc2033156becbf937">&#9670;&nbsp;</a></span>whist_cursor_capture_destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t get_cursor_info_size </td>
+          <td class="memname">void whist_cursor_capture_destroy </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shut down cursor capturing. </p>
+
+</div>
+</div>
+<a id="ac1fb51bdd5f5a29790a411f489ddb747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1fb51bdd5f5a29790a411f489ddb747">&#9670;&nbsp;</a></span>whist_cursor_capture_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_cursor_capture_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize cursor capturing. </p>
+
+</div>
+</div>
+<a id="ad55423ddf1306990b4f34ccf347a42b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55423ddf1306990b4f34ccf347a42b3">&#9670;&nbsp;</a></span>whist_cursor_info_get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t whist_cursor_info_get_size </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td>
           <td class="paramname"><em>image</em></td><td>)</td>
@@ -357,23 +403,30 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a6bd12f0e51951988813d790d1e1bb484"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bd12f0e51951988813d790d1e1bb484">&#9670;&nbsp;</a></span>init_cursors()</h2>
+<a id="a91c004f271aaf4c5096588566325a583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c004f271aaf4c5096588566325a583">&#9670;&nbsp;</a></span>whist_cursor_info_to_rgba()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void init_cursors </td>
+          <td class="memname">uint8_t* whist_cursor_info_to_rgba </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize all cursors. </p>
+<p>Return RGBA pixel data from a <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct from which to generate the RGBA pixel data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The RGBA pixel data as a pointer to a uint8_t array, which must be freed by the caller </dd></dl>
 
 </div>
 </div>

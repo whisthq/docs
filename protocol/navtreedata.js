@@ -60,53 +60,53 @@ var NAVTREE =
     [ "Whist Desktop Clients", "md_client_README.html", null ],
     [ "Whist Windows/Linux Ubuntu Servers", "md_server_README.html", null ],
     [ "Whist Congestion Control(WCC)", "md_whist_network_WCC.html", [
-      [ "Terminology", "md_whist_network_WCC.html#autotoc_md191", null ],
-      [ "Pacer (Network Throttler)", "md_whist_network_WCC.html#autotoc_md192", null ],
-      [ "Algorithm", "md_whist_network_WCC.html#autotoc_md193", [
+      [ "Terminology", "md_whist_network_WCC.html#autotoc_md195", null ],
+      [ "Pacer (Network Throttler)", "md_whist_network_WCC.html#autotoc_md196", null ],
+      [ "Algorithm", "md_whist_network_WCC.html#autotoc_md197", [
         [ "Checks & Tests", "index.html#autotoc_md23", null ],
         [ "Unit Testing", "index.html#autotoc_md24", null ],
         [ "Option Flags", "md_client_README.html#autotoc_md53", null ],
         [ "Recommended Workflow for Building Server Protocol on Linux", "md_server_README.html#autotoc_md99", null ],
-        [ "Arrival time model", "md_whist_network_WCC.html#autotoc_md194", null ],
-        [ "Inter-group delay variation filter", "md_whist_network_WCC.html#autotoc_md195", null ],
-        [ "Over-use detector", "md_whist_network_WCC.html#autotoc_md196", null ],
-        [ "Rate control", "md_whist_network_WCC.html#autotoc_md197", [
-          [ "Increase bitrate", "md_whist_network_WCC.html#autotoc_md198", null ],
-          [ "Decrease bitrate", "md_whist_network_WCC.html#autotoc_md199", null ],
-          [ "Saturate Bandwidth", "md_whist_network_WCC.html#autotoc_md200", null ],
-          [ "Increase percentage", "md_whist_network_WCC.html#autotoc_md201", null ],
-          [ "Burst Bitrate", "md_whist_network_WCC.html#autotoc_md202", null ]
+        [ "Arrival time model", "md_whist_network_WCC.html#autotoc_md198", null ],
+        [ "Inter-group delay variation filter", "md_whist_network_WCC.html#autotoc_md199", null ],
+        [ "Over-use detector", "md_whist_network_WCC.html#autotoc_md200", null ],
+        [ "Rate control", "md_whist_network_WCC.html#autotoc_md201", [
+          [ "Increase bitrate", "md_whist_network_WCC.html#autotoc_md202", null ],
+          [ "Decrease bitrate", "md_whist_network_WCC.html#autotoc_md203", null ],
+          [ "Saturate Bandwidth", "md_whist_network_WCC.html#autotoc_md204", null ],
+          [ "Increase percentage", "md_whist_network_WCC.html#autotoc_md205", null ],
+          [ "Burst Bitrate", "md_whist_network_WCC.html#autotoc_md206", null ]
         ] ],
-        [ "RECOMMENDED values and reasons", "md_whist_network_WCC.html#autotoc_md203", null ]
+        [ "RECOMMENDED values and reasons", "md_whist_network_WCC.html#autotoc_md207", null ]
       ] ],
-      [ "References", "md_whist_network_WCC.html#autotoc_md204", null ]
+      [ "References", "md_whist_network_WCC.html#autotoc_md208", null ]
     ] ],
     [ "A Glimpse of Debug Console + Protocol Analyzer", "md_whist_tools_README.html", [
-      [ "Debug Console", "md_whist_tools_README.html#autotoc_md210", [
-        [ "Overview", "md_whist_tools_README.html#autotoc_md211", null ],
-        [ "How to enable", "md_whist_tools_README.html#autotoc_md212", null ],
-        [ "How to access", "md_whist_tools_README.html#autotoc_md213", null ],
-        [ "Support Commands", "md_whist_tools_README.html#autotoc_md214", [
-          [ "<tt>report_XXX</tt>", "md_whist_tools_README.html#autotoc_md215", null ],
-          [ "<tt>set</tt>", "md_whist_tools_README.html#autotoc_md216", null ],
-          [ "<tt>info</tt>", "md_whist_tools_README.html#autotoc_md217", null ],
-          [ "<tt>insert_atexit_handler</tt> or <tt>insert</tt>", "md_whist_tools_README.html#autotoc_md218", null ]
+      [ "Debug Console", "md_whist_tools_README.html#autotoc_md214", [
+        [ "Overview", "md_whist_tools_README.html#autotoc_md215", null ],
+        [ "How to enable", "md_whist_tools_README.html#autotoc_md216", null ],
+        [ "How to access", "md_whist_tools_README.html#autotoc_md217", null ],
+        [ "Support Commands", "md_whist_tools_README.html#autotoc_md218", [
+          [ "<tt>report_XXX</tt>", "md_whist_tools_README.html#autotoc_md219", null ],
+          [ "<tt>set</tt>", "md_whist_tools_README.html#autotoc_md220", null ],
+          [ "<tt>info</tt>", "md_whist_tools_README.html#autotoc_md221", null ],
+          [ "<tt>insert_atexit_handler</tt> or <tt>insert</tt>", "md_whist_tools_README.html#autotoc_md222", null ]
         ] ]
       ] ],
-      [ "Protocol Analyzer", "md_whist_tools_README.html#autotoc_md219", [
-        [ "Overview", "md_whist_tools_README.html#autotoc_md220", null ],
-        [ "How to run", "md_whist_tools_README.html#autotoc_md221", null ],
-        [ "Report format", "md_whist_tools_README.html#autotoc_md222", [
-          [ "high level information/statistic", "md_whist_tools_README.html#autotoc_md223", null ],
-          [ "break down of frames", "md_whist_tools_README.html#autotoc_md224", [
-            [ "breakdown of segments", "md_whist_tools_README.html#autotoc_md225", null ]
+      [ "Protocol Analyzer", "md_whist_tools_README.html#autotoc_md223", [
+        [ "Overview", "md_whist_tools_README.html#autotoc_md224", null ],
+        [ "How to run", "md_whist_tools_README.html#autotoc_md225", null ],
+        [ "Report format", "md_whist_tools_README.html#autotoc_md226", [
+          [ "high level information/statistic", "md_whist_tools_README.html#autotoc_md227", null ],
+          [ "break down of frames", "md_whist_tools_README.html#autotoc_md228", [
+            [ "breakdown of segments", "md_whist_tools_README.html#autotoc_md229", null ]
           ] ]
         ] ],
-        [ "Implementation", "md_whist_tools_README.html#autotoc_md226", [
-          [ "Data structures", "md_whist_tools_README.html#autotoc_md227", null ],
-          [ "Hooks", "md_whist_tools_README.html#autotoc_md228", null ],
-          [ "Statistics generator", "md_whist_tools_README.html#autotoc_md229", null ],
-          [ "Pretty printer for frame breakdown", "md_whist_tools_README.html#autotoc_md230", null ]
+        [ "Implementation", "md_whist_tools_README.html#autotoc_md230", [
+          [ "Data structures", "md_whist_tools_README.html#autotoc_md231", null ],
+          [ "Hooks", "md_whist_tools_README.html#autotoc_md232", null ],
+          [ "Statistics generator", "md_whist_tools_README.html#autotoc_md233", null ],
+          [ "Pretty printer for frame breakdown", "md_whist_tools_README.html#autotoc_md234", null ]
         ] ]
       ] ]
     ] ],
@@ -138,19 +138,19 @@ var NAVTREEINDEX =
 [
 "aes_8c.html",
 "client__utils_8c.html#ac2c155b9515a1ce8f319a5f18e5207ae",
-"error__monitor_8c.html#a611aea3d89115184e7b59a56c33e5d09",
-"globals_eval_h.html",
-"group__threading.html#gga1eedf1deef6e272cb639c0bc15a3e68fa8686cf4c818a515a4842e891d88f2f37",
-"lodepng_8c.html#aab7a41a03154aa8d9ef65f2d434641b6",
-"mac__utils_8h.html",
-"ringbuffer_8h.html",
-"structAudioDecoder.html#aff3ae75c61f4666b4347763ca6ac9f3d",
-"structInputDevice.html#a4fa00d68759f1577b838f2cf7c7107bc",
-"structOSXFilenames.html#afb130cc3d8df974472a08125d2ded88d",
-"structWhistClientMessage.html#a0f5e0baec5bb2d55c15eab4e4d78a372",
-"sysinfo_8c.html#a9283304a24c69f120bdcc1f50aa355d4",
-"whist_8h.html#a18de2db2f97ace4d6129993e3d10e7f2",
-"whist_8h.html#aae969438a57a86fddf0cf53106c9b6b4"
+"encode_8h.html#a70988121b77d11b511a2bd2fe701d665",
+"globals_defs_w.html",
+"group__threading.html#gaf4922365dbafb9468c981a1a16ceffc7",
+"lodepng_8c.html#a90e82b0ccc75cfb27ccc9756c8d96f07",
+"mac__clipboard_8c.html",
+"ringbuffer_8c.html#aaf55b2f848a5a671949daa34c01d0d71",
+"structAudioContext.html#a558707606e44318c3099e736a1f0adae",
+"structHuffmanTree.html#a1d38309ac94616a587ed20a583aa1137",
+"structNvidiaEncoder.html#a955fc9b03169bd06a8bdc33f366e916b",
+"structVideoFrame.html#a5a3d09c14f8bde62ed28b35578e52f87",
+"sysinfo_8c.html#a97742e7c6864fa884d35d5c21a4a901a",
+"whist_8h.html#a263ebc1eb05493f4752619082632207f",
+"whist_8h.html#abc95f4cc09d4297e52acd3113483a47d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
