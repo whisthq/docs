@@ -98,6 +98,7 @@ var annotated_dup =
     [ "WhistDestination", "structWhistDestination.html", "structWhistDestination" ],
     [ "WhistDiscoveryReplyMessage", "structWhistDiscoveryReplyMessage.html", "structWhistDiscoveryReplyMessage" ],
     [ "WhistDiscoveryRequestMessage", "structWhistDiscoveryRequestMessage.html", "structWhistDiscoveryRequestMessage" ],
+    [ "WhistFeatureDescriptor", "structWhistFeatureDescriptor.html", "structWhistFeatureDescriptor" ],
     [ "WhistFrameAckMessage", "structWhistFrameAckMessage.html", "structWhistFrameAckMessage" ],
     [ "WhistKeyboardLayout", "structWhistKeyboardLayout.html", "structWhistKeyboardLayout" ],
     [ "WhistKeyboardMessage", "structWhistKeyboardMessage.html", "structWhistKeyboardMessage" ],
