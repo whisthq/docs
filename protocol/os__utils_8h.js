@@ -2,6 +2,7 @@ var os__utils_8h =
 [
     [ "WhistKeyboardLayout", "structWhistKeyboardLayout.html", "structWhistKeyboardLayout" ],
     [ "WhistNotification", "structWhistNotification.html", "structWhistNotification" ],
+    [ "MAX_ADDITIONAL_COMMAND_LENGTH", "os__utils_8h.html#ae3bc6b46cdc2836b49014bfc44403114", null ],
     [ "MAX_NOTIF_MSG_LEN", "os__utils_8h.html#a4f63b2c2e0ef286befaaf2813e33ec12", null ],
     [ "MAX_NOTIF_TITLE_LEN", "os__utils_8h.html#ab08c30fcd992ab4c9c4ddaf0f7d851bc", null ],
     [ "WHIST_KB_LAYOUT_NAME_MAX_LENGTH", "os__utils_8h.html#a18651d38d29ffbf532d68ad22b34be77", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structVideoDecoder.html#a27967f2aa7bdc30485b06955aeb919fd":[11,0,89,0],
 "structVideoDecoder.html#a5b3d785474b5a99d64e5baf87bb0abed":[11,0,89,13],
 "structVideoDecoder.html#a72441c34541e71b1a2cabd4fe28128d0":[11,0,89,3],
 "structVideoDecoder.html#a72697a2594afce2d1dbd80eeedd5ec9a":[11,0,89,11],
@@ -107,7 +108,8 @@ var NAVTREEINDEX11 =
 "structWhistFrameAckMessage.html":[11,0,99],
 "structWhistFrameAckMessage.html#abc38ffd0a0ab5b9e44b369b8ef49483d":[11,0,99,0],
 "structWhistKeyboardLayout.html":[11,0,100],
-"structWhistKeyboardLayout.html#ac3ff70fb8f3c16b3695e4ca52345795c":[11,0,100,0],
+"structWhistKeyboardLayout.html#a9d6ee3e9b3acd8e0da3bae8555997c57":[11,0,100,0],
+"structWhistKeyboardLayout.html#ac3ff70fb8f3c16b3695e4ca52345795c":[11,0,100,1],
 "structWhistKeyboardMessage.html":[11,0,101],
 "structWhistKeyboardMessage.html#a6b323163fb1e9ad1bc542b7fe4dfd808":[11,0,101,3],
 "structWhistKeyboardMessage.html#a9f707cffb320d9c66027a22988a9b938":[11,0,101,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "struct__whist__server__state.html#ada194d09cc9bbea34d10b47bcc761be8":[11,0,1,22],
 "struct__whist__server__state.html#ada51c733dc984f0386d42893a9c2faf9":[11,0,1,6],
 "struct__whist__server__state.html#ada54a0c2ba82b92f135917e8f49643de":[11,0,1,25],
-"struct__whist__server__state.html#ae6c75e36b53bb41f862b2dec3b825ef1":[11,0,1,8],
-"struct__whist__server__state.html#ae9f6aca81e0317ac71d254d445e5f783":[11,0,1,9],
-"struct__whist__server__state.html#aeef9b6cf8b58c5601c21aad953750788":[11,0,1,5]
+"struct__whist__server__state.html#ae6c75e36b53bb41f862b2dec3b825ef1":[11,0,1,8]
 };
