@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#375EAB">
 
-  <title>ttys - Whist Backend Services</title>
+  <title>helpers - Whist Backend Services</title>
 
 <link type="text/css" rel="stylesheet" href="https://docs.whist.com/backend/services//lib/godoc/style.css">
 
@@ -39,7 +39,7 @@
 
 
   <h1>
-    Package ttys
+    Package helpers
     <span class="text-muted"></span>
   </h1>
 
@@ -73,7 +73,7 @@
 		
 		<div id="short-nav">
 			<dl>
-			<dd><code>import "github.com/whisthq/whist/backend/services/host-service/mandelbox/ttys"</code></dd>
+			<dd><code>import "github.com/whisthq/whist/backend/services/scaling-service/scaling_algorithms/helpers"</code></dd>
 			</dl>
 			<dl>
 			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
@@ -89,10 +89,7 @@
 			</div>
 			<div class="expanded">
 				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
-				<p>
-Package ttys abstracts away allocation and assignment of TTY devices for mandelboxes.
-</p>
-
+				
 				
 			</div>
 		</div>
@@ -111,16 +108,11 @@ Package ttys abstracts away allocation and assignment of TTY devices for mandelb
 			
 			
 				
-				<dd><a href="#Free">func Free(tty TTY)</a></dd>
+				<dd><a href="#GetAvailableInstances">func GetAvailableInstances(imageID string, activeInstances subscriptions.WhistInstances) int</a></dd>
 			
+				
+				<dd><a href="#GetExpectedInstances">func GetExpectedInstances(imageID string, activeInstances subscriptions.WhistInstances, startingInstances subscriptions.WhistInstances) int</a></dd>
 			
-				
-				<dd><a href="#TTY">type TTY</a></dd>
-				
-					
-					<dd>&nbsp; &nbsp; <a href="#Allocate">func Allocate() (TTY, error)</a></dd>
-				
-				
 			
 			
 			</dl>
@@ -133,7 +125,7 @@ Package ttys abstracts away allocation and assignment of TTY devices for mandelb
 			<p>
 			<span style="font-size:90%">
 			
-				<a href="https://github.com/whisthq/whist/blob/dev/backend/services/host-service/mandelbox/ttys/ttys.go">ttys.go</a>
+				<a href="https://github.com/whisthq/whist/blob/dev/backend/services/scaling-service/scaling_algorithms/helpers/capacity.go">capacity.go</a>
 			
 			</span>
 			</p>
@@ -148,61 +140,39 @@ Package ttys abstracts away allocation and assignment of TTY devices for mandelb
 		
 			
 			
-			<h2 id="Free">func <a href="https://github.com/whisthq/whist/blob/dev/backend/services/host-service/mandelbox/ttys/ttys.go#L66">Free</a>
-				<a class="permalink" href="#Free">&#xb6;</a>
+			<h2 id="GetAvailableInstances">func <a href="https://github.com/whisthq/whist/blob/dev/backend/services/scaling-service/scaling_algorithms/helpers/capacity.go#L10">GetAvailableInstances</a>
+				<a class="permalink" href="#GetAvailableInstances">&#xb6;</a>
 				
 				
 			</h2>
-			<pre>func Free(tty <a href="#TTY">TTY</a>)</pre>
+			<pre>func GetAvailableInstances(imageID <a href="https:/docs.whist.com/backend/services/pkg/builtin/#string">string</a>, activeInstances <a href="https:/docs.whist.com/backend/services/pkg/github.com/whisthq/whist/backend/services/subscriptions/">subscriptions</a>.<a href="https:/docs.whist.com/backend/services/pkg/github.com/whisthq/whist/backend/services/subscriptions/#WhistInstances">WhistInstances</a>) <a href="https:/docs.whist.com/backend/services/pkg/builtin/#int">int</a></pre>
 			<p>
-Free marks the given TTY as free, if it is not reserved.
+GetAvailableInstances is a helper function to get the number of instances that are
+active and have space to run mandelboxes.
 </p>
 
 			
 			
 
 		
-		
 			
 			
-			<h2 id="TTY">type <a href="https://github.com/whisthq/whist/blob/dev/backend/services/host-service/mandelbox/ttys/ttys.go#L17">TTY</a>
-				<a class="permalink" href="#TTY">&#xb6;</a>
+			<h2 id="GetExpectedInstances">func <a href="https://github.com/whisthq/whist/blob/dev/backend/services/scaling-service/scaling_algorithms/helpers/capacity.go#L27">GetExpectedInstances</a>
+				<a class="permalink" href="#GetExpectedInstances">&#xb6;</a>
 				
 				
 			</h2>
+			<pre>func GetExpectedInstances(imageID <a href="https:/docs.whist.com/backend/services/pkg/builtin/#string">string</a>, activeInstances <a href="https:/docs.whist.com/backend/services/pkg/github.com/whisthq/whist/backend/services/subscriptions/">subscriptions</a>.<a href="https:/docs.whist.com/backend/services/pkg/github.com/whisthq/whist/backend/services/subscriptions/#WhistInstances">WhistInstances</a>, startingInstances <a href="https:/docs.whist.com/backend/services/pkg/github.com/whisthq/whist/backend/services/subscriptions/">subscriptions</a>.<a href="https:/docs.whist.com/backend/services/pkg/github.com/whisthq/whist/backend/services/subscriptions/#WhistInstances">WhistInstances</a>) <a href="https:/docs.whist.com/backend/services/pkg/builtin/#int">int</a></pre>
 			<p>
-TTY is defined as a type so that the implementation can change without the
-package API changing. Also, there isn&#39;t a fundamental restriction for us to
-stay below 256, but this should be plenty (we can always change it later).
+GetExpectedInstances is a helper function to get the number of instances that are
+active and have space to run mandelboxes, summed with the number of instances that
+are on a starting state and will soon be active.
 </p>
 
-			<pre>type TTY <a href="https:/docs.whist.com/backend/services/pkg/builtin/#uint8">uint8</a></pre>
-
-			
-
-			
-
-			
 			
 			
 
-			
-				
-				<h3 id="Allocate">func <a href="https://github.com/whisthq/whist/blob/dev/backend/services/host-service/mandelbox/ttys/ttys.go#L42">Allocate</a>
-					<a class="permalink" href="#Allocate">&#xb6;</a>
-					
-					
-				</h3>
-				<pre>func Allocate() (<a href="#TTY">TTY</a>, <a href="https:/docs.whist.com/backend/services/pkg/builtin/#error">error</a>)</pre>
-				<p>
-Allocate allocates a free TTY.
-</p>
-
-				
-				
-			
-
-			
+		
 		
 	
 
