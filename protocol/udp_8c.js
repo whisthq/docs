@@ -21,7 +21,6 @@ var udp_8c =
     [ "UDP_PING_INTERVAL_MS", "udp_8c.html#aa4da45c77586c2639e0da752db28a174", null ],
     [ "UDP_PONG_TIMEOUT", "udp_8c.html#a231db3ea80ce4b295aad0c5c33834480", null ],
     [ "UDPNETWORKPACKET_HEADER_SIZE", "udp_8c.html#a6afbd3875118f98013f7cc49969dac90", null ],
-    [ "USE_WHIST_CONGESTION_CONTROL", "udp_8c.html#ab25946be235ad67662b9d4d6573e4808", null ],
     [ "IncomingBitrate", "udp_8c.html#a29939ea78796274439d3cfe923d8af28", null ],
     [ "UDPPacketType", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046a", [
       [ "UDP_WHIST_SEGMENT", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aa6fd310c3defc3750b4439e52bc32b075", null ],

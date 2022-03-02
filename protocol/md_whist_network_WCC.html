@@ -141,7 +141,7 @@ Increase bitrate</h3>
 <p>The bitrate is increased to a new value only if the following conditions are met.</p><ul>
 <li>System is currently in "Increase state"</li>
 <li>update_interval duration has passed since we sent the last new bitrate message</li>
-<li>R(i) is greater than BANDWITH_USED_THRESHOLD times of A(i-1). The RECOMMENDED value of BANDWITH_USED_THRESHOLD is 0.9</li>
+<li>R(i) is greater than BANDWITH_USED_THRESHOLD times of A(i-1). The RECOMMENDED value of BANDWITH_USED_THRESHOLD is 0.95</li>
 </ul>
 <p>The bitrate A(i) is updated as per the below equation </p><pre class="fragment">A(i) = A(i-1) * ((100 + increase_percent(i)) / 100)
 </pre><p>The value of increase_percent(i), is a value that starts with a high initial value when current A(i) appears to be far from convergence. increase_percent(i) gets reduced gradually as we approach convergence. The exact method of calculating increase_percent(i) will specified later in this document.</p>
@@ -176,7 +176,7 @@ Increase percentage</h3>
 } else if (A(i) &lt; A(i-1)) {
     increase_percent(i) = increase_percent(i - 1) / 2;
 }
-</pre><p>The RECOMMENDED value of INITIAL_INCREASE_PERCENTAGE is 1.</p>
+</pre><p>The RECOMMENDED value of INITIAL_INCREASE_PERCENTAGE is 4.</p>
 <h3><a class="anchor" id="autotoc_md206"></a>
 Burst Bitrate</h3>
 <p>When the available bandwidth is greater than the max_bitrate then the server can send bits at a greater rate which can reduce the latency significantly. When the available bandwidth A(i) exceeded max_bitrate succesively multiple times, then we use a burst bitrate greater than available bandwidth that can potentially reduce latency. The burst bitrate B(i) is calculated as per the below equation </p><pre class="fragment">if (A(i) &gt; max_bitrate) {
@@ -216,7 +216,7 @@ RECOMMENDED values and reasons</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">update_interval </td><td class="markdownTableBodyNone">1 second </td><td class="markdownTableBodyNone">From <a href="https://datatracker.ietf.org/doc/html/draft-ietf-rmcat-gcc-02#section-3">Google Congestion control</a>  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">INITIAL_INCREASE_PERCENTAGE </td><td class="markdownTableBodyNone">1 </td><td class="markdownTableBodyNone">Based on heuristics. A 1% increase every 1 second, will mean that we can double the bitrate in 70 seconds. This is quick enough to reach to available bandwidth. Also this is small enough to make sure that we don't lose a lot of packets when there is a congestion triggered due to this increase. Google Congestion control uses a different algorithm for increasing bitrate that didn't work for me very well. Maybe a TODO for future, if ppl find any limitations with this  </td></tr>
+<td class="markdownTableBodyNone">INITIAL_INCREASE_PERCENTAGE </td><td class="markdownTableBodyNone">4 </td><td class="markdownTableBodyNone">Based on heuristics. A 4% increase every 1 second, will mean that we can double the bitrate in 18 seconds. This is quick enough to reach to available bandwidth. Also this is small enough to make sure that we don't lose a lot of packets when there is a congestion triggered due to this increase. Google Congestion control uses a different algorithm for increasing bitrate that didn't work for me very well. Maybe a TODO for future, if ppl find any limitations with this  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">DECREASE_RATIO </td><td class="markdownTableBodyNone">0.95 </td><td class="markdownTableBodyNone">Based on heuristics or faster convergence. <a href="https://datatracker.ietf.org/doc/html/draft-ietf-rmcat-gcc-02#section-5.5">Google Congestion control</a> suggests a value between 0.8 to 0.95  </td></tr>
 <tr class="markdownTableRowEven">
@@ -224,7 +224,7 @@ RECOMMENDED values and reasons</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">CONVERGENCE_THRESHOLD_HIGH </td><td class="markdownTableBodyNone">1.1 </td><td class="markdownTableBodyNone">Based on heuristics or faster convergence. Google Congestion control have such concepts such as conditional saturate bandwidth which uses this value. These are our improvisations  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">BANDWITH_USED_THRESHOLD </td><td class="markdownTableBodyNone">0.9 </td><td class="markdownTableBodyNone">Based on heuristics. Google Congestion control have a such concept of conditional saturate bandwidth. It always assumes bandwidth is fully used. These are our improvisations  </td></tr>
+<td class="markdownTableBodyNone">BANDWITH_USED_THRESHOLD </td><td class="markdownTableBodyNone">0.95 </td><td class="markdownTableBodyNone">Based on heuristics. Google Congestion control have a such concept of conditional saturate bandwidth. It always assumes bandwidth is fully used. These are our improvisations  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">BURST_BITRATE_RATIO </td><td class="markdownTableBodyNone">4 </td><td class="markdownTableBodyNone">The current value being used in the dev branch, as of writing this document  </td></tr>
 <tr class="markdownTableRowEven">

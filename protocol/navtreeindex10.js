@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structNetworkStatistics.html#a883d2ae50a849511128b9e40e329f4de":[11,0,59,0],
 "structNetworkStatistics.html#addbfa6a799e3953e081a574f93b350fa":[11,0,59,4],
 "structNetworkThrottleContext.html":[11,0,60],
 "structNetworkThrottleContext.html#a13eec5c3fadad9f30633223b56d5c1ce":[11,0,60,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structVideoContext.html#ac3ddd6fa817d78ddcbec5a61287d9b6d":[11,0,88,4],
 "structVideoContext.html#ae2ecf8ab8ca51e05c70a58b5f2b5edbe":[11,0,88,3],
 "structVideoDecoder.html":[11,0,89],
-"structVideoDecoder.html#a19f8e3f82f466acb503f53aedbf14065":[11,0,89,8],
-"structVideoDecoder.html#a1c756dc084226e1cb64e1bfb9f7e19e0":[11,0,89,2]
+"structVideoDecoder.html#a19f8e3f82f466acb503f53aedbf14065":[11,0,89,8]
 };
