@@ -31,6 +31,7 @@ var searchData=
   ['done_5flist_3377',['done_list',['../structLTRState.html#a217e660a132e759384ab745dad777dc0',1,'LTRState']]],
   ['dpi_3378',['dpi',['../structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6',1,'WhistClientMessage']]],
   ['dummy_5fstate_3379',['dummy_state',['../structAudioDevice.html#abea55870545de19e8142a33e10b3a0aa',1,'AudioDevice']]],
-  ['dwflags_3380',['dwFlags',['../structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb',1,'AudioDevice']]],
-  ['dwwaitresult_3381',['dwWaitResult',['../structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb',1,'AudioDevice']]]
+  ['duplicate_5fpackets_5freceived_3380',['duplicate_packets_received',['../structFrameData.html#a65040cc7b870b38ee938661351bc96da',1,'FrameData']]],
+  ['dwflags_3381',['dwFlags',['../structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb',1,'AudioDevice']]],
+  ['dwwaitresult_3382',['dwWaitResult',['../structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb',1,'AudioDevice']]]
 ];

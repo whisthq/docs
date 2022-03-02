@@ -248,6 +248,6 @@ var NAVTREEINDEX8 =
 "structFileMetadata.html#ae47e60e49464e8ecfc4ad7e9bac3fe7d":[11,0,30,5],
 "structFileMetadata.html#afb510a43dd707205e8c5d08caf82f348":[11,0,30,1],
 "structFrameData.html":[11,0,31],
-"structFrameData.html#a17b526603f40e18dba49fa0f2cb75b27":[11,0,31,6],
-"structFrameData.html#a1bdb1b932824acc61d24b6b1643de4aa":[11,0,31,18]
+"structFrameData.html#a17b526603f40e18dba49fa0f2cb75b27":[11,0,31,7],
+"structFrameData.html#a1bdb1b932824acc61d24b6b1643de4aa":[11,0,31,19]
 };

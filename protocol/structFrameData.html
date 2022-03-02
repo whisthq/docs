@@ -109,8 +109,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:ae09b582d87f5fc19170e0221843fd167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ebb5927b1a380da36425ae408088d41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a1ebb5927b1a380da36425ae408088d41">fec_packets_received</a></td></tr>
 <tr class="separator:a1ebb5927b1a380da36425ae408088d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2447a770d31a00749fd429b595ac97aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a2447a770d31a00749fd429b595ac97aa">redundant_packets_received</a></td></tr>
-<tr class="separator:a2447a770d31a00749fd429b595ac97aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65040cc7b870b38ee938661351bc96da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a65040cc7b870b38ee938661351bc96da">duplicate_packets_received</a></td></tr>
+<tr class="separator:a65040cc7b870b38ee938661351bc96da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28cffb0c17e4f704b491f31b166e544d"><td class="memItemLeft" align="right" valign="top">bool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a28cffb0c17e4f704b491f31b166e544d">received_indices</a></td></tr>
 <tr class="separator:a28cffb0c17e4f704b491f31b166e544d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0caf5e0d07141306d014b80f81ef1f7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#ab0caf5e0d07141306d014b80f81ef1f7">packet_buffer</a></td></tr>
@@ -145,6 +145,20 @@ Data Fields</h2></td></tr>
 <p>This is used to handle reconstruction of encoded frames from UDP packets. It contains metadata to keep track of what packets we have received and nacked for, as well as a buffer for holding the concatenated UDP packets.</p>
 <p>TODO: Pull this into RingBuffer.c, and stop exposing it to the client </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a65040cc7b870b38ee938661351bc96da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65040cc7b870b38ee938661351bc96da">&#9670;&nbsp;</a></span>duplicate_packets_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FrameData::duplicate_packets_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7ca16f755e18b1448860ddebaa6f96bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ca16f755e18b1448860ddebaa6f96bd">&#9670;&nbsp;</a></span>fec_decoder</h2>
 
@@ -405,20 +419,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool FrameData::recovery_mode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2447a770d31a00749fd429b595ac97aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2447a770d31a00749fd429b595ac97aa">&#9670;&nbsp;</a></span>redundant_packets_received</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FrameData::redundant_packets_received</td>
         </tr>
       </table>
 </div><div class="memdoc">

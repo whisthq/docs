@@ -1,5 +1,6 @@
 var structFrameData =
 [
+    [ "duplicate_packets_received", "structFrameData.html#a65040cc7b870b38ee938661351bc96da", null ],
     [ "fec_decoder", "structFrameData.html#a7ca16f755e18b1448860ddebaa6f96bd", null ],
     [ "fec_frame_buffer", "structFrameData.html#aec551b669a213996989740f84bb40947", null ],
     [ "fec_packets_received", "structFrameData.html#a1ebb5927b1a380da36425ae408088d41", null ],
@@ -19,7 +20,6 @@ var structFrameData =
     [ "prev_frame_num_duplicate_packets", "structFrameData.html#a87ebab727011af41f4092ac0cf3bb695", null ],
     [ "received_indices", "structFrameData.html#a28cffb0c17e4f704b491f31b166e544d", null ],
     [ "recovery_mode", "structFrameData.html#a1bdb1b932824acc61d24b6b1643de4aa", null ],
-    [ "redundant_packets_received", "structFrameData.html#a2447a770d31a00749fd429b595ac97aa", null ],
     [ "successful_fec_recovery", "structFrameData.html#a89c89782c514acba9e4f8a91fcde782b", null ],
     [ "type", "structFrameData.html#a41088cd4c0cdaa7dd31184446e0ef124", null ]
 ];

@@ -97,8 +97,9 @@ var searchData=
   ['dpi_5fratio_5fexponent_461',['DPI_RATIO_EXPONENT',['../network__algorithm_8c.html#ad3e8baf17cd31cb0e77a1218204cdbe5',1,'network_algorithm.c']]],
   ['drop_5ffile_5finto_5factive_5fwindow_462',['drop_file_into_active_window',['../file__drop_8c.html#a61d6b3072b259592756b6e7ca5cc530f',1,'drop_file_into_active_window(TransferringFile *drop_file):&#160;file_drop.c'],['../file__drop_8h.html#a61d6b3072b259592756b6e7ca5cc530f',1,'drop_file_into_active_window(TransferringFile *drop_file):&#160;file_drop.c']]],
   ['dummy_5fstate_463',['dummy_state',['../structAudioDevice.html#abea55870545de19e8142a33e10b3a0aa',1,'AudioDevice']]],
-  ['duration_5fper_5fbucket_464',['DURATION_PER_BUCKET',['../udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df',1,'udp.c']]],
-  ['dwflags_465',['dwFlags',['../structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb',1,'AudioDevice']]],
-  ['dwwaitresult_466',['dwWaitResult',['../structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb',1,'AudioDevice']]],
-  ['dynamicbuffer_467',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
+  ['duplicate_5fpackets_5freceived_464',['duplicate_packets_received',['../structFrameData.html#a65040cc7b870b38ee938661351bc96da',1,'FrameData']]],
+  ['duration_5fper_5fbucket_465',['DURATION_PER_BUCKET',['../udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df',1,'udp.c']]],
+  ['dwflags_466',['dwFlags',['../structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb',1,'AudioDevice']]],
+  ['dwwaitresult_467',['dwWaitResult',['../structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb',1,'AudioDevice']]],
+  ['dynamicbuffer_468',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
 ];
