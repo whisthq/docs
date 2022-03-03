@@ -102,10 +102,10 @@ $(document).ready(function(){initNavTree('client_2network_8c.html',''); initResi
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a69eb06e880b8a55013053ab9c221c9a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4">TCP_CONNECTION_WAIT</a>&#160;&#160;&#160;300</td></tr>
-<tr class="separator:a69eb06e880b8a55013053ab9c221c9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69ac525d995758ffd8a2403a33ba581f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a69ac525d995758ffd8a2403a33ba581f">UDP_CONNECTION_WAIT</a>&#160;&#160;&#160;300</td></tr>
+<tr class="memitem:a69ac525d995758ffd8a2403a33ba581f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a69ac525d995758ffd8a2403a33ba581f">UDP_CONNECTION_WAIT</a>&#160;&#160;&#160;500</td></tr>
 <tr class="separator:a69ac525d995758ffd8a2403a33ba581f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69eb06e880b8a55013053ab9c221c9a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a69eb06e880b8a55013053ab9c221c9a4">TCP_CONNECTION_WAIT</a>&#160;&#160;&#160;500</td></tr>
+<tr class="separator:a69eb06e880b8a55013053ab9c221c9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d3c6f5a5467a70cd7e0c3d853c0e8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a49d3c6f5a5467a70cd7e0c3d853c0e8f">UDP_CONNECTION_TIMEOUT</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a49d3c6f5a5467a70cd7e0c3d853c0e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a635ecd17e7464eb39a48fbab171ddeb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a635ecd17e7464eb39a48fbab171ddeb6">TCP_CONNECTION_TIMEOUT</a>&#160;&#160;&#160;1</td></tr>
@@ -113,9 +113,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6">discover_ports</a> (bool *with_stun)</td></tr>
-<tr class="memdesc:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client.  <a href="client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6">More...</a><br /></td></tr>
-<tr class="separator:ae41dc4617616fa89f0ebe8a7706ffff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a496027e8f78ee5662198a6397295446e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a496027e8f78ee5662198a6397295446e">connect_to_server</a> (bool with_stun)</td></tr>
 <tr class="memdesc:a496027e8f78ee5662198a6397295446e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <a href="client_2network_8c.html#a496027e8f78ee5662198a6397295446e">More...</a><br /></td></tr>
 <tr class="separator:a496027e8f78ee5662198a6397295446e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,10 +131,6 @@ Variables</h2></td></tr>
 <tr class="separator:a1b9f74cf18927b18cbab7bedbdbe65fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fd46fdf3118d19eed21408086a671f2"><td class="memItemLeft" align="right" valign="top">volatile char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a7fd46fdf3118d19eed21408086a671f2">client_binary_aes_private_key</a> [16]</td></tr>
 <tr class="separator:a7fd46fdf3118d19eed21408086a671f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8080d4d36d5d3d072be611a95f864ac1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#a8080d4d36d5d3d072be611a95f864ac1">udp_port</a> = -1</td></tr>
-<tr class="separator:a8080d4d36d5d3d072be611a95f864ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9edbe9dd2977e5cc56138a3a05f7a98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#aa9edbe9dd2977e5cc56138a3a05f7a98">tcp_port</a> = -1</td></tr>
-<tr class="separator:aa9edbe9dd2977e5cc56138a3a05f7a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abef30726c0347177718a4ec7a32e57ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSocketContext.html">SocketContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#abef30726c0347177718a4ec7a32e57ea">packet_udp_context</a> = {0}</td></tr>
 <tr class="separator:abef30726c0347177718a4ec7a32e57ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab052ae0d87ab16898c020aed81f21aa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSocketContext.html">SocketContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8c.html#ab052ae0d87ab16898c020aed81f21aa0">packet_tcp_context</a> = {0}</td></tr>
@@ -158,7 +151,7 @@ Variables</h2></td></tr>
 functions.</h1>
 <h1><a class="anchor" id="autotoc_md49"></a>
 Usage</h1>
-<p>discover_ports, connect_to_server, close_connections, and send_server_quit_messages are used to start and end connections to the Whist server. To connect, call discover_ports, then connect_to_server. To disconnect, send_server_quit_messages and then close_connections.</p>
+<p>connect_to_server, close_connections, and send_server_quit_messages are used to start and end connections to the Whist server. To connect, call connect_to_server. To disconnect, send_server_quit_messages and then close_connections.</p>
 <p>To communicate with the server, use send_wcmsg to send Whist messages to the server. Large wcmsg's (e.g. clipboard messages) are sent over TCP; otherwise, messages are sent over UDP. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a635ecd17e7464eb39a48fbab171ddeb6"></a>
@@ -182,7 +175,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TCP_CONNECTION_WAIT&#160;&#160;&#160;300</td>
+          <td class="memname">#define TCP_CONNECTION_WAIT&#160;&#160;&#160;500</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -210,7 +203,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UDP_CONNECTION_WAIT&#160;&#160;&#160;300</td>
+          <td class="memname">#define UDP_CONNECTION_WAIT&#160;&#160;&#160;500</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -253,35 +246,7 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Connect to the server. </p>
-<p>Must be called after <code><a class="el" href="client_2network_8h.html#a7f1688e7fd60c0b361b449db233bc0c8" title="Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the clie...">discover_ports()</a></code>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">using_stun</td><td>Whether we are using the STUN server</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
-<a id="ae41dc4617616fa89f0ebe8a7706ffff6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae41dc4617616fa89f0ebe8a7706ffff6">&#9670;&nbsp;</a></span>discover_ports()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int discover_ports </td>
-          <td>(</td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>using_stun</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Send a discovery packet to the server to determine which TCP and UDP packets are assigned to the client. </p>
-<p>Must be called before <code><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c" title="Connect to the server.">connect_to_server()</a></code>.</p>
+<p>Must be called after <code>discover_ports()</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">using_stun</td><td>Whether we are using the STUN server</td></tr>
@@ -412,34 +377,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">char* server_ip</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa9edbe9dd2977e5cc56138a3a05f7a98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9edbe9dd2977e5cc56138a3a05f7a98">&#9670;&nbsp;</a></span>tcp_port</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int tcp_port = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8080d4d36d5d3d072be611a95f864ac1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8080d4d36d5d3d072be611a95f864ac1">&#9670;&nbsp;</a></span>udp_port</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int udp_port = -1</td>
         </tr>
       </table>
 </div><div class="memdoc">

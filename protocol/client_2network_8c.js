@@ -6,7 +6,6 @@ var client_2network_8c =
     [ "UDP_CONNECTION_WAIT", "client_2network_8c.html#a69ac525d995758ffd8a2403a33ba581f", null ],
     [ "close_connections", "client_2network_8c.html#abac9ba3b2a752a8ba9805b539765a2e4", null ],
     [ "connect_to_server", "client_2network_8c.html#a496027e8f78ee5662198a6397295446e", null ],
-    [ "discover_ports", "client_2network_8c.html#ae41dc4617616fa89f0ebe8a7706ffff6", null ],
     [ "send_server_quit_messages", "client_2network_8c.html#aa8bf751ea26659195c59cd180956315a", null ],
     [ "send_wcmsg", "client_2network_8c.html#a71973874dd00c57c855c77e4c870392a", null ],
     [ "client_binary_aes_private_key", "client_2network_8c.html#a7fd46fdf3118d19eed21408086a671f2", null ],
@@ -14,8 +13,6 @@ var client_2network_8c =
     [ "packet_tcp_context", "client_2network_8c.html#ab052ae0d87ab16898c020aed81f21aa0", null ],
     [ "packet_udp_context", "client_2network_8c.html#abef30726c0347177718a4ec7a32e57ea", null ],
     [ "server_ip", "client_2network_8c.html#a182d69acd4e02e6c0a027622a4556e53", null ],
-    [ "tcp_port", "client_2network_8c.html#aa9edbe9dd2977e5cc56138a3a05f7a98", null ],
-    [ "udp_port", "client_2network_8c.html#a8080d4d36d5d3d072be611a95f864ac1", null ],
     [ "uid", "client_2network_8c.html#a60a34315f460179939054acaf3ed8163", null ],
     [ "user_email", "client_2network_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd", null ],
     [ "using_stun", "client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66", null ]

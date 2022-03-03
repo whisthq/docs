@@ -5,7 +5,6 @@ var client__utils_8c =
     [ "alloc_parsed_args", "client__utils_8c.html#a9680bc0923e6e0149808036e92f33cd4", null ],
     [ "client_parse_args", "client__utils_8c.html#ad0e52afd70ec6e9b4961be465c729bde", null ],
     [ "free_parsed_args", "client__utils_8c.html#a44fd0b41f8dec9bae4a8e081703c014b", null ],
-    [ "prepare_init_to_server", "client__utils_8c.html#ab8b658f4f4780855471cbe000352ed97", null ],
     [ "read_piped_arguments", "client__utils_8c.html#ac2c155b9515a1ce8f319a5f18e5207ae", null ],
     [ "send_message_dimensions", "client__utils_8c.html#a5d27f8bccbaa49059d82571e47108667", null ],
     [ "send_new_tab_url_if_needed", "client__utils_8c.html#a2d18456341176612202624e6fbd8e0d6", null ],

@@ -114,12 +114,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a4c0d232261c39b0b5124a9e6a0992598"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a4c0d232261c39b0b5124a9e6a0992598">try_get_next_message_udp</a> (<a class="el" href="structClient.html">Client</a> *client, <a class="el" href="structWhistClientMessage.html">WhistClientMessage</a> *wsmsg, size_t *wsmsg_size)</td></tr>
 <tr class="memdesc:a4c0d232261c39b0b5124a9e6a0992598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read in next available UDP message from a given, active client.  <a href="server_2network_8h.html#a4c0d232261c39b0b5124a9e6a0992598">More...</a><br /></td></tr>
 <tr class="separator:a4c0d232261c39b0b5124a9e6a0992598"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6841ea030f4fc705b6383782a9db69ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a6841ea030f4fc705b6383782a9db69ce">connect_client</a> (<a class="el" href="structClient.html">Client</a> *client, bool <a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *<a class="el" href="whist__client_8c.html#a8178ac994435a95792a29745aa7a77a0">binary_aes_private_key</a>)</td></tr>
-<tr class="memdesc:a6841ea030f4fc705b6383782a9db69ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes UDP and TCP connection to client.  <a href="server_2network_8h.html#a6841ea030f4fc705b6383782a9db69ce">More...</a><br /></td></tr>
-<tr class="separator:a6841ea030f4fc705b6383782a9db69ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa918041d94839af26011b20a2d370ea1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#aa918041d94839af26011b20a2d370ea1">disconnect_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
-<tr class="memdesc:aa918041d94839af26011b20a2d370ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes client's UDP and TCP sockets.  <a href="server_2network_8h.html#aa918041d94839af26011b20a2d370ea1">More...</a><br /></td></tr>
-<tr class="separator:aa918041d94839af26011b20a2d370ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad881eeb396b9af8437f12ddd01820042"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ad881eeb396b9af8437f12ddd01820042">get_using_stun</a> (void)</td></tr>
 <tr class="memdesc:ad881eeb396b9af8437f12ddd01820042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides whether the server is using stun.  <a href="server_2network_8h.html#ad881eeb396b9af8437f12ddd01820042">More...</a><br /></td></tr>
 <tr class="separator:ad881eeb396b9af8437f12ddd01820042"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,79 +252,6 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
-<a id="a6841ea030f4fc705b6383782a9db69ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6841ea030f4fc705b6383782a9db69ce">&#9670;&nbsp;</a></span>connect_client()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int connect_client </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>using_stun</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>binary_aes_private_key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Establishes UDP and TCP connection to client. </p>
-<p>details If no UDP message is available, *wsmsg is set to NULL and *wsmsg_size is set to 0. Otherwise, *wsmsg is populated with a pointer to the next available UDP message and *wsmsg_size is set to the size of that message. The message need not be freed. Failure here</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">client</td><td>The target client </td></tr>
-    <tr><td class="paramname">using_stun</td><td>True if we are running a stun server </td></tr>
-    <tr><td class="paramname">binary_aes_private_key</td><td>Key used to encrypt and decrypt communication with the client.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 if either UDP or TCP connection fails or another error occurs, 0 on success. </dd></dl>
-
-</div>
-</div>
-<a id="aa918041d94839af26011b20a2d370ea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa918041d94839af26011b20a2d370ea1">&#9670;&nbsp;</a></span>disconnect_client()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int disconnect_client </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
-          <td class="paramname"><em>client</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Closes client's UDP and TCP sockets. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">client</td><td>The target client </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success. </dd></dl>
 
 </div>
 </div>

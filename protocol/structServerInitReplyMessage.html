@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: WhistDiscoveryRequestMessage Struct Reference</title>
+<title>Whist Protocol: ServerInitReplyMessage Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structWhistDiscoveryRequestMessage.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structServerInitReplyMessage.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,67 +84,75 @@ $(document).ready(function(){initNavTree('structWhistDiscoveryRequestMessage.htm
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">WhistDiscoveryRequestMessage Struct Reference</div>  </div>
+<div class="title">ServerInitReplyMessage Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Discovery request message.  
- <a href="structWhistDiscoveryRequestMessage.html#details">More...</a></p>
+<p>Init reply message.  
+ <a href="structServerInitReplyMessage.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="whist_8h_source.html">whist.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:abf8f43538f7c747ea7fe55d71300d3f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistDiscoveryRequestMessage.html#abf8f43538f7c747ea7fe55d71300d3f1">user_id</a></td></tr>
-<tr class="separator:abf8f43538f7c747ea7fe55d71300d3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb0dd2d98af0c5692e2e0c17158270e7"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistDiscoveryRequestMessage.html#afb0dd2d98af0c5692e2e0c17158270e7">user_email</a> [<a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>+1]</td></tr>
-<tr class="separator:afb0dd2d98af0c5692e2e0c17158270e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0df30ebe56132dfe4d183c5ccdfb9ef0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistDiscoveryRequestMessage.html#a0df30ebe56132dfe4d183c5ccdfb9ef0">os</a></td></tr>
-<tr class="separator:a0df30ebe56132dfe4d183c5ccdfb9ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422409afdb2e86bf7953e9e5f534e6a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServerInitReplyMessage.html#a422409afdb2e86bf7953e9e5f534e6a7">connection_id</a></td></tr>
+<tr class="separator:a422409afdb2e86bf7953e9e5f534e6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff941a38241c5595aba5eab4c0b2b669"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServerInitReplyMessage.html#aff941a38241c5595aba5eab4c0b2b669">git_revision</a> [16]</td></tr>
+<tr class="memdesc:aff941a38241c5595aba5eab4c0b2b669"><td class="mdescLeft">&#160;</td><td class="mdescRight">git revision of the server.  <a href="structServerInitReplyMessage.html#aff941a38241c5595aba5eab4c0b2b669">More...</a><br /></td></tr>
+<tr class="separator:aff941a38241c5595aba5eab4c0b2b669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848f5e7feb0226a6ea1aa381412a1276"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServerInitReplyMessage.html#a848f5e7feb0226a6ea1aa381412a1276">feature_mask</a></td></tr>
+<tr class="memdesc:a848f5e7feb0226a6ea1aa381412a1276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feature mask being used by the server.  <a href="structServerInitReplyMessage.html#a848f5e7feb0226a6ea1aa381412a1276">More...</a><br /></td></tr>
+<tr class="separator:a848f5e7feb0226a6ea1aa381412a1276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Discovery request message. </p>
-<p>Discovery packet to be sent from client to server. </p>
+<div class="textblock"><p>Init reply message. </p>
+<p>Message sent by server in response to a <a class="el" href="structClientInitMessage.html" title="Client init message.">ClientInitMessage</a>. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a0df30ebe56132dfe4d183c5ccdfb9ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0df30ebe56132dfe4d183c5ccdfb9ef0">&#9670;&nbsp;</a></span>os</h2>
+<a id="a422409afdb2e86bf7953e9e5f534e6a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422409afdb2e86bf7953e9e5f534e6a7">&#9670;&nbsp;</a></span>connection_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4">WhistOSType</a> WhistDiscoveryRequestMessage::os</td>
+          <td class="memname">int ServerInitReplyMessage::connection_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="afb0dd2d98af0c5692e2e0c17158270e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb0dd2d98af0c5692e2e0c17158270e7">&#9670;&nbsp;</a></span>user_email</h2>
+<a id="a848f5e7feb0226a6ea1aa381412a1276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848f5e7feb0226a6ea1aa381412a1276">&#9670;&nbsp;</a></span>feature_mask</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char WhistDiscoveryRequestMessage::user_email[<a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>+1]</td>
+          <td class="memname">uint32_t ServerInitReplyMessage::feature_mask</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Feature mask being used by the server. </p>
+<p>The client will use this to set its own features. If this is incompatible then the client will refuse to connect. </p>
+
 </div>
 </div>
-<a id="abf8f43538f7c747ea7fe55d71300d3f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf8f43538f7c747ea7fe55d71300d3f1">&#9670;&nbsp;</a></span>user_id</h2>
+<a id="aff941a38241c5595aba5eab4c0b2b669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff941a38241c5595aba5eab4c0b2b669">&#9670;&nbsp;</a></span>git_revision</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int WhistDiscoveryRequestMessage::user_id</td>
+          <td class="memname">char ServerInitReplyMessage::git_revision[16]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>git revision of the server. </p>
+<p>In general, the client should match this exactly. If it doesn't then there might be incompatibility. </p>
 
 </div>
 </div>
@@ -156,7 +164,7 @@ Data Fields</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="structWhistDiscoveryRequestMessage.html">WhistDiscoveryRequestMessage</a></li>
+    <li class="navelem"><a class="el" href="structServerInitReplyMessage.html">ServerInitReplyMessage</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

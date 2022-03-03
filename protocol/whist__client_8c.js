@@ -19,8 +19,6 @@ var whist__client_8c =
     [ "program_name", "whist__client_8c.html#a724e6f14a5eaffd21dc3012771360af3", null ],
     [ "rgui_pressed", "whist__client_8c.html#a31e60ed488fac41f2eb7f3865937fc14", null ],
     [ "server_ip", "whist__client_8c.html#a07366317ac5c1d8d1ce9c82baf1d10c2", null ],
-    [ "tcp_port", "whist__client_8c.html#aa9edbe9dd2977e5cc56138a3a05f7a98", null ],
-    [ "udp_port", "whist__client_8c.html#a8080d4d36d5d3d072be611a95f864ac1", null ],
     [ "uid", "whist__client_8c.html#a60a34315f460179939054acaf3ed8163", null ],
     [ "upload_initiated", "whist__client_8c.html#abda738e84e62b32492c077d1898803a3", null ],
     [ "user_email", "whist__client_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd", null ],
