@@ -125,6 +125,10 @@ $(document).ready(function(){initNavTree('globals_u.html',''); initResizable(); 
 : <a class="el" href="udp_8c.html#afef7e30cfe7786aa52b75f8cd9c68445">udp.c</a>
 , <a class="el" href="udp_8h.html#afef7e30cfe7786aa52b75f8cd9c68445">udp.h</a>
 </li>
+<li>udp_handle_pending_nacks()
+: <a class="el" href="udp_8c.html#a6a844acc1cde901a4c1a430b83fa5331">udp.c</a>
+, <a class="el" href="udp_8h.html#a6a844acc1cde901a4c1a430b83fa5331">udp.h</a>
+</li>
 <li>UDP_NACK
 : <a class="el" href="udp_8c.html#af026caee3b8fbd9791a41cd1af78046aab6ca00b25b2b4bcdbd28580a6cc04af7">udp.c</a>
 </li>
@@ -208,24 +212,24 @@ $(document).ready(function(){initNavTree('globals_u.html',''); initResizable(); 
 , <a class="el" href="x11__clipboard_8c.html#a87781954b181bfe0cc6d212f1e155d47">x11_clipboard.c</a>
 </li>
 <li>unsafe_free_clipboard_buffer()
-: <a class="el" href="x11__clipboard_8c.html#abd908a405c1888d1306899a3ad598ea3">x11_clipboard.c</a>
-, <a class="el" href="clipboard__internal_8h.html#abd908a405c1888d1306899a3ad598ea3">clipboard_internal.h</a>
+: <a class="el" href="clipboard__internal_8h.html#abd908a405c1888d1306899a3ad598ea3">clipboard_internal.h</a>
 , <a class="el" href="mac__clipboard_8c.html#abd908a405c1888d1306899a3ad598ea3">mac_clipboard.c</a>
+, <a class="el" href="x11__clipboard_8c.html#abd908a405c1888d1306899a3ad598ea3">x11_clipboard.c</a>
 </li>
 <li>unsafe_get_os_clipboard()
-: <a class="el" href="clipboard__internal_8h.html#af1a8e7cc53b2b0d020dcb3cc14a2c294">clipboard_internal.h</a>
-, <a class="el" href="mac__clipboard_8c.html#af1a8e7cc53b2b0d020dcb3cc14a2c294">mac_clipboard.c</a>
+: <a class="el" href="mac__clipboard_8c.html#af1a8e7cc53b2b0d020dcb3cc14a2c294">mac_clipboard.c</a>
+, <a class="el" href="clipboard__internal_8h.html#af1a8e7cc53b2b0d020dcb3cc14a2c294">clipboard_internal.h</a>
 , <a class="el" href="x11__clipboard_8c.html#af1a8e7cc53b2b0d020dcb3cc14a2c294">x11_clipboard.c</a>
 </li>
 <li>unsafe_has_os_clipboard_updated()
-: <a class="el" href="clipboard__internal_8h.html#a1f4649cb97b683e29d202d4a5d6ffc32">clipboard_internal.h</a>
+: <a class="el" href="x11__clipboard_8c.html#a1f4649cb97b683e29d202d4a5d6ffc32">x11_clipboard.c</a>
+, <a class="el" href="clipboard__internal_8h.html#a1f4649cb97b683e29d202d4a5d6ffc32">clipboard_internal.h</a>
 , <a class="el" href="mac__clipboard_8c.html#a1f4649cb97b683e29d202d4a5d6ffc32">mac_clipboard.c</a>
-, <a class="el" href="x11__clipboard_8c.html#a1f4649cb97b683e29d202d4a5d6ffc32">x11_clipboard.c</a>
 </li>
 <li>unsafe_init_clipboard()
-: <a class="el" href="x11__clipboard_8c.html#a5867e7500d780fb08c54a5e18768d79f">x11_clipboard.c</a>
+: <a class="el" href="clipboard__internal_8h.html#a5867e7500d780fb08c54a5e18768d79f">clipboard_internal.h</a>
 , <a class="el" href="mac__clipboard_8c.html#a5867e7500d780fb08c54a5e18768d79f">mac_clipboard.c</a>
-, <a class="el" href="clipboard__internal_8h.html#a5867e7500d780fb08c54a5e18768d79f">clipboard_internal.h</a>
+, <a class="el" href="x11__clipboard_8c.html#a5867e7500d780fb08c54a5e18768d79f">x11_clipboard.c</a>
 </li>
 <li>unsafe_set_os_clipboard()
 : <a class="el" href="clipboard__internal_8h.html#a71ea9ab2e117355993bc245c691731cc">clipboard_internal.h</a>
@@ -242,8 +246,8 @@ $(document).ready(function(){initNavTree('globals_u.html',''); initResizable(); 
 : <a class="el" href="client__utils_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5">client_utils.c</a>
 </li>
 <li>update_client_active_status()
-: <a class="el" href="client_8c.html#a910e3ffb86024ba2864d8c0594f9623f">client.c</a>
-, <a class="el" href="client_8h.html#a910e3ffb86024ba2864d8c0594f9623f">client.h</a>
+: <a class="el" href="client_8h.html#a910e3ffb86024ba2864d8c0594f9623f">client.h</a>
+, <a class="el" href="client_8c.html#a910e3ffb86024ba2864d8c0594f9623f">client.c</a>
 </li>
 <li>update_keyboard_state()
 : <a class="el" href="input_8h.html#a3c7c52f6a54afd0f516d4070bc92be6c">input.h</a>
@@ -253,12 +257,12 @@ $(document).ready(function(){initNavTree('globals_u.html',''); initResizable(); 
 : <a class="el" href="keyboard__mapping_8h.html#ac9131067e39f888649da99f8ad85d4e5">keyboard_mapping.h</a>
 </li>
 <li>update_mouse_motion()
-: <a class="el" href="client__utils_8c.html#a969e9a6a7402e5b5aab11e8d4dbaa257">client_utils.c</a>
-, <a class="el" href="client__utils_8h.html#a969e9a6a7402e5b5aab11e8d4dbaa257">client_utils.h</a>
+: <a class="el" href="client__utils_8h.html#a969e9a6a7402e5b5aab11e8d4dbaa257">client_utils.h</a>
+, <a class="el" href="client__utils_8c.html#a969e9a6a7402e5b5aab11e8d4dbaa257">client_utils.c</a>
 </li>
 <li>upload_initiated
-: <a class="el" href="whist__client_8c.html#abda738e84e62b32492c077d1898803a3">whist_client.c</a>
-, <a class="el" href="handle__server__message_8c.html#abda738e84e62b32492c077d1898803a3">handle_server_message.c</a>
+: <a class="el" href="handle__server__message_8c.html#abda738e84e62b32492c077d1898803a3">handle_server_message.c</a>
+, <a class="el" href="whist__client_8c.html#abda738e84e62b32492c077d1898803a3">whist_client.c</a>
 </li>
 <li>URI_HANDLER_FILE
 : <a class="el" href="server_2main_8c.html#acbb846d0488e43d207fcd2c04d9894c9">main.c</a>
@@ -291,9 +295,9 @@ $(document).ready(function(){initNavTree('globals_u.html',''); initResizable(); 
 : <a class="el" href="network__algorithm_8h.html#ab25946be235ad67662b9d4d6573e4808">network_algorithm.h</a>
 </li>
 <li>user_email
-: <a class="el" href="whist__client_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd">whist_client.c</a>
+: <a class="el" href="client__utils_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd">client_utils.c</a>
 , <a class="el" href="client_2network_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd">network.c</a>
-, <a class="el" href="client__utils_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd">client_utils.c</a>
+, <a class="el" href="whist__client_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd">whist_client.c</a>
 </li>
 <li>USING_AUDIO_ENCODE_DECODE
 : <a class="el" href="whist_8h.html#a1aabd41fc3d6e2687cf1cda5a88dd6d3">whist.h</a>
@@ -315,8 +319,8 @@ $(document).ready(function(){initNavTree('globals_u.html',''); initResizable(); 
 </li>
 <li>using_stun
 : <a class="el" href="client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">client_utils.c</a>
-, <a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">whist_client.c</a>
 , <a class="el" href="client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">network.c</a>
+, <a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">whist_client.c</a>
 </li>
 </ul>
 </div><!-- contents -->

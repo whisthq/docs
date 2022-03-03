@@ -22,6 +22,8 @@ var dir_e68502ba7741b9477bffd325bfc1c340 =
     [ "os_utils.h", "os__utils_8h.html", "os__utils_8h" ],
     [ "png.c", "png_8c.html", "png_8c" ],
     [ "png.h", "png_8h.html", "png_8h" ],
+    [ "queue.c", "queue_8c.html", "queue_8c" ],
+    [ "queue.h", "queue_8h.html", "queue_8h" ],
     [ "rs.c", "rs_8c.html", "rs_8c" ],
     [ "rs.h", "rs_8h.html", "rs_8h" ],
     [ "rwlock.c", "rwlock_8c.html", "rwlock_8c" ],

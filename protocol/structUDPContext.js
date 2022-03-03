@@ -27,6 +27,7 @@ var structUDPContext =
     [ "nack_buffers", "structUDPContext.html#add40a820f85710da36f9198bc825c5f5", null ],
     [ "nack_mutex", "structUDPContext.html#ad42afbb6f02d3eb6c0219c1e3e1e01b1", null ],
     [ "nack_num_buffers", "structUDPContext.html#ac34557c2e7fab720a1b69457a8ad02b3", null ],
+    [ "nack_queue", "structUDPContext.html#a1731fc05645ce26b44636f0142c493e2", null ],
     [ "network_throttler", "structUDPContext.html#a6d74f07ce707c8dec6740f31da10717e", null ],
     [ "num_duplicate_packets", "structUDPContext.html#a6961610b70c2f096694f7816cca89960", null ],
     [ "pending_packets", "structUDPContext.html#aec2b6de3cefd940f259e6d8e019a9066", null ],

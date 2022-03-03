@@ -4,6 +4,7 @@ var udp_8c =
     [ "UDPNetworkPacket", "structUDPNetworkPacket.html", "structUDPNetworkPacket" ],
     [ "StreamResetData", "structStreamResetData.html", "structStreamResetData" ],
     [ "IncomingBitrate", "structIncomingBitrate.html", "structIncomingBitrate" ],
+    [ "NackID", "structNackID.html", "structNackID" ],
     [ "UDPContext", "structUDPContext.html", "structUDPContext" ],
     [ "CONNECTION_ATTEMPT_INTERVAL_MS", "udp_8c.html#a364162751f11cecfec916c6db2e7419c", null ],
     [ "DURATION_PER_BUCKET", "udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df", null ],
@@ -22,6 +23,7 @@ var udp_8c =
     [ "UDP_PONG_TIMEOUT", "udp_8c.html#a231db3ea80ce4b295aad0c5c33834480", null ],
     [ "UDPNETWORKPACKET_HEADER_SIZE", "udp_8c.html#a6afbd3875118f98013f7cc49969dac90", null ],
     [ "IncomingBitrate", "udp_8c.html#a29939ea78796274439d3cfe923d8af28", null ],
+    [ "NackID", "udp_8c.html#a35befb3bd7ff1cb6bdbf8c3bdb80a7e0", null ],
     [ "UDPPacketType", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046a", [
       [ "UDP_WHIST_SEGMENT", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aa6fd310c3defc3750b4439e52bc32b075", null ],
       [ "UDP_NACK", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aab6ca00b25b2b4bcdbd28580a6cc04af7", null ],
@@ -42,6 +44,7 @@ var udp_8c =
     [ "udp_get_num_indices", "udp_8c.html#aa5673dcb479fc273bc4b03c74929028f", null ],
     [ "udp_get_num_pending_frames", "udp_8c.html#ae5ba49cf201e631db0cb9b475efafe5d", null ],
     [ "udp_handle_network_settings", "udp_8c.html#afef7e30cfe7786aa52b75f8cd9c68445", null ],
+    [ "udp_handle_pending_nacks", "udp_8c.html#a6a844acc1cde901a4c1a430b83fa5331", null ],
     [ "udp_packet_max_size", "udp_8c.html#a53bd961b505875950fc33444b170f72c", null ],
     [ "udp_register_nack_buffer", "udp_8c.html#aed5f450b0434a42cec5d03a819d29eb3", null ],
     [ "udp_register_ring_buffer", "udp_8c.html#a82678fad4b2b94e4a1e6e73bd07c9fcf", null ],

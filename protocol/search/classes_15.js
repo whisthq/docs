@@ -1,4 +1,28 @@
 var searchData=
 [
-  ['x11capturedevice_2487',['X11CaptureDevice',['../structX11CaptureDevice.html',1,'']]]
+  ['whistclientmessage_2480',['WhistClientMessage',['../structWhistClientMessage.html',1,'']]],
+  ['whistcursorinfo_2481',['WhistCursorInfo',['../structWhistCursorInfo.html',1,'']]],
+  ['whistcursortypes_2482',['WhistCursorTypes',['../structWhistCursorTypes.html',1,'']]],
+  ['whistdestination_2483',['WhistDestination',['../structWhistDestination.html',1,'']]],
+  ['whistdiscoveryreplymessage_2484',['WhistDiscoveryReplyMessage',['../structWhistDiscoveryReplyMessage.html',1,'']]],
+  ['whistdiscoveryrequestmessage_2485',['WhistDiscoveryRequestMessage',['../structWhistDiscoveryRequestMessage.html',1,'']]],
+  ['whistfeaturedescriptor_2486',['WhistFeatureDescriptor',['../structWhistFeatureDescriptor.html',1,'']]],
+  ['whistframeackmessage_2487',['WhistFrameAckMessage',['../structWhistFrameAckMessage.html',1,'']]],
+  ['whistkeyboardlayout_2488',['WhistKeyboardLayout',['../structWhistKeyboardLayout.html',1,'']]],
+  ['whistkeyboardmessage_2489',['WhistKeyboardMessage',['../structWhistKeyboardMessage.html',1,'']]],
+  ['whistkeyboardstate_2490',['WhistKeyboardState',['../structWhistKeyboardState.html',1,'']]],
+  ['whistmousebuttonmessage_2491',['WhistMouseButtonMessage',['../structWhistMouseButtonMessage.html',1,'']]],
+  ['whistmousemotionmessage_2492',['WhistMouseMotionMessage',['../structWhistMouseMotionMessage.html',1,'']]],
+  ['whistmousewheelmessage_2493',['WhistMouseWheelMessage',['../structWhistMouseWheelMessage.html',1,'']]],
+  ['whistmultigesturemessage_2494',['WhistMultigestureMessage',['../structWhistMultigestureMessage.html',1,'']]],
+  ['whistnotification_2495',['WhistNotification',['../structWhistNotification.html',1,'']]],
+  ['whistpacket_2496',['WhistPacket',['../structWhistPacket.html',1,'']]],
+  ['whistrenderer_2497',['WhistRenderer',['../structWhistRenderer.html',1,'']]],
+  ['whistrgbcolor_2498',['WhistRGBColor',['../structWhistRGBColor.html',1,'']]],
+  ['whistsegment_2499',['WhistSegment',['../structWhistSegment.html',1,'']]],
+  ['whistservermessage_2500',['WhistServerMessage',['../structWhistServerMessage.html',1,'']]],
+  ['whistsubsystemparams_2501',['WhistSubsystemParams',['../structWhistSubsystemParams.html',1,'']]],
+  ['whisttimerinternal_2502',['WhistTimerInternal',['../structWhistTimerInternal.html',1,'']]],
+  ['whisttimeropaque_2503',['WhistTimerOpaque',['../structWhistTimerOpaque.html',1,'']]],
+  ['whistyuvcolor_2504',['WhistYUVColor',['../structWhistYUVColor.html',1,'']]]
 ];

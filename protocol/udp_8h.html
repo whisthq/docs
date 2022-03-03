@@ -131,6 +131,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad23da60df4866703cdc09be5bd969ba1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#ad23da60df4866703cdc09be5bd969ba1">udp_get_num_indices</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int id)</td></tr>
 <tr class="memdesc:ad23da60df4866703cdc09be5bd969ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of indices(packets) for the specified frame type and id.  <a href="udp_8h.html#ad23da60df4866703cdc09be5bd969ba1">More...</a><br /></td></tr>
 <tr class="separator:ad23da60df4866703cdc09be5bd969ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a844acc1cde901a4c1a430b83fa5331"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a6a844acc1cde901a4c1a430b83fa5331">udp_handle_pending_nacks</a> (void *raw_context)</td></tr>
+<tr class="memdesc:a6a844acc1cde901a4c1a430b83fa5331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle all pending nacks.  <a href="udp_8h.html#a6a844acc1cde901a4c1a430b83fa5331">More...</a><br /></td></tr>
+<tr class="separator:a6a844acc1cde901a4c1a430b83fa5331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1922a1cff137ec95696935164dac88a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a1922a1cff137ec95696935164dac88a9">udp_register_ring_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int max_frame_size, int num_buffers)</td></tr>
 <tr class="memdesc:a1922a1cff137ec95696935164dac88a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a ring buffer to reconstruct WhistPackets that can be split into smaller WhistPackets.  <a href="udp_8h.html#a1922a1cff137ec95696935164dac88a9">More...</a><br /></td></tr>
 <tr class="separator:a1922a1cff137ec95696935164dac88a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,6 +434,34 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a844acc1cde901a4c1a430b83fa5331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a844acc1cde901a4c1a430b83fa5331">&#9670;&nbsp;</a></span>udp_handle_pending_nacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool udp_handle_pending_nacks </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>raw_context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle all pending nacks. </p>
+<p>This function could take a while, as can wait in throttle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw_context</td><td>The UDP Socket Context's internal raw context</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if any nack requests were handled, otherwise false </dd></dl>
 
 </div>
 </div>

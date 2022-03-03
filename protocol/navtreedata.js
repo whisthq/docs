@@ -143,14 +143,15 @@ var NAVTREEINDEX =
 "group__threading.html#ga9aea633c2ea88a28697f0324d0cf4eaa",
 "lodepng_8c.html#a533d58c161de45096b83c44bbaa95e93",
 "logging_8h.html#ac5445774555999e2d5b299937810fbd6",
-"renderer_8c.html#a08e54648f4743722d070635e5de626cf",
-"server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3a3771741a5ce4face7e45aad78b0345",
-"structFrameData.html#a1bdb1b932824acc61d24b6b1643de4aa",
-"structNetworkStatistics.html#a883d2ae50a849511128b9e40e329f4de",
-"structVideoDecoder.html#a1c756dc084226e1cb64e1bfb9f7e19e0",
-"struct__whist__server__state.html#ae6c75e36b53bb41f862b2dec3b825ef1",
-"whist_8c.html#a18de2db2f97ace4d6129993e3d10e7f2",
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bab92d3169c47f0c7ac99aee17feed2b92"
+"queue_8c.html#a309e22ea30a00b8d9a116746020b6db3",
+"server_2video_8c.html#ad846e33fa77d9246e697aa1142e2bd5c",
+"structFileData.html#a458b0b76aa4d8e11b4abc09924d9189c",
+"structMouseMotionAccumulation.html#a9c8dbf88359b53c94dd63a0d2837a4f1",
+"structUDPPacket.html#a6ac5b88ad876ec68a0a67988a08593d0",
+"struct__whist__server__state.html",
+"whist_2network_2network_8h.html#a8cb8ba7a8693174b27de2a04c77f6cb1",
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba809f218d449451cd25a94b55324cfcdf",
+"x11capture_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
