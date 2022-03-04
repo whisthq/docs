@@ -31,6 +31,7 @@ var network__algorithm_8c =
     [ "network_algo_set_dpi", "network__algorithm_8c.html#ab99c00916505d0add8934a3d218f40d5", null ],
     [ "timed_ewma_ratio_bitrate", "network__algorithm_8c.html#a514ba7746992c1c82a8ddb53628aba87", null ],
     [ "whist_congestion_controller", "network__algorithm_8c.html#ae7b690342b05bb87cddd488dd4a71a2f", null ],
+    [ "insufficient_bandwidth", "network__algorithm_8c.html#a06471a2a38199e688f7d64c720b929b8", null ],
     [ "output_height", "network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104", null ],
     [ "output_width", "network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ]
 ];

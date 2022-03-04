@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"structFileMetadata.html#a771dd5a12976a9a0142f36f2d58333fa":[11,0,31,0],
+"structFileMetadata.html#aa9cefde9d4df6e01b1547cbb592f639e":[11,0,31,3],
+"structFileMetadata.html#ae47e60e49464e8ecfc4ad7e9bac3fe7d":[11,0,31,5],
 "structFileMetadata.html#afb510a43dd707205e8c5d08caf82f348":[11,0,31,1],
 "structFrameData.html":[11,0,32],
 "structFrameData.html#a17b526603f40e18dba49fa0f2cb75b27":[11,0,32,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX9 =
 "structNackID.html#ad535bcfcf75e51795758fa497e1ecf31":[11,0,59,0],
 "structNetworkSettings.html":[11,0,60],
 "structNetworkSettings.html#a2057f85aef6593bd628f58dda14c3ab2":[11,0,60,5],
-"structNetworkSettings.html#a504f5d541cbb2329b36d646afc16ff70":[11,0,60,6],
-"structNetworkSettings.html#a591fa891e5a74d47eefd519b9a056698":[11,0,60,1],
-"structNetworkSettings.html#a962c6ece3541c1680711bd0ae96a89af":[11,0,60,0],
-"structNetworkSettings.html#ab64a6fb3ffd52c79aee505244f3ba849":[11,0,60,3]
+"structNetworkSettings.html#a504f5d541cbb2329b36d646afc16ff70":[11,0,60,6]
 };

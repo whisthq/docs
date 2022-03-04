@@ -1,5 +1,8 @@
 var NAVTREEINDEX10 =
 {
+"structNetworkSettings.html#a591fa891e5a74d47eefd519b9a056698":[11,0,60,1],
+"structNetworkSettings.html#a962c6ece3541c1680711bd0ae96a89af":[11,0,60,0],
+"structNetworkSettings.html#ab64a6fb3ffd52c79aee505244f3ba849":[11,0,60,3],
 "structNetworkSettings.html#aca1cf1ffb522409ab0d2412817ed49fd":[11,0,60,2],
 "structNetworkSettings.html#ad765e7a2b5566832dbe65cf0192b942f":[11,0,60,4],
 "structNetworkStatistics.html":[11,0,61],
@@ -246,8 +249,5 @@ var NAVTREEINDEX10 =
 "structUDPPacket.html#a481ce35325ef9ff3506e7df0e6d0a860":[11,0,90,9],
 "structUDPPacket.html#a6ac5b88ad876ec68a0a67988a08593d0":[11,0,90,13],
 "structUDPPacket.html#a752410392eee2bd197b3931e508dacb0":[11,0,90,17],
-"structUDPPacket.html#a897005c8e9655cbc58fde204c2b2be96":[11,0,90,5],
-"structUDPPacket.html#aa037e331a8e622a8f30e65e31f09ce8b":[11,0,90,8],
-"structUDPPacket.html#aab12ec95c44b6aa53c38349e4b904be5":[11,0,90,1],
-"structUDPPacket.html#aba590cbd81c31d161254dfbfcb3aa1bc":[11,0,90,12]
+"structUDPPacket.html#a897005c8e9655cbc58fde204c2b2be96":[11,0,90,5]
 };
