@@ -121,6 +121,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8ce619f0d80d2deadedc9be9ca6ddbba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a8ce619f0d80d2deadedc9be9ca6ddbba">write_u16_to_buffer</a> (char *p, uint16_t w)</td></tr>
+<tr class="separator:a8ce619f0d80d2deadedc9be9ca6ddbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61386cee7dba04ed40cde3a1f17a0a22"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a61386cee7dba04ed40cde3a1f17a0a22">read_u16_from_buffer</a> (char *p)</td></tr>
+<tr class="separator:a61386cee7dba04ed40cde3a1f17a0a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae853bbe2fc7aa8db4ad35abce80e8dce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#ae853bbe2fc7aa8db4ad35abce80e8dce">init_fec</a> (void)</td></tr>
 <tr class="memdesc:ae853bbe2fc7aa8db4ad35abce80e8dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global initialization function that should be called before calling anything else in <a class="el" href="fec_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">fec.h</a>.  <a href="fec_8c.html#ae853bbe2fc7aa8db4ad35abce80e8dce">More...</a><br /></td></tr>
 <tr class="separator:ae853bbe2fc7aa8db4ad35abce80e8dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +134,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9ae850e2e0baba3686a0b85f23949893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFECEncoder.html">FECEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a9ae850e2e0baba3686a0b85f23949893">create_fec_encoder</a> (int num_real_buffers, int num_fec_buffers, int max_buffer_size)</td></tr>
 <tr class="memdesc:a9ae850e2e0baba3686a0b85f23949893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an FEC Encoder.  <a href="fec_8c.html#a9ae850e2e0baba3686a0b85f23949893">More...</a><br /></td></tr>
 <tr class="separator:a9ae850e2e0baba3686a0b85f23949893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f9c5b03c1fe5afb4ce85fc46d32f89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#aa2f9c5b03c1fe5afb4ce85fc46d32f89">fec_encoder_get_num_real_buffers</a> (int buffer_size, int real_buffer_size)</td></tr>
+<tr class="memdesc:aa2f9c5b03c1fe5afb4ce85fc46d32f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the num of real buffers needed, to hold the (input) buffer.  <a href="fec_8c.html#aa2f9c5b03c1fe5afb4ce85fc46d32f89">More...</a><br /></td></tr>
+<tr class="separator:aa2f9c5b03c1fe5afb4ce85fc46d32f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8d45fea9c101fa77f55eef426979ff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#af8d45fea9c101fa77f55eef426979ff9">fec_encoder_register_buffer</a> (<a class="el" href="structFECEncoder.html">FECEncoder</a> *fec_encoder, void *buffer, int buffer_size)</td></tr>
 <tr class="memdesc:af8d45fea9c101fa77f55eef426979ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a buffer into the encoder.  <a href="fec_8c.html#af8d45fea9c101fa77f55eef426979ff9">More...</a><br /></td></tr>
 <tr class="separator:af8d45fea9c101fa77f55eef426979ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,6 +430,45 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa2f9c5b03c1fe5afb4ce85fc46d32f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f9c5b03c1fe5afb4ce85fc46d32f89">&#9670;&nbsp;</a></span>fec_encoder_get_num_real_buffers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fec_encoder_get_num_real_buffers </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>real_buffer_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the num of real buffers needed, to hold the (input) buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer_size</td><td>The buffer size that is going to feed into <a class="el" href="fec_8h.html#af8d45fea9c101fa77f55eef426979ff9" title="Registers a buffer into the encoder.">fec_encoder_register_buffer()</a></td></tr>
+    <tr><td class="paramname">real_buffer_size</td><td>The real_buffer_size allowed</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Think this as spliting a large buffer into smaller ones. Since the exist of FEC padding, the calculate is non-trival.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The num of real buffers needed </dd></dl>
+
+</div>
+</div>
 <a id="af8d45fea9c101fa77f55eef426979ff9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8d45fea9c101fa77f55eef426979ff9">&#9670;&nbsp;</a></span>fec_encoder_register_buffer()</h2>
 
@@ -607,6 +653,52 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A global initialization function that should be called before calling anything else in <a class="el" href="fec_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">fec.h</a>. </p>
+
+</div>
+</div>
+<a id="a61386cee7dba04ed40cde3a1f17a0a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61386cee7dba04ed40cde3a1f17a0a22">&#9670;&nbsp;</a></span>read_u16_from_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t read_u16_from_buffer </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ce619f0d80d2deadedc9be9ca6ddbba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce619f0d80d2deadedc9be9ca6ddbba">&#9670;&nbsp;</a></span>write_u16_to_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void write_u16_to_buffer </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

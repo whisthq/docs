@@ -8,6 +8,7 @@ var fec_8h =
     [ "destroy_fec_decoder", "fec_8h.html#aa96fb53e52299e011cf2bf7299b849c8", null ],
     [ "destroy_fec_encoder", "fec_8h.html#a246098d155f96b3db062f15323996bb4", null ],
     [ "fec_decoder_register_buffer", "fec_8h.html#a15f81d0fc1e9b9aa2aa823812e02dfe5", null ],
+    [ "fec_encoder_get_num_real_buffers", "fec_8h.html#aa2f9c5b03c1fe5afb4ce85fc46d32f89", null ],
     [ "fec_encoder_register_buffer", "fec_8h.html#af8d45fea9c101fa77f55eef426979ff9", null ],
     [ "fec_get_decoded_buffer", "fec_8h.html#a68e2a970d7c3d4b81353174da6809b7a", null ],
     [ "fec_get_encoded_buffers", "fec_8h.html#a685b2d430114a8b257ef3a28a2ceb14b", null ],

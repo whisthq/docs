@@ -332,6 +332,7 @@ var whist_8h =
     [ "bit_array_set_bit", "whist_8h.html#ad1afe30fe8a08f76491e0150c0b790eb", null ],
     [ "bit_array_test_bit", "whist_8h.html#a31fd6c4678d06a79702a5781fb54b43b", null ],
     [ "get_wcmsg_size", "whist_8h.html#a5ba15b0de2ae0c36db28576d130e6bdd", null ],
+    [ "int_div_roundup", "whist_8h.html#aa71ba67b75bcb99101bd4a2bb836d708", null ],
     [ "print_memory_info", "whist_8h.html#a07db1ac3fcee0bea1bef088a1a2fff55", null ],
     [ "print_system_info", "whist_8h.html#a37f44bf45880153c07ddf47a4dcaf135", null ],
     [ "read_hexadecimal_private_key", "whist_8h.html#a8715a52b4a7436f38ed03ec5705a9aff", null ],

@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"structFileData.html#afccbd5875c571f54563db14f711ebf28":[11,0,29,1],
+"structFileMetadata.html":[11,0,31],
+"structFileMetadata.html#a5adeabce6a8f9971217be7f8e63ae7a3":[11,0,31,2],
+"structFileMetadata.html#a6f5a168a7864bdf51365e263e320dfee":[11,0,31,4],
 "structFileMetadata.html#a771dd5a12976a9a0142f36f2d58333fa":[11,0,31,0],
 "structFileMetadata.html#aa9cefde9d4df6e01b1547cbb592f639e":[11,0,31,3],
 "structFileMetadata.html#ae47e60e49464e8ecfc4ad7e9bac3fe7d":[11,0,31,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "structMouseMotionAccumulation.html#a7a0fa808efe91598649e269322e3ed84":[11,0,58,0],
 "structMouseMotionAccumulation.html#a9c8dbf88359b53c94dd63a0d2837a4f1":[11,0,58,1],
 "structNackID.html":[11,0,59],
-"structNackID.html#ab67caefcc54db66c7f1d0bfea7eb2714":[11,0,59,1],
-"structNackID.html#ad535bcfcf75e51795758fa497e1ecf31":[11,0,59,0],
-"structNetworkSettings.html":[11,0,60],
-"structNetworkSettings.html#a2057f85aef6593bd628f58dda14c3ab2":[11,0,60,5],
-"structNetworkSettings.html#a504f5d541cbb2329b36d646afc16ff70":[11,0,60,6]
+"structNackID.html#ab67caefcc54db66c7f1d0bfea7eb2714":[11,0,59,1]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"server__statistic_8c.html":[12,0,1,13],
+"server__statistic_8c.html#ae70f42219f0dab09323155863c7bc5b8":[12,0,1,13,0],
+"server__statistic_8c.html#aeb2697fdcecb4d884626826c24600b01":[12,0,1,13,1],
+"server__statistic_8h.html":[12,0,1,14],
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba21fa0c0a10c8063afb6215455922e5a8":[12,0,1,14,5],
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2e76a584d3eb368c555e0dd6291ed331":[12,0,1,14,7],
 "server__statistic_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba31c807d31f0487d03623aa1f63d178c8":[12,0,1,14,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "structFileData.html":[11,0,29],
 "structFileData.html#a458b0b76aa4d8e11b4abc09924d9189c":[11,0,29,3],
 "structFileData.html#a55b3be7617d862f0ea57a4a88548a393":[11,0,29,0],
-"structFileData.html#af3b890b9cd4f88bf3268839644d4adc3":[11,0,29,2],
-"structFileData.html#afccbd5875c571f54563db14f711ebf28":[11,0,29,1],
-"structFileMetadata.html":[11,0,31],
-"structFileMetadata.html#a5adeabce6a8f9971217be7f8e63ae7a3":[11,0,31,2],
-"structFileMetadata.html#a6f5a168a7864bdf51365e263e320dfee":[11,0,31,4]
+"structFileData.html#af3b890b9cd4f88bf3268839644d4adc3":[11,0,29,2]
 };
