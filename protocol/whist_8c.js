@@ -15,11 +15,11 @@ var whist_8c =
     [ "get_wcmsg_size", "whist_8c.html#a5ba15b0de2ae0c36db28576d130e6bdd", null ],
     [ "int_div_roundup", "whist_8c.html#aa71ba67b75bcb99101bd4a2bb836d708", null ],
     [ "print_system_info", "whist_8c.html#a37f44bf45880153c07ddf47a4dcaf135", null ],
-    [ "read_hexadecimal_private_key", "whist_8c.html#a8715a52b4a7436f38ed03ec5705a9aff", null ],
+    [ "read_hexadecimal_private_key", "whist_8c.html#a8232ddfa6ec8bc69f17a67b45953c6dc", null ],
     [ "runcmd", "whist_8c.html#a18de2db2f97ace4d6129993e3d10e7f2", null ],
     [ "safe_strncpy", "whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e", null ],
     [ "terminate_protocol", "whist_8c.html#a637da5470a9f4107a59054c340442a7f", null ],
     [ "trim_utf8_string", "whist_8c.html#a8643207a604b19f3fefe5046bd3c0290", null ],
     [ "whist_git_revision", "whist_8c.html#acd2a6b85af00a5afce40e6c334575ec0", null ],
-    [ "whist_init_subsystems", "whist_8c.html#a11339a4842b7eb0c8b38dd9593eb9d4f", null ]
+    [ "whist_init_subsystems", "whist_8c.html#ac53d33c8e6e74a072be3b2319b56cb75", null ]
 ];

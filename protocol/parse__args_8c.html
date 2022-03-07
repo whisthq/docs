@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('parse__args_8c.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">parse_args.c File Reference</div>  </div>
@@ -92,22 +91,16 @@ $(document).ready(function(){initNavTree('parse__args_8c.html',''); initResizabl
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="whistgetopt_8h_source.html">whist/core/whistgetopt.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="error__monitor_8h_source.html">whist/logging/error_monitor.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="parse__args_8h_source.html">parse_args.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:afd594c44778892211fe8892be8852c1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__args_8c.html#afd594c44778892211fe8892be8852c1d">OPTION_STRING</a>&#160;&#160;&#160;&quot;k:i:w:e:t:d:b:&quot;</td></tr>
-<tr class="separator:afd594c44778892211fe8892be8852c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6413acffdbcf49f867f9f9288610939f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__args_8c.html#a6413acffdbcf49f867f9f9288610939f">server_parse_args</a> (<a class="el" href="parse__args_8h.html#aecd820e65ec855cf104d6f61bfe8f384">whist_server_config</a> *config, int argc, char *argv[])</td></tr>
-<tr class="memdesc:a6413acffdbcf49f867f9f9288610939f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="parse__args_8h.html#a6413acffdbcf49f867f9f9288610939f" title="server_parse_args() parses the arguments passed on the command line and fill the server_config struct">server_parse_args()</a> parses the arguments passed on the command line and fill the server_config struct  <a href="parse__args_8c.html#a6413acffdbcf49f867f9f9288610939f">More...</a><br /></td></tr>
-<tr class="separator:a6413acffdbcf49f867f9f9288610939f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54be959a616e3c5f2a789e65b4ea1f52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__args_8c.html#a54be959a616e3c5f2a789e65b4ea1f52">COMMAND_LINE_STRING_OPTION</a> (private_key_option, 'k', &quot;private-key&quot;, 32, &quot;Pass in the RSA Private Key as a hexadecimal string.&quot;)</td></tr>
+<tr class="separator:a54be959a616e3c5f2a789e65b4ea1f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -116,46 +109,43 @@ Functions</h2></td></tr>
 the server protocol.</h1>
 <h1><a class="anchor" id="autotoc_md95"></a>
 Usage</h1>
-<p><a class="el" href="parse__args_8c.html#a6413acffdbcf49f867f9f9288610939f" title="server_parse_args() parses the arguments passed on the command line and fill the server_config struct">server_parse_args()</a> checks and parses the args for <a class="el" href="server_2main_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">server/main.c</a> </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="afd594c44778892211fe8892be8852c1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd594c44778892211fe8892be8852c1d">&#9670;&nbsp;</a></span>OPTION_STRING</h2>
+<p><a class="el" href="parse__args_8h.html#a6413acffdbcf49f867f9f9288610939f" title="server_parse_args() parses the arguments passed on the command line and fill the server_config struct">server_parse_args()</a> checks and parses the args for <a class="el" href="server_2main_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">server/main.c</a> </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a54be959a616e3c5f2a789e65b4ea1f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54be959a616e3c5f2a789e65b4ea1f52">&#9670;&nbsp;</a></span>COMMAND_LINE_STRING_OPTION()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define OPTION_STRING&#160;&#160;&#160;&quot;k:i:w:e:t:d:b:&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a6413acffdbcf49f867f9f9288610939f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6413acffdbcf49f867f9f9288610939f">&#9670;&nbsp;</a></span>server_parse_args()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int server_parse_args </td>
+          <td class="memname">COMMAND_LINE_STRING_OPTION </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="parse__args_8h.html#aecd820e65ec855cf104d6f61bfe8f384">whist_server_config</a> *&#160;</td>
-          <td class="paramname"><em>config</em>, </td>
+          <td class="paramtype">private_key_option&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
+          <td class="paramtype">'k'&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
+          <td class="paramtype">&quot;private-key&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">32&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Pass in the RSA Private Key as a hexadecimal string.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -164,17 +154,6 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><a class="el" href="parse__args_8h.html#a6413acffdbcf49f867f9f9288610939f" title="server_parse_args() parses the arguments passed on the command line and fill the server_config struct">server_parse_args()</a> parses the arguments passed on the command line and fill the server_config struct </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">config</td><td>Server configuration</td></tr>
-    <tr><td class="paramname">argc</td><td>Length of the argv array</td></tr>
-    <tr><td class="paramname">argv</td><td>Array of arguments</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, -1 on invalid args, and 1 on help or version args. </dd></dl>
 
 </div>
 </div>

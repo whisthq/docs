@@ -13,8 +13,8 @@ var whist_8h =
     [ "WhistServerMessage", "structWhistServerMessage.html", "structWhistServerMessage" ],
     [ "WhistDestination", "structWhistDestination.html", "structWhistDestination" ],
     [ "BitArray", "structBitArray.html", "structBitArray" ],
-    [ "WhistSubsystemParams", "structWhistSubsystemParams.html", "structWhistSubsystemParams" ],
     [ "ACK_REFRESH_MS", "whist_8h.html#a407e78922a862311fd4f35eeef889630", null ],
+    [ "ARRAY_LENGTH", "whist_8h.html#a7539f9740177f669ce68a77ae64f38b5", null ],
     [ "AUDIO_FREQUENCY", "whist_8h.html#aae969438a57a86fddf0cf53106c9b6b4", null ],
     [ "AVG_FPS_DURATION", "whist_8h.html#a6fb202279d179dd749b095338241329b", null ],
     [ "AVG_FRAME_DURATION_IN_US", "whist_8h.html#accb8ea6004024e6e62e60d954d52a4fb", null ],
@@ -104,7 +104,6 @@ var whist_8h =
     [ "WhistOSType", "whist_8h.html#a00a12b04c002bc1d820fc3fdbe717cae", null ],
     [ "WhistServerMessage", "whist_8h.html#af354d3977701249a8ad159d0eeda62ff", null ],
     [ "WhistServerMessageType", "whist_8h.html#a5885a6725785a59084164ccfedb1073a", null ],
-    [ "WhistSubsystemParams", "whist_8h.html#a90c5910ec08151168704244ea8256f1a", null ],
     [ "CaptureDeviceType", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600", [
       [ "NVIDIA_DEVICE", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c", null ],
       [ "X11_DEVICE", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621", null ]
@@ -335,11 +334,11 @@ var whist_8h =
     [ "int_div_roundup", "whist_8h.html#aa71ba67b75bcb99101bd4a2bb836d708", null ],
     [ "print_memory_info", "whist_8h.html#a07db1ac3fcee0bea1bef088a1a2fff55", null ],
     [ "print_system_info", "whist_8h.html#a37f44bf45880153c07ddf47a4dcaf135", null ],
-    [ "read_hexadecimal_private_key", "whist_8h.html#a8715a52b4a7436f38ed03ec5705a9aff", null ],
+    [ "read_hexadecimal_private_key", "whist_8h.html#a8232ddfa6ec8bc69f17a67b45953c6dc", null ],
     [ "runcmd", "whist_8h.html#a18de2db2f97ace4d6129993e3d10e7f2", null ],
     [ "safe_strncpy", "whist_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e", null ],
     [ "terminate_protocol", "whist_8h.html#adc70ab64077706c3578a5d50fb4820d5", null ],
     [ "trim_utf8_string", "whist_8h.html#a8643207a604b19f3fefe5046bd3c0290", null ],
     [ "whist_git_revision", "whist_8h.html#acd2a6b85af00a5afce40e6c334575ec0", null ],
-    [ "whist_init_subsystems", "whist_8h.html#a11339a4842b7eb0c8b38dd9593eb9d4f", null ]
+    [ "whist_init_subsystems", "whist_8h.html#ac53d33c8e6e74a072be3b2319b56cb75", null ]
 ];

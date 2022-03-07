@@ -1,5 +1,4 @@
 var parse__args_8c =
 [
-    [ "OPTION_STRING", "parse__args_8c.html#afd594c44778892211fe8892be8852c1d", null ],
-    [ "server_parse_args", "parse__args_8c.html#a6413acffdbcf49f867f9f9288610939f", null ]
+    [ "COMMAND_LINE_STRING_OPTION", "parse__args_8c.html#a54be959a616e3c5f2a789e65b4ea1f52", null ]
 ];

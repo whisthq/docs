@@ -10,6 +10,5 @@ var client__utils_8h =
     [ "free_parsed_args", "client__utils_8h.html#a44fd0b41f8dec9bae4a8e081703c014b", null ],
     [ "read_piped_arguments", "client__utils_8h.html#ac2c155b9515a1ce8f319a5f18e5207ae", null ],
     [ "send_message_dimensions", "client__utils_8h.html#a5d27f8bccbaa49059d82571e47108667", null ],
-    [ "send_new_tab_url_if_needed", "client__utils_8h.html#a2d18456341176612202624e6fbd8e0d6", null ],
     [ "update_mouse_motion", "client__utils_8h.html#a969e9a6a7402e5b5aab11e8d4dbaa257", null ]
 ];

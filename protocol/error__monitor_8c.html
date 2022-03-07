@@ -83,7 +83,8 @@ $(document).ready(function(){initNavTree('error__monitor_8c.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">error_monitor.c File Reference</div>  </div>
 </div><!--header-->
@@ -93,6 +94,7 @@ $(document).ready(function(){initNavTree('error__monitor_8c.html',''); initResiz
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;sentry/sentry.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="error__monitor_8h_source.html">error_monitor.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -106,6 +108,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a830237f0ea6e7ad239c8fcac5ddf571f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#a830237f0ea6e7ad239c8fcac5ddf571f">COMMAND_LINE_CALLBACK_OPTION</a> (set_environment_option, 'e', &quot;environment&quot;, WHIST_OPTION_REQUIRED_ARGUMENT, &quot;The environment the protocol is running in, &quot; &quot;e.g production, staging, development.  Default: none.&quot;) COMMAND_LINE_CALLBACK_OPTION(set_session_id_option</td></tr>
+<tr class="separator:a830237f0ea6e7ad239c8fcac5ddf571f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59902f0ce1004eb4c8dea71aa00da83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#ad59902f0ce1004eb4c8dea71aa00da83">whist_error_monitor_set_environment</a> (const char *environment)</td></tr>
 <tr class="memdesc:ad59902f0ce1004eb4c8dea71aa00da83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the error monitor to use the provided environment.  <a href="error__monitor_8c.html#ad59902f0ce1004eb4c8dea71aa00da83">More...</a><br /></td></tr>
 <tr class="separator:ad59902f0ce1004eb4c8dea71aa00da83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,7 +119,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ac87373a8de9cd85e0d9a318bd826e19d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#ac87373a8de9cd85e0d9a318bd826e19d">whist_error_monitor_set_username</a> (const char *username)</td></tr>
 <tr class="memdesc:ac87373a8de9cd85e0d9a318bd826e19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the username tag for error monitor reports.  <a href="error__monitor_8c.html#ac87373a8de9cd85e0d9a318bd826e19d">More...</a><br /></td></tr>
 <tr class="separator:ac87373a8de9cd85e0d9a318bd826e19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa63504b8ebaddf4daf11d2eb7c7b7828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#aa63504b8ebaddf4daf11d2eb7c7b7828">whist_error_monitor_set_connection_id</a> (int id)</td></tr>
+<tr class="memitem:aa63504b8ebaddf4daf11d2eb7c7b7828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#aa63504b8ebaddf4daf11d2eb7c7b7828">whist_error_monitor_set_connection_id</a> (int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>)</td></tr>
 <tr class="memdesc:aa63504b8ebaddf4daf11d2eb7c7b7828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the connection id tag for error monitor reports.  <a href="error__monitor_8c.html#aa63504b8ebaddf4daf11d2eb7c7b7828">More...</a><br /></td></tr>
 <tr class="separator:aa63504b8ebaddf4daf11d2eb7c7b7828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0528e6a2362ba2081d8b3fbf11fb7e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#ac0528e6a2362ba2081d8b3fbf11fb7e2">whist_error_monitor_is_initialized</a> (void)</td></tr>
@@ -133,6 +137,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a7b77c56b0a8ee0bd57ac755005564f53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#a7b77c56b0a8ee0bd57ac755005564f53">whist_error_monitor_log_error</a> (const char *message)</td></tr>
 <tr class="memdesc:a7b77c56b0a8ee0bd57ac755005564f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error event to the error monitor.  <a href="error__monitor_8c.html#a7b77c56b0a8ee0bd57ac755005564f53">More...</a><br /></td></tr>
 <tr class="separator:a7b77c56b0a8ee0bd57ac755005564f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1aabac6d068eef6a7bad3fdf50a05cc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a></td></tr>
+<tr class="separator:a1aabac6d068eef6a7bad3fdf50a05cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb585d16d6634e654e7c80f49759e8d"><td class="memItemLeft" align="right" valign="top">session&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a></td></tr>
+<tr class="separator:abbb585d16d6634e654e7c80f49759e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc98a77657763c9552e00036f762bf38"><td class="memItemLeft" align="right" valign="top">session&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error__monitor_8c.html#abc98a77657763c9552e00036f762bf38">WHIST_OPTION_REQUIRED_ARGUMENT</a></td></tr>
+<tr class="separator:abc98a77657763c9552e00036f762bf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -144,7 +157,7 @@ Usage</h1>
 <p>The error monitor needs to have an environment configured before it can be started up. This environment should be development/staging/production, and is passed in as a command-line parameter. Once the value is known, we may call <code><a class="el" href="error__monitor_8c.html#ad59902f0ce1004eb4c8dea71aa00da83" title="Configures the error monitor to use the provided environment.">whist_error_monitor_set_environment()</a></code> to configure it.</p>
 <p>If no environment is set, the error monitor will fail to initialize. This is because we don't want it to complain in personal setups and manual connections when developing, but it's important to note the side-effect that we will not report to the error monitoring service if environment isn't passed in.</p>
 <p>To initialize the error monitor, we call <code>error_monitor_initialize()</code>. After doing so, we can configure the error logging metadata with <code><a class="el" href="error__monitor_8c.html#ac87373a8de9cd85e0d9a318bd826e19d" title="Configures the username tag for error monitor reports.">whist_error_monitor_set_username()</a></code> and <code><a class="el" href="error__monitor_8c.html#aa63504b8ebaddf4daf11d2eb7c7b7828" title="Configures the connection id tag for error monitor reports.">whist_error_monitor_set_connection_id()</a></code>.</p>
-<p>At this point, calling <code><a class="el" href="error__monitor_8c.html#a8fc14226804709f16463b3f49bf4e275" title="Logs a breadcrumb to the error monitor.">whist_error_monitor_log_breadcrumb()</a></code> and <code><a class="el" href="error__monitor_8c.html#a7b77c56b0a8ee0bd57ac755005564f53" title="Logs an error event to the error monitor.">whist_error_monitor_log_error()</a></code> will report a trace of non-error events and report a detailed breakdown for error-level events to the error monitor service, respectively. Importantly, <em>you should almost never be calling this function by itself</em>. Instead, simply use the <code>LOG_*()</code> functions from <a class="el" href="logging_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">logging.h</a>, which will automatically send error monitor breadcrumbs and error reports as needed.</p>
+<p>At this point, calling <code><a class="el" href="error__monitor_8c.html#a8fc14226804709f16463b3f49bf4e275" title="Logs a breadcrumb to the error monitor.">whist_error_monitor_log_breadcrumb()</a></code> and <code><a class="el" href="error__monitor_8c.html#a7b77c56b0a8ee0bd57ac755005564f53" title="Logs an error event to the error monitor.">whist_error_monitor_log_error()</a></code> will report a trace of non-error events and report a detailed breakdown for error-level events to the error monitor service, respectively. Importantly, <em>you should almost never be calling this function by itself</em>. Instead, simply use the <code>LOG_*()</code> functions from logging.h, which will automatically send error monitor breadcrumbs and error reports as needed.</p>
 <p>Because of this integration with our logging setup, we run into race conditions in <code><a class="el" href="error__monitor_8c.html#a30318e80305b568bc60bfec9397802f4" title="Shuts down the error monitor.">whist_error_monitor_shutdown()</a></code>, which may cause us to fail to report our last few breadcrumbs and error events. In order to avoid this, we must call <code><a class="el" href="error__monitor_8c.html#a30318e80305b568bc60bfec9397802f4" title="Shuts down the error monitor.">whist_error_monitor_shutdown()</a></code> after calling <code><a class="el" href="logging_8c.html#a4dfcbd491525c8782dc0f4a373f29fd6" title="Destroy the logger object.">destroy_logger()</a></code>, to allow for any pending error monitor log calls to be handled. Eventually, we should set up a more robust solution for synchronizing these calls. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a611aea3d89115184e7b59a56c33e5d09"></a>
@@ -190,6 +203,70 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a830237f0ea6e7ad239c8fcac5ddf571f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830237f0ea6e7ad239c8fcac5ddf571f">&#9670;&nbsp;</a></span>COMMAND_LINE_CALLBACK_OPTION()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">COMMAND_LINE_CALLBACK_OPTION </td>
+          <td>(</td>
+          <td class="paramtype">set_environment_option&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">'e'&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;environment&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a023c53b46690e2cf60e89fb7d9b6535e">WHIST_OPTION_REQUIRED_ARGUMENT</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;The environment the protocol is running&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot; &quot;e.g&#160;</td>
+          <td class="paramname"><em>production</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">staging&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">development. Default:none.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aff05302e466bdf62b862bbd7bdc407a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff05302e466bdf62b862bbd7bdc407a1">&#9670;&nbsp;</a></span>whist_error_monitor_initialize()</h2>
 
@@ -272,7 +349,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This is automatically called from the <code>LOG_*</code> functions from <a class="el" href="logging_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">logging.h</a>, and should almost never be called alone. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is automatically called from the <code>LOG_*</code> functions from logging.h, and should almost never be called alone. </dd></dl>
 
 </div>
 </div>
@@ -299,7 +376,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This is automatically called from the <code>LOG_*</code> functions from <a class="el" href="logging_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">logging.h</a>, and should almost never be called alone. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is automatically called from the <code>LOG_*</code> functions from logging.h, and should almost never be called alone. </dd></dl>
 
 </div>
 </div>
@@ -428,7 +505,50 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Shuts down the error monitor. </p>
-<dl class="section note"><dt>Note</dt><dd>This should only be called after calling <a class="el" href="logging_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">logging.h</a>'s <code><a class="el" href="logging_8c.html#a4dfcbd491525c8782dc0f4a373f29fd6" title="Destroy the logger object.">destroy_logger()</a></code>. See the "Usage" section above for details. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This should only be called after calling logging.h's <code><a class="el" href="logging_8c.html#a4dfcbd491525c8782dc0f4a373f29fd6" title="Destroy the logger object.">destroy_logger()</a></code>. See the "Usage" section above for details. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a1aabac6d068eef6a7bad3fdf50a05cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aabac6d068eef6a7bad3fdf50a05cc8">&#9670;&nbsp;</a></span>d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbb585d16d6634e654e7c80f49759e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb585d16d6634e654e7c80f49759e8d">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">session id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc98a77657763c9552e00036f762bf38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc98a77657763c9552e00036f762bf38">&#9670;&nbsp;</a></span>WHIST_OPTION_REQUIRED_ARGUMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">session WHIST_OPTION_REQUIRED_ARGUMENT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

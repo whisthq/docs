@@ -9,6 +9,8 @@ var dir_e68502ba7741b9477bffd325bfc1c340 =
     [ "clock.h", "clock_8h.html", "clock_8h" ],
     [ "color.c", "color_8c.html", "color_8c" ],
     [ "color.h", "color_8h.html", "color_8h" ],
+    [ "command_line.c", "command__line_8c.html", "command__line_8c" ],
+    [ "command_line.h", "command__line_8h.html", "command__line_8h" ],
     [ "fec.c", "fec_8c.html", "fec_8c" ],
     [ "fec.h", "fec_8h.html", "fec_8h" ],
     [ "ffmpeg_memory.c", "ffmpeg__memory_8c.html", "ffmpeg__memory_8c" ],

@@ -9,5 +9,6 @@ var linked__list_8c =
     [ "linked_list_extract_tail", "group__linked__list.html#gaff3d6bab2bee743d6c7dc0844fd00192", null ],
     [ "linked_list_init", "group__linked__list.html#gaa8a75971b2cbe1084b3912917bc87cb1", null ],
     [ "linked_list_remove_internal", "group__linked__list.html#gacdfba371980e10348a9f9b019071c287", null ],
-    [ "linked_list_size", "group__linked__list.html#gaf88e72c31951b56f043f3e98d0ffbfa1", null ]
+    [ "linked_list_size", "group__linked__list.html#gaf88e72c31951b56f043f3e98d0ffbfa1", null ],
+    [ "linked_list_sort", "group__linked__list.html#ga24dbb0bb330fe39922f5766aa0a7ccd1", null ]
 ];

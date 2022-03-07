@@ -156,6 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaff3d6bab2bee743d6c7dc0844fd00192"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__linked__list.html#gaff3d6bab2bee743d6c7dc0844fd00192">linked_list_extract_tail</a> (<a class="el" href="structLinkedList.html">LinkedList</a> *list)</td></tr>
 <tr class="memdesc:gaff3d6bab2bee743d6c7dc0844fd00192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the item at the tail of a linked list.  <a href="group__linked__list.html#gaff3d6bab2bee743d6c7dc0844fd00192">More...</a><br /></td></tr>
 <tr class="separator:gaff3d6bab2bee743d6c7dc0844fd00192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24dbb0bb330fe39922f5766aa0a7ccd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__linked__list.html#ga24dbb0bb330fe39922f5766aa0a7ccd1">linked_list_sort</a> (<a class="el" href="structLinkedList.html">LinkedList</a> *list, int(*cmp)(const void *first, const void *second))</td></tr>
+<tr class="memdesc:ga24dbb0bb330fe39922f5766aa0a7ccd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a linked list.  <a href="group__linked__list.html#ga24dbb0bb330fe39922f5766aa0a7ccd1">More...</a><br /></td></tr>
+<tr class="separator:ga24dbb0bb330fe39922f5766aa0a7ccd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaddefab6abd189c23c130da4c6348fd2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__linked__list.html#gaddefab6abd189c23c130da4c6348fd2a">linked_list_check_validity</a> (const <a class="el" href="structLinkedList.html">LinkedList</a> *list)</td></tr>
 <tr class="memdesc:gaddefab6abd189c23c130da4c6348fd2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform validity checks on a linked list.  <a href="group__linked__list.html#gaddefab6abd189c23c130da4c6348fd2a">More...</a><br /></td></tr>
 <tr class="separator:gaddefab6abd189c23c130da4c6348fd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +168,7 @@ Functions</h2></td></tr>
 <p>Example: </p><div class="fragment"><div class="line"><span class="comment">// Define a structure which can be used as a list item.</span></div>
 <div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
 <div class="line">    <a class="code" href="group__linked__list.html#ga3206a1b51af0f0656f22379bbac93330">LINKED_LIST_HEADER</a>;</div>
-<div class="line">    <span class="keywordtype">int</span> id;</div>
+<div class="line">    <span class="keywordtype">int</span> <a class="code" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>;</div>
 <div class="line">    <span class="comment">// More Foo fields.</span></div>
 <div class="line">} Foo;</div>
 <div class="line"> </div>
@@ -720,8 +723,47 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga24dbb0bb330fe39922f5766aa0a7ccd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24dbb0bb330fe39922f5766aa0a7ccd1">&#9670;&nbsp;</a></span>linked_list_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void linked_list_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structLinkedList.html">LinkedList</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(const void *first, const void *second)&#160;</td>
+          <td class="paramname"><em>cmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sort a linked list. </p>
+<p>For short lists - uses a O(N^2) insertion sort.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list to sort. </td></tr>
+    <tr><td class="paramname">cmp</td><td>Comparator function. It is given two arguments, and should return a negative number, zero, or a positive number if the first argument is less than, equal to, or greater than, respectively, the second argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aerror__monitor_8c_html_abbb585d16d6634e654e7c80f49759e8d"><div class="ttname"><a href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a></div><div class="ttdeci">session id</div><div class="ttdef"><b>Definition:</b> error_monitor.c:86</div></div>
 <div class="ttc" id="agroup__linked__list_html_ga0ea791e204851c771762782e10bae316"><div class="ttname"><a href="group__linked__list.html#ga0ea791e204851c771762782e10bae316">linked_list_add_before</a></div><div class="ttdeci">#define linked_list_add_before(list, old_item, new_item)</div><div class="ttdoc">Add a new item before another one in a linked list.</div><div class="ttdef"><b>Definition:</b> linked_list.h:165</div></div>
 <div class="ttc" id="agroup__linked__list_html_gaa8a75971b2cbe1084b3912917bc87cb1"><div class="ttname"><a href="group__linked__list.html#gaa8a75971b2cbe1084b3912917bc87cb1">linked_list_init</a></div><div class="ttdeci">void linked_list_init(LinkedList *list)</div><div class="ttdoc">Initialise a linked list to be empty.</div><div class="ttdef"><b>Definition:</b> linked_list.c:9</div></div>
 <div class="ttc" id="agroup__linked__list_html_ga9a78aa1566769e11806efe75e24562cc"><div class="ttname"><a href="group__linked__list.html#ga9a78aa1566769e11806efe75e24562cc">linked_list_remove</a></div><div class="ttdeci">#define linked_list_remove(list, item)</div><div class="ttdoc">Remove an item from a linked list.</div><div class="ttdef"><b>Definition:</b> linked_list.h:178</div></div>

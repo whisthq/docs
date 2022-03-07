@@ -122,6 +122,7 @@ $(document).ready(function(){initNavTree('whist__client_8c.html',''); initResiza
 <code>#include &quot;<a class="el" href="client__statistic_8h_source.html">client_statistic.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="renderer_8h_source.html">renderer.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="debug__console_8h_source.html">whist/tools/debug_console.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -134,6 +135,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4be6f41777971537551886d5db9d66a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a4be6f41777971537551886d5db9d66a3">COMMAND_LINE_CALLBACK_OPTION</a> (set_user_email, 'u', &quot;user&quot;, COMMAND_LINE_CALLBACK_OPTION(<a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a023c53b46690e2cf60e89fb7d9b6535e">WHIST_OPTION_REQUIRED_ARGUMENT</a>, &quot;Tell Whist the user's email. Default: None.&quot;)</td></tr>
+<tr class="separator:a4be6f41777971537551886d5db9d66a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6436c1f61f3702e1e59a9a016c131d93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a6436c1f61f3702e1e59a9a016c131d93">whist_client_main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a6436c1f61f3702e1e59a9a016c131d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -149,14 +152,8 @@ Variables</h2></td></tr>
 <tr class="separator:aaacc5ce7ced4977cd893708f5d789df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a57d774e71166271bbff6c515111104"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a></td></tr>
 <tr class="separator:a2a57d774e71166271bbff6c515111104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724e6f14a5eaffd21dc3012771360af3"><td class="memItemLeft" align="right" valign="top">volatile char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a724e6f14a5eaffd21dc3012771360af3">program_name</a></td></tr>
-<tr class="separator:a724e6f14a5eaffd21dc3012771360af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07366317ac5c1d8d1ce9c82baf1d10c2"><td class="memItemLeft" align="right" valign="top">volatile char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a07366317ac5c1d8d1ce9c82baf1d10c2">server_ip</a></td></tr>
 <tr class="separator:a07366317ac5c1d8d1ce9c82baf1d10c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b9f74cf18927b18cbab7bedbdbe65fd"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd">user_email</a> [<a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>+1]</td></tr>
-<tr class="separator:a1b9f74cf18927b18cbab7bedbdbe65fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75a4346875818556d440efbf4084be2c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a75a4346875818556d440efbf4084be2c">icon_png_filename</a> [<a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>+1]</td></tr>
-<tr class="separator:a75a4346875818556d440efbf4084be2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f4a0eca6c500b41c87fc2ba4375b66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a></td></tr>
 <tr class="separator:a78f4a0eca6c500b41c87fc2ba4375b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60a34315f460179939054acaf3ed8163"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a60a34315f460179939054acaf3ed8163">uid</a></td></tr>
@@ -179,8 +176,6 @@ Variables</h2></td></tr>
 <tr class="separator:ae4e4ce6a658b77aa4bb7753403794776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1bcee1b918b7f8ce7d55837de4d63b0"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#ad1bcee1b918b7f8ce7d55837de4d63b0">client_exiting</a></td></tr>
 <tr class="separator:ad1bcee1b918b7f8ce7d55837de4d63b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6284762fa051e3b50b9b5fe0d91c95f6"><td class="memItemLeft" align="right" valign="top">volatile char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a6284762fa051e3b50b9b5fe0d91c95f6">new_tab_url</a></td></tr>
-<tr class="separator:a6284762fa051e3b50b9b5fe0d91c95f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abda738e84e62b32492c077d1898803a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#abda738e84e62b32492c077d1898803a3">upload_initiated</a></td></tr>
 <tr class="separator:abda738e84e62b32492c077d1898803a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -228,6 +223,52 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a4be6f41777971537551886d5db9d66a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be6f41777971537551886d5db9d66a3">&#9670;&nbsp;</a></span>COMMAND_LINE_CALLBACK_OPTION()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">COMMAND_LINE_CALLBACK_OPTION </td>
+          <td>(</td>
+          <td class="paramtype">set_user_email&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">'u'&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;user&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COMMAND_LINE_CALLBACK_OPTION(&#160;</td>
+          <td class="paramname"><em>WHIST_OPTION_REQUIRED_ARGUMENT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Tell Whist the user's email. Default: None.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6436c1f61f3702e1e59a9a016c131d93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6436c1f61f3702e1e59a9a016c131d93">&#9670;&nbsp;</a></span>whist_client_main()</h2>
 
@@ -327,20 +368,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a75a4346875818556d440efbf4084be2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75a4346875818556d440efbf4084be2c">&#9670;&nbsp;</a></span>icon_png_filename</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char icon_png_filename[<a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>+1]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5b2d8acba46a3a8d41972491e3e06b01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b2d8acba46a3a8d41972491e3e06b01">&#9670;&nbsp;</a></span>lgui_pressed</h2>
 
@@ -363,20 +390,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structMouseMotionAccumulation.html">MouseMotionAccumulation</a> mouse_state</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6284762fa051e3b50b9b5fe0d91c95f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6284762fa051e3b50b9b5fe0d91c95f6">&#9670;&nbsp;</a></span>new_tab_url</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile char* new_tab_url</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -419,20 +432,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">volatile bool pending_resize_message</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a724e6f14a5eaffd21dc3012771360af3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724e6f14a5eaffd21dc3012771360af3">&#9670;&nbsp;</a></span>program_name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile char* program_name</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -489,20 +488,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool upload_initiated</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1b9f74cf18927b18cbab7bedbdbe65fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b9f74cf18927b18cbab7bedbdbe65fd">&#9670;&nbsp;</a></span>user_email</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char user_email[<a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>+1]</td>
         </tr>
       </table>
 </div><div class="memdoc">

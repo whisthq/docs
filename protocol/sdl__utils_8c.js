@@ -11,8 +11,8 @@ var sdl__utils_8c =
     [ "RGBA_MASK_G", "sdl__utils_8c.html#ac32c89e7fa9e78da4ddcceff4dd0e55c", null ],
     [ "RGBA_MASK_R", "sdl__utils_8c.html#afbc958cd698c7d076d069dc24c6e9a78", null ],
     [ "TARGET_WIDTH_IN_INCHES", "sdl__utils_8c.html#ac74765003cc622938961e7f7476dd1bf", null ],
+    [ "COMMAND_LINE_BOOL_OPTION", "sdl__utils_8c.html#a6f5f4b1d1fe2b92003ee1b19b8a0fb16", null ],
     [ "destroy_sdl", "sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81", null ],
-    [ "init_sdl", "sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362", null ],
     [ "sdl_is_window_visible", "sdl__utils_8c.html#af2046b7a00305043eb5d40f35eae00e2", null ],
     [ "sdl_render_framebuffer", "sdl__utils_8c.html#a993a121aa7c5869498703f17d41262ab", null ],
     [ "sdl_render_pending", "sdl__utils_8c.html#afaca887ee6415e1788b0c16df49960a1", null ],
@@ -29,7 +29,6 @@ var sdl__utils_8c =
     [ "output_height", "sdl__utils_8c.html#a2a57d774e71166271bbff6c515111104", null ],
     [ "output_width", "sdl__utils_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ],
     [ "pending_resize_message", "sdl__utils_8c.html#af4e35016b32376211dba7a8f028f3f88", null ],
-    [ "skip_taskbar", "sdl__utils_8c.html#a242ea45e405e9d5ae92e440357e98c3c", null ],
     [ "window", "sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9", null ],
     [ "window_resize_mutex", "sdl__utils_8c.html#a557cdefd7d618aa9c5272f245dded55e", null ],
     [ "window_resize_timer", "sdl__utils_8c.html#a81dcd68e9914f757c90910b1bdff05c5", null ]
