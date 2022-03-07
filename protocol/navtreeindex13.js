@@ -1,5 +1,13 @@
 var NAVTREEINDEX13 =
 {
+"whist_2network_2network_8c.html#a39b0d3ed2dd945eb408751439d2b6299":[12,0,2,7,0,5],
+"whist_2network_2network_8c.html#a419e4818e56de9f9a6c5c2d9d6e3283b":[12,0,2,7,0,4],
+"whist_2network_2network_8c.html#a61c60fb86a89187155fb727e0dba01ea":[12,0,2,7,0,13],
+"whist_2network_2network_8c.html#a6af622f9cda2d3e496cc83b6a7f9d86b":[12,0,2,7,0,17],
+"whist_2network_2network_8c.html#a6dadca57d3f2804a946e82a7abb69549":[12,0,2,7,0,14],
+"whist_2network_2network_8c.html#a7474fff42d0f5ea949a1030750c139ce":[12,0,2,7,0,16],
+"whist_2network_2network_8c.html#a81f112a09babf58cabed855550dd4d6c":[12,0,2,7,0,15],
+"whist_2network_2network_8c.html#a87c38a1315202294de66fe319a745187":[12,0,2,7,0,9],
 "whist_2network_2network_8c.html#a95ee2117f941ce83f97cf7884e0dc41b":[12,0,2,7,0,8],
 "whist_2network_2network_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a":[12,0,2,7,0,18],
 "whist_2network_2network_8c.html#ab06727ebbc110e7071dc8090ced33373":[12,0,2,7,0,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX13 =
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba18e50cba35a9382c02ef961720d3b4ce":[12,0,2,2,3,108,22],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba19083c5d05222cc2e4707d58f35f253d":[12,0,2,2,3,108,53],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba19da7d51701c0afcba08908503c78e0b":[12,0,2,2,3,108,32],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba1f319e1522ae26a9f81e72cadd6bffc8":[12,0,2,2,3,108,13],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba206617008fdbd145b668491f62f524ee":[12,0,2,2,3,108,104],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba241c3fefa30c0139f7654619c88854ad":[12,0,2,2,3,108,115],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba26c9efa1631fcd31f3e5c53b7843a00a":[12,0,2,2,3,108,82],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba2b2d7b385aa97e38dbecf9886087f9cb":[12,0,2,2,3,108,94],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba2b4807ee083dde3d95b6a66b19b4d46b":[12,0,2,2,3,108,121],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba3288e7db10b5914f9022a20f09b6f90f":[12,0,2,2,3,108,3],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba347ca8d4192ab8b650191d80349bbbcd":[12,0,2,2,3,108,1],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba3519ef7bc8bffd0997ca3ce140e1b64b":[12,0,2,2,3,108,19]
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba1f319e1522ae26a9f81e72cadd6bffc8":[12,0,2,2,3,108,13]
 };

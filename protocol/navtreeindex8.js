@@ -1,5 +1,13 @@
 var NAVTREEINDEX8 =
 {
+"sdlscreeninfo_8c.html#ae6f014748fba6a717883c01349bf3e08":[12,0,0,20,7],
+"sdlscreeninfo_8h.html":[12,0,0,21],
+"sdlscreeninfo_8h.html#a13be734a55dab04bfc1d64ea468d6732":[12,0,0,21,1],
+"sdlscreeninfo_8h.html#a4215f88d5bc87f822593df1992ddfc14":[12,0,0,21,4],
+"sdlscreeninfo_8h.html#a5b69bd050acffe490ad070da1b33f2ca":[12,0,0,21,2],
+"sdlscreeninfo_8h.html#a9087ee2c62a90ce8effbd0cd7b479de1":[12,0,0,21,3],
+"sdlscreeninfo_8h.html#a956484dfc8150fd38c81b0488e597f07":[12,0,0,21,6],
+"sdlscreeninfo_8h.html#aa2d2a409454a1e668c7d42f226b600ca":[12,0,0,21,0],
 "sdlscreeninfo_8h.html#ab09ea36715746d90e647adbd35f3d805":[12,0,0,21,5],
 "sdlscreeninfo_8h.html#ae6f014748fba6a717883c01349bf3e08":[12,0,0,21,7],
 "sdlscreeninfo_8h_source.html":[12,0,0,21],
@@ -241,13 +249,5 @@ var NAVTREEINDEX8 =
 "structFECDecoder.html#a9f267583421236833c21ece3a2ec219f":[11,0,25,9],
 "structFECDecoder.html#abc0a2cb0b09cdfe7d75d53466985f7bf":[11,0,25,4],
 "structFECDecoder.html#acd16212d15fcbb06495df6eaa898b036":[11,0,25,5],
-"structFECDecoder.html#aeba869e1d420ae2ec0eeac76a082891f":[11,0,25,1],
-"structFECDecoder.html#aed01be6046b4488b7efca00abeb4cf38":[11,0,25,6],
-"structFECDecoder.html#afd81ba4e15377d47777f5e442dcdcfb9":[11,0,25,0],
-"structFECEncoder.html":[11,0,26],
-"structFECEncoder.html#a05e591ff50fb817bac346b903a810503":[11,0,26,1],
-"structFECEncoder.html#a0ff7a434a1838639035b6c6a04b1c50c":[11,0,26,2],
-"structFECEncoder.html#a4ce0a32799a1f6967e82cdae8dbb12ad":[11,0,26,4],
-"structFECEncoder.html#a737ec8ef18b864e5f200f39e71f404a8":[11,0,26,5],
-"structFECEncoder.html#a7bd0658c72a4a1b2e6d101b00bc7a842":[11,0,26,3]
+"structFECDecoder.html#aeba869e1d420ae2ec0eeac76a082891f":[11,0,25,1]
 };

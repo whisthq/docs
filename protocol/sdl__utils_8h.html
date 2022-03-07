@@ -146,6 +146,12 @@ Functions</h2></td></tr>
 <tr class="memitem:acc20a623c59b6fd30f2fdab8d6043c5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a">sdl_utils_check_private_vars</a> (bool *pending_resize_message_ptr, bool *native_window_color_is_null_ptr, <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *native_window_color_ptr, bool *native_window_color_update_ptr, char *window_title_ptr, bool *should_update_window_title_ptr, bool *fullscreen_trigger_ptr, bool *fullscreen_value_ptr)</td></tr>
 <tr class="memdesc:acc20a623c59b6fd30f2fdab8d6043c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies private variable values to the variables pointed by the non-NULL pointers passed as parameters.  <a href="sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a">More...</a><br /></td></tr>
 <tr class="separator:acc20a623c59b6fd30f2fdab8d6043c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9389a6dea144c5a56b7dc126fa9b6909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a9389a6dea144c5a56b7dc126fa9b6909">sdl_handle_drag_event</a> (void)</td></tr>
+<tr class="memdesc:a9389a6dea144c5a56b7dc126fa9b6909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a drag event has been detected.  <a href="sdl__utils_8h.html#a9389a6dea144c5a56b7dc126fa9b6909">More...</a><br /></td></tr>
+<tr class="separator:a9389a6dea144c5a56b7dc126fa9b6909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7b3bba01d8ff3d4e14680b3c73cddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#abb7b3bba01d8ff3d4e14680b3c73cddd">sdl_end_drag_event</a> (void)</td></tr>
+<tr class="memdesc:abb7b3bba01d8ff3d4e14680b3c73cddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel or terminate drag indications/emulations.  <a href="sdl__utils_8h.html#abb7b3bba01d8ff3d4e14680b3c73cddd">More...</a><br /></td></tr>
+<tr class="separator:abb7b3bba01d8ff3d4e14680b3c73cddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -246,6 +252,48 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>NULL if fails to create SDL window, else it returns the SDL window variable </dd></dl>
+
+</div>
+</div>
+<a id="abb7b3bba01d8ff3d4e14680b3c73cddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7b3bba01d8ff3d4e14680b3c73cddd">&#9670;&nbsp;</a></span>sdl_end_drag_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_end_drag_event </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cancel or terminate drag indications/emulations. </p>
+<dl class="section note"><dt>Note</dt><dd>This should be called when mouse exits the window or on mouseup </dd></dl>
+
+</div>
+</div>
+<a id="a9389a6dea144c5a56b7dc126fa9b6909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9389a6dea144c5a56b7dc126fa9b6909">&#9670;&nbsp;</a></span>sdl_handle_drag_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_handle_drag_event </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a drag event has been detected. </p>
+<p>Uses the sdl global mouse and window state to initiate dragging indication or emulation. </p>
 
 </div>
 </div>

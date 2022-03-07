@@ -1,5 +1,13 @@
 var NAVTREEINDEX14 =
 {
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba206617008fdbd145b668491f62f524ee":[12,0,2,2,3,108,104],
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba241c3fefa30c0139f7654619c88854ad":[12,0,2,2,3,108,115],
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba26c9efa1631fcd31f3e5c53b7843a00a":[12,0,2,2,3,108,82],
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba2b2d7b385aa97e38dbecf9886087f9cb":[12,0,2,2,3,108,94],
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba2b4807ee083dde3d95b6a66b19b4d46b":[12,0,2,2,3,108,121],
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba3288e7db10b5914f9022a20f09b6f90f":[12,0,2,2,3,108,3],
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba347ca8d4192ab8b650191d80349bbbcd":[12,0,2,2,3,108,1],
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba3519ef7bc8bffd0997ca3ce140e1b64b":[12,0,2,2,3,108,19],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba36e3b50b7a0bd04dfcdc06825bcfc00f":[12,0,2,2,3,108,66],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba38711aab829d9e731fff0d58d0fbbc4e":[12,0,2,2,3,108,105],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba3de5ed32dd07837360f10206e9c1bdd1":[12,0,2,2,3,108,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX14 =
 "windowscapture_8c.html#abbd0ff16d9ee7c3353340b1d2529f8c7":[12,0,2,10,0,5,2],
 "windowscapture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf":[12,0,2,10,0,5,0],
 "x11__clipboard_8c.html":[12,0,2,1,8],
-"x11__clipboard_8c.html#a1f4649cb97b683e29d202d4a5d6ffc32":[12,0,2,1,8,3],
-"x11__clipboard_8c.html#a5867e7500d780fb08c54a5e18768d79f":[12,0,2,1,8,4],
-"x11__clipboard_8c.html#a71ea9ab2e117355993bc245c691731cc":[12,0,2,1,8,5],
-"x11__clipboard_8c.html#a87781954b181bfe0cc6d212f1e155d47":[12,0,2,1,8,0],
-"x11__clipboard_8c.html#abd908a405c1888d1306899a3ad598ea3":[12,0,2,1,8,1],
-"x11__clipboard_8c.html#af1a8e7cc53b2b0d020dcb3cc14a2c294":[12,0,2,1,8,2],
-"x11__window__info_8c.html":[12,0,2,9,36],
-"x11__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d":[12,0,2,9,36,1],
-"x11__window__info_8c.html#a8af85b65174eebfd0b471ce107fb3447":[12,0,2,9,36,3]
+"x11__clipboard_8c.html#a1f4649cb97b683e29d202d4a5d6ffc32":[12,0,2,1,8,3]
 };
