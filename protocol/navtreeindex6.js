@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"log__statistic_8h.html#a3e615ed1d20a0769e039693e390b390e":[12,0,2,6,3,3],
+"log__statistic_8h.html#a462484146d0ca6bd35b234bca13cc9a0":[12,0,2,6,3,5],
+"log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674":[12,0,2,6,3,4],
+"log__statistic_8h.html#afa6be6a1f15ad9d2c4ca359bfb1703e8":[12,0,2,6,3,1],
 "log__statistic_8h_source.html":[12,0,2,6,3],
 "logging_8c.html":[12,0,2,6,4],
 "logging_8c.html#a2bf369e493946f9a972d0d3d2d698d74":[12,0,2,6,4,11],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "nvidiacapture_8c.html#af5fbabb8eef6586c644555e8269aaaa9":[12,0,2,10,0,3,4],
 "nvidiacapture_8h.html":[12,0,2,10,0,4],
 "nvidiacapture_8h.html#a5940a21cbe50f63624e278862d61db58":[12,0,2,10,0,4,5],
-"nvidiacapture_8h.html#a68a4405d843daa1f597a536de1dc07d4":[12,0,2,10,0,4,3],
-"nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d":[12,0,2,10,0,4,2],
-"nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac":[12,0,2,10,0,4,4],
-"nvidiacapture_8h.html#af5fbabb8eef6586c644555e8269aaaa9":[12,0,2,10,0,4,1],
-"nvidiacapture_8h_source.html":[12,0,2,10,0,4]
+"nvidiacapture_8h.html#a68a4405d843daa1f597a536de1dc07d4":[12,0,2,10,0,4,3]
 };

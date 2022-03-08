@@ -1,11 +1,17 @@
 var NAVTREEINDEX11 =
 {
-"structTransferringFile.html#a44cd3d284eda9f580c3c44b7103885ec":[11,0,85,6],
+"structTCPPacket.html#a9f8b233261fa1785b0afe4697eaa9433":[11,0,84,2],
+"structTCPPacket.html#ab4f31b4f8a9b380e9a31b1561bdc776b":[11,0,84,1],
+"structTransferringFile.html":[11,0,85],
+"structTransferringFile.html#a15fd582b7cff6ac9b246c41bb8b81f91":[11,0,85,7],
+"structTransferringFile.html#a3cd233d6a7a99c173e80bf053ef9ea9e":[11,0,85,3],
+"structTransferringFile.html#a44cd3d284eda9f580c3c44b7103885ec":[11,0,85,8],
 "structTransferringFile.html#a5b12998468016243fbeffd1492966d61":[11,0,85,0],
 "structTransferringFile.html#a7a8dd8d494ed61ed36fa0b39b6cd0fca":[11,0,85,1],
 "structTransferringFile.html#a9c77e8433776c7138b4f1a983e8aa6d3":[11,0,85,4],
+"structTransferringFile.html#ab0695d7033142e17a42509d9a089fc23":[11,0,85,5],
 "structTransferringFile.html#ab6afdda15b69e6cd306f37fa7959f2ef":[11,0,85,2],
-"structTransferringFile.html#ab9e6c3cafa281c812437c836822e4869":[11,0,85,5],
+"structTransferringFile.html#ab9e6c3cafa281c812437c836822e4869":[11,0,85,6],
 "structUDPContext.html":[11,0,87],
 "structUDPContext.html#a057d91b6c4e23d9af04a76a3af20deff":[11,0,87,10],
 "structUDPContext.html#a1731fc05645ce26b44636f0142c493e2":[11,0,87,27],
@@ -243,11 +249,5 @@ var NAVTREEINDEX11 =
 "structWhistRGBColor.html#a9ad0f88a0dae8cb141d6b7289f4b287f":[11,0,112,0],
 "structWhistRGBColor.html#ad865914d36b4d29edc315446fcff66ba":[11,0,112,2],
 "structWhistRenderer.html":[11,0,111],
-"structWhistRenderer.html#a43207d1dae6eb773ef861afc90ac886c":[11,0,111,4],
-"structWhistRenderer.html#a4a8f116b51761d8c11410812bf93e55b":[11,0,111,5],
-"structWhistRenderer.html#a525bae96914dfc1abcd43cec401ac461":[11,0,111,9],
-"structWhistRenderer.html#a5811affb1b7ebe314184e3e179e7708d":[11,0,111,2],
-"structWhistRenderer.html#a6820e831f8284a11f7426612c8ae33ef":[11,0,111,0],
-"structWhistRenderer.html#a8e0c0700c1f2455c9ddc44d0e9b83e5b":[11,0,111,1],
-"structWhistRenderer.html#aaa5b5177e76167f3c619fb30044f75e2":[11,0,111,3]
+"structWhistRenderer.html#a43207d1dae6eb773ef861afc90ac886c":[11,0,111,4]
 };

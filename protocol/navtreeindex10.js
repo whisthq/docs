@@ -1,5 +1,9 @@
 var NAVTREEINDEX10 =
 {
+"structLodePNGInfo.html#a22166bb10c89a4d80e206d6c4736b625":[11,0,51,25],
+"structLodePNGInfo.html#a25a81d760759bd0383ae5a81ba83911d":[11,0,51,40],
+"structLodePNGInfo.html#a35a37c55a3b6c5ff3d064dd26531c72b":[11,0,51,33],
+"structLodePNGInfo.html#a393e0b3948ca6674232e1cc625db282e":[11,0,51,35],
 "structLodePNGInfo.html#a39824e3bce473eb8a9a27c8075fc407d":[11,0,51,10],
 "structLodePNGInfo.html#a3a0795a8ec1ddcaac245ba3337054e46":[11,0,51,32],
 "structLodePNGInfo.html#a42bcacd0dbaaea01c04cc87b58ac3c1d":[11,0,51,14],
@@ -245,9 +249,5 @@ var NAVTREEINDEX10 =
 "structTCPPacket.html":[11,0,84],
 "structTCPPacket.html#a12cff67bcf496eee9388f0dfeff8ebfe":[11,0,84,4],
 "structTCPPacket.html#a7af9890a4235702b9c52933fba0e2465":[11,0,84,3],
-"structTCPPacket.html#a8c183a88d7fba1353b1aa0b79f36618f":[11,0,84,0],
-"structTCPPacket.html#a9f8b233261fa1785b0afe4697eaa9433":[11,0,84,2],
-"structTCPPacket.html#ab4f31b4f8a9b380e9a31b1561bdc776b":[11,0,84,1],
-"structTransferringFile.html":[11,0,85],
-"structTransferringFile.html#a3cd233d6a7a99c173e80bf053ef9ea9e":[11,0,85,3]
+"structTCPPacket.html#a8c183a88d7fba1353b1aa0b79f36618f":[11,0,84,0]
 };

@@ -83,7 +83,8 @@ $(document).ready(function(){initNavTree('file__synchronizer_8c.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">file_synchronizer.c File Reference</div>  </div>
 </div><!--header-->
@@ -106,6 +107,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a3a6625450c5f469d4abaf58ba7e376b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLinkedList.html">LinkedList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a3a6625450c5f469d4abaf58ba7e376b3">file_synchronizer_get_transferring_files</a> (void)</td></tr>
+<tr class="memdesc:a3a6625450c5f469d4abaf58ba7e376b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of the currently transferring files.  <a href="file__synchronizer_8c.html#a3a6625450c5f469d4abaf58ba7e376b3">More...</a><br /></td></tr>
+<tr class="separator:a3a6625450c5f469d4abaf58ba7e376b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc02ae34b7f7ad99603d5a95abfadc41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#afc02ae34b7f7ad99603d5a95abfadc41">init_file_synchronizer</a> (<a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a> requested_actions)</td></tr>
 <tr class="memdesc:afc02ae34b7f7ad99603d5a95abfadc41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the file sychrony variables.  <a href="file__synchronizer_8c.html#afc02ae34b7f7ad99603d5a95abfadc41">More...</a><br /></td></tr>
 <tr class="separator:afc02ae34b7f7ad99603d5a95abfadc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,21 +122,26 @@ Functions</h2></td></tr>
 <tr class="memitem:ac31285427e995937b17de7bc429c47bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#ac31285427e995937b17de7bc429c47bf">file_synchronizer_set_file_reading_basic_metadata</a> (const char *file_path, <a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a> transfer_type, <a class="el" href="unionFileEventInfo.html">FileEventInfo</a> *event_info)</td></tr>
 <tr class="memdesc:ac31285427e995937b17de7bc429c47bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the basic file information in the file synchrony array for a file to be read.  <a href="file__synchronizer_8c.html#ac31285427e995937b17de7bc429c47bf">More...</a><br /></td></tr>
 <tr class="separator:ac31285427e995937b17de7bc429c47bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaab672043abddfb4a1f0c5860579b0ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#aaab672043abddfb4a1f0c5860579b0ce">file_synchronizer_open_file_for_reading</a> (int file_index, <a class="el" href="structFileMetadata.html">FileMetadata</a> **file_metadata_ptr)</td></tr>
-<tr class="memdesc:aaab672043abddfb4a1f0c5860579b0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file and generate the Open a file for reading and generate the <a class="el" href="structFileMetadata.html" title="A packet of data containing a file&#39;s metadata.">FileMetadata</a>.  <a href="file__synchronizer_8c.html#aaab672043abddfb4a1f0c5860579b0ce">More...</a><br /></td></tr>
-<tr class="separator:aaab672043abddfb4a1f0c5860579b0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eb16111fc5c90af946c3e519ef9694c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a0eb16111fc5c90af946c3e519ef9694c">file_synchronizer_read_next_file_chunk</a> (int file_index, <a class="el" href="structFileData.html">FileData</a> **file_chunk_ptr)</td></tr>
-<tr class="memdesc:a0eb16111fc5c90af946c3e519ef9694c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the next file chunk from a transferring file.  <a href="file__synchronizer_8c.html#a0eb16111fc5c90af946c3e519ef9694c">More...</a><br /></td></tr>
-<tr class="separator:a0eb16111fc5c90af946c3e519ef9694c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ff40c9703e9003207f585b7745fb88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a77ff40c9703e9003207f585b7745fb88">file_synchronizer_open_file_for_reading</a> (<a class="el" href="structTransferringFile.html">TransferringFile</a> *active_file, <a class="el" href="structFileMetadata.html">FileMetadata</a> **file_metadata_ptr)</td></tr>
+<tr class="memdesc:a77ff40c9703e9003207f585b7745fb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file and generate the Open a file for reading and generate the <a class="el" href="structFileMetadata.html" title="A packet of data containing a file&#39;s metadata.">FileMetadata</a>.  <a href="file__synchronizer_8c.html#a77ff40c9703e9003207f585b7745fb88">More...</a><br /></td></tr>
+<tr class="separator:a77ff40c9703e9003207f585b7745fb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231e27ea9690c47703d345135ce3c59b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a231e27ea9690c47703d345135ce3c59b">file_synchronizer_read_next_file_chunk</a> (<a class="el" href="structTransferringFile.html">TransferringFile</a> *active_file, <a class="el" href="structFileData.html">FileData</a> **file_chunk_ptr)</td></tr>
+<tr class="memdesc:a231e27ea9690c47703d345135ce3c59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the next file chunk from a transferring file.  <a href="file__synchronizer_8c.html#a231e27ea9690c47703d345135ce3c59b">More...</a><br /></td></tr>
+<tr class="separator:a231e27ea9690c47703d345135ce3c59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d9d7faa7144235bd8921b0e515a0293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a8d9d7faa7144235bd8921b0e515a0293">reset_all_transferring_files</a> (void)</td></tr>
 <tr class="memdesc:a8d9d7faa7144235bd8921b0e515a0293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all transferring files.  <a href="file__synchronizer_8c.html#a8d9d7faa7144235bd8921b0e515a0293">More...</a><br /></td></tr>
 <tr class="separator:a8d9d7faa7144235bd8921b0e515a0293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e9a099fb697a5f7ab9326b7d267350b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a3e9a099fb697a5f7ab9326b7d267350b">file_syncrhonizer_cancel_user_file_upload</a> (void)</td></tr>
-<tr class="memdesc:a3e9a099fb697a5f7ab9326b7d267350b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the kdialog proxy that the user has canceled file selection by writing a trigger file.  <a href="file__synchronizer_8c.html#a3e9a099fb697a5f7ab9326b7d267350b">More...</a><br /></td></tr>
-<tr class="separator:a3e9a099fb697a5f7ab9326b7d267350b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac737bcf1eab86938bf0eca8cdf00f17b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#ac737bcf1eab86938bf0eca8cdf00f17b">file_synchronizer_cancel_user_file_upload</a> (void)</td></tr>
+<tr class="memdesc:ac737bcf1eab86938bf0eca8cdf00f17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the kdialog proxy that the user has canceled file selection by writing a trigger file.  <a href="file__synchronizer_8c.html#ac737bcf1eab86938bf0eca8cdf00f17b">More...</a><br /></td></tr>
+<tr class="separator:ac737bcf1eab86938bf0eca8cdf00f17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04cd342e18aa8f45f497d2f2295ca05d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a04cd342e18aa8f45f497d2f2295ca05d">destroy_file_synchronizer</a> (void)</td></tr>
 <tr class="memdesc:a04cd342e18aa8f45f497d2f2295ca05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup the file synchronizer.  <a href="file__synchronizer_8c.html#a04cd342e18aa8f45f497d2f2295ca05d">More...</a><br /></td></tr>
 <tr class="separator:a04cd342e18aa8f45f497d2f2295ca05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9b7a6dd6e3fbcc33c6fce8e36e3aa8bc"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a9b7a6dd6e3fbcc33c6fce8e36e3aa8bc">global_file_id</a> = 0</td></tr>
+<tr class="separator:a9b7a6dd6e3fbcc33c6fce8e36e3aa8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright Whist Technologies, Inc. </p>
@@ -144,7 +153,7 @@ Usage</h1>
 <p>init_file_synchronizer(true);</p>
 <p>FileChunk received_file_chunk;</p>
 <p>Write this received chunk to file file_synchronizer_write_file_chunk(&amp;received_file_chunk);</p>
-<p>FileChunk* our_chunk_to_send; file_synchronizer_read_next_file_chunk(0, &amp;our_chunk_to_send);</p>
+<p>FileChunk* our_chunk_to_send; Get transferring files - must be from this list LinkedList* files = <a class="el" href="file__synchronizer_8c.html#a3a6625450c5f469d4abaf58ba7e376b3" title="Get a list of the currently transferring files.">file_synchronizer_get_transferring_files()</a>; file_synchronizer_read_next_file_chunk(linked_list_head(files), &amp;our_chunk_to_send);</p>
 <p>if (our_chunk_to_send) { We have a new file chunk, this should be sent to the server Send(our_chunk_to_send); } else { There is no new file chunk }</p>
 <p><a class="el" href="file__synchronizer_8c.html#a04cd342e18aa8f45f497d2f2295ca05d" title="Cleanup the file synchronizer.">destroy_file_synchronizer()</a>; </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -197,8 +206,49 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aaab672043abddfb4a1f0c5860579b0ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaab672043abddfb4a1f0c5860579b0ce">&#9670;&nbsp;</a></span>file_synchronizer_open_file_for_reading()</h2>
+<a id="ac737bcf1eab86938bf0eca8cdf00f17b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac737bcf1eab86938bf0eca8cdf00f17b">&#9670;&nbsp;</a></span>file_synchronizer_cancel_user_file_upload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void file_synchronizer_cancel_user_file_upload </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify the kdialog proxy that the user has canceled file selection by writing a trigger file. </p>
+
+</div>
+</div>
+<a id="a3a6625450c5f469d4abaf58ba7e376b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a6625450c5f469d4abaf58ba7e376b3">&#9670;&nbsp;</a></span>file_synchronizer_get_transferring_files()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structLinkedList.html">LinkedList</a>* file_synchronizer_get_transferring_files </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of the currently transferring files. </p>
+<dl class="section return"><dt>Returns</dt><dd>A linked list of <a class="el" href="structTransferringFile.html" title="A struct containing all the information for a a transferring file.">TransferringFile(s)</a> </dd></dl>
+
+</div>
+</div>
+<a id="a77ff40c9703e9003207f585b7745fb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ff40c9703e9003207f585b7745fb88">&#9670;&nbsp;</a></span>file_synchronizer_open_file_for_reading()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,8 +256,8 @@ Usage</h1>
         <tr>
           <td class="memname">void file_synchronizer_open_file_for_reading </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>file_index</em>, </td>
+          <td class="paramtype"><a class="el" href="structTransferringFile.html">TransferringFile</a> *&#160;</td>
+          <td class="paramname"><em>active_file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -226,7 +276,7 @@ Usage</h1>
 <p>Open a file and generate the Open a file for reading and generate the <a class="el" href="structFileMetadata.html" title="A packet of data containing a file&#39;s metadata.">FileMetadata</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">file_index</td><td>Index of file in file synchrony array</td></tr>
+    <tr><td class="paramname">active_file</td><td>The pointer to the transferring file</td></tr>
     <tr><td class="paramname">file_metadata_ptr</td><td>Pointer to pointer for filled file metadata </td></tr>
   </table>
   </dd>
@@ -260,8 +310,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a0eb16111fc5c90af946c3e519ef9694c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0eb16111fc5c90af946c3e519ef9694c">&#9670;&nbsp;</a></span>file_synchronizer_read_next_file_chunk()</h2>
+<a id="a231e27ea9690c47703d345135ce3c59b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231e27ea9690c47703d345135ce3c59b">&#9670;&nbsp;</a></span>file_synchronizer_read_next_file_chunk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,8 +319,8 @@ Usage</h1>
         <tr>
           <td class="memname">void file_synchronizer_read_next_file_chunk </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>file_index</em>, </td>
+          <td class="paramtype"><a class="el" href="structTransferringFile.html">TransferringFile</a> *&#160;</td>
+          <td class="paramname"><em>active_file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -289,7 +339,7 @@ Usage</h1>
 <p>Read the next file chunk from a transferring file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">file_index</td><td>Index of transferring file</td></tr>
+    <tr><td class="paramname">active_file</td><td>The pointer to the transferring file</td></tr>
     <tr><td class="paramname">file_chunk_ptr</td><td>Pointer to pointer for filled file chunk </td></tr>
   </table>
   </dd>
@@ -369,26 +419,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a3e9a099fb697a5f7ab9326b7d267350b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e9a099fb697a5f7ab9326b7d267350b">&#9670;&nbsp;</a></span>file_syncrhonizer_cancel_user_file_upload()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void file_syncrhonizer_cancel_user_file_upload </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Notify the kdialog proxy that the user has canceled file selection by writing a trigger file. </p>
-
-</div>
-</div>
 <a id="afc02ae34b7f7ad99603d5a95abfadc41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc02ae34b7f7ad99603d5a95abfadc41">&#9670;&nbsp;</a></span>init_file_synchronizer()</h2>
 
@@ -432,6 +462,21 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Reset all transferring files. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9b7a6dd6e3fbcc33c6fce8e36e3aa8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7a6dd6e3fbcc33c6fce8e36e3aa8bc">&#9670;&nbsp;</a></span>global_file_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long global_file_id = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

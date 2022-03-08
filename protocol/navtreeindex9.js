@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"structFECDecoder.html#a9f267583421236833c21ece3a2ec219f":[11,0,25,9],
+"structFECDecoder.html#abc0a2cb0b09cdfe7d75d53466985f7bf":[11,0,25,4],
+"structFECDecoder.html#acd16212d15fcbb06495df6eaa898b036":[11,0,25,5],
+"structFECDecoder.html#aeba869e1d420ae2ec0eeac76a082891f":[11,0,25,1],
 "structFECDecoder.html#aed01be6046b4488b7efca00abeb4cf38":[11,0,25,6],
 "structFECDecoder.html#afd81ba4e15377d47777f5e442dcdcfb9":[11,0,25,0],
 "structFECEncoder.html":[11,0,26],
@@ -53,13 +57,13 @@ var NAVTREEINDEX9 =
 "structFileCaptureDevice.html#af7d6f9c19f3707e1e3cd0d16d4bb0ab1":[11,0,28,2],
 "structFileCaptureDevice.html#af9f54f09cb07eee9acafe2b5c4dfb69a":[11,0,28,6],
 "structFileData.html":[11,0,29],
+"structFileData.html#a0434552fede6d9226dc2da61a5e19269":[11,0,29,2],
 "structFileData.html#a458b0b76aa4d8e11b4abc09924d9189c":[11,0,29,3],
 "structFileData.html#a55b3be7617d862f0ea57a4a88548a393":[11,0,29,0],
-"structFileData.html#af3b890b9cd4f88bf3268839644d4adc3":[11,0,29,2],
 "structFileData.html#afccbd5875c571f54563db14f711ebf28":[11,0,29,1],
 "structFileMetadata.html":[11,0,31],
 "structFileMetadata.html#a5adeabce6a8f9971217be7f8e63ae7a3":[11,0,31,2],
-"structFileMetadata.html#a6f5a168a7864bdf51365e263e320dfee":[11,0,31,4],
+"structFileMetadata.html#a66676c8aecfc3fce660287617cc51fd1":[11,0,31,4],
 "structFileMetadata.html#a771dd5a12976a9a0142f36f2d58333fa":[11,0,31,0],
 "structFileMetadata.html#aa9cefde9d4df6e01b1547cbb592f639e":[11,0,31,3],
 "structFileMetadata.html#ae47e60e49464e8ecfc4ad7e9bac3fe7d":[11,0,31,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "structLodePNGInfo.html#a11eaae6ecbb308ac1e70dcd10fee6891":[11,0,51,21],
 "structLodePNGInfo.html#a1593fa6e1acc93f3b9de51c340bef94d":[11,0,51,30],
 "structLodePNGInfo.html#a1aef46690f4e090ec7ba2198dc25a0f7":[11,0,51,9],
-"structLodePNGInfo.html#a1b909e03596abf86d564641741b0087f":[11,0,51,23],
-"structLodePNGInfo.html#a22166bb10c89a4d80e206d6c4736b625":[11,0,51,25],
-"structLodePNGInfo.html#a25a81d760759bd0383ae5a81ba83911d":[11,0,51,40],
-"structLodePNGInfo.html#a35a37c55a3b6c5ff3d064dd26531c72b":[11,0,51,33],
-"structLodePNGInfo.html#a393e0b3948ca6674232e1cc625db282e":[11,0,51,35]
+"structLodePNGInfo.html#a1b909e03596abf86d564641741b0087f":[11,0,51,23]
 };

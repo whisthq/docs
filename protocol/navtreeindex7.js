@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d":[12,0,2,10,0,4,2],
+"nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac":[12,0,2,10,0,4,4],
+"nvidiacapture_8h.html#af5fbabb8eef6586c644555e8269aaaa9":[12,0,2,10,0,4,1],
+"nvidiacapture_8h_source.html":[12,0,2,10,0,4],
 "os__utils_8c.html":[12,0,2,9,20],
 "os__utils_8c.html#a2be1ff67174216005f67c4e62602af9e":[12,0,2,9,20,4],
 "os__utils_8c.html#a4b2ec5f6a7938bb9b01502db71e34fe4":[12,0,2,9,20,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "sdlscreeninfo_8c.html":[12,0,0,20],
 "sdlscreeninfo_8c.html#a13be734a55dab04bfc1d64ea468d6732":[12,0,0,20,1],
 "sdlscreeninfo_8c.html#a4215f88d5bc87f822593df1992ddfc14":[12,0,0,20,4],
-"sdlscreeninfo_8c.html#a5b69bd050acffe490ad070da1b33f2ca":[12,0,0,20,2],
-"sdlscreeninfo_8c.html#a9087ee2c62a90ce8effbd0cd7b479de1":[12,0,0,20,3],
-"sdlscreeninfo_8c.html#a956484dfc8150fd38c81b0488e597f07":[12,0,0,20,6],
-"sdlscreeninfo_8c.html#aa2d2a409454a1e668c7d42f226b600ca":[12,0,0,20,0],
-"sdlscreeninfo_8c.html#ab09ea36715746d90e647adbd35f3d805":[12,0,0,20,5]
+"sdlscreeninfo_8c.html#a5b69bd050acffe490ad070da1b33f2ca":[12,0,0,20,2]
 };
