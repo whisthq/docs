@@ -129,12 +129,16 @@ Macros</h2></td></tr>
 <tr class="separator:a231db3ea80ce4b295aad0c5c33834480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e2a8a17401043534915047cfff9d83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab2e2a8a17401043534915047cfff9d83">MAX_GROUP_STATS</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:ab2e2a8a17401043534915047cfff9d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affae1647f8735441fd62ee64b5e7df26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#affae1647f8735441fd62ee64b5e7df26">INCOMING_BITRATE_WINDOW_MS</a>&#160;&#160;&#160;256</td></tr>
+<tr class="memitem:affae1647f8735441fd62ee64b5e7df26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#affae1647f8735441fd62ee64b5e7df26">INCOMING_BITRATE_WINDOW_MS</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:affae1647f8735441fd62ee64b5e7df26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfc8fe2cb2b7395c1b877074136fdf03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memitem:adfc8fe2cb2b7395c1b877074136fdf03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:adfc8fe2cb2b7395c1b877074136fdf03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fcdc6500e6e706775619f219f6ff9df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df">DURATION_PER_BUCKET</a>&#160;&#160;&#160;(<a class="el" href="udp_8c.html#affae1647f8735441fd62ee64b5e7df26">INCOMING_BITRATE_WINDOW_MS</a> / <a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a>)</td></tr>
 <tr class="separator:a5fcdc6500e6e706775619f219f6ff9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b0d63a7809ac09ea618bff0b17a6cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aa1b0d63a7809ac09ea618bff0b17a6cc">IDLE_VIDEO_MAX_BITRATE</a>&#160;&#160;&#160;500000</td></tr>
+<tr class="separator:aa1b0d63a7809ac09ea618bff0b17a6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1460dcee3b0c034518e8f893c81711ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a1460dcee3b0c034518e8f893c81711ee">MIN_VALID_BUCKETS</a>&#160;&#160;&#160;((<a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a> * 3) / 4)</td></tr>
+<tr class="separator:a1460dcee3b0c034518e8f893c81711ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f283368e88ac298d92d1506dd4c0abb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb">RETRIES_ON_BUFFER_FULL</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a4f283368e88ac298d92d1506dd4c0abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5222d03fdb5004f2ebc781d1041f0e04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5222d03fdb5004f2ebc781d1041f0e04">UDP_NETWORK_THROTTLER_BUCKET_MS</a>&#160;&#160;&#160;5.0</td></tr>
@@ -277,6 +281,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aa1b0d63a7809ac09ea618bff0b17a6cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b0d63a7809ac09ea618bff0b17a6cc">&#9670;&nbsp;</a></span>IDLE_VIDEO_MAX_BITRATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IDLE_VIDEO_MAX_BITRATE&#160;&#160;&#160;500000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adfc8fe2cb2b7395c1b877074136fdf03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adfc8fe2cb2b7395c1b877074136fdf03">&#9670;&nbsp;</a></span>INCOMING_BITRATE_NUM_BUCKETS</h2>
 
@@ -284,7 +302,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define INCOMING_BITRATE_NUM_BUCKETS&#160;&#160;&#160;16</td>
+          <td class="memname">#define INCOMING_BITRATE_NUM_BUCKETS&#160;&#160;&#160;8</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -298,7 +316,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define INCOMING_BITRATE_WINDOW_MS&#160;&#160;&#160;256</td>
+          <td class="memname">#define INCOMING_BITRATE_WINDOW_MS&#160;&#160;&#160;1024</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -341,6 +359,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MAX_TOTAL_PACKETS&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1460dcee3b0c034518e8f893c81711ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1460dcee3b0c034518e8f893c81711ee">&#9670;&nbsp;</a></span>MIN_VALID_BUCKETS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_VALID_BUCKETS&#160;&#160;&#160;((<a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a> * 3) / 4)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,5 +1,16 @@
 var NAVTREEINDEX15 =
 {
+"windows__cursor__capture_8c.html#aae5707495486c82aa8f858e821ab8ae0":[12,0,2,3,5,1],
+"windows__cursor__capture_8c.html#ac1fb51bdd5f5a29790a411f489ddb747":[12,0,2,3,5,4],
+"windows__cursor__capture_8c.html#adad7a7d0b31603dd588ccf0f2d0fe0fe":[12,0,2,3,5,2],
+"windows__window__info_8c.html":[12,0,2,9,35],
+"windows__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d":[12,0,2,9,35,1],
+"windows__window__info_8c.html#a8af85b65174eebfd0b471ce107fb3447":[12,0,2,9,35,3],
+"windows__window__info_8c.html#a9173c83ed7a14a3a61b50a2cae574ef7":[12,0,2,9,35,2],
+"windows__window__info_8c.html#aeb2edfe495c114f66af1adeeb413f2c0":[12,0,2,9,35,0],
+"windows__window__info_8c.html#af7cfc79c5c089d2b0ca10f6da1f3b0c1":[12,0,2,9,35,4],
+"windowscapture_8c.html":[12,0,2,10,0,5],
+"windowscapture_8c.html#a4d4f4d646d67a79cd2f4fe8fd487c7dc":[12,0,2,10,0,5,3],
 "windowscapture_8c.html#a837679835044596e8d0d22aca5756b03":[12,0,2,10,0,5,4],
 "windowscapture_8c.html#aa962953cfc3fdb9ed34703ab4a9afe42":[12,0,2,10,0,5,1],
 "windowscapture_8c.html#abbd0ff16d9ee7c3353340b1d2529f8c7":[12,0,2,10,0,5,2],

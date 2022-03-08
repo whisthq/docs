@@ -1,7 +1,10 @@
 var ringbuffer_8h =
 [
     [ "FrameData", "structFrameData.html", "structFrameData" ],
+    [ "PacketCountInfo", "structPacketCountInfo.html", "structPacketCountInfo" ],
     [ "RingBuffer", "structRingBuffer.html", "structRingBuffer" ],
+    [ "PACKET_COUNT_SIZE", "ringbuffer_8h.html#ac00df6ae6276a59180d1269bf11320cb", null ],
+    [ "PACKET_LOSS_DURATION", "ringbuffer_8h.html#a7a80a656d11c3616e5e2a3199b18897b", null ],
     [ "FrameData", "ringbuffer_8h.html#a2763204414a22a08c1edb26446244d80", null ],
     [ "NackPacketFn", "ringbuffer_8h.html#ac5e078b6495f58a5fe5e6bdc519e33f8", null ],
     [ "RingBuffer", "ringbuffer_8h.html#ac0132fb254601f025c3cf73363a3c90c", null ],

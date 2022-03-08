@@ -123,6 +123,12 @@ Data Fields</h2></td></tr>
 <tr class="separator:abd759c93f9abe89bc60b57e307a278d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e1182176a371b72a662765e1202347"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#ad3e1182176a371b72a662765e1202347">num_frames_rendered</a></td></tr>
 <tr class="separator:ad3e1182176a371b72a662765e1202347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b616cf1a63e1d100f71d085cc2f161b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPacketCountInfo.html">PacketCountInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a4b616cf1a63e1d100f71d085cc2f161b">packet_count_items</a> [<a class="el" href="ringbuffer_8h.html#ac00df6ae6276a59180d1269bf11320cb">PACKET_COUNT_SIZE</a>]</td></tr>
+<tr class="separator:a4b616cf1a63e1d100f71d085cc2f161b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa64a4fdd4784f18a649112d278e8f49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLinkedList.html">LinkedList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#aaa64a4fdd4784f18a649112d278e8f49">packet_count_list</a></td></tr>
+<tr class="separator:aaa64a4fdd4784f18a649112d278e8f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae141d431d3f89f2c62dc1373372db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#gaa9899c1c25688c008b90165331107ddf">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a6ae141d431d3f89f2c62dc1373372db6">packet_count_mutex</a></td></tr>
+<tr class="separator:a6ae141d431d3f89f2c62dc1373372db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7affb58c98e2fd8ef8edf6bc5664717"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717">frames_received</a></td></tr>
 <tr class="separator:ac7affb58c98e2fd8ef8edf6bc5664717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54dd2f672cecf37fd14988783fc1370d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRingBuffer.html#a54dd2f672cecf37fd14988783fc1370d">min_id</a></td></tr>
@@ -568,6 +574,48 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structBlockAllocator.html">BlockAllocator</a>* RingBuffer::packet_buffer_allocator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b616cf1a63e1d100f71d085cc2f161b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b616cf1a63e1d100f71d085cc2f161b">&#9670;&nbsp;</a></span>packet_count_items</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPacketCountInfo.html">PacketCountInfo</a> RingBuffer::packet_count_items[<a class="el" href="ringbuffer_8h.html#ac00df6ae6276a59180d1269bf11320cb">PACKET_COUNT_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa64a4fdd4784f18a649112d278e8f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa64a4fdd4784f18a649112d278e8f49">&#9670;&nbsp;</a></span>packet_count_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structLinkedList.html">LinkedList</a> RingBuffer::packet_count_list</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ae141d431d3f89f2c62dc1373372db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae141d431d3f89f2c62dc1373372db6">&#9670;&nbsp;</a></span>packet_count_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__threading.html#gaa9899c1c25688c008b90165331107ddf">WhistMutex</a> RingBuffer::packet_count_mutex</td>
         </tr>
       </table>
 </div><div class="memdoc">
