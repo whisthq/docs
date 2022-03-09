@@ -29,6 +29,7 @@ var logging_8h =
     [ "WARNING_TAG", "logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6", null ],
     [ "destroy_logger", "logging_8h.html#a4dfcbd491525c8782dc0f4a373f29fd6", null ],
     [ "flush_logs", "logging_8h.html#a74138e514d79a0449c832cc913b86f49", null ],
+    [ "get_do_not_catch_segfaults_flag", "logging_8h.html#a21c78c1d30297b221547ccb2414ad113", null ],
     [ "internal_logging_printf", "logging_8h.html#aab5eb353926ac1f060cf87f4306d334f", null ],
     [ "print_stacktrace", "logging_8h.html#aab45aa94b75eeb446eaed8a8ad1c65a6", null ],
     [ "test_set_pause_state_on_logger_thread", "logging_8h.html#a54581b1f2ee2b138b99408b358df690b", null ],

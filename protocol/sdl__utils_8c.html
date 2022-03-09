@@ -132,6 +132,9 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6f5f4b1d1fe2b92003ee1b19b8a0fb16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a6f5f4b1d1fe2b92003ee1b19b8a0fb16">COMMAND_LINE_BOOL_OPTION</a> (skip_taskbar, 's', &quot;skip-taskbar&quot;, &quot;Launch the protocol without displaying an icon in the taskbar.&quot;)</td></tr>
 <tr class="separator:a6f5f4b1d1fe2b92003ee1b19b8a0fb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7f5dc9778e5a9f64354459f6ad8362"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362">init_sdl</a> (int target_output_width, int target_output_height, char *name, char *icon_filename)</td></tr>
+<tr class="memdesc:abd7f5dc9778e5a9f64354459f6ad8362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL window, with the currently running thread at the owner.  <a href="sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362">More...</a><br /></td></tr>
+<tr class="separator:abd7f5dc9778e5a9f64354459f6ad8362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4745eeac1327707588a5a422ae5f9d81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81">destroy_sdl</a> (SDL_Window *window_param)</td></tr>
 <tr class="memdesc:a4745eeac1327707588a5a422ae5f9d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81">More...</a><br /></td></tr>
 <tr class="separator:a4745eeac1327707588a5a422ae5f9d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -436,6 +439,58 @@ Usage</h1>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abd7f5dc9778e5a9f64354459f6ad8362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd7f5dc9778e5a9f64354459f6ad8362">&#9670;&nbsp;</a></span>init_sdl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Window* init_sdl </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>output_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>output_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>icon_filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates the SDL window, with the currently running thread at the owner. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output_width</td><td>The width of the SDL window to create, in pixels </td></tr>
+    <tr><td class="paramname">output_height</td><td>The height of the SDL window to create, in pixels</td></tr>
+    <tr><td class="paramname">name</td><td>The title of the window</td></tr>
+    <tr><td class="paramname">icon_filename</td><td>The filename of the window icon, pointing to a 64x64 png</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NULL if fails to create SDL window, else it returns the SDL window variable </dd></dl>
 
 </div>
 </div>

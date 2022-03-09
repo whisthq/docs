@@ -1,5 +1,15 @@
 var NAVTREEINDEX13 =
 {
+"udp_8h.html#a53bd961b505875950fc33444b170f72c":[12,0,2,7,11,11],
+"udp_8h.html#a6a844acc1cde901a4c1a430b83fa5331":[12,0,2,7,11,10],
+"udp_8h.html#a6ae4764e36a830e303b387952859739f":[12,0,2,7,11,5],
+"udp_8h.html#a7e247519b1444cd24765ff43fe459734":[12,0,2,7,11,12],
+"udp_8h.html#a9b54f844079db47f8762b331092ab9b8":[12,0,2,7,11,2],
+"udp_8h.html#aaf696db0bbfc74d20b2a3ba0480b4c01":[12,0,2,7,11,6],
+"udp_8h.html#ab227c787d07a796738fef8cc10a1a0ad":[12,0,2,7,11,3],
+"udp_8h.html#ad233b3dbff8bdf1bcfca923b178b47e9":[12,0,2,7,11,8],
+"udp_8h.html#ad23da60df4866703cdc09be5bd969ba1":[12,0,2,7,11,7],
+"udp_8h.html#afcc89a19d0bd23c69e4f1030bbc952dc":[12,0,2,7,11,15],
 "udp_8h.html#afef7e30cfe7786aa52b75f8cd9c68445":[12,0,2,7,11,9],
 "udp_8h_source.html":[12,0,2,7,11],
 "uinput__input__driver_8c.html":[12,0,2,5,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX13 =
 "whist_8h.html#a99cc5a998dfeebc3567baec59b4a77a3":[12,0,2,2,3,21],
 "whist_8h.html#a9b26cd4ece83eb114a81877bd849e28b":[12,0,2,2,3,27],
 "whist_8h.html#a9bcfa4a6fecd23535df2dd7cc000ea23":[12,0,2,2,3,43],
-"whist_8h.html#a9e8ab2261deed9913cbe2af14256eda4":[12,0,2,2,3,89],
-"whist_8h.html#aa005f29266f2ddf76cb57dc510516839":[12,0,2,2,3,119],
-"whist_8h.html#aa1728270d73c5d1598de1fd691762eb1":[12,0,2,2,3,55],
-"whist_8h.html#aa432070c422ef782d49e2dc35b8a6e56":[12,0,2,2,3,32],
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57f":[12,0,2,2,3,108],
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa06d9de66a9b72e605f22e1ff36d08760":[12,0,2,2,3,108,2],
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa0ff99e5c7ebd39669a13e66271cf8c4d":[12,0,2,2,3,108,8],
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa221c5a2ce82a31c502d12253957ae36c":[12,0,2,2,3,108,7],
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa23ecdfd216a39039cd53d383532184ed":[12,0,2,2,3,108,6],
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa2ad9ffa4003974a07ace4b717bc9cb54":[12,0,2,2,3,108,1],
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa70ca6445f95771c474d23af06fdbabb1":[12,0,2,2,3,108,4]
+"whist_8h.html#a9e8ab2261deed9913cbe2af14256eda4":[12,0,2,2,3,89]
 };

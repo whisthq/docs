@@ -1,5 +1,15 @@
 var NAVTREEINDEX12 =
 {
+"structWhistMultigestureMessage.html#a0f9d3a25a8f4d9353d73af678812d6ec":[11,0,109,3],
+"structWhistMultigestureMessage.html#a1c9bfd136a36d64e5e0c538a2f4e1d99":[11,0,109,5],
+"structWhistMultigestureMessage.html#a314d1437b3bcf4709868b8660090c5f1":[11,0,109,6],
+"structWhistMultigestureMessage.html#a3cd97489f31ad40503665fe6ecdd1632":[11,0,109,4],
+"structWhistMultigestureMessage.html#a7df7946abfa59ed15348e22702480330":[11,0,109,1],
+"structWhistMultigestureMessage.html#aa1ef17fe6dc63257586b97c4b51676bc":[11,0,109,0],
+"structWhistMultigestureMessage.html#aa51beb68509bcc364ffb825570eaf3de":[11,0,109,2],
+"structWhistNotification.html":[11,0,110],
+"structWhistNotification.html#a216f625672687626e82cc5b010e024f3":[11,0,110,1],
+"structWhistNotification.html#abf4387de36ef34dbc4c04a65ecc0ba9c":[11,0,110,0],
 "structWhistPacket.html":[11,0,111],
 "structWhistPacket.html#a204c97f1e3ba4b811ab244cda6e075bb":[11,0,111,2],
 "structWhistPacket.html#a4ba67b2205cb40c2833d820d13cd0137":[11,0,111,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX12 =
 "udp_8h.html":[12,0,2,7,11],
 "udp_8h.html#a0e7e990691e824f416ac6cac56e9a938":[12,0,2,7,11,14],
 "udp_8h.html#a1922a1cff137ec95696935164dac88a9":[12,0,2,7,11,13],
-"udp_8h.html#a497472418eb2d897f80004378d81eb17":[12,0,2,7,11,4],
-"udp_8h.html#a53bd961b505875950fc33444b170f72c":[12,0,2,7,11,11],
-"udp_8h.html#a6a844acc1cde901a4c1a430b83fa5331":[12,0,2,7,11,10],
-"udp_8h.html#a6ae4764e36a830e303b387952859739f":[12,0,2,7,11,5],
-"udp_8h.html#a7e247519b1444cd24765ff43fe459734":[12,0,2,7,11,12],
-"udp_8h.html#a9b54f844079db47f8762b331092ab9b8":[12,0,2,7,11,2],
-"udp_8h.html#aaf696db0bbfc74d20b2a3ba0480b4c01":[12,0,2,7,11,6],
-"udp_8h.html#ab227c787d07a796738fef8cc10a1a0ad":[12,0,2,7,11,3],
-"udp_8h.html#ad233b3dbff8bdf1bcfca923b178b47e9":[12,0,2,7,11,8],
-"udp_8h.html#ad23da60df4866703cdc09be5bd969ba1":[12,0,2,7,11,7],
-"udp_8h.html#afcc89a19d0bd23c69e4f1030bbc952dc":[12,0,2,7,11,15]
+"udp_8h.html#a497472418eb2d897f80004378d81eb17":[12,0,2,7,11,4]
 };

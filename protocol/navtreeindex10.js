@@ -1,5 +1,15 @@
 var NAVTREEINDEX10 =
 {
+"structLodePNGEncoderSettings.html#a2c5928b4172c75e27de467870f2ff946":[11,0,50,7],
+"structLodePNGEncoderSettings.html#a4446f87b5283f25664802a1be037e76e":[11,0,50,5],
+"structLodePNGEncoderSettings.html#a5e18e4eb941763a2e3e6c65ee9f0729c":[11,0,50,3],
+"structLodePNGEncoderSettings.html#a6ffdcb8e85a65ea208fe027be072d710":[11,0,50,6],
+"structLodePNGEncoderSettings.html#a893aa542aa7c122c32ee36dd716fbcb2":[11,0,50,0],
+"structLodePNGInfo.html":[11,0,51],
+"structLodePNGInfo.html#a0a26147c9673870dd122693f17a69b13":[11,0,51,34],
+"structLodePNGInfo.html#a0af9bab3435084780ce8c1cb69bb2628":[11,0,51,13],
+"structLodePNGInfo.html#a0e139ec8c88c920bedb602090a3546d0":[11,0,51,19],
+"structLodePNGInfo.html#a11eaae6ecbb308ac1e70dcd10fee6891":[11,0,51,21],
 "structLodePNGInfo.html#a1593fa6e1acc93f3b9de51c340bef94d":[11,0,51,30],
 "structLodePNGInfo.html#a1aef46690f4e090ec7ba2198dc25a0f7":[11,0,51,9],
 "structLodePNGInfo.html#a1b909e03596abf86d564641741b0087f":[11,0,51,23],
@@ -239,15 +249,5 @@ var NAVTREEINDEX10 =
 "structStunRequest.html#aef0c7d317052068582b3ec0d5766ae64":[11,0,82,1],
 "structTCPContext.html":[11,0,83],
 "structTCPContext.html#a474478d48859345d14be78a71dfd676a":[11,0,83,12],
-"structTCPContext.html#a4a5bc2ddd88a33524974192c1a595f2f":[11,0,83,6],
-"structTCPContext.html#a560c996f7a2b8ef09ad6b93ea5d0e782":[11,0,83,3],
-"structTCPContext.html#a5fb196ddcc9d6c8bb85fe1e780411761":[11,0,83,1],
-"structTCPContext.html#a64f9a82d818d2e3569410a06641915cd":[11,0,83,9],
-"structTCPContext.html#a6552539ca4d5038657418b8bcae1c1a2":[11,0,83,8],
-"structTCPContext.html#a69392ee0ce512416b23034532fd8c11d":[11,0,83,11],
-"structTCPContext.html#a69b86d5b5ba97f16a584a8c1da5e76ea":[11,0,83,14],
-"structTCPContext.html#a8018a749970470e09e4afbb9f13f445f":[11,0,83,2],
-"structTCPContext.html#a9324d244b8b76d948b6b9ac4ccc3b7e3":[11,0,83,4],
-"structTCPContext.html#a9b2e44b81919ba874066bc64142122cd":[11,0,83,7],
-"structTCPContext.html#a9c7f69bf9020bd2b2abdf4c3c904aa1d":[11,0,83,0]
+"structTCPContext.html#a4a5bc2ddd88a33524974192c1a595f2f":[11,0,83,6]
 };

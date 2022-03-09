@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['region_20allocator_4917',['Region Allocator',['../group__region__allocator.html',1,'']]]
+  ['region_20allocator_4935',['Region Allocator',['../group__region__allocator.html',1,'']]]
 ];

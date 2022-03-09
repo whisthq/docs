@@ -1,5 +1,15 @@
 var NAVTREEINDEX9 =
 {
+"structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac":[10,1,2,3],
+"structDynamicBuffer.html#a938f2c8aa90ab824c05372f1903b9ac3":[10,1,2,0],
+"structDynamicBuffer.html#ab086b6e22e3b2018e9cb35aaf637e22c":[10,1,2,1],
+"structDynamicBuffer.html#ad80cc8f3a40b8681fa9ede1f2aa19c79":[10,1,2,2],
+"structEncodedAudio.html":[11,0,23],
+"structEncodedAudio.html#a5955d96098e033891a5bae062868cd05":[11,0,23,2],
+"structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3":[11,0,23,1],
+"structEncodedAudio.html#a9f0b62fc01a231f73c90321f98c65e96":[11,0,23,0],
+"structFECDecoder.html":[11,0,25],
+"structFECDecoder.html#a2d2fe518ed5bb1b909dcb78baa107202":[11,0,25,2],
 "structFECDecoder.html#a3dbec9c03cc4aa5d7f45cb5c116b8607":[11,0,25,7],
 "structFECDecoder.html#a6b126fd8e104fbd2f7f24c9226550a1f":[11,0,25,3],
 "structFECDecoder.html#a78be5ff74069feea4d605ad00ddd37aa":[11,0,25,8],
@@ -239,15 +249,5 @@ var NAVTREEINDEX9 =
 "structLodePNGEncoderSettings.html":[11,0,50],
 "structLodePNGEncoderSettings.html#a04dc9622ccd1d7c74c56291409aa512a":[11,0,50,4],
 "structLodePNGEncoderSettings.html#a0d82e8f2fabcb6cebbc54b80922945f1":[11,0,50,2],
-"structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a":[11,0,50,1],
-"structLodePNGEncoderSettings.html#a2c5928b4172c75e27de467870f2ff946":[11,0,50,7],
-"structLodePNGEncoderSettings.html#a4446f87b5283f25664802a1be037e76e":[11,0,50,5],
-"structLodePNGEncoderSettings.html#a5e18e4eb941763a2e3e6c65ee9f0729c":[11,0,50,3],
-"structLodePNGEncoderSettings.html#a6ffdcb8e85a65ea208fe027be072d710":[11,0,50,6],
-"structLodePNGEncoderSettings.html#a893aa542aa7c122c32ee36dd716fbcb2":[11,0,50,0],
-"structLodePNGInfo.html":[11,0,51],
-"structLodePNGInfo.html#a0a26147c9673870dd122693f17a69b13":[11,0,51,34],
-"structLodePNGInfo.html#a0af9bab3435084780ce8c1cb69bb2628":[11,0,51,13],
-"structLodePNGInfo.html#a0e139ec8c88c920bedb602090a3546d0":[11,0,51,19],
-"structLodePNGInfo.html#a11eaae6ecbb308ac1e70dcd10fee6891":[11,0,51,21]
+"structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a":[11,0,50,1]
 };
