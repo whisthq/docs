@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"sdlscreeninfo_8c.html#a4215f88d5bc87f822593df1992ddfc14":[12,0,0,20,4],
 "sdlscreeninfo_8c.html#a5b69bd050acffe490ad070da1b33f2ca":[12,0,0,20,2],
 "sdlscreeninfo_8c.html#a9087ee2c62a90ce8effbd0cd7b479de1":[12,0,0,20,3],
 "sdlscreeninfo_8c.html#a956484dfc8150fd38c81b0488e597f07":[12,0,0,20,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3":[11,0,23,1],
 "structEncodedAudio.html#a9f0b62fc01a231f73c90321f98c65e96":[11,0,23,0],
 "structFECDecoder.html":[11,0,25],
-"structFECDecoder.html#a2d2fe518ed5bb1b909dcb78baa107202":[11,0,25,2],
-"structFECDecoder.html#a3dbec9c03cc4aa5d7f45cb5c116b8607":[11,0,25,7]
+"structFECDecoder.html#a2d2fe518ed5bb1b909dcb78baa107202":[11,0,25,2]
 };

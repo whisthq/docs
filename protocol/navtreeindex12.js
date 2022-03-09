@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structWhistPacket.html":[11,0,111],
 "structWhistPacket.html#a204c97f1e3ba4b811ab244cda6e075bb":[11,0,111,2],
 "structWhistPacket.html#a4ba67b2205cb40c2833d820d13cd0137":[11,0,111,3],
 "structWhistPacket.html#a9e208847aec731ce22671355b4e9ba0e":[11,0,111,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "udp_8h.html#ab227c787d07a796738fef8cc10a1a0ad":[12,0,2,7,11,3],
 "udp_8h.html#ad233b3dbff8bdf1bcfca923b178b47e9":[12,0,2,7,11,8],
 "udp_8h.html#ad23da60df4866703cdc09be5bd969ba1":[12,0,2,7,11,7],
-"udp_8h.html#afcc89a19d0bd23c69e4f1030bbc952dc":[12,0,2,7,11,15],
-"udp_8h.html#afef7e30cfe7786aa52b75f8cd9c68445":[12,0,2,7,11,9]
+"udp_8h.html#afcc89a19d0bd23c69e4f1030bbc952dc":[12,0,2,7,11,15]
 };

@@ -140,18 +140,18 @@ var NAVTREEINDEX =
 "client__utils_8h.html#a45c9f7618494cb2ee1ec3d579e1feb9f",
 "encode_8h.html#ae929ca78c731b77fe6f5bb516d9a9cfc",
 "globals_defs_e.html",
-"group__region__allocator.html#gad91ad1707c56178b66bd39a9b1b1e8a7",
-"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768aa7f345948486a6668a6e10e93f370a12",
-"log__statistic_8h.html#a3e615ed1d20a0769e039693e390b390e",
-"nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac",
-"sdlscreeninfo_8c.html#a5b69bd050acffe490ad070da1b33f2ca",
-"structFECDecoder.html#a6b126fd8e104fbd2f7f24c9226550a1f",
-"structLodePNGInfo.html#a1aef46690f4e090ec7ba2198dc25a0f7",
-"structTCPContext.html#ac2c1133a74eca1753b44db8ca5d3104a",
-"structWhistPacket.html#a204c97f1e3ba4b811ab244cda6e075bb",
-"udp_8h_source.html",
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57faa8f2a864daf0fc895eb702ab057b34c7",
-"windows__cursor__capture_8c.html#aae5707495486c82aa8f858e821ab8ae0"
+"group__region__allocator.html#gac5cb37b0580474e152f2450c34979720",
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a9db4352c4e2d3cc9f9ed5328c0e6aacc",
+"log__statistic_8h.html",
+"nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d",
+"sdlscreeninfo_8c.html#a4215f88d5bc87f822593df1992ddfc14",
+"structFECDecoder.html#a3dbec9c03cc4aa5d7f45cb5c116b8607",
+"structLodePNGInfo.html#a1593fa6e1acc93f3b9de51c340bef94d",
+"structTCPContext.html#ac2715e6f456b612ad042feceff65744a",
+"structWhistPacket.html",
+"udp_8h.html#afef7e30cfe7786aa52b75f8cd9c68445",
+"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa98833b83c6bedf86421078449cdf8cf3",
+"windows__cursor__capture_8c.html#a878422ca18535f9bc2033156becbf937"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

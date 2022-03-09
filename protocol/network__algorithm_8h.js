@@ -2,7 +2,6 @@ var network__algorithm_8h =
 [
     [ "NetworkStatistics", "structNetworkStatistics.html", "structNetworkStatistics" ],
     [ "AUDIO_FEC_RATIO", "network__algorithm_8h.html#ab552496cd2c29c203e6d9f31ebda77b0", null ],
-    [ "USE_WHIST_CONGESTION_CONTROL", "network__algorithm_8h.html#ab25946be235ad67662b9d4d6573e4808", null ],
     [ "VIDEO_FEC_RATIO", "network__algorithm_8h.html#a3e3802f5df58b3f07afb460f7b075eaa", null ],
     [ "get_default_network_settings", "network__algorithm_8h.html#ad1bf4e1ceafb2cefbb54eb37c85336e4", null ],
     [ "get_desired_network_settings", "network__algorithm_8h.html#a5fca7d6bd4c3f135046f727ee8224bf7", null ],

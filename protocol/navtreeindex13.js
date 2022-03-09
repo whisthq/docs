@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"udp_8h.html#afef7e30cfe7786aa52b75f8cd9c68445":[12,0,2,7,11,9],
 "udp_8h_source.html":[12,0,2,7,11],
 "uinput__input__driver_8c.html":[12,0,2,5,4],
 "uinput__input__driver_8c.html#a4bf16a0974d994a27ff7248b4ae56dc5":[12,0,2,5,4,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa221c5a2ce82a31c502d12253957ae36c":[12,0,2,2,3,108,7],
 "whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa23ecdfd216a39039cd53d383532184ed":[12,0,2,2,3,108,6],
 "whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa2ad9ffa4003974a07ace4b717bc9cb54":[12,0,2,2,3,108,1],
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa70ca6445f95771c474d23af06fdbabb1":[12,0,2,2,3,108,4],
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa98833b83c6bedf86421078449cdf8cf3":[12,0,2,2,3,108,3]
+"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa70ca6445f95771c474d23af06fdbabb1":[12,0,2,2,3,108,4]
 };

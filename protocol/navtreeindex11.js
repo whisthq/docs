@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structTCPContext.html#ac2715e6f456b612ad042feceff65744a":[11,0,83,13],
 "structTCPContext.html#ac2c1133a74eca1753b44db8ca5d3104a":[11,0,83,5],
 "structTCPContext.html#ac768119862559b81327b103f8fa041d6":[11,0,83,10],
 "structTCPNetworkPacket.html":[11,0,84],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structWhistMultigestureMessage.html#aa51beb68509bcc364ffb825570eaf3de":[11,0,109,2],
 "structWhistNotification.html":[11,0,110],
 "structWhistNotification.html#a216f625672687626e82cc5b010e024f3":[11,0,110,1],
-"structWhistNotification.html#abf4387de36ef34dbc4c04a65ecc0ba9c":[11,0,110,0],
-"structWhistPacket.html":[11,0,111]
+"structWhistNotification.html#abf4387de36ef34dbc4c04a65ecc0ba9c":[11,0,110,0]
 };

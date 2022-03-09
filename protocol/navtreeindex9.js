@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structFECDecoder.html#a3dbec9c03cc4aa5d7f45cb5c116b8607":[11,0,25,7],
 "structFECDecoder.html#a6b126fd8e104fbd2f7f24c9226550a1f":[11,0,25,3],
 "structFECDecoder.html#a78be5ff74069feea4d605ad00ddd37aa":[11,0,25,8],
 "structFECDecoder.html#a9f267583421236833c21ece3a2ec219f":[11,0,25,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structLodePNGInfo.html#a0a26147c9673870dd122693f17a69b13":[11,0,51,34],
 "structLodePNGInfo.html#a0af9bab3435084780ce8c1cb69bb2628":[11,0,51,13],
 "structLodePNGInfo.html#a0e139ec8c88c920bedb602090a3546d0":[11,0,51,19],
-"structLodePNGInfo.html#a11eaae6ecbb308ac1e70dcd10fee6891":[11,0,51,21],
-"structLodePNGInfo.html#a1593fa6e1acc93f3b9de51c340bef94d":[11,0,51,30]
+"structLodePNGInfo.html#a11eaae6ecbb308ac1e70dcd10fee6891":[11,0,51,21]
 };

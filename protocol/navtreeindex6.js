@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"log__statistic_8h.html":[12,0,2,6,3],
+"log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65":[12,0,2,6,3,2],
 "log__statistic_8h.html#a3e615ed1d20a0769e039693e390b390e":[12,0,2,6,3,3],
 "log__statistic_8h.html#a462484146d0ca6bd35b234bca13cc9a0":[12,0,2,6,3,5],
 "log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674":[12,0,2,6,3,4],
@@ -200,14 +202,13 @@ var NAVTREEINDEX6 =
 "network__algorithm_8c.html#af6e2306adac4a7fc41cc4c181d2e605b":[12,0,2,7,2,20],
 "network__algorithm_8c.html#af99345a216f300c72251d94158573c1c":[12,0,2,7,2,11],
 "network__algorithm_8h.html":[12,0,2,7,3],
-"network__algorithm_8h.html#a3164d3eec2e8fbcedab1f454e2442483":[12,0,2,7,3,6],
-"network__algorithm_8h.html#a3e3802f5df58b3f07afb460f7b075eaa":[12,0,2,7,3,3],
-"network__algorithm_8h.html#a5fca7d6bd4c3f135046f727ee8224bf7":[12,0,2,7,3,5],
-"network__algorithm_8h.html#a759113a57a57b0f3b1e31ee7615067d5":[12,0,2,7,3,7],
-"network__algorithm_8h.html#ab25946be235ad67662b9d4d6573e4808":[12,0,2,7,3,2],
+"network__algorithm_8h.html#a3164d3eec2e8fbcedab1f454e2442483":[12,0,2,7,3,5],
+"network__algorithm_8h.html#a3e3802f5df58b3f07afb460f7b075eaa":[12,0,2,7,3,2],
+"network__algorithm_8h.html#a5fca7d6bd4c3f135046f727ee8224bf7":[12,0,2,7,3,4],
+"network__algorithm_8h.html#a759113a57a57b0f3b1e31ee7615067d5":[12,0,2,7,3,6],
 "network__algorithm_8h.html#ab552496cd2c29c203e6d9f31ebda77b0":[12,0,2,7,3,1],
-"network__algorithm_8h.html#ad1bf4e1ceafb2cefbb54eb37c85336e4":[12,0,2,7,3,4],
-"network__algorithm_8h.html#ae7b690342b05bb87cddd488dd4a71a2f":[12,0,2,7,3,8],
+"network__algorithm_8h.html#ad1bf4e1ceafb2cefbb54eb37c85336e4":[12,0,2,7,3,3],
+"network__algorithm_8h.html#ae7b690342b05bb87cddd488dd4a71a2f":[12,0,2,7,3,7],
 "network__algorithm_8h_source.html":[12,0,2,7,3],
 "notifications_8c.html":[12,0,1,9],
 "notifications_8c.html#adf603c163740ec317c6a336cc740f707":[12,0,1,9,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "nvidiacapture_8c.html#af5fbabb8eef6586c644555e8269aaaa9":[12,0,2,10,0,3,4],
 "nvidiacapture_8h.html":[12,0,2,10,0,4],
 "nvidiacapture_8h.html#a5940a21cbe50f63624e278862d61db58":[12,0,2,10,0,4,5],
-"nvidiacapture_8h.html#a68a4405d843daa1f597a536de1dc07d4":[12,0,2,10,0,4,3],
-"nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d":[12,0,2,10,0,4,2]
+"nvidiacapture_8h.html#a68a4405d843daa1f597a536de1dc07d4":[12,0,2,10,0,4,3]
 };
