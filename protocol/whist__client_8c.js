@@ -21,7 +21,6 @@ var whist__client_8c =
     [ "pending_resize_message", "whist__client_8c.html#af4e35016b32376211dba7a8f028f3f88", null ],
     [ "rgui_pressed", "whist__client_8c.html#a31e60ed488fac41f2eb7f3865937fc14", null ],
     [ "server_ip", "whist__client_8c.html#a07366317ac5c1d8d1ce9c82baf1d10c2", null ],
-    [ "uid", "whist__client_8c.html#a60a34315f460179939054acaf3ed8163", null ],
     [ "upload_initiated", "whist__client_8c.html#abda738e84e62b32492c077d1898803a3", null ],
     [ "using_stun", "whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66", null ],
     [ "window", "whist__client_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9", null ],

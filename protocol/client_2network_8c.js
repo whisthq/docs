@@ -13,7 +13,6 @@ var client_2network_8c =
     [ "packet_tcp_context", "client_2network_8c.html#ab052ae0d87ab16898c020aed81f21aa0", null ],
     [ "packet_udp_context", "client_2network_8c.html#abef30726c0347177718a4ec7a32e57ea", null ],
     [ "server_ip", "client_2network_8c.html#a182d69acd4e02e6c0a027622a4556e53", null ],
-    [ "uid", "client_2network_8c.html#a60a34315f460179939054acaf3ed8163", null ],
     [ "user_email", "client_2network_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd", null ],
     [ "using_stun", "client_2network_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66", null ]
 ];

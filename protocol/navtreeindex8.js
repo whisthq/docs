@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a":[12,0,0,19,17],
 "sdl__utils_8h.html#ae68af5cd5b1c04c018ad7be58aa215b2":[12,0,0,19,0],
 "sdl__utils_8h.html#aec1c03b128be02a97fe22c4744445f3a":[12,0,0,19,15],
 "sdl__utils_8h.html#af2046b7a00305043eb5d40f35eae00e2":[12,0,0,19,6],
@@ -200,13 +199,11 @@ var NAVTREEINDEX8 =
 "structClient.html#a17ecd3431f124e939332167e67d588a7":[11,0,13,0],
 "structClient.html#a6d3700d67550763757c5c4e3fdaa8827":[11,0,13,4],
 "structClient.html#a77177b559115520f217f957fc94b8cee":[11,0,13,3],
-"structClient.html#aac8b455ff593997a80d995a49bf7819e":[11,0,13,5],
 "structClient.html#ae0a5a253676a6b7ce3d327b85d16a24c":[11,0,13,2],
 "structClient.html#afe6de735904a6a1c6b2d8b46cb58c238":[11,0,13,1],
 "structClientInitMessage.html":[11,0,14],
 "structClientInitMessage.html#a8dc2636b12088951f63945966a790b8c":[11,0,14,0],
 "structClientInitMessage.html#a96055ac014948a537f8492792a4a554d":[11,0,14,1],
-"structClientInitMessage.html#ad50cb17cb5326f4cd7b89ebca49ecdc2":[11,0,14,2],
 "structClipboardActivity.html":[11,0,15],
 "structClipboardActivity.html#a16a11d43e8a1ae64e5a43fdbfb78fc1d":[11,0,15,2],
 "structClipboardActivity.html#a2652ad105332873d06a68c1c04c21fae":[11,0,15,5],
@@ -249,5 +246,8 @@ var NAVTREEINDEX8 =
 "structDecodedFrameData.html#a66788ca3580272abce0db59473100b55":[11,0,21,4],
 "structDecodedFrameData.html#a88dd4ffb3f9846ec887568a91eda2f3d":[11,0,21,1],
 "structDecodedFrameData.html#a9d101bb9cda6e9feb3a1be64b2827575":[11,0,21,0],
-"structDynamicBuffer.html":[10,1,2]
+"structDynamicBuffer.html":[10,1,2],
+"structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac":[10,1,2,3],
+"structDynamicBuffer.html#a938f2c8aa90ab824c05372f1903b9ac3":[10,1,2,0],
+"structDynamicBuffer.html#ab086b6e22e3b2018e9cb35aaf637e22c":[10,1,2,1]
 };

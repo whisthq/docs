@@ -1,8 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac":[10,1,2,3],
-"structDynamicBuffer.html#a938f2c8aa90ab824c05372f1903b9ac3":[10,1,2,0],
-"structDynamicBuffer.html#ab086b6e22e3b2018e9cb35aaf637e22c":[10,1,2,1],
 "structDynamicBuffer.html#ad80cc8f3a40b8681fa9ede1f2aa19c79":[10,1,2,2],
 "structEncodedAudio.html":[11,0,23],
 "structEncodedAudio.html#a5955d96098e033891a5bae062868cd05":[11,0,23,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX9 =
 "structLodePNGEncoderSettings.html":[11,0,50],
 "structLodePNGEncoderSettings.html#a04dc9622ccd1d7c74c56291409aa512a":[11,0,50,4],
 "structLodePNGEncoderSettings.html#a0d82e8f2fabcb6cebbc54b80922945f1":[11,0,50,2],
-"structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a":[11,0,50,1]
+"structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a":[11,0,50,1],
+"structLodePNGEncoderSettings.html#a2c5928b4172c75e27de467870f2ff946":[11,0,50,7],
+"structLodePNGEncoderSettings.html#a4446f87b5283f25664802a1be037e76e":[11,0,50,5],
+"structLodePNGEncoderSettings.html#a5e18e4eb941763a2e3e6c65ee9f0729c":[11,0,50,3]
 };

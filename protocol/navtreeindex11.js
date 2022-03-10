@@ -1,8 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structTCPContext.html#a560c996f7a2b8ef09ad6b93ea5d0e782":[11,0,83,3],
-"structTCPContext.html#a5fb196ddcc9d6c8bb85fe1e780411761":[11,0,83,1],
-"structTCPContext.html#a64f9a82d818d2e3569410a06641915cd":[11,0,83,9],
 "structTCPContext.html#a6552539ca4d5038657418b8bcae1c1a2":[11,0,83,8],
 "structTCPContext.html#a69392ee0ce512416b23034532fd8c11d":[11,0,83,11],
 "structTCPContext.html#a69b86d5b5ba97f16a584a8c1da5e76ea":[11,0,83,14],
@@ -249,5 +246,8 @@ var NAVTREEINDEX11 =
 "structWhistMouseMotionMessage.html#ac661eae8b7dfba74339ca28576d13ee1":[11,0,108,0],
 "structWhistMouseMotionMessage.html#ade2e9fc2a99456fc6888c324bca64508":[11,0,108,4],
 "structWhistMouseMotionMessage.html#aee7d0afd8c966a641fc4b790abed607d":[11,0,108,2],
-"structWhistMouseWheelMessage.html":[11,0,109]
+"structWhistMouseWheelMessage.html":[11,0,109],
+"structWhistMouseWheelMessage.html#a54817e6bea3ad8baf8cddd5f290e2807":[11,0,109,0],
+"structWhistMouseWheelMessage.html#aaea9a304393513f1f1a48b0e5a33564c":[11,0,109,2],
+"structWhistMouseWheelMessage.html#ab0a77d2fb103bc73a4c9bc291195e481":[11,0,109,1]
 };
