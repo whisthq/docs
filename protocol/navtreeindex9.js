@@ -1,6 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structDynamicBuffer.html#ad80cc8f3a40b8681fa9ede1f2aa19c79":[10,1,2,2],
 "structEncodedAudio.html":[11,0,23],
 "structEncodedAudio.html#a5955d96098e033891a5bae062868cd05":[11,0,23,2],
 "structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3":[11,0,23,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX9 =
 "structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a":[11,0,50,1],
 "structLodePNGEncoderSettings.html#a2c5928b4172c75e27de467870f2ff946":[11,0,50,7],
 "structLodePNGEncoderSettings.html#a4446f87b5283f25664802a1be037e76e":[11,0,50,5],
-"structLodePNGEncoderSettings.html#a5e18e4eb941763a2e3e6c65ee9f0729c":[11,0,50,3]
+"structLodePNGEncoderSettings.html#a5e18e4eb941763a2e3e6c65ee9f0729c":[11,0,50,3],
+"structLodePNGEncoderSettings.html#a6ffdcb8e85a65ea208fe027be072d710":[11,0,50,6]
 };

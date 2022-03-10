@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806":[12,0,2,10,0,3,0],
 "nvidiacapture_8c.html#ae20fe54dadf0431b275a789ffc010431":[12,0,2,10,0,3,2],
 "nvidiacapture_8c.html#aeb8b929d289578199244fb8e82bdceac":[12,0,2,10,0,3,7],
 "nvidiacapture_8c.html#af5fbabb8eef6586c644555e8269aaaa9":[12,0,2,10,0,3,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "sdl__utils_8h.html#ab65ff6de4da0adc51ef3fa86636bef8c":[12,0,0,19,12],
 "sdl__utils_8h.html#abb7b3bba01d8ff3d4e14680b3c73cddd":[12,0,0,19,4],
 "sdl__utils_8h.html#abf404550e168d933d326c980202e21e7":[12,0,0,19,1],
-"sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a":[12,0,0,19,17]
+"sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a":[12,0,0,19,17],
+"sdl__utils_8h.html#ae68af5cd5b1c04c018ad7be58aa215b2":[12,0,0,19,0]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structTCPContext.html#a6552539ca4d5038657418b8bcae1c1a2":[11,0,83,8],
 "structTCPContext.html#a69392ee0ce512416b23034532fd8c11d":[11,0,83,11],
 "structTCPContext.html#a69b86d5b5ba97f16a584a8c1da5e76ea":[11,0,83,14],
 "structTCPContext.html#a8018a749970470e09e4afbb9f13f445f":[11,0,83,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "structWhistMouseWheelMessage.html":[11,0,109],
 "structWhistMouseWheelMessage.html#a54817e6bea3ad8baf8cddd5f290e2807":[11,0,109,0],
 "structWhistMouseWheelMessage.html#aaea9a304393513f1f1a48b0e5a33564c":[11,0,109,2],
-"structWhistMouseWheelMessage.html#ab0a77d2fb103bc73a4c9bc291195e481":[11,0,109,1]
+"structWhistMouseWheelMessage.html#ab0a77d2fb103bc73a4c9bc291195e481":[11,0,109,1],
+"structWhistMouseWheelMessage.html#adace3b9b1b420da62a09f99de7309605":[11,0,109,3]
 };

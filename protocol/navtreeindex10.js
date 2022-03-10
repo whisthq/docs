@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structLodePNGEncoderSettings.html#a6ffdcb8e85a65ea208fe027be072d710":[11,0,50,6],
 "structLodePNGEncoderSettings.html#a893aa542aa7c122c32ee36dd716fbcb2":[11,0,50,0],
 "structLodePNGInfo.html":[11,0,51],
 "structLodePNGInfo.html#a0a26147c9673870dd122693f17a69b13":[11,0,51,34],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "structTCPContext.html#a4a5bc2ddd88a33524974192c1a595f2f":[11,0,83,6],
 "structTCPContext.html#a560c996f7a2b8ef09ad6b93ea5d0e782":[11,0,83,3],
 "structTCPContext.html#a5fb196ddcc9d6c8bb85fe1e780411761":[11,0,83,1],
-"structTCPContext.html#a64f9a82d818d2e3569410a06641915cd":[11,0,83,9]
+"structTCPContext.html#a64f9a82d818d2e3569410a06641915cd":[11,0,83,9],
+"structTCPContext.html#a6552539ca4d5038657418b8bcae1c1a2":[11,0,83,8]
 };

@@ -18,7 +18,6 @@ var client__statistic_8h =
       [ "VIDEO_E2E_LATENCY", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a2950fc3f55e28fc2a6379c0e2873197d", null ],
       [ "VIDEO_RECEIVE_TIME", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a8d67938756aea08edff41427fafcc6b1", null ],
       [ "VIDEO_RENDER_TIME", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a82c3f68e1603d6b05e4f2757be692d75", null ],
-      [ "VIDEO_SDL_WRITE_TIME", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a73df5a3e8d98d623a4ebe54716890c06", null ],
       [ "VIDEO_TIME_BETWEEN_FRAMES", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32af72c3ce78e30c28bd78013e2cbcdfae0", null ],
       [ "VIDEO_UPDATE_TIME", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32a6f123a94d6cc479a05d86bb5c37eceb6", null ],
       [ "NOTIFICATIONS_RECEIVED", "client__statistic_8h.html#a3bf523de5efe2d0d63e54d57910edd32aef844b9ebeccdf9ea1353890aa96ed39", null ],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"whist__memory_8h.html":[12,0,2,2,7],
 "whist__memory_8h_source.html":[12,0,2,2,7],
 "win__clipboard_8c.html":[12,0,2,1,7],
 "winapi__input__driver_8c.html":[12,0,2,5,6],
