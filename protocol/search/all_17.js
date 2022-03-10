@@ -31,7 +31,7 @@ var searchData=
   ['wait_5ftimer_2164',['wait_timer',['../alsacapture_8c.html#a729e6be9914233256d56176ddee16c78',1,'wait_timer(AudioDevice *audio_device):&#160;alsacapture.c'],['../audiocapture_8h.html#a729e6be9914233256d56176ddee16c78',1,'wait_timer(AudioDevice *audio_device):&#160;alsacapture.c']]],
   ['wants_5fiframe_2165',['wants_iframe',['../structFFmpegEncoder.html#ad28eb7b920e487f3686433bd573e1fde',1,'FFmpegEncoder::wants_iframe()'],['../structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709',1,'NvidiaEncoder::wants_iframe()']]],
   ['warning_5flevel_2166',['WARNING_LEVEL',['../logging_8h.html#a28deb91651998cb8a97e41dfe534bd7a',1,'logging.h']]],
-  ['warning_5ftag_2167',['warning_tag',['../logging_8c.html#a338fa052f38dd0d3bb9b9118027c8277',1,'warning_tag():&#160;logging.c'],['../logging_8h.html#a3b73e35a39fd12e39deba2a53876031f',1,'warning_tag():&#160;logging.h'],['../logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6',1,'WARNING_TAG():&#160;logging.h']]],
+  ['warning_5ftag_2167',['WARNING_TAG',['../logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6',1,'WARNING_TAG():&#160;logging.h'],['../logging_8c.html#a338fa052f38dd0d3bb9b9118027c8277',1,'warning_tag():&#160;logging.c'],['../logging_8h.html#a3b73e35a39fd12e39deba2a53876031f',1,'warning_tag():&#160;logging.h']]],
   ['wasapicapture_2ec_2168',['wasapicapture.c',['../wasapicapture_8c.html',1,'']]],
   ['wasapicapture_2eh_2169',['wasapicapture.h',['../wasapicapture_8h.html',1,'']]],
   ['wcc_2emd_2170',['WCC.md',['../WCC_8md.html',1,'']]],
