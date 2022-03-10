@@ -57,7 +57,7 @@ var searchData=
   ['max_5ftcp_5fpayload_5fsize_1323',['MAX_TCP_PAYLOAD_SIZE',['../tcp_8c.html#a05417ed69492c5ff5801b3d4044e8e46',1,'tcp.c']]],
   ['max_5ftext_5fsize_1324',['max_text_size',['../structLodePNGDecoderSettings.html#a7f2842321dd4144180cb79ff4b5eaf5e',1,'LodePNGDecoderSettings']]],
   ['max_5ftotal_5fpackets_1325',['MAX_TOTAL_PACKETS',['../udp_8c.html#a890ae089e185134fdcefbc84329a6115',1,'udp.c']]],
-  ['max_5funordered_5fpackets_1326',['MAX_UNORDERED_PACKETS',['../ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33',1,'ringbuffer.c']]],
+  ['max_5funordered_5fpackets_1326',['max_unordered_packets',['../structUnOrderedPacketInfo.html#a80cfe5565608cc7e8143578886a9b446',1,'UnOrderedPacketInfo::max_unordered_packets()'],['../ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33',1,'MAX_UNORDERED_PACKETS():&#160;ringbuffer.c']]],
   ['max_5funsynced_5fframes_1327',['MAX_UNSYNCED_FRAMES',['../ringbuffer_8c.html#a63712ce21a04379372836cb9a38e657a',1,'ringbuffer.c']]],
   ['max_5furl_5flength_1328',['MAX_URL_LENGTH',['../whist_8h.html#a3a0a3a9d3952e2b57333ed6daceb163e',1,'whist.h']]],
   ['max_5furls_1329',['MAX_URLS',['../clipboard__osx_8h.html#a3a83f57e6cd594525e9b44b08f5c6842',1,'clipboard_osx.h']]],

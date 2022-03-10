@@ -92,6 +92,7 @@ var annotated_dup =
     [ "UDPNetworkPacket", "structUDPNetworkPacket.html", "structUDPNetworkPacket" ],
     [ "UDPPacket", "structUDPPacket.html", "structUDPPacket" ],
     [ "uivector", "structuivector.html", "structuivector" ],
+    [ "UnOrderedPacketInfo", "structUnOrderedPacketInfo.html", "structUnOrderedPacketInfo" ],
     [ "VideoContext", "structVideoContext.html", "structVideoContext" ],
     [ "VideoDecoder", "structVideoDecoder.html", "structVideoDecoder" ],
     [ "VideoEncoder", "structVideoEncoder.html", "structVideoEncoder" ],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX14 =
 {
+"whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128afdd533559472884fb786ecc006862235":[12,0,2,2,3,105,17],
+"whist_8h.html#a9671b09366aac047f771b3d49b3b99a4":[12,0,2,2,3,41],
+"whist_8h.html#a9740e3eb33500c4ba6d6efade68933d2":[12,0,2,2,3,84],
+"whist_8h.html#a974d6d1995afbf8d11e015915c7c8d64":[12,0,2,2,3,85],
+"whist_8h.html#a99cc5a998dfeebc3567baec59b4a77a3":[12,0,2,2,3,21],
+"whist_8h.html#a9b26cd4ece83eb114a81877bd849e28b":[12,0,2,2,3,27],
+"whist_8h.html#a9bcfa4a6fecd23535df2dd7cc000ea23":[12,0,2,2,3,43],
+"whist_8h.html#a9e8ab2261deed9913cbe2af14256eda4":[12,0,2,2,3,89],
 "whist_8h.html#aa005f29266f2ddf76cb57dc510516839":[12,0,2,2,3,119],
 "whist_8h.html#aa1728270d73c5d1598de1fd691762eb1":[12,0,2,2,3,55],
 "whist_8h.html#aa432070c422ef782d49e2dc35b8a6e56":[12,0,2,2,3,32],
@@ -241,13 +249,5 @@ var NAVTREEINDEX14 =
 "whist__frame_8h.html#abb3d0658b9c1e49963833c4d12febfc3":[12,0,2,2,5,10],
 "whist__frame_8h.html#acdeb42e88b9e2069dbb195e4a28efa61":[12,0,2,2,5,11],
 "whist__frame_8h.html#af972e86db0d7f39d6abb7fc0ba8eff5e":[12,0,2,2,5,8],
-"whist__frame_8h_source.html":[12,0,2,2,5],
-"whist__memory_8c.html":[12,0,2,2,6],
-"whist__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c":[12,0,2,2,6,3],
-"whist__memory_8c.html#a4c6d7bdba62c60dcd15111ecbf34edb7":[12,0,2,2,6,2],
-"whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a":[12,0,2,2,6,4],
-"whist__memory_8h.html":[12,0,2,2,7],
-"whist__memory_8h_source.html":[12,0,2,2,7],
-"win__clipboard_8c.html":[12,0,2,1,7],
-"winapi__input__driver_8c.html":[12,0,2,5,6]
+"whist__frame_8h_source.html":[12,0,2,2,5]
 };

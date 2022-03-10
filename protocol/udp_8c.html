@@ -139,6 +139,8 @@ Macros</h2></td></tr>
 <tr class="separator:aa1b0d63a7809ac09ea618bff0b17a6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1460dcee3b0c034518e8f893c81711ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a1460dcee3b0c034518e8f893c81711ee">MIN_VALID_BUCKETS</a>&#160;&#160;&#160;((<a class="el" href="udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03">INCOMING_BITRATE_NUM_BUCKETS</a> * 3) / 4)</td></tr>
 <tr class="separator:a1460dcee3b0c034518e8f893c81711ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74b55a091ea3402979c0ee8aa86c5c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ad74b55a091ea3402979c0ee8aa86c5c3">OUT_OF_ORDER_EWMA_FACTOR</a>&#160;&#160;&#160;0.01</td></tr>
+<tr class="separator:ad74b55a091ea3402979c0ee8aa86c5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f283368e88ac298d92d1506dd4c0abb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb">RETRIES_ON_BUFFER_FULL</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a4f283368e88ac298d92d1506dd4c0abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5222d03fdb5004f2ebc781d1041f0e04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5222d03fdb5004f2ebc781d1041f0e04">UDP_NETWORK_THROTTLER_BUCKET_MS</a>&#160;&#160;&#160;5.0</td></tr>
@@ -185,6 +187,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aca1aceb098277b1af092206703de6f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aca1aceb098277b1af092206703de6f38">update_max_unordered_packets</a> (<a class="el" href="structUnOrderedPacketInfo.html">UnOrderedPacketInfo</a> *unordered_info, int frame_id, int packet_index)</td></tr>
+<tr class="separator:aca1aceb098277b1af092206703de6f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01047961dc8cff8d46c7a951bfbbd644"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a01047961dc8cff8d46c7a951bfbbd644">create_udp_server_context</a> (<a class="el" href="structUDPContext.html">UDPContext</a> *context, int port, int connection_timeout_ms)</td></tr>
 <tr class="memdesc:a01047961dc8cff8d46c7a951bfbbd644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a UDP Server Context, which will wait connection_timeout_ms for a client to connect.  <a href="udp_8c.html#a01047961dc8cff8d46c7a951bfbbd644">More...</a><br /></td></tr>
 <tr class="separator:a01047961dc8cff8d46c7a951bfbbd644"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,6 +391,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define NUM_CONFIRMATION_MESSAGES&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad74b55a091ea3402979c0ee8aa86c5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad74b55a091ea3402979c0ee8aa86c5c3">&#9670;&nbsp;</a></span>OUT_OF_ORDER_EWMA_FACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OUT_OF_ORDER_EWMA_FACTOR&#160;&#160;&#160;0.01</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1146,6 +1164,40 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aca1aceb098277b1af092206703de6f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1aceb098277b1af092206703de6f38">&#9670;&nbsp;</a></span>update_max_unordered_packets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update_max_unordered_packets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUnOrderedPacketInfo.html">UnOrderedPacketInfo</a> *&#160;</td>
+          <td class="paramname"><em>unordered_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frame_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>packet_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

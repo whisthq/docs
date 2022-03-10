@@ -36,5 +36,6 @@ var structUDPContext =
     [ "ring_buffers", "structUDPContext.html#ad6bee4990811e47999fe14af48dec4ff", null ],
     [ "socket", "structUDPContext.html#a8a15f32a442ce6e996c843d99f1acb02", null ],
     [ "timeout", "structUDPContext.html#a50203e230b412dc8a58c817df728a70e", null ],
-    [ "timestamp_mutex", "structUDPContext.html#a21a8e7e2bfc6d6362ca6b1ed216b8794", null ]
+    [ "timestamp_mutex", "structUDPContext.html#a21a8e7e2bfc6d6362ca6b1ed216b8794", null ],
+    [ "unordered_packet_info", "structUDPContext.html#a6d728c3c7f5cec1b047a0658d261f10d", null ]
 ];

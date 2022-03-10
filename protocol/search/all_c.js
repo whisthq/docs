@@ -15,7 +15,7 @@ var searchData=
   ['last_5fnack_5fpossibility_1040',['last_nack_possibility',['../structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247',1,'RingBuffer']]],
   ['last_5fnack_5fstatistics_5ftimer_1041',['last_nack_statistics_timer',['../structRingBuffer.html#ab14941089c8847eb375cbaaa66c82eea',1,'RingBuffer']]],
   ['last_5fnacked_5findex_1042',['last_nacked_index',['../structFrameData.html#aa204dd1d41815bff9f3df1576e4bd3ad',1,'FrameData']]],
-  ['last_5fnacked_5ftimer_1043',['last_nacked_timer',['../structFrameData.html#acdbba916ffa7e4acf878b84ed087d217',1,'FrameData']]],
+  ['last_5fnacked_5ftimer_1043',['last_nacked_timer',['../structFrameData.html#a8f07a1c3a4e3d3c4c9a6637b33488d35',1,'FrameData']]],
   ['last_5fnetwork_5fsettings_1044',['last_network_settings',['../structWhistRenderer.html#a8e0c0700c1f2455c9ddc44d0e9b83e5b',1,'WhistRenderer']]],
   ['last_5fnetwork_5fsettings_5ftime_1045',['last_network_settings_time',['../structUDPContext.html#a8017af7992ccbdb7140391fb7b6bebc3',1,'UDPContext']]],
   ['last_5fnonnack_5fpacket_5ftimer_1046',['last_nonnack_packet_timer',['../structFrameData.html#a7804671e5e00601c971a1857d3bc930d',1,'FrameData']]],

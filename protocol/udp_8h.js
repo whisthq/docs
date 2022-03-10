@@ -2,6 +2,7 @@ var udp_8h =
 [
     [ "WhistSegment", "structWhistSegment.html", "structWhistSegment" ],
     [ "GroupStats", "structGroupStats.html", "structGroupStats" ],
+    [ "UnOrderedPacketInfo", "structUnOrderedPacketInfo.html", "structUnOrderedPacketInfo" ],
     [ "MAX_PACKET_SEGMENT_SIZE", "udp_8h.html#a9b54f844079db47f8762b331092ab9b8", null ],
     [ "create_udp_listen_socket", "udp_8h.html#ab227c787d07a796738fef8cc10a1a0ad", null ],
     [ "create_udp_socket_context", "udp_8h.html#a497472418eb2d897f80004378d81eb17", null ],
@@ -15,5 +16,6 @@ var udp_8h =
     [ "udp_register_nack_buffer", "udp_8h.html#a7e247519b1444cd24765ff43fe459734", null ],
     [ "udp_register_ring_buffer", "udp_8h.html#a1922a1cff137ec95696935164dac88a9", null ],
     [ "udp_resend_packet", "udp_8h.html#a0e7e990691e824f416ac6cac56e9a938", null ],
-    [ "udp_reset_duplicate_packet_counter", "udp_8h.html#afcc89a19d0bd23c69e4f1030bbc952dc", null ]
+    [ "udp_reset_duplicate_packet_counter", "udp_8h.html#afcc89a19d0bd23c69e4f1030bbc952dc", null ],
+    [ "update_max_unordered_packets", "udp_8h.html#aca1aceb098277b1af092206703de6f38", null ]
 ];

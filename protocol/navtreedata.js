@@ -148,10 +148,10 @@ var NAVTREEINDEX =
 "structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac",
 "structLodePNGEncoderSettings.html#a2c5928b4172c75e27de467870f2ff946",
 "structTCPContext.html#a560c996f7a2b8ef09ad6b93ea5d0e782",
-"structWhistMultigestureMessage.html#a0f9d3a25a8f4d9353d73af678812d6ec",
-"udp_8h.html#a53bd961b505875950fc33444b170f72c",
-"whist_8h.html#aa005f29266f2ddf76cb57dc510516839",
-"winapi__input__driver_8c.html#a2c1317c0c5e8cd8590e4212d12136017"
+"structWhistMouseWheelMessage.html#a54817e6bea3ad8baf8cddd5f290e2807",
+"udp_8c.html#afef7e30cfe7786aa52b75f8cd9c68445",
+"whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128afdd533559472884fb786ecc006862235",
+"whist__memory_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

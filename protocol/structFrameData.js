@@ -9,7 +9,7 @@ var structFrameData =
     [ "frame_creation_timer", "structFrameData.html#a85439ab4bc5294bf3d4a0e681b72fa9c", null ],
     [ "id", "structFrameData.html#a17b526603f40e18dba49fa0f2cb75b27", null ],
     [ "last_nacked_index", "structFrameData.html#aa204dd1d41815bff9f3df1576e4bd3ad", null ],
-    [ "last_nacked_timer", "structFrameData.html#acdbba916ffa7e4acf878b84ed087d217", null ],
+    [ "last_nacked_timer", "structFrameData.html#a8f07a1c3a4e3d3c4c9a6637b33488d35", null ],
     [ "last_nonnack_packet_timer", "structFrameData.html#a7804671e5e00601c971a1857d3bc930d", null ],
     [ "num_fec_packets", "structFrameData.html#a378937724da15b0963192405d1126594", null ],
     [ "num_original_packets", "structFrameData.html#a78648a23cf6d7bec7ba095e79c90bcce", null ],

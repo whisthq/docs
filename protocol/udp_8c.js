@@ -17,6 +17,7 @@ var udp_8c =
     [ "MAX_TOTAL_PACKETS", "udp_8c.html#a890ae089e185134fdcefbc84329a6115", null ],
     [ "MIN_VALID_BUCKETS", "udp_8c.html#a1460dcee3b0c034518e8f893c81711ee", null ],
     [ "NUM_CONFIRMATION_MESSAGES", "udp_8c.html#ad3e6533153a99e7fa4b81352018a5b2a", null ],
+    [ "OUT_OF_ORDER_EWMA_FACTOR", "udp_8c.html#ad74b55a091ea3402979c0ee8aa86c5c3", null ],
     [ "PING_LAMBDA", "udp_8c.html#af2b8eb0b122983fbf3da1da372e479c2", null ],
     [ "RETRIES_ON_BUFFER_FULL", "udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb", null ],
     [ "STATISTICS_SECONDS", "udp_8c.html#a3190cca650071548d6b75370b0e5c41c", null ],
@@ -52,6 +53,7 @@ var udp_8c =
     [ "udp_register_ring_buffer", "udp_8c.html#a82678fad4b2b94e4a1e6e73bd07c9fcf", null ],
     [ "udp_resend_packet", "udp_8c.html#aee4b4dae17ebfff109828253768fec80", null ],
     [ "udp_reset_duplicate_packet_counter", "udp_8c.html#ac6db631a1374534b6342f5bd19d7f0df", null ],
+    [ "update_max_unordered_packets", "udp_8c.html#aca1aceb098277b1af092206703de6f38", null ],
     [ "latency", "udp_8c.html#a5120ece93dfddf5638a59e495e9c6d46", null ],
     [ "port_mappings", "udp_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a", null ]
 ];
