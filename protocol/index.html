@@ -291,7 +291,7 @@ IDEs</h3>
 <p>The build target for client is "WhistClient" and the server is "WhistServer".</p>
 <h3><a class="anchor" id="autotoc_md19"></a>
 MacOS CLI</h3>
-<p>You can simply run <code>cmake .</code> from the root folder, <code>/protocol/</code>, which will generate the makefiles. You can then run <code>make WhistClient</code> from the root folder, or cd into <code>/client</code> and run <code>make</code> to compile the MacOS client. The client will be in <code>/protocol/client/build64</code>.</p>
+<p>You can simply run <code>cmake -S . -B build</code> from the root folder, <code>protocol</code>, which will generate the makefiles in the <code>build</code> directory. You can then run <code>make WhistClient</code> from the <code>build</code> folder, or cd into <code>build/client</code> and run <code>make</code> to compile the MacOS client. The client will be in <code>protocol/build/client/build64</code>.</p>
 <h3><a class="anchor" id="autotoc_md20"></a>
 Linux CLI</h3>
 <p>A helpful TUI for configuring the build is <code>ccmake</code>. To use it, run <code>ccmake .</code> in the root of the protocol repo. You will initially see a blank screen because no cache has been built yet. Hit <code>c</code> to configure. This will populate the cache and show you a page with various settings. The setting you will likely care about is <code>CMAKE_BUILD_TYPE</code> which is one of <code>Debug</code> or <code>Release</code>.</p>
