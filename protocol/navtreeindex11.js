@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structStunEntry.html":[11,0,81],
 "structStunEntry.html#a10839151cc119dbc37f661fb95c781a2":[11,0,81,0],
 "structStunEntry.html#a2f91ab967aef8fd994899c1a931fcd75":[11,0,81,2],
 "structStunEntry.html#afbe51e6c2b5677fb46034ced462d1f7b":[11,0,81,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "structWhistKeyboardState.html#a93ffd7feaec986dc4a63438fd3195dbd":[11,0,106,2],
 "structWhistKeyboardState.html#aeec25eabc37f3876a2124ec667159abb":[11,0,106,4],
 "structWhistMouseButtonMessage.html":[11,0,107],
-"structWhistMouseButtonMessage.html#a4823ef318b2fc7ce5c789f0c6ade6b66":[11,0,107,0]
+"structWhistMouseButtonMessage.html#a4823ef318b2fc7ce5c789f0c6ade6b66":[11,0,107,0],
+"structWhistMouseButtonMessage.html#a4dd1fe88c2d80ac4ffec3c446903343f":[11,0,107,2]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structLodePNGDecompressSettings.html#a023aa5946c99934d40280850a4d8b204":[11,0,49,1],
 "structLodePNGDecompressSettings.html#a0bdb19d05ae04b4fce7ed8c72463ab57":[11,0,49,4],
 "structLodePNGDecompressSettings.html#a44a3616151a81422c237a5334752299c":[11,0,49,5],
 "structLodePNGDecompressSettings.html#a66e3608b541c64bb275c0ac1a80c3ec6":[11,0,49,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "structStatisticInfo.html#afe8574a434ae93aae0cdebddf61b66fe":[11,0,79,1],
 "structStreamResetData.html":[11,0,80],
 "structStreamResetData.html#a16f429be3a64a4361fe94c22a38fed9c":[11,0,80,1],
-"structStreamResetData.html#a294e70254183a8b43646a15159abad1e":[11,0,80,0]
+"structStreamResetData.html#a294e70254183a8b43646a15159abad1e":[11,0,80,0],
+"structStunEntry.html":[11,0,81]
 };
