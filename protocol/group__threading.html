@@ -116,6 +116,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gae8a340ccaa5123e24a31b255e0ace0ea"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__threading.html#ga1eedf1deef6e272cb639c0bc15a3e68f">WhistThreadPriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#gae8a340ccaa5123e24a31b255e0ace0ea">WhistThreadPriority</a></td></tr>
 <tr class="memdesc:gae8a340ccaa5123e24a31b255e0ace0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of thread priority values.  <a href="group__threading.html#gae8a340ccaa5123e24a31b255e0ace0ea">More...</a><br /></td></tr>
 <tr class="separator:gae8a340ccaa5123e24a31b255e0ace0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e0126a44c2a786c02d701e7478ad850"><td class="memItemLeft" align="right" valign="top">typedef SDL_TLSID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#ga3e0126a44c2a786c02d701e7478ad850">WhistThreadLocalStorageKey</a></td></tr>
+<tr class="memdesc:ga3e0126a44c2a786c02d701e7478ad850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-local storage key type.  <a href="group__threading.html#ga3e0126a44c2a786c02d701e7478ad850">More...</a><br /></td></tr>
+<tr class="separator:ga3e0126a44c2a786c02d701e7478ad850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd7b168960101edb6954f1844f31ac33"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#gadd7b168960101edb6954f1844f31ac33">WhistThreadLocalStorageDestructor</a>) (void *)</td></tr>
+<tr class="memdesc:gadd7b168960101edb6954f1844f31ac33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-local storage destructor function type.  <a href="group__threading.html#gadd7b168960101edb6954f1844f31ac33">More...</a><br /></td></tr>
+<tr class="separator:gadd7b168960101edb6954f1844f31ac33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -147,6 +153,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga72d531550fc8b439130e5d6c118267fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#ga72d531550fc8b439130e5d6c118267fe">whist_set_thread_priority</a> (<a class="el" href="group__threading.html#ga1eedf1deef6e272cb639c0bc15a3e68f">WhistThreadPriority</a> priority)</td></tr>
 <tr class="memdesc:ga72d531550fc8b439130e5d6c118267fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the priority for the calling thread.  <a href="group__threading.html#ga72d531550fc8b439130e5d6c118267fe">More...</a><br /></td></tr>
 <tr class="separator:ga72d531550fc8b439130e5d6c118267fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf147ba98a5b0acfaf2dc4505e7843bed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#ga3e0126a44c2a786c02d701e7478ad850">WhistThreadLocalStorageKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#gaf147ba98a5b0acfaf2dc4505e7843bed">whist_create_thread_local_storage</a> (void)</td></tr>
+<tr class="memdesc:gaf147ba98a5b0acfaf2dc4505e7843bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new thread-local storage entry.  <a href="group__threading.html#gaf147ba98a5b0acfaf2dc4505e7843bed">More...</a><br /></td></tr>
+<tr class="separator:gaf147ba98a5b0acfaf2dc4505e7843bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b14a0e9fa9160f3bf45885fffc825e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#ga7b14a0e9fa9160f3bf45885fffc825e0">whist_set_thread_local_storage</a> (<a class="el" href="group__threading.html#ga3e0126a44c2a786c02d701e7478ad850">WhistThreadLocalStorageKey</a> key, void *data, <a class="el" href="group__threading.html#gadd7b168960101edb6954f1844f31ac33">WhistThreadLocalStorageDestructor</a> destructor)</td></tr>
+<tr class="memdesc:ga7b14a0e9fa9160f3bf45885fffc825e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store data in a thread-local storage entry.  <a href="group__threading.html#ga7b14a0e9fa9160f3bf45885fffc825e0">More...</a><br /></td></tr>
+<tr class="separator:ga7b14a0e9fa9160f3bf45885fffc825e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd4e1f90ca357c1e8c826b445e5cd646"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#gadd4e1f90ca357c1e8c826b445e5cd646">whist_get_thread_local_storage</a> (<a class="el" href="group__threading.html#ga3e0126a44c2a786c02d701e7478ad850">WhistThreadLocalStorageKey</a> key)</td></tr>
+<tr class="memdesc:gadd4e1f90ca357c1e8c826b445e5cd646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve data from a thread-local storage entry.  <a href="group__threading.html#gadd4e1f90ca357c1e8c826b445e5cd646">More...</a><br /></td></tr>
+<tr class="separator:gadd4e1f90ca357c1e8c826b445e5cd646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf474288fd6c797f86d80dc32476bd86d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#gaf474288fd6c797f86d80dc32476bd86d">whist_sleep</a> (uint32_t ms)</td></tr>
 <tr class="memdesc:gaf474288fd6c797f86d80dc32476bd86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep for at least a given number of milliseconds.  <a href="group__threading.html#gaf474288fd6c797f86d80dc32476bd86d">More...</a><br /></td></tr>
 <tr class="separator:gaf474288fd6c797f86d80dc32476bd86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,6 +312,40 @@ Functions</h2></td></tr>
 
 <p>System-specific thread ID type. </p>
 <p>The meaning of this depends on the system. </p>
+
+</div>
+</div>
+<a id="gadd7b168960101edb6954f1844f31ac33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd7b168960101edb6954f1844f31ac33">&#9670;&nbsp;</a></span>WhistThreadLocalStorageDestructor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* WhistThreadLocalStorageDestructor) (void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread-local storage destructor function type. </p>
+<p>Thread-local storage cleanup functions must match this signature. </p>
+
+</div>
+</div>
+<a id="ga3e0126a44c2a786c02d701e7478ad850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e0126a44c2a786c02d701e7478ad850">&#9670;&nbsp;</a></span>WhistThreadLocalStorageKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef SDL_TLSID <a class="el" href="group__threading.html#ga3e0126a44c2a786c02d701e7478ad850">WhistThreadLocalStorageKey</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread-local storage key type. </p>
+<p>This is used to store and retrieve data accessible only to the current thread. </p>
 
 </div>
 </div>
@@ -489,6 +538,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaf147ba98a5b0acfaf2dc4505e7843bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf147ba98a5b0acfaf2dc4505e7843bed">&#9670;&nbsp;</a></span>whist_create_thread_local_storage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__threading.html#ga3e0126a44c2a786c02d701e7478ad850">WhistThreadLocalStorageKey</a> whist_create_thread_local_storage </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new thread-local storage entry. </p>
+<dl class="section return"><dt>Returns</dt><dd>The thread-local storage key for the new entry. </dd></dl>
+
+</div>
+</div>
 <a id="gaccf861df01894d3473ca8faaf0a83938"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaccf861df01894d3473ca8faaf0a83938">&#9670;&nbsp;</a></span>whist_destroy_cond()</h2>
 
@@ -622,6 +692,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gadd4e1f90ca357c1e8c826b445e5cd646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd4e1f90ca357c1e8c826b445e5cd646">&#9670;&nbsp;</a></span>whist_get_thread_local_storage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* whist_get_thread_local_storage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__threading.html#ga3e0126a44c2a786c02d701e7478ad850">WhistThreadLocalStorageKey</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve data from a thread-local storage entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The thread-local storage key from which to retrieve data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The data stored in the thread-local storage entry. </dd></dl>
+
+</div>
+</div>
 <a id="ga5cade4228b0827b784005954836fa1fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5cade4228b0827b784005954836fa1fd">&#9670;&nbsp;</a></span>whist_init_multithreading()</h2>
 
@@ -721,6 +818,50 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value of the semaphore. </dd></dl>
+
+</div>
+</div>
+<a id="ga7b14a0e9fa9160f3bf45885fffc825e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b14a0e9fa9160f3bf45885fffc825e0">&#9670;&nbsp;</a></span>whist_set_thread_local_storage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_set_thread_local_storage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__threading.html#ga3e0126a44c2a786c02d701e7478ad850">WhistThreadLocalStorageKey</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__threading.html#gadd7b168960101edb6954f1844f31ac33">WhistThreadLocalStorageDestructor</a>&#160;</td>
+          <td class="paramname"><em>destructor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store data in a thread-local storage entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The thread-local storage key in which to store data. </td></tr>
+    <tr><td class="paramname">data</td><td>The data to store. </td></tr>
+    <tr><td class="paramname">destructor</td><td>The cleanup function to call when destroying the thread-local storage data. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

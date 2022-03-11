@@ -1,5 +1,18 @@
 var NAVTREEINDEX15 =
 {
+"whist__frame_8h.html#a7720723895cf99ac2e4a848c2eda9554":[12,0,2,2,5,5],
+"whist__frame_8h.html#a84e8623194435c55447f0ebb656150ec":[12,0,2,2,5,2],
+"whist__frame_8h.html#a8bf1e16a380892934c327a95bd6115bb":[12,0,2,2,5,6],
+"whist__frame_8h.html#a9923ea9efa79669dfe4e38ae0e9b48b8":[12,0,2,2,5,13],
+"whist__frame_8h.html#abb3d0658b9c1e49963833c4d12febfc3":[12,0,2,2,5,10],
+"whist__frame_8h.html#acdeb42e88b9e2069dbb195e4a28efa61":[12,0,2,2,5,11],
+"whist__frame_8h.html#af972e86db0d7f39d6abb7fc0ba8eff5e":[12,0,2,2,5,8],
+"whist__frame_8h_source.html":[12,0,2,2,5],
+"whist__memory_8c.html":[12,0,2,2,6],
+"whist__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c":[12,0,2,2,6,3],
+"whist__memory_8c.html#a4c6d7bdba62c60dcd15111ecbf34edb7":[12,0,2,2,6,2],
+"whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a":[12,0,2,2,6,4],
+"whist__memory_8h.html":[12,0,2,2,7],
 "whist__memory_8h_source.html":[12,0,2,2,7],
 "win__clipboard_8c.html":[12,0,2,1,7],
 "winapi__input__driver_8c.html":[12,0,2,5,6],

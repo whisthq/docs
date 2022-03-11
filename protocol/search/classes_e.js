@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['packetcountinfo_2473',['PacketCountInfo',['../structPacketCountInfo.html',1,'']]],
-  ['privatekeydata_2474',['PrivateKeyData',['../structPrivateKeyData.html',1,'']]]
+  ['packetcountinfo_2478',['PacketCountInfo',['../structPacketCountInfo.html',1,'']]],
+  ['privatekeydata_2479',['PrivateKeyData',['../structPrivateKeyData.html',1,'']]]
 ];
