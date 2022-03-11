@@ -5,7 +5,7 @@ var searchData=
   ['nack_5fpackets_5fmissing_5fframe_4806',['NACK_PACKETS_MISSING_FRAME',['../ringbuffer_8c.html#aaf55b2f848a5a671949daa34c01d0d71',1,'ringbuffer.c']]],
   ['nack_5fstatistics_5fsec_4807',['NACK_STATISTICS_SEC',['../ringbuffer_8c.html#a7b3c2ea61f618a92f70234842e1d8ab8',1,'ringbuffer.c']]],
   ['new_5fbitrate_5fduration_5fin_5fsec_4808',['NEW_BITRATE_DURATION_IN_SEC',['../network__algorithm_8c.html#a036bacb65f7a940624f7ed7ce3156540',1,'network_algorithm.c']]],
-  ['new_5fgf_5fmatrix_4809',['NEW_GF_MATRIX',['../rs_8c.html#ac8e186fd13be78f0aa88537e1c19f672',1,'rs.c']]],
+  ['new_5fgf_5fmatrix_4809',['NEW_GF_MATRIX',['../lugi__rs_8c.html#ac8e186fd13be78f0aa88537e1c19f672',1,'lugi_rs.c']]],
   ['newline_4810',['NEWLINE',['../logging_8h.html#a806511f4930171733227c99101dc0606',1,'logging.h']]],
   ['no_5flog_4811',['NO_LOG',['../logging_8h.html#a166c2449cbc8389076f29f5a1360338e',1,'logging.h']]],
   ['no_5fnacks_5fduring_5fiframe_4812',['NO_NACKS_DURING_IFRAME',['../client_2video_8c.html#afecb135e60c0c94fbb354b03bfb643a9',1,'video.c']]],

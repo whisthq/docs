@@ -11,5 +11,7 @@ var searchData=
   ['logging_2ec_2610',['logging.c',['../logging_8c.html',1,'']]],
   ['logging_2eh_2611',['logging.h',['../logging_8h.html',1,'']]],
   ['ltr_2ec_2612',['ltr.c',['../ltr_8c.html',1,'']]],
-  ['ltr_2eh_2613',['ltr.h',['../ltr_8h.html',1,'']]]
+  ['ltr_2eh_2613',['ltr.h',['../ltr_8h.html',1,'']]],
+  ['lugi_5frs_2ec_2614',['lugi_rs.c',['../lugi__rs_8c.html',1,'']]],
+  ['lugi_5frs_2eh_2615',['lugi_rs.h',['../lugi__rs_8h.html',1,'']]]
 ];

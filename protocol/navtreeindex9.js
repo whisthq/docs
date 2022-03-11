@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structDebugConsoleOverrideValues.html#a780ac7d7ee3f57ad74cc14b915f6355a":[11,0,20,2],
 "structDebugConsoleOverrideValues.html#a8b256cd1bcc979b4523e067484656a13":[11,0,20,0],
 "structDebugConsoleOverrideValues.html#a98e29b3292bdd95ea1907657a9d81795":[11,0,20,6],
 "structDecodedFrameData.html":[11,0,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structLodePNGDecoderSettings.html#aa1212905c3f73d9fffef2c04a220d951":[11,0,48,6],
 "structLodePNGDecoderSettings.html#aa8f3907b3dcaf09892a752806be2fc59":[11,0,48,3],
 "structLodePNGDecoderSettings.html#af26f2b29cd338ce4476bee9571a0818a":[11,0,48,0],
-"structLodePNGDecompressSettings.html":[11,0,49],
-"structLodePNGDecompressSettings.html#a023aa5946c99934d40280850a4d8b204":[11,0,49,1]
+"structLodePNGDecompressSettings.html":[11,0,49]
 };

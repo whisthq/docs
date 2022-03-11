@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ack_5frefresh_5fms_4582',['ACK_REFRESH_MS',['../whist_8h.html#a407e78922a862311fd4f35eeef889630',1,'whist.h']]],
-  ['addmul_4583',['addmul',['../rs_8c.html#ae0cd0f1d47314d011206cb5b59579e15',1,'rs.c']]],
+  ['addmul_4583',['addmul',['../lugi__rs_8c.html#ae0cd0f1d47314d011206cb5b59579e15',1,'lugi_rs.c']]],
   ['app_5fpath_5fmaxlen_4584',['APP_PATH_MAXLEN',['../whist__client_8c.html#a3a90209de834d7d87f20ea1f1d3408f4',1,'whist_client.c']]],
   ['app_5fversion_4585',['APP_VERSION',['../nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806',1,'nvidiacapture.c']]],
   ['array_5flength_4586',['ARRAY_LENGTH',['../whist_8h.html#a7539f9740177f669ce68a77ae64f38b5',1,'whist.h']]],

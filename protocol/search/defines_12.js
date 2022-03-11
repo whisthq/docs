@@ -9,9 +9,9 @@ var searchData=
   ['tcp_5fping_5fmax_5freconnection_5ftime_5fsec_4882',['TCP_PING_MAX_RECONNECTION_TIME_SEC',['../tcp_8c.html#a8e8e2cde1b1ed4dcefbdfd99c5feb076',1,'tcp.c']]],
   ['tcp_5fping_5fmax_5fwait_5fsec_4883',['TCP_PING_MAX_WAIT_SEC',['../tcp_8c.html#a50f11564d710626f752cb6977e324b6a',1,'tcp.c']]],
   ['tcp_5fsegment_5fsize_4884',['TCP_SEGMENT_SIZE',['../tcp_8c.html#ab8c6b65188e80c3ec91782df45b9f787',1,'tcp.c']]],
-  ['tick_4885',['TICK',['../rs_8c.html#ac04e1397a4feea024faaa833e7d6eaad',1,'rs.c']]],
+  ['tick_4885',['TICK',['../lugi__rs_8c.html#ac04e1397a4feea024faaa833e7d6eaad',1,'lugi_rs.c']]],
   ['time_5frun_4886',['TIME_RUN',['../log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65',1,'log_statistic.h']]],
   ['to_5fregion_5fdata_4887',['TO_REGION_DATA',['../whist__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c',1,'whist_memory.c']]],
   ['to_5fregion_5fheader_4888',['TO_REGION_HEADER',['../whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a',1,'whist_memory.c']]],
-  ['tock_4889',['TOCK',['../rs_8c.html#ac19e93f7614ce87ea43e4366c9fb596c',1,'rs.c']]]
+  ['tock_4889',['TOCK',['../lugi__rs_8c.html#ac19e93f7614ce87ea43e4366c9fb596c',1,'lugi_rs.c']]]
 ];

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['dbus_5faddress_5fmaxlen_4624',['DBUS_ADDRESS_MAXLEN',['../whist_8h.html#a3f3913fffc95a27d40fd3c649d4803b6',1,'whist.h']]],
-  ['ddb_4625',['DDB',['../rs_8c.html#a8295f13841c6a2f892f522778ae9d261',1,'rs.c']]],
-  ['deb_4626',['DEB',['../rs_8c.html#afc35b6331381230180ce730d1591e08f',1,'rs.c']]],
+  ['ddb_4625',['DDB',['../lugi__rs_8c.html#a8295f13841c6a2f892f522778ae9d261',1,'lugi_rs.c']]],
+  ['deb_4626',['DEB',['../lugi__rs_8c.html#afc35b6331381230180ce730d1591e08f',1,'lugi_rs.c']]],
   ['debug_5flevel_4627',['DEBUG_LEVEL',['../logging_8h.html#ac2d33ccaf63f5d5b66552b95426c0137',1,'logging.h']]],
   ['debug_5ftag_4628',['DEBUG_TAG',['../logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064',1,'logging.h']]],
   ['decoded_5fbytes_5fper_5fframe_4629',['DECODED_BYTES_PER_FRAME',['../client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7',1,'audio.c']]],

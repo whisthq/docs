@@ -13,7 +13,7 @@ var searchData=
   ['add_5fid_15',['add_id',['../structLodePNGEncoderSettings.html#a893aa542aa7c122c32ee36dd716fbcb2',1,'LodePNGEncoderSettings']]],
   ['add_5fthread_5fto_5fclient_5factive_5fdependents_16',['add_thread_to_client_active_dependents',['../client_8c.html#a4095d2d382a7e5c347db88558a546df8',1,'add_thread_to_client_active_dependents(void):&#160;client.c'],['../client_8h.html#a4095d2d382a7e5c347db88558a546df8',1,'add_thread_to_client_active_dependents(void):&#160;client.c']]],
   ['additional_5fcommand_17',['additional_command',['../structWhistKeyboardLayout.html#a9d6ee3e9b3acd8e0da3bae8555997c57',1,'WhistKeyboardLayout']]],
-  ['addmul_18',['addmul',['../rs_8c.html#ae0cd0f1d47314d011206cb5b59579e15',1,'rs.c']]],
+  ['addmul_18',['addmul',['../lugi__rs_8c.html#ae0cd0f1d47314d011206cb5b59579e15',1,'lugi_rs.c']]],
   ['addr_19',['addr',['../structTCPContext.html#a9c7f69bf9020bd2b2abdf4c3c904aa1d',1,'TCPContext']]],
   ['adjust_5ftimer_20',['adjust_timer',['../group__timers.html#ga36d3842866523095ef393c383b4fcb5b',1,'adjust_timer(WhistTimer *timer_opaque, int num_seconds):&#160;clock.c'],['../group__timers.html#ga36d3842866523095ef393c383b4fcb5b',1,'adjust_timer(WhistTimer *timer, int num_seconds):&#160;clock.c']]],
   ['aes_2ec_21',['aes.c',['../aes_8c.html',1,'']]],

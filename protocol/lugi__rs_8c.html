@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: whist/utils/rs.c File Reference</title>
+<title>Whist Protocol: whist/fec/lugi_rs.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('rs_8c.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('lugi__rs_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,13 +87,13 @@ $(document).ready(function(){initNavTree('rs_8c.html',''); initResizable(); });
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rs.c File Reference</div>  </div>
+<div class="title">lugi_rs.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="rs_8h_source.html">rs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lugi__rs_8h_source.html">lugi_rs.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -102,57 +102,57 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a89a5ee5c8840406c120aadb8bef742ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>&#160;&#160;&#160;8	/* code over GF(2**GF_BITS) - change to suit */</td></tr>
+<tr class="memitem:a89a5ee5c8840406c120aadb8bef742ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>&#160;&#160;&#160;8	/* code over GF(2**GF_BITS) - change to suit */</td></tr>
 <tr class="separator:a89a5ee5c8840406c120aadb8bef742ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a7967273c74d8ae96b68a3b84c6951ca4">GF_SIZE</a>&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td></tr>
+<tr class="memitem:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a7967273c74d8ae96b68a3b84c6951ca4">GF_SIZE</a>&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="lugi__rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td></tr>
 <tr class="separator:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc35b6331381230180ce730d1591e08f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#afc35b6331381230180ce730d1591e08f">DEB</a>(x)</td></tr>
+<tr class="memitem:afc35b6331381230180ce730d1591e08f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#afc35b6331381230180ce730d1591e08f">DEB</a>(x)</td></tr>
 <tr class="separator:afc35b6331381230180ce730d1591e08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8295f13841c6a2f892f522778ae9d261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a8295f13841c6a2f892f522778ae9d261">DDB</a>(x)</td></tr>
+<tr class="memitem:a8295f13841c6a2f892f522778ae9d261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a8295f13841c6a2f892f522778ae9d261">DDB</a>(x)</td></tr>
 <tr class="separator:a8295f13841c6a2f892f522778ae9d261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac04e1397a4feea024faaa833e7d6eaad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ac04e1397a4feea024faaa833e7d6eaad">TICK</a>(x)</td></tr>
+<tr class="memitem:ac04e1397a4feea024faaa833e7d6eaad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#ac04e1397a4feea024faaa833e7d6eaad">TICK</a>(x)</td></tr>
 <tr class="separator:ac04e1397a4feea024faaa833e7d6eaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac19e93f7614ce87ea43e4366c9fb596c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ac19e93f7614ce87ea43e4366c9fb596c">TOCK</a>(x)</td></tr>
+<tr class="memitem:ac19e93f7614ce87ea43e4366c9fb596c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#ac19e93f7614ce87ea43e4366c9fb596c">TOCK</a>(x)</td></tr>
 <tr class="separator:ac19e93f7614ce87ea43e4366c9fb596c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a7967273c74d8ae96b68a3b84c6951ca4">GF_SIZE</a>&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td></tr>
+<tr class="memitem:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a7967273c74d8ae96b68a3b84c6951ca4">GF_SIZE</a>&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="lugi__rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td></tr>
 <tr class="separator:a7967273c74d8ae96b68a3b84c6951ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfdaf32eae545290273a12f93383a5eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#adfdaf32eae545290273a12f93383a5eb">SWAP</a>(a,  b,  t)&#160;&#160;&#160;{t tmp; tmp=a; a=b; b=tmp;}</td></tr>
+<tr class="memitem:adfdaf32eae545290273a12f93383a5eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#adfdaf32eae545290273a12f93383a5eb">SWAP</a>(a,  b,  t)&#160;&#160;&#160;{t tmp; tmp=a; a=b; b=tmp;}</td></tr>
 <tr class="separator:adfdaf32eae545290273a12f93383a5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1d3271c0183779d5adb17b4c12b8adc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#aa1d3271c0183779d5adb17b4c12b8adc">gf_mul</a>(x,  y)&#160;&#160;&#160;gf_mul_table[x][y]</td></tr>
+<tr class="memitem:aa1d3271c0183779d5adb17b4c12b8adc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#aa1d3271c0183779d5adb17b4c12b8adc">gf_mul</a>(x,  y)&#160;&#160;&#160;gf_mul_table[x][y]</td></tr>
 <tr class="separator:aa1d3271c0183779d5adb17b4c12b8adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea929fad0524938efe9b4895d36e4353"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#aea929fad0524938efe9b4895d36e4353">USE_GF_MULC</a>&#160;&#160;&#160;<a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> * __gf_mulc_</td></tr>
+<tr class="memitem:aea929fad0524938efe9b4895d36e4353"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#aea929fad0524938efe9b4895d36e4353">USE_GF_MULC</a>&#160;&#160;&#160;<a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> * __gf_mulc_</td></tr>
 <tr class="separator:aea929fad0524938efe9b4895d36e4353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ed05df084490d459a89f7fd151e8f53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a4ed05df084490d459a89f7fd151e8f53">GF_MULC0</a>(c)&#160;&#160;&#160;__gf_mulc_ = gf_mul_table[c]</td></tr>
+<tr class="memitem:a4ed05df084490d459a89f7fd151e8f53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a4ed05df084490d459a89f7fd151e8f53">GF_MULC0</a>(c)&#160;&#160;&#160;__gf_mulc_ = gf_mul_table[c]</td></tr>
 <tr class="separator:a4ed05df084490d459a89f7fd151e8f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2409a0b9491c782a801d493f04bb961"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#aa2409a0b9491c782a801d493f04bb961">GF_ADDMULC</a>(dst,  x)&#160;&#160;&#160;dst ^= __gf_mulc_[x]</td></tr>
+<tr class="memitem:aa2409a0b9491c782a801d493f04bb961"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#aa2409a0b9491c782a801d493f04bb961">GF_ADDMULC</a>(dst,  x)&#160;&#160;&#160;dst ^= __gf_mulc_[x]</td></tr>
 <tr class="separator:aa2409a0b9491c782a801d493f04bb961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e186fd13be78f0aa88537e1c19f672"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ac8e186fd13be78f0aa88537e1c19f672">NEW_GF_MATRIX</a>(rows,  cols)&#160;&#160;&#160;(<a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> *)my_malloc(rows * cols * sizeof(<a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a>), &quot; ## __LINE__ ## &quot; )</td></tr>
+<tr class="memitem:ac8e186fd13be78f0aa88537e1c19f672"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#ac8e186fd13be78f0aa88537e1c19f672">NEW_GF_MATRIX</a>(rows,  cols)&#160;&#160;&#160;(<a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> *)my_malloc(rows * cols * sizeof(<a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a>), &quot; ## __LINE__ ## &quot; )</td></tr>
 <tr class="separator:ac8e186fd13be78f0aa88537e1c19f672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0cd0f1d47314d011206cb5b59579e15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ae0cd0f1d47314d011206cb5b59579e15">addmul</a>(dst,  src,  c,  sz)&#160;&#160;&#160;if (c != 0) addmul1(dst, src, c, sz)</td></tr>
+<tr class="memitem:ae0cd0f1d47314d011206cb5b59579e15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#ae0cd0f1d47314d011206cb5b59579e15">addmul</a>(dst,  src,  c,  sz)&#160;&#160;&#160;if (c != 0) addmul1(dst, src, c, sz)</td></tr>
 <tr class="separator:ae0cd0f1d47314d011206cb5b59579e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a870020ccb79b9bf241010e975e029bde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a870020ccb79b9bf241010e975e029bde">UNROLL</a>&#160;&#160;&#160;16 /* 1, 4, 8, 16 */</td></tr>
+<tr class="memitem:a870020ccb79b9bf241010e975e029bde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a870020ccb79b9bf241010e975e029bde">UNROLL</a>&#160;&#160;&#160;16 /* 1, 4, 8, 16 */</td></tr>
 <tr class="separator:a870020ccb79b9bf241010e975e029bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15ad3ddb6b7ce506fd6eea72670e67a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a15ad3ddb6b7ce506fd6eea72670e67a3">FEC_MAGIC</a>&#160;&#160;&#160;0xFECC0DEC</td></tr>
+<tr class="memitem:a15ad3ddb6b7ce506fd6eea72670e67a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a15ad3ddb6b7ce506fd6eea72670e67a3">FEC_MAGIC</a>&#160;&#160;&#160;0xFECC0DEC</td></tr>
 <tr class="separator:a15ad3ddb6b7ce506fd6eea72670e67a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a8f25a50daf29ce2cee1ec038a4d744ea"><td class="memItemLeft" align="right" valign="top">typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a8f25a50daf29ce2cee1ec038a4d744ea">u_long</a></td></tr>
+<tr class="memitem:a8f25a50daf29ce2cee1ec038a4d744ea"><td class="memItemLeft" align="right" valign="top">typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a8f25a50daf29ce2cee1ec038a4d744ea">u_long</a></td></tr>
 <tr class="separator:a8f25a50daf29ce2cee1ec038a4d744ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a339b4ec591f7b3fed03e4be7c9482508"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a></td></tr>
+<tr class="memitem:a339b4ec591f7b3fed03e4be7c9482508"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a></td></tr>
 <tr class="separator:a339b4ec591f7b3fed03e4be7c9482508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a56f8ba3b3040480c038d9c428422eaae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a56f8ba3b3040480c038d9c428422eaae">init_rs</a> ()</td></tr>
+<tr class="memitem:a56f8ba3b3040480c038d9c428422eaae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a56f8ba3b3040480c038d9c428422eaae">init_rs</a> ()</td></tr>
 <tr class="separator:a56f8ba3b3040480c038d9c428422eaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a481f66afa97a9acf1a285a9ca3d0fcf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a481f66afa97a9acf1a285a9ca3d0fcf2">rs_free</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *p)</td></tr>
+<tr class="memitem:a481f66afa97a9acf1a285a9ca3d0fcf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a481f66afa97a9acf1a285a9ca3d0fcf2">rs_free</a> (<a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *p)</td></tr>
 <tr class="separator:a481f66afa97a9acf1a285a9ca3d0fcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae11f19af5f46120677b14217e359c626"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ae11f19af5f46120677b14217e359c626">rs_new</a> (int k, int n)</td></tr>
+<tr class="memitem:ae11f19af5f46120677b14217e359c626"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#ae11f19af5f46120677b14217e359c626">rs_new</a> (int k, int n)</td></tr>
 <tr class="separator:ae11f19af5f46120677b14217e359c626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5a2f7985991c78259d9f095b38f7d1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#ab5a2f7985991c78259d9f095b38f7d1a">rs_encode</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *code, void *src0[], void *fec0, int index, int sz)</td></tr>
+<tr class="memitem:ab5a2f7985991c78259d9f095b38f7d1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#ab5a2f7985991c78259d9f095b38f7d1a">rs_encode</a> (<a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *code, void *src0[], void *fec0, int index, int sz)</td></tr>
 <tr class="separator:ab5a2f7985991c78259d9f095b38f7d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a681b19d03a43dfea82ea78fc5a4857b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8c.html#a681b19d03a43dfea82ea78fc5a4857b0">rs_decode</a> (<a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *code, void *pkt0[], int index[], int sz)</td></tr>
+<tr class="memitem:a681b19d03a43dfea82ea78fc5a4857b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a681b19d03a43dfea82ea78fc5a4857b0">rs_decode</a> (<a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *code, void *pkt0[], int index[], int sz)</td></tr>
 <tr class="separator:a681b19d03a43dfea82ea78fc5a4857b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -341,7 +341,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GF_SIZE&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td>
+          <td class="memname">#define GF_SIZE&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="lugi__rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -355,7 +355,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GF_SIZE&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td>
+          <td class="memname">#define GF_SIZE&#160;&#160;&#160;((1 &lt;&lt; <a class="el" href="lugi__rs_8c.html#a89a5ee5c8840406c120aadb8bef742ab">GF_BITS</a>) - 1)	/* powers of \alpha */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -383,7 +383,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> *)my_malloc(rows * cols * sizeof(<a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a>), &quot; ## __LINE__ ## &quot; )</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> *)my_malloc(rows * cols * sizeof(<a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a>), &quot; ## __LINE__ ## &quot; )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -481,7 +481,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define USE_GF_MULC&#160;&#160;&#160;<a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> * __gf_mulc_</td>
+          <td class="memname">#define USE_GF_MULC&#160;&#160;&#160;<a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> * __gf_mulc_</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -496,7 +496,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef unsigned char <a class="el" href="rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a></td>
+          <td class="memname">typedef unsigned char <a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -510,7 +510,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef unsigned long <a class="el" href="rs_8c.html#a8f25a50daf29ce2cee1ec038a4d744ea">u_long</a></td>
+          <td class="memname">typedef unsigned long <a class="el" href="lugi__rs_8c.html#a8f25a50daf29ce2cee1ec038a4d744ea">u_long</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -544,7 +544,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int rs_decode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
           <td class="paramname"><em>code</em>, </td>
         </tr>
         <tr>
@@ -584,7 +584,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void rs_encode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
           <td class="paramname"><em>code</em>, </td>
         </tr>
         <tr>
@@ -630,7 +630,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void rs_free </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
@@ -646,7 +646,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a>* rs_new </td>
+          <td class="memname"><a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a>* rs_new </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>k</em>, </td>
@@ -672,7 +672,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_e68502ba7741b9477bffd325bfc1c340.html">utils</a></li><li class="navelem"><a class="el" href="rs_8c.html">rs.c</a></li>
+    <li class="navelem"><a class="el" href="dir_2163314886daa89b67d58b0e72b2c23f.html">whist</a></li><li class="navelem"><a class="el" href="dir_0d0eceae74ecea1c5e407aa9238236db.html">fec</a></li><li class="navelem"><a class="el" href="lugi__rs_8c.html">lugi_rs.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

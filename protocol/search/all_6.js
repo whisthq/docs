@@ -23,7 +23,7 @@ var searchData=
   ['fec_5fget_5fdecoded_5fbuffer_534',['fec_get_decoded_buffer',['../fec_8c.html#a68e2a970d7c3d4b81353174da6809b7a',1,'fec_get_decoded_buffer(FECDecoder *fec_decoder, void *buffer):&#160;fec.c'],['../fec_8h.html#a68e2a970d7c3d4b81353174da6809b7a',1,'fec_get_decoded_buffer(FECDecoder *fec_decoder, void *buffer):&#160;fec.c']]],
   ['fec_5fget_5fencoded_5fbuffers_535',['fec_get_encoded_buffers',['../fec_8c.html#a685b2d430114a8b257ef3a28a2ceb14b',1,'fec_get_encoded_buffers(FECEncoder *fec_encoder, void **buffers, int *buffer_sizes):&#160;fec.c'],['../fec_8h.html#a685b2d430114a8b257ef3a28a2ceb14b',1,'fec_get_encoded_buffers(FECEncoder *fec_encoder, void **buffers, int *buffer_sizes):&#160;fec.c']]],
   ['fec_5fheader_5fsize_536',['FEC_HEADER_SIZE',['../fec_8h.html#a3c9778b56862875471dba66573fc4b17',1,'fec.h']]],
-  ['fec_5fmagic_537',['FEC_MAGIC',['../rs_8c.html#a15ad3ddb6b7ce506fd6eea72670e67a3',1,'rs.c']]],
+  ['fec_5fmagic_537',['FEC_MAGIC',['../lugi__rs_8c.html#a15ad3ddb6b7ce506fd6eea72670e67a3',1,'lugi_rs.c']]],
   ['fec_5fpacket_5fratios_538',['fec_packet_ratios',['../structUDPContext.html#a69c3219f43a22c2c1638dcbabd7b4dbd',1,'UDPContext']]],
   ['fec_5fpackets_5freceived_539',['fec_packets_received',['../structFrameData.html#a1ebb5927b1a380da36425ae408088d41',1,'FrameData']]],
   ['fec_5fparms_540',['fec_parms',['../structfec__parms.html',1,'']]],

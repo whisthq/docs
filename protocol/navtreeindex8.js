@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"sdl__utils_8h.html":[12,0,0,19],
 "sdl__utils_8h.html#a1081ae59fbf90e16f9d12ef7a97f0555":[12,0,0,19,9],
 "sdl__utils_8h.html#a145fbcb208daa2a4219d39df6896585d":[12,0,0,19,13],
 "sdl__utils_8h.html#a2a20ede981c49da978e972e7e61629d8":[12,0,0,19,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structDebugConsoleOverrideValues.html#a16329417c7f5ff2c6f361e4ceb9bbcca":[11,0,20,3],
 "structDebugConsoleOverrideValues.html#a335ac2dc7c1bc5309e5088e329b1cc78":[11,0,20,7],
 "structDebugConsoleOverrideValues.html#a5161d9392ed5a50daa3a6c41e3356e4c":[11,0,20,5],
-"structDebugConsoleOverrideValues.html#a6cd189ee8844ac67cb6b01a2f2403e05":[11,0,20,4],
-"structDebugConsoleOverrideValues.html#a780ac7d7ee3f57ad74cc14b915f6355a":[11,0,20,2]
+"structDebugConsoleOverrideValues.html#a6cd189ee8844ac67cb6b01a2f2403e05":[11,0,20,4]
 };

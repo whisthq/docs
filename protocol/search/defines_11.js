@@ -26,6 +26,6 @@ var searchData=
   ['stream_5freset_5frequest_5finterval_5fms_4871',['STREAM_RESET_REQUEST_INTERVAL_MS',['../ringbuffer_8c.html#a8ebb72b79427224fce1402fe69cda5c1',1,'ringbuffer.c']]],
   ['stun_5fip_4872',['STUN_IP',['../whist_2network_2network_8h.html#a68f8e6814da9faad6d4eb32379d58412',1,'network.h']]],
   ['stun_5fport_4873',['STUN_PORT',['../whist_2network_2network_8h.html#a81e4fdb2a08afd19ef501855bb9fbeec',1,'network.h']]],
-  ['swap_4874',['SWAP',['../rs_8c.html#adfdaf32eae545290273a12f93383a5eb',1,'rs.c']]],
+  ['swap_4874',['SWAP',['../lugi__rs_8c.html#adfdaf32eae545290273a12f93383a5eb',1,'lugi_rs.c']]],
   ['sync_5ftcp_5floop_5ftarget_5fperiod_5fms_4875',['SYNC_TCP_LOOP_TARGET_PERIOD_MS',['../sync__packets_8c.html#a43f8b24e694575df3b5eb61cbe5f98a4',1,'sync_packets.c']]]
 ];
