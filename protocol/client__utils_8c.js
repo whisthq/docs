@@ -1,11 +1,9 @@
 var client__utils_8c =
 [
     [ "INCOMING_MAXLEN", "client__utils_8c.html#a4decb6160c988d42e074c1ebf1d5da8e", null ],
-    [ "alloc_parsed_args", "client__utils_8c.html#a9680bc0923e6e0149808036e92f33cd4", null ],
-    [ "client_parse_args", "client__utils_8c.html#ad0e52afd70ec6e9b4961be465c729bde", null ],
+    [ "client_parse_args", "client__utils_8c.html#aa551bcaa5c0b2ee856a8f3edd3e97228", null ],
     [ "COMMAND_LINE_CALLBACK_OPTION", "client__utils_8c.html#aaf0d5dc08b1234ac6e46583bb1cc08a7", null ],
     [ "COMMAND_LINE_INT_OPTION", "client__utils_8c.html#a430fbb0a44a1bb01ae188a0860f0acce", null ],
-    [ "free_parsed_args", "client__utils_8c.html#a44fd0b41f8dec9bae4a8e081703c014b", null ],
     [ "read_piped_arguments", "client__utils_8c.html#ac2c155b9515a1ce8f319a5f18e5207ae", null ],
     [ "send_message_dimensions", "client__utils_8c.html#a5d27f8bccbaa49059d82571e47108667", null ],
     [ "update_mouse_motion", "client__utils_8c.html#a969e9a6a7402e5b5aab11e8d4dbaa257", null ],
@@ -19,9 +17,7 @@ var client__utils_8c =
     [ "output_height", "client__utils_8c.html#adcd8781fcb92d925977bdd50db4751ca", null ],
     [ "output_width", "client__utils_8c.html#af8e381c7a5a395509e3bb5ba61c7cbcf", null ],
     [ "port_mappings", "client__utils_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a", null ],
-    [ "server_ip", "client__utils_8c.html#a07366317ac5c1d8d1ce9c82baf1d10c2", null ],
     [ "update_bitrate", "client__utils_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5", null ],
-    [ "user_email", "client__utils_8c.html#a1b9f74cf18927b18cbab7bedbdbe65fd", null ],
     [ "using_stun", "client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66", null ],
     [ "window", "client__utils_8c.html#ac2ecad177cf128bc98fcf54c0b9b6034", null ]
 ];

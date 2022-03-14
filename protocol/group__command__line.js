@@ -17,14 +17,18 @@ var group__command__line =
     [ "COMMAND_LINE_INT_OPTION", "group__command__line.html#ga98f832d8b81cc0bcf6ee42f8c03afd92", null ],
     [ "COMMAND_LINE_STRING_OPTION", "group__command__line.html#ga2502c4954679990fad8f661adef1c0f6", null ],
     [ "WhistCommandLineOption", "group__command__line.html#ga4706f36d6729c66d341517af9be23ce5", null ],
-    [ "WhistOperandHandler", "group__command__line.html#ga65b491c28262468c3f08f40c2b9b8289", null ],
-    [ "WhistOptionHandler", "group__command__line.html#ga0fe6b07f9e38826fb81900196370e603", [
+    [ "WhistOperandHandler", "group__command__line.html#gab7b354fe9aaa35fa68a858892d73fe80", null ],
+    [ "WhistOptionHandler", "group__command__line.html#gac2bfdb0ea210c170bd33dcbbd89edd9a", [
       [ "WHIST_OPTION_NO_ARGUMENT", "group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d", null ],
       [ "WHIST_OPTION_OPTIONAL_ARGUMENT", "group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a3a9ee29b0563d427f7ddb4c6f37d1b62", null ],
       [ "WHIST_OPTION_REQUIRED_ARGUMENT", "group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a023c53b46690e2cf60e89fb7d9b6535e", null ],
-      [ "WHIST_OPTION_INTERNAL", "group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4adb9faf9b48b9be915307629365a977f5", null ]
+      [ "WHIST_OPTION_INTERNAL", "group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4adb9faf9b48b9be915307629365a977f5", null ],
+      [ "WHIST_OPTION_ALLOCATED", "group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4af6dd7746f23869121fbaf8ebdc3e20b0", null ]
     ] ],
-    [ "whist_parse_command_line", "group__command__line.html#ga2999f5e0dd774986657e452a4e89f6a5", null ],
+    [ "whist_option_get_bool_value", "group__command__line.html#ga60f53bf4a3e3d4e83839fe7a691a3de5", null ],
+    [ "whist_option_get_int_value", "group__command__line.html#ga8c689b458d1666ee104e546d7281dba0", null ],
+    [ "whist_option_get_string_value", "group__command__line.html#ga0642daef454436b4308e910511fea04e", null ],
+    [ "whist_parse_command_line", "group__command__line.html#ga85a7f39dd8d85a52a7292592caa0f5ec", null ],
     [ "whist_register_command_line_option", "group__command__line.html#ga0349e7e398bf6433f785bbe026c3f06c", null ],
-    [ "whist_set_single_option", "group__command__line.html#gaf714989fe60fc160750fa0e4937a6ecc", null ]
+    [ "whist_set_single_option", "group__command__line.html#gaaefc944088396f7f34f3107cce8af1b4", null ]
 ];

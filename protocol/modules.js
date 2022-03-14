@@ -1,5 +1,6 @@
 var modules =
 [
+    [ "Error Codes", "group__error__codes.html", "group__error__codes" ],
     [ "Feature Flags", "group__feature__flags.html", "group__feature__flags" ],
     [ "Memory", "group__memory.html", "group__memory" ],
     [ "Timers", "group__timers.html", "group__timers" ],

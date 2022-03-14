@@ -120,18 +120,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad0e52afd70ec6e9b4961be465c729bde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ad0e52afd70ec6e9b4961be465c729bde">client_parse_args</a> (int argc, char *argv[])</td></tr>
-<tr class="memdesc:ad0e52afd70ec6e9b4961be465c729bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the arguments passed into the client application.  <a href="client__utils_8h.html#ad0e52afd70ec6e9b4961be465c729bde">More...</a><br /></td></tr>
-<tr class="separator:ad0e52afd70ec6e9b4961be465c729bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa551bcaa5c0b2ee856a8f3edd3e97228"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#aa551bcaa5c0b2ee856a8f3edd3e97228">client_parse_args</a> (int argc, const char *argv[])</td></tr>
+<tr class="memdesc:aa551bcaa5c0b2ee856a8f3edd3e97228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the arguments passed into the client application.  <a href="client__utils_8h.html#aa551bcaa5c0b2ee856a8f3edd3e97228">More...</a><br /></td></tr>
+<tr class="separator:aa551bcaa5c0b2ee856a8f3edd3e97228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c155b9515a1ce8f319a5f18e5207ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ac2c155b9515a1ce8f319a5f18e5207ae">read_piped_arguments</a> (bool *keep_waiting, bool run_only_once)</td></tr>
 <tr class="memdesc:ac2c155b9515a1ce8f319a5f18e5207ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read arguments from the stdin pipe if <code>using_piped_arguments</code> is set to <code>true</code>.  <a href="client__utils_8h.html#ac2c155b9515a1ce8f319a5f18e5207ae">More...</a><br /></td></tr>
 <tr class="separator:ac2c155b9515a1ce8f319a5f18e5207ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9680bc0923e6e0149808036e92f33cd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a9680bc0923e6e0149808036e92f33cd4">alloc_parsed_args</a> (void)</td></tr>
-<tr class="memdesc:a9680bc0923e6e0149808036e92f33cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init any allocated memory for parsed args.  <a href="client__utils_8h.html#a9680bc0923e6e0149808036e92f33cd4">More...</a><br /></td></tr>
-<tr class="separator:a9680bc0923e6e0149808036e92f33cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44fd0b41f8dec9bae4a8e081703c014b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a44fd0b41f8dec9bae4a8e081703c014b">free_parsed_args</a> (void)</td></tr>
-<tr class="memdesc:a44fd0b41f8dec9bae4a8e081703c014b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free any allocated memory for parsed args.  <a href="client__utils_8h.html#a44fd0b41f8dec9bae4a8e081703c014b">More...</a><br /></td></tr>
-<tr class="separator:a44fd0b41f8dec9bae4a8e081703c014b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a969e9a6a7402e5b5aab11e8d4dbaa257"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a969e9a6a7402e5b5aab11e8d4dbaa257">update_mouse_motion</a> (void)</td></tr>
 <tr class="memdesc:a969e9a6a7402e5b5aab11e8d4dbaa257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update mouse location if the mouse state has updated since the last call to this function.  <a href="client__utils_8h.html#a969e9a6a7402e5b5aab11e8d4dbaa257">More...</a><br /></td></tr>
 <tr class="separator:a969e9a6a7402e5b5aab11e8d4dbaa257"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,29 +199,8 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9680bc0923e6e0149808036e92f33cd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9680bc0923e6e0149808036e92f33cd4">&#9670;&nbsp;</a></span>alloc_parsed_args()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int alloc_parsed_args </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Init any allocated memory for parsed args. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
-
-</div>
-</div>
-<a id="ad0e52afd70ec6e9b4961be465c729bde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0e52afd70ec6e9b4961be465c729bde">&#9670;&nbsp;</a></span>client_parse_args()</h2>
+<a id="aa551bcaa5c0b2ee856a8f3edd3e97228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa551bcaa5c0b2ee856a8f3edd3e97228">&#9670;&nbsp;</a></span>client_parse_args()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +214,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>argv</em>[]&#160;</td>
         </tr>
         <tr>
@@ -261,27 +234,6 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success, 1 on args prompting graceful exit (help, version, etc.) </dd></dl>
-
-</div>
-</div>
-<a id="a44fd0b41f8dec9bae4a8e081703c014b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44fd0b41f8dec9bae4a8e081703c014b">&#9670;&nbsp;</a></span>free_parsed_args()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int free_parsed_args </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Free any allocated memory for parsed args. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
 
 </div>
 </div>

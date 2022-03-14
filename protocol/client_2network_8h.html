@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('client_2network_8h.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">connect_to_server</a> (bool <a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>)</td></tr>
-<tr class="memdesc:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <a href="client_2network_8h.html#a7349857d1ea028ae1b5479ff57a0dd5c">More...</a><br /></td></tr>
-<tr class="separator:a7349857d1ea028ae1b5479ff57a0dd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9878a3cf71b6ebe518562f7399929a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#aca9878a3cf71b6ebe518562f7399929a">connect_to_server</a> (const char *server_ip, bool <a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, const char *user_email)</td></tr>
+<tr class="memdesc:aca9878a3cf71b6ebe518562f7399929a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <a href="client_2network_8h.html#aca9878a3cf71b6ebe518562f7399929a">More...</a><br /></td></tr>
+<tr class="separator:aca9878a3cf71b6ebe518562f7399929a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac9ba3b2a752a8ba9805b539765a2e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#abac9ba3b2a752a8ba9805b539765a2e4">close_connections</a> (void)</td></tr>
 <tr class="separator:abac9ba3b2a752a8ba9805b539765a2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8bf751ea26659195c59cd180956315a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2network_8h.html#aa8bf751ea26659195c59cd180956315a">send_server_quit_messages</a> (int num_messages)</td></tr>
@@ -136,8 +136,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a7349857d1ea028ae1b5479ff57a0dd5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7349857d1ea028ae1b5479ff57a0dd5c">&#9670;&nbsp;</a></span>connect_to_server()</h2>
+<a id="aca9878a3cf71b6ebe518562f7399929a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9878a3cf71b6ebe518562f7399929a">&#9670;&nbsp;</a></span>connect_to_server()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,18 +145,35 @@ Usage</h1>
         <tr>
           <td class="memname">int connect_to_server </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>using_stun</em></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>server_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>using_stun</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>user_email</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Connect to the server. </p>
-<p>Must be called after <code>discover_ports()</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">using_stun</td><td>Whether we are using the STUN server</td></tr>
+    <tr><td class="paramname">server_ip</td><td>Server IP address to connect to. </td></tr>
+    <tr><td class="paramname">using_stun</td><td>Whether we are using the STUN server </td></tr>
+    <tr><td class="paramname">user_email</td><td>User email to provide.</td></tr>
   </table>
   </dd>
 </dl>

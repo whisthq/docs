@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['region_20allocator_4954',['Region Allocator',['../group__region__allocator.html',1,'']]]
+  ['memory_4996',['Memory',['../group__memory.html',1,'']]]
 ];

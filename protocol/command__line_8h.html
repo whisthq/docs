@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('command__line_8h.html',''); initResiza
 <p>Command line handling API.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="error__codes_8h_source.html">whist/core/error_codes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="linked__list_8h_source.html">linked_list.h</a>&quot;</code><br />
 </div>
 <p><a href="command__line_8h_source.html">Go to the source code of this file.</a></p>
@@ -124,19 +125,23 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga4706f36d6729c66d341517af9be23ce5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga4706f36d6729c66d341517af9be23ce5">WhistCommandLineOption</a></td></tr>
 <tr class="separator:ga4706f36d6729c66d341517af9be23ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fe6b07f9e38826fb81900196370e603"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga0fe6b07f9e38826fb81900196370e603">WhistOptionHandler</a>) (const <a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt, const char *value)</td></tr>
-<tr class="memdesc:ga0fe6b07f9e38826fb81900196370e603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for registered command-line option handlers.  <a href="group__command__line.html#ga0fe6b07f9e38826fb81900196370e603">More...</a><br /></td></tr>
-<tr class="separator:ga0fe6b07f9e38826fb81900196370e603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65b491c28262468c3f08f40c2b9b8289"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga65b491c28262468c3f08f40c2b9b8289">WhistOperandHandler</a>) (int position, const char *value)</td></tr>
-<tr class="memdesc:ga65b491c28262468c3f08f40c2b9b8289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for anonymous command-line operand handlers.  <a href="group__command__line.html#ga65b491c28262468c3f08f40c2b9b8289">More...</a><br /></td></tr>
-<tr class="separator:ga65b491c28262468c3f08f40c2b9b8289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2bfdb0ea210c170bd33dcbbd89edd9a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#gac2bfdb0ea210c170bd33dcbbd89edd9a">WhistOptionHandler</a>) (const <a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt, const char *value)</td></tr>
+<tr class="memdesc:gac2bfdb0ea210c170bd33dcbbd89edd9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for registered command-line option handlers.  <a href="group__command__line.html#gac2bfdb0ea210c170bd33dcbbd89edd9a">More...</a><br /></td></tr>
+<tr class="separator:gac2bfdb0ea210c170bd33dcbbd89edd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7b354fe9aaa35fa68a858892d73fe80"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#gab7b354fe9aaa35fa68a858892d73fe80">WhistOperandHandler</a>) (int position, const char *value)</td></tr>
+<tr class="memdesc:gab7b354fe9aaa35fa68a858892d73fe80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for anonymous command-line operand handlers.  <a href="group__command__line.html#gab7b354fe9aaa35fa68a858892d73fe80">More...</a><br /></td></tr>
+<tr class="separator:gab7b354fe9aaa35fa68a858892d73fe80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaaf8fd5f0e57d456151c951e0f3715fc4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d">WHIST_OPTION_NO_ARGUMENT</a> = 1, 
+<tr class="memitem:gaaf8fd5f0e57d456151c951e0f3715fc4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d">WHIST_OPTION_NO_ARGUMENT</a> = 1, 
 <a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a3a9ee29b0563d427f7ddb4c6f37d1b62">WHIST_OPTION_OPTIONAL_ARGUMENT</a> = 2, 
 <a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a023c53b46690e2cf60e89fb7d9b6535e">WHIST_OPTION_REQUIRED_ARGUMENT</a> = 4, 
-<a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4adb9faf9b48b9be915307629365a977f5">WHIST_OPTION_INTERNAL</a> = 8
+<a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4adb9faf9b48b9be915307629365a977f5">WHIST_OPTION_INTERNAL</a> = 8, 
+<br />
+&#160;&#160;<a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4af6dd7746f23869121fbaf8ebdc3e20b0">WHIST_OPTION_ALLOCATED</a> = 16
+<br />
  }</td></tr>
 <tr class="memdesc:gaaf8fd5f0e57d456151c951e0f3715fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags which apply to command-line options.  <a href="group__command__line.html#gaaf8fd5f0e57d456151c951e0f3715fc4">More...</a><br /></td></tr>
 <tr class="separator:gaaf8fd5f0e57d456151c951e0f3715fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,12 +151,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0349e7e398bf6433f785bbe026c3f06c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga0349e7e398bf6433f785bbe026c3f06c">whist_register_command_line_option</a> (<a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt)</td></tr>
 <tr class="memdesc:ga0349e7e398bf6433f785bbe026c3f06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a command-line option.  <a href="group__command__line.html#ga0349e7e398bf6433f785bbe026c3f06c">More...</a><br /></td></tr>
 <tr class="separator:ga0349e7e398bf6433f785bbe026c3f06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf714989fe60fc160750fa0e4937a6ecc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#gaf714989fe60fc160750fa0e4937a6ecc">whist_set_single_option</a> (const char *name, const char *value)</td></tr>
-<tr class="memdesc:gaf714989fe60fc160750fa0e4937a6ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single option value.  <a href="group__command__line.html#gaf714989fe60fc160750fa0e4937a6ecc">More...</a><br /></td></tr>
-<tr class="separator:gaf714989fe60fc160750fa0e4937a6ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2999f5e0dd774986657e452a4e89f6a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga2999f5e0dd774986657e452a4e89f6a5">whist_parse_command_line</a> (int argc, const char **argv, <a class="el" href="group__command__line.html#ga65b491c28262468c3f08f40c2b9b8289">WhistOperandHandler</a> operand_handler)</td></tr>
-<tr class="memdesc:ga2999f5e0dd774986657e452a4e89f6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a command line.  <a href="group__command__line.html#ga2999f5e0dd774986657e452a4e89f6a5">More...</a><br /></td></tr>
-<tr class="separator:ga2999f5e0dd774986657e452a4e89f6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaefc944088396f7f34f3107cce8af1b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#gaaefc944088396f7f34f3107cce8af1b4">whist_set_single_option</a> (const char *name, const char *value)</td></tr>
+<tr class="memdesc:gaaefc944088396f7f34f3107cce8af1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single option value.  <a href="group__command__line.html#gaaefc944088396f7f34f3107cce8af1b4">More...</a><br /></td></tr>
+<tr class="separator:gaaefc944088396f7f34f3107cce8af1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85a7f39dd8d85a52a7292592caa0f5ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga85a7f39dd8d85a52a7292592caa0f5ec">whist_parse_command_line</a> (int argc, const char **argv, <a class="el" href="group__command__line.html#gab7b354fe9aaa35fa68a858892d73fe80">WhistOperandHandler</a> operand_handler)</td></tr>
+<tr class="memdesc:ga85a7f39dd8d85a52a7292592caa0f5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a command line.  <a href="group__command__line.html#ga85a7f39dd8d85a52a7292592caa0f5ec">More...</a><br /></td></tr>
+<tr class="separator:ga85a7f39dd8d85a52a7292592caa0f5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c689b458d1666ee104e546d7281dba0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga8c689b458d1666ee104e546d7281dba0">whist_option_get_int_value</a> (const char *name, int *value)</td></tr>
+<tr class="memdesc:ga8c689b458d1666ee104e546d7281dba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the value of a named int option.  <a href="group__command__line.html#ga8c689b458d1666ee104e546d7281dba0">More...</a><br /></td></tr>
+<tr class="separator:ga8c689b458d1666ee104e546d7281dba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60f53bf4a3e3d4e83839fe7a691a3de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga60f53bf4a3e3d4e83839fe7a691a3de5">whist_option_get_bool_value</a> (const char *name, bool *value)</td></tr>
+<tr class="memdesc:ga60f53bf4a3e3d4e83839fe7a691a3de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the value of a named bool option.  <a href="group__command__line.html#ga60f53bf4a3e3d4e83839fe7a691a3de5">More...</a><br /></td></tr>
+<tr class="separator:ga60f53bf4a3e3d4e83839fe7a691a3de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0642daef454436b4308e910511fea04e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga0642daef454436b4308e910511fea04e">whist_option_get_string_value</a> (const char *name, const char **value)</td></tr>
+<tr class="memdesc:ga0642daef454436b4308e910511fea04e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the value of a named string option.  <a href="group__command__line.html#ga0642daef454436b4308e910511fea04e">More...</a><br /></td></tr>
+<tr class="separator:ga0642daef454436b4308e910511fea04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Command line handling API. </p>

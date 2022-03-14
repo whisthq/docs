@@ -120,19 +120,23 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga4706f36d6729c66d341517af9be23ce5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga4706f36d6729c66d341517af9be23ce5">WhistCommandLineOption</a></td></tr>
 <tr class="separator:ga4706f36d6729c66d341517af9be23ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fe6b07f9e38826fb81900196370e603"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga0fe6b07f9e38826fb81900196370e603">WhistOptionHandler</a>) (const <a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt, const char *value)</td></tr>
-<tr class="memdesc:ga0fe6b07f9e38826fb81900196370e603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for registered command-line option handlers.  <a href="group__command__line.html#ga0fe6b07f9e38826fb81900196370e603">More...</a><br /></td></tr>
-<tr class="separator:ga0fe6b07f9e38826fb81900196370e603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65b491c28262468c3f08f40c2b9b8289"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga65b491c28262468c3f08f40c2b9b8289">WhistOperandHandler</a>) (int position, const char *value)</td></tr>
-<tr class="memdesc:ga65b491c28262468c3f08f40c2b9b8289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for anonymous command-line operand handlers.  <a href="group__command__line.html#ga65b491c28262468c3f08f40c2b9b8289">More...</a><br /></td></tr>
-<tr class="separator:ga65b491c28262468c3f08f40c2b9b8289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2bfdb0ea210c170bd33dcbbd89edd9a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#gac2bfdb0ea210c170bd33dcbbd89edd9a">WhistOptionHandler</a>) (const <a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt, const char *value)</td></tr>
+<tr class="memdesc:gac2bfdb0ea210c170bd33dcbbd89edd9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for registered command-line option handlers.  <a href="group__command__line.html#gac2bfdb0ea210c170bd33dcbbd89edd9a">More...</a><br /></td></tr>
+<tr class="separator:gac2bfdb0ea210c170bd33dcbbd89edd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7b354fe9aaa35fa68a858892d73fe80"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#gab7b354fe9aaa35fa68a858892d73fe80">WhistOperandHandler</a>) (int position, const char *value)</td></tr>
+<tr class="memdesc:gab7b354fe9aaa35fa68a858892d73fe80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for anonymous command-line operand handlers.  <a href="group__command__line.html#gab7b354fe9aaa35fa68a858892d73fe80">More...</a><br /></td></tr>
+<tr class="separator:gab7b354fe9aaa35fa68a858892d73fe80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaaf8fd5f0e57d456151c951e0f3715fc4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d">WHIST_OPTION_NO_ARGUMENT</a> = 1, 
+<tr class="memitem:gaaf8fd5f0e57d456151c951e0f3715fc4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d">WHIST_OPTION_NO_ARGUMENT</a> = 1, 
 <a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a3a9ee29b0563d427f7ddb4c6f37d1b62">WHIST_OPTION_OPTIONAL_ARGUMENT</a> = 2, 
 <a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a023c53b46690e2cf60e89fb7d9b6535e">WHIST_OPTION_REQUIRED_ARGUMENT</a> = 4, 
-<a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4adb9faf9b48b9be915307629365a977f5">WHIST_OPTION_INTERNAL</a> = 8
+<a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4adb9faf9b48b9be915307629365a977f5">WHIST_OPTION_INTERNAL</a> = 8, 
+<br />
+&#160;&#160;<a class="el" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4af6dd7746f23869121fbaf8ebdc3e20b0">WHIST_OPTION_ALLOCATED</a> = 16
+<br />
  }</td></tr>
 <tr class="memdesc:gaaf8fd5f0e57d456151c951e0f3715fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags which apply to command-line options.  <a href="group__command__line.html#gaaf8fd5f0e57d456151c951e0f3715fc4">More...</a><br /></td></tr>
 <tr class="separator:gaaf8fd5f0e57d456151c951e0f3715fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,12 +146,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0349e7e398bf6433f785bbe026c3f06c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga0349e7e398bf6433f785bbe026c3f06c">whist_register_command_line_option</a> (<a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt)</td></tr>
 <tr class="memdesc:ga0349e7e398bf6433f785bbe026c3f06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a command-line option.  <a href="group__command__line.html#ga0349e7e398bf6433f785bbe026c3f06c">More...</a><br /></td></tr>
 <tr class="separator:ga0349e7e398bf6433f785bbe026c3f06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf714989fe60fc160750fa0e4937a6ecc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#gaf714989fe60fc160750fa0e4937a6ecc">whist_set_single_option</a> (const char *name, const char *value)</td></tr>
-<tr class="memdesc:gaf714989fe60fc160750fa0e4937a6ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single option value.  <a href="group__command__line.html#gaf714989fe60fc160750fa0e4937a6ecc">More...</a><br /></td></tr>
-<tr class="separator:gaf714989fe60fc160750fa0e4937a6ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2999f5e0dd774986657e452a4e89f6a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga2999f5e0dd774986657e452a4e89f6a5">whist_parse_command_line</a> (int argc, const char **argv, <a class="el" href="group__command__line.html#ga65b491c28262468c3f08f40c2b9b8289">WhistOperandHandler</a> operand_handler)</td></tr>
-<tr class="memdesc:ga2999f5e0dd774986657e452a4e89f6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a command line.  <a href="group__command__line.html#ga2999f5e0dd774986657e452a4e89f6a5">More...</a><br /></td></tr>
-<tr class="separator:ga2999f5e0dd774986657e452a4e89f6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaefc944088396f7f34f3107cce8af1b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#gaaefc944088396f7f34f3107cce8af1b4">whist_set_single_option</a> (const char *name, const char *value)</td></tr>
+<tr class="memdesc:gaaefc944088396f7f34f3107cce8af1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single option value.  <a href="group__command__line.html#gaaefc944088396f7f34f3107cce8af1b4">More...</a><br /></td></tr>
+<tr class="separator:gaaefc944088396f7f34f3107cce8af1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85a7f39dd8d85a52a7292592caa0f5ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga85a7f39dd8d85a52a7292592caa0f5ec">whist_parse_command_line</a> (int argc, const char **argv, <a class="el" href="group__command__line.html#gab7b354fe9aaa35fa68a858892d73fe80">WhistOperandHandler</a> operand_handler)</td></tr>
+<tr class="memdesc:ga85a7f39dd8d85a52a7292592caa0f5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a command line.  <a href="group__command__line.html#ga85a7f39dd8d85a52a7292592caa0f5ec">More...</a><br /></td></tr>
+<tr class="separator:ga85a7f39dd8d85a52a7292592caa0f5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c689b458d1666ee104e546d7281dba0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga8c689b458d1666ee104e546d7281dba0">whist_option_get_int_value</a> (const char *name, int *value)</td></tr>
+<tr class="memdesc:ga8c689b458d1666ee104e546d7281dba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the value of a named int option.  <a href="group__command__line.html#ga8c689b458d1666ee104e546d7281dba0">More...</a><br /></td></tr>
+<tr class="separator:ga8c689b458d1666ee104e546d7281dba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60f53bf4a3e3d4e83839fe7a691a3de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga60f53bf4a3e3d4e83839fe7a691a3de5">whist_option_get_bool_value</a> (const char *name, bool *value)</td></tr>
+<tr class="memdesc:ga60f53bf4a3e3d4e83839fe7a691a3de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the value of a named bool option.  <a href="group__command__line.html#ga60f53bf4a3e3d4e83839fe7a691a3de5">More...</a><br /></td></tr>
+<tr class="separator:ga60f53bf4a3e3d4e83839fe7a691a3de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0642daef454436b4308e910511fea04e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__line.html#ga0642daef454436b4308e910511fea04e">whist_option_get_string_value</a> (const char *name, const char **value)</td></tr>
+<tr class="memdesc:ga0642daef454436b4308e910511fea04e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the value of a named string option.  <a href="group__command__line.html#ga0642daef454436b4308e910511fea04e">More...</a><br /></td></tr>
+<tr class="separator:ga0642daef454436b4308e910511fea04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API to handle defining command-line options and then parsing command-lines using them. </p>
@@ -159,22 +172,22 @@ Functions</h2></td></tr>
 <div class="line">                        <span class="stringliteral">&quot;An integer between -12 and 51.&quot;</span>)</div>
 <div class="line"><a class="code" href="group__command__line.html#ga74209464c745a04677f9707b73477a41">COMMAND_LINE_BOOL_OPTION</a>(option_bool, &#39;b&#39;, &quot;<span class="keywordtype">bool</span>&quot;,</div>
 <div class="line">                         &quot;&quot;A <span class="keywordtype">boolean</span>, which can be either true or false.&quot;)</div>
-<div class="line"><a class="code" href="parse__args_8c.html#a54be959a616e3c5f2a789e65b4ea1f52">COMMAND_LINE_STRING_OPTION</a>(option_string, &#39;s&#39;, &quot;<span class="keywordtype">string</span>&quot;, SIZE_MAX,</div>
+<div class="line"><a class="code" href="group__command__line.html#ga2502c4954679990fad8f661adef1c0f6">COMMAND_LINE_STRING_OPTION</a>(option_string, &#39;s&#39;, &quot;<span class="keywordtype">string</span>&quot;, SIZE_MAX,</div>
 <div class="line">                           &quot;The <span class="keywordtype">string</span>, which can be arbitrarily <span class="keywordtype">long</span> just &quot;</div>
 <div class="line">                           &quot;like this very-padded explanation which will &quot;</div>
 <div class="line">                           &quot;demonstrate how showing the help text works.&quot;)</div>
 <div class="line"> </div>
-<div class="line">static <span class="keywordtype">bool</span> callback(const <a class="code" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt, const <span class="keywordtype">char</span> *value) {</div>
+<div class="line">static <a class="code" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a> callback(const <a class="code" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt, const <span class="keywordtype">char</span> *value) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Hello world!\n&quot;</span>);</div>
-<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04da0de37511d55fbbf58c7e2dd02ccff66f">WHIST_SUCCESS</a>;</div>
 <div class="line">}</div>
 <div class="line"><a class="code" href="group__command__line.html#ga9edd9962ccdb5e4f5266fb62e90c64cd">COMMAND_LINE_CALLBACK_OPTION</a>(callback, <span class="charliteral">&#39;c&#39;</span>, <span class="stringliteral">&quot;callback&quot;</span>, <a class="code" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d">WHIST_OPTION_NO_ARGUMENT</a>,</div>
 <div class="line">                             <span class="stringliteral">&quot;Offer a traditional greeting.&quot;</span>)</div>
 <div class="line"> </div>
-<div class="line">int <a class="code" href="client_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, const <span class="keywordtype">char</span> **argv) {</div>
-<div class="line">    <span class="keywordtype">bool</span> ret = <a class="code" href="group__command__line.html#ga2999f5e0dd774986657e452a4e89f6a5">whist_parse_command_line</a>(argc, argv, NULL);</div>
-<div class="line">    <span class="keywordflow">if</span> (!ret) {</div>
-<div class="line">        printf(<span class="stringliteral">&quot;Failed to parse command line!\n&quot;</span>);</div>
+<div class="line">int <a class="code" href="client_2main_8c.html#ac0f2228420376f4db7e1274f2b41667c">main</a>(<span class="keywordtype">int</span> argc, const <span class="keywordtype">char</span> **argv) {</div>
+<div class="line">    <span class="keywordtype">int</span> ret = <a class="code" href="group__command__line.html#ga85a7f39dd8d85a52a7292592caa0f5ec">whist_parse_command_line</a>(argc, argv, NULL);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != <a class="code" href="group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04da0de37511d55fbbf58c7e2dd02ccff66f">WHIST_SUCCESS</a>) {</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Failed to parse command line: %s.\n&quot;</span>, <a class="code" href="group__error__codes.html#ga8c41b5f16ecb8298963cbeea354a24fc">whist_error_string</a>(ret));</div>
 <div class="line">        <span class="keywordflow">return</span> 1;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -229,7 +242,7 @@ Functions</h2></td></tr>
 <div class="line">            long_option,                                                         \</div>
 <div class="line">            help_text,                                                           \</div>
 <div class="line">            WHIST_OPTION_OPTIONAL_ARGUMENT,                                      \</div>
-<div class="line">            &amp;<a class="code" href="group__command__line.html#ga4ce693fdd94db5cacacb4898c145c56a">whist_handle_bool_option_internal</a>,                                  \</div>
+<div class="line">            &amp;<a class="code" href="group__command__line.html#ga46979ed6f4391ff2ff27c7f53d13fbcc">whist_handle_bool_option_internal</a>,                                  \</div>
 <div class="line">            &amp;variable,                                                           \</div>
 <div class="line">            0,                                                                   \</div>
 <div class="line">            0,                                                                   \</div>
@@ -381,7 +394,7 @@ Functions</h2></td></tr>
 <div class="line">            long_option,                                                                   \</div>
 <div class="line">            help_text,                                                                     \</div>
 <div class="line">            WHIST_OPTION_REQUIRED_ARGUMENT,                                                \</div>
-<div class="line">            &amp;<a class="code" href="group__command__line.html#gaf772be603a98408ec77fd7b6b88ec98a">whist_handle_int_option_internal</a>,                                             \</div>
+<div class="line">            &amp;<a class="code" href="group__command__line.html#ga811d7e343cf382c1f739be4ad93e33b0">whist_handle_int_option_internal</a>,                                             \</div>
 <div class="line">            &amp;variable,                                                                     \</div>
 <div class="line">            min_value,                                                                     \</div>
 <div class="line">            max_value,                                                                     \</div>
@@ -455,8 +468,8 @@ Functions</h2></td></tr>
 <div class="line">            short_option,                                                                      \</div>
 <div class="line">            long_option,                                                                       \</div>
 <div class="line">            help_text,                                                                         \</div>
-<div class="line">            WHIST_OPTION_REQUIRED_ARGUMENT,                                                    \</div>
-<div class="line">            &amp;<a class="code" href="group__command__line.html#gac730dec8659f8bb7e8439d8de62da7b7">whist_handle_string_option_internal</a>,                                              \</div>
+<div class="line">            WHIST_OPTION_REQUIRED_ARGUMENT | <a class="code" href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4af6dd7746f23869121fbaf8ebdc3e20b0">WHIST_OPTION_ALLOCATED</a>,                           \</div>
+<div class="line">            &amp;<a class="code" href="group__command__line.html#gafddcf4ea41ea69d223a3009bebf1da03">whist_handle_string_option_internal</a>,                                              \</div>
 <div class="line">            (<span class="keywordtype">void</span> *)&amp;variable,                                                                 \</div>
 <div class="line">            0,                                                                                 \</div>
 <div class="line">            0,                                                                                 \</div>
@@ -494,14 +507,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga65b491c28262468c3f08f40c2b9b8289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga65b491c28262468c3f08f40c2b9b8289">&#9670;&nbsp;</a></span>WhistOperandHandler</h2>
+<a id="gab7b354fe9aaa35fa68a858892d73fe80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab7b354fe9aaa35fa68a858892d73fe80">&#9670;&nbsp;</a></span>WhistOperandHandler</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* WhistOperandHandler) (int position, const char *value)</td>
+          <td class="memname">typedef <a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>(* WhistOperandHandler) (int position, const char *value)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -514,18 +527,18 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success, false on error and parsing will then fail. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Success, or an error code and parsing will fail. </dd></dl>
 
 </div>
 </div>
-<a id="ga0fe6b07f9e38826fb81900196370e603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0fe6b07f9e38826fb81900196370e603">&#9670;&nbsp;</a></span>WhistOptionHandler</h2>
+<a id="gac2bfdb0ea210c170bd33dcbbd89edd9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2bfdb0ea210c170bd33dcbbd89edd9a">&#9670;&nbsp;</a></span>WhistOptionHandler</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* WhistOptionHandler) (const <a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt, const char *value)</td>
+          <td class="memname">typedef <a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>(* WhistOptionHandler) (const <a class="el" href="structWhistCommandLineOption.html">WhistCommandLineOption</a> *opt, const char *value)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -538,7 +551,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success, false on error and parsing will then fail. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Success, or an error code and parsing will fail. </dd></dl>
 
 </div>
 </div>
@@ -566,19 +579,136 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ggaaf8fd5f0e57d456151c951e0f3715fc4adb9faf9b48b9be915307629365a977f5"></a>WHIST_OPTION_INTERNAL&#160;</td><td class="fielddoc"><p>The option is for internal use only, and should not be visible when querying options. </p>
 <p>This applies to internally-generated options like "--help". </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaaf8fd5f0e57d456151c951e0f3715fc4af6dd7746f23869121fbaf8ebdc3e20b0"></a>WHIST_OPTION_ALLOCATED&#160;</td><td class="fielddoc"><p>The option variable is allocated by the command-line handling. </p>
+<p>And therefore needs to be freed by it as well. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga2999f5e0dd774986657e452a4e89f6a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2999f5e0dd774986657e452a4e89f6a5">&#9670;&nbsp;</a></span>whist_parse_command_line()</h2>
+<a id="ga60f53bf4a3e3d4e83839fe7a691a3de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga60f53bf4a3e3d4e83839fe7a691a3de5">&#9670;&nbsp;</a></span>whist_option_get_bool_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool whist_parse_command_line </td>
+          <td class="memname"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a> whist_option_get_bool_value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetch the value of a named bool option. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the option to get. </td></tr>
+    <tr><td class="paramname">value</td><td>On success, written with the value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga8c689b458d1666ee104e546d7281dba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c689b458d1666ee104e546d7281dba0">&#9670;&nbsp;</a></span>whist_option_get_int_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a> whist_option_get_int_value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetch the value of a named int option. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the option to get. </td></tr>
+    <tr><td class="paramname">value</td><td>On success, written with the value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga0642daef454436b4308e910511fea04e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0642daef454436b4308e910511fea04e">&#9670;&nbsp;</a></span>whist_option_get_string_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a> whist_option_get_string_value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetch the value of a named string option. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the option to get. </td></tr>
+    <tr><td class="paramname">value</td><td>On success, written with the value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga85a7f39dd8d85a52a7292592caa0f5ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85a7f39dd8d85a52a7292592caa0f5ec">&#9670;&nbsp;</a></span>whist_parse_command_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a> whist_parse_command_line </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>argc</em>, </td>
@@ -592,7 +722,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__command__line.html#ga65b491c28262468c3f08f40c2b9b8289">WhistOperandHandler</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__command__line.html#gab7b354fe9aaa35fa68a858892d73fe80">WhistOperandHandler</a>&#160;</td>
           <td class="paramname"><em>operand_handler</em>&#160;</td>
         </tr>
         <tr>
@@ -604,15 +734,21 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse a command line. </p>
+<p>Parses the given command line, calling option handlers for option arguments and the given operand handler for non-option arguments.</p>
+<p>If the "help" or "version" options are specified, this will exit rather than returning.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">argc</td><td>Argument count passed to <a class="el" href="client_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>. </td></tr>
-    <tr><td class="paramname">argv</td><td>Argument vector passed to <a class="el" href="client_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>. </td></tr>
+    <tr><td class="paramname">argc</td><td>Argument count passed to <a class="el" href="client_2main_8c.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>. </td></tr>
+    <tr><td class="paramname">argv</td><td>Argument vector passed to <a class="el" href="client_2main_8c.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>. </td></tr>
     <tr><td class="paramname">operand_handler</td><td>If non-NULL, called for each operand (non-option) argument in the order that they are seen. If NULL, operand arguments are considered an error. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success, false if parsing failed or if some option value was invalid. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code:<ul>
+<li>WHIST_ERROR_NOT_FOUND: an unknown option was specified.</li>
+<li>WHIST_ERROR_SYNTAX: option syntax was invalid. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -633,7 +769,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register a command-line option. </p>
-<p>This function is normally called from a constructor, since options need to be registered before the command-line is parsed early in <a class="el" href="client_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
+<p>This function is normally called from a constructor, since options need to be registered before the command-line is parsed early in <a class="el" href="client_2main_8c.html#ac0f2228420376f4db7e1274f2b41667c">main()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">opt</td><td>Option structure to register. </td></tr>
@@ -643,14 +779,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaf714989fe60fc160750fa0e4937a6ecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf714989fe60fc160750fa0e4937a6ecc">&#9670;&nbsp;</a></span>whist_set_single_option()</h2>
+<a id="gaaefc944088396f7f34f3107cce8af1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaefc944088396f7f34f3107cce8af1b4">&#9670;&nbsp;</a></span>whist_set_single_option()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool whist_set_single_option </td>
+          <td class="memname"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a> whist_set_single_option </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -677,23 +813,32 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success, false if the option is not found or the value was not valid. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code:<ul>
+<li>WHIST_ERROR_INVALID_ARGUMENT: the option name was empty.</li>
+<li>WHIST_ERROR_NOT_FOUND: the option was not found.</li>
+<li>WHIST_ERROR_SYNTAX: the option value was invalid. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agroup__command__line_html_ga74209464c745a04677f9707b73477a41"><div class="ttname"><a href="group__command__line.html#ga74209464c745a04677f9707b73477a41">COMMAND_LINE_BOOL_OPTION</a></div><div class="ttdeci">#define COMMAND_LINE_BOOL_OPTION(variable, short_option, long_option, help_text)</div><div class="ttdoc">Register a boolean option.</div><div class="ttdef"><b>Definition:</b> command_line.h:183</div></div>
+<div class="ttc" id="agroup__command__line_html_ga74209464c745a04677f9707b73477a41"><div class="ttname"><a href="group__command__line.html#ga74209464c745a04677f9707b73477a41">COMMAND_LINE_BOOL_OPTION</a></div><div class="ttdeci">#define COMMAND_LINE_BOOL_OPTION(variable, short_option, long_option, help_text)</div><div class="ttdoc">Register a boolean option.</div><div class="ttdef"><b>Definition:</b> command_line.h:190</div></div>
+<div class="ttc" id="agroup__error__codes_html_gga18cc8e20ea58aa56867b56542e89b04da0de37511d55fbbf58c7e2dd02ccff66f"><div class="ttname"><a href="group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04da0de37511d55fbbf58c7e2dd02ccff66f">WHIST_SUCCESS</a></div><div class="ttdeci">@ WHIST_SUCCESS</div><div class="ttdoc">Success - not an error.</div><div class="ttdef"><b>Definition:</b> error_codes.h:32</div></div>
+<div class="ttc" id="agroup__error__codes_html_ga18cc8e20ea58aa56867b56542e89b04d"><div class="ttname"><a href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a></div><div class="ttdeci">WhistStatus</div><div class="ttdoc">Error codes.</div><div class="ttdef"><b>Definition:</b> error_codes.h:24</div></div>
 <div class="ttc" id="aclient__utils_8c_html_a430fbb0a44a1bb01ae188a0860f0acce"><div class="ttname"><a href="client__utils_8c.html#a430fbb0a44a1bb01ae188a0860f0acce">COMMAND_LINE_INT_OPTION</a></div><div class="ttdeci">COMMAND_LINE_INT_OPTION(output_width, 'w', &quot;width&quot;, MIN_SCREEN_WIDTH, MAX_SCREEN_WIDTH, &quot;Set the width for the windowed-mode window, &quot; &quot;if both width and height are specified.&quot;) COMMAND_LINE_INT_OPTION(output_height</div></div>
-<div class="ttc" id="agroup__command__line_html_ga4ce693fdd94db5cacacb4898c145c56a"><div class="ttname"><a href="group__command__line.html#ga4ce693fdd94db5cacacb4898c145c56a">whist_handle_bool_option_internal</a></div><div class="ttdeci">bool whist_handle_bool_option_internal(const WhistCommandLineOption *opt, const char *value)</div><div class="ttdef"><b>Definition:</b> command_line.c:41</div></div>
-<div class="ttc" id="agroup__command__line_html_gaf772be603a98408ec77fd7b6b88ec98a"><div class="ttname"><a href="group__command__line.html#gaf772be603a98408ec77fd7b6b88ec98a">whist_handle_int_option_internal</a></div><div class="ttdeci">bool whist_handle_int_option_internal(const WhistCommandLineOption *opt, const char *value)</div><div class="ttdoc">These types and functions are the handlers used by the macros above, and should not be used directly.</div><div class="ttdef"><b>Definition:</b> command_line.c:24</div></div>
-<div class="ttc" id="astructWhistCommandLineOption_html"><div class="ttname"><a href="structWhistCommandLineOption.html">WhistCommandLineOption</a></div><div class="ttdoc">Type defining a command-line option.</div><div class="ttdef"><b>Definition:</b> command_line.h:109</div></div>
-<div class="ttc" id="agroup__command__line_html_gac730dec8659f8bb7e8439d8de62da7b7"><div class="ttname"><a href="group__command__line.html#gac730dec8659f8bb7e8439d8de62da7b7">whist_handle_string_option_internal</a></div><div class="ttdeci">bool whist_handle_string_option_internal(const WhistCommandLineOption *opt, const char *value)</div><div class="ttdef"><b>Definition:</b> command_line.c:79</div></div>
-<div class="ttc" id="aclient_2main_8c_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="client_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> main.c:3</div></div>
-<div class="ttc" id="agroup__command__line_html_ga9edd9962ccdb5e4f5266fb62e90c64cd"><div class="ttname"><a href="group__command__line.html#ga9edd9962ccdb5e4f5266fb62e90c64cd">COMMAND_LINE_CALLBACK_OPTION</a></div><div class="ttdeci">#define COMMAND_LINE_CALLBACK_OPTION(callback, short_option, long_option, flags, help_text)</div><div class="ttdoc">Register an option using a callback.</div><div class="ttdef"><b>Definition:</b> command_line.h:240</div></div>
-<div class="ttc" id="agroup__command__line_html_ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d"><div class="ttname"><a href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d">WHIST_OPTION_NO_ARGUMENT</a></div><div class="ttdeci">@ WHIST_OPTION_NO_ARGUMENT</div><div class="ttdoc">The option takes no argument.</div><div class="ttdef"><b>Definition:</b> command_line.h:88</div></div>
-<div class="ttc" id="agroup__command__line_html_ga2999f5e0dd774986657e452a4e89f6a5"><div class="ttname"><a href="group__command__line.html#ga2999f5e0dd774986657e452a4e89f6a5">whist_parse_command_line</a></div><div class="ttdeci">bool whist_parse_command_line(int argc, const char **argv, WhistOperandHandler operand_handler)</div><div class="ttdoc">Parse a command line.</div><div class="ttdef"><b>Definition:</b> command_line.c:263</div></div>
-<div class="ttc" id="aparse__args_8c_html_a54be959a616e3c5f2a789e65b4ea1f52"><div class="ttname"><a href="parse__args_8c.html#a54be959a616e3c5f2a789e65b4ea1f52">COMMAND_LINE_STRING_OPTION</a></div><div class="ttdeci">COMMAND_LINE_STRING_OPTION(private_key_option, 'k', &quot;private-key&quot;, 32, &quot;Pass in the RSA Private Key as a hexadecimal string.&quot;)</div><div class="ttdef"><b>Definition:</b> parse_args.c:33</div></div>
+<div class="ttc" id="agroup__command__line_html_ggaaf8fd5f0e57d456151c951e0f3715fc4af6dd7746f23869121fbaf8ebdc3e20b0"><div class="ttname"><a href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4af6dd7746f23869121fbaf8ebdc3e20b0">WHIST_OPTION_ALLOCATED</a></div><div class="ttdeci">@ WHIST_OPTION_ALLOCATED</div><div class="ttdoc">The option variable is allocated by the command-line handling.</div><div class="ttdef"><b>Definition:</b> command_line.h:110</div></div>
+<div class="ttc" id="astructWhistCommandLineOption_html"><div class="ttname"><a href="structWhistCommandLineOption.html">WhistCommandLineOption</a></div><div class="ttdoc">Type defining a command-line option.</div><div class="ttdef"><b>Definition:</b> command_line.h:116</div></div>
+<div class="ttc" id="agroup__command__line_html_ga46979ed6f4391ff2ff27c7f53d13fbcc"><div class="ttname"><a href="group__command__line.html#ga46979ed6f4391ff2ff27c7f53d13fbcc">whist_handle_bool_option_internal</a></div><div class="ttdeci">WhistStatus whist_handle_bool_option_internal(const WhistCommandLineOption *opt, const char *value)</div><div class="ttdef"><b>Definition:</b> command_line.c:42</div></div>
+<div class="ttc" id="agroup__error__codes_html_ga8c41b5f16ecb8298963cbeea354a24fc"><div class="ttname"><a href="group__error__codes.html#ga8c41b5f16ecb8298963cbeea354a24fc">whist_error_string</a></div><div class="ttdeci">const char * whist_error_string(WhistStatus error_code)</div><div class="ttdoc">Retrieve a string representation of the given error code.</div><div class="ttdef"><b>Definition:</b> error_codes.c:10</div></div>
+<div class="ttc" id="agroup__command__line_html_ga9edd9962ccdb5e4f5266fb62e90c64cd"><div class="ttname"><a href="group__command__line.html#ga9edd9962ccdb5e4f5266fb62e90c64cd">COMMAND_LINE_CALLBACK_OPTION</a></div><div class="ttdeci">#define COMMAND_LINE_CALLBACK_OPTION(callback, short_option, long_option, flags, help_text)</div><div class="ttdoc">Register an option using a callback.</div><div class="ttdef"><b>Definition:</b> command_line.h:247</div></div>
+<div class="ttc" id="aclient_2main_8c_html_ac0f2228420376f4db7e1274f2b41667c"><div class="ttname"><a href="client_2main_8c.html#ac0f2228420376f4db7e1274f2b41667c">main</a></div><div class="ttdeci">int main(int argc, const char *argv[])</div><div class="ttdef"><b>Definition:</b> main.c:3</div></div>
+<div class="ttc" id="agroup__command__line_html_ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d"><div class="ttname"><a href="group__command__line.html#ggaaf8fd5f0e57d456151c951e0f3715fc4a9460d1273ff4bc18b130ccc11bfe238d">WHIST_OPTION_NO_ARGUMENT</a></div><div class="ttdeci">@ WHIST_OPTION_NO_ARGUMENT</div><div class="ttdoc">The option takes no argument.</div><div class="ttdef"><b>Definition:</b> command_line.h:89</div></div>
+<div class="ttc" id="agroup__command__line_html_ga2502c4954679990fad8f661adef1c0f6"><div class="ttname"><a href="group__command__line.html#ga2502c4954679990fad8f661adef1c0f6">COMMAND_LINE_STRING_OPTION</a></div><div class="ttdeci">#define COMMAND_LINE_STRING_OPTION(variable, short_option, long_option, max_length, help_text)</div><div class="ttdoc">Register a string option.</div><div class="ttdef"><b>Definition:</b> command_line.h:217</div></div>
+<div class="ttc" id="agroup__command__line_html_ga811d7e343cf382c1f739be4ad93e33b0"><div class="ttname"><a href="group__command__line.html#ga811d7e343cf382c1f739be4ad93e33b0">whist_handle_int_option_internal</a></div><div class="ttdeci">WhistStatus whist_handle_int_option_internal(const WhistCommandLineOption *opt, const char *value)</div><div class="ttdoc">These types and functions are the handlers used by the macros above, and should not be used directly.</div><div class="ttdef"><b>Definition:</b> command_line.c:25</div></div>
+<div class="ttc" id="agroup__command__line_html_gafddcf4ea41ea69d223a3009bebf1da03"><div class="ttname"><a href="group__command__line.html#gafddcf4ea41ea69d223a3009bebf1da03">whist_handle_string_option_internal</a></div><div class="ttdeci">WhistStatus whist_handle_string_option_internal(const WhistCommandLineOption *opt, const char *value)</div><div class="ttdef"><b>Definition:</b> command_line.c:81</div></div>
+<div class="ttc" id="agroup__command__line_html_ga85a7f39dd8d85a52a7292592caa0f5ec"><div class="ttname"><a href="group__command__line.html#ga85a7f39dd8d85a52a7292592caa0f5ec">whist_parse_command_line</a></div><div class="ttdeci">WhistStatus whist_parse_command_line(int argc, const char **argv, WhistOperandHandler operand_handler)</div><div class="ttdoc">Parse a command line.</div><div class="ttdef"><b>Definition:</b> command_line.c:307</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

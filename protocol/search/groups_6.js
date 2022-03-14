@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['threading_4955',['Threading',['../group__threading.html',1,'']]],
-  ['timers_4956',['Timers',['../group__timers.html',1,'']]]
+  ['region_20allocator_4997',['Region Allocator',['../group__region__allocator.html',1,'']]]
 ];

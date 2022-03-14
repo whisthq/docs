@@ -117,7 +117,8 @@ Over-use detector</h2>
 Rate control</h2>
 <p>The rate control is designed to increase the estimate of the available bandwidth as long as there is no detected congestion and to ensure that we will eventually match the available bandwidth of the channel and detect an over-use.</p>
 <p>As soon as over-use has been detected, the available bandwidth estimated by the controller is decreased.</p>
-<p>The rate control subsystem has 3 states: Increase, Decrease and Hold.</p><ul>
+<p>The rate control subsystem has 3 states: Increase, Decrease and Hold.</p>
+<ul>
 <li>"Increase" is the state when no congestion is detected</li>
 <li>"Decrease" is the state where congestion is detected</li>
 <li>"Hold" is a state that waits until built-up queues have drained before going to "increase" state.</li>
@@ -135,22 +136,15 @@ Rate control</h2>
 </table>
 <p>New bitrate message is sent once every update_interval duration, except when switching from Increase state to Decrease state where a new bitrate message will be sent immediately. The RECOMMENDED value of update_interval is 1 second</p>
 <p>Herein we define incoming_bitrate R(i) as follows. It is the incoming bitrate measured over the last 250ms.</p>
-<p>The new bitrate A(i) will be calculated as follows </p>
+<p>The new bitrate A(i) will be calculated as follows</p>
 <h3><a class="anchor" id="autotoc_md202"></a>
 Increase bitrate</h3>
-<p>The bitrate is increased to a new value only if the following conditions are met.</p><ul>
-<li>System is currently in "Increase state"</li>
-<li>update_interval duration has passed since we sent the last new bitrate message</li>
-<li>R(i) is greater than BANDWITH_USED_THRESHOLD times of A(i-1). The RECOMMENDED value of BANDWITH_USED_THRESHOLD is 0.95</li>
-</ul>
+<p>The bitrate is increased to a new value only if the following conditions are met. - System is currently in "Increase state" - update_interval duration has passed since we sent the last new bitrate message - R(i) is greater than BANDWITH_USED_THRESHOLD times of A(i-1). The RECOMMENDED value of BANDWITH_USED_THRESHOLD is 0.95</p>
 <p>The bitrate A(i) is updated as per the below equation </p><pre class="fragment">A(i) = A(i-1) * ((100 + increase_percent(i)) / 100)
 </pre><p>The value of increase_percent(i), is a value that starts with a high initial value when current A(i) appears to be far from convergence. increase_percent(i) gets reduced gradually as we approach convergence. The exact method of calculating increase_percent(i) will specified later in this document.</p>
 <h3><a class="anchor" id="autotoc_md203"></a>
 Decrease bitrate</h3>
-<p>The bitrate is decreased to a new value only if the following conditions are met.</p><ul>
-<li>System is currently in "Decrease state"</li>
-<li>update_interval duration has passed since we sent the last "decrease" bitrate message</li>
-</ul>
+<p>The bitrate is decreased to a new value only if the following conditions are met. - System is currently in "Decrease state" - update_interval duration has passed since we sent the last "decrease" bitrate message</p>
 <p>The bitrate A(i) is updated as per the below equation </p><pre class="fragment">A(i) = R(i) * DECREASE_RATIO
 </pre><p>The RECOMMENDED value of DECREASE_RATIO is 0.95</p>
 <h3><a class="anchor" id="autotoc_md204"></a>
