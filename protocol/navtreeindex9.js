@@ -1,11 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structDebugConsoleOverrideValues.html#a8b256cd1bcc979b4523e067484656a13":[11,0,20,0],
-"structDebugConsoleOverrideValues.html#a98e29b3292bdd95ea1907657a9d81795":[11,0,20,6],
-"structDecodedFrameData.html":[11,0,21],
-"structDecodedFrameData.html#a4b9999ad62fc81cba381d10728bc2598":[11,0,21,3],
-"structDecodedFrameData.html#a5f6c1b087be41c2cd65bccee5a0838ad":[11,0,21,2],
-"structDecodedFrameData.html#a66788ca3580272abce0db59473100b55":[11,0,21,4],
 "structDecodedFrameData.html#a88dd4ffb3f9846ec887568a91eda2f3d":[11,0,21,1],
 "structDecodedFrameData.html#a9d101bb9cda6e9feb3a1be64b2827575":[11,0,21,0],
 "structDynamicBuffer.html":[10,1,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX9 =
 "structLodePNGDecoderSettings.html#aa8f3907b3dcaf09892a752806be2fc59":[11,0,48,3],
 "structLodePNGDecoderSettings.html#af26f2b29cd338ce4476bee9571a0818a":[11,0,48,0],
 "structLodePNGDecompressSettings.html":[11,0,49],
-"structLodePNGDecompressSettings.html#a023aa5946c99934d40280850a4d8b204":[11,0,49,1]
+"structLodePNGDecompressSettings.html#a023aa5946c99934d40280850a4d8b204":[11,0,49,1],
+"structLodePNGDecompressSettings.html#a0bdb19d05ae04b4fce7ed8c72463ab57":[11,0,49,4],
+"structLodePNGDecompressSettings.html#a44a3616151a81422c237a5334752299c":[11,0,49,5],
+"structLodePNGDecompressSettings.html#a66e3608b541c64bb275c0ac1a80c3ec6":[11,0,49,0],
+"structLodePNGDecompressSettings.html#a9dd432e46330dbd2ce3ef1929c64337d":[11,0,49,2],
+"structLodePNGDecompressSettings.html#afab4b919650b51b4d2f175a60ed6c580":[11,0,49,3],
+"structLodePNGEncoderSettings.html":[11,0,50]
 };

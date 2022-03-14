@@ -1,11 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structStunEntry.html#a10839151cc119dbc37f661fb95c781a2":[11,0,81,0],
-"structStunEntry.html#a2f91ab967aef8fd994899c1a931fcd75":[11,0,81,2],
-"structStunEntry.html#afbe51e6c2b5677fb46034ced462d1f7b":[11,0,81,1],
-"structStunRequest.html":[11,0,82],
-"structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282":[11,0,82,0],
-"structStunRequest.html#aef0c7d317052068582b3ec0d5766ae64":[11,0,82,1],
 "structTCPContext.html":[11,0,83],
 "structTCPContext.html#a474478d48859345d14be78a71dfd676a":[11,0,83,12],
 "structTCPContext.html#a4a5bc2ddd88a33524974192c1a595f2f":[11,0,83,6],
@@ -249,5 +243,11 @@ var NAVTREEINDEX11 =
 "structWhistKeyboardState.html#aeec25eabc37f3876a2124ec667159abb":[11,0,106,4],
 "structWhistMouseButtonMessage.html":[11,0,107],
 "structWhistMouseButtonMessage.html#a4823ef318b2fc7ce5c789f0c6ade6b66":[11,0,107,0],
-"structWhistMouseButtonMessage.html#a4dd1fe88c2d80ac4ffec3c446903343f":[11,0,107,2]
+"structWhistMouseButtonMessage.html#a4dd1fe88c2d80ac4ffec3c446903343f":[11,0,107,2],
+"structWhistMouseButtonMessage.html#adf48ef5492b6cc207b0bbb2f9a5d39c2":[11,0,107,1],
+"structWhistMouseMotionMessage.html":[11,0,108],
+"structWhistMouseMotionMessage.html#a2441b1d6e0a0a7cbe5aae4660c155e4d":[11,0,108,1],
+"structWhistMouseMotionMessage.html#aa3f76ca2fff34baeb5caca83c5717a43":[11,0,108,5],
+"structWhistMouseMotionMessage.html#ab85a9ab8e56b98b203501f939382ac92":[11,0,108,3],
+"structWhistMouseMotionMessage.html#ac661eae8b7dfba74339ca28576d13ee1":[11,0,108,0]
 };

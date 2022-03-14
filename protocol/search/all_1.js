@@ -80,6 +80,5 @@ var searchData=
   ['avg_5fframe_5fduration_5fin_5fus_82',['AVG_FRAME_DURATION_IN_US',['../whist_8h.html#accb8ea6004024e6e62e60d954d52a4fb',1,'whist.h']]],
   ['avg_5ftimer_83',['avg_timer',['../structRingBuffer.html#a84793599d9ac862828c7c130a6593466',1,'RingBuffer']]],
   ['avpacket_5fbuffer_2ec_84',['avpacket_buffer.c',['../avpacket__buffer_8c.html',1,'']]],
-  ['avpacket_5fbuffer_2eh_85',['avpacket_buffer.h',['../avpacket__buffer_8h.html',1,'']]],
-  ['a_20glimpse_20of_20debug_20console_20_2b_20protocol_20analyzer_86',['A Glimpse of Debug Console + Protocol Analyzer',['../md_whist_tools_README.html',1,'']]]
+  ['avpacket_5fbuffer_2eh_85',['avpacket_buffer.h',['../avpacket__buffer_8h.html',1,'']]]
 ];

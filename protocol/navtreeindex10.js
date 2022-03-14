@@ -1,11 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structLodePNGDecompressSettings.html#a0bdb19d05ae04b4fce7ed8c72463ab57":[11,0,49,4],
-"structLodePNGDecompressSettings.html#a44a3616151a81422c237a5334752299c":[11,0,49,5],
-"structLodePNGDecompressSettings.html#a66e3608b541c64bb275c0ac1a80c3ec6":[11,0,49,0],
-"structLodePNGDecompressSettings.html#a9dd432e46330dbd2ce3ef1929c64337d":[11,0,49,2],
-"structLodePNGDecompressSettings.html#afab4b919650b51b4d2f175a60ed6c580":[11,0,49,3],
-"structLodePNGEncoderSettings.html":[11,0,50],
 "structLodePNGEncoderSettings.html#a04dc9622ccd1d7c74c56291409aa512a":[11,0,50,4],
 "structLodePNGEncoderSettings.html#a0d82e8f2fabcb6cebbc54b80922945f1":[11,0,50,2],
 "structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a":[11,0,50,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX10 =
 "structStreamResetData.html":[11,0,80],
 "structStreamResetData.html#a16f429be3a64a4361fe94c22a38fed9c":[11,0,80,1],
 "structStreamResetData.html#a294e70254183a8b43646a15159abad1e":[11,0,80,0],
-"structStunEntry.html":[11,0,81]
+"structStunEntry.html":[11,0,81],
+"structStunEntry.html#a10839151cc119dbc37f661fb95c781a2":[11,0,81,0],
+"structStunEntry.html#a2f91ab967aef8fd994899c1a931fcd75":[11,0,81,2],
+"structStunEntry.html#afbe51e6c2b5677fb46034ced462d1f7b":[11,0,81,1],
+"structStunRequest.html":[11,0,82],
+"structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282":[11,0,82,0],
+"structStunRequest.html#aef0c7d317052068582b3ec0d5766ae64":[11,0,82,1]
 };

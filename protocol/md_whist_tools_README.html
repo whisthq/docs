@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: A Glimpse of Debug Console + Protocol Analyzer</title>
+<title>Whist Protocol: Whist Protocol Development Tools</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,35 +82,79 @@ $(document).ready(function(){initNavTree('md_whist_tools_README.html',''); initR
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">A Glimpse of Debug Console + Protocol Analyzer </div>  </div>
+<div class="title">Whist Protocol Development Tools </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Take a look at the screenshots inside this <a href="https://github.com/whisthq/whist/pull/5352">PR</a>.</p>
+<div class="textblock"><p>This folder contains a variety of tools we use to develop the Whist <code>/protocol</code> project.</p>
 <h1><a class="anchor" id="autotoc_md214"></a>
-Debug Console</h1>
+Profiling Tools</h1>
+<p>This folder contains scripts we can use to profile protocol performance.</p>
 <h2><a class="anchor" id="autotoc_md215"></a>
-Overview</h2>
+Flamegraphs</h2>
+<p>Flamegraphs are a useful visualization of hierarchical data. They can be very useful for displaying folder sizes or filtering processes. In our case, we are using them to visualize CPU time spent in various function calls, using the stack to keep track of nested calls. The code for flamegraph generation here comes from Brendan Gregg's excellent scripts, which can be found at <a href="https://github.com/brendangregg/FlameGraph">https://github.com/brendangregg/FlameGraph</a>.</p>
+<h3><a class="anchor" id="autotoc_md216"></a>
+DTrace Flamegraph</h3>
+<p>To generate an interactive flamegraph svg from a snapshot of a protocol run, first launch an instance of the protocol and get the PID using something like:</p>
+<div class="fragment"><div class="line">pidof WhistClient</div>
+</div><!-- fragment --><p>Next, run: <code>./dtrace-flamegraph.sh $PID</code>, which will use <code>dtrace</code> to profile the CPU time of the next 60 seconds of the protocol run and output to <code>graph.svg</code>.</p>
+<p>To inspect, open <code>graph.svg</code> in the browser! It is interactive, so try clicking on functions in the flamegraph to zoom in or using the search functionality in the top right.</p>
+<p>Note that in order for function symbols to properly be rendered, you may need to build the protocol in debug mode, using something like</p>
+<div class="fragment"><div class="line">cmake -S . -B build-debug -D CMAKE_BUILD_TYPE=Debug</div>
+<div class="line">cd build-debug</div>
+<div class="line">make -j</div>
+</div><!-- fragment --><p>By default, <code>dtrace</code> is disabled on macOS &ndash; mac users will need to disable system integrity protections for <code>dtrace</code> specifically. If you have trouble with the <a href="https://poweruser.blog/using-dtrace-with-sip-enabled-3826a352e64bj">online guide</a> for doing this, then please reach out to <code>@rpadaki</code> who can help you to configure your system.</p>
+<h3><a class="anchor" id="autotoc_md217"></a>
+Perf Flamegraph</h3>
+<p>The <code>perf</code> flamegraph is especially useful on the server side, but some setup is needed. Since the server protocol runs inside a mandelbox, we must follow the <a href="#mandelbox-considerations">guidelines below</a>. In particular, you will need to profile the mandelbox from the EC2 host, rather than working directly inside the mandelbox.</p>
+<p>When <code>perf</code> generates profiling data, it expects to locate the binary at the command path associated with the process <em>inside the mandelbox</em>. Therefore, you will need to use symlinks to fake the mandelbox binary location from the host. To do this, simply run on the host:</p>
+<div class="fragment"><div class="line">mkdir -p /usr/share/whist/bin</div>
+<div class="line">sudo ln -sf /home/ubuntu/whist/protocol/build-docker/server/build64 /usr/share/whist/bin</div>
+</div><!-- fragment --><p>Note that for the client side of the end-to-end testing framework, the above command is modified to match the client protocol. If you have cloned the monorepo to a different location in your instance, please modify the above command appropriately.</p>
+<p>If you want more detailed profiling into some of our dependencies, make sure that the relevant packages are installed on the host. For example, for ALSA shared objects to be installed in the correct location, you may need to run <code>apt install libasound2-plugins</code> on the host.</p>
+<p>And remember that in order for function symbols to properly be recorded, build the protocol in debug mode (which is the default for mandelbox builds).</p>
+<p>Once the setup is complete, the execution is once again simple! Run <code>pidof WhistServer</code> to get the PID, followed by</p>
+<p>``<code>bash sudo ./perf-flamegraph.sh $PID</code> </p><div class="fragment"><div class="line">As with the DTrace flamegraph, an interactive `graph.svg` will be generated.</div>
+<div class="line"> </div>
+<div class="line">#### Other Flamegraphs</div>
+<div class="line"> </div>
+<div class="line">Flamegraphs are a very powerful tool and can be used with a number of other profilers. Feel free to add any more useful scripts you build! Again, see https://github.com/brendangregg/FlameGraph for utilities and inspiration.</div>
+<div class="line"> </div>
+<div class="line">### Mandelbox Considerations</div>
+<div class="line"> </div>
+<div class="line">Due to `seccomp` and `apparmor` filters, as well as namespace switching performed by Docker, directly using many profiling tools inside mandelboxes may be inadequate or impossible. In these cases, it may be desirable to profile _from the host_.</div>
+<div class="line"> </div>
+<div class="line">For an example with `gdb`, one can run from the host:</div>
+<div class="line"> </div>
+<div class="line">```bash</div>
+<div class="line">sudo gdb -p $(pidof /usr/share/whist/WhistServer)</div>
+</div><!-- fragment --><hr  />
+<h2><a class="anchor" id="autotoc_md219"></a>
+Debugging Tools</h2>
+<h3><a class="anchor" id="autotoc_md220"></a>
+Debug Console</h3>
+<h4><a class="anchor" id="autotoc_md221"></a>
+Overview</h4>
 <p>When enabled, the <code>Debug Console</code> provides a telnet style console on port 9090 at client side, allows you to send commands to the client while it is running. You can change parameters of the client interactively/dynamically (e.g. change <code>bitrate</code> <code>audio_fec_ratio</code> <code>video_fec_ratio</code>), or let the program run some commands for you (e.g. get report from <code>protocol_analyzer</code>).</p>
-<h2><a class="anchor" id="autotoc_md216"></a>
-How to enable</h2>
+<p>You can find images illustrating this process inside this <a href="https://github.com/whisthq/whist/pull/5352">PR</a>.</p>
+<h4><a class="anchor" id="autotoc_md222"></a>
+How to enable</h4>
 <p>Debug Console can only be enabled with a <code>DEBUG</code> build.</p>
 <p>To enable the debug console, add <code>--debug-console PORT</code> to the options of client, for example:</p>
 <p>If without debug console, the command is:</p>
 <div class="fragment"><div class="line">./wclient 54.219.45.195 -p32262:30420.32263:35760.32273:4473 -k 1ef9aec50197a20aa35b68b85fb7ace0</div>
 </div><!-- fragment --><p>Then the following command will run the client with debug console enable on port 9090:</p>
 <div class="fragment"><div class="line">./wclient 54.219.45.195 -p32262:30420.32263:35760.32273:4473 -k 1ef9aec50197a20aa35b68b85fb7ace0 --debug-console 9090</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md217"></a>
-How to access</h2>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md223"></a>
+How to access</h4>
 <p>the easiest way to access debug console is to use the tool <code>netcat</code>:</p>
 <div class="fragment"><div class="line">nc 127.0.0.1 9090 -u</div>
 </div><!-- fragment --><p>Then you get a telnet style console. You can run commands (inside the console) and get outputs, in a way similar to a shell (e.g. <code>bash</code>).</p>
 <p>the <code>rlwrap</code> tool can make your use of <code>netcat</code> easier, e.g. you can use the arrows to move cursor and recall previous command, when used with rlwrap, the full commands is:</p>
 <div class="fragment"><div class="line">rlwrap nc 127.0.0.1 9090 -u</div>
 </div><!-- fragment --><p>(you can get both <code>netcat</code> and <code>rlwrap</code> easily from <code>apt</code> or <code>brew</code>)</p>
-<h2><a class="anchor" id="autotoc_md218"></a>
-Support Commands</h2>
-<h3><a class="anchor" id="autotoc_md219"></a>
-&lt;tt&gt;report_XXX&lt;/tt&gt;</h3>
+<h4><a class="anchor" id="autotoc_md224"></a>
+Support Commands</h4>
+<p><a class="anchor" id="autotoc_md225"></a></p><h5><code>report_XXX</code></h5>
 <p>use <code>report_video</code> or <code>report_audio</code> to get a report of the last <code>report_num</code> (default:2000) of records of video or audio.</p>
 <p><code>report_video_moreformat</code> or <code>report_audio_moreformat</code> are similar, increase the use of format string at the cost of a longer output.</p>
 <p>examples:</p>
@@ -118,8 +162,7 @@ Support Commands</h2>
 <div class="line">report_audio  /home/yancey/audio1.txt       #get a report of audio, save to /home/yancey/audio1.txt</div>
 <div class="line">report_video_moreformat  video2.txt         #get a report of video, with more format attempt</div>
 <div class="line">report_audio_moreformat  audio2.txt.cpp     #get a report of audio, save the file as cpp, so that you can cheat your editor to highlight it</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md220"></a>
-&lt;tt&gt;set&lt;/tt&gt;</h3>
+</div><!-- fragment --><p><a class="anchor" id="autotoc_md226"></a></p><h5><code>set</code></h5>
 <p>Set allows you to change parameters inside the client dynamically. Support parameters:</p>
 <ul>
 <li><code>video_fec_ratio</code>, change the video fec ratio</li>
@@ -136,16 +179,14 @@ Support Commands</h2>
 <div class="line">set verbose_log 1                    #enable verbose log</div>
 <div class="line">set bitrate 2000000                  #force bitrate to 2Mbps</div>
 <div class="line">set report_num 5000                  #include 5000 records in following reports</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md221"></a>
-&lt;tt&gt;info&lt;/tt&gt;</h3>
+</div><!-- fragment --><p><a class="anchor" id="autotoc_md227"></a></p><h5><code>info</code></h5>
 <p>Take a peek of the values of parameters supported by set</p>
-<h3><a class="anchor" id="autotoc_md222"></a>
-&lt;tt&gt;insert_atexit_handler&lt;/tt&gt; or &lt;tt&gt;insert&lt;/tt&gt;</h3>
+<p><a class="anchor" id="autotoc_md228"></a></p><h5><code>insert_atexit_handler</code> or <code>insert</code></h5>
 <p>Insert a atexit handler that turns exit() to abort, so that we can get the stack calling exit(). It's helpful for debugging problems, when you don't know where in the code called exit(), especially the exit() is called in some lib.</p>
-<h1><a class="anchor" id="autotoc_md223"></a>
-Protocol Analyzer</h1>
-<h2><a class="anchor" id="autotoc_md224"></a>
-Overview</h2>
+<h3><a class="anchor" id="autotoc_md229"></a>
+Protocol Analyzer</h3>
+<h4><a class="anchor" id="autotoc_md230"></a>
+Overview</h4>
 <p>This is a protocol analyzer in the side-way style, that you can talk to interactively via the debug console. Allows you to analyze the protocol dynamically, get advanced metrics.</p>
 <p>Features/Advantages:</p>
 <ul>
@@ -158,14 +199,13 @@ Overview</h2>
 <ul>
 <li>when you make serious changes to the protocol, you need to update the protocol analyzer to track it correctly, increases maintain burden of codebase. But (1) this usually won't happen unless something essential is changed in protocol (2) when it happens it should be easy to update the analyzer</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md225"></a>
-How to run</h2>
+<h4><a class="anchor" id="autotoc_md231"></a>
+How to run</h4>
 <p>When debug console is enabled, the protocol analyzer is automatically enabled. You don't need to explicitly start it, all you need to do is talk to it via <code>debug_console</code>. To get report from it, or change some parameters (e.g <code>report_num</code>, <code>skip_last</code>)</p>
-<h2><a class="anchor" id="autotoc_md226"></a>
-Report format</h2>
+<h4><a class="anchor" id="autotoc_md232"></a>
+Report format</h4>
 <p>The report of protocol analyzer consists two sections: (1) high level information/statistics (2) a breakdown of all frames inside the report</p>
-<h3><a class="anchor" id="autotoc_md227"></a>
-high level information/statistic</h3>
+<p><a class="anchor" id="autotoc_md233"></a></p><h5>High-level information/statistic</h5>
 <p>This section is a list of information/statistic, consist of:</p>
 <ul>
 <li><code>type</code>, whether the report is for audio or video. Possible values: <code>VIDEO</code> or <code>AUDIO</code></li>
@@ -187,8 +227,7 @@ high level information/statistic</h3>
 <li><code>estimated_network_loss</code>, the estimated network packet loss. (only exist in <code>VIDEO</code> report)</li>
 </ul>
 <p>All time are the relative time since client start. This also applies to the sections below, in the whole report.</p>
-<h3><a class="anchor" id="autotoc_md228"></a>
-break down of frames</h3>
+<p><a class="anchor" id="autotoc_md234"></a></p><h5>Breakdown of frames</h5>
 <p>This section is a list of frame infos, each one consist of:</p>
 <p>Main Attributes(always showing):</p>
 <ul>
@@ -214,8 +253,7 @@ break down of frames</h3>
 <li><code>overwrite</code>, when this shows, it means when the current frame becomes "current rendering" inside ringbuffer, it overwrites a frame that never becomes pending</li>
 <li><code>queue full</code>, when this shows, it means when the current frame tries to become pending, it triggers an "Audio queue full". (Only for audio)</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md229"></a>
-breakdown of segments</h4>
+<h6>Breakdown of segments</h6>
 <p>The breakdown of segments is a list of items. Each items correspond of a segment of the frame, contains:</p>
 <ul>
 <li><code>idx</code>, the index of segment. this <code>idx</code> label is omitted by default output</li>
@@ -254,8 +292,8 @@ breakdown of segments</h4>
 <li>for the 4th segment, the non-retransmit packet got lost, and NACK was sent, the retransmit segment got lost, we sent and NACK again. And finally got the segment.</li>
 <li>the 5th segment arrives as normal.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md230"></a>
-Implementation</h2>
+<h4><a class="anchor" id="autotoc_md235"></a>
+Implementation</h4>
 <p>This section talks about the implementation of protocol analyzer, hopefully you can get an idea on how to extend it.</p>
 <p>The protocol analyzer mainly consist of:</p>
 <ol type="1">
@@ -264,8 +302,7 @@ Implementation</h2>
 <li>statistics generator, for the high-level info/stat in report</li>
 <li>pretty printer for the frame breakdown in report</li>
 </ol>
-<h3><a class="anchor" id="autotoc_md231"></a>
-Data structures</h3>
+<p><a class="anchor" id="autotoc_md236"></a></p><h5>Data structures</h5>
 <p>Below are the data structures used for protocol analyzer.</p>
 <div class="fragment"><div class="line">//info at segment level</div>
 <div class="line">Struct SegmentLevelInfo</div>
@@ -293,8 +330,7 @@ Data structures</h3>
 <div class="line">    map&lt;int, TypeLevelInfo&gt; type_level_infos;   //a map from type to type level info.</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want to record new info, you will need to put it as an attribute of the data structures.</p>
-<h3><a class="anchor" id="autotoc_md232"></a>
-Hooks</h3>
+<p><a class="anchor" id="autotoc_md237"></a></p><h5>Hooks</h5>
 <p>Hooks are the public functions with name <code>whist_analyzer_record_XXXXX()</code>, they hook into the protocol and save info into the data structure, for example:</p>
 <div class="fragment"><div class="line">// record info related to the arrival of a segment</div>
 <div class="line">void whist_analyzer_record_segment(WhistSegment *packet)</div>
@@ -307,16 +343,14 @@ Hooks</h3>
 <div class="line">//real implementation is here</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want to record new info, you might need to implement new hooks.</p>
-<h3><a class="anchor" id="autotoc_md233"></a>
-Statistics generator</h3>
+<p><a class="anchor" id="autotoc_md238"></a></p><h5>Statistics generator</h5>
 <p>The Statistics generator is just the function:</p>
 <div class="fragment"><div class="line">string ProtocolAnalyzer::get_stat(）</div>
 <div class="line">{</div>
 <div class="line">...</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want to implement new metric/stat, add code to this function</p>
-<h3><a class="anchor" id="autotoc_md234"></a>
-Pretty printer for frame breakdown</h3>
+<p><a class="anchor" id="autotoc_md239"></a></p><h5>Pretty printer for frame breakdown</h5>
 <p>The pretty printer for frame breakdown is just the function:</p>
 <div class="fragment"><div class="line">string FrameLevelInfo::to_string()</div>
 <div class="line">{</div>
