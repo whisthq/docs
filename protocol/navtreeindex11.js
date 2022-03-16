@@ -1,5 +1,11 @@
 var NAVTREEINDEX11 =
 {
+"structRingBuffer.html#a9a530d5ffefea570684d49434bf29675":[11,0,72,19],
+"structRingBuffer.html#aaa64a4fdd4784f18a649112d278e8f49":[11,0,72,30],
+"structRingBuffer.html#aaad9ec2694ba2cb33f5b9abc0bdb00f6":[11,0,72,22],
+"structRingBuffer.html#ab14941089c8847eb375cbaaa66c82eea":[11,0,72,11],
+"structRingBuffer.html#abd759c93f9abe89bc60b57e307a278d1":[11,0,72,24],
+"structRingBuffer.html#ac10e312643f764cc1ce77fa1e01fe830":[11,0,72,18],
 "structRingBuffer.html#ac44f73cf4dcb49ad0bbabc3fca4f1fd4":[11,0,72,32],
 "structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717":[11,0,72,6],
 "structRingBuffer.html#acd9677b93af3bb750a85c88b6c3a3f21":[11,0,72,36],
@@ -243,11 +249,5 @@ var NAVTREEINDEX11 =
 "structWhistCursorInfo.html#a4f58cbac81bccfbd27f81f8270d43186":[11,0,99,8],
 "structWhistCursorInfo.html#a58b87b58af4f44806ee7ae0423c3b6f0":[11,0,99,5],
 "structWhistCursorInfo.html#a77b762c1cfae190d948be08f1b646c42":[11,0,99,3],
-"structWhistCursorInfo.html#a97c4457f2bbfe7ed6492af81e7e0bf42":[11,0,99,2],
-"structWhistCursorInfo.html#ab13be0969c797eb4b96d1d0f04137b83":[11,0,99,7],
-"structWhistCursorInfo.html#ab3f1c4f53af0601a98be9fabe468f653":[11,0,99,6],
-"structWhistCursorInfo.html#ac402f1d1a0939f0d128fea3baaed6a0f":[11,0,99,0],
-"structWhistCursorInfo.html#ad4b2270478785ce0451c906c1109bfa5":[11,0,99,1],
-"structWhistCursorInfo.html#ae3dfc504cc471c9cb214e002fbe8a478":[11,0,99,4],
-"structWhistCursorInfo.html#ae6f6609f7599d30555498ee923401082":[11,0,99,9]
+"structWhistCursorInfo.html#a97c4457f2bbfe7ed6492af81e7e0bf42":[11,0,99,2]
 };

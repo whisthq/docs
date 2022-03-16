@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('network__algorithm_8c.html',''); initR
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="network__algorithm_8h_source.html">network_algorithm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="debug__console_8h_source.html">whist/tools/debug_console.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="debug__console_8h_source.html">whist/debug/debug_console.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="features_8h_source.html">whist/core/features.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -179,9 +179,9 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the client's adaptive bitrate code. Any algorithms we are using for </p>
-<h1><a class="anchor" id="autotoc_md184"></a>
+<h1><a class="anchor" id="autotoc_md210"></a>
 predicting bitrate should be stored here.</h1>
-<h1><a class="anchor" id="autotoc_md185"></a>
+<h1><a class="anchor" id="autotoc_md211"></a>
 Usage</h1>
 <p>Place to put any predictive/adaptive bitrate algorithms. In the current setup, each algorithm is a function that takes in inputs through a <a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> struct. The function is responsible for maintaining any internal state necessary for the algorithm (possibly through the use of custom types or helpers), and should update client_max_bitrate when necessary.</p>
 <p>To change the algorithm the client uses, set <code>calculate_new_bitrate</code> to the desired algorithm. The function assigned to <code>calculate_new_bitrate</code> should have signature such that it takes one argument of type <code><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a></code> and returns type <code><a class="el" href="structNetworkSettings.html" title="The networking state of a socket.">NetworkSettings</a></code>.</p>

@@ -153,9 +153,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the code to create and destroy Encoders and use </p>
-<h1><a class="anchor" id="autotoc_md290"></a>
+<h1><a class="anchor" id="autotoc_md285"></a>
 them to encode captured screens.</h1>
-<h1><a class="anchor" id="autotoc_md291"></a>
+<h1><a class="anchor" id="autotoc_md286"></a>
 Usage</h1>
 <p>Video is encoded to H264 via either a hardware encoder (currently, we use NVidia GPUs, so we use NVENC) or a software encoder. H265 is also supported but not currently used. Since NVidia allows us to both capture and encode the screen, most of the functions will be called in <a class="el" href="server_2main_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">server/main.c</a> with an empty dummy encoder. For encoders, create an H264 encoder via create_video_encode, and use it to encode frames via video_encoder_encode. Write the encoded output via video_encoder_write_buffer, and when finished, destroy the encoder using destroy_video_encoder. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>

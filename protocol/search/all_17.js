@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['whist_20protocol_2129',['Whist Protocol',['../index.html',1,'']]],
-  ['whist_20desktop_20clients_2130',['Whist Desktop Clients',['../md_client_README.html',1,'']]],
-  ['whist_20windows_2flinux_20ubuntu_20servers_2131',['Whist Windows/Linux Ubuntu Servers',['../md_server_README.html',1,'']]],
-  ['whist_20congestion_20control_28wcc_29_2132',['Whist Congestion Control(WCC)',['../md_whist_network_WCC.html',1,'']]],
-  ['whist_20protocol_20development_20tools_2133',['Whist Protocol Development Tools',['../md_whist_tools_README.html',1,'']]],
+  ['whist_20protocol_2130',['Whist Protocol',['../index.html',1,'']]],
+  ['whist_20desktop_20clients_2131',['Whist Desktop Clients',['../md_client_README.html',1,'']]],
+  ['whist_20windows_2flinux_20ubuntu_20servers_2132',['Whist Windows/Linux Ubuntu Servers',['../md_server_README.html',1,'']]],
+  ['whist_20congestion_20control_28wcc_29_2133',['Whist Congestion Control(WCC)',['../md_whist_network_WCC.html',1,'']]],
   ['wait_5fcursor_5fhash1_2134',['WAIT_CURSOR_HASH1',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a14694dae7a5c607b66d4db9120c92719',1,'linux_cursor_capture.c']]],
   ['wait_5fcursor_5fhash10_2135',['WAIT_CURSOR_HASH10',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a2b768025637b9189afcd033a9e91400b',1,'linux_cursor_capture.c']]],
   ['wait_5fcursor_5fhash11_2136',['WAIT_CURSOR_HASH11',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a5208f2ea943633b6ff9de82b9cdc81f2',1,'linux_cursor_capture.c']]],
@@ -32,7 +31,7 @@ var searchData=
   ['wait_5ftimer_2158',['wait_timer',['../alsacapture_8c.html#a729e6be9914233256d56176ddee16c78',1,'wait_timer(AudioDevice *audio_device):&#160;alsacapture.c'],['../audiocapture_8h.html#a729e6be9914233256d56176ddee16c78',1,'wait_timer(AudioDevice *audio_device):&#160;alsacapture.c']]],
   ['wants_5fiframe_2159',['wants_iframe',['../structFFmpegEncoder.html#ad28eb7b920e487f3686433bd573e1fde',1,'FFmpegEncoder::wants_iframe()'],['../structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709',1,'NvidiaEncoder::wants_iframe()']]],
   ['warning_5flevel_2160',['WARNING_LEVEL',['../logging_8h.html#a28deb91651998cb8a97e41dfe534bd7a',1,'logging.h']]],
-  ['warning_5ftag_2161',['WARNING_TAG',['../logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6',1,'WARNING_TAG():&#160;logging.h'],['../logging_8c.html#a338fa052f38dd0d3bb9b9118027c8277',1,'warning_tag():&#160;logging.c'],['../logging_8h.html#a3b73e35a39fd12e39deba2a53876031f',1,'warning_tag():&#160;logging.h']]],
+  ['warning_5ftag_2161',['warning_tag',['../logging_8c.html#a338fa052f38dd0d3bb9b9118027c8277',1,'warning_tag():&#160;logging.c'],['../logging_8h.html#a3b73e35a39fd12e39deba2a53876031f',1,'warning_tag():&#160;logging.h'],['../logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6',1,'WARNING_TAG():&#160;logging.h']]],
   ['wasapicapture_2ec_2162',['wasapicapture.c',['../wasapicapture_8c.html',1,'']]],
   ['wasapicapture_2eh_2163',['wasapicapture.h',['../wasapicapture_8h.html',1,'']]],
   ['wcc_2emd_2164',['WCC.md',['../WCC_8md.html',1,'']]],

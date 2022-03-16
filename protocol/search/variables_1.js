@@ -22,7 +22,7 @@ var searchData=
   ['arrival_5ftime_3317',['arrival_time',['../structGroupStats.html#ae3c647e5eb51590ab29adc7476b94b5a',1,'GroupStats']]],
   ['audio_5fcontext_3318',['audio_context',['../structWhistRenderer.html#a6820e831f8284a11f7426612c8ae33ef',1,'WhistRenderer']]],
   ['audio_5fdecoder_3319',['audio_decoder',['../structAudioContext.html#a333d813e153e9a5457e1a66be50a6d93',1,'AudioContext']]],
-  ['audio_5ffec_5fratio_3320',['audio_fec_ratio',['../structNetworkSettings.html#a962c6ece3541c1680711bd0ae96a89af',1,'NetworkSettings::audio_fec_ratio()'],['../structDebugConsoleOverrideValues.html#a8b256cd1bcc979b4523e067484656a13',1,'DebugConsoleOverrideValues::audio_fec_ratio()']]],
+  ['audio_5ffec_5fratio_3320',['audio_fec_ratio',['../structDebugConsoleOverrideValues.html#a8b256cd1bcc979b4523e067484656a13',1,'DebugConsoleOverrideValues::audio_fec_ratio()'],['../structNetworkSettings.html#a962c6ece3541c1680711bd0ae96a89af',1,'NetworkSettings::audio_fec_ratio()']]],
   ['audio_5ffifo_3321',['audio_fifo',['../structAudioEncoder.html#a7339881e33afb0c60b85c11717d00b91',1,'AudioEncoder']]],
   ['audio_5ffrequency_3322',['audio_frequency',['../structAudioContext.html#a47e4f8566820b049f0e11ac111ce8fc2',1,'AudioContext::audio_frequency()'],['../structAudioFrame.html#addab4cb46993f3cb0786a2a9d6234b58',1,'AudioFrame::audio_frequency()'],['../handle__server__message_8c.html#a227c64b79cf6b3b8986b03c1fcea78ec',1,'audio_frequency():&#160;handle_server_message.c']]],
   ['auto_5fconvert_3323',['auto_convert',['../structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a',1,'LodePNGEncoderSettings']]],

@@ -98,5 +98,6 @@ var searchData=
   ['duration_5fper_5fbucket_463',['DURATION_PER_BUCKET',['../udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df',1,'udp.c']]],
   ['dwflags_464',['dwFlags',['../structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb',1,'AudioDevice']]],
   ['dwwaitresult_465',['dwWaitResult',['../structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb',1,'AudioDevice']]],
-  ['dynamicbuffer_466',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
+  ['dynamicbuffer_466',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]],
+  ['debugging_20tools_467',['Debugging Tools',['../md_whist_debug_README.html',1,'']]]
 ];

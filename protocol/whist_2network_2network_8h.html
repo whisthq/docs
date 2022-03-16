@@ -233,9 +233,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains all code that interacts directly with sockets </p>
-<h1><a class="anchor" id="autotoc_md178"></a>
+<h1><a class="anchor" id="autotoc_md204"></a>
 under-the-hood.</h1>
-<h1><a class="anchor" id="autotoc_md179"></a>
+<h1><a class="anchor" id="autotoc_md205"></a>
 Usage</h1>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>: This type represents the context of an open socket.</p><ul>
 <li>To use a socket, call create_udp_socket_context or create_tcp_socket_context with the desired parameters</li>
@@ -248,7 +248,7 @@ Usage</h1>
 <li>A <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> may be sent twice in the case of packet recovery, but any two WhistPackets found that are of the same type and ID will be expected to have the same data (To be specific, the <a class="el" href="structClient.html">Client</a> should never legally send two distinct packets with same ID/Type, and neither should the Server, but if the <a class="el" href="structClient.html">Client</a> and Server happen to both make a PACKET_MESSAGE packet with ID 1, they can be different)</li>
 </ul>
 <hr  />
- <h2><a class="anchor" id="autotoc_md181"></a>
+ <h2><a class="anchor" id="autotoc_md207"></a>
 Client</h2>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> context; create_tcp_socket_context(&amp;context, "10.0.0.5", 5055, 500, 250);</p>
 <p>char* msg = "Hello this is a message!"; send_packet(&amp;context, PACKET_MESSAGE, msg, strlen(msg) + 1);</p>
@@ -257,7 +257,7 @@ Client</h2>
 <p>free_packet(packet);</p>
 <p>destroy_socket_context(&amp;context);</p>
 <hr  />
- <h2><a class="anchor" id="autotoc_md183"></a>
+ <h2><a class="anchor" id="autotoc_md209"></a>
 Server</h2>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> context; create_tcp_socket_context(&amp;context, NULL, 5055, 500, 250);</p>
 <p>WhistPacket* packet = NULL; while(packet == NULL) { socket_update(context); packet = get_packet(&amp;context, PACKET_MESSAGE); }</p>

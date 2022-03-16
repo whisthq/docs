@@ -8,7 +8,7 @@ var searchData=
   ['verbose_5flog_5faudio_4014',['verbose_log_audio',['../structDebugConsoleOverrideValues.html#a98e29b3292bdd95ea1907657a9d81795',1,'DebugConsoleOverrideValues']]],
   ['video_5fbitrate_4015',['video_bitrate',['../structNetworkSettings.html#a05c1fd03886fa4c2c077b03ec8c8beee',1,'NetworkSettings']]],
   ['video_5fcontext_4016',['video_context',['../structWhistRenderer.html#a525bae96914dfc1abcd43cec401ac461',1,'WhistRenderer']]],
-  ['video_5ffec_5fratio_4017',['video_fec_ratio',['../structNetworkSettings.html#a504f5d541cbb2329b36d646afc16ff70',1,'NetworkSettings::video_fec_ratio()'],['../structDebugConsoleOverrideValues.html#a335ac2dc7c1bc5309e5088e329b1cc78',1,'DebugConsoleOverrideValues::video_fec_ratio()']]],
+  ['video_5ffec_5fratio_4017',['video_fec_ratio',['../structDebugConsoleOverrideValues.html#a335ac2dc7c1bc5309e5088e329b1cc78',1,'DebugConsoleOverrideValues::video_fec_ratio()'],['../structNetworkSettings.html#a504f5d541cbb2329b36d646afc16ff70',1,'NetworkSettings::video_fec_ratio()']]],
   ['video_5fthread_5fcuda_5fcontext_4018',['video_thread_cuda_context',['../cudacontext_8c.html#a3fad4683f3f7a313295d1d9a3c680a03',1,'cudacontext.c']]],
   ['videodata_5flength_4019',['videodata_length',['../structVideoFrame.html#a21d459b551ceeac67227b348099c193b',1,'VideoFrame']]]
 ];

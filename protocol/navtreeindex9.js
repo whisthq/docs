@@ -1,5 +1,11 @@
 var NAVTREEINDEX9 =
 {
+"structCaptureDevice.html":[11,0,12],
+"structCaptureDevice.html#a21adf1c38ab9e91fc40131fc2edab8c4":[11,0,12,0],
+"structCaptureDevice.html#a35716fa2587ecc62a1e4a01252849418":[11,0,12,4],
+"structCaptureDevice.html#a434ce48f6bf02c758f551cda2ffdfe6e":[11,0,12,2],
+"structCaptureDevice.html#a6800f23c51341920773e2dbaab517fe8":[11,0,12,1],
+"structCaptureDevice.html#aa2c17d01561072cc45142d873790c7f0":[11,0,12,5],
 "structCaptureDevice.html#ac7380b5b42caebd0a7401c17437d4ec2":[11,0,12,3],
 "structClient.html":[11,0,13],
 "structClient.html#a17ecd3431f124e939332167e67d588a7":[11,0,13,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX9 =
 "structLinkedList.html#a578d4830c047fbd8f7a1d9712d24329b":[10,5,0,1],
 "structLodePNGBitReader.html":[11,0,43],
 "structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[11,0,43,0],
-"structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[11,0,43,3],
-"structLodePNGBitReader.html#a80a148b29e36301da77f3d2432cbd608":[11,0,43,4],
-"structLodePNGBitReader.html#aac5615d1bb15682c3bc6e9e52b8cd5aa":[11,0,43,1],
-"structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f":[11,0,43,2],
-"structLodePNGBitWriter.html":[11,0,44],
-"structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[11,0,44,0],
-"structLodePNGBitWriter.html#aeabd9ce60873a85f587df7df46548d04":[11,0,44,1]
+"structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[11,0,43,3]
 };
