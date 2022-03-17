@@ -55,6 +55,7 @@ var annotated_dup =
     [ "LodePNGState", "structLodePNGState.html", "structLodePNGState" ],
     [ "LodePNGTime", "structLodePNGTime.html", "structLodePNGTime" ],
     [ "LoggerQueueItem", "structLoggerQueueItem.html", "structLoggerQueueItem" ],
+    [ "LogRateLimiter", "structLogRateLimiter.html", "structLogRateLimiter" ],
     [ "LTRAction", "structLTRAction.html", "structLTRAction" ],
     [ "LTRFrame", "structLTRFrame.html", "structLTRFrame" ],
     [ "LTRState", "structLTRState.html", "structLTRState" ],

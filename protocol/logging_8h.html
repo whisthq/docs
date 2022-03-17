@@ -82,9 +82,9 @@ $(document).ready(function(){initNavTree('logging_8h.html',''); initResizable();
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">logging.h File Reference</div>  </div>
 </div><!--header-->
@@ -98,6 +98,12 @@ $(document).ready(function(){initNavTree('logging_8h.html',''); initResizable();
 </div>
 <p><a href="logging_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLogRateLimiter.html">LogRateLimiter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct used with rate-limited messages.  <a href="structLogRateLimiter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a5efcbb4a78eb37e2945e61e61f235a2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a5efcbb4a78eb37e2945e61e61f235a2e">LOGGER_QUEUE_SIZE</a>&#160;&#160;&#160;1000</td></tr>
@@ -110,6 +116,8 @@ Macros</h2></td></tr>
 <tr class="separator:a6f6e0a7a87048fb100a02f5c9d8660d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166c2449cbc8389076f29f5a1360338e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a166c2449cbc8389076f29f5a1360338e">NO_LOG</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="separator:a166c2449cbc8389076f29f5a1360338e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199911ae2851d1c2b00991093529718c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a199911ae2851d1c2b00991093529718c">FATAL_ERROR_LEVEL</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a199911ae2851d1c2b00991093529718c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3812f9c42e2965d252530ec6ad3f62fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a3812f9c42e2965d252530ec6ad3f62fd">ERROR_LEVEL</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:a3812f9c42e2965d252530ec6ad3f62fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28deb91651998cb8a97e41dfe534bd7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a28deb91651998cb8a97e41dfe534bd7a">WARNING_LEVEL</a>&#160;&#160;&#160;0x02</td></tr>
@@ -126,28 +134,22 @@ Macros</h2></td></tr>
 <tr class="separator:a428c87d300cfd4cb4e73ee7140380ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a015c0931d8d1874039144d793549529d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a015c0931d8d1874039144d793549529d">LOG_MESSAGE</a>(tag,  message, ...)</td></tr>
 <tr class="separator:a015c0931d8d1874039144d793549529d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a806511f4930171733227c99101dc0606"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>&#160;&#160;&#160;&quot;\n&quot;</td></tr>
-<tr class="separator:a806511f4930171733227c99101dc0606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f84e8321c3bc4f546cf4a2a4798064"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ae6f84e8321c3bc4f546cf4a2a4798064">DEBUG_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#abf8797be9592c40509360ecfb19d8f46">debug_tag</a></td></tr>
-<tr class="separator:ae6f84e8321c3bc4f546cf4a2a4798064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eeca73435ee192b8d720a89e47b3c87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a1eeca73435ee192b8d720a89e47b3c87">INFO_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a8bbb754016c19fc0b561913b8bc6368c">info_tag</a></td></tr>
-<tr class="separator:a1eeca73435ee192b8d720a89e47b3c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5445774555999e2d5b299937810fbd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ac5445774555999e2d5b299937810fbd6">METRIC_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#aa9c028ec324becace5379ca9d464ef2c">metric_tag</a></td></tr>
-<tr class="separator:ac5445774555999e2d5b299937810fbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34cab68c5e544eb2a0f0fdf344e327e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a34cab68c5e544eb2a0f0fdf344e327e6">WARNING_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a3b73e35a39fd12e39deba2a53876031f">warning_tag</a></td></tr>
-<tr class="separator:a34cab68c5e544eb2a0f0fdf344e327e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa29007116d11e676da62a3ae1dae4402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aa29007116d11e676da62a3ae1dae4402">ERROR_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a3589fb13fa885b89676847ffb2697f0e">error_tag</a></td></tr>
-<tr class="separator:aa29007116d11e676da62a3ae1dae4402"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f40cf1096c9b0050980ce64a7b21d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a8f40cf1096c9b0050980ce64a7b21d9a">FATAL_ERROR_TAG</a>&#160;&#160;&#160;<a class="el" href="logging_8h.html#aff25ab76e46fc4d636541212d924974a">fatal_error_tag</a></td></tr>
-<tr class="separator:a8f40cf1096c9b0050980ce64a7b21d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c216d22623f0933ecdc2fd1144caab3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a0c216d22623f0933ecdc2fd1144caab3">LOG_MESSAGE_RATE_LIMITED</a>(period_in_seconds,  max_messages_per_period,  tag,  message, ...)</td></tr>
+<tr class="separator:a0c216d22623f0933ecdc2fd1144caab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3299be792c6fbb84cd15f782b46482a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ae3299be792c6fbb84cd15f782b46482a">LOG_DEBUG</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a015c0931d8d1874039144d793549529d">LOG_MESSAGE</a>(DEBUG, message, ##__VA_ARGS__)</td></tr>
 <tr class="separator:ae3299be792c6fbb84cd15f782b46482a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a613ff8d5d47a2830e2a522509589b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a32a613ff8d5d47a2830e2a522509589b">LOG_DEBUG_RATE_LIMITED</a>(period_in_seconds,  max_messages_per_period,  message, ...)</td></tr>
+<tr class="separator:a32a613ff8d5d47a2830e2a522509589b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff4f292beeb047fd27cd7eb3ba92f7f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0">LOG_INFO</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a015c0931d8d1874039144d793549529d">LOG_MESSAGE</a>(INFO, message, ##__VA_ARGS__)</td></tr>
 <tr class="separator:aff4f292beeb047fd27cd7eb3ba92f7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac8ed231c87b38d9362111c45fd9048"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a2ac8ed231c87b38d9362111c45fd9048">LOG_INFO_RATE_LIMITED</a>(period_in_seconds,  max_messages_per_period,  message, ...)</td></tr>
+<tr class="separator:a2ac8ed231c87b38d9362111c45fd9048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad398f3e6ce3fb8dc44e88cf3ff0176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a4ad398f3e6ce3fb8dc44e88cf3ff0176">LOG_METRIC</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a015c0931d8d1874039144d793549529d">LOG_MESSAGE</a>(METRIC, message, ##__VA_ARGS__)</td></tr>
 <tr class="separator:a4ad398f3e6ce3fb8dc44e88cf3ff0176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9df5c6dc713c515884e63a80f499f6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b">LOG_WARNING</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a015c0931d8d1874039144d793549529d">LOG_MESSAGE</a>(WARNING, message, ##__VA_ARGS__)</td></tr>
 <tr class="separator:ad9df5c6dc713c515884e63a80f499f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad459f60b7026c4c753d19e7c4d7edb9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ad459f60b7026c4c753d19e7c4d7edb9f">LOG_WARNING_RATE_LIMITED</a>(period_in_seconds,  max_messages_per_period,  message, ...)</td></tr>
+<tr class="separator:ad459f60b7026c4c753d19e7c4d7edb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9577456efe501c56575750444162a3dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a9577456efe501c56575750444162a3dd">LOG_ERROR</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a015c0931d8d1874039144d793549529d">LOG_MESSAGE</a>(ERROR, message, ##__VA_ARGS__)</td></tr>
 <tr class="separator:a9577456efe501c56575750444162a3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44029e31f9ab552e79ca6164ca1eca94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a44029e31f9ab552e79ca6164ca1eca94">LOG_FATAL</a>(message, ...)</td></tr>
@@ -166,9 +168,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aec2b3c8a4110db3dacd0a0de88e5d556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aec2b3c8a4110db3dacd0a0de88e5d556">whist_init_logger</a> (void)</td></tr>
 <tr class="memdesc:aec2b3c8a4110db3dacd0a0de88e5d556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logger.  <a href="logging_8h.html#aec2b3c8a4110db3dacd0a0de88e5d556">More...</a><br /></td></tr>
 <tr class="separator:aec2b3c8a4110db3dacd0a0de88e5d556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab5eb353926ac1f060cf87f4306d334f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aab5eb353926ac1f060cf87f4306d334f">internal_logging_printf</a> (const char *tag, const char *file_name, const char *function, int line_number, const char *fmt_str,...)</td></tr>
-<tr class="memdesc:aab5eb353926ac1f060cf87f4306d334f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the given format string This is an internal function that shouldn't be used, please use the macros LOG_INFO, LOG_WARNING, etc.  <a href="logging_8h.html#aab5eb353926ac1f060cf87f4306d334f">More...</a><br /></td></tr>
-<tr class="separator:aab5eb353926ac1f060cf87f4306d334f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb343163f137d0dea0081e34869e6b74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aeb343163f137d0dea0081e34869e6b74">whist_log_printf</a> (unsigned int level, const char *file_name, const char *function, int line_number, const char *fmt_str,...)</td></tr>
+<tr class="memdesc:aeb343163f137d0dea0081e34869e6b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the given format string This is an internal function that shouldn't be used, please use the macros LOG_INFO, LOG_WARNING, etc.  <a href="logging_8h.html#aeb343163f137d0dea0081e34869e6b74">More...</a><br /></td></tr>
+<tr class="separator:aeb343163f137d0dea0081e34869e6b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc62c449e2a10a7733389c4fca6c1653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#afc62c449e2a10a7733389c4fca6c1653">whist_log_printf_rate_limited</a> (<a class="el" href="structLogRateLimiter.html">LogRateLimiter</a> *rate_limiter, unsigned int level, const char *file_name, const char *function, int line_number, const char *fmt_str,...)</td></tr>
+<tr class="memdesc:afc62c449e2a10a7733389c4fca6c1653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log with rate limiting.  <a href="logging_8h.html#afc62c449e2a10a7733389c4fca6c1653">More...</a><br /></td></tr>
+<tr class="separator:afc62c449e2a10a7733389c4fca6c1653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74138e514d79a0449c832cc913b86f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a74138e514d79a0449c832cc913b86f49">flush_logs</a> (void)</td></tr>
 <tr class="memdesc:a74138e514d79a0449c832cc913b86f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will immediately flush all of the logs, rather than slowly pushing the logs through from another thread.  <a href="logging_8h.html#a74138e514d79a0449c832cc913b86f49">More...</a><br /></td></tr>
 <tr class="separator:a74138e514d79a0449c832cc913b86f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,21 +183,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a54581b1f2ee2b138b99408b358df690b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a54581b1f2ee2b138b99408b358df690b">test_set_pause_state_on_logger_thread</a> (bool pause)</td></tr>
 <tr class="memdesc:a54581b1f2ee2b138b99408b358df690b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pause state on logging thread.  <a href="logging_8h.html#a54581b1f2ee2b138b99408b358df690b">More...</a><br /></td></tr>
 <tr class="separator:a54581b1f2ee2b138b99408b358df690b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:abf8797be9592c40509360ecfb19d8f46"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#abf8797be9592c40509360ecfb19d8f46">debug_tag</a></td></tr>
-<tr class="separator:abf8797be9592c40509360ecfb19d8f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bbb754016c19fc0b561913b8bc6368c"><td class="memItemLeft" align="right" valign="top">const char *const *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a8bbb754016c19fc0b561913b8bc6368c">info_tag</a></td></tr>
-<tr class="separator:a8bbb754016c19fc0b561913b8bc6368c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9c028ec324becace5379ca9d464ef2c"><td class="memItemLeft" align="right" valign="top">const char *const *const *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aa9c028ec324becace5379ca9d464ef2c">metric_tag</a></td></tr>
-<tr class="separator:aa9c028ec324becace5379ca9d464ef2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b73e35a39fd12e39deba2a53876031f"><td class="memItemLeft" align="right" valign="top">const char *const *const *const *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a3b73e35a39fd12e39deba2a53876031f">warning_tag</a></td></tr>
-<tr class="separator:a3b73e35a39fd12e39deba2a53876031f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3589fb13fa885b89676847ffb2697f0e"><td class="memItemLeft" align="right" valign="top">const char *const *const *const *const *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a3589fb13fa885b89676847ffb2697f0e">error_tag</a></td></tr>
-<tr class="separator:a3589fb13fa885b89676847ffb2697f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff25ab76e46fc4d636541212d924974a"><td class="memItemLeft" align="right" valign="top">const char *const *const *const *const *const *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#aff25ab76e46fc4d636541212d924974a">fatal_error_tag</a></td></tr>
-<tr class="separator:aff25ab76e46fc4d636541212d924974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -240,20 +230,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ae6f84e8321c3bc4f546cf4a2a4798064"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6f84e8321c3bc4f546cf4a2a4798064">&#9670;&nbsp;</a></span>DEBUG_TAG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEBUG_TAG&#160;&#160;&#160;<a class="el" href="logging_8h.html#abf8797be9592c40509360ecfb19d8f46">debug_tag</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a3812f9c42e2965d252530ec6ad3f62fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3812f9c42e2965d252530ec6ad3f62fd">&#9670;&nbsp;</a></span>ERROR_LEVEL</h2>
 
@@ -262,20 +238,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define ERROR_LEVEL&#160;&#160;&#160;0x01</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa29007116d11e676da62a3ae1dae4402"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa29007116d11e676da62a3ae1dae4402">&#9670;&nbsp;</a></span>ERROR_TAG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ERROR_TAG&#160;&#160;&#160;<a class="el" href="logging_8h.html#a3589fb13fa885b89676847ffb2697f0e">error_tag</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -305,14 +267,14 @@ Usage</h1>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a8f40cf1096c9b0050980ce64a7b21d9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f40cf1096c9b0050980ce64a7b21d9a">&#9670;&nbsp;</a></span>FATAL_ERROR_TAG</h2>
+<a id="a199911ae2851d1c2b00991093529718c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a199911ae2851d1c2b00991093529718c">&#9670;&nbsp;</a></span>FATAL_ERROR_LEVEL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FATAL_ERROR_TAG&#160;&#160;&#160;<a class="el" href="logging_8h.html#aff25ab76e46fc4d636541212d924974a">fatal_error_tag</a></td>
+          <td class="memname">#define FATAL_ERROR_LEVEL&#160;&#160;&#160;0x00</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -327,20 +289,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define INFO_LEVEL&#160;&#160;&#160;0x04</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1eeca73435ee192b8d720a89e47b3c87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eeca73435ee192b8d720a89e47b3c87">&#9670;&nbsp;</a></span>INFO_TAG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INFO_TAG&#160;&#160;&#160;<a class="el" href="logging_8h.html#a8bbb754016c19fc0b561913b8bc6368c">info_tag</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -387,6 +335,48 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a32a613ff8d5d47a2830e2a522509589b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a613ff8d5d47a2830e2a522509589b">&#9670;&nbsp;</a></span>LOG_DEBUG_RATE_LIMITED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DEBUG_RATE_LIMITED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">period_in_seconds, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">max_messages_per_period, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="logging_8h.html#a0c216d22623f0933ecdc2fd1144caab3">LOG_MESSAGE_RATE_LIMITED</a>(period_in_seconds, max_messages_per_period, DEBUG, message, \</div>
+<div class="line">                             ##__VA_ARGS__)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9577456efe501c56575750444162a3dd"></a>
@@ -491,6 +481,48 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a2ac8ed231c87b38d9362111c45fd9048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac8ed231c87b38d9362111c45fd9048">&#9670;&nbsp;</a></span>LOG_INFO_RATE_LIMITED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_RATE_LIMITED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">period_in_seconds, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">max_messages_per_period, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="logging_8h.html#a0c216d22623f0933ecdc2fd1144caab3">LOG_MESSAGE_RATE_LIMITED</a>(period_in_seconds, max_messages_per_period, INFO, message, \</div>
+<div class="line">                             ##__VA_ARGS__)</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a0b87e0d3bf5853bcbb0b66a7c48fdc05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b87e0d3bf5853bcbb0b66a7c48fdc05">&#9670;&nbsp;</a></span>LOG_LEVEL</h2>
 
@@ -536,9 +568,62 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                   \</div>
+<div class="line">        whist_log_printf(tag##_LEVEL, <a class="code" href="logging_8h.html#a6f6e0a7a87048fb100a02f5c9d8660d6">LOG_FILE_NAME</a>, __FUNCTION__, __LINE__, message <span class="stringliteral">&quot;\n&quot;</span>, \</div>
+<div class="line">                         ##__VA_ARGS__);                                                   \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0c216d22623f0933ecdc2fd1144caab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c216d22623f0933ecdc2fd1144caab3">&#9670;&nbsp;</a></span>LOG_MESSAGE_RATE_LIMITED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_MESSAGE_RATE_LIMITED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">period_in_seconds, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">max_messages_per_period, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tag, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                        \</div>
-<div class="line">        internal_logging_printf(tag##_TAG, <a class="code" href="logging_8h.html#a6f6e0a7a87048fb100a02f5c9d8660d6">LOG_FILE_NAME</a>, __FUNCTION__, __LINE__, message <span class="stringliteral">&quot;\n&quot;</span>, \</div>
-<div class="line">                                ##__VA_ARGS__);                                                 \</div>
+<div class="line">        static <a class="code" href="structLogRateLimiter.html">LogRateLimiter</a> log_message_rate_limiter_##__LINE__ = {                           \</div>
+<div class="line">            period_in_seconds, max_messages_per_period, <span class="keyword">false</span>, 0, {0, 0}};                      \</div>
+<div class="line">        whist_log_printf_rate_limited(&amp;log_message_rate_limiter_##__LINE__, tag##_LEVEL,        \</div>
+<div class="line">                                      <a class="code" href="logging_8h.html#a6f6e0a7a87048fb100a02f5c9d8660d6">LOG_FILE_NAME</a>, __FUNCTION__, __LINE__, message <span class="stringliteral">&quot;\n&quot;</span>,      \</div>
+<div class="line">                                      ##__VA_ARGS__);                                           \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 </div>
@@ -599,6 +684,48 @@ Usage</h1>
 
 </div>
 </div>
+<a id="ad459f60b7026c4c753d19e7c4d7edb9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad459f60b7026c4c753d19e7c4d7edb9f">&#9670;&nbsp;</a></span>LOG_WARNING_RATE_LIMITED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_WARNING_RATE_LIMITED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">period_in_seconds, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">max_messages_per_period, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="logging_8h.html#a0c216d22623f0933ecdc2fd1144caab3">LOG_MESSAGE_RATE_LIMITED</a>(period_in_seconds, max_messages_per_period, WARNING, message, \</div>
+<div class="line">                             ##__VA_ARGS__)</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a884a960393b267876a1e3bfc114f4032"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a884a960393b267876a1e3bfc114f4032">&#9670;&nbsp;</a></span>LOGGER_BUF_SIZE</h2>
 
@@ -641,34 +768,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ac5445774555999e2d5b299937810fbd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5445774555999e2d5b299937810fbd6">&#9670;&nbsp;</a></span>METRIC_TAG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define METRIC_TAG&#160;&#160;&#160;<a class="el" href="logging_8h.html#aa9c028ec324becace5379ca9d464ef2c">metric_tag</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a806511f4930171733227c99101dc0606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a806511f4930171733227c99101dc0606">&#9670;&nbsp;</a></span>NEWLINE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NEWLINE&#160;&#160;&#160;&quot;\n&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a166c2449cbc8389076f29f5a1360338e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a166c2449cbc8389076f29f5a1360338e">&#9670;&nbsp;</a></span>NO_LOG</h2>
 
@@ -691,20 +790,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define WARNING_LEVEL&#160;&#160;&#160;0x02</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a34cab68c5e544eb2a0f0fdf344e327e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34cab68c5e544eb2a0f0fdf344e327e6">&#9670;&nbsp;</a></span>WARNING_TAG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WARNING_TAG&#160;&#160;&#160;<a class="el" href="logging_8h.html#a3b73e35a39fd12e39deba2a53876031f">warning_tag</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -770,70 +855,6 @@ Usage</h1>
 
 <p>Check whether we are running the server in developer mode (which means that we won't catch segfaults) </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns a bool with a copy of the do_not_catch_segfaults static variable. </dd></dl>
-
-</div>
-</div>
-<a id="aab5eb353926ac1f060cf87f4306d334f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab5eb353926ac1f060cf87f4306d334f">&#9670;&nbsp;</a></span>internal_logging_printf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void internal_logging_printf </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>tag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>file_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line_number</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt_str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Log the given format string This is an internal function that shouldn't be used, please use the macros LOG_INFO, LOG_WARNING, etc. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tag</td><td>The tag-level to log with </td></tr>
-    <tr><td class="paramname">file_name</td><td>Name of the file this is being called from. </td></tr>
-    <tr><td class="paramname">function</td><td>Name of the function this is being called from. </td></tr>
-    <tr><td class="paramname">line_number</td><td>Line number this is being called from. </td></tr>
-    <tr><td class="paramname">fmt_str</td><td>The format string to printf with </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -904,93 +925,148 @@ Usage</h1>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="abf8797be9592c40509360ecfb19d8f46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf8797be9592c40509360ecfb19d8f46">&#9670;&nbsp;</a></span>debug_tag</h2>
+<a id="aeb343163f137d0dea0081e34869e6b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb343163f137d0dea0081e34869e6b74">&#9670;&nbsp;</a></span>whist_log_printf()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* const debug_tag</td>
+          <td class="memname">void whist_log_printf </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Log the given format string This is an internal function that shouldn't be used, please use the macros LOG_INFO, LOG_WARNING, etc. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The level to log with </td></tr>
+    <tr><td class="paramname">file_name</td><td>Name of the file this is being called from. </td></tr>
+    <tr><td class="paramname">function</td><td>Name of the function this is being called from. </td></tr>
+    <tr><td class="paramname">line_number</td><td>Line number this is being called from. </td></tr>
+    <tr><td class="paramname">fmt_str</td><td>The format string to printf with </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a3589fb13fa885b89676847ffb2697f0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3589fb13fa885b89676847ffb2697f0e">&#9670;&nbsp;</a></span>error_tag</h2>
+<a id="afc62c449e2a10a7733389c4fca6c1653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc62c449e2a10a7733389c4fca6c1653">&#9670;&nbsp;</a></span>whist_log_printf_rate_limited()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* const * const * const * const * const error_tag</td>
+          <td class="memname">void whist_log_printf_rate_limited </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structLogRateLimiter.html">LogRateLimiter</a> *&#160;</td>
+          <td class="paramname"><em>rate_limiter</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aff25ab76e46fc4d636541212d924974a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff25ab76e46fc4d636541212d924974a">&#9670;&nbsp;</a></span>fatal_error_tag</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">const char* const * const * const * const * const * const fatal_error_tag</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8bbb754016c19fc0b561913b8bc6368c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bbb754016c19fc0b561913b8bc6368c">&#9670;&nbsp;</a></span>info_tag</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">const char* const * const info_tag</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa9c028ec324becace5379ca9d464ef2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9c028ec324becace5379ca9d464ef2c">&#9670;&nbsp;</a></span>metric_tag</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">const char* const * const * const metric_tag</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3b73e35a39fd12e39deba2a53876031f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b73e35a39fd12e39deba2a53876031f">&#9670;&nbsp;</a></span>warning_tag</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">const char* const * const * const * const warning_tag</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Log with rate limiting. </p>
+<pre class="fragment">                 This is an internal function, see the macros
+                 LOG_INFO_RATE_LIMITED, LOG_WARNING_RATE_LIMITED,
+                 etc. above.
+</pre><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rate_limiter</td><td>Rate limiter structure. This should be static and local to the log line being limited. </td></tr>
+    <tr><td class="paramname">level</td><td>The level to log with </td></tr>
+    <tr><td class="paramname">file_name</td><td>Name of the file this is being called from. </td></tr>
+    <tr><td class="paramname">function</td><td>Name of the function this is being called from. </td></tr>
+    <tr><td class="paramname">line_number</td><td>Line number this is being called from. </td></tr>
+    <tr><td class="paramname">fmt_str</td><td>The format string to printf with </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="alogging_8h_html_a0c216d22623f0933ecdc2fd1144caab3"><div class="ttname"><a href="logging_8h.html#a0c216d22623f0933ecdc2fd1144caab3">LOG_MESSAGE_RATE_LIMITED</a></div><div class="ttdeci">#define LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, tag, message,...)</div><div class="ttdef"><b>Definition:</b> logging.h:119</div></div>
+<div class="ttc" id="astructLogRateLimiter_html"><div class="ttname"><a href="structLogRateLimiter.html">LogRateLimiter</a></div><div class="ttdoc">Struct used with rate-limited messages.</div><div class="ttdef"><b>Definition:</b> logging.h:87</div></div>
 <div class="ttc" id="alogging_8h_html_a6f6e0a7a87048fb100a02f5c9d8660d6"><div class="ttname"><a href="logging_8h.html#a6f6e0a7a87048fb100a02f5c9d8660d6">LOG_FILE_NAME</a></div><div class="ttdeci">#define LOG_FILE_NAME</div><div class="ttdef"><b>Definition:</b> logging.h:55</div></div>
 <div class="ttc" id="awhist_8h_html_aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e"><div class="ttname"><a href="whist_8h.html#aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e">WHIST_EXIT_FAILURE</a></div><div class="ttdeci">@ WHIST_EXIT_FAILURE</div><div class="ttdef"><b>Definition:</b> whist.h:642</div></div>
 <!-- start footer part -->

@@ -1,17 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"sdl__event__handler_8c.html#a3c3e2078c3e8d9dc12234276d14b0f63":[12,0,0,16,4],
-"sdl__event__handler_8c.html#a5b2d8acba46a3a8d41972491e3e06b01":[12,0,0,16,6],
-"sdl__event__handler_8c.html#a700daac0987fe2e75253f19580033150":[12,0,0,16,0],
-"sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48":[12,0,0,16,3],
-"sdl__event__handler_8c.html#a9f5f2b90e5441717b0499669e2e742d3":[12,0,0,16,7],
-"sdl__event__handler_8c.html#aaec8856a6feb3761aac2c9676dcb9180":[12,0,0,16,5],
-"sdl__event__handler_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9":[12,0,0,16,9],
-"sdl__event__handler_8c.html#adb980b682301eb39aab79d8280ba0610":[12,0,0,16,2],
-"sdl__event__handler_8c.html#ae4d074dba1161a48966b8e8693300306":[12,0,0,16,1],
-"sdl__event__handler_8h.html":[12,0,0,17],
-"sdl__event__handler_8h.html#a700daac0987fe2e75253f19580033150":[12,0,0,17,0],
-"sdl__event__handler_8h.html#ae4d074dba1161a48966b8e8693300306":[12,0,0,17,1],
 "sdl__event__handler_8h_source.html":[12,0,0,17],
 "sdl__utils_8c.html":[12,0,0,18],
 "sdl__utils_8c.html#a06471a2a38199e688f7d64c720b929b8":[12,0,0,18,29],
@@ -249,5 +237,17 @@ var NAVTREEINDEX8 =
 "structBlockAllocator.html":[11,0,9],
 "structBlockAllocator.html#a32327324d57694f59450f4cc57dd6d0a":[11,0,9,2],
 "structBlockAllocator.html#aa1b49f3699c3ed6c35e205992e838b9e":[11,0,9,3],
-"structBlockAllocator.html#ab3fc7d5e5c511c89f438a7a912d12c18":[11,0,9,1]
+"structBlockAllocator.html#ab3fc7d5e5c511c89f438a7a912d12c18":[11,0,9,1],
+"structBlockAllocator.html#ad8bf1f1d8e5187655f81b52d3d706a27":[11,0,9,0],
+"structCaptureDevice.html":[11,0,12],
+"structCaptureDevice.html#a21adf1c38ab9e91fc40131fc2edab8c4":[11,0,12,0],
+"structCaptureDevice.html#a35716fa2587ecc62a1e4a01252849418":[11,0,12,4],
+"structCaptureDevice.html#a434ce48f6bf02c758f551cda2ffdfe6e":[11,0,12,2],
+"structCaptureDevice.html#a6800f23c51341920773e2dbaab517fe8":[11,0,12,1],
+"structCaptureDevice.html#aa2c17d01561072cc45142d873790c7f0":[11,0,12,5],
+"structCaptureDevice.html#ac7380b5b42caebd0a7401c17437d4ec2":[11,0,12,3],
+"structClient.html":[11,0,13],
+"structClient.html#a17ecd3431f124e939332167e67d588a7":[11,0,13,0],
+"structClient.html#a6d3700d67550763757c5c4e3fdaa8827":[11,0,13,4],
+"structClient.html#a77177b559115520f217f957fc94b8cee":[11,0,13,3]
 };

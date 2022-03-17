@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['encodedaudio_4081',['EncodedAudio',['../audioencode_8h.html#a8858004dfad5279aa1854de4a5dd3988',1,'audioencode.h']]]
+  ['encodedaudio_4087',['EncodedAudio',['../audioencode_8h.html#a8858004dfad5279aa1854de4a5dd3988',1,'audioencode.h']]]
 ];

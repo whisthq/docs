@@ -143,15 +143,15 @@ var NAVTREEINDEX =
 "group__linked__list.html#gaa8a75971b2cbe1084b3912917bc87cb1",
 "input_8h.html#a6318f9a9f9816b21cf90962162f9f437",
 "lodepng_8h.html#a8311042f05584567db96143811fe706d",
-"native__window__utils_8h.html#a73fcb271dd56d8d4e85f009dfd47699d",
-"sdl__event__handler_8c.html#a3c3e2078c3e8d9dc12234276d14b0f63",
-"structBlockAllocator.html#ad8bf1f1d8e5187655f81b52d3d706a27",
-"structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d",
-"structRingBuffer.html#a98690129a3aadb85db96a39252d01a9f",
-"structWhistCursorInfo.html#a77b762c1cfae190d948be08f1b646c42",
-"throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f",
-"whist_8h.html#a690e9b7e2e4f08889666b8c98d25ff52",
-"whist_8h.html#af0b6fc03c4691990ac064ede518dd2c3"
+"native__window__utils__x11_8c.html",
+"sdl__event__handler_8h_source.html",
+"structClient.html#ae0a5a253676a6b7ce3d327b85d16a24c",
+"structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8",
+"structRingBuffer.html#ac10e312643f764cc1ce77fa1e01fe830",
+"structWhistCursorInfo.html#ae3dfc504cc471c9cb214e002fbe8a478",
+"throttle_8h.html#a9a7d937741746a5c2a34e5250841339c",
+"whist_8h.html#a6fb202279d179dd749b095338241329b",
+"whist_8h.html#afa47769b22f4e68bdbf79565f9852032a390d7bc7b89a05b3cd1117aa2cc983b2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
