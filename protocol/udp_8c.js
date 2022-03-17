@@ -48,6 +48,7 @@ var udp_8c =
     [ "udp_get_num_pending_frames", "udp_8c.html#ae5ba49cf201e631db0cb9b475efafe5d", null ],
     [ "udp_handle_network_settings", "udp_8c.html#afef7e30cfe7786aa52b75f8cd9c68445", null ],
     [ "udp_handle_pending_nacks", "udp_8c.html#a6a844acc1cde901a4c1a430b83fa5331", null ],
+    [ "udp_handle_resize", "udp_8c.html#ac8524e19b2d5f6d86b8b57c07c0e67da", null ],
     [ "udp_packet_max_size", "udp_8c.html#a53bd961b505875950fc33444b170f72c", null ],
     [ "udp_register_nack_buffer", "udp_8c.html#aed5f450b0434a42cec5d03a819d29eb3", null ],
     [ "udp_register_ring_buffer", "udp_8c.html#a82678fad4b2b94e4a1e6e73bd07c9fcf", null ],

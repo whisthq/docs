@@ -326,6 +326,9 @@ Unit Testing</h3>
 <p>To run all unit tests, recompile the protocol by going into the <code>protocol/build</code> directory and running <code>make -j</code>. This is assuming you have already ran <code>cmake -S .. -B .</code> from the Building the Protocol section. If you have not done that, do so before running <code>make -j</code>.</p>
 <p>Next, run <code>cd test</code>. Now:</p>
 <p>To run the unit tests for the protocol, run <code>./WhistProtocolTest</code></p>
+<p>On macOS, <code>make -j test</code> will build and run the unit tests.</p>
+<p>If only a particular test case needs to be run, then use the below <code>--gtest_filter</code> argument like in the example below.</p>
+<p><code>GTEST_ARGS="--gtest_filter=ProtocolTest.LoggerTest" make test</code></p>
 <h2><a class="anchor" id="autotoc_md25"></a>
 Continuous Integration</h2>
 <p>For every push or PR, the code will be automatically linted via clang-format according to the <a href="#styling">styling</a> guidelines.</p>

@@ -2,6 +2,7 @@ var structUDPContext =
 [
     [ "ack", "structUDPContext.html#a462c0356a2e1df8937f2a7549936300c", null ],
     [ "binary_aes_private_key", "structUDPContext.html#a219c1b5d7a17f22088da8baec323968d", null ],
+    [ "congestion_control_mutex", "structUDPContext.html#afd2ba81e36f45e98b73d0754f46a671a", null ],
     [ "connected", "structUDPContext.html#aa9b4d7a74a655df817fb09b3603b06a9", null ],
     [ "connection_addr", "structUDPContext.html#aa4b662ee521d634b8b5f7822c6252418", null ],
     [ "connection_lost", "structUDPContext.html#a57e721559680e4bb20ddb141acce49b2", null ],

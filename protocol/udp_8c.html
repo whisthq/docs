@@ -226,6 +226,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6a844acc1cde901a4c1a430b83fa5331"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a6a844acc1cde901a4c1a430b83fa5331">udp_handle_pending_nacks</a> (void *raw_context)</td></tr>
 <tr class="memdesc:a6a844acc1cde901a4c1a430b83fa5331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle all pending nacks.  <a href="udp_8c.html#a6a844acc1cde901a4c1a430b83fa5331">More...</a><br /></td></tr>
 <tr class="separator:a6a844acc1cde901a4c1a430b83fa5331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8524e19b2d5f6d86b8b57c07c0e67da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ac8524e19b2d5f6d86b8b57c07c0e67da">udp_handle_resize</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, int dpi)</td></tr>
+<tr class="memdesc:ac8524e19b2d5f6d86b8b57c07c0e67da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle screen resize, by adjusting the bitrates accordingly.  <a href="udp_8c.html#ac8524e19b2d5f6d86b8b57c07c0e67da">More...</a><br /></td></tr>
+<tr class="separator:ac8524e19b2d5f6d86b8b57c07c0e67da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afef7e30cfe7786aa52b75f8cd9c68445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#afef7e30cfe7786aa52b75f8cd9c68445">udp_handle_network_settings</a> (void *raw_context, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> network_settings)</td></tr>
 <tr class="separator:afef7e30cfe7786aa52b75f8cd9c68445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53bd961b505875950fc33444b170f72c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a53bd961b505875950fc33444b170f72c">udp_packet_max_size</a> (void)</td></tr>
@@ -954,6 +957,43 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if any nack requests were handled, otherwise false </dd></dl>
+
+</div>
+</div>
+<a id="ac8524e19b2d5f6d86b8b57c07c0e67da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8524e19b2d5f6d86b8b57c07c0e67da">&#9670;&nbsp;</a></span>udp_handle_resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void udp_handle_resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle screen resize, by adjusting the bitrates accordingly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The UDP <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> </td></tr>
+    <tr><td class="paramname">dpi</td><td>Current screen DPI </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

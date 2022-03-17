@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structBlockAllocator.html#ad8bf1f1d8e5187655f81b52d3d706a27":[11,0,9,0],
 "structCaptureDevice.html":[11,0,12],
 "structCaptureDevice.html#a21adf1c38ab9e91fc40131fc2edab8c4":[11,0,12,0],
 "structCaptureDevice.html#a35716fa2587ecc62a1e4a01252849418":[11,0,12,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "structLinkedList.html#a340d247771112b5db8a551d82bbaeebb":[10,5,0,2],
 "structLinkedList.html#a578d4830c047fbd8f7a1d9712d24329b":[10,5,0,1],
 "structLodePNGBitReader.html":[11,0,43],
-"structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[11,0,43,0],
-"structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[11,0,43,3]
+"structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[11,0,43,0]
 };

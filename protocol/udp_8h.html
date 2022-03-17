@@ -139,6 +139,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1922a1cff137ec95696935164dac88a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a1922a1cff137ec95696935164dac88a9">udp_register_ring_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int max_frame_size, int num_buffers)</td></tr>
 <tr class="memdesc:a1922a1cff137ec95696935164dac88a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a ring buffer to reconstruct WhistPackets that can be split into smaller WhistPackets.  <a href="udp_8h.html#a1922a1cff137ec95696935164dac88a9">More...</a><br /></td></tr>
 <tr class="separator:a1922a1cff137ec95696935164dac88a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a695742ec135ae4e208d51e72fbd30dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a695742ec135ae4e208d51e72fbd30dad">udp_handle_resize</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context, int dpi)</td></tr>
+<tr class="memdesc:a695742ec135ae4e208d51e72fbd30dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle screen resize, by adjusting the bitrates accordingly.  <a href="udp_8h.html#a695742ec135ae4e208d51e72fbd30dad">More...</a><br /></td></tr>
+<tr class="separator:a695742ec135ae4e208d51e72fbd30dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf696db0bbfc74d20b2a3ba0480b4c01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#aaf696db0bbfc74d20b2a3ba0480b4c01">udp_get_network_settings</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *context)</td></tr>
 <tr class="separator:aaf696db0bbfc74d20b2a3ba0480b4c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ae4764e36a830e303b387952859739f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a6ae4764e36a830e303b387952859739f">udp_get_client_input_timestamp</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context)</td></tr>
@@ -466,6 +469,43 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if any nack requests were handled, otherwise false </dd></dl>
+
+</div>
+</div>
+<a id="a695742ec135ae4e208d51e72fbd30dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695742ec135ae4e208d51e72fbd30dad">&#9670;&nbsp;</a></span>udp_handle_resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void udp_handle_resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSocketContext.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle screen resize, by adjusting the bitrates accordingly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The UDP <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> </td></tr>
+    <tr><td class="paramname">dpi</td><td>Current screen DPI </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

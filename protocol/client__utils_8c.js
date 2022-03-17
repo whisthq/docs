@@ -16,6 +16,7 @@ var client__utils_8c =
     [ "mouse_state", "client__utils_8c.html#a9f5f2b90e5441717b0499669e2e742d3", null ],
     [ "output_height", "client__utils_8c.html#adcd8781fcb92d925977bdd50db4751ca", null ],
     [ "output_width", "client__utils_8c.html#af8e381c7a5a395509e3bb5ba61c7cbcf", null ],
+    [ "packet_udp_context", "client__utils_8c.html#abef30726c0347177718a4ec7a32e57ea", null ],
     [ "port_mappings", "client__utils_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a", null ],
     [ "update_bitrate", "client__utils_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5", null ],
     [ "using_stun", "client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66", null ],
