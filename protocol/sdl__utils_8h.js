@@ -1,9 +1,9 @@
 var sdl__utils_8h =
 [
-    [ "SDL_FRAMEBUFFER_PIXEL_FORMAT", "sdl__utils_8h.html#ae68af5cd5b1c04c018ad7be58aa215b2", null ],
-    [ "destroy_sdl", "sdl__utils_8h.html#abf404550e168d933d326c980202e21e7", null ],
+    [ "WHIST_CLIENT_FRAMEBUFFER_PIXEL_FORMAT", "sdl__utils_8h.html#adbce575eedfdc6688f1560c919aa99d2", null ],
+    [ "destroy_sdl", "sdl__utils_8h.html#a4f9b1d608f83977eca17d43ab165ce21", null ],
     [ "get_skip_taskbar", "sdl__utils_8h.html#aa22cf7e0665db4c165df95b172220053", null ],
-    [ "init_sdl", "sdl__utils_8h.html#afcab3b594694ac8eb074b84f28ec11f0", null ],
+    [ "init_sdl", "sdl__utils_8h.html#aa9040d5393f53489b6f473c22d146b9c", null ],
     [ "sdl_end_drag_event", "sdl__utils_8h.html#abb7b3bba01d8ff3d4e14680b3c73cddd", null ],
     [ "sdl_handle_drag_event", "sdl__utils_8h.html#a9389a6dea144c5a56b7dc126fa9b6909", null ],
     [ "sdl_is_window_visible", "sdl__utils_8h.html#af2046b7a00305043eb5d40f35eae00e2", null ],

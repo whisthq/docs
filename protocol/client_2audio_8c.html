@@ -136,9 +136,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac2f1955a13466e6619735015547bf83b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#ac2f1955a13466e6619735015547bf83b">init_audio</a> (void)</td></tr>
-<tr class="memdesc:ac2f1955a13466e6619735015547bf83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the audio system.  <a href="client_2audio_8c.html#ac2f1955a13466e6619735015547bf83b">More...</a><br /></td></tr>
-<tr class="separator:ac2f1955a13466e6619735015547bf83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c73b3af67ed587be508172ff8287ed7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a6c73b3af67ed587be508172ff8287ed7">init_audio</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a6c73b3af67ed587be508172ff8287ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the audio system.  <a href="client_2audio_8c.html#a6c73b3af67ed587be508172ff8287ed7">More...</a><br /></td></tr>
+<tr class="separator:a6c73b3af67ed587be508172ff8287ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db781c666ef3a1aaa82b5ab98f31218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a9db781c666ef3a1aaa82b5ab98f31218">destroy_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
 <tr class="memdesc:a9db781c666ef3a1aaa82b5ab98f31218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the audio context.  <a href="client_2audio_8c.html#a9db781c666ef3a1aaa82b5ab98f31218">More...</a><br /></td></tr>
 <tr class="separator:a9db781c666ef3a1aaa82b5ab98f31218"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -396,8 +396,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ac2f1955a13466e6619735015547bf83b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2f1955a13466e6619735015547bf83b">&#9670;&nbsp;</a></span>init_audio()</h2>
+<a id="a6c73b3af67ed587be508172ff8287ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c73b3af67ed587be508172ff8287ed7">&#9670;&nbsp;</a></span>init_audio()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,8 +405,8 @@ Usage</h1>
         <tr>
           <td class="memname"><a class="el" href="structAudioContext.html">AudioContext</a>* init_audio </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -414,6 +414,12 @@ Usage</h1>
 
 <p>This will initialize the audio system. </p>
 <p>The audio system will receive audio packets, and render the audio out to a playback device</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frontend</td><td>The frontend for which to initialize audio</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The new audio context </dd></dl>
 
 </div>

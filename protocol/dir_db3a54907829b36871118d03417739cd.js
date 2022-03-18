@@ -1,5 +1,6 @@
 var dir_db3a54907829b36871118d03417739cd =
 [
+    [ "frontend", "dir_e3065140e85b7d37f25d7e2ed394688c.html", "dir_e3065140e85b7d37f25d7e2ed394688c" ],
     [ "audio.c", "client_2audio_8c.html", "client_2audio_8c" ],
     [ "audio.h", "client_2audio_8h.html", "client_2audio_8h" ],
     [ "client_statistic.c", "client__statistic_8c.html", "client__statistic_8c" ],
@@ -20,8 +21,6 @@ var dir_db3a54907829b36871118d03417739cd =
     [ "sdl_event_handler.h", "sdl__event__handler_8h.html", "sdl__event__handler_8h" ],
     [ "sdl_utils.c", "sdl__utils_8c.html", "sdl__utils_8c" ],
     [ "sdl_utils.h", "sdl__utils_8h.html", "sdl__utils_8h" ],
-    [ "sdlscreeninfo.c", "sdlscreeninfo_8c.html", "sdlscreeninfo_8c" ],
-    [ "sdlscreeninfo.h", "sdlscreeninfo_8h.html", "sdlscreeninfo_8h" ],
     [ "sync_packets.c", "sync__packets_8c.html", "sync__packets_8c" ],
     [ "sync_packets.h", "sync__packets_8h.html", "sync__packets_8h" ],
     [ "video.c", "client_2video_8c.html", "client_2video_8c" ],

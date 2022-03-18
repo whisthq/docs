@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['opaque_1557',['opaque',['../structWhistTimerOpaque.html#a0b61f5d730590a53da49bb7357541244',1,'WhistTimerOpaque']]],
+  ['opaque_1556',['opaque',['../structWhistTimerOpaque.html#a0b61f5d730590a53da49bb7357541244',1,'WhistTimerOpaque']]],
+  ['open_5faudio_1557',['open_audio',['../structWhistFrontendFunctionTable.html#aab4367c252fc49e88fcaeac77e8bf2f0',1,'WhistFrontendFunctionTable']]],
   ['open_5furi_5fcmd_1558',['OPEN_URI_CMD',['../handle__server__message_8c.html#aa3f8ccacff62d5981de270ade56b1e6d',1,'handle_server_message.c']]],
   ['open_5furi_5fcmd_5fmaxlen_1559',['OPEN_URI_CMD_MAXLEN',['../handle__server__message_8c.html#a678af3835321cde7e6e1ca8d72d13c56',1,'handle_server_message.c']]],
   ['original_5fpackets_5freceived_1560',['original_packets_received',['../structFrameData.html#ae09b582d87f5fc19170e0221843fd167',1,'FrameData']]],

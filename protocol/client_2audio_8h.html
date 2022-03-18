@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('client_2audio_8h.html',''); initResiza
 <div class="textblock"><code>#include &lt;<a class="el" href="audiodecode_8h_source.html">whist/audio/audiodecode.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client__utils_8h_source.html">client_utils.h</a>&quot;</code><br />
 </div>
 <p><a href="client_2audio_8h_source.html">Go to the source code of this file.</a></p>
@@ -105,9 +106,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac2f1955a13466e6619735015547bf83b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#ac2f1955a13466e6619735015547bf83b">init_audio</a> (void)</td></tr>
-<tr class="memdesc:ac2f1955a13466e6619735015547bf83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the audio system.  <a href="client_2audio_8h.html#ac2f1955a13466e6619735015547bf83b">More...</a><br /></td></tr>
-<tr class="separator:ac2f1955a13466e6619735015547bf83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c73b3af67ed587be508172ff8287ed7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioContext.html">AudioContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a6c73b3af67ed587be508172ff8287ed7">init_audio</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a6c73b3af67ed587be508172ff8287ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the audio system.  <a href="client_2audio_8h.html#a6c73b3af67ed587be508172ff8287ed7">More...</a><br /></td></tr>
+<tr class="separator:a6c73b3af67ed587be508172ff8287ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4779d5da095b14e8e82fdcc84955c73c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8h.html#a4779d5da095b14e8e82fdcc84955c73c">refresh_audio_device</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
 <tr class="memdesc:a4779d5da095b14e8e82fdcc84955c73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will refresh the audio device of the audio context prior to the next render.  <a href="client_2audio_8h.html#a4779d5da095b14e8e82fdcc84955c73c">More...</a><br /></td></tr>
 <tr class="separator:a4779d5da095b14e8e82fdcc84955c73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,8 +215,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ac2f1955a13466e6619735015547bf83b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2f1955a13466e6619735015547bf83b">&#9670;&nbsp;</a></span>init_audio()</h2>
+<a id="a6c73b3af67ed587be508172ff8287ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c73b3af67ed587be508172ff8287ed7">&#9670;&nbsp;</a></span>init_audio()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,8 +224,8 @@ Usage</h1>
         <tr>
           <td class="memname"><a class="el" href="structAudioContext.html">AudioContext</a>* init_audio </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -232,6 +233,12 @@ Usage</h1>
 
 <p>This will initialize the audio system. </p>
 <p>The audio system will receive audio packets, and render the audio out to a playback device</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frontend</td><td>The frontend for which to initialize audio</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The new audio context </dd></dl>
 
 </div>

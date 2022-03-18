@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('sdl__utils_8c.html',''); initResizable
 <div class="textblock"><code>#include &quot;<a class="el" href="sdl__utils_8h_source.html">sdl_utils.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="png_8h_source.html">whist/utils/png.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="lodepng_8h_source.html">whist/utils/lodepng.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client__statistic_8h_source.html">client_statistic.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="color_8h_source.html">whist/utils/color.h</a>&gt;</code><br />
@@ -103,8 +104,6 @@ $(document).ready(function(){initNavTree('sdl__utils_8c.html',''); initResizable
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3e4a3c1a038655a1d50c5ad3dae0fe57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a3e4a3c1a038655a1d50c5ad3dae0fe57">LOADING_SOLID_COLOR</a>&#160;&#160;&#160;true</td></tr>
-<tr class="separator:a3e4a3c1a038655a1d50c5ad3dae0fe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbf0790655d1cdb41690ef2c44626c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a0fbf0790655d1cdb41690ef2c44626c2">CURSORIMAGE_R</a>&#160;&#160;&#160;0xff000000</td></tr>
 <tr class="separator:a0fbf0790655d1cdb41690ef2c44626c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8c4b05a876fdaac747e4b3b85e5574"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a4e8c4b05a876fdaac747e4b3b85e5574">CURSORIMAGE_G</a>&#160;&#160;&#160;0x00ff0000</td></tr>
@@ -113,8 +112,6 @@ Macros</h2></td></tr>
 <tr class="separator:a7ea5eab775ceae86f0aee1829a91c052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10b761958b30d1f2611a3a7dfa0d9381"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a10b761958b30d1f2611a3a7dfa0d9381">CURSORIMAGE_A</a>&#160;&#160;&#160;0x000000ff</td></tr>
 <tr class="separator:a10b761958b30d1f2611a3a7dfa0d9381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade4f768ca0968a4e5944d25236f9a080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#ade4f768ca0968a4e5944d25236f9a080">NUMBER_LOADING_FRAMES</a>&#160;&#160;&#160;50</td></tr>
-<tr class="separator:ade4f768ca0968a4e5944d25236f9a080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac74765003cc622938961e7f7476dd1bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#ac74765003cc622938961e7f7476dd1bf">TARGET_WIDTH_IN_INCHES</a>&#160;&#160;&#160;5.0</td></tr>
 <tr class="separator:ac74765003cc622938961e7f7476dd1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d249b006c12fe0b7622c0d3b2d1650d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a2d249b006c12fe0b7622c0d3b2d1650d">RGBA_MASK_A</a>&#160;&#160;&#160;0xff000000</td></tr>
@@ -132,18 +129,15 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6f5f4b1d1fe2b92003ee1b19b8a0fb16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a6f5f4b1d1fe2b92003ee1b19b8a0fb16">COMMAND_LINE_BOOL_OPTION</a> (skip_taskbar, 's', &quot;skip-taskbar&quot;, &quot;Launch the protocol without displaying an icon in the taskbar.&quot;)</td></tr>
 <tr class="separator:a6f5f4b1d1fe2b92003ee1b19b8a0fb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd7f5dc9778e5a9f64354459f6ad8362"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362">init_sdl</a> (int target_output_width, int target_output_height, char *name, char *icon_filename)</td></tr>
-<tr class="memdesc:abd7f5dc9778e5a9f64354459f6ad8362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL window, with the currently running thread at the owner.  <a href="sdl__utils_8c.html#abd7f5dc9778e5a9f64354459f6ad8362">More...</a><br /></td></tr>
-<tr class="separator:abd7f5dc9778e5a9f64354459f6ad8362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4745eeac1327707588a5a422ae5f9d81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81">destroy_sdl</a> (SDL_Window *window_param)</td></tr>
-<tr class="memdesc:a4745eeac1327707588a5a422ae5f9d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8c.html#a4745eeac1327707588a5a422ae5f9d81">More...</a><br /></td></tr>
-<tr class="separator:a4745eeac1327707588a5a422ae5f9d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21fbea2f25067bec4d81dd06fbb6ca0b"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a21fbea2f25067bec4d81dd06fbb6ca0b">init_sdl</a> (int target_output_width, int target_output_height, char *name, char *icon_filename, <a class="el" href="structWhistFrontend.html">WhistFrontend</a> **frontend)</td></tr>
+<tr class="memdesc:a21fbea2f25067bec4d81dd06fbb6ca0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL window, with the currently running thread at the owner.  <a href="sdl__utils_8c.html#a21fbea2f25067bec4d81dd06fbb6ca0b">More...</a><br /></td></tr>
+<tr class="separator:a21fbea2f25067bec4d81dd06fbb6ca0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a30ed9fb98d3f3096d03357129c86b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a11a30ed9fb98d3f3096d03357129c86b">destroy_sdl</a> (SDL_Window *window_param, <a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a11a30ed9fb98d3f3096d03357129c86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8c.html#a11a30ed9fb98d3f3096d03357129c86b">More...</a><br /></td></tr>
+<tr class="separator:a11a30ed9fb98d3f3096d03357129c86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a20ede981c49da978e972e7e61629d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a2a20ede981c49da978e972e7e61629d8">sdl_renderer_resize_window</a> (int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>)</td></tr>
 <tr class="memdesc:a2a20ede981c49da978e972e7e61629d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the window gets resized, call this function to update the internal rendering dimensions.  <a href="sdl__utils_8c.html#a2a20ede981c49da978e972e7e61629d8">More...</a><br /></td></tr>
 <tr class="separator:a2a20ede981c49da978e972e7e61629d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec1c03b128be02a97fe22c4744445f3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#aec1c03b128be02a97fe22c4744445f3a">sdl_update_framebuffer_loading_screen</a> (int idx)</td></tr>
-<tr class="memdesc:aec1c03b128be02a97fe22c4744445f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the framebuffer to a loading screen image.  <a href="sdl__utils_8c.html#aec1c03b128be02a97fe22c4744445f3a">More...</a><br /></td></tr>
-<tr class="separator:aec1c03b128be02a97fe22c4744445f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dbcc14b6e31b62aedb3db07b1b45e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a9dbcc14b6e31b62aedb3db07b1b45e1f">sdl_update_framebuffer</a> (Uint8 *data[4], int linesize[4], int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>)</td></tr>
 <tr class="memdesc:a9dbcc14b6e31b62aedb3db07b1b45e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the renderer's framebuffer, using the provided texture.  <a href="sdl__utils_8c.html#a9dbcc14b6e31b62aedb3db07b1b45e1f">More...</a><br /></td></tr>
 <tr class="separator:a9dbcc14b6e31b62aedb3db07b1b45e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,34 +271,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a3e4a3c1a038655a1d50c5ad3dae0fe57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e4a3c1a038655a1d50c5ad3dae0fe57">&#9670;&nbsp;</a></span>LOADING_SOLID_COLOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LOADING_SOLID_COLOR&#160;&#160;&#160;true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade4f768ca0968a4e5944d25236f9a080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade4f768ca0968a4e5944d25236f9a080">&#9670;&nbsp;</a></span>NUMBER_LOADING_FRAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NUMBER_LOADING_FRAMES&#160;&#160;&#160;50</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2d249b006c12fe0b7622c0d3b2d1650d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d249b006c12fe0b7622c0d3b2d1650d">&#9670;&nbsp;</a></span>RGBA_MASK_A</h2>
 
@@ -416,8 +382,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a4745eeac1327707588a5a422ae5f9d81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4745eeac1327707588a5a422ae5f9d81">&#9670;&nbsp;</a></span>destroy_sdl()</h2>
+<a id="a11a30ed9fb98d3f3096d03357129c86b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a30ed9fb98d3f3096d03357129c86b">&#9670;&nbsp;</a></span>destroy_sdl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,8 +392,18 @@ Usage</h1>
           <td class="memname">void destroy_sdl </td>
           <td>(</td>
           <td class="paramtype">SDL_Window *&#160;</td>
-          <td class="paramname"><em>window</em></td><td>)</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -435,15 +411,16 @@ Usage</h1>
 <p>Destroys an SDL window and associated parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">window</td><td>The SDL window to destroy </td></tr>
+    <tr><td class="paramname">window</td><td>The SDL window to destroy</td></tr>
+    <tr><td class="paramname">frontend</td><td>The frontend to be destroyed </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="abd7f5dc9778e5a9f64354459f6ad8362"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd7f5dc9778e5a9f64354459f6ad8362">&#9670;&nbsp;</a></span>init_sdl()</h2>
+<a id="a21fbea2f25067bec4d81dd06fbb6ca0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21fbea2f25067bec4d81dd06fbb6ca0b">&#9670;&nbsp;</a></span>init_sdl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,7 +447,13 @@ Usage</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>icon_filename</em>&#160;</td>
+          <td class="paramname"><em>icon_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> **&#160;</td>
+          <td class="paramname"><em>frontend</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -487,6 +470,7 @@ Usage</h1>
     <tr><td class="paramname">output_height</td><td>The height of the SDL window to create, in pixels</td></tr>
     <tr><td class="paramname">name</td><td>The title of the window</td></tr>
     <tr><td class="paramname">icon_filename</td><td>The filename of the window icon, pointing to a 64x64 png, or NULL to use the default icon.</td></tr>
+    <tr><td class="paramname">frontend</td><td>(Temporary) A pointer to the frontend to be initialized and registered with the created SDL window.</td></tr>
   </table>
   </dd>
 </dl>
@@ -780,7 +764,7 @@ Usage</h1>
 <p>Update the renderer's framebuffer, using the provided texture. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>The data pointers to the image The image must be of the format SDL_FRAMEBUFFER_PIXEL_FORMAT </td></tr>
+    <tr><td class="paramname">data</td><td>The data pointers to the image The image must be of the format WHIST_CLIENT_FRAMEBUFFER_PIXEL_FORMAT </td></tr>
     <tr><td class="paramname">linesize</td><td>The linesize data for the image </td></tr>
     <tr><td class="paramname">width</td><td>The width of the image </td></tr>
     <tr><td class="paramname">height</td><td>The height of the image</td></tr>
@@ -788,33 +772,6 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The Uint8*'s pointed to by data[] MUST be kept alive, until after BOTH <code>sdl_render_framebuffer</code> is called, AND <code>sdl_render_pending</code> subsequently returns false. </dd></dl>
-
-</div>
-</div>
-<a id="aec1c03b128be02a97fe22c4744445f3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec1c03b128be02a97fe22c4744445f3a">&#9670;&nbsp;</a></span>sdl_update_framebuffer_loading_screen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sdl_update_framebuffer_loading_screen </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Updates the framebuffer to a loading screen image. </p>
-<p>Remember to call sdl_render_framebuffer later.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">idx</td><td>The index of the animation to render. This should normally be strictly increasing or reset to 0. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
