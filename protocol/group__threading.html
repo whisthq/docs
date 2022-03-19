@@ -204,6 +204,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaf83532756c56987e9e8b7751d5ad429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#gaaf83532756c56987e9e8b7751d5ad429">whist_wait_semaphore</a> (<a class="el" href="group__threading.html#ga8168eacaf80514fd09626cc53c69b98f">WhistSemaphore</a> semaphore)</td></tr>
 <tr class="memdesc:gaaf83532756c56987e9e8b7751d5ad429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a semaphore.  <a href="group__threading.html#gaaf83532756c56987e9e8b7751d5ad429">More...</a><br /></td></tr>
 <tr class="separator:gaaf83532756c56987e9e8b7751d5ad429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae63da131cb7642624e9db1bab306ec3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#gae63da131cb7642624e9db1bab306ec3e">whist_wait_timeout_semaphore</a> (<a class="el" href="group__threading.html#ga8168eacaf80514fd09626cc53c69b98f">WhistSemaphore</a> semaphore, int timeout_ms)</td></tr>
+<tr class="memdesc:gae63da131cb7642624e9db1bab306ec3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a semaphore.  <a href="group__threading.html#gae63da131cb7642624e9db1bab306ec3e">More...</a><br /></td></tr>
+<tr class="separator:gae63da131cb7642624e9db1bab306ec3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c05ac3e4875259afed56183b880a655"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading.html#ga2c05ac3e4875259afed56183b880a655">whist_semaphore_value</a> (<a class="el" href="group__threading.html#ga8168eacaf80514fd09626cc53c69b98f">WhistSemaphore</a> semaphore)</td></tr>
 <tr class="memdesc:ga2c05ac3e4875259afed56183b880a655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value of a semaphore.  <a href="group__threading.html#ga2c05ac3e4875259afed56183b880a655">More...</a><br /></td></tr>
 <tr class="separator:ga2c05ac3e4875259afed56183b880a655"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -414,7 +417,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Signal to all waiters that a condition may have changed. </p>
-<p>To avoid race conditions the caller should hold the mutex associated with the condition while calling this function, though in some cases it may not be necessary if ordering is guaranteed elsewhere.</p>
+<p>The cond's mutex must be locked when either changing the predicate of any waiting conds, or during this broadcast. Not doing so can cause a broadcast to fail to wakeup its cond.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cond</td><td>Condition variable to signal waiters for. </td></tr>
@@ -1101,6 +1104,45 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gae63da131cb7642624e9db1bab306ec3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae63da131cb7642624e9db1bab306ec3e">&#9670;&nbsp;</a></span>whist_wait_timeout_semaphore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool whist_wait_timeout_semaphore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__threading.html#ga8168eacaf80514fd09626cc53c69b98f">WhistSemaphore</a>&#160;</td>
+          <td class="paramname"><em>semaphore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for a semaphore. </p>
+<p>If the semaphore value is greater than zero then decrement it and return immediately. Otherwise, wait until another thread posts the semaphore to increase its value and then decrement it and return.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">semaphore</td><td>Semaphore to wait for. </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>The number of ms to wait for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the semaphore was woken up by a signal, False if the timeout was simply exceeded </dd></dl>
 
 </div>
 </div>

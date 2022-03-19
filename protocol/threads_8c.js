@@ -24,5 +24,6 @@ var threads_8c =
     [ "whist_usleep", "group__threading.html#ga2b664b79c0c865063e476e27f1becde9", null ],
     [ "whist_wait_cond", "group__threading.html#ga21dd6f7d5adc54fcf746c046eec8594e", null ],
     [ "whist_wait_semaphore", "group__threading.html#gaaf83532756c56987e9e8b7751d5ad429", null ],
-    [ "whist_wait_thread", "group__threading.html#gae8c79334470c3f0f108c648f22ffc43f", null ]
+    [ "whist_wait_thread", "group__threading.html#gae8c79334470c3f0f108c648f22ffc43f", null ],
+    [ "whist_wait_timeout_semaphore", "group__threading.html#gae63da131cb7642624e9db1bab306ec3e", null ]
 ];

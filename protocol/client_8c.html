@@ -82,6 +82,8 @@ $(document).ready(function(){initNavTree('client_8c.html',''); initResizable(); 
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">client.c File Reference</div>  </div>
@@ -95,67 +97,75 @@ $(document).ready(function(){initNavTree('client_8c.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_2network_8h_source.html">network.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structClientPrivateData.html">ClientPrivateData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structClientLock.html">ClientLock</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab23036571e504bf12427c6e54dd033be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ab23036571e504bf12427c6e54dd033be">MAX_DEACTIVATION_TIME_SEC</a>&#160;&#160;&#160;10.0</td></tr>
+<tr class="separator:ab23036571e504bf12427c6e54dd033be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8dcced7ed6c7f9284bf91463b0d658b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a8dcced7ed6c7f9284bf91463b0d658b0">init_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
-<tr class="memdesc:a8dcced7ed6c7f9284bf91463b0d658b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes client object.  <a href="client_8c.html#a8dcced7ed6c7f9284bf91463b0d658b0">More...</a><br /></td></tr>
-<tr class="separator:a8dcced7ed6c7f9284bf91463b0d658b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c9deb4b0da1b5a671935d8537da0b70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a0c9deb4b0da1b5a671935d8537da0b70">destroy_clients</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
-<tr class="memdesc:a0c9deb4b0da1b5a671935d8537da0b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initializes all clients objects in the client buffer.  <a href="client_8c.html#a0c9deb4b0da1b5a671935d8537da0b70">More...</a><br /></td></tr>
-<tr class="separator:a0c9deb4b0da1b5a671935d8537da0b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb5791800324d1914e5124d23f138c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#aedb5791800324d1914e5124d23f138c8">start_quitting_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
-<tr class="memdesc:aedb5791800324d1914e5124d23f138c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins deactivating client, but does not clean up its resources yet.  <a href="client_8c.html#aedb5791800324d1914e5124d23f138c8">More...</a><br /></td></tr>
-<tr class="separator:aedb5791800324d1914e5124d23f138c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa052b4dfa62a068a43c72a8782c474e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#aaa052b4dfa62a068a43c72a8782c474e">quit_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
-<tr class="memdesc:aaa052b4dfa62a068a43c72a8782c474e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates active client.  <a href="client_8c.html#aaa052b4dfa62a068a43c72a8782c474e">More...</a><br /></td></tr>
-<tr class="separator:aaa052b4dfa62a068a43c72a8782c474e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4095d2d382a7e5c347db88558a546df8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a4095d2d382a7e5c347db88558a546df8">add_thread_to_client_active_dependents</a> (void)</td></tr>
-<tr class="memdesc:a4095d2d382a7e5c347db88558a546df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add thread to count of those dependent on client being active.  <a href="client_8c.html#a4095d2d382a7e5c347db88558a546df8">More...</a><br /></td></tr>
-<tr class="separator:a4095d2d382a7e5c347db88558a546df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a15c68449ffb14ea62db6087d27fa4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a0a15c68449ffb14ea62db6087d27fa4c">reset_threads_holding_active_count</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
-<tr class="memdesc:a0a15c68449ffb14ea62db6087d27fa4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the thread count regarding a client as active to the full dependent thread count again.  <a href="client_8c.html#a0a15c68449ffb14ea62db6087d27fa4c">More...</a><br /></td></tr>
-<tr class="separator:a0a15c68449ffb14ea62db6087d27fa4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a910e3ffb86024ba2864d8c0594f9623f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a910e3ffb86024ba2864d8c0594f9623f">update_client_active_status</a> (<a class="el" href="structClient.html">Client</a> *client, bool *is_thread_assuming_active)</td></tr>
-<tr class="memdesc:a910e3ffb86024ba2864d8c0594f9623f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows a thread to update its status on whether it believes the client is active or not.  <a href="client_8c.html#a910e3ffb86024ba2864d8c0594f9623f">More...</a><br /></td></tr>
-<tr class="separator:a910e3ffb86024ba2864d8c0594f9623f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab77ef71b6fc7e7ee283d110f553f2272"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ab77ef71b6fc7e7ee283d110f553f2272">threads_still_holding_active</a> (void)</td></tr>
-<tr class="memdesc:ab77ef71b6fc7e7ee283d110f553f2272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether there remain any threads that are assuming that the client is active.  <a href="client_8c.html#ab77ef71b6fc7e7ee283d110f553f2272">More...</a><br /></td></tr>
-<tr class="separator:ab77ef71b6fc7e7ee283d110f553f2272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1208f71b0ffbca54ace07090ad7d70e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClient.html">Client</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ae1208f71b0ffbca54ace07090ad7d70e">init_client</a> ()</td></tr>
+<tr class="memdesc:ae1208f71b0ffbca54ace07090ad7d70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes client object.  <a href="client_8c.html#ae1208f71b0ffbca54ace07090ad7d70e">More...</a><br /></td></tr>
+<tr class="separator:ae1208f71b0ffbca54ace07090ad7d70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad125a7c6b728982d10453150adf71dd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ad125a7c6b728982d10453150adf71dd0">destroy_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
+<tr class="memdesc:ad125a7c6b728982d10453150adf71dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initializes all client data.  <a href="client_8c.html#ad125a7c6b728982d10453150adf71dd0">More...</a><br /></td></tr>
+<tr class="separator:ad125a7c6b728982d10453150adf71dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1dc7366b46921b0a4e053ffadbd51a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ad1dc7366b46921b0a4e053ffadbd51a1">activate_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
+<tr class="memdesc:ad1dc7366b46921b0a4e053ffadbd51a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the client as active.  <a href="client_8c.html#ad1dc7366b46921b0a4e053ffadbd51a1">More...</a><br /></td></tr>
+<tr class="separator:ad1dc7366b46921b0a4e053ffadbd51a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab288be7d0986140610528e2d9234b64c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ab288be7d0986140610528e2d9234b64c">start_deactivating_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
+<tr class="memdesc:ab288be7d0986140610528e2d9234b64c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks a client for deactivation, but does not deactivate it yet.  <a href="client_8c.html#ab288be7d0986140610528e2d9234b64c">More...</a><br /></td></tr>
+<tr class="separator:ab288be7d0986140610528e2d9234b64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31bd9992c0493aca062c28895f77fee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ac31bd9992c0493aca062c28895f77fee">deactivate_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
+<tr class="memdesc:ac31bd9992c0493aca062c28895f77fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates an active client.  <a href="client_8c.html#ac31bd9992c0493aca062c28895f77fee">More...</a><br /></td></tr>
+<tr class="separator:ac31bd9992c0493aca062c28895f77fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5268ed413b11d73b73d390f6805fed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ab5268ed413b11d73b73d390f6805fed6">permanently_deactivate_client</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
+<tr class="memdesc:ab5268ed413b11d73b73d390f6805fed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks a client as permanently deactivated.  <a href="client_8c.html#ab5268ed413b11d73b73d390f6805fed6">More...</a><br /></td></tr>
+<tr class="separator:ab5268ed413b11d73b73d390f6805fed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12c6582219f86c3914aad09dffe382e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClientLock.html">ClientLock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#ac12c6582219f86c3914aad09dffe382e">client_active_lock</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
+<tr class="memdesc:ac12c6582219f86c3914aad09dffe382e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a lock on an active client.  <a href="client_8c.html#ac12c6582219f86c3914aad09dffe382e">More...</a><br /></td></tr>
+<tr class="separator:ac12c6582219f86c3914aad09dffe382e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8839c7a4049836b46159604bbeaa95e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structClientLock.html">ClientLock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a8839c7a4049836b46159604bbeaa95e4">client_active_trylock</a> (<a class="el" href="structClient.html">Client</a> *client)</td></tr>
+<tr class="separator:a8839c7a4049836b46159604bbeaa95e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543a8e87cc4b8cbd3373b18329702295"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_8c.html#a543a8e87cc4b8cbd3373b18329702295">client_active_unlock</a> (<a class="el" href="structClientLock.html">ClientLock</a> *client_lock)</td></tr>
+<tr class="memdesc:a543a8e87cc4b8cbd3373b18329702295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the lock on an active client.  <a href="client_8c.html#a543a8e87cc4b8cbd3373b18329702295">More...</a><br /></td></tr>
+<tr class="separator:a543a8e87cc4b8cbd3373b18329702295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the code for interacting with the client buffer.</p>
 <p>See <a href="https://www.notion.so/whisthq/4d91593ea0e0438b8bdb14c25c219d55?v=0c3983cf062d4c3d96ac2a65eb31761b&p=755123dad01244f3a0a3ced5139228a3">https://www.notion.so/whisthq/4d91593ea0e0438b8bdb14c25c219d55?v=0c3983cf062d4c3d96ac2a65eb31761b&amp;p=755123dad01244f3a0a3ced5139228a3</a> for the specification for multi-client code </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a4095d2d382a7e5c347db88558a546df8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4095d2d382a7e5c347db88558a546df8">&#9670;&nbsp;</a></span>add_thread_to_client_active_dependents()</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ab23036571e504bf12427c6e54dd033be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab23036571e504bf12427c6e54dd033be">&#9670;&nbsp;</a></span>MAX_DEACTIVATION_TIME_SEC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void add_thread_to_client_active_dependents </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">#define MAX_DEACTIVATION_TIME_SEC&#160;&#160;&#160;10.0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add thread to count of those dependent on client being active. </p>
-<p>This function only needs to be called if the thread depends on any members of <code><a class="el" href="structClient.html">Client</a></code>. For example, if a thread uses <a class="el" href="structClient.html#a6d3700d67550763757c5c4e3fdaa8827">Client.udp_context</a>, we don't want the resource to be destroyed while the thread continues to think that the client is active. This also means that the thread has to call <code>remove_thread_from_holding_active_count</code> eventually to release its hold on the active client. This is typically done through a call to <code>update_client_active_status</code> in the thread loop. </p>
-
 </div>
 </div>
-<a id="a0c9deb4b0da1b5a671935d8537da0b70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c9deb4b0da1b5a671935d8537da0b70">&#9670;&nbsp;</a></span>destroy_clients()</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad1dc7366b46921b0a4e053ffadbd51a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1dc7366b46921b0a4e053ffadbd51a1">&#9670;&nbsp;</a></span>activate_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int destroy_clients </td>
+          <td class="memname">void activate_client </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
           <td class="paramname"><em>client</em></td><td>)</td>
@@ -164,54 +174,176 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>De-initializes all clients objects in the client buffer. </p>
-<p>Should be called after initClients() and before program exit. Does not disconnect any connected clients.</p>
+<p>Marks the client as active. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client context to destroy</td></tr>
+    <tr><td class="paramname">client</td><td>The client to activate </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
 
 </div>
 </div>
-<a id="a8dcced7ed6c7f9284bf91463b0d658b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dcced7ed6c7f9284bf91463b0d658b0">&#9670;&nbsp;</a></span>init_client()</h2>
+<a id="ac12c6582219f86c3914aad09dffe382e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac12c6582219f86c3914aad09dffe382e">&#9670;&nbsp;</a></span>client_active_lock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int init_client </td>
+          <td class="memname"><a class="el" href="structClientLock.html">ClientLock</a>* client_active_lock </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
           <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a lock on an active client. </p>
+<p>This will block until the client is both active and not pending deactivation. This lock must be released often.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>The client to wait for activation on</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lock, or NULL if the client was permanently deactivated</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is thread-safe relative to the other client management functions</dd>
+<dd>
+Failing to release this lock promptly (Within 1 second), may forcefully shutdown WhistServer. </dd></dl>
+
+</div>
+</div>
+<a id="a8839c7a4049836b46159604bbeaa95e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8839c7a4049836b46159604bbeaa95e4">&#9670;&nbsp;</a></span>client_active_trylock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structClientLock.html">ClientLock</a>* client_active_trylock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a543a8e87cc4b8cbd3373b18329702295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543a8e87cc4b8cbd3373b18329702295">&#9670;&nbsp;</a></span>client_active_unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void client_active_unlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structClientLock.html">ClientLock</a> *&#160;</td>
+          <td class="paramname"><em>client_lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Releases the lock on an active client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client_lock</td><td>The lock to unlock</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is thread-safe relative to the other client management functions </dd></dl>
+
+</div>
+</div>
+<a id="ac31bd9992c0493aca062c28895f77fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31bd9992c0493aca062c28895f77fee">&#9670;&nbsp;</a></span>deactivate_client()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deactivate_client </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deactivates an active client. </p>
+<p>Blocks until all <a class="el" href="structClientLock.html">ClientLock</a>'s are unlocked.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>The client to deactivate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad125a7c6b728982d10453150adf71dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad125a7c6b728982d10453150adf71dd0">&#9670;&nbsp;</a></span>destroy_client()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy_client </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>De-initializes all client data. </p>
+<p>Should be called after <a class="el" href="client_8h.html#a3c8e007fb96b322156df029b18e4365b" title="Initializes client object.">init_client()</a> and before program exit. Does not disconnect any connected clients.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>The client context to destroy</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is not thread-safe with any other function, since it destroys the locks </dd></dl>
+
+</div>
+</div>
+<a id="ae1208f71b0ffbca54ace07090ad7d70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1208f71b0ffbca54ace07090ad7d70e">&#9670;&nbsp;</a></span>init_client()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structClient.html">Client</a>* init_client </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Initializes client object. </p>
-<p>Must be called before the client object can be used.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">client</td><td>the client context to initialize</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the new client </dd></dl>
 
 </div>
 </div>
-<a id="aaa052b4dfa62a068a43c72a8782c474e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa052b4dfa62a068a43c72a8782c474e">&#9670;&nbsp;</a></span>quit_client()</h2>
+<a id="ab5268ed413b11d73b73d390f6805fed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5268ed413b11d73b73d390f6805fed6">&#9670;&nbsp;</a></span>permanently_deactivate_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int quit_client </td>
+          <td class="memname">void permanently_deactivate_client </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
           <td class="paramname"><em>client</em></td><td>)</td>
@@ -220,26 +352,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Deactivates active client. </p>
-<p>Disconnects client. Updates count of active clients. May only be called on an active client. The associated client object is not destroyed and may be made active in the future.</p>
+<p>Marks a client as permanently deactivated. </p>
+<p>This will cause all attempts to lock the client to return NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>Target client</td></tr>
+    <tr><td class="paramname">client</td><td>The client to permanently deactivate </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
 
 </div>
 </div>
-<a id="a0a15c68449ffb14ea62db6087d27fa4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a15c68449ffb14ea62db6087d27fa4c">&#9670;&nbsp;</a></span>reset_threads_holding_active_count()</h2>
+<a id="ab288be7d0986140610528e2d9234b64c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab288be7d0986140610528e2d9234b64c">&#9670;&nbsp;</a></span>start_deactivating_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void reset_threads_holding_active_count </td>
+          <td class="memname">void start_deactivating_client </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
           <td class="paramname"><em>client</em></td><td>)</td>
@@ -248,94 +379,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the thread count regarding a client as active to the full dependent thread count again. </p>
-<p>This is needed when a new client is made active after the previous one has been deactivated and quit. </p>
-
-</div>
-</div>
-<a id="aedb5791800324d1914e5124d23f138c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedb5791800324d1914e5124d23f138c8">&#9670;&nbsp;</a></span>start_quitting_client()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int start_quitting_client </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
-          <td class="paramname"><em>client</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Begins deactivating client, but does not clean up its resources yet. </p>
-<p>Must be called before <code>quit_client</code>.</p>
+<p>Marks a client for deactivation, but does not deactivate it yet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>Target client </td></tr>
+    <tr><td class="paramname">client</td><td>The client to mark for deactivation</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ab77ef71b6fc7e7ee283d110f553f2272"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab77ef71b6fc7e7ee283d110f553f2272">&#9670;&nbsp;</a></span>threads_still_holding_active()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool threads_still_holding_active </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Whether there remain any threads that are assuming that the client is active. </p>
-<dl class="section return"><dt>Returns</dt><dd>Whether any threads need the client to still be active </dd></dl>
-
-</div>
-</div>
-<a id="a910e3ffb86024ba2864d8c0594f9623f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a910e3ffb86024ba2864d8c0594f9623f">&#9670;&nbsp;</a></span>update_client_active_status()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_client_active_status </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>is_thread_assuming_active</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allows a thread to update its status on whether it believes the client is active or not. </p>
-<p>If a client is deactivating, we want the thread to stop believing that the client is active, but otherwise will leave the status as is.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">client</td><td>Target client </td></tr>
-    <tr><td class="paramname">is_thread_assuming_active</td><td>Pointer to the boolean that the thread is using to indicate whether it believes the client is currently active </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section note"><dt>Note</dt><dd>client-&gt;is_deactivating will show whether or not an active client has been marked for deactivation.</dd>
+<dd>
+This function can be thread-safe relative to the other client management functions, but it is only thread-safe if a client activation lock is held in that thread. </dd></dl>
 
 </div>
 </div>

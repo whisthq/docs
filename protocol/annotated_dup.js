@@ -15,6 +15,8 @@ var annotated_dup =
     [ "CaptureDevice", "structCaptureDevice.html", "structCaptureDevice" ],
     [ "Client", "structClient.html", "structClient" ],
     [ "ClientInitMessage", "structClientInitMessage.html", "structClientInitMessage" ],
+    [ "ClientLock", "structClientLock.html", "structClientLock" ],
+    [ "ClientPrivateData", "structClientPrivateData.html", "structClientPrivateData" ],
     [ "ClipboardActivity", "structClipboardActivity.html", "structClipboardActivity" ],
     [ "ClipboardData", "structClipboardData.html", "structClipboardData" ],
     [ "ClipboardFiles", "structClipboardFiles.html", "structClipboardFiles" ],

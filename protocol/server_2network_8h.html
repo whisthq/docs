@@ -102,9 +102,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab30deb14aa029bb4aa5a518ae8e5e392"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ab30deb14aa029bb4aa5a518ae8e5e392">broadcast_udp_packet</a> (<a class="el" href="structClient.html">Client</a> *client, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, void *data, int len, int packet_id)</td></tr>
-<tr class="memdesc:ab30deb14aa029bb4aa5a518ae8e5e392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over UDP.  <a href="server_2network_8h.html#ab30deb14aa029bb4aa5a518ae8e5e392">More...</a><br /></td></tr>
-<tr class="separator:ab30deb14aa029bb4aa5a518ae8e5e392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92945656b1ce85210852298c0fe199d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a92945656b1ce85210852298c0fe199d4">broadcast_tcp_packet</a> (<a class="el" href="structClient.html">Client</a> *client, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, void *data, int len)</td></tr>
 <tr class="memdesc:a92945656b1ce85210852298c0fe199d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over TCP.  <a href="server_2network_8h.html#a92945656b1ce85210852298c0fe199d4">More...</a><br /></td></tr>
 <tr class="separator:a92945656b1ce85210852298c0fe199d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,9 +114,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad881eeb396b9af8437f12ddd01820042"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#ad881eeb396b9af8437f12ddd01820042">get_using_stun</a> (void)</td></tr>
 <tr class="memdesc:ad881eeb396b9af8437f12ddd01820042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides whether the server is using stun.  <a href="server_2network_8h.html#ad881eeb396b9af8437f12ddd01820042">More...</a><br /></td></tr>
 <tr class="separator:ad881eeb396b9af8437f12ddd01820042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38cc5da4bd5acfde815f921746a28da7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a38cc5da4bd5acfde815f921746a28da7">multithreaded_manage_client</a> (void *opaque)</td></tr>
-<tr class="memdesc:a38cc5da4bd5acfde815f921746a28da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be run in its own thread.  <a href="server_2network_8h.html#a38cc5da4bd5acfde815f921746a28da7">More...</a><br /></td></tr>
-<tr class="separator:a38cc5da4bd5acfde815f921746a28da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27583b9a199c0c7795fcc6962627d00c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2network_8h.html#a27583b9a199c0c7795fcc6962627d00c">connect_client</a> (void *state)</td></tr>
+<tr class="memdesc:a27583b9a199c0c7795fcc6962627d00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to connect the client.  <a href="server_2network_8h.html#a27583b9a199c0c7795fcc6962627d00c">More...</a><br /></td></tr>
+<tr class="separator:a27583b9a199c0c7795fcc6962627d00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -196,62 +193,30 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ab30deb14aa029bb4aa5a518ae8e5e392"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab30deb14aa029bb4aa5a518ae8e5e392">&#9670;&nbsp;</a></span>broadcast_udp_packet()</h2>
+<a id="a27583b9a199c0c7795fcc6962627d00c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27583b9a199c0c7795fcc6962627d00c">&#9670;&nbsp;</a></span>connect_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int broadcast_udp_packet </td>
+          <td class="memname">bool connect_client </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structClient.html">Client</a> *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>state</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>packet_id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sends a <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> and accompanying WhistPacketType to all active clients, over UDP. </p>
+<p>Attempts to connect the client. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>The destination client </td></tr>
-    <tr><td class="paramname">type</td><td>The WhistPacketType, either VIDEO, AUDIO, or MESSAGE </td></tr>
-    <tr><td class="paramname">data</td><td>A pointer to the data to be sent </td></tr>
-    <tr><td class="paramname">len</td><td>The number of bytes to send </td></tr>
-    <tr><td class="paramname">packet_id</td><td>An ID for the UDP data.</td></tr>
+    <tr><td class="paramname">state</td><td>The server state</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if successfully connected </dd></dl>
 
 </div>
 </div>
@@ -273,28 +238,6 @@ Usage</h1>
 
 <p>Decides whether the server is using stun. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if server is using stun, false otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a38cc5da4bd5acfde815f921746a28da7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38cc5da4bd5acfde815f921746a28da7">&#9670;&nbsp;</a></span>multithreaded_manage_client()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int multithreaded_manage_client </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>opaque</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Should be run in its own thread. </p>
-<p>Loops and manages connecting to/maintaining client connection and recovery.</p>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0 on completion. </dd></dl>
 
 </div>
 </div>

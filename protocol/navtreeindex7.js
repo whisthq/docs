@@ -1,5 +1,11 @@
 var NAVTREEINDEX7 =
 {
+"md_client_README.html#autotoc_md53":[2],
+"md_server_README.html":[7],
+"md_server_README.html#autotoc_md95":[3],
+"md_whist_debug_README.html":[8],
+"md_whist_debug_README.html#autotoc_md153":[8,0],
+"md_whist_debug_README.html#autotoc_md154":[8,0,4],
 "md_whist_debug_README.html#autotoc_md155":[8,0,5],
 "md_whist_debug_README.html#autotoc_md156":[8,0,6],
 "md_whist_debug_README.html#autotoc_md157":[8,0,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX7 =
 "ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe":[12,0,2,9,4,2],
 "ringbuffer_8c.html#a8ebb72b79427224fce1402fe69cda5c1":[12,0,2,9,4,13],
 "ringbuffer_8c.html#aae1c510758ee20c3ab1c53b1bc895786":[12,0,2,9,4,0],
-"ringbuffer_8c.html#aaf55b2f848a5a671949daa34c01d0d71":[12,0,2,9,4,11],
-"ringbuffer_8c.html#ab1bbfe97860061cb1cc4d55514ca4855":[12,0,2,9,4,22],
-"ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b":[12,0,2,9,4,9],
-"ringbuffer_8c.html#ace58ba786751c3524bcbb1bc4f8846ce":[12,0,2,9,4,6],
-"ringbuffer_8c.html#ad6d41e44cd0ec6c84560a14d86108a9a":[12,0,2,9,4,23],
-"ringbuffer_8c.html#ad7825c4f2de173c071d97a296ec96d24":[12,0,2,9,4,3],
-"ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911":[12,0,2,9,4,4]
+"ringbuffer_8c.html#aaf55b2f848a5a671949daa34c01d0d71":[12,0,2,9,4,11]
 };

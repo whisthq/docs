@@ -1,6 +1,6 @@
 var struct__whist__server__state =
 [
-    [ "client", "struct__whist__server__state.html#a4c2a2a3de25298910b0e452b6a0e1ad5", null ],
+    [ "client", "struct__whist__server__state.html#a3a51e958b48d8e6c79c69e0463e90093", null ],
     [ "client_dpi", "struct__whist__server__state.html#a85167f25cbdccd1d45f488330acbe566", null ],
     [ "client_height", "struct__whist__server__state.html#ab38047281362ce32ceec7678585ff6b4", null ],
     [ "client_joined_after_window_name_broadcast", "struct__whist__server__state.html#a2839e1c038eb082cf2fc3e56cdcb65c9", null ],

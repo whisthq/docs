@@ -1,11 +1,15 @@
 var client_8c =
 [
-    [ "add_thread_to_client_active_dependents", "client_8c.html#a4095d2d382a7e5c347db88558a546df8", null ],
-    [ "destroy_clients", "client_8c.html#a0c9deb4b0da1b5a671935d8537da0b70", null ],
-    [ "init_client", "client_8c.html#a8dcced7ed6c7f9284bf91463b0d658b0", null ],
-    [ "quit_client", "client_8c.html#aaa052b4dfa62a068a43c72a8782c474e", null ],
-    [ "reset_threads_holding_active_count", "client_8c.html#a0a15c68449ffb14ea62db6087d27fa4c", null ],
-    [ "start_quitting_client", "client_8c.html#aedb5791800324d1914e5124d23f138c8", null ],
-    [ "threads_still_holding_active", "client_8c.html#ab77ef71b6fc7e7ee283d110f553f2272", null ],
-    [ "update_client_active_status", "client_8c.html#a910e3ffb86024ba2864d8c0594f9623f", null ]
+    [ "ClientPrivateData", "structClientPrivateData.html", "structClientPrivateData" ],
+    [ "ClientLock", "structClientLock.html", "structClientLock" ],
+    [ "MAX_DEACTIVATION_TIME_SEC", "client_8c.html#ab23036571e504bf12427c6e54dd033be", null ],
+    [ "activate_client", "client_8c.html#ad1dc7366b46921b0a4e053ffadbd51a1", null ],
+    [ "client_active_lock", "client_8c.html#ac12c6582219f86c3914aad09dffe382e", null ],
+    [ "client_active_trylock", "client_8c.html#a8839c7a4049836b46159604bbeaa95e4", null ],
+    [ "client_active_unlock", "client_8c.html#a543a8e87cc4b8cbd3373b18329702295", null ],
+    [ "deactivate_client", "client_8c.html#ac31bd9992c0493aca062c28895f77fee", null ],
+    [ "destroy_client", "client_8c.html#ad125a7c6b728982d10453150adf71dd0", null ],
+    [ "init_client", "client_8c.html#ae1208f71b0ffbca54ace07090ad7d70e", null ],
+    [ "permanently_deactivate_client", "client_8c.html#ab5268ed413b11d73b73d390f6805fed6", null ],
+    [ "start_deactivating_client", "client_8c.html#ab288be7d0986140610528e2d9234b64c", null ]
 ];
