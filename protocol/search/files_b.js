@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['os_5futils_2ec_2711',['os_utils.c',['../os__utils_8c.html',1,'']]],
-  ['os_5futils_2eh_2712',['os_utils.h',['../os__utils_8h.html',1,'']]]
+  ['os_5futils_2ec_2713',['os_utils.c',['../os__utils_8c.html',1,'']]],
+  ['os_5futils_2eh_2714',['os_utils.h',['../os__utils_8h.html',1,'']]]
 ];
