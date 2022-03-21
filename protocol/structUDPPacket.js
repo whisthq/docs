@@ -12,12 +12,12 @@ var structUDPPacket =
     [ "send_timestamp", "structUDPPacket.html#a481ce35325ef9ff3506e7df0e6d0a860", null ],
     [ "type", "structUDPPacket.html#a2994f5c6c546484de47449bc7100afbf", null ],
     [ "type", "structUDPPacket.html#ad492793b61c2f4bcaec79cb4ea5c7018", null ],
-    [ "udp_bitarray_nack_data", "structUDPPacket.html#aff3fd448b47c2319061d72a441370695", null ],
-    [ "udp_nack_data", "structUDPPacket.html#afa5a6dffb63ffeb8f45bed5349180201", null ],
-    [ "udp_network_settings_data", "structUDPPacket.html#aa2bfb0ee6c660348429e97f5949dfd43", null ],
-    [ "udp_ping_data", "structUDPPacket.html#a644b0d6392c705d0cc43a27e6ff9d103", null ],
-    [ "udp_pong_data", "structUDPPacket.html#a468a2dd894d3a24652edc6e03d9a9488", null ],
-    [ "udp_stream_reset_data", "structUDPPacket.html#a6552932dd9b1adbf064f32b7401003b8", null ],
+    [ "udp_bitarray_nack_data", "structUDPPacket.html#a5c08f5959b5324ca47a6850235c5d0c5", null ],
+    [ "udp_nack_data", "structUDPPacket.html#a7b480c47ed410945f3e2b0a06664736c", null ],
+    [ "udp_network_settings_data", "structUDPPacket.html#a13ecbfe165e4a5fb1ba5f47c4790716e", null ],
+    [ "udp_ping_data", "structUDPPacket.html#ac87b6c031402c5cf352b2e87deecd2d9", null ],
+    [ "udp_pong_data", "structUDPPacket.html#af78e2346060df761690f8b9d10aa4689", null ],
+    [ "udp_stream_reset_data", "structUDPPacket.html#a9c69993930042022aa70ecd06d735f9b", null ],
     [ "udp_whist_segment_data", "structUDPPacket.html#afef458c276a4f280f97b3d6edecd25d5", null ],
     [ "whist_type", "structUDPPacket.html#a32de45f5c2b5fa80cccde2bf4a2b4c66", null ]
 ];

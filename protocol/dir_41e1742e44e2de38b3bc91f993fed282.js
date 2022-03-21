@@ -13,8 +13,6 @@ var dir_41e1742e44e2de38b3bc91f993fed282 =
     [ "notifications.h", "notifications_8h.html", "notifications_8h" ],
     [ "parse_args.c", "parse__args_8c.html", "parse__args_8c" ],
     [ "parse_args.h", "parse__args_8h.html", "parse__args_8h" ],
-    [ "server_statistic.c", "server__statistic_8c.html", "server__statistic_8c" ],
-    [ "server_statistic.h", "server__statistic_8h.html", "server__statistic_8h" ],
     [ "state.h", "state_8h.html", "state_8h" ],
     [ "video.c", "server_2video_8c.html", "server_2video_8c" ],
     [ "video.h", "server_2video_8h.html", "server_2video_8h" ]

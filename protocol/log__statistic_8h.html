@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('log__statistic_8h.html',''); initResiz
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">log_statistic.h File Reference</div>  </div>
@@ -110,11 +111,71 @@ Macros</h2></td></tr>
 <tr class="memdesc:a04c8f42babfe110a848d8fdd6ebabd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro runs the code in <code>line</code>, timing it, and then logging the result with <code>log_double_statistic</code>.  <a href="log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65">More...</a><br /></td></tr>
 <tr class="separator:a04c8f42babfe110a848d8fdd6ebabd65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a5caad6508eb2c3373d06f221feb364f0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0">Metrics</a> { <br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a25dbe02705852e85544625e839896fac">NETWORK_RTT_UDP</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0afa0613b8b81df5f1855c9c68e3cfd5db">AUDIO_ENCODE_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a31c807d31f0487d03623aa1f63d178c8">CLIENT_HANDLE_USERINPUT_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ac258810ce39025e0cefc8e1f34fd2fa2">NETWORK_THROTTLED_PACKET_DELAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ae633d7b7ba7e153f9671a1691ef89b8c">NETWORK_THROTTLED_PACKET_DELAY_RATE</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a5c92f2ee11cc4e038a10445b3f749372">NETWORK_THROTTLED_PACKET_DELAY_LOOPS</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a21fa0c0a10c8063afb6215455922e5a8">VIDEO_CAPTURE_CREATE_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0add2ffe606ca7edbe784ded18671646fb">VIDEO_CAPTURE_UPDATE_TIME</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a2e76a584d3eb368c555e0dd6291ed331">VIDEO_CAPTURE_SCREEN_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ab7bfc273f402328983f2b07c56fb6907">VIDEO_CAPTURE_TRANSFER_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a47c36f57176700447de96aa4282df965">VIDEO_ENCODER_UPDATE_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0aeba71b4c50b5ac76b56b850f361cf65b">VIDEO_ENCODE_TIME</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a323844dc44cfd54174da5de5c24d4d70">VIDEO_FPS_SENT</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0aeb3563683b3a0fc7176a7bfb9a0c6995">VIDEO_FPS_SKIPPED_IN_CAPTURE</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a3a3771741a5ce4face7e45aad78b0345">VIDEO_FRAME_SIZE</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a93b1e263ca2fc213189037e733630e2d">VIDEO_FRAME_PROCESSING_TIME</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ae3169a4b1fdf75c4ce40d4a9e0bc2e1b">VIDEO_GET_CURSOR_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ac3861f2aeda66d4bb75bb469ea42d211">VIDEO_INTER_FRAME_QP</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a6f181840446f715c76ed2af1e4ba12ff">VIDEO_INTRA_FRAME_QP</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a70a3201279c8c051ceb67f98523c753f">VIDEO_SEND_TIME</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a6edc38cb5d1476aea5bec1d201c8509d">DBUS_MSGS_RECEIVED</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a3a5a7856ea8c8f14b77adb4e444d28b5">SERVER_CPU_USAGE</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ae3b93673c756a8bcbe3014a6779acfc5">AUDIO_RECEIVE_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a2e797a1fcddb59786ebd3a5afae4bc4f">AUDIO_UPDATE_TIME</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a82ae9bf8e320a1bf5f04c34e363d70ef">AUDIO_FPS_SKIPPED</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ae3f83f720f48f774643d9d25ea8506ff">NETWORK_READ_PACKET_TCP</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a2533789bca36ea8778fdd91d220b22cc">NETWORK_READ_PACKET_UDP</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ab4c1f74cc9e93c9969611ff0beacfb37">SERVER_HANDLE_MESSAGE_TCP</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a501593968a802affcaa0a84d644d5baa">SERVER_HANDLE_MESSAGE_UDP</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0abbbd825a77b2f214509ddb831b0df31a">VIDEO_AVCODEC_RECEIVE_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a250066aaa58526ff20d827ead7c26944">VIDEO_AV_HWFRAME_TRANSFER_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a093d3a7510b203a8ca9a41400132e45b">VIDEO_CURSOR_UPDATE_TIME</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0afcf53efa733b68085fa2b4d2336da0f7">VIDEO_DECODE_SEND_PACKET_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a90e89317b15e2aedf77f0b3ae17ff6a3">VIDEO_DECODE_GET_FRAME_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ade84c9203e2d34ac95b87121a7b498a4">VIDEO_FPS_RENDERED</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a2950fc3f55e28fc2a6379c0e2873197d">VIDEO_E2E_LATENCY</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a8d67938756aea08edff41427fafcc6b1">VIDEO_RECEIVE_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a82c3f68e1603d6b05e4f2757be692d75">VIDEO_RENDER_TIME</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0af72c3ce78e30c28bd78013e2cbcdfae0">VIDEO_TIME_BETWEEN_FRAMES</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a6f123a94d6cc479a05d86bb5c37eceb6">VIDEO_UPDATE_TIME</a>, 
+<br />
+&#160;&#160;<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0aef844b9ebeccdf9ea1353890aa96ed39">NOTIFICATIONS_RECEIVED</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0aff44088b5fe8a839d311950ed00f80e7">CLIENT_CPU_USAGE</a>, 
+<a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a7af8864683fe05f5d2ab7b4d88bbe5b2">NUM_METRICS</a>
+<br />
+ }</td></tr>
+<tr class="separator:a5caad6508eb2c3373d06f221feb364f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a462484146d0ca6bd35b234bca13cc9a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#a462484146d0ca6bd35b234bca13cc9a0">whist_init_statistic_logger</a> (uint32_t num_metrics, <a class="el" href="structStatisticInfo.html">StatisticInfo</a> *statistic_info, int interval)</td></tr>
-<tr class="memdesc:a462484146d0ca6bd35b234bca13cc9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the statistic logger.  <a href="log__statistic_8h.html#a462484146d0ca6bd35b234bca13cc9a0">More...</a><br /></td></tr>
-<tr class="separator:a462484146d0ca6bd35b234bca13cc9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6797bdde16ad799a93e38562b150dba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#ac6797bdde16ad799a93e38562b150dba">whist_init_statistic_logger</a> (int interval)</td></tr>
+<tr class="memdesc:ac6797bdde16ad799a93e38562b150dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the statistic logger.  <a href="log__statistic_8h.html#ac6797bdde16ad799a93e38562b150dba">More...</a><br /></td></tr>
+<tr class="separator:ac6797bdde16ad799a93e38562b150dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab364d742d19a3ff2640b68884b171674"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674">log_double_statistic</a> (uint32_t index, double val)</td></tr>
 <tr class="memdesc:ab364d742d19a3ff2640b68884b171674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note a specific stat value associated with a key.  <a href="log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674">More...</a><br /></td></tr>
 <tr class="separator:ab364d742d19a3ff2640b68884b171674"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +246,66 @@ Usage</h1>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a5caad6508eb2c3373d06f221feb364f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5caad6508eb2c3373d06f221feb364f0">&#9670;&nbsp;</a></span>Metrics</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0">Metrics</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a25dbe02705852e85544625e839896fac"></a>NETWORK_RTT_UDP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0afa0613b8b81df5f1855c9c68e3cfd5db"></a>AUDIO_ENCODE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a31c807d31f0487d03623aa1f63d178c8"></a>CLIENT_HANDLE_USERINPUT_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0ac258810ce39025e0cefc8e1f34fd2fa2"></a>NETWORK_THROTTLED_PACKET_DELAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0ae633d7b7ba7e153f9671a1691ef89b8c"></a>NETWORK_THROTTLED_PACKET_DELAY_RATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a5c92f2ee11cc4e038a10445b3f749372"></a>NETWORK_THROTTLED_PACKET_DELAY_LOOPS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a21fa0c0a10c8063afb6215455922e5a8"></a>VIDEO_CAPTURE_CREATE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0add2ffe606ca7edbe784ded18671646fb"></a>VIDEO_CAPTURE_UPDATE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a2e76a584d3eb368c555e0dd6291ed331"></a>VIDEO_CAPTURE_SCREEN_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0ab7bfc273f402328983f2b07c56fb6907"></a>VIDEO_CAPTURE_TRANSFER_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a47c36f57176700447de96aa4282df965"></a>VIDEO_ENCODER_UPDATE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0aeba71b4c50b5ac76b56b850f361cf65b"></a>VIDEO_ENCODE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a323844dc44cfd54174da5de5c24d4d70"></a>VIDEO_FPS_SENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0aeb3563683b3a0fc7176a7bfb9a0c6995"></a>VIDEO_FPS_SKIPPED_IN_CAPTURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a3a3771741a5ce4face7e45aad78b0345"></a>VIDEO_FRAME_SIZE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a93b1e263ca2fc213189037e733630e2d"></a>VIDEO_FRAME_PROCESSING_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0ae3169a4b1fdf75c4ce40d4a9e0bc2e1b"></a>VIDEO_GET_CURSOR_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0ac3861f2aeda66d4bb75bb469ea42d211"></a>VIDEO_INTER_FRAME_QP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a6f181840446f715c76ed2af1e4ba12ff"></a>VIDEO_INTRA_FRAME_QP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a70a3201279c8c051ceb67f98523c753f"></a>VIDEO_SEND_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a6edc38cb5d1476aea5bec1d201c8509d"></a>DBUS_MSGS_RECEIVED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a3a5a7856ea8c8f14b77adb4e444d28b5"></a>SERVER_CPU_USAGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0ae3b93673c756a8bcbe3014a6779acfc5"></a>AUDIO_RECEIVE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a2e797a1fcddb59786ebd3a5afae4bc4f"></a>AUDIO_UPDATE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a82ae9bf8e320a1bf5f04c34e363d70ef"></a>AUDIO_FPS_SKIPPED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0ae3f83f720f48f774643d9d25ea8506ff"></a>NETWORK_READ_PACKET_TCP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a2533789bca36ea8778fdd91d220b22cc"></a>NETWORK_READ_PACKET_UDP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0ab4c1f74cc9e93c9969611ff0beacfb37"></a>SERVER_HANDLE_MESSAGE_TCP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a501593968a802affcaa0a84d644d5baa"></a>SERVER_HANDLE_MESSAGE_UDP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0abbbd825a77b2f214509ddb831b0df31a"></a>VIDEO_AVCODEC_RECEIVE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a250066aaa58526ff20d827ead7c26944"></a>VIDEO_AV_HWFRAME_TRANSFER_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a093d3a7510b203a8ca9a41400132e45b"></a>VIDEO_CURSOR_UPDATE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0afcf53efa733b68085fa2b4d2336da0f7"></a>VIDEO_DECODE_SEND_PACKET_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a90e89317b15e2aedf77f0b3ae17ff6a3"></a>VIDEO_DECODE_GET_FRAME_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0ade84c9203e2d34ac95b87121a7b498a4"></a>VIDEO_FPS_RENDERED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a2950fc3f55e28fc2a6379c0e2873197d"></a>VIDEO_E2E_LATENCY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a8d67938756aea08edff41427fafcc6b1"></a>VIDEO_RECEIVE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a82c3f68e1603d6b05e4f2757be692d75"></a>VIDEO_RENDER_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0af72c3ce78e30c28bd78013e2cbcdfae0"></a>VIDEO_TIME_BETWEEN_FRAMES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a6f123a94d6cc479a05d86bb5c37eceb6"></a>VIDEO_UPDATE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0aef844b9ebeccdf9ea1353890aa96ed39"></a>NOTIFICATIONS_RECEIVED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0aff44088b5fe8a839d311950ed00f80e7"></a>CLIENT_CPU_USAGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5caad6508eb2c3373d06f221feb364f0a7af8864683fe05f5d2ab7b4d88bbe5b2"></a>NUM_METRICS&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a3e615ed1d20a0769e039693e390b390e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e615ed1d20a0769e039693e390b390e">&#9670;&nbsp;</a></span>destroy_statistic_logger()</h2>
@@ -244,8 +365,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a462484146d0ca6bd35b234bca13cc9a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a462484146d0ca6bd35b234bca13cc9a0">&#9670;&nbsp;</a></span>whist_init_statistic_logger()</h2>
+<a id="ac6797bdde16ad799a93e38562b150dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6797bdde16ad799a93e38562b150dba">&#9670;&nbsp;</a></span>whist_init_statistic_logger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,25 +374,9 @@ Usage</h1>
         <tr>
           <td class="memname">void whist_init_statistic_logger </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>num_metrics</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structStatisticInfo.html">StatisticInfo</a> *&#160;</td>
-          <td class="paramname"><em>statistic_info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>interval</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>interval</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
