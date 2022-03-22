@@ -112,16 +112,12 @@ Macros</h2></td></tr>
 <tr class="separator:aae1c510758ee20c3ab1c53b1bc895786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3c2ea61f618a92f70234842e1d8ab8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a7b3c2ea61f618a92f70234842e1d8ab8">NACK_STATISTICS_SEC</a>&#160;&#160;&#160;5.0</td></tr>
 <tr class="separator:a7b3c2ea61f618a92f70234842e1d8ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ebb72b79427224fce1402fe69cda5c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a8ebb72b79427224fce1402fe69cda5c1">STREAM_RESET_REQUEST_INTERVAL_MS</a>&#160;&#160;&#160;5.0</td></tr>
-<tr class="separator:a8ebb72b79427224fce1402fe69cda5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63712ce21a04379372836cb9a38e657a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a63712ce21a04379372836cb9a38e657a">MAX_UNSYNCED_FRAMES</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:a63712ce21a04379372836cb9a38e657a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75c6966e527a4abe2c6e4f27f819f7a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a75c6966e527a4abe2c6e4f27f819f7a0">MIN_ACCEPTABLE_STALENESS_MS</a>&#160;&#160;&#160;100.0</td></tr>
-<tr class="separator:a75c6966e527a4abe2c6e4f27f819f7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a262db33739dbfd7b25d97c2ba2754986"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a262db33739dbfd7b25d97c2ba2754986">MAX_ACCEPTABLE_STALENESS_MS</a>&#160;&#160;&#160;200.0</td></tr>
-<tr class="separator:a262db33739dbfd7b25d97c2ba2754986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf06ce5e31c557cd5e3342811904c911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#adf06ce5e31c557cd5e3342811904c911">MAX_PACKET_NACKS</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:adf06ce5e31c557cd5e3342811904c911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c6966e527a4abe2c6e4f27f819f7a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a75c6966e527a4abe2c6e4f27f819f7a0">MIN_ACCEPTABLE_STALENESS_MS</a>&#160;&#160;&#160;100.0</td></tr>
+<tr class="separator:a75c6966e527a4abe2c6e4f27f819f7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262db33739dbfd7b25d97c2ba2754986"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a262db33739dbfd7b25d97c2ba2754986">MAX_ACCEPTABLE_STALENESS_MS</a>&#160;&#160;&#160;300.0</td></tr>
+<tr class="separator:a262db33739dbfd7b25d97c2ba2754986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7825c4f2de173c071d97a296ec96d24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ad7825c4f2de173c071d97a296ec96d24">MAX_NACK_BITRATE_RATIO</a>&#160;&#160;&#160;0.5</td></tr>
 <tr class="separator:ad7825c4f2de173c071d97a296ec96d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -153,7 +149,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ab1bbfe97860061cb1cc4d55514ca4855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ab1bbfe97860061cb1cc4d55514ca4855">reset_stream</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>)</td></tr>
 <tr class="memdesc:ab1bbfe97860061cb1cc4d55514ca4855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip the ring buffer to ID id, dropping all packets prior to that id.  <a href="ringbuffer_8c.html#ab1bbfe97860061cb1cc4d55514ca4855">More...</a><br /></td></tr>
 <tr class="separator:ab1bbfe97860061cb1cc4d55514ca4855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ed839fb46aebbb9028199019bafd169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a4ed839fb46aebbb9028199019bafd169">try_recovering_missing_packets_or_frames</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double <a class="el" href="udp_8c.html#a5120ece93dfddf5638a59e495e9c6d46">latency</a>, int max_unordered_packets, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
+<tr class="memitem:a4ed839fb46aebbb9028199019bafd169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a4ed839fb46aebbb9028199019bafd169">try_recovering_missing_packets_or_frames</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double latency, int max_unordered_packets, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
 <tr class="memdesc:a4ed839fb46aebbb9028199019bafd169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try nacking or requesting a stream reset.  <a href="ringbuffer_8c.html#a4ed839fb46aebbb9028199019bafd169">More...</a><br /></td></tr>
 <tr class="separator:a4ed839fb46aebbb9028199019bafd169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6f19b91298c7e3a227df3c5da891cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a7a6f19b91298c7e3a227df3c5da891cc">get_network_statistics</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
@@ -185,7 +181,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_ACCEPTABLE_STALENESS_MS&#160;&#160;&#160;200.0</td>
+          <td class="memname">#define MAX_ACCEPTABLE_STALENESS_MS&#160;&#160;&#160;300.0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -276,20 +272,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a63712ce21a04379372836cb9a38e657a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63712ce21a04379372836cb9a38e657a">&#9670;&nbsp;</a></span>MAX_UNSYNCED_FRAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_UNSYNCED_FRAMES&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac2fc8d91a4522aa7564405e36898140b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2fc8d91a4522aa7564405e36898140b">&#9670;&nbsp;</a></span>MAX_VIDEO_PACKETS</h2>
 
@@ -340,20 +322,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define NACK_STATISTICS_SEC&#160;&#160;&#160;5.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8ebb72b79427224fce1402fe69cda5c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ebb72b79427224fce1402fe69cda5c1">&#9670;&nbsp;</a></span>STREAM_RESET_REQUEST_INTERVAL_MS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STREAM_RESET_REQUEST_INTERVAL_MS&#160;&#160;&#160;5.0</td>
         </tr>
       </table>
 </div><div class="memdoc">

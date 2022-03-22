@@ -1,9 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"structVideoFrame.html#aef3314aab1ba78f86d87b04395658de6":[11,0,101,6],
-"structWhistClientMessage.html":[11,0,102],
-"structWhistClientMessage.html#a0116954edece6194206d1b8431f15654":[11,0,102,4],
-"structWhistClientMessage.html#a0f5e0baec5bb2d55c15eab4e4d78a372":[11,0,102,13],
 "structWhistClientMessage.html#a24de04f7e728cbbf22a1409e6b6e0139":[11,0,102,8],
 "structWhistClientMessage.html#a2fee554ec5cf871bae33201f64cb08e2":[11,0,102,15],
 "structWhistClientMessage.html#a3616705f841a5254f6ddbd5a6e884314":[11,0,102,11],
@@ -249,5 +245,9 @@ var NAVTREEINDEX12 =
 "sync__packets_8h.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e":[12,0,0,20,0],
 "sync__packets_8h_source.html":[12,0,0,20],
 "sysinfo_8c.html":[12,0,2,10,26],
-"sysinfo_8c.html#a07db1ac3fcee0bea1bef088a1a2fff55":[12,0,2,10,26,3]
+"sysinfo_8c.html#a07db1ac3fcee0bea1bef088a1a2fff55":[12,0,2,10,26,3],
+"sysinfo_8c.html#a1b67e2497c140a3b704c33c865a4140f":[12,0,2,10,26,4],
+"sysinfo_8c.html#a538a4414821926cda2c9e989764c00fd":[12,0,2,10,26,1],
+"sysinfo_8c.html#a59cfaf693b4362662c1d6b252f11bd72":[12,0,2,10,26,5],
+"sysinfo_8c.html#a9283304a24c69f120bdcc1f50aa355d4":[12,0,2,10,26,7]
 };

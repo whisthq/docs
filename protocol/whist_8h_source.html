@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('whist_8h_source.html',''); initResizab
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">// Sometimes congestion control chooses a really low bitrate at which the visual quality is</span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">// unbearable. To avoid that we set a lower bound on video quality and drop frames if they are going</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">// to exceed the bitrate chosen by congestion control algorithm. Higher the QP, Lower the bitrate</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">// and Lower the visual quality. Allowed QP range is 0-51 (for both all kind of frames).</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">// and Lower the visual quality. Allowed QP range is 0-51 (for all kind of frames).</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="whist_8h.html#a36731cc1007cd643f55b66d1f573d659">  170</a></span>&#160;<span class="preprocessor">#define MAX_QP 40                  // Max QP value of video frames</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="whist_8h.html#a9bcfa4a6fecd23535df2dd7cc000ea23">  171</a></span>&#160;<span class="preprocessor">#define MAX_INTRA_QP (MAX_QP + 6)  // Higher QP value for intra frames if supported by the encoder</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>

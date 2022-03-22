@@ -95,8 +95,6 @@ $(document).ready(function(){initNavTree('structFrameData.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a41088cd4c0cdaa7dd31184446e0ef124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a41088cd4c0cdaa7dd31184446e0ef124">type</a></td></tr>
-<tr class="separator:a41088cd4c0cdaa7dd31184446e0ef124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78648a23cf6d7bec7ba095e79c90bcce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a78648a23cf6d7bec7ba095e79c90bcce">num_original_packets</a></td></tr>
 <tr class="separator:a78648a23cf6d7bec7ba095e79c90bcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a378937724da15b0963192405d1126594"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a378937724da15b0963192405d1126594">num_fec_packets</a></td></tr>
@@ -123,22 +121,22 @@ Data Fields</h2></td></tr>
 <tr class="separator:a3eb54c2889e57b3083c7c2adc0c5f1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec551b669a213996989740f84bb40947"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#aec551b669a213996989740f84bb40947">fec_frame_buffer</a></td></tr>
 <tr class="separator:aec551b669a213996989740f84bb40947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca16f755e18b1448860ddebaa6f96bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFECDecoder.html">FECDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a7ca16f755e18b1448860ddebaa6f96bd">fec_decoder</a></td></tr>
+<tr class="separator:a7ca16f755e18b1448860ddebaa6f96bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c89782c514acba9e4f8a91fcde782b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a89c89782c514acba9e4f8a91fcde782b">successful_fec_recovery</a></td></tr>
 <tr class="separator:a89c89782c514acba9e4f8a91fcde782b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bdb1b932824acc61d24b6b1643de4aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a1bdb1b932824acc61d24b6b1643de4aa">recovery_mode</a></td></tr>
-<tr class="separator:a1bdb1b932824acc61d24b6b1643de4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5d4167d79ba891e8dbcfe30dcd5cbed"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#ab5d4167d79ba891e8dbcfe30dcd5cbed">num_times_index_nacked</a></td></tr>
-<tr class="separator:ab5d4167d79ba891e8dbcfe30dcd5cbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade9910f3dfd891166f811094e39a0556"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#ade9910f3dfd891166f811094e39a0556">num_times_nacked</a></td></tr>
-<tr class="separator:ade9910f3dfd891166f811094e39a0556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa204dd1d41815bff9f3df1576e4bd3ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#aa204dd1d41815bff9f3df1576e4bd3ad">last_nacked_index</a></td></tr>
-<tr class="separator:aa204dd1d41815bff9f3df1576e4bd3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471240e6848751c9090c99ab05ddde9e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a471240e6848751c9090c99ab05ddde9e">num_entire_frame_nacked</a></td></tr>
+<tr class="separator:a471240e6848751c9090c99ab05ddde9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7bcd8998068cc537307ca8bd0e88a26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#ac7bcd8998068cc537307ca8bd0e88a26">entire_frame_nacked_id</a></td></tr>
+<tr class="separator:ac7bcd8998068cc537307ca8bd0e88a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d6d5d36ca93f4ad8ed993d28db37f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a78d6d5d36ca93f4ad8ed993d28db37f3">last_frame_nack_timer</a></td></tr>
+<tr class="separator:a78d6d5d36ca93f4ad8ed993d28db37f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5dec684293d4f9fe8e2a51aa91a08eb"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#af5dec684293d4f9fe8e2a51aa91a08eb">num_times_index_nacked</a></td></tr>
+<tr class="separator:af5dec684293d4f9fe8e2a51aa91a08eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7804671e5e00601c971a1857d3bc930d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a7804671e5e00601c971a1857d3bc930d">last_nonnack_packet_timer</a></td></tr>
 <tr class="separator:a7804671e5e00601c971a1857d3bc930d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85439ab4bc5294bf3d4a0e681b72fa9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a85439ab4bc5294bf3d4a0e681b72fa9c">frame_creation_timer</a></td></tr>
 <tr class="separator:a85439ab4bc5294bf3d4a0e681b72fa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ca16f755e18b1448860ddebaa6f96bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFECDecoder.html">FECDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFrameData.html#a7ca16f755e18b1448860ddebaa6f96bd">fec_decoder</a></td></tr>
-<tr class="separator:a7ca16f755e18b1448860ddebaa6f96bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structFrameData.html" title="FrameData struct containing content and metadata of encoded frames.">FrameData</a> struct containing content and metadata of encoded frames. </p>
@@ -153,6 +151,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int FrameData::duplicate_packets_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7bcd8998068cc537307ca8bd0e88a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7bcd8998068cc537307ca8bd0e88a26">&#9670;&nbsp;</a></span>entire_frame_nacked_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FrameData::entire_frame_nacked_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -257,14 +269,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="aa204dd1d41815bff9f3df1576e4bd3ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa204dd1d41815bff9f3df1576e4bd3ad">&#9670;&nbsp;</a></span>last_nacked_index</h2>
+<a id="a78d6d5d36ca93f4ad8ed993d28db37f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d6d5d36ca93f4ad8ed993d28db37f3">&#9670;&nbsp;</a></span>last_frame_nack_timer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int FrameData::last_nacked_index</td>
+          <td class="memname"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> FrameData::last_frame_nack_timer</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -299,6 +311,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a471240e6848751c9090c99ab05ddde9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a471240e6848751c9090c99ab05ddde9e">&#9670;&nbsp;</a></span>num_entire_frame_nacked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t FrameData::num_entire_frame_nacked</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a378937724da15b0963192405d1126594"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a378937724da15b0963192405d1126594">&#9670;&nbsp;</a></span>num_fec_packets</h2>
 
@@ -327,28 +353,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ab5d4167d79ba891e8dbcfe30dcd5cbed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5d4167d79ba891e8dbcfe30dcd5cbed">&#9670;&nbsp;</a></span>num_times_index_nacked</h2>
+<a id="af5dec684293d4f9fe8e2a51aa91a08eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5dec684293d4f9fe8e2a51aa91a08eb">&#9670;&nbsp;</a></span>num_times_index_nacked</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int* FrameData::num_times_index_nacked</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade9910f3dfd891166f811094e39a0556"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade9910f3dfd891166f811094e39a0556">&#9670;&nbsp;</a></span>num_times_nacked</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FrameData::num_times_nacked</td>
+          <td class="memname">uint8_t* FrameData::num_times_index_nacked</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -411,20 +423,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a1bdb1b932824acc61d24b6b1643de4aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bdb1b932824acc61d24b6b1643de4aa">&#9670;&nbsp;</a></span>recovery_mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool FrameData::recovery_mode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a89c89782c514acba9e4f8a91fcde782b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89c89782c514acba9e4f8a91fcde782b">&#9670;&nbsp;</a></span>successful_fec_recovery</h2>
 
@@ -433,20 +431,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool FrameData::successful_fec_recovery</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a41088cd4c0cdaa7dd31184446e0ef124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41088cd4c0cdaa7dd31184446e0ef124">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> FrameData::type</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -4,7 +4,7 @@ var structUDPPacket =
     [ "greatest_failed_id", "structUDPPacket.html#aab12ec95c44b6aa53c38349e4b904be5", null ],
     [ "group_id", "structUDPPacket.html#ac85002574953bffb5683c563de3ff76e", null ],
     [ "id", "structUDPPacket.html#a248091c90d08e6aa85ec427e3e68eadf", null ],
-    [ "index", "structUDPPacket.html#ad3912bb034a085420e5be62e9147de8b", null ],
+    [ "index", "structUDPPacket.html#a38bd9e1dc1807357af9d68096d3c79ee", null ],
     [ "index", "structUDPPacket.html#a897005c8e9655cbc58fde204c2b2be96", null ],
     [ "network_settings", "structUDPPacket.html#a138b4ffd2f1235bc8a287e121583ccc5", null ],
     [ "numBits", "structUDPPacket.html#a092b46960ea776417059e2f77878f174", null ],

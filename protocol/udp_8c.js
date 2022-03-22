@@ -14,6 +14,7 @@ var udp_8c =
     [ "INCOMING_BITRATE_WINDOW_MS", "udp_8c.html#affae1647f8735441fd62ee64b5e7df26", null ],
     [ "MAX_GROUP_STATS", "udp_8c.html#ab2e2a8a17401043534915047cfff9d83", null ],
     [ "MAX_NUM_AUDIO_FRAMES", "udp_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa", null ],
+    [ "MAX_PINGS_IN_FLIGHT", "udp_8c.html#a27a95ae8465ba2cfb7e39535fd22e9d9", null ],
     [ "MAX_TOTAL_PACKETS", "udp_8c.html#a890ae089e185134fdcefbc84329a6115", null ],
     [ "MIN_VALID_BUCKETS", "udp_8c.html#a1460dcee3b0c034518e8f893c81711ee", null ],
     [ "NUM_CONFIRMATION_MESSAGES", "udp_8c.html#ad3e6533153a99e7fa4b81352018a5b2a", null ],
@@ -22,7 +23,7 @@ var udp_8c =
     [ "RETRIES_ON_BUFFER_FULL", "udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb", null ],
     [ "STATISTICS_SECONDS", "udp_8c.html#a3190cca650071548d6b75370b0e5c41c", null ],
     [ "UDP_NETWORK_THROTTLER_BUCKET_MS", "udp_8c.html#a5222d03fdb5004f2ebc781d1041f0e04", null ],
-    [ "UDP_PING_INTERVAL_MS", "udp_8c.html#aa4da45c77586c2639e0da752db28a174", null ],
+    [ "UDP_PING_INTERVAL", "udp_8c.html#ac14ca091a9784a3c897025a791037ffb", null ],
     [ "UDP_PONG_TIMEOUT", "udp_8c.html#a231db3ea80ce4b295aad0c5c33834480", null ],
     [ "UDP_RECV_BUFFER_SIZE", "udp_8c.html#aed3335a7ee09b5ed787c14118c6a758b", null ],
     [ "UDP_SEND_BUFFER_SIZE", "udp_8c.html#a6ab40d0dffbe06f2dec17cfb58b51686", null ],
@@ -57,6 +58,5 @@ var udp_8c =
     [ "udp_resend_packet", "udp_8c.html#aee4b4dae17ebfff109828253768fec80", null ],
     [ "udp_reset_duplicate_packet_counter", "udp_8c.html#ac6db631a1374534b6342f5bd19d7f0df", null ],
     [ "update_max_unordered_packets", "udp_8c.html#aca1aceb098277b1af092206703de6f38", null ],
-    [ "latency", "udp_8c.html#a5120ece93dfddf5638a59e495e9c6d46", null ],
     [ "port_mappings", "udp_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a", null ]
 ];
