@@ -247,7 +247,7 @@ var NAVTREEINDEX13 =
 "whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc":[12,0,2,2,4,3],
 "whist_8c.html#aeec40e2b433cc2844853d184006edff0":[12,0,2,2,4,4],
 "whist_8h.html":[12,0,2,2,5],
-"whist_8h.html#a00948d171966edaeadd7719bd2f87f38":[12,0,2,2,5,119],
-"whist_8h.html#a00a12b04c002bc1d820fc3fdbe717cae":[12,0,2,2,5,102],
-"whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79":[12,0,2,2,5,106]
+"whist_8h.html#a00948d171966edaeadd7719bd2f87f38":[12,0,2,2,5,118],
+"whist_8h.html#a00a12b04c002bc1d820fc3fdbe717cae":[12,0,2,2,5,101],
+"whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79":[12,0,2,2,5,105]
 };

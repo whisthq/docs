@@ -72,7 +72,6 @@ var whist_8h =
     [ "UNUSED", "whist_8h.html#a5f64c424fc4e04a8b3afd79a1e245625", null ],
     [ "US_IN_MS", "whist_8h.html#aeac12c17b335ba3ce62aa2cc8f1746ec", null ],
     [ "US_IN_SECOND", "whist_8h.html#a726a4c9e22de3eff123ba0ada25d7d4c", null ],
-    [ "USING_AUDIO_ENCODE_DECODE", "whist_8h.html#a1aabd41fc3d6e2687cf1cda5a88dd6d3", null ],
     [ "USING_FFMPEG_IFRAME_FLAG", "whist_8h.html#ac98c653bb06a80c855ad7013dccb3f26", null ],
     [ "USING_NVIDIA_CAPTURE", "whist_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6", null ],
     [ "USING_NVIDIA_ENCODE", "whist_8h.html#a8c14c321fd244515ad04ff39026feb75", null ],
