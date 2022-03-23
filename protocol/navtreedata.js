@@ -144,14 +144,14 @@ var NAVTREEINDEX =
 "index.html#autotoc_md4",
 "lodepng_8h.html#a4100642d70071029967c16afd72193ff",
 "mac__clipboard_8c.html#a87781954b181bfe0cc6d212f1e155d47",
-"ringbuffer_8c.html#a0263a542b2b625b41edd57f30dfa1b28",
-"structBPMNode.html#a349ff0204b52858db88a47940509f14e",
-"structLTRFrame.html#a183845030e396c708525b3b7aa1bf92a",
-"structRWLock.html#a6d02f221523aa66ecb38e71e9220cb11",
-"structWhistClientMessage.html",
-"sysinfo_8c.html#a538a4414821926cda2c9e989764c00fd",
-"whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79a27612f02539b2da18de5bdc23cda876f",
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369baea5d05471d78051a52e746fd6d70ee72"
+"renderer_8h.html#aeb94491a6b615aa71f713b853324205e",
+"structBPMLists.html#ab4a37471c907b02976a672895d7c9ced",
+"structLTRAction.html#a7461b22acad4bf17fa268c29866d9824",
+"structRWLock.html#a21f97c946efac2fa178bf291885d30d8",
+"structVideoFrame.html#ae6fe83b5b36f4100ca786a4a06f91db2",
+"sync__packets_8h.html",
+"whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc",
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369badab27c6a6d60b5878a2f35e6061d1006"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -104,6 +104,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a78b84a5133bfa661a731f975360f047a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a78b84a5133bfa661a731f975360f047a">SINGLE_THREAD_MODEL</a>&#160;&#160;&#160;false</td></tr>
+<tr class="separator:a78b84a5133bfa661a731f975360f047a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ccdbfc6930b7f7ef8a2c91282a804b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a35ccdbfc6930b7f7ef8a2c91282a804b">LOG_RENDERER_THREAD_USAGE</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:a35ccdbfc6930b7f7ef8a2c91282a804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -112,6 +114,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a50ca81e13392bb11097488f5aa92bde7"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a50ca81e13392bb11097488f5aa92bde7">multithreaded_renderer</a> (void *opaque)</td></tr>
 <tr class="memdesc:a50ca81e13392bb11097488f5aa92bde7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders audio/video on a separate thread, if necessary.  <a href="renderer_8c.html#a50ca81e13392bb11097488f5aa92bde7">More...</a><br /></td></tr>
 <tr class="separator:a50ca81e13392bb11097488f5aa92bde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6375ca27928a1afd4c1b42c24bf80230"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a6375ca27928a1afd4c1b42c24bf80230">multithreaded_video_renderer</a> (void *opaque)</td></tr>
+<tr class="memdesc:a6375ca27928a1afd4c1b42c24bf80230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders video whenever video_semaphore is posted.  <a href="renderer_8c.html#a6375ca27928a1afd4c1b42c24bf80230">More...</a><br /></td></tr>
+<tr class="separator:a6375ca27928a1afd4c1b42c24bf80230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efe7d5ed633f65eb4c3b765f7ad2a6e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a3efe7d5ed633f65eb4c3b765f7ad2a6e">multithreaded_audio_renderer</a> (void *opaque)</td></tr>
+<tr class="memdesc:a3efe7d5ed633f65eb4c3b765f7ad2a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders audio whenever audio_semaphore is posted.  <a href="renderer_8c.html#a3efe7d5ed633f65eb4c3b765f7ad2a6e">More...</a><br /></td></tr>
+<tr class="separator:a3efe7d5ed633f65eb4c3b765f7ad2a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10bd92baa8038c2e65dbd7dff7d378ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistRenderer.html">WhistRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a10bd92baa8038c2e65dbd7dff7d378ad">init_renderer</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int initial_width, int initial_height)</td></tr>
 <tr class="memdesc:a10bd92baa8038c2e65dbd7dff7d378ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will manage the video and audio systems, so that we can give it packets and it will render video to the screen and audio to the playback device.  <a href="renderer_8c.html#a10bd92baa8038c2e65dbd7dff7d378ad">More...</a><br /></td></tr>
 <tr class="separator:a10bd92baa8038c2e65dbd7dff7d378ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +151,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define LOG_RENDERER_THREAD_USAGE&#160;&#160;&#160;false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78b84a5133bfa661a731f975360f047a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78b84a5133bfa661a731f975360f047a">&#9670;&nbsp;</a></span>SINGLE_THREAD_MODEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINGLE_THREAD_MODEL&#160;&#160;&#160;false</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,6 +235,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3efe7d5ed633f65eb4c3b765f7ad2a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3efe7d5ed633f65eb4c3b765f7ad2a6e">&#9670;&nbsp;</a></span>multithreaded_audio_renderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t multithreaded_audio_renderer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>opaque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renders audio whenever audio_semaphore is posted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opaque</td><td>The <a class="el" href="structWhistRenderer.html">WhistRenderer</a>, as a WhistRenderer* </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a50ca81e13392bb11097488f5aa92bde7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50ca81e13392bb11097488f5aa92bde7">&#9670;&nbsp;</a></span>multithreaded_renderer()</h2>
 
@@ -231,6 +279,32 @@ Functions</h2></td></tr>
 
 <p>Renders audio/video on a separate thread, if necessary. </p>
 <dl class="section note"><dt>Note</dt><dd>This will be used if <code>renderer_try_render</code> doesn't get called often enough otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a6375ca27928a1afd4c1b42c24bf80230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6375ca27928a1afd4c1b42c24bf80230">&#9670;&nbsp;</a></span>multithreaded_video_renderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t multithreaded_video_renderer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>opaque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renders video whenever video_semaphore is posted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opaque</td><td>The <a class="el" href="structWhistRenderer.html">WhistRenderer</a>, as a WhistRenderer* </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
