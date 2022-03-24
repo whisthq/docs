@@ -189,7 +189,7 @@ var searchData=
   ['lodepnginfo_1216',['LodePNGInfo',['../structLodePNGInfo.html',1,'LodePNGInfo'],['../lodepng_8h.html#a2b202fb988cf2b881266a26cf081f016',1,'LodePNGInfo():&#160;lodepng.h']]],
   ['lodepngstate_1217',['LodePNGState',['../structLodePNGState.html',1,'LodePNGState'],['../lodepng_8h.html#a23316369c1c2a1e76f0205fd4b482117',1,'LodePNGState():&#160;lodepng.h']]],
   ['lodepngtime_1218',['LodePNGTime',['../structLodePNGTime.html',1,'LodePNGTime'],['../lodepng_8h.html#a4892d17f5e08bac94a4f7a052fdcd816',1,'LodePNGTime():&#160;lodepng.h']]],
-  ['log_5faudio_1219',['LOG_AUDIO',['../client_2audio_8c.html#aba13441b998b179fbf9483152582b6e2',1,'audio.c']]],
+  ['log_5faudio_1219',['LOG_AUDIO',['../whist_8h.html#aba13441b998b179fbf9483152582b6e2',1,'whist.h']]],
   ['log_5fcommand_5fline_1220',['LOG_COMMAND_LINE',['../command__line_8c.html#ab4b8304a1d588f72f6a03aa89a63e298',1,'command_line.c']]],
   ['log_5fcontext_5fformat_1221',['LOG_CONTEXT_FORMAT',['../logging_8h.html#a428c87d300cfd4cb4e73ee7140380ebf',1,'logging.h']]],
   ['log_5fcpu_5fusage_1222',['LOG_CPU_USAGE',['../whist__client_8c.html#a32364be58c0044b63dc47aeb962254b4',1,'LOG_CPU_USAGE():&#160;whist_client.c'],['../server_2main_8c.html#a32364be58c0044b63dc47aeb962254b4',1,'LOG_CPU_USAGE():&#160;main.c']]],

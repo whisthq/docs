@@ -123,10 +123,12 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a6afbd3875118f98013f7cc49969dac90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a6afbd3875118f98013f7cc49969dac90">UDPNETWORKPACKET_HEADER_SIZE</a>&#160;&#160;&#160;((int)(offsetof(<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>, payload)))</td></tr>
 <tr class="separator:a6afbd3875118f98013f7cc49969dac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14ca091a9784a3c897025a791037ffb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ac14ca091a9784a3c897025a791037ffb">UDP_PING_INTERVAL</a>&#160;&#160;&#160;0.1</td></tr>
-<tr class="separator:ac14ca091a9784a3c897025a791037ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231db3ea80ce4b295aad0c5c33834480"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a231db3ea80ce4b295aad0c5c33834480">UDP_PONG_TIMEOUT</a>&#160;&#160;&#160;5.0</td></tr>
-<tr class="separator:a231db3ea80ce4b295aad0c5c33834480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f2f61011d729a3bb56deee2f26a2c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a49f2f61011d729a3bb56deee2f26a2c7">UDP_PING_INTERVAL_SEC</a>&#160;&#160;&#160;0.1</td></tr>
+<tr class="separator:a49f2f61011d729a3bb56deee2f26a2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d308c30a8d28fbf997bb7085de35421"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a7d308c30a8d28fbf997bb7085de35421">UDP_PONG_TIMEOUT_SEC</a>&#160;&#160;&#160;5.0</td></tr>
+<tr class="separator:a7d308c30a8d28fbf997bb7085de35421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011eaed8cc6df727eb7f1f12852a1b2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a011eaed8cc6df727eb7f1f12852a1b2c">UDP_PING_LOG_INTERVAL_SEC</a>&#160;&#160;&#160;1.0</td></tr>
+<tr class="separator:a011eaed8cc6df727eb7f1f12852a1b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e2a8a17401043534915047cfff9d83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab2e2a8a17401043534915047cfff9d83">MAX_GROUP_STATS</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:ab2e2a8a17401043534915047cfff9d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affae1647f8735441fd62ee64b5e7df26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#affae1647f8735441fd62ee64b5e7df26">INCOMING_BITRATE_WINDOW_MS</a>&#160;&#160;&#160;1024</td></tr>
@@ -488,28 +490,42 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac14ca091a9784a3c897025a791037ffb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac14ca091a9784a3c897025a791037ffb">&#9670;&nbsp;</a></span>UDP_PING_INTERVAL</h2>
+<a id="a49f2f61011d729a3bb56deee2f26a2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f2f61011d729a3bb56deee2f26a2c7">&#9670;&nbsp;</a></span>UDP_PING_INTERVAL_SEC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UDP_PING_INTERVAL&#160;&#160;&#160;0.1</td>
+          <td class="memname">#define UDP_PING_INTERVAL_SEC&#160;&#160;&#160;0.1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a231db3ea80ce4b295aad0c5c33834480"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a231db3ea80ce4b295aad0c5c33834480">&#9670;&nbsp;</a></span>UDP_PONG_TIMEOUT</h2>
+<a id="a011eaed8cc6df727eb7f1f12852a1b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011eaed8cc6df727eb7f1f12852a1b2c">&#9670;&nbsp;</a></span>UDP_PING_LOG_INTERVAL_SEC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UDP_PONG_TIMEOUT&#160;&#160;&#160;5.0</td>
+          <td class="memname">#define UDP_PING_LOG_INTERVAL_SEC&#160;&#160;&#160;1.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d308c30a8d28fbf997bb7085de35421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d308c30a8d28fbf997bb7085de35421">&#9670;&nbsp;</a></span>UDP_PONG_TIMEOUT_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UDP_PONG_TIMEOUT_SEC&#160;&#160;&#160;5.0</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"mac__clipboard_8c.html#a87781954b181bfe0cc6d212f1e155d47":[12,0,2,1,6,0],
 "mac__clipboard_8c.html#abd908a405c1888d1306899a3ad598ea3":[12,0,2,1,6,1],
 "mac__clipboard_8c.html#af1a8e7cc53b2b0d020dcb3cc14a2c294":[12,0,2,1,6,2],
 "mac__utils_8c.html":[12,0,2,10,16],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "renderer_8h.html#a9262636b11f7ef525cea6ee8abf8cb45":[12,0,0,14,1],
 "renderer_8h.html#a9f7efeecdf0f0eb50993d2054cc51d51":[12,0,0,14,4],
 "renderer_8h.html#adb4f833673fdffc6791de6f73ff8e163":[12,0,0,14,3],
-"renderer_8h.html#ade2ce9ec671bc62d5e3ed28acf88ceb9":[12,0,0,14,0]
+"renderer_8h.html#ade2ce9ec671bc62d5e3ed28acf88ceb9":[12,0,0,14,0],
+"renderer_8h.html#aeb94491a6b615aa71f713b853324205e":[12,0,0,14,6]
 };

@@ -7,7 +7,6 @@ var client_2audio_8c =
     [ "AUDIO_QUEUE_UPPER_LIMIT_FRAMES", "client_2audio_8c.html#ab35a892e66fbb0590f73364b6eb70791", null ],
     [ "BYTES_PER_SAMPLE", "client_2audio_8c.html#a25065cd833bcfecfb404093aed3edaca", null ],
     [ "DECODED_BYTES_PER_FRAME", "client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7", null ],
-    [ "LOG_AUDIO", "client_2audio_8c.html#aba13441b998b179fbf9483152582b6e2", null ],
     [ "MAX_NUM_AUDIO_FRAMES", "client_2audio_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa", null ],
     [ "NUM_CHANNELS", "client_2audio_8c.html#ae5597ce31d23d11493e6e674fe257d73", null ],
     [ "SAMPLES_PER_FRAME", "client_2audio_8c.html#a8746ae57f53e99e184ab1e64e71d24c5", null ],
