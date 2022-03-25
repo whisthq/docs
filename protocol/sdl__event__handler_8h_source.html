@@ -85,8 +85,8 @@ $(document).ready(function(){initNavTree('sdl__event__handler_8h_source.html',''
 <div class="title">sdl_event_handler.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="sdl__event__handler_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WHIST_SDL_EVENT_HANDLER_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WHIST_SDL_EVENT_HANDLER_H</span></div>
+<a href="sdl__event__handler_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WHIST_EVENT_HANDLER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WHIST_EVENT_HANDLER_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">============================</span></div>
@@ -94,23 +94,26 @@ $(document).ready(function(){initNavTree('sdl__event__handler_8h_source.html',''
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">============================</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="whist_8h.html">whist/core/whist.h</a>&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">Public Functions</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdl__event__handler_8h.html#a700daac0987fe2e75253f19580033150">sdl_handle_events</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdl__event__handler_8h.html#ae4d074dba1161a48966b8e8693300306">sdl_pending_audio_device_update</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  // WHIST_SDL_EVENT_HANDLER_H</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="frontend_8h.html">frontend/frontend.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">Public Functions</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdl__event__handler_8h.html#a742ebee5dee254a0f45b8799465f3357">sdl_handle_events</a>(<a class="code" href="structWhistFrontend.html">WhistFrontend</a>* frontend);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="sdl__event__handler_8h.html#ae4d074dba1161a48966b8e8693300306">sdl_pending_audio_device_update</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  // WHIST_EVENT_HANDLER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="asdl__event__handler_8h_html_a700daac0987fe2e75253f19580033150"><div class="ttname"><a href="sdl__event__handler_8h.html#a700daac0987fe2e75253f19580033150">sdl_handle_events</a></div><div class="ttdeci">bool sdl_handle_events(void)</div><div class="ttdoc">Flushes the SDL event queue, and handles all of the pending events.</div><div class="ttdef"><b>Definition:</b> sdl_event_handler.c:84</div></div>
-<div class="ttc" id="asdl__event__handler_8h_html_ae4d074dba1161a48966b8e8693300306"><div class="ttname"><a href="sdl__event__handler_8h.html#ae4d074dba1161a48966b8e8693300306">sdl_pending_audio_device_update</a></div><div class="ttdeci">bool sdl_pending_audio_device_update(void)</div><div class="ttdoc">The function will let you know if an audio device has been plugged in or unplugged since the last tim...</div><div class="ttdef"><b>Definition:</b> sdl_event_handler.c:109</div></div>
+<div class="ttc" id="asdl__event__handler_8h_html_ae4d074dba1161a48966b8e8693300306"><div class="ttname"><a href="sdl__event__handler_8h.html#ae4d074dba1161a48966b8e8693300306">sdl_pending_audio_device_update</a></div><div class="ttdeci">bool sdl_pending_audio_device_update(void)</div><div class="ttdoc">The function will let you know if an audio device has been plugged in or unplugged since the last tim...</div><div class="ttdef"><b>Definition:</b> sdl_event_handler.c:95</div></div>
+<div class="ttc" id="asdl__event__handler_8h_html_a742ebee5dee254a0f45b8799465f3357"><div class="ttname"><a href="sdl__event__handler_8h.html#a742ebee5dee254a0f45b8799465f3357">sdl_handle_events</a></div><div class="ttdeci">bool sdl_handle_events(WhistFrontend *frontend)</div><div class="ttdoc">Flushes the SDL event queue, and handles all of the pending events.</div><div class="ttdef"><b>Definition:</b> sdl_event_handler.c:72</div></div>
 <div class="ttc" id="awhist_8h_html"><div class="ttname"><a href="whist_8h.html">whist.h</a></div><div class="ttdoc">Copyright (c) 2021-2022 Whist Technologies, Inc.</div></div>
+<div class="ttc" id="astructWhistFrontend_html"><div class="ttname"><a href="structWhistFrontend.html">WhistFrontend</a></div><div class="ttdef"><b>Definition:</b> frontend.h:137</div></div>
+<div class="ttc" id="afrontend_8h_html"><div class="ttname"><a href="frontend_8h.html">frontend.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

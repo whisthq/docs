@@ -1,13 +1,21 @@
 var searchData=
 [
-  ['fec_5fparms_2516',['fec_parms',['../structfec__parms.html',1,'']]],
-  ['fecdecoder_2517',['FECDecoder',['../structFECDecoder.html',1,'']]],
-  ['fecencoder_2518',['FECEncoder',['../structFECEncoder.html',1,'']]],
-  ['ffmpegencoder_2519',['FFmpegEncoder',['../structFFmpegEncoder.html',1,'']]],
-  ['filecapturedevice_2520',['FileCaptureDevice',['../structFileCaptureDevice.html',1,'']]],
-  ['filedata_2521',['FileData',['../structFileData.html',1,'']]],
-  ['fileeventinfo_2522',['FileEventInfo',['../unionFileEventInfo.html',1,'']]],
-  ['filemetadata_2523',['FileMetadata',['../structFileMetadata.html',1,'']]],
-  ['framedata_2524',['FrameData',['../structFrameData.html',1,'']]],
-  ['frontendwindowinfo_2525',['FrontendWindowInfo',['../structFrontendWindowInfo.html',1,'']]]
+  ['fec_5fparms_2557',['fec_parms',['../structfec__parms.html',1,'']]],
+  ['fecdecoder_2558',['FECDecoder',['../structFECDecoder.html',1,'']]],
+  ['fecencoder_2559',['FECEncoder',['../structFECEncoder.html',1,'']]],
+  ['ffmpegencoder_2560',['FFmpegEncoder',['../structFFmpegEncoder.html',1,'']]],
+  ['filecapturedevice_2561',['FileCaptureDevice',['../structFileCaptureDevice.html',1,'']]],
+  ['filedata_2562',['FileData',['../structFileData.html',1,'']]],
+  ['fileeventinfo_2563',['FileEventInfo',['../unionFileEventInfo.html',1,'']]],
+  ['filemetadata_2564',['FileMetadata',['../structFileMetadata.html',1,'']]],
+  ['framedata_2565',['FrameData',['../structFrameData.html',1,'']]],
+  ['frontendfiledropevent_2566',['FrontendFileDropEvent',['../structFrontendFileDropEvent.html',1,'']]],
+  ['frontendgestureevent_2567',['FrontendGestureEvent',['../structFrontendGestureEvent.html',1,'']]],
+  ['frontendkeypressevent_2568',['FrontendKeypressEvent',['../structFrontendKeypressEvent.html',1,'']]],
+  ['frontendmousebuttonevent_2569',['FrontendMouseButtonEvent',['../structFrontendMouseButtonEvent.html',1,'']]],
+  ['frontendmousemotionevent_2570',['FrontendMouseMotionEvent',['../structFrontendMouseMotionEvent.html',1,'']]],
+  ['frontendmousewheelevent_2571',['FrontendMouseWheelEvent',['../structFrontendMouseWheelEvent.html',1,'']]],
+  ['frontendquitevent_2572',['FrontendQuitEvent',['../structFrontendQuitEvent.html',1,'']]],
+  ['frontendresizeevent_2573',['FrontendResizeEvent',['../structFrontendResizeEvent.html',1,'']]],
+  ['frontendvisibilityevent_2574',['FrontendVisibilityEvent',['../structFrontendVisibilityEvent.html',1,'']]]
 ];

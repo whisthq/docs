@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('sdl__event__handler_8c.html',''); init
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a700daac0987fe2e75253f19580033150"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#a700daac0987fe2e75253f19580033150">sdl_handle_events</a> (void)</td></tr>
-<tr class="memdesc:a700daac0987fe2e75253f19580033150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the SDL event queue, and handles all of the pending events.  <a href="sdl__event__handler_8c.html#a700daac0987fe2e75253f19580033150">More...</a><br /></td></tr>
-<tr class="separator:a700daac0987fe2e75253f19580033150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742ebee5dee254a0f45b8799465f3357"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#a742ebee5dee254a0f45b8799465f3357">sdl_handle_events</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a742ebee5dee254a0f45b8799465f3357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the SDL event queue, and handles all of the pending events.  <a href="sdl__event__handler_8c.html#a742ebee5dee254a0f45b8799465f3357">More...</a><br /></td></tr>
+<tr class="separator:a742ebee5dee254a0f45b8799465f3357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d074dba1161a48966b8e8693300306"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#ae4d074dba1161a48966b8e8693300306">sdl_pending_audio_device_update</a> (void)</td></tr>
 <tr class="memdesc:ae4d074dba1161a48966b8e8693300306"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function will let you know if an audio device has been plugged in or unplugged since the last time you called this function.  <a href="sdl__event__handler_8c.html#ae4d074dba1161a48966b8e8693300306">More...</a><br /></td></tr>
 <tr class="separator:ae4d074dba1161a48966b8e8693300306"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,16 +118,14 @@ Variables</h2></td></tr>
 <tr class="separator:a31e60ed488fac41f2eb7f3865937fc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c3e2078c3e8d9dc12234276d14b0f63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#a3c3e2078c3e8d9dc12234276d14b0f63">client_exiting</a></td></tr>
 <tr class="separator:a3c3e2078c3e8d9dc12234276d14b0f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab491b7b6f8ad504dd96bdc5887d349e9"><td class="memItemLeft" align="right" valign="top">volatile SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a></td></tr>
-<tr class="separator:ab491b7b6f8ad504dd96bdc5887d349e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5f2b90e5441717b0499669e2e742d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMouseMotionAccumulation.html">MouseMotionAccumulation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#a9f5f2b90e5441717b0499669e2e742d3">mouse_state</a></td></tr>
 <tr class="separator:a9f5f2b90e5441717b0499669e2e742d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84228b08cb688dd7b2cb46a6a95a5a48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48">active_pinch</a> = false</td></tr>
 <tr class="separator:a84228b08cb688dd7b2cb46a6a95a5a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb980b682301eb39aab79d8280ba0610"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#adb980b682301eb39aab79d8280ba0610">active_momentum_scroll</a> = false</td></tr>
 <tr class="separator:adb980b682301eb39aab79d8280ba0610"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaec8856a6feb3761aac2c9676dcb9180"><td class="memItemLeft" align="right" valign="top">atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#aaec8856a6feb3761aac2c9676dcb9180">g_num_pending_audio_device_updates</a> = ATOMIC_VAR_INIT(0)</td></tr>
-<tr class="separator:aaec8856a6feb3761aac2c9676dcb9180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d49f9645982909e8e6603236437920"><td class="memItemLeft" align="right" valign="top">atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8c.html#ad6d49f9645982909e8e6603236437920">g_pending_audio_device_update</a> = ATOMIC_VAR_INIT(0)</td></tr>
+<tr class="separator:ad6d49f9645982909e8e6603236437920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -138,8 +136,8 @@ functions.</h1>
 Usage</h1>
 <p>handleSDLEvent() must be called on any SDL event that occurs. Any action trigged an SDL event must be triggered in <a class="el" href="sdl__event__handler_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">sdl_event_handler.c</a> </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a700daac0987fe2e75253f19580033150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a700daac0987fe2e75253f19580033150">&#9670;&nbsp;</a></span>sdl_handle_events()</h2>
+<a id="a742ebee5dee254a0f45b8799465f3357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a742ebee5dee254a0f45b8799465f3357">&#9670;&nbsp;</a></span>sdl_handle_events()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,8 +145,8 @@ Usage</h1>
         <tr>
           <td class="memname">bool sdl_handle_events </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -226,14 +224,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aaec8856a6feb3761aac2c9676dcb9180"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaec8856a6feb3761aac2c9676dcb9180">&#9670;&nbsp;</a></span>g_num_pending_audio_device_updates</h2>
+<a id="ad6d49f9645982909e8e6603236437920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d49f9645982909e8e6603236437920">&#9670;&nbsp;</a></span>g_pending_audio_device_update</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">atomic_int g_num_pending_audio_device_updates = ATOMIC_VAR_INIT(0)</td>
+          <td class="memname">atomic_int g_pending_audio_device_update = ATOMIC_VAR_INIT(0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -276,20 +274,6 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">bool rgui_pressed = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab491b7b6f8ad504dd96bdc5887d349e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab491b7b6f8ad504dd96bdc5887d349e9">&#9670;&nbsp;</a></span>window</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile SDL_Window* window</td>
         </tr>
       </table>
 </div><div class="memdoc">

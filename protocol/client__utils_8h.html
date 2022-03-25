@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('client__utils_8h.html',''); initResiza
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ringbuffer_8h_source.html">whist/network/ringbuffer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 </div>
 <p><a href="client__utils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -126,12 +127,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ab8f3ed6f1c8255ca6bcdaa4a4ad820b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#ab8f3ed6f1c8255ca6bcdaa4a4ad820b8">read_piped_arguments</a> (bool run_only_once)</td></tr>
 <tr class="memdesc:ab8f3ed6f1c8255ca6bcdaa4a4ad820b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read arguments from the stdin pipe if <code>using_piped_arguments</code> is set to <code>true</code>.  <a href="client__utils_8h.html#ab8f3ed6f1c8255ca6bcdaa4a4ad820b8">More...</a><br /></td></tr>
 <tr class="separator:ab8f3ed6f1c8255ca6bcdaa4a4ad820b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a969e9a6a7402e5b5aab11e8d4dbaa257"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a969e9a6a7402e5b5aab11e8d4dbaa257">update_mouse_motion</a> (void)</td></tr>
-<tr class="memdesc:a969e9a6a7402e5b5aab11e8d4dbaa257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update mouse location if the mouse state has updated since the last call to this function.  <a href="client__utils_8h.html#a969e9a6a7402e5b5aab11e8d4dbaa257">More...</a><br /></td></tr>
-<tr class="separator:a969e9a6a7402e5b5aab11e8d4dbaa257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d27f8bccbaa49059d82571e47108667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a5d27f8bccbaa49059d82571e47108667">send_message_dimensions</a> (void)</td></tr>
-<tr class="memdesc:a5d27f8bccbaa49059d82571e47108667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends message to server with output dimensions and DPI.  <a href="client__utils_8h.html#a5d27f8bccbaa49059d82571e47108667">More...</a><br /></td></tr>
-<tr class="separator:a5d27f8bccbaa49059d82571e47108667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6eab85a4985f807942526e1f822f95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#a4e6eab85a4985f807942526e1f822f95">update_mouse_motion</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a4e6eab85a4985f807942526e1f822f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update mouse location if the mouse state has updated since the last call to this function.  <a href="client__utils_8h.html#a4e6eab85a4985f807942526e1f822f95">More...</a><br /></td></tr>
+<tr class="separator:a4e6eab85a4985f807942526e1f822f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba22a3b868da12b73bc007daa2e3f346"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__utils_8h.html#aba22a3b868da12b73bc007daa2e3f346">send_message_dimensions</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:aba22a3b868da12b73bc007daa2e3f346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends message to server with output dimensions and DPI.  <a href="client__utils_8h.html#aba22a3b868da12b73bc007daa2e3f346">More...</a><br /></td></tr>
+<tr class="separator:aba22a3b868da12b73bc007daa2e3f346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -264,8 +265,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a5d27f8bccbaa49059d82571e47108667"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d27f8bccbaa49059d82571e47108667">&#9670;&nbsp;</a></span>send_message_dimensions()</h2>
+<a id="aba22a3b868da12b73bc007daa2e3f346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba22a3b868da12b73bc007daa2e3f346">&#9670;&nbsp;</a></span>send_message_dimensions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,19 +274,25 @@ Usage</h1>
         <tr>
           <td class="memname">void send_message_dimensions </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Sends message to server with output dimensions and DPI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frontend</td><td>The frontend to target for the message </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a969e9a6a7402e5b5aab11e8d4dbaa257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a969e9a6a7402e5b5aab11e8d4dbaa257">&#9670;&nbsp;</a></span>update_mouse_motion()</h2>
+<a id="a4e6eab85a4985f807942526e1f822f95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6eab85a4985f807942526e1f822f95">&#9670;&nbsp;</a></span>update_mouse_motion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,14 +300,20 @@ Usage</h1>
         <tr>
           <td class="memname">int update_mouse_motion </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Update mouse location if the mouse state has updated since the last call to this function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frontend</td><td>The frontend to target for the mouse update</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
 
 </div>

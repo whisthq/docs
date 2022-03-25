@@ -91,14 +91,15 @@ $(document).ready(function(){initNavTree('sdl__event__handler_8h.html',''); init
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 </div>
 <p><a href="sdl__event__handler_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a700daac0987fe2e75253f19580033150"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8h.html#a700daac0987fe2e75253f19580033150">sdl_handle_events</a> (void)</td></tr>
-<tr class="memdesc:a700daac0987fe2e75253f19580033150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the SDL event queue, and handles all of the pending events.  <a href="sdl__event__handler_8h.html#a700daac0987fe2e75253f19580033150">More...</a><br /></td></tr>
-<tr class="separator:a700daac0987fe2e75253f19580033150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742ebee5dee254a0f45b8799465f3357"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8h.html#a742ebee5dee254a0f45b8799465f3357">sdl_handle_events</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a742ebee5dee254a0f45b8799465f3357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the SDL event queue, and handles all of the pending events.  <a href="sdl__event__handler_8h.html#a742ebee5dee254a0f45b8799465f3357">More...</a><br /></td></tr>
+<tr class="separator:a742ebee5dee254a0f45b8799465f3357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d074dba1161a48966b8e8693300306"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8h.html#ae4d074dba1161a48966b8e8693300306">sdl_pending_audio_device_update</a> (void)</td></tr>
 <tr class="memdesc:ae4d074dba1161a48966b8e8693300306"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function will let you know if an audio device has been plugged in or unplugged since the last time you called this function.  <a href="sdl__event__handler_8h.html#ae4d074dba1161a48966b8e8693300306">More...</a><br /></td></tr>
 <tr class="separator:ae4d074dba1161a48966b8e8693300306"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,8 +114,8 @@ Usage</h1>
 <p>handleSDLEvent() must be called on any SDL event that occurs. Any action trigged an SDL event must be triggered in <a class="el" href="sdl__event__handler_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">sdl_event_handler.c</a></p>
 <p>TODO: Combine this with sdl_utils.h in some way </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a700daac0987fe2e75253f19580033150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a700daac0987fe2e75253f19580033150">&#9670;&nbsp;</a></span>sdl_handle_events()</h2>
+<a id="a742ebee5dee254a0f45b8799465f3357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a742ebee5dee254a0f45b8799465f3357">&#9670;&nbsp;</a></span>sdl_handle_events()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,8 +123,8 @@ Usage</h1>
         <tr>
           <td class="memname">bool sdl_handle_events </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
