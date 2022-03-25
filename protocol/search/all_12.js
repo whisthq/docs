@@ -69,7 +69,7 @@ var searchData=
   ['rgba_5fmask_5fg_1758',['RGBA_MASK_G',['../sdl__utils_8c.html#ac32c89e7fa9e78da4ddcceff4dd0e55c',1,'sdl_utils.c']]],
   ['rgba_5fmask_5fr_1759',['RGBA_MASK_R',['../sdl__utils_8c.html#afbc958cd698c7d076d069dc24c6e9a78',1,'sdl_utils.c']]],
   ['rgui_5fpressed_1760',['rgui_pressed',['../sdl__event__handler_8c.html#a31e60ed488fac41f2eb7f3865937fc14',1,'rgui_pressed():&#160;sdl_event_handler.c'],['../whist__client_8c.html#a31e60ed488fac41f2eb7f3865937fc14',1,'rgui_pressed():&#160;sdl_event_handler.c']]],
-  ['ring_5fbuffer_5freceive_5fsegment_1761',['ring_buffer_receive_segment',['../ringbuffer_8c.html#ad6d41e44cd0ec6c84560a14d86108a9a',1,'ring_buffer_receive_segment(RingBuffer *ring_buffer, WhistSegment *segment):&#160;ringbuffer.c'],['../ringbuffer_8h.html#ad6d41e44cd0ec6c84560a14d86108a9a',1,'ring_buffer_receive_segment(RingBuffer *ring_buffer, WhistSegment *segment):&#160;ringbuffer.c']]],
+  ['ring_5fbuffer_5freceive_5fsegment_1761',['ring_buffer_receive_segment',['../ringbuffer_8c.html#a1f1167e7f3f7caca3666dc188aab816d',1,'ring_buffer_receive_segment(RingBuffer *ring_buffer, WhistSegment *segment):&#160;ringbuffer.c'],['../ringbuffer_8h.html#a1f1167e7f3f7caca3666dc188aab816d',1,'ring_buffer_receive_segment(RingBuffer *ring_buffer, WhistSegment *segment):&#160;ringbuffer.c']]],
   ['ring_5fbuffer_5fsize_1762',['ring_buffer_size',['../structRingBuffer.html#a82a70174568113a76b153e9f67b72532',1,'RingBuffer']]],
   ['ring_5fbuffers_1763',['ring_buffers',['../structUDPContext.html#ad6bee4990811e47999fe14af48dec4ff',1,'UDPContext']]],
   ['ringbuffer_1764',['RingBuffer',['../structRingBuffer.html',1,'RingBuffer'],['../ringbuffer_8h.html#ac0132fb254601f025c3cf73363a3c90c',1,'RingBuffer():&#160;ringbuffer.h']]],

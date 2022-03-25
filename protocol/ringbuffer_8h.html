@@ -137,9 +137,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a76af721a0fc6c100fde1cf9634ffccad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a76af721a0fc6c100fde1cf9634ffccad">init_ring_buffer</a> (<a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int max_frame_size, int ring_buffer_size, <a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="ringbuffer_8h.html#ac5e078b6495f58a5fe5e6bdc519e33f8">NackPacketFn</a> nack_packet, <a class="el" href="ringbuffer_8h.html#a190efbf6a90b9051959f49975b879bd8">StreamResetFn</a> request_stream_reset)</td></tr>
 <tr class="memdesc:a76af721a0fc6c100fde1cf9634ffccad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a ring buffer of the specified size and type.  <a href="ringbuffer_8h.html#a76af721a0fc6c100fde1cf9634ffccad">More...</a><br /></td></tr>
 <tr class="separator:a76af721a0fc6c100fde1cf9634ffccad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6d41e44cd0ec6c84560a14d86108a9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#ad6d41e44cd0ec6c84560a14d86108a9a">ring_buffer_receive_segment</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structWhistSegment.html">WhistSegment</a> *segment)</td></tr>
-<tr class="memdesc:ad6d41e44cd0ec6c84560a14d86108a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a packet to the ring buffer, and initialize the corresponding frame if necessary.  <a href="ringbuffer_8h.html#ad6d41e44cd0ec6c84560a14d86108a9a">More...</a><br /></td></tr>
-<tr class="separator:ad6d41e44cd0ec6c84560a14d86108a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1167e7f3f7caca3666dc188aab816d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a1f1167e7f3f7caca3666dc188aab816d">ring_buffer_receive_segment</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, <a class="el" href="structWhistSegment.html">WhistSegment</a> *segment)</td></tr>
+<tr class="memdesc:a1f1167e7f3f7caca3666dc188aab816d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a packet to the ring buffer, and initialize the corresponding frame if necessary.  <a href="ringbuffer_8h.html#a1f1167e7f3f7caca3666dc188aab816d">More...</a><br /></td></tr>
+<tr class="separator:a1f1167e7f3f7caca3666dc188aab816d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5">get_frame_at_id</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>)</td></tr>
 <tr class="memdesc:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrives the frame at the given ID in the ring buffer.  <a href="ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5">More...</a><br /></td></tr>
 <tr class="separator:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -527,14 +527,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ad6d41e44cd0ec6c84560a14d86108a9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6d41e44cd0ec6c84560a14d86108a9a">&#9670;&nbsp;</a></span>ring_buffer_receive_segment()</h2>
+<a id="a1f1167e7f3f7caca3666dc188aab816d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1167e7f3f7caca3666dc188aab816d">&#9670;&nbsp;</a></span>ring_buffer_receive_segment()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ring_buffer_receive_segment </td>
+          <td class="memname">bool ring_buffer_receive_segment </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
           <td class="paramname"><em>ring_buffer</em>, </td>
@@ -562,8 +562,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure</dd></dl>
-<p>TODO: Remove returning 1 when overwriting a valid frame (int): 1 if we overwrote a valid frame, 0 on success, -1 on failure </p>
+<dl class="section return"><dt>Returns</dt><dd>True on success, False on failure. False implies that the ringbuffer overflowed. </dd></dl>
 
 </div>
 </div>

@@ -21,7 +21,7 @@ var ringbuffer_8c =
     [ "init_ring_buffer", "ringbuffer_8c.html#a76af721a0fc6c100fde1cf9634ffccad", null ],
     [ "is_ready_to_render", "ringbuffer_8c.html#a22897ddd74ba2d11192502d98a4c7227", null ],
     [ "reset_stream", "ringbuffer_8c.html#ab1bbfe97860061cb1cc4d55514ca4855", null ],
-    [ "ring_buffer_receive_segment", "ringbuffer_8c.html#ad6d41e44cd0ec6c84560a14d86108a9a", null ],
+    [ "ring_buffer_receive_segment", "ringbuffer_8c.html#a1f1167e7f3f7caca3666dc188aab816d", null ],
     [ "set_rendering", "ringbuffer_8c.html#a29a4ef47e30f9faabce38d4df154494a", null ],
     [ "try_recovering_missing_packets_or_frames", "ringbuffer_8c.html#a4ed839fb46aebbb9028199019bafd169", null ]
 ];
