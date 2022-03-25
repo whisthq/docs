@@ -1,5 +1,6 @@
 var linux__cursor__capture_8c =
 [
+    [ "POINTER_LOCK_UPDATE_TRIGGER_FILE", "linux__cursor__capture_8c.html#a113fb2993f0fdcc3dcaef35d1ab3b4bb", null ],
     [ "ChromeCursorHash", "linux__cursor__capture_8c.html#ae6b771cfe86671ca768c2010e188b775", null ],
     [ "ChromeCursorHash", "linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768", [
       [ "ARROW_CURSOR_HASH", "linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a7109b5b109c7f920637ded7d0b742b11", null ],
