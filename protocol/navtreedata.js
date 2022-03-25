@@ -145,13 +145,13 @@ var NAVTREEINDEX =
 "lodepng_8h.html#a2e09963fb4b4eb4ee7789d40b9080250",
 "mac__clipboard_8c.html#a1f4649cb97b683e29d202d4a5d6ffc32",
 "renderer_8h.html#a9f7efeecdf0f0eb50993d2054cc51d51",
-"structBPMLists.html#a60b8d594291b80d962e9bfedbe90f372",
-"structInputDeviceXTest.html#ac21ace24bfc5414b747d8d6591b24ab2",
-"structQueueContext.html#ad41547b7d002d24d1047abf84740165b",
-"structVideoFrame.html#abdc75b129bdb137631597f75476536af",
-"sync__packets_8c.html#abef30726c0347177718a4ec7a32e57ea",
-"whist_8c.html#aa71ba67b75bcb99101bd4a2bb836d708",
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bad30ef2c46ff3289c75a8b8af7d8dae54"
+"structBPMLists.html#a4bd270f4f3d5df206be5a281593f5f76",
+"structInputDeviceXTest.html#a93e2b5fa89c4ea6d52251577d77fd9cf",
+"structQueueContext.html#aa8ffe30bfaa8039c6fa61151223a4aa1",
+"structVideoFrame.html#a7a7f8852074f5c7ccf06f1a27e317bde",
+"sync__packets_8c.html#ab052ae0d87ab16898c020aed81f21aa0",
+"whist_8c.html#aa005f29266f2ddf76cb57dc510516839",
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bad26f33ae99edf1e5d1b437ff9b879e5d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

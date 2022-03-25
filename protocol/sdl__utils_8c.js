@@ -1,5 +1,6 @@
 var sdl__utils_8c =
 [
+    [ "CLIPPED_PIXELS", "sdl__utils_8c.html#a934146dc22d16a58736a36400ff3180c", null ],
     [ "CURSORIMAGE_A", "sdl__utils_8c.html#a10b761958b30d1f2611a3a7dfa0d9381", null ],
     [ "CURSORIMAGE_B", "sdl__utils_8c.html#a7ea5eab775ceae86f0aee1829a91c052", null ],
     [ "CURSORIMAGE_G", "sdl__utils_8c.html#a4e8c4b05a876fdaac747e4b3b85e5574", null ],
