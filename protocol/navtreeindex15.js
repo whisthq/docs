@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bad57d3e35aeb12abead2ef4c5aadbcda9":[12,0,2,2,5,109,69],
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bad655d5794fcf9b66a6caf12c56970aae":[12,0,2,2,5,109,21],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369badab27c6a6d60b5878a2f35e6061d1006":[12,0,2,2,5,109,73],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369badb8f18884d8aadc4a389d31eded8bfa2":[12,0,2,2,5,109,83],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369baddf90743116c74437a4f125ba8e3580d":[12,0,2,2,5,109,79],

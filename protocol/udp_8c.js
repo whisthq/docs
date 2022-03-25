@@ -59,5 +59,6 @@ var udp_8c =
     [ "udp_resend_packet", "udp_8c.html#aee4b4dae17ebfff109828253768fec80", null ],
     [ "udp_reset_duplicate_packet_counter", "udp_8c.html#ac6db631a1374534b6342f5bd19d7f0df", null ],
     [ "update_max_unordered_packets", "udp_8c.html#aca1aceb098277b1af092206703de6f38", null ],
+    [ "override_bitrate", "udp_8c.html#ae6945487b0fbd6b509562c2ac7df4bd9", null ],
     [ "port_mappings", "udp_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a", null ]
 ];
