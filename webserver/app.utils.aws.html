@@ -78,6 +78,13 @@ the “running” EC2 state.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="app.utils.aws.base_ec2_client.EC2Client.get_instance_profile">
+<span class="sig-name descname"><span class="pre">get_instance_profile</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.utils.aws.base_ec2_client.EC2Client.get_instance_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the ARN of the instance profile used to launch instances.
+Returns: None</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="app.utils.aws.base_ec2_client.EC2Client.get_instance_states">
 <span class="sig-name descname"><span class="pre">get_instance_states</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="app.constants.html#app.constants.ec2_instance_states.EC2InstanceState" title="app.constants.ec2_instance_states.EC2InstanceState"><span class="pre">app.constants.ec2_instance_states.EC2InstanceState</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#app.utils.aws.base_ec2_client.EC2Client.get_instance_states" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks the state of each of the provided instances.</p>
@@ -99,6 +106,35 @@ the “running” EC2 state.</p>
 :param instance_ids: what IDs to check</p>
 <p>Returns: a dict mapping instance ID to IP address</p>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.utils.aws.base_ec2_client.EC2Client.get_main_subnet">
+<span class="sig-name descname"><span class="pre">get_main_subnet</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.utils.aws.base_ec2_client.EC2Client.get_main_subnet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the ID of the main subnet on the current region.
+Returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.utils.aws.base_ec2_client.EC2Client.get_security_group">
+<span class="sig-name descname"><span class="pre">get_security_group</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#app.utils.aws.base_ec2_client.EC2Client.get_security_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the ID of the security group on the current region and environment.
+Returns: None</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.utils.aws.base_ec2_client.EC2Client.instance_profile">
+<span class="sig-name descname"><span class="pre">instance_profile</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#app.utils.aws.base_ec2_client.EC2Client.instance_profile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.utils.aws.base_ec2_client.EC2Client.main_subnet">
+<span class="sig-name descname"><span class="pre">main_subnet</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#app.utils.aws.base_ec2_client.EC2Client.main_subnet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.utils.aws.base_ec2_client.EC2Client.security_group">
+<span class="sig-name descname"><span class="pre">security_group</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#app.utils.aws.base_ec2_client.EC2Client.security_group" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="app.utils.aws.base_ec2_client.EC2Client.spin_til_instances_not_running">
