@@ -318,7 +318,7 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The last decoded frame data.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Once this is called once, the decoder loses its reference to the framedata. So, it cannot be called again unless <code>video_decoder_decode_frame</code> returns 0 again. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This returns a new reference to the decoded frame, so it may be called multiple times and the caller can do whatever they like with the returned frame. </dd></dl>
 
 </div>
 </div>

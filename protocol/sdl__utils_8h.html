@@ -119,9 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aec1c03b128be02a97fe22c4744445f3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#aec1c03b128be02a97fe22c4744445f3a">sdl_update_framebuffer_loading_screen</a> (int idx)</td></tr>
 <tr class="memdesc:aec1c03b128be02a97fe22c4744445f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the framebuffer to a loading screen image.  <a href="sdl__utils_8h.html#aec1c03b128be02a97fe22c4744445f3a">More...</a><br /></td></tr>
 <tr class="separator:aec1c03b128be02a97fe22c4744445f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dbcc14b6e31b62aedb3db07b1b45e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a9dbcc14b6e31b62aedb3db07b1b45e1f">sdl_update_framebuffer</a> (Uint8 *data[4], int linesize[4], int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>)</td></tr>
-<tr class="memdesc:a9dbcc14b6e31b62aedb3db07b1b45e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the renderer's framebuffer, using the provided texture.  <a href="sdl__utils_8h.html#a9dbcc14b6e31b62aedb3db07b1b45e1f">More...</a><br /></td></tr>
-<tr class="separator:a9dbcc14b6e31b62aedb3db07b1b45e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9836611d0f8732b4267e4d81aeec02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#aef9836611d0f8732b4267e4d81aeec02">sdl_update_framebuffer</a> (AVFrame *frame)</td></tr>
+<tr class="memdesc:aef9836611d0f8732b4267e4d81aeec02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the renderer's framebuffer, using the provided frame.  <a href="sdl__utils_8h.html#aef9836611d0f8732b4267e4d81aeec02">More...</a><br /></td></tr>
+<tr class="separator:aef9836611d0f8732b4267e4d81aeec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a993a121aa7c5869498703f17d41262ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a993a121aa7c5869498703f17d41262ab">sdl_render_framebuffer</a> (void)</td></tr>
 <tr class="memdesc:a993a121aa7c5869498703f17d41262ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will mark the framebuffer as ready-to-render, and <code>update_pending_sdl_tasks</code> will eventually render it.  <a href="sdl__utils_8h.html#a993a121aa7c5869498703f17d41262ab">More...</a><br /></td></tr>
 <tr class="separator:a993a121aa7c5869498703f17d41262ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -548,8 +548,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a9dbcc14b6e31b62aedb3db07b1b45e1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dbcc14b6e31b62aedb3db07b1b45e1f">&#9670;&nbsp;</a></span>sdl_update_framebuffer()</h2>
+<a id="aef9836611d0f8732b4267e4d81aeec02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef9836611d0f8732b4267e4d81aeec02">&#9670;&nbsp;</a></span>sdl_update_framebuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,46 +557,21 @@ Usage</h1>
         <tr>
           <td class="memname">void sdl_update_framebuffer </td>
           <td>(</td>
-          <td class="paramtype">Uint8 *&#160;</td>
-          <td class="paramname"><em>data</em>[4], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">AVFrame *&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>linesize</em>[4], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update the renderer's framebuffer, using the provided texture. </p>
+<p>Update the renderer's framebuffer, using the provided frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>The data pointers to the image The image must be of the format WHIST_CLIENT_FRAMEBUFFER_PIXEL_FORMAT </td></tr>
-    <tr><td class="paramname">linesize</td><td>The linesize data for the image </td></tr>
-    <tr><td class="paramname">width</td><td>The width of the image </td></tr>
-    <tr><td class="paramname">height</td><td>The height of the image</td></tr>
+    <tr><td class="paramname">frame</td><td>Decoded frame to update the framebuffer texture with. The format of this frame must match WHIST_CLIENT_FRAMEBUFFER_PIXEL_FORMAT.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The Uint8*'s pointed to by data[] MUST be kept alive, until after BOTH <code>sdl_render_framebuffer</code> is called, AND <code>sdl_render_pending</code> subsequently returns false. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The renderer takes ownership of the frame after this call. If that is not desirable, a copy must be made beforehand. </dd></dl>
 
 </div>
 </div>
