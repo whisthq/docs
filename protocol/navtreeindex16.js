@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"whist_8h.html#af5dee4ca10145450350dc01575070732":[13,0,2,2,5,61],
 "whist_8h.html#af60bd661d5305321029fd3e69fd6006f":[13,0,2,2,5,66],
 "whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb":[13,0,2,2,5,79],
 "whist_8h.html#afa47769b22f4e68bdbf79565f9852032":[13,0,2,2,5,114],

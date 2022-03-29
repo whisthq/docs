@@ -36,7 +36,8 @@ var frontend_8h =
       [ "FRONTEND_EVENT_MOUSE_LEAVE", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfabda5acd2d647919e31880c98f0fe167f", null ],
       [ "FRONTEND_EVENT_GESTURE", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaccfc8dd447b06a62ff6181a6bc144f07", null ],
       [ "FRONTEND_EVENT_FILE_DROP", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfada962210eb4ab2a3b86ebfa179a10230", null ],
-      [ "FRONTEND_EVENT_QUIT", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaa1023541c5b670566f0ae667deb73d43", null ]
+      [ "FRONTEND_EVENT_QUIT", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaa1023541c5b670566f0ae667deb73d43", null ],
+      [ "FRONTEND_EVENT_UNHANDLED", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfae745405ebd1ecf50424c92c52c124c65", null ]
     ] ],
     [ "sdl_get_function_table", "frontend_8h.html#aaea282911e153f1e861e9fb01e013137", null ],
     [ "temp_frontend_set_window", "frontend_8h.html#a6d706b236d2d6221f571d7cf08e82aac", null ],

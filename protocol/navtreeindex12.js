@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structTCPContext.html#a69392ee0ce512416b23034532fd8c11d":[12,0,102,11],
 "structTCPContext.html#a69b86d5b5ba97f16a584a8c1da5e76ea":[12,0,102,14],
 "structTCPContext.html#a8018a749970470e09e4afbb9f13f445f":[12,0,102,2],
 "structTCPContext.html#a9324d244b8b76d948b6b9ac4ccc3b7e3":[12,0,102,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structWhistFrontendFunctionTable.html#aab4367c252fc49e88fcaeac77e8bf2f0":[12,0,125,12],
 "structWhistFrontendFunctionTable.html#aab57206335c42e25e504210ee544c8a3":[12,0,125,11],
 "structWhistFrontendFunctionTable.html#ab5d3e20d1a02f2f421f2cf5e5b5d6510":[12,0,125,10],
-"structWhistFrontendFunctionTable.html#ac9dffdf73c09a607d8f25fc8c6febd85":[12,0,125,6],
-"structWhistFrontendFunctionTable.html#ae7e6fff166c0f416e0c17c5f93f4ae69":[12,0,125,16]
+"structWhistFrontendFunctionTable.html#ac9dffdf73c09a607d8f25fc8c6febd85":[12,0,125,6]
 };

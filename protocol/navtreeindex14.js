@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"transfercapture_8c.html":[13,0,2,11,6],
 "transfercapture_8c.html#a1ff601abab02dcb3b01c6f2f7c9b9d37":[13,0,2,11,6,0],
 "transfercapture_8h.html":[13,0,2,11,7],
 "transfercapture_8h.html#a1ff601abab02dcb3b01c6f2f7c9b9d37":[13,0,2,11,7,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4":[13,0,2,2,5,117],
 "whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a218fc679b8e1f15dded103a17a676cc4":[13,0,2,2,5,117,0],
 "whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a55c44a4934d9e5a4b8d13c79d110fd69":[13,0,2,2,5,117,3],
-"whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a888be77ea9a3448aa6f07eb48e78d175":[13,0,2,2,5,117,2],
-"whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4ac5948829519c1111545c429c63e94eb5":[13,0,2,2,5,117,1]
+"whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a888be77ea9a3448aa6f07eb48e78d175":[13,0,2,2,5,117,2]
 };
