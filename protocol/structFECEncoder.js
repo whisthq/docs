@@ -8,5 +8,5 @@ var structFECEncoder =
     [ "num_accepted_buffers", "structFECEncoder.html#a737ec8ef18b864e5f200f39e71f404a8", null ],
     [ "num_buffers", "structFECEncoder.html#aa44bfea0d494322be9728f2d56a0cdd6", null ],
     [ "num_real_buffers", "structFECEncoder.html#adb0272d292cdc77fba639b7fc04a3b1f", null ],
-    [ "rs_code", "structFECEncoder.html#a80450105e709cff9871a0825146186cc", null ]
+    [ "rs_code", "structFECEncoder.html#abe82f7c8b6b707bc0367f2d9aa486a9c", null ]
 ];

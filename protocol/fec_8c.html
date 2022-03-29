@@ -84,16 +84,16 @@ $(document).ready(function(){initNavTree('fec_8c.html',''); initResizable(); });
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">fec.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="fec_8h_source.html">fec.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="lugi__rs_8h_source.html">lugi_rs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rs__wrapper_8h_source.html">whist/fec/rs_wrapper.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -106,17 +106,8 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a15811a044c0f2e29947dc27e5bab62bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a15811a044c0f2e29947dc27e5bab62bb">MAX_NUM_BUFFERS</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a15811a044c0f2e29947dc27e5bab62bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e98f75c746ee3f6c147f9250c184167"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a7e98f75c746ee3f6c147f9250c184167">MAX_RS_BUFFERS</a>&#160;&#160;&#160;0xff</td></tr>
-<tr class="separator:a7e98f75c746ee3f6c147f9250c184167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d796b98c583d49e83adabd74a63bf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#ad4d796b98c583d49e83adabd74a63bf6">MAX_BUFFER_SIZE</a>&#160;&#160;&#160;((1 &lt;&lt; (8 * <a class="el" href="fec_8h.html#a3c9778b56862875471dba66573fc4b17">FEC_HEADER_SIZE</a>)) - 1)</td></tr>
 <tr class="separator:ad4d796b98c583d49e83adabd74a63bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a507e9da1c837746b5cd1db2f2975b5f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a507e9da1c837746b5cd1db2f2975b5f0">RS_TABLE_SIZE</a>&#160;&#160;&#160;256</td></tr>
-<tr class="separator:a507e9da1c837746b5cd1db2f2975b5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a3aaf982fb9c4b46dc2a6ceed1214476a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a3aaf982fb9c4b46dc2a6ceed1214476a">RSTable</a>[<a class="el" href="fec_8c.html#a507e9da1c837746b5cd1db2f2975b5f0">RS_TABLE_SIZE</a>][<a class="el" href="fec_8c.html#a507e9da1c837746b5cd1db2f2975b5f0">RS_TABLE_SIZE</a>]</td></tr>
-<tr class="separator:a3aaf982fb9c4b46dc2a6ceed1214476a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -124,9 +115,9 @@ Functions</h2></td></tr>
 <tr class="separator:a8ce619f0d80d2deadedc9be9ca6ddbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61386cee7dba04ed40cde3a1f17a0a22"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a61386cee7dba04ed40cde3a1f17a0a22">read_u16_from_buffer</a> (char *p)</td></tr>
 <tr class="separator:a61386cee7dba04ed40cde3a1f17a0a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae853bbe2fc7aa8db4ad35abce80e8dce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#ae853bbe2fc7aa8db4ad35abce80e8dce">init_fec</a> (void)</td></tr>
-<tr class="memdesc:ae853bbe2fc7aa8db4ad35abce80e8dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global initialization function that should be called before calling anything else in fec.h.  <a href="fec_8c.html#ae853bbe2fc7aa8db4ad35abce80e8dce">More...</a><br /></td></tr>
-<tr class="separator:ae853bbe2fc7aa8db4ad35abce80e8dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a26c371e1ac67091b08f7b6edb0c77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#a87a26c371e1ac67091b08f7b6edb0c77">init_fec</a> (void)</td></tr>
+<tr class="memdesc:a87a26c371e1ac67091b08f7b6edb0c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global initialization function that should be called before calling anything else in fec.h.  <a href="fec_8c.html#a87a26c371e1ac67091b08f7b6edb0c77">More...</a><br /></td></tr>
+<tr class="separator:a87a26c371e1ac67091b08f7b6edb0c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8c.html#ac95c4d80f01a85593a7dfd5b4989f2a4">get_num_fec_packets</a> (int num_real_packets, double fec_packet_ratio)</td></tr>
 <tr class="memdesc:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an fec packet ratio, into the number of fec packets.  <a href="fec_8c.html#ac95c4d80f01a85593a7dfd5b4989f2a4">More...</a><br /></td></tr>
 <tr class="separator:ac95c4d80f01a85593a7dfd5b4989f2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,49 +172,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MAX_NUM_BUFFERS&#160;&#160;&#160;1024</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7e98f75c746ee3f6c147f9250c184167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e98f75c746ee3f6c147f9250c184167">&#9670;&nbsp;</a></span>MAX_RS_BUFFERS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_RS_BUFFERS&#160;&#160;&#160;0xff</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a507e9da1c837746b5cd1db2f2975b5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a507e9da1c837746b5cd1db2f2975b5f0">&#9670;&nbsp;</a></span>RS_TABLE_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RS_TABLE_SIZE&#160;&#160;&#160;256</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a3aaf982fb9c4b46dc2a6ceed1214476a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aaf982fb9c4b46dc2a6ceed1214476a">&#9670;&nbsp;</a></span>RSTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="lugi__rs_8h.html#a7cece3323ee9930d430f831fd2bc5822">RSCode</a>* RSTable[<a class="el" href="fec_8c.html#a507e9da1c837746b5cd1db2f2975b5f0">RS_TABLE_SIZE</a>][<a class="el" href="fec_8c.html#a507e9da1c837746b5cd1db2f2975b5f0">RS_TABLE_SIZE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -635,14 +583,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae853bbe2fc7aa8db4ad35abce80e8dce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae853bbe2fc7aa8db4ad35abce80e8dce">&#9670;&nbsp;</a></span>init_fec()</h2>
+<a id="a87a26c371e1ac67091b08f7b6edb0c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a26c371e1ac67091b08f7b6edb0c77">&#9670;&nbsp;</a></span>init_fec()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void init_fec </td>
+          <td class="memname">int init_fec </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -652,6 +600,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A global initialization function that should be called before calling anything else in fec.h. </p>
+<dl class="section return"><dt>Returns</dt><dd>zero on success </dd></dl>
 
 </div>
 </div>

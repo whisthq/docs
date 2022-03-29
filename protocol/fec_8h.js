@@ -13,5 +13,5 @@ var fec_8h =
     [ "fec_get_decoded_buffer", "fec_8h.html#a68e2a970d7c3d4b81353174da6809b7a", null ],
     [ "fec_get_encoded_buffers", "fec_8h.html#a685b2d430114a8b257ef3a28a2ceb14b", null ],
     [ "get_num_fec_packets", "fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4", null ],
-    [ "init_fec", "fec_8h.html#ae853bbe2fc7aa8db4ad35abce80e8dce", null ]
+    [ "init_fec", "fec_8h.html#a87a26c371e1ac67091b08f7b6edb0c77", null ]
 ];

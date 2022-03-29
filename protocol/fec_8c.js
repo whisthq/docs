@@ -4,9 +4,6 @@ var fec_8c =
     [ "FECDecoder", "structFECDecoder.html", "structFECDecoder" ],
     [ "MAX_BUFFER_SIZE", "fec_8c.html#ad4d796b98c583d49e83adabd74a63bf6", null ],
     [ "MAX_NUM_BUFFERS", "fec_8c.html#a15811a044c0f2e29947dc27e5bab62bb", null ],
-    [ "MAX_RS_BUFFERS", "fec_8c.html#a7e98f75c746ee3f6c147f9250c184167", null ],
-    [ "RS_TABLE_SIZE", "fec_8c.html#a507e9da1c837746b5cd1db2f2975b5f0", null ],
-    [ "RSTable", "fec_8c.html#a3aaf982fb9c4b46dc2a6ceed1214476a", null ],
     [ "create_fec_decoder", "fec_8c.html#aca05f25f6a922833842317722b908ddc", null ],
     [ "create_fec_encoder", "fec_8c.html#a9ae850e2e0baba3686a0b85f23949893", null ],
     [ "destroy_fec_decoder", "fec_8c.html#aa96fb53e52299e011cf2bf7299b849c8", null ],
@@ -17,7 +14,7 @@ var fec_8c =
     [ "fec_get_decoded_buffer", "fec_8c.html#a68e2a970d7c3d4b81353174da6809b7a", null ],
     [ "fec_get_encoded_buffers", "fec_8c.html#a685b2d430114a8b257ef3a28a2ceb14b", null ],
     [ "get_num_fec_packets", "fec_8c.html#ac95c4d80f01a85593a7dfd5b4989f2a4", null ],
-    [ "init_fec", "fec_8c.html#ae853bbe2fc7aa8db4ad35abce80e8dce", null ],
+    [ "init_fec", "fec_8c.html#a87a26c371e1ac67091b08f7b6edb0c77", null ],
     [ "read_u16_from_buffer", "fec_8c.html#a61386cee7dba04ed40cde3a1f17a0a22", null ],
     [ "write_u16_to_buffer", "fec_8c.html#a8ce619f0d80d2deadedc9be9ca6ddbba", null ]
 ];
