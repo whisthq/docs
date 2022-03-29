@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['capturedevicetype_4380',['CaptureDeviceType',['../whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600',1,'whist.h']]],
-  ['chromecursorhash_4381',['ChromeCursorHash',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768',1,'linux_cursor_capture.c']]],
-  ['clipboardchunktype_4382',['ClipboardChunkType',['../clipboard_8h.html#aa743c175c855e2f47a69264ab9e2cf56',1,'clipboard.h']]],
-  ['clipboardtype_4383',['ClipboardType',['../clipboard_8h.html#a9676c44d0c2a676fe59a136a6e71b161',1,'clipboard.h']]],
-  ['codectype_4384',['CodecType',['../whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79',1,'whist.h']]]
+  ['capturedevicetype_4381',['CaptureDeviceType',['../whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600',1,'whist.h']]],
+  ['chromecursorhash_4382',['ChromeCursorHash',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768',1,'linux_cursor_capture.c']]],
+  ['clipboardchunktype_4383',['ClipboardChunkType',['../clipboard_8h.html#aa743c175c855e2f47a69264ab9e2cf56',1,'clipboard.h']]],
+  ['clipboardtype_4384',['ClipboardType',['../clipboard_8h.html#a9676c44d0c2a676fe59a136a6e71b161',1,'clipboard.h']]],
+  ['codectype_4385',['CodecType',['../whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79',1,'whist.h']]]
 ];

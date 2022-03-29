@@ -16,6 +16,6 @@ var structWhistClientMessage =
     [ "mouseWheel", "structWhistClientMessage.html#a0f5e0baec5bb2d55c15eab4e4d78a372", null ],
     [ "multigesture", "structWhistClientMessage.html#aecc9f7cfd7275c01c6743828d3631856", null ],
     [ "type", "structWhistClientMessage.html#a2fee554ec5cf871bae33201f64cb08e2", null ],
-    [ "url_to_open", "structWhistClientMessage.html#a9b2d91e371b8b171cfb65bf3f05030b5", null ],
+    [ "urls_to_open", "structWhistClientMessage.html#a4ff756528d91a78ec61b1f92dfd2bdc8", null ],
     [ "width", "structWhistClientMessage.html#a8558ab7ac655f18ca1cddca38a9458f6", null ]
 ];

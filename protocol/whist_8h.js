@@ -45,6 +45,7 @@ var whist_8h =
     [ "MAX_FEC_RATIO", "whist_8h.html#a9671b09366aac047f771b3d49b3b99a4", null ],
     [ "MAX_FPS", "whist_8h.html#a83bf3347e926abd1e2d06dbf885fb6f1", null ],
     [ "MAX_INTRA_QP", "whist_8h.html#a9bcfa4a6fecd23535df2dd7cc000ea23", null ],
+    [ "MAX_NEW_TAB_URLS", "whist_8h.html#ac4841e192e48d095904d7d6a90e8801f", null ],
     [ "MAX_QP", "whist_8h.html#a36731cc1007cd643f55b66d1f573d659", null ],
     [ "MAX_SCREEN_HEIGHT", "whist_8h.html#a71b50617058e1b676d6fc6de1d4f05b1", null ],
     [ "MAX_SCREEN_WIDTH", "whist_8h.html#a56ab8e1d2af6f308d5612205ba3d9e6b", null ],
