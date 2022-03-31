@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('client_2video_8c.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -105,20 +104,16 @@ $(document).ready(function(){initNavTree('client_2video_8c.html',''); initResiza
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rwlock_8h_source.html">whist/utils/rwlock.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="features_8h_source.html">whist/core/features.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="native__window__utils_8h_source.html">native_window_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_2network_8h_source.html">network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client__utils_8h_source.html">client_utils.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="protocol__analyzer_8h_source.html">whist/debug/protocol_analyzer.h</a>&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoContext.html">VideoContext</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aad2b19cec36db1f64bc8992a5aa8cbf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#aad2b19cec36db1f64bc8992a5aa8cbf3">USE_HARDWARE</a>&#160;&#160;&#160;true</td></tr>
-<tr class="separator:aad2b19cec36db1f64bc8992a5aa8cbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b2215efe621a6a728a760a0aac8bab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ac3b2215efe621a6a728a760a0aac8bab">USE_HARDWARE_DECODE_DEFAULT</a>&#160;&#160;&#160;true</td></tr>
+<tr class="separator:ac3b2215efe621a6a728a760a0aac8bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afecb135e60c0c94fbb354b03bfb643a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#afecb135e60c0c94fbb354b03bfb643a9">NO_NACKS_DURING_IFRAME</a>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:afecb135e60c0c94fbb354b03bfb643a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25c15f9233eff2796785d6f51159b56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ae25c15f9233eff2796785d6f51159b56">RECV_FRAMES_BUFFER_SIZE</a>&#160;&#160;&#160;275</td></tr>
@@ -126,22 +121,24 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2e523fcb8237b36c265860c9c123fcca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a2e523fcb8237b36c265860c9c123fcca">init_video</a> (int initial_width, int initial_height)</td></tr>
+<tr class="memitem:a0ceaaf24c787cf50bcb34c29d9861179"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a0ceaaf24c787cf50bcb34c29d9861179">COMMAND_LINE_BOOL_OPTION</a> (use_hardware_decode, 0, &quot;hardware-decode&quot;, &quot;Set whether to use hardware decode.&quot;)</td></tr>
+<tr class="separator:a0ceaaf24c787cf50bcb34c29d9861179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e523fcb8237b36c265860c9c123fcca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a2e523fcb8237b36c265860c9c123fcca">init_video</a> (int initial_width, int initial_height)</td></tr>
 <tr class="memdesc:a2e523fcb8237b36c265860c9c123fcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the video system.  <a href="client_2video_8c.html#a2e523fcb8237b36c265860c9c123fcca">More...</a><br /></td></tr>
 <tr class="separator:a2e523fcb8237b36c265860c9c123fcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d344158f4b8ed1ba11af1a86d27789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#af1d344158f4b8ed1ba11af1a86d27789">destroy_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memitem:af1d344158f4b8ed1ba11af1a86d27789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#af1d344158f4b8ed1ba11af1a86d27789">destroy_video</a> (<a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *video_context)</td></tr>
 <tr class="memdesc:af1d344158f4b8ed1ba11af1a86d27789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the video context.  <a href="client_2video_8c.html#af1d344158f4b8ed1ba11af1a86d27789">More...</a><br /></td></tr>
 <tr class="separator:af1d344158f4b8ed1ba11af1a86d27789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9096cfd63b981190cf4aa333c2ee6d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a9096cfd63b981190cf4aa333c2ee6d20">receive_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context, <a class="el" href="structVideoFrame.html">VideoFrame</a> *video_frame)</td></tr>
+<tr class="memitem:a9096cfd63b981190cf4aa333c2ee6d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a9096cfd63b981190cf4aa333c2ee6d20">receive_video</a> (<a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *video_context, <a class="el" href="structVideoFrame.html">VideoFrame</a> *video_frame)</td></tr>
 <tr class="memdesc:a9096cfd63b981190cf4aa333c2ee6d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8c.html#a9096cfd63b981190cf4aa333c2ee6d20">More...</a><br /></td></tr>
 <tr class="separator:a9096cfd63b981190cf4aa333c2ee6d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memitem:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#ae91e2215c8c94bdb14b3c01430b8ca69">render_video</a> (<a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *video_context)</td></tr>
 <tr class="memdesc:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video frame (If any are available to render)  <a href="client_2video_8c.html#ae91e2215c8c94bdb14b3c01430b8ca69">More...</a><br /></td></tr>
 <tr class="separator:ae91e2215c8c94bdb14b3c01430b8ca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14321021ee450305fdb8c787a3e1accc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *video_context)</td></tr>
+<tr class="memitem:a14321021ee450305fdb8c787a3e1accc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a14321021ee450305fdb8c787a3e1accc">has_video_rendered_yet</a> (<a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *video_context)</td></tr>
 <tr class="memdesc:a14321021ee450305fdb8c787a3e1accc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not a video frame has been rendered.  <a href="client_2video_8c.html#a14321021ee450305fdb8c787a3e1accc">More...</a><br /></td></tr>
 <tr class="separator:a14321021ee450305fdb8c787a3e1accc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91a7e49bb43bc35c6da847bb03f83117"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a91a7e49bb43bc35c6da847bb03f83117">video_ready_for_frame</a> (<a class="el" href="structVideoContext.html">VideoContext</a> *context)</td></tr>
+<tr class="memitem:a91a7e49bb43bc35c6da847bb03f83117"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8c.html#a91a7e49bb43bc35c6da847bb03f83117">video_ready_for_frame</a> (<a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *context)</td></tr>
 <tr class="memdesc:a91a7e49bb43bc35c6da847bb03f83117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the video context is ready to render a new frame.  <a href="client_2video_8c.html#a91a7e49bb43bc35c6da847bb03f83117">More...</a><br /></td></tr>
 <tr class="separator:a91a7e49bb43bc35c6da847bb03f83117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -182,14 +179,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aad2b19cec36db1f64bc8992a5aa8cbf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad2b19cec36db1f64bc8992a5aa8cbf3">&#9670;&nbsp;</a></span>USE_HARDWARE</h2>
+<a id="ac3b2215efe621a6a728a760a0aac8bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3b2215efe621a6a728a760a0aac8bab">&#9670;&nbsp;</a></span>USE_HARDWARE_DECODE_DEFAULT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define USE_HARDWARE&#160;&#160;&#160;true</td>
+          <td class="memname">#define USE_HARDWARE_DECODE_DEFAULT&#160;&#160;&#160;true</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -197,6 +194,46 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0ceaaf24c787cf50bcb34c29d9861179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ceaaf24c787cf50bcb34c29d9861179">&#9670;&nbsp;</a></span>COMMAND_LINE_BOOL_OPTION()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">COMMAND_LINE_BOOL_OPTION </td>
+          <td>(</td>
+          <td class="paramtype">use_hardware_decode&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;hardware-decode&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Set whether to use hardware decode.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af1d344158f4b8ed1ba11af1a86d27789"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1d344158f4b8ed1ba11af1a86d27789">&#9670;&nbsp;</a></span>destroy_video()</h2>
 
@@ -206,7 +243,7 @@ Usage</h1>
         <tr>
           <td class="memname">void destroy_video </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *&#160;</td>
           <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -232,7 +269,7 @@ Usage</h1>
         <tr>
           <td class="memname">bool has_video_rendered_yet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *&#160;</td>
           <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -258,7 +295,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structVideoContext.html">VideoContext</a>* init_video </td>
+          <td class="memname"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a>* init_video </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>initial_width</em>, </td>
@@ -292,7 +329,7 @@ Usage</h1>
         <tr>
           <td class="memname">void receive_video </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *&#160;</td>
           <td class="paramname"><em>video_context</em>, </td>
         </tr>
         <tr>
@@ -330,7 +367,7 @@ Usage</h1>
         <tr>
           <td class="memname">int render_video </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *&#160;</td>
           <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -358,7 +395,7 @@ Usage</h1>
         <tr>
           <td class="memname">bool video_ready_for_frame </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structVideoContext.html">VideoContext</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *&#160;</td>
           <td class="paramname"><em>video_context</em></td><td>)</td>
           <td></td>
         </tr>
