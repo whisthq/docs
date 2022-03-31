@@ -101,6 +101,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:aa313589a298c3baf90bfdc4810073868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27967f2aa7bdc30485b06955aeb919fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a27967f2aa7bdc30485b06955aeb919fd">can_use_hardware</a></td></tr>
 <tr class="separator:a27967f2aa7bdc30485b06955aeb919fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f38b563858aeb80260d440eed24f465"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a1f38b563858aeb80260d440eed24f465">can_output_hardware</a></td></tr>
+<tr class="separator:a1f38b563858aeb80260d440eed24f465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948b20c5445714f816a398767777a5db"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a948b20c5445714f816a398767777a5db">decode_type</a></td></tr>
+<tr class="separator:a948b20c5445714f816a398767777a5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76aaea9423c65a4ed985d8c92bb8709c"><td class="memItemLeft" align="right" valign="top">const AVCodec *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a76aaea9423c65a4ed985d8c92bb8709c">codec</a></td></tr>
 <tr class="separator:a76aaea9423c65a4ed985d8c92bb8709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72441c34541e71b1a2cabd4fe28128d0"><td class="memItemLeft" align="right" valign="top">AVCodecContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a72441c34541e71b1a2cabd4fe28128d0">context</a></td></tr>
@@ -113,8 +117,6 @@ Data Fields</h2></td></tr>
 <tr class="separator:a19f8e3f82f466acb503f53aedbf14065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a30f5137d2829eeb2ee326700b52f0"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a82a30f5137d2829eeb2ee326700b52f0">match_fmt</a></td></tr>
 <tr class="separator:a82a30f5137d2829eeb2ee326700b52f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72697a2594afce2d1dbd80eeedd5ec9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a72697a2594afce2d1dbd80eeedd5ec9a">type</a></td></tr>
-<tr class="separator:a72697a2594afce2d1dbd80eeedd5ec9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c756dc084226e1cb64e1bfb9f7e19e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#a1c756dc084226e1cb64e1bfb9f7e19e0">codec_type</a></td></tr>
 <tr class="separator:a1c756dc084226e1cb64e1bfb9f7e19e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af11d21440de75bfc467abbffbf4f89da"><td class="memItemLeft" align="right" valign="top">enum AVHWDeviceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html#af11d21440de75bfc467abbffbf4f89da">device_type</a></td></tr>
@@ -128,6 +130,20 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>Struct for decoding frames via ffmpeg. </p>
 <p>Decoding is handled by the codec and context, and after decoding finishes, the decoded frame will be in sw_frame, regardless of whether or not we used hardware-accelerated decoding. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a1f38b563858aeb80260d440eed24f465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f38b563858aeb80260d440eed24f465">&#9670;&nbsp;</a></span>can_output_hardware</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VideoDecoder::can_output_hardware</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a27967f2aa7bdc30485b06955aeb919fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27967f2aa7bdc30485b06955aeb919fd">&#9670;&nbsp;</a></span>can_use_hardware</h2>
 
@@ -178,6 +194,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">AVCodecContext* VideoDecoder::context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a948b20c5445714f816a398767777a5db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a948b20c5445714f816a398767777a5db">&#9670;&nbsp;</a></span>decode_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int VideoDecoder::decode_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -276,20 +306,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">AVBufferRef* VideoDecoder::ref</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a72697a2594afce2d1dbd80eeedd5ec9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72697a2594afce2d1dbd80eeedd5ec9a">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a> VideoDecoder::type</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -85,7 +85,6 @@ $(document).ready(function(){initNavTree('decode_8h.html',''); initResizable(); 
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">decode.h File Reference</div>  </div>
@@ -115,29 +114,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a6ad22d055a2a6874154984511a83cde5"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a6ad22d055a2a6874154984511a83cde5">DecodeType</a></td></tr>
-<tr class="memdesc:a6ad22d055a2a6874154984511a83cde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating the types of decoding we are doing.  <a href="decode_8h.html#a6ad22d055a2a6874154984511a83cde5">More...</a><br /></td></tr>
-<tr class="separator:a6ad22d055a2a6874154984511a83cde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36d6cfdbfc751cb80e087e6d6605e6be"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDecodedFrameData.html">DecodedFrameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a36d6cfdbfc751cb80e087e6d6605e6be">DecodedFrameData</a></td></tr>
 <tr class="memdesc:a36d6cfdbfc751cb80e087e6d6605e6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that <code>get_current_decoded_frame</code> returns.  <a href="decode_8h.html#a36d6cfdbfc751cb80e087e6d6605e6be">More...</a><br /></td></tr>
 <tr class="separator:a36d6cfdbfc751cb80e087e6d6605e6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a931b433c839c4e0eddb5109d6e205a90"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structVideoDecoder.html">VideoDecoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a931b433c839c4e0eddb5109d6e205a90">VideoDecoder</a></td></tr>
 <tr class="memdesc:a931b433c839c4e0eddb5109d6e205a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for decoding frames via ffmpeg.  <a href="decode_8h.html#a931b433c839c4e0eddb5109d6e205a90">More...</a><br /></td></tr>
 <tr class="separator:a931b433c839c4e0eddb5109d6e205a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a9262b421a57418a04c809f94041b2f9b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a> { <br />
-&#160;&#160;<a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9ba50199f09c30d5c0d3105a38f8e390f74">DECODE_TYPE_NONE</a> = 0, 
-<a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9bac43764b121b87a7d5492c657e5796ab1">DECODE_TYPE_SOFTWARE</a> = 1, 
-<a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9bac94edb6e1bbca1ac423b3e4d2da8162a">DECODE_TYPE_HARDWARE</a> = 2, 
-<a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9bafae232398e121b93d139f9f5223b8d63">DECODE_TYPE_QSV</a> = 3, 
-<br />
-&#160;&#160;<a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9ba03ca5c85d60d2ccb6bc5d67fc4d6485f">DECODE_TYPE_HARDWARE_OLDER</a> = 4
-<br />
- }</td></tr>
-<tr class="memdesc:a9262b421a57418a04c809f94041b2f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum indicating the types of decoding we are doing.  <a href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">More...</a><br /></td></tr>
-<tr class="separator:a9262b421a57418a04c809f94041b2f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -147,9 +129,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a49c422905662783d02130286cc73b8ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a49c422905662783d02130286cc73b8ea">destroy_video_decoder</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="memdesc:a49c422905662783d02130286cc73b8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an initialized FFmpeg video decoder and frees its memory.  <a href="decode_8h.html#a49c422905662783d02130286cc73b8ea">More...</a><br /></td></tr>
 <tr class="separator:a49c422905662783d02130286cc73b8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0a703f38ea832b5b5186b309499dc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a4d0a703f38ea832b5b5186b309499dc8">video_decoder_send_packets</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, int buffer_size)</td></tr>
-<tr class="memdesc:a4d0a703f38ea832b5b5186b309499dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the packets contained in buffer into the decoder.  <a href="decode_8h.html#a4d0a703f38ea832b5b5186b309499dc8">More...</a><br /></td></tr>
-<tr class="separator:a4d0a703f38ea832b5b5186b309499dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cdd12595b468064701921570b66730b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a5cdd12595b468064701921570b66730b">video_decoder_send_packets</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, size_t buffer_size)</td></tr>
+<tr class="memdesc:a5cdd12595b468064701921570b66730b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the packets contained in buffer into the decoder.  <a href="decode_8h.html#a5cdd12595b468064701921570b66730b">More...</a><br /></td></tr>
+<tr class="separator:a5cdd12595b468064701921570b66730b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e08542a8a988ca8371797bfe93f25f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a29e08542a8a988ca8371797bfe93f25f">video_decoder_decode_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="memdesc:a29e08542a8a988ca8371797bfe93f25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the next available frame from the decoder.  <a href="decode_8h.html#a29e08542a8a988ca8371797bfe93f25f">More...</a><br /></td></tr>
 <tr class="separator:a29e08542a8a988ca8371797bfe93f25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,23 +189,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a6ad22d055a2a6874154984511a83cde5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ad22d055a2a6874154984511a83cde5">&#9670;&nbsp;</a></span>DecodeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef enum <a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a> <a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enum indicating the types of decoding we are doing. </p>
-<p>Type is initially set to DECODE_TYPE_NONE, then set to one of the below 4. QSV and HARDWARE_OLDER are separate types because they require different configurations than standard hardware-accelerated decoding. </p>
-
-</div>
-</div>
 <a id="a931b433c839c4e0eddb5109d6e205a90"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a931b433c839c4e0eddb5109d6e205a90">&#9670;&nbsp;</a></span>VideoDecoder</h2>
 
@@ -238,31 +203,6 @@ Usage</h1>
 
 <p>Struct for decoding frames via ffmpeg. </p>
 <p>Decoding is handled by the codec and context, and after decoding finishes, the decoded frame will be in sw_frame, regardless of whether or not we used hardware-accelerated decoding. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a9262b421a57418a04c809f94041b2f9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9262b421a57418a04c809f94041b2f9b">&#9670;&nbsp;</a></span>DecodeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="decode_8h.html#a9262b421a57418a04c809f94041b2f9b">DecodeType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enum indicating the types of decoding we are doing. </p>
-<p>Type is initially set to DECODE_TYPE_NONE, then set to one of the below 4. QSV and HARDWARE_OLDER are separate types because they require different configurations than standard hardware-accelerated decoding. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9262b421a57418a04c809f94041b2f9ba50199f09c30d5c0d3105a38f8e390f74"></a>DECODE_TYPE_NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9262b421a57418a04c809f94041b2f9bac43764b121b87a7d5492c657e5796ab1"></a>DECODE_TYPE_SOFTWARE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9262b421a57418a04c809f94041b2f9bac94edb6e1bbca1ac423b3e4d2da8162a"></a>DECODE_TYPE_HARDWARE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9262b421a57418a04c809f94041b2f9bafae232398e121b93d139f9f5223b8d63"></a>DECODE_TYPE_QSV&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9262b421a57418a04c809f94041b2f9ba03ca5c85d60d2ccb6bc5d67fc4d6485f"></a>DECODE_TYPE_HARDWARE_OLDER&#160;</td><td class="fielddoc"></td></tr>
-</table>
 
 </div>
 </div>
@@ -427,8 +367,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a4d0a703f38ea832b5b5186b309499dc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d0a703f38ea832b5b5186b309499dc8">&#9670;&nbsp;</a></span>video_decoder_send_packets()</h2>
+<a id="a5cdd12595b468064701921570b66730b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cdd12595b468064701921570b66730b">&#9670;&nbsp;</a></span>video_decoder_send_packets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -448,7 +388,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>buffer_size</em>&#160;</td>
         </tr>
         <tr>

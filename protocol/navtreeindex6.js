@@ -1,7 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"lodepng_8c.html#aa255d9a2e4054fc2888bf7670dac4107":[13,0,2,10,14,96],
-"lodepng_8c.html#aa5b93f17d9f8d6bac5caf453b2387cc3":[13,0,2,10,14,29],
 "lodepng_8c.html#aab7a41a03154aa8d9ef65f2d434641b6":[13,0,2,10,14,110],
 "lodepng_8c.html#aab96a2d19bba9abe1fdcb278492b3f46":[13,0,2,10,14,63],
 "lodepng_8c.html#aabe8616184aa2adaa2a74ad989e6fb41":[13,0,2,10,14,38],
@@ -249,5 +247,7 @@ var NAVTREEINDEX6 =
 "logging_8h.html#ae34722e01b6ee3b8e30834e2f8e6423a":[13,0,2,8,5,4],
 "logging_8h.html#aeb343163f137d0dea0081e34869e6b74":[13,0,2,8,5,32],
 "logging_8h.html#aec2b3c8a4110db3dacd0a0de88e5d556":[13,0,2,8,5,31],
-"logging_8h.html#afc62c449e2a10a7733389c4fca6c1653":[13,0,2,8,5,33]
+"logging_8h.html#afc62c449e2a10a7733389c4fca6c1653":[13,0,2,8,5,33],
+"logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0":[13,0,2,8,5,13],
+"logging_8h_source.html":[13,0,2,8,5]
 };

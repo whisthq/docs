@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['metrics_4533',['Metrics',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0',1,'log_statistic.h']]]
+  ['rsimplementation_4532',['RSImplementation',['../rs__wrapper_8c.html#ad275f79378118c4594a41bb7845651f7',1,'rs_wrapper.c']]]
 ];

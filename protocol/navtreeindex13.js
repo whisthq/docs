@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"structWhistKeyboardMessage.html#a9f707cffb320d9c66027a22988a9b938":[12,0,126,1],
 "structWhistKeyboardMessage.html#ac96ce4d0ae4f6f042cfdcaa7c9b9a27a":[12,0,126,2],
 "structWhistKeyboardMessage.html#aef9959093210638b97b2ecd11bb212f2":[12,0,126,0],
 "structWhistKeyboardState.html":[12,0,127],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "transfercapture_8h_source.html":[13,0,2,11,7],
 "udp_8c.html":[13,0,2,9,10],
 "udp_8c.html#a01047961dc8cff8d46c7a951bfbbd644":[13,0,2,9,10,34],
-"udp_8c.html#a011eaed8cc6df727eb7f1f12852a1b2c":[13,0,2,9,10,24]
+"udp_8c.html#a011eaed8cc6df727eb7f1f12852a1b2c":[13,0,2,9,10,24],
+"udp_8c.html#a1460dcee3b0c034518e8f893c81711ee":[13,0,2,9,10,16]
 };

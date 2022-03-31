@@ -20,7 +20,9 @@ var group__error__codes =
       [ "WHIST_ERROR_ADDRESS_UNREACHABLE", "group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04da49f20b6761454c2687e962a986c21f09", null ],
       [ "WHIST_ERROR_CONNECTION_RESET", "group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04dabca84da32523f665504d8142ed0cf7fd", null ],
       [ "WHIST_ERROR_CONNECTION_REFUSED", "group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04da4c89f1a5dd54e4478315cf6e991c1943", null ],
-      [ "WHIST_ERROR_NO_BUFFERS", "group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04daabb75d9872d7af0406af1aeaefc7c04a", null ]
+      [ "WHIST_ERROR_NO_BUFFERS", "group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04daabb75d9872d7af0406af1aeaefc7c04a", null ],
+      [ "WHIST_ERROR_END_OF_FILE", "group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04dafa31102004a16b76b6601dfa35b81649", null ],
+      [ "WHIST_ERROR_EXTERNAL", "group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04daca2a78a6ca24795be27bb0b0404328aa", null ]
     ] ],
     [ "whist_error_string", "group__error__codes.html#ga8c41b5f16ecb8298963cbeea354a24fc", null ]
 ];

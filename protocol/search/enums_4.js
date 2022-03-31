@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lodepngcolortype_4531',['LodePNGColorType',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102',1,'lodepng.h']]],
-  ['lodepngfilterstrategy_4532',['LodePNGFilterStrategy',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254f',1,'lodepng.h']]]
+  ['metrics_4531',['Metrics',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0',1,'log_statistic.h']]]
 ];

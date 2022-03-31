@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">decode.c File Reference</div>  </div>
@@ -93,16 +92,10 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="decode_8h_source.html">decode.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="error__codes_8h_source.html">whist/core/error_codes.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ab9604aff2a5d55f9963036a266e1eb91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ab9604aff2a5d55f9963036a266e1eb91">SHOW_DECODER_LOGS</a>&#160;&#160;&#160;false</td></tr>
-<tr class="separator:ab9604aff2a5d55f9963036a266e1eb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab22f9042c8cab794fbf43ab56b286d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#ab22f9042c8cab794fbf43ab56b286d2d">NUM_DECODER_TYPES</a>&#160;&#160;&#160;(sizeof(decoder_precedence) / sizeof(decoder_precedence[0]))</td></tr>
-<tr class="separator:ab22f9042c8cab794fbf43ab56b286d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a20ccfebe79578d850afc048e916aba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">create_video_decoder</a> (int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>, bool use_hardware, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
@@ -111,9 +104,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a49c422905662783d02130286cc73b8ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a49c422905662783d02130286cc73b8ea">destroy_video_decoder</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="memdesc:a49c422905662783d02130286cc73b8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an initialized FFmpeg video decoder and frees its memory.  <a href="decode_8c.html#a49c422905662783d02130286cc73b8ea">More...</a><br /></td></tr>
 <tr class="separator:a49c422905662783d02130286cc73b8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0a703f38ea832b5b5186b309499dc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a4d0a703f38ea832b5b5186b309499dc8">video_decoder_send_packets</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, int buffer_size)</td></tr>
-<tr class="memdesc:a4d0a703f38ea832b5b5186b309499dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the packets contained in buffer into the decoder.  <a href="decode_8c.html#a4d0a703f38ea832b5b5186b309499dc8">More...</a><br /></td></tr>
-<tr class="separator:a4d0a703f38ea832b5b5186b309499dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cdd12595b468064701921570b66730b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a5cdd12595b468064701921570b66730b">video_decoder_send_packets</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, size_t buffer_size)</td></tr>
+<tr class="memdesc:a5cdd12595b468064701921570b66730b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the packets contained in buffer into the decoder.  <a href="decode_8c.html#a5cdd12595b468064701921570b66730b">More...</a><br /></td></tr>
+<tr class="separator:a5cdd12595b468064701921570b66730b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e08542a8a988ca8371797bfe93f25f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a29e08542a8a988ca8371797bfe93f25f">video_decoder_decode_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="memdesc:a29e08542a8a988ca8371797bfe93f25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the next available frame from the decoder.  <a href="decode_8c.html#a29e08542a8a988ca8371797bfe93f25f">More...</a><br /></td></tr>
 <tr class="separator:a29e08542a8a988ca8371797bfe93f25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,36 +125,7 @@ decoder to decode frames.</h1>
 <h1><a class="anchor" id="autotoc_md276"></a>
 Usage</h1>
 <p>Video is decoded from H264 via ffmpeg; H265 is supported, but not currently used. Hardware-accelerated decoders are given priority, but if those fail, we decode on the CPU. All frames are eventually moved to the CPU for scaling and color conversion. Create a decoder via create_video_decoder. To decode a frame, call video_decoder_decode on the decoder and the encoded packets. To destroy the decoder when finished, destroy the encoder using video_decoder_decode. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ab22f9042c8cab794fbf43ab56b286d2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab22f9042c8cab794fbf43ab56b286d2d">&#9670;&nbsp;</a></span>NUM_DECODER_TYPES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NUM_DECODER_TYPES&#160;&#160;&#160;(sizeof(decoder_precedence) / sizeof(decoder_precedence[0]))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab9604aff2a5d55f9963036a266e1eb91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9604aff2a5d55f9963036a266e1eb91">&#9670;&nbsp;</a></span>SHOW_DECODER_LOGS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SHOW_DECODER_LOGS&#160;&#160;&#160;false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a20ccfebe79578d850afc048e916aba50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20ccfebe79578d850afc048e916aba50">&#9670;&nbsp;</a></span>create_video_decoder()</h2>
 
@@ -322,8 +286,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a4d0a703f38ea832b5b5186b309499dc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d0a703f38ea832b5b5186b309499dc8">&#9670;&nbsp;</a></span>video_decoder_send_packets()</h2>
+<a id="a5cdd12595b468064701921570b66730b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cdd12595b468064701921570b66730b">&#9670;&nbsp;</a></span>video_decoder_send_packets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +307,7 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>buffer_size</em>&#160;</td>
         </tr>
         <tr>
@@ -364,6 +328,49 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a8f8f80d37794cde9472343e4487ba3eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8f80d37794cde9472343e4487ba3eb">&#9670;&nbsp;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7331e302ea7bb48e0b605a069576e135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7331e302ea7bb48e0b605a069576e135">&#9670;&nbsp;</a></span>pix_fmt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum AVPixelFormat pix_fmt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4165b400ecd5a84616b429f6516512b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4165b400ecd5a84616b429f6516512b">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum AVHWDeviceType type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
