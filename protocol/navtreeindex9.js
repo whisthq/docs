@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"server_2main_8c.html#a47bc40aa03ce12d0a9e706e1a707f186":[13,0,1,6,1],
+"server_2main_8c.html#a4c5ab6ed5242ccce4f889e4dd43a7ea2":[13,0,1,6,5],
 "server_2main_8c.html#a688f608a1c5bc4e4309281cab6670184":[13,0,1,6,0],
 "server_2main_8c.html#a892e6ee128e876348c44cf346ede6e50":[13,0,1,6,8],
 "server_2main_8c.html#a9fc2fefbef45ac4eb5b36d940c80831e":[13,0,1,6,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "structFileCaptureDevice.html#a828309f5c193c4d14a2b5ad55c460b74":[12,0,32,13],
 "structFileCaptureDevice.html#a8dbe5c873ef6bb1b7dfdc261f1d051fb":[12,0,32,12],
 "structFileCaptureDevice.html#a9f3fd9c342c512ccf7d244fe742b723d":[12,0,32,9],
-"structFileCaptureDevice.html#aba8d514b0985b6b31f491800f3200e57":[12,0,32,14],
-"structFileCaptureDevice.html#ad250d9bbaeac2b489a3984d825a8b641":[12,0,32,15],
-"structFileCaptureDevice.html#addf5cc59cf39228df4218ea45ddd5aa8":[12,0,32,10]
+"structFileCaptureDevice.html#aba8d514b0985b6b31f491800f3200e57":[12,0,32,14]
 };

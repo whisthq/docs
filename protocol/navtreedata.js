@@ -146,14 +146,14 @@ var NAVTREEINDEX =
 "lodepng_8c.html#aab7a41a03154aa8d9ef65f2d434641b6",
 "ltr_8c.html",
 "os__utils_8h.html#ad841d0d3632ae42995ba77ada3a6e13b",
-"server_2main_8c.html#a688f608a1c5bc4e4309281cab6670184",
-"structFileCaptureDevice.html#af3e60aaddbbc9ef272668ce8a19fb8b8",
-"structLodePNGInfo.html#a4d3407acdf79bf87f20a3562f210b393",
-"structTCPContext.html#a69b86d5b5ba97f16a584a8c1da5e76ea",
-"structWhistKeyboardMessage.html#ac96ce4d0ae4f6f042cfdcaa7c9b9a27a",
-"udp_8c.html#a16d54d6aa9e07ea55a20c0cb0a4705d1",
-"whist_8h.html#a794e0417bdd7ebdad81c59a929932761",
-"whist_8h.html#afa47769b22f4e68bdbf79565f9852032a8993918fc27591183d5a678fda68bbc9"
+"server_2main_8c.html#a47bc40aa03ce12d0a9e706e1a707f186",
+"structFileCaptureDevice.html#ad250d9bbaeac2b489a3984d825a8b641",
+"structLodePNGInfo.html#a42bcacd0dbaaea01c04cc87b58ac3c1d",
+"structTCPContext.html#a6552539ca4d5038657418b8bcae1c1a2",
+"structWhistKeyboardMessage.html#a6b323163fb1e9ad1bc542b7fe4dfd808",
+"udp_8c.html#a011eaed8cc6df727eb7f1f12852a1b2c",
+"whist_8h.html#a76bf238d14734ada3ef9fadfdea45ca7",
+"whist_8h.html#afa47769b22f4e68bdbf79565f9852032a77991fd820fa0879001c745a758be452"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
