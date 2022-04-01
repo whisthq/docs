@@ -22,7 +22,6 @@ var udp_8c =
     [ "PING_LAMBDA", "udp_8c.html#af2b8eb0b122983fbf3da1da372e479c2", null ],
     [ "RETRIES_ON_BUFFER_FULL", "udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb", null ],
     [ "STATISTICS_SECONDS", "udp_8c.html#a3190cca650071548d6b75370b0e5c41c", null ],
-    [ "UDP_NETWORK_THROTTLER_BUCKET_MS", "udp_8c.html#a5222d03fdb5004f2ebc781d1041f0e04", null ],
     [ "UDP_PING_INTERVAL_SEC", "udp_8c.html#a49f2f61011d729a3bb56deee2f26a2c7", null ],
     [ "UDP_PING_LOG_INTERVAL_SEC", "udp_8c.html#a011eaed8cc6df727eb7f1f12852a1b2c", null ],
     [ "UDP_PONG_TIMEOUT_SEC", "udp_8c.html#a7d308c30a8d28fbf997bb7085de35421", null ],

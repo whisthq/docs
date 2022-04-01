@@ -10,15 +10,17 @@ var structFrameData =
     [ "frame_creation_timer", "structFrameData.html#a85439ab4bc5294bf3d4a0e681b72fa9c", null ],
     [ "id", "structFrameData.html#a17b526603f40e18dba49fa0f2cb75b27", null ],
     [ "last_frame_nack_timer", "structFrameData.html#a78d6d5d36ca93f4ad8ed993d28db37f3", null ],
-    [ "last_nacked_timer", "structFrameData.html#a8f07a1c3a4e3d3c4c9a6637b33488d35", null ],
+    [ "last_nacked_timer", "structFrameData.html#a22221dd3e193219674ef3823c318b7bb", null ],
     [ "last_nonnack_packet_timer", "structFrameData.html#a7804671e5e00601c971a1857d3bc930d", null ],
+    [ "nack_packets_received", "structFrameData.html#a99600ff10bddea372364d4df7b048594", null ],
     [ "num_entire_frame_nacked", "structFrameData.html#a471240e6848751c9090c99ab05ddde9e", null ],
     [ "num_fec_packets", "structFrameData.html#a378937724da15b0963192405d1126594", null ],
     [ "num_original_packets", "structFrameData.html#a78648a23cf6d7bec7ba095e79c90bcce", null ],
-    [ "num_times_index_nacked", "structFrameData.html#af5dec684293d4f9fe8e2a51aa91a08eb", null ],
+    [ "num_times_index_nacked", "structFrameData.html#a3f820ed59cca0a63dbffe1ab1bdc417c", null ],
     [ "original_packets_received", "structFrameData.html#ae09b582d87f5fc19170e0221843fd167", null ],
     [ "packet_buffer", "structFrameData.html#ab0caf5e0d07141306d014b80f81ef1f7", null ],
     [ "prev_frame_num_duplicate_packets", "structFrameData.html#a87ebab727011af41f4092ac0cf3bb695", null ],
-    [ "received_indices", "structFrameData.html#a28cffb0c17e4f704b491f31b166e544d", null ],
-    [ "successful_fec_recovery", "structFrameData.html#a89c89782c514acba9e4f8a91fcde782b", null ]
+    [ "received_indices", "structFrameData.html#a560cde3e2fab64ae17c85570c4080066", null ],
+    [ "successful_fec_recovery", "structFrameData.html#a89c89782c514acba9e4f8a91fcde782b", null ],
+    [ "unnecessary_nack_packets_received", "structFrameData.html#af90e1f345061d90b3766ce069264f939", null ]
 ];

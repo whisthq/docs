@@ -240,7 +240,7 @@ var searchData=
   ['frame_5fbuffer_5fsize_776',['frame_buffer_size',['../structFrameData.html#a3eb54c2889e57b3083c7c2adc0c5f1bf',1,'FrameData']]],
   ['frame_5fcount_777',['frame_count',['../structAudioEncoder.html#a7ee3acefd7cd64d0b67a86d0479af1c7',1,'AudioEncoder']]],
   ['frame_5fcounter_778',['frame_counter',['../structLTRFrame.html#a183845030e396c708525b3b7aa1bf92a',1,'LTRFrame::frame_counter()'],['../structLTRState.html#a0d434c380ab79693b1b7452e555a1481',1,'LTRState::frame_counter()']]],
-  ['frame_5fcreation_5ftimer_779',['frame_creation_timer',['../structFrameData.html#a85439ab4bc5294bf3d4a0e681b72fa9c',1,'FrameData::frame_creation_timer()'],['../structPacketCountInfo.html#ac74ef3bc1bc93b7fd90125a9f5eb13f3',1,'PacketCountInfo::frame_creation_timer()']]],
+  ['frame_5fcreation_5ftimer_779',['frame_creation_timer',['../structFrameData.html#a85439ab4bc5294bf3d4a0e681b72fa9c',1,'FrameData']]],
   ['frame_5fdata_780',['frame_data',['../structCaptureDevice.html#a6800f23c51341920773e2dbaab517fe8',1,'CaptureDevice::frame_data()'],['../structX11CaptureDevice.html#ac5a5c7b0909308e3712a2b691e932460',1,'X11CaptureDevice::frame_data()']]],
   ['frame_5fid_781',['frame_id',['../structWhistFrameAckMessage.html#abc38ffd0a0ab5b9e44b369b8ef49483d',1,'WhistFrameAckMessage::frame_id()'],['../structVideoFrame.html#a5a3d09c14f8bde62ed28b35578e52f87',1,'VideoFrame::frame_id()'],['../structNackID.html#ad535bcfcf75e51795758fa497e1ecf31',1,'NackID::frame_id()'],['../structLTRFrame.html#a7b8276344e66c1ce9baaecde1563026a',1,'LTRFrame::frame_id()']]],
   ['frame_5fidx_782',['frame_idx',['../structNvidiaEncoder.html#a1c0e30efa3e1851f4fa9f733d0a0de7f',1,'NvidiaEncoder']]],

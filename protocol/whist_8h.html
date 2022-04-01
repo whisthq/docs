@@ -225,8 +225,12 @@ Macros</h2></td></tr>
 <tr class="separator:a08b5ca53d7a67e07145271921a829015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe35f6b7cbcafed20fd9d41e4f11660a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#abe35f6b7cbcafed20fd9d41e4f11660a">WINDOW_RESIZE_MESSAGE_INTERVAL</a>&#160;&#160;&#160;200</td></tr>
 <tr class="separator:abe35f6b7cbcafed20fd9d41e4f11660a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9671b09366aac047f771b3d49b3b99a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a9671b09366aac047f771b3d49b3b99a4">MAX_FEC_RATIO</a>&#160;&#160;&#160;0.7</td></tr>
+<tr class="memitem:ac2fc8d91a4522aa7564405e36898140b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>&#160;&#160;&#160;500</td></tr>
+<tr class="separator:ac2fc8d91a4522aa7564405e36898140b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9671b09366aac047f771b3d49b3b99a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a9671b09366aac047f771b3d49b3b99a4">MAX_FEC_RATIO</a>&#160;&#160;&#160;0.5</td></tr>
 <tr class="separator:a9671b09366aac047f771b3d49b3b99a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bcbf05a79de1a8a42492a8e5169c22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ae2bcbf05a79de1a8a42492a8e5169c22">MAX_PACKETS</a>&#160;&#160;&#160;(<a class="el" href="whist_8h.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a> * 2)</td></tr>
+<tr class="separator:ae2bcbf05a79de1a8a42492a8e5169c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a407e78922a862311fd4f35eeef889630"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a407e78922a862311fd4f35eeef889630">ACK_REFRESH_MS</a>&#160;&#160;&#160;50</td></tr>
 <tr class="separator:a407e78922a862311fd4f35eeef889630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a127a432b98b2684fb0d592970c125b41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a127a432b98b2684fb0d592970c125b41">MIN_SCREEN_WIDTH</a>&#160;&#160;&#160;500</td></tr>
@@ -310,10 +314,6 @@ Macros</h2></td></tr>
 <tr class="separator:a99cc5a998dfeebc3567baec59b4a77a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d7c1ddafff24bb11e440ffaf1ebbcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a60d7c1ddafff24bb11e440ffaf1ebbcf">BITS_TO_CHARS</a>(bits)&#160;&#160;&#160;((((bits)-1) / CHAR_BIT) + 1)</td></tr>
 <tr class="separator:a60d7c1ddafff24bb11e440ffaf1ebbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2fc8d91a4522aa7564405e36898140b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>&#160;&#160;&#160;500</td></tr>
-<tr class="separator:ac2fc8d91a4522aa7564405e36898140b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">safe_printf</a>&#160;&#160;&#160;UNINITIALIZED_LOG</td></tr>
 <tr class="memdesc:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will exit on error, and log a warning if this function is used when the logger is already initialized.  <a href="whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b">More...</a><br /></td></tr>
 <tr class="separator:a4315da3047cc4ba85c5fa2f2e86d4b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1183,20 +1183,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a83bbf59667cbb81c5c7d11df72ca7dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83bbf59667cbb81c5c7d11df72ca7dfe">&#9670;&nbsp;</a></span>MAX_AUDIO_PACKETS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_AUDIO_PACKETS&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9671b09366aac047f771b3d49b3b99a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9671b09366aac047f771b3d49b3b99a4">&#9670;&nbsp;</a></span>MAX_FEC_RATIO</h2>
 
@@ -1204,7 +1190,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_FEC_RATIO&#160;&#160;&#160;0.7</td>
+          <td class="memname">#define MAX_FEC_RATIO&#160;&#160;&#160;0.5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1247,6 +1233,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MAX_NEW_TAB_URLS&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2bcbf05a79de1a8a42492a8e5169c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2bcbf05a79de1a8a42492a8e5169c22">&#9670;&nbsp;</a></span>MAX_PACKETS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_PACKETS&#160;&#160;&#160;(<a class="el" href="whist_8h.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a> * 2)</td>
         </tr>
       </table>
 </div><div class="memdoc">

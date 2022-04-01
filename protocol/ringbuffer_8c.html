@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('ringbuffer_8c.html',''); initResizable
 <div class="textblock"><code>#include &quot;<a class="el" href="ringbuffer_8h_source.html">ringbuffer.h</a>&quot;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="fec_8h_source.html">whist/fec/fec.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="protocol__analyzer_8h_source.html">whist/debug/protocol_analyzer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="debug__console_8h_source.html">whist/debug/debug_console.h</a>&gt;</code><br />
 </div><table class="memberdecls">
@@ -98,16 +99,10 @@ $(document).ready(function(){initNavTree('ringbuffer_8c.html',''); initResizable
 Macros</h2></td></tr>
 <tr class="memitem:ace58ba786751c3524bcbb1bc4f8846ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ace58ba786751c3524bcbb1bc4f8846ce">MAX_RING_BUFFER_SIZE</a>&#160;&#160;&#160;500</td></tr>
 <tr class="separator:ace58ba786751c3524bcbb1bc4f8846ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2fc8d91a4522aa7564405e36898140b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>&#160;&#160;&#160;500</td></tr>
-<tr class="separator:ac2fc8d91a4522aa7564405e36898140b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:a83bbf59667cbb81c5c7d11df72ca7dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a035f1eb6db73cb497f6de67cad4ade33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a035f1eb6db73cb497f6de67cad4ade33">MAX_UNORDERED_PACKETS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a035f1eb6db73cb497f6de67cad4ade33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf55b2f848a5a671949daa34c01d0d71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#aaf55b2f848a5a671949daa34c01d0d71">NACK_PACKETS_MISSING_FRAME</a>&#160;&#160;&#160;20</td></tr>
 <tr class="separator:aaf55b2f848a5a671949daa34c01d0d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2bcbf05a79de1a8a42492a8e5169c22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#ae2bcbf05a79de1a8a42492a8e5169c22">MAX_PACKETS</a>&#160;&#160;&#160;(<a class="el" href="fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4">get_num_fec_packets</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>, <a class="el" href="ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>), <a class="el" href="whist_8h.html#a9671b09366aac047f771b3d49b3b99a4">MAX_FEC_RATIO</a>))</td></tr>
-<tr class="separator:ae2bcbf05a79de1a8a42492a8e5169c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae1c510758ee20c3ab1c53b1bc895786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#aae1c510758ee20c3ab1c53b1bc895786">ESTIMATED_JITTER_LATENCY_RATIO</a>&#160;&#160;&#160;0.3</td></tr>
 <tr class="separator:aae1c510758ee20c3ab1c53b1bc895786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3c2ea61f618a92f70234842e1d8ab8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a7b3c2ea61f618a92f70234842e1d8ab8">NACK_STATISTICS_SEC</a>&#160;&#160;&#160;5.0</td></tr>
@@ -137,9 +132,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrameData.html">FrameData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5">get_frame_at_id</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>)</td></tr>
 <tr class="memdesc:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrives the frame at the given ID in the ring buffer.  <a href="ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5">More...</a><br /></td></tr>
 <tr class="separator:a69a35ea430111d5dadd29f8b9b9d99c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0263a542b2b625b41edd57f30dfa1b28"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a0263a542b2b625b41edd57f30dfa1b28">get_packet_loss_ratio</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
-<tr class="memdesc:a0263a542b2b625b41edd57f30dfa1b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the packet loss ratio of non-rendered frames in the last 250ms.  <a href="ringbuffer_8c.html#a0263a542b2b625b41edd57f30dfa1b28">More...</a><br /></td></tr>
-<tr class="separator:a0263a542b2b625b41edd57f30dfa1b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2947bd52323b0d65b0a059a0cf9adf3d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a2947bd52323b0d65b0a059a0cf9adf3d">get_packet_loss_ratio</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double latency)</td></tr>
+<tr class="memdesc:a2947bd52323b0d65b0a059a0cf9adf3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the packet loss ratio of non-rendered frames in the last 250ms.  <a href="ringbuffer_8c.html#a2947bd52323b0d65b0a059a0cf9adf3d">More...</a><br /></td></tr>
+<tr class="separator:a2947bd52323b0d65b0a059a0cf9adf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22897ddd74ba2d11192502d98a4c7227"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a22897ddd74ba2d11192502d98a4c7227">is_ready_to_render</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>)</td></tr>
 <tr class="memdesc:a22897ddd74ba2d11192502d98a4c7227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the frame with ID id is currently rendering, and free the frame buffer for the previously rendered frame.  <a href="ringbuffer_8c.html#a22897ddd74ba2d11192502d98a4c7227">More...</a><br /></td></tr>
 <tr class="separator:a22897ddd74ba2d11192502d98a4c7227"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,20 +183,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a83bbf59667cbb81c5c7d11df72ca7dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83bbf59667cbb81c5c7d11df72ca7dfe">&#9670;&nbsp;</a></span>MAX_AUDIO_PACKETS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_AUDIO_PACKETS&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad7825c4f2de173c071d97a296ec96d24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7825c4f2de173c071d97a296ec96d24">&#9670;&nbsp;</a></span>MAX_NACK_BITRATE_RATIO</h2>
 
@@ -230,20 +211,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2bcbf05a79de1a8a42492a8e5169c22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2bcbf05a79de1a8a42492a8e5169c22">&#9670;&nbsp;</a></span>MAX_PACKETS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_PACKETS&#160;&#160;&#160;(<a class="el" href="fec_8h.html#ac95c4d80f01a85593a7dfd5b4989f2a4">get_num_fec_packets</a>(<a class="el" href="whist_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>(<a class="el" href="ringbuffer_8c.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>, <a class="el" href="ringbuffer_8c.html#a83bbf59667cbb81c5c7d11df72ca7dfe">MAX_AUDIO_PACKETS</a>), <a class="el" href="whist_8h.html#a9671b09366aac047f771b3d49b3b99a4">MAX_FEC_RATIO</a>))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ace58ba786751c3524bcbb1bc4f8846ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace58ba786751c3524bcbb1bc4f8846ce">&#9670;&nbsp;</a></span>MAX_RING_BUFFER_SIZE</h2>
 
@@ -266,20 +233,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MAX_UNORDERED_PACKETS&#160;&#160;&#160;10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac2fc8d91a4522aa7564405e36898140b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2fc8d91a4522aa7564405e36898140b">&#9670;&nbsp;</a></span>MAX_VIDEO_PACKETS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_VIDEO_PACKETS&#160;&#160;&#160;500</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -448,8 +401,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0263a542b2b625b41edd57f30dfa1b28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0263a542b2b625b41edd57f30dfa1b28">&#9670;&nbsp;</a></span>get_packet_loss_ratio()</h2>
+<a id="a2947bd52323b0d65b0a059a0cf9adf3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2947bd52323b0d65b0a059a0cf9adf3d">&#9670;&nbsp;</a></span>get_packet_loss_ratio()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,8 +411,18 @@ Functions</h2></td></tr>
           <td class="memname">double get_packet_loss_ratio </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
-          <td class="paramname"><em>ring_buffer</em></td><td>)</td>
+          <td class="paramname"><em>ring_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>latency</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -468,6 +431,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ring_buffer</td><td>Ring buffer to access</td></tr>
+    <tr><td class="paramname">latency</td><td>UDP round trip time</td></tr>
   </table>
   </dd>
 </dl>

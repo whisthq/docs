@@ -83,7 +83,6 @@ var annotated_dup =
     [ "NvidiaEncoder", "structNvidiaEncoder.html", "structNvidiaEncoder" ],
     [ "OSXFilenames", "structOSXFilenames.html", "structOSXFilenames" ],
     [ "OSXImage", "structOSXImage.html", "structOSXImage" ],
-    [ "PacketCountInfo", "structPacketCountInfo.html", "structPacketCountInfo" ],
     [ "PrivateKeyData", "structPrivateKeyData.html", "structPrivateKeyData" ],
     [ "QueueContext", "structQueueContext.html", "structQueueContext" ],
     [ "RegionHeader", "structRegionHeader.html", "structRegionHeader" ],
