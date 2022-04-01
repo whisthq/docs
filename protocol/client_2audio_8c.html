@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('client_2audio_8c.html',''); initResiza
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">audio.c File Reference</div>  </div>
@@ -103,6 +104,8 @@ $(document).ready(function(){initNavTree('client_2audio_8c.html',''); initResiza
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioRenderContext.html">AudioRenderContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioContext.html">AudioContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -116,20 +119,28 @@ Macros</h2></td></tr>
 <tr class="separator:ae5597ce31d23d11493e6e674fe257d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45a0fddf083e0292dfc3b801f715e7e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a8746ae57f53e99e184ab1e64e71d24c5">SAMPLES_PER_FRAME</a> * <a class="el" href="client_2audio_8c.html#a25065cd833bcfecfb404093aed3edaca">BYTES_PER_SAMPLE</a> * <a class="el" href="client_2audio_8c.html#ae5597ce31d23d11493e6e674fe257d73">NUM_CHANNELS</a>)</td></tr>
 <tr class="separator:a45a0fddf083e0292dfc3b801f715e7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c549fa2648eea555b6c8a93ee4dc3aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">MAX_NUM_AUDIO_FRAMES</a>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:a8c549fa2648eea555b6c8a93ee4dc3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89398809c1e33d6d7bab82e61263d2fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a89398809c1e33d6d7bab82e61263d2fd">AUDIO_QUEUE_LOWER_LIMIT_FRAMES</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a89398809c1e33d6d7bab82e61263d2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab35a892e66fbb0590f73364b6eb70791"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#ab35a892e66fbb0590f73364b6eb70791">AUDIO_QUEUE_UPPER_LIMIT_FRAMES</a>&#160;&#160;&#160;<a class="el" href="udp_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">MAX_NUM_AUDIO_FRAMES</a></td></tr>
-<tr class="separator:ab35a892e66fbb0590f73364b6eb70791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3266ef0f041fe2239dd2426d3b6ff094"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a3266ef0f041fe2239dd2426d3b6ff094">TARGET_AUDIO_QUEUE_LIMIT_FRAMES</a>&#160;&#160;&#160;7</td></tr>
-<tr class="separator:a3266ef0f041fe2239dd2426d3b6ff094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb531a12d8aa31b007d796faa1b86ba8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#aeb531a12d8aa31b007d796faa1b86ba8">AUDIO_QUEUE_LOWER_LIMIT</a>&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a89398809c1e33d6d7bab82e61263d2fd">AUDIO_QUEUE_LOWER_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td></tr>
-<tr class="separator:aeb531a12d8aa31b007d796faa1b86ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b51aebc7a5e5a59313acb9df88ee462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a5b51aebc7a5e5a59313acb9df88ee462">AUDIO_QUEUE_UPPER_LIMIT</a>&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#ab35a892e66fbb0590f73364b6eb70791">AUDIO_QUEUE_UPPER_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td></tr>
-<tr class="separator:a5b51aebc7a5e5a59313acb9df88ee462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46ecf2f50530a713dc8a1bf4719f125b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a46ecf2f50530a713dc8a1bf4719f125b">TARGET_AUDIO_QUEUE_LIMIT</a>&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a3266ef0f041fe2239dd2426d3b6ff094">TARGET_AUDIO_QUEUE_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td></tr>
-<tr class="separator:a46ecf2f50530a713dc8a1bf4719f125b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491bf9f839f3712833daa74ff64372e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a491bf9f839f3712833daa74ff64372e2">AUDIO_QUEUE_TARGET_SIZE</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a491bf9f839f3712833daa74ff64372e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb78c1aedc54a9928563d3cab3e0175"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#aacb78c1aedc54a9928563d3cab3e0175">AUDIO_BUFFER_OVERFLOW_SIZE</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:aacb78c1aedc54a9928563d3cab3e0175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9785741ffabfb37379e57cd3012c41c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a9785741ffabfb37379e57cd3012c41c9">AUDIO_BUFSIZE_SAMPLE_FREQUENCY_MS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a9785741ffabfb37379e57cd3012c41c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d8e529f83e8f984fcdf32c719b3823"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a19d8e529f83e8f984fcdf32c719b3823">AUDIO_BUFSIZE_NUM_SAMPLES</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a19d8e529f83e8f984fcdf32c719b3823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65fd131edb55595aa15bc35d4bad7990"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a65fd131edb55595aa15bc35d4bad7990">AUDIO_ACCEPTABLE_DELTA</a>&#160;&#160;&#160;1.2</td></tr>
+<tr class="separator:a65fd131edb55595aa15bc35d4bad7990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a82cdf833b5d7a90f60d8d8fa638bea9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a82cdf833b5d7a90f60d8d8fa638bea9e">AudioState</a> { <a class="el" href="client_2audio_8c.html#a82cdf833b5d7a90f60d8d8fa638bea9eab0a4566de7e330935bb6032b5711cbf7">BUFFERING</a>, 
+<a class="el" href="client_2audio_8c.html#a82cdf833b5d7a90f60d8d8fa638bea9eaf095245f5cebc27a97a124345269fed8">PLAYING</a>
+ }</td></tr>
+<tr class="separator:a82cdf833b5d7a90f60d8d8fa638bea9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e545d0d436225e3b09a2520c3cd4d85"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85">AdjustCommand</a> { <a class="el" href="client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85acf0f2a7acefffaa3d41d949a2ceb3d5f">NOOP_FRAME</a>, 
+<a class="el" href="client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85a0c4b992119e15dbccb00651c8d5b8673">DROP_FRAME</a>, 
+<a class="el" href="client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85a2b8299434d010204c9d162261d905587">DUP_FRAME</a>
+ }</td></tr>
+<tr class="separator:a9e545d0d436225e3b09a2520c3cd4d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -142,15 +153,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a4779d5da095b14e8e82fdcc84955c73c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a4779d5da095b14e8e82fdcc84955c73c">refresh_audio_device</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
 <tr class="memdesc:a4779d5da095b14e8e82fdcc84955c73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will refresh the audio device of the audio context prior to the next render.  <a href="client_2audio_8c.html#a4779d5da095b14e8e82fdcc84955c73c">More...</a><br /></td></tr>
 <tr class="separator:a4779d5da095b14e8e82fdcc84955c73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4541eef45b2a1b1b5f4baa3b3f233e53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a4541eef45b2a1b1b5f4baa3b3f233e53">audio_ready_for_frame</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context, int num_frames_buffered)</td></tr>
+<tr class="memdesc:a4541eef45b2a1b1b5f4baa3b3f233e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the audio context is ready to render a new frame.  <a href="client_2audio_8c.html#a4541eef45b2a1b1b5f4baa3b3f233e53">More...</a><br /></td></tr>
+<tr class="separator:a4541eef45b2a1b1b5f4baa3b3f233e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3239255d7dbd09d8d67bdfdf22fd4a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a3239255d7dbd09d8d67bdfdf22fd4a1e">receive_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context, <a class="el" href="structAudioFrame.html">AudioFrame</a> *audio_frame)</td></tr>
 <tr class="memdesc:a3239255d7dbd09d8d67bdfdf22fd4a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive audio packet.  <a href="client_2audio_8c.html#a3239255d7dbd09d8d67bdfdf22fd4a1e">More...</a><br /></td></tr>
 <tr class="separator:a3239255d7dbd09d8d67bdfdf22fd4a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02350b8accdbe0401e6a3861abb30320"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a02350b8accdbe0401e6a3861abb30320">render_audio</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context)</td></tr>
 <tr class="memdesc:a02350b8accdbe0401e6a3861abb30320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the audio frame (If any are available to render)  <a href="client_2audio_8c.html#a02350b8accdbe0401e6a3861abb30320">More...</a><br /></td></tr>
 <tr class="separator:a02350b8accdbe0401e6a3861abb30320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4541eef45b2a1b1b5f4baa3b3f233e53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2audio_8c.html#a4541eef45b2a1b1b5f4baa3b3f233e53">audio_ready_for_frame</a> (<a class="el" href="structAudioContext.html">AudioContext</a> *audio_context, int num_frames_buffered)</td></tr>
-<tr class="memdesc:a4541eef45b2a1b1b5f4baa3b3f233e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the audio context is ready to render a new frame.  <a href="client_2audio_8c.html#a4541eef45b2a1b1b5f4baa3b3f233e53">More...</a><br /></td></tr>
-<tr class="separator:a4541eef45b2a1b1b5f4baa3b3f233e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -161,56 +172,70 @@ audio packets on the client.</h1>
 Usage</h1>
 <p>initAudio() must be called first before receiving any audio packets. updateAudio() gets called immediately after to update the client to the server's audio format. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aeb531a12d8aa31b007d796faa1b86ba8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb531a12d8aa31b007d796faa1b86ba8">&#9670;&nbsp;</a></span>AUDIO_QUEUE_LOWER_LIMIT</h2>
+<a id="a65fd131edb55595aa15bc35d4bad7990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65fd131edb55595aa15bc35d4bad7990">&#9670;&nbsp;</a></span>AUDIO_ACCEPTABLE_DELTA</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define AUDIO_QUEUE_LOWER_LIMIT&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a89398809c1e33d6d7bab82e61263d2fd">AUDIO_QUEUE_LOWER_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td>
+          <td class="memname">#define AUDIO_ACCEPTABLE_DELTA&#160;&#160;&#160;1.2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a89398809c1e33d6d7bab82e61263d2fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89398809c1e33d6d7bab82e61263d2fd">&#9670;&nbsp;</a></span>AUDIO_QUEUE_LOWER_LIMIT_FRAMES</h2>
+<a id="aacb78c1aedc54a9928563d3cab3e0175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb78c1aedc54a9928563d3cab3e0175">&#9670;&nbsp;</a></span>AUDIO_BUFFER_OVERFLOW_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define AUDIO_QUEUE_LOWER_LIMIT_FRAMES&#160;&#160;&#160;1</td>
+          <td class="memname">#define AUDIO_BUFFER_OVERFLOW_SIZE&#160;&#160;&#160;20</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5b51aebc7a5e5a59313acb9df88ee462"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b51aebc7a5e5a59313acb9df88ee462">&#9670;&nbsp;</a></span>AUDIO_QUEUE_UPPER_LIMIT</h2>
+<a id="a19d8e529f83e8f984fcdf32c719b3823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d8e529f83e8f984fcdf32c719b3823">&#9670;&nbsp;</a></span>AUDIO_BUFSIZE_NUM_SAMPLES</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define AUDIO_QUEUE_UPPER_LIMIT&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#ab35a892e66fbb0590f73364b6eb70791">AUDIO_QUEUE_UPPER_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td>
+          <td class="memname">#define AUDIO_BUFSIZE_NUM_SAMPLES&#160;&#160;&#160;10</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab35a892e66fbb0590f73364b6eb70791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab35a892e66fbb0590f73364b6eb70791">&#9670;&nbsp;</a></span>AUDIO_QUEUE_UPPER_LIMIT_FRAMES</h2>
+<a id="a9785741ffabfb37379e57cd3012c41c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9785741ffabfb37379e57cd3012c41c9">&#9670;&nbsp;</a></span>AUDIO_BUFSIZE_SAMPLE_FREQUENCY_MS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define AUDIO_QUEUE_UPPER_LIMIT_FRAMES&#160;&#160;&#160;<a class="el" href="udp_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">MAX_NUM_AUDIO_FRAMES</a></td>
+          <td class="memname">#define AUDIO_BUFSIZE_SAMPLE_FREQUENCY_MS&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a491bf9f839f3712833daa74ff64372e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a491bf9f839f3712833daa74ff64372e2">&#9670;&nbsp;</a></span>AUDIO_QUEUE_TARGET_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AUDIO_QUEUE_TARGET_SIZE&#160;&#160;&#160;8</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,20 +270,6 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a8c549fa2648eea555b6c8a93ee4dc3aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c549fa2648eea555b6c8a93ee4dc3aa">&#9670;&nbsp;</a></span>MAX_NUM_AUDIO_FRAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_NUM_AUDIO_FRAMES&#160;&#160;&#160;10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae5597ce31d23d11493e6e674fe257d73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5597ce31d23d11493e6e674fe257d73">&#9670;&nbsp;</a></span>NUM_CHANNELS</h2>
 
@@ -287,31 +298,41 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a46ecf2f50530a713dc8a1bf4719f125b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46ecf2f50530a713dc8a1bf4719f125b">&#9670;&nbsp;</a></span>TARGET_AUDIO_QUEUE_LIMIT</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a9e545d0d436225e3b09a2520c3cd4d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e545d0d436225e3b09a2520c3cd4d85">&#9670;&nbsp;</a></span>AdjustCommand</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TARGET_AUDIO_QUEUE_LIMIT&#160;&#160;&#160;(<a class="el" href="client_2audio_8c.html#a3266ef0f041fe2239dd2426d3b6ff094">TARGET_AUDIO_QUEUE_LIMIT_FRAMES</a> * <a class="el" href="client_2audio_8c.html#a45a0fddf083e0292dfc3b801f715e7e7">DECODED_BYTES_PER_FRAME</a>)</td>
+          <td class="memname">enum <a class="el" href="client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85">AdjustCommand</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9e545d0d436225e3b09a2520c3cd4d85acf0f2a7acefffaa3d41d949a2ceb3d5f"></a>NOOP_FRAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e545d0d436225e3b09a2520c3cd4d85a0c4b992119e15dbccb00651c8d5b8673"></a>DROP_FRAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e545d0d436225e3b09a2520c3cd4d85a2b8299434d010204c9d162261d905587"></a>DUP_FRAME&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
-<a id="a3266ef0f041fe2239dd2426d3b6ff094"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3266ef0f041fe2239dd2426d3b6ff094">&#9670;&nbsp;</a></span>TARGET_AUDIO_QUEUE_LIMIT_FRAMES</h2>
+<a id="a82cdf833b5d7a90f60d8d8fa638bea9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82cdf833b5d7a90f60d8d8fa638bea9e">&#9670;&nbsp;</a></span>AudioState</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TARGET_AUDIO_QUEUE_LIMIT_FRAMES&#160;&#160;&#160;7</td>
+          <td class="memname">enum <a class="el" href="client_2audio_8c.html#a82cdf833b5d7a90f60d8d8fa638bea9e">AudioState</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a82cdf833b5d7a90f60d8d8fa638bea9eab0a4566de7e330935bb6032b5711cbf7"></a>BUFFERING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a82cdf833b5d7a90f60d8d8fa638bea9eaf095245f5cebc27a97a124345269fed8"></a>PLAYING&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

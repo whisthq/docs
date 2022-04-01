@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stunrequesttype_4530',['StunRequestType',['../whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5b',1,'network.h']]]
+  ['rsimplementation_4554',['RSImplementation',['../rs__wrapper_8c.html#ad275f79378118c4594a41bb7845651f7',1,'rs_wrapper.c']]]
 ];

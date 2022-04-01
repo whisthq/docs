@@ -12,6 +12,7 @@ var udp_8c =
     [ "IDLE_VIDEO_MAX_BITRATE", "udp_8c.html#aa1b0d63a7809ac09ea618bff0b17a6cc", null ],
     [ "INCOMING_BITRATE_NUM_BUCKETS", "udp_8c.html#adfc8fe2cb2b7395c1b877074136fdf03", null ],
     [ "INCOMING_BITRATE_WINDOW_MS", "udp_8c.html#affae1647f8735441fd62ee64b5e7df26", null ],
+    [ "INITIAL_FRAMES", "udp_8c.html#ab4d50d85bd478b0b009a811d180d9279", null ],
     [ "MAX_GROUP_STATS", "udp_8c.html#ab2e2a8a17401043534915047cfff9d83", null ],
     [ "MAX_NUM_AUDIO_FRAMES", "udp_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa", null ],
     [ "MAX_PINGS_IN_FLIGHT", "udp_8c.html#a27a95ae8465ba2cfb7e39535fd22e9d9", null ],

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['ffmpegencodetype_4520',['FFmpegEncodeType',['../ffmpeg__encode_8h.html#a710867b9460bb3ef175428fd1da3d41a',1,'ffmpeg_encode.h']]],
-  ['filechunktype_4521',['FileChunkType',['../file__synchronizer_8h.html#a3b42737aa65a49c64e1df706d58685dd',1,'file_synchronizer.h']]],
-  ['filetransferdirection_4522',['FileTransferDirection',['../file__synchronizer_8h.html#ac11d776f7cbfb2fede876da26b1a08c2',1,'file_synchronizer.h']]],
-  ['filetransfertype_4523',['FileTransferType',['../file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01',1,'file_synchronizer.h']]],
-  ['frontendeventtype_4524',['FrontendEventType',['../frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddf',1,'frontend.h']]]
+  ['capturedevicetype_4540',['CaptureDeviceType',['../whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600',1,'whist.h']]],
+  ['chromecursorhash_4541',['ChromeCursorHash',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768',1,'linux_cursor_capture.c']]],
+  ['clipboardchunktype_4542',['ClipboardChunkType',['../clipboard_8h.html#aa743c175c855e2f47a69264ab9e2cf56',1,'clipboard.h']]],
+  ['clipboardtype_4543',['ClipboardType',['../clipboard_8h.html#a9676c44d0c2a676fe59a136a6e71b161',1,'clipboard.h']]],
+  ['codectype_4544',['CodecType',['../whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79',1,'whist.h']]]
 ];

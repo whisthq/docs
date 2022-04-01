@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['ew_5fcursor_5fhash_4585',['EW_CURSOR_HASH',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a065fa00c7f5b77c2726146dfe2ee569b',1,'linux_cursor_capture.c']]]
+  ['dbus_5fmsgs_5freceived_4610',['DBUS_MSGS_RECEIVED',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a6edc38cb5d1476aea5bec1d201c8509d',1,'log_statistic.h']]],
+  ['drop_5fframe_4611',['DROP_FRAME',['../client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85a0c4b992119e15dbccb00651c8d5b8673',1,'audio.c']]],
+  ['dup_5fframe_4612',['DUP_FRAME',['../client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85a2b8299434d010204c9d162261d905587',1,'audio.c']]]
 ];

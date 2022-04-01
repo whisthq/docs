@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['capturedevicetype_4515',['CaptureDeviceType',['../whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600',1,'whist.h']]],
-  ['chromecursorhash_4516',['ChromeCursorHash',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768',1,'linux_cursor_capture.c']]],
-  ['clipboardchunktype_4517',['ClipboardChunkType',['../clipboard_8h.html#aa743c175c855e2f47a69264ab9e2cf56',1,'clipboard.h']]],
-  ['clipboardtype_4518',['ClipboardType',['../clipboard_8h.html#a9676c44d0c2a676fe59a136a6e71b161',1,'clipboard.h']]],
-  ['codectype_4519',['CodecType',['../whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79',1,'whist.h']]]
+  ['adjustcommand_4538',['AdjustCommand',['../client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85',1,'audio.c']]],
+  ['audiostate_4539',['AudioState',['../client_2audio_8c.html#a82cdf833b5d7a90f60d8d8fa638bea9e',1,'audio.c']]]
 ];

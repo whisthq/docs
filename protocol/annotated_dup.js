@@ -8,6 +8,7 @@ var annotated_dup =
     [ "AudioDevice", "structAudioDevice.html", "structAudioDevice" ],
     [ "AudioEncoder", "structAudioEncoder.html", "structAudioEncoder" ],
     [ "AudioFrame", "structAudioFrame.html", "structAudioFrame" ],
+    [ "AudioRenderContext", "structAudioRenderContext.html", "structAudioRenderContext" ],
     [ "BitArray", "structBitArray.html", "structBitArray" ],
     [ "BlockAllocator", "structBlockAllocator.html", "structBlockAllocator" ],
     [ "BPMLists", "structBPMLists.html", "structBPMLists" ],
