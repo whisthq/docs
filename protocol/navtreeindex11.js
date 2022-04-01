@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"structLodePNGInfo.html#a3a0795a8ec1ddcaac245ba3337054e46":[12,0,66,32],
+"structLodePNGInfo.html#a42bcacd0dbaaea01c04cc87b58ac3c1d":[12,0,66,14],
 "structLodePNGInfo.html#a4400b67420e9c225881901bb48eda9b2":[12,0,66,20],
 "structLodePNGInfo.html#a4d3407acdf79bf87f20a3562f210b393":[12,0,66,37],
 "structLodePNGInfo.html#a5098d6e8aa528d5197f51914439633b9":[12,0,66,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "structTCPContext.html#a8018a749970470e09e4afbb9f13f445f":[12,0,101,2],
 "structTCPContext.html#a9324d244b8b76d948b6b9ac4ccc3b7e3":[12,0,101,4],
 "structTCPContext.html#a9b2e44b81919ba874066bc64142122cd":[12,0,101,7],
-"structTCPContext.html#a9c7f69bf9020bd2b2abdf4c3c904aa1d":[12,0,101,0],
-"structTCPContext.html#ac2715e6f456b612ad042feceff65744a":[12,0,101,13],
-"structTCPContext.html#ac2c1133a74eca1753b44db8ca5d3104a":[12,0,101,5]
+"structTCPContext.html#a9c7f69bf9020bd2b2abdf4c3c904aa1d":[12,0,101,0]
 };

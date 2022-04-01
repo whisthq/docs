@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"structWhistKeyboardState.html#a59615dbd99603ffbfdcc89cebb1fc4cc":[12,0,126,3],
+"structWhistKeyboardState.html#a93b20d593216341b9febf99ed11a8bd3":[12,0,126,1],
 "structWhistKeyboardState.html#a93ffd7feaec986dc4a63438fd3195dbd":[12,0,126,2],
 "structWhistKeyboardState.html#aeec25eabc37f3876a2124ec667159abb":[12,0,126,4],
 "structWhistMouseButtonMessage.html":[12,0,127],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "udp_8c.html#a27a95ae8465ba2cfb7e39535fd22e9d9":[13,0,2,9,10,14],
 "udp_8c.html#a29939ea78796274439d3cfe923d8af28":[13,0,2,9,10,28],
 "udp_8c.html#a3190cca650071548d6b75370b0e5c41c":[13,0,2,9,10,21],
-"udp_8c.html#a35befb3bd7ff1cb6bdbf8c3bdb80a7e0":[13,0,2,9,10,29],
-"udp_8c.html#a364162751f11cecfec916c6db2e7419c":[13,0,2,9,10,6],
-"udp_8c.html#a3b06fee55b43d9c3a1ed2c4f5c2b65b2":[13,0,2,9,10,36]
+"udp_8c.html#a35befb3bd7ff1cb6bdbf8c3bdb80a7e0":[13,0,2,9,10,29]
 };

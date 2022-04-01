@@ -39,6 +39,8 @@ var log__statistic_8h =
       [ "VIDEO_DECODE_SEND_PACKET_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0afcf53efa733b68085fa2b4d2336da0f7", null ],
       [ "VIDEO_DECODE_GET_FRAME_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a90e89317b15e2aedf77f0b3ae17ff6a3", null ],
       [ "VIDEO_FPS_RENDERED", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ade84c9203e2d34ac95b87121a7b498a4", null ],
+      [ "VIDEO_PIPELINE_LATENCY", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a15630b19aa2e73a372cbb36cfd258ffa", null ],
+      [ "VIDEO_CAPTURE_LATENCY", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a09008ccc96039177eebceeb194325879", null ],
       [ "VIDEO_E2E_LATENCY", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a2950fc3f55e28fc2a6379c0e2873197d", null ],
       [ "VIDEO_RECEIVE_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a8d67938756aea08edff41427fafcc6b1", null ],
       [ "VIDEO_RENDER_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a82c3f68e1603d6b05e4f2757be692d75", null ],
