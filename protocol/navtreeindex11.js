@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structLodePNGEncoderSettings.html#a5e18e4eb941763a2e3e6c65ee9f0729c":[12,0,66,3],
 "structLodePNGEncoderSettings.html#a6ffdcb8e85a65ea208fe027be072d710":[12,0,66,6],
 "structLodePNGEncoderSettings.html#a893aa542aa7c122c32ee36dd716fbcb2":[12,0,66,0],
 "structLodePNGInfo.html":[12,0,67],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structStunEntry.html#afbe51e6c2b5677fb46034ced462d1f7b":[12,0,99,1],
 "structStunRequest.html":[12,0,100],
 "structStunRequest.html#a20cf776499298e9b602a7ba3b5df4282":[12,0,100,0],
-"structStunRequest.html#aef0c7d317052068582b3ec0d5766ae64":[12,0,100,1],
-"structSubIndexInfo.html":[12,0,101]
+"structStunRequest.html#aef0c7d317052068582b3ec0d5766ae64":[12,0,100,1]
 };

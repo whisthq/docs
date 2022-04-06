@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"logging_8h.html#ad459f60b7026c4c753d19e7c4d7edb9f":[13,0,2,8,5,20],
 "logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b":[13,0,2,8,5,19],
 "logging_8h.html#ae3299be792c6fbb84cd15f782b46482a":[13,0,2,8,5,8],
 "logging_8h.html#ae34722e01b6ee3b8e30834e2f8e6423a":[13,0,2,8,5,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "nvidiacapture_8h_source.html":[13,0,2,11,0,4],
 "os__utils_8c.html":[13,0,2,10,18],
 "os__utils_8c.html#a2be1ff67174216005f67c4e62602af9e":[13,0,2,10,18,4],
-"os__utils_8c.html#a4b2ec5f6a7938bb9b01502db71e34fe4":[13,0,2,10,18,1],
-"os__utils_8c.html#ad841d0d3632ae42995ba77ada3a6e13b":[13,0,2,10,18,3]
+"os__utils_8c.html#a4b2ec5f6a7938bb9b01502db71e34fe4":[13,0,2,10,18,1]
 };

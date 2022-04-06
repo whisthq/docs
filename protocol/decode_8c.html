@@ -93,11 +93,14 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 <div class="textblock"><code>#include &quot;<a class="el" href="decode_8h_source.html">decode.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="error__codes_8h_source.html">whist/core/error_codes.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a19da3852ef844a0fe5d414587c1c0de0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a19da3852ef844a0fe5d414587c1c0de0">COMMAND_LINE_STRING_OPTION</a> (save_decoder_input, 0, &quot;save-decoder-input&quot;, 256, &quot;Save decoder input to a file.&quot;)</td></tr>
+<tr class="separator:a19da3852ef844a0fe5d414587c1c0de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ccfebe79578d850afc048e916aba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">create_video_decoder</a> (int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>, bool use_hardware, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="memdesc:a20ccfebe79578d850afc048e916aba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the FFmpeg H264 or H265 video decoder, and set the proper video parameters for receiving from the server.  <a href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">More...</a><br /></td></tr>
 <tr class="separator:a20ccfebe79578d850afc048e916aba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +129,52 @@ decoder to decode frames.</h1>
 Usage</h1>
 <p>Video is decoded from H264 via ffmpeg; H265 is supported, but not currently used. Hardware-accelerated decoders are given priority, but if those fail, we decode on the CPU. All frames are eventually moved to the CPU for scaling and color conversion. Create a decoder via create_video_decoder. To decode a frame, call video_decoder_decode on the decoder and the encoded packets. To destroy the decoder when finished, destroy the encoder using video_decoder_decode. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a19da3852ef844a0fe5d414587c1c0de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19da3852ef844a0fe5d414587c1c0de0">&#9670;&nbsp;</a></span>COMMAND_LINE_STRING_OPTION()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">COMMAND_LINE_STRING_OPTION </td>
+          <td>(</td>
+          <td class="paramtype">save_decoder_input&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;save-decoder-input&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">256&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Save decoder input to a file.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a20ccfebe79578d850afc048e916aba50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20ccfebe79578d850afc048e916aba50">&#9670;&nbsp;</a></span>create_video_decoder()</h2>
 

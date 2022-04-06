@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"structFFmpegEncoder.html#adf332e00903cc8e119ade5a895c3ef4c":[12,0,32,18],
 "structFFmpegEncoder.html#ae52a37a05a72be3d8a226baa69e744b3":[12,0,32,11],
 "structFFmpegEncoder.html#aeb3727e6ee67ad19e50da029cb77634f":[12,0,32,10],
 "structFileCaptureDevice.html":[12,0,33],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structLodePNGEncoderSettings.html#a0d82e8f2fabcb6cebbc54b80922945f1":[12,0,66,2],
 "structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a":[12,0,66,1],
 "structLodePNGEncoderSettings.html#a2c5928b4172c75e27de467870f2ff946":[12,0,66,7],
-"structLodePNGEncoderSettings.html#a4446f87b5283f25664802a1be037e76e":[12,0,66,5],
-"structLodePNGEncoderSettings.html#a5e18e4eb941763a2e3e6c65ee9f0729c":[12,0,66,3]
+"structLodePNGEncoderSettings.html#a4446f87b5283f25664802a1be037e76e":[12,0,66,5]
 };

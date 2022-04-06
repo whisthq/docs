@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structSubIndexInfo.html":[12,0,101],
 "structSubIndexInfo.html#a628701cd07c04018b12c314f81caa849":[12,0,101,1],
 "structSubIndexInfo.html#afda1c8d375608b3d8ff4ad2e3f5a982a":[12,0,101,0],
 "structTCPContext.html":[12,0,102],
@@ -113,15 +114,16 @@ var NAVTREEINDEX12 =
 "structVideoDecoder.html#a1c756dc084226e1cb64e1bfb9f7e19e0":[12,0,112,3],
 "structVideoDecoder.html#a1f38b563858aeb80260d440eed24f465":[12,0,112,0],
 "structVideoDecoder.html#a27967f2aa7bdc30485b06955aeb919fd":[12,0,112,1],
-"structVideoDecoder.html#a5b3d785474b5a99d64e5baf87bb0abed":[12,0,112,14],
+"structVideoDecoder.html#a5b3d785474b5a99d64e5baf87bb0abed":[12,0,112,15],
 "structVideoDecoder.html#a72441c34541e71b1a2cabd4fe28128d0":[12,0,112,4],
 "structVideoDecoder.html#a76aaea9423c65a4ed985d8c92bb8709c":[12,0,112,2],
 "structVideoDecoder.html#a82a30f5137d2829eeb2ee326700b52f0":[12,0,112,9],
 "structVideoDecoder.html#a948b20c5445714f816a398767777a5db":[12,0,112,5],
 "structVideoDecoder.html#aa313589a298c3baf90bfdc4810073868":[12,0,112,8],
-"structVideoDecoder.html#ab375188aa45f13bc3a7e80b6a42ac939":[12,0,112,13],
+"structVideoDecoder.html#ab375188aa45f13bc3a7e80b6a42ac939":[12,0,112,14],
 "structVideoDecoder.html#ac03ece0390b91e92584599bc9fedee52":[12,0,112,6],
 "structVideoDecoder.html#ad8958e312b1ad0b3b66b3a89cb6d7ef1":[12,0,112,11],
+"structVideoDecoder.html#ae5911a8a53620eb9b7a90f054c2e9291":[12,0,112,13],
 "structVideoDecoder.html#aeaa22ea0c3bd326be6742c450c0e10a6":[12,0,112,12],
 "structVideoDecoder.html#af11d21440de75bfc467abbffbf4f89da":[12,0,112,7],
 "structVideoEncoder.html":[12,0,113],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "structWhistFrontendFunctionTable.html#a786e8246149a3387634e709195b27e92":[12,0,124,7],
 "structWhistFrontendFunctionTable.html#a7badcc31ce895969e6e2a03ee2e780bd":[12,0,124,15],
 "structWhistFrontendFunctionTable.html#a83983f2d277eca82260e9543689b79e1":[12,0,124,8],
-"structWhistFrontendFunctionTable.html#aab4367c252fc49e88fcaeac77e8bf2f0":[12,0,124,12],
-"structWhistFrontendFunctionTable.html#aab57206335c42e25e504210ee544c8a3":[12,0,124,11],
-"structWhistFrontendFunctionTable.html#ab5d3e20d1a02f2f421f2cf5e5b5d6510":[12,0,124,10]
+"structWhistFrontendFunctionTable.html#aab4367c252fc49e88fcaeac77e8bf2f0":[12,0,124,12]
 };
