@@ -1,7 +1,6 @@
 var annotated_dup =
 [
     [ "_whist_server_config", "struct__whist__server__config.html", "struct__whist__server__config" ],
-    [ "_whist_server_state", "struct__whist__server__state.html", "struct__whist__server__state" ],
     [ "AESMetadata", "structAESMetadata.html", "structAESMetadata" ],
     [ "AudioContext", "structAudioContext.html", "structAudioContext" ],
     [ "AudioDecoder", "structAudioDecoder.html", "structAudioDecoder" ],
@@ -138,6 +137,7 @@ var annotated_dup =
     [ "WhistRGBColor", "structWhistRGBColor.html", "structWhistRGBColor" ],
     [ "WhistSegment", "structWhistSegment.html", "structWhistSegment" ],
     [ "WhistServerMessage", "structWhistServerMessage.html", "structWhistServerMessage" ],
+    [ "WhistServerState", "structWhistServerState.html", "structWhistServerState" ],
     [ "WhistTimerInternal", "structWhistTimerInternal.html", "structWhistTimerInternal" ],
     [ "WhistTimerOpaque", "structWhistTimerOpaque.html", "structWhistTimerOpaque" ],
     [ "WhistYUVColor", "structWhistYUVColor.html", "structWhistYUVColor" ],

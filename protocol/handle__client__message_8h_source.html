@@ -95,24 +95,24 @@ $(document).ready(function(){initNavTree('handle__client__message_8h_source.html
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="whist_8h.html">whist/core/whist.h</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">Public Functions</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="handle__client__message_8h.html#a88b6bac1fce534d794f2c80b9b10549a">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__whist__server__state.html">_whist_server_state</a> <a class="code" href="struct__whist__server__state.html">whist_server_state</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">int</span> <a class="code" href="handle__client__message_8h.html#ae1ce2c891cb4866c134f9f094ab48fef">handle_client_message</a>(<a class="code" href="struct__whist__server__state.html">whist_server_state</a> *state, <a class="code" href="structWhistClientMessage.html">WhistClientMessage</a> *wcmsg);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif  // HANDLE_CLIENT_MESSAGE_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">Public Functions</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="handle__client__message_8h.html#ac96958e0d301df84939f4cfbb19cd880">handle_client_message</a>(<a class="code" href="structWhistServerState.html">WhistServerState</a> *state, <a class="code" href="structWhistClientMessage.html">WhistClientMessage</a> *wcmsg);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // HANDLE_CLIENT_MESSAGE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructWhistClientMessage_html"><div class="ttname"><a href="structWhistClientMessage.html">WhistClientMessage</a></div><div class="ttdoc">Client message.</div><div class="ttdef"><b>Definition:</b> whist.h:690</div></div>
-<div class="ttc" id="ahandle__client__message_8h_html_ae1ce2c891cb4866c134f9f094ab48fef"><div class="ttname"><a href="handle__client__message_8h.html#ae1ce2c891cb4866c134f9f094ab48fef">handle_client_message</a></div><div class="ttdeci">int handle_client_message(whist_server_state *state, WhistClientMessage *wcmsg)</div><div class="ttdoc">Handles message received by the server from a client, on the server-side.</div><div class="ttdef"><b>Definition:</b> handle_client_message.c:58</div></div>
 <div class="ttc" id="awhist_8h_html"><div class="ttname"><a href="whist_8h.html">whist.h</a></div><div class="ttdoc">Copyright (c) 2021-2022 Whist Technologies, Inc.</div></div>
-<div class="ttc" id="astruct__whist__server__state_html"><div class="ttname"><a href="struct__whist__server__state.html">_whist_server_state</a></div><div class="ttdoc">internal state of the whist server</div><div class="ttdef"><b>Definition:</b> state.h:66</div></div>
+<div class="ttc" id="ahandle__client__message_8h_html_ac96958e0d301df84939f4cfbb19cd880"><div class="ttname"><a href="handle__client__message_8h.html#ac96958e0d301df84939f4cfbb19cd880">handle_client_message</a></div><div class="ttdeci">int handle_client_message(WhistServerState *state, WhistClientMessage *wcmsg)</div><div class="ttdoc">Handles message received by the server from a client, on the server-side.</div><div class="ttdef"><b>Definition:</b> handle_client_message.c:58</div></div>
+<div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">Copyright (c) 2021-2022 Whist Technologies, Inc.</div></div>
+<div class="ttc" id="astructWhistServerState_html"><div class="ttname"><a href="structWhistServerState.html">WhistServerState</a></div><div class="ttdoc">internal state of the whist server</div><div class="ttdef"><b>Definition:</b> state.h:66</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
