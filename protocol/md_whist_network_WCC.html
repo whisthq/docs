@@ -110,9 +110,8 @@ Inter-group delay variation filter</h2>
 <p>As a the special case to handle initialization, For i == 1 <code>m(i) = d(i)</code></p>
 <h2><a class="anchor" id="autotoc_md225"></a>
 Over-use detector</h2>
-<p>The inter-group delay variation estimate m(i), obtained as the output of the arrival-time filter, is compared with a threshold del_var_th. An estimate above the threshold is considered as an indication of over-use. Such an indication is not enough for the detector to signal over-use to the rate control subsystem. A definitive over-use will be signaled only if over-use has been detected for at least overuse_time_th milliseconds. Similarly, the opposite state, under-use, is detected when m(i) &lt; -del_var_th. If neither over-use nor under-use is detected, the detector will be in the normal state.</p>
+<p>The inter-group delay variation estimate m(i), obtained as the output of the arrival-time filter, is compared with a threshold del_var_th. An estimate above the threshold is considered as an indication of over-use. Such an indication is not enough for the detector to signal over-use to the rate control subsystem. If the packet loss over last 1 second is observed to be higher than 10% then also over-use is signaled. A definitive over-use will be signaled only if over-use has been detected for at least overuse_time_th milliseconds. Similarly, the opposite state, under-use, is detected when m(i) &lt; -del_var_th. If neither over-use nor under-use is detected, the detector will be in the normal state.</p>
 <p>The RECOMMENDED value for del_var_th is 10 milliseconds. The RECOMMENDED value for overuse_time_th is 10 milliseconds.</p>
-<p>Also if the packet loss over last 250ms is observed to be higher than 10% then the delay-variation based signal is ignored and over-use is signaled.</p>
 <h2><a class="anchor" id="autotoc_md226"></a>
 Rate control</h2>
 <p>The rate control is designed to increase the estimate of the available bandwidth as long as there is no detected congestion and to ensure that we will eventually match the available bandwidth of the channel and detect an over-use.</p>
@@ -135,7 +134,7 @@ Rate control</h2>
 <td class="markdownTableBodyNone">Under-use </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Hold </td><td class="markdownTableBodyNone">Hold  </td></tr>
 </table>
 <p>New bitrate message is sent once every update_interval duration, except when switching from Increase state to Decrease state where a new bitrate message will be sent immediately. The RECOMMENDED value of update_interval is 1 second</p>
-<p>Herein we define incoming_bitrate R(i) as follows. It is the incoming bitrate measured over the last 250ms.</p>
+<p>Herein we define incoming_bitrate R(i) as follows. It is the incoming bitrate measured over the last 1 second.</p>
 <p>The new bitrate A(i) will be calculated as follows</p>
 <h3><a class="anchor" id="autotoc_md227"></a>
 Increase bitrate</h3>
@@ -148,52 +147,53 @@ Decrease bitrate</h3>
 <p>The bitrate A(i) is updated as per the below equation </p><pre class="fragment">A(i) = R(i) * DECREASE_RATIO
 </pre><p>The RECOMMENDED value of DECREASE_RATIO is 0.95</p>
 <h3><a class="anchor" id="autotoc_md229"></a>
-Saturate Bandwidth</h3>
+Saturate Bandwidth, Increase percentage and Maximum Bandwidth Available</h3>
 <p>As one can observe from the above equations, the bitrate will be increased to a new value only if the incoming bitrate is above a particular threshold. But the video encoder will not generate enough bits to utilize the entire video bitrate configured when the client is idle and simple video content is being encoded. During such cases the bitrate cannot be increased to the available bandwidth till the client becomes active. In order to converge to the available bandwidth quickly, the algo will send a "saturate_bandwidth" signal to the server, so that server can send filler packets and/or FEC packets to send data as per the requested bitrate A(i). Once bitrate convergence is reached, "saturate_bandwidth" will be set to false so that we don't waste bandwidth unnecessarily.</p>
-<p>The value saturate_bandwidth is updated as per below </p><pre class="fragment">if (A(i) &lt; A_inc(i-1) * CONVERGENCE_THRESHOLD_LOW || A(i) &gt; A_fail(i-1) * CONVERGENCE_THRESHOLD_HIGH || i = 0)) {
-    saturate_bandwidth = true;
-} else if (A(i) &lt; A(i-1)) {
+<p>Also the value increase_percent(i) should be kept higher at MAX_INCREASE_PERCENTAGE when we are looking to reach/find the maximum bandwidth available. When the birate search seems to approaching covergence then increase_percent(i) is reduced gradually.</p>
+<p>Maximum bandwidth available in this connection is estimated iteratively as it used to decide on our convergence point. Whenever a bitrate exceeding the maximum bandwidth, is found to have worked without any congestion then this new bitrate is our maximum bandwidth available. Similarly if we find a bitrate lesser than maximum bandwidth, is found to cause congestion, then maximum bandwidth available is reduced as a EWMA of current maximum bandwidth and the last time a bitrate was used without congestion. This effectively means, that we will increase the maximum bandwidth available immediately/faster, but we will decrease the same in a slow EWMA-based decay. This is done to ensure that congestion that lasts for only a few seconds doesn't skew the maximum bandwidth available unreasonably. We want to err on the positive side of bandwidth available, so that we can use the maximum bitrate possible to ensure video quality.</p>
+<p>The value saturate_bandwidth and increase_percent(i) is updated as per below </p><pre class="fragment">if (A(i) &gt; A(i-1)) {
+    // Looks like the network has found a new max bitrate. Let find the new max bandwidth.
+    last_successful_bitrate = A(i - 1)
+    if (A(i - 1) &gt; max_bandwidth_available) {
+        max_bandwidth_available = A(i - 1);
+        saturate_bandwidth = true;
+        increase_percent(i) = MAX_INCREASE_PERCENTAGE;
+    }
+    if (network_settings-&gt;saturate_bandwidth == true) {
+        increase_percentage = MAX_INCREASE_PERCENTAGE;
+    }
+} else if (A(i) &lt; A(i-1) &amp;&amp; A(i) &gt; max_bandwidth_available * CONVERGENCE_THRESHOLD_LOW) {
     saturate_bandwidth = false;
-} else if (A(i) &gt; max_bitrate) {
-    saturate_bandwidth = false;
+    increase_percent(i) = max(increase_percent(i - 1) / 2.0, MIN_INCREASE_PERCENTAGE);
+    if (last_successful_bitrate &lt; max_bitrate_available) {
+        max_bitrate_available = max_bitrate_available * (1.0 - MAX_BITRATE_EWMA_FACTOR) +
+                                last_successful_bitrate * MAX_BITRATE_EWMA_FACTOR;
+    }
 }
-</pre><p>where, </p><pre class="fragment">A_inc(i-1) = previous bitrate sent while in increase state.
-
-A_fail(i-1) = previous bitrate used when there was a state transition from increase to decrease and a lower bitrate was sent.
-
-max_bitrate = maximum bitrate that the system can allot for this AV streaming. The method of computing max_bitrate can be decided independently by the system, based on the application, resolution etc., and is beyond the scope of this document.
-</pre><p>The RECOMMENDED value of CONVERGENCE_THRESHOLD_LOW is 0.80 The RECOMMENDED value of CONVERGENCE_THRESHOLD_HIGH is 1.1</p>
-<h3><a class="anchor" id="autotoc_md230"></a>
-Increase percentage</h3>
-<p>The value increase_percent(i) is updated as per below. When the current bitrate appears to be far from convergence then INITIAL_INCREASE_PERCENTAGE is used. When we seem to approaching covergence then increase_percent(i) is reduced. </p><pre class="fragment">if (A(i) &lt; A_inc(i-1) * CONVERGENCE_THRESHOLD_LOW || A(i) &gt; A_fail(i-1) * CONVERGENCE_THRESHOLD_HIGH || i == 0) {
-    increase_percent(i) = INITIAL_INCREASE_PERCENTAGE;
-} else if (A(i) &lt; A(i-1)) {
-    increase_percent(i) = increase_percent(i - 1) / 2;
-}
-</pre><p>The RECOMMENDED value of INITIAL_INCREASE_PERCENTAGE is 4.</p>
+</pre><p>where,</p>
+<p>The RECOMMENDED value of CONVERGENCE_THRESHOLD_LOW is 0.75 The RECOMMENDED value of MAX_INCREASE_PERCENTAGE is 16 The RECOMMENDED value of MIN_INCREASE_PERCENTAGE is 0.5 The RECOMMENDED value of MAX_BITRATE_EWMA_FACTOR is 0.1</p>
+<h4><a class="anchor" id="autotoc_md230"></a>
+Little tweaks</h4>
+<ul>
+<li>When saturate bandwidth is off, bitflow will be low during idle frames and spiky in non-idle frames. To ensure averages are not skewed due to 1 or 2 spiky frames, we should wait for a longer duration to confirm overuse. It is RECOMMENDED to increase <code>overuse_time_th</code> is 100 milliseconds when saturate bandwidth is off.</li>
+<li><p class="startli">When saturate bandwidth is off, then incoming_bitrate is not reliable. So bitrate reduction during "Decrease state" cannot be made based on current bitrate. So we estimate a new bitrate based on the previous bitrate and turn on saturate bandwidth so that the actual bandwidth available can be found accurately. In such situations, a new bitrate in decrease state is calculated as below,</p>
+<p class="startli">A(i) = A(i - 1) _ min(DECREASE_RATIO, 1.0 - (0.5 _ packet_loss_ratio));</p>
+</li>
+<li>When saturate bandwidth is on, we should not be wasting bandwidth unnecessarily if the bitrate is stuck in the same value. This can happen due to suddenly changing network conditions, flaws in our algorithm, etc., In such cases we don't want to be in an infinite quest to reach the maximum bitrate found earlier. If we cannot update the bitrate for more than 5 seconds, then we will switch off saturate bandwidth flag to avoid unnecessary wastage of network bandwidth.</li>
+</ul>
 <h3><a class="anchor" id="autotoc_md231"></a>
 Burst Bitrate</h3>
-<p>When the available bandwidth is greater than the max_bitrate then the server can send bits at a greater rate which can reduce the latency significantly. When the available bandwidth A(i) exceeded max_bitrate succesively multiple times, then we use a burst bitrate greater than available bandwidth that can potentially reduce latency. The burst bitrate B(i) is calculated as per the below equation </p><pre class="fragment">if (A(i) &gt; max_bitrate) {
-    if (max_bitrate_count &gt;= pre_burst_mode_count) {
-        burst_mode = true;
-    }
-    A(i) = max_bitrate;
-    max_bitrate_count++;
+<p>When the available bandwidth is greater than the max_bitrate then the server can send bits at a greater rate which can reduce the latency significantly. When the available bandwidth A(i) exceeds a threshold bitrate, then we use a burst bitrate greater than available bandwidth that can potentially reduce latency. The burst bitrate B(i) is calculated as per the below equation </p><pre class="fragment">if (A(i) &gt; STARTING_BITRATE &amp;&amp; saturate_bandwidth == false) {
+    burst_mode = true;
 } else {
     burst_mode = false;
-    max_bitrate_count = 0;
 }
 if (burst_mode)
     B(i) = A(i) * BURST_BITRATE_RATIO;
 else
     B(i) = A(i)
 </pre><p>The RECOMMENDED value of BURST_BITRATE_RATIO is 4</p>
-<p>pre_burst_mode_count is increased if the burst mode causes the system to go into decrease state. But if the congestion is not due to burst mode then the pre_burst_mode_count is re-initialized to its starting value. pre_burst_mode_count is calculated as per the below equation </p><pre class="fragment">if (burst_mode &amp;&amp; A(i) &lt; A(i-1) &amp;&amp; max_bitrate_count &lt; 2 * pre_burst_mode_count) {
-    pre_burst_mode_count *= 2;
-} else if (A(i-1) &lt; max_bitrate || i == 0) {
-    pre_burst_mode_count = INITIAL_PRE_BURST_MODE_COUNT;
-}
-</pre><p>The RECOMMENDED value of INITIAL_PRE_BURST_MODE_COUNT is 5</p>
+<p>The value of STARTING_BITRATE should be decided based on the application. It should be bitrate at which the target application can work smoothly with acceptable quality and performance. It is beyond the scope of this document to recommend any values for the same.</p>
 <h2><a class="anchor" id="autotoc_md232"></a>
 RECOMMENDED values and reasons</h2>
 <table class="markdownTable">
@@ -210,19 +210,19 @@ RECOMMENDED values and reasons</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">update_interval </td><td class="markdownTableBodyNone">1 second </td><td class="markdownTableBodyNone">From <a href="https://datatracker.ietf.org/doc/html/draft-ietf-rmcat-gcc-02#section-3">Google Congestion control</a>  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">INITIAL_INCREASE_PERCENTAGE </td><td class="markdownTableBodyNone">4 </td><td class="markdownTableBodyNone">Based on heuristics. A 4% increase every 1 second, will mean that we can double the bitrate in 18 seconds. This is quick enough to reach to available bandwidth. Also this is small enough to make sure that we don't lose a lot of packets when there is a congestion triggered due to this increase. Google Congestion control uses a different algorithm for increasing bitrate that didn't work for me very well. Maybe a TODO for future, if ppl find any limitations with this  </td></tr>
+<td class="markdownTableBodyNone">MAX_INCREASE_PERCENTAGE </td><td class="markdownTableBodyNone">16 </td><td class="markdownTableBodyNone">Based on heuristics. A 16% increase every 1 second, will mean that we move from MINIMUM bitrate to MAXIMUM bitrate in 12 seconds. This is quick enough to react to frequent variations in bandwidth. Google Congestion control uses a different algorithm for increasing bitrate that didn't work for me very well. Maybe a TODO for future, if ppl find any limitations with this  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">MIN_INCREASE_PERCENTAGE </td><td class="markdownTableBodyNone">0.5 </td><td class="markdownTableBodyNone">Based on heuristics. If we choose a very low value, then we might get stuck in a lower bitrate forever. If we choose a very high value, then we will not reach accurate convergence  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">MAX_BITRATE_EWMA_FACTOR </td><td class="markdownTableBodyNone">0.1 </td><td class="markdownTableBodyNone">Based on heuristics. We want the maximum bandwidth to reduce slowly in the event of intermittent congestion, but not too slow in the event of sustained congestion.  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">DECREASE_RATIO </td><td class="markdownTableBodyNone">0.95 </td><td class="markdownTableBodyNone">Based on heuristics or faster convergence. <a href="https://datatracker.ietf.org/doc/html/draft-ietf-rmcat-gcc-02#section-5.5">Google Congestion control</a> suggests a value between 0.8 to 0.95  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">CONVERGENCE_THRESHOLD_LOW </td><td class="markdownTableBodyNone">0.8 </td><td class="markdownTableBodyNone">Based on heuristics or faster convergence. Google Congestion control have such concepts such as conditional saturate bandwidth which uses this value. These are our improvisations  </td></tr>
+<td class="markdownTableBodyNone">CONVERGENCE_THRESHOLD_LOW </td><td class="markdownTableBodyNone">0.75 </td><td class="markdownTableBodyNone">Based on heuristics or faster convergence. Google Congestion control does not have concepts such as conditional saturate bandwidth which uses this value. These are our improvisations  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">CONVERGENCE_THRESHOLD_HIGH </td><td class="markdownTableBodyNone">1.1 </td><td class="markdownTableBodyNone">Based on heuristics or faster convergence. Google Congestion control have such concepts such as conditional saturate bandwidth which uses this value. These are our improvisations  </td></tr>
-<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">BANDWITH_USED_THRESHOLD </td><td class="markdownTableBodyNone">0.95 </td><td class="markdownTableBodyNone">Based on heuristics. Google Congestion control have a such concept of conditional saturate bandwidth. It always assumes bandwidth is fully used. These are our improvisations  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">BURST_BITRATE_RATIO </td><td class="markdownTableBodyNone">4 </td><td class="markdownTableBodyNone">The current value being used in the dev branch, as of writing this document  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">INITIAL_PRE_BURST_MODE_COUNT </td><td class="markdownTableBodyNone">5 </td><td class="markdownTableBodyNone">Based on heuristics. Google Congestion control doesn't have a concept of burst bitrate  </td></tr>
+<td class="markdownTableBodyNone">BURST_BITRATE_RATIO </td><td class="markdownTableBodyNone">4 </td><td class="markdownTableBodyNone">The current value being used in the dev branch, as of writing this document  </td></tr>
 </table>
 <h1><a class="anchor" id="autotoc_md233"></a>
 References</h1>

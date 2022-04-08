@@ -104,8 +104,9 @@ var NAVTREE =
         [ "Rate control", "md_whist_network_WCC.html#autotoc_md226", [
           [ "Increase bitrate", "md_whist_network_WCC.html#autotoc_md227", null ],
           [ "Decrease bitrate", "md_whist_network_WCC.html#autotoc_md228", null ],
-          [ "Saturate Bandwidth", "md_whist_network_WCC.html#autotoc_md229", null ],
-          [ "Increase percentage", "md_whist_network_WCC.html#autotoc_md230", null ],
+          [ "Saturate Bandwidth, Increase percentage and Maximum Bandwidth Available", "md_whist_network_WCC.html#autotoc_md229", [
+            [ "Little tweaks", "md_whist_network_WCC.html#autotoc_md230", null ]
+          ] ],
           [ "Burst Bitrate", "md_whist_network_WCC.html#autotoc_md231", null ]
         ] ],
         [ "RECOMMENDED values and reasons", "md_whist_network_WCC.html#autotoc_md232", null ]
