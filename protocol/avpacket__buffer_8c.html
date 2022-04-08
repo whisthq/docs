@@ -87,20 +87,27 @@ $(document).ready(function(){initNavTree('avpacket__buffer_8c.html',''); initRes
 <div class="title">avpacket_buffer.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="avpacket__buffer_8h_source.html">avpacket_buffer.h</a>&quot;</code><br />
+
+<p>Serialisation/deserialisation for packet batches.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;libavutil/intreadwrite.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="avpacket__buffer_8h_source.html">avpacket_buffer.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4c64567533a4dad1bbdb398a33c9c267"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avpacket__buffer_8c.html#a4c64567533a4dad1bbdb398a33c9c267">write_avpackets_to_buffer</a> (int num_packets, AVPacket *packets, int *buf)</td></tr>
 <tr class="memdesc:a4c64567533a4dad1bbdb398a33c9c267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store num_packets AVPackets, found in packets, into a pre-allocated buffer.  <a href="avpacket__buffer_8c.html#a4c64567533a4dad1bbdb398a33c9c267">More...</a><br /></td></tr>
 <tr class="separator:a4c64567533a4dad1bbdb398a33c9c267"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e9da8d2e41ac3a5dd5a76d2ece752d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avpacket__buffer_8c.html#a8e9da8d2e41ac3a5dd5a76d2ece752d2">extract_avpackets_from_buffer</a> (void *buffer, int buffer_size, AVPacket *packets)</td></tr>
-<tr class="memdesc:a8e9da8d2e41ac3a5dd5a76d2ece752d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read out the packets stored in buffer into the AVPacket array packets.  <a href="avpacket__buffer_8c.html#a8e9da8d2e41ac3a5dd5a76d2ece752d2">More...</a><br /></td></tr>
-<tr class="separator:a8e9da8d2e41ac3a5dd5a76d2ece752d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac33cf958176ec9af2a7dd4df6011ad2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avpacket__buffer_8c.html#aac33cf958176ec9af2a7dd4df6011ad2">extract_avpackets_from_buffer</a> (uint8_t *buffer, size_t buffer_size, AVPacket **packets)</td></tr>
+<tr class="memdesc:aac33cf958176ec9af2a7dd4df6011ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read out the packets stored in buffer into the AVPacket array packets.  <a href="avpacket__buffer_8c.html#aac33cf958176ec9af2a7dd4df6011ad2">More...</a><br /></td></tr>
+<tr class="separator:aac33cf958176ec9af2a7dd4df6011ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a8e9da8d2e41ac3a5dd5a76d2ece752d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e9da8d2e41ac3a5dd5a76d2ece752d2">&#9670;&nbsp;</a></span>extract_avpackets_from_buffer()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Serialisation/deserialisation for packet batches. </p>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021-2022 Whist Technologies, Inc. </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="aac33cf958176ec9af2a7dd4df6011ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac33cf958176ec9af2a7dd4df6011ad2">&#9670;&nbsp;</a></span>extract_avpackets_from_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -108,19 +115,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int extract_avpackets_from_buffer </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
+          <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>buffer_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">AVPacket *&#160;</td>
+          <td class="paramtype">AVPacket **&#160;</td>
           <td class="paramname"><em>packets</em>&#160;</td>
         </tr>
         <tr>
