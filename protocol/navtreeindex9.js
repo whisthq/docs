@@ -62,7 +62,7 @@ var NAVTREEINDEX9 =
 "structAudioContext.html#aead4d8c6e495002d0362911052ed090a":[12,0,2,10],
 "structAudioContext.html#afd23d6b5d4b1efb3aa5de24b6881a074":[12,0,2,6],
 "structAudioDecoder.html":[12,0,3],
-"structAudioDecoder.html#a10a981c8ee6251b566ef6dbda5aa83e7":[12,0,3,4],
+"structAudioDecoder.html#a4a55dceb13b37b190d1e4f8e9743f794":[12,0,3,4],
 "structAudioDecoder.html#a827784bdad17fdd71ab71de887f34837":[12,0,3,3],
 "structAudioDecoder.html#a92369d78c0cbda3c14eb66369caaa498":[12,0,3,0],
 "structAudioDecoder.html#ac82173b481da4e3df0fa9d208faca4f2":[12,0,3,5],
