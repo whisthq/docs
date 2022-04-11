@@ -48,14 +48,15 @@ var NAVTREEINDEX10 =
 "structFrameData.html#a7ca16f755e18b1448860ddebaa6f96bd":[12,0,36,2],
 "structFrameData.html#a85439ab4bc5294bf3d4a0e681b72fa9c":[12,0,36,7],
 "structFrameData.html#a87ebab727011af41f4092ac0cf3bb695":[12,0,36,19],
-"structFrameData.html#a89c89782c514acba9e4f8a91fcde782b":[12,0,36,21],
+"structFrameData.html#a89c89782c514acba9e4f8a91fcde782b":[12,0,36,22],
 "structFrameData.html#a99600ff10bddea372364d4df7b048594":[12,0,36,12],
 "structFrameData.html#aa52523581ed94b51f298010cf33d338f":[12,0,36,5],
+"structFrameData.html#aae776b41375b59fe7ad1b9c86dd574df":[12,0,36,21],
 "structFrameData.html#ab0caf5e0d07141306d014b80f81ef1f7":[12,0,36,18],
 "structFrameData.html#ac7bcd8998068cc537307ca8bd0e88a26":[12,0,36,1],
 "structFrameData.html#ae09b582d87f5fc19170e0221843fd167":[12,0,36,17],
 "structFrameData.html#aec551b669a213996989740f84bb40947":[12,0,36,3],
-"structFrameData.html#af90e1f345061d90b3766ce069264f939":[12,0,36,22],
+"structFrameData.html#af90e1f345061d90b3766ce069264f939":[12,0,36,23],
 "structFrontendFileDropEvent.html":[12,0,37],
 "structFrontendFileDropEvent.html#a0a5e372a1254293c10940b1da6720246":[12,0,37,2],
 "structFrontendFileDropEvent.html#a1241541f93bd9b51ae1bae9b514c7eb1":[12,0,37,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structLodePNGEncoderSettings.html#a04dc9622ccd1d7c74c56291409aa512a":[12,0,65,4],
 "structLodePNGEncoderSettings.html#a0d82e8f2fabcb6cebbc54b80922945f1":[12,0,65,2],
 "structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a":[12,0,65,1],
-"structLodePNGEncoderSettings.html#a2c5928b4172c75e27de467870f2ff946":[12,0,65,7],
-"structLodePNGEncoderSettings.html#a4446f87b5283f25664802a1be037e76e":[12,0,65,5]
+"structLodePNGEncoderSettings.html#a2c5928b4172c75e27de467870f2ff946":[12,0,65,7]
 };

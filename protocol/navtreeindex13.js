@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"structWhistFrontendFunctionTable.html#aab4367c252fc49e88fcaeac77e8bf2f0":[12,0,123,12],
 "structWhistFrontendFunctionTable.html#aab57206335c42e25e504210ee544c8a3":[12,0,123,11],
 "structWhistFrontendFunctionTable.html#ab5d3e20d1a02f2f421f2cf5e5b5d6510":[12,0,123,10],
 "structWhistFrontendFunctionTable.html#ac9dffdf73c09a607d8f25fc8c6febd85":[12,0,123,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "throttle_8c.html#af82ac32d8ffd0755c473a9551177fb91":[13,0,2,9,8,1],
 "throttle_8h.html":[13,0,2,9,9],
 "throttle_8h.html#a35d1e46b80f2d5561c2af0087a22eb76":[13,0,2,9,9,1],
-"throttle_8h.html#a375c9c414e1b142f3dd40bf3eadc00ab":[13,0,2,9,9,0],
-"throttle_8h.html#a719afae66ac2bd9da6f064fe111e8345":[13,0,2,9,9,3]
+"throttle_8h.html#a375c9c414e1b142f3dd40bf3eadc00ab":[13,0,2,9,9,0]
 };

@@ -21,6 +21,7 @@ var structFrameData =
     [ "packet_buffer", "structFrameData.html#ab0caf5e0d07141306d014b80f81ef1f7", null ],
     [ "prev_frame_num_duplicate_packets", "structFrameData.html#a87ebab727011af41f4092ac0cf3bb695", null ],
     [ "received_indices", "structFrameData.html#a560cde3e2fab64ae17c85570c4080066", null ],
+    [ "statistics_id", "structFrameData.html#aae776b41375b59fe7ad1b9c86dd574df", null ],
     [ "successful_fec_recovery", "structFrameData.html#a89c89782c514acba9e4f8a91fcde782b", null ],
     [ "unnecessary_nack_packets_received", "structFrameData.html#af90e1f345061d90b3766ce069264f939", null ]
 ];

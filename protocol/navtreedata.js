@@ -150,12 +150,12 @@ var NAVTREEINDEX =
 "os__utils_8c.html#ad841d0d3632ae42995ba77ada3a6e13b",
 "server_2main_8c.html",
 "structFFmpegEncoder.html#adf332e00903cc8e119ade5a895c3ef4c",
-"structLodePNGEncoderSettings.html#a5e18e4eb941763a2e3e6c65ee9f0729c",
-"structSubIndexInfo.html",
-"structWhistFrontendFunctionTable.html#aab57206335c42e25e504210ee544c8a3",
-"throttle_8h.html#a9a7d937741746a5c2a34e5250841339c",
-"whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4",
-"whist_8h.html#aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e"
+"structLodePNGEncoderSettings.html#a4446f87b5283f25664802a1be037e76e",
+"structStunRequest.html#aef0c7d317052068582b3ec0d5766ae64",
+"structWhistFrontendFunctionTable.html#aab4367c252fc49e88fcaeac77e8bf2f0",
+"throttle_8h.html#a719afae66ac2bd9da6f064fe111e8345",
+"whist_8h.html#a690e9b7e2e4f08889666b8c98d25ff52",
+"whist_8h.html#aef166b266f8d5b853ec64a90756fafb6a1e9b2a03b386a7ed2cdf948c46161579"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
