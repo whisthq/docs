@@ -1,5 +1,10 @@
 var NAVTREEINDEX10 =
 {
+"structFFmpegEncoder.html#ab0a0bffa578b5cdda3e3a2df79559235":[12,0,31,1],
+"structFFmpegEncoder.html#abd7c3cc4015ba4461719dad0ba536dfd":[12,0,31,20],
+"structFFmpegEncoder.html#ad28eb7b920e487f3686433bd573e1fde":[12,0,31,21],
+"structFFmpegEncoder.html#ad4630f1a6c9dbb34ec27deab3f8ca2fd":[12,0,31,12],
+"structFFmpegEncoder.html#ad4d170bef27ad9a721e99f9508cfec09":[12,0,31,7],
 "structFFmpegEncoder.html#adf332e00903cc8e119ade5a895c3ef4c":[12,0,31,18],
 "structFFmpegEncoder.html#ae52a37a05a72be3d8a226baa69e744b3":[12,0,31,11],
 "structFFmpegEncoder.html#aeb3727e6ee67ad19e50da029cb77634f":[12,0,31,10],
@@ -244,10 +249,5 @@ var NAVTREEINDEX10 =
 "structLodePNGDecompressSettings.html#a44a3616151a81422c237a5334752299c":[12,0,64,5],
 "structLodePNGDecompressSettings.html#a66e3608b541c64bb275c0ac1a80c3ec6":[12,0,64,0],
 "structLodePNGDecompressSettings.html#a9dd432e46330dbd2ce3ef1929c64337d":[12,0,64,2],
-"structLodePNGDecompressSettings.html#afab4b919650b51b4d2f175a60ed6c580":[12,0,64,3],
-"structLodePNGEncoderSettings.html":[12,0,65],
-"structLodePNGEncoderSettings.html#a04dc9622ccd1d7c74c56291409aa512a":[12,0,65,4],
-"structLodePNGEncoderSettings.html#a0d82e8f2fabcb6cebbc54b80922945f1":[12,0,65,2],
-"structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a":[12,0,65,1],
-"structLodePNGEncoderSettings.html#a2c5928b4172c75e27de467870f2ff946":[12,0,65,7]
+"structLodePNGDecompressSettings.html#afab4b919650b51b4d2f175a60ed6c580":[12,0,64,3]
 };

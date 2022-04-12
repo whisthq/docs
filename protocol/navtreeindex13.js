@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"structWhistFrontendFunctionTable.html#a54c42e5a42b7aad9a907d9c063f954b9":[12,0,123,3],
+"structWhistFrontendFunctionTable.html#a55b3351d2bbd37b4e33a623f469f018d":[12,0,123,9],
+"structWhistFrontendFunctionTable.html#a786e8246149a3387634e709195b27e92":[12,0,123,7],
+"structWhistFrontendFunctionTable.html#a7badcc31ce895969e6e2a03ee2e780bd":[12,0,123,15],
+"structWhistFrontendFunctionTable.html#a83983f2d277eca82260e9543689b79e1":[12,0,123,8],
 "structWhistFrontendFunctionTable.html#aab4367c252fc49e88fcaeac77e8bf2f0":[12,0,123,12],
 "structWhistFrontendFunctionTable.html#aab57206335c42e25e504210ee544c8a3":[12,0,123,11],
 "structWhistFrontendFunctionTable.html#ab5d3e20d1a02f2f421f2cf5e5b5d6510":[12,0,123,10],
@@ -244,10 +249,5 @@ var NAVTREEINDEX13 =
 "throttle_8c.html":[13,0,2,9,8],
 "throttle_8c.html#a35d1e46b80f2d5561c2af0087a22eb76":[13,0,2,9,8,2],
 "throttle_8c.html#a719afae66ac2bd9da6f064fe111e8345":[13,0,2,9,8,4],
-"throttle_8c.html#a9a7d937741746a5c2a34e5250841339c":[13,0,2,9,8,5],
-"throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f":[13,0,2,9,8,3],
-"throttle_8c.html#af82ac32d8ffd0755c473a9551177fb91":[13,0,2,9,8,1],
-"throttle_8h.html":[13,0,2,9,9],
-"throttle_8h.html#a35d1e46b80f2d5561c2af0087a22eb76":[13,0,2,9,9,1],
-"throttle_8h.html#a375c9c414e1b142f3dd40bf3eadc00ab":[13,0,2,9,9,0]
+"throttle_8c.html#a9a7d937741746a5c2a34e5250841339c":[13,0,2,9,8,5]
 };
