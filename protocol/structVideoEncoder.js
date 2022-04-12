@@ -2,8 +2,9 @@ var structVideoEncoder =
 [
     [ "active_encoder", "structVideoEncoder.html#a9975e772b1f1916ed1aa99f82ca8b065", null ],
     [ "active_encoder_idx", "structVideoEncoder.html#adb457706b572dcd6b81eeecc250b3e3f", null ],
+    [ "bsf", "structVideoEncoder.html#a861653f20b19432832a63a9c40f85f2a", null ],
     [ "codec_type", "structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9", null ],
-    [ "encoded_frame_size", "structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f", null ],
+    [ "encoded_frame_size", "structVideoEncoder.html#a1e64cb923dde801e85052c58076ae70e", null ],
     [ "ffmpeg_encoder", "structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7", null ],
     [ "frame_type", "structVideoEncoder.html#a00fce726b4e64667934a7f5c35c9f7f8", null ],
     [ "in_height", "structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027", null ],
@@ -13,5 +14,5 @@ var structVideoEncoder =
     [ "nvidia_encoders", "structVideoEncoder.html#af56f705c8349a76f221e7b09c4316d17", null ],
     [ "out_height", "structVideoEncoder.html#a756d26cde728bccea40f70df0c05f3d6", null ],
     [ "out_width", "structVideoEncoder.html#a8737b2047d311ccad803628b61a24ae3", null ],
-    [ "packets", "structVideoEncoder.html#a7b58cbbd0779fa34f6a4469eef21d112", null ]
+    [ "packets", "structVideoEncoder.html#a070dd663dc802905ca534022d6d1c5e9", null ]
 ];

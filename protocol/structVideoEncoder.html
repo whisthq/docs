@@ -101,8 +101,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a9975e772b1f1916ed1aa99f82ca8b065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20b578a3610dce40aef2d04397bd7744"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a20b578a3610dce40aef2d04397bd7744">num_packets</a></td></tr>
 <tr class="separator:a20b578a3610dce40aef2d04397bd7744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b58cbbd0779fa34f6a4469eef21d112"><td class="memItemLeft" align="right" valign="top">AVPacket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a7b58cbbd0779fa34f6a4469eef21d112">packets</a> [<a class="el" href="encode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a>]</td></tr>
-<tr class="separator:a7b58cbbd0779fa34f6a4469eef21d112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070dd663dc802905ca534022d6d1c5e9"><td class="memItemLeft" align="right" valign="top">AVPacket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a070dd663dc802905ca534022d6d1c5e9">packets</a> [<a class="el" href="encode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a>]</td></tr>
+<tr class="separator:a070dd663dc802905ca534022d6d1c5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580791874e935338868c45c242b1b4e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a580791874e935338868c45c242b1b4e0">in_width</a></td></tr>
 <tr class="separator:a580791874e935338868c45c242b1b4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd4d8cfca88434dbd276a6bfacfe027"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027">in_height</a></td></tr>
@@ -113,8 +113,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a756d26cde728bccea40f70df0c05f3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00fce726b4e64667934a7f5c35c9f7f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_2video_2video_8h.html#a3fc7f0fa0e803591461ebc389c333583">VideoFrameType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a00fce726b4e64667934a7f5c35c9f7f8">frame_type</a></td></tr>
 <tr class="separator:a00fce726b4e64667934a7f5c35c9f7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f66dc262b79b50a4c5e3901424c01f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#ad7f66dc262b79b50a4c5e3901424c01f">encoded_frame_size</a></td></tr>
-<tr class="separator:ad7f66dc262b79b50a4c5e3901424c01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e64cb923dde801e85052c58076ae70e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a1e64cb923dde801e85052c58076ae70e">encoded_frame_size</a></td></tr>
+<tr class="separator:a1e64cb923dde801e85052c58076ae70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53618bc02044fef89a820bab1e2a1ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9">codec_type</a></td></tr>
 <tr class="memdesc:a53618bc02044fef89a820bab1e2a1ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt;size of encoded frame in bytes  <a href="structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9">More...</a><br /></td></tr>
 <tr class="separator:a53618bc02044fef89a820bab1e2a1ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +124,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a9307f198076d55ba94d55ab275c2c7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d449c7390f5c23e993a2bfa970efab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLTRAction.html">LTRAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a4d449c7390f5c23e993a2bfa970efab3">next_ltr_action</a></td></tr>
 <tr class="separator:a4d449c7390f5c23e993a2bfa970efab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861653f20b19432832a63a9c40f85f2a"><td class="memItemLeft" align="right" valign="top">AVBSFContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoEncoder.html#a861653f20b19432832a63a9c40f85f2a">bsf</a></td></tr>
+<tr class="separator:a861653f20b19432832a63a9c40f85f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Master video encoding struct. </p>
@@ -157,6 +159,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a861653f20b19432832a63a9c40f85f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a861653f20b19432832a63a9c40f85f2a">&#9670;&nbsp;</a></span>bsf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AVBSFContext* VideoEncoder::bsf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a53618bc02044fef89a820bab1e2a1ba9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53618bc02044fef89a820bab1e2a1ba9">&#9670;&nbsp;</a></span>codec_type</h2>
 
@@ -173,14 +189,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ad7f66dc262b79b50a4c5e3901424c01f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7f66dc262b79b50a4c5e3901424c01f">&#9670;&nbsp;</a></span>encoded_frame_size</h2>
+<a id="a1e64cb923dde801e85052c58076ae70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e64cb923dde801e85052c58076ae70e">&#9670;&nbsp;</a></span>encoded_frame_size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int VideoEncoder::encoded_frame_size</td>
+          <td class="memname">size_t VideoEncoder::encoded_frame_size</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -313,14 +329,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b58cbbd0779fa34f6a4469eef21d112"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b58cbbd0779fa34f6a4469eef21d112">&#9670;&nbsp;</a></span>packets</h2>
+<a id="a070dd663dc802905ca534022d6d1c5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070dd663dc802905ca534022d6d1c5e9">&#9670;&nbsp;</a></span>packets</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AVPacket VideoEncoder::packets[<a class="el" href="encode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a>]</td>
+          <td class="memname">AVPacket* VideoEncoder::packets[<a class="el" href="encode_8h.html#a70988121b77d11b511a2bd2fe701d665">MAX_ENCODER_PACKETS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
