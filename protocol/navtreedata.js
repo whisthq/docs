@@ -150,12 +150,12 @@ var NAVTREEINDEX =
 "nvidiacapture_8h.html#af5fbabb8eef6586c644555e8269aaaa9",
 "server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7",
 "structFFmpegEncoder.html#ab0a0bffa578b5cdda3e3a2df79559235",
-"structLodePNGEncoderSettings.html",
-"structStunEntry.html#a10839151cc119dbc37f661fb95c781a2",
-"structWhistFrontendFunctionTable.html#a46430808580b53e667e90dbf2dce392a",
-"throttle_8c.html#a9a7d937741746a5c2a34e5250841339c",
-"whist_8h.html#a5c279ad767a41e3b26f0f55bbc55749d",
-"whist_8h.html#ae8e4c0175929d141a35aca839fea9693"
+"structLodePNGEncoderSettings.html#a04dc9622ccd1d7c74c56291409aa512a",
+"structStunEntry.html#a2f91ab967aef8fd994899c1a931fcd75",
+"structWhistFrontendFunctionTable.html#a54c42e5a42b7aad9a907d9c063f954b9",
+"throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f",
+"whist_8h.html#a5e3688d82ca0322b9f939340cd50023c",
+"whist_8h.html#aea3cfda4f3a9f978ec759f206cf186fe"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

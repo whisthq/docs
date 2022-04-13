@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"throttle_8c.html#a9a7d937741746a5c2a34e5250841339c":[13,0,2,9,8,5],
 "throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f":[13,0,2,9,8,3],
 "throttle_8c.html#af82ac32d8ffd0755c473a9551177fb91":[13,0,2,9,8,1],
 "throttle_8h.html":[13,0,2,9,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "whist_8h.html#a56ab8e1d2af6f308d5612205ba3d9e6b":[13,0,2,2,5,50],
 "whist_8h.html#a5707c89933e682d000495637c8dc45fd":[13,0,2,2,5,62],
 "whist_8h.html#a5885a6725785a59084164ccfedb1073a":[13,0,2,2,5,107],
-"whist_8h.html#a5ba15b0de2ae0c36db28576d130e6bdd":[13,0,2,2,5,127]
+"whist_8h.html#a5ba15b0de2ae0c36db28576d130e6bdd":[13,0,2,2,5,127],
+"whist_8h.html#a5c279ad767a41e3b26f0f55bbc55749d":[13,0,2,2,5,55]
 };
