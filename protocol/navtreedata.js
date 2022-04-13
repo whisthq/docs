@@ -148,14 +148,14 @@ var NAVTREEINDEX =
 "lodepng_8c.html#a84c132ca96d56cac57db68734db152b0",
 "logging_8h.html#a428c87d300cfd4cb4e73ee7140380ebf",
 "nvidiacapture_8h.html#af5fbabb8eef6586c644555e8269aaaa9",
-"server_2audio_8c.html#a5d4cd54c3652d2c734923079d07992b7",
-"structFFmpegEncoder.html#ab0a0bffa578b5cdda3e3a2df79559235",
-"structLodePNGEncoderSettings.html#a04dc9622ccd1d7c74c56291409aa512a",
-"structStunEntry.html#a2f91ab967aef8fd994899c1a931fcd75",
-"structWhistFrontendFunctionTable.html#a54c42e5a42b7aad9a907d9c063f954b9",
-"throttle_8c.html#abdd485a4dd0b32148884b04e1d92eb1f",
-"whist_8h.html#a5e3688d82ca0322b9f939340cd50023c",
-"whist_8h.html#aea3cfda4f3a9f978ec759f206cf186fe"
+"sdl__utils_8h_source.html",
+"structFFmpegEncoder.html#aa0355dad999dc4488e7232a6ae7e7985",
+"structLodePNGDecompressSettings.html#afab4b919650b51b4d2f175a60ed6c580",
+"structStunEntry.html",
+"structWhistFrontendFunctionTable.html#a39535e45764f1278b2a37149358cfbc3",
+"throttle_8c.html#a719afae66ac2bd9da6f064fe111e8345",
+"whist_8h.html#a5ba15b0de2ae0c36db28576d130e6bdd",
+"whist_8h.html#ae5f9a5f50ab08d080df02684e783ab66"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
