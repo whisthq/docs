@@ -93,11 +93,12 @@ var searchData=
   ['drop_5ffile_5finto_5factive_5fwindow_498',['drop_file_into_active_window',['../file__drop_8c.html#a61d6b3072b259592756b6e7ca5cc530f',1,'drop_file_into_active_window(TransferringFile *drop_file):&#160;file_drop.c'],['../file__drop_8h.html#a61d6b3072b259592756b6e7ca5cc530f',1,'drop_file_into_active_window(TransferringFile *drop_file):&#160;file_drop.c']]],
   ['drop_5fframe_499',['DROP_FRAME',['../client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85a0c4b992119e15dbccb00651c8d5b8673',1,'audio.c']]],
   ['dummy_5fstate_500',['dummy_state',['../structAudioDevice.html#abea55870545de19e8142a33e10b3a0aa',1,'AudioDevice']]],
-  ['dup_5fframe_501',['DUP_FRAME',['../client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85a2b8299434d010204c9d162261d905587',1,'audio.c']]],
-  ['duplicate_5fpackets_5freceived_502',['duplicate_packets_received',['../structFrameData.html#a65040cc7b870b38ee938661351bc96da',1,'FrameData']]],
-  ['duration_5fper_5fbucket_503',['DURATION_PER_BUCKET',['../udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df',1,'udp.c']]],
-  ['dwflags_504',['dwFlags',['../structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb',1,'AudioDevice']]],
-  ['dwwaitresult_505',['dwWaitResult',['../structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb',1,'AudioDevice']]],
-  ['dynamicbuffer_506',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]],
-  ['debugging_20tools_507',['Debugging Tools',['../md_whist_debug_README.html',1,'']]]
+  ['dump_5ffield_501',['DUMP_FIELD',['../nvidia__encode_8c.html#aee7bac5dfe47087e841cd8d9c6a1bd00',1,'nvidia_encode.c']]],
+  ['dup_5fframe_502',['DUP_FRAME',['../client_2audio_8c.html#a9e545d0d436225e3b09a2520c3cd4d85a2b8299434d010204c9d162261d905587',1,'audio.c']]],
+  ['duplicate_5fpackets_5freceived_503',['duplicate_packets_received',['../structFrameData.html#a65040cc7b870b38ee938661351bc96da',1,'FrameData']]],
+  ['duration_5fper_5fbucket_504',['DURATION_PER_BUCKET',['../udp_8c.html#a5fcdc6500e6e706775619f219f6ff9df',1,'udp.c']]],
+  ['dwflags_505',['dwFlags',['../structAudioDevice.html#a21320a663b45c088b43fcfc6a9f944bb',1,'AudioDevice']]],
+  ['dwwaitresult_506',['dwWaitResult',['../structAudioDevice.html#a4a0a1f678954e8bc8995b0c2aee552eb',1,'AudioDevice']]],
+  ['dynamicbuffer_507',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]],
+  ['debugging_20tools_508',['Debugging Tools',['../md_whist_debug_README.html',1,'']]]
 ];

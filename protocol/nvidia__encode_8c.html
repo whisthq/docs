@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('nvidia__encode_8c.html',''); initResiz
 <code>#include &quot;<a class="el" href="cudacontext_8h_source.html">../cudacontext.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="features_8h_source.html">whist/core/features.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="string__buffer_8h_source.html">whist/utils/string_buffer.h</a>&quot;</code><br />
 <code>#include &lt;dlfcn.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -103,6 +104,8 @@ Macros</h2></td></tr>
 <tr class="separator:a4cb2e767184a4d54dbe262b29790a754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a33a804728a7698b34609ab428c22ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#a4a33a804728a7698b34609ab428c22ac">WHIST_TUNING</a>&#160;&#160;&#160;NV_ENC_TUNING_INFO_LOW_LATENCY</td></tr>
 <tr class="separator:a4a33a804728a7698b34609ab428c22ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7bac5dfe47087e841cd8d9c6a1bd00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvidia__encode_8c.html#aee7bac5dfe47087e841cd8d9c6a1bd00">DUMP_FIELD</a>(field)&#160;&#160;&#160;<a class="el" href="string__buffer_8h.html#ab3b19a0873a1ac534b8af931ee263130">string_buffer_printf</a>(&amp;buf, #field &quot;: %d\n&quot;, config-&gt;field)</td></tr>
+<tr class="separator:aee7bac5dfe47087e841cd8d9c6a1bd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -126,6 +129,24 @@ Functions</h2></td></tr>
 <tr class="separator:a1dfb7e3e77454fb585140ba00684a59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aee7bac5dfe47087e841cd8d9c6a1bd00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7bac5dfe47087e841cd8d9c6a1bd00">&#9670;&nbsp;</a></span>DUMP_FIELD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DUMP_FIELD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="string__buffer_8h.html#ab3b19a0873a1ac534b8af931ee263130">string_buffer_printf</a>(&amp;buf, #field &quot;: %d\n&quot;, config-&gt;field)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a413f8f4298cddd83945cbe786aae3a98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a413f8f4298cddd83945cbe786aae3a98">&#9670;&nbsp;</a></span>LIB_ENCODEAPI_NAME</h2>
 

@@ -1,5 +1,6 @@
 var nvidia__encode_8c =
 [
+    [ "DUMP_FIELD", "nvidia__encode_8c.html#aee7bac5dfe47087e841cd8d9c6a1bd00", null ],
     [ "LIB_ENCODEAPI_NAME", "nvidia__encode_8c.html#a413f8f4298cddd83945cbe786aae3a98", null ],
     [ "WHIST_PRESET", "nvidia__encode_8c.html#a4cb2e767184a4d54dbe262b29790a754", null ],
     [ "WHIST_TUNING", "nvidia__encode_8c.html#a4a33a804728a7698b34609ab428c22ac", null ],

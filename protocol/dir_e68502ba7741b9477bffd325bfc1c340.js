@@ -26,6 +26,8 @@ var dir_e68502ba7741b9477bffd325bfc1c340 =
     [ "queue.h", "queue_8h.html", "queue_8h" ],
     [ "rwlock.c", "rwlock_8c.html", "rwlock_8c" ],
     [ "rwlock.h", "rwlock_8h.html", "rwlock_8h" ],
+    [ "string_buffer.c", "string__buffer_8c.html", "string__buffer_8c" ],
+    [ "string_buffer.h", "string__buffer_8h.html", "string__buffer_8h" ],
     [ "sysinfo.c", "sysinfo_8c.html", "sysinfo_8c" ],
     [ "sysinfo.h", "sysinfo_8h.html", "sysinfo_8h" ],
     [ "threads.c", "threads_8c.html", "threads_8c" ],
