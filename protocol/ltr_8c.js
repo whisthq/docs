@@ -2,9 +2,9 @@ var ltr_8c =
 [
     [ "LTRFrame", "structLTRFrame.html", "structLTRFrame" ],
     [ "LTRState", "structLTRState.html", "structLTRState" ],
-    [ "LTR_NEW_INTRA_FRAME_DELAY", "ltr_8c.html#a96a58e29e8dbf2b5bdeb775cba46556eabe38b8ce80b1ff652e4821a862faf796", null ],
-    [ "LTR_MAX_INFLIGHT_FRAMES", "ltr_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea827e18c2ad77dcc2f3514e0740da07df", null ],
-    [ "LTR_MAX_DONE_FRAMES", "ltr_8c.html#a96a58e29e8dbf2b5bdeb775cba46556eaed3486ea2e581cd34fc4496aafa9c8ae", null ],
+    [ "LTR_NEW_INTRA_FRAME_DELAY", "ltr_8c.html#ab48899087cc647f0f791ed0c459adc53abe38b8ce80b1ff652e4821a862faf796", null ],
+    [ "LTR_MAX_INFLIGHT_FRAMES", "ltr_8c.html#ab48899087cc647f0f791ed0c459adc53a827e18c2ad77dcc2f3514e0740da07df", null ],
+    [ "LTR_MAX_DONE_FRAMES", "ltr_8c.html#ab48899087cc647f0f791ed0c459adc53aed3486ea2e581cd34fc4496aafa9c8ae", null ],
     [ "ltr_create", "ltr_8c.html#a7a3d18e57e1e54f239a35d0b8f9e7968", null ],
     [ "ltr_destroy", "ltr_8c.html#ac07057d351894088f53514403e31379c", null ],
     [ "ltr_force_intra", "ltr_8c.html#a98b1d77de33a78c2c183dfdc8a37b3bd", null ],

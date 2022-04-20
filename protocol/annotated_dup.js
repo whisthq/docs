@@ -24,6 +24,7 @@ var annotated_dup =
     [ "cm256_block_t", "structcm256__block__t.html", "structcm256__block__t" ],
     [ "cm256_encoder_params_t", "structcm256__encoder__params__t.html", "structcm256__encoder__params__t" ],
     [ "ColorTree", "structColorTree.html", "structColorTree" ],
+    [ "CpuInfo", "structCpuInfo.html", "structCpuInfo" ],
     [ "DebugConsoleOverrideValues", "structDebugConsoleOverrideValues.html", "structDebugConsoleOverrideValues" ],
     [ "DecodedFrameData", "structDecodedFrameData.html", "structDecodedFrameData" ],
     [ "DynamicBuffer", "structDynamicBuffer.html", "structDynamicBuffer" ],

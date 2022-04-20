@@ -206,8 +206,8 @@ $(document).ready(function(){initNavTree('globals_g.html',''); initResizable(); 
 , <a class="el" href="ringbuffer_8h.html#a2947bd52323b0d65b0a059a0cf9adf3d">ringbuffer.h</a>
 </li>
 <li>get_packet_size()
-: <a class="el" href="whist_2network_2network_8h.html#ac326362f3ab91f34c0271d6585c27373">network.h</a>
-, <a class="el" href="whist_2network_2network_8c.html#ac326362f3ab91f34c0271d6585c27373">network.c</a>
+: <a class="el" href="whist_2network_2network_8c.html#ac326362f3ab91f34c0271d6585c27373">network.c</a>
+, <a class="el" href="whist_2network_2network_8h.html#ac326362f3ab91f34c0271d6585c27373">network.h</a>
 </li>
 <li>get_pending_stream_reset()
 : <a class="el" href="whist_2network_2network_8c.html#a95ee2117f941ce83f97cf7884e0dc41b">network.c</a>
@@ -236,8 +236,8 @@ $(document).ready(function(){initNavTree('globals_g.html',''); initResizable(); 
 , <a class="el" href="server_2network_8h.html#ad881eeb396b9af8437f12ddd01820042">network.h</a>
 </li>
 <li>get_video_thread_cuda_context_ptr()
-: <a class="el" href="cudacontext_8h.html#a4cc86119c3b305d8ed146143b2a51f99">cudacontext.h</a>
-, <a class="el" href="cudacontext_8c.html#a4cc86119c3b305d8ed146143b2a51f99">cudacontext.c</a>
+: <a class="el" href="cudacontext_8c.html#a4cc86119c3b305d8ed146143b2a51f99">cudacontext.c</a>
+, <a class="el" href="cudacontext_8h.html#a4cc86119c3b305d8ed146143b2a51f99">cudacontext.h</a>
 </li>
 <li>get_wcmsg_size()
 : <a class="el" href="whist_8c.html#a5ba15b0de2ae0c36db28576d130e6bdd">whist.c</a>
@@ -261,23 +261,32 @@ $(document).ready(function(){initNavTree('globals_g.html',''); initResizable(); 
 <li>gf256_add2_mem()
 : <a class="el" href="gf256_8h.html#af3ba385ef8a828b04c7e6af64440626f">gf256.h</a>
 </li>
+<li>gf256_add2_mem_inner_avx2()
+: <a class="el" href="gf256__avx2_8h.html#ae84cb98ab96d2e9d8a215b03e8984d95">gf256_avx2.h</a>
+</li>
 <li>gf256_add_mem()
 : <a class="el" href="gf256_8h.html#a70726a09fb2ba7fff787ce657a7adf92">gf256.h</a>
+</li>
+<li>gf256_add_mem_inner_avx2()
+: <a class="el" href="gf256__avx2_8h.html#a501ba006d9446c2ea4f635570fe1c258">gf256_avx2.h</a>
 </li>
 <li>gf256_addset_mem()
 : <a class="el" href="gf256_8h.html#af80633151c3d3dcce685f91ee588bbde">gf256.h</a>
 </li>
+<li>gf256_addset_mem_inner_avx2()
+: <a class="el" href="gf256__avx2_8h.html#a86e0f83328a0bed1e4ac9b27d7b502fb">gf256_avx2.h</a>
+</li>
 <li>GF256_ALIGN_BYTES
-: <a class="el" href="gf256_8h.html#a38e2aee14b4a72035c5ba8d87ca95cac">gf256.h</a>
+: <a class="el" href="gf256__common_8h.html#a38e2aee14b4a72035c5ba8d87ca95cac">gf256_common.h</a>
 </li>
 <li>GF256_ALIGNED
-: <a class="el" href="gf256_8h.html#a13692fcbbc0412b6aa5cceb0764306f3">gf256.h</a>
+: <a class="el" href="gf256__common_8h.html#a13692fcbbc0412b6aa5cceb0764306f3">gf256_common.h</a>
 </li>
 <li>GF256_FORCE_INLINE
-: <a class="el" href="gf256_8h.html#a2509b0e66c19c68f86dd5fb77965a9ba">gf256.h</a>
+: <a class="el" href="gf256__common_8h.html#a2509b0e66c19c68f86dd5fb77965a9ba">gf256_common.h</a>
 </li>
-<li>gf256_has_hardware_support()
-: <a class="el" href="gf256_8h.html#ae6a81284e1bafe40c072f09089bc0b9e">gf256.h</a>
+<li>gf256_get_cpuinfo()
+: <a class="el" href="gf256__cpuinfo_8h.html#a70e8e920dce2f4035cf24edeffaf5709">gf256_cpuinfo.h</a>
 </li>
 <li>gf256_init
 : <a class="el" href="gf256_8h.html#a3c4d82de810b3bac3a5473f7cf43c279">gf256.h</a>
@@ -286,25 +295,43 @@ $(document).ready(function(){initNavTree('globals_g.html',''); initResizable(); 
 : <a class="el" href="gf256_8h.html#a7c949e4f855b1ea786826aeb9d84dcc5">gf256.h</a>
 </li>
 <li>GF256_M128
-: <a class="el" href="gf256_8h.html#a8941d58e3d579643ac41b7ba754645f9">gf256.h</a>
+: <a class="el" href="gf256__common_8h.html#a8941d58e3d579643ac41b7ba754645f9">gf256_common.h</a>
+</li>
+<li>GF256_M256
+: <a class="el" href="gf256__common_8h.html#a37650d31f57bdd2ecdfd1f1407995a73">gf256_common.h</a>
 </li>
 <li>gf256_memswap()
-: <a class="el" href="gf256_8h.html#a3493b96d9ad334fc440aabcf3d16ed0c">gf256.h</a>
+: <a class="el" href="gf256__common_8h.html#a3493b96d9ad334fc440aabcf3d16ed0c">gf256_common.h</a>
 </li>
 <li>gf256_mul_mem()
 : <a class="el" href="gf256_8h.html#aadf27fa70da14a3e3cbbbde26664de98">gf256.h</a>
 </li>
+<li>gf256_mul_mem_init_inner_avx2()
+: <a class="el" href="gf256__avx2_8h.html#ab30877a6247778f08556582b3813b929">gf256_avx2.h</a>
+</li>
+<li>gf256_mul_mem_inner_avx2()
+: <a class="el" href="gf256__avx2_8h.html#acf52865e7c595b599b007fc970a3330b">gf256_avx2.h</a>
+</li>
+<li>gf256_mul_mem_inner_ssse3()
+: <a class="el" href="gf256__ssse3_8h.html#a355702f7c5749c4e2f14990ac8fb73fd">gf256_ssse3.h</a>
+</li>
 <li>gf256_muladd_mem()
 : <a class="el" href="gf256_8h.html#ad3bd28572bff9f733421e686dd39260f">gf256.h</a>
 </li>
+<li>gf256_muladd_mem_inner_avx2()
+: <a class="el" href="gf256__avx2_8h.html#a5d19c520043785f0f1799c33a26c1b44">gf256_avx2.h</a>
+</li>
+<li>gf256_muladd_mem_inner_ssse3()
+: <a class="el" href="gf256__ssse3_8h.html#a2df89efc947903219027dd487809117c">gf256_ssse3.h</a>
+</li>
 <li>GF256_RESTRICT
-: <a class="el" href="gf256_8h.html#a729311733918dc41916d2227c1015400">gf256.h</a>
+: <a class="el" href="gf256__common_8h.html#a729311733918dc41916d2227c1015400">gf256_common.h</a>
 </li>
 <li>GF256_VERSION
-: <a class="el" href="gf256_8h.html#a50d832677211e5d02ca8424233571ade">gf256.h</a>
+: <a class="el" href="gf256__common_8h.html#a50d832677211e5d02ca8424233571ade">gf256_common.h</a>
 </li>
 <li>GF256Ctx
-: <a class="el" href="gf256_8h.html#a9fd51f26760f70a20c9cc03ef340f57f">gf256.h</a>
+: <a class="el" href="gf256__common_8h.html#a9fd51f26760f70a20c9cc03ef340f57f">gf256_common.h</a>
 </li>
 <li>GF_ADDMULC
 : <a class="el" href="lugi__rs_8c.html#aa2409a0b9491c782a801d493f04bb961">lugi_rs.c</a>
