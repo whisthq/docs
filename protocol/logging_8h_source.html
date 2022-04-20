@@ -88,208 +88,208 @@ $(document).ready(function(){initNavTree('logging_8h_source.html',''); initResiz
 <a href="logging_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LOGGING_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LOGGING_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">Includes</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="whist_8h.html">whist/core/whist.h</a>&gt;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="clock_8h.html">whist/utils/clock.h</a>&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">Defines</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="logging_8h.html#a5efcbb4a78eb37e2945e61e61f235a2e">   50</a></span>&#160;<span class="preprocessor">#define LOGGER_QUEUE_SIZE 1000</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="logging_8h.html#a884a960393b267876a1e3bfc114f4032">   51</a></span>&#160;<span class="preprocessor">#define LOGGER_BUF_SIZE 1000</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifndef __ROOT_FILE__</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="logging_8h.html#a12e53bbf839e9aaff9c29e349920ac10">   53</a></span>&#160;<span class="preprocessor">#define __ROOT_FILE__ &quot;&quot;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="logging_8h.html#a6f6e0a7a87048fb100a02f5c9d8660d6">   55</a></span>&#160;<span class="preprocessor">#define LOG_FILE_NAME \</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    ((sizeof(__ROOT_FILE__) &lt; sizeof(__FILE__)) ? (&amp;__FILE__[sizeof(__ROOT_FILE__)]) : &quot;&quot;)</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="logging_8h.html#a166c2449cbc8389076f29f5a1360338e">   57</a></span>&#160;<span class="preprocessor">#define NO_LOG 0x00</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="logging_8h.html#a199911ae2851d1c2b00991093529718c">   58</a></span>&#160;<span class="preprocessor">#define FATAL_ERROR_LEVEL 0x00</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="logging_8h.html#a3812f9c42e2965d252530ec6ad3f62fd">   59</a></span>&#160;<span class="preprocessor">#define ERROR_LEVEL 0x01</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="logging_8h.html#a28deb91651998cb8a97e41dfe534bd7a">   60</a></span>&#160;<span class="preprocessor">#define WARNING_LEVEL 0x02</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="logging_8h.html#a1a3cc8463f8cede44c8499b36bc47f9e">   61</a></span>&#160;<span class="preprocessor">#define METRIC_LEVEL 0x03</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="logging_8h.html#acf9ba8e25f7240fb3b39383a66540a71">   62</a></span>&#160;<span class="preprocessor">#define INFO_LEVEL 0x04</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="logging_8h.html#ac2d33ccaf63f5d5b66552b95426c0137">   63</a></span>&#160;<span class="preprocessor">#define DEBUG_LEVEL 0x05</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// Cut-off for which log level is required</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#ifndef LOG_LEVEL</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="logging_8h.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05">   67</a></span>&#160;<span class="preprocessor">#define LOG_LEVEL DEBUG_LEVEL</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//                     Timestamp    File name   Line number</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//                         |   Tag      |  Function  |</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//                         |    |       |       |    |</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="logging_8h.html#a428c87d300cfd4cb4e73ee7140380ebf">   73</a></span>&#160;<span class="preprocessor">#define LOG_CONTEXT_FORMAT &quot; | %-7s | %-35s | %-30s:%-5d | &quot;</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// We use do/while(0) to force the user to &quot;;&quot; the end of the LOG,</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// While still keeping the statement inside a contiguous single block,</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// so that `if(cond) LOG;` works as expected</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="logging_8h.html#a015c0931d8d1874039144d793549529d">   78</a></span>&#160;<span class="preprocessor">#define LOG_MESSAGE(tag, message, ...)                                                     \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    do {                                                                                   \</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">        whist_log_printf(tag##_LEVEL, LOG_FILE_NAME, __FUNCTION__, __LINE__, message &quot;\n&quot;, \</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">                         ##__VA_ARGS__);                                                   \</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html">   87</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#ae4e420bb8cfc3ce29ce5f117ec448ca3">   91</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structLogRateLimiter.html#ae4e420bb8cfc3ce29ce5f117ec448ca3">period_in_seconds</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#a65bfc76f64c9cb69a3546ed6ef132089">   97</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structLogRateLimiter.html#a65bfc76f64c9cb69a3546ed6ef132089">max_messages_per_period</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#a0dcc5867dc267bdb93adb2be630514df">  102</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structLogRateLimiter.html#a0dcc5867dc267bdb93adb2be630514df">started</a>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#a4116a3c024934b91e8643a321c6e8135">  106</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structLogRateLimiter.html#a4116a3c024934b91e8643a321c6e8135">message_count</a>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#aadb77ae961c2851d25d318f1e7f84734">  110</a></span>&#160;    <a class="code" href="structWhistTimerOpaque.html">WhistTimer</a> <a class="code" href="structLogRateLimiter.html#aadb77ae961c2851d25d318f1e7f84734">timer</a>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} <a class="code" href="structLogRateLimiter.html">LogRateLimiter</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">// This is the same as LOG_MESSAGE(), except we include a static rate</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">// limiter structure for the rate-limited logging to use.  This should</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">// only be used with log lines called from a single thread.  Note that</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// rate-limiting does not make sense for errors (which you always want</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">// to see) or metrics (which should always be counted), so the macros</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">// below do not provide rate-limited versions for those tags.</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="logging_8h.html#a0c216d22623f0933ecdc2fd1144caab3">  119</a></span>&#160;<span class="preprocessor">#define LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, tag, message, ...) \</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">    do {                                                                                        \</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">        static LogRateLimiter log_message_rate_limiter_##__LINE__ = {                           \</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">            period_in_seconds, max_messages_per_period, false, 0, {0, 0}};                      \</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">        whist_log_printf_rate_limited(&amp;log_message_rate_limiter_##__LINE__, tag##_LEVEL,        \</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">                                      LOG_FILE_NAME, __FUNCTION__, __LINE__, message &quot;\n&quot;,      \</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">                                      ##__VA_ARGS__);                                           \</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= DEBUG_LEVEL</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="logging_8h.html#ae3299be792c6fbb84cd15f782b46482a">  129</a></span>&#160;<span class="preprocessor">#define LOG_DEBUG(message, ...) LOG_MESSAGE(DEBUG, message, ##__VA_ARGS__)</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="logging_8h.html#a32a613ff8d5d47a2830e2a522509589b">  130</a></span>&#160;<span class="preprocessor">#define LOG_DEBUG_RATE_LIMITED(period_in_seconds, max_messages_per_period, message, ...) \</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">    LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, DEBUG, message, \</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">                             ##__VA_ARGS__)</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#define LOG_DEBUG(message, ...)</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#define LOG_DEBUG_RATE_LIMITED(message, ...)</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">// LOG_INFO refers to something that can happen, and does not imply that anything went wrong</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= INFO_LEVEL</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0">  140</a></span>&#160;<span class="preprocessor">#define LOG_INFO(message, ...) LOG_MESSAGE(INFO, message, ##__VA_ARGS__)</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="logging_8h.html#a2ac8ed231c87b38d9362111c45fd9048">  141</a></span>&#160;<span class="preprocessor">#define LOG_INFO_RATE_LIMITED(period_in_seconds, max_messages_per_period, message, ...) \</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">    LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, INFO, message, \</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">                             ##__VA_ARGS__)</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#define LOG_INFO(message, ...)</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#define LOG_INFO_RATE_LIMITED(message, ...)</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">// LOG_METRIC refers to one or more key-value pairs in JSON format. Useful for monitoring</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">// performance metrics. Note that keys should be within double quotes, for JSON parsing to work.</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">// For example :</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">// LOG_METRIC(&quot;\&quot;Latency\&quot; : %d&quot;, latency);</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= METRIC_LEVEL</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="logging_8h.html#a4ad398f3e6ce3fb8dc44e88cf3ff0176">  154</a></span>&#160;<span class="preprocessor">#define LOG_METRIC(message, ...) LOG_MESSAGE(METRIC, message, ##__VA_ARGS__)</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#define LOG_METRIC(message, ...)</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">// LOG_WARNING refers to something going wrong,</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">// but it&#39;s unknown whether or not it&#39;s the code&#39;s fault or</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">// simply the host&#39;s situation (i.e. no audio device etc)</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">// TLDR ~ Something dubious happened, but not sure if it&#39;s an issue or not though.</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= WARNING_LEVEL</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b">  164</a></span>&#160;<span class="preprocessor">#define LOG_WARNING(message, ...) LOG_MESSAGE(WARNING, message, ##__VA_ARGS__)</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="logging_8h.html#ad459f60b7026c4c753d19e7c4d7edb9f">  165</a></span>&#160;<span class="preprocessor">#define LOG_WARNING_RATE_LIMITED(period_in_seconds, max_messages_per_period, message, ...) \</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">    LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, WARNING, message, \</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">                             ##__VA_ARGS__)</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#define LOG_WARNING(message, ...)</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#define LOG_WARNING_RATE_LIMITED(message, ...)</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">// LOG_ERROR *must* directly imply that something is fundamentally wrong with our code,</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">// but refers to something that is recoverable nonetheless.</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">// For OS errors, use LOG_WARNING when we want to try to recover, and LOG_FATAL when we do not.</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">// TLDR ~ Problems with *our code* that we can still and want to, recover from.</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= ERROR_LEVEL</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="logging_8h.html#a9577456efe501c56575750444162a3dd">  178</a></span>&#160;<span class="preprocessor">#define LOG_ERROR(message, ...) LOG_MESSAGE(ERROR, message, ##__VA_ARGS__)</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#define LOG_ERROR(message, ...)</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">// LOG_FATAL implies that the protocol cannot recover from this (usually OS-related) error,</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">// This is generally used for OS errors (the host being out of RAM, SDL failing to initialize),</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">// If an OS-related error code is recoverable, but exceedingly unlikely or unheard of thusfar</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">// (e.g. mutex creation failing), LOG_FATAL is highly preferred over attempting a recovery.</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">// TLDR ~ Problems with *the OS* that are unexpected and not easily recoverable from.</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="logging_8h.html#a44029e31f9ab552e79ca6164ca1eca94">  188</a></span>&#160;<span class="preprocessor">#define LOG_FATAL(message, ...)                           \</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">    do {                                                  \</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">        LOG_MESSAGE(FATAL_ERROR, message, ##__VA_ARGS__); \</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">        terminate_protocol(WHIST_EXIT_FAILURE);           \</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">// FATAL_ASSERT will fatally exist when something absurd happens,</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">// such as an index being negative, or otherwise out-of-bounds.</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">// Even if we &quot;could&quot; recover, fatally asserting is preferred for absurdity checks.</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">// TLDR ~ Problems with *our code* that are absurd or unexpected.</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="logging_8h.html#ae34722e01b6ee3b8e30834e2f8e6423a">  198</a></span>&#160;<span class="preprocessor">#define FATAL_ASSERT(condition)                              \</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">    do {                                                     \</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">        if (!(condition)) {                                  \</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">            LOG_FATAL(&quot;Assertion [%s] Failed!&quot;, #condition); \</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">        }                                                    \</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">Public Functions</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="logging_8h.html#a21c78c1d30297b221547ccb2414ad113">get_do_not_catch_segfaults_flag</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#aab45aa94b75eeb446eaed8a8ad1c65a6">print_stacktrace</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#aec2b3c8a4110db3dacd0a0de88e5d556">whist_init_logger</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">#ifdef __GNUC__</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;__attribute__((format(printf, 5, 6)))</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#aeb343163f137d0dea0081e34869e6b74">whist_log_printf</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level, <span class="keyword">const</span> <span class="keywordtype">char</span> *file_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keyword">function</span>,</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                      <span class="keywordtype">int</span> line_number, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt_str, ...);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#ifdef __GNUC__</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;__attribute__((format(printf, 6, 7)))</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#afc62c449e2a10a7733389c4fca6c1653">whist_log_printf_rate_limited</a>(<a class="code" href="structLogRateLimiter.html">LogRateLimiter</a> *rate_limiter, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">char</span> *file_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keyword">function</span>,</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                   <span class="keywordtype">int</span> line_number, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt_str, ...);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#a74138e514d79a0449c832cc913b86f49">flush_logs</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#a4dfcbd491525c8782dc0f4a373f29fd6">destroy_logger</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#a54581b1f2ee2b138b99408b358df690b">test_set_pause_state_on_logger_thread</a>(<span class="keywordtype">bool</span> pause);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#endif  // LOGGING_H</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">Includes</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="whist_8h.html">whist/core/whist.h</a>&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="clock_8h.html">whist/utils/clock.h</a>&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">Defines</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="logging_8h.html#a5efcbb4a78eb37e2945e61e61f235a2e">   49</a></span>&#160;<span class="preprocessor">#define LOGGER_QUEUE_SIZE 1000</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="logging_8h.html#a884a960393b267876a1e3bfc114f4032">   50</a></span>&#160;<span class="preprocessor">#define LOGGER_BUF_SIZE 1000</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifndef __ROOT_FILE__</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="logging_8h.html#a12e53bbf839e9aaff9c29e349920ac10">   52</a></span>&#160;<span class="preprocessor">#define __ROOT_FILE__ &quot;&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="logging_8h.html#a6f6e0a7a87048fb100a02f5c9d8660d6">   54</a></span>&#160;<span class="preprocessor">#define LOG_FILE_NAME \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">    ((sizeof(__ROOT_FILE__) &lt; sizeof(__FILE__)) ? (&amp;__FILE__[sizeof(__ROOT_FILE__)]) : &quot;&quot;)</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="logging_8h.html#a166c2449cbc8389076f29f5a1360338e">   56</a></span>&#160;<span class="preprocessor">#define NO_LOG 0x00</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="logging_8h.html#a199911ae2851d1c2b00991093529718c">   57</a></span>&#160;<span class="preprocessor">#define FATAL_ERROR_LEVEL 0x00</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="logging_8h.html#a3812f9c42e2965d252530ec6ad3f62fd">   58</a></span>&#160;<span class="preprocessor">#define ERROR_LEVEL 0x01</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="logging_8h.html#a28deb91651998cb8a97e41dfe534bd7a">   59</a></span>&#160;<span class="preprocessor">#define WARNING_LEVEL 0x02</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="logging_8h.html#a1a3cc8463f8cede44c8499b36bc47f9e">   60</a></span>&#160;<span class="preprocessor">#define METRIC_LEVEL 0x03</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="logging_8h.html#acf9ba8e25f7240fb3b39383a66540a71">   61</a></span>&#160;<span class="preprocessor">#define INFO_LEVEL 0x04</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="logging_8h.html#ac2d33ccaf63f5d5b66552b95426c0137">   62</a></span>&#160;<span class="preprocessor">#define DEBUG_LEVEL 0x05</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// Cut-off for which log level is required</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifndef LOG_LEVEL</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="logging_8h.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05">   66</a></span>&#160;<span class="preprocessor">#define LOG_LEVEL DEBUG_LEVEL</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//                     Timestamp    File name   Line number</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//                         |   Tag      |  Function  |</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//                         |    |       |       |    |</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="logging_8h.html#a428c87d300cfd4cb4e73ee7140380ebf">   72</a></span>&#160;<span class="preprocessor">#define LOG_CONTEXT_FORMAT &quot; | %-7s | %-35s | %-30s:%-5d | &quot;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// We use do/while(0) to force the user to &quot;;&quot; the end of the LOG,</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// While still keeping the statement inside a contiguous single block,</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// so that `if(cond) LOG;` works as expected</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="logging_8h.html#a015c0931d8d1874039144d793549529d">   77</a></span>&#160;<span class="preprocessor">#define LOG_MESSAGE(tag, message, ...)                                                     \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">    do {                                                                                   \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">        whist_log_printf(tag##_LEVEL, LOG_FILE_NAME, __FUNCTION__, __LINE__, message &quot;\n&quot;, \</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">                         ##__VA_ARGS__);                                                   \</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html">   86</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#ae4e420bb8cfc3ce29ce5f117ec448ca3">   90</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structLogRateLimiter.html#ae4e420bb8cfc3ce29ce5f117ec448ca3">period_in_seconds</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#a65bfc76f64c9cb69a3546ed6ef132089">   96</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structLogRateLimiter.html#a65bfc76f64c9cb69a3546ed6ef132089">max_messages_per_period</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#a0dcc5867dc267bdb93adb2be630514df">  101</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structLogRateLimiter.html#a0dcc5867dc267bdb93adb2be630514df">started</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#a4116a3c024934b91e8643a321c6e8135">  105</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structLogRateLimiter.html#a4116a3c024934b91e8643a321c6e8135">message_count</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="structLogRateLimiter.html#aadb77ae961c2851d25d318f1e7f84734">  109</a></span>&#160;    <a class="code" href="structWhistTimerOpaque.html">WhistTimer</a> <a class="code" href="structLogRateLimiter.html#aadb77ae961c2851d25d318f1e7f84734">timer</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;} <a class="code" href="structLogRateLimiter.html">LogRateLimiter</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">// This is the same as LOG_MESSAGE(), except we include a static rate</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">// limiter structure for the rate-limited logging to use.  This should</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">// only be used with log lines called from a single thread.  Note that</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">// rate-limiting does not make sense for errors (which you always want</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// to see) or metrics (which should always be counted), so the macros</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">// below do not provide rate-limited versions for those tags.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="logging_8h.html#a0c216d22623f0933ecdc2fd1144caab3">  118</a></span>&#160;<span class="preprocessor">#define LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, tag, message, ...) \</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">    do {                                                                                        \</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">        static LogRateLimiter log_message_rate_limiter_##__LINE__ = {                           \</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">            period_in_seconds, max_messages_per_period, false, 0, {0, 0}};                      \</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">        whist_log_printf_rate_limited(&amp;log_message_rate_limiter_##__LINE__, tag##_LEVEL,        \</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">                                      LOG_FILE_NAME, __FUNCTION__, __LINE__, message &quot;\n&quot;,      \</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">                                      ##__VA_ARGS__);                                           \</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= DEBUG_LEVEL</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="logging_8h.html#ae3299be792c6fbb84cd15f782b46482a">  128</a></span>&#160;<span class="preprocessor">#define LOG_DEBUG(message, ...) LOG_MESSAGE(DEBUG, message, ##__VA_ARGS__)</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="logging_8h.html#a32a613ff8d5d47a2830e2a522509589b">  129</a></span>&#160;<span class="preprocessor">#define LOG_DEBUG_RATE_LIMITED(period_in_seconds, max_messages_per_period, message, ...) \</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">    LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, DEBUG, message, \</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">                             ##__VA_ARGS__)</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#define LOG_DEBUG(message, ...)</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#define LOG_DEBUG_RATE_LIMITED(message, ...)</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">// LOG_INFO refers to something that can happen, and does not imply that anything went wrong</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= INFO_LEVEL</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0">  139</a></span>&#160;<span class="preprocessor">#define LOG_INFO(message, ...) LOG_MESSAGE(INFO, message, ##__VA_ARGS__)</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="logging_8h.html#a2ac8ed231c87b38d9362111c45fd9048">  140</a></span>&#160;<span class="preprocessor">#define LOG_INFO_RATE_LIMITED(period_in_seconds, max_messages_per_period, message, ...) \</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">    LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, INFO, message, \</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">                             ##__VA_ARGS__)</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#define LOG_INFO(message, ...)</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#define LOG_INFO_RATE_LIMITED(message, ...)</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">// LOG_METRIC refers to one or more key-value pairs in JSON format. Useful for monitoring</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">// performance metrics. Note that keys should be within double quotes, for JSON parsing to work.</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">// For example :</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">// LOG_METRIC(&quot;\&quot;Latency\&quot; : %d&quot;, latency);</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= METRIC_LEVEL</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="logging_8h.html#a4ad398f3e6ce3fb8dc44e88cf3ff0176">  153</a></span>&#160;<span class="preprocessor">#define LOG_METRIC(message, ...) LOG_MESSAGE(METRIC, message, ##__VA_ARGS__)</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#define LOG_METRIC(message, ...)</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">// LOG_WARNING refers to something going wrong,</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">// but it&#39;s unknown whether or not it&#39;s the code&#39;s fault or</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">// simply the host&#39;s situation (i.e. no audio device etc)</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">// TLDR ~ Something dubious happened, but not sure if it&#39;s an issue or not though.</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= WARNING_LEVEL</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b">  163</a></span>&#160;<span class="preprocessor">#define LOG_WARNING(message, ...) LOG_MESSAGE(WARNING, message, ##__VA_ARGS__)</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="logging_8h.html#ad459f60b7026c4c753d19e7c4d7edb9f">  164</a></span>&#160;<span class="preprocessor">#define LOG_WARNING_RATE_LIMITED(period_in_seconds, max_messages_per_period, message, ...) \</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">    LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, WARNING, message, \</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">                             ##__VA_ARGS__)</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#define LOG_WARNING(message, ...)</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#define LOG_WARNING_RATE_LIMITED(message, ...)</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">// LOG_ERROR *must* directly imply that something is fundamentally wrong with our code,</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">// but refers to something that is recoverable nonetheless.</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">// For OS errors, use LOG_WARNING when we want to try to recover, and LOG_FATAL when we do not.</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">// TLDR ~ Problems with *our code* that we can still and want to, recover from.</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#if LOG_LEVEL &gt;= ERROR_LEVEL</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="logging_8h.html#a9577456efe501c56575750444162a3dd">  177</a></span>&#160;<span class="preprocessor">#define LOG_ERROR(message, ...) LOG_MESSAGE(ERROR, message, ##__VA_ARGS__)</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#define LOG_ERROR(message, ...)</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">// LOG_FATAL implies that the protocol cannot recover from this (usually OS-related) error,</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">// This is generally used for OS errors (the host being out of RAM, SDL failing to initialize),</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">// If an OS-related error code is recoverable, but exceedingly unlikely or unheard of thusfar</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">// (e.g. mutex creation failing), LOG_FATAL is highly preferred over attempting a recovery.</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">// TLDR ~ Problems with *the OS* that are unexpected and not easily recoverable from.</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="logging_8h.html#a44029e31f9ab552e79ca6164ca1eca94">  187</a></span>&#160;<span class="preprocessor">#define LOG_FATAL(message, ...)                           \</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">    do {                                                  \</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">        LOG_MESSAGE(FATAL_ERROR, message, ##__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">        terminate_protocol(WHIST_EXIT_FAILURE);           \</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">// FATAL_ASSERT will fatally exist when something absurd happens,</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">// such as an index being negative, or otherwise out-of-bounds.</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">// Even if we &quot;could&quot; recover, fatally asserting is preferred for absurdity checks.</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">// TLDR ~ Problems with *our code* that are absurd or unexpected.</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="logging_8h.html#ae34722e01b6ee3b8e30834e2f8e6423a">  197</a></span>&#160;<span class="preprocessor">#define FATAL_ASSERT(condition)                              \</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">    do {                                                     \</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">        if (!(condition)) {                                  \</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">            LOG_FATAL(&quot;Assertion [%s] Failed!&quot;, #condition); \</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">        }                                                    \</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">Public Functions</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="logging_8h.html#a21c78c1d30297b221547ccb2414ad113">get_do_not_catch_segfaults_flag</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#aab45aa94b75eeb446eaed8a8ad1c65a6">print_stacktrace</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#aec2b3c8a4110db3dacd0a0de88e5d556">whist_init_logger</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#ifdef __GNUC__</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;__attribute__((format(printf, 5, 6)))</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#aeb343163f137d0dea0081e34869e6b74">whist_log_printf</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level, <span class="keyword">const</span> <span class="keywordtype">char</span> *file_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keyword">function</span>,</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                      <span class="keywordtype">int</span> line_number, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt_str, ...);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#ifdef __GNUC__</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;__attribute__((format(printf, 6, 7)))</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#afc62c449e2a10a7733389c4fca6c1653">whist_log_printf_rate_limited</a>(<a class="code" href="structLogRateLimiter.html">LogRateLimiter</a> *rate_limiter, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level,</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">char</span> *file_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keyword">function</span>,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                   <span class="keywordtype">int</span> line_number, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt_str, ...);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#a74138e514d79a0449c832cc913b86f49">flush_logs</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#a4dfcbd491525c8782dc0f4a373f29fd6">destroy_logger</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keywordtype">void</span> <a class="code" href="logging_8h.html#a54581b1f2ee2b138b99408b358df690b">test_set_pause_state_on_logger_thread</a>(<span class="keywordtype">bool</span> pause);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#endif  // LOGGING_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="alogging_8h_html_afc62c449e2a10a7733389c4fca6c1653"><div class="ttname"><a href="logging_8h.html#afc62c449e2a10a7733389c4fca6c1653">whist_log_printf_rate_limited</a></div><div class="ttdeci">void whist_log_printf_rate_limited(LogRateLimiter *rate_limiter, unsigned int level, const char *file_name, const char *function, int line_number, const char *fmt_str,...)</div><div class="ttdoc">Log with rate limiting.</div><div class="ttdef"><b>Definition:</b> logging.c:507</div></div>
-<div class="ttc" id="alogging_8h_html_aeb343163f137d0dea0081e34869e6b74"><div class="ttname"><a href="logging_8h.html#aeb343163f137d0dea0081e34869e6b74">whist_log_printf</a></div><div class="ttdeci">void whist_log_printf(unsigned int level, const char *file_name, const char *function, int line_number, const char *fmt_str,...)</div><div class="ttdoc">Log the given format string This is an internal function that shouldn't be used, please use the macro...</div><div class="ttdef"><b>Definition:</b> logging.c:496</div></div>
-<div class="ttc" id="astructLogRateLimiter_html_a0dcc5867dc267bdb93adb2be630514df"><div class="ttname"><a href="structLogRateLimiter.html#a0dcc5867dc267bdb93adb2be630514df">LogRateLimiter::started</a></div><div class="ttdeci">bool started</div><div class="ttdoc">Whether the timer has started.</div><div class="ttdef"><b>Definition:</b> logging.h:102</div></div>
-<div class="ttc" id="alogging_8h_html_aab45aa94b75eeb446eaed8a8ad1c65a6"><div class="ttname"><a href="logging_8h.html#aab45aa94b75eeb446eaed8a8ad1c65a6">print_stacktrace</a></div><div class="ttdeci">void print_stacktrace(void)</div><div class="ttdoc">Print the stacktrace of the calling function to stdout This will be registered as if it was logged as...</div><div class="ttdef"><b>Definition:</b> logging.c:579</div></div>
-<div class="ttc" id="alogging_8h_html_a74138e514d79a0449c832cc913b86f49"><div class="ttname"><a href="logging_8h.html#a74138e514d79a0449c832cc913b86f49">flush_logs</a></div><div class="ttdeci">void flush_logs(void)</div><div class="ttdoc">This function will immediately flush all of the logs, rather than slowly pushing the logs through fro...</div><div class="ttdef"><b>Definition:</b> logging.c:182</div></div>
-<div class="ttc" id="astructLogRateLimiter_html"><div class="ttname"><a href="structLogRateLimiter.html">LogRateLimiter</a></div><div class="ttdoc">Struct used with rate-limited messages.</div><div class="ttdef"><b>Definition:</b> logging.h:87</div></div>
+<div class="ttc" id="alogging_8h_html_afc62c449e2a10a7733389c4fca6c1653"><div class="ttname"><a href="logging_8h.html#afc62c449e2a10a7733389c4fca6c1653">whist_log_printf_rate_limited</a></div><div class="ttdeci">void whist_log_printf_rate_limited(LogRateLimiter *rate_limiter, unsigned int level, const char *file_name, const char *function, int line_number, const char *fmt_str,...)</div><div class="ttdoc">Log with rate limiting.</div><div class="ttdef"><b>Definition:</b> logging.c:506</div></div>
+<div class="ttc" id="alogging_8h_html_aeb343163f137d0dea0081e34869e6b74"><div class="ttname"><a href="logging_8h.html#aeb343163f137d0dea0081e34869e6b74">whist_log_printf</a></div><div class="ttdeci">void whist_log_printf(unsigned int level, const char *file_name, const char *function, int line_number, const char *fmt_str,...)</div><div class="ttdoc">Log the given format string This is an internal function that shouldn't be used, please use the macro...</div><div class="ttdef"><b>Definition:</b> logging.c:495</div></div>
+<div class="ttc" id="astructLogRateLimiter_html_a0dcc5867dc267bdb93adb2be630514df"><div class="ttname"><a href="structLogRateLimiter.html#a0dcc5867dc267bdb93adb2be630514df">LogRateLimiter::started</a></div><div class="ttdeci">bool started</div><div class="ttdoc">Whether the timer has started.</div><div class="ttdef"><b>Definition:</b> logging.h:101</div></div>
+<div class="ttc" id="alogging_8h_html_aab45aa94b75eeb446eaed8a8ad1c65a6"><div class="ttname"><a href="logging_8h.html#aab45aa94b75eeb446eaed8a8ad1c65a6">print_stacktrace</a></div><div class="ttdeci">void print_stacktrace(void)</div><div class="ttdoc">Print the stacktrace of the calling function to stdout This will be registered as if it was logged as...</div><div class="ttdef"><b>Definition:</b> logging.c:578</div></div>
+<div class="ttc" id="alogging_8h_html_a74138e514d79a0449c832cc913b86f49"><div class="ttname"><a href="logging_8h.html#a74138e514d79a0449c832cc913b86f49">flush_logs</a></div><div class="ttdeci">void flush_logs(void)</div><div class="ttdoc">This function will immediately flush all of the logs, rather than slowly pushing the logs through fro...</div><div class="ttdef"><b>Definition:</b> logging.c:181</div></div>
+<div class="ttc" id="astructLogRateLimiter_html"><div class="ttname"><a href="structLogRateLimiter.html">LogRateLimiter</a></div><div class="ttdoc">Struct used with rate-limited messages.</div><div class="ttdef"><b>Definition:</b> logging.h:86</div></div>
 <div class="ttc" id="aclock_8h_html"><div class="ttname"><a href="clock_8h.html">clock.h</a></div><div class="ttdoc">This file contains the helper functions for timing code.</div></div>
-<div class="ttc" id="astructLogRateLimiter_html_a4116a3c024934b91e8643a321c6e8135"><div class="ttname"><a href="structLogRateLimiter.html#a4116a3c024934b91e8643a321c6e8135">LogRateLimiter::message_count</a></div><div class="ttdeci">unsigned int message_count</div><div class="ttdoc">Current count of messages this period.</div><div class="ttdef"><b>Definition:</b> logging.h:106</div></div>
-<div class="ttc" id="astructLogRateLimiter_html_ae4e420bb8cfc3ce29ce5f117ec448ca3"><div class="ttname"><a href="structLogRateLimiter.html#ae4e420bb8cfc3ce29ce5f117ec448ca3">LogRateLimiter::period_in_seconds</a></div><div class="ttdeci">double period_in_seconds</div><div class="ttdoc">Length of the measuring period, in seconds.</div><div class="ttdef"><b>Definition:</b> logging.h:91</div></div>
+<div class="ttc" id="astructLogRateLimiter_html_a4116a3c024934b91e8643a321c6e8135"><div class="ttname"><a href="structLogRateLimiter.html#a4116a3c024934b91e8643a321c6e8135">LogRateLimiter::message_count</a></div><div class="ttdeci">unsigned int message_count</div><div class="ttdoc">Current count of messages this period.</div><div class="ttdef"><b>Definition:</b> logging.h:105</div></div>
+<div class="ttc" id="astructLogRateLimiter_html_ae4e420bb8cfc3ce29ce5f117ec448ca3"><div class="ttname"><a href="structLogRateLimiter.html#ae4e420bb8cfc3ce29ce5f117ec448ca3">LogRateLimiter::period_in_seconds</a></div><div class="ttdeci">double period_in_seconds</div><div class="ttdoc">Length of the measuring period, in seconds.</div><div class="ttdef"><b>Definition:</b> logging.h:90</div></div>
 <div class="ttc" id="astructWhistTimerOpaque_html"><div class="ttname"><a href="structWhistTimerOpaque.html">WhistTimerOpaque</a></div><div class="ttdoc">Structure representing a timer.</div><div class="ttdef"><b>Definition:</b> clock.h:62</div></div>
-<div class="ttc" id="astructLogRateLimiter_html_aadb77ae961c2851d25d318f1e7f84734"><div class="ttname"><a href="structLogRateLimiter.html#aadb77ae961c2851d25d318f1e7f84734">LogRateLimiter::timer</a></div><div class="ttdeci">WhistTimer timer</div><div class="ttdoc">Timer marking when the current period started.</div><div class="ttdef"><b>Definition:</b> logging.h:110</div></div>
-<div class="ttc" id="alogging_8h_html_a54581b1f2ee2b138b99408b358df690b"><div class="ttname"><a href="logging_8h.html#a54581b1f2ee2b138b99408b358df690b">test_set_pause_state_on_logger_thread</a></div><div class="ttdeci">void test_set_pause_state_on_logger_thread(bool pause)</div><div class="ttdoc">Set pause state on logging thread.</div><div class="ttdef"><b>Definition:</b> logging.c:233</div></div>
+<div class="ttc" id="astructLogRateLimiter_html_aadb77ae961c2851d25d318f1e7f84734"><div class="ttname"><a href="structLogRateLimiter.html#aadb77ae961c2851d25d318f1e7f84734">LogRateLimiter::timer</a></div><div class="ttdeci">WhistTimer timer</div><div class="ttdoc">Timer marking when the current period started.</div><div class="ttdef"><b>Definition:</b> logging.h:109</div></div>
+<div class="ttc" id="alogging_8h_html_a54581b1f2ee2b138b99408b358df690b"><div class="ttname"><a href="logging_8h.html#a54581b1f2ee2b138b99408b358df690b">test_set_pause_state_on_logger_thread</a></div><div class="ttdeci">void test_set_pause_state_on_logger_thread(bool pause)</div><div class="ttdoc">Set pause state on logging thread.</div><div class="ttdef"><b>Definition:</b> logging.c:232</div></div>
 <div class="ttc" id="alogging_8h_html_a21c78c1d30297b221547ccb2414ad113"><div class="ttname"><a href="logging_8h.html#a21c78c1d30297b221547ccb2414ad113">get_do_not_catch_segfaults_flag</a></div><div class="ttdeci">bool get_do_not_catch_segfaults_flag(void)</div><div class="ttdoc">Check whether we are running the server in developer mode (which means that we won't catch segfaults)</div></div>
 <div class="ttc" id="awhist_8h_html"><div class="ttname"><a href="whist_8h.html">whist.h</a></div><div class="ttdoc">Copyright (c) 2021-2022 Whist Technologies, Inc.</div></div>
-<div class="ttc" id="astructLogRateLimiter_html_a65bfc76f64c9cb69a3546ed6ef132089"><div class="ttname"><a href="structLogRateLimiter.html#a65bfc76f64c9cb69a3546ed6ef132089">LogRateLimiter::max_messages_per_period</a></div><div class="ttdeci">unsigned int max_messages_per_period</div><div class="ttdoc">Number of messages allowed in each period.</div><div class="ttdef"><b>Definition:</b> logging.h:97</div></div>
+<div class="ttc" id="astructLogRateLimiter_html_a65bfc76f64c9cb69a3546ed6ef132089"><div class="ttname"><a href="structLogRateLimiter.html#a65bfc76f64c9cb69a3546ed6ef132089">LogRateLimiter::max_messages_per_period</a></div><div class="ttdeci">unsigned int max_messages_per_period</div><div class="ttdoc">Number of messages allowed in each period.</div><div class="ttdef"><b>Definition:</b> logging.h:96</div></div>
 <div class="ttc" id="alogging_8h_html_aec2b3c8a4110db3dacd0a0de88e5d556"><div class="ttname"><a href="logging_8h.html#aec2b3c8a4110db3dacd0a0de88e5d556">whist_init_logger</a></div><div class="ttdeci">void whist_init_logger(void)</div><div class="ttdoc">Initialize the logger.</div></div>
-<div class="ttc" id="alogging_8h_html_a4dfcbd491525c8782dc0f4a373f29fd6"><div class="ttname"><a href="logging_8h.html#a4dfcbd491525c8782dc0f4a373f29fd6">destroy_logger</a></div><div class="ttdeci">void destroy_logger(void)</div><div class="ttdoc">Destroy the logger object.</div><div class="ttdef"><b>Definition:</b> logging.c:369</div></div>
+<div class="ttc" id="alogging_8h_html_a4dfcbd491525c8782dc0f4a373f29fd6"><div class="ttname"><a href="logging_8h.html#a4dfcbd491525c8782dc0f4a373f29fd6">destroy_logger</a></div><div class="ttdeci">void destroy_logger(void)</div><div class="ttdoc">Destroy the logger object.</div><div class="ttdef"><b>Definition:</b> logging.c:368</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
