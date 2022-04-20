@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"nvidia__encode_8c.html#a4a33a804728a7698b34609ab428c22ac":[13,0,2,11,1,6,3],
+"nvidia__encode_8c.html#a4cb2e767184a4d54dbe262b29790a754":[13,0,2,11,1,6,2],
+"nvidia__encode_8c.html#a526f8efc8ebb82f02cf739318642d291":[13,0,2,11,1,6,7],
+"nvidia__encode_8c.html#aaa3ec6c4cf2408824bdb8c7be1cc809e":[13,0,2,11,1,6,6],
 "nvidia__encode_8c.html#ad82502cbe7aca39dfde299b071c4e2e4":[13,0,2,11,1,6,8],
 "nvidia__encode_8c.html#ad8842228e3e58bd05e44a6c8f1d665d7":[13,0,2,11,1,6,4],
 "nvidia__encode_8c.html#aee7bac5dfe47087e841cd8d9c6a1bd00":[13,0,2,11,1,6,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "sdl__utils_8c.html#a993a121aa7c5869498703f17d41262ab":[13,0,0,17,18],
 "sdl__utils_8c.html#aaacc5ce7ced4977cd893708f5d789df4":[13,0,0,17,30],
 "sdl__utils_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9":[13,0,0,17,32],
-"sdl__utils_8c.html#ab6276d9403ac7a2efcf060fe5a63b281":[13,0,0,17,17],
-"sdl__utils_8c.html#ab92ff1b8741a06ed0d4cf45d9c76f434":[13,0,0,17,5],
-"sdl__utils_8c.html#ac32c89e7fa9e78da4ddcceff4dd0e55c":[13,0,0,17,8],
-"sdl__utils_8c.html#ac74765003cc622938961e7f7476dd1bf":[13,0,0,17,10],
-"sdl__utils_8c.html#acc20a623c59b6fd30f2fdab8d6043c5a":[13,0,0,17,27]
+"sdl__utils_8c.html#ab6276d9403ac7a2efcf060fe5a63b281":[13,0,0,17,17]
 };

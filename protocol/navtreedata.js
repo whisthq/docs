@@ -147,15 +147,15 @@ var NAVTREEINDEX =
 "group__threading.html#gaccf861df01894d3473ca8faaf0a83938",
 "lodepng_8c.html#a5861bf2c5a7c8976ea2dd6d21e8d58bd",
 "log__statistic_8h.html#ac6797bdde16ad799a93e38562b150dba",
-"nvidia__encode_8c.html#ad82502cbe7aca39dfde299b071c4e2e4",
-"sdl__utils_8c.html#acebe87850e8f897347def89f127d87d3",
-"structDebugConsoleOverrideValues.html#a780ac7d7ee3f57ad74cc14b915f6355a",
-"structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f",
-"structRingBuffer.html#a82a70174568113a76b153e9f67b72532",
-"structWhistCursorInfo.html#ab13be0969c797eb4b96d1d0f04137b83",
-"sync__packets_8c.html#abef30726c0347177718a4ec7a32e57ea",
-"whist_8c.html#aa005f29266f2ddf76cb57dc510516839",
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bad26f33ae99edf1e5d1b437ff9b879e5d"
+"nvidia__encode_8c.html#a4a33a804728a7698b34609ab428c22ac",
+"sdl__utils_8c.html#ab92ff1b8741a06ed0d4cf45d9c76f434",
+"structDebugConsoleOverrideValues.html#a16329417c7f5ff2c6f361e4ceb9bbcca",
+"structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f",
+"structRingBuffer.html#a451ff9ab8f3632cc408ac1242dd1dbf1",
+"structWhistCommandLineOption.html#afd5913d2ac5b71b1b7402f77f3e5f37a",
+"structuivector.html#aa999025945f0c93d0461192475ae2720",
+"whist_8c.html#a637da5470a9f4107a59054c340442a7f",
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369bac9df8ac9fef341631691a51bbcf36fe0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

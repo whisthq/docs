@@ -120,7 +120,7 @@ Macros</h2></td></tr>
 <tr class="separator:a97888d50b51f804637c90a7dbee17c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3af14bab81dee35828959d2200a6c97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#aa3af14bab81dee35828959d2200a6c97">EWMA_FACTOR</a>&#160;&#160;&#160;0.3</td></tr>
 <tr class="separator:aa3af14bab81dee35828959d2200a6c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d9bdddbc82f74df4a5c1f7d6b73374"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#ae3d9bdddbc82f74df4a5c1f7d6b73374">MAX_BITRATE_EWMA_FACTOR</a>&#160;&#160;&#160;0.1</td></tr>
+<tr class="memitem:ae3d9bdddbc82f74df4a5c1f7d6b73374"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#ae3d9bdddbc82f74df4a5c1f7d6b73374">MAX_BITRATE_EWMA_FACTOR</a>&#160;&#160;&#160;0.05</td></tr>
 <tr class="separator:ae3d9bdddbc82f74df4a5c1f7d6b73374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a91a83e513d563048ee6f49c6386728"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a7a91a83e513d563048ee6f49c6386728">DELAY_VARIATION_THRESHOLD_IN_SEC</a>&#160;&#160;&#160;0.01</td></tr>
 <tr class="separator:a7a91a83e513d563048ee6f49c6386728"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +130,14 @@ Macros</h2></td></tr>
 <tr class="separator:a85ca41c173686c9a4b799af197448552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8726652b2320a2409f312b5fabf88962"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a8726652b2320a2409f312b5fabf88962">BANDWITH_USED_THRESHOLD</a>&#160;&#160;&#160;0.95</td></tr>
 <tr class="separator:a8726652b2320a2409f312b5fabf88962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7be16294f33945c3107170630651494"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#ab7be16294f33945c3107170630651494">MIN_LATENCY_THRESHOLD_SEC</a>&#160;&#160;&#160;0.05</td></tr>
+<tr class="separator:ab7be16294f33945c3107170630651494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a2601025391bed70cf7806eea48c49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a61a2601025391bed70cf7806eea48c49">LATENCY_MULTIPLIER_BURST_MODE</a>&#160;&#160;&#160;2.0</td></tr>
+<tr class="separator:a61a2601025391bed70cf7806eea48c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3865d4cfa83bd3bee75539269b0ca08e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#a3865d4cfa83bd3bee75539269b0ca08e">LATENCY_MULTIPLIER_NORMAL_MODE</a>&#160;&#160;&#160;1.5</td></tr>
+<tr class="separator:a3865d4cfa83bd3bee75539269b0ca08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9b7e39b8b067615c283585177306f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#aef9b7e39b8b067615c283585177306f5">LATENCY_MULTIPLIER_HOLD_STATE</a>&#160;&#160;&#160;1.1</td></tr>
+<tr class="separator:aef9b7e39b8b067615c283585177306f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -149,9 +157,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab99c00916505d0add8934a3d218f40d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#ab99c00916505d0add8934a3d218f40d5">network_algo_set_dpi</a> (int new_dpi)</td></tr>
 <tr class="memdesc:ab99c00916505d0add8934a3d218f40d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will set the DPI of the screen/display.  <a href="network__algorithm_8c.html#ab99c00916505d0add8934a3d218f40d5">More...</a><br /></td></tr>
 <tr class="separator:ab99c00916505d0add8934a3d218f40d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b690342b05bb87cddd488dd4a71a2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#ae7b690342b05bb87cddd488dd4a71a2f">whist_congestion_controller</a> (<a class="el" href="structGroupStats.html">GroupStats</a> *curr_group_stats, <a class="el" href="structGroupStats.html">GroupStats</a> *prev_group_stats, int incoming_bitrate, double packet_loss_ratio, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
-<tr class="memdesc:ae7b690342b05bb87cddd488dd4a71a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will estimate the new bitrate based on whist congestion control algo.  <a href="network__algorithm_8c.html#ae7b690342b05bb87cddd488dd4a71a2f">More...</a><br /></td></tr>
-<tr class="separator:ae7b690342b05bb87cddd488dd4a71a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac062bb5d4fb81d7536d67be9961d4f35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8c.html#ac062bb5d4fb81d7536d67be9961d4f35">whist_congestion_controller</a> (<a class="el" href="structGroupStats.html">GroupStats</a> *curr_group_stats, <a class="el" href="structGroupStats.html">GroupStats</a> *prev_group_stats, int incoming_bitrate, double packet_loss_ratio, double short_term_latency, double long_term_latency, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
+<tr class="memdesc:ac062bb5d4fb81d7536d67be9961d4f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will estimate the new bitrate based on whist congestion control algo.  <a href="network__algorithm_8c.html#ac062bb5d4fb81d7536d67be9961d4f35">More...</a><br /></td></tr>
+<tr class="separator:ac062bb5d4fb81d7536d67be9961d4f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -285,6 +293,48 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a61a2601025391bed70cf7806eea48c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a2601025391bed70cf7806eea48c49">&#9670;&nbsp;</a></span>LATENCY_MULTIPLIER_BURST_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LATENCY_MULTIPLIER_BURST_MODE&#160;&#160;&#160;2.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef9b7e39b8b067615c283585177306f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef9b7e39b8b067615c283585177306f5">&#9670;&nbsp;</a></span>LATENCY_MULTIPLIER_HOLD_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LATENCY_MULTIPLIER_HOLD_STATE&#160;&#160;&#160;1.1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3865d4cfa83bd3bee75539269b0ca08e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3865d4cfa83bd3bee75539269b0ca08e">&#9670;&nbsp;</a></span>LATENCY_MULTIPLIER_NORMAL_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LATENCY_MULTIPLIER_NORMAL_MODE&#160;&#160;&#160;1.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae9840e66e0f74fb9c9bf34ae6446250f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9840e66e0f74fb9c9bf34ae6446250f">&#9670;&nbsp;</a></span>LONG_OVERUSE_TIME_THRESHOLD_IN_SEC</h2>
 
@@ -306,7 +356,7 @@ Usage</h1>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_BITRATE_EWMA_FACTOR&#160;&#160;&#160;0.1</td>
+          <td class="memname">#define MAX_BITRATE_EWMA_FACTOR&#160;&#160;&#160;0.05</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -335,6 +385,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">#define MAXIMUM_BURST_BITRATE&#160;&#160;&#160;(<a class="el" href="network__algorithm_8c.html#af99345a216f300c72251d94158573c1c">MAXIMUM_BITRATE</a> * <a class="el" href="network__algorithm_8c.html#a9b3aee73161a6fead286063d1bd7b829">BURST_BITRATE_RATIO</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7be16294f33945c3107170630651494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7be16294f33945c3107170630651494">&#9670;&nbsp;</a></span>MIN_LATENCY_THRESHOLD_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_LATENCY_THRESHOLD_SEC&#160;&#160;&#160;0.05</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -555,8 +619,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ae7b690342b05bb87cddd488dd4a71a2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7b690342b05bb87cddd488dd4a71a2f">&#9670;&nbsp;</a></span>whist_congestion_controller()</h2>
+<a id="ac062bb5d4fb81d7536d67be9961d4f35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac062bb5d4fb81d7536d67be9961d4f35">&#9670;&nbsp;</a></span>whist_congestion_controller()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,6 +652,18 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>short_term_latency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>long_term_latency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="structNetworkSettings.html">NetworkSettings</a> *&#160;</td>
           <td class="paramname"><em>network_settings</em>&#160;</td>
         </tr>
@@ -606,6 +682,8 @@ Usage</h1>
     <tr><td class="paramname">prev_group_stats</td><td>Pointer to struct containing any previous group of packets' departure time and arrival time</td></tr>
     <tr><td class="paramname">incoming_bitrate</td><td>Bitrate received over the last few hundred milliseconds. Exact duration is specified in <a class="el" href="WCC_8md.html">WCC.md</a></td></tr>
     <tr><td class="paramname">packet_loss_ratio</td><td>Packet loss ratio over last 250ms or so</td></tr>
+    <tr><td class="paramname">short_term_latency</td><td>Short term average of round trip latency</td></tr>
+    <tr><td class="paramname">long_term_latency</td><td>Long term average of round trip latency</td></tr>
     <tr><td class="paramname">network_settings</td><td>Pointer to the struct containing previous network_settings. Also the new network settings will be updated in this struct.</td></tr>
   </table>
   </dd>

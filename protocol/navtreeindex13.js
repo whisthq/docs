@@ -1,5 +1,11 @@
 var NAVTREEINDEX13 =
 {
+"structWhistCommandLineOption.html#afd5913d2ac5b71b1b7402f77f3e5f37a":[11,4,0,9],
+"structWhistCursorInfo.html":[12,0,117],
+"structWhistCursorInfo.html#a4f58cbac81bccfbd27f81f8270d43186":[12,0,117,8],
+"structWhistCursorInfo.html#a58b87b58af4f44806ee7ae0423c3b6f0":[12,0,117,5],
+"structWhistCursorInfo.html#a77b762c1cfae190d948be08f1b646c42":[12,0,117,3],
+"structWhistCursorInfo.html#a97c4457f2bbfe7ed6492af81e7e0bf42":[12,0,117,2],
 "structWhistCursorInfo.html#ab13be0969c797eb4b96d1d0f04137b83":[12,0,117,7],
 "structWhistCursorInfo.html#ab3f1c4f53af0601a98be9fabe468f653":[12,0,117,6],
 "structWhistCursorInfo.html#ac402f1d1a0939f0d128fea3baaed6a0f":[12,0,117,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX13 =
 "structucvector.html#a27c99c34de0c5b3ca0c242d402c69499":[12,0,106,2],
 "structucvector.html#ace794c5713208c5a20f21762cd87c919":[12,0,106,1],
 "structuivector.html":[12,0,110],
-"structuivector.html#a427d761df4bb4f0f19b4a973fc224c78":[12,0,110,1],
-"structuivector.html#aa999025945f0c93d0461192475ae2720":[12,0,110,2],
-"structuivector.html#aac0395a9ad397ae7a28219561ab49ffa":[12,0,110,0],
-"sync__packets_8c.html":[13,0,0,19],
-"sync__packets_8c.html#a43f8b24e694575df3b5eb61cbe5f98a4":[13,0,0,19,0],
-"sync__packets_8c.html#a845bbd8479d8723f4eccde3034135a26":[13,0,0,19,2],
-"sync__packets_8c.html#ab052ae0d87ab16898c020aed81f21aa0":[13,0,0,19,4]
+"structuivector.html#a427d761df4bb4f0f19b4a973fc224c78":[12,0,110,1]
 };

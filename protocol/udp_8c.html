@@ -123,7 +123,7 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a6afbd3875118f98013f7cc49969dac90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a6afbd3875118f98013f7cc49969dac90">UDPNETWORKPACKET_HEADER_SIZE</a>&#160;&#160;&#160;((int)(offsetof(<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>, payload)))</td></tr>
 <tr class="separator:a6afbd3875118f98013f7cc49969dac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f2f61011d729a3bb56deee2f26a2c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a49f2f61011d729a3bb56deee2f26a2c7">UDP_PING_INTERVAL_SEC</a>&#160;&#160;&#160;0.1</td></tr>
+<tr class="memitem:a49f2f61011d729a3bb56deee2f26a2c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a49f2f61011d729a3bb56deee2f26a2c7">UDP_PING_INTERVAL_SEC</a>&#160;&#160;&#160;0.025</td></tr>
 <tr class="separator:a49f2f61011d729a3bb56deee2f26a2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d308c30a8d28fbf997bb7085de35421"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a7d308c30a8d28fbf997bb7085de35421">UDP_PONG_TIMEOUT_SEC</a>&#160;&#160;&#160;5.0</td></tr>
 <tr class="separator:a7d308c30a8d28fbf997bb7085de35421"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +143,7 @@ Macros</h2></td></tr>
 <tr class="separator:a1460dcee3b0c034518e8f893c81711ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad74b55a091ea3402979c0ee8aa86c5c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ad74b55a091ea3402979c0ee8aa86c5c3">OUT_OF_ORDER_EWMA_FACTOR</a>&#160;&#160;&#160;0.01</td></tr>
 <tr class="separator:ad74b55a091ea3402979c0ee8aa86c5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a95ae8465ba2cfb7e39535fd22e9d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a27a95ae8465ba2cfb7e39535fd22e9d9">MAX_PINGS_IN_FLIGHT</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memitem:a27a95ae8465ba2cfb7e39535fd22e9d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a27a95ae8465ba2cfb7e39535fd22e9d9">MAX_PINGS_IN_FLIGHT</a>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:a27a95ae8465ba2cfb7e39535fd22e9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f283368e88ac298d92d1506dd4c0abb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4f283368e88ac298d92d1506dd4c0abb">RETRIES_ON_BUFFER_FULL</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a4f283368e88ac298d92d1506dd4c0abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,8 +151,10 @@ Macros</h2></td></tr>
 <tr class="separator:a3190cca650071548d6b75370b0e5c41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c549fa2648eea555b6c8a93ee4dc3aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a8c549fa2648eea555b6c8a93ee4dc3aa">MAX_NUM_AUDIO_FRAMES</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a8c549fa2648eea555b6c8a93ee4dc3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2b8eb0b122983fbf3da1da372e479c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#af2b8eb0b122983fbf3da1da372e479c2">PING_LAMBDA</a>&#160;&#160;&#160;0.7</td></tr>
-<tr class="separator:af2b8eb0b122983fbf3da1da372e479c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f662d55af17afbda6cd651c10ece4ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4f662d55af17afbda6cd651c10ece4ec">PING_LAMBDA_SHORT_TERM</a>&#160;&#160;&#160;0.9</td></tr>
+<tr class="separator:a4f662d55af17afbda6cd651c10ece4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b40832174b4d49fcaad8678cb592774"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a3b40832174b4d49fcaad8678cb592774">PING_LAMBDA_LONG_TERM</a>&#160;&#160;&#160;0.995</td></tr>
+<tr class="separator:a3b40832174b4d49fcaad8678cb592774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364162751f11cecfec916c6db2e7419c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a364162751f11cecfec916c6db2e7419c">CONNECTION_ATTEMPT_INTERVAL_MS</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a364162751f11cecfec916c6db2e7419c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e6533153a99e7fa4b81352018a5b2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ad3e6533153a99e7fa4b81352018a5b2a">NUM_CONFIRMATION_MESSAGES</a>&#160;&#160;&#160;10</td></tr>
@@ -387,7 +389,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_PINGS_IN_FLIGHT&#160;&#160;&#160;64</td>
+          <td class="memname">#define MAX_PINGS_IN_FLIGHT&#160;&#160;&#160;256</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -450,14 +452,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af2b8eb0b122983fbf3da1da372e479c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2b8eb0b122983fbf3da1da372e479c2">&#9670;&nbsp;</a></span>PING_LAMBDA</h2>
+<a id="a3b40832174b4d49fcaad8678cb592774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b40832174b4d49fcaad8678cb592774">&#9670;&nbsp;</a></span>PING_LAMBDA_LONG_TERM</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PING_LAMBDA&#160;&#160;&#160;0.7</td>
+          <td class="memname">#define PING_LAMBDA_LONG_TERM&#160;&#160;&#160;0.995</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f662d55af17afbda6cd651c10ece4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f662d55af17afbda6cd651c10ece4ec">&#9670;&nbsp;</a></span>PING_LAMBDA_SHORT_TERM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PING_LAMBDA_SHORT_TERM&#160;&#160;&#160;0.9</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -499,7 +515,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UDP_PING_INTERVAL_SEC&#160;&#160;&#160;0.1</td>
+          <td class="memname">#define UDP_PING_INTERVAL_SEC&#160;&#160;&#160;0.025</td>
         </tr>
       </table>
 </div><div class="memdoc">

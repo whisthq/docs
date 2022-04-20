@@ -1,5 +1,9 @@
 var NAVTREEINDEX11 =
 {
+"structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[12,0,59,0],
+"structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[12,0,59,3],
+"structLodePNGBitReader.html#a80a148b29e36301da77f3d2432cbd608":[12,0,59,4],
+"structLodePNGBitReader.html#aac5615d1bb15682c3bc6e9e52b8cd5aa":[12,0,59,1],
 "structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f":[12,0,59,2],
 "structLodePNGBitWriter.html":[12,0,60],
 "structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[12,0,60,0],
@@ -138,13 +142,14 @@ var NAVTREEINDEX11 =
 "structNackID.html#ab67caefcc54db66c7f1d0bfea7eb2714":[12,0,76,1],
 "structNackID.html#ad535bcfcf75e51795758fa497e1ecf31":[12,0,76,0],
 "structNetworkSettings.html":[12,0,77],
-"structNetworkSettings.html#a05c1fd03886fa4c2c077b03ec8c8beee":[12,0,77,5],
-"structNetworkSettings.html#a2057f85aef6593bd628f58dda14c3ab2":[12,0,77,4],
-"structNetworkSettings.html#a504f5d541cbb2329b36d646afc16ff70":[12,0,77,6],
+"structNetworkSettings.html#a05c1fd03886fa4c2c077b03ec8c8beee":[12,0,77,6],
+"structNetworkSettings.html#a2057f85aef6593bd628f58dda14c3ab2":[12,0,77,5],
+"structNetworkSettings.html#a504f5d541cbb2329b36d646afc16ff70":[12,0,77,7],
+"structNetworkSettings.html#a8afbe6592d3143eeb901343761bfbc55":[12,0,77,2],
 "structNetworkSettings.html#a962c6ece3541c1680711bd0ae96a89af":[12,0,77,0],
-"structNetworkSettings.html#ab64a6fb3ffd52c79aee505244f3ba849":[12,0,77,2],
+"structNetworkSettings.html#ab64a6fb3ffd52c79aee505244f3ba849":[12,0,77,3],
 "structNetworkSettings.html#aca1cf1ffb522409ab0d2412817ed49fd":[12,0,77,1],
-"structNetworkSettings.html#ad765e7a2b5566832dbe65cf0192b942f":[12,0,77,3],
+"structNetworkSettings.html#ad765e7a2b5566832dbe65cf0192b942f":[12,0,77,4],
 "structNetworkStatistics.html":[12,0,78],
 "structNetworkStatistics.html#a1a47dd63f78f6ae1c25f32d5fc860fdf":[12,0,78,3],
 "structNetworkStatistics.html#a65a95dcb2554d691c4aa8bbe18729b65":[12,0,78,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX11 =
 "structRingBuffer.html#a3229bb03ce787b257fbaef7b25a7eef5":[12,0,88,0],
 "structRingBuffer.html#a4040ea10a7ec97c33893f20c63084a7a":[12,0,88,24],
 "structRingBuffer.html#a43c8b6829b64fd8b7f0aa7dbf7847a07":[12,0,88,21],
-"structRingBuffer.html#a44ac04c74f6f5e1a9c140d599df24ac5":[12,0,88,7],
-"structRingBuffer.html#a451ff9ab8f3632cc408ac1242dd1dbf1":[12,0,88,10],
-"structRingBuffer.html#a54dd2f672cecf37fd14988783fc1370d":[12,0,88,14],
-"structRingBuffer.html#a57b1694749643d632f8cf0d0a2dd3305":[12,0,88,4],
-"structRingBuffer.html#a6a556b9ab1825fe65ce09864185a027d":[12,0,88,23],
-"structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247":[12,0,88,8]
+"structRingBuffer.html#a44ac04c74f6f5e1a9c140d599df24ac5":[12,0,88,7]
 };
