@@ -142,7 +142,7 @@ var searchData=
   ['whist_5fffmpeg_5ffree_2468',['whist_ffmpeg_free',['../ffmpeg__memory_8c.html#a42f774f72925b308618cb4c1b9831748',1,'ffmpeg_memory.c']]],
   ['whist_5fffmpeg_5fmalloc_2469',['whist_ffmpeg_malloc',['../ffmpeg__memory_8c.html#acb2502ac53e5f04b702415867261d990',1,'ffmpeg_memory.c']]],
   ['whist_5fffmpeg_5frealloc_2470',['whist_ffmpeg_realloc',['../ffmpeg__memory_8c.html#aad7271f4b56457588a16cad8434f7d52',1,'ffmpeg_memory.c']]],
-  ['whist_5ffile_5fdownload_5fnotify_5ffinished_2471',['whist_file_download_notify_finished',['../file__download_8c.html#a40086f7bfab699711d676746770cf331',1,'whist_file_download_notify_finished(const char *filename):&#160;file_download.c'],['../file__download_8h.html#ad9276fb915b13dc4572f7b6c6fdc1a9a',1,'whist_file_download_notify_finished(const char *file_path):&#160;file_download.c']]],
+  ['whist_5ffile_5fdownload_5fnotify_5ffinished_2471',['whist_file_download_notify_finished',['../file__download_8c.html#a2509a6ba5815eb0a1ad7364d5d1c0cff',1,'whist_file_download_notify_finished(const char *filepath):&#160;file_download.c'],['../file__download_8h.html#ad9276fb915b13dc4572f7b6c6fdc1a9a',1,'whist_file_download_notify_finished(const char *file_path):&#160;file_download.c']]],
   ['whist_5ffile_5fupload_5fget_5fpicked_5ffile_2472',['whist_file_upload_get_picked_file',['../file__upload_8c.html#a5eb6152f895234e64238361955cf722a',1,'whist_file_upload_get_picked_file():&#160;file_upload.c'],['../file__upload_8h.html#aa8d38534511d904e2cee5ac4c01acde8',1,'whist_file_upload_get_picked_file(void):&#160;file_upload.c']]],
   ['whist_5fframe_2ec_2473',['whist_frame.c',['../whist__frame_8c.html',1,'']]],
   ['whist_5fframe_2eh_2474',['whist_frame.h',['../whist__frame_8h.html',1,'']]],
