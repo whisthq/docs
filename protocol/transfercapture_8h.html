@@ -98,9 +98,9 @@ $(document).ready(function(){initNavTree('transfercapture_8h.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1ff601abab02dcb3b01c6f2f7c9b9d37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transfercapture_8h.html#a1ff601abab02dcb3b01c6f2f7c9b9d37">transfer_capture</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
-<tr class="memdesc:a1ff601abab02dcb3b01c6f2f7c9b9d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the texture stored in the capture device to the encoder, either via GPU or CPU.  <a href="transfercapture_8h.html#a1ff601abab02dcb3b01c6f2f7c9b9d37">More...</a><br /></td></tr>
-<tr class="separator:a1ff601abab02dcb3b01c6f2f7c9b9d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2c420b75f18226fa76f11479dbe0b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transfercapture_8h.html#a0e2c420b75f18226fa76f11479dbe0b2">transfer_capture</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *device, <a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder, bool *force_iframe)</td></tr>
+<tr class="memdesc:a0e2c420b75f18226fa76f11479dbe0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the texture stored in the capture device to the encoder, either via GPU or CPU.  <a href="transfercapture_8h.html#a0e2c420b75f18226fa76f11479dbe0b2">More...</a><br /></td></tr>
+<tr class="separator:a0e2c420b75f18226fa76f11479dbe0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -110,8 +110,8 @@ video encoder.</h1>
 <h1><a class="anchor" id="autotoc_md295"></a>
 Usage</h1>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a1ff601abab02dcb3b01c6f2f7c9b9d37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ff601abab02dcb3b01c6f2f7c9b9d37">&#9670;&nbsp;</a></span>transfer_capture()</h2>
+<a id="a0e2c420b75f18226fa76f11479dbe0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2c420b75f18226fa76f11479dbe0b2">&#9670;&nbsp;</a></span>transfer_capture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +126,13 @@ Usage</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td>
-          <td class="paramname"><em>encoder</em>&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>force_iframe</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -141,6 +147,7 @@ Usage</h1>
   <table class="params">
     <tr><td class="paramname">device</td><td>The capture device from which to get the texture </td></tr>
     <tr><td class="paramname">encoder</td><td>The encoder into which to load the frame data</td></tr>
+    <tr><td class="paramname">force_iframe</td><td>Whether an I-frame needs to be generated</td></tr>
   </table>
   </dd>
 </dl>
