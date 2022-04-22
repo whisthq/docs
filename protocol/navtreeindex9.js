@@ -1,7 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"sdl__utils_8c.html#a40d437adeb4ed227d37de384b28e1aff":[13,0,0,14,1],
-"sdl__utils_8c.html#a4115192313cdb78079bd69ca3fbf5606":[13,0,0,14,9],
 "sdl__utils_8c.html#a4192026d8c6e2f51b173cdaecbedb371":[13,0,0,14,2],
 "sdl__utils_8c.html#a46ebcb0bcfb15eae4e15a7686891b121":[13,0,0,14,3],
 "sdl__utils_8c.html#a557cdefd7d618aa9c5272f245dded55e":[13,0,0,14,18],
@@ -249,5 +247,7 @@ var NAVTREEINDEX9 =
 "structCpuInfo.html#abc9d6aeb929d6d8e508f6ccb10ccb0d4":[12,0,24,2],
 "structCpuInfo.html#ad50875d591cb203c4d456e741ce32d0c":[12,0,24,1],
 "structDebugConsoleOverrideValues.html":[12,0,25],
-"structDebugConsoleOverrideValues.html#a0c3ab997b3f535543e45c303141baf7d":[12,0,25,1]
+"structDebugConsoleOverrideValues.html#a0c3ab997b3f535543e45c303141baf7d":[12,0,25,1],
+"structDebugConsoleOverrideValues.html#a16329417c7f5ff2c6f361e4ceb9bbcca":[12,0,25,3],
+"structDebugConsoleOverrideValues.html#a335ac2dc7c1bc5309e5088e329b1cc78":[12,0,25,7]
 };

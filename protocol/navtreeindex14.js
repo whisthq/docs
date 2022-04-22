@@ -1,7 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"structucvector.html#a27c99c34de0c5b3ca0c242d402c69499":[12,0,107,2],
-"structucvector.html#ace794c5713208c5a20f21762cd87c919":[12,0,107,1],
 "structuivector.html":[12,0,111],
 "structuivector.html#a427d761df4bb4f0f19b4a973fc224c78":[12,0,111,1],
 "structuivector.html#aa999025945f0c93d0461192475ae2720":[12,0,111,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX14 =
 "whist_8c.html":[13,0,2,2,4],
 "whist_8c.html#a00948d171966edaeadd7719bd2f87f38":[13,0,2,2,4,7],
 "whist_8c.html#a18de2db2f97ace4d6129993e3d10e7f2":[13,0,2,2,4,16],
-"whist_8c.html#a31fd6c4678d06a79702a5781fb54b43b":[13,0,2,2,4,11]
+"whist_8c.html#a31fd6c4678d06a79702a5781fb54b43b":[13,0,2,2,4,11],
+"whist_8c.html#a37f44bf45880153c07ddf47a4dcaf135":[13,0,2,2,4,14],
+"whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e":[13,0,2,2,4,17]
 };
