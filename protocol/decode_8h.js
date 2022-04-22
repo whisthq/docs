@@ -10,5 +10,5 @@ var decode_8h =
     [ "video_decoder_decode_frame", "decode_8h.html#a29e08542a8a988ca8371797bfe93f25f", null ],
     [ "video_decoder_free_decoded_frame", "decode_8h.html#a985c67900df09a3cf893e4ba76d030c7", null ],
     [ "video_decoder_get_last_decoded_frame", "decode_8h.html#a6084356bbeab34505db4c75bc46fd9c4", null ],
-    [ "video_decoder_send_packets", "decode_8h.html#a5cdd12595b468064701921570b66730b", null ]
+    [ "video_decoder_send_packets", "decode_8h.html#a8a77d8f22147f79d89c3bb9ed3414e44", null ]
 ];

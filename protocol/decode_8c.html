@@ -108,9 +108,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a49c422905662783d02130286cc73b8ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a49c422905662783d02130286cc73b8ea">destroy_video_decoder</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="memdesc:a49c422905662783d02130286cc73b8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an initialized FFmpeg video decoder and frees its memory.  <a href="decode_8c.html#a49c422905662783d02130286cc73b8ea">More...</a><br /></td></tr>
 <tr class="separator:a49c422905662783d02130286cc73b8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cdd12595b468064701921570b66730b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a5cdd12595b468064701921570b66730b">video_decoder_send_packets</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, size_t buffer_size)</td></tr>
-<tr class="memdesc:a5cdd12595b468064701921570b66730b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the packets contained in buffer into the decoder.  <a href="decode_8c.html#a5cdd12595b468064701921570b66730b">More...</a><br /></td></tr>
-<tr class="separator:a5cdd12595b468064701921570b66730b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a77d8f22147f79d89c3bb9ed3414e44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a8a77d8f22147f79d89c3bb9ed3414e44">video_decoder_send_packets</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder, void *buffer, size_t buffer_size, bool start_of_stream)</td></tr>
+<tr class="memdesc:a8a77d8f22147f79d89c3bb9ed3414e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the packets contained in buffer into the decoder.  <a href="decode_8c.html#a8a77d8f22147f79d89c3bb9ed3414e44">More...</a><br /></td></tr>
+<tr class="separator:a8a77d8f22147f79d89c3bb9ed3414e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e08542a8a988ca8371797bfe93f25f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a29e08542a8a988ca8371797bfe93f25f">video_decoder_decode_frame</a> (<a class="el" href="structVideoDecoder.html">VideoDecoder</a> *decoder)</td></tr>
 <tr class="memdesc:a29e08542a8a988ca8371797bfe93f25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the next available frame from the decoder.  <a href="decode_8c.html#a29e08542a8a988ca8371797bfe93f25f">More...</a><br /></td></tr>
 <tr class="separator:a29e08542a8a988ca8371797bfe93f25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,8 +336,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a5cdd12595b468064701921570b66730b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cdd12595b468064701921570b66730b">&#9670;&nbsp;</a></span>video_decoder_send_packets()</h2>
+<a id="a8a77d8f22147f79d89c3bb9ed3414e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a77d8f22147f79d89c3bb9ed3414e44">&#9670;&nbsp;</a></span>video_decoder_send_packets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -358,7 +358,13 @@ Usage</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buffer_size</em>&#160;</td>
+          <td class="paramname"><em>buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>start_of_stream</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -374,6 +380,7 @@ Usage</h1>
     <tr><td class="paramname">decoder</td><td>The decoder we are using for decoding</td></tr>
     <tr><td class="paramname">buffer</td><td>The buffer containing the encoded packets</td></tr>
     <tr><td class="paramname">buffer_size</td><td>The size of the buffer containing the frame to decode</td></tr>
+    <tr><td class="paramname">start_of_stream</td><td>True if the packets represent the start of a stream (e.g. for H.264 they contain parameter sets and an IDR frame). If so, a new decoder may be started from this point.</td></tr>
   </table>
   </dd>
 </dl>
