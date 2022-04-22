@@ -1,7 +1,7 @@
 var structWhistFrontendEvent =
 [
+    [ "file_drag", "structWhistFrontendEvent.html#aa4feaf572c220e2e6091a1c99541aab0", null ],
     [ "file_drop", "structWhistFrontendEvent.html#a23822df69a50c9c0a193c85a3a40e2b9", null ],
-    [ "frontend", "structWhistFrontendEvent.html#a0fe99b318b91c062aa119c2addf8e5b6", null ],
     [ "gesture", "structWhistFrontendEvent.html#a022fc8af2d6ad39bba8b5c3cabaae3f2", null ],
     [ "keypress", "structWhistFrontendEvent.html#a3f5dc0ba589ebe3090019f027a750a06", null ],
     [ "mouse_button", "structWhistFrontendEvent.html#ad732bc994393bb52b7e495dc70e1d3d9", null ],

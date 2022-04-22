@@ -117,7 +117,7 @@ High-Level Overview</h1>
 <li>To handle a client message on the server, see <code>./server/handle_client_message.c</code></li>
 <li>See <code>./whist/core/whist.h</code> for struct definitions.</li>
 </ul>
-<p>Of course, input must also be sent from client to server. This is handled in the form of SDL Events, which are retrieved in <code>./client/main.c</code> and handled in <code><a class="el" href="sdl__event__handler_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">sdl_event_handler.c</a></code>. These generally take the form of <code>fcmsg</code>'s sent from client to server, over <code>UDP</code> for speed. We don't handle packet dropping, however, so sometimes the capslock and numlock will go out-of-sync. We use <code>sync_keyboard_state</code> to fix this, resyncing stateful keys every 50ms with an <code>fcmsg</code>. This additionally handles the initial sync by-default.</p>
+<p>Of course, input must also be sent from client to server. This is handled in the form of SDL Events, which are retrieved in <code>./client/main.c</code> and handled in <code>sdl_event_handler.c</code>. These generally take the form of <code>fcmsg</code>'s sent from client to server, over <code>UDP</code> for speed. We don't handle packet dropping, however, so sometimes the capslock and numlock will go out-of-sync. We use <code>sync_keyboard_state</code> to fix this, resyncing stateful keys every 50ms with an <code>fcmsg</code>. This additionally handles the initial sync by-default.</p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Current Encoding Status</h2>
 <p>Our current status of using encoders is a bit tricky.</p>
@@ -132,8 +132,6 @@ File Structure</h1>
 <div class="line">│   ├── client_utils.c &lt;- cmdline options, among others</div>
 <div class="line">│   ├── handle_server_message.c &lt;- Handle server fcmsg&#39;s</div>
 <div class="line">│   ├── main.c &lt;- SDL Event loop, receive and categorize packets as fcmsg/audio/video</div>
-<div class="line">│   ├── native_window_utils_windows.c &lt;- Functions to modify SDL window on Windows</div>
-<div class="line">│   ├── native_window_utils_x11.c &lt;- Functions to modify SDL window for X11</div>
 <div class="line">│   ├── network.c &lt;- Functions to connect to server, and send_fcmsg</div>
 <div class="line">│   ├── sdl_event_handler.c &lt;- Handle SDL Events</div>
 <div class="line">│   ├── sdlscreeninfo.c &lt;- Get monitor/window width/height functions</div>

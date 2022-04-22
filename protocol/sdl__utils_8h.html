@@ -104,15 +104,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa22cf7e0665db4c165df95b172220053"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#aa22cf7e0665db4c165df95b172220053">get_skip_taskbar</a> (void)</td></tr>
-<tr class="memdesc:aa22cf7e0665db4c165df95b172220053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether we are going to initialize the protocol window without the taskbar.  <a href="sdl__utils_8h.html#aa22cf7e0665db4c165df95b172220053">More...</a><br /></td></tr>
-<tr class="separator:aa22cf7e0665db4c165df95b172220053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9040d5393f53489b6f473c22d146b9c"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#aa9040d5393f53489b6f473c22d146b9c">init_sdl</a> (int <a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, int <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, char *<a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, char *icon_filename, <a class="el" href="structWhistFrontend.html">WhistFrontend</a> **frontend)</td></tr>
-<tr class="memdesc:aa9040d5393f53489b6f473c22d146b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL window, with the currently running thread at the owner.  <a href="sdl__utils_8h.html#aa9040d5393f53489b6f473c22d146b9c">More...</a><br /></td></tr>
-<tr class="separator:aa9040d5393f53489b6f473c22d146b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f9b1d608f83977eca17d43ab165ce21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a4f9b1d608f83977eca17d43ab165ce21">destroy_sdl</a> (SDL_Window *<a class="el" href="whist__client_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a>, <a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
-<tr class="memdesc:a4f9b1d608f83977eca17d43ab165ce21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8h.html#a4f9b1d608f83977eca17d43ab165ce21">More...</a><br /></td></tr>
-<tr class="separator:a4f9b1d608f83977eca17d43ab165ce21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4938c013e8875d657900464e834188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a3c4938c013e8875d657900464e834188">init_sdl</a> (int <a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, int <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, const char *title)</td></tr>
+<tr class="memdesc:a3c4938c013e8875d657900464e834188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL window frontend, with the currently running thread at the owner.  <a href="sdl__utils_8h.html#a3c4938c013e8875d657900464e834188">More...</a><br /></td></tr>
+<tr class="separator:a3c4938c013e8875d657900464e834188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40d437adeb4ed227d37de384b28e1aff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a40d437adeb4ed227d37de384b28e1aff">destroy_sdl</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a40d437adeb4ed227d37de384b28e1aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8h.html#a40d437adeb4ed227d37de384b28e1aff">More...</a><br /></td></tr>
+<tr class="separator:a40d437adeb4ed227d37de384b28e1aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eec2f00758ec0f030a20606be54023c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a0eec2f00758ec0f030a20606be54023c">sdl_renderer_resize_window</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>)</td></tr>
 <tr class="memdesc:a0eec2f00758ec0f030a20606be54023c"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the window gets resized, call this function to update the internal rendering dimensions.  <a href="sdl__utils_8h.html#a0eec2f00758ec0f030a20606be54023c">More...</a><br /></td></tr>
 <tr class="separator:a0eec2f00758ec0f030a20606be54023c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,9 +128,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7c2802f44ea9038aecef99cfb1673989"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a7c2802f44ea9038aecef99cfb1673989">sdl_set_cursor_info_as_pending</a> (<a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *cursor_info)</td></tr>
 <tr class="memdesc:a7c2802f44ea9038aecef99cfb1673989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cursor info as pending, so that it will be draw in the main thread.  <a href="sdl__utils_8h.html#a7c2802f44ea9038aecef99cfb1673989">More...</a><br /></td></tr>
 <tr class="separator:a7c2802f44ea9038aecef99cfb1673989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6276d9403ac7a2efcf060fe5a63b281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#ab6276d9403ac7a2efcf060fe5a63b281">sdl_present_pending_cursor</a> (void)</td></tr>
-<tr class="memdesc:ab6276d9403ac7a2efcf060fe5a63b281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the rendering job of the pending cursor info, if any.  <a href="sdl__utils_8h.html#ab6276d9403ac7a2efcf060fe5a63b281">More...</a><br /></td></tr>
-<tr class="separator:ab6276d9403ac7a2efcf060fe5a63b281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ebcb0bcfb15eae4e15a7686891b121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a46ebcb0bcfb15eae4e15a7686891b121">sdl_present_pending_cursor</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a46ebcb0bcfb15eae4e15a7686891b121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the rendering job of the pending cursor info, if any.  <a href="sdl__utils_8h.html#a46ebcb0bcfb15eae4e15a7686891b121">More...</a><br /></td></tr>
+<tr class="separator:a46ebcb0bcfb15eae4e15a7686891b121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1081ae59fbf90e16f9d12ef7a97f0555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a1081ae59fbf90e16f9d12ef7a97f0555">sdl_render_window_titlebar_color</a> (<a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> color)</td></tr>
 <tr class="memdesc:a1081ae59fbf90e16f9d12ef7a97f0555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the color of the window's titlebar.  <a href="sdl__utils_8h.html#a1081ae59fbf90e16f9d12ef7a97f0555">More...</a><br /></td></tr>
 <tr class="separator:a1081ae59fbf90e16f9d12ef7a97f0555"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,28 +140,19 @@ Functions</h2></td></tr>
 <tr class="memitem:a4115192313cdb78079bd69ca3fbf5606"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a4115192313cdb78079bd69ca3fbf5606">sdl_set_fullscreen</a> (bool is_fullscreen)</td></tr>
 <tr class="memdesc:a4115192313cdb78079bd69ca3fbf5606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the window's fullscreen state.  <a href="sdl__utils_8h.html#a4115192313cdb78079bd69ca3fbf5606">More...</a><br /></td></tr>
 <tr class="separator:a4115192313cdb78079bd69ca3fbf5606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2046b7a00305043eb5d40f35eae00e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#af2046b7a00305043eb5d40f35eae00e2">sdl_is_window_visible</a> (void)</td></tr>
-<tr class="memdesc:af2046b7a00305043eb5d40f35eae00e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the window is currently visible.  <a href="sdl__utils_8h.html#af2046b7a00305043eb5d40f35eae00e2">More...</a><br /></td></tr>
-<tr class="separator:af2046b7a00305043eb5d40f35eae00e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38188485497cb37637364f5d785ddb5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a38188485497cb37637364f5d785ddb5f">sdl_update_pending_tasks</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="memdesc:a38188485497cb37637364f5d785ddb5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The above functions may be expensive, and thus may have to be queued up.  <a href="sdl__utils_8h.html#a38188485497cb37637364f5d785ddb5f">More...</a><br /></td></tr>
 <tr class="separator:a38188485497cb37637364f5d785ddb5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc20a623c59b6fd30f2fdab8d6043c5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a">sdl_utils_check_private_vars</a> (bool *pending_resize_message_ptr, bool *native_window_color_is_null_ptr, <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *native_window_color_ptr, bool *native_window_color_update_ptr, char *window_title_ptr, bool *should_update_window_title_ptr, bool *fullscreen_trigger_ptr, bool *fullscreen_value_ptr)</td></tr>
 <tr class="memdesc:acc20a623c59b6fd30f2fdab8d6043c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies private variable values to the variables pointed by the non-NULL pointers passed as parameters.  <a href="sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a">More...</a><br /></td></tr>
 <tr class="separator:acc20a623c59b6fd30f2fdab8d6043c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acebe87850e8f897347def89f127d87d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#acebe87850e8f897347def89f127d87d3">sdl_handle_drag_event</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
-<tr class="memdesc:acebe87850e8f897347def89f127d87d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a drag event has been detected.  <a href="sdl__utils_8h.html#acebe87850e8f897347def89f127d87d3">More...</a><br /></td></tr>
-<tr class="separator:acebe87850e8f897347def89f127d87d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb7b3bba01d8ff3d4e14680b3c73cddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#abb7b3bba01d8ff3d4e14680b3c73cddd">sdl_end_drag_event</a> (void)</td></tr>
-<tr class="memdesc:abb7b3bba01d8ff3d4e14680b3c73cddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel or terminate drag indications/emulations.  <a href="sdl__utils_8h.html#abb7b3bba01d8ff3d4e14680b3c73cddd">More...</a><br /></td></tr>
-<tr class="separator:abb7b3bba01d8ff3d4e14680b3c73cddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the code to create and destroy SDL windows on the </p>
-<h1><a class="anchor" id="autotoc_md63"></a>
+<h1><a class="anchor" id="autotoc_md59"></a>
 client.</h1>
-<h1><a class="anchor" id="autotoc_md64"></a>
+<h1><a class="anchor" id="autotoc_md60"></a>
 Usage</h1>
 <p>initSDL gets called first to create an SDL window, and destroySDL at the end to close the window. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -183,8 +171,8 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4f9b1d608f83977eca17d43ab165ce21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f9b1d608f83977eca17d43ab165ce21">&#9670;&nbsp;</a></span>destroy_sdl()</h2>
+<a id="a40d437adeb4ed227d37de384b28e1aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40d437adeb4ed227d37de384b28e1aff">&#9670;&nbsp;</a></span>destroy_sdl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,19 +180,9 @@ Usage</h1>
         <tr>
           <td class="memname">void destroy_sdl </td>
           <td>(</td>
-          <td class="paramtype">SDL_Window *&#160;</td>
-          <td class="paramname"><em>window</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
-          <td class="paramname"><em>frontend</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -212,7 +190,6 @@ Usage</h1>
 <p>Destroys an SDL window and associated parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">window</td><td>The SDL window to destroy</td></tr>
     <tr><td class="paramname">frontend</td><td>The frontend to be destroyed </td></tr>
   </table>
   </dd>
@@ -220,35 +197,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="aa22cf7e0665db4c165df95b172220053"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa22cf7e0665db4c165df95b172220053">&#9670;&nbsp;</a></span>get_skip_taskbar()</h2>
+<a id="a3c4938c013e8875d657900464e834188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c4938c013e8875d657900464e834188">&#9670;&nbsp;</a></span>init_sdl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool get_skip_taskbar </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check whether we are going to initialize the protocol window without the taskbar. </p>
-<dl class="section return"><dt>Returns</dt><dd>A copy of the skip_taskbar static variable, which is set by a command line option. </dd></dl>
-
-</div>
-</div>
-<a id="aa9040d5393f53489b6f473c22d146b9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9040d5393f53489b6f473c22d146b9c">&#9670;&nbsp;</a></span>init_sdl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Window* init_sdl </td>
+          <td class="memname"><a class="el" href="structWhistFrontend.html">WhistFrontend</a>* init_sdl </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>output_width</em>, </td>
@@ -262,20 +218,8 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>icon_filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> **&#160;</td>
-          <td class="paramname"><em>frontend</em>&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>title</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -285,87 +229,21 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Creates the SDL window, with the currently running thread at the owner. </p>
+<p>Creates the SDL window frontend, with the currently running thread at the owner. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">output_width</td><td>The width of the SDL window to create, in pixels </td></tr>
     <tr><td class="paramname">output_height</td><td>The height of the SDL window to create, in pixels</td></tr>
-    <tr><td class="paramname">name</td><td>The title of the window</td></tr>
-    <tr><td class="paramname">icon_filename</td><td>The filename of the window icon, pointing to a 64x64 png, or NULL to use the default icon.</td></tr>
-    <tr><td class="paramname">frontend</td><td>(Temporary) A pointer to the frontend to be initialized and registered with the created SDL window.</td></tr>
+    <tr><td class="paramname">title</td><td>The title of the window</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>NULL if fails to create SDL window, else it returns the SDL window variable </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A handle for the created frontend </dd></dl>
 
 </div>
 </div>
-<a id="abb7b3bba01d8ff3d4e14680b3c73cddd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb7b3bba01d8ff3d4e14680b3c73cddd">&#9670;&nbsp;</a></span>sdl_end_drag_event()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sdl_end_drag_event </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cancel or terminate drag indications/emulations. </p>
-<dl class="section note"><dt>Note</dt><dd>This should be called when mouse exits the window or on mouseup </dd></dl>
-
-</div>
-</div>
-<a id="acebe87850e8f897347def89f127d87d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acebe87850e8f897347def89f127d87d3">&#9670;&nbsp;</a></span>sdl_handle_drag_event()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sdl_handle_drag_event </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
-          <td class="paramname"><em>frontend</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Called when a drag event has been detected. </p>
-<p>Uses the sdl global mouse and window state to initiate dragging indication or emulation. </p>
-
-</div>
-</div>
-<a id="af2046b7a00305043eb5d40f35eae00e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2046b7a00305043eb5d40f35eae00e2">&#9670;&nbsp;</a></span>sdl_is_window_visible()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sdl_is_window_visible </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns whether or not the window is currently visible. </p>
-<dl class="section return"><dt>Returns</dt><dd>False if the window is occluded or minimized, True otherwise</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is virtually instantaneous </dd></dl>
-
-</div>
-</div>
-<a id="ab6276d9403ac7a2efcf060fe5a63b281"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6276d9403ac7a2efcf060fe5a63b281">&#9670;&nbsp;</a></span>sdl_present_pending_cursor()</h2>
+<a id="a46ebcb0bcfb15eae4e15a7686891b121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ebcb0bcfb15eae4e15a7686891b121">&#9670;&nbsp;</a></span>sdl_present_pending_cursor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,8 +251,8 @@ Usage</h1>
         <tr>
           <td class="memname">void sdl_present_pending_cursor </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

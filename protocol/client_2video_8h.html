@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('client_2video_8h.html',''); initResiza
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 </div>
 <p><a href="client_2video_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -102,9 +103,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2e523fcb8237b36c265860c9c123fcca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a2e523fcb8237b36c265860c9c123fcca">init_video</a> (int initial_width, int initial_height)</td></tr>
-<tr class="memdesc:a2e523fcb8237b36c265860c9c123fcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the video system.  <a href="client_2video_8h.html#a2e523fcb8237b36c265860c9c123fcca">More...</a><br /></td></tr>
-<tr class="separator:a2e523fcb8237b36c265860c9c123fcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add92353cd5d3bdfb4b5a55b703e7d3c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#add92353cd5d3bdfb4b5a55b703e7d3c8">init_video</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int initial_width, int initial_height)</td></tr>
+<tr class="memdesc:add92353cd5d3bdfb4b5a55b703e7d3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will initialize the video system.  <a href="client_2video_8h.html#add92353cd5d3bdfb4b5a55b703e7d3c8">More...</a><br /></td></tr>
+<tr class="separator:add92353cd5d3bdfb4b5a55b703e7d3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9096cfd63b981190cf4aa333c2ee6d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client_2video_8h.html#a9096cfd63b981190cf4aa333c2ee6d20">receive_video</a> (<a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a> *video_context, <a class="el" href="structVideoFrame.html">VideoFrame</a> *video_frame)</td></tr>
 <tr class="memdesc:a9096cfd63b981190cf4aa333c2ee6d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video packet.  <a href="client_2video_8h.html#a9096cfd63b981190cf4aa333c2ee6d20">More...</a><br /></td></tr>
 <tr class="separator:a9096cfd63b981190cf4aa333c2ee6d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,13 +125,13 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains all code that interacts directly with receiving and </p>
-<h1><a class="anchor" id="autotoc_md71"></a>
+<h1><a class="anchor" id="autotoc_md67"></a>
 processing video packets on the client.</h1>
-<h1><a class="anchor" id="autotoc_md72"></a>
+<h1><a class="anchor" id="autotoc_md68"></a>
 Usage</h1>
 <p>NOTE: Only ONE thread can call a function on video_context at a time, unless a function says otherwise.</p>
-<p>VideoContext* video_context = <a class="el" href="client_2video_8h.html#a2e523fcb8237b36c265860c9c123fcca" title="This will initialize the video system.">init_video()</a>;</p>
-<p>In one thread: update_video(video_context); receive_video(video_context, packet_1); update_video(video_context); update_video(video_context); receive_video(video_context, packet_2); update_video(video_context); update_video(video_context); receive_video(video_context, packet_3); update_video(video_context); update_video(video_context);</p>
+<p>VideoContext* video_context = <a class="el" href="client_2video_8h.html#add92353cd5d3bdfb4b5a55b703e7d3c8" title="This will initialize the video system.">init_video()</a>;</p>
+<p>In one thread: receive_video(video_context, packet_1); receive_video(video_context, packet_2); receive_video(video_context, packet_3);</p>
 <p>In another thread: (NOTE: ONLY render_video is thread-safe. The rest of the functions are not) render_video(video_context); render_video(video_context); render_video(video_context); render_video(video_context);</p>
 <p>~~ Join both threads..</p>
 <p>destroy_video(video_context); </p>
@@ -204,8 +205,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a2e523fcb8237b36c265860c9c123fcca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e523fcb8237b36c265860c9c123fcca">&#9670;&nbsp;</a></span>init_video()</h2>
+<a id="add92353cd5d3bdfb4b5a55b703e7d3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add92353cd5d3bdfb4b5a55b703e7d3c8">&#9670;&nbsp;</a></span>init_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,6 +214,12 @@ Usage</h1>
         <tr>
           <td class="memname"><a class="el" href="client_2video_8h.html#a7c391c98414dbde70dd227b02996ab00">VideoContext</a>* init_video </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>initial_width</em>, </td>
         </tr>

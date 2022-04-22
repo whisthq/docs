@@ -95,7 +95,6 @@ $(document).ready(function(){initNavTree('whist__client_8c.html',''); initResiza
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
-<code>#include &lt;SDL2/SDL.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="aes_8h_source.html">whist/utils/aes.h</a>&gt;</code><br />
@@ -110,22 +109,18 @@ $(document).ready(function(){initNavTree('whist__client_8c.html',''); initResiza
 <code>#include &quot;<a class="el" href="client_2audio_8h_source.html">audio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client__utils_8h_source.html">client_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_2network_8h_source.html">network.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sdl__event__handler_8h_source.html">sdl_event_handler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="handle__frontend__events_8h_source.html">handle_frontend_events.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sdl__utils_8h_source.html">sdl_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="handle__server__message_8h_source.html">handle_server_message.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="client_2video_8h_source.html">video.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sync__packets_8h_source.html">sync_packets.h</a>&quot;</code><br />
-<code>#include &lt;SDL2/SDL_syswm.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="color_8h_source.html">whist/utils/color.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="native__window__utils_8h_source.html">native_window_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="renderer_8h_source.html">renderer.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="debug__console_8h_source.html">whist/debug/debug_console.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a51f528deaaeb973f417b46a2ec36f850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a51f528deaaeb973f417b46a2ec36f850">SDL_MAIN_HANDLED</a></td></tr>
-<tr class="separator:a51f528deaaeb973f417b46a2ec36f850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a90209de834d7d87f20ea1f1d3408f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a3a90209de834d7d87f20ea1f1d3408f4">APP_PATH_MAXLEN</a>&#160;&#160;&#160;1023</td></tr>
 <tr class="separator:a3a90209de834d7d87f20ea1f1d3408f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32364be58c0044b63dc47aeb962254b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a32364be58c0044b63dc47aeb962254b4">LOG_CPU_USAGE</a>&#160;&#160;&#160;0</td></tr>
@@ -133,8 +128,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac40f3ff5ea56c1f7f8c1857502c2e34e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#ac40f3ff5ea56c1f7f8c1857502c2e34e">COMMAND_LINE_STRING_OPTION</a> (user_email, 'u', &quot;user&quot;, COMMAND_LINE_STRING_OPTION(<a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>, &quot;Tell Whist the user's email. Default: None.&quot;)</td></tr>
-<tr class="separator:ac40f3ff5ea56c1f7f8c1857502c2e34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18817f97b950cf540d39f9cef89c6fdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a18817f97b950cf540d39f9cef89c6fdd">COMMAND_LINE_STRING_OPTION</a> (user_email, 'u', &quot;user&quot;, WHIST_ARGS_MAXLEN, &quot;Tell Whist the user's email. Default: None.&quot;)</td></tr>
+<tr class="separator:a18817f97b950cf540d39f9cef89c6fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad061dda8204d18c77ac3f472d7588a4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#ad061dda8204d18c77ac3f472d7588a4c">whist_client_main</a> (int argc, const char *argv[])</td></tr>
 <tr class="separator:ad061dda8204d18c77ac3f472d7588a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -144,18 +139,12 @@ Variables</h2></td></tr>
 <tr class="separator:a8178ac994435a95792a29745aa7a77a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c4fc02a0a9feabf512f08048bd1abc"><td class="memItemLeft" align="right" valign="top">volatile char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#aa8c4fc02a0a9feabf512f08048bd1abc">hex_aes_private_key</a> [33]</td></tr>
 <tr class="separator:aa8c4fc02a0a9feabf512f08048bd1abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab491b7b6f8ad504dd96bdc5887d349e9"><td class="memItemLeft" align="right" valign="top">volatile SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#ab491b7b6f8ad504dd96bdc5887d349e9">window</a></td></tr>
-<tr class="separator:ab491b7b6f8ad504dd96bdc5887d349e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaacc5ce7ced4977cd893708f5d789df4"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a></td></tr>
 <tr class="separator:aaacc5ce7ced4977cd893708f5d789df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a57d774e71166271bbff6c515111104"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a></td></tr>
 <tr class="separator:a2a57d774e71166271bbff6c515111104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f4a0eca6c500b41c87fc2ba4375b66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a></td></tr>
 <tr class="separator:a78f4a0eca6c500b41c87fc2ba4375b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b2d8acba46a3a8d41972491e3e06b01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a5b2d8acba46a3a8d41972491e3e06b01">lgui_pressed</a></td></tr>
-<tr class="separator:a5b2d8acba46a3a8d41972491e3e06b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31e60ed488fac41f2eb7f3865937fc14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a31e60ed488fac41f2eb7f3865937fc14">rgui_pressed</a></td></tr>
-<tr class="separator:a31e60ed488fac41f2eb7f3865937fc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5f2b90e5441717b0499669e2e742d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMouseMotionAccumulation.html">MouseMotionAccumulation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a9f5f2b90e5441717b0499669e2e742d3">mouse_state</a></td></tr>
 <tr class="separator:a9f5f2b90e5441717b0499669e2e742d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84228b08cb688dd7b2cb46a6a95a5a48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48">active_pinch</a></td></tr>
@@ -202,23 +191,9 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a51f528deaaeb973f417b46a2ec36f850"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51f528deaaeb973f417b46a2ec36f850">&#9670;&nbsp;</a></span>SDL_MAIN_HANDLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_MAIN_HANDLED</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac40f3ff5ea56c1f7f8c1857502c2e34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac40f3ff5ea56c1f7f8c1857502c2e34e">&#9670;&nbsp;</a></span>COMMAND_LINE_STRING_OPTION()</h2>
+<a id="a18817f97b950cf540d39f9cef89c6fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18817f97b950cf540d39f9cef89c6fdd">&#9670;&nbsp;</a></span>COMMAND_LINE_STRING_OPTION()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,8 +219,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">COMMAND_LINE_STRING_OPTION(&#160;</td>
-          <td class="paramname"><em>WHIST_ARGS_MAXLEN</em>, </td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -362,20 +337,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5b2d8acba46a3a8d41972491e3e06b01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b2d8acba46a3a8d41972491e3e06b01">&#9670;&nbsp;</a></span>lgui_pressed</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool lgui_pressed</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9f5f2b90e5441717b0499669e2e742d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f5f2b90e5441717b0499669e2e742d3">&#9670;&nbsp;</a></span>mouse_state</h2>
 
@@ -432,20 +393,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a31e60ed488fac41f2eb7f3865937fc14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31e60ed488fac41f2eb7f3865937fc14">&#9670;&nbsp;</a></span>rgui_pressed</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool rgui_pressed</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abda738e84e62b32492c077d1898803a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abda738e84e62b32492c077d1898803a3">&#9670;&nbsp;</a></span>upload_initiated</h2>
 
@@ -468,20 +415,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool using_stun</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab491b7b6f8ad504dd96bdc5887d349e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab491b7b6f8ad504dd96bdc5887d349e9">&#9670;&nbsp;</a></span>window</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile SDL_Window* window</td>
         </tr>
       </table>
 </div><div class="memdoc">

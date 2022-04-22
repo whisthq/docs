@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whist Protocol: client/sdl_event_handler.h File Reference</title>
+<title>Whist Protocol: client/handle_frontend_events.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('sdl__event__handler_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('handle__frontend__events_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,44 +84,32 @@ $(document).ready(function(){initNavTree('sdl__event__handler_8h.html',''); init
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">sdl_event_handler.h File Reference</div>  </div>
+<div class="title">handle_frontend_events.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 </div>
-<p><a href="sdl__event__handler_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="handle__frontend__events_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a742ebee5dee254a0f45b8799465f3357"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8h.html#a742ebee5dee254a0f45b8799465f3357">sdl_handle_events</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
-<tr class="memdesc:a742ebee5dee254a0f45b8799465f3357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the SDL event queue, and handles all of the pending events.  <a href="sdl__event__handler_8h.html#a742ebee5dee254a0f45b8799465f3357">More...</a><br /></td></tr>
-<tr class="separator:a742ebee5dee254a0f45b8799465f3357"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4d074dba1161a48966b8e8693300306"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__event__handler_8h.html#ae4d074dba1161a48966b8e8693300306">sdl_pending_audio_device_update</a> (void)</td></tr>
-<tr class="memdesc:ae4d074dba1161a48966b8e8693300306"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function will let you know if an audio device has been plugged in or unplugged since the last time you called this function.  <a href="sdl__event__handler_8h.html#ae4d074dba1161a48966b8e8693300306">More...</a><br /></td></tr>
-<tr class="separator:ae4d074dba1161a48966b8e8693300306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e7659c7674f892e08aaa26819b1ab6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__frontend__events_8h.html#ab9e7659c7674f892e08aaa26819b1ab6">handle_frontend_events</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:ab9e7659c7674f892e08aaa26819b1ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the SDL event queue, and handles all of the pending events.  <a href="handle__frontend__events_8h.html#ab9e7659c7674f892e08aaa26819b1ab6">More...</a><br /></td></tr>
+<tr class="separator:ab9e7659c7674f892e08aaa26819b1ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a0f7f460a5367de6b62780d68f9a69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__frontend__events_8h.html#a26a0f7f460a5367de6b62780d68f9a69">pending_audio_device_update</a> (void)</td></tr>
+<tr class="memdesc:a26a0f7f460a5367de6b62780d68f9a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function will let you know if an audio device has been plugged in or unplugged since the last time you called this function.  <a href="handle__frontend__events_8h.html#a26a0f7f460a5367de6b62780d68f9a69">More...</a><br /></td></tr>
+<tr class="separator:a26a0f7f460a5367de6b62780d68f9a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
-<p>This file contains client-specific wrappers to low-level network </p>
-<h1><a class="anchor" id="autotoc_md59"></a>
-functions.</h1>
-<h1><a class="anchor" id="autotoc_md60"></a>
-Usage</h1>
-<p>handleSDLEvent() must be called on any SDL event that occurs. Any action trigged an SDL event must be triggered in <a class="el" href="sdl__event__handler_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">sdl_event_handler.c</a></p>
-<p>TODO: Combine this with sdl_utils.h in some way </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a742ebee5dee254a0f45b8799465f3357"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a742ebee5dee254a0f45b8799465f3357">&#9670;&nbsp;</a></span>sdl_handle_events()</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ab9e7659c7674f892e08aaa26819b1ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e7659c7674f892e08aaa26819b1ab6">&#9670;&nbsp;</a></span>handle_frontend_events()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool sdl_handle_events </td>
+          <td class="memname">bool handle_frontend_events </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
           <td class="paramname"><em>frontend</em></td><td>)</td>
@@ -137,14 +125,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ae4d074dba1161a48966b8e8693300306"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4d074dba1161a48966b8e8693300306">&#9670;&nbsp;</a></span>sdl_pending_audio_device_update()</h2>
+<a id="a26a0f7f460a5367de6b62780d68f9a69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a0f7f460a5367de6b62780d68f9a69">&#9670;&nbsp;</a></span>pending_audio_device_update()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool sdl_pending_audio_device_update </td>
+          <td class="memname">bool pending_audio_device_update </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -164,7 +152,7 @@ Usage</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a class="el" href="sdl__event__handler_8h.html">sdl_event_handler.h</a></li>
+    <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a class="el" href="handle__frontend__events_8h.html">handle_frontend_events.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

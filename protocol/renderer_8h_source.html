@@ -126,9 +126,7 @@ $(document).ready(function(){initNavTree('renderer_8h_source.html',''); initResi
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderer_8h.html#a9262636b11f7ef525cea6ee8abf8cb45">destroy_renderer</a>(<a class="code" href="structWhistRenderer.html">WhistRenderer</a>* renderer);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="renderer_8h.html#a5571de51c059b53958344a7dc8a45500">renderer_has_video_rendered_yet</a>(<a class="code" href="structWhistRenderer.html">WhistRenderer</a>* renderer);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="arenderer_8h_html_a9f7efeecdf0f0eb50993d2054cc51d51"><div class="ttname"><a href="renderer_8h.html#a9f7efeecdf0f0eb50993d2054cc51d51">renderer_try_render</a></div><div class="ttdeci">void renderer_try_render(WhistRenderer *renderer)</div><div class="ttdoc">Render the video/audio frames (If any are available to render)</div><div class="ttdef"><b>Definition:</b> renderer.c:193</div></div>
@@ -140,10 +138,9 @@ $(document).ready(function(){initNavTree('renderer_8h_source.html',''); initResi
 <div class="ttc" id="astructWhistRenderer_html"><div class="ttname"><a href="structWhistRenderer.html">WhistRenderer</a></div><div class="ttdef"><b>Definition:</b> renderer.c:26</div></div>
 <div class="ttc" id="arenderer_8h_html_aeb94491a6b615aa71f713b853324205e"><div class="ttname"><a href="renderer_8h.html#aeb94491a6b615aa71f713b853324205e">renderer_wants_frame</a></div><div class="ttdeci">bool renderer_wants_frame(WhistRenderer *renderer, WhistPacketType packet_type, int num_buffered_frames)</div><div class="ttdoc">Whether or not the renderer wants a frame of that type.</div><div class="ttdef"><b>Definition:</b> renderer.c:127</div></div>
 <div class="ttc" id="awhist_8h_html"><div class="ttname"><a href="whist_8h.html">whist.h</a></div><div class="ttdoc">Copyright (c) 2021-2022 Whist Technologies, Inc.</div></div>
-<div class="ttc" id="astructWhistFrontend_html"><div class="ttname"><a href="structWhistFrontend.html">WhistFrontend</a></div><div class="ttdef"><b>Definition:</b> frontend.h:138</div></div>
+<div class="ttc" id="astructWhistFrontend_html"><div class="ttname"><a href="structWhistFrontend.html">WhistFrontend</a></div><div class="ttdef"><b>Definition:</b> frontend.h:127</div></div>
 <div class="ttc" id="afrontend_8h_html"><div class="ttname"><a href="frontend_8h.html">frontend.h</a></div></div>
 <div class="ttc" id="aclient_2video_8h_html"><div class="ttname"><a href="client_2video_8h.html">video.h</a></div><div class="ttdoc">Copyright (c) 2021-2022 Whist Technologies, Inc.</div></div>
-<div class="ttc" id="arenderer_8h_html_a5571de51c059b53958344a7dc8a45500"><div class="ttname"><a href="renderer_8h.html#a5571de51c059b53958344a7dc8a45500">renderer_has_video_rendered_yet</a></div><div class="ttdeci">bool renderer_has_video_rendered_yet(WhistRenderer *renderer)</div><div class="ttdoc">Query if video has been rendered yet with this whist render.</div><div class="ttdef"><b>Definition:</b> renderer.c:362</div></div>
 <div class="ttc" id="arenderer_8h_html_a10bd92baa8038c2e65dbd7dff7d378ad"><div class="ttname"><a href="renderer_8h.html#a10bd92baa8038c2e65dbd7dff7d378ad">init_renderer</a></div><div class="ttdeci">WhistRenderer * init_renderer(WhistFrontend *frontend, int initial_width, int initial_height)</div><div class="ttdoc">This will manage the video and audio systems, so that we can give it packets and it will render video...</div><div class="ttdef"><b>Definition:</b> renderer.c:87</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

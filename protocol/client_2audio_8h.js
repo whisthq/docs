@@ -6,6 +6,5 @@ var client_2audio_8h =
     [ "init_audio", "client_2audio_8h.html#a6c73b3af67ed587be508172ff8287ed7", null ],
     [ "receive_audio", "client_2audio_8h.html#a3239255d7dbd09d8d67bdfdf22fd4a1e", null ],
     [ "refresh_audio_device", "client_2audio_8h.html#a4779d5da095b14e8e82fdcc84955c73c", null ],
-    [ "render_audio", "client_2audio_8h.html#a02350b8accdbe0401e6a3861abb30320", null ],
-    [ "update_audio", "client_2audio_8h.html#a0c87cda83151b302a16a75a97a60eabe", null ]
+    [ "render_audio", "client_2audio_8h.html#a02350b8accdbe0401e6a3861abb30320", null ]
 ];
