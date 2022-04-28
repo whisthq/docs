@@ -128,13 +128,13 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aada7b0a53c7162105c923260e5b548e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#aada7b0a53c7162105c923260e5b548e8">FRONTEND_FUNCTION_TABLE_DECLARATION</a>(return_type,  <a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, ...)&#160;&#160;&#160;return_type (*<a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)(__VA_ARGS__);</td></tr>
+<tr class="memitem:aada7b0a53c7162105c923260e5b548e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#aada7b0a53c7162105c923260e5b548e8">FRONTEND_FUNCTION_TABLE_DECLARATION</a>(return_type,  name, ...)&#160;&#160;&#160;return_type (*name)(__VA_ARGS__);</td></tr>
 <tr class="separator:aada7b0a53c7162105c923260e5b548e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50a45ccf9dc27fd6aee9401410e53165"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#a50a45ccf9dc27fd6aee9401410e53165">WHIST_FRONTEND_SDL</a>&#160;&#160;&#160;&quot;sdl&quot;</td></tr>
 <tr class="separator:a50a45ccf9dc27fd6aee9401410e53165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2603a8dec9cfa27bfd1d84d66413842c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#a2603a8dec9cfa27bfd1d84d66413842c">WHIST_FRONTEND_EXTERNAL</a>&#160;&#160;&#160;&quot;external&quot;</td></tr>
 <tr class="separator:a2603a8dec9cfa27bfd1d84d66413842c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abefbbec9a19aea8fe10ed7ebcc5f53cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#abefbbec9a19aea8fe10ed7ebcc5f53cf">FRONTEND_HEADER_DECLARATION</a>(return_type,  <a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, ...)&#160;&#160;&#160;return_type whist_frontend_##<a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(__VA_ARGS__);</td></tr>
+<tr class="memitem:abefbbec9a19aea8fe10ed7ebcc5f53cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#abefbbec9a19aea8fe10ed7ebcc5f53cf">FRONTEND_HEADER_DECLARATION</a>(return_type,  name, ...)&#160;&#160;&#160;return_type whist_frontend_##name(__VA_ARGS__);</td></tr>
 <tr class="separator:abefbbec9a19aea8fe10ed7ebcc5f53cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -193,7 +193,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a597b620a178e0fda549dc9119e54df6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#a597b620a178e0fda549dc9119e54df6b">whist_frontend_create</a> (const char *<a class="el" href="decode_8c.html#ae4165b400ecd5a84616b429f6516512b">type</a>)</td></tr>
+<tr class="memitem:a597b620a178e0fda549dc9119e54df6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#a597b620a178e0fda549dc9119e54df6b">whist_frontend_create</a> (const char *type)</td></tr>
 <tr class="separator:a597b620a178e0fda549dc9119e54df6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de68ef47e70280f8b6aa061167c1c4a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8h.html#a7de68ef47e70280f8b6aa061167c1c4a">whist_frontend_get_id</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="separator:a7de68ef47e70280f8b6aa061167c1c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,7 +215,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname">name, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -226,7 +226,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;return_type (*<a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)(__VA_ARGS__);</td>
+          <td></td><td>&#160;&#160;&#160;return_type (*name)(__VA_ARGS__);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -249,7 +249,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname">name, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -260,7 +260,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;return_type whist_frontend_##<a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(__VA_ARGS__);</td>
+          <td></td><td>&#160;&#160;&#160;return_type whist_frontend_##name(__VA_ARGS__);</td>
         </tr>
       </table>
 </div><div class="memdoc">

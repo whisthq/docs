@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['videodecoder_2806',['VideoDecoder',['../structVideoDecoder.html',1,'']]],
-  ['videoencoder_2807',['VideoEncoder',['../structVideoEncoder.html',1,'']]],
-  ['videoframe_2808',['VideoFrame',['../structVideoFrame.html',1,'']]]
+  ['videodecoder_2837',['VideoDecoder',['../structVideoDecoder.html',1,'']]],
+  ['videodecoderparams_2838',['VideoDecoderParams',['../structVideoDecoderParams.html',1,'']]],
+  ['videoencoder_2839',['VideoEncoder',['../structVideoEncoder.html',1,'']]],
+  ['videoframe_2840',['VideoFrame',['../structVideoFrame.html',1,'']]]
 ];

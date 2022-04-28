@@ -96,6 +96,10 @@ $(document).ready(function(){initNavTree('lifecycle_8c.html',''); initResizable(
 Functions</h2></td></tr>
 <tr class="memitem:ad24ecd4ce6639b668f7c560dd0999a14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lifecycle_8c.html#ad24ecd4ce6639b668f7c560dd0999a14">COMMAND_LINE_BOOL_OPTION</a> (skip_taskbar, <a class="el" href="decode_8c.html#a19da3852ef844a0fe5d414587c1c0de0">COMMAND_LINE_STRING_OPTION</a>(0, &quot;sdl-skip-taskbar&quot;, &quot;Launch the protocol without displaying an icon in the taskbar (SDL frontend only).&quot;)</td></tr>
 <tr class="separator:ad24ecd4ce6639b668f7c560dd0999a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1594ebc7e035e7f70090dc6ae418dcd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lifecycle_8c.html#a1594ebc7e035e7f70090dc6ae418dcd7">sdl_get_video_device</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, AVBufferRef **device, enum AVPixelFormat *format)</td></tr>
+<tr class="separator:a1594ebc7e035e7f70090dc6ae418dcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af80eb7ddc97c86e88abc563f9b6e0013"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lifecycle_8c.html#af80eb7ddc97c86e88abc563f9b6e0013">sdl_init</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>, const char *title, const <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *color)</td></tr>
+<tr class="separator:af80eb7ddc97c86e88abc563f9b6e0013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a776c1be7c116d8df7d9736e8097c4cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lifecycle_8c.html#a776c1be7c116d8df7d9736e8097c4cf0">sdl_destroy</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="separator:a776c1be7c116d8df7d9736e8097c4cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -152,6 +156,86 @@ Functions</h2></td></tr>
           <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
           <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1594ebc7e035e7f70090dc6ae418dcd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1594ebc7e035e7f70090dc6ae418dcd7">&#9670;&nbsp;</a></span>sdl_get_video_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_get_video_device </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AVBufferRef **&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum AVPixelFormat *&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af80eb7ddc97c86e88abc563f9b6e0013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af80eb7ddc97c86e88abc563f9b6e0013">&#9670;&nbsp;</a></span>sdl_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a> sdl_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

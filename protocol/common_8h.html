@@ -84,7 +84,8 @@ $(document).ready(function(){initNavTree('common_8h.html',''); initResizable(); 
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">common.h File Reference</div>  </div>
 </div><!--header-->
@@ -99,6 +100,8 @@ $(document).ready(function(){initNavTree('common_8h.html',''); initResizable(); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSDLFrontendVideoContext.html">SDLFrontendVideoContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -106,13 +109,26 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a51f528deaaeb973f417b46a2ec36f850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a51f528deaaeb973f417b46a2ec36f850">SDL_MAIN_HANDLED</a></td></tr>
 <tr class="separator:a51f528deaaeb973f417b46a2ec36f850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6340c5c74e39504184676eb2b63ff140"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a6340c5c74e39504184676eb2b63ff140">SDL_COMMON_HEADER_ENTRY</a>(return_type,  <a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, ...)&#160;&#160;&#160;return_type sdl_##<a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(__VA_ARGS__);</td></tr>
+<tr class="memitem:a6340c5c74e39504184676eb2b63ff140"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a6340c5c74e39504184676eb2b63ff140">SDL_COMMON_HEADER_ENTRY</a>(return_type,  name, ...)&#160;&#160;&#160;return_type sdl_##name(__VA_ARGS__);</td></tr>
 <tr class="separator:a6340c5c74e39504184676eb2b63ff140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a03da96587da6fab4dccd0a67c77c8b90"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structSDLFrontendVideoContext.html">SDLFrontendVideoContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a03da96587da6fab4dccd0a67c77c8b90">SDLFrontendVideoContext</a></td></tr>
+<tr class="separator:a03da96587da6fab4dccd0a67c77c8b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a546c9059a20024aa6effe6e19430c605"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a546c9059a20024aa6effe6e19430c605">SDLFrontendContext</a></td></tr>
 <tr class="separator:a546c9059a20024aa6effe6e19430c605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0c6f450dca7001fa24346dcad4249a54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a0c6f450dca7001fa24346dcad4249a54">sdl_d3d11_wait</a> (<a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a> *context)</td></tr>
+<tr class="separator:a0c6f450dca7001fa24346dcad4249a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa9aa93028d43f632fb705561e82774"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#aaaa9aa93028d43f632fb705561e82774">sdl_d3d11_create_texture</a> (<a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a> *context, AVFrame *frame)</td></tr>
+<tr class="separator:aaaa9aa93028d43f632fb705561e82774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a530d9f2b19bd3dcee7f71e93f1829"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#aa0a530d9f2b19bd3dcee7f71e93f1829">sdl_d3d11_init</a> (<a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a> *context)</td></tr>
+<tr class="separator:aa0a530d9f2b19bd3dcee7f71e93f1829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b45c7c5539252a87ec0c779321f94f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a2b45c7c5539252a87ec0c779321f94f3">sdl_d3d11_destroy</a> (<a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a> *context)</td></tr>
+<tr class="separator:a2b45c7c5539252a87ec0c779321f94f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6340c5c74e39504184676eb2b63ff140"></a>
@@ -131,7 +147,7 @@ Typedefs</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname">name, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -142,7 +158,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;return_type sdl_##<a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>(__VA_ARGS__);</td>
+          <td></td><td>&#160;&#160;&#160;return_type sdl_##name(__VA_ARGS__);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -172,6 +188,103 @@ Typedefs</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a> <a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03da96587da6fab4dccd0a67c77c8b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03da96587da6fab4dccd0a67c77c8b90">&#9670;&nbsp;</a></span>SDLFrontendVideoContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structSDLFrontendVideoContext.html">SDLFrontendVideoContext</a> <a class="el" href="structSDLFrontendVideoContext.html">SDLFrontendVideoContext</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aaaa9aa93028d43f632fb705561e82774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa9aa93028d43f632fb705561e82774">&#9670;&nbsp;</a></span>sdl_d3d11_create_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* sdl_d3d11_create_texture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AVFrame *&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b45c7c5539252a87ec0c779321f94f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b45c7c5539252a87ec0c779321f94f3">&#9670;&nbsp;</a></span>sdl_d3d11_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_d3d11_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0a530d9f2b19bd3dcee7f71e93f1829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a530d9f2b19bd3dcee7f71e93f1829">&#9670;&nbsp;</a></span>sdl_d3d11_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a> sdl_d3d11_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c6f450dca7001fa24346dcad4249a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c6f450dca7001fa24346dcad4249a54">&#9670;&nbsp;</a></span>sdl_d3d11_wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_d3d11_wait </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSDLFrontendContext.html">SDLFrontendContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

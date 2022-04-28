@@ -132,7 +132,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ga9a78aa1566769e11806efe75e24562cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__linked__list.html#ga9a78aa1566769e11806efe75e24562cc">linked_list_remove</a>(list,  item)&#160;&#160;&#160;<a class="el" href="group__linked__list.html#gacdfba371980e10348a9f9b019071c287">linked_list_remove_internal</a>(list, &amp;(item)-&gt;linked_list_header)</td></tr>
 <tr class="memdesc:ga9a78aa1566769e11806efe75e24562cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an item from a linked list.  <a href="group__linked__list.html#ga9a78aa1566769e11806efe75e24562cc">More...</a><br /></td></tr>
 <tr class="separator:ga9a78aa1566769e11806efe75e24562cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa40aabd0a1c1ea8f7ad03ae7013c39c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__linked__list.html#gaa40aabd0a1c1ea8f7ad03ae7013c39c5">linked_list_for_each</a>(list,  <a class="el" href="decode_8c.html#ae4165b400ecd5a84616b429f6516512b">type</a>,  item)</td></tr>
+<tr class="memitem:gaa40aabd0a1c1ea8f7ad03ae7013c39c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__linked__list.html#gaa40aabd0a1c1ea8f7ad03ae7013c39c5">linked_list_for_each</a>(list,  type,  item)</td></tr>
 <tr class="memdesc:gaa40aabd0a1c1ea8f7ad03ae7013c39c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over a linked list.  <a href="group__linked__list.html#gaa40aabd0a1c1ea8f7ad03ae7013c39c5">More...</a><br /></td></tr>
 <tr class="separator:gaa40aabd0a1c1ea8f7ad03ae7013c39c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -381,7 +381,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="decode_8c.html#ae4165b400ecd5a84616b429f6516512b">type</a>, </td>
+          <td class="paramname">type, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -396,8 +396,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">for</span> (<a class="code" href="decode_8c.html#ae4165b400ecd5a84616b429f6516512b">type</a> *item = (<a class="code" href="decode_8c.html#ae4165b400ecd5a84616b429f6516512b">type</a> *)(list)-&gt;head, *next_ = NULL; \</div>
-<div class="line">         (item) &amp;&amp; (next_ = (<a class="code" href="decode_8c.html#ae4165b400ecd5a84616b429f6516512b">type</a> *)<a class="code" href="group__linked__list.html#ga7fb3e0f1bd59e63a757d2efc4f1d3424">linked_list_next</a>(item)), (item); (item) = next_)</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">for</span> (type *item = (type *)(list)-&gt;head, *next_ = NULL; \</div>
+<div class="line">         (item) &amp;&amp; (next_ = (type *)<a class="code" href="group__linked__list.html#ga7fb3e0f1bd59e63a757d2efc4f1d3424">linked_list_next</a>(item)), (item); (item) = next_)</div>
 </div><!-- fragment -->
 <p>Iterate over a linked list. </p>
 <p>Use in place of a normal for-loop to have the body run for every item in the list. You can add to or remove from the list while the loop is running, but moving an item may result in unexpected behaviour.</p>
@@ -766,7 +766,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="aerror__monitor_8c_html_abbb585d16d6634e654e7c80f49759e8d"><div class="ttname"><a href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a></div><div class="ttdeci">session id</div><div class="ttdef"><b>Definition:</b> error_monitor.c:86</div></div>
 <div class="ttc" id="agroup__linked__list_html_ga0ea791e204851c771762782e10bae316"><div class="ttname"><a href="group__linked__list.html#ga0ea791e204851c771762782e10bae316">linked_list_add_before</a></div><div class="ttdeci">#define linked_list_add_before(list, old_item, new_item)</div><div class="ttdoc">Add a new item before another one in a linked list.</div><div class="ttdef"><b>Definition:</b> linked_list.h:165</div></div>
 <div class="ttc" id="agroup__linked__list_html_gaa8a75971b2cbe1084b3912917bc87cb1"><div class="ttname"><a href="group__linked__list.html#gaa8a75971b2cbe1084b3912917bc87cb1">linked_list_init</a></div><div class="ttdeci">void linked_list_init(LinkedList *list)</div><div class="ttdoc">Initialise a linked list to be empty.</div><div class="ttdef"><b>Definition:</b> linked_list.c:9</div></div>
-<div class="ttc" id="adecode_8c_html_ae4165b400ecd5a84616b429f6516512b"><div class="ttname"><a href="decode_8c.html#ae4165b400ecd5a84616b429f6516512b">type</a></div><div class="ttdeci">enum AVHWDeviceType type</div><div class="ttdef"><b>Definition:</b> decode.c:112</div></div>
 <div class="ttc" id="agroup__linked__list_html_ga9a78aa1566769e11806efe75e24562cc"><div class="ttname"><a href="group__linked__list.html#ga9a78aa1566769e11806efe75e24562cc">linked_list_remove</a></div><div class="ttdeci">#define linked_list_remove(list, item)</div><div class="ttdoc">Remove an item from a linked list.</div><div class="ttdef"><b>Definition:</b> linked_list.h:178</div></div>
 <div class="ttc" id="agroup__linked__list_html_ga0d27f277c5c9ef59274ca935d086a9d1"><div class="ttname"><a href="group__linked__list.html#ga0d27f277c5c9ef59274ca935d086a9d1">linked_list_add_head</a></div><div class="ttdeci">#define linked_list_add_head(list, item)</div><div class="ttdoc">Add a new item at the head of a linked list.</div><div class="ttdef"><b>Definition:</b> linked_list.h:131</div></div>
 <div class="ttc" id="agroup__linked__list_html_ga3206a1b51af0f0656f22379bbac93330"><div class="ttname"><a href="group__linked__list.html#ga3206a1b51af0f0656f22379bbac93330">LINKED_LIST_HEADER</a></div><div class="ttdeci">#define LINKED_LIST_HEADER</div><div class="ttdoc">Header for linked list elements.</div><div class="ttdef"><b>Definition:</b> linked_list.h:68</div></div>

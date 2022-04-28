@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('log__statistic_8h.html',''); initResiz
 Macros</h2></td></tr>
 <tr class="memitem:afa6be6a1f15ad9d2c4ca359bfb1703e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#afa6be6a1f15ad9d2c4ca359bfb1703e8">STATISTICS_FREQUENCY_IN_SEC</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:afa6be6a1f15ad9d2c4ca359bfb1703e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c8f42babfe110a848d8fdd6ebabd65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65">TIME_RUN</a>(line,  <a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  timer)</td></tr>
+<tr class="memitem:a04c8f42babfe110a848d8fdd6ebabd65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65">TIME_RUN</a>(line,  name,  timer)</td></tr>
 <tr class="memdesc:a04c8f42babfe110a848d8fdd6ebabd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro runs the code in <code>line</code>, timing it, and then logging the result with <code>log_double_statistic</code>.  <a href="log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65">More...</a><br /></td></tr>
 <tr class="separator:a04c8f42babfe110a848d8fdd6ebabd65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -220,7 +220,7 @@ Usage</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname">name, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -237,7 +237,7 @@ Usage</h1>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="group__timers.html#gac8d2bb9cbe037b8677ed25be7aa41c5c">start_timer</a>(&amp;timer);            \</div>
 <div class="line">    line;                           \</div>
-<div class="line">    log_double_statistic(<a class="code" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <a class="code" href="group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5">get_timer</a>(&amp;timer) * <a class="code" href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a>);</div>
+<div class="line">    log_double_statistic(name, <a class="code" href="group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5">get_timer</a>(&amp;timer) * <a class="code" href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a>);</div>
 </div><!-- fragment -->
 <p>This macro runs the code in <code>line</code>, timing it, and then logging the result with <code>log_double_statistic</code>. </p>
 <p>It depends on a <code>clock</code> being passed in as a parameter to compute the time delta. </p>
@@ -390,7 +390,6 @@ Usage</h1>
 </div><!-- doc-content -->
 <div class="ttc" id="awhist_8h_html_ab06727ebbc110e7071dc8090ced33373"><div class="ttname"><a href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a></div><div class="ttdeci">#define MS_IN_SECOND</div><div class="ttdoc">Global constructor function.</div><div class="ttdef"><b>Definition:</b> whist.h:231</div></div>
 <div class="ttc" id="agroup__timers_html_ga17cc946c0eba05b7aafbb2c953db93e5"><div class="ttname"><a href="group__timers.html#ga17cc946c0eba05b7aafbb2c953db93e5">get_timer</a></div><div class="ttdeci">double get_timer(const WhistTimer *timer_opaque)</div><div class="ttdoc">Get the amount of elapsed time in seconds since the last start_timer.</div><div class="ttdef"><b>Definition:</b> clock.c:45</div></div>
-<div class="ttc" id="adecode_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> decode.c:111</div></div>
 <div class="ttc" id="agroup__timers_html_gac8d2bb9cbe037b8677ed25be7aa41c5c"><div class="ttname"><a href="group__timers.html#gac8d2bb9cbe037b8677ed25be7aa41c5c">start_timer</a></div><div class="ttdeci">void start_timer(WhistTimer *timer_opaque)</div><div class="ttdoc">Start the given timer at the current time, as a stopwatch.</div><div class="ttdef"><b>Definition:</b> clock.c:29</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

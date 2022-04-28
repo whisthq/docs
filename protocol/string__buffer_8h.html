@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('string__buffer_8h.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a90347d933ecd46b3324d1c14d87a88f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__buffer_8h.html#a90347d933ecd46b3324d1c14d87a88f1">STRING_BUFFER_LOCAL</a>(<a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  size)</td></tr>
+<tr class="memitem:a90347d933ecd46b3324d1c14d87a88f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__buffer_8h.html#a90347d933ecd46b3324d1c14d87a88f1">STRING_BUFFER_LOCAL</a>(name,  size)</td></tr>
 <tr class="separator:a90347d933ecd46b3324d1c14d87a88f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
           <td class="memname">#define STRING_BUFFER_LOCAL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname">name, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -156,8 +156,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordtype">char</span> <a class="code" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_string_buffer_storage[size]; \</div>
-<div class="line">    StringBuffer <a class="code" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> = {<a class="code" href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_string_buffer_storage, 0, size}</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordtype">char</span> name##_string_buffer_storage[size]; \</div>
+<div class="line">    StringBuffer name = {name##_string_buffer_storage, 0, size}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -413,7 +413,6 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="adecode_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="decode_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> decode.c:111</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

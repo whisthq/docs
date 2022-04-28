@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">decode.c File Reference</div>  </div>
@@ -98,10 +99,18 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHardwareDecodeType.html">HardwareDecodeType</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a19da3852ef844a0fe5d414587c1c0de0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a19da3852ef844a0fe5d414587c1c0de0">COMMAND_LINE_STRING_OPTION</a> (save_decoder_input, 0, &quot;save-decoder-input&quot;, 256, &quot;Save decoder input to a file.&quot;)</td></tr>
 <tr class="separator:a19da3852ef844a0fe5d414587c1c0de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568794275eb1821a3dbe9a650fe5930a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a568794275eb1821a3dbe9a650fe5930a">video_decoder_create</a> (const <a class="el" href="structVideoDecoderParams.html">VideoDecoderParams</a> *params)</td></tr>
+<tr class="memdesc:a568794275eb1821a3dbe9a650fe5930a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a video decoder instance, using the given parameters.  <a href="decode_8c.html#a568794275eb1821a3dbe9a650fe5930a">More...</a><br /></td></tr>
+<tr class="separator:a568794275eb1821a3dbe9a650fe5930a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ccfebe79578d850afc048e916aba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">create_video_decoder</a> (int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>, bool use_hardware, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="memdesc:a20ccfebe79578d850afc048e916aba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the FFmpeg H264 or H265 video decoder, and set the proper video parameters for receiving from the server.  <a href="decode_8c.html#a20ccfebe79578d850afc048e916aba50">More...</a><br /></td></tr>
 <tr class="separator:a20ccfebe79578d850afc048e916aba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,6 +263,33 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a568794275eb1821a3dbe9a650fe5930a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a568794275eb1821a3dbe9a650fe5930a">&#9670;&nbsp;</a></span>video_decoder_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVideoDecoder.html">VideoDecoder</a>* video_decoder_create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structVideoDecoderParams.html">VideoDecoderParams</a> *&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a video decoder instance, using the given parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>Parameters to create decoder with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New video decoder instance, or NULL on failure. </dd></dl>
+
+</div>
+</div>
 <a id="a29e08542a8a988ca8371797bfe93f25f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29e08542a8a988ca8371797bfe93f25f">&#9670;&nbsp;</a></span>video_decoder_decode_frame()</h2>
 
@@ -385,49 +421,6 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a8f8f80d37794cde9472343e4487ba3eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f8f80d37794cde9472343e4487ba3eb">&#9670;&nbsp;</a></span>name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* name</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7331e302ea7bb48e0b605a069576e135"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7331e302ea7bb48e0b605a069576e135">&#9670;&nbsp;</a></span>pix_fmt</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum AVPixelFormat pix_fmt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae4165b400ecd5a84616b429f6516512b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4165b400ecd5a84616b429f6516512b">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum AVHWDeviceType type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

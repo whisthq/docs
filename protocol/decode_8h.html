@@ -103,6 +103,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDecodedFrameData.html">DecodedFrameData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that <code>get_current_decoded_frame</code> returns.  <a href="structDecodedFrameData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoderParams.html">VideoDecoderParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for video decoder parameters at init time.  <a href="structVideoDecoderParams.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoder.html">VideoDecoder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for decoding frames via ffmpeg.  <a href="structVideoDecoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,12 +120,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a36d6cfdbfc751cb80e087e6d6605e6be"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDecodedFrameData.html">DecodedFrameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a36d6cfdbfc751cb80e087e6d6605e6be">DecodedFrameData</a></td></tr>
 <tr class="memdesc:a36d6cfdbfc751cb80e087e6d6605e6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that <code>get_current_decoded_frame</code> returns.  <a href="decode_8h.html#a36d6cfdbfc751cb80e087e6d6605e6be">More...</a><br /></td></tr>
 <tr class="separator:a36d6cfdbfc751cb80e087e6d6605e6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ed842515d894782188874e06776d01"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structVideoDecoderParams.html">VideoDecoderParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a88ed842515d894782188874e06776d01">VideoDecoderParams</a></td></tr>
+<tr class="memdesc:a88ed842515d894782188874e06776d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for video decoder parameters at init time.  <a href="decode_8h.html#a88ed842515d894782188874e06776d01">More...</a><br /></td></tr>
+<tr class="separator:a88ed842515d894782188874e06776d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a931b433c839c4e0eddb5109d6e205a90"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structVideoDecoder.html">VideoDecoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a931b433c839c4e0eddb5109d6e205a90">VideoDecoder</a></td></tr>
 <tr class="memdesc:a931b433c839c4e0eddb5109d6e205a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for decoding frames via ffmpeg.  <a href="decode_8h.html#a931b433c839c4e0eddb5109d6e205a90">More...</a><br /></td></tr>
 <tr class="separator:a931b433c839c4e0eddb5109d6e205a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a568794275eb1821a3dbe9a650fe5930a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a568794275eb1821a3dbe9a650fe5930a">video_decoder_create</a> (const <a class="el" href="structVideoDecoderParams.html">VideoDecoderParams</a> *params)</td></tr>
+<tr class="memdesc:a568794275eb1821a3dbe9a650fe5930a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a video decoder instance, using the given parameters.  <a href="decode_8h.html#a568794275eb1821a3dbe9a650fe5930a">More...</a><br /></td></tr>
+<tr class="separator:a568794275eb1821a3dbe9a650fe5930a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ccfebe79578d850afc048e916aba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoDecoder.html">VideoDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decode_8h.html#a20ccfebe79578d850afc048e916aba50">create_video_decoder</a> (int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>, bool use_hardware, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
 <tr class="memdesc:a20ccfebe79578d850afc048e916aba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the FFmpeg H264 or H265 video decoder, and set the proper video parameters for receiving from the server.  <a href="decode_8h.html#a20ccfebe79578d850afc048e916aba50">More...</a><br /></td></tr>
 <tr class="separator:a20ccfebe79578d850afc048e916aba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,6 +215,22 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a88ed842515d894782188874e06776d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88ed842515d894782188874e06776d01">&#9670;&nbsp;</a></span>VideoDecoderParams</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structVideoDecoderParams.html">VideoDecoderParams</a> <a class="el" href="structVideoDecoderParams.html">VideoDecoderParams</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Struct for video decoder parameters at init time. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a20ccfebe79578d850afc048e916aba50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20ccfebe79578d850afc048e916aba50">&#9670;&nbsp;</a></span>create_video_decoder()</h2>
@@ -282,6 +307,33 @@ Usage</h1>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a568794275eb1821a3dbe9a650fe5930a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a568794275eb1821a3dbe9a650fe5930a">&#9670;&nbsp;</a></span>video_decoder_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVideoDecoder.html">VideoDecoder</a>* video_decoder_create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structVideoDecoderParams.html">VideoDecoderParams</a> *&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a video decoder instance, using the given parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>Parameters to create decoder with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New video decoder instance, or NULL on failure. </dd></dl>
 
 </div>
 </div>
