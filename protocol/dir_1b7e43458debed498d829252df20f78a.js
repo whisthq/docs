@@ -1,7 +1,7 @@
 var dir_1b7e43458debed498d829252df20f78a =
 [
     [ "audio.c", "client_2frontend_2sdl_2audio_8c.html", "client_2frontend_2sdl_2audio_8c" ],
-    [ "common.h", "common_8h.html", "common_8h" ],
+    [ "common.h", "sdl_2common_8h.html", "sdl_2common_8h" ],
     [ "d3d11.c", "d3d11_8c.html", "d3d11_8c" ],
     [ "events.c", "events_8c.html", "events_8c" ],
     [ "lifecycle.c", "lifecycle_8c.html", "lifecycle_8c" ],

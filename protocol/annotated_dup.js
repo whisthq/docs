@@ -120,6 +120,7 @@ var annotated_dup =
     [ "VideoDecoderParams", "structVideoDecoderParams.html", "structVideoDecoderParams" ],
     [ "VideoEncoder", "structVideoEncoder.html", "structVideoEncoder" ],
     [ "VideoFrame", "structVideoFrame.html", "structVideoFrame" ],
+    [ "VirtualFrontendContext", "structVirtualFrontendContext.html", "structVirtualFrontendContext" ],
     [ "WhistClientMessage", "structWhistClientMessage.html", "structWhistClientMessage" ],
     [ "WhistCommandLineOption", "structWhistCommandLineOption.html", "structWhistCommandLineOption" ],
     [ "WhistCursorInfo", "structWhistCursorInfo.html", "structWhistCursorInfo" ],

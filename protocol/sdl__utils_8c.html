@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('sdl__utils_8c.html',''); initResizable
 <code>#include &lt;<a class="el" href="lodepng_8h_source.html">whist/utils/lodepng.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="color_8h_source.html">whist/utils/color.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="client__utils_8h_source.html">client_utils.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -107,9 +108,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4192026d8c6e2f51b173cdaecbedb371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a4192026d8c6e2f51b173cdaecbedb371">init_sdl</a> (int target_output_width, int target_output_height, const char *title)</td></tr>
-<tr class="memdesc:a4192026d8c6e2f51b173cdaecbedb371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the SDL window frontend, with the currently running thread at the owner.  <a href="sdl__utils_8c.html#a4192026d8c6e2f51b173cdaecbedb371">More...</a><br /></td></tr>
-<tr class="separator:a4192026d8c6e2f51b173cdaecbedb371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47284ef375457be858974e5283104cf3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a47284ef375457be858974e5283104cf3">COMMAND_LINE_STRING_OPTION</a> (frontend_type, 'f', &quot;frontend&quot;, WHIST_ARGS_MAXLEN, &quot;Which frontend type to attempt to use. Default: sdl.&quot;)</td></tr>
+<tr class="separator:a47284ef375457be858974e5283104cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40d437adeb4ed227d37de384b28e1aff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a40d437adeb4ed227d37de384b28e1aff">destroy_sdl</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="memdesc:a40d437adeb4ed227d37de384b28e1aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8c.html#a40d437adeb4ed227d37de384b28e1aff">More...</a><br /></td></tr>
 <tr class="separator:a40d437adeb4ed227d37de384b28e1aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +186,52 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a47284ef375457be858974e5283104cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47284ef375457be858974e5283104cf3">&#9670;&nbsp;</a></span>COMMAND_LINE_STRING_OPTION()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">COMMAND_LINE_STRING_OPTION </td>
+          <td>(</td>
+          <td class="paramtype">frontend_type&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">'f'&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;frontend&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="whist_8h.html#aa4cb1dd583cf9e199f899068ca725a1f">WHIST_ARGS_MAXLEN</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Which frontend type to attempt to use. Default: sdl.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a40d437adeb4ed227d37de384b28e1aff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40d437adeb4ed227d37de384b28e1aff">&#9670;&nbsp;</a></span>destroy_sdl()</h2>
 
@@ -209,51 +255,6 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a4192026d8c6e2f51b173cdaecbedb371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4192026d8c6e2f51b173cdaecbedb371">&#9670;&nbsp;</a></span>init_sdl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structWhistFrontend.html">WhistFrontend</a>* init_sdl </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>output_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>output_height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>title</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates the SDL window frontend, with the currently running thread at the owner. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">output_width</td><td>The width of the SDL window to create, in pixels </td></tr>
-    <tr><td class="paramname">output_height</td><td>The height of the SDL window to create, in pixels</td></tr>
-    <tr><td class="paramname">title</td><td>The title of the window</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A handle for the created frontend </dd></dl>
 
 </div>
 </div>

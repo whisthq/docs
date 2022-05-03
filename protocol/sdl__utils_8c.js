@@ -1,8 +1,8 @@
 var sdl__utils_8c =
 [
     [ "TARGET_WIDTH_IN_INCHES", "sdl__utils_8c.html#ac74765003cc622938961e7f7476dd1bf", null ],
+    [ "COMMAND_LINE_STRING_OPTION", "sdl__utils_8c.html#a47284ef375457be858974e5283104cf3", null ],
     [ "destroy_sdl", "sdl__utils_8c.html#a40d437adeb4ed227d37de384b28e1aff", null ],
-    [ "init_sdl", "sdl__utils_8c.html#a4192026d8c6e2f51b173cdaecbedb371", null ],
     [ "sdl_present_pending_cursor", "sdl__utils_8c.html#a46ebcb0bcfb15eae4e15a7686891b121", null ],
     [ "sdl_render_framebuffer", "sdl__utils_8c.html#a993a121aa7c5869498703f17d41262ab", null ],
     [ "sdl_render_pending", "sdl__utils_8c.html#afaca887ee6415e1788b0c16df49960a1", null ],
