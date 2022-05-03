@@ -110,6 +110,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4f2a8b52e7ce309dbe46fbf7f9df43f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__drop_8c.html#a4f2a8b52e7ce309dbe46fbf7f9df43f8">destroy_file_drop_handler</a> (void)</td></tr>
 <tr class="memdesc:a4f2a8b52e7ce309dbe46fbf7f9df43f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the file drop handler.  <a href="file__drop_8c.html#a4f2a8b52e7ce309dbe46fbf7f9df43f8">More...</a><br /></td></tr>
 <tr class="separator:a4f2a8b52e7ce309dbe46fbf7f9df43f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55e13c166c512d5a69404d127ec6fec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__drop_8c.html#ad55e13c166c512d5a69404d127ec6fec">file_drag_update</a> (bool is_dragging, int x, int y, int drag_group_id, char *filename)</td></tr>
+<tr class="memdesc:ad55e13c166c512d5a69404d127ec6fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the active drag location and information for a file or set of files being dragged.  <a href="file__drop_8c.html#ad55e13c166c512d5a69404d127ec6fec">More...</a><br /></td></tr>
+<tr class="separator:ad55e13c166c512d5a69404d127ec6fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -161,6 +164,65 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drop_file</td><td>The file to be dropped into the active X11 window</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns -1 on failure, 0 on success </dd></dl>
+
+</div>
+</div>
+<a id="ad55e13c166c512d5a69404d127ec6fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55e13c166c512d5a69404d127ec6fec">&#9670;&nbsp;</a></span>file_drag_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int file_drag_update </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_dragging</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>drag_group_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the active drag location and information for a file or set of files being dragged. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_dragging</td><td>Whether a file is still being dragged</td></tr>
+    <tr><td class="paramname">x</td><td>Drag location x-coordinate</td></tr>
+    <tr><td class="paramname">y</td><td>Drag location y-coordinate</td></tr>
+    <tr><td class="paramname">drag_group_id</td><td>Group ID of file being dragged</td></tr>
+    <tr><td class="paramname">filename</td><td>Filename of a file being dragged.</td></tr>
   </table>
   </dd>
 </dl>

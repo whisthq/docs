@@ -1,5 +1,12 @@
 var NAVTREEINDEX6 =
 {
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a27bcd98e67df5f6991880c29518e6bee":[13,0,2,3,4,2,36],
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a2b768025637b9189afcd033a9e91400b":[13,0,2,3,4,2,12],
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a2d9599624bcf31be5a0edb349b76a520":[13,0,2,3,4,2,7],
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a2eaca2d8017b22859c54aa2dcb33ed41":[13,0,2,3,4,2,30],
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a47b9da7d77958040c28310c7a5c93551":[13,0,2,3,4,2,34],
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a47fb104c09483324676f6e643bb1574e":[13,0,2,3,4,2,14],
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a4917db15459028f1dcb38a3e8a7ddf23":[13,0,2,3,4,2,24],
 "linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a5208f2ea943633b6ff9de82b9cdc81f2":[13,0,2,3,4,2,13],
 "linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a5b1763bff323c8b230f0e2c579c40454":[13,0,2,3,4,2,10],
 "linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a60ce484b6fa427a1406c177c3d781f25":[13,0,2,3,4,2,26],
@@ -242,12 +249,5 @@ var NAVTREEINDEX6 =
 "lodepng_8h.html#ada7bc92db6e9f8906a1fc85caa0b17aa":[13,0,2,10,15,77],
 "lodepng_8h.html#ae0e6996e4aa9ac225f228b2253269127":[13,0,2,10,15,92],
 "lodepng_8h.html#ae3ee1eb944467fbbc1cf939328dd6a57":[13,0,2,10,15,101],
-"lodepng_8h.html#ae50c1ddde2fa8004b46da433f3e20974":[13,0,2,10,15,88],
-"lodepng_8h.html#ae66b9c1eeb9c44572bd381a94485e157":[13,0,2,10,15,103],
-"lodepng_8h.html#ae9121db6bfaefbdc00c9963934511e74":[13,0,2,10,15,58],
-"lodepng_8h.html#aea7d8c2bb2adaf028ec143c08a53f815":[13,0,2,10,15,50],
-"lodepng_8h.html#aeaa684595223a1a737d80f30a00dacca":[13,0,2,10,15,98],
-"lodepng_8h.html#aeb20f58ed9dbcb534bae30f05a79f0a5":[13,0,2,10,15,19],
-"lodepng_8h.html#af06a75c0d744d7f99814dd607a3b798d":[13,0,2,10,15,24],
-"lodepng_8h.html#af0b16abca7a6a20ff4980e9f04374c90":[13,0,2,10,15,94]
+"lodepng_8h.html#ae50c1ddde2fa8004b46da433f3e20974":[13,0,2,10,15,88]
 };

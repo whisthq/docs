@@ -2,6 +2,7 @@ var structWhistServerMessage =
 [
     [ "clipboard", "structWhistServerMessage.html#abf64a825d26ce4db6c8558c55cd0aa61", null ],
     [ "file", "structWhistServerMessage.html#a19ad9000bba61691ee739f5f7c0c6204", null ],
+    [ "file_group_end", "structWhistServerMessage.html#a8a7c146ec848c03d39fe88bcffa9dc28", null ],
     [ "file_metadata", "structWhistServerMessage.html#a00e3a51de925d637b8804879c570850a", null ],
     [ "fullscreen", "structWhistServerMessage.html#af052192dfa180856263906915f286b9d", null ],
     [ "init_reply", "structWhistServerMessage.html#a1a575efa3e679c304c8d27c68698e5a3", null ],

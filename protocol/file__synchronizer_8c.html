@@ -132,6 +132,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac737bcf1eab86938bf0eca8cdf00f17b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#ac737bcf1eab86938bf0eca8cdf00f17b">file_synchronizer_cancel_user_file_upload</a> (void)</td></tr>
 <tr class="memdesc:ac737bcf1eab86938bf0eca8cdf00f17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the kdialog proxy that the user has canceled file selection by writing a trigger file.  <a href="file__synchronizer_8c.html#ac737bcf1eab86938bf0eca8cdf00f17b">More...</a><br /></td></tr>
 <tr class="separator:ac737bcf1eab86938bf0eca8cdf00f17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4ae75dd8cb877065c373230246891d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a3a4ae75dd8cb877065c373230246891d">file_synchronizer_end_type_group</a> (<a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a> transfer_type)</td></tr>
+<tr class="memdesc:a3a4ae75dd8cb877065c373230246891d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an entry to indicate the end of a group of the same type of file that may need to be handled together.  <a href="file__synchronizer_8c.html#a3a4ae75dd8cb877065c373230246891d">More...</a><br /></td></tr>
+<tr class="separator:a3a4ae75dd8cb877065c373230246891d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ad0d35baa30fa398d9f98465fb0e41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#ac8ad0d35baa30fa398d9f98465fb0e41">file_synchronizer_handle_type_group_end</a> (<a class="el" href="structTransferringFile.html">TransferringFile</a> *active_file, <a class="el" href="structFileGroupEnd.html">FileGroupEnd</a> *group_end_info)</td></tr>
+<tr class="memdesc:ac8ad0d35baa30fa398d9f98465fb0e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">If <code>active_file</code> is a group end indicator, populate the <code>group_end_transfer_type</code> pointer and reset the entry.  <a href="file__synchronizer_8c.html#ac8ad0d35baa30fa398d9f98465fb0e41">More...</a><br /></td></tr>
+<tr class="separator:ac8ad0d35baa30fa398d9f98465fb0e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04cd342e18aa8f45f497d2f2295ca05d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a04cd342e18aa8f45f497d2f2295ca05d">destroy_file_synchronizer</a> (void)</td></tr>
 <tr class="memdesc:a04cd342e18aa8f45f497d2f2295ca05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup the file synchronizer.  <a href="file__synchronizer_8c.html#a04cd342e18aa8f45f497d2f2295ca05d">More...</a><br /></td></tr>
 <tr class="separator:a04cd342e18aa8f45f497d2f2295ca05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +216,26 @@ Usage</h1>
 
 </div>
 </div>
+<a id="a3a4ae75dd8cb877065c373230246891d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4ae75dd8cb877065c373230246891d">&#9670;&nbsp;</a></span>file_synchronizer_end_type_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void file_synchronizer_end_type_group </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a>&#160;</td>
+          <td class="paramname"><em>transfer_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds an entry to indicate the end of a group of the same type of file that may need to be handled together. </p>
+
+</div>
+</div>
 <a id="a3a6625450c5f469d4abaf58ba7e376b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a6625450c5f469d4abaf58ba7e376b3">&#9670;&nbsp;</a></span>file_synchronizer_get_transferring_files()</h2>
 
@@ -228,6 +254,44 @@ Usage</h1>
 
 <p>Get a list of the currently transferring files. </p>
 <dl class="section return"><dt>Returns</dt><dd>A linked list of <a class="el" href="structTransferringFile.html" title="A struct containing all the information for a a transferring file.">TransferringFile(s)</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac8ad0d35baa30fa398d9f98465fb0e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ad0d35baa30fa398d9f98465fb0e41">&#9670;&nbsp;</a></span>file_synchronizer_handle_type_group_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool file_synchronizer_handle_type_group_end </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTransferringFile.html">TransferringFile</a> *&#160;</td>
+          <td class="paramname"><em>transferring_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFileGroupEnd.html">FileGroupEnd</a> *&#160;</td>
+          <td class="paramname"><em>group_end_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If <code>active_file</code> is a group end indicator, populate the <code>group_end_transfer_type</code> pointer and reset the entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transferring_file</td><td>The <a class="el" href="structTransferringFile.html" title="A struct containing all the information for a a transferring file.">TransferringFile</a> that is being checked if it is a group end indicator.</td></tr>
+    <tr><td class="paramname">group_end_info</td><td>The pointer to the <a class="el" href="structFileGroupEnd.html" title="A packet of data indicating the end of a file group.">FileGroupEnd</a> to be populated</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if group end, else false </dd></dl>
 
 </div>
 </div>

@@ -5,6 +5,7 @@ var whist_8h =
     [ "WhistMouseWheelMessage", "structWhistMouseWheelMessage.html", "structWhistMouseWheelMessage" ],
     [ "WhistMouseMotionMessage", "structWhistMouseMotionMessage.html", "structWhistMouseMotionMessage" ],
     [ "WhistMultigestureMessage", "structWhistMultigestureMessage.html", "structWhistMultigestureMessage" ],
+    [ "WhistFileDragData", "structWhistFileDragData.html", "structWhistFileDragData" ],
     [ "ClientInitMessage", "structClientInitMessage.html", "structClientInitMessage" ],
     [ "ServerInitReplyMessage", "structServerInitReplyMessage.html", "structServerInitReplyMessage" ],
     [ "WhistKeyboardState", "structWhistKeyboardState.html", "structWhistKeyboardState" ],
@@ -94,6 +95,7 @@ var whist_8h =
     [ "WhistClientMessage", "whist_8h.html#acd1f1977b3974cb6c601d4afa132746d", null ],
     [ "WhistClientMessageType", "whist_8h.html#abee4d25da023dd4b08278e8f43382679", null ],
     [ "WhistDestination", "whist_8h.html#a33aec66994449daf44983b7fb2051a5a", null ],
+    [ "WhistDragState", "whist_8h.html#abbdc34c7df8ca6e83ced007506130ccd", null ],
     [ "WhistExitCode", "whist_8h.html#a9e8ab2261deed9913cbe2af14256eda4", null ],
     [ "WhistKeyboardMessage", "whist_8h.html#a786d4df1bf90b9b0f494897e543936e0", null ],
     [ "WhistKeycode", "whist_8h.html#a938f13e5d5f81ccdc1d4ed590663905e", null ],
@@ -135,9 +137,16 @@ var whist_8h =
       [ "MESSAGE_OPEN_URL", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ab7e896a962e10356358a9cc068226810", null ],
       [ "CMESSAGE_FILE_METADATA", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a6cd55b7e8fdb1c2fea42622087fc0331", null ],
       [ "CMESSAGE_FILE_DATA", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8954648f56bc98bef82ab55cfaad9449", null ],
+      [ "CMESSAGE_FILE_GROUP_END", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ac9e108fde3128953c091107495fbf30e", null ],
       [ "MESSAGE_FRAME_ACK", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a5bf98efc21bd1951b7550666d352edea", null ],
       [ "MESSAGE_FILE_UPLOAD_CANCEL", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128afdd533559472884fb786ecc006862235", null ],
+      [ "CMESSAGE_FILE_DRAG", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a739315a5ee5d4811638db8e5dc51302a", null ],
       [ "CMESSAGE_QUIT", "whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8a219f29b07f2bab02d8cd3112df3a28", null ]
+    ] ],
+    [ "WhistDragState", "whist_8h.html#ab9f31af4ec25d97c4d008171f292f060", [
+      [ "START_DRAG", "whist_8h.html#ab9f31af4ec25d97c4d008171f292f060a26ebed53c479db76a58a177627ad679c", null ],
+      [ "IN_DRAG", "whist_8h.html#ab9f31af4ec25d97c4d008171f292f060ae24124f906937e1517d927cafbc1d6d5", null ],
+      [ "END_DRAG", "whist_8h.html#ab9f31af4ec25d97c4d008171f292f060a8f9acda07660d97d6e5df3743740adab", null ]
     ] ],
     [ "WhistExitCode", "whist_8h.html#aef166b266f8d5b853ec64a90756fafb6", [
       [ "WHIST_EXIT_SUCCESS", "whist_8h.html#aef166b266f8d5b853ec64a90756fafb6a1e9b2a03b386a7ed2cdf948c46161579", null ],
@@ -325,8 +334,10 @@ var whist_8h =
       [ "SMESSAGE_FULLSCREEN", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a8bee600907e82ec0da4091d1c1a5abe5", null ],
       [ "SMESSAGE_FILE_METADATA", "whist_8h.html#a7c0601110e75dab446fcca0c02609353ab6f26910ff293a00e1a9ece3de4d5e90", null ],
       [ "SMESSAGE_FILE_DATA", "whist_8h.html#a7c0601110e75dab446fcca0c02609353af1edac653bbbf90d0ed4e295553b8363", null ],
+      [ "SMESSAGE_FILE_GROUP_END", "whist_8h.html#a7c0601110e75dab446fcca0c02609353aed645ddb00c6121dbcd4a4eb81df06ab", null ],
       [ "SMESSAGE_NOTIFICATION", "whist_8h.html#a7c0601110e75dab446fcca0c02609353acdb4f2543875b75aaa97161302076490", null ],
       [ "SMESSAGE_INITIATE_UPLOAD", "whist_8h.html#a7c0601110e75dab446fcca0c02609353acf00baeb65865f3b051c90e9644ab67d", null ],
+      [ "SMESSAGE_FILE_DRAG", "whist_8h.html#a7c0601110e75dab446fcca0c02609353abde4906ba91fe96a24dc75dd4b65a4dc", null ],
       [ "SMESSAGE_QUIT", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a62adb843bfd6857bbf5f634425c404d1", null ]
     ] ],
     [ "bit_array_clear_all", "whist_8h.html#a7d59f1d85585b3ff640a8ece33c6da5b", null ],

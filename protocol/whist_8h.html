@@ -143,6 +143,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistMultigestureMessage.html">WhistMultigestureMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture message.  <a href="structWhistMultigestureMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistFileDragData.html">WhistFileDragData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">File drag message.  <a href="structWhistFileDragData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structClientInitMessage.html">ClientInitMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> init message.  <a href="structClientInitMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,6 +359,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a00a12b04c002bc1d820fc3fdbe717cae"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4">WhistOSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a00a12b04c002bc1d820fc3fdbe717cae">WhistOSType</a></td></tr>
 <tr class="memdesc:a00a12b04c002bc1d820fc3fdbe717cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS type.  <a href="whist_8h.html#a00a12b04c002bc1d820fc3fdbe717cae">More...</a><br /></td></tr>
 <tr class="separator:a00a12b04c002bc1d820fc3fdbe717cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbdc34c7df8ca6e83ced007506130ccd"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#ab9f31af4ec25d97c4d008171f292f060">WhistDragState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#abbdc34c7df8ca6e83ced007506130ccd">WhistDragState</a></td></tr>
+<tr class="memdesc:abbdc34c7df8ca6e83ced007506130ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drag state.  <a href="whist_8h.html#abbdc34c7df8ca6e83ced007506130ccd">More...</a><br /></td></tr>
+<tr class="separator:abbdc34c7df8ca6e83ced007506130ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcb8d5d5678112f50998bbab3679043a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistMultigestureMessage.html">WhistMultigestureMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#afcb8d5d5678112f50998bbab3679043a">WhistMultigestureMessage</a></td></tr>
 <tr class="memdesc:afcb8d5d5678112f50998bbab3679043a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multigesture message.  <a href="whist_8h.html#afcb8d5d5678112f50998bbab3679043a">More...</a><br /></td></tr>
 <tr class="separator:afcb8d5d5678112f50998bbab3679043a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -618,6 +624,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a6e760c662b6b1560542cc151a2ac01b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS type.  <a href="whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4">More...</a><br /></td></tr>
 <tr class="separator:a6e760c662b6b1560542cc151a2ac01b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f31af4ec25d97c4d008171f292f060"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ab9f31af4ec25d97c4d008171f292f060">WhistDragState</a> { <a class="el" href="whist_8h.html#ab9f31af4ec25d97c4d008171f292f060a26ebed53c479db76a58a177627ad679c">START_DRAG</a> = 0, 
+<a class="el" href="whist_8h.html#ab9f31af4ec25d97c4d008171f292f060ae24124f906937e1517d927cafbc1d6d5">IN_DRAG</a> = 1, 
+<a class="el" href="whist_8h.html#ab9f31af4ec25d97c4d008171f292f060a8f9acda07660d97d6e5df3743740adab">END_DRAG</a> = 2
+ }</td></tr>
+<tr class="memdesc:ab9f31af4ec25d97c4d008171f292f060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drag state.  <a href="whist_8h.html#ab9f31af4ec25d97c4d008171f292f060">More...</a><br /></td></tr>
+<tr class="separator:ab9f31af4ec25d97c4d008171f292f060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9461c07e2605c3d72eb6254b9ab1c128"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128">WhistClientMessageType</a> { <br />
 &#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a02c0c7ec56775f79f4ee20ce24b2f5dc">CMESSAGE_NONE</a> = 0, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ad5a5909097baad47841396801ee21191">MESSAGE_KEYBOARD</a> = 1, 
@@ -639,9 +651,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a6cd55b7e8fdb1c2fea42622087fc0331">CMESSAGE_FILE_METADATA</a> = 119, 
 <a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8954648f56bc98bef82ab55cfaad9449">CMESSAGE_FILE_DATA</a> = 120, 
 <br />
-&#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a5bf98efc21bd1951b7550666d352edea">MESSAGE_FRAME_ACK</a> = 121, 
-<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128afdd533559472884fb786ecc006862235">MESSAGE_FILE_UPLOAD_CANCEL</a> = 122, 
-<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
+&#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128ac9e108fde3128953c091107495fbf30e">CMESSAGE_FILE_GROUP_END</a> = 121, 
+<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a5bf98efc21bd1951b7550666d352edea">MESSAGE_FRAME_ACK</a> = 122, 
+<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128afdd533559472884fb786ecc006862235">MESSAGE_FILE_UPLOAD_CANCEL</a> = 123, 
+<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a739315a5ee5d4811638db8e5dc51302a">CMESSAGE_FILE_DRAG</a> = 124, 
+<br />
+&#160;&#160;<a class="el" href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128a8a219f29b07f2bab02d8cd3112df3a28">CMESSAGE_QUIT</a> = 999
 <br />
  }</td></tr>
 <tr class="memdesc:a9461c07e2605c3d72eb6254b9ab1c128"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message type.  <a href="whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128">More...</a><br /></td></tr>
@@ -665,10 +680,12 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353ab6f26910ff293a00e1a9ece3de4d5e90">SMESSAGE_FILE_METADATA</a> = 9, 
 <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353af1edac653bbbf90d0ed4e295553b8363">SMESSAGE_FILE_DATA</a> = 10, 
-<a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353acdb4f2543875b75aaa97161302076490">SMESSAGE_NOTIFICATION</a> = 11, 
-<a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353acf00baeb65865f3b051c90e9644ab67d">SMESSAGE_INITIATE_UPLOAD</a> = 12, 
+<a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353aed645ddb00c6121dbcd4a4eb81df06ab">SMESSAGE_FILE_GROUP_END</a> = 11, 
+<a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353acdb4f2543875b75aaa97161302076490">SMESSAGE_NOTIFICATION</a> = 12, 
 <br />
-&#160;&#160;<a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353a62adb843bfd6857bbf5f634425c404d1">SMESSAGE_QUIT</a> = 100
+&#160;&#160;<a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353acf00baeb65865f3b051c90e9644ab67d">SMESSAGE_INITIATE_UPLOAD</a> = 13, 
+<a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353abde4906ba91fe96a24dc75dd4b65a4dc">SMESSAGE_FILE_DRAG</a> = 14, 
+<a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353a62adb843bfd6857bbf5f634425c404d1">SMESSAGE_QUIT</a> = 100
 <br />
  }</td></tr>
 <tr class="memdesc:a7c0601110e75dab446fcca0c02609353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message type.  <a href="whist_8h.html#a7c0601110e75dab446fcca0c02609353">More...</a><br /></td></tr>
@@ -2008,6 +2025,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abbdc34c7df8ca6e83ced007506130ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbdc34c7df8ca6e83ced007506130ccd">&#9670;&nbsp;</a></span>WhistDragState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="whist_8h.html#ab9f31af4ec25d97c4d008171f292f060">WhistDragState</a> <a class="el" href="whist_8h.html#ab9f31af4ec25d97c4d008171f292f060">WhistDragState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drag state. </p>
+<p>An enum of drag states </p>
+
+</div>
+</div>
 <a id="a9e8ab2261deed9913cbe2af14256eda4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e8ab2261deed9913cbe2af14256eda4">&#9670;&nbsp;</a></span>WhistExitCode</h2>
 
@@ -2334,11 +2368,36 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a8954648f56bc98bef82ab55cfaad9449"></a>CMESSAGE_FILE_DATA&#160;</td><td class="fielddoc"><p>file chunk </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128ac9e108fde3128953c091107495fbf30e"></a>CMESSAGE_FILE_GROUP_END&#160;</td><td class="fielddoc"><p>file type group end </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a5bf98efc21bd1951b7550666d352edea"></a>MESSAGE_FRAME_ACK&#160;</td><td class="fielddoc"><p>Frame has been received. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128afdd533559472884fb786ecc006862235"></a>MESSAGE_FILE_UPLOAD_CANCEL&#160;</td><td class="fielddoc"><p>User has hit cancel on file upload dialog. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a739315a5ee5d4811638db8e5dc51302a"></a>CMESSAGE_FILE_DRAG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9461c07e2605c3d72eb6254b9ab1c128a8a219f29b07f2bab02d8cd3112df3a28"></a>CMESSAGE_QUIT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab9f31af4ec25d97c4d008171f292f060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f31af4ec25d97c4d008171f292f060">&#9670;&nbsp;</a></span>WhistDragState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="whist_8h.html#ab9f31af4ec25d97c4d008171f292f060">WhistDragState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drag state. </p>
+<p>An enum of drag states </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab9f31af4ec25d97c4d008171f292f060a26ebed53c479db76a58a177627ad679c"></a>START_DRAG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab9f31af4ec25d97c4d008171f292f060ae24124f906937e1517d927cafbc1d6d5"></a>IN_DRAG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab9f31af4ec25d97c4d008171f292f060a8f9acda07660d97d6e5df3743740adab"></a>END_DRAG&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2817,8 +2876,10 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a7c0601110e75dab446fcca0c02609353a8bee600907e82ec0da4091d1c1a5abe5"></a>SMESSAGE_FULLSCREEN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7c0601110e75dab446fcca0c02609353ab6f26910ff293a00e1a9ece3de4d5e90"></a>SMESSAGE_FILE_METADATA&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7c0601110e75dab446fcca0c02609353af1edac653bbbf90d0ed4e295553b8363"></a>SMESSAGE_FILE_DATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0601110e75dab446fcca0c02609353aed645ddb00c6121dbcd4a4eb81df06ab"></a>SMESSAGE_FILE_GROUP_END&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7c0601110e75dab446fcca0c02609353acdb4f2543875b75aaa97161302076490"></a>SMESSAGE_NOTIFICATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7c0601110e75dab446fcca0c02609353acf00baeb65865f3b051c90e9644ab67d"></a>SMESSAGE_INITIATE_UPLOAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0601110e75dab446fcca0c02609353abde4906ba91fe96a24dc75dd4b65a4dc"></a>SMESSAGE_FILE_DRAG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7c0601110e75dab446fcca0c02609353a62adb843bfd6857bbf5f634425c404d1"></a>SMESSAGE_QUIT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 

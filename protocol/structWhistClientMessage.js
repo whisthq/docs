@@ -4,6 +4,8 @@ var structWhistClientMessage =
     [ "dimensions", "structWhistClientMessage.html#a459cab253e201c0d3449b9392d93850f", null ],
     [ "dpi", "structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6", null ],
     [ "file", "structWhistClientMessage.html#ac483bcd64751c9834cdea881ae71cd38", null ],
+    [ "file_drag_data", "structWhistClientMessage.html#a70a1ba7ad460bdf0a40d429e774662b7", null ],
+    [ "file_group_end", "structWhistClientMessage.html#af95d5c64f3b0fd79d260f3889e23bfdb", null ],
     [ "file_metadata", "structWhistClientMessage.html#a0116954edece6194206d1b8431f15654", null ],
     [ "frame_ack", "structWhistClientMessage.html#ab8a5a9f3b59ec3de93fd01d469b5f690", null ],
     [ "height", "structWhistClientMessage.html#a383576764f0064035ae78a2c8de45917", null ],
