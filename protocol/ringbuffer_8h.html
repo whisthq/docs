@@ -153,9 +153,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a4ed839fb46aebbb9028199019bafd169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a4ed839fb46aebbb9028199019bafd169">try_recovering_missing_packets_or_frames</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double latency, int max_unordered_packets, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
 <tr class="memdesc:a4ed839fb46aebbb9028199019bafd169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try nacking or requesting a stream reset.  <a href="ringbuffer_8h.html#a4ed839fb46aebbb9028199019bafd169">More...</a><br /></td></tr>
 <tr class="separator:a4ed839fb46aebbb9028199019bafd169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6f19b91298c7e3a227df3c5da891cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a7a6f19b91298c7e3a227df3c5da891cc">get_network_statistics</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
-<tr class="memdesc:a7a6f19b91298c7e3a227df3c5da891cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get network statistics from the ringbuffer.  <a href="ringbuffer_8h.html#a7a6f19b91298c7e3a227df3c5da891cc">More...</a><br /></td></tr>
-<tr class="separator:a7a6f19b91298c7e3a227df3c5da891cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af514843307356fd516b1a96211c9d986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#af514843307356fd516b1a96211c9d986">destroy_ring_buffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
 <tr class="memdesc:af514843307356fd516b1a96211c9d986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the ringbuffer and all associated memory.  <a href="ringbuffer_8h.html#af514843307356fd516b1a96211c9d986">More...</a><br /></td></tr>
 <tr class="separator:af514843307356fd516b1a96211c9d986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,33 +306,6 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="structFrameData.html" title="FrameData struct containing content and metadata of encoded frames.">FrameData</a> at ID id in ring_buffer. </dd></dl>
-
-</div>
-</div>
-<a id="a7a6f19b91298c7e3a227df3c5da891cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a6f19b91298c7e3a227df3c5da891cc">&#9670;&nbsp;</a></span>get_network_statistics()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> get_network_statistics </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
-          <td class="paramname"><em>ring_buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get network statistics from the ringbuffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ring_buffer</td><td>The ringbuffer to get network statistics from</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>Statistics will be taken from the time between the current time, and the last call to get_network_statistics (Or, from init_ring_buffer, on the first call) </dd></dl>
 
 </div>
 </div>

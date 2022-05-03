@@ -4,7 +4,6 @@ var group__feature__flags =
     [ "WhistFeature", "group__feature__flags.html#gabaccb37c4f94057ce1c1ee2abd34fb06", [
       [ "WHIST_FEATURE_PACKET_ENCRYPTION", "group__feature__flags.html#ggabaccb37c4f94057ce1c1ee2abd34fb06ad2d21fe3879ece046845d3c9ea2d73c9", null ],
       [ "WHIST_FEATURE_LONG_TERM_REFERENCE_FRAMES", "group__feature__flags.html#ggabaccb37c4f94057ce1c1ee2abd34fb06aa62d19793bab5f6e711c21e150ac5037", null ],
-      [ "WHIST_FEATURE_WHIST_CONGESTION_CONTROL", "group__feature__flags.html#ggabaccb37c4f94057ce1c1ee2abd34fb06a62e082d0433feb59e3f6fda73b97984f", null ],
       [ "WHIST_FEATURE_COUNT", "group__feature__flags.html#ggabaccb37c4f94057ce1c1ee2abd34fb06a379e962f007a6927aa541dfd681df1c0", null ]
     ] ],
     [ "whist_apply_feature_mask", "group__feature__flags.html#gaa9ff4ac2fe6ad6c521ba26e05447b9a8", null ],

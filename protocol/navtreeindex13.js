@@ -1,13 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"structVideoEncoder.html#a070dd663dc802905ca534022d6d1c5e9":[12,0,118,14],
-"structVideoEncoder.html#a1e64cb923dde801e85052c58076ae70e":[12,0,118,4],
-"structVideoEncoder.html#a20b578a3610dce40aef2d04397bd7744":[12,0,118,10],
-"structVideoEncoder.html#a4d449c7390f5c23e993a2bfa970efab3":[12,0,118,9],
-"structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9":[12,0,118,3],
-"structVideoEncoder.html#a580791874e935338868c45c242b1b4e0":[12,0,118,8],
-"structVideoEncoder.html#a756d26cde728bccea40f70df0c05f3d6":[12,0,118,12],
-"structVideoEncoder.html#a861653f20b19432832a63a9c40f85f2a":[12,0,118,2],
 "structVideoEncoder.html#a8737b2047d311ccad803628b61a24ae3":[12,0,118,13],
 "structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7":[12,0,118,5],
 "structVideoEncoder.html#a9975e772b1f1916ed1aa99f82ca8b065":[12,0,118,0],
@@ -249,5 +241,13 @@ var NAVTREEINDEX13 =
 "structX11CaptureDevice.html#a87365b648364394b27725fea96f7b913":[12,0,147,8],
 "structX11CaptureDevice.html#aa45126adf5d331cfef4d57a9382cc0d5":[12,0,147,0],
 "structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb":[12,0,147,4],
-"structX11CaptureDevice.html#ab7bc7bf3b5ddab2a71587ac8212587bc":[12,0,147,5]
+"structX11CaptureDevice.html#ab7bc7bf3b5ddab2a71587ac8212587bc":[12,0,147,5],
+"structX11CaptureDevice.html#abfd36ca31e71e058cc8b63592b2415df":[12,0,147,1],
+"structX11CaptureDevice.html#ac49a89635daec815ee50fb42c1d4d444":[12,0,147,7],
+"structX11CaptureDevice.html#ac5a5c7b0909308e3712a2b691e932460":[12,0,147,6],
+"structX11CaptureDevice.html#acef1859db60b99af218e316f7cec5772":[12,0,147,10],
+"struct__whist__server__config.html":[12,0,0],
+"struct__whist__server__config.html#a370d33931f5bc174dc8db5a9e5a230f0":[12,0,0,0],
+"struct__whist__server__config.html#a576faee2d8a900a1da2299369b0d2ec5":[12,0,0,3],
+"struct__whist__server__config.html#a974ca4f84c65261f4d4fd2d41c559a2b":[12,0,0,1]
 };

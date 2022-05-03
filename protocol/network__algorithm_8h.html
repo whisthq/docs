@@ -126,9 +126,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5fca7d6bd4c3f135046f727ee8224bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8h.html#a5fca7d6bd4c3f135046f727ee8224bf7">get_desired_network_settings</a> (<a class="el" href="structNetworkStatistics.html">NetworkStatistics</a> stats)</td></tr>
-<tr class="memdesc:a5fca7d6bd4c3f135046f727ee8224bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will calculate what network settings are desired, in response to any network statistics given.  <a href="network__algorithm_8h.html#a5fca7d6bd4c3f135046f727ee8224bf7">More...</a><br /></td></tr>
-<tr class="separator:a5fca7d6bd4c3f135046f727ee8224bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac062bb5d4fb81d7536d67be9961d4f35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8h.html#ac062bb5d4fb81d7536d67be9961d4f35">whist_congestion_controller</a> (<a class="el" href="structGroupStats.html">GroupStats</a> *curr_group_stats, <a class="el" href="structGroupStats.html">GroupStats</a> *prev_group_stats, int incoming_bitrate, double packet_loss_ratio, double short_term_latency, double long_term_latency, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
 <tr class="memdesc:ac062bb5d4fb81d7536d67be9961d4f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will estimate the new bitrate based on whist congestion control algo.  <a href="network__algorithm_8h.html#ac062bb5d4fb81d7536d67be9961d4f35">More...</a><br /></td></tr>
 <tr class="separator:ac062bb5d4fb81d7536d67be9961d4f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,33 +327,6 @@ Usage</h1>
     <tr><td class="paramname">width</td><td>Video width</td></tr>
     <tr><td class="paramname">height</td><td>Video height</td></tr>
     <tr><td class="paramname">dpi</td><td>Screen dpi</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A network settings struct </dd></dl>
-
-</div>
-</div>
-<a id="a5fca7d6bd4c3f135046f727ee8224bf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fca7d6bd4c3f135046f727ee8224bf7">&#9670;&nbsp;</a></span>get_desired_network_settings()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structNetworkSettings.html">NetworkSettings</a> get_desired_network_settings </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structNetworkStatistics.html">NetworkStatistics</a>&#160;</td>
-          <td class="paramname"><em>stats</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function will calculate what network settings are desired, in response to any network statistics given. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stats</td><td>A struct containing any information we might need when deciding what bitrate we want</td></tr>
   </table>
   </dd>
 </dl>

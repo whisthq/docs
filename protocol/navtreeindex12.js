@@ -1,13 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"structRWLock.html#a6d02f221523aa66ecb38e71e9220cb11":[12,0,92,7],
-"structRWLock.html#a7adeaf8b88f5205f5e47acf522b1b67e":[12,0,92,3],
-"structRWLock.html#a7d5cf96c9894204d1047e75f87aa6b3d":[12,0,92,2],
-"structRWLock.html#aa2fc41b979e58996c9dbe25e3bfe9ef3":[12,0,92,1],
-"structRWLock.html#aa4e0cbe7e94c4f95bd65e0b8ca934e9d":[12,0,92,8],
-"structRegionHeader.html":[12,0,88],
-"structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[12,0,88,0],
-"structRegisteredResource.html":[12,0,89],
 "structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[12,0,89,5],
 "structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[12,0,89,0],
 "structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[12,0,89,2],
@@ -249,5 +241,13 @@ var NAVTREEINDEX12 =
 "structVideoDecoderParams.html#aea140584325fab5b63066eb89c4860ca":[12,0,117,3],
 "structVideoDecoderParams.html#af8d7322f7adcdf7bd4037aedef50cf30":[12,0,117,4],
 "structVideoEncoder.html":[12,0,118],
-"structVideoEncoder.html#a00fce726b4e64667934a7f5c35c9f7f8":[12,0,118,6]
+"structVideoEncoder.html#a00fce726b4e64667934a7f5c35c9f7f8":[12,0,118,6],
+"structVideoEncoder.html#a070dd663dc802905ca534022d6d1c5e9":[12,0,118,14],
+"structVideoEncoder.html#a1e64cb923dde801e85052c58076ae70e":[12,0,118,4],
+"structVideoEncoder.html#a20b578a3610dce40aef2d04397bd7744":[12,0,118,10],
+"structVideoEncoder.html#a4d449c7390f5c23e993a2bfa970efab3":[12,0,118,9],
+"structVideoEncoder.html#a53618bc02044fef89a820bab1e2a1ba9":[12,0,118,3],
+"structVideoEncoder.html#a580791874e935338868c45c242b1b4e0":[12,0,118,8],
+"structVideoEncoder.html#a756d26cde728bccea40f70df0c05f3d6":[12,0,118,12],
+"structVideoEncoder.html#a861653f20b19432832a63a9c40f85f2a":[12,0,118,2]
 };

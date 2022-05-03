@@ -12,7 +12,6 @@ var ringbuffer_8c =
     [ "destroy_ring_buffer", "ringbuffer_8c.html#af514843307356fd516b1a96211c9d986", null ],
     [ "get_frame_at_id", "ringbuffer_8c.html#a69a35ea430111d5dadd29f8b9b9d99c5", null ],
     [ "get_framebuffer", "ringbuffer_8c.html#a7d1fd0baacc62d8497fe0512cd5fce99", null ],
-    [ "get_network_statistics", "ringbuffer_8c.html#a7a6f19b91298c7e3a227df3c5da891cc", null ],
     [ "get_packet_loss_ratio", "ringbuffer_8c.html#a2947bd52323b0d65b0a059a0cf9adf3d", null ],
     [ "init_frame", "ringbuffer_8c.html#aed9ac6a8afe3feb85dbe26a071789f49", null ],
     [ "init_ring_buffer", "ringbuffer_8c.html#a76af721a0fc6c100fde1cf9634ffccad", null ],
