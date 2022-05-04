@@ -152,11 +152,11 @@ var NAVTREEINDEX =
 "structClientLock.html",
 "structInputDevice.html#a90427693ff669f98a1f9e5ea33375c35",
 "structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d",
-"structUDPPacket.html#aa037e331a8e622a8f30e65e31f09ce8b",
-"structWhistServerState.html#a00dd5b43adda73e6eb4fa1d8db5d6421",
-"virtual_2common_8h.html",
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa221c5a2ce82a31c502d12253957ae36c",
-"window_8c.html"
+"structUDPPacket.html#ac85002574953bffb5683c563de3ff76e",
+"structWhistServerState.html#a29c7d6130bc7d5fa58b023596b7a58b2",
+"virtual_2common_8h_source.html",
+"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa2ad9ffa4003974a07ace4b717bc9cb54",
+"window_8c.html#a27919a683037f942b5e2c385474e879c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

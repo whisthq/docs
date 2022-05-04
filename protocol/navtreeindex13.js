@@ -1,8 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"structUDPPacket.html#aa037e331a8e622a8f30e65e31f09ce8b":[12,0,114,8],
-"structUDPPacket.html#aab12ec95c44b6aa53c38349e4b904be5":[12,0,114,1],
-"structUDPPacket.html#ab7442e201180e73ccd9dd94f224a166d":[12,0,114,0],
 "structUDPPacket.html#ac85002574953bffb5683c563de3ff76e":[12,0,114,2],
 "structUDPPacket.html#ad492793b61c2f4bcaec79cb4ea5c7018":[12,0,114,11],
 "structUDPPacket.html#aed9bc04fc449c10a78b07669fb50b8ed":[12,0,114,12],
@@ -249,5 +246,8 @@ var NAVTREEINDEX13 =
 "structWhistServerMessage.html#abf64a825d26ce4db6c8558c55cd0aa61":[12,0,145,0],
 "structWhistServerMessage.html#af052192dfa180856263906915f286b9d":[12,0,145,4],
 "structWhistServerMessage.html#af4944e3d0ab3ec37e951cd127380cd3c":[12,0,145,6],
-"structWhistServerState.html":[12,0,146]
+"structWhistServerState.html":[12,0,146],
+"structWhistServerState.html#a00dd5b43adda73e6eb4fa1d8db5d6421":[12,0,146,26],
+"structWhistServerState.html#a0f22ceb13d464e8a1c0d720732358ed8":[12,0,146,7],
+"structWhistServerState.html#a25d1d083d34faa8e1aa74e0e49eccef8":[12,0,146,9]
 };
