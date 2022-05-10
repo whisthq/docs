@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"structUDPPacket.html#ac85002574953bffb5683c563de3ff76e":[12,0,114,2],
 "structUDPPacket.html#ad492793b61c2f4bcaec79cb4ea5c7018":[12,0,114,11],
 "structUDPPacket.html#aed9bc04fc449c10a78b07669fb50b8ed":[12,0,114,12],
 "structUDPPacket.html#af1f2c136484422b8bc4ce11ce9153e23":[12,0,114,15],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "structWhistServerState.html":[12,0,146],
 "structWhistServerState.html#a00dd5b43adda73e6eb4fa1d8db5d6421":[12,0,146,26],
 "structWhistServerState.html#a0f22ceb13d464e8a1c0d720732358ed8":[12,0,146,7],
-"structWhistServerState.html#a25d1d083d34faa8e1aa74e0e49eccef8":[12,0,146,9]
+"structWhistServerState.html#a25d1d083d34faa8e1aa74e0e49eccef8":[12,0,146,9],
+"structWhistServerState.html#a29c7d6130bc7d5fa58b023596b7a58b2":[12,0,146,11]
 };

@@ -1,6 +1,5 @@
 var client_2frontend_2sdl_2video_8c =
 [
-    [ "CLIPPED_PIXELS", "client_2frontend_2sdl_2video_8c.html#a934146dc22d16a58736a36400ff3180c", null ],
     [ "RGBA_A", "client_2frontend_2sdl_2video_8c.html#ac6ec5a3cd1773fa4b4c5933ae3953697", null ],
     [ "RGBA_B", "client_2frontend_2sdl_2video_8c.html#a8977ff5915417f332932e1037bca556b", null ],
     [ "RGBA_G", "client_2frontend_2sdl_2video_8c.html#a31d7396d351f821a088f252135446b1d", null ],

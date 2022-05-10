@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structInputDevice.html#a90427693ff669f98a1f9e5ea33375c35":[12,0,56,0],
 "structInputDevice.html#ab5c3a90ceb67031ce709cae79143b9a5":[12,0,56,8],
 "structInputDevice.html#ac1040f56ee63c7908b3c5e5fe3e74619":[12,0,56,5],
 "structInputDevice.html#afb6e555a8bbadab4469766e43fcb63ac":[12,0,56,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709":[12,0,84,18],
 "structNvidiaEncoder.html#abaedbb50f564c663cae9bd38b2bd05e3":[12,0,84,4],
 "structNvidiaEncoder.html#abf286092a0fcee802960d70b27e32bbf":[12,0,84,2],
-"structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26":[12,0,84,9]
+"structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26":[12,0,84,9],
+"structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d":[12,0,84,15]
 };

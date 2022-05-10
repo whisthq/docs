@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d":[12,0,84,15],
 "structNvidiaEncoder.html#af5f260d715aee66892c981d206ae5e32":[12,0,84,10],
 "structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[12,0,84,19],
 "structOSXFilenames.html":[12,0,85],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "structUDPPacket.html#a897005c8e9655cbc58fde204c2b2be96":[12,0,114,5],
 "structUDPPacket.html#aa037e331a8e622a8f30e65e31f09ce8b":[12,0,114,8],
 "structUDPPacket.html#aab12ec95c44b6aa53c38349e4b904be5":[12,0,114,1],
-"structUDPPacket.html#ab7442e201180e73ccd9dd94f224a166d":[12,0,114,0]
+"structUDPPacket.html#ab7442e201180e73ccd9dd94f224a166d":[12,0,114,0],
+"structUDPPacket.html#ac85002574953bffb5683c563de3ff76e":[12,0,114,2]
 };
