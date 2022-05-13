@@ -144,7 +144,7 @@ Macros</h2></td></tr>
 <tr class="separator:aff4f292beeb047fd27cd7eb3ba92f7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ac8ed231c87b38d9362111c45fd9048"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a2ac8ed231c87b38d9362111c45fd9048">LOG_INFO_RATE_LIMITED</a>(period_in_seconds,  max_messages_per_period,  message, ...)</td></tr>
 <tr class="separator:a2ac8ed231c87b38d9362111c45fd9048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad398f3e6ce3fb8dc44e88cf3ff0176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a4ad398f3e6ce3fb8dc44e88cf3ff0176">LOG_METRIC</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a015c0931d8d1874039144d793549529d">LOG_MESSAGE</a>(METRIC, message, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:a4ad398f3e6ce3fb8dc44e88cf3ff0176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a4ad398f3e6ce3fb8dc44e88cf3ff0176">LOG_METRIC</a>(message, ...)</td></tr>
 <tr class="separator:a4ad398f3e6ce3fb8dc44e88cf3ff0176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9df5c6dc713c515884e63a80f499f6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b">LOG_WARNING</a>(message, ...)&#160;&#160;&#160;<a class="el" href="logging_8h.html#a015c0931d8d1874039144d793549529d">LOG_MESSAGE</a>(WARNING, message, ##__VA_ARGS__)</td></tr>
 <tr class="separator:ad9df5c6dc713c515884e63a80f499f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -648,11 +648,14 @@ Usage</h1>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="logging_8h.html#a015c0931d8d1874039144d793549529d">LOG_MESSAGE</a>(METRIC, message, ##__VA_ARGS__)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                   \</div>
+<div class="line">        whist_log_printf(<a class="code" href="logging_8h.html#a1a3cc8463f8cede44c8499b36bc47f9e">METRIC_LEVEL</a>, NULL, NULL, 0, <span class="stringliteral">&quot;{ &quot;</span> message <span class="stringliteral">&quot; }\n&quot;</span>, ##__VA_ARGS__); \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad9df5c6dc713c515884e63a80f499f6b"></a>
@@ -1066,6 +1069,7 @@ Usage</h1>
 </div><!-- doc-content -->
 <div class="ttc" id="alogging_8h_html_a0c216d22623f0933ecdc2fd1144caab3"><div class="ttname"><a href="logging_8h.html#a0c216d22623f0933ecdc2fd1144caab3">LOG_MESSAGE_RATE_LIMITED</a></div><div class="ttdeci">#define LOG_MESSAGE_RATE_LIMITED(period_in_seconds, max_messages_per_period, tag, message,...)</div><div class="ttdef"><b>Definition:</b> logging.h:118</div></div>
 <div class="ttc" id="astructLogRateLimiter_html"><div class="ttname"><a href="structLogRateLimiter.html">LogRateLimiter</a></div><div class="ttdoc">Struct used with rate-limited messages.</div><div class="ttdef"><b>Definition:</b> logging.h:86</div></div>
+<div class="ttc" id="alogging_8h_html_a1a3cc8463f8cede44c8499b36bc47f9e"><div class="ttname"><a href="logging_8h.html#a1a3cc8463f8cede44c8499b36bc47f9e">METRIC_LEVEL</a></div><div class="ttdeci">#define METRIC_LEVEL</div><div class="ttdef"><b>Definition:</b> logging.h:60</div></div>
 <div class="ttc" id="alogging_8h_html_a6f6e0a7a87048fb100a02f5c9d8660d6"><div class="ttname"><a href="logging_8h.html#a6f6e0a7a87048fb100a02f5c9d8660d6">LOG_FILE_NAME</a></div><div class="ttdeci">#define LOG_FILE_NAME</div><div class="ttdef"><b>Definition:</b> logging.h:54</div></div>
 <div class="ttc" id="awhist_8h_html_aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e"><div class="ttname"><a href="whist_8h.html#aef166b266f8d5b853ec64a90756fafb6aaa9da9defaee4a0a475bb8a87cf3ed1e">WHIST_EXIT_FAILURE</a></div><div class="ttdeci">@ WHIST_EXIT_FAILURE</div><div class="ttdef"><b>Definition:</b> whist.h:682</div></div>
 <!-- start footer part -->
