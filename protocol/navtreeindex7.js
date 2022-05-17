@@ -1,5 +1,11 @@
 var NAVTREEINDEX7 =
 {
+"lodepng_8h.html#ad9b8eca971e9d01d55ced928b26a53c5":[13,0,2,10,15,93],
+"lodepng_8h.html#ada7bc92db6e9f8906a1fc85caa0b17aa":[13,0,2,10,15,77],
+"lodepng_8h.html#ae0e6996e4aa9ac225f228b2253269127":[13,0,2,10,15,92],
+"lodepng_8h.html#ae3ee1eb944467fbbc1cf939328dd6a57":[13,0,2,10,15,101],
+"lodepng_8h.html#ae50c1ddde2fa8004b46da433f3e20974":[13,0,2,10,15,88],
+"lodepng_8h.html#ae66b9c1eeb9c44572bd381a94485e157":[13,0,2,10,15,103],
 "lodepng_8h.html#ae9121db6bfaefbdc00c9963934511e74":[13,0,2,10,15,58],
 "lodepng_8h.html#aea7d8c2bb2adaf028ec143c08a53f815":[13,0,2,10,15,50],
 "lodepng_8h.html#aeaa684595223a1a737d80f30a00dacca":[13,0,2,10,15,98],
@@ -243,11 +249,5 @@ var NAVTREEINDEX7 =
 "md_whist_network_WCC.html#autotoc_md229":[10,3],
 "modules.html":[11],
 "native_8h.html":[13,0,0,0,0,5],
-"native_8h.html#a078082bfb15aba16695f068ca177a7d2":[13,0,0,0,0,5,3],
-"native_8h.html#a0c2d23f9997e5056f0860810be15a20a":[13,0,0,0,0,5,6],
-"native_8h.html#a5f420278b34322395f0ca27dfec07e86":[13,0,0,0,0,5,4],
-"native_8h.html#a9bf0c11166966c746086a3ee1c2823b8":[13,0,0,0,0,5,2],
-"native_8h.html#abe4cd56980efdded328c512e3ee13606":[13,0,0,0,0,5,5],
-"native_8h.html#ae75187b612da75f6f4544c5778661b4f":[13,0,0,0,0,5,1],
-"native_8h.html#af8d66089f48de7172275d0d1ede2104f":[13,0,0,0,0,5,0]
+"native_8h.html#a078082bfb15aba16695f068ca177a7d2":[13,0,0,0,0,5,3]
 };

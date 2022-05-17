@@ -1,5 +1,11 @@
 var NAVTREEINDEX11 =
 {
+"structInputDevice.html#a4fa00d68759f1577b838f2cf7c7107bc":[12,0,56,1],
+"structInputDevice.html#a6c69b0e4689e2b1e2809d697c8c86f20":[12,0,56,7],
+"structInputDevice.html#a70434199b458179138e987128954e939":[12,0,56,4],
+"structInputDevice.html#a806774bab2feb80399e101a29f4f707e":[12,0,56,6],
+"structInputDevice.html#a8f5ec0e96d37e2d644a9099ed9312e82":[12,0,56,2],
+"structInputDevice.html#a90427693ff669f98a1f9e5ea33375c35":[12,0,56,0],
 "structInputDevice.html#ab5c3a90ceb67031ce709cae79143b9a5":[12,0,56,8],
 "structInputDevice.html#ac1040f56ee63c7908b3c5e5fe3e74619":[12,0,56,5],
 "structInputDevice.html#afb6e555a8bbadab4469766e43fcb63ac":[12,0,56,3],
@@ -227,9 +233,9 @@ var NAVTREEINDEX11 =
 "structNetworkThrottleContext.html#af1394b5623dc1b94889bba028f636fe4":[12,0,82,6],
 "structNvidiaCaptureDevice.html":[12,0,83],
 "structNvidiaCaptureDevice.html#a16517c3ba7cca2be8aa32b766742721b":[12,0,83,0],
+"structNvidiaCaptureDevice.html#a5f22e9b37e6f3df95a5e95030ec3306d":[12,0,83,3],
 "structNvidiaCaptureDevice.html#a6ad1a9e3c3b416c35ec68546c26359a1":[12,0,83,4],
 "structNvidiaCaptureDevice.html#acd93581407810e43c14e6c23ae96385e":[12,0,83,2],
-"structNvidiaCaptureDevice.html#af5e26ce3aeccef4c002c9f94394a778e":[12,0,83,3],
 "structNvidiaCaptureDevice.html#afc703007982b06f21676d69a48edf4f8":[12,0,83,1],
 "structNvidiaEncoder.html":[12,0,84],
 "structNvidiaEncoder.html#a06296d7cd4eeb1ebd1086523a45b1a41":[12,0,84,13],
@@ -243,11 +249,5 @@ var NAVTREEINDEX11 =
 "structNvidiaEncoder.html#a6148961323d7c225188fecad61d2358d":[12,0,84,0],
 "structNvidiaEncoder.html#a69451df151eec51e0f4f7a258dec8e5d":[12,0,84,1],
 "structNvidiaEncoder.html#a832b3dd35a47459f6383ea505aceb877":[12,0,84,11],
-"structNvidiaEncoder.html#a955fc9b03169bd06a8bdc33f366e916b":[12,0,84,7],
-"structNvidiaEncoder.html#aa54fc34114bd9f8f7521bccde9760418":[12,0,84,5],
-"structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709":[12,0,84,18],
-"structNvidiaEncoder.html#abaedbb50f564c663cae9bd38b2bd05e3":[12,0,84,4],
-"structNvidiaEncoder.html#abf286092a0fcee802960d70b27e32bbf":[12,0,84,2],
-"structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26":[12,0,84,9],
-"structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d":[12,0,84,15]
+"structNvidiaEncoder.html#a955fc9b03169bd06a8bdc33f366e916b":[12,0,84,7]
 };

@@ -110,6 +110,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:a986d57ec411c83249d4a97721ca9d3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af375909202d5c3e8052452a976129200"><td class="memItemLeft" align="right" valign="top">typedef CUresult(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#af375909202d5c3e8052452a976129200">CUCTXSYNCHRONIZEPROC</a>) (void)</td></tr>
 <tr class="separator:af375909202d5c3e8052452a976129200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1255f1f521ca40792f5e132c7cdb739"><td class="memItemLeft" align="right" valign="top">typedef CUresult(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#ab1255f1f521ca40792f5e132c7cdb739">CUCMEMALLOCPROC</a>) (CUdeviceptr *dptr, size_t bytesize)</td></tr>
+<tr class="separator:ab1255f1f521ca40792f5e132c7cdb739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad273a0fe19313f92d55ac62c31720ac6"><td class="memItemLeft" align="right" valign="top">typedef CUresult(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#ad273a0fe19313f92d55ac62c31720ac6">CUMEMFREEPROC</a>) (CUdeviceptr dptr)</td></tr>
+<tr class="separator:ad273a0fe19313f92d55ac62c31720ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -138,6 +142,10 @@ Variables</h2></td></tr>
 <tr class="separator:a0167f2161c2cacf6e4474059e249a079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb3e65e6da803fd2897d61923c68cdb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#af375909202d5c3e8052452a976129200">CUCTXSYNCHRONIZEPROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#adb3e65e6da803fd2897d61923c68cdb7">cu_ctx_synchronize_ptr</a></td></tr>
 <tr class="separator:adb3e65e6da803fd2897d61923c68cdb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35d928f87019f93a7ec8fe167cb5dd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#ab1255f1f521ca40792f5e132c7cdb739">CUCMEMALLOCPROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#aa35d928f87019f93a7ec8fe167cb5dd0">cu_mem_alloc_ptr</a></td></tr>
+<tr class="separator:aa35d928f87019f93a7ec8fe167cb5dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401eb47ce4d0eec98457cff7c319e834"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#ad273a0fe19313f92d55ac62c31720ac6">CUMEMFREEPROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#a401eb47ce4d0eec98457cff7c319e834">cu_mem_free_ptr</a></td></tr>
+<tr class="separator:a401eb47ce4d0eec98457cff7c319e834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -147,6 +155,20 @@ Variables</h2></td></tr>
 Usage</h1>
 <p>The CUDA context is required for the NVIDIA encoder. First call <code><a class="el" href="cudacontext_8h.html#a8a9e5066d4daf827ca3ec0fd0ee7aae0" title="Initializes CUDA and creates a CUDA context.">cuda_init()</a></code> and then use the initialized CUDA context by calling <code>get_active_cuda_context_ptr()</code>. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ab1255f1f521ca40792f5e132c7cdb739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1255f1f521ca40792f5e132c7cdb739">&#9670;&nbsp;</a></span>CUCMEMALLOCPROC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef CUresult(* CUCMEMALLOCPROC) (CUdeviceptr *dptr, size_t bytesize)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aff2dd8622cc9999ce7888fb29ae73d17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff2dd8622cc9999ce7888fb29ae73d17">&#9670;&nbsp;</a></span>CUCTXGETCURRENTPROC</h2>
 
@@ -211,6 +233,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">typedef CUresult(* CUCTXSYNCHRONIZEPROC) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad273a0fe19313f92d55ac62c31720ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad273a0fe19313f92d55ac62c31720ac6">&#9670;&nbsp;</a></span>CUMEMFREEPROC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef CUresult(* CUMEMFREEPROC) (CUdeviceptr dptr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -373,6 +409,34 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="cudacontext_8h.html#af375909202d5c3e8052452a976129200">CUCTXSYNCHRONIZEPROC</a> cu_ctx_synchronize_ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa35d928f87019f93a7ec8fe167cb5dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35d928f87019f93a7ec8fe167cb5dd0">&#9670;&nbsp;</a></span>cu_mem_alloc_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cudacontext_8h.html#ab1255f1f521ca40792f5e132c7cdb739">CUCMEMALLOCPROC</a> cu_mem_alloc_ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a401eb47ce4d0eec98457cff7c319e834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a401eb47ce4d0eec98457cff7c319e834">&#9670;&nbsp;</a></span>cu_mem_free_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cudacontext_8h.html#ad273a0fe19313f92d55ac62c31720ac6">CUMEMFREEPROC</a> cu_mem_free_ptr</td>
         </tr>
       </table>
 </div><div class="memdoc">

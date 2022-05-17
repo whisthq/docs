@@ -1,5 +1,11 @@
 var NAVTREEINDEX14 =
 {
+"structWhistServerMessage.html#af4944e3d0ab3ec37e951cd127380cd3c":[12,0,145,6],
+"structWhistServerState.html":[12,0,146],
+"structWhistServerState.html#a00dd5b43adda73e6eb4fa1d8db5d6421":[12,0,146,26],
+"structWhistServerState.html#a0f22ceb13d464e8a1c0d720732358ed8":[12,0,146,7],
+"structWhistServerState.html#a25d1d083d34faa8e1aa74e0e49eccef8":[12,0,146,9],
+"structWhistServerState.html#a29c7d6130bc7d5fa58b023596b7a58b2":[12,0,146,11],
 "structWhistServerState.html#a3c05e0c9cbd2fa0a293a6b90dab20164":[12,0,146,20],
 "structWhistServerState.html#a3f722fcda9f3d15c78ab8b4afd118321":[12,0,146,16],
 "structWhistServerState.html#a46dd11cfba384e0fdd26e2f296dcf4de":[12,0,146,10],
@@ -243,11 +249,5 @@ var NAVTREEINDEX14 =
 "uinput__input__driver_8c.html#ad8ba535dd7a5c25adaf10e093faf0a2f":[13,0,2,7,4,5],
 "uinput__input__driver_8c.html#adefd940015375948bd0912f7080b63ac":[13,0,2,7,4,1],
 "unionFileEventInfo.html":[12,0,35],
-"unionFileEventInfo.html#a2d6ff57a841b9caf36bb1184b9da3e1b":[12,0,35,0],
-"unionFileEventInfo.html#a7c2f61fd8d5d21937890a9f33b470d77":[12,0,35,2],
-"unionFileEventInfo.html#ad8e2f9414cb44f1082d31af621e6d93c":[12,0,35,1],
-"virtual_2common_8h.html":[13,0,0,0,1,0],
-"virtual_2common_8h.html#a485a23621cdb9f65b1bda2a03799494b":[13,0,0,0,1,0,2],
-"virtual_2common_8h.html#a72b60a19847babd1cb531fc6b39cc9b0":[13,0,0,0,1,0,1],
-"virtual_2common_8h_source.html":[13,0,0,0,1,0]
+"unionFileEventInfo.html#a2d6ff57a841b9caf36bb1184b9da3e1b":[12,0,35,0]
 };

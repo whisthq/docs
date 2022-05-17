@@ -15,6 +15,8 @@ var cudacontext_8c =
     [ "cu_ctx_push_current_ptr", "cudacontext_8c.html#a0167f2161c2cacf6e4474059e249a079", null ],
     [ "cu_ctx_set_current_ptr", "cudacontext_8c.html#a3f0f47814f5d86d632943b4b3d03fcfc", null ],
     [ "cu_ctx_synchronize_ptr", "cudacontext_8c.html#adb3e65e6da803fd2897d61923c68cdb7", null ],
+    [ "cu_mem_alloc_ptr", "cudacontext_8c.html#aa35d928f87019f93a7ec8fe167cb5dd0", null ],
+    [ "cu_mem_free_ptr", "cudacontext_8c.html#a401eb47ce4d0eec98457cff7c319e834", null ],
     [ "nvidia_thread_cuda_context", "cudacontext_8c.html#a8df5fac016ab1ed161d55c2a5f28d3d9", null ],
     [ "video_thread_cuda_context", "cudacontext_8c.html#a3fad4683f3f7a313295d1d9a3c680a03", null ]
 ];

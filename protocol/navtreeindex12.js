@@ -1,5 +1,11 @@
 var NAVTREEINDEX12 =
 {
+"structNvidiaEncoder.html#aa54fc34114bd9f8f7521bccde9760418":[12,0,84,5],
+"structNvidiaEncoder.html#ab6ff6d04caf3808c3b36c871fdc87709":[12,0,84,18],
+"structNvidiaEncoder.html#abaedbb50f564c663cae9bd38b2bd05e3":[12,0,84,4],
+"structNvidiaEncoder.html#abf286092a0fcee802960d70b27e32bbf":[12,0,84,2],
+"structNvidiaEncoder.html#aca8c6a0ee6dd4730e5ac54f0de5d9e26":[12,0,84,9],
+"structNvidiaEncoder.html#aeb87ea17f895dcd52cb50ec08a000c7d":[12,0,84,15],
 "structNvidiaEncoder.html#af5f260d715aee66892c981d206ae5e32":[12,0,84,10],
 "structNvidiaEncoder.html#afbe001a4f0eb9ff627a8e8c27a0a8015":[12,0,84,19],
 "structOSXFilenames.html":[12,0,85],
@@ -243,11 +249,5 @@ var NAVTREEINDEX12 =
 "structUDPPacket.html#a38bd9e1dc1807357af9d68096d3c79ee":[12,0,114,4],
 "structUDPPacket.html#a481ce35325ef9ff3506e7df0e6d0a860":[12,0,114,9],
 "structUDPPacket.html#a49d5c2afd8a1258581ddf1b39135cf98":[12,0,114,16],
-"structUDPPacket.html#a5a5ba8797b19985fedd64846ee458e5c":[12,0,114,14],
-"structUDPPacket.html#a5ef9f74bb94945e6e090d52d9db762b0":[12,0,114,17],
-"structUDPPacket.html#a897005c8e9655cbc58fde204c2b2be96":[12,0,114,5],
-"structUDPPacket.html#aa037e331a8e622a8f30e65e31f09ce8b":[12,0,114,8],
-"structUDPPacket.html#aab12ec95c44b6aa53c38349e4b904be5":[12,0,114,1],
-"structUDPPacket.html#ab7442e201180e73ccd9dd94f224a166d":[12,0,114,0],
-"structUDPPacket.html#ac85002574953bffb5683c563de3ff76e":[12,0,114,2]
+"structUDPPacket.html#a5a5ba8797b19985fedd64846ee458e5c":[12,0,114,14]
 };
