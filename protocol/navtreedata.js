@@ -140,23 +140,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "GF256.html",
-"client__utils_8h_source.html",
-"dir_b42396209471d5d13338a84a02610e1c.html",
-"frontend_8c.html#ac41e532e8f120e77a9088de5f8ff27f6",
-"group__command__line.html",
-"group__threading.html#ga5ca2c3e22f8cf55f251e836062bc8d05",
-"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a0adb9ff5523558b466b56cd3fe3c7c12",
-"lodepng_8h.html#ad9b8eca971e9d01d55ced928b26a53c5",
-"native_8h.html#a0c2d23f9997e5056f0860810be15a20a",
-"rs__wrapper_8h.html#a4527ad711bc17cb4c8d730bd4eb1e2b0",
-"structClient.html#ae0a5a253676a6b7ce3d327b85d16a24c",
-"structInputDevice.html#a4fa00d68759f1577b838f2cf7c7107bc",
-"structNvidiaEncoder.html#aa54fc34114bd9f8f7521bccde9760418",
-"structUDPPacket.html#a5ef9f74bb94945e6e090d52d9db762b0",
-"structWhistServerMessage.html#af4944e3d0ab3ec37e951cd127380cd3c",
-"unionFileEventInfo.html#a7c2f61fd8d5d21937890a9f33b470d77",
-"whist_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa06d9de66a9b72e605f22e1ff36d08760",
-"winapi__input__driver_8c.html#ab57f18ba31c22febfe43ecf4e82dbdc4"
+"clipboard_8h.html#a9676c44d0c2a676fe59a136a6e71b161",
+"encode_8h.html#ab20c7bac827841ee9ce7f6ca5c6be85a",
+"frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaccfc8dd447b06a62ff6181a6bc144f07",
+"group__command__line.html#ga9edd9962ccdb5e4f5266fb62e90c64cd",
+"group__threading.html#gaca90f72fb631347a63885ab6640cb845",
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768adf67371b2db9ee537d66142468e91028",
+"log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a1bacdc5d426e363329abf47240b2c1cd",
+"network__algorithm_8c.html#a85ca41c173686c9a4b799af197448552",
+"sdl_8c.html",
+"structClipboardThread.html#abd12e47d78149eb49150219c8b73690e",
+"structLTRFrame.html#a47a6e2f68264218b2c2a10558c83b734",
+"structRWLock.html#a21f97c946efac2fa178bf291885d30d8",
+"structWhistClientMessage.html",
+"structfec__parms.html#aba672647b42905b8e11b1faea9213fd1",
+"whist_2network_2network_8h.html#a8f54a99577e1dc5762f699721c9bbe36",
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba7717b50b7d4130797625663fe06ba8a5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
