@@ -11,6 +11,7 @@ var whist_8h =
     [ "WhistKeyboardState", "structWhistKeyboardState.html", "structWhistKeyboardState" ],
     [ "WhistFrameAckMessage", "structWhistFrameAckMessage.html", "structWhistFrameAckMessage" ],
     [ "WhistClientMessage", "structWhistClientMessage.html", "structWhistClientMessage" ],
+    [ "WhistWindowData", "structWhistWindowData.html", "structWhistWindowData" ],
     [ "WhistServerMessage", "structWhistServerMessage.html", "structWhistServerMessage" ],
     [ "WhistDestination", "structWhistDestination.html", "structWhistDestination" ],
     [ "BitArray", "structBitArray.html", "structBitArray" ],
@@ -54,6 +55,7 @@ var whist_8h =
     [ "MAX_SCREEN_WIDTH", "whist_8h.html#a56ab8e1d2af6f308d5612205ba3d9e6b", null ],
     [ "MAX_URL_LENGTH", "whist_8h.html#a3a0a3a9d3952e2b57333ed6daceb163e", null ],
     [ "MAX_VIDEO_PACKETS", "whist_8h.html#ac2fc8d91a4522aa7564405e36898140b", null ],
+    [ "MAX_WINDOWS", "whist_8h.html#a96f609b2a30e2dc3cc404945cdb2d55e", null ],
     [ "min", "whist_8h.html#ac6afabdc09a49a433ee19d8a9486056d", null ],
     [ "MIN_FPS", "whist_8h.html#a07497cbfeb7eff3e5798235291f978c6", null ],
     [ "MIN_SCREEN_HEIGHT", "whist_8h.html#a5c279ad767a41e3b26f0f55bbc55749d", null ],
@@ -110,6 +112,7 @@ var whist_8h =
     [ "WhistOSType", "whist_8h.html#a00a12b04c002bc1d820fc3fdbe717cae", null ],
     [ "WhistServerMessage", "whist_8h.html#af354d3977701249a8ad159d0eeda62ff", null ],
     [ "WhistServerMessageType", "whist_8h.html#a5885a6725785a59084164ccfedb1073a", null ],
+    [ "WhistWindowData", "whist_8h.html#a659532c07797fb0b3ad9b5f443f1e493", null ],
     [ "CaptureDeviceType", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600", [
       [ "NVIDIA_DEVICE", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c", null ],
       [ "X11_DEVICE", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621", null ]

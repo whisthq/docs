@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('x11__window__info_8c.html',''); initRe
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">x11_window_info.c File Reference</div>  </div>
@@ -93,15 +94,67 @@ $(document).ready(function(){initNavTree('x11__window__info_8c.html',''); initRe
 <div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="window__info_8h_source.html">window_info.h</a>&quot;</code><br />
 <code>#include &lt;locale.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="x11capture_8h_source.html">whist/video/capture/x11capture.h</a>&gt;</code><br />
 <code>#include &lt;X11/Xlib.h&gt;</code><br />
 <code>#include &lt;X11/Xutil.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a50026537f9f2afdb4a6a4f3bc5dad6d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a50026537f9f2afdb4a6a4f3bc5dad6d3">_NET_WM_STATE_REMOVE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a50026537f9f2afdb4a6a4f3bc5dad6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01584d4487719bb38125d1c5176a823"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#af01584d4487719bb38125d1c5176a823">_NET_WM_STATE_ADD</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:af01584d4487719bb38125d1c5176a823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e923d9844fde85f4a21c204f1f8dbd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a3e923d9844fde85f4a21c204f1f8dbd2">_NET_WM_STATE_TOGGLE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a3e923d9844fde85f4a21c204f1f8dbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4c8f2f6078d3e0b06048154782d0fc09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a4c8f2f6078d3e0b06048154782d0fc09">x11_get_window_property</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device, Window w, Atom property, Atom req_type, unsigned long *nitems_return, unsigned char **prop_return)</td></tr>
+<tr class="memdesc:a4c8f2f6078d3e0b06048154782d0fc09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to call XGetWindowProperty.  <a href="x11__window__info_8c.html#a4c8f2f6078d3e0b06048154782d0fc09">More...</a><br /></td></tr>
+<tr class="separator:a4c8f2f6078d3e0b06048154782d0fc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaaaa197e240d0c438c6e79667be2b37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#adaaaa197e240d0c438c6e79667be2b37">send_message_to_root</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device, XEvent *event_send)</td></tr>
+<tr class="memdesc:adaaaa197e240d0c438c6e79667be2b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to call XSendEvent on a root message, as described in the EWMH spec.  <a href="x11__window__info_8c.html#adaaaa197e240d0c438c6e79667be2b37">More...</a><br /></td></tr>
+<tr class="separator:adaaaa197e240d0c438c6e79667be2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8cb0636f1d992c3d5df6e40ff90be0"><td class="memItemLeft" align="right" valign="top">XEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a6d8cb0636f1d992c3d5df6e40ff90be0">create_change_state_message</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device, Window w, long action, Atom property1, Atom property2)</td></tr>
+<tr class="memdesc:a6d8cb0636f1d992c3d5df6e40ff90be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create an XEvent that requests a window state change, e.g.  <a href="x11__window__info_8c.html#a6d8cb0636f1d992c3d5df6e40ff90be0">More...</a><br /></td></tr>
+<tr class="separator:a6d8cb0636f1d992c3d5df6e40ff90be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df4370e86e46c25d83dc86af2d2efc1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a8df4370e86e46c25d83dc86af2d2efc1">get_window_name</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device, Window w)</td></tr>
+<tr class="memdesc:a8df4370e86e46c25d83dc86af2d2efc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window name of the specified window.  <a href="x11__window__info_8c.html#a8df4370e86e46c25d83dc86af2d2efc1">More...</a><br /></td></tr>
+<tr class="separator:a8df4370e86e46c25d83dc86af2d2efc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed31f24aa6e5481c4a63a69e2df1cf58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#aed31f24aa6e5481c4a63a69e2df1cf58">get_valid_windows_helper</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device, <a class="el" href="structLinkedList.html">LinkedList</a> *list, Window curr)</td></tr>
+<tr class="memdesc:aed31f24aa6e5481c4a63a69e2df1cf58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for recursive get_valid_windows calls, since get_valid_windows recursively searches the window tree.  <a href="x11__window__info_8c.html#aed31f24aa6e5481c4a63a69e2df1cf58">More...</a><br /></td></tr>
+<tr class="separator:aed31f24aa6e5481c4a63a69e2df1cf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9173c83ed7a14a3a61b50a2cae574ef7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a9173c83ed7a14a3a61b50a2cae574ef7">init_window_info_getter</a> (void)</td></tr>
 <tr class="memdesc:a9173c83ed7a14a3a61b50a2cae574ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize window info getter.  <a href="x11__window__info_8c.html#a9173c83ed7a14a3a61b50a2cae574ef7">More...</a><br /></td></tr>
 <tr class="separator:a9173c83ed7a14a3a61b50a2cae574ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29501b57aebb07eb540ddc886054be9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#af29501b57aebb07eb540ddc886054be9">get_valid_windows</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structLinkedList.html">LinkedList</a> *list)</td></tr>
+<tr class="memdesc:af29501b57aebb07eb540ddc886054be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a linked list of windows we should stream (e.g.  <a href="x11__window__info_8c.html#af29501b57aebb07eb540ddc886054be9">More...</a><br /></td></tr>
+<tr class="separator:af29501b57aebb07eb540ddc886054be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757fac2cf4120d6017266f688cff93ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a757fac2cf4120d6017266f688cff93ce">get_window_attributes</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window, <a class="el" href="structWhistWindowData.html">WhistWindowData</a> *<a class="el" href="error__monitor_8c.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>)</td></tr>
+<tr class="memdesc:a757fac2cf4120d6017266f688cff93ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill WhistWindowData* struct with x/y/w/h/etc.  <a href="x11__window__info_8c.html#a757fac2cf4120d6017266f688cff93ce">More...</a><br /></td></tr>
+<tr class="separator:a757fac2cf4120d6017266f688cff93ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092a69e23e099fac013c1b7510d9aeea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a092a69e23e099fac013c1b7510d9aeea">get_active_window</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device)</td></tr>
+<tr class="memdesc:a092a69e23e099fac013c1b7510d9aeea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the active window, either using NET_ACTIVE_WINDOW atom (preferred) or XGetInputFocus.  <a href="x11__window__info_8c.html#a092a69e23e099fac013c1b7510d9aeea">More...</a><br /></td></tr>
+<tr class="separator:a092a69e23e099fac013c1b7510d9aeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaaa48ebc924341b2f57a0ffa47f03f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#afaaa48ebc924341b2f57a0ffa47f03f5">minimize_window</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window)</td></tr>
+<tr class="memdesc:afaaa48ebc924341b2f57a0ffa47f03f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimize the given window.  <a href="x11__window__info_8c.html#afaaa48ebc924341b2f57a0ffa47f03f5">More...</a><br /></td></tr>
+<tr class="separator:afaaa48ebc924341b2f57a0ffa47f03f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab295d9ee93db241224588d8d36f08226"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#ab295d9ee93db241224588d8d36f08226">unminimize_window</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window)</td></tr>
+<tr class="memdesc:ab295d9ee93db241224588d8d36f08226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unminimize the given window.  <a href="x11__window__info_8c.html#ab295d9ee93db241224588d8d36f08226">More...</a><br /></td></tr>
+<tr class="separator:ab295d9ee93db241224588d8d36f08226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc7356fc8ec1706521a422d99e6bd2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a4bc7356fc8ec1706521a422d99e6bd2a">maximize_window</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window)</td></tr>
+<tr class="memdesc:a4bc7356fc8ec1706521a422d99e6bd2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximize the given window.  <a href="x11__window__info_8c.html#a4bc7356fc8ec1706521a422d99e6bd2a">More...</a><br /></td></tr>
+<tr class="separator:a4bc7356fc8ec1706521a422d99e6bd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54d2cc9b2d2809b37a20fed484ec0af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#ab54d2cc9b2d2809b37a20fed484ec0af">fullscreen_window</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window)</td></tr>
+<tr class="memdesc:ab54d2cc9b2d2809b37a20fed484ec0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fullscreen the given window.  <a href="x11__window__info_8c.html#ab54d2cc9b2d2809b37a20fed484ec0af">More...</a><br /></td></tr>
+<tr class="separator:ab54d2cc9b2d2809b37a20fed484ec0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2351c0e44f99302487a3ff00e6da3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#ada2351c0e44f99302487a3ff00e6da3e">unfullscreen_window</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window)</td></tr>
+<tr class="memdesc:ada2351c0e44f99302487a3ff00e6da3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unfullscreen the given window.  <a href="x11__window__info_8c.html#ada2351c0e44f99302487a3ff00e6da3e">More...</a><br /></td></tr>
+<tr class="separator:ada2351c0e44f99302487a3ff00e6da3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79699ba271f4a3d2372f64a348a3048c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a79699ba271f4a3d2372f64a348a3048c">bring_window_to_top</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window)</td></tr>
+<tr class="memdesc:a79699ba271f4a3d2372f64a348a3048c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bring given window to top.  <a href="x11__window__info_8c.html#a79699ba271f4a3d2372f64a348a3048c">More...</a><br /></td></tr>
+<tr class="separator:a79699ba271f4a3d2372f64a348a3048c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03ff5688ba3a77c405bd696b923f9d2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d">get_focused_window_name</a> (char **name_return)</td></tr>
 <tr class="memdesc:a03ff5688ba3a77c405bd696b923f9d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the focused window.  <a href="x11__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d">More...</a><br /></td></tr>
 <tr class="separator:a03ff5688ba3a77c405bd696b923f9d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,11 +164,201 @@ Functions</h2></td></tr>
 <tr class="memitem:aeb2edfe495c114f66af1adeeb413f2c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#aeb2edfe495c114f66af1adeeb413f2c0">destroy_window_info_getter</a> (void)</td></tr>
 <tr class="memdesc:aeb2edfe495c114f66af1adeeb413f2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy window info getter.  <a href="x11__window__info_8c.html#aeb2edfe495c114f66af1adeeb413f2c0">More...</a><br /></td></tr>
 <tr class="separator:aeb2edfe495c114f66af1adeeb413f2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3acf0d209a96f98ea9a137004565d29f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a3acf0d209a96f98ea9a137004565d29f">move_resize_window</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window, int x, int y, int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>)</td></tr>
+<tr class="memdesc:a3acf0d209a96f98ea9a137004565d29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the window to (x, y) and resize it to (width, height).  <a href="x11__window__info_8c.html#a3acf0d209a96f98ea9a137004565d29f">More...</a><br /></td></tr>
+<tr class="separator:a3acf0d209a96f98ea9a137004565d29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92172f4730304b6eb8eb7931d5197413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a92172f4730304b6eb8eb7931d5197413">close_window</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window)</td></tr>
+<tr class="memdesc:a92172f4730304b6eb8eb7931d5197413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the given window.  <a href="x11__window__info_8c.html#a92172f4730304b6eb8eb7931d5197413">More...</a><br /></td></tr>
+<tr class="separator:a92172f4730304b6eb8eb7931d5197413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2d55da81f6538a26d015671cdd1ec6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#afb2d55da81f6538a26d015671cdd1ec6">is_window_resizable</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window)</td></tr>
+<tr class="memdesc:afb2d55da81f6538a26d015671cdd1ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether or not the window is resizable (e.g.  <a href="x11__window__info_8c.html#afb2d55da81f6538a26d015671cdd1ec6">More...</a><br /></td></tr>
+<tr class="separator:afb2d55da81f6538a26d015671cdd1ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
-<p>This file contains all the code for getting X11-specific window information. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<h1><a class="anchor" id="autotoc_md262"></a>
+@brief This file contains all the code for getting and setting X11-specific window information.</h1>
+<h1><a class="anchor" id="autotoc_md263"></a>
+Usage</h1>
+<p>Create a capture device for the display whose windows you want to work with. To get the active window or a list of windows for the client to display, call get_active_window or get_valid_windows, respectively; pass the resulting WhistWindows to the getter/setter functions here. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="af01584d4487719bb38125d1c5176a823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af01584d4487719bb38125d1c5176a823">&#9670;&nbsp;</a></span>_NET_WM_STATE_ADD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _NET_WM_STATE_ADD&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50026537f9f2afdb4a6a4f3bc5dad6d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50026537f9f2afdb4a6a4f3bc5dad6d3">&#9670;&nbsp;</a></span>_NET_WM_STATE_REMOVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _NET_WM_STATE_REMOVE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e923d9844fde85f4a21c204f1f8dbd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e923d9844fde85f4a21c204f1f8dbd2">&#9670;&nbsp;</a></span>_NET_WM_STATE_TOGGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _NET_WM_STATE_TOGGLE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a79699ba271f4a3d2372f64a348a3048c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79699ba271f4a3d2372f64a348a3048c">&#9670;&nbsp;</a></span>bring_window_to_top()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bring_window_to_top </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bring given window to top. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td><a class="el" href="structWhistWindow.html">WhistWindow</a> to bring to top </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92172f4730304b6eb8eb7931d5197413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92172f4730304b6eb8eb7931d5197413">&#9670;&nbsp;</a></span>close_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void close_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close the given window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td><a class="el" href="structWhistWindow.html">WhistWindow</a> to close </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6d8cb0636f1d992c3d5df6e40ff90be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8cb0636f1d992c3d5df6e40ff90be0">&#9670;&nbsp;</a></span>create_change_state_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XEvent create_change_state_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Atom&#160;</td>
+          <td class="paramname"><em>property1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Atom&#160;</td>
+          <td class="paramname"><em>property2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function to create an XEvent that requests a window state change, e.g. </p>
+<p>minimize/maximize/fullscreen, as described in the EWMH spec</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Device whose display we are using</td></tr>
+    <tr><td class="paramname">w</td><td>The window whose state we want to change</td></tr>
+    <tr><td class="paramname">action</td><td>The action to perform (set/unset/toggle)</td></tr>
+    <tr><td class="paramname">property1</td><td>First property to perform action on</td></tr>
+    <tr><td class="paramname">property2</td><td>Second property to perform action on. This must be 0 if there is no second property to change</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An XEvent that can then be passed to send_message_to_root for the state change </dd></dl>
+
+</div>
+</div>
 <a id="aeb2edfe495c114f66af1adeeb413f2c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb2edfe495c114f66af1adeeb413f2c0">&#9670;&nbsp;</a></span>destroy_window_info_getter()</h2>
 
@@ -133,6 +376,70 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destroy window info getter. </p>
+
+</div>
+</div>
+<a id="ab54d2cc9b2d2809b37a20fed484ec0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54d2cc9b2d2809b37a20fed484ec0af">&#9670;&nbsp;</a></span>fullscreen_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fullscreen_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fullscreen the given window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td><a class="el" href="structWhistWindow.html">WhistWindow</a> to fullscreen </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a092a69e23e099fac013c1b7510d9aeea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092a69e23e099fac013c1b7510d9aeea">&#9670;&nbsp;</a></span>get_active_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structWhistWindow.html">WhistWindow</a> get_active_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the active window, either using NET_ACTIVE_WINDOW atom (preferred) or XGetInputFocus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structWhistWindow.html">WhistWindow</a> struct representing the active window </dd></dl>
 
 </div>
 </div>
@@ -160,6 +467,171 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the window name is new, false if the window name is the same or on failure </dd></dl>
+
+</div>
+</div>
+<a id="af29501b57aebb07eb540ddc886054be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29501b57aebb07eb540ddc886054be9">&#9670;&nbsp;</a></span>get_valid_windows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_valid_windows </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structLinkedList.html">LinkedList</a> *&#160;</td>
+          <td class="paramname"><em>window_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a linked list of windows we should stream (e.g. </p>
+<p>Chrome windows and popups)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">window_list</td><td>Linked list to append the window list into </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aed31f24aa6e5481c4a63a69e2df1cf58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed31f24aa6e5481c4a63a69e2df1cf58">&#9670;&nbsp;</a></span>get_valid_windows_helper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_valid_windows_helper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structLinkedList.html">LinkedList</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>curr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper for recursive get_valid_windows calls, since get_valid_windows recursively searches the window tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Device whose display we are using</td></tr>
+    <tr><td class="paramname">list</td><td>Linked list to append children of curr who are valid windows</td></tr>
+    <tr><td class="paramname">curr</td><td>Current position in the X11 window tree </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a757fac2cf4120d6017266f688cff93ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757fac2cf4120d6017266f688cff93ce">&#9670;&nbsp;</a></span>get_window_attributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_window_attributes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindowData.html">WhistWindowData</a> *&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fill WhistWindowData* struct with x/y/w/h/etc. </p>
+<p>of whist_window</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td>The <a class="el" href="structWhistWindow.html">WhistWindow</a> to get attributes from</td></tr>
+    <tr><td class="paramname">d</td><td>Struct to fill with window attributes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8df4370e86e46c25d83dc86af2d2efc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df4370e86e46c25d83dc86af2d2efc1">&#9670;&nbsp;</a></span>get_window_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * get_window_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the window name of the specified window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Device whose display we are using</td></tr>
+    <tr><td class="paramname">w</td><td>The window whose name we want</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>UTF-8 string for window name </dd></dl>
 
 </div>
 </div>
@@ -202,6 +674,362 @@ Functions</h2></td></tr>
 <p>Query whether the focused window is fullscreen or not. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if not fullscreen, true if fullscreen.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>By "fullscreen", we mean that the window is rendering directly to the screen, not through the window manager. Examples include fullscreen video playback in a browser, or fullscreen games. </dd></dl>
+
+</div>
+</div>
+<a id="afb2d55da81f6538a26d015671cdd1ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2d55da81f6538a26d015671cdd1ec6">&#9670;&nbsp;</a></span>is_window_resizable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_window_resizable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether or not the window is resizable (e.g. </p>
+<p>popups or right click menus are not resizable, but Chrome is)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td><a class="el" href="structWhistWindow.html">WhistWindow</a> whose properties we are querying</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether or not whist_window is resizable </dd></dl>
+
+</div>
+</div>
+<a id="a4bc7356fc8ec1706521a422d99e6bd2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc7356fc8ec1706521a422d99e6bd2a">&#9670;&nbsp;</a></span>maximize_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void maximize_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximize the given window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td><a class="el" href="structWhistWindow.html">WhistWindow</a> to maximize </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afaaa48ebc924341b2f57a0ffa47f03f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaaa48ebc924341b2f57a0ffa47f03f5">&#9670;&nbsp;</a></span>minimize_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void minimize_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minimize the given window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td><a class="el" href="structWhistWindow.html">WhistWindow</a> to minimize </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3acf0d209a96f98ea9a137004565d29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3acf0d209a96f98ea9a137004565d29f">&#9670;&nbsp;</a></span>move_resize_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void move_resize_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move the window to (x, y) and resize it to (width, height). </p>
+<p>This only sends a request to the window manager to do so; the window manager can reject the request, e.g. if the window manager is started maximized.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td><a class="el" href="structWhistWindow.html">WhistWindow</a> we are moving and resizing</td></tr>
+    <tr><td class="paramname">x</td><td>Desired x-coordinate</td></tr>
+    <tr><td class="paramname">y</td><td>Desired y-coordinate</td></tr>
+    <tr><td class="paramname">width</td><td>Desired width</td></tr>
+    <tr><td class="paramname">height</td><td>Desired height </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adaaaa197e240d0c438c6e79667be2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaaaa197e240d0c438c6e79667be2b37">&#9670;&nbsp;</a></span>send_message_to_root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool send_message_to_root </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XEvent *&#160;</td>
+          <td class="paramname"><em>event_send</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function to call XSendEvent on a root message, as described in the EWMH spec. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Device whose display we are using</td></tr>
+    <tr><td class="paramname">event_send</td><td>The XEvent to send </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ada2351c0e44f99302487a3ff00e6da3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada2351c0e44f99302487a3ff00e6da3e">&#9670;&nbsp;</a></span>unfullscreen_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unfullscreen_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unfullscreen the given window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td><a class="el" href="structWhistWindow.html">WhistWindow</a> to unfullscreen </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab295d9ee93db241224588d8d36f08226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab295d9ee93db241224588d8d36f08226">&#9670;&nbsp;</a></span>unminimize_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unminimize_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCaptureDevice.html">CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>capture_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unminimize the given window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
+    <tr><td class="paramname">whist_window</td><td><a class="el" href="structWhistWindow.html">WhistWindow</a> to unminimize </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c8f2f6078d3e0b06048154782d0fc09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8f2f6078d3e0b06048154782d0fc09">&#9670;&nbsp;</a></span>x11_get_window_property()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool x11_get_window_property </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Window&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Atom&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Atom&#160;</td>
+          <td class="paramname"><em>req_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>nitems_return</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>prop_return</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function to call XGetWindowProperty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Device whose display we are using</td></tr>
+    <tr><td class="paramname">w</td><td>Window to get property for</td></tr>
+    <tr><td class="paramname">property</td><td>Property to get</td></tr>
+    <tr><td class="paramname">req_type</td><td>Required type (can pass in AnyPropertyType if N/A)</td></tr>
+    <tr><td class="paramname">nitems_return</td><td>Returns number of items stored in prop_return, will be nontrivial if the property is an array</td></tr>
+    <tr><td class="paramname">prop_return</td><td>Returns data for specified property</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether XGetWindowProperty was successful </dd></dl>
 
 </div>
 </div>

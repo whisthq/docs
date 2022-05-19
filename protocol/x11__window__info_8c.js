@@ -1,7 +1,27 @@
 var x11__window__info_8c =
 [
+    [ "_NET_WM_STATE_ADD", "x11__window__info_8c.html#af01584d4487719bb38125d1c5176a823", null ],
+    [ "_NET_WM_STATE_REMOVE", "x11__window__info_8c.html#a50026537f9f2afdb4a6a4f3bc5dad6d3", null ],
+    [ "_NET_WM_STATE_TOGGLE", "x11__window__info_8c.html#a3e923d9844fde85f4a21c204f1f8dbd2", null ],
+    [ "bring_window_to_top", "x11__window__info_8c.html#a79699ba271f4a3d2372f64a348a3048c", null ],
+    [ "close_window", "x11__window__info_8c.html#a92172f4730304b6eb8eb7931d5197413", null ],
+    [ "create_change_state_message", "x11__window__info_8c.html#a6d8cb0636f1d992c3d5df6e40ff90be0", null ],
     [ "destroy_window_info_getter", "x11__window__info_8c.html#aeb2edfe495c114f66af1adeeb413f2c0", null ],
+    [ "fullscreen_window", "x11__window__info_8c.html#ab54d2cc9b2d2809b37a20fed484ec0af", null ],
+    [ "get_active_window", "x11__window__info_8c.html#a092a69e23e099fac013c1b7510d9aeea", null ],
     [ "get_focused_window_name", "x11__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d", null ],
+    [ "get_valid_windows", "x11__window__info_8c.html#af29501b57aebb07eb540ddc886054be9", null ],
+    [ "get_valid_windows_helper", "x11__window__info_8c.html#aed31f24aa6e5481c4a63a69e2df1cf58", null ],
+    [ "get_window_attributes", "x11__window__info_8c.html#a757fac2cf4120d6017266f688cff93ce", null ],
+    [ "get_window_name", "x11__window__info_8c.html#a8df4370e86e46c25d83dc86af2d2efc1", null ],
     [ "init_window_info_getter", "x11__window__info_8c.html#a9173c83ed7a14a3a61b50a2cae574ef7", null ],
-    [ "is_focused_window_fullscreen", "x11__window__info_8c.html#a8af85b65174eebfd0b471ce107fb3447", null ]
+    [ "is_focused_window_fullscreen", "x11__window__info_8c.html#a8af85b65174eebfd0b471ce107fb3447", null ],
+    [ "is_window_resizable", "x11__window__info_8c.html#afb2d55da81f6538a26d015671cdd1ec6", null ],
+    [ "maximize_window", "x11__window__info_8c.html#a4bc7356fc8ec1706521a422d99e6bd2a", null ],
+    [ "minimize_window", "x11__window__info_8c.html#afaaa48ebc924341b2f57a0ffa47f03f5", null ],
+    [ "move_resize_window", "x11__window__info_8c.html#a3acf0d209a96f98ea9a137004565d29f", null ],
+    [ "send_message_to_root", "x11__window__info_8c.html#adaaaa197e240d0c438c6e79667be2b37", null ],
+    [ "unfullscreen_window", "x11__window__info_8c.html#ada2351c0e44f99302487a3ff00e6da3e", null ],
+    [ "unminimize_window", "x11__window__info_8c.html#ab295d9ee93db241224588d8d36f08226", null ],
+    [ "x11_get_window_property", "x11__window__info_8c.html#a4c8f2f6078d3e0b06048154782d0fc09", null ]
 ];

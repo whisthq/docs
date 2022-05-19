@@ -1,5 +1,18 @@
 var structX11CaptureDevice =
 [
+    [ "_NET_ACTIVE_WINDOW", "structX11CaptureDevice.html#aa666b9da977d81ab946d70e30d28f7bb", null ],
+    [ "_NET_CLOSE_WINDOW", "structX11CaptureDevice.html#a4e3b5d696debc53a282220772359c882", null ],
+    [ "_NET_MOVERESIZE_WINDOW", "structX11CaptureDevice.html#aafb401811bf652b8a4f9e5e365655e46", null ],
+    [ "_NET_WM_ACTION_RESIZE", "structX11CaptureDevice.html#a9fc71e632a322d25078b98d8690b8307", null ],
+    [ "_NET_WM_ALLOWED_ACTIONS", "structX11CaptureDevice.html#a34f9610206c72826745c4dd6e66f7104", null ],
+    [ "_NET_WM_NAME", "structX11CaptureDevice.html#a53421399dbe55ef2727c9d9cd34c0d05", null ],
+    [ "_NET_WM_STATE", "structX11CaptureDevice.html#a7bfe11b87f6cd99fdc4f2290746cb97a", null ],
+    [ "_NET_WM_STATE_ABOVE", "structX11CaptureDevice.html#ac7740aa379f5c2945f1a1a599231c558", null ],
+    [ "_NET_WM_STATE_FULLSCREEN", "structX11CaptureDevice.html#a7d9462269e090c988795bab178ae1f76", null ],
+    [ "_NET_WM_STATE_HIDDEN", "structX11CaptureDevice.html#a1e7c183d66303180cc872f5f8670bd8e", null ],
+    [ "_NET_WM_STATE_MAXIMIZED_HORZ", "structX11CaptureDevice.html#a15aa394a9a0116a6a3de0027af4a3a56", null ],
+    [ "_NET_WM_STATE_MAXIMIZED_VERT", "structX11CaptureDevice.html#a25bca3462ac6c7b381aedc3373943ed3", null ],
+    [ "ATOM_ARRAY", "structX11CaptureDevice.html#a6c35e36b479a4fad19cc95dd52886eb2", null ],
     [ "corner_color", "structX11CaptureDevice.html#aa45126adf5d331cfef4d57a9382cc0d5", null ],
     [ "counter", "structX11CaptureDevice.html#abfd36ca31e71e058cc8b63592b2415df", null ],
     [ "damage", "structX11CaptureDevice.html#a74d01856486376e69cdbce519e5a9174", null ],
@@ -12,5 +25,6 @@ var structX11CaptureDevice =
     [ "pitch", "structX11CaptureDevice.html#a5686470157715e6cb4e48bd4c17c1d28", null ],
     [ "root", "structX11CaptureDevice.html#acef1859db60b99af218e316f7cec5772", null ],
     [ "segment", "structX11CaptureDevice.html#a14f8b043bd98da409064ec5b58a3a2ac", null ],
+    [ "UTF8_STRING", "structX11CaptureDevice.html#a4d38c5daddbd848151b0a8eb0b7c2420", null ],
     [ "width", "structX11CaptureDevice.html#a1c4f6b1f91d40bc223efabf1b8f5c974", null ]
 ];

@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('x11capture_8c.html',''); initResizable
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">x11capture.c File Reference</div>  </div>
@@ -96,12 +97,20 @@ $(document).ready(function(){initNavTree('x11capture_8c.html',''); initResizable
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;sys/shm.h&gt;</code><br />
+<code>#include &lt;X11/Xlib.h&gt;</code><br />
 <code>#include &lt;X11/Xutil.h&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a9b43fc8b10af962131aeb53638ad3475"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a9b43fc8b10af962131aeb53638ad3475">INIT_ATOM</a>(DEVICE,  ATOM_VAR,  NAME)</td></tr>
+<tr class="separator:a9b43fc8b10af962131aeb53638ad3475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4b72082f8dd40fefd41fe8a3a721eba0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a4b72082f8dd40fefd41fe8a3a721eba0">handler</a> (Display *<a class="el" href="error__monitor_8c.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, XErrorEvent *a)</td></tr>
-<tr class="separator:a4b72082f8dd40fefd41fe8a3a721eba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722b9a84da3d8ef6160ffe3e54dbc4ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a722b9a84da3d8ef6160ffe3e54dbc4ad">handler</a> (Display *display, XErrorEvent *error)</td></tr>
+<tr class="separator:a722b9a84da3d8ef6160ffe3e54dbc4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751bfb4026ea6963e8c406cd2aaafad3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a751bfb4026ea6963e8c406cd2aaafad3">init_atoms</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device)</td></tr>
+<tr class="separator:a751bfb4026ea6963e8c406cd2aaafad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8726a7b905e966e3da05147cd168bdf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11capture_8c.html#a8726a7b905e966e3da05147cd168bdf1">create_x11_capture_device</a> (uint32_t width, uint32_t <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>, uint32_t dpi)</td></tr>
 <tr class="memdesc:a8726a7b905e966e3da05147cd168bdf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a device for capturing via X11 with the specified width, height, and DPI.  <a href="x11capture_8c.html#a8726a7b905e966e3da05147cd168bdf1">More...</a><br /></td></tr>
 <tr class="separator:a8726a7b905e966e3da05147cd168bdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,12 +126,51 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the code to create a capture device and use it to capture the screen on </p>
-<h1><a class="anchor" id="autotoc_md264"></a>
+<h1><a class="anchor" id="autotoc_md266"></a>
 Linux.</h1>
-<h1><a class="anchor" id="autotoc_md265"></a>
+<h1><a class="anchor" id="autotoc_md267"></a>
 Usage</h1>
 <p>We first try to create a capture device that uses Nvidia's FBC SDK for capturing frames. This capture device must be paired with an Nvidia encoder. If those fail, we fall back to using X11's API to create a capture device, which captures on the CPU, and encode using FFmpeg instead. See codec/encode.h for more details on encoding. The type of capture device currently in use is indicated in active_capture_device. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a9b43fc8b10af962131aeb53638ad3475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b43fc8b10af962131aeb53638ad3475">&#9670;&nbsp;</a></span>INIT_ATOM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INIT_ATOM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">DEVICE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ATOM_VAR, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NAME&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    DEVICE-&gt;ATOM_VAR = XInternAtom(DEVICE-&gt;display, NAME, True); \</div>
+<div class="line">    if (DEVICE-&gt;ATOM_VAR == None) {                              \</div>
+<div class="line">        LOG_FATAL(<span class="stringliteral">&quot;XInternAtom failed to return atom %s&quot;</span>, NAME); \</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a8726a7b905e966e3da05147cd168bdf1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8726a7b905e966e3da05147cd168bdf1">&#9670;&nbsp;</a></span>create_x11_capture_device()</h2>
 
@@ -194,8 +242,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a4b72082f8dd40fefd41fe8a3a721eba0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b72082f8dd40fefd41fe8a3a721eba0">&#9670;&nbsp;</a></span>handler()</h2>
+<a id="a722b9a84da3d8ef6160ffe3e54dbc4ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722b9a84da3d8ef6160ffe3e54dbc4ad">&#9670;&nbsp;</a></span>handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,18 +252,36 @@ Usage</h1>
           <td class="memname">int handler </td>
           <td>(</td>
           <td class="paramtype">Display *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
+          <td class="paramname"><em>display</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">XErrorEvent *&#160;</td>
-          <td class="paramname"><em>a</em>&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a751bfb4026ea6963e8c406cd2aaafad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751bfb4026ea6963e8c406cd2aaafad3">&#9670;&nbsp;</a></span>init_atoms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_atoms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

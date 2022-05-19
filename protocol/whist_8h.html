@@ -160,6 +160,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistClientMessage.html">WhistClientMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structClient.html">Client</a> message.  <a href="structWhistClientMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistWindowData.html">WhistWindowData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistServerMessage.html">WhistServerMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message.  <a href="structWhistServerMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,6 +230,8 @@ Macros</h2></td></tr>
 <tr class="separator:a08b5ca53d7a67e07145271921a829015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe35f6b7cbcafed20fd9d41e4f11660a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#abe35f6b7cbcafed20fd9d41e4f11660a">WINDOW_RESIZE_MESSAGE_INTERVAL</a>&#160;&#160;&#160;200</td></tr>
 <tr class="separator:abe35f6b7cbcafed20fd9d41e4f11660a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f609b2a30e2dc3cc404945cdb2d55e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a96f609b2a30e2dc3cc404945cdb2d55e">MAX_WINDOWS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a96f609b2a30e2dc3cc404945cdb2d55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2fc8d91a4522aa7564405e36898140b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ac2fc8d91a4522aa7564405e36898140b">MAX_VIDEO_PACKETS</a>&#160;&#160;&#160;500</td></tr>
 <tr class="separator:ac2fc8d91a4522aa7564405e36898140b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9671b09366aac047f771b3d49b3b99a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a9671b09366aac047f771b3d49b3b99a4">MAX_FEC_RATIO</a>&#160;&#160;&#160;0.5</td></tr>
@@ -383,6 +387,8 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a5885a6725785a59084164ccfedb1073a"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="whist_8h.html#a7c0601110e75dab446fcca0c02609353">WhistServerMessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a5885a6725785a59084164ccfedb1073a">WhistServerMessageType</a></td></tr>
 <tr class="memdesc:a5885a6725785a59084164ccfedb1073a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message type.  <a href="whist_8h.html#a5885a6725785a59084164ccfedb1073a">More...</a><br /></td></tr>
 <tr class="separator:a5885a6725785a59084164ccfedb1073a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659532c07797fb0b3ad9b5f443f1e493"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistWindowData.html">WhistWindowData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a659532c07797fb0b3ad9b5f443f1e493">WhistWindowData</a></td></tr>
+<tr class="separator:a659532c07797fb0b3ad9b5f443f1e493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af354d3977701249a8ad159d0eeda62ff"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistServerMessage.html">WhistServerMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#af354d3977701249a8ad159d0eeda62ff">WhistServerMessage</a></td></tr>
 <tr class="memdesc:af354d3977701249a8ad159d0eeda62ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server message.  <a href="whist_8h.html#af354d3977701249a8ad159d0eeda62ff">More...</a><br /></td></tr>
 <tr class="separator:af354d3977701249a8ad159d0eeda62ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1342,6 +1348,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a96f609b2a30e2dc3cc404945cdb2d55e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96f609b2a30e2dc3cc404945cdb2d55e">&#9670;&nbsp;</a></span>MAX_WINDOWS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_WINDOWS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac6afabdc09a49a433ee19d8a9486056d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6afabdc09a49a433ee19d8a9486056d">&#9670;&nbsp;</a></span>min</h2>
 
@@ -2277,6 +2297,20 @@ Functions</h2></td></tr>
 
 <p>Server message type. </p>
 <p>Type of message being sent from a Whist server to a Whist client. </p>
+
+</div>
+</div>
+<a id="a659532c07797fb0b3ad9b5f443f1e493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a659532c07797fb0b3ad9b5f443f1e493">&#9670;&nbsp;</a></span>WhistWindowData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structWhistWindowData.html">WhistWindowData</a> <a class="el" href="structWhistWindowData.html">WhistWindowData</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
