@@ -244,10 +244,10 @@ var NAVTREEINDEX8 =
 "rwlock_8h.html#ad83aebd0296d168d4ad23b7d68a7f67b":[13,0,2,10,25,1],
 "rwlock_8h_source.html":[13,0,2,10,25],
 "sdl_2common_8h.html":[13,0,0,0,0,0],
-"sdl_2common_8h.html#a21f3ce8a1f4cfdb3995104583fe1e4f6":[13,0,0,0,0,0,3],
 "sdl_2common_8h.html#a51f528deaaeb973f417b46a2ec36f850":[13,0,0,0,0,0,1],
-"sdl_2common_8h.html#a6320db72df50eda69ce88b7017766a51":[13,0,0,0,0,0,2],
 "sdl_2common_8h.html#a6340c5c74e39504184676eb2b63ff140":[13,0,0,0,0,0,0],
-"sdl_2common_8h.html#acb0194c25e13101418f951e307dd280a":[13,0,0,0,0,0,5],
-"sdl_2common_8h.html#af97b0d3b194ca39b38d3e97a553e6545":[13,0,0,0,0,0,4]
+"sdl_2common_8h_source.html":[13,0,0,0,0,0],
+"sdl_8c.html":[13,0,0,0,0,4],
+"sdl_8c.html#aaea282911e153f1e861e9fb01e013137":[13,0,0,0,0,4,1],
+"sdl_8c.html#af0754291e7863cf65ec85fb865764a10":[13,0,0,0,0,4,0]
 };

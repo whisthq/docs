@@ -1,9 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structClipboardThread.html#a6cd482e9fcaea6bfecdbb9ed29db6b83":[12,0,20,1],
-"structClipboardThread.html#a966aeafbdcc3e15278ef3c6f24d9f883":[12,0,20,2],
-"structClipboardThread.html#abd12e47d78149eb49150219c8b73690e":[12,0,20,0],
-"structColorTree.html":[12,0,23],
 "structColorTree.html#a46a3b1d9239f5fd467ec97cd067b9a96":[12,0,23,0],
 "structColorTree.html#ab3836a4a5981a7cf4ef553d25d9b0361":[12,0,23,1],
 "structCpuInfo.html":[12,0,24],
@@ -249,5 +245,9 @@ var NAVTREEINDEX10 =
 "structInputDeviceXTest.html#ac9afc165eb9476d1858ff952ba865663":[12,0,60,4],
 "structLTRAction.html":[12,0,75],
 "structLTRAction.html#a7461b22acad4bf17fa268c29866d9824":[12,0,75,0],
-"structLTRAction.html#a947968159b3e651d3719253e447c4fdd":[12,0,75,1]
+"structLTRAction.html#a947968159b3e651d3719253e447c4fdd":[12,0,75,1],
+"structLTRFrame.html":[12,0,76],
+"structLTRFrame.html#a183845030e396c708525b3b7aa1bf92a":[12,0,76,2],
+"structLTRFrame.html#a47a6e2f68264218b2c2a10558c83b734":[12,0,76,5],
+"structLTRFrame.html#a7b8276344e66c1ce9baaecde1563026a":[12,0,76,3]
 };

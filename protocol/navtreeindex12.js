@@ -1,9 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"structRWLock.html":[12,0,93],
-"structRWLock.html#a1245c7609fc0a1cfa48749b2a9cc720f":[12,0,93,0],
-"structRWLock.html#a21f97c946efac2fa178bf291885d30d8":[12,0,93,4],
-"structRWLock.html#a23d92769e8d4586eb3bed66ff2c94f76":[12,0,93,5],
 "structRWLock.html#a3fc2808065975cfa35e80c1566d2c7af":[12,0,93,6],
 "structRWLock.html#a6d02f221523aa66ecb38e71e9220cb11":[12,0,93,7],
 "structRWLock.html#a7adeaf8b88f5205f5e47acf522b1b67e":[12,0,93,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX12 =
 "structVideoFrame.html#aec94d3047b7310df6191dff99bd929f8":[12,0,117,3],
 "structVideoFrame.html#aef3314aab1ba78f86d87b04395658de6":[12,0,117,6],
 "structVirtualFrontendContext.html":[12,0,118],
-"structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f":[12,0,118,0]
+"structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f":[12,0,118,0],
+"structVirtualFrontendContext.html#a17f6444fbf22fb30020f153b1e2b50b5":[12,0,118,2],
+"structVirtualFrontendContext.html#a5771119a7347add61da98aa091eaf98f":[12,0,118,1],
+"structWhistClientMessage.html":[12,0,119],
+"structWhistClientMessage.html#a0116954edece6194206d1b8431f15654":[12,0,119,6]
 };
