@@ -5,7 +5,6 @@ var cudacontext_8c =
     [ "CUCTXDESTROYV2PROC", "cudacontext_8c.html#a38c94ab7b166d5485a76d945666e8574", null ],
     [ "CUDEVICEGETPROC", "cudacontext_8c.html#a8a6fbb415419477f8db2951d7a98b256", null ],
     [ "CUINITPROC", "cudacontext_8c.html#aca3067d6168833ac7803c1369528fab8", null ],
-    [ "CUMEMCPYDTOHV2PROC", "cudacontext_8c.html#ac2ee8978341d92a7692b0b460b1e1f8c", null ],
     [ "cuda_destroy", "cudacontext_8c.html#aa03821ea384d1614612f1b625aa7d0bd", null ],
     [ "cuda_init", "cudacontext_8c.html#a8a9e5066d4daf827ca3ec0fd0ee7aae0", null ],
     [ "get_nvidia_thread_cuda_context_ptr", "cudacontext_8c.html#ac126b47c5ace76c2e9eb4663e7bdecc3", null ],
@@ -17,6 +16,7 @@ var cudacontext_8c =
     [ "cu_ctx_synchronize_ptr", "cudacontext_8c.html#adb3e65e6da803fd2897d61923c68cdb7", null ],
     [ "cu_mem_alloc_ptr", "cudacontext_8c.html#aa35d928f87019f93a7ec8fe167cb5dd0", null ],
     [ "cu_mem_free_ptr", "cudacontext_8c.html#a401eb47ce4d0eec98457cff7c319e834", null ],
+    [ "cu_memcpy_dtoh_v2_ptr", "cudacontext_8c.html#aed06416d5f339f39643bca44afece065", null ],
     [ "nvidia_thread_cuda_context", "cudacontext_8c.html#a8df5fac016ab1ed161d55c2a5f28d3d9", null ],
     [ "video_thread_cuda_context", "cudacontext_8c.html#a3fad4683f3f7a313295d1d9a3c680a03", null ]
 ];
