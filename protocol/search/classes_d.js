@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['osxfilenames_2831',['OSXFilenames',['../structOSXFilenames.html',1,'']]],
-  ['osximage_2832',['OSXImage',['../structOSXImage.html',1,'']]]
+  ['osxfilenames_2833',['OSXFilenames',['../structOSXFilenames.html',1,'']]],
+  ['osximage_2834',['OSXImage',['../structOSXImage.html',1,'']]]
 ];

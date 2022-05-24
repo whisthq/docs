@@ -14,5 +14,6 @@ var network__algorithm_8h =
     [ "get_default_network_settings", "network__algorithm_8h.html#ad1bf4e1ceafb2cefbb54eb37c85336e4", null ],
     [ "get_starting_network_settings", "network__algorithm_8h.html#a3164d3eec2e8fbcedab1f454e2442483", null ],
     [ "network_algo_set_dpi", "network__algorithm_8h.html#a759113a57a57b0f3b1e31ee7615067d5", null ],
-    [ "whist_congestion_controller", "network__algorithm_8h.html#ac062bb5d4fb81d7536d67be9961d4f35", null ]
+    [ "whist_congestion_controller", "network__algorithm_8h.html#ac062bb5d4fb81d7536d67be9961d4f35", null ],
+    [ "whist_congestion_controller_handle_severe_congestion", "network__algorithm_8h.html#a111bf6874a7c71f813efb6ad5ae9959c", null ]
 ];

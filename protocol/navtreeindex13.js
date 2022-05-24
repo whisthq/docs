@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f":[12,0,118,0],
+"structVirtualFrontendContext.html#a17f6444fbf22fb30020f153b1e2b50b5":[12,0,118,2],
 "structVirtualFrontendContext.html#a5771119a7347add61da98aa091eaf98f":[12,0,118,1],
 "structWhistClientMessage.html":[12,0,119],
 "structWhistClientMessage.html#a0116954edece6194206d1b8431f15654":[12,0,119,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "structX11CaptureDevice.html#a5686470157715e6cb4e48bd4c17c1d28":[12,0,149,22],
 "structX11CaptureDevice.html#a6c35e36b479a4fad19cc95dd52886eb2":[12,0,149,12],
 "structX11CaptureDevice.html#a74d01856486376e69cdbce519e5a9174":[12,0,149,15],
-"structX11CaptureDevice.html#a7bfe11b87f6cd99fdc4f2290746cb97a":[12,0,149,6],
-"structX11CaptureDevice.html#a7d9462269e090c988795bab178ae1f76":[12,0,149,8],
-"structX11CaptureDevice.html#a87365b648364394b27725fea96f7b913":[12,0,149,21]
+"structX11CaptureDevice.html#a7bfe11b87f6cd99fdc4f2290746cb97a":[12,0,149,6]
 };

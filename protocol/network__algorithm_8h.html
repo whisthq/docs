@@ -129,6 +129,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ac062bb5d4fb81d7536d67be9961d4f35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8h.html#ac062bb5d4fb81d7536d67be9961d4f35">whist_congestion_controller</a> (<a class="el" href="structGroupStats.html">GroupStats</a> *curr_group_stats, <a class="el" href="structGroupStats.html">GroupStats</a> *prev_group_stats, int incoming_bitrate, double packet_loss_ratio, double short_term_latency, double long_term_latency, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
 <tr class="memdesc:ac062bb5d4fb81d7536d67be9961d4f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will estimate the new bitrate based on whist congestion control algo.  <a href="network__algorithm_8h.html#ac062bb5d4fb81d7536d67be9961d4f35">More...</a><br /></td></tr>
 <tr class="separator:ac062bb5d4fb81d7536d67be9961d4f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111bf6874a7c71f813efb6ad5ae9959c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8h.html#a111bf6874a7c71f813efb6ad5ae9959c">whist_congestion_controller_handle_severe_congestion</a> (<a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
+<tr class="separator:a111bf6874a7c71f813efb6ad5ae9959c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1bf4e1ceafb2cefbb54eb37c85336e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNetworkSettings.html">NetworkSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="network__algorithm_8h.html#ad1bf4e1ceafb2cefbb54eb37c85336e4">get_default_network_settings</a> (int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>, int dpi)</td></tr>
 <tr class="memdesc:ad1bf4e1ceafb2cefbb54eb37c85336e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will return the default network settings for a given video resolution.  <a href="network__algorithm_8h.html#ad1bf4e1ceafb2cefbb54eb37c85336e4">More...</a><br /></td></tr>
 <tr class="separator:ad1bf4e1ceafb2cefbb54eb37c85336e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,6 +450,31 @@ Usage</h1>
     <tr><td class="paramname">packet_loss_ratio</td><td>Packet loss ratio over last 250ms or so</td></tr>
     <tr><td class="paramname">short_term_latency</td><td>Short term average of round trip latency</td></tr>
     <tr><td class="paramname">long_term_latency</td><td>Long term average of round trip latency</td></tr>
+    <tr><td class="paramname">network_settings</td><td>Pointer to the struct containing previous network_settings. Also the new network settings will be updated in this struct.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether network_settings struct was updated with new values or not </dd></dl>
+
+</div>
+</div>
+<a id="a111bf6874a7c71f813efb6ad5ae9959c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a111bf6874a7c71f813efb6ad5ae9959c">&#9670;&nbsp;</a></span>whist_congestion_controller_handle_severe_congestion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool whist_congestion_controller_handle_severe_congestion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNetworkSettings.html">NetworkSettings</a> *&#160;</td>
+          <td class="paramname"><em>network_settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">network_settings</td><td>Pointer to the struct containing previous network_settings. Also the new network settings will be updated in this struct.</td></tr>
   </table>
   </dd>
