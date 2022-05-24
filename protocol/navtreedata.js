@@ -145,18 +145,18 @@ var NAVTREEINDEX =
 "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaaefd3f50f2be221be6f12de8504e3e1e",
 "group__command__line.html#ga8c689b458d1666ee104e546d7281dba0",
 "group__threading.html#gac25e11beb639abfa163edd1cbd2c16de",
-"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768ace92be0ca09b10df488b2c0f80815fc5",
-"log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a093d3a7510b203a8ca9a41400132e45b",
-"network__algorithm_8c.html#a72f898a5d3f32ed5a20587d3b97383a2",
-"sdl_2common_8h.html#a6340c5c74e39504184676eb2b63ff140",
-"structClipboardThread.html",
-"structLTRAction.html#a947968159b3e651d3719253e447c4fdd",
-"structRSWrapper.html#aedc75dd0dd49c57bd7d0f5fef60b8e46",
-"structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f",
-"structX11CaptureDevice.html#a7d9462269e090c988795bab178ae1f76",
-"whist_2network_2network_8h.html#a15aed573c15dabb689e2a580e0d33945",
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba40f9abe139ef9e19552aa84fa3f6efe4",
-"windowscapture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf"
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a5b1763bff323c8b230f0e2c579c40454",
+"lodepng_8h.html#af8e782a2a5642d12dba9aa38a7a00133",
+"native__windows_8c.html#ae75187b612da75f6f4544c5778661b4f",
+"rwlock_8c.html#a0520037e37c8759dbe3a8ed4b072e911",
+"structClipboardActivity.html#a3666a27e284054620949308790dc703d",
+"structInputDeviceUInput.html#a7b1f2877ec24b971d71e8f8fe307f2fb",
+"structPrivateKeyData.html#a2f4995b06671f37e29e666ae9268c737",
+"structVideoEncoder.html#adb457706b572dcd6b81eeecc250b3e3f",
+"structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11",
+"whist_2network_2network_8c.html#a6af622f9cda2d3e496cc83b6a7f9d86b",
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba12c1a42d0005f44ea18b72e0f0187756",
+"window__info_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

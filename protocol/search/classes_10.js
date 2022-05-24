@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['regionheader_2837',['RegionHeader',['../structRegionHeader.html',1,'']]],
-  ['registeredresource_2838',['RegisteredResource',['../structRegisteredResource.html',1,'']]],
-  ['ringbuffer_2839',['RingBuffer',['../structRingBuffer.html',1,'']]],
-  ['rswrapper_2840',['RSWrapper',['../structRSWrapper.html',1,'']]],
-  ['rwlock_2841',['RWLock',['../structRWLock.html',1,'']]]
+  ['regionheader_2846',['RegionHeader',['../structRegionHeader.html',1,'']]],
+  ['registeredresource_2847',['RegisteredResource',['../structRegisteredResource.html',1,'']]],
+  ['ringbuffer_2848',['RingBuffer',['../structRingBuffer.html',1,'']]],
+  ['rswrapper_2849',['RSWrapper',['../structRSWrapper.html',1,'']]],
+  ['rwlock_2850',['RWLock',['../structRWLock.html',1,'']]]
 ];
