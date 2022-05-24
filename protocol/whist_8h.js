@@ -27,7 +27,6 @@ var whist_8h =
     [ "BITS_IN_BYTE", "whist_8h.html#ac54bd5b32c8baefaf13608a9296a7564", null ],
     [ "BITS_TO_CHARS", "whist_8h.html#a60d7c1ddafff24bb11e440ffaf1ebbcf", null ],
     [ "BYTES_IN_KILOBYTE", "whist_8h.html#ae8e4c0175929d141a35aca839fea9693", null ],
-    [ "CAPTURE_SPECIAL_WINDOWS_KEYS", "whist_8h.html#a881d9eef8e780a05fe9cd24eab5514d8", null ],
     [ "CHUNK_SIZE", "whist_8h.html#aea3cfda4f3a9f978ec759f206cf186fe", null ],
     [ "CONSECUTIVE_IDENTICAL_FRAMES", "whist_8h.html#a9b26cd4ece83eb114a81877bd849e28b", null ],
     [ "DBUS_ADDRESS_MAXLEN", "whist_8h.html#a3f3913fffc95a27d40fd3c649d4803b6", null ],

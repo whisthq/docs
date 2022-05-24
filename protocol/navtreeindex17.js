@@ -1,6 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"window__info_8h_source.html":[13,0,2,10,32],
 "windows__cursor__capture_8c.html":[13,0,2,3,5],
 "windows__cursor__capture_8c.html#a878422ca18535f9bc2033156becbf937":[13,0,2,3,5,3],
 "windows__cursor__capture_8c.html#aae5707495486c82aa8f858e821ab8ae0":[13,0,2,3,5,1],
