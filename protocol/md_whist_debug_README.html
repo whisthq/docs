@@ -86,13 +86,13 @@ $(document).ready(function(){initNavTree('md_whist_debug_README.html',''); initR
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>This folder contains a variety of tools we use to debug and analyze the Whist <code>/protocol</code> project.</p>
-<h1><a class="anchor" id="autotoc_md150"></a>
+<h1><a class="anchor" id="autotoc_md152"></a>
 Debug Console</h1>
-<h2><a class="anchor" id="autotoc_md151"></a>
+<h2><a class="anchor" id="autotoc_md153"></a>
 Overview</h2>
 <p>When enabled, the <code>Debug Console</code> provides a telnet style console on port 9090 at client side, allows you to send commands to the client while it is running. You can change parameters of the client interactively/dynamically (e.g. change <code>bitrate</code> <code>audio_fec_ratio</code> <code>video_fec_ratio</code>), or let the program run some commands for you (e.g. get report from <code>protocol_analyzer</code>).</p>
 <p>You can find images illustrating this process inside this <a href="https://github.com/whisthq/whist/pull/5352">PR</a>.</p>
-<h2><a class="anchor" id="autotoc_md152"></a>
+<h2><a class="anchor" id="autotoc_md154"></a>
 How to enable</h2>
 <p>Debug Console can only be enabled with a <code>DEBUG</code> build.</p>
 <p>To enable the debug console, add <code>--debug-console PORT</code> to the options of client, for example:</p>
@@ -100,7 +100,7 @@ How to enable</h2>
 <div class="fragment"><div class="line">./wclient 54.219.45.195 -p32262:30420.32263:35760.32273:4473 -k 1ef9aec50197a20aa35b68b85fb7ace0</div>
 </div><!-- fragment --><p>Then the following command will run the client with debug console enable on port 9090:</p>
 <div class="fragment"><div class="line">./wclient 54.219.45.195 -p32262:30420.32263:35760.32273:4473 -k 1ef9aec50197a20aa35b68b85fb7ace0 --debug-console 9090</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md153"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md155"></a>
 How to access</h2>
 <p>the easiest way to access debug console is to use the tool <code>netcat</code>:</p>
 <div class="fragment"><div class="line">nc 127.0.0.1 9090 -u</div>
@@ -108,9 +108,9 @@ How to access</h2>
 <p>the <code>rlwrap</code> tool can make your use of <code>netcat</code> easier, e.g. you can use the arrows to move cursor and recall previous command, when used with rlwrap, the full commands is:</p>
 <div class="fragment"><div class="line">rlwrap nc 127.0.0.1 9090 -u</div>
 </div><!-- fragment --><p>(you can get both <code>netcat</code> and <code>rlwrap</code> easily from <code>apt</code> or <code>brew</code>)</p>
-<h2><a class="anchor" id="autotoc_md154"></a>
+<h2><a class="anchor" id="autotoc_md156"></a>
 Support Commands</h2>
-<h3><a class="anchor" id="autotoc_md155"></a>
+<h3><a class="anchor" id="autotoc_md157"></a>
 &lt;tt&gt;report_XXX&lt;/tt&gt;</h3>
 <p>use <code>report_video</code> or <code>report_audio</code> to get a report of the last <code>report_num</code> (default:2000) of records of video or audio.</p>
 <p><code>report_video_moreformat</code> or <code>report_audio_moreformat</code> are similar, increase the use of format string at the cost of a longer output.</p>
@@ -119,7 +119,7 @@ Support Commands</h2>
 <div class="line">report_audio  /home/yancey/audio1.txt       #get a report of audio, save to /home/yancey/audio1.txt</div>
 <div class="line">report_video_moreformat  video2.txt         #get a report of video, with more format attempt</div>
 <div class="line">report_audio_moreformat  audio2.txt.cpp     #get a report of audio, save the file as cpp, so that you can cheat your editor to highlight it</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md156"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md158"></a>
 &lt;tt&gt;set&lt;/tt&gt;</h3>
 <p>Set allows you to change parameters inside the client dynamically. Support parameters:</p>
 <ul>
@@ -137,15 +137,15 @@ Support Commands</h2>
 <div class="line">set verbose_log 1                    #enable verbose log</div>
 <div class="line">set bitrate 2000000                  #force bitrate to 2Mbps</div>
 <div class="line">set report_num 5000                  #include 5000 records in following reports</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md157"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md159"></a>
 &lt;tt&gt;info&lt;/tt&gt;</h3>
 <p>Take a peek of the values of parameters supported by set</p>
-<h3><a class="anchor" id="autotoc_md158"></a>
+<h3><a class="anchor" id="autotoc_md160"></a>
 &lt;tt&gt;insert_atexit_handler&lt;/tt&gt; or &lt;tt&gt;insert&lt;/tt&gt;</h3>
 <p>Insert a atexit handler that turns exit() to abort, so that we can get the stack calling exit(). It's helpful for debugging problems, when you don't know where in the code called exit(), especially the exit() is called in some lib.</p>
-<h1><a class="anchor" id="autotoc_md159"></a>
+<h1><a class="anchor" id="autotoc_md161"></a>
 Protocol Analyzer</h1>
-<h2><a class="anchor" id="autotoc_md160"></a>
+<h2><a class="anchor" id="autotoc_md162"></a>
 Overview</h2>
 <p>This is a protocol analyzer in the side-way style, that you can talk to interactively via the debug console. Allows you to analyze the protocol dynamically, get advanced metrics.</p>
 <p>Features/Advantages:</p>
@@ -159,13 +159,13 @@ Overview</h2>
 <ul>
 <li>when you make serious changes to the protocol, you need to update the protocol analyzer to track it correctly, increases maintain burden of codebase. But (1) this usually won't happen unless something essential is changed in protocol (2) when it happens it should be easy to update the analyzer</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md161"></a>
+<h2><a class="anchor" id="autotoc_md163"></a>
 How to run</h2>
 <p>When debug console is enabled, the protocol analyzer is automatically enabled. You don't need to explicitly start it, all you need to do is talk to it via <code>debug_console</code>. To get report from it, or change some parameters (e.g <code>report_num</code>, <code>skip_last</code>)</p>
-<h2><a class="anchor" id="autotoc_md162"></a>
+<h2><a class="anchor" id="autotoc_md164"></a>
 Report format</h2>
 <p>The report of protocol analyzer consists two sections: (1) high level information/statistics (2) a breakdown of all frames inside the report</p>
-<h3><a class="anchor" id="autotoc_md163"></a>
+<h3><a class="anchor" id="autotoc_md165"></a>
 High-level information/statistic</h3>
 <p>This section is a list of information/statistic, consist of:</p>
 <ul>
@@ -188,7 +188,7 @@ High-level information/statistic</h3>
 <li><code>estimated_network_loss</code>, the estimated network packet loss. (only exist in <code>VIDEO</code> report)</li>
 </ul>
 <p>All time are the relative time since client start. This also applies to the sections below, in the whole report.</p>
-<h3><a class="anchor" id="autotoc_md164"></a>
+<h3><a class="anchor" id="autotoc_md166"></a>
 Breakdown of frames</h3>
 <p>This section is a list of frame infos, each one consist of:</p>
 <p>Main Attributes(always showing):</p>
@@ -215,7 +215,7 @@ Breakdown of frames</h3>
 <li><code>overwrite</code>, when this shows, it means when the current frame becomes "current rendering" inside ringbuffer, it overwrites a frame that never becomes pending</li>
 <li><code>queue full</code>, when this shows, it means when the current frame tries to become pending, it triggers an "Audio queue full". (Only for audio)</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md165"></a>
+<h4><a class="anchor" id="autotoc_md167"></a>
 Breakdown of segments</h4>
 <p>The breakdown of segments is a list of items. Each items correspond of a segment of the frame, contains:</p>
 <ul>
@@ -255,7 +255,7 @@ Breakdown of segments</h4>
 <li>for the 4th segment, the non-retransmit packet got lost, and NACK was sent, the retransmit segment got lost, we sent and NACK again. And finally got the segment.</li>
 <li>the 5th segment arrives as normal.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md166"></a>
+<h2><a class="anchor" id="autotoc_md168"></a>
 Implementation</h2>
 <p>This section talks about the implementation of protocol analyzer, hopefully you can get an idea on how to extend it.</p>
 <p>The protocol analyzer mainly consist of:</p>
@@ -265,7 +265,7 @@ Implementation</h2>
 <li>statistics generator, for the high-level info/stat in report</li>
 <li>pretty printer for the frame breakdown in report</li>
 </ol>
-<h3><a class="anchor" id="autotoc_md167"></a>
+<h3><a class="anchor" id="autotoc_md169"></a>
 Data structures</h3>
 <p>Below are the data structures used for protocol analyzer.</p>
 <div class="fragment"><div class="line">//info at segment level</div>
@@ -294,7 +294,7 @@ Data structures</h3>
 <div class="line">    map&lt;int, TypeLevelInfo&gt; type_level_infos;   //a map from type to type level info.</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want to record new info, you will need to put it as an attribute of the data structures.</p>
-<h3><a class="anchor" id="autotoc_md168"></a>
+<h3><a class="anchor" id="autotoc_md170"></a>
 Hooks</h3>
 <p>Hooks are the public functions with name <code>whist_analyzer_record_XXXXX()</code>, they hook into the protocol and save info into the data structure, for example:</p>
 <div class="fragment"><div class="line">// record info related to the arrival of a segment</div>
@@ -308,7 +308,7 @@ Hooks</h3>
 <div class="line">//real implementation is here</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want to record new info, you might need to implement new hooks.</p>
-<h3><a class="anchor" id="autotoc_md169"></a>
+<h3><a class="anchor" id="autotoc_md171"></a>
 Statistics generator</h3>
 <p>The Statistics generator is just the function:</p>
 <div class="fragment"><div class="line">string ProtocolAnalyzer::get_stat(）</div>
@@ -316,7 +316,7 @@ Statistics generator</h3>
 <div class="line">...</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want to implement new metric/stat, add code to this function</p>
-<h3><a class="anchor" id="autotoc_md170"></a>
+<h3><a class="anchor" id="autotoc_md172"></a>
 Pretty printer for frame breakdown</h3>
 <p>The pretty printer for frame breakdown is just the function:</p>
 <div class="fragment"><div class="line">string FrameLevelInfo::to_string()</div>

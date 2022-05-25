@@ -714,7 +714,7 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    {                                                                                 \</div>
 <div class="line">        <span class="comment">/* append new byte */</span>                                                         \</div>
 <div class="line">        if (((writer-&gt;bp) &amp; 7u) == 0) {                                               \</div>
-<div class="line">            if (!ucvector_resize(writer-&gt;data, writer-&gt;data-&gt;size + 1)) return;       \</div>
+<div class="line">            if (!ucvector_resize(writer-&gt;data, writer-&gt;data-&gt;size + 1)) <a class="code" href="transfercapture_8c.html#a9717e7bbecb906637e86cef6da3d83c2">return</a>;       \</div>
 <div class="line">            writer-&gt;data-&gt;data[writer-&gt;data-&gt;size - 1] = 0;                           \</div>
 <div class="line">        }                                                                             \</div>
 <div class="line">        (writer-&gt;data-&gt;data[writer-&gt;data-&gt;size - 1]) |= (bit &lt;&lt; ((writer-&gt;bp) &amp; 7u)); \</div>
@@ -3172,6 +3172,7 @@ Variables</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="atransfercapture_8c_html_a9717e7bbecb906637e86cef6da3d83c2"><div class="ttname"><a href="transfercapture_8c.html#a9717e7bbecb906637e86cef6da3d83c2">return</a></div><div class="ttdeci">return</div><div class="ttdef"><b>Definition:</b> transfercapture.c:80</div></div>
 <div class="ttc" id="alodepng_8c_html_a947faf188804eb1b43158cd836333a6f"><div class="ttname"><a href="lodepng_8c.html#a947faf188804eb1b43158cd836333a6f">DEFAULT_WINDOWSIZE</a></div><div class="ttdeci">#define DEFAULT_WINDOWSIZE</div><div class="ttdef"><b>Definition:</b> lodepng.c:2425</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

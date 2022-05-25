@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('decode_8c.html',''); initResizable(); 
 
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="decode_8h_source.html">decode.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="platform_8h_source.html">whist/core/platform.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="decode_8h_source.html">decode.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="error__codes_8h_source.html">whist/core/error_codes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&quot;</code><br />
@@ -133,9 +134,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the code to create a video decoder and use that </p>
-<h1><a class="anchor" id="autotoc_md274"></a>
+<h1><a class="anchor" id="autotoc_md276"></a>
 decoder to decode frames.</h1>
-<h1><a class="anchor" id="autotoc_md275"></a>
+<h1><a class="anchor" id="autotoc_md277"></a>
 Usage</h1>
 <p>Video is decoded from H264 via ffmpeg; H265 is supported, but not currently used. Hardware-accelerated decoders are given priority, but if those fail, we decode on the CPU. All frames are eventually moved to the CPU for scaling and color conversion. Create a decoder via create_video_decoder. To decode a frame, call video_decoder_decode on the decoder and the encoded packets. To destroy the decoder when finished, destroy the encoder using video_decoder_decode. </p>
 </div><h2 class="groupheader">Function Documentation</h2>

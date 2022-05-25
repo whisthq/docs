@@ -128,7 +128,7 @@ Macros</h2></td></tr>
 <tr class="separator:aa2409a0b9491c782a801d493f04bb961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8e186fd13be78f0aa88537e1c19f672"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#ac8e186fd13be78f0aa88537e1c19f672">NEW_GF_MATRIX</a>(rows,  cols)&#160;&#160;&#160;(<a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a> *)my_malloc(rows * cols * sizeof(<a class="el" href="lugi__rs_8c.html#a339b4ec591f7b3fed03e4be7c9482508">gf</a>), &quot; ## __LINE__ ## &quot; )</td></tr>
 <tr class="separator:ac8e186fd13be78f0aa88537e1c19f672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0cd0f1d47314d011206cb5b59579e15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#ae0cd0f1d47314d011206cb5b59579e15">addmul</a>(dst,  src,  c,  sz)&#160;&#160;&#160;if (c != 0) addmul1(dst, src, c, sz)</td></tr>
+<tr class="memitem:ae0cd0f1d47314d011206cb5b59579e15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#ae0cd0f1d47314d011206cb5b59579e15">addmul</a>(dst,  src,  c,  sz)&#160;&#160;&#160;<a class="el" href="transfercapture_8c.html#acaaf72ac35fb2ef202f2868db4fe59b1">if</a> (c != 0) addmul1(dst, src, c, sz)</td></tr>
 <tr class="separator:ae0cd0f1d47314d011206cb5b59579e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a870020ccb79b9bf241010e975e029bde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lugi__rs_8c.html#a870020ccb79b9bf241010e975e029bde">UNROLL</a>&#160;&#160;&#160;16 /* 1, 4, 8, 16 */</td></tr>
 <tr class="separator:a870020ccb79b9bf241010e975e029bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,7 +189,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;if (c != 0) addmul1(dst, src, c, sz)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="transfercapture_8c.html#acaaf72ac35fb2ef202f2868db4fe59b1">if</a> (c != 0) addmul1(dst, src, c, sz)</td>
         </tr>
       </table>
 </div><div class="memdoc">

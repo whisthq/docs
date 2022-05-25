@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('linked__list_8h_source.html',''); init
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">    for (type *item = (type *)(list)-&gt;head, *next_ = NULL; \</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">         (item) &amp;&amp; (next_ = (type *)linked_list_next(item)), (item); (item) = next_)</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#if OS_IS(OS_WIN32)</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">// MSVC complains about the unavoidable assignment within the condition.</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">// This could be expanded anywhere so suppressing one instance doesn&#39;t</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">// work; hence switch if off if this header is included.</span></div>
