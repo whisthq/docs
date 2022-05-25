@@ -2,12 +2,10 @@ var annotated_dup =
 [
     [ "_whist_server_config", "struct__whist__server__config.html", "struct__whist__server__config" ],
     [ "AESMetadata", "structAESMetadata.html", "structAESMetadata" ],
-    [ "AudioContext", "structAudioContext.html", "structAudioContext" ],
     [ "AudioDecoder", "structAudioDecoder.html", "structAudioDecoder" ],
     [ "AudioDevice", "structAudioDevice.html", "structAudioDevice" ],
     [ "AudioEncoder", "structAudioEncoder.html", "structAudioEncoder" ],
     [ "AudioFrame", "structAudioFrame.html", "structAudioFrame" ],
-    [ "AudioRenderContext", "structAudioRenderContext.html", "structAudioRenderContext" ],
     [ "BitArray", "structBitArray.html", "structBitArray" ],
     [ "BlockAllocator", "structBlockAllocator.html", "structBlockAllocator" ],
     [ "BPMLists", "structBPMLists.html", "structBPMLists" ],

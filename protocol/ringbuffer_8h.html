@@ -160,9 +160,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the code to create a ring buffer and use it for handling received </p>
-<h1><a class="anchor" id="autotoc_md209"></a>
+<h1><a class="anchor" id="autotoc_md207"></a>
 audio/video.</h1>
-<h1><a class="anchor" id="autotoc_md210"></a>
+<h1><a class="anchor" id="autotoc_md208"></a>
 Usage</h1>
 <p>Initialize a ring buffer for audio or video using init_ring_buffer. When new packets arrive, call receive_packet to process the packet and modify or create ring buffer entries as needed. To nack a packet, call nack_single_packet. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -226,7 +226,7 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p><a class="el" href="structRingBuffer.html" title="RingBuffer struct for abstracting away frame reconstruction and frame retrieval.">RingBuffer</a> struct for abstracting away frame reconstruction and frame retrieval. </p>
-<p>This is used by <a class="el" href="client_2audio_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">client/audio.c</a> and <a class="el" href="client_2video_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">client/video.c</a> to keep track of frames as the client receives packets. It handles inserting new packets into the ring buffer and nacking for missing packets. </p>
+<p>This is used by client/audio.c and <a class="el" href="client_2video_8c.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">client/video.c</a> to keep track of frames as the client receives packets. It handles inserting new packets into the ring buffer and nacking for missing packets. </p>
 
 </div>
 </div>

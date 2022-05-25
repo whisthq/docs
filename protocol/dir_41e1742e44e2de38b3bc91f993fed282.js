@@ -1,6 +1,6 @@
 var dir_41e1742e44e2de38b3bc91f993fed282 =
 [
-    [ "audio.c", "server_2audio_8c.html", "server_2audio_8c" ],
+    [ "audio.c", "audio_8c.html", "audio_8c" ],
     [ "audio.h", "server_2audio_8h.html", "server_2audio_8h" ],
     [ "client.c", "client_8c.html", "client_8c" ],
     [ "client.h", "client_8h.html", "client_8h" ],

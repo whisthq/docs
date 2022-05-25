@@ -1,7 +1,6 @@
 var dir_db3a54907829b36871118d03417739cd =
 [
     [ "frontend", "dir_e3065140e85b7d37f25d7e2ed394688c.html", "dir_e3065140e85b7d37f25d7e2ed394688c" ],
-    [ "audio.c", "client_2audio_8c.html", "client_2audio_8c" ],
     [ "audio.h", "client_2audio_8h.html", "client_2audio_8h" ],
     [ "client_utils.c", "client__utils_8c.html", "client__utils_8c" ],
     [ "client_utils.h", "client__utils_8h.html", "client__utils_8h" ],
