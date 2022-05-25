@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"struct__whist__server__config.html":[12,0,0],
 "struct__whist__server__config.html#a370d33931f5bc174dc8db5a9e5a230f0":[12,0,0,0],
 "struct__whist__server__config.html#a576faee2d8a900a1da2299369b0d2ec5":[12,0,0,3],
 "struct__whist__server__config.html#a974ca4f84c65261f4d4fd2d41c559a2b":[12,0,0,1],
@@ -55,19 +54,19 @@ var NAVTREEINDEX14 =
 "sysinfo_8c.html#a1b67e2497c140a3b704c33c865a4140f":[13,0,2,10,28,4],
 "sysinfo_8c.html#a538a4414821926cda2c9e989764c00fd":[13,0,2,10,28,1],
 "sysinfo_8c.html#a59cfaf693b4362662c1d6b252f11bd72":[13,0,2,10,28,5],
+"sysinfo_8c.html#a85702005c025b9ccb707f230fec3c878":[13,0,2,10,28,0],
 "sysinfo_8c.html#a9283304a24c69f120bdcc1f50aa355d4":[13,0,2,10,28,7],
 "sysinfo_8c.html#a97742e7c6864fa884d35d5c21a4a901a":[13,0,2,10,28,2],
-"sysinfo_8c.html#ac10b93ba7e62f74920ce08effc4f9dbb":[13,0,2,10,28,0],
 "sysinfo_8c.html#adf373d65cf3c59ad58622678a162eff5":[13,0,2,10,28,6],
 "sysinfo_8h.html":[13,0,2,10,29],
 "sysinfo_8h.html#a07db1ac3fcee0bea1bef088a1a2fff55":[13,0,2,10,29,4],
 "sysinfo_8h.html#a1b67e2497c140a3b704c33c865a4140f":[13,0,2,10,29,5],
 "sysinfo_8h.html#a538a4414821926cda2c9e989764c00fd":[13,0,2,10,29,2],
 "sysinfo_8h.html#a59cfaf693b4362662c1d6b252f11bd72":[13,0,2,10,29,6],
+"sysinfo_8h.html#a85702005c025b9ccb707f230fec3c878":[13,0,2,10,29,1],
 "sysinfo_8h.html#a9283304a24c69f120bdcc1f50aa355d4":[13,0,2,10,29,8],
 "sysinfo_8h.html#a97742e7c6864fa884d35d5c21a4a901a":[13,0,2,10,29,3],
 "sysinfo_8h.html#aa25230024110b1969fc70f71110daaca":[13,0,2,10,29,0],
-"sysinfo_8h.html#ac10b93ba7e62f74920ce08effc4f9dbb":[13,0,2,10,29,1],
 "sysinfo_8h.html#adf373d65cf3c59ad58622678a162eff5":[13,0,2,10,29,7],
 "sysinfo_8h_source.html":[13,0,2,10,29],
 "tcp_8c.html":[13,0,2,9,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "whist_2network_2network_8h.html#a4dd2e9c562db4c9c333b1ddcbea5f7cc":[13,0,2,9,1,5],
 "whist_2network_2network_8h.html#a4ff2e6a193139535d0d23d5f46419f84":[13,0,2,9,1,15],
 "whist_2network_2network_8h.html#a54aa8c8555261c920d8de19e9b033a34":[13,0,2,9,1,20],
-"whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5b":[13,0,2,9,1,27]
+"whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5b":[13,0,2,9,1,27],
+"whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5ba7d577d5f6b53d2a8cf9f60ef153c68b9":[13,0,2,9,1,27,1]
 };

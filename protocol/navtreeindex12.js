@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"structRegisteredResource.html":[12,0,88],
 "structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[12,0,88,5],
 "structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[12,0,88,0],
 "structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[12,0,88,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "structWhistClientMessage.html#a383576764f0064035ae78a2c8de45917":[12,0,117,8],
 "structWhistClientMessage.html#a4ff756528d91a78ec61b1f92dfd2bdc8":[12,0,117,18],
 "structWhistClientMessage.html#a504bb34b77aa11d05bdfb559a23f69e2":[12,0,117,9],
-"structWhistClientMessage.html#a70a1ba7ad460bdf0a40d429e774662b7":[12,0,117,4]
+"structWhistClientMessage.html#a70a1ba7ad460bdf0a40d429e774662b7":[12,0,117,4],
+"structWhistClientMessage.html#a84fb804d6eb703ebdf171fde02f04527":[12,0,117,1]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"structWhistClientMessage.html#a84fb804d6eb703ebdf171fde02f04527":[12,0,117,1],
 "structWhistClientMessage.html#a8558ab7ac655f18ca1cddca38a9458f6":[12,0,117,19],
 "structWhistClientMessage.html#a9357fc2171bc585f9e53541f4a6b7973":[12,0,117,14],
 "structWhistClientMessage.html#a9a948aef3c45ac773616458b125abdbd":[12,0,117,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "structX11CaptureDevice.html#ac49a89635daec815ee50fb42c1d4d444":[12,0,147,20],
 "structX11CaptureDevice.html#ac5a5c7b0909308e3712a2b691e932460":[12,0,147,19],
 "structX11CaptureDevice.html#ac7740aa379f5c2945f1a1a599231c558":[12,0,147,7],
-"structX11CaptureDevice.html#acef1859db60b99af218e316f7cec5772":[12,0,147,23]
+"structX11CaptureDevice.html#acef1859db60b99af218e316f7cec5772":[12,0,147,23],
+"struct__whist__server__config.html":[12,0,0]
 };

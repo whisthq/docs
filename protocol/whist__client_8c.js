@@ -1,7 +1,6 @@
 var whist__client_8c =
 [
     [ "APP_PATH_MAXLEN", "whist__client_8c.html#a3a90209de834d7d87f20ea1f1d3408f4", null ],
-    [ "LOG_CPU_USAGE", "whist__client_8c.html#a32364be58c0044b63dc47aeb962254b4", null ],
     [ "COMMAND_LINE_STRING_OPTION", "whist__client_8c.html#a18817f97b950cf540d39f9cef89c6fdd", null ],
     [ "whist_client_main", "whist__client_8c.html#ad061dda8204d18c77ac3f472d7588a4c", null ],
     [ "active_pinch", "whist__client_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48", null ],

@@ -1,7 +1,7 @@
 var sysinfo_8h =
 [
     [ "BYTES_IN_GB", "sysinfo_8h.html#aa25230024110b1969fc70f71110daaca", null ],
-    [ "get_cpu_usage", "sysinfo_8h.html#ac10b93ba7e62f74920ce08effc4f9dbb", null ],
+    [ "get_cpu_usage", "sysinfo_8h.html#a85702005c025b9ccb707f230fec3c878", null ],
     [ "print_cpu_info", "sysinfo_8h.html#a538a4414821926cda2c9e989764c00fd", null ],
     [ "print_hard_drive_info", "sysinfo_8h.html#a97742e7c6864fa884d35d5c21a4a901a", null ],
     [ "print_memory_info", "sysinfo_8h.html#a07db1ac3fcee0bea1bef088a1a2fff55", null ],

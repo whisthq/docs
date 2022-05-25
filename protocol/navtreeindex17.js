@@ -1,6 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"x11__window__info_8c.html#a4c8f2f6078d3e0b06048154782d0fc09":[13,0,2,10,34,23],
 "x11__window__info_8c.html#a50026537f9f2afdb4a6a4f3bc5dad6d3":[13,0,2,10,34,1],
 "x11__window__info_8c.html#a6d8cb0636f1d992c3d5df6e40ff90be0":[13,0,2,10,34,5],
 "x11__window__info_8c.html#a757fac2cf4120d6017266f688cff93ce":[13,0,2,10,34,12],

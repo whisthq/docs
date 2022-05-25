@@ -190,7 +190,7 @@ var searchData=
   ['log_5faudio_1352',['LOG_AUDIO',['../whist_8h.html#aba13441b998b179fbf9483152582b6e2',1,'whist.h']]],
   ['log_5fcommand_5fline_1353',['LOG_COMMAND_LINE',['../command__line_8c.html#ab4b8304a1d588f72f6a03aa89a63e298',1,'command_line.c']]],
   ['log_5fcontext_5fformat_1354',['LOG_CONTEXT_FORMAT',['../logging_8h.html#a428c87d300cfd4cb4e73ee7140380ebf',1,'logging.h']]],
-  ['log_5fcpu_5fusage_1355',['LOG_CPU_USAGE',['../whist__client_8c.html#a32364be58c0044b63dc47aeb962254b4',1,'LOG_CPU_USAGE():&#160;whist_client.c'],['../server_2main_8c.html#a32364be58c0044b63dc47aeb962254b4',1,'LOG_CPU_USAGE():&#160;main.c']]],
+  ['log_5fcpu_5fusage_1355',['LOG_CPU_USAGE',['../whist_8h.html#a32364be58c0044b63dc47aeb962254b4',1,'whist.h']]],
   ['log_5fdebug_1356',['LOG_DEBUG',['../logging_8h.html#ae3299be792c6fbb84cd15f782b46482a',1,'logging.h']]],
   ['log_5fdebug_5frate_5flimited_1357',['LOG_DEBUG_RATE_LIMITED',['../logging_8h.html#a32a613ff8d5d47a2830e2a522509589b',1,'logging.h']]],
   ['log_5fdouble_5fstatistic_1358',['log_double_statistic',['../log__statistic_8c.html#ab364d742d19a3ff2640b68884b171674',1,'log_double_statistic(uint32_t index, double val):&#160;log_statistic.c'],['../log__statistic_8h.html#ab364d742d19a3ff2640b68884b171674',1,'log_double_statistic(uint32_t index, double val):&#160;log_statistic.c']]],
