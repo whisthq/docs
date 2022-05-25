@@ -8,6 +8,7 @@ var frontend_8c =
     [ "whist_frontend_create", "frontend_8c.html#a597b620a178e0fda549dc9119e54df6b", null ],
     [ "whist_frontend_declare_user_activity", "frontend_8c.html#a74f6e8a0491802ecd96a92ae99a570c1", null ],
     [ "whist_frontend_destroy", "frontend_8c.html#a2e338a770821c78b9b57bab1ccc9220e", null ],
+    [ "whist_frontend_event_type_string", "frontend_8c.html#afbf8353794be3b716ec31c6e0483ae9e", null ],
     [ "whist_frontend_get_audio_buffer_size", "frontend_8c.html#aa90c25627a5dbe10dc37c9e7efc1c3ba", null ],
     [ "whist_frontend_get_id", "frontend_8c.html#a7de68ef47e70280f8b6aa061167c1c4a", null ],
     [ "whist_frontend_get_keyboard_state", "frontend_8c.html#ae7854b464b9404182515705d7b3acf88", null ],
@@ -17,6 +18,7 @@ var frontend_8c =
     [ "whist_frontend_get_window_pixel_size", "frontend_8c.html#ac0023a392654dea81dc6c929ba6bb73d", null ],
     [ "whist_frontend_get_window_virtual_size", "frontend_8c.html#a28727aae2a8697a23d0e20d217b7e84c", null ],
     [ "whist_frontend_init", "frontend_8c.html#a47bcd6944f669d3f01040f9049b621b2", null ],
+    [ "whist_frontend_interrupt", "frontend_8c.html#a98eca1faaf4b82714c64e89c2d12f271", null ],
     [ "whist_frontend_is_window_visible", "frontend_8c.html#aecfd27357d1e6807ef0a4d0fe1fd7b86", null ],
     [ "whist_frontend_open_audio", "frontend_8c.html#a25cefb4c559969f05f812b456affed4a", null ],
     [ "whist_frontend_paint_png", "frontend_8c.html#ac41e532e8f120e77a9088de5f8ff27f6", null ],
@@ -31,5 +33,6 @@ var frontend_8c =
     [ "whist_frontend_set_title", "frontend_8c.html#a4f1bf119ff1fc3d3517a5f38dab6a3ec", null ],
     [ "whist_frontend_set_titlebar_color", "frontend_8c.html#a352b7e022d6468c503d7662b80ef8acd", null ],
     [ "whist_frontend_set_window_fullscreen", "frontend_8c.html#a7bdab99f845e6bf55038aaa079f29994", null ],
-    [ "whist_frontend_update_video", "frontend_8c.html#a799d0c84032182341cf9e9aae3c5f791", null ]
+    [ "whist_frontend_update_video", "frontend_8c.html#a799d0c84032182341cf9e9aae3c5f791", null ],
+    [ "whist_frontend_wait_event", "frontend_8c.html#a25596e52db1bc4ef8847b04e189ba590", null ]
 ];

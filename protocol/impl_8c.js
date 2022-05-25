@@ -12,6 +12,7 @@ var impl_8c =
     [ "virtual_get_window_pixel_size", "impl_8c.html#ad80955a92b3b91d5ed50bc96f29c8c92", null ],
     [ "virtual_get_window_virtual_size", "impl_8c.html#a21deec8ec76f83acfccd30b8a2649216", null ],
     [ "virtual_init", "impl_8c.html#a26b1a4b2057d7e97aa7946907ed8c761", null ],
+    [ "virtual_interrupt", "impl_8c.html#a21fdc3c4c0f48b0d363d3411edd18cd4", null ],
     [ "virtual_is_window_visible", "impl_8c.html#a4183abfc146dd206c7da6ef8d3ba8b57", null ],
     [ "virtual_open_audio", "impl_8c.html#a17634607cbf37432d7e46ce1ee540073", null ],
     [ "virtual_paint_png", "impl_8c.html#a0720fdb88adf4be7afbb7ab386057880", null ],
@@ -26,5 +27,6 @@ var impl_8c =
     [ "virtual_set_title", "impl_8c.html#a374d6168a2593e44f5840d04619cda93", null ],
     [ "virtual_set_titlebar_color", "impl_8c.html#aecb66c460367338cdc5742c3d94d6319", null ],
     [ "virtual_set_window_fullscreen", "impl_8c.html#ab8e3e26acf3a022d1dd1b2884e52a202", null ],
-    [ "virtual_update_video", "impl_8c.html#a90d813634ba46b2eabacd6e0dcc0d999", null ]
+    [ "virtual_update_video", "impl_8c.html#a90d813634ba46b2eabacd6e0dcc0d999", null ],
+    [ "virtual_wait_event", "impl_8c.html#af9f82caea6a996c58ccd9b6f7d8785eb", null ]
 ];

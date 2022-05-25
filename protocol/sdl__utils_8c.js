@@ -13,7 +13,7 @@ var sdl__utils_8c =
     [ "sdl_set_window_title", "sdl__utils_8c.html#a5740e1ea4968c3f393eff0873c596557", null ],
     [ "sdl_update_framebuffer", "sdl__utils_8c.html#aef9836611d0f8732b4267e4d81aeec02", null ],
     [ "sdl_update_pending_tasks", "sdl__utils_8c.html#a38188485497cb37637364f5d785ddb5f", null ],
-    [ "sdl_utils_check_private_vars", "sdl__utils_8c.html#acc20a623c59b6fd30f2fdab8d6043c5a", null ],
+    [ "sdl_utils_check_private_vars", "sdl__utils_8c.html#a65d82de4d2f5b08f3150bb898a1d57c7", null ],
     [ "insufficient_bandwidth", "sdl__utils_8c.html#a06471a2a38199e688f7d64c720b929b8", null ],
     [ "output_height", "sdl__utils_8c.html#a2a57d774e71166271bbff6c515111104", null ],
     [ "output_width", "sdl__utils_8c.html#aaacc5ce7ced4977cd893708f5d789df4", null ],

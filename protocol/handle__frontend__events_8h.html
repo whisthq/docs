@@ -94,16 +94,16 @@ $(document).ready(function(){initNavTree('handle__frontend__events_8h.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab9e7659c7674f892e08aaa26819b1ab6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__frontend__events_8h.html#ab9e7659c7674f892e08aaa26819b1ab6">handle_frontend_events</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
-<tr class="memdesc:ab9e7659c7674f892e08aaa26819b1ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the SDL event queue, and handles all of the pending events.  <a href="handle__frontend__events_8h.html#ab9e7659c7674f892e08aaa26819b1ab6">More...</a><br /></td></tr>
-<tr class="separator:ab9e7659c7674f892e08aaa26819b1ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8904b364242177c172dab3689c864eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__frontend__events_8h.html#af8904b364242177c172dab3689c864eb">handle_frontend_events</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int timeout_ms)</td></tr>
+<tr class="memdesc:af8904b364242177c172dab3689c864eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the SDL event queue, and handles all of the pending events.  <a href="handle__frontend__events_8h.html#af8904b364242177c172dab3689c864eb">More...</a><br /></td></tr>
+<tr class="separator:af8904b364242177c172dab3689c864eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a0f7f460a5367de6b62780d68f9a69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__frontend__events_8h.html#a26a0f7f460a5367de6b62780d68f9a69">pending_audio_device_update</a> (void)</td></tr>
 <tr class="memdesc:a26a0f7f460a5367de6b62780d68f9a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function will let you know if an audio device has been plugged in or unplugged since the last time you called this function.  <a href="handle__frontend__events_8h.html#a26a0f7f460a5367de6b62780d68f9a69">More...</a><br /></td></tr>
 <tr class="separator:a26a0f7f460a5367de6b62780d68f9a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab9e7659c7674f892e08aaa26819b1ab6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9e7659c7674f892e08aaa26819b1ab6">&#9670;&nbsp;</a></span>handle_frontend_events()</h2>
+<a id="af8904b364242177c172dab3689c864eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8904b364242177c172dab3689c864eb">&#9670;&nbsp;</a></span>handle_frontend_events()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -112,14 +112,31 @@ Functions</h2></td></tr>
           <td class="memname">bool handle_frontend_events </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
-          <td class="paramname"><em>frontend</em></td><td>)</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Flushes the SDL event queue, and handles all of the pending events. </p>
-<p>Calling this function repeatedly is necessary, otherwise "Application not responding" or a Mac beachball may appear.</p>
+<p>Calling this function repeatedly is necessary, otherwise "Application not responding" or a Mac beachball may appear. If no events are available immediately, waits for up to the given timeout for any events to appear. Once any event happens it will not deliberately wait longer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frontend</td><td>The frontend instance. </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>How long to wait for events before returning anyway.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>True on success, False on failure</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function call MAY occasionally hang for an indefinitely long time. To see an example of this, simply drag the window on MSWindows, or hold down the minimize button on Mac. To see more information on this issue, and my related rant, go to <a href="https://github.com/libsdl-org/SDL/issues/1059">https://github.com/libsdl-org/SDL/issues/1059</a> </dd></dl>
 

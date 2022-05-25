@@ -1,5 +1,17 @@
 var NAVTREEINDEX17 =
 {
+"x11__window__info_8c.html#a4c8f2f6078d3e0b06048154782d0fc09":[13,0,2,10,34,23],
+"x11__window__info_8c.html#a50026537f9f2afdb4a6a4f3bc5dad6d3":[13,0,2,10,34,1],
+"x11__window__info_8c.html#a6d8cb0636f1d992c3d5df6e40ff90be0":[13,0,2,10,34,5],
+"x11__window__info_8c.html#a757fac2cf4120d6017266f688cff93ce":[13,0,2,10,34,12],
+"x11__window__info_8c.html#a79699ba271f4a3d2372f64a348a3048c":[13,0,2,10,34,3],
+"x11__window__info_8c.html#a8af85b65174eebfd0b471ce107fb3447":[13,0,2,10,34,15],
+"x11__window__info_8c.html#a8df4370e86e46c25d83dc86af2d2efc1":[13,0,2,10,34,13],
+"x11__window__info_8c.html#a9173c83ed7a14a3a61b50a2cae574ef7":[13,0,2,10,34,14],
+"x11__window__info_8c.html#a92172f4730304b6eb8eb7931d5197413":[13,0,2,10,34,4],
+"x11__window__info_8c.html#ab295d9ee93db241224588d8d36f08226":[13,0,2,10,34,22],
+"x11__window__info_8c.html#ab54d2cc9b2d2809b37a20fed484ec0af":[13,0,2,10,34,7],
+"x11__window__info_8c.html#ada2351c0e44f99302487a3ff00e6da3e":[13,0,2,10,34,21],
 "x11__window__info_8c.html#adaaaa197e240d0c438c6e79667be2b37":[13,0,2,10,34,20],
 "x11__window__info_8c.html#aeb2edfe495c114f66af1adeeb413f2c0":[13,0,2,10,34,6],
 "x11__window__info_8c.html#aed31f24aa6e5481c4a63a69e2df1cf58":[13,0,2,10,34,11],

@@ -143,9 +143,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a38188485497cb37637364f5d785ddb5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a38188485497cb37637364f5d785ddb5f">sdl_update_pending_tasks</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="memdesc:a38188485497cb37637364f5d785ddb5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The above functions may be expensive, and thus may have to be queued up.  <a href="sdl__utils_8h.html#a38188485497cb37637364f5d785ddb5f">More...</a><br /></td></tr>
 <tr class="separator:a38188485497cb37637364f5d785ddb5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc20a623c59b6fd30f2fdab8d6043c5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a">sdl_utils_check_private_vars</a> (bool *pending_resize_message_ptr, bool *native_window_color_is_null_ptr, <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *native_window_color_ptr, bool *native_window_color_update_ptr, char *window_title_ptr, bool *should_update_window_title_ptr, bool *fullscreen_trigger_ptr, bool *fullscreen_value_ptr)</td></tr>
-<tr class="memdesc:acc20a623c59b6fd30f2fdab8d6043c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies private variable values to the variables pointed by the non-NULL pointers passed as parameters.  <a href="sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a">More...</a><br /></td></tr>
-<tr class="separator:acc20a623c59b6fd30f2fdab8d6043c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d82de4d2f5b08f3150bb898a1d57c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8h.html#a65d82de4d2f5b08f3150bb898a1d57c7">sdl_utils_check_private_vars</a> (bool *pending_resize_message_ptr)</td></tr>
+<tr class="memdesc:a65d82de4d2f5b08f3150bb898a1d57c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies private variable values to the variables pointed by the non-NULL pointers passed as parameters.  <a href="sdl__utils_8h.html#a65d82de4d2f5b08f3150bb898a1d57c7">More...</a><br /></td></tr>
+<tr class="separator:a65d82de4d2f5b08f3150bb898a1d57c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -532,8 +532,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="acc20a623c59b6fd30f2fdab8d6043c5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc20a623c59b6fd30f2fdab8d6043c5a">&#9670;&nbsp;</a></span>sdl_utils_check_private_vars()</h2>
+<a id="a65d82de4d2f5b08f3150bb898a1d57c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d82de4d2f5b08f3150bb898a1d57c7">&#9670;&nbsp;</a></span>sdl_utils_check_private_vars()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,54 +542,8 @@ Usage</h1>
           <td class="memname">void sdl_utils_check_private_vars </td>
           <td>(</td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>pending_resize_message_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>pending_resize_message_ptr</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>native_window_color_is_null_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *&#160;</td>
-          <td class="paramname"><em>native_window_color_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>native_window_color_update_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>window_title_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>should_update_window_title_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>fullscreen_trigger_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>fullscreen_value_ptr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -598,14 +552,7 @@ Usage</h1>
 <p>Used for testing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pending_resize_message_ptr</td><td>If non-NULL, the function will save the value of pending_resize_message in the variable pointed to by this pointer.</td></tr>
-    <tr><td class="paramname">native_window_color_is_null_ptr</td><td>If non-NULL, the function will save 'true' in the variable pointed to by this pointer if native_window_color is NULL, 'false' otherwise.</td></tr>
-    <tr><td class="paramname">native_window_color_ptr</td><td>If non-NULL, the function will save the value of native_window_color in the variable pointed to by this pointer.</td></tr>
-    <tr><td class="paramname">native_window_color_update_ptr</td><td>If non-NULL, the function will save the value of native_window_color_update in the variable pointed to by this pointer.</td></tr>
-    <tr><td class="paramname">window_title_ptr</td><td>If non-NULL, the function will save the value of window_title in the variable pointed to by this pointer.</td></tr>
-    <tr><td class="paramname">should_update_window_title_ptr</td><td>If non-NULL, the function will save the value of should_update_window_title in the variable pointed to by this pointer.</td></tr>
-    <tr><td class="paramname">fullscreen_trigger_ptr</td><td>If non-NULL, the function will save the value of fullscreen_trigger in the variable pointed to by this pointer.</td></tr>
-    <tr><td class="paramname">fullscreen_value_ptr</td><td>If non-NULL, the function will save the value of fullscreen_value in the variable pointed to by this pointer. </td></tr>
+    <tr><td class="paramname">pending_resize_message_ptr</td><td>If non-NULL, the function will save the value of pending_resize_message in the variable pointed to by this pointer. </td></tr>
   </table>
   </dd>
 </dl>

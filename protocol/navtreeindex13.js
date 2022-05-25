@@ -1,5 +1,17 @@
 var NAVTREEINDEX13 =
 {
+"structWhistClientMessage.html#a84fb804d6eb703ebdf171fde02f04527":[12,0,117,1],
+"structWhistClientMessage.html#a8558ab7ac655f18ca1cddca38a9458f6":[12,0,117,19],
+"structWhistClientMessage.html#a9357fc2171bc585f9e53541f4a6b7973":[12,0,117,14],
+"structWhistClientMessage.html#a9a948aef3c45ac773616458b125abdbd":[12,0,117,12],
+"structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6":[12,0,117,2],
+"structWhistClientMessage.html#aae5fe9f6f790113e3bef38200d5bb20a":[12,0,117,0],
+"structWhistClientMessage.html#ab8a5a9f3b59ec3de93fd01d469b5f690":[12,0,117,7],
+"structWhistClientMessage.html#ac483bcd64751c9834cdea881ae71cd38":[12,0,117,3],
+"structWhistClientMessage.html#ac63ab66af86b47e03cfa523225c7bf3c":[12,0,117,11],
+"structWhistClientMessage.html#aecc9f7cfd7275c01c6743828d3631856":[12,0,117,16],
+"structWhistClientMessage.html#af95d5c64f3b0fd79d260f3889e23bfdb":[12,0,117,5],
+"structWhistCommandLineOption.html":[11,4,0],
 "structWhistCommandLineOption.html#a0029453728c7f996c1a37c36e02bc87f":[11,4,0,1],
 "structWhistCommandLineOption.html#a170dd631d883a04b888a378a364a273a":[11,4,0,7],
 "structWhistCommandLineOption.html#a1ba54afcdb353d43001d8b5916464308":[11,4,0,4],
@@ -237,17 +249,5 @@ var NAVTREEINDEX13 =
 "structX11CaptureDevice.html#ac49a89635daec815ee50fb42c1d4d444":[12,0,147,20],
 "structX11CaptureDevice.html#ac5a5c7b0909308e3712a2b691e932460":[12,0,147,19],
 "structX11CaptureDevice.html#ac7740aa379f5c2945f1a1a599231c558":[12,0,147,7],
-"structX11CaptureDevice.html#acef1859db60b99af218e316f7cec5772":[12,0,147,23],
-"struct__whist__server__config.html":[12,0,0],
-"struct__whist__server__config.html#a370d33931f5bc174dc8db5a9e5a230f0":[12,0,0,0],
-"struct__whist__server__config.html#a576faee2d8a900a1da2299369b0d2ec5":[12,0,0,3],
-"struct__whist__server__config.html#a974ca4f84c65261f4d4fd2d41c559a2b":[12,0,0,1],
-"struct__whist__server__config.html#aaec6b60177bbb307628d305ce768fcbb":[12,0,0,2],
-"structcm256__block__t.html":[12,0,19],
-"structcm256__block__t.html#a3e38a4353a34c5fd7508b81b617f7b1a":[12,0,19,1],
-"structcm256__block__t.html#ae4a6d500829ef1eea5d13ab38add2da7":[12,0,19,0],
-"structcm256__encoder__params__t.html":[12,0,20],
-"structcm256__encoder__params__t.html#a246260fbbadaa3ad53a823f3a9e907fc":[12,0,20,0],
-"structcm256__encoder__params__t.html#a3d016eb9f071ce63cb9508ef5f8e5e33":[12,0,20,2],
-"structcm256__encoder__params__t.html#adc5c23d3411f2661fa82ec64cc169534":[12,0,20,1]
+"structX11CaptureDevice.html#acef1859db60b99af218e316f7cec5772":[12,0,147,23]
 };

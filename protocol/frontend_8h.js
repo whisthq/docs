@@ -44,8 +44,10 @@ var frontend_8h =
       [ "FRONTEND_EVENT_GESTURE", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaccfc8dd447b06a62ff6181a6bc144f07", null ],
       [ "FRONTEND_EVENT_FILE_DRAG", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfad8810fea77ace175df02a640dcadf11e", null ],
       [ "FRONTEND_EVENT_FILE_DROP", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfada962210eb4ab2a3b86ebfa179a10230", null ],
-      [ "FRONTEND_EVENT_QUIT", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaa1023541c5b670566f0ae667deb73d43", null ]
+      [ "FRONTEND_EVENT_QUIT", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaa1023541c5b670566f0ae667deb73d43", null ],
+      [ "FRONTEND_EVENT_INTERRUPT", "frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa676739a05c4e0a1af9cac75dc2e12ec3", null ]
     ] ],
     [ "whist_frontend_create", "frontend_8h.html#a597b620a178e0fda549dc9119e54df6b", null ],
+    [ "whist_frontend_event_type_string", "frontend_8h.html#afbf8353794be3b716ec31c6e0483ae9e", null ],
     [ "whist_frontend_get_id", "frontend_8h.html#a7de68ef47e70280f8b6aa061167c1c4a", null ]
 ];

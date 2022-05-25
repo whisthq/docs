@@ -14,5 +14,5 @@ var sdl__utils_8h =
     [ "sdl_update_framebuffer", "sdl__utils_8h.html#aef9836611d0f8732b4267e4d81aeec02", null ],
     [ "sdl_update_framebuffer_loading_screen", "sdl__utils_8h.html#aec1c03b128be02a97fe22c4744445f3a", null ],
     [ "sdl_update_pending_tasks", "sdl__utils_8h.html#a38188485497cb37637364f5d785ddb5f", null ],
-    [ "sdl_utils_check_private_vars", "sdl__utils_8h.html#acc20a623c59b6fd30f2fdab8d6043c5a", null ]
+    [ "sdl_utils_check_private_vars", "sdl__utils_8h.html#a65d82de4d2f5b08f3150bb898a1d57c7", null ]
 ];

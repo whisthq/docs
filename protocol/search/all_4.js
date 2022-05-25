@@ -73,7 +73,7 @@ var searchData=
   ['destroying_489',['destroying',['../structNetworkThrottleContext.html#af1394b5623dc1b94889bba028f636fe4',1,'NetworkThrottleContext']]],
   ['device_490',['device',['../structAudioDevice.html#a36ab5c207f117d40abc59a159d2b97ba',1,'AudioDevice']]],
   ['device_5ftype_491',['device_type',['../structInputDevice.html#a4fa00d68759f1577b838f2cf7c7107bc',1,'InputDevice::device_type()'],['../structHardwareDecodeType.html#aea728c1ce87c5a9dd58ba12173f21f55',1,'HardwareDecodeType::device_type()'],['../structVideoDecoder.html#af11d21440de75bfc467abbffbf4f89da',1,'VideoDecoder::device_type()'],['../structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643',1,'RegisteredResource::device_type()']]],
-  ['dimensions_492',['dimensions',['../structWhistClientMessage.html#a0a813fed80387c89988b96421677ec93',1,'WhistClientMessage']]],
+  ['dimensions_492',['dimensions',['../structWhistClientMessage.html#a84fb804d6eb703ebdf171fde02f04527',1,'WhistClientMessage']]],
   ['dir_5fexists_493',['dir_exists',['../mac__utils_8c.html#a8f5a2e7c6e05726548f68fe93ba677cb',1,'dir_exists(const char *path):&#160;mac_utils.c'],['../mac__utils_8h.html#a8f5a2e7c6e05726548f68fe93ba677cb',1,'dir_exists(const char *path):&#160;mac_utils.c']]],
   ['direction_494',['direction',['../structTransferringFile.html#a5b12998468016243fbeffd1492966d61',1,'TransferringFile']]],
   ['disable_495',['disable',['../features_8c.html#a8eb62ab1cf861738c1ecf3d75398ec18',1,'features.c']]],

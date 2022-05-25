@@ -82,7 +82,8 @@ $(document).ready(function(){initNavTree('sdl_2common_8h.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">common.h File Reference</div>  </div>
 </div><!--header-->
@@ -101,6 +102,20 @@ Macros</h2></td></tr>
 <tr class="separator:a51f528deaaeb973f417b46a2ec36f850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6340c5c74e39504184676eb2b63ff140"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl_2common_8h.html#a6340c5c74e39504184676eb2b63ff140">SDL_COMMON_HEADER_ENTRY</a>(return_type,  name, ...)&#160;&#160;&#160;return_type sdl_##name(__VA_ARGS__);</td></tr>
 <tr class="separator:a6340c5c74e39504184676eb2b63ff140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a385c44f6fb256e5716a2302a5b940388"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388a6545d40a000f718bca009cc88dc55223">SDL_FRONTEND_EVENT_FILE_DRAG</a>, 
+<a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388a93eeb920dec2413df6c43e1cb0910b55">SDL_FRONTEND_EVENT_FULLSCREEN</a>, 
+<a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388aca1c55412a0d4ce288480ebe817f5364">SDL_FRONTEND_EVENT_WINDOW_TITLE_CHANGE</a>, 
+<a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388a7c4a92fe75fb1db5a2dc2df95dccc61c">SDL_FRONTEND_EVENT_TITLE_BAR_COLOR_CHANGE</a>, 
+<br />
+&#160;&#160;<a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388a0e124a3244698b87d9b8167e4f3fdac4">SDL_FRONTEND_EVENT_INTERRUPT</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a385c44f6fb256e5716a2302a5b940388"><td class="mdescLeft">&#160;</td><td class="mdescRight">These events are generated and consumed internally by the SDL frontend, typically to manage thread-safety.  <a href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388">More...</a><br /></td></tr>
+<tr class="separator:a385c44f6fb256e5716a2302a5b940388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6340c5c74e39504184676eb2b63ff140"></a>
@@ -148,6 +163,40 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a385c44f6fb256e5716a2302a5b940388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a385c44f6fb256e5716a2302a5b940388">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>These events are generated and consumed internally by the SDL frontend, typically to manage thread-safety. </p>
+<p>All of these events are transmitted using the internal_event_id type. This event identifier is placed in the SDL_UserEvent.code field. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388a6545d40a000f718bca009cc88dc55223"></a>SDL_FRONTEND_EVENT_FILE_DRAG&#160;</td><td class="fielddoc"><p>File drag event. </p>
+<p>data1 contains a pointer to a <a class="el" href="structFrontendFileDragEvent.html">FrontendFileDragEvent</a>, which the receiver will need to free after use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388a93eeb920dec2413df6c43e1cb0910b55"></a>SDL_FRONTEND_EVENT_FULLSCREEN&#160;</td><td class="fielddoc"><p>Fullscreen event. </p>
+<p>data1 contains a boolean cast to a pointer indicating whether we want to enter (true) or exit (false) fullscreen mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388aca1c55412a0d4ce288480ebe817f5364"></a>SDL_FRONTEND_EVENT_WINDOW_TITLE_CHANGE&#160;</td><td class="fielddoc"><p>Window title change event. </p>
+<p>data1 contains a pointer to a string, which the receiver will need to free after tuse. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388a7c4a92fe75fb1db5a2dc2df95dccc61c"></a>SDL_FRONTEND_EVENT_TITLE_BAR_COLOR_CHANGE&#160;</td><td class="fielddoc"><p>Window title bar colour change. </p>
+<p>data1 contains a pointer to a <a class="el" href="structWhistRGBColor.html" title="RGB Color.">WhistRGBColor</a> object, which the receiver will need to free after use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388a0e124a3244698b87d9b8167e4f3fdac4"></a>SDL_FRONTEND_EVENT_INTERRUPT&#160;</td><td class="fielddoc"><p>Internal interrupt from <a class="el" href="frontend_8c.html#a98eca1faaf4b82714c64e89c2d12f271">whist_frontend_interrupt()</a>. </p>
+</td></tr>
+</table>
 
 </div>
 </div>

@@ -137,6 +137,10 @@ Functions</h2></td></tr>
 <tr class="separator:a4f1bf119ff1fc3d3517a5f38dab6a3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bf0046d123c32162a35531e94bf57ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a8bf0046d123c32162a35531e94bf57ec">whist_frontend_poll_event</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, <a class="el" href="structWhistFrontendEvent.html">WhistFrontendEvent</a> *event)</td></tr>
 <tr class="separator:a8bf0046d123c32162a35531e94bf57ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25596e52db1bc4ef8847b04e189ba590"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a25596e52db1bc4ef8847b04e189ba590">whist_frontend_wait_event</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, <a class="el" href="structWhistFrontendEvent.html">WhistFrontendEvent</a> *event, int timeout_ms)</td></tr>
+<tr class="separator:a25596e52db1bc4ef8847b04e189ba590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98eca1faaf4b82714c64e89c2d12f271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a98eca1faaf4b82714c64e89c2d12f271">whist_frontend_interrupt</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="separator:a98eca1faaf4b82714c64e89c2d12f271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787311d1b27d6a6367d60fdd98a862b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a787311d1b27d6a6367d60fdd98a862b3">whist_frontend_set_cursor</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *cursor)</td></tr>
 <tr class="separator:a787311d1b27d6a6367d60fdd98a862b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7854b464b9404182515705d7b3acf88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#ae7854b464b9404182515705d7b3acf88">whist_frontend_get_keyboard_state</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const uint8_t **key_state, int *key_count, int *mod_state)</td></tr>
@@ -163,6 +167,8 @@ Functions</h2></td></tr>
 <tr class="separator:a352b7e022d6468c503d7662b80ef8acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f6e8a0491802ecd96a92ae99a570c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a74f6e8a0491802ecd96a92ae99a570c1">whist_frontend_declare_user_activity</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="separator:a74f6e8a0491802ecd96a92ae99a570c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf8353794be3b716ec31c6e0483ae9e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#afbf8353794be3b716ec31c6e0483ae9e">whist_frontend_event_type_string</a> (<a class="el" href="frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddf">FrontendEventType</a> type)</td></tr>
+<tr class="separator:afbf8353794be3b716ec31c6e0483ae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a12169cbc99342bafbcab7896ba81aafe"></a>
@@ -302,6 +308,24 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
           <td class="paramname"><em>frontend</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbf8353794be3b716ec31c6e0483ae9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf8353794be3b716ec31c6e0483ae9e">&#9670;&nbsp;</a></span>whist_frontend_event_type_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* whist_frontend_event_type_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="frontend_8h.html#a8a153431f5c5d2a42e6b50bc64337ddf">FrontendEventType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -573,6 +597,24 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98eca1faaf4b82714c64e89c2d12f271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98eca1faaf4b82714c64e89c2d12f271">&#9670;&nbsp;</a></span>whist_frontend_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_frontend_interrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1006,6 +1048,40 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">AVFrame *&#160;</td>
           <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25596e52db1bc4ef8847b04e189ba590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25596e52db1bc4ef8847b04e189ba590">&#9670;&nbsp;</a></span>whist_frontend_wait_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool whist_frontend_wait_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistFrontendEvent.html">WhistFrontendEvent</a> *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

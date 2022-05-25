@@ -126,6 +126,10 @@ Functions</h2></td></tr>
 <tr class="separator:aca88dc8738746900916ce8706c722c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76e9678ec2f55bb73718785723404ea5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a76e9678ec2f55bb73718785723404ea5">virtual_poll_event</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, <a class="el" href="structWhistFrontendEvent.html">WhistFrontendEvent</a> *event)</td></tr>
 <tr class="separator:a76e9678ec2f55bb73718785723404ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f82caea6a996c58ccd9b6f7d8785eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#af9f82caea6a996c58ccd9b6f7d8785eb">virtual_wait_event</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, <a class="el" href="structWhistFrontendEvent.html">WhistFrontendEvent</a> *event, int timeout_ms)</td></tr>
+<tr class="separator:af9f82caea6a996c58ccd9b6f7d8785eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21fdc3c4c0f48b0d363d3411edd18cd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a21fdc3c4c0f48b0d363d3411edd18cd4">virtual_interrupt</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="separator:a21fdc3c4c0f48b0d363d3411edd18cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73d8ec34537d30a51a96c4301a0c199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#af73d8ec34537d30a51a96c4301a0c199">virtual_set_cursor</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *cursor)</td></tr>
 <tr class="separator:af73d8ec34537d30a51a96c4301a0c199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a851ee221340e0989dd51a70640edec98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a851ee221340e0989dd51a70640edec98">virtual_get_keyboard_state</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const uint8_t **key_state, int *key_count, int *mod_state)</td></tr>
@@ -466,6 +470,24 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21fdc3c4c0f48b0d363d3411edd18cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21fdc3c4c0f48b0d363d3411edd18cd4">&#9670;&nbsp;</a></span>virtual_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void virtual_interrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -899,6 +921,40 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">AVFrame *&#160;</td>
           <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9f82caea6a996c58ccd9b6f7d8785eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f82caea6a996c58ccd9b6f7d8785eb">&#9670;&nbsp;</a></span>virtual_wait_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool virtual_wait_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistFrontendEvent.html">WhistFrontendEvent</a> *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
