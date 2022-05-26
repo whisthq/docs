@@ -8,7 +8,7 @@ var window__info_8h =
     [ "get_active_window", "window__info_8h.html#a092a69e23e099fac013c1b7510d9aeea", null ],
     [ "get_focused_window_name", "window__info_8h.html#a03ff5688ba3a77c405bd696b923f9d2d", null ],
     [ "get_valid_windows", "window__info_8h.html#ac471d2bc4c3c671c3b1fc2aefe2f1126", null ],
-    [ "get_window_attributes", "window__info_8h.html#a757fac2cf4120d6017266f688cff93ce", null ],
+    [ "get_window_attributes", "window__info_8h.html#afafbb5b857288ed54c8b274af2351c3d", null ],
     [ "init_window_info_getter", "window__info_8h.html#a9173c83ed7a14a3a61b50a2cae574ef7", null ],
     [ "is_focused_window_fullscreen", "window__info_8h.html#a8af85b65174eebfd0b471ce107fb3447", null ],
     [ "is_window_resizable", "window__info_8h.html#afb2d55da81f6538a26d015671cdd1ec6", null ],

@@ -12,5 +12,6 @@ var structVideoFrame =
     [ "is_window_visible", "structVideoFrame.html#a4e5146fe473d1cbf298009ffb7b972d3", null ],
     [ "server_timestamp", "structVideoFrame.html#a090980fd4ab714569d11fdbdab2b8989", null ],
     [ "videodata_length", "structVideoFrame.html#a21d459b551ceeac67227b348099c193b", null ],
-    [ "width", "structVideoFrame.html#a7a7f8852074f5c7ccf06f1a27e317bde", null ]
+    [ "width", "structVideoFrame.html#a7a7f8852074f5c7ccf06f1a27e317bde", null ],
+    [ "window_data", "structVideoFrame.html#a421d191d72bdb9f82e657bdaa0d724f9", null ]
 ];

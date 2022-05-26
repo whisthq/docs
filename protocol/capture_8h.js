@@ -1,9 +1,7 @@
 var capture_8h =
 [
-    [ "WhistWindow", "structWhistWindow.html", "structWhistWindow" ],
     [ "CaptureDevice", "structCaptureDevice.html", "structCaptureDevice" ],
     [ "CaptureDevice", "capture_8h.html#a4f32ec0a1163b589b5296ac7a884e803", null ],
-    [ "WhistWindow", "capture_8h.html#a4736a4f05f4c7d27314c6e66371f16f8", null ],
     [ "capture_screen", "capture_8h.html#acddcc3aa008273807b931fbd1fd2a0bf", null ],
     [ "create_capture_device", "capture_8h.html#aa962953cfc3fdb9ed34703ab4a9afe42", null ],
     [ "destroy_capture_device", "capture_8h.html#abbd0ff16d9ee7c3353340b1d2529f8c7", null ],

@@ -118,9 +118,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac471d2bc4c3c671c3b1fc2aefe2f1126"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window__info_8h.html#ac471d2bc4c3c671c3b1fc2aefe2f1126">get_valid_windows</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structLinkedList.html">LinkedList</a> *window_list)</td></tr>
 <tr class="memdesc:ac471d2bc4c3c671c3b1fc2aefe2f1126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a linked list of windows we should stream (e.g.  <a href="window__info_8h.html#ac471d2bc4c3c671c3b1fc2aefe2f1126">More...</a><br /></td></tr>
 <tr class="separator:ac471d2bc4c3c671c3b1fc2aefe2f1126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a757fac2cf4120d6017266f688cff93ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window__info_8h.html#a757fac2cf4120d6017266f688cff93ce">get_window_attributes</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window, <a class="el" href="structWhistWindowData.html">WhistWindowData</a> *<a class="el" href="error__monitor_8c.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>)</td></tr>
-<tr class="memdesc:a757fac2cf4120d6017266f688cff93ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill WhistWindowData* struct with x/y/w/h/etc.  <a href="window__info_8h.html#a757fac2cf4120d6017266f688cff93ce">More...</a><br /></td></tr>
-<tr class="separator:a757fac2cf4120d6017266f688cff93ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafbb5b857288ed54c8b274af2351c3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window__info_8h.html#afafbb5b857288ed54c8b274af2351c3d">get_window_attributes</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device, <a class="el" href="structWhistWindow.html">WhistWindow</a> *whist_window)</td></tr>
+<tr class="memdesc:afafbb5b857288ed54c8b274af2351c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill WhistWindowData* struct with x/y/w/h/etc.  <a href="window__info_8h.html#afafbb5b857288ed54c8b274af2351c3d">More...</a><br /></td></tr>
+<tr class="separator:afafbb5b857288ed54c8b274af2351c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a092a69e23e099fac013c1b7510d9aeea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window__info_8h.html#a092a69e23e099fac013c1b7510d9aeea">get_active_window</a> (<a class="el" href="structCaptureDevice.html">CaptureDevice</a> *capture_device)</td></tr>
 <tr class="memdesc:a092a69e23e099fac013c1b7510d9aeea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the active window, either using NET_ACTIVE_WINDOW atom (preferred) or XGetInputFocus.  <a href="window__info_8h.html#a092a69e23e099fac013c1b7510d9aeea">More...</a><br /></td></tr>
 <tr class="separator:a092a69e23e099fac013c1b7510d9aeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -403,8 +403,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a757fac2cf4120d6017266f688cff93ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a757fac2cf4120d6017266f688cff93ce">&#9670;&nbsp;</a></span>get_window_attributes()</h2>
+<a id="afafbb5b857288ed54c8b274af2351c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafbb5b857288ed54c8b274af2351c3d">&#9670;&nbsp;</a></span>get_window_attributes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,14 +418,8 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
-          <td class="paramname"><em>whist_window</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structWhistWindowData.html">WhistWindowData</a> *&#160;</td>
-          <td class="paramname"><em>d</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a> *&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -440,8 +434,7 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">capture_device</td><td>Capture device whose display we are using</td></tr>
-    <tr><td class="paramname">whist_window</td><td>The <a class="el" href="structWhistWindow.html">WhistWindow</a> to get attributes from</td></tr>
-    <tr><td class="paramname">d</td><td>Struct to fill with window attributes </td></tr>
+    <tr><td class="paramname">whist_window</td><td>The <a class="el" href="structWhistWindow.html">WhistWindow</a> to fill attributes for </td></tr>
   </table>
   </dd>
 </dl>

@@ -11,7 +11,7 @@ var whist_8h =
     [ "WhistKeyboardState", "structWhistKeyboardState.html", "structWhistKeyboardState" ],
     [ "WhistFrameAckMessage", "structWhistFrameAckMessage.html", "structWhistFrameAckMessage" ],
     [ "WhistClientMessage", "structWhistClientMessage.html", "structWhistClientMessage" ],
-    [ "WhistWindowData", "structWhistWindowData.html", "structWhistWindowData" ],
+    [ "WhistWindow", "structWhistWindow.html", "structWhistWindow" ],
     [ "WhistServerMessage", "structWhistServerMessage.html", "structWhistServerMessage" ],
     [ "WhistDestination", "structWhistDestination.html", "structWhistDestination" ],
     [ "BitArray", "structBitArray.html", "structBitArray" ],
@@ -112,7 +112,7 @@ var whist_8h =
     [ "WhistOSType", "whist_8h.html#a00a12b04c002bc1d820fc3fdbe717cae", null ],
     [ "WhistServerMessage", "whist_8h.html#af354d3977701249a8ad159d0eeda62ff", null ],
     [ "WhistServerMessageType", "whist_8h.html#a5885a6725785a59084164ccfedb1073a", null ],
-    [ "WhistWindowData", "whist_8h.html#a659532c07797fb0b3ad9b5f443f1e493", null ],
+    [ "WhistWindow", "whist_8h.html#a4736a4f05f4c7d27314c6e66371f16f8", null ],
     [ "CaptureDeviceType", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600", [
       [ "NVIDIA_DEVICE", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600abaa3f428485672d8d26eff1d9b02471c", null ],
       [ "X11_DEVICE", "whist_8h.html#a405cbf3c7e9ae25dc03ad4fcf563f600af5f8310d06695e24ea1b00b459ca3621", null ]

@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba241c3fefa30c0139f7654619c88854ad":[13,0,2,2,6,118,115],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba26c9efa1631fcd31f3e5c53b7843a00a":[13,0,2,2,6,118,82],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba2b2d7b385aa97e38dbecf9886087f9cb":[13,0,2,2,6,118,94],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba2b4807ee083dde3d95b6a66b19b4d46b":[13,0,2,2,6,118,121],
@@ -229,7 +228,6 @@ var NAVTREEINDEX16 =
 "window__info_8h.html#a092a69e23e099fac013c1b7510d9aeea":[13,0,2,10,32,5],
 "window__info_8h.html#a3acf0d209a96f98ea9a137004565d29f":[13,0,2,10,32,14],
 "window__info_8h.html#a4bc7356fc8ec1706521a422d99e6bd2a":[13,0,2,10,32,12],
-"window__info_8h.html#a757fac2cf4120d6017266f688cff93ce":[13,0,2,10,32,8],
 "window__info_8h.html#a79699ba271f4a3d2372f64a348a3048c":[13,0,2,10,32,1],
 "window__info_8h.html#a8af85b65174eebfd0b471ce107fb3447":[13,0,2,10,32,10],
 "window__info_8h.html#a9173c83ed7a14a3a61b50a2cae574ef7":[13,0,2,10,32,9],
@@ -241,6 +239,7 @@ var NAVTREEINDEX16 =
 "window__info_8h.html#ada2351c0e44f99302487a3ff00e6da3e":[13,0,2,10,32,15],
 "window__info_8h.html#aeb2edfe495c114f66af1adeeb413f2c0":[13,0,2,10,32,3],
 "window__info_8h.html#afaaa48ebc924341b2f57a0ffa47f03f5":[13,0,2,10,32,13],
+"window__info_8h.html#afafbb5b857288ed54c8b274af2351c3d":[13,0,2,10,32,8],
 "window__info_8h.html#afb2d55da81f6538a26d015671cdd1ec6":[13,0,2,10,32,11],
 "window__info_8h_source.html":[13,0,2,10,32],
 "windows__cursor__capture_8c.html":[13,0,2,3,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "windows__cursor__capture_8c.html#ac1fb51bdd5f5a29790a411f489ddb747":[13,0,2,3,5,4],
 "windows__cursor__capture_8c.html#adad7a7d0b31603dd588ccf0f2d0fe0fe":[13,0,2,3,5,2],
 "windows__window__info_8c.html":[13,0,2,10,33],
-"windows__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d":[13,0,2,10,33,1]
+"windows__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d":[13,0,2,10,33,1],
+"windows__window__info_8c.html#a8af85b65174eebfd0b471ce107fb3447":[13,0,2,10,33,3]
 };

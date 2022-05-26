@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"whist_2network_2network_8c.html#ab06727ebbc110e7071dc8090ced33373":[13,0,2,9,0,2],
 "whist_2network_2network_8c.html#ab0b0b491f948a80bdf5ea63fefe1df4c":[13,0,2,9,0,11],
 "whist_2network_2network_8c.html#ab43e02956da62e0b7149aec020abfb9b":[13,0,2,9,0,6],
 "whist_2network_2network_8c.html#ac326362f3ab91f34c0271d6585c27373":[13,0,2,9,0,7],
@@ -123,6 +122,7 @@ var NAVTREEINDEX15 =
 "whist_8h.html#a407e78922a862311fd4f35eeef889630":[13,0,2,2,6,15],
 "whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b":[13,0,2,2,6,74],
 "whist_8h.html#a44f9a1312aeadcbf8ec7561cea0525e2":[13,0,2,2,6,89],
+"whist_8h.html#a4736a4f05f4c7d27314c6e66371f16f8":[13,0,2,2,6,112],
 "whist_8h.html#a50bc2c1ea19648a1aa37bb99a482c69e":[13,0,2,2,6,139],
 "whist_8h.html#a514734c0c6acc3c2f2076323d45676d8":[13,0,2,2,6,34],
 "whist_8h.html#a54272dc64f4ff6adc5a16a4e76a67153":[13,0,2,2,6,122],
@@ -141,7 +141,6 @@ var NAVTREEINDEX15 =
 "whist_8h.html#a60d7c1ddafff24bb11e440ffaf1ebbcf":[13,0,2,2,6,25],
 "whist_8h.html#a61a115e1297596f9885f9a0dbb6a63b7":[13,0,2,2,6,35],
 "whist_8h.html#a64c8087b20bce00278ae45c0081275db":[13,0,2,2,6,40],
-"whist_8h.html#a659532c07797fb0b3ad9b5f443f1e493":[13,0,2,2,6,112],
 "whist_8h.html#a690e9b7e2e4f08889666b8c98d25ff52":[13,0,2,2,6,104],
 "whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4":[13,0,2,2,6,123],
 "whist_8h.html#a6e760c662b6b1560542cc151a2ac01b4a218fc679b8e1f15dded103a17a676cc4":[13,0,2,2,6,123,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba19083c5d05222cc2e4707d58f35f253d":[13,0,2,2,6,118,53],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba19da7d51701c0afcba08908503c78e0b":[13,0,2,2,6,118,32],
 "whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba1f319e1522ae26a9f81e72cadd6bffc8":[13,0,2,2,6,118,13],
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba206617008fdbd145b668491f62f524ee":[13,0,2,2,6,118,104]
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba206617008fdbd145b668491f62f524ee":[13,0,2,2,6,118,104],
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba241c3fefa30c0139f7654619c88854ad":[13,0,2,2,6,118,115]
 };
