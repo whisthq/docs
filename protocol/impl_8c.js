@@ -4,6 +4,7 @@ var impl_8c =
     [ "virtual_close_audio", "impl_8c.html#a31e1967783f86f66e0917da716dcc4cd", null ],
     [ "virtual_declare_user_activity", "impl_8c.html#ae996b3f4c83bdd78a92f5b35a1fc9505", null ],
     [ "virtual_destroy", "impl_8c.html#a332a233d73e311dbc98ff9edb781c1ed", null ],
+    [ "virtual_display_notification", "impl_8c.html#acf7e3a8f676a1ef0dfb15195c5d2138a", null ],
     [ "virtual_get_audio_buffer_size", "impl_8c.html#a68019e80d5facb265f02d18dc1aaa8b1", null ],
     [ "virtual_get_keyboard_state", "impl_8c.html#a851ee221340e0989dd51a70640edec98", null ],
     [ "virtual_get_video_device", "impl_8c.html#a8babc3f558d0eb5621f6761bf21866ee", null ],

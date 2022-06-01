@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['debugconsoleoverridevalues_2781',['DebugConsoleOverrideValues',['../structDebugConsoleOverrideValues.html',1,'']]],
-  ['decodedframedata_2782',['DecodedFrameData',['../structDecodedFrameData.html',1,'']]],
-  ['dynamicbuffer_2783',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
+  ['debugconsoleoverridevalues_2801',['DebugConsoleOverrideValues',['../structDebugConsoleOverrideValues.html',1,'']]],
+  ['decodedframedata_2802',['DecodedFrameData',['../structDecodedFrameData.html',1,'']]],
+  ['desktopnotificationhistorycompat_2803',['DesktopNotificationHistoryCompat',['../classDesktopNotificationHistoryCompat.html',1,'']]],
+  ['dynamicbuffer_2804',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
 ];

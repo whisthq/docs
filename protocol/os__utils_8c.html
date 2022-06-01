@@ -106,9 +106,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a2be1ff67174216005f67c4e62602af9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__utils_8c.html#a2be1ff67174216005f67c4e62602af9e">set_keyboard_layout</a> (<a class="el" href="structWhistKeyboardLayout.html">WhistKeyboardLayout</a> requested_layout)</td></tr>
 <tr class="memdesc:a2be1ff67174216005f67c4e62602af9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set keyboard layout.  <a href="os__utils_8c.html#a2be1ff67174216005f67c4e62602af9e">More...</a><br /></td></tr>
 <tr class="separator:a2be1ff67174216005f67c4e62602af9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b2ec5f6a7938bb9b01502db71e34fe4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__utils_8c.html#a4b2ec5f6a7938bb9b01502db71e34fe4">display_notification</a> (<a class="el" href="structWhistNotification.html">WhistNotification</a> notif)</td></tr>
-<tr class="memdesc:a4b2ec5f6a7938bb9b01502db71e34fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays notification on the client side.  <a href="os__utils_8c.html#a4b2ec5f6a7938bb9b01502db71e34fe4">More...</a><br /></td></tr>
-<tr class="separator:a4b2ec5f6a7938bb9b01502db71e34fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad841d0d3632ae42995ba77ada3a6e13b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__utils_8c.html#ad841d0d3632ae42995ba77ada3a6e13b">package_notification</a> (<a class="el" href="structWhistNotification.html">WhistNotification</a> *notif, const char *title, const char *message)</td></tr>
 <tr class="memdesc:ad841d0d3632ae42995ba77ada3a6e13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Package title and message strings into notification.  <a href="os__utils_8c.html#ad841d0d3632ae42995ba77ada3a6e13b">More...</a><br /></td></tr>
 <tr class="separator:ad841d0d3632ae42995ba77ada3a6e13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,35 +132,6 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4b2ec5f6a7938bb9b01502db71e34fe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b2ec5f6a7938bb9b01502db71e34fe4">&#9670;&nbsp;</a></span>display_notification()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int display_notification </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistNotification.html">WhistNotification</a>&#160;</td>
-          <td class="paramname"><em>notif</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Displays notification on the client side. </p>
-<p>Specific implementation depends on operating system (OSX/Windows/Linux).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">notif</td><td>A <a class="el" href="structWhistNotification.html">WhistNotification</a>: contains the content of a notification.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int 0 if success, -1 if failure</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is ONLY implemented for MacOS. Linux and Windows impls are stubs. </dd></dl>
-
-</div>
-</div>
 <a id="aea4fc3d6d44115d8fa787c29e7e8baf2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea4fc3d6d44115d8fa787c29e7e8baf2">&#9670;&nbsp;</a></span>get_keyboard_layout()</h2>
 

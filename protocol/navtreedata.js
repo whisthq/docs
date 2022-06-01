@@ -114,11 +114,19 @@ var NAVTREE =
       [ "References", "md_whist_network_WCC.html#autotoc_md229", null ]
     ] ],
     [ "Modules", "modules.html", "modules" ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
+    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
@@ -140,23 +148,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "GF256.html",
-"clipboard__internal_8h.html#ade76749524806bb7873dd724056c4ba9",
-"error__monitor_8c.html#abc98a77657763c9552e00036f762bf38",
-"frontend_8h_source.html",
-"group__command__line.html#ggab48899087cc647f0f791ed0c459adc53a3a9ee29b0563d427f7ddb4c6f37d1b62",
-"group__threading.html#gadd7b168960101edb6954f1844f31ac33",
-"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768acbe3fdfaaa5d74cfd73639684c87c063",
-"log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0",
-"network__algorithm_8c.html#a3865d4cfa83bd3bee75539269b0ca08e",
-"rs__wrapper_8h.html#aa00fcedcfffcf73bd13a9f561f581060",
-"structClipboardData.html#aad609297cebff188b34474d1c0ae634d",
-"structInputDeviceXTest.html#a8b2038f9758385301ce5388a9f4ad188",
-"structRSWrapper.html#a2882f0a2d622c7fda30ea110d3868f1e",
-"structVideoFrame.html#abdc75b129bdb137631597f75476536af",
-"structX11CaptureDevice.html#a53421399dbe55ef2727c9d9cd34c0d05",
-"whist_2network_2network_8c.html#ab0b0b491f948a80bdf5ea63fefe1df4c",
-"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba26c9efa1631fcd31f3e5c53b7843a00a",
-"windows__window__info_8c.html#a9173c83ed7a14a3a61b50a2cae574ef7"
+"clipboard__internal_8h.html#a1f4649cb97b683e29d202d4a5d6ffc32",
+"error__monitor_8c.html#a56d034dfbac71ff360881792781140ad",
+"frontend_8h.html#ab718664de850d811c78a265a50a3a696",
+"group__command__line.html#gab7b354fe9aaa35fa68a858892d73fe80",
+"group__threading.html#gaccf861df01894d3473ca8faaf0a83938",
+"linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a866642bed89a1a54ed31cddb74aa4d2f",
+"log__statistic_8c.html#a0271fcfc94579b48ed1dd87309d8e118ab6f2220659ddcb84a0622d4aa4e0b112",
+"native__x11_8c.html#ab0ebe835d4b644ab3a03b01dd23f8507",
+"rs__wrapper_8h.html#a2f3f6e14fb745f320d85bee69e38b143",
+"structClipboardActivity.html#a5bde40f87228f275a0ee8e8a8004dc61",
+"structInputDeviceUInput.html#a93377593eb5963e4ceab63d1389569d3",
+"structPrivateKeyData.html#a329c8f083cc47b85adf8ca53b9ef2887",
+"structVideoEncoder.html#af56f705c8349a76f221e7b09c4316d17",
+"structX11CaptureDevice.html",
+"whist_2network_2network_8c.html#a419e4818e56de9f9a6c5c2d9d6e3283b",
+"whist_8h.html#aad1832f9d718bfd4d4e414729ea4369ba0fec00e23f944ed6208d8fbaf262967f",
+"window__info_8h.html#afb2d55da81f6538a26d015671cdd1ec6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -3,6 +3,7 @@ var sdl__utils_8h =
     [ "WHIST_CLIENT_FRAMEBUFFER_PIXEL_FORMAT", "sdl__utils_8h.html#adbce575eedfdc6688f1560c919aa99d2", null ],
     [ "destroy_sdl", "sdl__utils_8h.html#a40d437adeb4ed227d37de384b28e1aff", null ],
     [ "init_sdl", "sdl__utils_8h.html#a3c4938c013e8875d657900464e834188", null ],
+    [ "sdl_client_display_notification", "sdl__utils_8h.html#a9e63a58901fafbcb255d87124187562d", null ],
     [ "sdl_present_pending_cursor", "sdl__utils_8h.html#a46ebcb0bcfb15eae4e15a7686891b121", null ],
     [ "sdl_render_framebuffer", "sdl__utils_8h.html#a993a121aa7c5869498703f17d41262ab", null ],
     [ "sdl_render_pending", "sdl__utils_8h.html#afaca887ee6415e1788b0c16df49960a1", null ],

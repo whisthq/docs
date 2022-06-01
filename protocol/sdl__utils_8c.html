@@ -140,6 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4115192313cdb78079bd69ca3fbf5606"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a4115192313cdb78079bd69ca3fbf5606">sdl_set_fullscreen</a> (bool is_fullscreen)</td></tr>
 <tr class="memdesc:a4115192313cdb78079bd69ca3fbf5606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the window's fullscreen state.  <a href="sdl__utils_8c.html#a4115192313cdb78079bd69ca3fbf5606">More...</a><br /></td></tr>
 <tr class="separator:a4115192313cdb78079bd69ca3fbf5606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e63a58901fafbcb255d87124187562d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a9e63a58901fafbcb255d87124187562d">sdl_client_display_notification</a> (const <a class="el" href="structWhistNotification.html">WhistNotification</a> *notif)</td></tr>
+<tr class="memdesc:a9e63a58901fafbcb255d87124187562d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a notification with the frontend.  <a href="sdl__utils_8c.html#a9e63a58901fafbcb255d87124187562d">More...</a><br /></td></tr>
+<tr class="separator:a9e63a58901fafbcb255d87124187562d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38188485497cb37637364f5d785ddb5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a38188485497cb37637364f5d785ddb5f">sdl_update_pending_tasks</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="memdesc:a38188485497cb37637364f5d785ddb5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The above functions may be expensive, and thus may have to be queued up.  <a href="sdl__utils_8c.html#a38188485497cb37637364f5d785ddb5f">More...</a><br /></td></tr>
 <tr class="separator:a38188485497cb37637364f5d785ddb5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,6 +255,32 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">frontend</td><td>The frontend to be destroyed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9e63a58901fafbcb255d87124187562d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e63a58901fafbcb255d87124187562d">&#9670;&nbsp;</a></span>sdl_client_display_notification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_client_display_notification </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structWhistNotification.html">WhistNotification</a> *&#160;</td>
+          <td class="paramname"><em>notif</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display a notification with the frontend. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">notif</td><td>Notification to display. </td></tr>
   </table>
   </dd>
 </dl>

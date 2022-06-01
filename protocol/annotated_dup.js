@@ -25,6 +25,7 @@ var annotated_dup =
     [ "CpuInfo", "structCpuInfo.html", "structCpuInfo" ],
     [ "DebugConsoleOverrideValues", "structDebugConsoleOverrideValues.html", "structDebugConsoleOverrideValues" ],
     [ "DecodedFrameData", "structDecodedFrameData.html", "structDecodedFrameData" ],
+    [ "DesktopNotificationHistoryCompat", "classDesktopNotificationHistoryCompat.html", "classDesktopNotificationHistoryCompat" ],
     [ "DynamicBuffer", "structDynamicBuffer.html", "structDynamicBuffer" ],
     [ "EncodedAudio", "structEncodedAudio.html", "structEncodedAudio" ],
     [ "fec_parms", "structfec__parms.html", "structfec__parms" ],
