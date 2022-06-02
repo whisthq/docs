@@ -34,6 +34,7 @@ var group__threading =
     [ "whist_set_thread_local_storage", "group__threading.html#ga7b14a0e9fa9160f3bf45885fffc825e0", null ],
     [ "whist_set_thread_priority", "group__threading.html#ga72d531550fc8b439130e5d6c118267fe", null ],
     [ "whist_sleep", "group__threading.html#gaf474288fd6c797f86d80dc32476bd86d", null ],
+    [ "whist_timedwait_cond", "group__threading.html#ga0d0582650207a82c52152532c52a4354", null ],
     [ "whist_try_lock_mutex", "group__threading.html#ga3a8aaf7e89673b313c796680ecb61f43", null ],
     [ "whist_unlock_mutex", "group__threading.html#ga4778f118a398fb82e786f6409e67ddf0", null ],
     [ "whist_usleep", "group__threading.html#ga2b664b79c0c865063e476e27f1becde9", null ],

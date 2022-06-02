@@ -29,5 +29,6 @@ var impl_8c =
     [ "virtual_set_titlebar_color", "impl_8c.html#aecb66c460367338cdc5742c3d94d6319", null ],
     [ "virtual_set_window_fullscreen", "impl_8c.html#ab8e3e26acf3a022d1dd1b2884e52a202", null ],
     [ "virtual_update_video", "impl_8c.html#a90d813634ba46b2eabacd6e0dcc0d999", null ],
-    [ "virtual_wait_event", "impl_8c.html#af9f82caea6a996c58ccd9b6f7d8785eb", null ]
+    [ "virtual_wait_event", "impl_8c.html#af9f82caea6a996c58ccd9b6f7d8785eb", null ],
+    [ "events_queue", "impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ]
 ];

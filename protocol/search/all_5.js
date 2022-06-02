@@ -28,7 +28,7 @@ var searchData=
   ['encrypt_5fpacket_558',['encrypt_packet',['../aes_8c.html#ac1a215762e3402688db0c5c892b3f32d',1,'encrypt_packet(void *encrypted_data, AESMetadata *aes_metadata, const void *plaintext_data, int plaintext_len, const void *private_key):&#160;aes.c'],['../aes_8h.html#ac1a215762e3402688db0c5c892b3f32d',1,'encrypt_packet(void *encrypted_data, AESMetadata *aes_metadata, const void *plaintext_data, int plaintext_len, const void *private_key):&#160;aes.c']]],
   ['encrypted_5flen_559',['encrypted_len',['../structAESMetadata.html#a7ce865a4f89b419175cfdf6214bbc8c8',1,'AESMetadata']]],
   ['encrypted_5ftcp_5fpacket_5fbuffer_560',['encrypted_tcp_packet_buffer',['../structTCPContext.html#a560c996f7a2b8ef09ad6b93ea5d0e782',1,'TCPContext']]],
-  ['end_5fdrag_561',['end_drag',['../structFrontendFileDragEvent.html#a0ce051eedf023cf903fb278bffdb7aa4',1,'FrontendFileDragEvent::end_drag()'],['../whist_8h.html#ab9f31af4ec25d97c4d008171f292f060a8f9acda07660d97d6e5df3743740adab',1,'END_DRAG():&#160;whist.h']]],
+  ['end_5fdrag_561',['end_drag',['../structFrontendFileDragEvent.html#a0ce051eedf023cf903fb278bffdb7aa4',1,'FrontendFileDragEvent::end_drag()'],['../events_8h.html#ab9f31af4ec25d97c4d008171f292f060a8f9acda07660d97d6e5df3743740adab',1,'END_DRAG():&#160;events.h']]],
   ['end_5fdrop_562',['end_drop',['../structFrontendFileDropEvent.html#adee488564fd8d957e3c5761a312c8e47',1,'FrontendFileDropEvent']]],
   ['enter_5fwin_5fstring_563',['enter_win_string',['../winapi__input__driver_8c.html#a4a3d50e0d683c62c15523fef3ba8e7a3',1,'winapi_input_driver.c']]],
   ['entire_5fframe_5fnacked_5fid_564',['entire_frame_nacked_id',['../structFrameData.html#ac7bcd8998068cc537307ca8bd0e88a26',1,'FrameData']]],
@@ -44,9 +44,11 @@ var searchData=
   ['estimated_5fjitter_5flatency_5fratio_574',['ESTIMATED_JITTER_LATENCY_RATIO',['../ringbuffer_8c.html#aae1c510758ee20c3ab1c53b1bc895786',1,'ringbuffer.c']]],
   ['event_575',['event',['../structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb',1,'X11CaptureDevice']]],
   ['event_5finfo_576',['event_info',['../structFileMetadata.html#a771dd5a12976a9a0142f36f2d58333fa',1,'FileMetadata::event_info()'],['../structTransferringFile.html#a7a8dd8d494ed61ed36fa0b39b6cd0fca',1,'TransferringFile::event_info()']]],
-  ['ew_5fcursor_5fhash_577',['EW_CURSOR_HASH',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a065fa00c7f5b77c2726146dfe2ee569b',1,'linux_cursor_capture.c']]],
-  ['ewma_5ffactor_578',['EWMA_FACTOR',['../network__algorithm_8c.html#aa3af14bab81dee35828959d2200a6c97',1,'network_algorithm.c']]],
-  ['ewma_5fstats_5fseconds_579',['EWMA_STATS_SECONDS',['../network__algorithm_8c.html#a72f898a5d3f32ed5a20587d3b97383a2',1,'network_algorithm.c']]],
-  ['exiting_580',['exiting',['../structWhistServerState.html#a56cc9b74ca3a7fb2d71dea61d1eecab8',1,'WhistServerState']]],
-  ['extract_5favpackets_5ffrom_5fbuffer_581',['extract_avpackets_from_buffer',['../avpacket__buffer_8c.html#aac33cf958176ec9af2a7dd4df6011ad2',1,'extract_avpackets_from_buffer(uint8_t *buffer, size_t buffer_size, AVPacket **packets):&#160;avpacket_buffer.c'],['../avpacket__buffer_8h.html#aac33cf958176ec9af2a7dd4df6011ad2',1,'extract_avpackets_from_buffer(uint8_t *buffer, size_t buffer_size, AVPacket **packets):&#160;avpacket_buffer.c']]]
+  ['events_2eh_577',['events.h',['../events_8h.html',1,'']]],
+  ['events_5fqueue_578',['events_queue',['../impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e',1,'events_queue():&#160;interface.c'],['../interface_8c.html#ac331598d5bf381dbd25b0294f2cbb77e',1,'events_queue():&#160;interface.c']]],
+  ['ew_5fcursor_5fhash_579',['EW_CURSOR_HASH',['../linux__cursor__capture_8c.html#a9a44d7a1f5d95832e3cbce8676afa768a065fa00c7f5b77c2726146dfe2ee569b',1,'linux_cursor_capture.c']]],
+  ['ewma_5ffactor_580',['EWMA_FACTOR',['../network__algorithm_8c.html#aa3af14bab81dee35828959d2200a6c97',1,'network_algorithm.c']]],
+  ['ewma_5fstats_5fseconds_581',['EWMA_STATS_SECONDS',['../network__algorithm_8c.html#a72f898a5d3f32ed5a20587d3b97383a2',1,'network_algorithm.c']]],
+  ['exiting_582',['exiting',['../structWhistServerState.html#a56cc9b74ca3a7fb2d71dea61d1eecab8',1,'WhistServerState']]],
+  ['extract_5favpackets_5ffrom_5fbuffer_583',['extract_avpackets_from_buffer',['../avpacket__buffer_8c.html#aac33cf958176ec9af2a7dd4df6011ad2',1,'extract_avpackets_from_buffer(uint8_t *buffer, size_t buffer_size, AVPacket **packets):&#160;avpacket_buffer.c'],['../avpacket__buffer_8h.html#aac33cf958176ec9af2a7dd4df6011ad2',1,'extract_avpackets_from_buffer(uint8_t *buffer, size_t buffer_size, AVPacket **packets):&#160;avpacket_buffer.c']]]
 ];

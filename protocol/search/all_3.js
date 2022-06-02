@@ -150,7 +150,7 @@ var searchData=
   ['common_2eh_315',['common.h',['../sdl_2common_8h.html',1,'(Global Namespace)'],['../virtual_2common_8h.html',1,'(Global Namespace)']]],
   ['complete_5fptr_316',['complete_ptr',['../structClipboardActivity.html#a2652ad105332873d06a68c1c04c21fae',1,'ClipboardActivity']]],
   ['compression_5fmethod_317',['compression_method',['../structLodePNGInfo.html#a42bcacd0dbaaea01c04cc87b58ac3c1d',1,'LodePNGInfo']]],
-  ['cond_318',['cond',['../structClientPrivateData.html#afafe737ea25b44585c901a8af0c4d3eb',1,'ClientPrivateData']]],
+  ['cond_318',['cond',['../structClientPrivateData.html#afafe737ea25b44585c901a8af0c4d3eb',1,'ClientPrivateData::cond()'],['../structQueueContext.html#a6d170c8eca42dddf27a227a58f2cbb61',1,'QueueContext::cond()']]],
   ['cond_5fmutex_319',['cond_mutex',['../structClientPrivateData.html#a7259552fe9350ef67cfb82dd52ea60f6',1,'ClientPrivateData']]],
   ['config_320',['config',['../structWhistServerState.html#ad12060ebe2eba5db499018f391a385e0',1,'WhistServerState']]],
   ['congestion_5fcontrol_5fmutex_321',['congestion_control_mutex',['../structUDPContext.html#afd2ba81e36f45e98b73d0754f46a671a',1,'UDPContext']]],

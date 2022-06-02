@@ -110,6 +110,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7231bf8b37487231563ac652392a23b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a7231bf8b37487231563ac652392a23b3">fifo_queue_dequeue_item</a> (<a class="el" href="structQueueContext.html">QueueContext</a> *queue_context, void *item)</td></tr>
 <tr class="memdesc:a7231bf8b37487231563ac652392a23b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dequeue an item from the FIFO queue.  <a href="queue_8h.html#a7231bf8b37487231563ac652392a23b3">More...</a><br /></td></tr>
 <tr class="separator:a7231bf8b37487231563ac652392a23b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562a79d376ae53689cec01185aca42b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a562a79d376ae53689cec01185aca42b6">fifo_queue_dequeue_item_timeout</a> (<a class="el" href="structQueueContext.html">QueueContext</a> *queue_context, void *item, int timeout_ms)</td></tr>
+<tr class="memdesc:a562a79d376ae53689cec01185aca42b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dequeue an item from the FIFO queue.  <a href="queue_8h.html#a562a79d376ae53689cec01185aca42b6">More...</a><br /></td></tr>
+<tr class="separator:a562a79d376ae53689cec01185aca42b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9dd2a1018eaf76f444d5960382797df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ad9dd2a1018eaf76f444d5960382797df">fifo_queue_destroy</a> (<a class="el" href="structQueueContext.html">QueueContext</a> *queue_context)</td></tr>
 <tr class="memdesc:ad9dd2a1018eaf76f444d5960382797df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the FIFO queue.  <a href="queue_8h.html#ad9dd2a1018eaf76f444d5960382797df">More...</a><br /></td></tr>
 <tr class="separator:ad9dd2a1018eaf76f444d5960382797df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,10 +201,57 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Dequeue an item from the FIFO queue. </p>
+<p>If an item is not available, then return immediately without any waiting.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">queue_context</td><td>Queue's context pointer </td></tr>
     <tr><td class="paramname">item</td><td>Pointer to the memory where dequeued item will be stored</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a562a79d376ae53689cec01185aca42b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562a79d376ae53689cec01185aca42b6">&#9670;&nbsp;</a></span>fifo_queue_dequeue_item_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fifo_queue_dequeue_item_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structQueueContext.html">QueueContext</a> *&#160;</td>
+          <td class="paramname"><em>queue_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dequeue an item from the FIFO queue. </p>
+<p>If an item is not available, then wait till a timeout.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue_context</td><td>Queue's context pointer </td></tr>
+    <tr><td class="paramname">item</td><td>Pointer to the memory where dequeued item will be stored </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>The number of milliseconds to wait for.</td></tr>
   </table>
   </dd>
 </dl>
