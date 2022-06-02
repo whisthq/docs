@@ -161,10 +161,10 @@ var NAVTREEINDEX =
 "structFECDecoder.html#aeba869e1d420ae2ec0eeac76a082891f",
 "structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253",
 "structRingBuffer.html#acd9677b93af3bb750a85c88b6c3a3f21",
-"structWhistCursorInfo.html#ac402f1d1a0939f0d128fea3baaed6a0f",
-"structucvector.html",
-"whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4",
-"window__info_8h.html#a03ff5688ba3a77c405bd696b923f9d2d"
+"structWhistCursorInfo.html#ab3f1c4f53af0601a98be9fabe468f653",
+"structgf256__ctx.html#afed143b74aef038416642fc13fb74ce9",
+"whist_2network_2network_8h.html#afdbb9d84bd17efd2ae7290e664992c48",
+"window__info_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

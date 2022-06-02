@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structgf256__ctx.html#afed143b74aef038416642fc13fb74ce9":[13,0,48,1],
 "structucvector.html":[13,0,107],
 "structucvector.html#a235168baac13f0c78bd3e309dc170f90":[13,0,107,0],
 "structucvector.html#a27c99c34de0c5b3ca0c242d402c69499":[13,0,107,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "whist_2network_2network_8h.html#adfb72e346badf093529404e6d20f8d97":[14,0,2,9,1,38],
 "whist_2network_2network_8h.html#aee2bb0dc7d4a1332837ade162b6a83e8":[14,0,2,9,1,36],
 "whist_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339":[14,0,2,9,1,29],
-"whist_2network_2network_8h.html#afaa0498422243ccb322408af4fe14214":[14,0,2,9,1,17],
-"whist_2network_2network_8h.html#afdbb9d84bd17efd2ae7290e664992c48":[14,0,2,9,1,7]
+"whist_2network_2network_8h.html#afaa0498422243ccb322408af4fe14214":[14,0,2,9,1,17]
 };

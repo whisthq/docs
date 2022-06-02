@@ -208,7 +208,8 @@ var NAVTREEINDEX13 =
 "structVideoFrame.html#aef3314aab1ba78f86d87b04395658de6":[13,0,116,6],
 "structVirtualFrontendContext.html":[13,0,117],
 "structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f":[13,0,117,0],
-"structVirtualFrontendContext.html#a17f6444fbf22fb30020f153b1e2b50b5":[13,0,117,3],
+"structVirtualFrontendContext.html#a17f6444fbf22fb30020f153b1e2b50b5":[13,0,117,4],
+"structVirtualFrontendContext.html#a4ee3508b36e432c55923a65a2a84ed37":[13,0,117,3],
 "structVirtualFrontendContext.html#a5771119a7347add61da98aa091eaf98f":[13,0,117,1],
 "structVirtualFrontendContext.html#acb5aedd86c6db4564a6c28624d141a52":[13,0,117,2],
 "structWhistClientMessage.html":[13,0,118],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "structWhistCursorInfo.html#a58b87b58af4f44806ee7ae0423c3b6f0":[13,0,120,5],
 "structWhistCursorInfo.html#a77b762c1cfae190d948be08f1b646c42":[13,0,120,3],
 "structWhistCursorInfo.html#a97c4457f2bbfe7ed6492af81e7e0bf42":[13,0,120,2],
-"structWhistCursorInfo.html#ab13be0969c797eb4b96d1d0f04137b83":[13,0,120,7],
-"structWhistCursorInfo.html#ab3f1c4f53af0601a98be9fabe468f653":[13,0,120,6]
+"structWhistCursorInfo.html#ab13be0969c797eb4b96d1d0f04137b83":[13,0,120,7]
 };
