@@ -1,5 +1,9 @@
 var NAVTREEINDEX11 =
 {
+"structFECDecoder.html#a78be5ff74069feea4d605ad00ddd37aa":[13,0,29,8],
+"structFECDecoder.html#a9a39bb8c4dee37820b93ba787b821a62":[13,0,29,9],
+"structFECDecoder.html#abc0a2cb0b09cdfe7d75d53466985f7bf":[13,0,29,4],
+"structFECDecoder.html#acd16212d15fcbb06495df6eaa898b036":[13,0,29,5],
 "structFECDecoder.html#aeba869e1d420ae2ec0eeac76a082891f":[13,0,29,1],
 "structFECDecoder.html#aed01be6046b4488b7efca00abeb4cf38":[13,0,29,6],
 "structFECDecoder.html#afd81ba4e15377d47777f5e442dcdcfb9":[13,0,29,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX11 =
 "structLodePNGBitWriter.html#aeabd9ce60873a85f587df7df46548d04":[13,0,62,1],
 "structLodePNGColorMode.html":[13,0,63],
 "structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50":[13,0,63,5],
-"structLodePNGColorMode.html#a407557f056168682d9319aeb60866dcc":[13,0,63,7],
-"structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[13,0,63,1],
-"structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[13,0,63,6],
-"structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[13,0,63,2],
-"structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[13,0,63,3]
+"structLodePNGColorMode.html#a407557f056168682d9319aeb60866dcc":[13,0,63,7]
 };

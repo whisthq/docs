@@ -28,6 +28,7 @@ var whist_8h =
     [ "DEFAULT_DPI", "whist_8h.html#a794e0417bdd7ebdad81c59a929932761", null ],
     [ "DEFAULT_HEX_PRIVATE_KEY", "whist_8h.html#a151518969977796d7b0c7d40e9ced62f", null ],
     [ "DISABLED_ENCODER_FPS", "whist_8h.html#aa432070c422ef782d49e2dc35b8a6e56", null ],
+    [ "EMBEDDED_OBJECT", "whist_8h.html#aad792d60503fe2c4fc109e97ba2ce14a", null ],
     [ "INPUT_DRIVER", "whist_8h.html#a514734c0c6acc3c2f2076323d45676d8", null ],
     [ "LOG_AUDIO", "whist_8h.html#aba13441b998b179fbf9483152582b6e2", null ],
     [ "LOG_CPU_USAGE", "whist_8h.html#a32364be58c0044b63dc47aeb962254b4", null ],

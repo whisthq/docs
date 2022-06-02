@@ -137,8 +137,8 @@ Functions</h2></td></tr>
 <tr class="separator:af73d8ec34537d30a51a96c4301a0c199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a851ee221340e0989dd51a70640edec98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a851ee221340e0989dd51a70640edec98">virtual_get_keyboard_state</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const uint8_t **key_state, int *key_count, int *mod_state)</td></tr>
 <tr class="separator:a851ee221340e0989dd51a70640edec98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0720fdb88adf4be7afbb7ab386057880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a0720fdb88adf4be7afbb7ab386057880">virtual_paint_png</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const char *filename, int <a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, int <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, int x, int y)</td></tr>
-<tr class="separator:a0720fdb88adf4be7afbb7ab386057880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50980b4a3bb5dcc3c902453ecb9c4e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#ad50980b4a3bb5dcc3c902453ecb9c4e3">virtual_paint_png</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const uint8_t *data, size_t data_size, int <a class="el" href="network__algorithm_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a>, int <a class="el" href="network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a>, int x, int y)</td></tr>
+<tr class="separator:ad50980b4a3bb5dcc3c902453ecb9c4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae16a6221377e6a39915d8143d5bd75df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#ae16a6221377e6a39915d8143d5bd75df">virtual_paint_solid</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *color)</td></tr>
 <tr class="separator:ae16a6221377e6a39915d8143d5bd75df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90d813634ba46b2eabacd6e0dcc0d999"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a90d813634ba46b2eabacd6e0dcc0d999">virtual_update_video</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, AVFrame *frame)</td></tr>
@@ -584,8 +584,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0720fdb88adf4be7afbb7ab386057880"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0720fdb88adf4be7afbb7ab386057880">&#9670;&nbsp;</a></span>virtual_paint_png()</h2>
+<a id="ad50980b4a3bb5dcc3c902453ecb9c4e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad50980b4a3bb5dcc3c902453ecb9c4e3">&#9670;&nbsp;</a></span>virtual_paint_png()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -599,8 +599,14 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>data_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

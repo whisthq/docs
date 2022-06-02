@@ -16,7 +16,7 @@ var impl_8c =
     [ "virtual_interrupt", "impl_8c.html#a21fdc3c4c0f48b0d363d3411edd18cd4", null ],
     [ "virtual_is_window_visible", "impl_8c.html#a4183abfc146dd206c7da6ef8d3ba8b57", null ],
     [ "virtual_open_audio", "impl_8c.html#a17634607cbf37432d7e46ce1ee540073", null ],
-    [ "virtual_paint_png", "impl_8c.html#a0720fdb88adf4be7afbb7ab386057880", null ],
+    [ "virtual_paint_png", "impl_8c.html#ad50980b4a3bb5dcc3c902453ecb9c4e3", null ],
     [ "virtual_paint_solid", "impl_8c.html#ae16a6221377e6a39915d8143d5bd75df", null ],
     [ "virtual_paint_video", "impl_8c.html#a1c1e516797a3170a0e156501fa62bbdb", null ],
     [ "virtual_poll_event", "impl_8c.html#a76e9678ec2f55bb73718785723404ea5", null ],

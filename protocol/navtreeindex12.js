@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[13,0,63,1],
+"structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[13,0,63,6],
+"structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[13,0,63,2],
+"structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[13,0,63,3],
 "structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[13,0,63,0],
 "structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6":[13,0,63,4],
 "structLodePNGColorStats.html":[13,0,64],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "structRingBuffer.html#a84793599d9ac862828c7c130a6593466":[13,0,90,1],
 "structRingBuffer.html#a86b2c0292a3058f1fff12cfd4d355556":[13,0,90,3],
 "structRingBuffer.html#a98690129a3aadb85db96a39252d01a9f":[13,0,90,22],
-"structRingBuffer.html#aaad9ec2694ba2cb33f5b9abc0bdb00f6":[13,0,90,18],
-"structRingBuffer.html#ab14941089c8847eb375cbaaa66c82eea":[13,0,90,9],
-"structRingBuffer.html#ac10e312643f764cc1ce77fa1e01fe830":[13,0,90,16],
-"structRingBuffer.html#ac44f73cf4dcb49ad0bbabc3fca4f1fd4":[13,0,90,24],
-"structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717":[13,0,90,6]
+"structRingBuffer.html#aaad9ec2694ba2cb33f5b9abc0bdb00f6":[13,0,90,18]
 };

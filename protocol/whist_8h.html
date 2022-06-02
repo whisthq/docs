@@ -271,8 +271,10 @@ Macros</h2></td></tr>
 <tr class="separator:ac4841e192e48d095904d7d6a90e8801f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae969438a57a86fddf0cf53106c9b6b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aae969438a57a86fddf0cf53106c9b6b4">AUDIO_FREQUENCY</a>&#160;&#160;&#160;48000</td></tr>
 <tr class="separator:aae969438a57a86fddf0cf53106c9b6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad792d60503fe2c4fc109e97ba2ce14a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aad792d60503fe2c4fc109e97ba2ce14a">EMBEDDED_OBJECT</a>(object_name)</td></tr>
+<tr class="memdesc:aad792d60503fe2c4fc109e97ba2ce14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global constructor function.  <a href="whist_8h.html#aad792d60503fe2c4fc109e97ba2ce14a">More...</a><br /></td></tr>
+<tr class="separator:aad792d60503fe2c4fc109e97ba2ce14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06727ebbc110e7071dc8090ced33373"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">MS_IN_SECOND</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="memdesc:ab06727ebbc110e7071dc8090ced33373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global constructor function.  <a href="whist_8h.html#ab06727ebbc110e7071dc8090ced33373">More...</a><br /></td></tr>
 <tr class="separator:ab06727ebbc110e7071dc8090ced33373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a726a4c9e22de3eff123ba0ada25d7d4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#a726a4c9e22de3eff123ba0ada25d7d4c">US_IN_SECOND</a>&#160;&#160;&#160;1000000</td></tr>
 <tr class="separator:a726a4c9e22de3eff123ba0ada25d7d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -769,6 +771,30 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aad792d60503fe2c4fc109e97ba2ce14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad792d60503fe2c4fc109e97ba2ce14a">&#9670;&nbsp;</a></span>EMBEDDED_OBJECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EMBEDDED_OBJECT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">object_name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">extern</span> <span class="keyword">const</span> uint8_t object_name[]; \</div>
+<div class="line">    extern <span class="keyword">const</span> <span class="keywordtype">size_t</span> object_name##_size;</div>
+</div><!-- fragment -->
+<p>Global constructor function. </p>
+<p>This defines a function which will run before <a class="el" href="client_2main_8c.html#ac0f2228420376f4db7e1274f2b41667c">main()</a> is called whenever the object containing it has been built into a program. Embedded object declaration.</p>
+<p>Declares the data array and size of an object embedded from a file by calling embed_file(file_name object_name) in CMake. </p>
+
+</div>
+</div>
 <a id="a514734c0c6acc3c2f2076323d45676d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a514734c0c6acc3c2f2076323d45676d8">&#9670;&nbsp;</a></span>INPUT_DRIVER</h2>
 
@@ -1172,9 +1198,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Global constructor function. </p>
-<p>This defines a function which will run before <a class="el" href="client_2main_8c.html#ac0f2228420376f4db7e1274f2b41667c">main()</a> is called whenever the object containing it has been built into a program. </p>
 
 </div>
 </div>

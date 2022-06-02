@@ -22,7 +22,7 @@ var frontend_8c =
     [ "whist_frontend_interrupt", "frontend_8c.html#a98eca1faaf4b82714c64e89c2d12f271", null ],
     [ "whist_frontend_is_window_visible", "frontend_8c.html#aecfd27357d1e6807ef0a4d0fe1fd7b86", null ],
     [ "whist_frontend_open_audio", "frontend_8c.html#a25cefb4c559969f05f812b456affed4a", null ],
-    [ "whist_frontend_paint_png", "frontend_8c.html#ac41e532e8f120e77a9088de5f8ff27f6", null ],
+    [ "whist_frontend_paint_png", "frontend_8c.html#ae1fe3e16cf5a52334734dfdab1c13baa", null ],
     [ "whist_frontend_paint_solid", "frontend_8c.html#a4bdc8196717da9b736b53370d3da8cb5", null ],
     [ "whist_frontend_paint_video", "frontend_8c.html#abedce753e51bab49e7c9e185b3aec08d", null ],
     [ "whist_frontend_poll_event", "frontend_8c.html#a8bf0046d123c32162a35531e94bf57ec", null ],
