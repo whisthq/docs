@@ -1,7 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"winapi__input__driver_8c.html#a4a3d50e0d683c62c15523fef3ba8e7a3":[14,0,2,7,6,5],
-"winapi__input__driver_8c.html#a7f5cf036b3e33bbbf8dae8893fbcd83e":[14,0,2,7,6,2],
 "winapi__input__driver_8c.html#a9bbb820890306899ed9271a555fa0ba8":[14,0,2,7,6,4],
 "winapi__input__driver_8c.html#ab57f18ba31c22febfe43ecf4e82dbdc4":[14,0,2,7,6,6],
 "winapi__input__driver_8c.html#aba49b09f8d4131835017618fc0250711":[14,0,2,7,6,3],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"structRingBuffer.html#ab14941089c8847eb375cbaaa66c82eea":[13,0,90,9],
 "structRingBuffer.html#ac10e312643f764cc1ce77fa1e01fe830":[13,0,90,16],
 "structRingBuffer.html#ac44f73cf4dcb49ad0bbabc3fca4f1fd4":[13,0,90,24],
 "structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717":[13,0,90,6],
@@ -165,7 +164,6 @@ var NAVTREEINDEX13 =
 "structVideoDecoder.html#a76aaea9423c65a4ed985d8c92bb8709c":[13,0,113,0],
 "structVideoDecoder.html#a82a30f5137d2829eeb2ee326700b52f0":[13,0,113,5],
 "structVideoDecoder.html#a948b20c5445714f816a398767777a5db":[13,0,113,2],
-"structVideoDecoder.html#ab375188aa45f13bc3a7e80b6a42ac939":[13,0,113,11],
 "structVideoDecoder.html#ac03ece0390b91e92584599bc9fedee52":[13,0,113,3],
 "structVideoDecoder.html#ad8958e312b1ad0b3b66b3a89cb6d7ef1":[13,0,113,8],
 "structVideoDecoder.html#add6c889a76c686df01eef9b380a20c4d":[13,0,113,7],
@@ -175,10 +173,10 @@ var NAVTREEINDEX13 =
 "structVideoDecoderParams.html":[13,0,114],
 "structVideoDecoderParams.html#a0b932ee6bef13cc857d5a47aaa2ebf67":[13,0,114,0],
 "structVideoDecoderParams.html#a141e17c019124d1df41d676d8772aeee":[13,0,114,2],
+"structVideoDecoderParams.html#a1898b1cc41f34e499ba8204712d9d269":[13,0,114,4],
 "structVideoDecoderParams.html#a6907d62f119e66dfdf76a283a32ef8b9":[13,0,114,5],
 "structVideoDecoderParams.html#a986ee605cb5cd58d4daef148bf1f633b":[13,0,114,1],
-"structVideoDecoderParams.html#aea140584325fab5b63066eb89c4860ca":[13,0,114,3],
-"structVideoDecoderParams.html#af8d7322f7adcdf7bd4037aedef50cf30":[13,0,114,4],
+"structVideoDecoderParams.html#af8d7322f7adcdf7bd4037aedef50cf30":[13,0,114,3],
 "structVideoEncoder.html":[13,0,115],
 "structVideoEncoder.html#a00fce726b4e64667934a7f5c35c9f7f8":[13,0,115,6],
 "structVideoEncoder.html#a070dd663dc802905ca534022d6d1c5e9":[13,0,115,14],
@@ -249,5 +247,7 @@ var NAVTREEINDEX13 =
 "structWhistCommandLineOption.html#ae090083bba23eae2c5da9ef943fab5a2":[11,4,0,2],
 "structWhistCommandLineOption.html#afd5913d2ac5b71b1b7402f77f3e5f37a":[11,4,0,9],
 "structWhistCursorInfo.html":[13,0,120],
-"structWhistCursorInfo.html#a4f58cbac81bccfbd27f81f8270d43186":[13,0,120,8]
+"structWhistCursorInfo.html#a4f58cbac81bccfbd27f81f8270d43186":[13,0,120,8],
+"structWhistCursorInfo.html#a58b87b58af4f44806ee7ae0423c3b6f0":[13,0,120,5],
+"structWhistCursorInfo.html#a77b762c1cfae190d948be08f1b646c42":[13,0,120,3]
 };

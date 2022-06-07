@@ -107,9 +107,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a986ee605cb5cd58d4daef148bf1f633b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoderParams.html#a986ee605cb5cd58d4daef148bf1f633b">hardware_decode</a></td></tr>
 <tr class="memdesc:a986ee605cb5cd58d4daef148bf1f633b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether hardware decode should be used.  <a href="structVideoDecoderParams.html#a986ee605cb5cd58d4daef148bf1f633b">More...</a><br /></td></tr>
 <tr class="separator:a986ee605cb5cd58d4daef148bf1f633b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea140584325fab5b63066eb89c4860ca"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoderParams.html#aea140584325fab5b63066eb89c4860ca">hardware_output_format</a></td></tr>
-<tr class="memdesc:aea140584325fab5b63066eb89c4860ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware format to use for output.  <a href="structVideoDecoderParams.html#aea140584325fab5b63066eb89c4860ca">More...</a><br /></td></tr>
-<tr class="separator:aea140584325fab5b63066eb89c4860ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1898b1cc41f34e499ba8204712d9d269"><td class="memItemLeft" align="right" valign="top">enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoderParams.html#a1898b1cc41f34e499ba8204712d9d269">renderer_output_format</a></td></tr>
+<tr class="memdesc:a1898b1cc41f34e499ba8204712d9d269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware format to use for output.  <a href="structVideoDecoderParams.html#a1898b1cc41f34e499ba8204712d9d269">More...</a><br /></td></tr>
+<tr class="separator:a1898b1cc41f34e499ba8204712d9d269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141e17c019124d1df41d676d8772aeee"><td class="memItemLeft" align="right" valign="top">AVBufferRef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVideoDecoderParams.html#a141e17c019124d1df41d676d8772aeee">hardware_device</a></td></tr>
 <tr class="memdesc:a141e17c019124d1df41d676d8772aeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware device to use.  <a href="structVideoDecoderParams.html#a141e17c019124d1df41d676d8772aeee">More...</a><br /></td></tr>
 <tr class="separator:a141e17c019124d1df41d676d8772aeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,23 +166,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="aea140584325fab5b63066eb89c4860ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea140584325fab5b63066eb89c4860ca">&#9670;&nbsp;</a></span>hardware_output_format</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum AVPixelFormat VideoDecoderParams::hardware_output_format</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Hardware format to use for output. </p>
-<p>This indicates that the caller can support this format directly, so frames of this format should be returned without downloading them to normal frames in CPU memory. If unset then all hardware formats will be downloaded. </p>
-
-</div>
-</div>
 <a id="af8d7322f7adcdf7bd4037aedef50cf30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8d7322f7adcdf7bd4037aedef50cf30">&#9670;&nbsp;</a></span>height</h2>
 
@@ -196,6 +179,23 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Frame height in pixels. </p>
+
+</div>
+</div>
+<a id="a1898b1cc41f34e499ba8204712d9d269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1898b1cc41f34e499ba8204712d9d269">&#9670;&nbsp;</a></span>renderer_output_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum AVPixelFormat VideoDecoderParams::renderer_output_format</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hardware format to use for output. </p>
+<p>This indicates that the caller can render this format directly, so frames of this format can be returned without downloading them to normal frames in CPU memory. If unset then all hardware formats will be downloaded. </p>
 
 </div>
 </div>

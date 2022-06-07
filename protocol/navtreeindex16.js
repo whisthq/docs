@@ -1,7 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"whist_2network_2network_8h.html#adfb72e346badf093529404e6d20f8d97":[14,0,2,9,1,38],
-"whist_2network_2network_8h.html#aee2bb0dc7d4a1332837ade162b6a83e8":[14,0,2,9,1,36],
 "whist_2network_2network_8h.html#af30fe25b1472f12966debaa6535b4339":[14,0,2,9,1,29],
 "whist_2network_2network_8h.html#afaa0498422243ccb322408af4fe14214":[14,0,2,9,1,17],
 "whist_2network_2network_8h.html#afdbb9d84bd17efd2ae7290e664992c48":[14,0,2,9,1,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX16 =
 "whist__memory_8h_source.html":[14,0,2,2,11],
 "win__clipboard_8c.html":[14,0,2,1,7],
 "winapi__input__driver_8c.html":[14,0,2,7,6],
-"winapi__input__driver_8c.html#a2c1317c0c5e8cd8590e4212d12136017":[14,0,2,7,6,1]
+"winapi__input__driver_8c.html#a2c1317c0c5e8cd8590e4212d12136017":[14,0,2,7,6,1],
+"winapi__input__driver_8c.html#a4a3d50e0d683c62c15523fef3ba8e7a3":[14,0,2,7,6,5],
+"winapi__input__driver_8c.html#a7f5cf036b3e33bbbf8dae8893fbcd83e":[14,0,2,7,6,2]
 };

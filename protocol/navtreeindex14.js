@@ -1,7 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"structWhistCursorInfo.html#a58b87b58af4f44806ee7ae0423c3b6f0":[13,0,120,5],
-"structWhistCursorInfo.html#a77b762c1cfae190d948be08f1b646c42":[13,0,120,3],
 "structWhistCursorInfo.html#a97c4457f2bbfe7ed6492af81e7e0bf42":[13,0,120,2],
 "structWhistCursorInfo.html#ab13be0969c797eb4b96d1d0f04137b83":[13,0,120,7],
 "structWhistCursorInfo.html#ab3f1c4f53af0601a98be9fabe468f653":[13,0,120,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX14 =
 "structgf256__ctx.html#a2cf5195ffcbecde4382156f10cc04c88":[13,0,48,9],
 "structgf256__ctx.html#a38e1b6bea256caf90e23fd804094de82":[13,0,48,11],
 "structgf256__ctx.html#a56a509e59cbbe12fb2b4a27b822f3bdc":[13,0,48,3],
-"structgf256__ctx.html#a75c7445f79be203175100469bc0581e8":[13,0,48,8]
+"structgf256__ctx.html#a75c7445f79be203175100469bc0581e8":[13,0,48,8],
+"structgf256__ctx.html#a8203bb0f34a2567885860035a7c2c5bf":[13,0,48,6],
+"structgf256__ctx.html#a8896dcf0144f4a4097ccfe0bae92b95a":[13,0,48,4]
 };
