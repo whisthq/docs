@@ -123,6 +123,10 @@ Functions</h2></td></tr>
 <tr class="separator:af96c9fa60e6288f23fcd820cb9fc4d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59873548e7715f62aced0e19d12f9390"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol__analyzer_8h.html#a59873548e7715f62aced0e19d12f9390">whist_analyzer_record_stream_reset</a> (int type, int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>)</td></tr>
 <tr class="separator:a59873548e7715f62aced0e19d12f9390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187c8c8e3c7bee7a8319a7de224715cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol__analyzer_8h.html#a187c8c8e3c7bee7a8319a7de224715cc">whist_analyzer_record_current_fec_info</a> (int type, double base_fec_ratio, double extra_fec_ratio, double total_fec_ratio_original, double total_fec_ratio)</td></tr>
+<tr class="separator:a187c8c8e3c7bee7a8319a7de224715cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e5843432a2e33ab4dd17dfd1e10b6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol__analyzer_8h.html#a35e5843432a2e33ab4dd17dfd1e10b6a">whist_analyzer_record_current_cc_info</a> (int type, double packet_loss, double latency, int bitrate, int incoming_bitrate)</td></tr>
+<tr class="separator:a35e5843432a2e33ab4dd17dfd1e10b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -162,6 +166,98 @@ Usage</h1>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35e5843432a2e33ab4dd17dfd1e10b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e5843432a2e33ab4dd17dfd1e10b6a">&#9670;&nbsp;</a></span>whist_analyzer_record_current_cc_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_analyzer_record_current_cc_info </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>packet_loss</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>latency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bitrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>incoming_bitrate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a187c8c8e3c7bee7a8319a7de224715cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187c8c8e3c7bee7a8319a7de224715cc">&#9670;&nbsp;</a></span>whist_analyzer_record_current_fec_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_analyzer_record_current_fec_info </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>base_fec_ratio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>extra_fec_ratio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>total_fec_ratio_original</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>total_fec_ratio</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -143,6 +143,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aa96fb53e52299e011cf2bf7299b849c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#aa96fb53e52299e011cf2bf7299b849c8">destroy_fec_decoder</a> (<a class="el" href="structFECDecoder.html">FECDecoder</a> *fec_decoder)</td></tr>
 <tr class="memdesc:aa96fb53e52299e011cf2bf7299b849c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an FEC Decoder.  <a href="fec_8h.html#aa96fb53e52299e011cf2bf7299b849c8">More...</a><br /></td></tr>
 <tr class="separator:aa96fb53e52299e011cf2bf7299b849c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fb696e0dc1e9006c443fd36126bb44"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#ad1fb696e0dc1e9006c443fd36126bb44">fec_ratio_to_fec_factor</a> (double fec_ratio)</td></tr>
+<tr class="memdesc:ad1fb696e0dc1e9006c443fd36126bb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conver given fec_ratio to fec_factor.  <a href="fec_8h.html#ad1fb696e0dc1e9006c443fd36126bb44">More...</a><br /></td></tr>
+<tr class="separator:ad1fb696e0dc1e9006c443fd36126bb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee73a7605a15e74c76080a7cacbe234"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fec_8h.html#a8ee73a7605a15e74c76080a7cacbe234">fec_factor_to_fec_ratio</a> (double fec_times)</td></tr>
+<tr class="memdesc:a8ee73a7605a15e74c76080a7cacbe234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conver given fec_factor to fec_ratio.  <a href="fec_8h.html#a8ee73a7605a15e74c76080a7cacbe234">More...</a><br /></td></tr>
+<tr class="separator:a8ee73a7605a15e74c76080a7cacbe234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -474,6 +480,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8ee73a7605a15e74c76080a7cacbe234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee73a7605a15e74c76080a7cacbe234">&#9670;&nbsp;</a></span>fec_factor_to_fec_ratio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double fec_factor_to_fec_ratio </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fec_times</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conver given fec_factor to fec_ratio. </p>
+<dl class="section return"><dt>Returns</dt><dd>the fec_ratio </dd></dl>
+
+</div>
+</div>
 <a id="a68e2a970d7c3d4b81353174da6809b7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68e2a970d7c3d4b81353174da6809b7a">&#9670;&nbsp;</a></span>fec_get_decoded_buffer()</h2>
 
@@ -555,6 +582,31 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The two arrays given should be allocated to be of size <code>num_real_buffers</code> + <code>num_fec_buffers</code>. Additionally, the data pointed to by the <code>void*</code>'s will be alive for as long as the FEC encoder is alive. </dd></dl>
+
+</div>
+</div>
+<a id="ad1fb696e0dc1e9006c443fd36126bb44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1fb696e0dc1e9006c443fd36126bb44">&#9670;&nbsp;</a></span>fec_ratio_to_fec_factor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double fec_ratio_to_fec_factor </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fec_ratio</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conver given fec_ratio to fec_factor. </p>
+<dl class="section return"><dt>Returns</dt><dd>the fec_factor </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>1. fec factor is defined as num_fec_packet/num_orignal_packet<ol type="1">
+<li>two fec factors can be meaningfully multiplied together </li>
+</ol>
+</dd></dl>
 
 </div>
 </div>

@@ -11,9 +11,14 @@ var network__algorithm_8h =
     [ "OVERUSE_TIME_THRESHOLD_IN_SEC", "network__algorithm_8h.html#a7e3e9fa66062f28a7bd133ae3fa7ffad", null ],
     [ "STARTING_BITRATE_PER_PIXEL", "network__algorithm_8h.html#ae222bb0ef7f01c6582a99910b013606d", null ],
     [ "VIDEO_FEC_RATIO", "network__algorithm_8h.html#a3e3802f5df58b3f07afb460f7b075eaa", null ],
+    [ "WccOp", "network__algorithm_8h.html#a39ef8d2688f24968d0744d9bb7cea4c7", [
+      [ "WCC_INCREASE_BWD", "network__algorithm_8h.html#a39ef8d2688f24968d0744d9bb7cea4c7af870eb51868b44bc5ad4613d9542a73f", null ],
+      [ "WCC_DECREASE_BWD", "network__algorithm_8h.html#a39ef8d2688f24968d0744d9bb7cea4c7a0f3c816b9b1d6db92486db21d307aa35", null ],
+      [ "WCC_NO_OP", "network__algorithm_8h.html#a39ef8d2688f24968d0744d9bb7cea4c7a9266c33ff07f5631eb27b926aa77a689", null ]
+    ] ],
     [ "get_default_network_settings", "network__algorithm_8h.html#ad1bf4e1ceafb2cefbb54eb37c85336e4", null ],
     [ "get_starting_network_settings", "network__algorithm_8h.html#a3164d3eec2e8fbcedab1f454e2442483", null ],
     [ "network_algo_set_dpi", "network__algorithm_8h.html#a759113a57a57b0f3b1e31ee7615067d5", null ],
-    [ "whist_congestion_controller", "network__algorithm_8h.html#ac062bb5d4fb81d7536d67be9961d4f35", null ],
+    [ "whist_congestion_controller", "network__algorithm_8h.html#ac5bd73cb56a9bd6311987644acb904b2", null ],
     [ "whist_congestion_controller_handle_severe_congestion", "network__algorithm_8h.html#a111bf6874a7c71f813efb6ad5ae9959c", null ]
 ];

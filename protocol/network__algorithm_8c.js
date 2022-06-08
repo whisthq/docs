@@ -24,7 +24,7 @@ var network__algorithm_8c =
     [ "get_default_network_settings", "network__algorithm_8c.html#a8d6eec9a8b9f1a0f058443026cbab210", null ],
     [ "get_starting_network_settings", "network__algorithm_8c.html#a3164d3eec2e8fbcedab1f454e2442483", null ],
     [ "network_algo_set_dpi", "network__algorithm_8c.html#ab99c00916505d0add8934a3d218f40d5", null ],
-    [ "whist_congestion_controller", "network__algorithm_8c.html#ac062bb5d4fb81d7536d67be9961d4f35", null ],
+    [ "whist_congestion_controller", "network__algorithm_8c.html#ac5bd73cb56a9bd6311987644acb904b2", null ],
     [ "whist_congestion_controller_handle_severe_congestion", "network__algorithm_8c.html#a111bf6874a7c71f813efb6ad5ae9959c", null ],
     [ "insufficient_bandwidth", "network__algorithm_8c.html#a06471a2a38199e688f7d64c720b929b8", null ],
     [ "output_height", "network__algorithm_8c.html#a2a57d774e71166271bbff6c515111104", null ],

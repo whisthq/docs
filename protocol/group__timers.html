@@ -125,6 +125,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga36b4df196d108adb68d0096d720915cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga9d947f0fa2fb7e03ff678e83295a86b3">timestamp_us</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#ga36b4df196d108adb68d0096d720915cf">current_time_us</a> (void)</td></tr>
 <tr class="memdesc:ga36b4df196d108adb68d0096d720915cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of microseconds elapsed since epoch.  <a href="group__timers.html#ga36b4df196d108adb68d0096d720915cf">More...</a><br /></td></tr>
 <tr class="separator:ga36b4df196d108adb68d0096d720915cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga337a1ca1d1cdaaa601d490c33d348cd6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__timers.html#ga337a1ca1d1cdaaa601d490c33d348cd6">get_timestamp_sec</a> (void)</td></tr>
+<tr class="memdesc:ga337a1ca1d1cdaaa601d490c33d348cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a comparable timestamp in sec.  <a href="group__timers.html#ga337a1ca1d1cdaaa601d490c33d348cd6">More...</a><br /></td></tr>
+<tr class="separator:ga337a1ca1d1cdaaa601d490c33d348cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Whist API for timers. </p>
@@ -263,6 +266,7 @@ Functions</h2></td></tr>
 
 <p>Returns the number of microseconds elapsed since epoch. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of microseconds elapsed since epoch </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This value returned by this function is based on wallclock time, it's not aim for comparing how much time has pased </dd></dl>
 
 </div>
 </div>
@@ -290,6 +294,28 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Seconds since the timer was started. </dd></dl>
+
+</div>
+</div>
+<a id="ga337a1ca1d1cdaaa601d490c33d348cd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga337a1ca1d1cdaaa601d490c33d348cd6">&#9670;&nbsp;</a></span>get_timestamp_sec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double get_timestamp_sec </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a comparable timestamp in sec. </p>
+<dl class="section return"><dt>Returns</dt><dd>Timestamp in sec. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The point of this function is to get a comparable timestamp, the absolute value is not important. But for a well defined behavior: The first call of this function returns zero, following calls run the time past in sec since first call. </dd></dl>
 
 </div>
 </div>

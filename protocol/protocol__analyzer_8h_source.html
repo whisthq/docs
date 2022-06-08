@@ -149,23 +149,34 @@ $(document).ready(function(){initNavTree('protocol__analyzer_8h_source.html','')
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// record a stream_reset, with the id as greatest_faild_id</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="protocol__analyzer_8h.html#a59873548e7715f62aced0e19d12f9390">whist_analyzer_record_stream_reset</a>(<span class="keywordtype">int</span> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// only expose this function to c++</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C++&quot;</span> {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;std::string whist_analyzer_get_report(<span class="keywordtype">int</span> type, <span class="keywordtype">int</span> num, <span class="keywordtype">int</span> skip, <span class="keywordtype">bool</span> more_format);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif  // PROTOCOL_ANALYZER_H</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// record current fec info</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="protocol__analyzer_8h.html#a187c8c8e3c7bee7a8319a7de224715cc">whist_analyzer_record_current_fec_info</a>(<span class="keywordtype">int</span> type, <span class="keywordtype">double</span> base_fec_ratio, <span class="keywordtype">double</span> extra_fec_ratio,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                            <span class="keywordtype">double</span> total_fec_ratio_original,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                            <span class="keywordtype">double</span> total_fec_ratio);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// record current congestion control info</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> <a class="code" href="protocol__analyzer_8h.html#a35e5843432a2e33ab4dd17dfd1e10b6a">whist_analyzer_record_current_cc_info</a>(<span class="keywordtype">int</span> type, <span class="keywordtype">double</span> packet_loss, <span class="keywordtype">double</span> latency,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                           <span class="keywordtype">int</span> bitrate, <span class="keywordtype">int</span> incoming_bitrate);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// only expose this function to c++</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C++&quot;</span> {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;std::string whist_analyzer_get_report(<span class="keywordtype">int</span> type, <span class="keywordtype">int</span> num, <span class="keywordtype">int</span> skip, <span class="keywordtype">bool</span> more_format);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif  // PROTOCOL_ANALYZER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aprotocol__analyzer_8h_html_a20800bd85e7ebd5e46a537e908b8fb78"><div class="ttname"><a href="protocol__analyzer_8h.html#a20800bd85e7ebd5e46a537e908b8fb78">whist_analyzer_record_skip</a></div><div class="ttdeci">void whist_analyzer_record_skip(int type, int from_id, int to_id)</div></div>
 <div class="ttc" id="aringbuffer_8h_html"><div class="ttname"><a href="ringbuffer_8h.html">ringbuffer.h</a></div><div class="ttdoc">Copyright (c) 2021-2022 Whist Technologies, Inc.</div></div>
+<div class="ttc" id="aprotocol__analyzer_8h_html_a187c8c8e3c7bee7a8319a7de224715cc"><div class="ttname"><a href="protocol__analyzer_8h.html#a187c8c8e3c7bee7a8319a7de224715cc">whist_analyzer_record_current_fec_info</a></div><div class="ttdeci">void whist_analyzer_record_current_fec_info(int type, double base_fec_ratio, double extra_fec_ratio, double total_fec_ratio_original, double total_fec_ratio)</div></div>
 <div class="ttc" id="aprotocol__analyzer_8h_html_a367e403a71beb8b5ac5369bac6df7956"><div class="ttname"><a href="protocol__analyzer_8h.html#a367e403a71beb8b5ac5369bac6df7956">whist_analyzer_record_decode_video</a></div><div class="ttdeci">void whist_analyzer_record_decode_video(void)</div></div>
 <div class="ttc" id="aprotocol__analyzer_8h_html_a2dbae1af4dee743dcecd541265185155"><div class="ttname"><a href="protocol__analyzer_8h.html#a2dbae1af4dee743dcecd541265185155">whist_analyzer_record_audio_queue_full</a></div><div class="ttdeci">void whist_analyzer_record_audio_queue_full(void)</div></div>
 <div class="ttc" id="aprotocol__analyzer_8h_html_a17ab8039fdb5fcd56c719a4b8be23f4d"><div class="ttname"><a href="protocol__analyzer_8h.html#a17ab8039fdb5fcd56c719a4b8be23f4d">whist_analyzer_record_decode_audio</a></div><div class="ttdeci">void whist_analyzer_record_decode_audio(void)</div></div>
 <div class="ttc" id="aprotocol__analyzer_8h_html_ad241354c82b484a5d8582b873e0f84a7"><div class="ttname"><a href="protocol__analyzer_8h.html#ad241354c82b484a5d8582b873e0f84a7">whist_analyzer_record_reset_ringbuffer</a></div><div class="ttdeci">void whist_analyzer_record_reset_ringbuffer(int type, int from_id, int to_id)</div></div>
+<div class="ttc" id="aprotocol__analyzer_8h_html_a35e5843432a2e33ab4dd17dfd1e10b6a"><div class="ttname"><a href="protocol__analyzer_8h.html#a35e5843432a2e33ab4dd17dfd1e10b6a">whist_analyzer_record_current_cc_info</a></div><div class="ttdeci">void whist_analyzer_record_current_cc_info(int type, double packet_loss, double latency, int bitrate, int incoming_bitrate)</div></div>
 <div class="ttc" id="aprotocol__analyzer_8h_html_af96c9fa60e6288f23fcd820cb9fc4d00"><div class="ttname"><a href="protocol__analyzer_8h.html#af96c9fa60e6288f23fcd820cb9fc4d00">whist_analyzer_record_fec_used</a></div><div class="ttdeci">void whist_analyzer_record_fec_used(int type, int id)</div></div>
 <div class="ttc" id="aprotocol__analyzer_8h_html_ab3c8e4590d00abe4d949590703ca472f"><div class="ttname"><a href="protocol__analyzer_8h.html#ab3c8e4590d00abe4d949590703ca472f">whist_analyzer_record_nack</a></div><div class="ttdeci">void whist_analyzer_record_nack(int type, int id, int index)</div></div>
 <div class="ttc" id="awhist_2network_2network_8h_html"><div class="ttname"><a href="whist_2network_2network_8h.html">network.h</a></div><div class="ttdoc">Copyright (c) 2021-2022 Whist Technologies, Inc.</div></div>

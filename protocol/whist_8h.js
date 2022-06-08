@@ -32,6 +32,7 @@ var whist_8h =
     [ "INPUT_DRIVER", "whist_8h.html#a514734c0c6acc3c2f2076323d45676d8", null ],
     [ "LOG_AUDIO", "whist_8h.html#aba13441b998b179fbf9483152582b6e2", null ],
     [ "LOG_CPU_USAGE", "whist_8h.html#a32364be58c0044b63dc47aeb962254b4", null ],
+    [ "LOG_FEC_CONTROLLER", "whist_8h.html#af03b93319683d9a7505eb4f5c465728b", null ],
     [ "LOG_FEC_DECODE", "whist_8h.html#a0b136cc9f1350cf637c6950120c82d36", null ],
     [ "LOG_FEC_ENCODE", "whist_8h.html#aca6fc3e3cfbfdb23060ff1d6e9a761e0", null ],
     [ "LOG_LONG_TERM_REFERENCE_FRAMES", "whist_8h.html#a64c8087b20bce00278ae45c0081275db", null ],
