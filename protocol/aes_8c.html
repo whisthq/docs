@@ -145,10 +145,11 @@ Usage</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                  \</div>
-<div class="line">        LOG_INFO(<span class="stringliteral">&quot;OpenSSL Error caught&quot;</span>); \</div>
-<div class="line">        print_ssl_errors();               \</div>
-<div class="line">        return -1;                        \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                   \</div>
+<div class="line">        LOG_INFO(<span class="stringliteral">&quot;OpenSSL Error caught&quot;</span>);  \</div>
+<div class="line">        print_ssl_errors();                \</div>
+<div class="line">        if (ctx) EVP_CIPHER_CTX_free(ctx); \</div>
+<div class="line">        return -1;                         \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 </div>

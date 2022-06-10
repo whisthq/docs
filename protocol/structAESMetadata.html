@@ -95,44 +95,14 @@ $(document).ready(function(){initNavTree('structAESMetadata.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a5d8b909c45fd17b8537a5bd6cb98b43d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAESMetadata.html#a5d8b909c45fd17b8537a5bd6cb98b43d">hmac</a> [<a class="el" href="aes_8h.html#a47668e54458d49255620473617a4920e">HMAC_SIZE</a>]</td></tr>
-<tr class="separator:a5d8b909c45fd17b8537a5bd6cb98b43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21a8595487595b221eae54e468d8e303"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAESMetadata.html#a21a8595487595b221eae54e468d8e303">iv</a> [<a class="el" href="aes_8h.html#ad7bb30dbf5882fdf05331918e8a0cc84">IV_SIZE</a>]</td></tr>
 <tr class="separator:a21a8595487595b221eae54e468d8e303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce865a4f89b419175cfdf6214bbc8c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAESMetadata.html#a7ce865a4f89b419175cfdf6214bbc8c8">encrypted_len</a></td></tr>
-<tr class="separator:a7ce865a4f89b419175cfdf6214bbc8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d10d22c34849767024c0eb3115890c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAESMetadata.html#a86d10d22c34849767024c0eb3115890c">tag</a> [<a class="el" href="aes_8h.html#a28038a2e6c0aedde6be86f172441fac9">TAG_SIZE</a>]</td></tr>
+<tr class="separator:a86d10d22c34849767024c0eb3115890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The is metadata about the encrypted packet,. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a7ce865a4f89b419175cfdf6214bbc8c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ce865a4f89b419175cfdf6214bbc8c8">&#9670;&nbsp;</a></span>encrypted_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int AESMetadata::encrypted_len</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d8b909c45fd17b8537a5bd6cb98b43d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d8b909c45fd17b8537a5bd6cb98b43d">&#9670;&nbsp;</a></span>hmac</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char AESMetadata::hmac[<a class="el" href="aes_8h.html#a47668e54458d49255620473617a4920e">HMAC_SIZE</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a21a8595487595b221eae54e468d8e303"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21a8595487595b221eae54e468d8e303">&#9670;&nbsp;</a></span>iv</h2>
 
@@ -141,6 +111,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">char AESMetadata::iv[<a class="el" href="aes_8h.html#ad7bb30dbf5882fdf05331918e8a0cc84">IV_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86d10d22c34849767024c0eb3115890c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d10d22c34849767024c0eb3115890c">&#9670;&nbsp;</a></span>tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char AESMetadata::tag[<a class="el" href="aes_8h.html#a28038a2e6c0aedde6be86f172441fac9">TAG_SIZE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">

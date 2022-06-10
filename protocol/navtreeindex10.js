@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"sdl_8c.html#aaea282911e153f1e861e9fb01e013137":[14,0,0,0,0,3,1],
 "sdl_8c.html#af0754291e7863cf65ec85fb865764a10":[14,0,0,0,0,3,0],
 "sdl_8h.html":[14,0,0,0,0,4],
 "sdl_8h.html#aaea282911e153f1e861e9fb01e013137":[14,0,0,0,0,4,0],
@@ -112,9 +113,8 @@ var NAVTREEINDEX10 =
 "string__buffer_8h.html#aeca876b7c21cee19e735baa749dd4be7":[14,0,2,10,27,4],
 "string__buffer_8h_source.html":[14,0,2,10,27],
 "structAESMetadata.html":[13,0,1],
-"structAESMetadata.html#a21a8595487595b221eae54e468d8e303":[13,0,1,2],
-"structAESMetadata.html#a5d8b909c45fd17b8537a5bd6cb98b43d":[13,0,1,1],
-"structAESMetadata.html#a7ce865a4f89b419175cfdf6214bbc8c8":[13,0,1,0],
+"structAESMetadata.html#a21a8595487595b221eae54e468d8e303":[13,0,1,0],
+"structAESMetadata.html#a86d10d22c34849767024c0eb3115890c":[13,0,1,1],
 "structAudioDecoder.html":[13,0,2],
 "structAudioDecoder.html#a10a981c8ee6251b566ef6dbda5aa83e7":[13,0,2,4],
 "structAudioDecoder.html#a827784bdad17fdd71ab71de887f34837":[13,0,2,3],

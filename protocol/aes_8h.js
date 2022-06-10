@@ -5,6 +5,7 @@ var aes_8h =
     [ "IV_SIZE", "aes_8h.html#ad7bb30dbf5882fdf05331918e8a0cc84", null ],
     [ "KEY_SIZE", "aes_8h.html#a2d996237e082b78b41771b5aa1a6eae1", null ],
     [ "MAX_ENCRYPTION_SIZE_INCREASE", "aes_8h.html#ab2dbea0ebc498b1422ac21f80b3adb50", null ],
+    [ "TAG_SIZE", "aes_8h.html#a28038a2e6c0aedde6be86f172441fac9", null ],
     [ "decrypt_packet", "aes_8h.html#ae949f1dbc78b6baeaf0a98484d995641", null ],
     [ "encrypt_packet", "aes_8h.html#ac1a215762e3402688db0c5c892b3f32d", null ],
     [ "gen_iv", "aes_8h.html#a479629dd9cdafa42a41943630443945a", null ],
