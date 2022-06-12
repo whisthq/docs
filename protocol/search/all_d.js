@@ -35,7 +35,7 @@ var searchData=
   ['max_5ficc_5fsize_1486',['max_icc_size',['../structLodePNGDecoderSettings.html#a3a945371fad61a0a8becfa5ab1c9d71e',1,'LodePNGDecoderSettings']]],
   ['max_5fid_1487',['max_id',['../structRingBuffer.html#a222e926e44d53e0f8bec5e58bbccfc64',1,'RingBuffer']]],
   ['max_5fincrease_5fpercentage_1488',['MAX_INCREASE_PERCENTAGE',['../network__algorithm_8h.html#a6eb91ac91005904c82b60da6d70a96b5',1,'network_algorithm.h']]],
-  ['max_5finit_5fconnection_5fattempts_1489',['MAX_INIT_CONNECTION_ATTEMPTS',['../client__utils_8h.html#a44eb83ec64358b8e2db0f94e7b85b8f2',1,'client_utils.h']]],
+  ['max_5finit_5fconnection_5fattempts_1489',['MAX_INIT_CONNECTION_ATTEMPTS',['../whist__client_8c.html#a44eb83ec64358b8e2db0f94e7b85b8f2',1,'whist_client.c']]],
   ['max_5fintra_5fqp_1490',['MAX_INTRA_QP',['../whist_8h.html#a9bcfa4a6fecd23535df2dd7cc000ea23',1,'whist.h']]],
   ['max_5fitems_1491',['max_items',['../structQueueContext.html#aa8ffe30bfaa8039c6fa61151223a4aa1',1,'QueueContext']]],
   ['max_5fmessages_5fper_5fperiod_1492',['max_messages_per_period',['../structLogRateLimiter.html#a65bfc76f64c9cb69a3546ed6ef132089',1,'LogRateLimiter']]],

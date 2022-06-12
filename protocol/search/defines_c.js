@@ -23,7 +23,7 @@ var searchData=
   ['max_5ffrees_5550',['MAX_FREES',['../whist__memory_8c.html#a4c6d7bdba62c60dcd15111ecbf34edb7',1,'whist_memory.c']]],
   ['max_5fgroup_5fstats_5551',['MAX_GROUP_STATS',['../udp_8c.html#ab2e2a8a17401043534915047cfff9d83',1,'udp.c']]],
   ['max_5fincrease_5fpercentage_5552',['MAX_INCREASE_PERCENTAGE',['../network__algorithm_8h.html#a6eb91ac91005904c82b60da6d70a96b5',1,'network_algorithm.h']]],
-  ['max_5finit_5fconnection_5fattempts_5553',['MAX_INIT_CONNECTION_ATTEMPTS',['../client__utils_8h.html#a44eb83ec64358b8e2db0f94e7b85b8f2',1,'client_utils.h']]],
+  ['max_5finit_5fconnection_5fattempts_5553',['MAX_INIT_CONNECTION_ATTEMPTS',['../whist__client_8c.html#a44eb83ec64358b8e2db0f94e7b85b8f2',1,'whist_client.c']]],
   ['max_5fintra_5fqp_5554',['MAX_INTRA_QP',['../whist_8h.html#a9bcfa4a6fecd23535df2dd7cc000ea23',1,'whist.h']]],
   ['max_5fnack_5fbitrate_5fratio_5555',['MAX_NACK_BITRATE_RATIO',['../ringbuffer_8c.html#ad7825c4f2de173c071d97a296ec96d24',1,'ringbuffer.c']]],
   ['max_5fnew_5ftab_5furls_5556',['MAX_NEW_TAB_URLS',['../whist_8h.html#ac4841e192e48d095904d7d6a90e8801f',1,'whist.h']]],
