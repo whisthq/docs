@@ -266,7 +266,7 @@ Functions</h2></td></tr>
 
 <p>Returns the number of microseconds elapsed since epoch. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of microseconds elapsed since epoch </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This value returned by this function is based on wallclock time, it's not aim for comparing how much time has pased </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This value returned by this function is based on wallclock time, it's not for comparing how much time has past </dd></dl>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ Functions</h2></td></tr>
 
 <p>Get a comparable timestamp in sec. </p>
 <dl class="section return"><dt>Returns</dt><dd>Timestamp in sec. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The point of this function is to get a comparable timestamp, the absolute value is not important. But for a well defined behavior: The first call of this function returns zero, following calls run the time past in sec since first call. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The point of this function is to get a comparable timestamp, the absolute value is not important. But for a well-defined behavior: The first call of this function returns zero, following calls run the time past in sec since first call. This function is thread-safe after the first call finishes. The first call is expected to be done inside <a class="el" href="whist_8c.html#ac53d33c8e6e74a072be3b2319b56cb75" title="Initialize any and all static state that needs to be initialized.">whist_init_subsystems()</a>. </dd></dl>
 
 </div>
 </div>
