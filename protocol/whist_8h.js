@@ -60,8 +60,6 @@ var whist_8h =
     [ "NORETURN", "whist_8h.html#aa1728270d73c5d1598de1fd691762eb1", null ],
     [ "NS_IN_MS", "whist_8h.html#aeee6caa7e66c4073c1d05387c7ee930e", null ],
     [ "NS_IN_US", "whist_8h.html#af5dee4ca10145450350dc01575070732", null ],
-    [ "OUTPUT_HEIGHT", "whist_8h.html#a5707c89933e682d000495637c8dc45fd", null ],
-    [ "OUTPUT_WIDTH", "whist_8h.html#a2b2575d308f4dcd72c988a83a6ea138d", null ],
     [ "PATH_JOIN", "whist_8h.html#a1b9c4808fcd7aefa71644f46d8587076", null ],
     [ "PATH_SEPARATOR", "whist_8h.html#a256a5721249aa3309437212cc21a9fe4", null ],
     [ "safe_close", "whist_8h.html#af60bd661d5305321029fd3e69fd6006f", null ],

@@ -90,13 +90,12 @@ var searchData=
   ['use_5fmemory_5fregions_2320',['use_memory_regions',['../structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac',1,'DynamicBuffer']]],
   ['use_5fmonitor_2321',['USE_MONITOR',['../server_2video_8c.html#ad846e33fa77d9246e697aa1142e2bd5c',1,'video.c']]],
   ['use_5fnumpad_2322',['USE_NUMPAD',['../winapi__input__driver_8c.html#aba49b09f8d4131835017618fc0250711',1,'winapi_input_driver.c']]],
-  ['user_5femail_2323',['user_email',['../structClientInitMessage.html#a96055ac014948a537f8492792a4a554d',1,'ClientInitMessage']]],
-  ['using_5fffmpeg_5fiframe_5fflag_2324',['USING_FFMPEG_IFRAME_FLAG',['../whist_8h.html#ac98c653bb06a80c855ad7013dccb3f26',1,'whist.h']]],
-  ['using_5fnvidia_5fcapture_2325',['USING_NVIDIA_CAPTURE',['../whist_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6',1,'whist.h']]],
-  ['using_5fnvidia_5fencode_2326',['USING_NVIDIA_ENCODE',['../whist_8h.html#a8c14c321fd244515ad04ff39026feb75',1,'whist.h']]],
-  ['using_5fpng_2327',['using_png',['../structWhistCursorInfo.html#ae6f6609f7599d30555498ee923401082',1,'WhistCursorInfo']]],
-  ['using_5frenderer_5fthread_2328',['using_renderer_thread',['../structWhistRenderer.html#aaf5ee8919593842551053750e8d33056',1,'WhistRenderer']]],
-  ['using_5fserverside_5fscale_2329',['USING_SERVERSIDE_SCALE',['../whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb',1,'whist.h']]],
-  ['using_5fstun_2330',['using_stun',['../client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;client_utils.c'],['../whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;client_utils.c']]],
-  ['utf8_5fstring_2331',['UTF8_STRING',['../structX11CaptureDevice.html#a4d38c5daddbd848151b0a8eb0b7c2420',1,'X11CaptureDevice']]]
+  ['using_5fffmpeg_5fiframe_5fflag_2323',['USING_FFMPEG_IFRAME_FLAG',['../whist_8h.html#ac98c653bb06a80c855ad7013dccb3f26',1,'whist.h']]],
+  ['using_5fnvidia_5fcapture_2324',['USING_NVIDIA_CAPTURE',['../whist_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6',1,'whist.h']]],
+  ['using_5fnvidia_5fencode_2325',['USING_NVIDIA_ENCODE',['../whist_8h.html#a8c14c321fd244515ad04ff39026feb75',1,'whist.h']]],
+  ['using_5fpng_2326',['using_png',['../structWhistCursorInfo.html#ae6f6609f7599d30555498ee923401082',1,'WhistCursorInfo']]],
+  ['using_5frenderer_5fthread_2327',['using_renderer_thread',['../structWhistRenderer.html#aaf5ee8919593842551053750e8d33056',1,'WhistRenderer']]],
+  ['using_5fserverside_5fscale_2328',['USING_SERVERSIDE_SCALE',['../whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb',1,'whist.h']]],
+  ['using_5fstun_2329',['using_stun',['../client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;client_utils.c'],['../whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;client_utils.c']]],
+  ['utf8_5fstring_2330',['UTF8_STRING',['../structX11CaptureDevice.html#a4d38c5daddbd848151b0a8eb0b7c2420',1,'X11CaptureDevice']]]
 ];

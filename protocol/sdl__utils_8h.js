@@ -1,8 +1,8 @@
 var sdl__utils_8h =
 [
     [ "WHIST_CLIENT_FRAMEBUFFER_PIXEL_FORMAT", "sdl__utils_8h.html#adbce575eedfdc6688f1560c919aa99d2", null ],
-    [ "destroy_sdl", "sdl__utils_8h.html#a40d437adeb4ed227d37de384b28e1aff", null ],
-    [ "init_sdl", "sdl__utils_8h.html#a3c4938c013e8875d657900464e834188", null ],
+    [ "create_frontend", "sdl__utils_8h.html#ad4662782ecd695662a5bc2793c31f34a", null ],
+    [ "destroy_frontend", "sdl__utils_8h.html#aba17555982f50c0e11c256cd64b7d767", null ],
     [ "sdl_client_display_notification", "sdl__utils_8h.html#a9e63a58901fafbcb255d87124187562d", null ],
     [ "sdl_present_pending_cursor", "sdl__utils_8h.html#a46ebcb0bcfb15eae4e15a7686891b121", null ],
     [ "sdl_render_framebuffer", "sdl__utils_8h.html#a993a121aa7c5869498703f17d41262ab", null ],

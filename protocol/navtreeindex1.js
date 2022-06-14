@@ -1,13 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"clipboard__internal_8h.html#a1f4649cb97b683e29d202d4a5d6ffc32":[14,0,2,1,2,6],
-"clipboard__internal_8h.html#a5867e7500d780fb08c54a5e18768d79f":[14,0,2,1,2,7],
-"clipboard__internal_8h.html#a65c178b5d0555aaa30f3138716271e3a":[14,0,2,1,2,0],
-"clipboard__internal_8h.html#a71ea9ab2e117355993bc245c691731cc":[14,0,2,1,2,8],
-"clipboard__internal_8h.html#a7332985c65be1b32ec887fcb37750962":[14,0,2,1,2,2],
-"clipboard__internal_8h.html#a87781954b181bfe0cc6d212f1e155d47":[14,0,2,1,2,3],
-"clipboard__internal_8h.html#abd908a405c1888d1306899a3ad598ea3":[14,0,2,1,2,4],
-"clipboard__internal_8h.html#ade76749524806bb7873dd724056c4ba9":[14,0,2,1,2,1],
 "clipboard__internal_8h.html#af1a8e7cc53b2b0d020dcb3cc14a2c294":[14,0,2,1,2,5],
 "clipboard__internal_8h_source.html":[14,0,2,1,2],
 "clipboard__osx_8h.html":[14,0,2,1,3],
@@ -246,8 +238,16 @@ var NAVTREEINDEX1 =
 "error__codes_8h.html":[14,0,2,2,1],
 "error__codes_8h_source.html":[14,0,2,2,1],
 "error__monitor_8c.html":[14,0,2,8,0],
-"error__monitor_8c.html#a1aabac6d068eef6a7bad3fdf50a05cc8":[14,0,2,8,0,16],
+"error__monitor_8c.html#a1aabac6d068eef6a7bad3fdf50a05cc8":[14,0,2,8,0,15],
 "error__monitor_8c.html#a2ffa164857bb811853d30e4c887e8f9f":[14,0,2,8,0,6],
-"error__monitor_8c.html#a30318e80305b568bc60bfec9397802f4":[14,0,2,8,0,15],
-"error__monitor_8c.html#a50fce9626b2a2a434fcdf1fbf944a40b":[14,0,2,8,0,2]
+"error__monitor_8c.html#a30318e80305b568bc60bfec9397802f4":[14,0,2,8,0,14],
+"error__monitor_8c.html#a50fce9626b2a2a434fcdf1fbf944a40b":[14,0,2,8,0,2],
+"error__monitor_8c.html#a56d034dfbac71ff360881792781140ad":[14,0,2,8,0,4],
+"error__monitor_8c.html#a611aea3d89115184e7b59a56c33e5d09":[14,0,2,8,0,0],
+"error__monitor_8c.html#a7b77c56b0a8ee0bd57ac755005564f53":[14,0,2,8,0,10],
+"error__monitor_8c.html#a830237f0ea6e7ad239c8fcac5ddf571f":[14,0,2,8,0,3],
+"error__monitor_8c.html#a8fc14226804709f16463b3f49bf4e275":[14,0,2,8,0,9],
+"error__monitor_8c.html#aa63504b8ebaddf4daf11d2eb7c7b7828":[14,0,2,8,0,11],
+"error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d":[14,0,2,8,0,16],
+"error__monitor_8c.html#abc98a77657763c9552e00036f762bf38":[14,0,2,8,0,17]
 };

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x11capturedevice_4860',['X11CaptureDevice',['../x11capture_8h.html#aeea69005fc267aff603dc2ff610aa95f',1,'x11capture.h']]]
+  ['x11capturedevice_4852',['X11CaptureDevice',['../x11capture_8h.html#aeea69005fc267aff603dc2ff610aa95f',1,'x11capture.h']]]
 ];

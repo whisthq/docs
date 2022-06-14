@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('sdl__utils_8c.html',''); initResizable
 <code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="command__line_8h_source.html">whist/utils/command_line.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="network__algorithm_8h_source.html">whist/network/network_algorithm.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="color_8h_source.html">whist/utils/color.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="client__utils_8h_source.html">client_utils.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -110,10 +111,10 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a47284ef375457be858974e5283104cf3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a47284ef375457be858974e5283104cf3">COMMAND_LINE_STRING_OPTION</a> (frontend_type, 'f', &quot;frontend&quot;, WHIST_ARGS_MAXLEN, &quot;Which frontend type to attempt to use. Default: sdl.&quot;)</td></tr>
 <tr class="separator:a47284ef375457be858974e5283104cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40d437adeb4ed227d37de384b28e1aff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a40d437adeb4ed227d37de384b28e1aff">destroy_sdl</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
-<tr class="memdesc:a40d437adeb4ed227d37de384b28e1aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8c.html#a40d437adeb4ed227d37de384b28e1aff">More...</a><br /></td></tr>
-<tr class="separator:a40d437adeb4ed227d37de384b28e1aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eec2f00758ec0f030a20606be54023c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a0eec2f00758ec0f030a20606be54023c">sdl_renderer_resize_window</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int width, int <a class="el" href="client__utils_8c.html#a509290c21d570ff479c1b9d9b1fe8810">height</a>)</td></tr>
+<tr class="memitem:aba17555982f50c0e11c256cd64b7d767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#aba17555982f50c0e11c256cd64b7d767">destroy_frontend</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:aba17555982f50c0e11c256cd64b7d767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an SDL window and associated parameters.  <a href="sdl__utils_8c.html#aba17555982f50c0e11c256cd64b7d767">More...</a><br /></td></tr>
+<tr class="separator:aba17555982f50c0e11c256cd64b7d767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eec2f00758ec0f030a20606be54023c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a0eec2f00758ec0f030a20606be54023c">sdl_renderer_resize_window</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int width, int height)</td></tr>
 <tr class="memdesc:a0eec2f00758ec0f030a20606be54023c"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the window gets resized, call this function to update the internal rendering dimensions.  <a href="sdl__utils_8c.html#a0eec2f00758ec0f030a20606be54023c">More...</a><br /></td></tr>
 <tr class="separator:a0eec2f00758ec0f030a20606be54023c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef9836611d0f8732b4267e4d81aeec02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#aef9836611d0f8732b4267e4d81aeec02">sdl_update_framebuffer</a> (AVFrame *frame)</td></tr>
@@ -160,12 +161,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aaacc5ce7ced4977cd893708f5d789df4"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#aaacc5ce7ced4977cd893708f5d789df4">output_width</a></td></tr>
-<tr class="separator:aaacc5ce7ced4977cd893708f5d789df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a57d774e71166271bbff6c515111104"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a2a57d774e71166271bbff6c515111104">output_height</a></td></tr>
-<tr class="separator:a2a57d774e71166271bbff6c515111104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06471a2a38199e688f7d64c720b929b8"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a06471a2a38199e688f7d64c720b929b8">insufficient_bandwidth</a></td></tr>
-<tr class="separator:a06471a2a38199e688f7d64c720b929b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a557cdefd7d618aa9c5272f245dded55e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#gaa9899c1c25688c008b90165331107ddf">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a557cdefd7d618aa9c5272f245dded55e">window_resize_mutex</a></td></tr>
 <tr class="separator:a557cdefd7d618aa9c5272f245dded55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81dcd68e9914f757c90910b1bdff05c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdl__utils_8c.html#a81dcd68e9914f757c90910b1bdff05c5">window_resize_timer</a></td></tr>
@@ -243,14 +238,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a40d437adeb4ed227d37de384b28e1aff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40d437adeb4ed227d37de384b28e1aff">&#9670;&nbsp;</a></span>destroy_sdl()</h2>
+<a id="aba17555982f50c0e11c256cd64b7d767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba17555982f50c0e11c256cd64b7d767">&#9670;&nbsp;</a></span>destroy_frontend()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void destroy_sdl </td>
+          <td class="memname">void destroy_frontend </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
           <td class="paramname"><em>frontend</em></td><td>)</td>
@@ -626,7 +621,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This function must be called by the same thread that originally called init_sdl. This will also render out any pending framebuffer, thereby setting <code>sdl_render_pending</code> to false. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function must be called by the same thread that originally called create_frontend. This will also render out any pending framebuffer, thereby setting <code>sdl_render_pending</code> to false. </dd></dl>
 
 </div>
 </div>
@@ -658,48 +653,6 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a06471a2a38199e688f7d64c720b929b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06471a2a38199e688f7d64c720b929b8">&#9670;&nbsp;</a></span>insufficient_bandwidth</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool insufficient_bandwidth</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2a57d774e71166271bbff6c515111104"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a57d774e71166271bbff6c515111104">&#9670;&nbsp;</a></span>output_height</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int output_height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaacc5ce7ced4977cd893708f5d789df4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaacc5ce7ced4977cd893708f5d789df4">&#9670;&nbsp;</a></span>output_width</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int output_width</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af4e35016b32376211dba7a8f028f3f88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4e35016b32376211dba7a8f028f3f88">&#9670;&nbsp;</a></span>pending_resize_message</h2>
 

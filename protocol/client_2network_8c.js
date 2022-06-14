@@ -5,7 +5,7 @@ var client_2network_8c =
     [ "UDP_CONNECTION_TIMEOUT", "client_2network_8c.html#a49d3c6f5a5467a70cd7e0c3d853c0e8f", null ],
     [ "UDP_CONNECTION_WAIT", "client_2network_8c.html#a69ac525d995758ffd8a2403a33ba581f", null ],
     [ "close_connections", "client_2network_8c.html#abac9ba3b2a752a8ba9805b539765a2e4", null ],
-    [ "connect_to_server", "client_2network_8c.html#a50f8a63230c19e2fa4487adaf8825104", null ],
+    [ "connect_to_server", "client_2network_8c.html#a541cfb3d58e41ce0ef1709bb2da43bc9", null ],
     [ "send_server_quit_messages", "client_2network_8c.html#aa8bf751ea26659195c59cd180956315a", null ],
     [ "send_wcmsg", "client_2network_8c.html#a71973874dd00c57c855c77e4c870392a", null ],
     [ "client_binary_aes_private_key", "client_2network_8c.html#a7fd46fdf3118d19eed21408086a671f2", null ],
