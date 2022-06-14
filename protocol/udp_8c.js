@@ -28,9 +28,11 @@ var udp_8c =
     [ "UDP_PING_LOG_INTERVAL_SEC", "udp_8c.html#a011eaed8cc6df727eb7f1f12852a1b2c", null ],
     [ "UDP_PONG_CONGESTION_SEC", "udp_8c.html#adb6d848eb3bcfff8d7a26f1950ad327e", null ],
     [ "UDP_PONG_TIMEOUT_SEC", "udp_8c.html#a7d308c30a8d28fbf997bb7085de35421", null ],
+    [ "UDP_RECV_BOTTLENECK_THRESHOLD_MS", "udp_8c.html#abb3f22d4f0427fa5ab80f9da0a9c59f4", null ],
     [ "UDP_RECV_BUFFER_SIZE", "udp_8c.html#aed3335a7ee09b5ed787c14118c6a758b", null ],
     [ "UDP_SEND_BUFFER_SIZE", "udp_8c.html#a6ab40d0dffbe06f2dec17cfb58b51686", null ],
     [ "UDPNETWORKPACKET_HEADER_SIZE", "udp_8c.html#a6afbd3875118f98013f7cc49969dac90", null ],
+    [ "WCC_HOLD_TIME_AFTER_UDP_BOTTLENECK_SEC", "udp_8c.html#ac5b3a980a35f57251ca59cdf767cc0e0", null ],
     [ "IncomingBitrate", "udp_8c.html#a29939ea78796274439d3cfe923d8af28", null ],
     [ "NackID", "udp_8c.html#a35befb3bd7ff1cb6bdbf8c3bdb80a7e0", null ],
     [ "UDPPacketType", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046a", [

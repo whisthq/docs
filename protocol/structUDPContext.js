@@ -13,6 +13,7 @@ var structUDPContext =
     [ "has_pending_packet", "structUDPContext.html#a057d91b6c4e23d9af04a76a3af20deff", null ],
     [ "incoming_bitrate_buckets", "structUDPContext.html#a34cc29657e97fef7c521159da10987c2", null ],
     [ "last_addr", "structUDPContext.html#acf1aa26022ad9c0e212a57dbaedd12bb", null ],
+    [ "last_bottleneck_timer", "structUDPContext.html#aa062d6a94e416abf211e5678da14f98a", null ],
     [ "last_network_settings_send_time", "structUDPContext.html#a1b2133f0eebae5c1e15bce9545441e03", null ],
     [ "last_ping_client_time", "structUDPContext.html#a5fb0477415beb03b238f2ba44ddcb2aa", null ],
     [ "last_ping_id", "structUDPContext.html#aa328141dc3a1e9664cb80a508f1be0c6", null ],

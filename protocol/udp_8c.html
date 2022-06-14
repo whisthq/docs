@@ -130,7 +130,7 @@ Macros</h2></td></tr>
 <tr class="separator:a49f2f61011d729a3bb56deee2f26a2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d308c30a8d28fbf997bb7085de35421"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a7d308c30a8d28fbf997bb7085de35421">UDP_PONG_TIMEOUT_SEC</a>&#160;&#160;&#160;2.5</td></tr>
 <tr class="separator:a7d308c30a8d28fbf997bb7085de35421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb6d848eb3bcfff8d7a26f1950ad327e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#adb6d848eb3bcfff8d7a26f1950ad327e">UDP_PONG_CONGESTION_SEC</a>&#160;&#160;&#160;0.25</td></tr>
+<tr class="memitem:adb6d848eb3bcfff8d7a26f1950ad327e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#adb6d848eb3bcfff8d7a26f1950ad327e">UDP_PONG_CONGESTION_SEC</a>&#160;&#160;&#160;0.5</td></tr>
 <tr class="separator:adb6d848eb3bcfff8d7a26f1950ad327e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a011eaed8cc6df727eb7f1f12852a1b2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a011eaed8cc6df727eb7f1f12852a1b2c">UDP_PING_LOG_INTERVAL_SEC</a>&#160;&#160;&#160;1.0</td></tr>
 <tr class="separator:a011eaed8cc6df727eb7f1f12852a1b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +170,10 @@ Macros</h2></td></tr>
 <tr class="separator:aed3335a7ee09b5ed787c14118c6a758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab40d0dffbe06f2dec17cfb58b51686"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a6ab40d0dffbe06f2dec17cfb58b51686">UDP_SEND_BUFFER_SIZE</a>&#160;&#160;&#160;(1 &lt;&lt; 17)</td></tr>
 <tr class="separator:a6ab40d0dffbe06f2dec17cfb58b51686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b3a980a35f57251ca59cdf767cc0e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ac5b3a980a35f57251ca59cdf767cc0e0">WCC_HOLD_TIME_AFTER_UDP_BOTTLENECK_SEC</a>&#160;&#160;&#160;0.25</td></tr>
+<tr class="separator:ac5b3a980a35f57251ca59cdf767cc0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3f22d4f0427fa5ab80f9da0a9c59f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#abb3f22d4f0427fa5ab80f9da0a9c59f4">UDP_RECV_BOTTLENECK_THRESHOLD_MS</a>&#160;&#160;&#160;4.0</td></tr>
+<tr class="separator:abb3f22d4f0427fa5ab80f9da0a9c59f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890ae089e185134fdcefbc84329a6115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a890ae089e185134fdcefbc84329a6115">MAX_TOTAL_PACKETS</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:a890ae089e185134fdcefbc84329a6115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d50d85bd478b0b009a811d180d9279"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab4d50d85bd478b0b009a811d180d9279">INITIAL_FRAMES</a>&#160;&#160;&#160;6</td></tr>
@@ -548,7 +552,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UDP_PONG_CONGESTION_SEC&#160;&#160;&#160;0.25</td>
+          <td class="memname">#define UDP_PONG_CONGESTION_SEC&#160;&#160;&#160;0.5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -563,6 +567,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define UDP_PONG_TIMEOUT_SEC&#160;&#160;&#160;2.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb3f22d4f0427fa5ab80f9da0a9c59f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb3f22d4f0427fa5ab80f9da0a9c59f4">&#9670;&nbsp;</a></span>UDP_RECV_BOTTLENECK_THRESHOLD_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UDP_RECV_BOTTLENECK_THRESHOLD_MS&#160;&#160;&#160;4.0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -605,6 +623,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define UDPNETWORKPACKET_HEADER_SIZE&#160;&#160;&#160;((int)(offsetof(<a class="el" href="structUDPNetworkPacket.html">UDPNetworkPacket</a>, payload)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5b3a980a35f57251ca59cdf767cc0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b3a980a35f57251ca59cdf767cc0e0">&#9670;&nbsp;</a></span>WCC_HOLD_TIME_AFTER_UDP_BOTTLENECK_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WCC_HOLD_TIME_AFTER_UDP_BOTTLENECK_SEC&#160;&#160;&#160;0.25</td>
         </tr>
       </table>
 </div><div class="memdoc">
