@@ -82,6 +82,8 @@ $(document).ready(function(){initNavTree('cursor_8c.html',''); initResizable(); 
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cursor.c File Reference</div>  </div>
@@ -94,14 +96,41 @@ $(document).ready(function(){initNavTree('cursor_8c.html',''); initResizable(); 
 <code>#include &lt;<a class="el" href="lodepng_8h_source.html">whist/utils/lodepng.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="cursor_8h_source.html">cursor.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistCursorCacheEntry.html">WhistCursorCacheEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistCursorCache.html">WhistCursorCache</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a204354c73a50759693177fba0517cc29"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistCursorCacheEntry.html">WhistCursorCacheEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#a204354c73a50759693177fba0517cc29">WhistCursorCacheEntry</a></td></tr>
+<tr class="separator:a204354c73a50759693177fba0517cc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7eacbb409180a8765941e40a84b89c5e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#a7eacbb409180a8765941e40a84b89c5e">whist_cursor_info_get_size</a> (<a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *cursor_info)</td></tr>
-<tr class="memdesc:a7eacbb409180a8765941e40a84b89c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct.  <a href="cursor_8c.html#a7eacbb409180a8765941e40a84b89c5e">More...</a><br /></td></tr>
-<tr class="separator:a7eacbb409180a8765941e40a84b89c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50c6d7525a02adbb4a52f8ccde19639"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#ae50c6d7525a02adbb4a52f8ccde19639">whist_cursor_info_get_size</a> (const <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *cursor_info)</td></tr>
+<tr class="memdesc:ae50c6d7525a02adbb4a52f8ccde19639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct.  <a href="cursor_8c.html#ae50c6d7525a02adbb4a52f8ccde19639">More...</a><br /></td></tr>
+<tr class="separator:ae50c6d7525a02adbb4a52f8ccde19639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c004f271aaf4c5096588566325a583"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#a91c004f271aaf4c5096588566325a583">whist_cursor_info_to_rgba</a> (const <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *info)</td></tr>
 <tr class="memdesc:a91c004f271aaf4c5096588566325a583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return RGBA pixel data from a <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct.  <a href="cursor_8c.html#a91c004f271aaf4c5096588566325a583">More...</a><br /></td></tr>
 <tr class="separator:a91c004f271aaf4c5096588566325a583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab965738c26ca42f3b46322f076a522bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#ab965738c26ca42f3b46322f076a522bd">whist_cursor_cache_create</a> (int max_entries, bool store_data)</td></tr>
+<tr class="memdesc:ab965738c26ca42f3b46322f076a522bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new cursor cache instance.  <a href="cursor_8c.html#ab965738c26ca42f3b46322f076a522bd">More...</a><br /></td></tr>
+<tr class="separator:ab965738c26ca42f3b46322f076a522bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae031a5ed65b5c580ea8f9ad5033f5a1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#ae031a5ed65b5c580ea8f9ad5033f5a1f">whist_cursor_cache_clear</a> (<a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *cache)</td></tr>
+<tr class="memdesc:ae031a5ed65b5c580ea8f9ad5033f5a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the cursor cache of all entries.  <a href="cursor_8c.html#ae031a5ed65b5c580ea8f9ad5033f5a1f">More...</a><br /></td></tr>
+<tr class="separator:ae031a5ed65b5c580ea8f9ad5033f5a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c6e005d59523249e80b68a0f5ce34d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#ae0c6e005d59523249e80b68a0f5ce34d">whist_cursor_cache_destroy</a> (<a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *cache)</td></tr>
+<tr class="memdesc:ae0c6e005d59523249e80b68a0f5ce34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a cursor cache instance.  <a href="cursor_8c.html#ae0c6e005d59523249e80b68a0f5ce34d">More...</a><br /></td></tr>
+<tr class="separator:ae0c6e005d59523249e80b68a0f5ce34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa650e2a06b5ce200c08796ca14ac58cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#aa650e2a06b5ce200c08796ca14ac58cc">whist_cursor_cache_add</a> (<a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *cache, <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *info)</td></tr>
+<tr class="memdesc:aa650e2a06b5ce200c08796ca14ac58cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new entry to the cursor cache.  <a href="cursor_8c.html#aa650e2a06b5ce200c08796ca14ac58cc">More...</a><br /></td></tr>
+<tr class="separator:aa650e2a06b5ce200c08796ca14ac58cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef77761374befc06504baf3996539f78"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#aef77761374befc06504baf3996539f78">whist_cursor_cache_check</a> (<a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *cache, uint32_t <a class="el" href="aes_8h.html#ab0e29541a233447e2f8f309d9d11796f">hash</a>)</td></tr>
+<tr class="memdesc:aef77761374befc06504baf3996539f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given hash is in the cache.  <a href="cursor_8c.html#aef77761374befc06504baf3996539f78">More...</a><br /></td></tr>
+<tr class="separator:aef77761374befc06504baf3996539f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2022 Whist Technologies, Inc. </p>
@@ -109,10 +138,191 @@ Functions</h2></td></tr>
 @brief This file defines platform-independent cursor streaming utilities.</h1>
 <h1><a class="anchor" id="autotoc_md136"></a>
 Usage</h1>
-<p>Use <a class="el" href="cursor_8c.html#a7eacbb409180a8765941e40a84b89c5e" title="Returns the size of the WhistCursorInfo struct.">whist_cursor_info_get_size()</a> to get the size of the cursor info struct, including a potential embedded PNG. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a7eacbb409180a8765941e40a84b89c5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eacbb409180a8765941e40a84b89c5e">&#9670;&nbsp;</a></span>whist_cursor_info_get_size()</h2>
+<p>Use <a class="el" href="cursor_8c.html#ae50c6d7525a02adbb4a52f8ccde19639" title="Returns the size of the WhistCursorInfo struct.">whist_cursor_info_get_size()</a> to get the size of the cursor info struct, including a potential embedded PNG. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a204354c73a50759693177fba0517cc29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204354c73a50759693177fba0517cc29">&#9670;&nbsp;</a></span>WhistCursorCacheEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structWhistCursorCacheEntry.html">WhistCursorCacheEntry</a> <a class="el" href="structWhistCursorCacheEntry.html">WhistCursorCacheEntry</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa650e2a06b5ce200c08796ca14ac58cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa650e2a06b5ce200c08796ca14ac58cc">&#9670;&nbsp;</a></span>whist_cursor_cache_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_cursor_cache_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a new entry to the cursor cache. </p>
+<p>If the cache is already full this will evict the least recently used entry currently in the cache.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache</td><td>Cache to add new entry to. </td></tr>
+    <tr><td class="paramname">info</td><td>Cursor to add to the cache. All data is copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef77761374befc06504baf3996539f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef77761374befc06504baf3996539f78">&#9670;&nbsp;</a></span>whist_cursor_cache_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a>* whist_cursor_cache_check </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether a given hash is in the cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache</td><td>Cache to do the lookup in. </td></tr>
+    <tr><td class="paramname">hash</td><td><a class="el" href="structHash.html">Hash</a> to look for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Cursor with the matching hash, or NULL if not found. </dd></dl>
+
+</div>
+</div>
+<a id="ae031a5ed65b5c580ea8f9ad5033f5a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae031a5ed65b5c580ea8f9ad5033f5a1f">&#9670;&nbsp;</a></span>whist_cursor_cache_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_cursor_cache_clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *&#160;</td>
+          <td class="paramname"><em>cache</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the cursor cache of all entries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache</td><td>Cache instance to clear. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab965738c26ca42f3b46322f076a522bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab965738c26ca42f3b46322f076a522bd">&#9670;&nbsp;</a></span>whist_cursor_cache_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structWhistCursorCache.html">WhistCursorCache</a>* whist_cursor_cache_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_entries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>store_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new cursor cache instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max_entries</td><td>The number of entries in the cache. </td></tr>
+    <tr><td class="paramname">store_data</td><td>Whether to store full cursor data (metadata is always stored). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New cursor cache instance. </dd></dl>
+
+</div>
+</div>
+<a id="ae0c6e005d59523249e80b68a0f5ce34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c6e005d59523249e80b68a0f5ce34d">&#9670;&nbsp;</a></span>whist_cursor_cache_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_cursor_cache_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *&#160;</td>
+          <td class="paramname"><em>cache</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy a cursor cache instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache</td><td>Cache instance to destroy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae50c6d7525a02adbb4a52f8ccde19639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50c6d7525a02adbb4a52f8ccde19639">&#9670;&nbsp;</a></span>whist_cursor_info_get_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,7 +330,7 @@ Usage</h1>
         <tr>
           <td class="memname">size_t whist_cursor_info_get_size </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td>
           <td class="paramname"><em>image</em></td><td>)</td>
           <td></td>
         </tr>

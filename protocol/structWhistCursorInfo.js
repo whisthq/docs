@@ -1,5 +1,6 @@
 var structWhistCursorInfo =
 [
+    [ "cached", "structWhistCursorInfo.html#ac47327438dea49b2a00bf7bf50e01f59", null ],
     [ "cursor_id", "structWhistCursorInfo.html#ac402f1d1a0939f0d128fea3baaed6a0f", null ],
     [ "cursor_state", "structWhistCursorInfo.html#ad4b2270478785ce0451c906c1109bfa5", null ],
     [ "hash", "structWhistCursorInfo.html#a97c4457f2bbfe7ed6492af81e7e0bf42", null ],

@@ -269,6 +269,9 @@ Macros</h2></td></tr>
 <tr class="separator:ac4841e192e48d095904d7d6a90e8801f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae969438a57a86fddf0cf53106c9b6b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aae969438a57a86fddf0cf53106c9b6b4">AUDIO_FREQUENCY</a>&#160;&#160;&#160;48000</td></tr>
 <tr class="separator:aae969438a57a86fddf0cf53106c9b6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe536fd1f60eefcb785f8acb26e4a790"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#afe536fd1f60eefcb785f8acb26e4a790">CURSOR_CACHE_ENTRIES</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:afe536fd1f60eefcb785f8acb26e4a790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of entries in the cursor cache.  <a href="whist_8h.html#afe536fd1f60eefcb785f8acb26e4a790">More...</a><br /></td></tr>
+<tr class="separator:afe536fd1f60eefcb785f8acb26e4a790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad792d60503fe2c4fc109e97ba2ce14a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8h.html#aad792d60503fe2c4fc109e97ba2ce14a">EMBEDDED_OBJECT</a>(object_name)</td></tr>
 <tr class="memdesc:aad792d60503fe2c4fc109e97ba2ce14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global constructor function.  <a href="whist_8h.html#aad792d60503fe2c4fc109e97ba2ce14a">More...</a><br /></td></tr>
 <tr class="separator:aad792d60503fe2c4fc109e97ba2ce14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -696,6 +699,24 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe536fd1f60eefcb785f8acb26e4a790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe536fd1f60eefcb785f8acb26e4a790">&#9670;&nbsp;</a></span>CURSOR_CACHE_ENTRIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURSOR_CACHE_ENTRIES&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of entries in the cursor cache. </p>
+<p>This must be the same on the server and the client. It is kept in sync by simple LRU eviction behaviour - as long as we make the same sequence of operations the result will be the same. It gets reset on any stream recovery point, since we can't guarantee the state of the cache on the client at that point.</p>
+<p>There should not actually be very many cursors, so this can easily be enough to store all of the cursors used in a session. When testing, setting this to 2 is useful so that cache evictions happen much more often. </p>
 
 </div>
 </div>

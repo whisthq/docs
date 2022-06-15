@@ -23,6 +23,7 @@ var whist_8h =
     [ "BYTES_IN_KILOBYTE", "whist_8h.html#ae8e4c0175929d141a35aca839fea9693", null ],
     [ "CHUNK_SIZE", "whist_8h.html#aea3cfda4f3a9f978ec759f206cf186fe", null ],
     [ "CONSECUTIVE_IDENTICAL_FRAMES", "whist_8h.html#a9b26cd4ece83eb114a81877bd849e28b", null ],
+    [ "CURSOR_CACHE_ENTRIES", "whist_8h.html#afe536fd1f60eefcb785f8acb26e4a790", null ],
     [ "DBUS_ADDRESS_MAXLEN", "whist_8h.html#a3f3913fffc95a27d40fd3c649d4803b6", null ],
     [ "DEFAULT_BINARY_PRIVATE_KEY", "whist_8h.html#a1235010ccd0a75e6b2f1e805e7ab3a41", null ],
     [ "DEFAULT_DPI", "whist_8h.html#a794e0417bdd7ebdad81c59a929932761", null ],
