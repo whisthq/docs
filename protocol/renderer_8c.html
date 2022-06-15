@@ -83,7 +83,6 @@ $(document).ready(function(){initNavTree('renderer_8c.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">renderer.c File Reference</div>  </div>
@@ -101,13 +100,6 @@ $(document).ready(function(){initNavTree('renderer_8c.html',''); initResizable()
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistRenderer.html">WhistRenderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a78b84a5133bfa661a731f975360f047a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a78b84a5133bfa661a731f975360f047a">SINGLE_THREAD_MODEL</a>&#160;&#160;&#160;false</td></tr>
-<tr class="separator:a78b84a5133bfa661a731f975360f047a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ccdbfc6930b7f7ef8a2c91282a804b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a35ccdbfc6930b7f7ef8a2c91282a804b">LOG_RENDERER_THREAD_USAGE</a>&#160;&#160;&#160;false</td></tr>
-<tr class="separator:a35ccdbfc6930b7f7ef8a2c91282a804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -129,12 +121,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ad9eeec294b2ae3129d1688c953b06555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#ad9eeec294b2ae3129d1688c953b06555">renderer_receive_frame</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, void *frame)</td></tr>
 <tr class="memdesc:ad9eeec294b2ae3129d1688c953b06555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video or audio frame.  <a href="renderer_8c.html#ad9eeec294b2ae3129d1688c953b06555">More...</a><br /></td></tr>
 <tr class="separator:ad9eeec294b2ae3129d1688c953b06555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662ad932609d895729db146e73b2aceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a662ad932609d895729db146e73b2aceb">renderer_update</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer)</td></tr>
-<tr class="memdesc:a662ad932609d895729db146e73b2aceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does any pending work the renderer wants to do.  <a href="renderer_8c.html#a662ad932609d895729db146e73b2aceb">More...</a><br /></td></tr>
-<tr class="separator:a662ad932609d895729db146e73b2aceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a945c3d6314687c99b85e7abb1462095a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a945c3d6314687c99b85e7abb1462095a">renderer_try_render</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer)</td></tr>
-<tr class="memdesc:a945c3d6314687c99b85e7abb1462095a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the video/audio frames (If any are available to render)  <a href="renderer_8c.html#a945c3d6314687c99b85e7abb1462095a">More...</a><br /></td></tr>
-<tr class="separator:a945c3d6314687c99b85e7abb1462095a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751bce4fc770bc6f26daf49d5fd45fd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a751bce4fc770bc6f26daf49d5fd45fd8">destroy_renderer</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer)</td></tr>
 <tr class="memdesc:a751bce4fc770bc6f26daf49d5fd45fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the given whist renderer.  <a href="renderer_8c.html#a751bce4fc770bc6f26daf49d5fd45fd8">More...</a><br /></td></tr>
 <tr class="separator:a751bce4fc770bc6f26daf49d5fd45fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,36 +128,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains the video/audio renderer </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a35ccdbfc6930b7f7ef8a2c91282a804b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ccdbfc6930b7f7ef8a2c91282a804b">&#9670;&nbsp;</a></span>LOG_RENDERER_THREAD_USAGE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LOG_RENDERER_THREAD_USAGE&#160;&#160;&#160;false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a78b84a5133bfa661a731f975360f047a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78b84a5133bfa661a731f975360f047a">&#9670;&nbsp;</a></span>SINGLE_THREAD_MODEL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SINGLE_THREAD_MODEL&#160;&#160;&#160;false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a751bce4fc770bc6f26daf49d5fd45fd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a751bce4fc770bc6f26daf49d5fd45fd8">&#9670;&nbsp;</a></span>destroy_renderer()</h2>
 
@@ -352,66 +309,6 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths.</dd>
 <dd>
 The whist_renderer needs you to keep the data in frame alive, until renderer_wants_frame later returns True, since that implies it's done with the old packet and wants a new one TODO: Use a memcpy to simplify this logic </dd></dl>
-
-</div>
-</div>
-<a id="a945c3d6314687c99b85e7abb1462095a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a945c3d6314687c99b85e7abb1462095a">&#9670;&nbsp;</a></span>renderer_try_render()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void renderer_try_render </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistRenderer.html">WhistRenderer</a> *&#160;</td>
-          <td class="paramname"><em>renderer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Render the video/audio frames (If any are available to render) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">renderer</td><td>The video context that wants to render a frame</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>This function is thread-safe, and may be called in a way that overlaps other functions that use the whist renderer.</dd>
-<dd>
-This function will potentially take a long time (4-8ms)</dd>
-<dd>
-This function is optional to call, but it's provided so that rendering work can be done on a thread that already exists. If you fail to call this function, another thread will be used automatically, increasing CPU usage. </dd></dl>
-
-</div>
-</div>
-<a id="a662ad932609d895729db146e73b2aceb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a662ad932609d895729db146e73b2aceb">&#9670;&nbsp;</a></span>renderer_update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void renderer_update </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistRenderer.html">WhistRenderer</a> *&#160;</td>
-          <td class="paramname"><em>renderer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Does any pending work the renderer wants to do. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">renderer</td><td>The renderer to update</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>This function is guaranteed to return virtually instantly. It may be used in any hotpaths.</dd>
-<dd>
-In order for video and audio to be responsive, this function <em>MUST</em> be called in a tight loop, at least once every millisecond. </dd></dl>
 
 </div>
 </div>
