@@ -11,5 +11,7 @@ var dir_b42396209471d5d13338a84a02610e1c =
     [ "whist_frame.c", "whist__frame_8c.html", "whist__frame_8c" ],
     [ "whist_frame.h", "whist__frame_8h.html", "whist__frame_8h" ],
     [ "whist_memory.c", "whist__memory_8c.html", "whist__memory_8c" ],
-    [ "whist_memory.h", "whist__memory_8h.html", "whist__memory_8h" ]
+    [ "whist_memory.h", "whist__memory_8h.html", "whist__memory_8h" ],
+    [ "whist_string.c", "whist__string_8c.html", "whist__string_8c" ],
+    [ "whist_string.h", "whist__string_8h.html", "whist__string_8h" ]
 ];

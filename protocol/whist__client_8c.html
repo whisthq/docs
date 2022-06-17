@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('whist__client_8c.html',''); initResiza
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="whist__string_8h_source.html">whist/core/whist_string.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_2network_2network_8h_source.html">whist/network/network.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="aes_8h_source.html">whist/utils/aes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="clock_8h_source.html">whist/utils/clock.h</a>&gt;</code><br />
@@ -125,11 +126,13 @@ Macros</h2></td></tr>
 <tr class="separator:a3a90209de834d7d87f20ea1f1d3408f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44eb83ec64358b8e2db0f94e7b85b8f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a44eb83ec64358b8e2db0f94e7b85b8f2">MAX_INIT_CONNECTION_ATTEMPTS</a>&#160;&#160;&#160;(6)</td></tr>
 <tr class="separator:a44eb83ec64358b8e2db0f94e7b85b8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba19228d7ed5ce0f05a6cd6cf19f503"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a7ba19228d7ed5ce0f05a6cd6cf19f503">CLIENT_SHOULD_CONTINUE</a>()&#160;&#160;&#160;(!<a class="el" href="whist__client_8c.html#ad1bcee1b918b7f8ce7d55837de4d63b0">client_exiting</a> &amp;&amp; (exit_code == <a class="el" href="whist_8h.html#aef166b266f8d5b853ec64a90756fafb6a1e9b2a03b386a7ed2cdf948c46161579">WHIST_EXIT_SUCCESS</a>))</td></tr>
+<tr class="separator:a7ba19228d7ed5ce0f05a6cd6cf19f503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afbe70ceefbdbe1bb100d5da6b8e517e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#afbe70ceefbdbe1bb100d5da6b8e517e5">COMMAND_LINE_STRING_OPTION</a> (new_tab_urls, 'x', &quot;new-tab-url&quot;, MAX_URL_LENGTH *<a class="el" href="whist_8h.html#ac4841e192e48d095904d7d6a90e8801f">MAX_NEW_TAB_URLS</a>, &quot;URL to open in new tab.&quot;) static void sync_keyboard_state(<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
-<tr class="separator:afbe70ceefbdbe1bb100d5da6b8e517e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136a8324c32dbd58b3da708e8aec31f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#a136a8324c32dbd58b3da708e8aec31f6">COMMAND_LINE_BOOL_OPTION</a> (wait_dynamic_arguments, 'r', &quot;dynamic-arguments&quot;, &quot;Wait for dynamic arguments to be passed in via the frontend. SDL uses &quot; &quot;`key` or `key?value` via stdin.&quot;)</td></tr>
+<tr class="separator:a136a8324c32dbd58b3da708e8aec31f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad061dda8204d18c77ac3f472d7588a4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__client_8c.html#ad061dda8204d18c77ac3f472d7588a4c">whist_client_main</a> (int argc, const char *argv[])</td></tr>
 <tr class="separator:ad061dda8204d18c77ac3f472d7588a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -173,6 +176,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a7ba19228d7ed5ce0f05a6cd6cf19f503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba19228d7ed5ce0f05a6cd6cf19f503">&#9670;&nbsp;</a></span>CLIENT_SHOULD_CONTINUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLIENT_SHOULD_CONTINUE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;(!<a class="el" href="whist__client_8c.html#ad1bcee1b918b7f8ce7d55837de4d63b0">client_exiting</a> &amp;&amp; (exit_code == <a class="el" href="whist_8h.html#aef166b266f8d5b853ec64a90756fafb6a1e9b2a03b386a7ed2cdf948c46161579">WHIST_EXIT_SUCCESS</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a44eb83ec64358b8e2db0f94e7b85b8f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44eb83ec64358b8e2db0f94e7b85b8f2">&#9670;&nbsp;</a></span>MAX_INIT_CONNECTION_ATTEMPTS</h2>
 
@@ -188,40 +208,34 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="afbe70ceefbdbe1bb100d5da6b8e517e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbe70ceefbdbe1bb100d5da6b8e517e5">&#9670;&nbsp;</a></span>COMMAND_LINE_STRING_OPTION()</h2>
+<a id="a136a8324c32dbd58b3da708e8aec31f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136a8324c32dbd58b3da708e8aec31f6">&#9670;&nbsp;</a></span>COMMAND_LINE_BOOL_OPTION()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">COMMAND_LINE_STRING_OPTION </td>
+          <td class="memname">COMMAND_LINE_BOOL_OPTION </td>
           <td>(</td>
-          <td class="paramtype">new_tab_urls&#160;</td>
+          <td class="paramtype">wait_dynamic_arguments&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">'x'&#160;</td>
+          <td class="paramtype">'r'&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;new-tab-url&quot;&#160;</td>
+          <td class="paramtype">&quot;dynamic-arguments&quot;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="whist_8h.html#a3a0a3a9d3952e2b57333ed6daceb163e">MAX_URL_LENGTH</a> *&#160;</td>
-          <td class="paramname"><em>MAX_NEW_TAB_URLS</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;URL to open in new tab.&quot;&#160;</td>
+          <td class="paramtype">&quot;Wait for dynamic arguments to be passed in via the frontend. SDL uses &quot; &quot;`key` or `key?value` via stdin.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

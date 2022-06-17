@@ -17,9 +17,7 @@ var whist_8c =
     [ "print_system_info", "whist_8c.html#a37f44bf45880153c07ddf47a4dcaf135", null ],
     [ "read_hexadecimal_private_key", "whist_8c.html#a8232ddfa6ec8bc69f17a67b45953c6dc", null ],
     [ "runcmd", "whist_8c.html#a18de2db2f97ace4d6129993e3d10e7f2", null ],
-    [ "safe_strncpy", "whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e", null ],
     [ "terminate_protocol", "whist_8c.html#a637da5470a9f4107a59054c340442a7f", null ],
-    [ "trim_utf8_string", "whist_8c.html#a8643207a604b19f3fefe5046bd3c0290", null ],
     [ "whist_git_revision", "whist_8c.html#acd2a6b85af00a5afce40e6c334575ec0", null ],
     [ "whist_init_subsystems", "whist_8c.html#ac53d33c8e6e74a072be3b2319b56cb75", null ]
 ];

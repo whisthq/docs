@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"clipboard__internal_8h.html#ade76749524806bb7873dd724056c4ba9":[14,0,2,1,2,1],
 "clipboard__internal_8h.html#af1a8e7cc53b2b0d020dcb3cc14a2c294":[14,0,2,1,2,5],
 "clipboard__internal_8h_source.html":[14,0,2,1,2],
 "clipboard__osx_8h.html":[14,0,2,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "encode_8h_source.html":[14,0,2,11,1,3],
 "error__codes_8c.html":[14,0,2,2,0],
 "error__codes_8h.html":[14,0,2,2,1],
-"error__codes_8h_source.html":[14,0,2,2,1],
-"error__monitor_8c.html":[14,0,2,8,0]
+"error__codes_8h_source.html":[14,0,2,2,1]
 };

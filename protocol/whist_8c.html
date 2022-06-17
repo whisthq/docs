@@ -131,12 +131,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a637da5470a9f4107a59054c340442a7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a637da5470a9f4107a59054c340442a7f">terminate_protocol</a> (<a class="el" href="whist_8h.html#aef166b266f8d5b853ec64a90756fafb6">WhistExitCode</a> exit_code)</td></tr>
 <tr class="memdesc:a637da5470a9f4107a59054c340442a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the protocol.  <a href="whist_8c.html#a637da5470a9f4107a59054c340442a7f">More...</a><br /></td></tr>
 <tr class="separator:a637da5470a9f4107a59054c340442a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">safe_strncpy</a> (char *destination, const char *source, size_t num)</td></tr>
-<tr class="memdesc:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a string from source to destination.  <a href="whist_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e">More...</a><br /></td></tr>
-<tr class="separator:a50bc2c1ea19648a1aa37bb99a482c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8643207a604b19f3fefe5046bd3c0290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a8643207a604b19f3fefe5046bd3c0290">trim_utf8_string</a> (char *<a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>)</td></tr>
-<tr class="memdesc:a8643207a604b19f3fefe5046bd3c0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation.  <a href="whist_8c.html#a8643207a604b19f3fefe5046bd3c0290">More...</a><br /></td></tr>
-<tr class="separator:a8643207a604b19f3fefe5046bd3c0290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBitArray.html">BitArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">bit_array_create</a> (const unsigned int bits)</td></tr>
 <tr class="memdesc:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structBitArray.html">BitArray</a> object.  <a href="whist_8c.html#a8c351e0b4d32cb3e8f4a803ceeee75cb">More...</a><br /></td></tr>
 <tr class="separator:a8c351e0b4d32cb3e8f4a803ceeee75cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -636,52 +630,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a50bc2c1ea19648a1aa37bb99a482c69e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50bc2c1ea19648a1aa37bb99a482c69e">&#9670;&nbsp;</a></span>safe_strncpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool safe_strncpy </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>destination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Safely copy a string from source to destination. </p>
-<p>Copies at most <code>num</code> bytes from <code>source</code> to <code>destination</code>. Bytes after the first null character of <code>source</code> are not copied. If no null character is encountered within the first <code>num</code> bytes of <code>source</code>, <code>destination[num - 1]</code> will be manually set to zero, so <code>destination</code> is guaranteed to be null terminated, unless <code>num</code> is zero, in which case the <code>destination</code> is left unchanged.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">destination</td><td>Address to copy to. Should have at least <code>num</code> bytes available.</td></tr>
-    <tr><td class="paramname">source</td><td>Address to copy from.</td></tr>
-    <tr><td class="paramname">num</td><td>Number of bytes to copy.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all bytes of source were copied (i.e. strlen(source) &lt;= num - 1) </dd></dl>
-
-</div>
-</div>
 <a id="a637da5470a9f4107a59054c340442a7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a637da5470a9f4107a59054c340442a7f">&#9670;&nbsp;</a></span>terminate_protocol()</h2>
 
@@ -699,33 +647,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Terminates the protocol. </p>
-
-</div>
-</div>
-<a id="a8643207a604b19f3fefe5046bd3c0290"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8643207a604b19f3fefe5046bd3c0290">&#9670;&nbsp;</a></span>trim_utf8_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void trim_utf8_string </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function takes a null-terminated string and modifies it to remove any dangling unicode characters that may have been left over from a previous truncation. </p>
-<p>This is necessary because dangling unicode characters will cause horrible crashes if they are not removed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>The utf8 string to be trimmed. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

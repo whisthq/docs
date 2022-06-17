@@ -112,7 +112,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388aca1c55412a0d4ce288480ebe817f5364">SDL_FRONTEND_EVENT_WINDOW_TITLE_CHANGE</a>, 
 <a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388a7c4a92fe75fb1db5a2dc2df95dccc61c">SDL_FRONTEND_EVENT_TITLE_BAR_COLOR_CHANGE</a>, 
 <br />
-&#160;&#160;<a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388aed95673565a5f7fa00ed3bbc5bda97cb">SDL_FRONTEND_EVENT_NOTIFICATION_CALLBACK</a>, 
+&#160;&#160;<a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388a9b7c776c63caea1db4c3e39387b5672b">SDL_FRONTEND_EVENT_STDIN_EVENT</a>, 
+<a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388aed95673565a5f7fa00ed3bbc5bda97cb">SDL_FRONTEND_EVENT_NOTIFICATION_CALLBACK</a>, 
 <a class="el" href="sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388a0e124a3244698b87d9b8167e4f3fdac4">SDL_FRONTEND_EVENT_INTERRUPT</a>
 <br />
  }</td></tr>
@@ -195,6 +196,9 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388a7c4a92fe75fb1db5a2dc2df95dccc61c"></a>SDL_FRONTEND_EVENT_TITLE_BAR_COLOR_CHANGE&#160;</td><td class="fielddoc"><p>Window title bar colour change. </p>
 <p>data1 contains a pointer to a <a class="el" href="structWhistRGBColor.html" title="RGB Color.">WhistRGBColor</a> object, which the receiver will need to free after use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388a9b7c776c63caea1db4c3e39387b5672b"></a>SDL_FRONTEND_EVENT_STDIN_EVENT&#160;</td><td class="fielddoc"><p>Stdin-generated event from stdin (<code>key?value\n</code>). </p>
+<p>data1 contains a pointer to a key string (char*), and data2 contains a pointer to a value string (char*) or NULL. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388aed95673565a5f7fa00ed3bbc5bda97cb"></a>SDL_FRONTEND_EVENT_NOTIFICATION_CALLBACK&#160;</td><td class="fielddoc"><p>A notification was activated by the user. </p>
 <p>Contains no data. Future: indicate which notification it was. </p>

@@ -1,5 +1,11 @@
 var NAVTREEINDEX10 =
 {
+"sdl_2common_8h_source.html":[14,0,0,0,0,0],
+"sdl_8c.html":[14,0,0,0,0,3],
+"sdl_8c.html#aaea282911e153f1e861e9fb01e013137":[14,0,0,0,0,3,1],
+"sdl_8c.html#af0754291e7863cf65ec85fb865764a10":[14,0,0,0,0,3,0],
+"sdl_8h.html":[14,0,0,0,0,4],
+"sdl_8h.html#aaea282911e153f1e861e9fb01e013137":[14,0,0,0,0,4,0],
 "sdl_8h_source.html":[14,0,0,0,0,4],
 "sdl__utils_8c.html":[14,0,0,13],
 "sdl__utils_8c.html#a0c4c9ee3256caeba26301caf28573d6e":[14,0,0,13,13],
@@ -86,6 +92,12 @@ var NAVTREEINDEX10 =
 "state_8h.html#a53e4b8c1c584c4648a19f1987297b8d3":[14,0,1,13,3],
 "state_8h.html#aecd820e65ec855cf104d6f61bfe8f384":[14,0,1,13,2],
 "state_8h_source.html":[14,0,1,13],
+"stdin__parser_8c.html":[14,0,0,0,0,5],
+"stdin__parser_8c.html#a4decb6160c988d42e074c1ebf1d5da8e":[14,0,0,0,0,5,0],
+"stdin__parser_8c.html#a5ce5739870e92bd812da530b881489d0":[14,0,0,0,0,5,1],
+"stdin__parser_8h.html":[14,0,0,0,0,6],
+"stdin__parser_8h.html#a5ce5739870e92bd812da530b881489d0":[14,0,0,0,0,6,0],
+"stdin__parser_8h_source.html":[14,0,0,0,0,6],
 "string__buffer_8c.html":[14,0,2,10,26],
 "string__buffer_8c.html#a18a807648fd60b3eaded39536d45305b":[14,0,2,10,26,5],
 "string__buffer_8c.html#a6ba40b41b0bf7e9ee8f9f5bc27f6c8c0":[14,0,2,10,26,4],
@@ -237,17 +249,5 @@ var NAVTREEINDEX10 =
 "structCpuInfo.html#abc9d6aeb929d6d8e508f6ccb10ccb0d4":[13,0,22,2],
 "structCpuInfo.html#ad50875d591cb203c4d456e741ce32d0c":[13,0,22,1],
 "structDebugConsoleOverrideValues.html":[13,0,23],
-"structDebugConsoleOverrideValues.html#a0c3ab997b3f535543e45c303141baf7d":[13,0,23,1],
-"structDebugConsoleOverrideValues.html#a16329417c7f5ff2c6f361e4ceb9bbcca":[13,0,23,3],
-"structDebugConsoleOverrideValues.html#a335ac2dc7c1bc5309e5088e329b1cc78":[13,0,23,7],
-"structDebugConsoleOverrideValues.html#a5161d9392ed5a50daa3a6c41e3356e4c":[13,0,23,5],
-"structDebugConsoleOverrideValues.html#a6cd189ee8844ac67cb6b01a2f2403e05":[13,0,23,4],
-"structDebugConsoleOverrideValues.html#a780ac7d7ee3f57ad74cc14b915f6355a":[13,0,23,2],
-"structDebugConsoleOverrideValues.html#a8b256cd1bcc979b4523e067484656a13":[13,0,23,0],
-"structDebugConsoleOverrideValues.html#a98e29b3292bdd95ea1907657a9d81795":[13,0,23,6],
-"structDecodedFrameData.html":[13,0,24],
-"structDecodedFrameData.html#a5f6c1b087be41c2cd65bccee5a0838ad":[13,0,24,2],
-"structDecodedFrameData.html#a66788ca3580272abce0db59473100b55":[13,0,24,3],
-"structDecodedFrameData.html#a88dd4ffb3f9846ec887568a91eda2f3d":[13,0,24,1],
-"structDecodedFrameData.html#a9d101bb9cda6e9feb3a1be64b2827575":[13,0,24,0]
+"structDebugConsoleOverrideValues.html#a0c3ab997b3f535543e45c303141baf7d":[13,0,23,1]
 };

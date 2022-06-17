@@ -1,8 +1,9 @@
 var whist__client_8c =
 [
     [ "APP_PATH_MAXLEN", "whist__client_8c.html#a3a90209de834d7d87f20ea1f1d3408f4", null ],
+    [ "CLIENT_SHOULD_CONTINUE", "whist__client_8c.html#a7ba19228d7ed5ce0f05a6cd6cf19f503", null ],
     [ "MAX_INIT_CONNECTION_ATTEMPTS", "whist__client_8c.html#a44eb83ec64358b8e2db0f94e7b85b8f2", null ],
-    [ "COMMAND_LINE_STRING_OPTION", "whist__client_8c.html#afbe70ceefbdbe1bb100d5da6b8e517e5", null ],
+    [ "COMMAND_LINE_BOOL_OPTION", "whist__client_8c.html#a136a8324c32dbd58b3da708e8aec31f6", null ],
     [ "whist_client_main", "whist__client_8c.html#ad061dda8204d18c77ac3f472d7588a4c", null ],
     [ "active_pinch", "whist__client_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48", null ],
     [ "binary_aes_private_key", "whist__client_8c.html#a8178ac994435a95792a29745aa7a77a0", null ],

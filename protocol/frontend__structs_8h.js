@@ -6,6 +6,8 @@ var frontend__structs_8h =
     [ "FrontendMouseMotionEvent", "structFrontendMouseMotionEvent.html", "structFrontendMouseMotionEvent" ],
     [ "FrontendMouseButtonEvent", "structFrontendMouseButtonEvent.html", "structFrontendMouseButtonEvent" ],
     [ "FrontendMouseWheelEvent", "structFrontendMouseWheelEvent.html", "structFrontendMouseWheelEvent" ],
+    [ "FrontendOpenURLEvent", "structFrontendOpenURLEvent.html", "structFrontendOpenURLEvent" ],
+    [ "FrontendStartupParameterEvent", "structFrontendStartupParameterEvent.html", "structFrontendStartupParameterEvent" ],
     [ "FrontendGestureEvent", "structFrontendGestureEvent.html", "structFrontendGestureEvent" ],
     [ "FrontendFileDropEvent", "structFrontendFileDropEvent.html", "structFrontendFileDropEvent" ],
     [ "FrontendFileDragEvent", "structFrontendFileDragEvent.html", "structFrontendFileDragEvent" ],
@@ -19,8 +21,10 @@ var frontend__structs_8h =
     [ "FrontendMouseButtonEvent", "frontend__structs_8h.html#ab718664de850d811c78a265a50a3a696", null ],
     [ "FrontendMouseMotionEvent", "frontend__structs_8h.html#a4e2571cf2f87bb868018aa39372c5d46", null ],
     [ "FrontendMouseWheelEvent", "frontend__structs_8h.html#af255f07e46694288983dcf6bf877d67b", null ],
+    [ "FrontendOpenURLEvent", "frontend__structs_8h.html#aa8c3c7a12b421b8e031236d54bdb4174", null ],
     [ "FrontendQuitEvent", "frontend__structs_8h.html#ade7a2e15e7cd0fbbb0bfd77b44bedf9f", null ],
     [ "FrontendResizeEvent", "frontend__structs_8h.html#a6c0a052d083a70ec45b7dbe083ea9375", null ],
+    [ "FrontendStartupParameterEvent", "frontend__structs_8h.html#a7c26f1fae7fa50b2905dcc6d0ebe376c", null ],
     [ "FrontendVisibilityEvent", "frontend__structs_8h.html#ac124b80f5256981c2f1cdc2d7c701213", null ],
     [ "WhistFrontend", "frontend__structs_8h.html#ac4039dfcf74e38247ed9e8ab1dbed25f", null ],
     [ "WhistFrontendEvent", "frontend__structs_8h.html#a746d5495832038021a0930072cbbb2e3", null ],
@@ -37,6 +41,8 @@ var frontend__structs_8h =
       [ "FRONTEND_EVENT_GESTURE", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaccfc8dd447b06a62ff6181a6bc144f07", null ],
       [ "FRONTEND_EVENT_FILE_DRAG", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfad8810fea77ace175df02a640dcadf11e", null ],
       [ "FRONTEND_EVENT_FILE_DROP", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfada962210eb4ab2a3b86ebfa179a10230", null ],
+      [ "FRONTEND_EVENT_OPEN_URL", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfad64382f43a2a364644b555ac6425719d", null ],
+      [ "FRONTEND_EVENT_STARTUP_PARAMETER", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa2276ebb143c4f47d9ae57cedfbdd4fea", null ],
       [ "FRONTEND_EVENT_QUIT", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaa1023541c5b670566f0ae667deb73d43", null ],
       [ "FRONTEND_EVENT_INTERRUPT", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa676739a05c4e0a1af9cac75dc2e12ec3", null ]
     ] ]
