@@ -5,6 +5,7 @@ var whist__memory_8c =
     [ "MAX_FREES", "whist__memory_8c.html#a4c6d7bdba62c60dcd15111ecbf34edb7", null ],
     [ "TO_REGION_DATA", "whist__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c", null ],
     [ "TO_REGION_HEADER", "whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a", null ],
+    [ "USING_MADVISE", "whist__memory_8c.html#af3c7c98618c86130b8feb4c1d3a0805a", null ],
     [ "allocate_block", "group__block__allocator.html#gaca557005490e3fa526d5b1311f7c7ed8", null ],
     [ "allocate_region", "group__region__allocator.html#gac5cb37b0580474e152f2450c34979720", null ],
     [ "create_block_allocator", "group__block__allocator.html#ga4834f7c2ad3291b85f97541702be50ec", null ],

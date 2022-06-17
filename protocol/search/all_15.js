@@ -92,10 +92,11 @@ var searchData=
   ['use_5fmonitor_2323',['USE_MONITOR',['../server_2video_8c.html#ad846e33fa77d9246e697aa1142e2bd5c',1,'video.c']]],
   ['use_5fnumpad_2324',['USE_NUMPAD',['../winapi__input__driver_8c.html#aba49b09f8d4131835017618fc0250711',1,'winapi_input_driver.c']]],
   ['using_5fffmpeg_5fiframe_5fflag_2325',['USING_FFMPEG_IFRAME_FLAG',['../whist_8h.html#ac98c653bb06a80c855ad7013dccb3f26',1,'whist.h']]],
-  ['using_5fnvidia_5fcapture_2326',['USING_NVIDIA_CAPTURE',['../whist_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6',1,'whist.h']]],
-  ['using_5fnvidia_5fencode_2327',['USING_NVIDIA_ENCODE',['../whist_8h.html#a8c14c321fd244515ad04ff39026feb75',1,'whist.h']]],
-  ['using_5fpng_2328',['using_png',['../structWhistCursorInfo.html#ae6f6609f7599d30555498ee923401082',1,'WhistCursorInfo']]],
-  ['using_5fserverside_5fscale_2329',['USING_SERVERSIDE_SCALE',['../whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb',1,'whist.h']]],
-  ['using_5fstun_2330',['using_stun',['../client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;client_utils.c'],['../whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;client_utils.c']]],
-  ['utf8_5fstring_2331',['UTF8_STRING',['../structX11CaptureDevice.html#a4d38c5daddbd848151b0a8eb0b7c2420',1,'X11CaptureDevice']]]
+  ['using_5fmadvise_2326',['USING_MADVISE',['../whist__memory_8c.html#af3c7c98618c86130b8feb4c1d3a0805a',1,'whist_memory.c']]],
+  ['using_5fnvidia_5fcapture_2327',['USING_NVIDIA_CAPTURE',['../whist_8h.html#a0e53fd1451b40e47cdbfc94814bf4de6',1,'whist.h']]],
+  ['using_5fnvidia_5fencode_2328',['USING_NVIDIA_ENCODE',['../whist_8h.html#a8c14c321fd244515ad04ff39026feb75',1,'whist.h']]],
+  ['using_5fpng_2329',['using_png',['../structWhistCursorInfo.html#ae6f6609f7599d30555498ee923401082',1,'WhistCursorInfo']]],
+  ['using_5fserverside_5fscale_2330',['USING_SERVERSIDE_SCALE',['../whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb',1,'whist.h']]],
+  ['using_5fstun_2331',['using_stun',['../client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;client_utils.c'],['../whist__client_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'using_stun():&#160;client_utils.c']]],
+  ['utf8_5fstring_2332',['UTF8_STRING',['../structX11CaptureDevice.html#a4d38c5daddbd848151b0a8eb0b7c2420',1,'X11CaptureDevice']]]
 ];

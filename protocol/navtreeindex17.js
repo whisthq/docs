@@ -15,6 +15,7 @@ var NAVTREEINDEX17 =
 "whist__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c":[14,0,2,2,10,3],
 "whist__memory_8c.html#a4c6d7bdba62c60dcd15111ecbf34edb7":[14,0,2,2,10,2],
 "whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a":[14,0,2,2,10,4],
+"whist__memory_8c.html#af3c7c98618c86130b8feb4c1d3a0805a":[14,0,2,2,10,5],
 "whist__memory_8h.html":[14,0,2,2,11],
 "whist__memory_8h_source.html":[14,0,2,2,11],
 "win__clipboard_8c.html":[14,0,2,1,7],
