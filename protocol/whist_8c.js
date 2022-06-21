@@ -19,5 +19,7 @@ var whist_8c =
     [ "runcmd", "whist_8c.html#a18de2db2f97ace4d6129993e3d10e7f2", null ],
     [ "terminate_protocol", "whist_8c.html#a637da5470a9f4107a59054c340442a7f", null ],
     [ "whist_git_revision", "whist_8c.html#acd2a6b85af00a5afce40e6c334575ec0", null ],
+    [ "whist_gpu_lock", "whist_8c.html#a61cf5fd0629aa174cc700c83b036f624", null ],
+    [ "whist_gpu_unlock", "whist_8c.html#af886aaebd200cf756bb09f763de18455", null ],
     [ "whist_init_subsystems", "whist_8c.html#ac53d33c8e6e74a072be3b2319b56cb75", null ]
 ];

@@ -30,6 +30,7 @@ var whist_8h =
     [ "DEFAULT_HEX_PRIVATE_KEY", "whist_8h.html#a151518969977796d7b0c7d40e9ced62f", null ],
     [ "DISABLED_ENCODER_FPS", "whist_8h.html#aa432070c422ef782d49e2dc35b8a6e56", null ],
     [ "EMBEDDED_OBJECT", "whist_8h.html#aad792d60503fe2c4fc109e97ba2ce14a", null ],
+    [ "FIX_M1_FREEZE_WITH_LOCK", "whist_8h.html#a3ddd319fb7723a172ff7e547aaa35f50", null ],
     [ "INPUT_DRIVER", "whist_8h.html#a514734c0c6acc3c2f2076323d45676d8", null ],
     [ "LOG_AUDIO", "whist_8h.html#aba13441b998b179fbf9483152582b6e2", null ],
     [ "LOG_CPU_USAGE", "whist_8h.html#a32364be58c0044b63dc47aeb962254b4", null ],
@@ -171,5 +172,7 @@ var whist_8h =
     [ "runcmd", "whist_8h.html#a18de2db2f97ace4d6129993e3d10e7f2", null ],
     [ "terminate_protocol", "whist_8h.html#adc70ab64077706c3578a5d50fb4820d5", null ],
     [ "whist_git_revision", "whist_8h.html#acd2a6b85af00a5afce40e6c334575ec0", null ],
+    [ "whist_gpu_lock", "whist_8h.html#a61cf5fd0629aa174cc700c83b036f624", null ],
+    [ "whist_gpu_unlock", "whist_8h.html#af886aaebd200cf756bb09f763de18455", null ],
     [ "whist_init_subsystems", "whist_8h.html#ac53d33c8e6e74a072be3b2319b56cb75", null ]
 ];
