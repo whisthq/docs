@@ -1,5 +1,9 @@
 var NAVTREEINDEX14 =
 {
+"structWhistClientMessage.html#a84fb804d6eb703ebdf171fde02f04527":[13,0,120,1],
+"structWhistClientMessage.html#a8558ab7ac655f18ca1cddca38a9458f6":[13,0,120,19],
+"structWhistClientMessage.html#a9357fc2171bc585f9e53541f4a6b7973":[13,0,120,14],
+"structWhistClientMessage.html#a9a948aef3c45ac773616458b125abdbd":[13,0,120,12],
 "structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6":[13,0,120,2],
 "structWhistClientMessage.html#aae5fe9f6f790113e3bef38200d5bb20a":[13,0,120,0],
 "structWhistClientMessage.html#ab8a5a9f3b59ec3de93fd01d469b5f690":[13,0,120,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX14 =
 "struct__whist__server__config.html#a576faee2d8a900a1da2299369b0d2ec5":[13,0,0,3],
 "struct__whist__server__config.html#a974ca4f84c65261f4d4fd2d41c559a2b":[13,0,0,1],
 "struct__whist__server__config.html#aaec6b60177bbb307628d305ce768fcbb":[13,0,0,2],
-"structcm256__block__t.html":[13,0,19],
-"structcm256__block__t.html#a3e38a4353a34c5fd7508b81b617f7b1a":[13,0,19,1],
-"structcm256__block__t.html#ae4a6d500829ef1eea5d13ab38add2da7":[13,0,19,0],
-"structcm256__encoder__params__t.html":[13,0,20],
-"structcm256__encoder__params__t.html#a246260fbbadaa3ad53a823f3a9e907fc":[13,0,20,0]
+"structcm256__block__t.html":[13,0,19]
 };

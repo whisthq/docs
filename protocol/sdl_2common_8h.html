@@ -189,13 +189,13 @@ Enumerations</h2></td></tr>
 <p>data1 contains a pointer to a <a class="el" href="structFrontendFileDragEvent.html">FrontendFileDragEvent</a>, which the receiver will need to free after use. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388a93eeb920dec2413df6c43e1cb0910b55"></a>SDL_FRONTEND_EVENT_FULLSCREEN&#160;</td><td class="fielddoc"><p>Fullscreen event. </p>
-<p>data1 contains a boolean cast to a pointer indicating whether we want to enter (true) or exit (false) fullscreen mode. </p>
+<p>data1 contains a boolean cast to a pointer indicating whether we want to enter (true) or exit (false) fullscreen mode. data2 contains an int cast to a pointer indicating the ID of the window to fullscreen. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388aca1c55412a0d4ce288480ebe817f5364"></a>SDL_FRONTEND_EVENT_WINDOW_TITLE_CHANGE&#160;</td><td class="fielddoc"><p>Window title change event. </p>
-<p>data1 contains a pointer to a string, which the receiver will need to free after tuse. </p>
+<p>data1 contains a pointer to a string, which the receiver will need to free after tuse. data2 contains an int cast to a pointer indicating the ID of the window to change </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388a7c4a92fe75fb1db5a2dc2df95dccc61c"></a>SDL_FRONTEND_EVENT_TITLE_BAR_COLOR_CHANGE&#160;</td><td class="fielddoc"><p>Window title bar colour change. </p>
-<p>data1 contains a pointer to a <a class="el" href="structWhistRGBColor.html" title="RGB Color.">WhistRGBColor</a> object, which the receiver will need to free after use. </p>
+<p>data1 contains a pointer to a <a class="el" href="structWhistRGBColor.html" title="RGB Color.">WhistRGBColor</a> object, which the receiver will need to free after use. data2 contains an int cast to a pointer indicating the ID of the window to change </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a385c44f6fb256e5716a2302a5b940388a9b7c776c63caea1db4c3e39387b5672b"></a>SDL_FRONTEND_EVENT_STDIN_EVENT&#160;</td><td class="fielddoc"><p>Stdin-generated event from stdin (<code>key?value\n</code>). </p>
 <p>data1 contains a pointer to a key string (char*), and data2 contains a pointer to a value string (char*) or NULL. </p>

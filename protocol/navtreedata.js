@@ -151,20 +151,20 @@ var NAVTREEINDEX =
 "clipboard__internal_8h.html#ade76749524806bb7873dd724056c4ba9",
 "error__monitor_8c.html#abc98a77657763c9552e00036f762bf38",
 "ffmpeg__encode_8c.html#a0e2ca3b2e42c16087c14ed78d6d030b9",
-"functions_z.html",
-"group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04dafa31102004a16b76b6601dfa35b81649",
+"functions_x.html",
+"group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04dad929b474325b4656f9c283bb6933f545",
 "group__timers.html#gac8d2bb9cbe037b8677ed25be7aa41c5c",
-"lodepng_8c.html#a4100642d70071029967c16afd72193ff",
-"log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0aef844b9ebeccdf9ea1353890aa96ed39",
-"network__algorithm_8h.html#ac5bd73cb56a9bd6311987644acb904b2",
-"sdl__utils_8c.html#a38188485497cb37637364f5d785ddb5f",
-"structDynamicBuffer.html",
-"structLTRState.html#ac19dfa2430ab067b04d47e04c1c169f0",
-"structRingBuffer.html#a0260e103fd1adae06fed275672381b86",
-"structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6",
-"structcm256__encoder__params__t.html#a3d016eb9f071ce63cb9508ef5f8e5e33",
-"whist_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b",
-"whist__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f"
+"lodepng_8c.html#a2e09963fb4b4eb4ee7789d40b9080250",
+"log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ae3b93673c756a8bcbe3014a6779acfc5",
+"network__algorithm_8h.html#a759113a57a57b0f3b1e31ee7615067d5",
+"sdl__utils_8c.html#a04f7cc99ef6ef885eb51000cf7cf8c38",
+"structDecodedFrameData.html#a5f6c1b087be41c2cd65bccee5a0838ad",
+"structLTRState.html#a75332579802631c6ed3f0ea8291dadbd",
+"structRegisteredResource.html#a4d549b8fc69a8bce4e28a6f9a16129be",
+"structWhistClientMessage.html#a84fb804d6eb703ebdf171fde02f04527",
+"structcm256__block__t.html#a3e38a4353a34c5fd7508b81b617f7b1a",
+"whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5ba7d577d5f6b53d2a8cf9f60ef153c68b9",
+"whist__frame_8h.html#a11350fab34a6d336dd5296535080bcea"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
