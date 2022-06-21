@@ -164,7 +164,7 @@ var NAVTREEINDEX =
 "structWhistClientMessage.html#a84fb804d6eb703ebdf171fde02f04527",
 "structcm256__block__t.html#a3e38a4353a34c5fd7508b81b617f7b1a",
 "whist_2network_2network_8h.html#a57fdac43f47de768666a1961513f2e5ba7d577d5f6b53d2a8cf9f60ef153c68b9",
-"whist__frame_8h.html#a11350fab34a6d336dd5296535080bcea"
+"whist__frame_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

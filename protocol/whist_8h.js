@@ -69,6 +69,7 @@ var whist_8h =
     [ "safe_mkdir", "whist_8h.html#a35c90ae9a8982d730fe7e45f3f7a3ca8", null ],
     [ "safe_open", "whist_8h.html#a745c362c94c9cb2dce7d0827d21ba3e8", null ],
     [ "safe_printf", "whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b", null ],
+    [ "safe_read", "whist_8h.html#abd685e3b5bfedf413b5576b4be896d00", null ],
     [ "UINPUT_INPUT_DRIVER", "whist_8h.html#ad69d62858e125982881b534cafa1cd0f", null ],
     [ "UNUSED", "whist_8h.html#a5f64c424fc4e04a8b3afd79a1e245625", null ],
     [ "US_IN_MS", "whist_8h.html#aeac12c17b335ba3ce62aa2cc8f1746ec", null ],

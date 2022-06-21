@@ -108,11 +108,59 @@ Functions</h2></td></tr>
 <tr class="memitem:adc43b3fdbbf8fe98727855db809862ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__string_8c.html#adc43b3fdbbf8fe98727855db809862ff">trim_newlines</a> (char *<a class="el" href="whist_8c.html#ad8ab729381f270b100f3d05b6c6676fc">str</a>)</td></tr>
 <tr class="memdesc:adc43b3fdbbf8fe98727855db809862ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim a string up to the first occurrence of a newline character; that is, <code>\r</code> or <code>\n</code>.  <a href="whist__string_8c.html#adc43b3fdbbf8fe98727855db809862ff">More...</a><br /></td></tr>
 <tr class="separator:adc43b3fdbbf8fe98727855db809862ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9a48ddca4399d1659098d15b9edbd7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist__string_8c.html#a0b9a48ddca4399d1659098d15b9edbd7">copy_and_escape</a> (char *dst, size_t dst_size, const char *src)</td></tr>
+<tr class="memdesc:a0b9a48ddca4399d1659098d15b9edbd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a string to a new buffer and escape any special characters.  <a href="whist__string_8c.html#a0b9a48ddca4399d1659098d15b9edbd7">More...</a><br /></td></tr>
+<tr class="separator:a0b9a48ddca4399d1659098d15b9edbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2022 Whist Technologies, Inc. </p>
 <p>Helper functions for string manipulations. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a0b9a48ddca4399d1659098d15b9edbd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9a48ddca4399d1659098d15b9edbd7">&#9670;&nbsp;</a></span>copy_and_escape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t copy_and_escape </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dst_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a string to a new buffer and escape any special characters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>The destination buffer. </td></tr>
+    <tr><td class="paramname">dst_size</td><td>The size of the destination buffer. </td></tr>
+    <tr><td class="paramname">src</td><td>The string to copy.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes copied. </dd></dl>
+
+</div>
+</div>
 <a id="a50bc2c1ea19648a1aa37bb99a482c69e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50bc2c1ea19648a1aa37bb99a482c69e">&#9670;&nbsp;</a></span>safe_strncpy()</h2>
 
