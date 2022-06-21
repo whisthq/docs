@@ -122,8 +122,6 @@ var annotated_dup =
     [ "VirtualFrontendContext", "structVirtualFrontendContext.html", "structVirtualFrontendContext" ],
     [ "WhistClientMessage", "structWhistClientMessage.html", "structWhistClientMessage" ],
     [ "WhistCommandLineOption", "structWhistCommandLineOption.html", "structWhistCommandLineOption" ],
-    [ "WhistCursorCache", "structWhistCursorCache.html", "structWhistCursorCache" ],
-    [ "WhistCursorCacheEntry", "structWhistCursorCacheEntry.html", "structWhistCursorCacheEntry" ],
     [ "WhistCursorInfo", "structWhistCursorInfo.html", "structWhistCursorInfo" ],
     [ "WhistCursorTypes", "structWhistCursorTypes.html", "structWhistCursorTypes" ],
     [ "WhistDestination", "structWhistDestination.html", "structWhistDestination" ],

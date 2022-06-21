@@ -153,12 +153,6 @@ Data Fields</h2></td></tr>
 <tr class="separator:a8a3ab0466d124a552f6b985be4f8fbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c7d6130bc7d5fa58b023596b7a58b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistServerState.html#a29c7d6130bc7d5fa58b023596b7a58b2">encoder_factory_codec_type</a></td></tr>
 <tr class="separator:a29c7d6130bc7d5fa58b023596b7a58b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8f44b85fe5168fb4a9b3b48e206f3aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistCursorCache.html">WhistCursorCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistServerState.html#ac8f44b85fe5168fb4a9b3b48e206f3aa">cursor_cache</a></td></tr>
-<tr class="memdesc:ac8f44b85fe5168fb4a9b3b48e206f3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server-side cursor cache.  <a href="structWhistServerState.html#ac8f44b85fe5168fb4a9b3b48e206f3aa">More...</a><br /></td></tr>
-<tr class="separator:ac8f44b85fe5168fb4a9b3b48e206f3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeea4d7e03c75356d75d98ddc3577442e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhistServerState.html#aeea4d7e03c75356d75d98ddc3577442e">last_cursor_hash</a></td></tr>
-<tr class="memdesc:aeea4d7e03c75356d75d98ddc3577442e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structHash.html">Hash</a> of the cursor used with the last frame.  <a href="structWhistServerState.html#aeea4d7e03c75356d75d98ddc3577442e">More...</a><br /></td></tr>
-<tr class="separator:aeea4d7e03c75356d75d98ddc3577442e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>internal state of the whist server </p>
@@ -272,22 +266,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac8f44b85fe5168fb4a9b3b48e206f3aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8f44b85fe5168fb4a9b3b48e206f3aa">&#9670;&nbsp;</a></span>cursor_cache</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structWhistCursorCache.html">WhistCursorCache</a>* WhistServerState::cursor_cache</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Server-side cursor cache. </p>
 
 </div>
 </div>
@@ -456,23 +434,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeea4d7e03c75356d75d98ddc3577442e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeea4d7e03c75356d75d98ddc3577442e">&#9670;&nbsp;</a></span>last_cursor_hash</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t WhistServerState::last_cursor_hash</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="structHash.html">Hash</a> of the cursor used with the last frame. </p>
-<p>If the hash of the new cursor does not match this then the cursor has changed and a new cursor will need to be sent. </p>
 
 </div>
 </div>
