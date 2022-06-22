@@ -1,6 +1,7 @@
 var nvidiacapture_8c =
 [
     [ "APP_VERSION", "nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806", null ],
+    [ "CAPTURE_PIXEL_FORMAT", "nvidiacapture_8c.html#abcf1a326ec163ff5e819b4e26914d187", null ],
     [ "LIB_NVFBC_NAME", "nvidiacapture_8c.html#a79f7bb932a6b6737bf03994e84e05a19", null ],
     [ "PRINT_STATUS", "nvidiacapture_8c.html#ae20fe54dadf0431b275a789ffc010431", null ],
     [ "SHOW_DEBUG_FRAMES", "nvidiacapture_8c.html#a2ea9d66437144f82c8eab8c5e89ef36c", null ],

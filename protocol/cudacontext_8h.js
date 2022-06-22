@@ -6,6 +6,7 @@ var cudacontext_8h =
     [ "CUCTXPUSHCURRENTPROC", "cudacontext_8h.html#a986d57ec411c83249d4a97721ca9d3ff", null ],
     [ "CUCTXSETCURRENTPROC", "cudacontext_8h.html#ae25c9508bd93dd7ecd2ea96a9251c364", null ],
     [ "CUCTXSYNCHRONIZEPROC", "cudacontext_8h.html#af375909202d5c3e8052452a976129200", null ],
+    [ "CUMEMCPY2DV2PROC", "cudacontext_8h.html#a64be860d7d1d857e5d7c31bba6d0ba1c", null ],
     [ "CUMEMCPYDTOHV2PROC", "cudacontext_8h.html#ac2ee8978341d92a7692b0b460b1e1f8c", null ],
     [ "CUMEMFREEPROC", "cudacontext_8h.html#ad273a0fe19313f92d55ac62c31720ac6", null ],
     [ "cuda_destroy", "cudacontext_8h.html#aa03821ea384d1614612f1b625aa7d0bd", null ],
@@ -19,5 +20,6 @@ var cudacontext_8h =
     [ "cu_ctx_synchronize_ptr", "cudacontext_8h.html#adb3e65e6da803fd2897d61923c68cdb7", null ],
     [ "cu_mem_alloc_ptr", "cudacontext_8h.html#aa35d928f87019f93a7ec8fe167cb5dd0", null ],
     [ "cu_mem_free_ptr", "cudacontext_8h.html#a401eb47ce4d0eec98457cff7c319e834", null ],
+    [ "cu_memcpy_2d_v2_ptr", "cudacontext_8h.html#a6dc6f197eaa43868d4e41fb9b1a3ddd2", null ],
     [ "cu_memcpy_dtoh_v2_ptr", "cudacontext_8h.html#aed06416d5f339f39643bca44afece065", null ]
 ];

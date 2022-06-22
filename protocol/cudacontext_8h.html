@@ -116,6 +116,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:ad273a0fe19313f92d55ac62c31720ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ee8978341d92a7692b0b460b1e1f8c"><td class="memItemLeft" align="right" valign="top">typedef CUresult(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#ac2ee8978341d92a7692b0b460b1e1f8c">CUMEMCPYDTOHV2PROC</a>) (void *dst_host, CUdeviceptr src_device, size_t byte_count)</td></tr>
 <tr class="separator:ac2ee8978341d92a7692b0b460b1e1f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64be860d7d1d857e5d7c31bba6d0ba1c"><td class="memItemLeft" align="right" valign="top">typedef CUresult(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#a64be860d7d1d857e5d7c31bba6d0ba1c">CUMEMCPY2DV2PROC</a>) (const CUDA_MEMCPY2D *pCopy)</td></tr>
+<tr class="separator:a64be860d7d1d857e5d7c31bba6d0ba1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -150,6 +152,8 @@ Variables</h2></td></tr>
 <tr class="separator:a401eb47ce4d0eec98457cff7c319e834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed06416d5f339f39643bca44afece065"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#ac2ee8978341d92a7692b0b460b1e1f8c">CUMEMCPYDTOHV2PROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#aed06416d5f339f39643bca44afece065">cu_memcpy_dtoh_v2_ptr</a></td></tr>
 <tr class="separator:aed06416d5f339f39643bca44afece065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc6f197eaa43868d4e41fb9b1a3ddd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cudacontext_8h.html#a64be860d7d1d857e5d7c31bba6d0ba1c">CUMEMCPY2DV2PROC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudacontext_8h.html#a6dc6f197eaa43868d4e41fb9b1a3ddd2">cu_memcpy_2d_v2_ptr</a></td></tr>
+<tr class="separator:a6dc6f197eaa43868d4e41fb9b1a3ddd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -237,6 +241,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname">typedef CUresult(* CUCTXSYNCHRONIZEPROC) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64be860d7d1d857e5d7c31bba6d0ba1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64be860d7d1d857e5d7c31bba6d0ba1c">&#9670;&nbsp;</a></span>CUMEMCPY2DV2PROC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef CUresult(* CUMEMCPY2DV2PROC) (const CUDA_MEMCPY2D *pCopy)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -455,6 +473,20 @@ Usage</h1>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="cudacontext_8h.html#ad273a0fe19313f92d55ac62c31720ac6">CUMEMFREEPROC</a> cu_mem_free_ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6dc6f197eaa43868d4e41fb9b1a3ddd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc6f197eaa43868d4e41fb9b1a3ddd2">&#9670;&nbsp;</a></span>cu_memcpy_2d_v2_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cudacontext_8h.html#a64be860d7d1d857e5d7c31bba6d0ba1c">CUMEMCPY2DV2PROC</a> cu_memcpy_2d_v2_ptr</td>
         </tr>
       </table>
 </div><div class="memdoc">

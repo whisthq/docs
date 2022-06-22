@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"structLTRState.html#a28eb5a2cfe8c9a618a891e9af70adfce":[13,0,78,10],
+"structLTRState.html#a4e091248de0c9670e317a49365514113":[13,0,78,4],
+"structLTRState.html#a5aacfd8377d37dcd64be6be3c9754486":[13,0,78,5],
+"structLTRState.html#a6f601291469a6d638d85c1b4e5d75e16":[13,0,78,8],
 "structLTRState.html#a75332579802631c6ed3f0ea8291dadbd":[13,0,78,13],
 "structLTRState.html#a9e11a5a44c80a41b89206425c4f69442":[13,0,78,9],
 "structLTRState.html#aa038ab92a2c1b8bd7f3d43186cdd65c6":[13,0,78,12],
@@ -183,7 +187,8 @@ var NAVTREEINDEX12 =
 "structNvidiaCaptureDevice.html":[13,0,84],
 "structNvidiaCaptureDevice.html#a16517c3ba7cca2be8aa32b766742721b":[13,0,84,1],
 "structNvidiaCaptureDevice.html#a5f22e9b37e6f3df95a5e95030ec3306d":[13,0,84,4],
-"structNvidiaCaptureDevice.html#a6ad1a9e3c3b416c35ec68546c26359a1":[13,0,84,5],
+"structNvidiaCaptureDevice.html#a6ad1a9e3c3b416c35ec68546c26359a1":[13,0,84,6],
+"structNvidiaCaptureDevice.html#a782efa8136ae0c26446e53e03af87d33":[13,0,84,5],
 "structNvidiaCaptureDevice.html#a98ed5dfdb9c1d25c99cc8a76fafe4b38":[13,0,84,0],
 "structNvidiaCaptureDevice.html#acd93581407810e43c14e6c23ae96385e":[13,0,84,3],
 "structNvidiaCaptureDevice.html#afc703007982b06f21676d69a48edf4f8":[13,0,84,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX12 =
 "structRWLock.html#a7d5cf96c9894204d1047e75f87aa6b3d":[13,0,94,2],
 "structRWLock.html#aa2fc41b979e58996c9dbe25e3bfe9ef3":[13,0,94,1],
 "structRWLock.html#aa4e0cbe7e94c4f95bd65e0b8ca934e9d":[13,0,94,8],
-"structRegionHeader.html":[13,0,90],
-"structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[13,0,90,0],
-"structRegisteredResource.html":[13,0,91],
-"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[13,0,91,5],
-"structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[13,0,91,0],
-"structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[13,0,91,2]
+"structRegionHeader.html":[13,0,90]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[13,0,90,0],
+"structRegisteredResource.html":[13,0,91],
+"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[13,0,91,5],
+"structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[13,0,91,0],
+"structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[13,0,91,2],
 "structRegisteredResource.html#a4d549b8fc69a8bce4e28a6f9a16129be":[13,0,91,4],
 "structRegisteredResource.html#adf630ae90e715bd0d3ac8e295cc209d5":[13,0,91,1],
 "structRegisteredResource.html#ae854ba223b6eaeffe818378a58acfc16":[13,0,91,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX13 =
 "structWhistClientMessage.html#a0116954edece6194206d1b8431f15654":[13,0,120,6],
 "structWhistClientMessage.html#a0f5e0baec5bb2d55c15eab4e4d78a372":[13,0,120,15],
 "structWhistClientMessage.html#a24de04f7e728cbbf22a1409e6b6e0139":[13,0,120,10],
-"structWhistClientMessage.html#a2fee554ec5cf871bae33201f64cb08e2":[13,0,120,17],
-"structWhistClientMessage.html#a3616705f841a5254f6ddbd5a6e884314":[13,0,120,13],
-"structWhistClientMessage.html#a383576764f0064035ae78a2c8de45917":[13,0,120,8],
-"structWhistClientMessage.html#a4ff756528d91a78ec61b1f92dfd2bdc8":[13,0,120,18],
-"structWhistClientMessage.html#a504bb34b77aa11d05bdfb559a23f69e2":[13,0,120,9],
-"structWhistClientMessage.html#a70a1ba7ad460bdf0a40d429e774662b7":[13,0,120,4]
+"structWhistClientMessage.html#a2fee554ec5cf871bae33201f64cb08e2":[13,0,120,17]
 };
