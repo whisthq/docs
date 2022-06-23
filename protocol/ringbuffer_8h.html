@@ -150,9 +150,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab1bbfe97860061cb1cc4d55514ca4855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#ab1bbfe97860061cb1cc4d55514ca4855">reset_stream</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>)</td></tr>
 <tr class="memdesc:ab1bbfe97860061cb1cc4d55514ca4855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip the ring buffer to ID id, dropping all packets prior to that id.  <a href="ringbuffer_8h.html#ab1bbfe97860061cb1cc4d55514ca4855">More...</a><br /></td></tr>
 <tr class="separator:ab1bbfe97860061cb1cc4d55514ca4855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ed839fb46aebbb9028199019bafd169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a4ed839fb46aebbb9028199019bafd169">try_recovering_missing_packets_or_frames</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double latency, int max_unordered_packets, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings)</td></tr>
-<tr class="memdesc:a4ed839fb46aebbb9028199019bafd169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try nacking or requesting a stream reset.  <a href="ringbuffer_8h.html#a4ed839fb46aebbb9028199019bafd169">More...</a><br /></td></tr>
-<tr class="separator:a4ed839fb46aebbb9028199019bafd169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af498a2b24b770f28566ba0d0d84c77bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#af498a2b24b770f28566ba0d0d84c77bf">try_recovering_missing_packets_or_frames</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer, double latency, int max_unordered_packets, <a class="el" href="structNetworkSettings.html">NetworkSettings</a> *network_settings, <a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *current_time)</td></tr>
+<tr class="memdesc:af498a2b24b770f28566ba0d0d84c77bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try nacking or requesting a stream reset.  <a href="ringbuffer_8h.html#af498a2b24b770f28566ba0d0d84c77bf">More...</a><br /></td></tr>
+<tr class="separator:af498a2b24b770f28566ba0d0d84c77bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af514843307356fd516b1a96211c9d986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#af514843307356fd516b1a96211c9d986">destroy_ring_buffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
 <tr class="memdesc:af514843307356fd516b1a96211c9d986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the ringbuffer and all associated memory.  <a href="ringbuffer_8h.html#af514843307356fd516b1a96211c9d986">More...</a><br /></td></tr>
 <tr class="separator:af514843307356fd516b1a96211c9d986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -567,8 +567,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a4ed839fb46aebbb9028199019bafd169"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ed839fb46aebbb9028199019bafd169">&#9670;&nbsp;</a></span>try_recovering_missing_packets_or_frames()</h2>
+<a id="af498a2b24b770f28566ba0d0d84c77bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af498a2b24b770f28566ba0d0d84c77bf">&#9670;&nbsp;</a></span>try_recovering_missing_packets_or_frames()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -595,7 +595,13 @@ Usage</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structNetworkSettings.html">NetworkSettings</a> *&#160;</td>
-          <td class="paramname"><em>network_settings</em>&#160;</td>
+          <td class="paramname"><em>network_settings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a> *&#160;</td>
+          <td class="paramname"><em>current_time</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -611,7 +617,8 @@ Usage</h1>
     <tr><td class="paramname">ring_buffer</td><td>Ring buffer to use </td></tr>
     <tr><td class="paramname">latency</td><td>The latency, used in figuring out when to nack / stream reset </td></tr>
     <tr><td class="paramname">max_unordered_packets</td><td>The max number of packets that can arrive out-of-order </td></tr>
-    <tr><td class="paramname">network_settings</td><td><a class="el" href="structNetworkSettings.html" title="The networking state of a socket.">NetworkSettings</a> structure containing the current bitrate and burst bitrate</td></tr>
+    <tr><td class="paramname">network_settings</td><td><a class="el" href="structNetworkSettings.html" title="The networking state of a socket.">NetworkSettings</a> structure containing the current bitrate and burst bitrate </td></tr>
+    <tr><td class="paramname">current_time</td><td>Current time as returned by <a class="el" href="group__timers.html#gac8d2bb9cbe037b8677ed25be7aa41c5c" title="Start the given timer at the current time, as a stopwatch.">start_timer()</a></td></tr>
   </table>
   </dd>
 </dl>
