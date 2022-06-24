@@ -86,7 +86,7 @@ var searchData=
   ['dist_528',['dist',['../structFrontendGestureEvent.html#a731ba5e43a6f2ff46a2147402b337dc7',1,'FrontendGestureEvent']]],
   ['done_5flist_529',['done_list',['../structLTRState.html#a217e660a132e759384ab745dad777dc0',1,'LTRState']]],
   ['downloaded_5ffilename_5fmaxlen_530',['DOWNLOADED_FILENAME_MAXLEN',['../server_2main_8c.html#a688f608a1c5bc4e4309281cab6670184',1,'main.c']]],
-  ['dpi_531',['dpi',['../structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f',1,'VirtualFrontendContext::dpi()'],['../structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6',1,'WhistClientMessage::dpi()']]],
+  ['dpi_531',['dpi',['../structFrontendResizeEvent.html#a43d79f3ebaf28b49750f139ada50f8b9',1,'FrontendResizeEvent::dpi()'],['../structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f',1,'VirtualFrontendContext::dpi()'],['../structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6',1,'WhistClientMessage::dpi()']]],
   ['dpi_5fbitrate_5fper_5fpixel_532',['DPI_BITRATE_PER_PIXEL',['../network__algorithm_8c.html#a9b56288712fb54f074f73824d2cff80c',1,'network_algorithm.c']]],
   ['dpi_5fratio_5fexponent_533',['DPI_RATIO_EXPONENT',['../network__algorithm_8c.html#ad3e8baf17cd31cb0e77a1218204cdbe5',1,'network_algorithm.c']]],
   ['drag_5fstate_534',['drag_state',['../structWhistFileDragData.html#a98d83eca3dd651eae4e9d0fe78efd7ee',1,'WhistFileDragData']]],

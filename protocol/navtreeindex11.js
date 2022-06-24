@@ -167,8 +167,9 @@ var NAVTREEINDEX11 =
 "structFrontendQuitEvent.html":[13,0,46],
 "structFrontendQuitEvent.html#a4cdde614021ef57e42b9698d374f57f3":[13,0,46,0],
 "structFrontendResizeEvent.html":[13,0,47],
-"structFrontendResizeEvent.html#aeb77f7fddda71f1d254911b86efdac03":[13,0,47,0],
-"structFrontendResizeEvent.html#af52577cade00da332424c9853fa286be":[13,0,47,1],
+"structFrontendResizeEvent.html#a43d79f3ebaf28b49750f139ada50f8b9":[13,0,47,0],
+"structFrontendResizeEvent.html#aeb77f7fddda71f1d254911b86efdac03":[13,0,47,1],
+"structFrontendResizeEvent.html#af52577cade00da332424c9853fa286be":[13,0,47,2],
 "structFrontendStartupParameterEvent.html":[13,0,48],
 "structFrontendStartupParameterEvent.html#a669f1940c70975dfed13d38dc40bdb0e":[13,0,48,0],
 "structFrontendStartupParameterEvent.html#a6dfd4fdf02cc4023d6b53420941dc054":[13,0,48,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structLTRFrame.html#a8f978d94f3a4f21b5319eb8acb9e393d":[13,0,77,0],
 "structLTRFrame.html#abe835e58f098ab62846cfcf01ed16ab2":[13,0,77,1],
 "structLTRFrame.html#adabaeaa8e2c8efeb8ff93646a392a5af":[13,0,77,4],
-"structLTRFrame.html#afcf5ffec212c58d25b5c4ad43a890ff3":[13,0,77,7],
-"structLTRState.html":[13,0,78]
+"structLTRFrame.html#afcf5ffec212c58d25b5c4ad43a890ff3":[13,0,77,7]
 };

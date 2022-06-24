@@ -28,7 +28,7 @@ var searchData=
   ['display_4115',['display',['../structInputDeviceXTest.html#ac21ace24bfc5414b747d8d6591b24ab2',1,'InputDeviceXTest::display()'],['../structX11CaptureDevice.html#a47bfa7fe3830e8f7ffc8b7a48fc78870',1,'X11CaptureDevice::display()']]],
   ['dist_4116',['dist',['../structFrontendGestureEvent.html#a731ba5e43a6f2ff46a2147402b337dc7',1,'FrontendGestureEvent']]],
   ['done_5flist_4117',['done_list',['../structLTRState.html#a217e660a132e759384ab745dad777dc0',1,'LTRState']]],
-  ['dpi_4118',['dpi',['../structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f',1,'VirtualFrontendContext::dpi()'],['../structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6',1,'WhistClientMessage::dpi()']]],
+  ['dpi_4118',['dpi',['../structFrontendResizeEvent.html#a43d79f3ebaf28b49750f139ada50f8b9',1,'FrontendResizeEvent::dpi()'],['../structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f',1,'VirtualFrontendContext::dpi()'],['../structWhistClientMessage.html#aa5a57c2a58a734a9a045e4448cb597e6',1,'WhistClientMessage::dpi()']]],
   ['drag_5fstate_4119',['drag_state',['../structWhistFileDragData.html#a98d83eca3dd651eae4e9d0fe78efd7ee',1,'WhistFileDragData']]],
   ['dummy_5fstate_4120',['dummy_state',['../structAudioDevice.html#abea55870545de19e8142a33e10b3a0aa',1,'AudioDevice']]],
   ['duplicate_5fpackets_5freceived_4121',['duplicate_packets_received',['../structFrameData.html#a65040cc7b870b38ee938661351bc96da',1,'FrameData']]],

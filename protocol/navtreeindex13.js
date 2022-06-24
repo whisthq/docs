@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"structRWLock.html#a7d5cf96c9894204d1047e75f87aa6b3d":[13,0,94,2],
 "structRWLock.html#aa2fc41b979e58996c9dbe25e3bfe9ef3":[13,0,94,1],
 "structRWLock.html#aa4e0cbe7e94c4f95bd65e0b8ca934e9d":[13,0,94,8],
 "structRegionHeader.html":[13,0,90],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "structVirtualFrontendContext.html#a4ee3508b36e432c55923a65a2a84ed37":[13,0,119,3],
 "structVirtualFrontendContext.html#a5771119a7347add61da98aa091eaf98f":[13,0,119,1],
 "structVirtualFrontendContext.html#acb5aedd86c6db4564a6c28624d141a52":[13,0,119,2],
-"structWhistClientMessage.html":[13,0,120],
-"structWhistClientMessage.html#a0116954edece6194206d1b8431f15654":[13,0,120,6]
+"structWhistClientMessage.html":[13,0,120]
 };
