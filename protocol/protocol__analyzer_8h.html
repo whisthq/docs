@@ -127,6 +127,10 @@ Functions</h2></td></tr>
 <tr class="separator:a187c8c8e3c7bee7a8319a7de224715cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e5843432a2e33ab4dd17dfd1e10b6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol__analyzer_8h.html#a35e5843432a2e33ab4dd17dfd1e10b6a">whist_analyzer_record_current_cc_info</a> (int type, double packet_loss, double latency, int bitrate, int incoming_bitrate)</td></tr>
 <tr class="separator:a35e5843432a2e33ab4dd17dfd1e10b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b8e4a99e5b04a489ec2755f1c6585b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol__analyzer_8h.html#a80b8e4a99e5b04a489ec2755f1c6585b">whist_analyzer_record_current_audio_queue_info</a> (double scale_factor, double user_queue_len, double device_queue_len)</td></tr>
+<tr class="separator:a80b8e4a99e5b04a489ec2755f1c6585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d36aa7564dcace6358141aa677eff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol__analyzer_8h.html#aa7d36aa7564dcace6358141aa677eff0">whist_analyzer_record_audio_action</a> (const char *action)</td></tr>
+<tr class="separator:aa7d36aa7564dcace6358141aa677eff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -154,6 +158,24 @@ Usage</h1>
 
 </div>
 </div>
+<a id="aa7d36aa7564dcace6358141aa677eff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d36aa7564dcace6358141aa677eff0">&#9670;&nbsp;</a></span>whist_analyzer_record_audio_action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_analyzer_record_audio_action </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2dbae1af4dee743dcecd541265185155"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dbae1af4dee743dcecd541265185155">&#9670;&nbsp;</a></span>whist_analyzer_record_audio_queue_full()</h2>
 
@@ -166,6 +188,40 @@ Usage</h1>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80b8e4a99e5b04a489ec2755f1c6585b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b8e4a99e5b04a489ec2755f1c6585b">&#9670;&nbsp;</a></span>whist_analyzer_record_current_audio_queue_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_analyzer_record_current_audio_queue_info </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scale_factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>user_queue_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>device_queue_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

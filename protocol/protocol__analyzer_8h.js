@@ -1,7 +1,9 @@
 var protocol__analyzer_8h =
 [
     [ "whist_analyzer_init", "protocol__analyzer_8h.html#ab777570fde3ee2391b0ad6d02c905b80", null ],
+    [ "whist_analyzer_record_audio_action", "protocol__analyzer_8h.html#aa7d36aa7564dcace6358141aa677eff0", null ],
     [ "whist_analyzer_record_audio_queue_full", "protocol__analyzer_8h.html#a2dbae1af4dee743dcecd541265185155", null ],
+    [ "whist_analyzer_record_current_audio_queue_info", "protocol__analyzer_8h.html#a80b8e4a99e5b04a489ec2755f1c6585b", null ],
     [ "whist_analyzer_record_current_cc_info", "protocol__analyzer_8h.html#a35e5843432a2e33ab4dd17dfd1e10b6a", null ],
     [ "whist_analyzer_record_current_fec_info", "protocol__analyzer_8h.html#a187c8c8e3c7bee7a8319a7de224715cc", null ],
     [ "whist_analyzer_record_current_rendering", "protocol__analyzer_8h.html#a61230d89164195221f13cf8ddf6713b0", null ],

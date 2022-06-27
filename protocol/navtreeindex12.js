@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"structLTRFrame.html#adabaeaa8e2c8efeb8ff93646a392a5af":[13,0,77,4],
+"structLTRFrame.html#afcf5ffec212c58d25b5c4ad43a890ff3":[13,0,77,7],
 "structLTRState.html":[13,0,78],
 "structLTRState.html#a00553c19c60ec5096c2f01566b82601e":[13,0,78,6],
 "structLTRState.html#a0d434c380ab79693b1b7452e555a1481":[13,0,78,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "structRWLock.html#a1245c7609fc0a1cfa48749b2a9cc720f":[13,0,94,0],
 "structRWLock.html#a21f97c946efac2fa178bf291885d30d8":[13,0,94,4],
 "structRWLock.html#a23d92769e8d4586eb3bed66ff2c94f76":[13,0,94,5],
-"structRWLock.html#a3fc2808065975cfa35e80c1566d2c7af":[13,0,94,6],
-"structRWLock.html#a6d02f221523aa66ecb38e71e9220cb11":[13,0,94,7],
-"structRWLock.html#a7adeaf8b88f5205f5e47acf522b1b67e":[13,0,94,3]
+"structRWLock.html#a3fc2808065975cfa35e80c1566d2c7af":[13,0,94,6]
 };
