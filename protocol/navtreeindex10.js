@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388aed95673565a5f7fa00ed3bbc5bda97cb":[14,0,0,0,0,0,7],
+"sdl_2common_8h.html#a51f528deaaeb973f417b46a2ec36f850":[14,0,0,0,0,0,1],
 "sdl_2common_8h.html#a6340c5c74e39504184676eb2b63ff140":[14,0,0,0,0,0,0],
 "sdl_2common_8h_source.html":[14,0,0,0,0,0],
 "sdl_8c.html":[14,0,0,0,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "structCpuInfo.html#a4965a10b6a52e71da8866626b23a8d07":[13,0,22,0],
 "structCpuInfo.html#a52bc0a8ad53902a068a2e406d5ed2b88":[13,0,22,4],
 "structCpuInfo.html#a95d557a4155674ceedae19034d72a8b4":[13,0,22,3],
-"structCpuInfo.html#abc9d6aeb929d6d8e508f6ccb10ccb0d4":[13,0,22,2],
-"structCpuInfo.html#ad50875d591cb203c4d456e741ce32d0c":[13,0,22,1],
-"structDebugConsoleOverrideValues.html":[13,0,23]
+"structCpuInfo.html#abc9d6aeb929d6d8e508f6ccb10ccb0d4":[13,0,22,2]
 };

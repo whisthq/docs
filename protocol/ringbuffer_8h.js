@@ -9,6 +9,7 @@ var ringbuffer_8h =
     [ "StreamResetFn", "ringbuffer_8h.html#a190efbf6a90b9051959f49975b879bd8", null ],
     [ "destroy_ring_buffer", "ringbuffer_8h.html#af514843307356fd516b1a96211c9d986", null ],
     [ "get_frame_at_id", "ringbuffer_8h.html#a69a35ea430111d5dadd29f8b9b9d99c5", null ],
+    [ "get_num_pending_ready_frames", "ringbuffer_8h.html#a719ff6b10f4a99adc8a8678ab67437ce", null ],
     [ "get_packet_loss_ratio", "ringbuffer_8h.html#a2947bd52323b0d65b0a059a0cf9adf3d", null ],
     [ "init_ring_buffer", "ringbuffer_8h.html#a76af721a0fc6c100fde1cf9634ffccad", null ],
     [ "is_ready_to_render", "ringbuffer_8h.html#a22897ddd74ba2d11192502d98a4c7227", null ],

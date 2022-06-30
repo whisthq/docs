@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('ringbuffer_8c.html',''); initResizable
 <code>#include &lt;<a class="el" href="log__statistic_8h_source.html">whist/logging/log_statistic.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="protocol__analyzer_8h_source.html">whist/debug/protocol_analyzer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="debug__console_8h_source.html">whist/debug/debug_console.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="logging_8h_source.html">whist/logging/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string__buffer_8h_source.html">whist/utils/string_buffer.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -151,6 +152,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af514843307356fd516b1a96211c9d986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#af514843307356fd516b1a96211c9d986">destroy_ring_buffer</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
 <tr class="memdesc:af514843307356fd516b1a96211c9d986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the ringbuffer and all associated memory.  <a href="ringbuffer_8c.html#af514843307356fd516b1a96211c9d986">More...</a><br /></td></tr>
 <tr class="separator:af514843307356fd516b1a96211c9d986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719ff6b10f4a99adc8a8678ab67437ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8c.html#a719ff6b10f4a99adc8a8678ab67437ce">get_num_pending_ready_frames</a> (<a class="el" href="structRingBuffer.html">RingBuffer</a> *ring_buffer)</td></tr>
+<tr class="memdesc:a719ff6b10f4a99adc8a8678ab67437ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of fully received frames inside ring buffer, that is waiting for render.  <a href="ringbuffer_8c.html#a719ff6b10f4a99adc8a8678ab67437ce">More...</a><br /></td></tr>
+<tr class="separator:a719ff6b10f4a99adc8a8678ab67437ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aae1c510758ee20c3ab1c53b1bc895786"></a>
@@ -369,6 +373,34 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a719ff6b10f4a99adc8a8678ab67437ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719ff6b10f4a99adc8a8678ab67437ce">&#9670;&nbsp;</a></span>get_num_pending_ready_frames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_num_pending_ready_frames </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRingBuffer.html">RingBuffer</a> *&#160;</td>
+          <td class="paramname"><em>ring_buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of fully received frames inside ring buffer, that is waiting for render. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ring_buffer</td><td>Ring buffer to use </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Num of fully received frames inside ring buffer </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This value by definition doesn't include the currently rendering frame. </dd></dl>
 
 </div>
 </div>

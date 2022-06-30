@@ -20,6 +20,7 @@ var structRingBuffer =
     [ "num_nacks_received", "structRingBuffer.html#a1bd4310b6b45c7f5df472a784e625b87", null ],
     [ "num_original_packets_received", "structRingBuffer.html#aaad9ec2694ba2cb33f5b9abc0bdb00f6", null ],
     [ "num_packets_nacked", "structRingBuffer.html#a43c8b6829b64fd8b7f0aa7dbf7847a07", null ],
+    [ "num_pending_ready_frames", "structRingBuffer.html#af16ec512765a2ccb9aeace8316dd22bd", null ],
     [ "num_times_nacking_saturated", "structRingBuffer.html#a6a556b9ab1825fe65ce09864185a027d", null ],
     [ "num_unnecessary_nacks_received", "structRingBuffer.html#a4040ea10a7ec97c33893f20c63084a7a", null ],
     [ "num_unnecessary_original_packets_received", "structRingBuffer.html#a98690129a3aadb85db96a39252d01a9f", null ],
