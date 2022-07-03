@@ -4,6 +4,7 @@ var structDebugConsoleOverrideValues =
     [ "bitrate", "structDebugConsoleOverrideValues.html#a0c3ab997b3f535543e45c303141baf7d", null ],
     [ "burst_bitrate", "structDebugConsoleOverrideValues.html#a780ac7d7ee3f57ad74cc14b915f6355a", null ],
     [ "no_minimize", "structDebugConsoleOverrideValues.html#a16329417c7f5ff2c6f361e4ceb9bbcca", null ],
+    [ "plot_audio_algo", "structDebugConsoleOverrideValues.html#ae21e8ecd684c7a0651e7b4431c1621e6", null ],
     [ "simulate_freeze", "structDebugConsoleOverrideValues.html#a6cd189ee8844ac67cb6b01a2f2403e05", null ],
     [ "verbose_log", "structDebugConsoleOverrideValues.html#a5161d9392ed5a50daa3a6c41e3356e4c", null ],
     [ "verbose_log_audio", "structDebugConsoleOverrideValues.html#a98e29b3292bdd95ea1907657a9d81795", null ],
