@@ -17,7 +17,6 @@ var dir_db3a54907829b36871118d03417739cd =
     [ "sdl_utils.h", "sdl__utils_8h.html", "sdl__utils_8h" ],
     [ "sync_packets.c", "sync__packets_8c.html", "sync__packets_8c" ],
     [ "sync_packets.h", "sync__packets_8h.html", "sync__packets_8h" ],
-    [ "video.c", "client_2video_8c.html", "client_2video_8c" ],
     [ "video.h", "client_2video_8h.html", "client_2video_8h" ],
     [ "whist_client.c", "whist__client_8c.html", "whist__client_8c" ],
     [ "whist_client.h", "whist__client_8h.html", "whist__client_8h" ]

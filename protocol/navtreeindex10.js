@@ -1,16 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"sdl_2common_8h.html#a385c44f6fb256e5716a2302a5b940388aed95673565a5f7fa00ed3bbc5bda97cb":[14,0,0,0,0,0,7],
-"sdl_2common_8h.html#a51f528deaaeb973f417b46a2ec36f850":[14,0,0,0,0,0,1],
-"sdl_2common_8h.html#a6340c5c74e39504184676eb2b63ff140":[14,0,0,0,0,0,0],
-"sdl_2common_8h_source.html":[14,0,0,0,0,0],
-"sdl_8c.html":[14,0,0,0,0,3],
-"sdl_8c.html#aaea282911e153f1e861e9fb01e013137":[14,0,0,0,0,3,1],
-"sdl_8c.html#af0754291e7863cf65ec85fb865764a10":[14,0,0,0,0,3,0],
-"sdl_8h.html":[14,0,0,0,0,4],
-"sdl_8h.html#aaea282911e153f1e861e9fb01e013137":[14,0,0,0,0,4,0],
-"sdl_8h_source.html":[14,0,0,0,0,4],
-"sdl__utils_8c.html":[14,0,0,13],
 "sdl__utils_8c.html#a04f7cc99ef6ef885eb51000cf7cf8c38":[14,0,0,13,11],
 "sdl__utils_8c.html#a0eec2f00758ec0f030a20606be54023c":[14,0,0,13,12],
 "sdl__utils_8c.html#a24e70f423f16da088d42656ecb1cc683":[14,0,0,13,5],
@@ -249,5 +238,16 @@ var NAVTREEINDEX10 =
 "structCpuInfo.html#a4965a10b6a52e71da8866626b23a8d07":[13,0,22,0],
 "structCpuInfo.html#a52bc0a8ad53902a068a2e406d5ed2b88":[13,0,22,4],
 "structCpuInfo.html#a95d557a4155674ceedae19034d72a8b4":[13,0,22,3],
-"structCpuInfo.html#abc9d6aeb929d6d8e508f6ccb10ccb0d4":[13,0,22,2]
+"structCpuInfo.html#abc9d6aeb929d6d8e508f6ccb10ccb0d4":[13,0,22,2],
+"structCpuInfo.html#ad50875d591cb203c4d456e741ce32d0c":[13,0,22,1],
+"structDebugConsoleOverrideValues.html":[13,0,23],
+"structDebugConsoleOverrideValues.html#a0c3ab997b3f535543e45c303141baf7d":[13,0,23,1],
+"structDebugConsoleOverrideValues.html#a16329417c7f5ff2c6f361e4ceb9bbcca":[13,0,23,3],
+"structDebugConsoleOverrideValues.html#a335ac2dc7c1bc5309e5088e329b1cc78":[13,0,23,7],
+"structDebugConsoleOverrideValues.html#a5161d9392ed5a50daa3a6c41e3356e4c":[13,0,23,5],
+"structDebugConsoleOverrideValues.html#a6cd189ee8844ac67cb6b01a2f2403e05":[13,0,23,4],
+"structDebugConsoleOverrideValues.html#a780ac7d7ee3f57ad74cc14b915f6355a":[13,0,23,2],
+"structDebugConsoleOverrideValues.html#a8b256cd1bcc979b4523e067484656a13":[13,0,23,0],
+"structDebugConsoleOverrideValues.html#a98e29b3292bdd95ea1907657a9d81795":[13,0,23,6],
+"structDecodedFrameData.html":[13,0,24]
 };

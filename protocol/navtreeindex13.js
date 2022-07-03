@@ -1,16 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"structRWLock.html#a23d92769e8d4586eb3bed66ff2c94f76":[13,0,94,5],
-"structRWLock.html#a3fc2808065975cfa35e80c1566d2c7af":[13,0,94,6],
-"structRWLock.html#a6d02f221523aa66ecb38e71e9220cb11":[13,0,94,7],
-"structRWLock.html#a7adeaf8b88f5205f5e47acf522b1b67e":[13,0,94,3],
-"structRWLock.html#a7d5cf96c9894204d1047e75f87aa6b3d":[13,0,94,2],
-"structRWLock.html#aa2fc41b979e58996c9dbe25e3bfe9ef3":[13,0,94,1],
-"structRWLock.html#aa4e0cbe7e94c4f95bd65e0b8ca934e9d":[13,0,94,8],
-"structRegionHeader.html":[13,0,90],
-"structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[13,0,90,0],
-"structRegisteredResource.html":[13,0,91],
-"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[13,0,91,5],
 "structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[13,0,91,0],
 "structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[13,0,91,2],
 "structRegisteredResource.html#a4d549b8fc69a8bce4e28a6f9a16129be":[13,0,91,4],
@@ -249,5 +238,16 @@ var NAVTREEINDEX13 =
 "structVideoFrame.html#aec94d3047b7310df6191dff99bd929f8":[13,0,118,3],
 "structVideoFrame.html#aef3314aab1ba78f86d87b04395658de6":[13,0,118,6],
 "structVirtualFrontendContext.html":[13,0,119],
-"structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f":[13,0,119,0]
+"structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f":[13,0,119,0],
+"structVirtualFrontendContext.html#a17f6444fbf22fb30020f153b1e2b50b5":[13,0,119,4],
+"structVirtualFrontendContext.html#a4ee3508b36e432c55923a65a2a84ed37":[13,0,119,3],
+"structVirtualFrontendContext.html#a5771119a7347add61da98aa091eaf98f":[13,0,119,1],
+"structVirtualFrontendContext.html#acb5aedd86c6db4564a6c28624d141a52":[13,0,119,2],
+"structWhistClientMessage.html":[13,0,120],
+"structWhistClientMessage.html#a0116954edece6194206d1b8431f15654":[13,0,120,6],
+"structWhistClientMessage.html#a0f5e0baec5bb2d55c15eab4e4d78a372":[13,0,120,15],
+"structWhistClientMessage.html#a24de04f7e728cbbf22a1409e6b6e0139":[13,0,120,10],
+"structWhistClientMessage.html#a2fee554ec5cf871bae33201f64cb08e2":[13,0,120,17],
+"structWhistClientMessage.html#a3616705f841a5254f6ddbd5a6e884314":[13,0,120,13],
+"structWhistClientMessage.html#a383576764f0064035ae78a2c8de45917":[13,0,120,8]
 };

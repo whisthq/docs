@@ -1,16 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"structVirtualFrontendContext.html#a17f6444fbf22fb30020f153b1e2b50b5":[13,0,119,4],
-"structVirtualFrontendContext.html#a4ee3508b36e432c55923a65a2a84ed37":[13,0,119,3],
-"structVirtualFrontendContext.html#a5771119a7347add61da98aa091eaf98f":[13,0,119,1],
-"structVirtualFrontendContext.html#acb5aedd86c6db4564a6c28624d141a52":[13,0,119,2],
-"structWhistClientMessage.html":[13,0,120],
-"structWhistClientMessage.html#a0116954edece6194206d1b8431f15654":[13,0,120,6],
-"structWhistClientMessage.html#a0f5e0baec5bb2d55c15eab4e4d78a372":[13,0,120,15],
-"structWhistClientMessage.html#a24de04f7e728cbbf22a1409e6b6e0139":[13,0,120,10],
-"structWhistClientMessage.html#a2fee554ec5cf871bae33201f64cb08e2":[13,0,120,17],
-"structWhistClientMessage.html#a3616705f841a5254f6ddbd5a6e884314":[13,0,120,13],
-"structWhistClientMessage.html#a383576764f0064035ae78a2c8de45917":[13,0,120,8],
 "structWhistClientMessage.html#a4ff756528d91a78ec61b1f92dfd2bdc8":[13,0,120,18],
 "structWhistClientMessage.html#a504bb34b77aa11d05bdfb559a23f69e2":[13,0,120,9],
 "structWhistClientMessage.html#a70a1ba7ad460bdf0a40d429e774662b7":[13,0,120,4],
@@ -249,5 +238,16 @@ var NAVTREEINDEX14 =
 "structX11CaptureDevice.html#a87365b648364394b27725fea96f7b913":[13,0,149,21],
 "structX11CaptureDevice.html#a9fc71e632a322d25078b98d8690b8307":[13,0,149,3],
 "structX11CaptureDevice.html#aa45126adf5d331cfef4d57a9382cc0d5":[13,0,149,13],
-"structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb":[13,0,149,17]
+"structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb":[13,0,149,17],
+"structX11CaptureDevice.html#aa666b9da977d81ab946d70e30d28f7bb":[13,0,149,0],
+"structX11CaptureDevice.html#aafb401811bf652b8a4f9e5e365655e46":[13,0,149,2],
+"structX11CaptureDevice.html#ab7bc7bf3b5ddab2a71587ac8212587bc":[13,0,149,18],
+"structX11CaptureDevice.html#abfd36ca31e71e058cc8b63592b2415df":[13,0,149,14],
+"structX11CaptureDevice.html#ac49a89635daec815ee50fb42c1d4d444":[13,0,149,20],
+"structX11CaptureDevice.html#ac5a5c7b0909308e3712a2b691e932460":[13,0,149,19],
+"structX11CaptureDevice.html#ac7740aa379f5c2945f1a1a599231c558":[13,0,149,7],
+"structX11CaptureDevice.html#acef1859db60b99af218e316f7cec5772":[13,0,149,23],
+"struct__whist__server__config.html":[13,0,0],
+"struct__whist__server__config.html#a370d33931f5bc174dc8db5a9e5a230f0":[13,0,0,0],
+"struct__whist__server__config.html#a576faee2d8a900a1da2299369b0d2ec5":[13,0,0,3]
 };
