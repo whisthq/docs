@@ -96,12 +96,12 @@ $(document).ready(function(){initNavTree('cursor__internal_8h.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0855ea5308a5984526f3950fb0186e7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor__internal_8h.html#a0855ea5308a5984526f3950fb0186e7a">whist_cursor_info_from_id</a> (<a class="el" href="cursor_8h.html#acbd9a23a669810691b3befd88521249f">WhistCursorID</a> <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>, <a class="el" href="cursor_8h.html#a760fb07d906fd578c48427c04171f16f">WhistCursorState</a> state)</td></tr>
-<tr class="memdesc:a0855ea5308a5984526f3950fb0186e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> from a cursor id.  <a href="cursor__internal_8h.html#a0855ea5308a5984526f3950fb0186e7a">More...</a><br /></td></tr>
-<tr class="separator:a0855ea5308a5984526f3950fb0186e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c4ac5bf0f413fbb2befd83de22e42c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor__internal_8h.html#a8c4ac5bf0f413fbb2befd83de22e42c1">whist_cursor_info_from_rgba</a> (const uint32_t *rgba, unsigned short width, unsigned short height, unsigned short hot_x, unsigned short hot_y, <a class="el" href="cursor_8h.html#a760fb07d906fd578c48427c04171f16f">WhistCursorState</a> state)</td></tr>
-<tr class="memdesc:a8c4ac5bf0f413fbb2befd83de22e42c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> from RGBA pixel data.  <a href="cursor__internal_8h.html#a8c4ac5bf0f413fbb2befd83de22e42c1">More...</a><br /></td></tr>
-<tr class="separator:a8c4ac5bf0f413fbb2befd83de22e42c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be1e4a8d2ea725962f0b5c29fd51f80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor__internal_8h.html#a1be1e4a8d2ea725962f0b5c29fd51f80">whist_cursor_info_from_type</a> (<a class="el" href="cursor_8h.html#a04b87ebf9b925dbe68703667fee6cce5">WhistCursorType</a> type, <a class="el" href="cursor_8h.html#a16e38bee28535fa71ec83c8fb5e3bfa4">WhistMouseMode</a> mode)</td></tr>
+<tr class="memdesc:a1be1e4a8d2ea725962f0b5c29fd51f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> from a cursor type.  <a href="cursor__internal_8h.html#a1be1e4a8d2ea725962f0b5c29fd51f80">More...</a><br /></td></tr>
+<tr class="separator:a1be1e4a8d2ea725962f0b5c29fd51f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59acf98a73b6d499e4e445b4c3539b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor__internal_8h.html#af59acf98a73b6d499e4e445b4c3539b7">whist_cursor_info_from_rgba</a> (const uint32_t *rgba, unsigned short width, unsigned short height, unsigned short hot_x, unsigned short hot_y, <a class="el" href="cursor_8h.html#a16e38bee28535fa71ec83c8fb5e3bfa4">WhistMouseMode</a> mode)</td></tr>
+<tr class="memdesc:af59acf98a73b6d499e4e445b4c3539b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> from RGBA pixel data.  <a href="cursor__internal_8h.html#af59acf98a73b6d499e4e445b4c3539b7">More...</a><br /></td></tr>
+<tr class="separator:af59acf98a73b6d499e4e445b4c3539b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2022 Whist Technologies, Inc. </p>
@@ -111,46 +111,8 @@ Functions</h2></td></tr>
 Usage</h1>
 <p>Our various cursor capture implementations use these functions to generate <code><a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a></code> structs. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a0855ea5308a5984526f3950fb0186e7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0855ea5308a5984526f3950fb0186e7a">&#9670;&nbsp;</a></span>whist_cursor_info_from_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a>* whist_cursor_info_from_id </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="cursor_8h.html#acbd9a23a669810691b3befd88521249f">WhistCursorID</a>&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="cursor_8h.html#a760fb07d906fd578c48427c04171f16f">WhistCursorState</a>&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> from a cursor id. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>The WhistCursorID from which to generate the cursor info </td></tr>
-    <tr><td class="paramname">state</td><td>The cursor visibility state (visible or hidden)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The generated cursor info as a pointer to a <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct, which must be freed by the caller </dd></dl>
-
-</div>
-</div>
-<a id="a8c4ac5bf0f413fbb2befd83de22e42c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c4ac5bf0f413fbb2befd83de22e42c1">&#9670;&nbsp;</a></span>whist_cursor_info_from_rgba()</h2>
+<a id="af59acf98a73b6d499e4e445b4c3539b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59acf98a73b6d499e4e445b4c3539b7">&#9670;&nbsp;</a></span>whist_cursor_info_from_rgba()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,8 +150,8 @@ Usage</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cursor_8h.html#a760fb07d906fd578c48427c04171f16f">WhistCursorState</a>&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="cursor_8h.html#a16e38bee28535fa71ec83c8fb5e3bfa4">WhistMouseMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -207,11 +169,50 @@ Usage</h1>
     <tr><td class="paramname">height</td><td>The height of the RGBA pixel data </td></tr>
     <tr><td class="paramname">hot_x</td><td>The x-coordinate of the cursor hotspot </td></tr>
     <tr><td class="paramname">hot_y</td><td>The y-coordinate of the cursor hotspot </td></tr>
-    <tr><td class="paramname">state</td><td>The cursor visibility state (visible or hidden)</td></tr>
+    <tr><td class="paramname">mode</td><td>The mouse mode (normal or relative)</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The generated cursor info as a pointer to a <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct, which must be freed by the caller </dd></dl>
+
+</div>
+</div>
+<a id="a1be1e4a8d2ea725962f0b5c29fd51f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be1e4a8d2ea725962f0b5c29fd51f80">&#9670;&nbsp;</a></span>whist_cursor_info_from_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a>* whist_cursor_info_from_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cursor_8h.html#a04b87ebf9b925dbe68703667fee6cce5">WhistCursorType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cursor_8h.html#a16e38bee28535fa71ec83c8fb5e3bfa4">WhistMouseMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> from a cursor type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The WhistCursorType from which to generate the cursor info </td></tr>
+    <tr><td class="paramname">mode</td><td>The mouse mode (normal or relative)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated cursor info as a pointer to a <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct, which must be freed by the caller</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The type must not be WHIST_CURSOR_PNG; use <a class="el" href="cursor__internal_8h.html#af59acf98a73b6d499e4e445b4c3539b7" title="Returns WhistCursorInfo from RGBA pixel data.">whist_cursor_info_from_rgba()</a> for PNG cursors. </dd></dl>
 
 </div>
 </div>

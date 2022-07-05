@@ -102,6 +102,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a91c004f271aaf4c5096588566325a583"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#a91c004f271aaf4c5096588566325a583">whist_cursor_info_to_rgba</a> (const <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *info)</td></tr>
 <tr class="memdesc:a91c004f271aaf4c5096588566325a583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return RGBA pixel data from a <a class="el" href="structWhistCursorInfo.html" title="Cursor image.">WhistCursorInfo</a> struct.  <a href="cursor_8c.html#a91c004f271aaf4c5096588566325a583">More...</a><br /></td></tr>
 <tr class="separator:a91c004f271aaf4c5096588566325a583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee851b460a89575a56b0302b97d98db"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cursor_8c.html#adee851b460a89575a56b0302b97d98db">whist_cursor_type_to_string</a> (<a class="el" href="cursor_8h.html#a04b87ebf9b925dbe68703667fee6cce5">WhistCursorType</a> type)</td></tr>
+<tr class="memdesc:adee851b460a89575a56b0302b97d98db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a cursor type to a string name.  <a href="cursor_8c.html#adee851b460a89575a56b0302b97d98db">More...</a><br /></td></tr>
+<tr class="separator:adee851b460a89575a56b0302b97d98db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2022 Whist Technologies, Inc. </p>
@@ -162,6 +165,33 @@ Usage</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The RGBA pixel data as a pointer to a uint8_t array, which must be freed by the caller </dd></dl>
+
+</div>
+</div>
+<a id="adee851b460a89575a56b0302b97d98db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee851b460a89575a56b0302b97d98db">&#9670;&nbsp;</a></span>whist_cursor_type_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* whist_cursor_type_to_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cursor_8h.html#a04b87ebf9b925dbe68703667fee6cce5">WhistCursorType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a cursor type to a string name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The cursor type to convert</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The string name of the cursor type </dd></dl>
 
 </div>
 </div>
