@@ -7,7 +7,9 @@ var interface_8c =
     [ "virtual_interface_get_frame_ref", "interface_8c.html#a1c88bb3df9841059a035b040d4d77dde", null ],
     [ "virtual_interface_get_frame_ref_yuv_data", "interface_8c.html#ad685e34c93edaa655b0ddcfbce99a895", null ],
     [ "virtual_interface_get_handle_from_frame_ref", "interface_8c.html#a6c88af652a0d6f70c92e0de67663f546", null ],
+    [ "virtual_interface_on_file_upload", "interface_8c.html#a4f5a49f812d106f673dfdefcb507535e", null ],
     [ "virtual_interface_send_event", "interface_8c.html#aaea1060788bf07f483d1aa07c7ff3a75", null ],
     [ "virtual_interface_send_frame", "interface_8c.html#ae4fcc8445ea7727a1659e97e29bbdded", null ],
+    [ "virtual_interface_set_fileupload_callback", "interface_8c.html#a8029db699899c780a457c648b4cbe011", null ],
     [ "events_queue", "interface_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ]
 ];

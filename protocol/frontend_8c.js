@@ -13,6 +13,7 @@ var frontend_8c =
     [ "whist_frontend_display_notification", "frontend_8c.html#ad96c1a1b58630387472bd636cfed64d6", null ],
     [ "whist_frontend_event_type_string", "frontend_8c.html#afbf8353794be3b716ec31c6e0483ae9e", null ],
     [ "whist_frontend_get_audio_buffer_size", "frontend_8c.html#aa90c25627a5dbe10dc37c9e7efc1c3ba", null ],
+    [ "whist_frontend_get_chosen_file", "frontend_8c.html#abd5376adf2efdcb932153546507b274f", null ],
     [ "whist_frontend_get_id", "frontend_8c.html#a7de68ef47e70280f8b6aa061167c1c4a", null ],
     [ "whist_frontend_get_keyboard_state", "frontend_8c.html#ae7854b464b9404182515705d7b3acf88", null ],
     [ "whist_frontend_get_video_device", "frontend_8c.html#a13c5d9834be3a4e9f044955dcd786e8f", null ],

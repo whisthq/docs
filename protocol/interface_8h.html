@@ -82,7 +82,8 @@ $(document).ready(function(){initNavTree('interface_8h.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">interface.h File Reference</div>  </div>
 </div><!--header-->
@@ -95,6 +96,8 @@ $(document).ready(function(){initNavTree('interface_8h.html',''); initResizable(
 Functions</h2></td></tr>
 <tr class="memitem:ae4fcc8445ea7727a1659e97e29bbdded"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ae4fcc8445ea7727a1659e97e29bbdded">virtual_interface_send_frame</a> (AVFrame *frame)</td></tr>
 <tr class="separator:ae4fcc8445ea7727a1659e97e29bbdded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5a49f812d106f673dfdefcb507535e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a4f5a49f812d106f673dfdefcb507535e">virtual_interface_on_file_upload</a> (void)</td></tr>
+<tr class="separator:a4f5a49f812d106f673dfdefcb507535e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8097201a1a5f3fd6a25d72856a1e448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ad8097201a1a5f3fd6a25d72856a1e448">virtual_interface_connect</a> (void)</td></tr>
 <tr class="separator:ad8097201a1a5f3fd6a25d72856a1e448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c88bb3df9841059a035b040d4d77dde"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a1c88bb3df9841059a035b040d4d77dde">virtual_interface_get_frame_ref</a> (void)</td></tr>
@@ -109,6 +112,13 @@ Functions</h2></td></tr>
 <tr class="separator:a8412575e8ac470802cc978346d94fe98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea1060788bf07f483d1aa07c7ff3a75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#aaea1060788bf07f483d1aa07c7ff3a75">virtual_interface_send_event</a> (const <a class="el" href="structWhistFrontendEvent.html">WhistFrontendEvent</a> *frontend_event)</td></tr>
 <tr class="separator:aaea1060788bf07f483d1aa07c7ff3a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8029db699899c780a457c648b4cbe011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a8029db699899c780a457c648b4cbe011">virtual_interface_set_fileupload_callback</a> (<a class="el" href="interface_8h.html#a2ea5a38b08a975708ff8981065f3a256">FileUploadCallback</a> callback, void *arg)</td></tr>
+<tr class="separator:a8029db699899c780a457c648b4cbe011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2ea5a38b08a975708ff8981065f3a256"><td class="memItemLeft" align="right" valign="top">const typedef char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a2ea5a38b08a975708ff8981065f3a256">FileUploadCallback</a> )(void *)</td></tr>
+<tr class="separator:a2ea5a38b08a975708ff8981065f3a256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad8097201a1a5f3fd6a25d72856a1e448"></a>
@@ -259,6 +269,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4f5a49f812d106f673dfdefcb507535e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5a49f812d106f673dfdefcb507535e">&#9670;&nbsp;</a></span>virtual_interface_on_file_upload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* virtual_interface_on_file_upload </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaea1060788bf07f483d1aa07c7ff3a75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaea1060788bf07f483d1aa07c7ff3a75">&#9670;&nbsp;</a></span>virtual_interface_send_event()</h2>
 
@@ -289,6 +317,49 @@ Functions</h2></td></tr>
           <td class="paramtype">AVFrame *&#160;</td>
           <td class="paramname"><em>frame</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8029db699899c780a457c648b4cbe011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8029db699899c780a457c648b4cbe011">&#9670;&nbsp;</a></span>virtual_interface_set_fileupload_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void virtual_interface_set_fileupload_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_8h.html#a2ea5a38b08a975708ff8981065f3a256">FileUploadCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2ea5a38b08a975708ff8981065f3a256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea5a38b08a975708ff8981065f3a256">&#9670;&nbsp;</a></span>FileUploadCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const typedef char*(* FileUploadCallback) (void *)</td>
         </tr>
       </table>
 </div><div class="memdoc">

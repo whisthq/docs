@@ -1,5 +1,11 @@
 var NAVTREEINDEX11 =
 {
+"structClipboardThread.html":[13,0,18],
+"structClipboardThread.html#a6cd482e9fcaea6bfecdbb9ed29db6b83":[13,0,18,1],
+"structClipboardThread.html#a966aeafbdcc3e15278ef3c6f24d9f883":[13,0,18,2],
+"structClipboardThread.html#abd12e47d78149eb49150219c8b73690e":[13,0,18,0],
+"structColorTree.html":[13,0,21],
+"structColorTree.html#a46a3b1d9239f5fd467ec97cd067b9a96":[13,0,21,0],
 "structColorTree.html#ab3836a4a5981a7cf4ef553d25d9b0361":[13,0,21,1],
 "structCpuInfo.html":[13,0,22],
 "structCpuInfo.html#a4965a10b6a52e71da8866626b23a8d07":[13,0,22,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX11 =
 "structInputDeviceWin.html":[13,0,60],
 "structInputDeviceWin.html#a8a0ea5d5e5054afdc9d638b391a4073b":[13,0,60,0],
 "structInputDeviceXTest.html":[13,0,61],
-"structInputDeviceXTest.html#a55a75dcac9c38d75ce24cb39af075d19":[13,0,61,0],
-"structInputDeviceXTest.html#a7ad59e59a74c7f235e4b9c3d751bbd2d":[13,0,61,1],
-"structInputDeviceXTest.html#a8b2038f9758385301ce5388a9f4ad188":[13,0,61,5],
-"structInputDeviceXTest.html#a93e2b5fa89c4ea6d52251577d77fd9cf":[13,0,61,3],
-"structInputDeviceXTest.html#ac21ace24bfc5414b747d8d6591b24ab2":[13,0,61,2],
-"structInputDeviceXTest.html#ac9afc165eb9476d1858ff952ba865663":[13,0,61,4],
-"structLTRAction.html":[13,0,76]
+"structInputDeviceXTest.html#a55a75dcac9c38d75ce24cb39af075d19":[13,0,61,0]
 };
