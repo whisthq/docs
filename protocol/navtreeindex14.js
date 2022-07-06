@@ -1,5 +1,12 @@
 var NAVTREEINDEX14 =
 {
+"structVideoEncoder.html#a9bd4d8cfca88434dbd276a6bfacfe027":[13,0,117,7],
+"structVideoEncoder.html#adb457706b572dcd6b81eeecc250b3e3f":[13,0,117,1],
+"structVideoEncoder.html#af56f705c8349a76f221e7b09c4316d17":[13,0,117,11],
+"structVideoFrame.html":[13,0,118],
+"structVideoFrame.html#a090980fd4ab714569d11fdbdab2b8989":[13,0,118,10],
+"structVideoFrame.html#a151e19798a0d62372318e05a9da3977f":[13,0,118,2],
+"structVideoFrame.html#a21d459b551ceeac67227b348099c193b":[13,0,118,11],
 "structVideoFrame.html#a421d191d72bdb9f82e657bdaa0d724f9":[13,0,118,13],
 "structVideoFrame.html#a4e5146fe473d1cbf298009ffb7b972d3":[13,0,118,9],
 "structVideoFrame.html#a5a3d09c14f8bde62ed28b35578e52f87":[13,0,118,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX14 =
 "structWhistYUVColor.html#a19784573e8a520f0e550040670c9d4ef":[13,0,148,2],
 "structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[13,0,148,1],
 "structWhistYUVColor.html#af66d5846b6864345bcd70f469a0af5dc":[13,0,148,0],
-"structX11CaptureDevice.html":[13,0,149],
-"structX11CaptureDevice.html#a14f8b043bd98da409064ec5b58a3a2ac":[13,0,149,24],
-"structX11CaptureDevice.html#a15aa394a9a0116a6a3de0027af4a3a56":[13,0,149,10],
-"structX11CaptureDevice.html#a1c4f6b1f91d40bc223efabf1b8f5c974":[13,0,149,26],
-"structX11CaptureDevice.html#a1e7c183d66303180cc872f5f8670bd8e":[13,0,149,9],
-"structX11CaptureDevice.html#a25bca3462ac6c7b381aedc3373943ed3":[13,0,149,11],
-"structX11CaptureDevice.html#a34f9610206c72826745c4dd6e66f7104":[13,0,149,4],
-"structX11CaptureDevice.html#a47bfa7fe3830e8f7ffc8b7a48fc78870":[13,0,149,16]
+"structX11CaptureDevice.html":[13,0,149]
 };

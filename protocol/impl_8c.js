@@ -33,5 +33,7 @@ var impl_8c =
     [ "virtual_set_window_fullscreen", "impl_8c.html#ad43ee803dd704ddecae9641c0aadf9bf", null ],
     [ "virtual_update_video", "impl_8c.html#a90d813634ba46b2eabacd6e0dcc0d999", null ],
     [ "virtual_wait_event", "impl_8c.html#af9f82caea6a996c58ccd9b6f7d8785eb", null ],
-    [ "events_queue", "impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ]
+    [ "events_queue", "impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ],
+    [ "on_cursor_change", "impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40", null ],
+    [ "on_cursor_change_data", "impl_8c.html#a5881f8677c27b69852aefe1023228215", null ]
 ];

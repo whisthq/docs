@@ -1,5 +1,12 @@
 var NAVTREEINDEX11 =
 {
+"structClipboardData.html#a8206090576aadfd57a86acc49c076640":[13,0,16,1],
+"structClipboardData.html#aad609297cebff188b34474d1c0ae634d":[13,0,16,2],
+"structClipboardData.html#afd06ecae38ccf441544891c1c8cc1f1d":[13,0,16,3],
+"structClipboardData.html#aff16a7ca2b2bcf6eb42029a858056c2d":[13,0,16,0],
+"structClipboardFiles.html":[13,0,17],
+"structClipboardFiles.html#a162abb7fcd52c644863e8d6abfe7600c":[13,0,17,1],
+"structClipboardFiles.html#ad6b3efc63acdc42cf8be3feadb55c908":[13,0,17,0],
 "structClipboardThread.html":[13,0,18],
 "structClipboardThread.html#a6cd482e9fcaea6bfecdbb9ed29db6b83":[13,0,18,1],
 "structClipboardThread.html#a966aeafbdcc3e15278ef3c6f24d9f883":[13,0,18,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX11 =
 "structInputDeviceUInput.html#a725bbf1db14f59b2b10981d326aefe44":[13,0,58,1],
 "structInputDeviceUInput.html#a7b1f2877ec24b971d71e8f8fe307f2fb":[13,0,58,7],
 "structInputDeviceUInput.html#a93377593eb5963e4ceab63d1389569d3":[13,0,58,6],
-"structInputDeviceUInput.html#adcc569c155f6e24e8aa0739fca91104d":[13,0,58,0],
-"structInputDeviceUInput.html#aebf0cdff6b35951019f88752433e95c8":[13,0,58,5],
-"structInputDeviceWeston.html":[13,0,59],
-"structInputDeviceWeston.html#a26df9ca3c4693c0e941fe44c57a8f2a2":[13,0,59,0],
-"structInputDeviceWin.html":[13,0,60],
-"structInputDeviceWin.html#a8a0ea5d5e5054afdc9d638b391a4073b":[13,0,60,0],
-"structInputDeviceXTest.html":[13,0,61],
-"structInputDeviceXTest.html#a55a75dcac9c38d75ce24cb39af075d19":[13,0,61,0]
+"structInputDeviceUInput.html#adcc569c155f6e24e8aa0739fca91104d":[13,0,58,0]
 };

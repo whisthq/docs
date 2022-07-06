@@ -11,5 +11,8 @@ var interface_8c =
     [ "virtual_interface_send_event", "interface_8c.html#aaea1060788bf07f483d1aa07c7ff3a75", null ],
     [ "virtual_interface_send_frame", "interface_8c.html#ae4fcc8445ea7727a1659e97e29bbdded", null ],
     [ "virtual_interface_set_fileupload_callback", "interface_8c.html#a8029db699899c780a457c648b4cbe011", null ],
-    [ "events_queue", "interface_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ]
+    [ "virtual_interface_set_on_cursor_change_callback", "interface_8c.html#a6b94a30c3b0943758fae4945b039e44f", null ],
+    [ "events_queue", "interface_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ],
+    [ "on_cursor_change", "interface_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40", null ],
+    [ "on_cursor_change_data", "interface_8c.html#a5881f8677c27b69852aefe1023228215", null ]
 ];

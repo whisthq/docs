@@ -1,5 +1,12 @@
 var NAVTREEINDEX12 =
 {
+"structInputDeviceUInput.html#aebf0cdff6b35951019f88752433e95c8":[13,0,58,5],
+"structInputDeviceWeston.html":[13,0,59],
+"structInputDeviceWeston.html#a26df9ca3c4693c0e941fe44c57a8f2a2":[13,0,59,0],
+"structInputDeviceWin.html":[13,0,60],
+"structInputDeviceWin.html#a8a0ea5d5e5054afdc9d638b391a4073b":[13,0,60,0],
+"structInputDeviceXTest.html":[13,0,61],
+"structInputDeviceXTest.html#a55a75dcac9c38d75ce24cb39af075d19":[13,0,61,0],
 "structInputDeviceXTest.html#a7ad59e59a74c7f235e4b9c3d751bbd2d":[13,0,61,1],
 "structInputDeviceXTest.html#a8b2038f9758385301ce5388a9f4ad188":[13,0,61,5],
 "structInputDeviceXTest.html#a93e2b5fa89c4ea6d52251577d77fd9cf":[13,0,61,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX12 =
 "structOSXImage.html#a2cbabeab913da9f6b9bd91b081960bc6":[13,0,87,0],
 "structPrivateKeyData.html":[13,0,88],
 "structPrivateKeyData.html#a2f4995b06671f37e29e666ae9268c737":[13,0,88,0],
-"structPrivateKeyData.html#a329c8f083cc47b85adf8ca53b9ef2887":[13,0,88,1],
-"structQueueContext.html":[13,0,89],
-"structQueueContext.html#a3c07d815373ecee83228a5ec37fbcba2":[13,0,89,2],
-"structQueueContext.html#a4ea2a37a0665aa6a9b659115bf921838":[13,0,89,7],
-"structQueueContext.html#a59abc90f7aeae228b347aa26ca16a5e6":[13,0,89,6],
-"structQueueContext.html#a6d170c8eca42dddf27a227a58f2cbb61":[13,0,89,0],
-"structQueueContext.html#a79827944cf8b8fe66aa929d81f36b831":[13,0,89,1],
-"structQueueContext.html#a97a4324684e5772ece22b55429174613":[13,0,89,5]
+"structPrivateKeyData.html#a329c8f083cc47b85adf8ca53b9ef2887":[13,0,88,1]
 };
