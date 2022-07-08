@@ -30,7 +30,6 @@ var dir_e68502ba7741b9477bffd325bfc1c340 =
     [ "string_buffer.h", "string__buffer_8h.html", "string__buffer_8h" ],
     [ "sysinfo.c", "sysinfo_8c.html", "sysinfo_8c" ],
     [ "sysinfo.h", "sysinfo_8h.html", "sysinfo_8h" ],
-    [ "threads.c", "threads_8c.html", "threads_8c" ],
     [ "threads.h", "threads_8h.html", "threads_8h" ],
     [ "window_info.h", "window__info_8h.html", "window__info_8h" ],
     [ "windows_window_info.c", "windows__window__info_8c.html", "windows__window__info_8c" ],
