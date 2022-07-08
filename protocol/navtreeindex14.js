@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"structVideoFrame.html#ac749fd754e6a1f8f3f2b56224b527a64":[13,0,118,5],
 "structVideoFrame.html#ae4cfd527d7faecb877fd5464037f11aa":[13,0,118,1],
 "structVideoFrame.html#ae6fe83b5b36f4100ca786a4a06f91db2":[13,0,118,0],
 "structVideoFrame.html#aec94d3047b7310df6191dff99bd929f8":[13,0,118,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "structWhistWindow.html#adadd3a20bc1ece5f72730a213169f5d0":[13,0,148,3],
 "structWhistWindow.html#ae15a0784ef3b009825a150df3bf6f86d":[13,0,148,2],
 "structWhistYUVColor.html":[13,0,149],
-"structWhistYUVColor.html#a19784573e8a520f0e550040670c9d4ef":[13,0,149,2],
-"structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[13,0,149,1]
+"structWhistYUVColor.html#a19784573e8a520f0e550040670c9d4ef":[13,0,149,2]
 };

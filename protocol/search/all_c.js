@@ -230,7 +230,7 @@ var searchData=
   ['long_5fterm_5flatency_1439',['long_term_latency',['../structUDPContext.html#ac086e6fbe32caffe4cc04ddab328e1af',1,'UDPContext']]],
   ['ltr_2ec_1440',['ltr.c',['../ltr_8c.html',1,'']]],
   ['ltr_2eh_1441',['ltr.h',['../ltr_8h.html',1,'']]],
-  ['ltr_5faction_1442',['ltr_action',['../structNvidiaEncoder.html#a832b3dd35a47459f6383ea505aceb877',1,'NvidiaEncoder']]],
+  ['ltr_5faction_1442',['ltr_action',['../structFFmpegEncoder.html#a8ddfc4f1e8777a5cccfdbab5e0d82332',1,'FFmpegEncoder::ltr_action()'],['../structNvidiaEncoder.html#a832b3dd35a47459f6383ea505aceb877',1,'NvidiaEncoder::ltr_action()']]],
   ['ltr_5fcontext_1443',['ltr_context',['../structWhistServerState.html#a3c05e0c9cbd2fa0a293a6b90dab20164',1,'WhistServerState']]],
   ['ltr_5fcreate_1444',['ltr_create',['../ltr_8c.html#a7a3d18e57e1e54f239a35d0b8f9e7968',1,'ltr_create(void):&#160;ltr.c'],['../ltr_8h.html#a7a3d18e57e1e54f239a35d0b8f9e7968',1,'ltr_create(void):&#160;ltr.c']]],
   ['ltr_5fdestroy_1445',['ltr_destroy',['../ltr_8c.html#ac07057d351894088f53514403e31379c',1,'ltr_destroy(LTRState *ltr):&#160;ltr.c'],['../ltr_8h.html#ac07057d351894088f53514403e31379c',1,'ltr_destroy(LTRState *ltr):&#160;ltr.c']]],

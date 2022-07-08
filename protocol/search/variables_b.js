@@ -37,6 +37,6 @@ var searchData=
   ['long_5foption_4394',['long_option',['../structWhistCommandLineOption.html#a9d175aa452650bfa0d907ce4fd5bfa0c',1,'WhistCommandLineOption']]],
   ['long_5fterm_5fframe_5findex_4395',['long_term_frame_index',['../structLTRAction.html#a947968159b3e651d3719253e447c4fdd',1,'LTRAction']]],
   ['long_5fterm_5flatency_4396',['long_term_latency',['../structUDPContext.html#ac086e6fbe32caffe4cc04ddab328e1af',1,'UDPContext']]],
-  ['ltr_5faction_4397',['ltr_action',['../structNvidiaEncoder.html#a832b3dd35a47459f6383ea505aceb877',1,'NvidiaEncoder']]],
+  ['ltr_5faction_4397',['ltr_action',['../structFFmpegEncoder.html#a8ddfc4f1e8777a5cccfdbab5e0d82332',1,'FFmpegEncoder::ltr_action()'],['../structNvidiaEncoder.html#a832b3dd35a47459f6383ea505aceb877',1,'NvidiaEncoder::ltr_action()']]],
   ['ltr_5fcontext_4398',['ltr_context',['../structWhistServerState.html#a3c05e0c9cbd2fa0a293a6b90dab20164',1,'WhistServerState']]]
 ];

@@ -16,6 +16,7 @@ var structFFmpegEncoder =
     [ "hw_frame", "structFFmpegEncoder.html#a71883d3f943064de6c4a4d350d727890", null ],
     [ "in_height", "structFFmpegEncoder.html#a9a074395cf5a4d86e88dbc33887246c8", null ],
     [ "in_width", "structFFmpegEncoder.html#a297d10f668de545714ac4fa34be416dc", null ],
+    [ "ltr_action", "structFFmpegEncoder.html#a8ddfc4f1e8777a5cccfdbab5e0d82332", null ],
     [ "out_height", "structFFmpegEncoder.html#a4303223507eb462bfdcf07e8d6ba70ca", null ],
     [ "out_width", "structFFmpegEncoder.html#a4edf6638ac21188fca3e6e02f35c8b58", null ],
     [ "sw_frame", "structFFmpegEncoder.html#adf332e00903cc8e119ade5a895c3ef4c", null ],

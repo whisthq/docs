@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[13,0,149,1],
 "structWhistYUVColor.html#af66d5846b6864345bcd70f469a0af5dc":[13,0,149,0],
 "structX11CaptureDevice.html":[13,0,150],
 "structX11CaptureDevice.html#a14f8b043bd98da409064ec5b58a3a2ac":[13,0,150,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "wasapicapture_8c.html":[14,0,2,0,7],
 "wasapicapture_8h.html":[14,0,2,0,8],
 "wasapicapture_8h.html#a9329f8d868f57c865444a80df32c9943":[14,0,2,0,8,1],
-"wasapicapture_8h_source.html":[14,0,2,0,8],
-"weston__input__driver_8c.html":[14,0,2,7,5]
+"wasapicapture_8h_source.html":[14,0,2,0,8]
 };
