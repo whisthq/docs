@@ -1,5 +1,6 @@
 var impl_8c =
 [
+    [ "FROM_WHIST_PROTOCOL", "impl_8c.html#a5a04db2cf03c25dfc773b71bc272aaf4", null ],
     [ "virtual_audio_is_open", "impl_8c.html#a5e8cfdf935fcbb300af22b2b406254c8", null ],
     [ "virtual_close_audio", "impl_8c.html#a31e1967783f86f66e0917da716dcc4cd", null ],
     [ "virtual_create_window", "impl_8c.html#a36c5a650636732d4b891f9102d57d080", null ],
@@ -33,7 +34,8 @@ var impl_8c =
     [ "virtual_set_window_fullscreen", "impl_8c.html#ad43ee803dd704ddecae9641c0aadf9bf", null ],
     [ "virtual_update_video", "impl_8c.html#a90d813634ba46b2eabacd6e0dcc0d999", null ],
     [ "virtual_wait_event", "impl_8c.html#af9f82caea6a996c58ccd9b6f7d8785eb", null ],
+    [ "callback_context", "impl_8c.html#a67b5953b36108e04f24abe803bc1fe44", null ],
     [ "events_queue", "impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ],
     [ "on_cursor_change", "impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40", null ],
-    [ "on_cursor_change_data", "impl_8c.html#a5881f8677c27b69852aefe1023228215", null ]
+    [ "on_file_upload", "impl_8c.html#a30d9b3af830eaed4169151a59b45b368", null ]
 ];
