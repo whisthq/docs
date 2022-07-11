@@ -3,6 +3,7 @@ var cursor_8h =
     [ "WhistCursorInfo", "structWhistCursorInfo.html", "structWhistCursorInfo" ],
     [ "MAX_CURSOR_HEIGHT", "cursor_8h.html#a125a7951fdfad741dedbd35df4336910", null ],
     [ "MAX_CURSOR_WIDTH", "cursor_8h.html#aee98604dbc4b5cab7a96dd17e6590d42", null ],
+    [ "WhistCursorCache", "cursor_8h.html#ad016975ad6ef7bba3b747677dfd69e91", null ],
     [ "WhistCursorInfo", "cursor_8h.html#a86edff3667e2c1dfd06afb826d9c383f", null ],
     [ "WhistCursorType", "cursor_8h.html#aeb3f1a857d373e2d0c8b81760a77bc40", null ],
     [ "WhistMouseMode", "cursor_8h.html#abc4065afd21caff1b1ec41a78fecb52b", null ],
@@ -48,10 +49,15 @@ var cursor_8h =
       [ "MOUSE_MODE_NORMAL", "cursor_8h.html#a16e38bee28535fa71ec83c8fb5e3bfa4a7355be0af8d4f92174f251a28b52a683", null ],
       [ "MOUSE_MODE_RELATIVE", "cursor_8h.html#a16e38bee28535fa71ec83c8fb5e3bfa4a04afc399b17c381342bcd25dcded4684", null ]
     ] ],
+    [ "whist_cursor_cache_add", "cursor_8h.html#aa650e2a06b5ce200c08796ca14ac58cc", null ],
+    [ "whist_cursor_cache_check", "cursor_8h.html#aef77761374befc06504baf3996539f78", null ],
+    [ "whist_cursor_cache_clear", "cursor_8h.html#ae031a5ed65b5c580ea8f9ad5033f5a1f", null ],
+    [ "whist_cursor_cache_create", "cursor_8h.html#ab965738c26ca42f3b46322f076a522bd", null ],
+    [ "whist_cursor_cache_destroy", "cursor_8h.html#ae0c6e005d59523249e80b68a0f5ce34d", null ],
     [ "whist_cursor_capture", "cursor_8h.html#adad7a7d0b31603dd588ccf0f2d0fe0fe", null ],
     [ "whist_cursor_capture_destroy", "cursor_8h.html#a878422ca18535f9bc2033156becbf937", null ],
     [ "whist_cursor_capture_init", "cursor_8h.html#ac1fb51bdd5f5a29790a411f489ddb747", null ],
-    [ "whist_cursor_info_get_size", "cursor_8h.html#ad55423ddf1306990b4f34ccf347a42b3", null ],
+    [ "whist_cursor_info_get_size", "cursor_8h.html#a25eaaf2e15df759b2e8fa523e4d2198e", null ],
     [ "whist_cursor_info_to_rgba", "cursor_8h.html#a91c004f271aaf4c5096588566325a583", null ],
     [ "whist_cursor_type_to_string", "cursor_8h.html#adee851b460a89575a56b0302b97d98db", null ]
 ];

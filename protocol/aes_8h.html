@@ -119,7 +119,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab0e29541a233447e2f8f309d9d11796f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#ab0e29541a233447e2f8f309d9d11796f">hash</a> (const void *data, size_t len)</td></tr>
-<tr class="memdesc:ab0e29541a233447e2f8f309d9d11796f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structHash.html">Hash</a> a buffer to a pseudorandomly unique ID This will not be cryptographically secure against preimage/collision attacks, it is intended to be fast instead.  <a href="aes_8h.html#ab0e29541a233447e2f8f309d9d11796f">More...</a><br /></td></tr>
+<tr class="memdesc:ab0e29541a233447e2f8f309d9d11796f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structHash.html">Hash</a> a buffer to a pseudorandomly unique ID This will not be cryptographically secure against preimage/collision attacks, it is intended to be fast instead Note that this function will never return 0, so "0" is safe as a null hash value.  <a href="aes_8h.html#ab0e29541a233447e2f8f309d9d11796f">More...</a><br /></td></tr>
 <tr class="separator:ab0e29541a233447e2f8f309d9d11796f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a228d1c992b2de9efb04926926c9b6433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#a228d1c992b2de9efb04926926c9b6433">hmac</a> (void *<a class="el" href="aes_8h.html#ab0e29541a233447e2f8f309d9d11796f">hash</a>, const void *buf, int len, const void *private_key)</td></tr>
 <tr class="memdesc:a228d1c992b2de9efb04926926c9b6433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a signature of the given buffer This will generate the same signature given the same buf/len, and proves that someone with the private key generated the hash.  <a href="aes_8h.html#a228d1c992b2de9efb04926926c9b6433">More...</a><br /></td></tr>
@@ -137,9 +137,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains all code that interacts directly with packets </p>
-<h1><a class="anchor" id="autotoc_md252"></a>
+<h1><a class="anchor" id="autotoc_md250"></a>
 encryption (using AES encryption).</h1>
-<h1><a class="anchor" id="autotoc_md253"></a>
+<h1><a class="anchor" id="autotoc_md251"></a>
 Usage</h1>
 <p>The function encrypt_packet gets called when a new packet of data needs to be sent over the network, while decrypt_packet, which calls decrypt_packet_n, gets called on the receiving end to re-obtain the data and process it. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -391,7 +391,7 @@ Usage</h1>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="structHash.html">Hash</a> a buffer to a pseudorandomly unique ID This will not be cryptographically secure against preimage/collision attacks, it is intended to be fast instead. </p>
+<p><a class="el" href="structHash.html">Hash</a> a buffer to a pseudorandomly unique ID This will not be cryptographically secure against preimage/collision attacks, it is intended to be fast instead Note that this function will never return 0, so "0" is safe as a null hash value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to the data to get hashed </td></tr>

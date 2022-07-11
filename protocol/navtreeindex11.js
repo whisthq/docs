@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"structDynamicBuffer.html#ad80cc8f3a40b8681fa9ede1f2aa19c79":[11,2,2,2],
+"structEncodedAudio.html":[13,0,27],
 "structEncodedAudio.html#a5955d96098e033891a5bae062868cd05":[13,0,27,2],
 "structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3":[13,0,27,1],
 "structEncodedAudio.html#a9f0b62fc01a231f73c90321f98c65e96":[13,0,27,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "structLTRState.html#aa038ab92a2c1b8bd7f3d43186cdd65c6":[13,0,78,12],
 "structLTRState.html#aa734af45a27c2ddf2c7ad6ef572ea12b":[13,0,78,7],
 "structLTRState.html#ac19dfa2430ab067b04d47e04c1c169f0":[13,0,78,0],
-"structLTRState.html#ac8adecae897a3cc5c7e56fa3d5e5f502":[13,0,78,11],
-"structLTRState.html#ae17bd07dc9db3ac984246379bd11311d":[13,0,78,1],
-"structLinkedList.html":[11,5,0]
+"structLTRState.html#ac8adecae897a3cc5c7e56fa3d5e5f502":[13,0,78,11]
 };
