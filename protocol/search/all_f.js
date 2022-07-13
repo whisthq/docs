@@ -2,7 +2,7 @@ var searchData=
 [
   ['on_5fcursor_5fchange_1767',['on_cursor_change',['../impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40',1,'on_cursor_change():&#160;interface.c'],['../interface_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40',1,'on_cursor_change():&#160;interface.c']]],
   ['on_5ffile_5fupload_1768',['on_file_upload',['../impl_8c.html#a30d9b3af830eaed4169151a59b45b368',1,'on_file_upload():&#160;interface.c'],['../interface_8c.html#a30d9b3af830eaed4169151a59b45b368',1,'on_file_upload():&#160;interface.c']]],
-  ['oncursorchangecallback_1769',['OnCursorChangeCallback',['../interface_8h.html#a64ee7c71e6032d7e319b0a50eeb549bc',1,'interface.h']]],
+  ['oncursorchangecallback_1769',['OnCursorChangeCallback',['../interface_8h.html#ad8dab2b09cc447a907eb60aba2f46b29',1,'interface.h']]],
   ['onfileuploadcallback_1770',['OnFileUploadCallback',['../interface_8h.html#a37105195b9292c0603cb55a10a2e11d0',1,'interface.h']]],
   ['opaque_1771',['opaque',['../structWhistTimerOpaque.html#a0b61f5d730590a53da49bb7357541244',1,'WhistTimerOpaque']]],
   ['open_5furi_5fcmd_1772',['OPEN_URI_CMD',['../handle__server__message_8c.html#aa3f8ccacff62d5981de270ade56b1e6d',1,'handle_server_message.c']]],
