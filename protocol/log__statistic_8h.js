@@ -1,5 +1,8 @@
 var log__statistic_8h =
 [
+    [ "LOG_DATA_FOR_PLOTTER", "log__statistic_8h.html#af5cb62fd00db1177288ba73db0b47cef", null ],
+    [ "PLOT_DATA_FILENAME", "log__statistic_8h.html#a785020e69127636d6918c373600d89e4", null ],
+    [ "PLOT_DATA_SIZE", "log__statistic_8h.html#a971765743699bd86084e09b5b4d9615c", null ],
     [ "STATISTICS_FREQUENCY_IN_SEC", "log__statistic_8h.html#afa6be6a1f15ad9d2c4ca359bfb1703e8", null ],
     [ "TIME_RUN", "log__statistic_8h.html#a04c8f42babfe110a848d8fdd6ebabd65", null ],
     [ "Metrics", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0", [
@@ -8,7 +11,6 @@ var log__statistic_8h =
       [ "CLIENT_HANDLE_USERINPUT_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a31c807d31f0487d03623aa1f63d178c8", null ],
       [ "NETWORK_THROTTLED_PACKET_DELAY", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ac258810ce39025e0cefc8e1f34fd2fa2", null ],
       [ "NETWORK_THROTTLED_PACKET_DELAY_RATE", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ae633d7b7ba7e153f9671a1691ef89b8c", null ],
-      [ "NETWORK_THROTTLED_PACKET_DELAY_LOOPS", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a5c92f2ee11cc4e038a10445b3f749372", null ],
       [ "VIDEO_CAPTURE_CREATE_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a21fa0c0a10c8063afb6215455922e5a8", null ],
       [ "VIDEO_CAPTURE_UPDATE_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0add2ffe606ca7edbe784ded18671646fb", null ],
       [ "VIDEO_CAPTURE_SCREEN_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a2e76a584d3eb368c555e0dd6291ed331", null ],
@@ -27,12 +29,10 @@ var log__statistic_8h =
       [ "DBUS_MSGS_RECEIVED", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a6edc38cb5d1476aea5bec1d201c8509d", null ],
       [ "SERVER_CPU_USAGE", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a3a5a7856ea8c8f14b77adb4e444d28b5", null ],
       [ "AUDIO_RECEIVE_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ae3b93673c756a8bcbe3014a6779acfc5", null ],
-      [ "AUDIO_UPDATE_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a2e797a1fcddb59786ebd3a5afae4bc4f", null ],
       [ "AUDIO_FRAMES_SKIPPED", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a1bacdc5d426e363329abf47240b2c1cd", null ],
       [ "NETWORK_READ_PACKET_TCP", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ae3f83f720f48f774643d9d25ea8506ff", null ],
       [ "NETWORK_READ_PACKET_UDP", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a2533789bca36ea8778fdd91d220b22cc", null ],
       [ "SERVER_HANDLE_MESSAGE_TCP", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0ab4c1f74cc9e93c9969611ff0beacfb37", null ],
-      [ "SERVER_HANDLE_MESSAGE_UDP", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a501593968a802affcaa0a84d644d5baa", null ],
       [ "VIDEO_AVCODEC_RECEIVE_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0abbbd825a77b2f214509ddb831b0df31a", null ],
       [ "VIDEO_AV_HWFRAME_TRANSFER_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a250066aaa58526ff20d827ead7c26944", null ],
       [ "VIDEO_CURSOR_UPDATE_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a093d3a7510b203a8ca9a41400132e45b", null ],
@@ -45,7 +45,6 @@ var log__statistic_8h =
       [ "VIDEO_RECEIVE_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a8d67938756aea08edff41427fafcc6b1", null ],
       [ "VIDEO_RENDER_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a82c3f68e1603d6b05e4f2757be692d75", null ],
       [ "VIDEO_TIME_BETWEEN_FRAMES", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0af72c3ce78e30c28bd78013e2cbcdfae0", null ],
-      [ "VIDEO_UPDATE_TIME", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a6f123a94d6cc479a05d86bb5c37eceb6", null ],
       [ "NOTIFICATIONS_RECEIVED", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0aef844b9ebeccdf9ea1353890aa96ed39", null ],
       [ "CLIENT_CPU_USAGE", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0aff44088b5fe8a839d311950ed00f80e7", null ],
       [ "NUM_METRICS", "log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a7af8864683fe05f5d2ab7b4d88bbe5b2", null ]

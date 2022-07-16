@@ -8,9 +8,11 @@ var searchData=
   ['ping_5flambda_5flong_5fterm_5699',['PING_LAMBDA_LONG_TERM',['../udp_8c.html#a3b40832174b4d49fcaad8678cb592774',1,'udp.c']]],
   ['ping_5flambda_5fshort_5fterm_5700',['PING_LAMBDA_SHORT_TERM',['../udp_8c.html#a4f662d55af17afbda6cd651c10ece4ec',1,'udp.c']]],
   ['plot_5faudio_5falgo_5701',['PLOT_AUDIO_ALGO',['../debug__flags_8h.html#ae609ee4fff660303247c644b473a4817',1,'debug_flags.h']]],
-  ['plot_5frender_5fvideo_5702',['PLOT_RENDER_VIDEO',['../debug__flags_8h.html#a38b4dbed50272766bddff54d608004f3',1,'debug_flags.h']]],
-  ['plot_5fsdl_5fpresent_5fframe_5fbuffer_5703',['PLOT_SDL_PRESENT_FRAME_BUFFER',['../debug__flags_8h.html#a55f1664a54eebf3d1779ac3011bebe8c',1,'debug_flags.h']]],
-  ['plot_5fvideo_5ffirst_5fseen_5fto_5fdecode_5704',['PLOT_VIDEO_FIRST_SEEN_TO_DECODE',['../debug__flags_8h.html#a9a645c218691a55ce8f92e90262b2c67',1,'debug_flags.h']]],
-  ['pointer_5flock_5fupdate_5ftrigger_5ffile_5705',['POINTER_LOCK_UPDATE_TRIGGER_FILE',['../linux__cursor__capture_8c.html#a113fb2993f0fdcc3dcaef35d1ab3b4bb',1,'linux_cursor_capture.c']]],
-  ['print_5fstatus_5706',['PRINT_STATUS',['../nvidiacapture_8c.html#ae20fe54dadf0431b275a789ffc010431',1,'nvidiacapture.c']]]
+  ['plot_5fdata_5ffilename_5702',['PLOT_DATA_FILENAME',['../log__statistic_8h.html#a785020e69127636d6918c373600d89e4',1,'log_statistic.h']]],
+  ['plot_5fdata_5fsize_5703',['PLOT_DATA_SIZE',['../log__statistic_8h.html#a971765743699bd86084e09b5b4d9615c',1,'log_statistic.h']]],
+  ['plot_5frender_5fvideo_5704',['PLOT_RENDER_VIDEO',['../debug__flags_8h.html#a38b4dbed50272766bddff54d608004f3',1,'debug_flags.h']]],
+  ['plot_5fsdl_5fpresent_5fframe_5fbuffer_5705',['PLOT_SDL_PRESENT_FRAME_BUFFER',['../debug__flags_8h.html#a55f1664a54eebf3d1779ac3011bebe8c',1,'debug_flags.h']]],
+  ['plot_5fvideo_5ffirst_5fseen_5fto_5fdecode_5706',['PLOT_VIDEO_FIRST_SEEN_TO_DECODE',['../debug__flags_8h.html#a9a645c218691a55ce8f92e90262b2c67',1,'debug_flags.h']]],
+  ['pointer_5flock_5fupdate_5ftrigger_5ffile_5707',['POINTER_LOCK_UPDATE_TRIGGER_FILE',['../linux__cursor__capture_8c.html#a113fb2993f0fdcc3dcaef35d1ab3b4bb',1,'linux_cursor_capture.c']]],
+  ['print_5fstatus_5708',['PRINT_STATUS',['../nvidiacapture_8c.html#ae20fe54dadf0431b275a789ffc010431',1,'nvidiacapture.c']]]
 ];

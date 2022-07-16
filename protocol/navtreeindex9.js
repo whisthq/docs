@@ -1,6 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"nvidiacapture_8c.html#a79f7bb932a6b6737bf03994e84e05a19":[14,0,2,11,0,3,2],
 "nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806":[14,0,2,11,0,3,0],
 "nvidiacapture_8c.html#abcf1a326ec163ff5e819b4e26914d187":[14,0,2,11,0,3,1],
 "nvidiacapture_8c.html#ae20fe54dadf0431b275a789ffc010431":[14,0,2,11,0,3,3],
@@ -56,10 +55,11 @@ var NAVTREEINDEX9 =
 "platform_8h.html#afda1ed7563922d7a9d8c9eb3e1fdc84f":[14,0,2,2,5,8],
 "platform_8h_source.html":[14,0,2,2,5],
 "plotter_8h.html":[14,0,2,4,2],
-"plotter_8h.html#a1dea4345f9e00dac5a71338ceff39299":[14,0,2,4,2,2],
-"plotter_8h.html#a940485ae6fc5690c9776b199303e46ab":[14,0,2,4,2,1],
-"plotter_8h.html#abff1d213f322b7d7c83c711bfa0ad102":[14,0,2,4,2,3],
-"plotter_8h.html#ae197a58f4f3d4176640cbb3a6644a2ab":[14,0,2,4,2,0],
+"plotter_8h.html#a1dea4345f9e00dac5a71338ceff39299":[14,0,2,4,2,3],
+"plotter_8h.html#a3aa4f3beb43e4618c87fc36d05a6836a":[14,0,2,4,2,0],
+"plotter_8h.html#a940485ae6fc5690c9776b199303e46ab":[14,0,2,4,2,2],
+"plotter_8h.html#abff1d213f322b7d7c83c711bfa0ad102":[14,0,2,4,2,4],
+"plotter_8h.html#ae197a58f4f3d4176640cbb3a6644a2ab":[14,0,2,4,2,1],
 "plotter_8h_source.html":[14,0,2,4,2],
 "png_8c.html":[14,0,2,10,20],
 "png_8c.html#a1b45cdbfc554a707d424aa5a505c6797":[14,0,2,10,20,1],

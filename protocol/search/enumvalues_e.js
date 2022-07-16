@@ -30,6 +30,5 @@ var searchData=
   ['video_5freceive_5ftime_5313',['VIDEO_RECEIVE_TIME',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a8d67938756aea08edff41427fafcc6b1',1,'log_statistic.h']]],
   ['video_5frender_5ftime_5314',['VIDEO_RENDER_TIME',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a82c3f68e1603d6b05e4f2757be692d75',1,'log_statistic.h']]],
   ['video_5fsend_5ftime_5315',['VIDEO_SEND_TIME',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a70a3201279c8c051ceb67f98523c753f',1,'log_statistic.h']]],
-  ['video_5ftime_5fbetween_5fframes_5316',['VIDEO_TIME_BETWEEN_FRAMES',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0af72c3ce78e30c28bd78013e2cbcdfae0',1,'log_statistic.h']]],
-  ['video_5fupdate_5ftime_5317',['VIDEO_UPDATE_TIME',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a6f123a94d6cc479a05d86bb5c37eceb6',1,'log_statistic.h']]]
+  ['video_5ftime_5fbetween_5fframes_5316',['VIDEO_TIME_BETWEEN_FRAMES',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0af72c3ce78e30c28bd78013e2cbcdfae0',1,'log_statistic.h']]]
 ];

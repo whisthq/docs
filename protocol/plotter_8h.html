@@ -108,6 +108,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a940485ae6fc5690c9776b199303e46ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plotter_8h.html#a940485ae6fc5690c9776b199303e46ab">whist_plotter_insert_sample</a> (const char *label, double x, double y)</td></tr>
 <tr class="memdesc:a940485ae6fc5690c9776b199303e46ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a sample to the plotter.  <a href="plotter_8h.html#a940485ae6fc5690c9776b199303e46ab">More...</a><br /></td></tr>
 <tr class="separator:a940485ae6fc5690c9776b199303e46ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa4f3beb43e4618c87fc36d05a6836a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plotter_8h.html#a3aa4f3beb43e4618c87fc36d05a6836a">whist_plotter_export_c</a> (char *out_s, size_t max_size)</td></tr>
+<tr class="memdesc:a3aa4f3beb43e4618c87fc36d05a6836a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the samples to a json format string.  <a href="plotter_8h.html#a3aa4f3beb43e4618c87fc36d05a6836a">More...</a><br /></td></tr>
+<tr class="separator:a3aa4f3beb43e4618c87fc36d05a6836a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -117,6 +120,44 @@ Functions</h2></td></tr>
 Usage</h1>
 <p>Call these functions from anywhere within client where they're needed. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a3aa4f3beb43e4618c87fc36d05a6836a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa4f3beb43e4618c87fc36d05a6836a">&#9670;&nbsp;</a></span>whist_plotter_export_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_plotter_export_c </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Export the samples to a json format string. </p>
+<p>This function is a C wrapper to whist_plotter_export().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out_s</td><td>The point to the buffer to use to save the JSON string </td></tr>
+    <tr><td class="paramname">max_size</td><td>The size of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae197a58f4f3d4176640cbb3a6644a2ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae197a58f4f3d4176640cbb3a6644a2ab">&#9670;&nbsp;</a></span>whist_plotter_init()</h2>
 

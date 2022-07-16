@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"struct__whist__server__config.html#aaec6b60177bbb307628d305ce768fcbb":[13,0,0,2],
 "structcm256__block__t.html":[13,0,19],
 "structcm256__block__t.html#a3e38a4353a34c5fd7508b81b617f7b1a":[13,0,19,1],
 "structcm256__block__t.html#ae4a6d500829ef1eea5d13ab38add2da7":[13,0,19,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "whist_2network_2network_8h.html#a61c60fb86a89187155fb727e0dba01ea":[14,0,2,9,1,39],
 "whist_2network_2network_8h.html#a6268ba8879305a31512908e23f295ddc":[14,0,2,9,1,6],
 "whist_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b":[14,0,2,9,1,10],
-"whist_2network_2network_8h.html#a664d561eb2ebb394d1ac03d0f3530026":[14,0,2,9,1,22],
-"whist_2network_2network_8h.html#a68f8e6814da9faad6d4eb32379d58412":[14,0,2,9,1,13]
+"whist_2network_2network_8h.html#a664d561eb2ebb394d1ac03d0f3530026":[14,0,2,9,1,22]
 };

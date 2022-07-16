@@ -35,10 +35,11 @@ var NAVTREEINDEX13 =
 "structStatisticContext.html#a9a9d75b2a01da6ce695283c248937100":[13,0,98,0],
 "structStatisticContext.html#aee371be5235bf0ec71acf7a1b8e3bca7":[13,0,98,1],
 "structStatisticData.html":[13,0,99],
-"structStatisticData.html#a285604f80595a5dec886ece325a8253d":[13,0,99,2],
+"structStatisticData.html#a285604f80595a5dec886ece325a8253d":[13,0,99,3],
+"structStatisticData.html#a31fe8e7c16811c3d52fc97783d1e1cb0":[13,0,99,1],
 "structStatisticData.html#a4674dd9ea84c2c1f62a3b93930a3af05":[13,0,99,0],
-"structStatisticData.html#ad0f0b77f038851d9dd2bbeefa49c4500":[13,0,99,1],
-"structStatisticData.html#add2670d9360e9e131ab795fe99e0f605":[13,0,99,3],
+"structStatisticData.html#ad0f0b77f038851d9dd2bbeefa49c4500":[13,0,99,2],
+"structStatisticData.html#add2670d9360e9e131ab795fe99e0f605":[13,0,99,4],
 "structStatisticInfo.html":[13,0,100],
 "structStatisticInfo.html#a42c51f6d59b7e204b6972657527d2bf1":[13,0,100,0],
 "structStatisticInfo.html#ac3724c8df3f63fa03a1d37f8ab0ab1e3":[13,0,100,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "structWhistClientMessage.html#a383576764f0064035ae78a2c8de45917":[13,0,121,8],
 "structWhistClientMessage.html#a4ff756528d91a78ec61b1f92dfd2bdc8":[13,0,121,18],
 "structWhistClientMessage.html#a504bb34b77aa11d05bdfb559a23f69e2":[13,0,121,9],
-"structWhistClientMessage.html#a70a1ba7ad460bdf0a40d429e774662b7":[13,0,121,4],
-"structWhistClientMessage.html#a8558ab7ac655f18ca1cddca38a9458f6":[13,0,121,19]
+"structWhistClientMessage.html#a70a1ba7ad460bdf0a40d429e774662b7":[13,0,121,4]
 };
