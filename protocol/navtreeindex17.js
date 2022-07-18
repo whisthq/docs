@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"whist__string_8c.html":[14,0,2,2,12],
 "whist__string_8c.html#a0add0d18d995323e13dbfb3f2d5f0a7a":[14,0,2,2,12,2],
 "whist__string_8c.html#a0b9a48ddca4399d1659098d15b9edbd7":[14,0,2,2,12,0],
 "whist__string_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e":[14,0,2,2,12,1],
@@ -66,6 +67,10 @@ var NAVTREEINDEX17 =
 "windowscapture_8c.html#aa962953cfc3fdb9ed34703ab4a9afe42":[14,0,2,11,0,5,1],
 "windowscapture_8c.html#abbd0ff16d9ee7c3353340b1d2529f8c7":[14,0,2,11,0,5,2],
 "windowscapture_8c.html#acddcc3aa008273807b931fbd1fd2a0bf":[14,0,2,11,0,5,0],
+"wirehair__test_8h.html":[14,0,2,5,12],
+"wirehair__test_8h.html#a2311471373d31ceeb061c28a558a5791":[14,0,2,5,12,0],
+"wirehair__test_8h.html#ab7f22fdd705ccf43592c2379340fa152":[14,0,2,5,12,1],
+"wirehair__test_8h_source.html":[14,0,2,5,12],
 "x11__clipboard_8c.html":[14,0,2,1,8],
 "x11__clipboard_8c.html#a1f4649cb97b683e29d202d4a5d6ffc32":[14,0,2,1,8,3],
 "x11__clipboard_8c.html#a5867e7500d780fb08c54a5e18768d79f":[14,0,2,1,8,4],
