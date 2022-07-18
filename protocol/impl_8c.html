@@ -141,6 +141,12 @@ Functions</h2></td></tr>
 <tr class="separator:a21fdc3c4c0f48b0d363d3411edd18cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee3ea533f950c8ca6b965615e5544e9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a8ee3ea533f950c8ca6b965615e5544e9">virtual_get_chosen_file</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="separator:a8ee3ea533f950c8ca6b965615e5544e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5be9b5be9fdd9e4dd540092c8f24fd"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a2b5be9b5be9fdd9e4dd540092c8f24fd">virtual_file_download_start</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const char *file_path, int64_t file_size)</td></tr>
+<tr class="separator:a2b5be9b5be9fdd9e4dd540092c8f24fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaddd09640cf9ecc65e25d819d26a006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#acaddd09640cf9ecc65e25d819d26a006">virtual_file_download_update</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, void *opaque, int64_t bytes_so_far, int64_t bytes_per_sec)</td></tr>
+<tr class="separator:acaddd09640cf9ecc65e25d819d26a006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e528688380e1a6c7913a0bdd31143f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a2e528688380e1a6c7913a0bdd31143f2">virtual_file_download_complete</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, void *opaque)</td></tr>
+<tr class="separator:a2e528688380e1a6c7913a0bdd31143f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73d8ec34537d30a51a96c4301a0c199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#af73d8ec34537d30a51a96c4301a0c199">virtual_set_cursor</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *cursor)</td></tr>
 <tr class="separator:af73d8ec34537d30a51a96c4301a0c199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a851ee221340e0989dd51a70640edec98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a851ee221340e0989dd51a70640edec98">virtual_get_keyboard_state</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const uint8_t **key_state, int *key_count, int *mod_state)</td></tr>
@@ -178,6 +184,12 @@ Variables</h2></td></tr>
 <tr class="separator:a30d9b3af830eaed4169151a59b45b368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d0a11e73161c6c8d2662c0e8a5d8a40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_8h.html#ad8dab2b09cc447a907eb60aba2f46b29">OnCursorChangeCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40">on_cursor_change</a></td></tr>
 <tr class="separator:a4d0a11e73161c6c8d2662c0e8a5d8a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dafd7f05c6518f44f4291b2ddb082d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_8h.html#ad93a62b01fb855a3906d288bd9a10c66">OnFileDownloadStart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a8dafd7f05c6518f44f4291b2ddb082d0">on_file_download_start</a></td></tr>
+<tr class="separator:a8dafd7f05c6518f44f4291b2ddb082d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2f4753a286417e68546e4cdfe28afe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_8h.html#a8cffbb4db889b0f4818a05949b5e6adc">OnFileDownloadUpdate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a7b2f4753a286417e68546e4cdfe28afe">on_file_download_update</a></td></tr>
+<tr class="separator:a7b2f4753a286417e68546e4cdfe28afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00b87eb030299fcbdae3f0a93140219"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_8h.html#afb4d450f41150a6b987c9d06721b2181">OnFileDownloadComplete</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#ac00b87eb030299fcbdae3f0a93140219">on_file_download_complete</a></td></tr>
+<tr class="separator:ac00b87eb030299fcbdae3f0a93140219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5a04db2cf03c25dfc773b71bc272aaf4"></a>
@@ -340,6 +352,108 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">const <a class="el" href="structWhistNotification.html">WhistNotification</a> *&#160;</td>
           <td class="paramname"><em>notif</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e528688380e1a6c7913a0bdd31143f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e528688380e1a6c7913a0bdd31143f2">&#9670;&nbsp;</a></span>virtual_file_download_complete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void virtual_file_download_complete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>opaque</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b5be9b5be9fdd9e4dd540092c8f24fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b5be9b5be9fdd9e4dd540092c8f24fd">&#9670;&nbsp;</a></span>virtual_file_download_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* virtual_file_download_start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>file_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acaddd09640cf9ecc65e25d819d26a006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaddd09640cf9ecc65e25d819d26a006">&#9670;&nbsp;</a></span>virtual_file_download_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void virtual_file_download_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>opaque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>bytes_so_far</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>bytes_per_sec</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1184,6 +1298,48 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="interface_8h.html#ad8dab2b09cc447a907eb60aba2f46b29">OnCursorChangeCallback</a> on_cursor_change</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac00b87eb030299fcbdae3f0a93140219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac00b87eb030299fcbdae3f0a93140219">&#9670;&nbsp;</a></span>on_file_download_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_8h.html#afb4d450f41150a6b987c9d06721b2181">OnFileDownloadComplete</a> on_file_download_complete</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8dafd7f05c6518f44f4291b2ddb082d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dafd7f05c6518f44f4291b2ddb082d0">&#9670;&nbsp;</a></span>on_file_download_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_8h.html#ad93a62b01fb855a3906d288bd9a10c66">OnFileDownloadStart</a> on_file_download_start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b2f4753a286417e68546e4cdfe28afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b2f4753a286417e68546e4cdfe28afe">&#9670;&nbsp;</a></span>on_file_download_update</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_8h.html#a8cffbb4db889b0f4818a05949b5e6adc">OnFileDownloadUpdate</a> on_file_download_update</td>
         </tr>
       </table>
 </div><div class="memdoc">

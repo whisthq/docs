@@ -54,5 +54,7 @@ var searchData=
   ['burst_5ftimer_161',['burst_timer',['../structRingBuffer.html#a86b2c0292a3058f1fff12cfd4d355556',1,'RingBuffer']]],
   ['button_162',['button',['../structFrontendMouseButtonEvent.html#ad39000dba15d330ad6acc74dce39a261',1,'FrontendMouseButtonEvent::button()'],['../structWhistMouseButtonMessage.html#adf48ef5492b6cc207b0bbb2f9a5d39c2',1,'WhistMouseButtonMessage::button()']]],
   ['bytes_5fin_5fgb_163',['BYTES_IN_GB',['../sysinfo_8h.html#aa25230024110b1969fc70f71110daaca',1,'sysinfo.h']]],
-  ['bytes_5fin_5fkilobyte_164',['BYTES_IN_KILOBYTE',['../whist_8h.html#ae8e4c0175929d141a35aca839fea9693',1,'whist.h']]]
+  ['bytes_5fin_5fkilobyte_164',['BYTES_IN_KILOBYTE',['../whist_8h.html#ae8e4c0175929d141a35aca839fea9693',1,'whist.h']]],
+  ['bytes_5fper_5fsec_165',['bytes_per_sec',['../structTransferringFile.html#a7fa40ffbd62713dd2d01620161e41706',1,'TransferringFile']]],
+  ['bytes_5fwritten_166',['bytes_written',['../structTransferringFile.html#a3b5a48bdc214dbd6e4ba788330f4500a',1,'TransferringFile']]]
 ];

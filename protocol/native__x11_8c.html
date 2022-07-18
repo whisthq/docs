@@ -118,6 +118,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a53ed508b32945f4b58b930384243dec3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__x11_8c.html#a53ed508b32945f4b58b930384243dec3">sdl_native_get_chosen_file</a> ()</td></tr>
 <tr class="memdesc:a53ed508b32945f4b58b930384243dec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a File chooser pop up and return the path of chosen file.  <a href="native__x11_8c.html#a53ed508b32945f4b58b930384243dec3">More...</a><br /></td></tr>
 <tr class="separator:a53ed508b32945f4b58b930384243dec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1d743a3db9fc58d4099e925b04192d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="native__x11_8c.html#a6a1d743a3db9fc58d4099e925b04192d">sdl_native_file_download_notify_finished</a> (const char *filepath)</td></tr>
+<tr class="memdesc:a6a1d743a3db9fc58d4099e925b04192d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate to the user that a file has finished downloading.  <a href="native__x11_8c.html#a6a1d743a3db9fc58d4099e925b04192d">More...</a><br /></td></tr>
+<tr class="separator:a6a1d743a3db9fc58d4099e925b04192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="af8d66089f48de7172275d0d1ede2104f"></a>
@@ -181,6 +184,32 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">notif</td><td>Notification to display. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a1d743a3db9fc58d4099e925b04192d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a1d743a3db9fc58d4099e925b04192d">&#9670;&nbsp;</a></span>sdl_native_file_download_notify_finished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdl_native_file_download_notify_finished </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate to the user that a file has finished downloading. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path</td><td>The path to the file that has finished downloading. </td></tr>
   </table>
   </dd>
 </dl>

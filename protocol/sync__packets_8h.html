@@ -91,14 +91,15 @@ $(document).ready(function(){initNavTree('sync__packets_8h.html',''); initResiza
 <p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="renderer_8h_source.html">renderer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 </div>
 <p><a href="sync__packets_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a845bbd8479d8723f4eccde3034135a26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8h.html#a845bbd8479d8723f4eccde3034135a26">init_packet_synchronizers</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer)</td></tr>
-<tr class="memdesc:a845bbd8479d8723f4eccde3034135a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the packet synchronizer threads for UDP and TCP.  <a href="sync__packets_8h.html#a845bbd8479d8723f4eccde3034135a26">More...</a><br /></td></tr>
-<tr class="separator:a845bbd8479d8723f4eccde3034135a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fec326230f693aeaa30a3c8c2ed6d64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8h.html#a7fec326230f693aeaa30a3c8c2ed6d64">init_packet_synchronizers</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, <a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer)</td></tr>
+<tr class="memdesc:a7fec326230f693aeaa30a3c8c2ed6d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the packet synchronizer threads for UDP and TCP.  <a href="sync__packets_8h.html#a7fec326230f693aeaa30a3c8c2ed6d64">More...</a><br /></td></tr>
+<tr class="separator:a7fec326230f693aeaa30a3c8c2ed6d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9d6038e1b38f6c9e1c5ce82dd944e5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sync__packets_8h.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e">destroy_packet_synchronizers</a> (void)</td></tr>
 <tr class="memdesc:ac9d6038e1b38f6c9e1c5ce82dd944e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the packet synchronizer threads for UDP and TCP.  <a href="sync__packets_8h.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e">More...</a><br /></td></tr>
 <tr class="separator:ac9d6038e1b38f6c9e1c5ce82dd944e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,7 +110,7 @@ Functions</h2></td></tr>
 @brief This file contains code for high-level communication with the server</h1>
 <h1><a class="anchor" id="autotoc_md58"></a>
 Usage</h1>
-<p>Use <code><a class="el" href="sync__packets_8h.html#a845bbd8479d8723f4eccde3034135a26" title="Initialize the packet synchronizer threads for UDP and TCP.">init_packet_synchronizers()</a></code> to spin up threads for handling UDP messages (video, audio, etc.) and TCP messages (clipboard, files, etc.). Use <code><a class="el" href="sync__packets_8h.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e" title="Destroy the packet synchronizer threads for UDP and TCP.">destroy_packet_synchronizers()</a></code> to shut them down and wait for them to finish. </p>
+<p>Use <code><a class="el" href="sync__packets_8h.html#a7fec326230f693aeaa30a3c8c2ed6d64" title="Initialize the packet synchronizer threads for UDP and TCP.">init_packet_synchronizers()</a></code> to spin up threads for handling UDP messages (video, audio, etc.) and TCP messages (clipboard, files, etc.). Use <code><a class="el" href="sync__packets_8h.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e" title="Destroy the packet synchronizer threads for UDP and TCP.">destroy_packet_synchronizers()</a></code> to shut them down and wait for them to finish. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ac9d6038e1b38f6c9e1c5ce82dd944e5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9d6038e1b38f6c9e1c5ce82dd944e5e">&#9670;&nbsp;</a></span>destroy_packet_synchronizers()</h2>
@@ -131,8 +132,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="a845bbd8479d8723f4eccde3034135a26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a845bbd8479d8723f4eccde3034135a26">&#9670;&nbsp;</a></span>init_packet_synchronizers()</h2>
+<a id="a7fec326230f693aeaa30a3c8c2ed6d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fec326230f693aeaa30a3c8c2ed6d64">&#9670;&nbsp;</a></span>init_packet_synchronizers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,9 +141,19 @@ Usage</h1>
         <tr>
           <td class="memname">void init_packet_synchronizers </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistRenderer.html">WhistRenderer</a> *&#160;</td>
-          <td class="paramname"><em>whist_renderer</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structWhistRenderer.html">WhistRenderer</a> *&#160;</td>
+          <td class="paramname"><em>whist_renderer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -150,6 +161,7 @@ Usage</h1>
 <p>Initialize the packet synchronizer threads for UDP and TCP. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">frontend</td><td>Pointer to the frontend UI </td></tr>
     <tr><td class="paramname">whist_renderer</td><td>The whist renderer to pass packets into </td></tr>
   </table>
   </dd>

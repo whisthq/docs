@@ -97,7 +97,6 @@ $(document).ready(function(){initNavTree('file__synchronizer_8c.html',''); initR
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="file__synchronizer_8h_source.html">file_synchronizer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="file__drop_8h_source.html">file_drop.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="file__download_8h_source.html">file_download.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -106,18 +105,20 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4bb14478be9d34a001e77be731ac72c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a4bb14478be9d34a001e77be731ac72c5">reset_transferring_file</a> (<a class="el" href="structTransferringFile.html">TransferringFile</a> *current_file)</td></tr>
+<tr class="separator:a4bb14478be9d34a001e77be731ac72c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a6625450c5f469d4abaf58ba7e376b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLinkedList.html">LinkedList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a3a6625450c5f469d4abaf58ba7e376b3">file_synchronizer_get_transferring_files</a> (void)</td></tr>
 <tr class="memdesc:a3a6625450c5f469d4abaf58ba7e376b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of the currently transferring files.  <a href="file__synchronizer_8c.html#a3a6625450c5f469d4abaf58ba7e376b3">More...</a><br /></td></tr>
 <tr class="separator:a3a6625450c5f469d4abaf58ba7e376b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc02ae34b7f7ad99603d5a95abfadc41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#afc02ae34b7f7ad99603d5a95abfadc41">init_file_synchronizer</a> (<a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a> requested_actions)</td></tr>
 <tr class="memdesc:afc02ae34b7f7ad99603d5a95abfadc41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the file sychrony variables.  <a href="file__synchronizer_8c.html#afc02ae34b7f7ad99603d5a95abfadc41">More...</a><br /></td></tr>
 <tr class="separator:afc02ae34b7f7ad99603d5a95abfadc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0472d183a72e82a9a2de524dca1cd99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#af0472d183a72e82a9a2de524dca1cd99">file_synchronizer_open_file_for_writing</a> (<a class="el" href="structFileMetadata.html">FileMetadata</a> *file_metadata)</td></tr>
-<tr class="memdesc:af0472d183a72e82a9a2de524dca1cd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file for writing based on <code>file_metadata</code>  <a href="file__synchronizer_8c.html#af0472d183a72e82a9a2de524dca1cd99">More...</a><br /></td></tr>
-<tr class="separator:af0472d183a72e82a9a2de524dca1cd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f437d386ac037bd7b4fb512f516034"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#ae5f437d386ac037bd7b4fb512f516034">file_synchronizer_write_file_chunk</a> (<a class="el" href="structFileData.html">FileData</a> *file_chunk)</td></tr>
-<tr class="memdesc:ae5f437d386ac037bd7b4fb512f516034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a file chunk to a transferring file.  <a href="file__synchronizer_8c.html#ae5f437d386ac037bd7b4fb512f516034">More...</a><br /></td></tr>
-<tr class="separator:ae5f437d386ac037bd7b4fb512f516034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b50a3c77c1e71644a491675b6957d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTransferringFile.html">TransferringFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a24b50a3c77c1e71644a491675b6957d5">file_synchronizer_open_file_for_writing</a> (<a class="el" href="structFileMetadata.html">FileMetadata</a> *file_metadata)</td></tr>
+<tr class="memdesc:a24b50a3c77c1e71644a491675b6957d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file for writing based on <code>file_metadata</code>  <a href="file__synchronizer_8c.html#a24b50a3c77c1e71644a491675b6957d5">More...</a><br /></td></tr>
+<tr class="separator:a24b50a3c77c1e71644a491675b6957d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8e236cace3a8582a1055f0873426f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTransferringFile.html">TransferringFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#a0c8e236cace3a8582a1055f0873426f3">file_synchronizer_write_file_chunk</a> (<a class="el" href="structFileData.html">FileData</a> *file_chunk, <a class="el" href="file__synchronizer_8h.html#aa1cd17b4fcdaa314f94e3bdd555160bb">file_download_complete_callback</a> cb, <a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a0c8e236cace3a8582a1055f0873426f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a file chunk to a transferring file.  <a href="file__synchronizer_8c.html#a0c8e236cace3a8582a1055f0873426f3">More...</a><br /></td></tr>
+<tr class="separator:a0c8e236cace3a8582a1055f0873426f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac31285427e995937b17de7bc429c47bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8c.html#ac31285427e995937b17de7bc429c47bf">file_synchronizer_set_file_reading_basic_metadata</a> (const char *file_path, <a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a> transfer_type, <a class="el" href="unionFileEventInfo.html">FileEventInfo</a> *event_info)</td></tr>
 <tr class="memdesc:ac31285427e995937b17de7bc429c47bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the basic file information in the file synchrony array for a file to be read.  <a href="file__synchronizer_8c.html#ac31285427e995937b17de7bc429c47bf">More...</a><br /></td></tr>
 <tr class="separator:ac31285427e995937b17de7bc429c47bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,14 +334,14 @@ Usage</h1>
 
 </div>
 </div>
-<a id="af0472d183a72e82a9a2de524dca1cd99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0472d183a72e82a9a2de524dca1cd99">&#9670;&nbsp;</a></span>file_synchronizer_open_file_for_writing()</h2>
+<a id="a24b50a3c77c1e71644a491675b6957d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b50a3c77c1e71644a491675b6957d5">&#9670;&nbsp;</a></span>file_synchronizer_open_file_for_writing()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void file_synchronizer_open_file_for_writing </td>
+          <td class="memname"><a class="el" href="structTransferringFile.html">TransferringFile</a>* file_synchronizer_open_file_for_writing </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structFileMetadata.html">FileMetadata</a> *&#160;</td>
           <td class="paramname"><em>file_metadata</em></td><td>)</td>
@@ -441,18 +442,34 @@ Usage</h1>
 
 </div>
 </div>
-<a id="ae5f437d386ac037bd7b4fb512f516034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5f437d386ac037bd7b4fb512f516034">&#9670;&nbsp;</a></span>file_synchronizer_write_file_chunk()</h2>
+<a id="a0c8e236cace3a8582a1055f0873426f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8e236cace3a8582a1055f0873426f3">&#9670;&nbsp;</a></span>file_synchronizer_write_file_chunk()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool file_synchronizer_write_file_chunk </td>
+          <td class="memname"><a class="el" href="structTransferringFile.html">TransferringFile</a>* file_synchronizer_write_file_chunk </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structFileData.html">FileData</a> *&#160;</td>
-          <td class="paramname"><em>file_chunk</em></td><td>)</td>
+          <td class="paramname"><em>file_chunk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="file__synchronizer_8h.html#aa1cd17b4fcdaa314f94e3bdd555160bb">file_download_complete_callback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -461,6 +478,8 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file_chunk</td><td>The file data chunk to update the relevant transferring file with</td></tr>
+    <tr><td class="paramname">cb</td><td>Callback function to be invoked when download is completed</td></tr>
+    <tr><td class="paramname">frontend</td><td>Pointer to the Whist Frontend interface</td></tr>
   </table>
   </dd>
 </dl>
@@ -511,6 +530,24 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Reset all transferring files. </p>
+
+</div>
+</div>
+<a id="a4bb14478be9d34a001e77be731ac72c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb14478be9d34a001e77be731ac72c5">&#9670;&nbsp;</a></span>reset_transferring_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset_transferring_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTransferringFile.html">TransferringFile</a> *&#160;</td>
+          <td class="paramname"><em>current_file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -95,23 +95,26 @@ $(document).ready(function(){initNavTree('sync__packets_8h_source.html',''); ini
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="renderer_8h.html">renderer.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">Public Functions</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">============================</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sync__packets_8h.html#a845bbd8479d8723f4eccde3034135a26">init_packet_synchronizers</a>(<a class="code" href="structWhistRenderer.html">WhistRenderer</a>* whist_renderer);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sync__packets_8h.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e">destroy_packet_synchronizers</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="frontend_8h.html">frontend/frontend.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">Public Functions</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">============================</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sync__packets_8h.html#a7fec326230f693aeaa30a3c8c2ed6d64">init_packet_synchronizers</a>(<a class="code" href="structWhistFrontend.html">WhistFrontend</a>* frontend, <a class="code" href="structWhistRenderer.html">WhistRenderer</a>* whist_renderer);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sync__packets_8h.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e">destroy_packet_synchronizers</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="async__packets_8h_html_a845bbd8479d8723f4eccde3034135a26"><div class="ttname"><a href="sync__packets_8h.html#a845bbd8479d8723f4eccde3034135a26">init_packet_synchronizers</a></div><div class="ttdeci">void init_packet_synchronizers(WhistRenderer *whist_renderer)</div><div class="ttdoc">Initialize the packet synchronizer threads for UDP and TCP.</div></div>
 <div class="ttc" id="astructWhistRenderer_html"><div class="ttname"><a href="structWhistRenderer.html">WhistRenderer</a></div><div class="ttdef"><b>Definition:</b> renderer.c:28</div></div>
 <div class="ttc" id="async__packets_8h_html_ac9d6038e1b38f6c9e1c5ce82dd944e5e"><div class="ttname"><a href="sync__packets_8h.html#ac9d6038e1b38f6c9e1c5ce82dd944e5e">destroy_packet_synchronizers</a></div><div class="ttdeci">void destroy_packet_synchronizers(void)</div><div class="ttdoc">Destroy the packet synchronizer threads for UDP and TCP.</div></div>
+<div class="ttc" id="astructWhistFrontend_html"><div class="ttname"><a href="structWhistFrontend.html">WhistFrontend</a></div><div class="ttdef"><b>Definition:</b> frontend.h:17</div></div>
+<div class="ttc" id="afrontend_8h_html"><div class="ttname"><a href="frontend_8h.html">frontend.h</a></div></div>
+<div class="ttc" id="async__packets_8h_html_a7fec326230f693aeaa30a3c8c2ed6d64"><div class="ttname"><a href="sync__packets_8h.html#a7fec326230f693aeaa30a3c8c2ed6d64">init_packet_synchronizers</a></div><div class="ttdeci">void init_packet_synchronizers(WhistFrontend *frontend, WhistRenderer *whist_renderer)</div><div class="ttdoc">Initialize the packet synchronizer threads for UDP and TCP.</div></div>
 <div class="ttc" id="arenderer_8h_html"><div class="ttname"><a href="renderer_8h.html">renderer.h</a></div><div class="ttdoc">Copyright (c) 2021-2022 Whist Technologies, Inc.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

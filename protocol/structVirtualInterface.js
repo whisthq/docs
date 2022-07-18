@@ -12,6 +12,9 @@ var structVirtualInterface =
     [ "send", "structVirtualInterface.html#a55e099df8062c2776e335ba27040b6cb", null ],
     [ "set_callback_context", "structVirtualInterface.html#a68fb125fd4e1902a4768778b954083fa", null ],
     [ "set_on_cursor_change_callback", "structVirtualInterface.html#ac670cba050aa94403698ce2ff1cf3a9c", null ],
+    [ "set_on_file_download_complete_callback", "structVirtualInterface.html#ab5030ab188cebb10cf5a138e94d00f45", null ],
+    [ "set_on_file_download_start_callback", "structVirtualInterface.html#ab318289e40a85006a3bcbffd658c5c7f", null ],
+    [ "set_on_file_download_update_callback", "structVirtualInterface.html#af35c39c612307f59dd61adef8dd66bed", null ],
     [ "set_on_file_upload_callback", "structVirtualInterface.html#ab5764737475945eacb20639fe0235d8e", null ],
     [ "start", "structVirtualInterface.html#aeb2feb74bc7ff45ecffcbd038a7c2193", null ],
     [ "video", "structVirtualInterface.html#a4075e1b6e786eb28862e1b67026e9d71", null ]

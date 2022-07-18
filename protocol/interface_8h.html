@@ -104,6 +104,12 @@ Data Structures</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ad8dab2b09cc447a907eb60aba2f46b29"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ad8dab2b09cc447a907eb60aba2f46b29">OnCursorChangeCallback</a>) (void *data, const char *cursor_type, bool relative_mouse_mode)</td></tr>
 <tr class="separator:ad8dab2b09cc447a907eb60aba2f46b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93a62b01fb855a3906d288bd9a10c66"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ad93a62b01fb855a3906d288bd9a10c66">OnFileDownloadStart</a>) (const char *file_path, int64_t file_size)</td></tr>
+<tr class="separator:ad93a62b01fb855a3906d288bd9a10c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cffbb4db889b0f4818a05949b5e6adc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a8cffbb4db889b0f4818a05949b5e6adc">OnFileDownloadUpdate</a>) (void *opaque, int64_t bytes_so_far, int64_t bytes_per_sec)</td></tr>
+<tr class="separator:a8cffbb4db889b0f4818a05949b5e6adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4d450f41150a6b987c9d06721b2181"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#afb4d450f41150a6b987c9d06721b2181">OnFileDownloadComplete</a>) (void *opaque)</td></tr>
+<tr class="separator:afb4d450f41150a6b987c9d06721b2181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c7033405008bbc76ec5d76816889a6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structVirtualInterface.html">VirtualInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a91c7033405008bbc76ec5d76816889a6">VirtualInterface</a></td></tr>
 <tr class="separator:a91c7033405008bbc76ec5d76816889a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -126,6 +132,48 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef void(* OnCursorChangeCallback) (void *data, const char *cursor_type, bool relative_mouse_mode)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb4d450f41150a6b987c9d06721b2181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4d450f41150a6b987c9d06721b2181">&#9670;&nbsp;</a></span>OnFileDownloadComplete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* OnFileDownloadComplete) (void *opaque)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad93a62b01fb855a3906d288bd9a10c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93a62b01fb855a3906d288bd9a10c66">&#9670;&nbsp;</a></span>OnFileDownloadStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void*(* OnFileDownloadStart) (const char *file_path, int64_t file_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cffbb4db889b0f4818a05949b5e6adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cffbb4db889b0f4818a05949b5e6adc">&#9670;&nbsp;</a></span>OnFileDownloadUpdate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* OnFileDownloadUpdate) (void *opaque, int64_t bytes_so_far, int64_t bytes_per_sec)</td>
         </tr>
       </table>
 </div><div class="memdoc">

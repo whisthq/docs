@@ -8,6 +8,9 @@ var impl_8c =
     [ "virtual_destroy", "impl_8c.html#a332a233d73e311dbc98ff9edb781c1ed", null ],
     [ "virtual_destroy_window", "impl_8c.html#a40f30bfcde7ceb561dc5d771c12d5912", null ],
     [ "virtual_display_notification", "impl_8c.html#acf7e3a8f676a1ef0dfb15195c5d2138a", null ],
+    [ "virtual_file_download_complete", "impl_8c.html#a2e528688380e1a6c7913a0bdd31143f2", null ],
+    [ "virtual_file_download_start", "impl_8c.html#a2b5be9b5be9fdd9e4dd540092c8f24fd", null ],
+    [ "virtual_file_download_update", "impl_8c.html#acaddd09640cf9ecc65e25d819d26a006", null ],
     [ "virtual_get_audio_buffer_size", "impl_8c.html#a68019e80d5facb265f02d18dc1aaa8b1", null ],
     [ "virtual_get_chosen_file", "impl_8c.html#a8ee3ea533f950c8ca6b965615e5544e9", null ],
     [ "virtual_get_keyboard_state", "impl_8c.html#a851ee221340e0989dd51a70640edec98", null ],
@@ -37,5 +40,8 @@ var impl_8c =
     [ "callback_context", "impl_8c.html#a67b5953b36108e04f24abe803bc1fe44", null ],
     [ "events_queue", "impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ],
     [ "on_cursor_change", "impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40", null ],
+    [ "on_file_download_complete", "impl_8c.html#ac00b87eb030299fcbdae3f0a93140219", null ],
+    [ "on_file_download_start", "impl_8c.html#a8dafd7f05c6518f44f4291b2ddb082d0", null ],
+    [ "on_file_download_update", "impl_8c.html#a7b2f4753a286417e68546e4cdfe28afe", null ],
     [ "on_file_upload", "impl_8c.html#a30d9b3af830eaed4169151a59b45b368", null ]
 ];

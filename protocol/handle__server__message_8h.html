@@ -92,14 +92,15 @@ $(document).ready(function(){initNavTree('handle__server__message_8h.html',''); 
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 </div>
 <p><a href="handle__server__message_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a85ab09bd7141954d49a87d1fb1b1d8e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8h.html#a85ab09bd7141954d49a87d1fb1b1d8e2">handle_server_message</a> (<a class="el" href="structWhistServerMessage.html">WhistServerMessage</a> *wsmsg, size_t wsmsg_size)</td></tr>
-<tr class="memdesc:a85ab09bd7141954d49a87d1fb1b1d8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles message received by client from server, on client-side.  <a href="handle__server__message_8h.html#a85ab09bd7141954d49a87d1fb1b1d8e2">More...</a><br /></td></tr>
-<tr class="separator:a85ab09bd7141954d49a87d1fb1b1d8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e557b58a07eca06a7da802f55d6e51a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="handle__server__message_8h.html#a7e557b58a07eca06a7da802f55d6e51a">handle_server_message</a> (<a class="el" href="structWhistServerMessage.html">WhistServerMessage</a> *wsmsg, size_t wsmsg_size, <a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
+<tr class="memdesc:a7e557b58a07eca06a7da802f55d6e51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles message received by client from server, on client-side.  <a href="handle__server__message_8h.html#a7e557b58a07eca06a7da802f55d6e51a">More...</a><br /></td></tr>
+<tr class="separator:a7e557b58a07eca06a7da802f55d6e51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -110,8 +111,8 @@ received from the server</h1>
 Usage</h1>
 <p>handleServerMessage() must be called on any received message from the server. Any action trigged a server message must be initiated in network.c. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a85ab09bd7141954d49a87d1fb1b1d8e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85ab09bd7141954d49a87d1fb1b1d8e2">&#9670;&nbsp;</a></span>handle_server_message()</h2>
+<a id="a7e557b58a07eca06a7da802f55d6e51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e557b58a07eca06a7da802f55d6e51a">&#9670;&nbsp;</a></span>handle_server_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +127,13 @@ Usage</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>wsmsg_size</em>&#160;</td>
+          <td class="paramname"><em>wsmsg_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -141,7 +148,8 @@ Usage</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wsmsg</td><td>Message from server </td></tr>
-    <tr><td class="paramname">wsmsg_size</td><td>The size (in bytes) of the message, including any buffer considered part of the message</td></tr>
+    <tr><td class="paramname">wsmsg_size</td><td>The size (in bytes) of the message, including any buffer considered part of the message </td></tr>
+    <tr><td class="paramname">frontend</td><td>Pointer to the frontend UI</td></tr>
   </table>
   </dd>
 </dl>
