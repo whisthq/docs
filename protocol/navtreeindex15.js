@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"structX11CaptureDevice.html#a34f9610206c72826745c4dd6e66f7104":[13,0,150,4],
+"structX11CaptureDevice.html#a47bfa7fe3830e8f7ffc8b7a48fc78870":[13,0,150,16],
 "structX11CaptureDevice.html#a4d38c5daddbd848151b0a8eb0b7c2420":[13,0,150,25],
 "structX11CaptureDevice.html#a4e3b5d696debc53a282220772359c882":[13,0,150,1],
 "structX11CaptureDevice.html#a53421399dbe55ef2727c9d9cd34c0d05":[13,0,150,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "whist_2network_2network_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a":[14,0,2,9,0,18],
 "whist_2network_2network_8c.html#ab06727ebbc110e7071dc8090ced33373":[14,0,2,9,0,2],
 "whist_2network_2network_8c.html#ab0b0b491f948a80bdf5ea63fefe1df4c":[14,0,2,9,0,11],
-"whist_2network_2network_8c.html#ab43e02956da62e0b7149aec020abfb9b":[14,0,2,9,0,6],
-"whist_2network_2network_8c.html#ac326362f3ab91f34c0271d6585c27373":[14,0,2,9,0,7],
-"whist_2network_2network_8c.html#adfb72e346badf093529404e6d20f8d97":[14,0,2,9,0,12]
+"whist_2network_2network_8c.html#ab43e02956da62e0b7149aec020abfb9b":[14,0,2,9,0,6]
 };

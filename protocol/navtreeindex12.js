@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structLTRState.html#a9e11a5a44c80a41b89206425c4f69442":[13,0,78,9],
 "structLTRState.html#aa038ab92a2c1b8bd7f3d43186cdd65c6":[13,0,78,12],
 "structLTRState.html#aa734af45a27c2ddf2c7ad6ef572ea12b":[13,0,78,7],
 "structLTRState.html#ac19dfa2430ab067b04d47e04c1c169f0":[13,0,78,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structRegisteredResource.html":[13,0,91],
 "structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[13,0,91,5],
 "structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[13,0,91,0],
-"structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[13,0,91,2],
-"structRegisteredResource.html#a4d549b8fc69a8bce4e28a6f9a16129be":[13,0,91,4]
+"structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[13,0,91,2]
 };
