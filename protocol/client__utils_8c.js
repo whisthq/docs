@@ -12,6 +12,5 @@ var client__utils_8c =
     [ "override_bitrate", "client__utils_8c.html#ae6945487b0fbd6b509562c2ac7df4bd9", null ],
     [ "packet_udp_context", "client__utils_8c.html#abef30726c0347177718a4ec7a32e57ea", null ],
     [ "port_mappings", "client__utils_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a", null ],
-    [ "update_bitrate", "client__utils_8c.html#a29a80ed277e1f61a1fe7d7b91250e8d5", null ],
     [ "using_stun", "client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66", null ]
 ];

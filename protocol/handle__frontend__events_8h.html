@@ -87,8 +87,10 @@ $(document).ready(function(){initNavTree('handle__frontend__events_8h.html','');
 <div class="title">handle_frontend_events.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="whist_8h_source.html">whist/core/whist.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
+
+<p>Copyright (c) 2021-2022 Whist Technologies, Inc.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="frontend_8h_source.html">frontend/frontend.h</a>&quot;</code><br />
 </div>
 <p><a href="handle__frontend__events_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -101,7 +103,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a26a0f7f460a5367de6b62780d68f9a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function will let you know if an audio device has been plugged in or unplugged since the last time you called this function.  <a href="handle__frontend__events_8h.html#a26a0f7f460a5367de6b62780d68f9a69">More...</a><br /></td></tr>
 <tr class="separator:a26a0f7f460a5367de6b62780d68f9a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
+<h1><a class="anchor" id="autotoc_md39"></a>
+@brief This file exposes the functions to handle frontend events in the main loop.</h1>
+<h1><a class="anchor" id="autotoc_md40"></a>
+Usage</h1>
+<p><a class="el" href="handle__frontend__events_8h.html#af8904b364242177c172dab3689c864eb" title="Flushes the SDL event queue, and handles all of the pending events.">handle_frontend_events()</a> should be periodically called in the main loop to poll and handle frontend events, including input, mouse motion, and resize events.</p>
+<p>TODO: Combine this with <a class="el" href="sdl__utils_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">sdl_utils.h</a> in some way </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="af8904b364242177c172dab3689c864eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8904b364242177c172dab3689c864eb">&#9670;&nbsp;</a></span>handle_frontend_events()</h2>
 

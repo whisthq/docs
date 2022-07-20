@@ -117,7 +117,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ac755de3fc91cd5582fa5cdc04d036982"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#ac755de3fc91cd5582fa5cdc04d036982">get_keyboard_key_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *dev, <a class="el" href="events_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> keycode)</td></tr>
 <tr class="memdesc:ac755de3fc91cd5582fa5cdc04d036982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pressed/unpressed state of a keyboard key.  <a href="input_8c.html#ac755de3fc91cd5582fa5cdc04d036982">More...</a><br /></td></tr>
 <tr class="separator:ac755de3fc91cd5582fa5cdc04d036982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d9396571156d8e23b098bb37220941f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a8d9396571156d8e23b098bb37220941f">ignore_key_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *dev, <a class="el" href="events_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> keycode, bool <a class="el" href="handle__frontend__events_8c.html#a84228b08cb688dd7b2cb46a6a95a5a48">active_pinch</a>)</td></tr>
+<tr class="memitem:a8d9396571156d8e23b098bb37220941f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a8d9396571156d8e23b098bb37220941f">ignore_key_state</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *dev, <a class="el" href="events_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> keycode, bool active_pinch)</td></tr>
 <tr class="memdesc:a8d9396571156d8e23b098bb37220941f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether to ignore the client key state.  <a href="input_8c.html#a8d9396571156d8e23b098bb37220941f">More...</a><br /></td></tr>
 <tr class="separator:a8d9396571156d8e23b098bb37220941f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36682fd871f2721bff37eb96562a1e74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8c.html#a36682fd871f2721bff37eb96562a1e74">emit_key_event</a> (<a class="el" href="structInputDevice.html">InputDevice</a> *dev, <a class="el" href="events_8h.html#aad1832f9d718bfd4d4e414729ea4369b">WhistKeycode</a> keycode, int pressed)</td></tr>
@@ -154,9 +154,9 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file defines general input-processing functions and toggles </p>
-<h1><a class="anchor" id="autotoc_md193"></a>
+<h1><a class="anchor" id="autotoc_md189"></a>
 between Windows and Linux servers.</h1>
-<h1><a class="anchor" id="autotoc_md194"></a>
+<h1><a class="anchor" id="autotoc_md190"></a>
 Usage</h1>
 <p>Toggles dynamically between input receiving on Windows or Linux Ubuntu computers. You can create an input device to receive input (keystrokes, mouse clicks, etc.) via CreateInputDevice. You can then send input to the Windows OS via ReplayUserInput, and use UpdateKeyboardState to sync keyboard state between local and remote computers (say, sync them to both have CapsLock activated). Lastly, you can input an array of keycodes using <code>InputKeycodes</code>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
