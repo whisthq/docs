@@ -174,9 +174,10 @@ var NAVTREEINDEX1 =
 "debug__console_8h.html#a9acd31f25805606fc2178d1c865f2822":[14,0,2,4,0,1],
 "debug__console_8h_source.html":[14,0,2,4,0],
 "debug__flags_8h.html":[14,0,2,4,1],
+"debug__flags_8h.html#a0c725b47d1ba4d896f8c3d71907a8403":[14,0,2,4,1,4],
 "debug__flags_8h.html#a38b4dbed50272766bddff54d608004f3":[14,0,2,4,1,2],
 "debug__flags_8h.html#a55f1664a54eebf3d1779ac3011bebe8c":[14,0,2,4,1,3],
-"debug__flags_8h.html#a9a645c218691a55ce8f92e90262b2c67":[14,0,2,4,1,4],
+"debug__flags_8h.html#a9a645c218691a55ce8f92e90262b2c67":[14,0,2,4,1,5],
 "debug__flags_8h.html#ae609ee4fff660303247c644b473a4817":[14,0,2,4,1,1],
 "debug__flags_8h.html#affe8820ee49fa237e90695689f985e40":[14,0,2,4,1,0],
 "debug__flags_8h_source.html":[14,0,2,4,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "encode_8h.html#ab20c7bac827841ee9ce7f6ca5c6be85a":[14,0,2,11,1,3,4],
 "encode_8h.html#ae929ca78c731b77fe6f5bb516d9a9cfc":[14,0,2,11,1,3,2],
 "encode_8h_source.html":[14,0,2,11,1,3],
-"error__codes_8c.html":[14,0,2,2,0],
-"error__codes_8h.html":[14,0,2,2,1]
+"error__codes_8c.html":[14,0,2,2,0]
 };

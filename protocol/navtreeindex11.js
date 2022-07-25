@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structFECEncoder.html#aa44bfea0d494322be9728f2d56a0cdd6":[13,0,30,6],
 "structFECEncoder.html#abe82f7c8b6b707bc0367f2d9aa486a9c":[13,0,30,8],
 "structFECEncoder.html#acb8b441a3a33107558e228c8176f6949":[13,0,30,0],
 "structFECEncoder.html#adb0272d292cdc77fba639b7fc04a3b1f":[13,0,30,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[13,0,65,6],
 "structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[13,0,65,2],
 "structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[13,0,65,3],
-"structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[13,0,65,0],
-"structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6":[13,0,65,4]
+"structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[13,0,65,0]
 };
