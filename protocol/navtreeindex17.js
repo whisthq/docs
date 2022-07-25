@@ -1,15 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"whist__frame_8h.html#af972e86db0d7f39d6abb7fc0ba8eff5e":[14,0,2,2,9,8],
-"whist__frame_8h_source.html":[14,0,2,2,9],
-"whist__memory_8c.html":[14,0,2,2,10],
-"whist__memory_8c.html#a2907fe89fbb0732fb1bcd842ee3eda4c":[14,0,2,2,10,3],
-"whist__memory_8c.html#a4c6d7bdba62c60dcd15111ecbf34edb7":[14,0,2,2,10,2],
-"whist__memory_8c.html#ac05b79e314f4dfbdee20fe8a3f7a327a":[14,0,2,2,10,4],
-"whist__memory_8c.html#af3c7c98618c86130b8feb4c1d3a0805a":[14,0,2,2,10,5],
-"whist__memory_8h.html":[14,0,2,2,11],
-"whist__memory_8h_source.html":[14,0,2,2,11],
-"whist__string_8c.html":[14,0,2,2,12],
 "whist__string_8c.html#a0add0d18d995323e13dbfb3f2d5f0a7a":[14,0,2,2,12,2],
 "whist__string_8c.html#a0b9a48ddca4399d1659098d15b9edbd7":[14,0,2,2,12,0],
 "whist__string_8c.html#a50bc2c1ea19648a1aa37bb99a482c69e":[14,0,2,2,12,1],

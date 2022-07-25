@@ -1,17 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"nvidiacapture_8c.html#a6ab166537ddb313de0c8583c84a6f79d":[14,0,2,11,0,3,6],
-"nvidiacapture_8c.html#a79f7bb932a6b6737bf03994e84e05a19":[14,0,2,11,0,3,2],
-"nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806":[14,0,2,11,0,3,0],
-"nvidiacapture_8c.html#abcf1a326ec163ff5e819b4e26914d187":[14,0,2,11,0,3,1],
-"nvidiacapture_8c.html#ae20fe54dadf0431b275a789ffc010431":[14,0,2,11,0,3,3],
-"nvidiacapture_8c.html#aeb8b929d289578199244fb8e82bdceac":[14,0,2,11,0,3,8],
-"nvidiacapture_8c.html#af5fbabb8eef6586c644555e8269aaaa9":[14,0,2,11,0,3,5],
-"nvidiacapture_8h.html":[14,0,2,11,0,4],
-"nvidiacapture_8h.html#a5940a21cbe50f63624e278862d61db58":[14,0,2,11,0,4,5],
-"nvidiacapture_8h.html#a68a4405d843daa1f597a536de1dc07d4":[14,0,2,11,0,4,3],
-"nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d":[14,0,2,11,0,4,2],
-"nvidiacapture_8h.html#aeb8b929d289578199244fb8e82bdceac":[14,0,2,11,0,4,4],
 "nvidiacapture_8h.html#af5fbabb8eef6586c644555e8269aaaa9":[14,0,2,11,0,4,1],
 "nvidiacapture_8h_source.html":[14,0,2,11,0,4],
 "os__utils_8c.html":[14,0,2,10,18],
@@ -249,5 +237,17 @@ var NAVTREEINDEX9 =
 "sdl__utils_8c.html#aba17555982f50c0e11c256cd64b7d767":[14,0,0,10,2],
 "sdl__utils_8c.html#ac74765003cc622938961e7f7476dd1bf":[14,0,0,10,0],
 "sdl__utils_8c.html#ae0c768cdb5f6918bb7dc2871014384cc":[14,0,0,10,15],
-"sdl__utils_8c.html#aef9836611d0f8732b4267e4d81aeec02":[14,0,0,10,16]
+"sdl__utils_8c.html#aef9836611d0f8732b4267e4d81aeec02":[14,0,0,10,16],
+"sdl__utils_8c.html#af4e35016b32376211dba7a8f028f3f88":[14,0,0,10,19],
+"sdl__utils_8c.html#afaca887ee6415e1788b0c16df49960a1":[14,0,0,10,10],
+"sdl__utils_8h.html":[14,0,0,11],
+"sdl__utils_8h.html#a04f7cc99ef6ef885eb51000cf7cf8c38":[14,0,0,11,7],
+"sdl__utils_8h.html#a0c4c9ee3256caeba26301caf28573d6e":[14,0,0,11,9],
+"sdl__utils_8h.html#a0eec2f00758ec0f030a20606be54023c":[14,0,0,11,8],
+"sdl__utils_8h.html#a38188485497cb37637364f5d785ddb5f":[14,0,0,11,14],
+"sdl__utils_8h.html#a46ebcb0bcfb15eae4e15a7686891b121":[14,0,0,11,4],
+"sdl__utils_8h.html#a56933781127068f88e666df61403df95":[14,0,0,11,10],
+"sdl__utils_8h.html#a65d82de4d2f5b08f3150bb898a1d57c7":[14,0,0,11,15],
+"sdl__utils_8h.html#a67e201952df9e16ee4bd316fb8046182":[14,0,0,11,11],
+"sdl__utils_8h.html#a993a121aa7c5869498703f17d41262ab":[14,0,0,11,5]
 };

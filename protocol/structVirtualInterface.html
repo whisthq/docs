@@ -95,6 +95,10 @@ Data Fields</h2></td></tr>
 <tr class="memitem:af8cdd6029542868c73de71bb5886e685"><td class="memItemLeft" >struct {</td></tr>
 <tr class="memitem:a71c7e72c36219fc60af3b50660386e30"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a6c6ca82e09962bef8325fff828b020fa">connect</a> )(void)</td></tr>
 <tr class="separator:a71c7e72c36219fc60af3b50660386e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b14db5bd907b2df1bb1a17e979f5eee"><td class="memItemLeft" >&#160;&#160;&#160;int(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#add2ff9cb94ba1dc2fcfe40261a6bb471">create_window</a> )(void)</td></tr>
+<tr class="separator:a9b14db5bd907b2df1bb1a17e979f5eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e7f5a9d73345b23c084ba77fb465ea"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a970114f777b7bdf62e5695a563a93720">destroy_window</a> )(int window_id)</td></tr>
+<tr class="separator:a39e7f5a9d73345b23c084ba77fb465ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20685d6605f9e409646434fb5f8c4e68"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a68fb125fd4e1902a4768778b954083fa">set_callback_context</a> )(void *context)</td></tr>
 <tr class="separator:a20685d6605f9e409646434fb5f8c4e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ced7ef68fbf36e3c2b33210e2a09eb"><td class="memItemLeft" >&#160;&#160;&#160;int(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#aeb2feb74bc7ff45ecffcbd038a7c2193">start</a> )(int argc, const char *argv[])</td></tr>
@@ -118,8 +122,9 @@ Data Fields</h2></td></tr>
 <tr class="separator:a193514564cac156afae53e4453619070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a65d6bf8f9ca626317c1999d3b35592"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#ac670cba050aa94403698ce2ff1cf3a9c">set_on_cursor_change_callback</a> )(<a class="el" href="interface_8h.html#ad8dab2b09cc447a907eb60aba2f46b29">OnCursorChangeCallback</a> cb)</td></tr>
 <tr class="separator:a9a65d6bf8f9ca626317c1999d3b35592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab43d89954b909d77e0932609e929b188"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a0dad323fdf21929f0314e22333cefe82">set_video_frame_callback</a> )(<a class="el" href="interface_8h.html#adab1fd0322d6570b36e4d6283f49e92c">VideoFrameCallback</a> cb)</td></tr>
-<tr class="separator:ab43d89954b909d77e0932609e929b188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab411a0b4e0f38bfd1263dd84436c7f3a"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11">set_video_frame_callback</a> )(int window_id, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="interface_8h.html#a65ce30db60c896cd1b3df2de341de3ac">VideoFrameCallback</a> cb)</td></tr>
+<tr class="separator:ab411a0b4e0f38bfd1263dd84436c7f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4075e1b6e786eb28862e1b67026e9d71"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVirtualInterface.html#a4075e1b6e786eb28862e1b67026e9d71">video</a></td></tr>
 <tr class="separator:a4075e1b6e786eb28862e1b67026e9d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a072f49c8f245a9b4d7f07e39d8c4689f"><td class="memItemLeft" >struct {</td></tr>
@@ -148,6 +153,34 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* VirtualInterface::connect) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add2ff9cb94ba1dc2fcfe40261a6bb471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add2ff9cb94ba1dc2fcfe40261a6bb471">&#9670;&nbsp;</a></span>create_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* VirtualInterface::create_window) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a970114f777b7bdf62e5695a563a93720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970114f777b7bdf62e5695a563a93720">&#9670;&nbsp;</a></span>destroy_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* VirtualInterface::destroy_window) (int window_id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -364,14 +397,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a0dad323fdf21929f0314e22333cefe82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dad323fdf21929f0314e22333cefe82">&#9670;&nbsp;</a></span>set_video_frame_callback</h2>
+<a id="ae05b4b8d9371a983b7252fc90ede4d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05b4b8d9371a983b7252fc90ede4d11">&#9670;&nbsp;</a></span>set_video_frame_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* VirtualInterface::set_video_frame_callback) (<a class="el" href="interface_8h.html#adab1fd0322d6570b36e4d6283f49e92c">VideoFrameCallback</a> cb)</td>
+          <td class="memname">void(* VirtualInterface::set_video_frame_callback) (int window_id, <a class="el" href="interface_8h.html#a65ce30db60c896cd1b3df2de341de3ac">VideoFrameCallback</a> cb)</td>
         </tr>
       </table>
 </div><div class="memdoc">

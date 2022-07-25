@@ -1,6 +1,8 @@
 var structVirtualInterface =
 [
     [ "connect", "structVirtualInterface.html#a6c6ca82e09962bef8325fff828b020fa", null ],
+    [ "create_window", "structVirtualInterface.html#add2ff9cb94ba1dc2fcfe40261a6bb471", null ],
+    [ "destroy_window", "structVirtualInterface.html#a970114f777b7bdf62e5695a563a93720", null ],
     [ "disconnect", "structVirtualInterface.html#a777ef284533a58a63ac3e167d73e78c5", null ],
     [ "events", "structVirtualInterface.html#a072f49c8f245a9b4d7f07e39d8c4689f", null ],
     [ "file", "structVirtualInterface.html#a14f605f9542e2a892c6d8e44649fba24", null ],
@@ -16,7 +18,7 @@ var structVirtualInterface =
     [ "set_on_file_download_start_callback", "structVirtualInterface.html#ab318289e40a85006a3bcbffd658c5c7f", null ],
     [ "set_on_file_download_update_callback", "structVirtualInterface.html#af35c39c612307f59dd61adef8dd66bed", null ],
     [ "set_on_file_upload_callback", "structVirtualInterface.html#ab5764737475945eacb20639fe0235d8e", null ],
-    [ "set_video_frame_callback", "structVirtualInterface.html#a0dad323fdf21929f0314e22333cefe82", null ],
+    [ "set_video_frame_callback", "structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11", null ],
     [ "start", "structVirtualInterface.html#aeb2feb74bc7ff45ecffcbd038a7c2193", null ],
     [ "video", "structVirtualInterface.html#a4075e1b6e786eb28862e1b67026e9d71", null ]
 ];

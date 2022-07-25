@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['on_5fcursor_5fchange_1761',['on_cursor_change',['../impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40',1,'on_cursor_change():&#160;interface.c'],['../interface_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40',1,'on_cursor_change():&#160;interface.c']]],
-  ['on_5ffile_5fdownload_5fcomplete_1762',['on_file_download_complete',['../impl_8c.html#ac00b87eb030299fcbdae3f0a93140219',1,'on_file_download_complete():&#160;interface.c'],['../interface_8c.html#ac00b87eb030299fcbdae3f0a93140219',1,'on_file_download_complete():&#160;interface.c']]],
-  ['on_5ffile_5fdownload_5fstart_1763',['on_file_download_start',['../impl_8c.html#a8dafd7f05c6518f44f4291b2ddb082d0',1,'on_file_download_start():&#160;interface.c'],['../interface_8c.html#a8dafd7f05c6518f44f4291b2ddb082d0',1,'on_file_download_start():&#160;interface.c']]],
-  ['on_5ffile_5fdownload_5fupdate_1764',['on_file_download_update',['../impl_8c.html#a7b2f4753a286417e68546e4cdfe28afe',1,'on_file_download_update():&#160;interface.c'],['../interface_8c.html#a7b2f4753a286417e68546e4cdfe28afe',1,'on_file_download_update():&#160;interface.c']]],
-  ['on_5ffile_5fupload_1765',['on_file_upload',['../impl_8c.html#a30d9b3af830eaed4169151a59b45b368',1,'on_file_upload():&#160;interface.c'],['../interface_8c.html#a30d9b3af830eaed4169151a59b45b368',1,'on_file_upload():&#160;interface.c']]],
+  ['on_5fcursor_5fchange_1761',['on_cursor_change',['../impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40',1,'impl.c']]],
+  ['on_5ffile_5fdownload_5fcomplete_1762',['on_file_download_complete',['../impl_8c.html#ac00b87eb030299fcbdae3f0a93140219',1,'impl.c']]],
+  ['on_5ffile_5fdownload_5fstart_1763',['on_file_download_start',['../impl_8c.html#a8dafd7f05c6518f44f4291b2ddb082d0',1,'impl.c']]],
+  ['on_5ffile_5fdownload_5fupdate_1764',['on_file_download_update',['../impl_8c.html#a7b2f4753a286417e68546e4cdfe28afe',1,'impl.c']]],
+  ['on_5ffile_5fupload_1765',['on_file_upload',['../impl_8c.html#a30d9b3af830eaed4169151a59b45b368',1,'impl.c']]],
   ['oncursorchangecallback_1766',['OnCursorChangeCallback',['../interface_8h.html#ad8dab2b09cc447a907eb60aba2f46b29',1,'interface.h']]],
   ['onfiledownloadcomplete_1767',['OnFileDownloadComplete',['../interface_8h.html#afb4d450f41150a6b987c9d06721b2181',1,'interface.h']]],
   ['onfiledownloadstart_1768',['OnFileDownloadStart',['../interface_8h.html#ad93a62b01fb855a3906d288bd9a10c66',1,'interface.h']]],
