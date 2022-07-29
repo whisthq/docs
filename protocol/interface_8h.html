@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('interface_8h.html',''); initResizable(
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -102,6 +103,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a45ddaf601b8c9844904846690e62d8a0"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808">ModifierKeyFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a45ddaf601b8c9844904846690e62d8a0">ModifierKeyFlags</a></td></tr>
+<tr class="separator:a45ddaf601b8c9844904846690e62d8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8dab2b09cc447a907eb60aba2f46b29"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ad8dab2b09cc447a907eb60aba2f46b29">OnCursorChangeCallback</a>) (void *data, const char *cursor_type, bool relative_mouse_mode)</td></tr>
 <tr class="separator:ad8dab2b09cc447a907eb60aba2f46b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad93a62b01fb855a3906d288bd9a10c66"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ad93a62b01fb855a3906d288bd9a10c66">OnFileDownloadStart</a>) (const char *file_path, int64_t file_size)</td></tr>
@@ -112,8 +115,23 @@ Typedefs</h2></td></tr>
 <tr class="separator:afb4d450f41150a6b987c9d06721b2181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65ce30db60c896cd1b3df2de341de3ac"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a65ce30db60c896cd1b3df2de341de3ac">VideoFrameCallback</a>) (int window_id, void *frame_ref)</td></tr>
 <tr class="separator:a65ce30db60c896cd1b3df2de341de3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe82439801b97fae9ea01d2bafe3cdfa"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#abe82439801b97fae9ea01d2bafe3cdfa">GetModifierKeyState</a>) (void)</td></tr>
+<tr class="separator:abe82439801b97fae9ea01d2bafe3cdfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c7033405008bbc76ec5d76816889a6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structVirtualInterface.html">VirtualInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a91c7033405008bbc76ec5d76816889a6">VirtualInterface</a></td></tr>
 <tr class="separator:a91c7033405008bbc76ec5d76816889a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a0ed2544df88eda418ae0519a619b9808"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808">ModifierKeyFlags</a> { <br />
+&#160;&#160;<a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808a1ce4ab037343ee04fbf20ceb2ebc5081">SHIFT</a> = 1 &lt;&lt; 0, 
+<a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808a5ea73cf9a3f5928257b1e6bc796d8490">CTRL</a> = 1 &lt;&lt; 1, 
+<a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808ab1d948a93e387798ef60b07c24a7c337">ALT</a> = 1 &lt;&lt; 2, 
+<a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808a73c6901c7c648a6a735770bc038bb26a">GUI</a> = 1 &lt;&lt; 3, 
+<br />
+&#160;&#160;<a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808a2f6f75848eb080ded5bc1e46ebe68b41">CAPS</a> = 1 &lt;&lt; 4
+<br />
+ }</td></tr>
+<tr class="separator:a0ed2544df88eda418ae0519a619b9808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -126,6 +144,34 @@ Variables</h2></td></tr>
 <tr class="separator:a37105195b9292c0603cb55a10a2e11d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="abe82439801b97fae9ea01d2bafe3cdfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe82439801b97fae9ea01d2bafe3cdfa">&#9670;&nbsp;</a></span>GetModifierKeyState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* GetModifierKeyState) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45ddaf601b8c9844904846690e62d8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ddaf601b8c9844904846690e62d8a0">&#9670;&nbsp;</a></span>ModifierKeyFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808">ModifierKeyFlags</a> <a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808">ModifierKeyFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad8dab2b09cc447a907eb60aba2f46b29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8dab2b09cc447a907eb60aba2f46b29">&#9670;&nbsp;</a></span>OnCursorChangeCallback</h2>
 
@@ -207,6 +253,28 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a0ed2544df88eda418ae0519a619b9808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed2544df88eda418ae0519a619b9808">&#9670;&nbsp;</a></span>ModifierKeyFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="interface_8h.html#a0ed2544df88eda418ae0519a619b9808">ModifierKeyFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0ed2544df88eda418ae0519a619b9808a1ce4ab037343ee04fbf20ceb2ebc5081"></a>SHIFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0ed2544df88eda418ae0519a619b9808a5ea73cf9a3f5928257b1e6bc796d8490"></a>CTRL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0ed2544df88eda418ae0519a619b9808ab1d948a93e387798ef60b07c24a7c337"></a>ALT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0ed2544df88eda418ae0519a619b9808a73c6901c7c648a6a735770bc038bb26a"></a>GUI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0ed2544df88eda418ae0519a619b9808a2f6f75848eb080ded5bc1e46ebe68b41"></a>CAPS&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

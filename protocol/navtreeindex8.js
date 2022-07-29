@@ -1,5 +1,15 @@
 var NAVTREEINDEX8 =
 {
+"logging_8h_source.html":[14,0,2,8,5],
+"ltr_8c.html":[14,0,2,11,4],
+"ltr_8c.html#a2970898e8a43ce21e1cc510d49f1b89da827e18c2ad77dcc2f3514e0740da07df":[14,0,2,11,4,3],
+"ltr_8c.html#a2970898e8a43ce21e1cc510d49f1b89dabe38b8ce80b1ff652e4821a862faf796":[14,0,2,11,4,2],
+"ltr_8c.html#a2970898e8a43ce21e1cc510d49f1b89daed3486ea2e581cd34fc4496aafa9c8ae":[14,0,2,11,4,4],
+"ltr_8c.html#a2baae2180eb437ee495503d48b39e0f5":[14,0,2,11,4,8],
+"ltr_8c.html#a71dc1c4309afca747fe761f5ebf452f9":[14,0,2,11,4,11],
+"ltr_8c.html#a7a3d18e57e1e54f239a35d0b8f9e7968":[14,0,2,11,4,5],
+"ltr_8c.html#a8e74841940a4c7882342bf2293d1e851":[14,0,2,11,4,9],
+"ltr_8c.html#a98b1d77de33a78c2c183dfdc8a37b3bd":[14,0,2,11,4,7],
 "ltr_8c.html#ac07057d351894088f53514403e31379c":[14,0,2,11,4,6],
 "ltr_8c.html#af9fe681a43a0180eabac67caae77d07c":[14,0,2,11,4,10],
 "ltr_8h.html":[14,0,2,11,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX8 =
 "nvidiacapture_8c.html#a2ea9d66437144f82c8eab8c5e89ef36c":[14,0,2,11,0,3,4],
 "nvidiacapture_8c.html#a5940a21cbe50f63624e278862d61db58":[14,0,2,11,0,3,9],
 "nvidiacapture_8c.html#a68a4405d843daa1f597a536de1dc07d4":[14,0,2,11,0,3,7],
-"nvidiacapture_8c.html#a6ab166537ddb313de0c8583c84a6f79d":[14,0,2,11,0,3,6],
-"nvidiacapture_8c.html#a79f7bb932a6b6737bf03994e84e05a19":[14,0,2,11,0,3,2],
-"nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806":[14,0,2,11,0,3,0],
-"nvidiacapture_8c.html#abcf1a326ec163ff5e819b4e26914d187":[14,0,2,11,0,3,1],
-"nvidiacapture_8c.html#ae20fe54dadf0431b275a789ffc010431":[14,0,2,11,0,3,3],
-"nvidiacapture_8c.html#aeb8b929d289578199244fb8e82bdceac":[14,0,2,11,0,3,8],
-"nvidiacapture_8c.html#af5fbabb8eef6586c644555e8269aaaa9":[14,0,2,11,0,3,5],
-"nvidiacapture_8h.html":[14,0,2,11,0,4],
-"nvidiacapture_8h.html#a5940a21cbe50f63624e278862d61db58":[14,0,2,11,0,4,5],
-"nvidiacapture_8h.html#a68a4405d843daa1f597a536de1dc07d4":[14,0,2,11,0,4,3],
-"nvidiacapture_8h.html#a6ab166537ddb313de0c8583c84a6f79d":[14,0,2,11,0,4,2]
+"nvidiacapture_8c.html#a6ab166537ddb313de0c8583c84a6f79d":[14,0,2,11,0,3,6]
 };

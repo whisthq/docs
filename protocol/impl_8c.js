@@ -39,6 +39,7 @@ var impl_8c =
     [ "virtual_wait_event", "impl_8c.html#af9f82caea6a996c58ccd9b6f7d8785eb", null ],
     [ "callback_context", "impl_8c.html#a67b5953b36108e04f24abe803bc1fe44", null ],
     [ "events_queue", "impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ],
+    [ "get_modifier_key_state", "impl_8c.html#a4e5d3970e4c21a966c9dbb65a8a69c70", null ],
     [ "on_cursor_change", "impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40", null ],
     [ "on_file_download_complete", "impl_8c.html#ac00b87eb030299fcbdae3f0a93140219", null ],
     [ "on_file_download_start", "impl_8c.html#a8dafd7f05c6518f44f4291b2ddb082d0", null ],

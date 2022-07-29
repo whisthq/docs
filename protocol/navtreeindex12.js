@@ -1,5 +1,15 @@
 var NAVTREEINDEX12 =
 {
+"structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[13,0,64,0],
+"structLodePNGBitWriter.html#aeabd9ce60873a85f587df7df46548d04":[13,0,64,1],
+"structLodePNGColorMode.html":[13,0,65],
+"structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50":[13,0,65,5],
+"structLodePNGColorMode.html#a407557f056168682d9319aeb60866dcc":[13,0,65,7],
+"structLodePNGColorMode.html#a4f3df7240411abe80546052d197fbe8d":[13,0,65,1],
+"structLodePNGColorMode.html#a54f0a793238009fcb95f081626fae308":[13,0,65,6],
+"structLodePNGColorMode.html#a93a269405fee0d1c5045a1a671ed1de8":[13,0,65,2],
+"structLodePNGColorMode.html#ab9105505c5d56cfc6ce4efe1bb288b54":[13,0,65,3],
+"structLodePNGColorMode.html#ad20010b9561980f65281bc17f7848253":[13,0,65,0],
 "structLodePNGColorMode.html#ad98309f36d289392b0c440baa50af9f6":[13,0,65,4],
 "structLodePNGColorStats.html":[13,0,66],
 "structLodePNGColorStats.html#a162ce4d4ee804a0136814ba469c82294":[13,0,66,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX12 =
 "structRingBuffer.html#a451ff9ab8f3632cc408ac1242dd1dbf1":[13,0,92,10],
 "structRingBuffer.html#a54dd2f672cecf37fd14988783fc1370d":[13,0,92,14],
 "structRingBuffer.html#a57b1694749643d632f8cf0d0a2dd3305":[13,0,92,4],
-"structRingBuffer.html#a6a556b9ab1825fe65ce09864185a027d":[13,0,92,21],
-"structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247":[13,0,92,8],
-"structRingBuffer.html#a82a70174568113a76b153e9f67b72532":[13,0,92,27],
-"structRingBuffer.html#a84793599d9ac862828c7c130a6593466":[13,0,92,1],
-"structRingBuffer.html#a86b2c0292a3058f1fff12cfd4d355556":[13,0,92,3],
-"structRingBuffer.html#a98690129a3aadb85db96a39252d01a9f":[13,0,92,23],
-"structRingBuffer.html#aaad9ec2694ba2cb33f5b9abc0bdb00f6":[13,0,92,18],
-"structRingBuffer.html#ab14941089c8847eb375cbaaa66c82eea":[13,0,92,9],
-"structRingBuffer.html#ac10e312643f764cc1ce77fa1e01fe830":[13,0,92,16],
-"structRingBuffer.html#ac44f73cf4dcb49ad0bbabc3fca4f1fd4":[13,0,92,25],
-"structRingBuffer.html#ac7affb58c98e2fd8ef8edf6bc5664717":[13,0,92,6]
+"structRingBuffer.html#a6a556b9ab1825fe65ce09864185a027d":[13,0,92,21]
 };

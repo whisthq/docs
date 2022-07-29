@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['desktopnotificationmanagercompat_3004',['DesktopNotificationManagerCompat',['../namespaceDesktopNotificationManagerCompat.html',1,'']]]
+  ['desktopnotificationmanagercompat_3013',['DesktopNotificationManagerCompat',['../namespaceDesktopNotificationManagerCompat.html',1,'']]]
 ];
