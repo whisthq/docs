@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[13,0,64,0],
 "structLodePNGBitWriter.html#aeabd9ce60873a85f587df7df46548d04":[13,0,64,1],
 "structLodePNGColorMode.html":[13,0,65],
 "structLodePNGColorMode.html#a29e64327bca1f3d16235e9ff471e4d50":[13,0,65,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "structRingBuffer.html#a451ff9ab8f3632cc408ac1242dd1dbf1":[13,0,92,10],
 "structRingBuffer.html#a54dd2f672cecf37fd14988783fc1370d":[13,0,92,14],
 "structRingBuffer.html#a57b1694749643d632f8cf0d0a2dd3305":[13,0,92,4],
-"structRingBuffer.html#a6a556b9ab1825fe65ce09864185a027d":[13,0,92,21]
+"structRingBuffer.html#a6a556b9ab1825fe65ce09864185a027d":[13,0,92,21],
+"structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247":[13,0,92,8]
 };

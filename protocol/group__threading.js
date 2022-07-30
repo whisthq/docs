@@ -27,7 +27,6 @@ var group__threading =
     [ "whist_detach_thread", "group__threading.html#ga07d93732827bed3bf6107b5e9f0bfd0a", null ],
     [ "whist_get_thread_id", "group__threading.html#gac25e11beb639abfa163edd1cbd2c16de", null ],
     [ "whist_get_thread_local_storage", "group__threading.html#gadd4e1f90ca357c1e8c826b445e5cd646", null ],
-    [ "whist_init_multithreading", "group__threading.html#ga5cade4228b0827b784005954836fa1fd", null ],
     [ "whist_lock_mutex", "group__threading.html#gaf4922365dbafb9468c981a1a16ceffc7", null ],
     [ "whist_post_semaphore", "group__threading.html#ga28f8cf464a1c071bb3992c5754286c1a", null ],
     [ "whist_semaphore_value", "group__threading.html#ga2c05ac3e4875259afed56183b880a655", null ],

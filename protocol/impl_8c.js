@@ -1,6 +1,7 @@
 var impl_8c =
 [
     [ "FROM_WHIST_PROTOCOL", "impl_8c.html#a5a04db2cf03c25dfc773b71bc272aaf4", null ],
+    [ "SDL_MAIN_HANDLED", "impl_8c.html#a51f528deaaeb973f417b46a2ec36f850", null ],
     [ "virtual_audio_is_open", "impl_8c.html#a5e8cfdf935fcbb300af22b2b406254c8", null ],
     [ "virtual_close_audio", "impl_8c.html#a31e1967783f86f66e0917da716dcc4cd", null ],
     [ "virtual_create_window", "impl_8c.html#a36c5a650636732d4b891f9102d57d080", null ],

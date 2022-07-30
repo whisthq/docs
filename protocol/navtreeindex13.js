@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247":[13,0,92,8],
 "structRingBuffer.html#a82a70174568113a76b153e9f67b72532":[13,0,92,27],
 "structRingBuffer.html#a84793599d9ac862828c7c130a6593466":[13,0,92,1],
 "structRingBuffer.html#a86b2c0292a3058f1fff12cfd4d355556":[13,0,92,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11":[13,0,120,18],
 "structVirtualInterface.html#aeb2feb74bc7ff45ecffcbd038a7c2193":[13,0,120,19],
 "structVirtualInterface.html#af35c39c612307f59dd61adef8dd66bed":[13,0,120,16],
-"structVirtualInterface.html#af4d671eb0c7521535c4bab1a4118c58f":[13,0,120,7]
+"structVirtualInterface.html#af4d671eb0c7521535c4bab1a4118c58f":[13,0,120,7],
+"structVirtualInterface.html#af8cdd6029542868c73de71bb5886e685":[13,0,120,10]
 };

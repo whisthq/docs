@@ -178,18 +178,18 @@ var NAVTREEINDEX =
 "fec_8h.html#aca05f25f6a922833842317722b908ddc",
 "functions_vars_n.html",
 "group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04da971d9875053d47568f0039d33907ee0c",
-"handle__frontend__events_8h.html#af8904b364242177c172dab3689c864eb",
-"lodepng_8c.html#aadc99e713f6408d391dfa140d8e95b96",
-"logging_8h_source.html",
-"nvidiacapture_8c.html#a79f7bb932a6b6737bf03994e84e05a19",
-"sdl__utils_8c.html#afaca887ee6415e1788b0c16df49960a1",
-"structFECDecoder.html#acd16212d15fcbb06495df6eaa898b036",
-"structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf",
-"structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247",
-"structVirtualInterface.html#af8cdd6029542868c73de71bb5886e685",
-"structX11CaptureDevice.html#aafb401811bf652b8a4f9e5e365655e46",
-"whist_2network_2network_8h.html#a419e4818e56de9f9a6c5c2d9d6e3283b",
-"whist__frame_8h.html#acdeb42e88b9e2069dbb195e4a28efa61"
+"handle__server__message_8h.html",
+"lodepng_8c.html#ab1c7709a984d5842ab314cf5d2dc2dcc",
+"ltr_8c.html",
+"nvidiacapture_8c.html#a92673e33f27532767749b79edb8ef806",
+"sdl__utils_8h.html",
+"structFECDecoder.html#aeba869e1d420ae2ec0eeac76a082891f",
+"structLodePNGBitWriter.html#aeabd9ce60873a85f587df7df46548d04",
+"structRingBuffer.html#a82a70174568113a76b153e9f67b72532",
+"structWhistClientMessage.html",
+"structX11CaptureDevice.html#ab7bc7bf3b5ddab2a71587ac8212587bc",
+"whist_2network_2network_8h.html#a4ff2e6a193139535d0d23d5f46419f84",
+"whist__frame_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
