@@ -156,10 +156,10 @@ var events_8h =
       [ "MOD_RCTRL", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa70ca6445f95771c474d23af06fdbabb1", null ],
       [ "MOD_LALT", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57facd89fcc060ec46cf3b7c56181ae49d6c", null ],
       [ "MOD_RALT", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa23ecdfd216a39039cd53d383532184ed", null ],
-      [ "MOD_NUM", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa221c5a2ce82a31c502d12253957ae36c", null ],
-      [ "MOD_CAPS", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa0ff99e5c7ebd39669a13e66271cf8c4d", null ],
       [ "MOD_LGUI", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa06a2e5e74cdc953f494e7dd45d023096", null ],
-      [ "MOD_RGUI", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa283578b10e8dfe9a3fe6ed2900c9b13b", null ]
+      [ "MOD_RGUI", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa283578b10e8dfe9a3fe6ed2900c9b13b", null ],
+      [ "MOD_NUM", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa221c5a2ce82a31c502d12253957ae36c", null ],
+      [ "MOD_CAPS", "events_8h.html#aa4659d7ee57a984abbb88b497b5ca57fa0ff99e5c7ebd39669a13e66271cf8c4d", null ]
     ] ],
     [ "WhistMouseButton", "events_8h.html#afa47769b22f4e68bdbf79565f9852032", [
       [ "MOUSE_L", "events_8h.html#afa47769b22f4e68bdbf79565f9852032a6c748505c18ae6e7168e90d7693cfc9e", null ],
