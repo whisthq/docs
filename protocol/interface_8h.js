@@ -3,10 +3,11 @@ var interface_8h =
     [ "VirtualInterface", "structVirtualInterface.html", "structVirtualInterface" ],
     [ "GetModifierKeyState", "interface_8h.html#abe82439801b97fae9ea01d2bafe3cdfa", null ],
     [ "ModifierKeyFlags", "interface_8h.html#a45ddaf601b8c9844904846690e62d8a0", null ],
-    [ "OnCursorChangeCallback", "interface_8h.html#ad8dab2b09cc447a907eb60aba2f46b29", null ],
+    [ "OnCursorChangeCallback", "interface_8h.html#af2205e2276c4c7a109a62cfa4c1cc65b", null ],
     [ "OnFileDownloadComplete", "interface_8h.html#afb4d450f41150a6b987c9d06721b2181", null ],
     [ "OnFileDownloadStart", "interface_8h.html#ad93a62b01fb855a3906d288bd9a10c66", null ],
     [ "OnFileDownloadUpdate", "interface_8h.html#a8cffbb4db889b0f4818a05949b5e6adc", null ],
+    [ "OnNotificationCallback", "interface_8h.html#a3ccea30ae6ddeb0d2e0a1f6133b480f0", null ],
     [ "VideoFrameCallback", "interface_8h.html#a65ce30db60c896cd1b3df2de341de3ac", null ],
     [ "VirtualInterface", "interface_8h.html#a91c7033405008bbc76ec5d76816889a6", null ],
     [ "ModifierKeyFlags", "interface_8h.html#a0ed2544df88eda418ae0519a619b9808", [

@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0":[14,0,2,8,5,13],
+"logging_8h_source.html":[14,0,2,8,5],
 "ltr_8c.html":[14,0,2,11,4],
 "ltr_8c.html#a2970898e8a43ce21e1cc510d49f1b89da827e18c2ad77dcc2f3514e0740da07df":[14,0,2,11,4,3],
 "ltr_8c.html#a2970898e8a43ce21e1cc510d49f1b89dabe38b8ce80b1ff652e4821a862faf796":[14,0,2,11,4,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "nvidiacapture_8c.html":[14,0,2,11,0,3],
 "nvidiacapture_8c.html#a2ea9d66437144f82c8eab8c5e89ef36c":[14,0,2,11,0,3,4],
 "nvidiacapture_8c.html#a5940a21cbe50f63624e278862d61db58":[14,0,2,11,0,3,9],
-"nvidiacapture_8c.html#a68a4405d843daa1f597a536de1dc07d4":[14,0,2,11,0,3,7],
-"nvidiacapture_8c.html#a6ab166537ddb313de0c8583c84a6f79d":[14,0,2,11,0,3,6],
-"nvidiacapture_8c.html#a79f7bb932a6b6737bf03994e84e05a19":[14,0,2,11,0,3,2]
+"nvidiacapture_8c.html#a68a4405d843daa1f597a536de1dc07d4":[14,0,2,11,0,3,7]
 };

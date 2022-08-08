@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"structRingBuffer.html#a6a556b9ab1825fe65ce09864185a027d":[13,0,92,21],
+"structRingBuffer.html#a6c5a3ab868190bc667d4076c61454247":[13,0,92,8],
 "structRingBuffer.html#a82a70174568113a76b153e9f67b72532":[13,0,92,27],
 "structRingBuffer.html#a84793599d9ac862828c7c130a6593466":[13,0,92,1],
 "structRingBuffer.html#a86b2c0292a3058f1fff12cfd4d355556":[13,0,92,3],
@@ -232,7 +234,7 @@ var NAVTREEINDEX13 =
 "structVirtualInterface.html#a072f49c8f245a9b4d7f07e39d8c4689f":[13,0,120,4],
 "structVirtualInterface.html#a14f605f9542e2a892c6d8e44649fba24":[13,0,120,5],
 "structVirtualInterface.html#a29dd31774ba645d1d1ba97df5cd46da6":[13,0,120,17],
-"structVirtualInterface.html#a4075e1b6e786eb28862e1b67026e9d71":[13,0,120,20],
+"structVirtualInterface.html#a4075e1b6e786eb28862e1b67026e9d71":[13,0,120,21],
 "structVirtualInterface.html#a41b17f5214d3c5dd36f98190ed9e9dd0":[13,0,120,6],
 "structVirtualInterface.html#a4951d41f3670c050cc8036b80646a32a":[13,0,120,12],
 "structVirtualInterface.html#a4eed2b8fe2be418240a4cea9fe3e4dac":[13,0,120,9],
@@ -245,9 +247,7 @@ var NAVTREEINDEX13 =
 "structVirtualInterface.html#aac2ac2ff51188c1ad044c25737c9897b":[13,0,120,1],
 "structVirtualInterface.html#ab318289e40a85006a3bcbffd658c5c7f":[13,0,120,15],
 "structVirtualInterface.html#ab5030ab188cebb10cf5a138e94d00f45":[13,0,120,14],
-"structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11":[13,0,120,18],
-"structVirtualInterface.html#aeb2feb74bc7ff45ecffcbd038a7c2193":[13,0,120,19],
-"structVirtualInterface.html#af35c39c612307f59dd61adef8dd66bed":[13,0,120,16],
-"structVirtualInterface.html#af4d671eb0c7521535c4bab1a4118c58f":[13,0,120,7],
-"structVirtualInterface.html#af8cdd6029542868c73de71bb5886e685":[13,0,120,10]
+"structVirtualInterface.html#ac6b96b4fdc0c30512ca806164e9369d9":[13,0,120,18],
+"structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11":[13,0,120,19],
+"structVirtualInterface.html#aeb2feb74bc7ff45ecffcbd038a7c2193":[13,0,120,20]
 };

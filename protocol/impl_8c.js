@@ -45,5 +45,6 @@ var impl_8c =
     [ "on_file_download_complete", "impl_8c.html#ac00b87eb030299fcbdae3f0a93140219", null ],
     [ "on_file_download_start", "impl_8c.html#a8dafd7f05c6518f44f4291b2ddb082d0", null ],
     [ "on_file_download_update", "impl_8c.html#a7b2f4753a286417e68546e4cdfe28afe", null ],
-    [ "on_file_upload", "impl_8c.html#a30d9b3af830eaed4169151a59b45b368", null ]
+    [ "on_file_upload", "impl_8c.html#a30d9b3af830eaed4169151a59b45b368", null ],
+    [ "on_notification_callback_ptr", "impl_8c.html#ac572fc9c84b034d71b8c064881c5dab2", null ]
 ];
