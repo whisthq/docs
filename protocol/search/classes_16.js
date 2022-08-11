@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x11capturedevice_3014',['X11CaptureDevice',['../structX11CaptureDevice.html',1,'']]]
+  ['x11capturedevice_3016',['X11CaptureDevice',['../structX11CaptureDevice.html',1,'']]]
 ];

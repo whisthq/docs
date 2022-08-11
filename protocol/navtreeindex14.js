@@ -1,6 +1,8 @@
 var NAVTREEINDEX14 =
 {
-"structVirtualInterface.html#af35c39c612307f59dd61adef8dd66bed":[13,0,120,16],
+"structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11":[13,0,120,20],
+"structVirtualInterface.html#aeb2feb74bc7ff45ecffcbd038a7c2193":[13,0,120,22],
+"structVirtualInterface.html#af35c39c612307f59dd61adef8dd66bed":[13,0,120,17],
 "structVirtualInterface.html#af4d671eb0c7521535c4bab1a4118c58f":[13,0,120,7],
 "structVirtualInterface.html#af8cdd6029542868c73de71bb5886e685":[13,0,120,10],
 "structWhistClientMessage.html":[13,0,121],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "structX11CaptureDevice.html#a74d01856486376e69cdbce519e5a9174":[13,0,150,15],
 "structX11CaptureDevice.html#a7bfe11b87f6cd99fdc4f2290746cb97a":[13,0,150,6],
 "structX11CaptureDevice.html#a7d9462269e090c988795bab178ae1f76":[13,0,150,8],
-"structX11CaptureDevice.html#a87365b648364394b27725fea96f7b913":[13,0,150,21],
-"structX11CaptureDevice.html#a9fc71e632a322d25078b98d8690b8307":[13,0,150,3],
-"structX11CaptureDevice.html#aa45126adf5d331cfef4d57a9382cc0d5":[13,0,150,13]
+"structX11CaptureDevice.html#a87365b648364394b27725fea96f7b913":[13,0,150,21]
 };
