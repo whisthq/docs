@@ -1,6 +1,7 @@
 var structWhistWindow =
 [
     [ "corner_color", "structWhistWindow.html#aa0d3a979031d759e85594e5c7773c1d1", null ],
+    [ "has_titlebar", "structWhistWindow.html#a51c41c1309803f471e92ac28e544ef5e", null ],
     [ "height", "structWhistWindow.html#a73dc92a019f0c1121db35eb4a7b21022", null ],
     [ "id", "structWhistWindow.html#ae15a0784ef3b009825a150df3bf6f86d", null ],
     [ "is_fullscreen", "structWhistWindow.html#adadd3a20bc1ece5f72730a213169f5d0", null ],

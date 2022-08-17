@@ -16,6 +16,7 @@ var x11__window__info_8c =
     [ "get_window_name", "x11__window__info_8c.html#a8df4370e86e46c25d83dc86af2d2efc1", null ],
     [ "init_window_info_getter", "x11__window__info_8c.html#a9173c83ed7a14a3a61b50a2cae574ef7", null ],
     [ "is_focused_window_fullscreen", "x11__window__info_8c.html#a8af85b65174eebfd0b471ce107fb3447", null ],
+    [ "is_window_fullscreen", "x11__window__info_8c.html#a6f0f13be186de3ff3115a32d02908593", null ],
     [ "is_window_resizable", "x11__window__info_8c.html#afb2d55da81f6538a26d015671cdd1ec6", null ],
     [ "maximize_window", "x11__window__info_8c.html#a4bc7356fc8ec1706521a422d99e6bd2a", null ],
     [ "minimize_window", "x11__window__info_8c.html#afaaa48ebc924341b2f57a0ffa47f03f5", null ],

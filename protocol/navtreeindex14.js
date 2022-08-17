@@ -1,7 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11":[13,0,120,20],
-"structVirtualInterface.html#aeb2feb74bc7ff45ecffcbd038a7c2193":[13,0,120,22],
 "structVirtualInterface.html#af35c39c612307f59dd61adef8dd66bed":[13,0,120,17],
 "structVirtualInterface.html#af4d671eb0c7521535c4bab1a4118c58f":[13,0,120,7],
 "structVirtualInterface.html#af8cdd6029542868c73de71bb5886e685":[13,0,120,10],
@@ -221,14 +219,15 @@ var NAVTREEINDEX14 =
 "structWhistTimerOpaque.html":[11,3,0],
 "structWhistTimerOpaque.html#a0b61f5d730590a53da49bb7357541244":[11,3,0,0],
 "structWhistWindow.html":[13,0,148],
-"structWhistWindow.html#a1050da9f358ea7e630e68babe14edc89":[13,0,148,6],
-"structWhistWindow.html#a50499c2b085fd212662787a3ef8f412e":[13,0,148,5],
-"structWhistWindow.html#a56ac4280251adb6c9347baeeb59b6513":[13,0,148,7],
-"structWhistWindow.html#a5eeb32d49ab1899ccc47902930d7c436":[13,0,148,4],
-"structWhistWindow.html#a73dc92a019f0c1121db35eb4a7b21022":[13,0,148,1],
+"structWhistWindow.html#a1050da9f358ea7e630e68babe14edc89":[13,0,148,7],
+"structWhistWindow.html#a50499c2b085fd212662787a3ef8f412e":[13,0,148,6],
+"structWhistWindow.html#a51c41c1309803f471e92ac28e544ef5e":[13,0,148,1],
+"structWhistWindow.html#a56ac4280251adb6c9347baeeb59b6513":[13,0,148,8],
+"structWhistWindow.html#a5eeb32d49ab1899ccc47902930d7c436":[13,0,148,5],
+"structWhistWindow.html#a73dc92a019f0c1121db35eb4a7b21022":[13,0,148,2],
 "structWhistWindow.html#aa0d3a979031d759e85594e5c7773c1d1":[13,0,148,0],
-"structWhistWindow.html#adadd3a20bc1ece5f72730a213169f5d0":[13,0,148,3],
-"structWhistWindow.html#ae15a0784ef3b009825a150df3bf6f86d":[13,0,148,2],
+"structWhistWindow.html#adadd3a20bc1ece5f72730a213169f5d0":[13,0,148,4],
+"structWhistWindow.html#ae15a0784ef3b009825a150df3bf6f86d":[13,0,148,3],
 "structWhistYUVColor.html":[13,0,149],
 "structWhistYUVColor.html#a19784573e8a520f0e550040670c9d4ef":[13,0,149,2],
 "structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[13,0,149,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "structX11CaptureDevice.html#a74d01856486376e69cdbce519e5a9174":[13,0,150,15],
 "structX11CaptureDevice.html#a7bfe11b87f6cd99fdc4f2290746cb97a":[13,0,150,6],
 "structX11CaptureDevice.html#a7d9462269e090c988795bab178ae1f76":[13,0,150,8],
-"structX11CaptureDevice.html#a87365b648364394b27725fea96f7b913":[13,0,150,21]
+"structX11CaptureDevice.html#a87365b648364394b27725fea96f7b913":[13,0,150,21],
+"structX11CaptureDevice.html#a9fc71e632a322d25078b98d8690b8307":[13,0,150,3]
 };

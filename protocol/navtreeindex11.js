@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structFECDecoder.html#abc0a2cb0b09cdfe7d75d53466985f7bf":[13,0,29,4],
-"structFECDecoder.html#acd16212d15fcbb06495df6eaa898b036":[13,0,29,5],
 "structFECDecoder.html#aeba869e1d420ae2ec0eeac76a082891f":[13,0,29,1],
 "structFECDecoder.html#aed01be6046b4488b7efca00abeb4cf38":[13,0,29,6],
 "structFECDecoder.html#afd81ba4e15377d47777f5e442dcdcfb9":[13,0,29,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[13,0,63,3],
 "structLodePNGBitReader.html#a80a148b29e36301da77f3d2432cbd608":[13,0,63,4],
 "structLodePNGBitReader.html#aac5615d1bb15682c3bc6e9e52b8cd5aa":[13,0,63,1],
-"structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f":[13,0,63,2]
+"structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f":[13,0,63,2],
+"structLodePNGBitWriter.html":[13,0,64],
+"structLodePNGBitWriter.html#a8959e4d16beb2649cadae4e801bd33bf":[13,0,64,0]
 };

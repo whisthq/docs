@@ -113,10 +113,6 @@ Functions</h2></td></tr>
 <tr class="separator:a47bcd6944f669d3f01040f9049b621b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e338a770821c78b9b57bab1ccc9220e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a2e338a770821c78b9b57bab1ccc9220e">whist_frontend_destroy</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="separator:a2e338a770821c78b9b57bab1ccc9220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f3b832f608e1ab856eda9d74c7d8db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a7f3b832f608e1ab856eda9d74c7d8db6">whist_frontend_create_window</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>)</td></tr>
-<tr class="separator:a7f3b832f608e1ab856eda9d74c7d8db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b331202164c4bbe1990a8deca61f301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a1b331202164c4bbe1990a8deca61f301">whist_frontend_destroy_window</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>)</td></tr>
-<tr class="separator:a1b331202164c4bbe1990a8deca61f301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25cefb4c559969f05f812b456affed4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a25cefb4c559969f05f812b456affed4a">whist_frontend_open_audio</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, unsigned int frequency, unsigned int channels)</td></tr>
 <tr class="separator:a25cefb4c559969f05f812b456affed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889a12f89f86ebf8d803d056c0be4628"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a889a12f89f86ebf8d803d056c0be4628">whist_frontend_audio_is_open</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
@@ -163,12 +159,12 @@ Functions</h2></td></tr>
 <tr class="separator:aa6be517264408b308241ce80660b9da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13c5d9834be3a4e9f044955dcd786e8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a13c5d9834be3a4e9f044955dcd786e8f">whist_frontend_get_video_device</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, AVBufferRef **device, enum AVPixelFormat *format)</td></tr>
 <tr class="separator:a13c5d9834be3a4e9f044955dcd786e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a799d0c84032182341cf9e9aae3c5f791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a799d0c84032182341cf9e9aae3c5f791">whist_frontend_update_video</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, AVFrame *frame)</td></tr>
-<tr class="separator:a799d0c84032182341cf9e9aae3c5f791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf4dc487e6538f01bdba30d6257a931"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a6bf4dc487e6538f01bdba30d6257a931">whist_frontend_update_video</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, AVFrame *frame, <a class="el" href="structWhistWindow.html">WhistWindow</a> *window_data, int num_windows)</td></tr>
+<tr class="separator:a6bf4dc487e6538f01bdba30d6257a931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81e0c5903c31797ac4565eea45080937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a81e0c5903c31797ac4565eea45080937">whist_frontend_paint_png</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const uint8_t *data, size_t data_size, int x, int y)</td></tr>
 <tr class="separator:a81e0c5903c31797ac4565eea45080937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9655bf7b1c890ee181a9089aa3fedf54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a9655bf7b1c890ee181a9089aa3fedf54">whist_frontend_paint_solid</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, int <a class="el" href="error__monitor_8c.html#abbb585d16d6634e654e7c80f49759e8d">id</a>, const <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *color)</td></tr>
-<tr class="separator:a9655bf7b1c890ee181a9089aa3fedf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bdc8196717da9b736b53370d3da8cb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a4bdc8196717da9b736b53370d3da8cb5">whist_frontend_paint_solid</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const <a class="el" href="structWhistRGBColor.html">WhistRGBColor</a> *color)</td></tr>
+<tr class="separator:a4bdc8196717da9b736b53370d3da8cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabd9c6ba422678672b82f71452eabd00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#aabd9c6ba422678672b82f71452eabd00">whist_frontend_paint_video</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="separator:aabd9c6ba422678672b82f71452eabd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4880261e705d6c4ff41536c0e9de5e0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a4880261e705d6c4ff41536c0e9de5e0a">whist_frontend_render</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
@@ -293,34 +289,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f3b832f608e1ab856eda9d74c7d8db6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f3b832f608e1ab856eda9d74c7d8db6">&#9670;&nbsp;</a></span>whist_frontend_create_window()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d">WhistStatus</a> whist_frontend_create_window </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
-          <td class="paramname"><em>frontend</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a74f6e8a0491802ecd96a92ae99a570c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74f6e8a0491802ecd96a92ae99a570c1">&#9670;&nbsp;</a></span>whist_frontend_declare_user_activity()</h2>
 
@@ -351,34 +319,6 @@ Functions</h2></td></tr>
           <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
           <td class="paramname"><em>frontend</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1b331202164c4bbe1990a8deca61f301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b331202164c4bbe1990a8deca61f301">&#9670;&nbsp;</a></span>whist_frontend_destroy_window()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void whist_frontend_destroy_window </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
-          <td class="paramname"><em>frontend</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -955,8 +895,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9655bf7b1c890ee181a9089aa3fedf54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9655bf7b1c890ee181a9089aa3fedf54">&#9670;&nbsp;</a></span>whist_frontend_paint_solid()</h2>
+<a id="a4bdc8196717da9b736b53370d3da8cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bdc8196717da9b736b53370d3da8cb5">&#9670;&nbsp;</a></span>whist_frontend_paint_solid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -966,12 +906,6 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
           <td class="paramname"><em>frontend</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1285,8 +1219,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a799d0c84032182341cf9e9aae3c5f791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a799d0c84032182341cf9e9aae3c5f791">&#9670;&nbsp;</a></span>whist_frontend_update_video()</h2>
+<a id="a6bf4dc487e6538f01bdba30d6257a931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf4dc487e6538f01bdba30d6257a931">&#9670;&nbsp;</a></span>whist_frontend_update_video()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1301,7 +1235,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">AVFrame *&#160;</td>
-          <td class="paramname"><em>frame</em>&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a> *&#160;</td>
+          <td class="paramname"><em>window_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_windows</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

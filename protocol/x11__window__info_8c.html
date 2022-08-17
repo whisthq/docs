@@ -126,6 +126,8 @@ Functions</h2></td></tr>
 <tr class="memitem:aed31f24aa6e5481c4a63a69e2df1cf58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#aed31f24aa6e5481c4a63a69e2df1cf58">get_valid_windows_helper</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device, <a class="el" href="structLinkedList.html">LinkedList</a> *list, Window curr)</td></tr>
 <tr class="memdesc:aed31f24aa6e5481c4a63a69e2df1cf58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for recursive get_valid_windows calls, since get_valid_windows recursively searches the window tree.  <a href="x11__window__info_8c.html#aed31f24aa6e5481c4a63a69e2df1cf58">More...</a><br /></td></tr>
 <tr class="separator:aed31f24aa6e5481c4a63a69e2df1cf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0f13be186de3ff3115a32d02908593"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a6f0f13be186de3ff3115a32d02908593">is_window_fullscreen</a> (<a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *device, <a class="el" href="structWhistWindow.html">WhistWindow</a> whist_window)</td></tr>
+<tr class="separator:a6f0f13be186de3ff3115a32d02908593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9173c83ed7a14a3a61b50a2cae574ef7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x11__window__info_8c.html#a9173c83ed7a14a3a61b50a2cae574ef7">init_window_info_getter</a> (void)</td></tr>
 <tr class="memdesc:a9173c83ed7a14a3a61b50a2cae574ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize window info getter.  <a href="x11__window__info_8c.html#a9173c83ed7a14a3a61b50a2cae574ef7">More...</a><br /></td></tr>
 <tr class="separator:a9173c83ed7a14a3a61b50a2cae574ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -668,6 +670,34 @@ Usage</h1>
 <p>Query whether the focused window is fullscreen or not. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if not fullscreen, true if fullscreen.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>By "fullscreen", we mean that the window is rendering directly to the screen, not through the window manager. Examples include fullscreen video playback in a browser, or fullscreen games. </dd></dl>
+
+</div>
+</div>
+<a id="a6f0f13be186de3ff3115a32d02908593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0f13be186de3ff3115a32d02908593">&#9670;&nbsp;</a></span>is_window_fullscreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_window_fullscreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structX11CaptureDevice.html">X11CaptureDevice</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWhistWindow.html">WhistWindow</a>&#160;</td>
+          <td class="paramname"><em>whist_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

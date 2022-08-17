@@ -6,10 +6,8 @@ var frontend_8c =
     [ "whist_frontend_audio_is_open", "frontend_8c.html#a889a12f89f86ebf8d803d056c0be4628", null ],
     [ "whist_frontend_close_audio", "frontend_8c.html#a0f812c23461a6f5b9b1bf442cbc49a95", null ],
     [ "whist_frontend_create", "frontend_8c.html#a597b620a178e0fda549dc9119e54df6b", null ],
-    [ "whist_frontend_create_window", "frontend_8c.html#a7f3b832f608e1ab856eda9d74c7d8db6", null ],
     [ "whist_frontend_declare_user_activity", "frontend_8c.html#a74f6e8a0491802ecd96a92ae99a570c1", null ],
     [ "whist_frontend_destroy", "frontend_8c.html#a2e338a770821c78b9b57bab1ccc9220e", null ],
-    [ "whist_frontend_destroy_window", "frontend_8c.html#a1b331202164c4bbe1990a8deca61f301", null ],
     [ "whist_frontend_display_notification", "frontend_8c.html#ad96c1a1b58630387472bd636cfed64d6", null ],
     [ "whist_frontend_event_type_string", "frontend_8c.html#afbf8353794be3b716ec31c6e0483ae9e", null ],
     [ "whist_frontend_file_download_complete", "frontend_8c.html#a8c4e2b7a0cdda449f2ba813663fd5eb0", null ],
@@ -29,7 +27,7 @@ var frontend_8c =
     [ "whist_frontend_is_any_window_visible", "frontend_8c.html#a2ad82983a355b6ae57edcfbd0c1e44b4", null ],
     [ "whist_frontend_open_audio", "frontend_8c.html#a25cefb4c559969f05f812b456affed4a", null ],
     [ "whist_frontend_paint_png", "frontend_8c.html#a81e0c5903c31797ac4565eea45080937", null ],
-    [ "whist_frontend_paint_solid", "frontend_8c.html#a9655bf7b1c890ee181a9089aa3fedf54", null ],
+    [ "whist_frontend_paint_solid", "frontend_8c.html#a4bdc8196717da9b736b53370d3da8cb5", null ],
     [ "whist_frontend_paint_video", "frontend_8c.html#aabd9c6ba422678672b82f71452eabd00", null ],
     [ "whist_frontend_poll_event", "frontend_8c.html#a8bf0046d123c32162a35531e94bf57ec", null ],
     [ "whist_frontend_queue_audio", "frontend_8c.html#abf79ea9d4ca747e474d159c5e5874977", null ],
@@ -40,6 +38,6 @@ var frontend_8c =
     [ "whist_frontend_set_title", "frontend_8c.html#a9c84a485a9c1f87ea3538f9d8882e9fc", null ],
     [ "whist_frontend_set_titlebar_color", "frontend_8c.html#af20eefc1bcc06c9619a384d7efdbf5dd", null ],
     [ "whist_frontend_set_window_fullscreen", "frontend_8c.html#aa6be517264408b308241ce80660b9da2", null ],
-    [ "whist_frontend_update_video", "frontend_8c.html#a799d0c84032182341cf9e9aae3c5f791", null ],
+    [ "whist_frontend_update_video", "frontend_8c.html#a6bf4dc487e6538f01bdba30d6257a931", null ],
     [ "whist_frontend_wait_event", "frontend_8c.html#a25596e52db1bc4ef8847b04e189ba590", null ]
 ];
