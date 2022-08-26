@@ -263,7 +263,11 @@ Building the Protocol</h2>
 <div class="fragment"><div class="line">.\cninja.bat</div>
 </div><!-- fragment --><p>The <code>cninja.bat</code> script lives in the <code>/protocol/</code> directory, but can be called from anywhere.</p>
 <p>If you're having trouble compiling, make sure that you installed all the necessary dependencies. If you still have issues, try deleting the CmakeCache or start from a fresh repository.</p>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h3><a class="anchor" id="autotoc_md15"></a>
+Ccache</h3>
+<p>Ccache is a tool which can help speed up subsequent builds by storing caches of previous builds. You can insteall it with your package manager (i.e. <code>brew install ccache</code>). Once CCache is installed, you'll want to configure it. The minimal configuration you will want to perform is <code>ccache -M [size]</code>. This changes your cache from the default size of 5 GB to whatever size you want. My disk is mostly empty, so I picked 100 GB. Pick a size that won't fill up your entire disk.</p>
+<p>You can then us <code>ccache -sv</code> to get statistics about your cache and its location, and <code>ccache -c</code> to clear the cache. To use Ccache, simply add <code>-D USE_CCACHE=ON</code> to your Cmake command (i.e. <code>cmake -S . -B build -D USE_CCACHE=ON</code>).</p>
+<h2><a class="anchor" id="autotoc_md16"></a>
 Running the Protocol</h2>
 <p>From the build directory (usually <code>/build</code>), you can simply run:</p>
 <div class="fragment"><div class="line"># Windows:</div>
@@ -276,7 +280,7 @@ Running the Protocol</h2>
 </div><!-- fragment --><p>For the specific option flags for the client, see the <a class="el" href="md_client_README.html">client-specific README</a>. If you want to see the specific option flags for the server, you're straight out of luck.</p>
 <p>For a useful workflow for server development on Linux, see the <a class="el" href="md_server_README.html">server-specific README</a>.</p>
 <p><b>Important:</b> When running the protocol, please ensure that the client and server are both running on the exact same git commit. If you run into issues, check <code>git log</code> on both client and server to ensure the top git hash matches, and ensure that both sides have been compiled.</p>
-<h3><a class="anchor" id="autotoc_md16"></a>
+<h3><a class="anchor" id="autotoc_md17"></a>
 Running in Xcode</h3>
 <p>Xcode provides an extremely powerful interface for debugging and monitoring exactly what's going on with various system calls on macOS. To build and run WhistClient within Xcode, simply:</p>
 <div class="fragment"><div class="line">cmake -S . -B build-xcode -G Xcode</div>
@@ -284,21 +288,21 @@ Running in Xcode</h3>
 <div class="line"># In the top-middle, make sure to appropriately set the target to WhistClient</div>
 <div class="line"># In the menu, go to Product &gt; Scheme &gt; Edit Schemes</div>
 <div class="line"># For the Run Debug scheme, add arguments -- put in the params to connect to your mandelbox here, without ./wclient</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md17"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md18"></a>
 Sentry</h3>
 <p>The sentry-native SDK gets automatically built by our CMake build system.</p>
 <p>To start the protocol with a given Sentry configuration, use the <code>-e</code> argument, for instance with <code>.\WhistClient.exe -e prod &lt;IP&gt;</code>. See the output of <code>WhistClient.exe --help</code> for more details.</p>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md19"></a>
 Tips for Specific Tools</h2>
-<h3><a class="anchor" id="autotoc_md19"></a>
+<h3><a class="anchor" id="autotoc_md20"></a>
 IDEs</h3>
 <p>We use CMake to build. If you are using VS code, VS or Clion, this is pretty easy to use. You need to either open the root repo folder as a project, or open the root <code>CMakelist.txt</code> as a project. On CLion and VS there is a menu to build at the top, on VS code you need the CMake extension and the build command is at the bottom. CMake currently has two types of builds, Debug and Release. You probably want to be building debug builds while developing, since they log more aggressively (Warning levels: Info and above).</p>
 <p>Currently, we use the same compiler flags for Debug and Release because we distribute binaries with debug flags, to better troubleshoot errors and bugs.</p>
 <p>The build target for client is "WhistClient" and the server is "WhistServer".</p>
-<h3><a class="anchor" id="autotoc_md20"></a>
+<h3><a class="anchor" id="autotoc_md21"></a>
 MacOS CLI</h3>
 <p>You can simply run <code>cmake -S . -B build</code> from the root folder, <code>protocol</code>, which will generate the makefiles in the <code>build</code> directory. You can then run <code>make WhistClient</code> from the <code>build</code> folder, or cd into <code>build/client</code> and run <code>make</code> to compile the MacOS client. The client will be in <code>protocol/build/client/build64</code>.</p>
-<h3><a class="anchor" id="autotoc_md21"></a>
+<h3><a class="anchor" id="autotoc_md22"></a>
 Linux CLI</h3>
 <p>A helpful TUI for configuring the build is <code>ccmake</code>. To use it, run <code>ccmake .</code> in the root of the protocol repo. You will initially see a blank screen because no cache has been built yet. Hit <code>c</code> to configure. This will populate the cache and show you a page with various settings. The setting you will likely care about is <code>CMAKE_BUILD_TYPE</code> which is one of <code>Debug</code> or <code>Release</code>.</p>
 <p>Next hit <code>c</code> again to reconfigure with your possibly new settings, then hit <code>g</code> to generate the makefile. This makefile has all of the build targets, including <code>WhistClient</code>, <code>WhistServer</code> and all of our libraries. It also includes CMake targets to clean, edit, and rebuild the cache.</p>
@@ -316,17 +320,17 @@ Linux CLI</h3>
 </li>
 </ul>
 <p>These can be combined in the <code>SANITIZER</code> option by separating them with <code>+</code>, though some combinations (such as TSan and ASan together) are not supported. CI currently runs tests with <code>address+undefined</code> set, and will fail if they generate any errors.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md23"></a>
 Further documentation</h2>
 <p>We also use Doxygen in this repository. The Doxy file is <code>docs/Doxyfile</code>. To generate it, you should first install <code>doxygen</code>, and then run <code>doxygen Doxyfile</code>. This will generate the docs and put them in <code>docs/html</code> and <code>docs/latex</code>. You can view the html docs by opening the index.html page with a web browser. We keep the docs <code>.gitignore</code>d to avoid clutter on the repository. They are also published at <code>docs.whist.com</code>.</p>
-<h1><a class="anchor" id="autotoc_md23"></a>
+<h1><a class="anchor" id="autotoc_md24"></a>
 CI &amp; CD</h1>
-<h3><a class="anchor" id="autotoc_md24"></a>
+<h3><a class="anchor" id="autotoc_md25"></a>
 Checks &amp; Tests</h3>
 <p>These builds will also have <code>cppcheck</code> run against them which is a static analysis tool which can catch errors which compilers cannot, e.g. accessing uninitialized memory and other undefined behavior. Not everything it catches is critical, but it does indicate the possibility of unexpected behavior.</p>
 <p>These builds will also (TODO) be tested against a live server VM. This workflow will spin up an Azure VM, upload the server build to it, and then use GitHub Actions VMs on Windows, MacOS and Linux Ubuntu as clients to connect and stream via the protocol for one minute. This will also occur nightly against the <code>dev</code> branch, but these builds will not be released (this can be removed once testing is stable and re-enabled on all commits).</p>
 <p>To see the warnings in context go to the Actions tab, click on your PR/push that launched the action, select an OS it ran on and then select build. This expands the build log, where you can clearly see the warnings/errors generated.</p>
-<h3><a class="anchor" id="autotoc_md25"></a>
+<h3><a class="anchor" id="autotoc_md26"></a>
 Unit Testing</h3>
 <p>The protocol currently uses gtest to create and execute unit tests for the <code>protocol</code> repository. To add tests for the <code>protocol</code> module, add tests to the <code>protocol_test.cpp</code> file in the test folder.</p>
 <p>To run all unit tests, recompile the protocol by going into the <code>protocol/build</code> directory and running <code>make -j</code>. This is assuming you have already ran <code>cmake -S .. -B .</code> from the Building the Protocol section. If you have not done that, do so before running <code>make -j</code>.</p>
@@ -335,12 +339,12 @@ Unit Testing</h3>
 <p>On macOS, <code>make -j test</code> will build and run the unit tests.</p>
 <p>If only a particular test case needs to be run, then use the below <code>--gtest_filter</code> argument like in the example below.</p>
 <p><code>GTEST_ARGS="--gtest_filter=ProtocolTest.LoggerTest" make test</code></p>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<h2><a class="anchor" id="autotoc_md27"></a>
 Continuous Integration</h2>
 <p>For every push or PR, the code will be automatically linted via clang-format according to the <a href="#styling">styling</a> guidelines.</p>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<h1><a class="anchor" id="autotoc_md28"></a>
 Styling</h1>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md29"></a>
 clang-format</h2>
 <p>For <code>.c</code> and <code>.h</code> files, we are formatting using the clang format <code>{BasedOnStyle: Google, IndentWidth: 4}</code>. You can download clang-format via the package manager for your respective OS:</p>
 <div class="fragment"><div class="line"># MacOS:</div>
@@ -354,7 +358,7 @@ clang-format</h2>
 </div><!-- fragment --><p>If using vim, VSCode, or Visual Studio, please set this up in your editor to format on save if possible (in Visual Studio, this is through the C/C++ extension settings, as well as the general 'Format on Save' setting/shortcut). Otherwise, please make sure to run your code through <code>clang</code> before commits. You can run it from the CLI by running <code>cmake . &amp;&amp; make clang-format</code>, on MacOS/Linux, or <code>cmake -G "NMake Makefiles" &amp;&amp; make clang-format</code>, on Windows.</p>
 <p>We have <a href="https://pre-commit.com/">pre-commit hooks</a> with clang-format support installed on this project, which you can initialize by first installing pre-commit via <code>pip install pre-commit</code> and then running <code>pre-commit install</code> to instantiate the hooks for clang-format.</p>
 <p>We also have a custom build target in the CMake 'clang-format' which will run with this style over all <code>.c</code> and <code>.h</code> files in <code>server/</code>, <code>client/</code>, and <code>whist/</code>. You can call it by running <code>make clang-format</code>.</p>
-<h2><a class="anchor" id="autotoc_md29"></a>
+<h2><a class="anchor" id="autotoc_md30"></a>
 clang-tidy</h2>
 <p>Make sure your code is following code standards by running the script <code>./run-clang-tidy.sh</code>. The dependencies for each OS are listed below:</p>
 <div class="fragment"><div class="line"># MacOS:</div>
@@ -372,7 +376,7 @@ clang-tidy</h2>
 </div><!-- fragment --><p>Running <code>./run-clang-tidy.sh</code> will find all code standard violations and give you the option to modify and accept or reject changes. Running './run-clang-tidy.sh -c' will find whether there are any code standard violations and exit with status 1 if there are (designed for CI usage).</p>
 <p>If you want any lines to be exempted from the clang-tidy check, either place <code>// NOLINTNEXTLINE</code> in the line above or <code>// NOLINT</code> at the end of the line.</p>
 <p>Macro constants will NOT be checked by this script because of the variety of implementations of <code>#define</code>. Please be sure to follow appropriate standards for <code>#define</code>s when committing code.</p>
-<h2><a class="anchor" id="autotoc_md30"></a>
+<h2><a class="anchor" id="autotoc_md31"></a>
 Logz.io</h2>
 <p>We currently use Logz.io to store our logs. To get the logs for a session_id, navigate to the <code>whist/protocol</code> directory, then type in: <code>python3 logz-to-text.py &lt;&lt;sesion_id&gt;&gt;</code> where <code>&lt;&lt;session_id&gt;&gt;</code> is the id of the currently running session.</p>
 <p>This will output two files:</p>

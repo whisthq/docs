@@ -86,13 +86,13 @@ $(document).ready(function(){initNavTree('md_whist_debug_README.html',''); initR
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>This folder contains a variety of tools we use to debug and analyze the Whist <code>/protocol</code> project.</p>
-<h1><a class="anchor" id="autotoc_md140"></a>
+<h1><a class="anchor" id="autotoc_md141"></a>
 Debug Console</h1>
-<h2><a class="anchor" id="autotoc_md141"></a>
+<h2><a class="anchor" id="autotoc_md142"></a>
 Overview</h2>
 <p>When enabled, the <code>Debug Console</code> provides a telnet style console on port 9090 at client side, allows you to send commands to the client while it is running. You can change parameters of the client interactively/dynamically (e.g. change <code>bitrate</code> <code>audio_fec_ratio</code> <code>video_fec_ratio</code>), or let the program run some commands for you (e.g. get report from <code>protocol_analyzer</code>).</p>
 <p>You can find images illustrating this process inside this <a href="https://github.com/whisthq/whist/pull/5352">PR</a>.</p>
-<h2><a class="anchor" id="autotoc_md142"></a>
+<h2><a class="anchor" id="autotoc_md143"></a>
 How to enable</h2>
 <p>Debug Console can only be enabled with a <code>DEBUG</code> build.</p>
 <p>To enable the debug console, add <code>--debug-console PORT</code> to the options of client, for example:</p>
@@ -100,7 +100,7 @@ How to enable</h2>
 <div class="fragment"><div class="line">./wclient 54.219.45.195 -p32262:30420.32263:35760.32273:4473 -k 1ef9aec50197a20aa35b68b85fb7ace0</div>
 </div><!-- fragment --><p>Then the following command will run the client with debug console enable on port 9090:</p>
 <div class="fragment"><div class="line">./wclient 54.219.45.195 -p32262:30420.32263:35760.32273:4473 -k 1ef9aec50197a20aa35b68b85fb7ace0 --debug-console 9090</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md143"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md144"></a>
 How to access</h2>
 <p>the easiest way to access debug console is to use the tool <code>netcat</code>:</p>
 <div class="fragment"><div class="line">nc 127.0.0.1 9090 -u</div>
@@ -108,9 +108,9 @@ How to access</h2>
 <p>the <code>rlwrap</code> tool can make your use of <code>netcat</code> easier, e.g. you can use the arrows to move cursor and recall previous command, when used with rlwrap, the full commands is:</p>
 <div class="fragment"><div class="line">rlwrap nc 127.0.0.1 9090 -u</div>
 </div><!-- fragment --><p>(you can get both <code>netcat</code> and <code>rlwrap</code> easily from <code>apt</code> or <code>brew</code>)</p>
-<h2><a class="anchor" id="autotoc_md144"></a>
+<h2><a class="anchor" id="autotoc_md145"></a>
 Support Commands</h2>
-<h3><a class="anchor" id="autotoc_md145"></a>
+<h3><a class="anchor" id="autotoc_md146"></a>
 &lt;tt&gt;report_XXX&lt;/tt&gt;</h3>
 <p>use <code>report_video</code> or <code>report_audio</code> to get a report of the last <code>report_num</code> (default:2000) of records of video or audio.</p>
 <p><code>report_video_moreformat</code> or <code>report_audio_moreformat</code> are similar, increase the use of format string at the cost of a longer output.</p>
@@ -119,7 +119,7 @@ Support Commands</h2>
 <div class="line">report_audio  /home/yancey/audio1.txt       #get a report of audio, save to /home/yancey/audio1.txt</div>
 <div class="line">report_video_moreformat  video2.txt         #get a report of video, with more format attempt</div>
 <div class="line">report_audio_moreformat  audio2.txt.cpp     #get a report of audio, save the file as cpp, so that you can cheat your editor to highlight it</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md146"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md147"></a>
 &lt;tt&gt;set&lt;/tt&gt;</h3>
 <p>Set allows you to change parameters inside the client dynamically. Support parameters:</p>
 <ul>
@@ -137,13 +137,13 @@ Support Commands</h2>
 <div class="line">set verbose_log 1                    #enable verbose log</div>
 <div class="line">set bitrate 2000000                  #force bitrate to 2Mbps</div>
 <div class="line">set report_num 5000                  #include 5000 records in following reports</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md147"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md148"></a>
 &lt;tt&gt;info&lt;/tt&gt;</h3>
 <p>Take a peek of the values of parameters supported by set</p>
-<h3><a class="anchor" id="autotoc_md148"></a>
+<h3><a class="anchor" id="autotoc_md149"></a>
 &lt;tt&gt;insert_atexit_handler&lt;/tt&gt; or &lt;tt&gt;insert&lt;/tt&gt;</h3>
 <p>Insert a atexit handler that turns exit() to abort, so that we can get the stack calling exit(). It's helpful for debugging problems, when you don't know where in the code called exit(), especially the exit() is called in some lib.</p>
-<h3><a class="anchor" id="autotoc_md149"></a>
+<h3><a class="anchor" id="autotoc_md150"></a>
 &lt;tt&gt;plot_xxx&lt;/tt&gt;</h3>
 <p>Use <code>plot_start</code> to start or restart (the sampling of) plotting.</p>
 <p>Use <code>plot_export &lt;filename&gt;</code> to export the plot data to a file, which can be future turned into plot graphs by the <code>plotter.py</code>. Examples:</p>
@@ -153,9 +153,9 @@ Support Commands</h2>
 <div class="line">#inside shell</div>
 <div class="line">./plotter.py ~/demo.json</div>
 </div><!-- fragment --><p>Use <code>plot_stop</code> to stop (the sampling) of plotting, e.g avoid waste of CPU and memory used on sampling.</p>
-<h1><a class="anchor" id="autotoc_md150"></a>
+<h1><a class="anchor" id="autotoc_md151"></a>
 Protocol Analyzer</h1>
-<h2><a class="anchor" id="autotoc_md151"></a>
+<h2><a class="anchor" id="autotoc_md152"></a>
 Overview</h2>
 <p>This is a protocol analyzer in the side-way style, that you can talk to interactively via the debug console. Allows you to analyze the protocol dynamically, get advanced metrics.</p>
 <p>Features/Advantages:</p>
@@ -169,13 +169,13 @@ Overview</h2>
 <ul>
 <li>when you make serious changes to the protocol, you need to update the protocol analyzer to track it correctly, increases maintain burden of codebase. But (1) this usually won't happen unless something essential is changed in protocol (2) when it happens it should be easy to update the analyzer</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md152"></a>
+<h2><a class="anchor" id="autotoc_md153"></a>
 How to run</h2>
 <p>When debug console is enabled, the protocol analyzer is automatically enabled. You don't need to explicitly start it, all you need to do is talk to it via <code>debug_console</code>. To get report from it, or change some parameters (e.g <code>report_num</code>, <code>skip_last</code>)</p>
-<h2><a class="anchor" id="autotoc_md153"></a>
+<h2><a class="anchor" id="autotoc_md154"></a>
 Report format</h2>
 <p>The report of protocol analyzer consists two sections: (1) high level information/statistics (2) a breakdown of all frames inside the report</p>
-<h3><a class="anchor" id="autotoc_md154"></a>
+<h3><a class="anchor" id="autotoc_md155"></a>
 High-level information/statistic</h3>
 <p>This section is a list of information/statistic, consist of:</p>
 <ul>
@@ -198,7 +198,7 @@ High-level information/statistic</h3>
 <li><code>estimated_network_loss</code>, the estimated network packet loss. (only exist in <code>VIDEO</code> report)</li>
 </ul>
 <p>All time are the relative time since client start. This also applies to the sections below, in the whole report.</p>
-<h3><a class="anchor" id="autotoc_md155"></a>
+<h3><a class="anchor" id="autotoc_md156"></a>
 Breakdown of frames</h3>
 <p>This section is a list of frame infos, each one consist of:</p>
 <p>Main Attributes(always showing):</p>
@@ -225,7 +225,7 @@ Breakdown of frames</h3>
 <li><code>overwrite</code>, when this shows, it means when the current frame becomes "current rendering" inside ringbuffer, it overwrites a frame that never becomes pending</li>
 <li><code>queue full</code>, when this shows, it means when the current frame tries to become pending, it triggers an "Audio queue full". (Only for audio)</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md156"></a>
+<h4><a class="anchor" id="autotoc_md157"></a>
 Breakdown of segments</h4>
 <p>The breakdown of segments is a list of items. Each items correspond of a segment of the frame, contains:</p>
 <ul>
@@ -265,7 +265,7 @@ Breakdown of segments</h4>
 <li>for the 4th segment, the non-retransmit packet got lost, and NACK was sent, the retransmit segment got lost, we sent and NACK again. And finally got the segment.</li>
 <li>the 5th segment arrives as normal.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md157"></a>
+<h2><a class="anchor" id="autotoc_md158"></a>
 Implementation</h2>
 <p>This section talks about the implementation of protocol analyzer, hopefully you can get an idea on how to extend it.</p>
 <p>The protocol analyzer mainly consist of:</p>
@@ -275,7 +275,7 @@ Implementation</h2>
 <li>statistics generator, for the high-level info/stat in report</li>
 <li>pretty printer for the frame breakdown in report</li>
 </ol>
-<h3><a class="anchor" id="autotoc_md158"></a>
+<h3><a class="anchor" id="autotoc_md159"></a>
 Data structures</h3>
 <p>Below are the data structures used for protocol analyzer.</p>
 <div class="fragment"><div class="line">//info at segment level</div>
@@ -304,7 +304,7 @@ Data structures</h3>
 <div class="line">    map&lt;int, TypeLevelInfo&gt; type_level_infos;   //a map from type to type level info.</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want to record new info, you will need to put it as an attribute of the data structures.</p>
-<h3><a class="anchor" id="autotoc_md159"></a>
+<h3><a class="anchor" id="autotoc_md160"></a>
 Hooks</h3>
 <p>Hooks are the public functions with name <code>whist_analyzer_record_XXXXX()</code>, they hook into the protocol and save info into the data structure, for example:</p>
 <div class="fragment"><div class="line">// record info related to the arrival of a segment</div>
@@ -318,7 +318,7 @@ Hooks</h3>
 <div class="line">//real implementation is here</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want to record new info, you might need to implement new hooks.</p>
-<h3><a class="anchor" id="autotoc_md160"></a>
+<h3><a class="anchor" id="autotoc_md161"></a>
 Statistics generator</h3>
 <p>The Statistics generator is just the function:</p>
 <div class="fragment"><div class="line">string ProtocolAnalyzer::get_stat(）</div>
@@ -326,7 +326,7 @@ Statistics generator</h3>
 <div class="line">...</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want to implement new metric/stat, add code to this function</p>
-<h3><a class="anchor" id="autotoc_md161"></a>
+<h3><a class="anchor" id="autotoc_md162"></a>
 Pretty printer for frame breakdown</h3>
 <p>The pretty printer for frame breakdown is just the function:</p>
 <div class="fragment"><div class="line">string FrameLevelInfo::to_string()</div>
@@ -334,29 +334,29 @@ Pretty printer for frame breakdown</h3>
 <div class="line">...</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If you want new attributes of frames to be printed out, add code to this function.</p>
-<h1><a class="anchor" id="autotoc_md162"></a>
+<h1><a class="anchor" id="autotoc_md163"></a>
 Plotter</h1>
-<h2><a class="anchor" id="autotoc_md163"></a>
+<h2><a class="anchor" id="autotoc_md164"></a>
 Overiew</h2>
 <p>the Plotter consist of the C++ APIs part (<code><a class="el" href="plotter_8h.html" title="Copyright (c) 2021-2022 Whist Technologies, Inc.">plotter.h</a></code> and <code>plotter.cpp</code>) and the python helper <code>plotter.py</code> part.</p>
-<h3><a class="anchor" id="autotoc_md164"></a>
+<h3><a class="anchor" id="autotoc_md165"></a>
 C++ API part</h3>
-<h4><a class="anchor" id="autotoc_md165"></a>
+<h4><a class="anchor" id="autotoc_md166"></a>
 Controlling APIs:</h4>
 <div class="fragment"><div class="line">void whist_plotter_init(void);  // init the plotter, usually called inside</div>
 <div class="line">void whist_plotter_start_sampling(void);  // start sampling,</div>
 <div class="line">void whist_plotter_stop_sampling(void);   // stop sampling</div>
 </div><!-- fragment --><p>They are usually expected to be called inside <code>debug_console</code>. But you can also call it manually at other places, e.g. in the unit-test to manually draw plot graphs.</p>
-<h4><a class="anchor" id="autotoc_md166"></a>
+<h4><a class="anchor" id="autotoc_md167"></a>
 Sampling API:</h4>
 <div class="fragment"><div class="line">void whist_plotter_insert_sample(const char* label, double x, double y);</div>
 </div><!-- fragment --><p>This function can be called anywhere inside the <code>WhistClient</code>. The first parameter <code>label</code> is the label of data point <code>{x,y}</code>, data point with same label are considered to belong to a same data collection and has the same color in plotting. The <code>x</code> and <code>y</code>, are self-explained values to be plotted.</p>
-<h3><a class="anchor" id="autotoc_md167"></a>
+<h3><a class="anchor" id="autotoc_md168"></a>
 Data Exporting API:</h3>
 <div class="fragment"><div class="line">std::string whist_plotter_export();</div>
 </div><!-- fragment --><p>This function exports the sampled values to a string of json, which can be turned into graphs by the <code>plotter.py</code>.</p>
 <p>It's usually expected to be called inside <code>debug_console</code>. But you can also call it manually at other places.</p>
-<h3><a class="anchor" id="autotoc_md168"></a>
+<h3><a class="anchor" id="autotoc_md169"></a>
 Python Helper Part</h3>
 <p>The python helper is the <code>plotter.py</code>, which turns the exported data into graphs. Full options:</p>
 <div class="fragment"><div class="line">Usage: plotter.py [options] filename1 [filename2 ...]</div>
@@ -372,9 +372,9 @@ Python Helper Part</h3>
 <div class="line">                        range of x, e.g. &quot;10.0~15.0&quot;</div>
 <div class="line">  -w WEIGHT, --weight=WEIGHT</div>
 <div class="line">                        weight of the line or point, default: 0.5</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md169"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md170"></a>
 Introduce to the use of plotter</h2>
-<h3><a class="anchor" id="autotoc_md170"></a>
+<h3><a class="anchor" id="autotoc_md171"></a>
 Practices for using the Sampling API</h3>
 <p>To easily control the plotting of data, and to avoid wasting CPU and memory to sample the data you are not interested.</p>
 <p>It's suggested to organize related datasets as a group, and enable/disable the group as needed.</p>
@@ -383,7 +383,7 @@ Practices for using the Sampling API</h3>
 <li>use MACRO</li>
 <li>use the dynamic value change mechanism of <code>debug_console</code>, AKA the <code>set</code> command.</li>
 </ol>
-<h4><a class="anchor" id="autotoc_md171"></a>
+<h4><a class="anchor" id="autotoc_md172"></a>
 MACRO Method</h4>
 <p>Define PLOT_AUDIO_ALGO inside <code><a class="el" href="debug__flags_8h.html">debug_flags.h</a></code>:</p>
 <div class="fragment"><div class="line">#define PLOT_AUDIO_ALGO false                // audio algo</div>
@@ -396,7 +396,7 @@ MACRO Method</h4>
 <div class="line">                                adaptive_parameter_controller.get_scale_factor());</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Then you can enable/disable the group at compile time with MACRO.</p>
-<h4><a class="anchor" id="autotoc_md172"></a>
+<h4><a class="anchor" id="autotoc_md173"></a>
 dynamic Method</h4>
 <p>If a group of data need to be looked very frequently, you might want to enable/disable the group without re-compile.</p>
 <p>First, you define <code>plot_audio_algo</code> inside the <code><a class="el" href="structDebugConsoleOverrideValues.html">DebugConsoleOverrideValues</a> struct</code> of <code>debug_consol.h</code>. And make the relevant modification to <code>handle_set()</code> <code>handle_info()</code> to support that variable.</p>
@@ -412,44 +412,44 @@ dynamic Method</h4>
 <div class="fragment"><div class="line">#inside debug console</div>
 <div class="line">set plot_audio_algo 1           #to enable</div>
 <div class="line">set plot_audio_algo 0           #to disable</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md173"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md174"></a>
 Examples of using the &lt;tt&gt;plotter.py&lt;/tt&gt;</h3>
-<h3><a class="anchor" id="autotoc_md174"></a>
+<h3><a class="anchor" id="autotoc_md175"></a>
 Basic usage</h3>
 <div class="fragment"><div class="line">./plotter.py ~/sdl_present_cpu_copy.json</div>
 </div><!-- fragment --><p><img src="https://user-images.githubusercontent.com/4922024/176613266-80a41f03-69dc-4ec9-bac5-19143f66668e.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md175"></a>
+<h3><a class="anchor" id="autotoc_md176"></a>
 Change style</h3>
 <p>Sometimes the lines are too dense and hides each other, you can change style to scatter for a better view:</p>
 <div class="fragment"><div class="line">./plotter.py ~/saved_plots/audio_algo_new_piece.json -s</div>
 </div><!-- fragment --><p>default style vs scatter style:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176612467-b9561388-e27c-4c09-ba56-cce24fbc341d.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176612641-ebed72cf-d2d4-48c7-906f-e8af6694e882.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md176"></a>
+<h3><a class="anchor" id="autotoc_md177"></a>
 Use distribution graph</h3>
 <p>Sometimes the plot is filled by spikes, looking at the distribution of y value might give you a better understanding of data:</p>
 <div class="fragment"><div class="line">./plotter.py ~/socket_queue_len.json -d</div>
 </div><!-- fragment --><p>default graph vs distribution graph:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176611074-6849c5bd-8af4-42a4-8c82-adce80dd5297.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176613048-ad841793-2370-4500-ad71-bb2e6a196632.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md177"></a>
+<h3><a class="anchor" id="autotoc_md178"></a>
 Change Weight</h3>
 <p>You can also change the weight of line or scatter with the <code>-w</code> option:</p>
 <div class="fragment"><div class="line">./plotter.py ~/udp_dedicated_thread.json -d -w 2</div>
 </div><!-- fragment --><p>default weight vs changed weight:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176620204-c7575168-0ad5-413c-a278-86aa02c6cd63.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176620131-9980ce33-aaf3-43da-b41f-0e1465222ec3.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md178"></a>
+<h3><a class="anchor" id="autotoc_md179"></a>
 User Label filter</h3>
 <p>Sometimes the exported data contains too many labels than you are interested, you can filter out the interested lablel with regular expression:</p>
 <div class="fragment"><div class="line">./plotter.py ~/saved_plots/audio_algo_new.json -f &#39;.*(scale|device).*&#39;</div>
 </div><!-- fragment --><p>without filter vs with filter:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176617848-6af9c004-2c1f-46c7-a13e-f5c0c3fe6049.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176618049-d4702445-063b-4c58-beb7-cd9f94363d0f.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md179"></a>
+<h3><a class="anchor" id="autotoc_md180"></a>
 Plot only specific range</h3>
 <p>Sometimes the graph contains a super lage range of data. You can use the zoom function of the UI to zoom, but huge amount of data might make your UI very slow.</p>
 <p>So you might want to pre-specify a range of x data to plot, with the <code>-r</code> option:</p>
 <div class="fragment"><div class="line">./plotter.py ~/saved_plots/audio_algo_new.json -r 35~60</div>
 </div><!-- fragment --><p>without range vs with range:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176618908-bab9bc36-3727-4368-89a0-873c09ee6d67.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176619182-f9e75493-db2d-4cec-acfd-fd6d584ce01f.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md180"></a>
+<h3><a class="anchor" id="autotoc_md181"></a>
 Compare two plots</h3>
 <p>For easier comparsion, you can specific multiple files to <code>./plotter</code>, and compare the graphs on the same picture:</p>
 <div class="fragment"><div class="line">./plotter.py ~/my_pr.json ~/dev.json</div>
