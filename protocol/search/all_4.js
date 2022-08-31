@@ -42,7 +42,7 @@ var searchData=
   ['desired_5fcodec_483',['desired_codec',['../structNetworkSettings.html#ab64a6fb3ffd52c79aee505244f3ba849',1,'NetworkSettings']]],
   ['desktopnotificationhistorycompat_484',['DesktopNotificationHistoryCompat',['../classDesktopNotificationHistoryCompat.html',1,'DesktopNotificationHistoryCompat'],['../classDesktopNotificationHistoryCompat.html#a17d110e55c3f2ba67abcf9f4fb6d3388',1,'DesktopNotificationHistoryCompat::DesktopNotificationHistoryCompat()']]],
   ['desktopnotificationmanagercompat_485',['DesktopNotificationManagerCompat',['../namespaceDesktopNotificationManagerCompat.html',1,'']]],
-  ['destroy_486',['destroy',['../structInputDevice.html#a90427693ff669f98a1f9e5ea33375c35',1,'InputDevice']]],
+  ['destroy_486',['destroy',['../structVirtualInterface.html#a5688d37fee6d05d285b4abe22ae7dff3',1,'VirtualInterface::destroy()'],['../structInputDevice.html#a90427693ff669f98a1f9e5ea33375c35',1,'InputDevice::destroy()']]],
   ['destroy_5faudio_487',['destroy_audio',['../client_2audio_8h.html#a9db781c666ef3a1aaa82b5ab98f31218',1,'audio.h']]],
   ['destroy_5faudio_5fdecoder_488',['destroy_audio_decoder',['../audiodecode_8c.html#a0d583fc269130013b8d059b0e40261c5',1,'destroy_audio_decoder(AudioDecoder *decoder):&#160;audiodecode.c'],['../audiodecode_8h.html#a0d583fc269130013b8d059b0e40261c5',1,'destroy_audio_decoder(AudioDecoder *decoder):&#160;audiodecode.c']]],
   ['destroy_5faudio_5fdevice_489',['destroy_audio_device',['../alsacapture_8c.html#a1c3695593b8280bd00d1276a74480b3f',1,'destroy_audio_device(AudioDevice *audio_device):&#160;alsacapture.c'],['../audiocapture_8h.html#a1c3695593b8280bd00d1276a74480b3f',1,'destroy_audio_device(AudioDevice *audio_device):&#160;alsacapture.c']]],

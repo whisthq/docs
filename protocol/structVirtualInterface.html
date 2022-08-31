@@ -93,18 +93,22 @@ $(document).ready(function(){initNavTree('structVirtualInterface.html',''); init
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:af8cdd6029542868c73de71bb5886e685"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a71c7e72c36219fc60af3b50660386e30"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a6c6ca82e09962bef8325fff828b020fa">connect</a> )(void)</td></tr>
-<tr class="separator:a71c7e72c36219fc60af3b50660386e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6893c786255efc44ae89b5890e93455"><td class="memItemLeft" >&#160;&#160;&#160;int(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#aec993b432267edf9fe3fd1f53f9f4449">initialize</a> )(int argc, const char *argv[])</td></tr>
+<tr class="separator:aa6893c786255efc44ae89b5890e93455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430079335144b87852a4ad4b02a20f5f"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a5688d37fee6d05d285b4abe22ae7dff3">destroy</a> )(void)</td></tr>
+<tr class="separator:a430079335144b87852a4ad4b02a20f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85856d812f3079e403376c859c0bd450"><td class="memItemLeft" >&#160;&#160;&#160;bool(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a704a9674daf9a83ce049cac75197d9e3">connect</a> )(void)</td></tr>
+<tr class="separator:a85856d812f3079e403376c859c0bd450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc99f79a8a7e23e66496dfb698aa0db"><td class="memItemLeft" >&#160;&#160;&#160;bool(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a120fb93cbc63eaf769b1f0526629e08b">is_connected</a> )(void)</td></tr>
+<tr class="separator:a1dc99f79a8a7e23e66496dfb698aa0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e85b30fc4d31a6ab0a5e1459638dd0f"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a777ef284533a58a63ac3e167d73e78c5">disconnect</a> )(void)</td></tr>
+<tr class="separator:a2e85b30fc4d31a6ab0a5e1459638dd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b14db5bd907b2df1bb1a17e979f5eee"><td class="memItemLeft" >&#160;&#160;&#160;int(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#add2ff9cb94ba1dc2fcfe40261a6bb471">create_window</a> )(void)</td></tr>
 <tr class="separator:a9b14db5bd907b2df1bb1a17e979f5eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4a9df11f10f75c49c3b21a5ebb5fe65"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a7729a44d6f1c0476faf4c81ecc2a06e6">register_context</a> )(int window_id, void *context)</td></tr>
 <tr class="separator:aa4a9df11f10f75c49c3b21a5ebb5fe65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e7f5a9d73345b23c084ba77fb465ea"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a970114f777b7bdf62e5695a563a93720">destroy_window</a> )(int window_id)</td></tr>
 <tr class="separator:a39e7f5a9d73345b23c084ba77fb465ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5ced7ef68fbf36e3c2b33210e2a09eb"><td class="memItemLeft" >&#160;&#160;&#160;int(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#aeb2feb74bc7ff45ecffcbd038a7c2193">start</a> )(int argc, const char *argv[])</td></tr>
-<tr class="separator:aa5ced7ef68fbf36e3c2b33210e2a09eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e85b30fc4d31a6ab0a5e1459638dd0f"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a777ef284533a58a63ac3e167d73e78c5">disconnect</a> )(void)</td></tr>
-<tr class="separator:a2e85b30fc4d31a6ab0a5e1459638dd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8cdd6029542868c73de71bb5886e685"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVirtualInterface.html#af8cdd6029542868c73de71bb5886e685">lifecycle</a></td></tr>
 <tr class="separator:af8cdd6029542868c73de71bb5886e685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4075e1b6e786eb28862e1b67026e9d71"><td class="memItemLeft" >struct {</td></tr>
@@ -153,14 +157,14 @@ Data Fields</h2></td></tr>
 <tr class="separator:a14f605f9542e2a892c6d8e44649fba24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a6c6ca82e09962bef8325fff828b020fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c6ca82e09962bef8325fff828b020fa">&#9670;&nbsp;</a></span>connect</h2>
+<a id="a704a9674daf9a83ce049cac75197d9e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a704a9674daf9a83ce049cac75197d9e3">&#9670;&nbsp;</a></span>connect</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* VirtualInterface::connect) (void)</td>
+          <td class="memname">bool(* VirtualInterface::connect) (void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -175,6 +179,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int(* VirtualInterface::create_window) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5688d37fee6d05d285b4abe22ae7dff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5688d37fee6d05d285b4abe22ae7dff3">&#9670;&nbsp;</a></span>destroy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* VirtualInterface::destroy) (void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -287,6 +305,34 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void*(* VirtualInterface::get_handle_from_frame_ref) (void *frame_ref)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec993b432267edf9fe3fd1f53f9f4449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec993b432267edf9fe3fd1f53f9f4449">&#9670;&nbsp;</a></span>initialize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* VirtualInterface::initialize) (int argc, const char *argv[])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a120fb93cbc63eaf769b1f0526629e08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120fb93cbc63eaf769b1f0526629e08b">&#9670;&nbsp;</a></span>is_connected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool(* VirtualInterface::is_connected) (void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -455,20 +501,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* VirtualInterface::set_video_playing) (int window_id, bool playing)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeb2feb74bc7ff45ecffcbd038a7c2193"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2feb74bc7ff45ecffcbd038a7c2193">&#9670;&nbsp;</a></span>start</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int(* VirtualInterface::start) (int argc, const char *argv[])</td>
         </tr>
       </table>
 </div><div class="memdoc">

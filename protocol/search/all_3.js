@@ -159,7 +159,7 @@ var searchData=
   ['config_323',['config',['../structWhistServerState.html#ad12060ebe2eba5db499018f391a385e0',1,'WhistServerState']]],
   ['congestion_5fcontrol_5fmutex_324',['congestion_control_mutex',['../structUDPContext.html#afd2ba81e36f45e98b73d0754f46a671a',1,'UDPContext']]],
   ['congestion_5fdetected_325',['congestion_detected',['../structNetworkSettings.html#a8afbe6592d3143eeb901343761bfbc55',1,'NetworkSettings']]],
-  ['connect_326',['connect',['../structVirtualInterface.html#a6c6ca82e09962bef8325fff828b020fa',1,'VirtualInterface']]],
+  ['connect_326',['connect',['../structVirtualInterface.html#a704a9674daf9a83ce049cac75197d9e3',1,'VirtualInterface']]],
   ['connect_5fclient_327',['connect_client',['../server_2network_8c.html#a8a37bc11c85076cabaa3c611816f310e',1,'connect_client(void *state_raw):&#160;network.c'],['../server_2network_8h.html#a27583b9a199c0c7795fcc6962627d00c',1,'connect_client(void *state):&#160;network.c']]],
   ['connect_5fto_5fserver_328',['connect_to_server',['../client_2network_8h.html#adbc92813ee7b04b17a17f3b0023e0d29',1,'network.h']]],
   ['connected_329',['connected',['../structUDPContext.html#aa9b4d7a74a655df817fb09b3603b06a9',1,'UDPContext::connected()'],['../server_2main_8c.html#ae4e4ce6a658b77aa4bb7753403794776',1,'connected():&#160;main.c']]],
