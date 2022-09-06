@@ -79,7 +79,7 @@ var searchData=
   ['device_520',['device',['../structAudioDevice.html#a36ab5c207f117d40abc59a159d2b97ba',1,'AudioDevice']]],
   ['device_5ftype_521',['device_type',['../structInputDevice.html#a4fa00d68759f1577b838f2cf7c7107bc',1,'InputDevice::device_type()'],['../structHardwareDecodeType.html#aea728c1ce87c5a9dd58ba12173f21f55',1,'HardwareDecodeType::device_type()'],['../structVideoDecoder.html#af11d21440de75bfc467abbffbf4f89da',1,'VideoDecoder::device_type()'],['../structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643',1,'RegisteredResource::device_type()']]],
   ['diff_5ftimer_522',['diff_timer',['../group__timers.html#ga65394865068d5e7ada24f7209fa0e159',1,'diff_timer(const WhistTimer *start_timer_opaque, const WhistTimer *end_timer_opaque):&#160;clock.c'],['../group__timers.html#ga65394865068d5e7ada24f7209fa0e159',1,'diff_timer(const WhistTimer *start_timer, const WhistTimer *end_timer):&#160;clock.c']]],
-  ['dimensions_523',['dimensions',['../structWhistClientMessage.html#aa5b87021139d21b09f3b30f82c55b79e',1,'WhistClientMessage']]],
+  ['dimensions_523',['dimensions',['../structWhistClientMessage.html#a68a8920f3d6ea40527bbc7406dd79b35',1,'WhistClientMessage']]],
   ['dir_5fexists_524',['dir_exists',['../mac__utils_8c.html#a8f5a2e7c6e05726548f68fe93ba677cb',1,'dir_exists(const char *path):&#160;mac_utils.c'],['../mac__utils_8h.html#a8f5a2e7c6e05726548f68fe93ba677cb',1,'dir_exists(const char *path):&#160;mac_utils.c']]],
   ['direction_525',['direction',['../structTransferringFile.html#a5b12998468016243fbeffd1492966d61',1,'TransferringFile']]],
   ['disable_526',['disable',['../features_8c.html#a8eb62ab1cf861738c1ecf3d75398ec18',1,'features.c']]],

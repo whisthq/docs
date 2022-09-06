@@ -33,5 +33,6 @@ var logging_8h =
     [ "test_set_pause_state_on_logger_thread", "logging_8h.html#a54581b1f2ee2b138b99408b358df690b", null ],
     [ "whist_init_logger", "logging_8h.html#aec2b3c8a4110db3dacd0a0de88e5d556", null ],
     [ "whist_log_printf", "logging_8h.html#aeb343163f137d0dea0081e34869e6b74", null ],
-    [ "whist_log_printf_rate_limited", "logging_8h.html#afc62c449e2a10a7733389c4fca6c1653", null ]
+    [ "whist_log_printf_rate_limited", "logging_8h.html#afc62c449e2a10a7733389c4fca6c1653", null ],
+    [ "whist_log_set_external_logger_callback", "logging_8h.html#ad68517713ff3c968125349d5dff14340", null ]
 ];

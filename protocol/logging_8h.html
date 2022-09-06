@@ -183,6 +183,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a54581b1f2ee2b138b99408b358df690b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#a54581b1f2ee2b138b99408b358df690b">test_set_pause_state_on_logger_thread</a> (bool pause)</td></tr>
 <tr class="memdesc:a54581b1f2ee2b138b99408b358df690b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pause state on logging thread.  <a href="logging_8h.html#a54581b1f2ee2b138b99408b358df690b">More...</a><br /></td></tr>
 <tr class="separator:a54581b1f2ee2b138b99408b358df690b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68517713ff3c968125349d5dff14340"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8h.html#ad68517713ff3c968125349d5dff14340">whist_log_set_external_logger_callback</a> (void(*cb)(unsigned int level, const char *line))</td></tr>
+<tr class="memdesc:ad68517713ff3c968125349d5dff14340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an external logger callback to run on every logged message.  <a href="logging_8h.html#ad68517713ff3c968125349d5dff14340">More...</a><br /></td></tr>
+<tr class="separator:ad68517713ff3c968125349d5dff14340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -1059,6 +1062,33 @@ Usage</h1>
     <tr><td class="paramname">function</td><td>Name of the function this is being called from. </td></tr>
     <tr><td class="paramname">line_number</td><td>Line number this is being called from. </td></tr>
     <tr><td class="paramname">fmt_str</td><td>The format string to printf with </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad68517713ff3c968125349d5dff14340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68517713ff3c968125349d5dff14340">&#9670;&nbsp;</a></span>whist_log_set_external_logger_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_log_set_external_logger_callback </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(unsigned int level, const char *line)&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set an external logger callback to run on every logged message. </p>
+<p>This is useful when running as a library and we need the caller to appropriately handle logs.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>The callback, which is a void-returning function taking a log level and the logged line, as a string. </td></tr>
   </table>
   </dd>
 </dl>
