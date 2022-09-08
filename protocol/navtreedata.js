@@ -105,40 +105,41 @@ var NAVTREE =
           [ "Python Helper Part", "md_whist_debug_README.html#autotoc_md169", null ]
         ] ],
         [ "Introduce to the use of plotter", "md_whist_debug_README.html#autotoc_md170", [
-          [ "Practices for using the Sampling API", "md_whist_debug_README.html#autotoc_md171", [
-            [ "MACRO Method", "md_whist_debug_README.html#autotoc_md172", null ],
-            [ "dynamic Method", "md_whist_debug_README.html#autotoc_md173", null ]
+          [ "Start and Stop sampling", "md_whist_debug_README.html#autotoc_md171", null ],
+          [ "Practices for using the Sampling API", "md_whist_debug_README.html#autotoc_md172", [
+            [ "MACRO Method", "md_whist_debug_README.html#autotoc_md173", null ],
+            [ "dynamic Method", "md_whist_debug_README.html#autotoc_md174", null ]
           ] ],
-          [ "Examples of using the <tt>plotter.py</tt>", "md_whist_debug_README.html#autotoc_md174", null ],
-          [ "Basic usage", "md_whist_debug_README.html#autotoc_md175", null ],
-          [ "Change style", "md_whist_debug_README.html#autotoc_md176", null ],
-          [ "Use distribution graph", "md_whist_debug_README.html#autotoc_md177", null ],
-          [ "Change Weight", "md_whist_debug_README.html#autotoc_md178", null ],
-          [ "User Label filter", "md_whist_debug_README.html#autotoc_md179", null ],
-          [ "Plot only specific range", "md_whist_debug_README.html#autotoc_md180", null ],
-          [ "Compare two plots", "md_whist_debug_README.html#autotoc_md181", null ]
+          [ "Examples of using the <tt>plotter.py</tt>", "md_whist_debug_README.html#autotoc_md175", null ],
+          [ "Basic usage", "md_whist_debug_README.html#autotoc_md176", null ],
+          [ "Change style", "md_whist_debug_README.html#autotoc_md177", null ],
+          [ "Use distribution graph", "md_whist_debug_README.html#autotoc_md178", null ],
+          [ "Change Weight", "md_whist_debug_README.html#autotoc_md179", null ],
+          [ "User Label filter", "md_whist_debug_README.html#autotoc_md180", null ],
+          [ "Plot only specific range", "md_whist_debug_README.html#autotoc_md181", null ],
+          [ "Compare two plots", "md_whist_debug_README.html#autotoc_md182", null ]
         ] ]
       ] ]
     ] ],
     [ "GF(256) Math Module", "GF256.html", null ],
     [ "Whist Congestion Control(WCC)", "md_whist_network_WCC.html", [
-      [ "Terminology", "md_whist_network_WCC.html#autotoc_md225", null ],
-      [ "Pacer (Network Throttler)", "md_whist_network_WCC.html#autotoc_md226", null ],
-      [ "Algorithm", "md_whist_network_WCC.html#autotoc_md227", [
-        [ "Arrival time model", "md_whist_network_WCC.html#autotoc_md228", null ],
-        [ "Inter-group delay variation filter", "md_whist_network_WCC.html#autotoc_md229", null ],
-        [ "Over-use detector", "md_whist_network_WCC.html#autotoc_md230", null ],
-        [ "Rate control", "md_whist_network_WCC.html#autotoc_md231", [
-          [ "Increase bitrate", "md_whist_network_WCC.html#autotoc_md232", null ],
-          [ "Decrease bitrate", "md_whist_network_WCC.html#autotoc_md233", null ],
-          [ "Saturate Bandwidth, Increase percentage and Maximum Bandwidth Available", "md_whist_network_WCC.html#autotoc_md234", [
-            [ "Little tweaks", "md_whist_network_WCC.html#autotoc_md235", null ]
+      [ "Terminology", "md_whist_network_WCC.html#autotoc_md226", null ],
+      [ "Pacer (Network Throttler)", "md_whist_network_WCC.html#autotoc_md227", null ],
+      [ "Algorithm", "md_whist_network_WCC.html#autotoc_md228", [
+        [ "Arrival time model", "md_whist_network_WCC.html#autotoc_md229", null ],
+        [ "Inter-group delay variation filter", "md_whist_network_WCC.html#autotoc_md230", null ],
+        [ "Over-use detector", "md_whist_network_WCC.html#autotoc_md231", null ],
+        [ "Rate control", "md_whist_network_WCC.html#autotoc_md232", [
+          [ "Increase bitrate", "md_whist_network_WCC.html#autotoc_md233", null ],
+          [ "Decrease bitrate", "md_whist_network_WCC.html#autotoc_md234", null ],
+          [ "Saturate Bandwidth, Increase percentage and Maximum Bandwidth Available", "md_whist_network_WCC.html#autotoc_md235", [
+            [ "Little tweaks", "md_whist_network_WCC.html#autotoc_md236", null ]
           ] ],
-          [ "Burst Bitrate", "md_whist_network_WCC.html#autotoc_md236", null ]
+          [ "Burst Bitrate", "md_whist_network_WCC.html#autotoc_md237", null ]
         ] ],
-        [ "RECOMMENDED values and reasons", "md_whist_network_WCC.html#autotoc_md237", null ]
+        [ "RECOMMENDED values and reasons", "md_whist_network_WCC.html#autotoc_md238", null ]
       ] ],
-      [ "References", "md_whist_network_WCC.html#autotoc_md238", null ]
+      [ "References", "md_whist_network_WCC.html#autotoc_md239", null ]
     ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
@@ -176,22 +177,22 @@ var NAVTREEINDEX =
 [
 "GF256.html",
 "clipboard__synchronizer_8c.html#a7222478cfc809f67bbbe8768b63908ef",
-"error__codes_8h.html",
-"fec_8h.html#aca05f25f6a922833842317722b908ddc",
-"functions_vars_p.html",
-"group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04daabb75d9872d7af0406af1aeaefc7c04a",
-"handle__server__message_8h.html#a7e557b58a07eca06a7da802f55d6e51a",
-"lodepng_8c.html#ab1c7709a984d5842ab314cf5d2dc2dcc",
-"logging_8h.html#aff4f292beeb047fd27cd7eb3ba92f7f0",
-"nvidiacapture_8c.html#a6ab166537ddb313de0c8583c84a6f79d",
-"sdl__utils_8c.html#ae0c768cdb5f6918bb7dc2871014384cc",
-"structFECDecoder.html#a9a39bb8c4dee37820b93ba787b821a62",
-"structLodePNGBitReader.html#aaff7de905c69a23d9f58e6f1c8e6b30f",
-"structRingBuffer.html#a57b1694749643d632f8cf0d0a2dd3305",
-"structVirtualInterface.html#ac6b96b4fdc0c30512ca806164e9369d9",
-"structX11CaptureDevice.html#a5686470157715e6cb4e48bd4c17c1d28",
-"whist_2network_2network_8h.html#a012b4d8cb21e36920d69db1287776ace",
-"whist__frame_8h.html#a11350fab34a6d336dd5296535080bcea"
+"encode_8h.html#a8d1dbd84e74c7a17de0bc7252aedc211",
+"fec_8h.html#a8ee73a7605a15e74c76080a7cacbe234",
+"functions_vars_i.html",
+"group__error__codes.html#gga18cc8e20ea58aa56867b56542e89b04da7fe2e359a4e6b3458cd53c6ce4b8c8c2",
+"handle__client__message_8h_source.html",
+"lodepng_8c.html#aab7a41a03154aa8d9ef65f2d434641b6",
+"logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b",
+"nvidia__encode_8h.html#aaa3ec6c4cf2408824bdb8c7be1cc809e",
+"sdl__utils_8c.html#a81dcd68e9914f757c90910b1bdff05c5",
+"structEncodedAudio.html#a5955d96098e033891a5bae062868cd05",
+"structLinkedList.html#a0e9e6eceb815129e0e149cefd6992f4f",
+"structRingBuffer.html#a1bd4310b6b45c7f5df472a784e625b87",
+"structVirtualInterface.html#a7729a44d6f1c0476faf4c81ecc2a06e6",
+"structX11CaptureDevice.html#a1c4f6b1f91d40bc223efabf1b8f5c974",
+"whist_2network_2network_8c.html#a95ee2117f941ce83f97cf7884e0dc41b",
+"whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

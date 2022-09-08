@@ -132,6 +132,8 @@ Macros</h2></td></tr>
 <tr class="separator:afdbb9d84bd17efd2ae7290e664992c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926231629971be831cb0a813f77e48d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a926231629971be831cb0a813f77e48d0">WHIST_IOCTL_SOCKET</a>&#160;&#160;&#160;ioctl</td></tr>
 <tr class="separator:a926231629971be831cb0a813f77e48d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7de74dbe2a1372dc787eb60b91a1f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a7d7de74dbe2a1372dc787eb60b91a1f4">WHIST_IOCTL_ARG</a>&#160;&#160;&#160;int</td></tr>
+<tr class="separator:a7d7de74dbe2a1372dc787eb60b91a1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a003ed5fd49960239602d34df356b95e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a003ed5fd49960239602d34df356b95e1">WHIST_CLOSE_SOCKET</a>&#160;&#160;&#160;close</td></tr>
 <tr class="separator:a003ed5fd49960239602d34df356b95e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664d561eb2ebb394d1ac03d0f3530026"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a664d561eb2ebb394d1ac03d0f3530026">WHIST_ETIMEDOUT</a>&#160;&#160;&#160;ETIMEDOUT</td></tr>
@@ -229,13 +231,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ab0b0b491f948a80bdf5ea63fefe1df4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#ab0b0b491f948a80bdf5ea63fefe1df4c">recvfrom_no_intr</a> (<a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> sockfd, void *buf, size_t len, int flags, struct sockaddr *src_addr, socklen_t *addrlen)</td></tr>
 <tr class="memdesc:ab0b0b491f948a80bdf5ea63fefe1df4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call recvfrom() while ignoring EINTR returns.  <a href="whist_2network_2network_8h.html#ab0b0b491f948a80bdf5ea63fefe1df4c">More...</a><br /></td></tr>
 <tr class="separator:ab0b0b491f948a80bdf5ea63fefe1df4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a15663fcc25546899e2bc959a65c74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="whist_2network_2network_8h.html#a63a15663fcc25546899e2bc959a65c74">socket_get_queue_len</a> (<a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> socket)</td></tr>
+<tr class="memdesc:a63a15663fcc25546899e2bc959a65c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get length queued in the socket.  <a href="whist_2network_2network_8h.html#a63a15663fcc25546899e2bc959a65c74">More...</a><br /></td></tr>
+<tr class="separator:a63a15663fcc25546899e2bc959a65c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
 <p>This file contains all code that interacts directly with sockets </p>
-<h1><a class="anchor" id="autotoc_md208"></a>
-under-the-hood.</h1>
 <h1><a class="anchor" id="autotoc_md209"></a>
+under-the-hood.</h1>
+<h1><a class="anchor" id="autotoc_md210"></a>
 Usage</h1>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>: This type represents the context of an open socket.</p><ul>
 <li>To use a socket, call create_udp_socket_context or create_tcp_socket_context with the desired parameters</li>
@@ -248,7 +253,7 @@ Usage</h1>
 <li>A <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a> may be sent twice in the case of packet recovery, but any two WhistPackets found that are of the same type and ID will be expected to have the same data (To be specific, the <a class="el" href="structClient.html">Client</a> should never legally send two distinct packets with same ID/Type, and neither should the Server, but if the <a class="el" href="structClient.html">Client</a> and Server happen to both make a PACKET_MESSAGE packet with ID 1, they can be different)</li>
 </ul>
 <hr  />
- <h2><a class="anchor" id="autotoc_md211"></a>
+ <h2><a class="anchor" id="autotoc_md212"></a>
 Client</h2>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> context; create_tcp_socket_context(&amp;context, "10.0.0.5", 5055, 500, 250);</p>
 <p>char* msg = "Hello this is a message!"; send_packet(&amp;context, PACKET_MESSAGE, msg, strlen(msg) + 1);</p>
@@ -257,7 +262,7 @@ Client</h2>
 <p>free_packet(packet);</p>
 <p>destroy_socket_context(&amp;context);</p>
 <hr  />
- <h2><a class="anchor" id="autotoc_md213"></a>
+ <h2><a class="anchor" id="autotoc_md214"></a>
 Server</h2>
 <p><a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a> context; create_tcp_socket_context(&amp;context, NULL, 5055, 500, 250);</p>
 <p>WhistPacket* packet = NULL; while(packet == NULL) { socket_update(context); packet = get_packet(&amp;context, PACKET_MESSAGE); }</p>
@@ -526,6 +531,20 @@ Server</h2>
       <table class="memname">
         <tr>
           <td class="memname">#define WHIST_EWOULDBLOCK&#160;&#160;&#160;EWOULDBLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d7de74dbe2a1372dc787eb60b91a1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7de74dbe2a1372dc787eb60b91a1f4">&#9670;&nbsp;</a></span>WHIST_IOCTL_ARG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WHIST_IOCTL_ARG&#160;&#160;&#160;int</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1097,6 +1116,27 @@ Server</h2>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a63a15663fcc25546899e2bc959a65c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63a15663fcc25546899e2bc959a65c74">&#9670;&nbsp;</a></span>socket_get_queue_len()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int socket_get_queue_len </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a>&#160;</td>
+          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get length queued in the socket. </p>
+<dl class="section return"><dt>Returns</dt><dd>num of bytes queued in the socket </dd></dl>
 
 </div>
 </div>

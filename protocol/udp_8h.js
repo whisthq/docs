@@ -11,6 +11,7 @@ var udp_8h =
     [ "udp_get_network_settings", "udp_8h.html#aaf696db0bbfc74d20b2a3ba0480b4c01", null ],
     [ "udp_get_num_indices", "udp_8h.html#ad23da60df4866703cdc09be5bd969ba1", null ],
     [ "udp_get_num_pending_frames", "udp_8h.html#ad233b3dbff8bdf1bcfca923b178b47e9", null ],
+    [ "udp_get_socket_queue_len", "udp_8h.html#a55b92b6d64808ee1e6e605f051543884", null ],
     [ "udp_handle_network_settings", "udp_8h.html#afef7e30cfe7786aa52b75f8cd9c68445", null ],
     [ "udp_handle_pending_nacks", "udp_8h.html#a6a844acc1cde901a4c1a430b83fa5331", null ],
     [ "udp_handle_resize", "udp_8h.html#a695742ec135ae4e208d51e72fbd30dad", null ],

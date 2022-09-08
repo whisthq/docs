@@ -343,19 +343,20 @@ Overiew</h2>
 C++ API part</h3>
 <h4><a class="anchor" id="autotoc_md166"></a>
 Controlling APIs:</h4>
-<div class="fragment"><div class="line">void whist_plotter_init(void);  // init the plotter, usually called inside</div>
-<div class="line">void whist_plotter_start_sampling(void);  // start sampling,</div>
+<div class="fragment"><div class="line">void whist_plotter_init(void);  // init the plotter</div>
+</div><!-- fragment --><p>This is typically called on client and server startup. But you can also call it inside unit-test if needed.</p>
+<div class="fragment"><div class="line">void whist_plotter_start_sampling(void);  // start sampling,</div>
 <div class="line">void whist_plotter_stop_sampling(void);   // stop sampling</div>
-</div><!-- fragment --><p>They are usually expected to be called inside <code>debug_console</code>. But you can also call it manually at other places, e.g. in the unit-test to manually draw plot graphs.</p>
+</div><!-- fragment --><p>They can be called at any place.</p>
 <h4><a class="anchor" id="autotoc_md167"></a>
 Sampling API:</h4>
 <div class="fragment"><div class="line">void whist_plotter_insert_sample(const char* label, double x, double y);</div>
-</div><!-- fragment --><p>This function can be called anywhere inside the <code>WhistClient</code>. The first parameter <code>label</code> is the label of data point <code>{x,y}</code>, data point with same label are considered to belong to a same data collection and has the same color in plotting. The <code>x</code> and <code>y</code>, are self-explained values to be plotted.</p>
+</div><!-- fragment --><p>This function can be called at any place. The first parameter <code>label</code> is the label of data point <code>{x,y}</code>, data point with same label are considered to belong to a same data collection and has the same color in plotting. The <code>x</code> and <code>y</code>, are self-explained values to be plotted.</p>
 <h3><a class="anchor" id="autotoc_md168"></a>
 Data Exporting API:</h3>
 <div class="fragment"><div class="line">std::string whist_plotter_export();</div>
 </div><!-- fragment --><p>This function exports the sampled values to a string of json, which can be turned into graphs by the <code>plotter.py</code>.</p>
-<p>It's usually expected to be called inside <code>debug_console</code>. But you can also call it manually at other places.</p>
+<p>This function can be called at any place.</p>
 <h3><a class="anchor" id="autotoc_md169"></a>
 Python Helper Part</h3>
 <p>The python helper is the <code>plotter.py</code>, which turns the exported data into graphs. Full options:</p>
@@ -375,6 +376,10 @@ Python Helper Part</h3>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md170"></a>
 Introduce to the use of plotter</h2>
 <h3><a class="anchor" id="autotoc_md171"></a>
+Start and Stop sampling</h3>
+<p>For client, you can start and stop sampling by talking to debug_console. See the <code>debug_console</code> section above.</p>
+<p>For both client and server, you can enable auto start/stop sampling on program start/quit by <code>CLIENT_SIDE_PLOTTER_START_SAMPLING_BY_DEFAULT</code> or <code>SERVER_SIDE_PLOTTER_START_SAMPLING_BY_DEFAULT</code> macro. See the <code>debug_flag.h</code> file.</p>
+<h3><a class="anchor" id="autotoc_md172"></a>
 Practices for using the Sampling API</h3>
 <p>To easily control the plotting of data, and to avoid wasting CPU and memory to sample the data you are not interested.</p>
 <p>It's suggested to organize related datasets as a group, and enable/disable the group as needed.</p>
@@ -383,7 +388,7 @@ Practices for using the Sampling API</h3>
 <li>use MACRO</li>
 <li>use the dynamic value change mechanism of <code>debug_console</code>, AKA the <code>set</code> command.</li>
 </ol>
-<h4><a class="anchor" id="autotoc_md172"></a>
+<h4><a class="anchor" id="autotoc_md173"></a>
 MACRO Method</h4>
 <p>Define PLOT_AUDIO_ALGO inside <code><a class="el" href="debug__flags_8h.html">debug_flags.h</a></code>:</p>
 <div class="fragment"><div class="line">#define PLOT_AUDIO_ALGO false                // audio algo</div>
@@ -396,7 +401,7 @@ MACRO Method</h4>
 <div class="line">                                adaptive_parameter_controller.get_scale_factor());</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Then you can enable/disable the group at compile time with MACRO.</p>
-<h4><a class="anchor" id="autotoc_md173"></a>
+<h4><a class="anchor" id="autotoc_md174"></a>
 dynamic Method</h4>
 <p>If a group of data need to be looked very frequently, you might want to enable/disable the group without re-compile.</p>
 <p>First, you define <code>plot_audio_algo</code> inside the <code><a class="el" href="structDebugConsoleOverrideValues.html">DebugConsoleOverrideValues</a> struct</code> of <code>debug_consol.h</code>. And make the relevant modification to <code>handle_set()</code> <code>handle_info()</code> to support that variable.</p>
@@ -412,44 +417,44 @@ dynamic Method</h4>
 <div class="fragment"><div class="line">#inside debug console</div>
 <div class="line">set plot_audio_algo 1           #to enable</div>
 <div class="line">set plot_audio_algo 0           #to disable</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md174"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md175"></a>
 Examples of using the &lt;tt&gt;plotter.py&lt;/tt&gt;</h3>
-<h3><a class="anchor" id="autotoc_md175"></a>
+<h3><a class="anchor" id="autotoc_md176"></a>
 Basic usage</h3>
 <div class="fragment"><div class="line">./plotter.py ~/sdl_present_cpu_copy.json</div>
 </div><!-- fragment --><p><img src="https://user-images.githubusercontent.com/4922024/176613266-80a41f03-69dc-4ec9-bac5-19143f66668e.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md176"></a>
+<h3><a class="anchor" id="autotoc_md177"></a>
 Change style</h3>
 <p>Sometimes the lines are too dense and hides each other, you can change style to scatter for a better view:</p>
 <div class="fragment"><div class="line">./plotter.py ~/saved_plots/audio_algo_new_piece.json -s</div>
 </div><!-- fragment --><p>default style vs scatter style:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176612467-b9561388-e27c-4c09-ba56-cce24fbc341d.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176612641-ebed72cf-d2d4-48c7-906f-e8af6694e882.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md177"></a>
+<h3><a class="anchor" id="autotoc_md178"></a>
 Use distribution graph</h3>
 <p>Sometimes the plot is filled by spikes, looking at the distribution of y value might give you a better understanding of data:</p>
 <div class="fragment"><div class="line">./plotter.py ~/socket_queue_len.json -d</div>
 </div><!-- fragment --><p>default graph vs distribution graph:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176611074-6849c5bd-8af4-42a4-8c82-adce80dd5297.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176613048-ad841793-2370-4500-ad71-bb2e6a196632.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md178"></a>
+<h3><a class="anchor" id="autotoc_md179"></a>
 Change Weight</h3>
 <p>You can also change the weight of line or scatter with the <code>-w</code> option:</p>
 <div class="fragment"><div class="line">./plotter.py ~/udp_dedicated_thread.json -d -w 2</div>
 </div><!-- fragment --><p>default weight vs changed weight:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176620204-c7575168-0ad5-413c-a278-86aa02c6cd63.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176620131-9980ce33-aaf3-43da-b41f-0e1465222ec3.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md179"></a>
+<h3><a class="anchor" id="autotoc_md180"></a>
 User Label filter</h3>
 <p>Sometimes the exported data contains too many labels than you are interested, you can filter out the interested lablel with regular expression:</p>
 <div class="fragment"><div class="line">./plotter.py ~/saved_plots/audio_algo_new.json -f &#39;.*(scale|device).*&#39;</div>
 </div><!-- fragment --><p>without filter vs with filter:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176617848-6af9c004-2c1f-46c7-a13e-f5c0c3fe6049.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176618049-d4702445-063b-4c58-beb7-cd9f94363d0f.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md180"></a>
+<h3><a class="anchor" id="autotoc_md181"></a>
 Plot only specific range</h3>
 <p>Sometimes the graph contains a super lage range of data. You can use the zoom function of the UI to zoom, but huge amount of data might make your UI very slow.</p>
 <p>So you might want to pre-specify a range of x data to plot, with the <code>-r</code> option:</p>
 <div class="fragment"><div class="line">./plotter.py ~/saved_plots/audio_algo_new.json -r 35~60</div>
 </div><!-- fragment --><p>without range vs with range:</p>
 <p><img src="https://user-images.githubusercontent.com/4922024/176618908-bab9bc36-3727-4368-89a0-873c09ee6d67.png" alt="" width="400" class="inline"/> <img src="https://user-images.githubusercontent.com/4922024/176619182-f9e75493-db2d-4cec-acfd-fd6d584ce01f.png" alt="" width="400" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md181"></a>
+<h3><a class="anchor" id="autotoc_md182"></a>
 Compare two plots</h3>
 <p>For easier comparsion, you can specific multiple files to <code>./plotter</code>, and compare the graphs on the same picture:</p>
 <div class="fragment"><div class="line">./plotter.py ~/my_pr.json ~/dev.json</div>

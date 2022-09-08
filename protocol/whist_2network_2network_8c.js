@@ -15,6 +15,7 @@ var whist_2network_2network_8c =
     [ "send_packet", "whist_2network_2network_8c.html#adfb72e346badf093529404e6d20f8d97", null ],
     [ "set_timeout", "whist_2network_2network_8c.html#a61c60fb86a89187155fb727e0dba01ea", null ],
     [ "set_tos", "whist_2network_2network_8c.html#a6dadca57d3f2804a946e82a7abb69549", null ],
+    [ "socket_get_queue_len", "whist_2network_2network_8c.html#a63a15663fcc25546899e2bc959a65c74", null ],
     [ "socket_update", "whist_2network_2network_8c.html#a81f112a09babf58cabed855550dd4d6c", null ],
     [ "socketp_udp", "whist_2network_2network_8c.html#a7474fff42d0f5ea949a1030750c139ce", null ],
     [ "whist_init_networking", "whist_2network_2network_8c.html#a6af622f9cda2d3e496cc83b6a7f9d86b", null ],

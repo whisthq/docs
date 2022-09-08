@@ -54,6 +54,7 @@ var udp_8c =
     [ "udp_get_network_settings", "udp_8c.html#a3b06fee55b43d9c3a1ed2c4f5c2b65b2", null ],
     [ "udp_get_num_indices", "udp_8c.html#aa5673dcb479fc273bc4b03c74929028f", null ],
     [ "udp_get_num_pending_frames", "udp_8c.html#ae5ba49cf201e631db0cb9b475efafe5d", null ],
+    [ "udp_get_socket_queue_len", "udp_8c.html#a55b92b6d64808ee1e6e605f051543884", null ],
     [ "udp_handle_network_settings", "udp_8c.html#afef7e30cfe7786aa52b75f8cd9c68445", null ],
     [ "udp_handle_pending_nacks", "udp_8c.html#a6a844acc1cde901a4c1a430b83fa5331", null ],
     [ "udp_handle_resize", "udp_8c.html#ac8524e19b2d5f6d86b8b57c07c0e67da", null ],
