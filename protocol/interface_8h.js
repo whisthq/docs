@@ -1,6 +1,7 @@
 var interface_8h =
 [
     [ "VirtualInterface", "structVirtualInterface.html", "structVirtualInterface" ],
+    [ "EXPORT_API", "interface_8h.html#a3536620a51a6fa45b41e6d9ff6fc4ad3", null ],
     [ "GetModifierKeyState", "interface_8h.html#abe82439801b97fae9ea01d2bafe3cdfa", null ],
     [ "ModifierKeyFlags", "interface_8h.html#a45ddaf601b8c9844904846690e62d8a0", null ],
     [ "OnCursorChangeCallback", "interface_8h.html#af2205e2276c4c7a109a62cfa4c1cc65b", null ],
@@ -17,6 +18,6 @@ var interface_8h =
       [ "GUI", "interface_8h.html#a0ed2544df88eda418ae0519a619b9808a73c6901c7c648a6a735770bc038bb26a", null ],
       [ "CAPS", "interface_8h.html#a0ed2544df88eda418ae0519a619b9808a2f6f75848eb080ded5bc1e46ebe68b41", null ]
     ] ],
-    [ "get_virtual_interface", "interface_8h.html#af2c89c56a0d240a3c2d1d0b6119c12b9", null ],
+    [ "get_virtual_interface", "interface_8h.html#a0aaa4e78594b8dae89c5ad543016c025", null ],
     [ "OnFileUploadCallback", "interface_8h.html#a37105195b9292c0603cb55a10a2e11d0", null ]
 ];

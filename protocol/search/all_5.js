@@ -51,5 +51,6 @@ var searchData=
   ['ewma_5ffactor_597',['EWMA_FACTOR',['../network__algorithm_8c.html#aa3af14bab81dee35828959d2200a6c97',1,'network_algorithm.c']]],
   ['ewma_5fstats_5fseconds_598',['EWMA_STATS_SECONDS',['../network__algorithm_8c.html#a72f898a5d3f32ed5a20587d3b97383a2',1,'network_algorithm.c']]],
   ['exiting_599',['exiting',['../structWhistServerState.html#a56cc9b74ca3a7fb2d71dea61d1eecab8',1,'WhistServerState']]],
-  ['extract_5favpackets_5ffrom_5fbuffer_600',['extract_avpackets_from_buffer',['../avpacket__buffer_8c.html#aac33cf958176ec9af2a7dd4df6011ad2',1,'extract_avpackets_from_buffer(uint8_t *buffer, size_t buffer_size, AVPacket **packets):&#160;avpacket_buffer.c'],['../avpacket__buffer_8h.html#aac33cf958176ec9af2a7dd4df6011ad2',1,'extract_avpackets_from_buffer(uint8_t *buffer, size_t buffer_size, AVPacket **packets):&#160;avpacket_buffer.c']]]
+  ['export_5fapi_600',['EXPORT_API',['../interface_8h.html#a3536620a51a6fa45b41e6d9ff6fc4ad3',1,'interface.h']]],
+  ['extract_5favpackets_5ffrom_5fbuffer_601',['extract_avpackets_from_buffer',['../avpacket__buffer_8c.html#aac33cf958176ec9af2a7dd4df6011ad2',1,'extract_avpackets_from_buffer(uint8_t *buffer, size_t buffer_size, AVPacket **packets):&#160;avpacket_buffer.c'],['../avpacket__buffer_8h.html#aac33cf958176ec9af2a7dd4df6011ad2',1,'extract_avpackets_from_buffer(uint8_t *buffer, size_t buffer_size, AVPacket **packets):&#160;avpacket_buffer.c']]]
 ];
