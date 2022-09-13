@@ -1,9 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"structVirtualInterface.html#a702f18e35120ba47ec98e755e12c1e5e":[13,0,120,28],
-"structVirtualInterface.html#a704a9674daf9a83ce049cac75197d9e3":[13,0,120,0],
-"structVirtualInterface.html#a7729a44d6f1c0476faf4c81ecc2a06e6":[13,0,120,17],
-"structVirtualInterface.html#a777ef284533a58a63ac3e167d73e78c5":[13,0,120,4],
 "structVirtualInterface.html#a790c7006e915a98cdcbb7f81322ac23a":[13,0,120,10],
 "structVirtualInterface.html#a93889590ac1b950e64bf4d3750dccdbf":[13,0,120,6],
 "structVirtualInterface.html#a970114f777b7bdf62e5695a563a93720":[13,0,120,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX14 =
 "structWhistWindow.html#ae15a0784ef3b009825a150df3bf6f86d":[13,0,148,3],
 "structWhistYUVColor.html":[13,0,149],
 "structWhistYUVColor.html#a19784573e8a520f0e550040670c9d4ef":[13,0,149,2],
-"structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[13,0,149,1]
+"structWhistYUVColor.html#a6024c4d38c153ead887f792622119a11":[13,0,149,1],
+"structWhistYUVColor.html#af66d5846b6864345bcd70f469a0af5dc":[13,0,149,0],
+"structX11CaptureDevice.html":[13,0,150],
+"structX11CaptureDevice.html#a14f8b043bd98da409064ec5b58a3a2ac":[13,0,150,24],
+"structX11CaptureDevice.html#a15aa394a9a0116a6a3de0027af4a3a56":[13,0,150,10]
 };

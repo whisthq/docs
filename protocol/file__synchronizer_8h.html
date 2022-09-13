@@ -161,14 +161,10 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a3b42737aa65a49c64e1df706d58685dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the file chunk being sent.  <a href="file__synchronizer_8h.html#a3b42737aa65a49c64e1df706d58685dd">More...</a><br /></td></tr>
 <tr class="separator:a3b42737aa65a49c64e1df706d58685dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a146df237d59ac77fbe2a2e65c5e88f01"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a> { <br />
-&#160;&#160;<a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01a7e205e9692e9b89fb524897c01aa64b4">FILE_TRANSFER_DEFAULT</a> = 0, 
+<tr class="memitem:a146df237d59ac77fbe2a2e65c5e88f01"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">FileTransferType</a> { <a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01a7e205e9692e9b89fb524897c01aa64b4">FILE_TRANSFER_DEFAULT</a> = 0, 
 <a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01a5f10b2caa3bb2f859b8a8966ed0f8d84">FILE_TRANSFER_SERVER_DROP</a> = 0b0001, 
 <a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01a2bd93c7fe6a0232386b9311a86cd08bd">FILE_TRANSFER_CLIENT_DROP</a> = 0b0010, 
-<a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01aeba5b29653732c5dd30f66245103f646">FILE_TRANSFER_SERVER_UPLOAD</a> = 0b0100, 
-<br />
-&#160;&#160;<a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01ac73d4886bb9259d02f8ca30f913f07a6">FILE_TRANSFER_CLIENT_DOWNLOAD</a> = 0b1000
-<br />
+<a class="el" href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01aeba5b29653732c5dd30f66245103f646">FILE_TRANSFER_SERVER_UPLOAD</a> = 0b0100
  }</td></tr>
 <tr class="memdesc:a146df237d59ac77fbe2a2e65c5e88f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the file transfer, as a boolean enum.  <a href="file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01">More...</a><br /></td></tr>
 <tr class="separator:a146df237d59ac77fbe2a2e65c5e88f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -372,6 +368,7 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>The type of the file transfer, as a boolean enum. </p>
+<dl class="section note"><dt>Note</dt><dd>File download is directly implemented in the Chromium extension, so the protocol no longer needs to handle file download to the client. </dd></dl>
 
 </div>
 </div>
@@ -461,12 +458,12 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>The type of the file transfer, as a boolean enum. </p>
+<dl class="section note"><dt>Note</dt><dd>File download is directly implemented in the Chromium extension, so the protocol no longer needs to handle file download to the client. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a146df237d59ac77fbe2a2e65c5e88f01a7e205e9692e9b89fb524897c01aa64b4"></a>FILE_TRANSFER_DEFAULT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a146df237d59ac77fbe2a2e65c5e88f01a5f10b2caa3bb2f859b8a8966ed0f8d84"></a>FILE_TRANSFER_SERVER_DROP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a146df237d59ac77fbe2a2e65c5e88f01a2bd93c7fe6a0232386b9311a86cd08bd"></a>FILE_TRANSFER_CLIENT_DROP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a146df237d59ac77fbe2a2e65c5e88f01aeba5b29653732c5dd30f66245103f646"></a>FILE_TRANSFER_SERVER_UPLOAD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a146df237d59ac77fbe2a2e65c5e88f01ac73d4886bb9259d02f8ca30f913f07a6"></a>FILE_TRANSFER_CLIENT_DOWNLOAD&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

@@ -30,8 +30,7 @@ var file__synchronizer_8h =
       [ "FILE_TRANSFER_DEFAULT", "file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01a7e205e9692e9b89fb524897c01aa64b4", null ],
       [ "FILE_TRANSFER_SERVER_DROP", "file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01a5f10b2caa3bb2f859b8a8966ed0f8d84", null ],
       [ "FILE_TRANSFER_CLIENT_DROP", "file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01a2bd93c7fe6a0232386b9311a86cd08bd", null ],
-      [ "FILE_TRANSFER_SERVER_UPLOAD", "file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01aeba5b29653732c5dd30f66245103f646", null ],
-      [ "FILE_TRANSFER_CLIENT_DOWNLOAD", "file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01ac73d4886bb9259d02f8ca30f913f07a6", null ]
+      [ "FILE_TRANSFER_SERVER_UPLOAD", "file__synchronizer_8h.html#a146df237d59ac77fbe2a2e65c5e88f01aeba5b29653732c5dd30f66245103f646", null ]
     ] ],
     [ "destroy_file_synchronizer", "file__synchronizer_8h.html#a04cd342e18aa8f45f497d2f2295ca05d", null ],
     [ "file_synchronizer_cancel_user_file_upload", "file__synchronizer_8h.html#ac737bcf1eab86938bf0eca8cdf00f17b", null ],
