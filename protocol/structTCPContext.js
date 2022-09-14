@@ -13,6 +13,10 @@ var structTCPContext =
     [ "mutex", "structTCPContext.html#ac768119862559b81327b103f8fa041d6", null ],
     [ "network_throttler", "structTCPContext.html#a69392ee0ce512416b23034532fd8c11d", null ],
     [ "reading_packet_len", "structTCPContext.html#a474478d48859345d14be78a71dfd676a", null ],
+    [ "run_sender", "structTCPContext.html#a4d3391631d403979699e0f8f25c5cefd", null ],
+    [ "send_queue", "structTCPContext.html#a976a5a61e4b0f968d7186437b440d000", null ],
+    [ "send_semaphore", "structTCPContext.html#a33aa32abf4db708d10606ddf716c7bd8", null ],
+    [ "send_thread", "structTCPContext.html#aa7adb9a4ce6e351b7b14e19920f4ef14", null ],
     [ "socket", "structTCPContext.html#ac2715e6f456b612ad042feceff65744a", null ],
     [ "timeout", "structTCPContext.html#a69b86d5b5ba97f16a584a8c1da5e76ea", null ]
 ];

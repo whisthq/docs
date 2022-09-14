@@ -5,5 +5,6 @@ var queue_8h =
     [ "fifo_queue_dequeue_item", "queue_8h.html#a7231bf8b37487231563ac652392a23b3", null ],
     [ "fifo_queue_dequeue_item_timeout", "queue_8h.html#a562a79d376ae53689cec01185aca42b6", null ],
     [ "fifo_queue_destroy", "queue_8h.html#ad9dd2a1018eaf76f444d5960382797df", null ],
-    [ "fifo_queue_enqueue_item", "queue_8h.html#a1f28af1dfaf3bd10ad63737c85840354", null ]
+    [ "fifo_queue_enqueue_item", "queue_8h.html#a1f28af1dfaf3bd10ad63737c85840354", null ],
+    [ "fifo_queue_enqueue_item_timeout", "queue_8h.html#a2ead1bfcce87cec21c2ee9f0802307d7", null ]
 ];

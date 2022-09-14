@@ -102,20 +102,38 @@ Data Fields</h2></td></tr>
 <tr class="separator:aa8ffe30bfaa8039c6fa61151223a4aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad41547b7d002d24d1047abf84740165b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#ga78d0c0f138aa9aa56ff2c5403000eba0">WhistMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueueContext.html#ad41547b7d002d24d1047abf84740165b">mutex</a></td></tr>
 <tr class="separator:ad41547b7d002d24d1047abf84740165b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d170c8eca42dddf27a227a58f2cbb61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#gaffdc74c3ded1d8460cc89e991a67947e">WhistCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueueContext.html#a6d170c8eca42dddf27a227a58f2cbb61">cond</a></td></tr>
-<tr class="separator:a6d170c8eca42dddf27a227a58f2cbb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad94a182b2652f544ac16ebb3a2548bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#gaffdc74c3ded1d8460cc89e991a67947e">WhistCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueueContext.html#aad94a182b2652f544ac16ebb3a2548bc">avail_items_cond</a></td></tr>
+<tr class="separator:aad94a182b2652f544ac16ebb3a2548bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa884775585106f99d2bd04f69c16d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#gaffdc74c3ded1d8460cc89e991a67947e">WhistCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueueContext.html#a1fa884775585106f99d2bd04f69c16d6">avail_space_cond</a></td></tr>
+<tr class="separator:a1fa884775585106f99d2bd04f69c16d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79827944cf8b8fe66aa929d81f36b831"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueueContext.html#a79827944cf8b8fe66aa929d81f36b831">data</a></td></tr>
 <tr class="separator:a79827944cf8b8fe66aa929d81f36b831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfae5fa5ea43c8950a30f606623d7b03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueueContext.html#abfae5fa5ea43c8950a30f606623d7b03">destroying</a></td></tr>
+<tr class="separator:abfae5fa5ea43c8950a30f606623d7b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a6d170c8eca42dddf27a227a58f2cbb61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d170c8eca42dddf27a227a58f2cbb61">&#9670;&nbsp;</a></span>cond</h2>
+<a id="aad94a182b2652f544ac16ebb3a2548bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad94a182b2652f544ac16ebb3a2548bc">&#9670;&nbsp;</a></span>avail_items_cond</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__threading.html#gaffdc74c3ded1d8460cc89e991a67947e">WhistCondition</a> QueueContext::cond</td>
+          <td class="memname"><a class="el" href="group__threading.html#gaffdc74c3ded1d8460cc89e991a67947e">WhistCondition</a> QueueContext::avail_items_cond</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fa884775585106f99d2bd04f69c16d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa884775585106f99d2bd04f69c16d6">&#9670;&nbsp;</a></span>avail_space_cond</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__threading.html#gaffdc74c3ded1d8460cc89e991a67947e">WhistCondition</a> QueueContext::avail_space_cond</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -130,6 +148,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void* QueueContext::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfae5fa5ea43c8950a30f606623d7b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfae5fa5ea43c8950a30f606623d7b03">&#9670;&nbsp;</a></span>destroying</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QueueContext::destroying</td>
         </tr>
       </table>
 </div><div class="memdoc">

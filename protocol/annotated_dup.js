@@ -108,6 +108,7 @@ var annotated_dup =
     [ "TCPContext", "structTCPContext.html", "structTCPContext" ],
     [ "TCPNetworkPacket", "structTCPNetworkPacket.html", "structTCPNetworkPacket" ],
     [ "TCPPacket", "structTCPPacket.html", "structTCPPacket" ],
+    [ "TCPQueueItem", "structTCPQueueItem.html", "structTCPQueueItem" ],
     [ "TransferringFile", "structTransferringFile.html", "structTransferringFile" ],
     [ "ucvector", "structucvector.html", "structucvector" ],
     [ "UDPContext", "structUDPContext.html", "structUDPContext" ],

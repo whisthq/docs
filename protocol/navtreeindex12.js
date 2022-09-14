@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"structLinkedList.html#a340d247771112b5db8a551d82bbaeebb":[11,5,0,2],
+"structLinkedList.html#a578d4830c047fbd8f7a1d9712d24329b":[11,5,0,1],
 "structLodePNGBitReader.html":[13,0,63],
 "structLodePNGBitReader.html#a21318b6b3c4a8c84abf75719aa19152f":[13,0,63,0],
 "structLodePNGBitReader.html#a7b8c81e8fb2da022f3662c8c8ccd6e7d":[13,0,63,3],
@@ -208,14 +210,16 @@ var NAVTREEINDEX12 =
 "structPrivateKeyData.html#a2f4995b06671f37e29e666ae9268c737":[13,0,88,0],
 "structPrivateKeyData.html#a329c8f083cc47b85adf8ca53b9ef2887":[13,0,88,1],
 "structQueueContext.html":[13,0,89],
-"structQueueContext.html#a3c07d815373ecee83228a5ec37fbcba2":[13,0,89,2],
-"structQueueContext.html#a4ea2a37a0665aa6a9b659115bf921838":[13,0,89,7],
-"structQueueContext.html#a59abc90f7aeae228b347aa26ca16a5e6":[13,0,89,6],
-"structQueueContext.html#a6d170c8eca42dddf27a227a58f2cbb61":[13,0,89,0],
-"structQueueContext.html#a79827944cf8b8fe66aa929d81f36b831":[13,0,89,1],
-"structQueueContext.html#a97a4324684e5772ece22b55429174613":[13,0,89,5],
-"structQueueContext.html#aa8ffe30bfaa8039c6fa61151223a4aa1":[13,0,89,3],
-"structQueueContext.html#ad41547b7d002d24d1047abf84740165b":[13,0,89,4],
+"structQueueContext.html#a1fa884775585106f99d2bd04f69c16d6":[13,0,89,1],
+"structQueueContext.html#a3c07d815373ecee83228a5ec37fbcba2":[13,0,89,4],
+"structQueueContext.html#a4ea2a37a0665aa6a9b659115bf921838":[13,0,89,9],
+"structQueueContext.html#a59abc90f7aeae228b347aa26ca16a5e6":[13,0,89,8],
+"structQueueContext.html#a79827944cf8b8fe66aa929d81f36b831":[13,0,89,2],
+"structQueueContext.html#a97a4324684e5772ece22b55429174613":[13,0,89,7],
+"structQueueContext.html#aa8ffe30bfaa8039c6fa61151223a4aa1":[13,0,89,5],
+"structQueueContext.html#aad94a182b2652f544ac16ebb3a2548bc":[13,0,89,0],
+"structQueueContext.html#abfae5fa5ea43c8950a30f606623d7b03":[13,0,89,3],
+"structQueueContext.html#ad41547b7d002d24d1047abf84740165b":[13,0,89,6],
 "structRSWrapper.html":[13,0,93],
 "structRSWrapper.html#a2882f0a2d622c7fda30ea110d3868f1e":[13,0,93,3],
 "structRSWrapper.html#a6c126bafc56c4b3adde476ccdba0b914":[13,0,93,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "structRegisteredResource.html#ae854ba223b6eaeffe818378a58acfc16":[13,0,91,3],
 "structRingBuffer.html":[13,0,92],
 "structRingBuffer.html#a0260e103fd1adae06fed275672381b86":[13,0,92,11],
-"structRingBuffer.html#a0cae5252355a6928ab60412187d215c2":[13,0,92,12],
-"structRingBuffer.html#a11f15372e26b540bdce0a8fe2d6d33d7":[13,0,92,28],
-"structRingBuffer.html#a1bd4310b6b45c7f5df472a784e625b87":[13,0,92,17],
-"structRingBuffer.html#a222e926e44d53e0f8bec5e58bbccfc64":[13,0,92,13],
-"structRingBuffer.html#a3229bb03ce787b257fbaef7b25a7eef5":[13,0,92,0]
+"structRingBuffer.html#a0cae5252355a6928ab60412187d215c2":[13,0,92,12]
 };

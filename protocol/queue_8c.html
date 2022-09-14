@@ -111,8 +111,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:a465df43c93dff24993082aeb4f2e02d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a FIFO queue.  <a href="queue_8c.html#a465df43c93dff24993082aeb4f2e02d2">More...</a><br /></td></tr>
 <tr class="separator:a465df43c93dff24993082aeb4f2e02d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a309e22ea30a00b8d9a116746020b6db3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a309e22ea30a00b8d9a116746020b6db3">fifo_queue_enqueue_item</a> (<a class="el" href="structQueueContext.html">QueueContext</a> *context, const void *item)</td></tr>
-<tr class="memdesc:a309e22ea30a00b8d9a116746020b6db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue an item to the FIFO queue.  <a href="queue_8c.html#a309e22ea30a00b8d9a116746020b6db3">More...</a><br /></td></tr>
+<tr class="memdesc:a309e22ea30a00b8d9a116746020b6db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue an item to the FIFO queue (nonblocking) If queue is full, then return immediately without any waiting.  <a href="queue_8c.html#a309e22ea30a00b8d9a116746020b6db3">More...</a><br /></td></tr>
 <tr class="separator:a309e22ea30a00b8d9a116746020b6db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86671e4a26985618e8777ecd9566818"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#aa86671e4a26985618e8777ecd9566818">fifo_queue_enqueue_item_timeout</a> (<a class="el" href="structQueueContext.html">QueueContext</a> *context, const void *item, int timeout_ms)</td></tr>
+<tr class="memdesc:aa86671e4a26985618e8777ecd9566818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue an item to the FIFO queue, If an item is not available, then wait till a timeout.  <a href="queue_8c.html#aa86671e4a26985618e8777ecd9566818">More...</a><br /></td></tr>
+<tr class="separator:aa86671e4a26985618e8777ecd9566818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc6ef18c3c85e1e0248ddd7cded5f4d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8c.html#a4bc6ef18c3c85e1e0248ddd7cded5f4d">fifo_queue_dequeue_item</a> (<a class="el" href="structQueueContext.html">QueueContext</a> *context, void *item)</td></tr>
 <tr class="memdesc:a4bc6ef18c3c85e1e0248ddd7cded5f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dequeue an item from the FIFO queue.  <a href="queue_8c.html#a4bc6ef18c3c85e1e0248ddd7cded5f4d">More...</a><br /></td></tr>
 <tr class="separator:a4bc6ef18c3c85e1e0248ddd7cded5f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,7 +218,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 when queue is empty and on failure </dd></dl>
 
 </div>
 </div>
@@ -257,7 +260,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">queue_context</td><td>Queue's context pointer </td></tr>
     <tr><td class="paramname">item</td><td>Pointer to the memory where dequeued item will be stored </td></tr>
-    <tr><td class="paramname">timeout_ms</td><td>The number of milliseconds to wait for.</td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>The number of milliseconds to wait for. -1 for wait without timeout.</td></tr>
   </table>
   </dd>
 </dl>
@@ -317,11 +320,56 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enqueue an item to the FIFO queue. </p>
+<p>Enqueue an item to the FIFO queue (nonblocking) If queue is full, then return immediately without any waiting. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">queue_context</td><td>Queue's context pointer </td></tr>
     <tr><td class="paramname">item</td><td>Pointer to the item that needs to be enqueued</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 when queue is full and on failure </dd></dl>
+
+</div>
+</div>
+<a id="aa86671e4a26985618e8777ecd9566818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86671e4a26985618e8777ecd9566818">&#9670;&nbsp;</a></span>fifo_queue_enqueue_item_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fifo_queue_enqueue_item_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structQueueContext.html">QueueContext</a> *&#160;</td>
+          <td class="paramname"><em>queue_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enqueue an item to the FIFO queue, If an item is not available, then wait till a timeout. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue_context</td><td>Queue's context pointer </td></tr>
+    <tr><td class="paramname">item</td><td>Pointer to the item that needs to be enqueued </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>The number of milliseconds to wait for. -1 for wait without timeout.</td></tr>
   </table>
   </dd>
 </dl>

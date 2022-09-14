@@ -83,12 +83,14 @@ var searchData=
   ['audioencoder_99',['AudioEncoder',['../structAudioEncoder.html',1,'AudioEncoder'],['../audioencode_8h.html#a52972e0e53486d805d5a8f20dd35544d',1,'AudioEncoder():&#160;audioencode.h']]],
   ['audioframe_100',['AudioFrame',['../structAudioFrame.html',1,'AudioFrame'],['../whist__frame_8h.html#af972e86db0d7f39d6abb7fc0ba8eff5e',1,'AudioFrame():&#160;whist_frame.h']]],
   ['auto_5fconvert_101',['auto_convert',['../structLodePNGEncoderSettings.html#a1203b8db6532c9ff4a5c8ee692cd327a',1,'LodePNGEncoderSettings']]],
-  ['average_102',['AVERAGE',['../log__statistic_8c.html#a0271fcfc94579b48ed1dd87309d8e118ab6f2220659ddcb84a0622d4aa4e0b112',1,'log_statistic.c']]],
-  ['average_5fover_5ftime_103',['AVERAGE_OVER_TIME',['../log__statistic_8c.html#a0271fcfc94579b48ed1dd87309d8e118ab9d5e49bab7e28aa2c613cc05bac335a',1,'log_statistic.c']]],
-  ['avg_5fcounter_104',['avg_counter',['../structRingBuffer.html#a3229bb03ce787b257fbaef7b25a7eef5',1,'RingBuffer']]],
-  ['avg_5ffps_5fduration_105',['AVG_FPS_DURATION',['../whist_8h.html#a6fb202279d179dd749b095338241329b',1,'whist.h']]],
-  ['avg_5fframe_5fduration_5fin_5fus_106',['AVG_FRAME_DURATION_IN_US',['../whist_8h.html#accb8ea6004024e6e62e60d954d52a4fb',1,'whist.h']]],
-  ['avg_5ftimer_107',['avg_timer',['../structRingBuffer.html#a84793599d9ac862828c7c130a6593466',1,'RingBuffer']]],
-  ['avpacket_5fbuffer_2ec_108',['avpacket_buffer.c',['../avpacket__buffer_8c.html',1,'']]],
-  ['avpacket_5fbuffer_2eh_109',['avpacket_buffer.h',['../avpacket__buffer_8h.html',1,'']]]
+  ['avail_5fitems_5fcond_102',['avail_items_cond',['../structQueueContext.html#aad94a182b2652f544ac16ebb3a2548bc',1,'QueueContext']]],
+  ['avail_5fspace_5fcond_103',['avail_space_cond',['../structQueueContext.html#a1fa884775585106f99d2bd04f69c16d6',1,'QueueContext']]],
+  ['average_104',['AVERAGE',['../log__statistic_8c.html#a0271fcfc94579b48ed1dd87309d8e118ab6f2220659ddcb84a0622d4aa4e0b112',1,'log_statistic.c']]],
+  ['average_5fover_5ftime_105',['AVERAGE_OVER_TIME',['../log__statistic_8c.html#a0271fcfc94579b48ed1dd87309d8e118ab9d5e49bab7e28aa2c613cc05bac335a',1,'log_statistic.c']]],
+  ['avg_5fcounter_106',['avg_counter',['../structRingBuffer.html#a3229bb03ce787b257fbaef7b25a7eef5',1,'RingBuffer']]],
+  ['avg_5ffps_5fduration_107',['AVG_FPS_DURATION',['../whist_8h.html#a6fb202279d179dd749b095338241329b',1,'whist.h']]],
+  ['avg_5fframe_5fduration_5fin_5fus_108',['AVG_FRAME_DURATION_IN_US',['../whist_8h.html#accb8ea6004024e6e62e60d954d52a4fb',1,'whist.h']]],
+  ['avg_5ftimer_109',['avg_timer',['../structRingBuffer.html#a84793599d9ac862828c7c130a6593466',1,'RingBuffer']]],
+  ['avpacket_5fbuffer_2ec_110',['avpacket_buffer.c',['../avpacket__buffer_8c.html',1,'']]],
+  ['avpacket_5fbuffer_2eh_111',['avpacket_buffer.h',['../avpacket__buffer_8h.html',1,'']]]
 ];

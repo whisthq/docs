@@ -120,6 +120,14 @@ Data Fields</h2></td></tr>
 <tr class="separator:a8018a749970470e09e4afbb9f13f445f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6552539ca4d5038657418b8bcae1c1a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__timers.html#ga5fcc7de94503598536c4c335cdaaa627">WhistTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a6552539ca4d5038657418b8bcae1c1a2">last_recvp</a></td></tr>
 <tr class="separator:a6552539ca4d5038657418b8bcae1c1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7adb9a4ce6e351b7b14e19920f4ef14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#ga8eda45e13e49672ca5e2c5c58604f683">WhistThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#aa7adb9a4ce6e351b7b14e19920f4ef14">send_thread</a></td></tr>
+<tr class="separator:aa7adb9a4ce6e351b7b14e19920f4ef14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976a5a61e4b0f968d7186437b440d000"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structQueueContext.html">QueueContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a976a5a61e4b0f968d7186437b440d000">send_queue</a></td></tr>
+<tr class="separator:a976a5a61e4b0f968d7186437b440d000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33aa32abf4db708d10606ddf716c7bd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__threading.html#ga8503fad756dd13b1789f8d791547a596">WhistSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a33aa32abf4db708d10606ddf716c7bd8">send_semaphore</a></td></tr>
+<tr class="separator:a33aa32abf4db708d10606ddf716c7bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3391631d403979699e0f8f25c5cefd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html#a4d3391631d403979699e0f8f25c5cefd">run_sender</a></td></tr>
+<tr class="separator:a4d3391631d403979699e0f8f25c5cefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a9c7f69bf9020bd2b2abdf4c3c904aa1d"></a>
@@ -298,6 +306,62 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int TCPContext::reading_packet_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d3391631d403979699e0f8f25c5cefd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3391631d403979699e0f8f25c5cefd">&#9670;&nbsp;</a></span>run_sender</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPContext::run_sender</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a976a5a61e4b0f968d7186437b440d000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976a5a61e4b0f968d7186437b440d000">&#9670;&nbsp;</a></span>send_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structQueueContext.html">QueueContext</a>* TCPContext::send_queue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33aa32abf4db708d10606ddf716c7bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33aa32abf4db708d10606ddf716c7bd8">&#9670;&nbsp;</a></span>send_semaphore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__threading.html#ga8503fad756dd13b1789f8d791547a596">WhistSemaphore</a> TCPContext::send_semaphore</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7adb9a4ce6e351b7b14e19920f4ef14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7adb9a4ce6e351b7b14e19920f4ef14">&#9670;&nbsp;</a></span>send_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__threading.html#ga8eda45e13e49672ca5e2c5c58604f683">WhistThread</a> TCPContext::send_thread</td>
         </tr>
       </table>
 </div><div class="memdoc">

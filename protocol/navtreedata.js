@@ -185,14 +185,14 @@ var NAVTREEINDEX =
 "lodepng_8c.html#aab7a41a03154aa8d9ef65f2d434641b6",
 "logging_8h.html#ad9df5c6dc713c515884e63a80f499f6b",
 "nvidia__encode_8h.html#aaa3ec6c4cf2408824bdb8c7be1cc809e",
-"sdl__utils_8c.html#a81dcd68e9914f757c90910b1bdff05c5",
-"structFECDecoder.html",
-"structLodePNGBitReader.html",
-"structRingBuffer.html#a4040ea10a7ec97c33893f20c63084a7a",
-"structVirtualInterface.html#a790c7006e915a98cdcbb7f81322ac23a",
-"structX11CaptureDevice.html#a1c4f6b1f91d40bc223efabf1b8f5c974",
-"whist_2network_2network_8c.html#a95ee2117f941ce83f97cf7884e0dc41b",
-"whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb"
+"sdl__utils_8c.html#a56933781127068f88e666df61403df95",
+"structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3",
+"structLinkedList.html#a340d247771112b5db8a551d82bbaeebb",
+"structRingBuffer.html#a11f15372e26b540bdce0a8fe2d6d33d7",
+"structVirtualInterface.html#a29dd31774ba645d1d1ba97df5cd46da6",
+"structWhistWindow.html#a73dc92a019f0c1121db35eb4a7b21022",
+"wasapicapture_8h.html#a9329f8d868f57c865444a80df32c9943",
+"whist_8h.html#aea3cfda4f3a9f978ec759f206cf186fe"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

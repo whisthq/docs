@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"sdl__utils_8c.html#a56933781127068f88e666df61403df95":[14,0,0,10,14],
+"sdl__utils_8c.html#a65d82de4d2f5b08f3150bb898a1d57c7":[14,0,0,10,18],
 "sdl__utils_8c.html#a81dcd68e9914f757c90910b1bdff05c5":[14,0,0,10,21],
 "sdl__utils_8c.html#a952a75dd2d80eb5e70c259b14d93199b":[14,0,0,10,6],
 "sdl__utils_8c.html#a993a121aa7c5869498703f17d41262ab":[14,0,0,10,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "structDynamicBuffer.html#ab086b6e22e3b2018e9cb35aaf637e22c":[11,2,2,1],
 "structDynamicBuffer.html#ad80cc8f3a40b8681fa9ede1f2aa19c79":[11,2,2,2],
 "structEncodedAudio.html":[13,0,27],
-"structEncodedAudio.html#a5955d96098e033891a5bae062868cd05":[13,0,27,2],
-"structEncodedAudio.html#a9e4e38efe50a23c4874fae0f0e2bd9d3":[13,0,27,1],
-"structEncodedAudio.html#a9f0b62fc01a231f73c90321f98c65e96":[13,0,27,0]
+"structEncodedAudio.html#a5955d96098e033891a5bae062868cd05":[13,0,27,2]
 };

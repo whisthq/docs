@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('tcp_8c.html',''); initResizable(); });
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -97,6 +98,7 @@ $(document).ready(function(){initNavTree('tcp_8c.html',''); initResizable(); });
 <code>#include &lt;<a class="el" href="clock_8h_source.html">whist/utils/clock.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="throttle_8h_source.html">whist/network/throttle.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="features_8h_source.html">whist/core/features.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="queue_8h_source.html">whist/utils/queue.h</a>&quot;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -107,11 +109,15 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPContext.html">TCPContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCPQueueItem.html">TCPQueueItem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a05417ed69492c5ff5801b3d4044e8e46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a05417ed69492c5ff5801b3d4044e8e46">MAX_TCP_PAYLOAD_SIZE</a>&#160;&#160;&#160;1000000000</td></tr>
 <tr class="separator:a05417ed69492c5ff5801b3d4044e8e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd05f0468df32a4add833f0de899ad6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#aecd05f0468df32a4add833f0de899ad6">TCP_SEND_QUEUE_SIZE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:aecd05f0468df32a4add833f0de899ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60a0edf99fe1dafd97dd6a11b124dae2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a60a0edf99fe1dafd97dd6a11b124dae2">get_tcp_network_packet_size</a>(tcp_packet)&#160;&#160;&#160;((size_t)(sizeof(<a class="el" href="structTCPNetworkPacket.html">TCPNetworkPacket</a>) + (tcp_packet)-&gt;payload_size))</td></tr>
 <tr class="separator:a60a0edf99fe1dafd97dd6a11b124dae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78e28007d2dd606c10f050f5e250d7ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a78e28007d2dd606c10f050f5e250d7ec">RECV_INTERVAL_MS</a>&#160;&#160;&#160;30</td></tr>
@@ -124,6 +130,11 @@ Macros</h2></td></tr>
 <tr class="separator:a8e8e2cde1b1ed4dcefbdfd99c5feb076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c6b65188e80c3ec91782df45b9f787"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ab8c6b65188e80c3ec91782df45b9f787">TCP_SEGMENT_SIZE</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:ab8c6b65188e80c3ec91782df45b9f787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a89ec5e40d2ebcb723ee99380de459af3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structTCPQueueItem.html">TCPQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a89ec5e40d2ebcb723ee99380de459af3">TCPQueueItem</a></td></tr>
+<tr class="separator:a89ec5e40d2ebcb723ee99380de459af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -144,6 +155,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a30b23798b36b0fadb93d5be69327ce64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a30b23798b36b0fadb93d5be69327ce64">tcp_send_constructed_packet</a> (<a class="el" href="structTCPContext.html">TCPContext</a> *context, <a class="el" href="structTCPPacket.html">TCPPacket</a> *packet)</td></tr>
 <tr class="memdesc:a30b23798b36b0fadb93d5be69327ce64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a fully constructed <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>.  <a href="tcp_8c.html#a30b23798b36b0fadb93d5be69327ce64">More...</a><br /></td></tr>
 <tr class="separator:a30b23798b36b0fadb93d5be69327ce64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43995cb93eeea4eaf12ae823208ffc6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ac43995cb93eeea4eaf12ae823208ffc6">multithreaded_tcp_send</a> (void *opaque)</td></tr>
+<tr class="memdesc:ac43995cb93eeea4eaf12ae823208ffc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multithreaded function to asynchronously send all TCP packets for one socket context on the same thread.  <a href="tcp_8c.html#ac43995cb93eeea4eaf12ae823208ffc6">More...</a><br /></td></tr>
+<tr class="separator:ac43995cb93eeea4eaf12ae823208ffc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc320ee9c1c48f1764c5eff0b90f565f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#abc320ee9c1c48f1764c5eff0b90f565f">create_tcp_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *network_context, char *destination, int port, int recvfrom_timeout_ms, int connection_timeout_ms, bool <a class="el" href="client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *binary_aes_private_key)</td></tr>
 <tr class="memdesc:abc320ee9c1c48f1764c5eff0b90f565f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tcp network context and initializes a TCP connection between a server and a client.  <a href="tcp_8c.html#abc320ee9c1c48f1764c5eff0b90f565f">More...</a><br /></td></tr>
 <tr class="separator:abc320ee9c1c48f1764c5eff0b90f565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +267,35 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define TCP_SEGMENT_SIZE&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecd05f0468df32a4add833f0de899ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd05f0468df32a4add833f0de899ad6">&#9670;&nbsp;</a></span>TCP_SEND_QUEUE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TCP_SEND_QUEUE_SIZE&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a89ec5e40d2ebcb723ee99380de459af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ec5e40d2ebcb723ee99380de459af3">&#9670;&nbsp;</a></span>TCPQueueItem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structTCPQueueItem.html">TCPQueueItem</a> <a class="el" href="structTCPQueueItem.html">TCPQueueItem</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -494,6 +537,34 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The TCP network context on success, NULL on failure </dd></dl>
+
+</div>
+</div>
+<a id="ac43995cb93eeea4eaf12ae823208ffc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43995cb93eeea4eaf12ae823208ffc6">&#9670;&nbsp;</a></span>multithreaded_tcp_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int multithreaded_tcp_send </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>opaque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multithreaded function to asynchronously send all TCP packets for one socket context on the same thread. </p>
+<p>This prevents garbled TCP messages from being sent since large TCP sends are not atomic.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opaque</td><td>Pointer to associated socket context</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 
 </div>
 </div>
