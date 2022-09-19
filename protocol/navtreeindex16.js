@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"wasapicapture_8h.html":[14,0,2,0,8],
 "wasapicapture_8h.html#a9329f8d868f57c865444a80df32c9943":[14,0,2,0,8,1],
 "wasapicapture_8h_source.html":[14,0,2,0,8],
 "weston__input__driver_8c.html":[14,0,2,7,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "whist_8h.html#adc0ff2e968cb733b9d5b1370fec443f5":[14,0,2,2,7,14],
 "whist_8h.html#adc70ab64077706c3578a5d50fb4820d5":[14,0,2,2,7,117],
 "whist_8h.html#ae2bcbf05a79de1a8a42492a8e5169c22":[14,0,2,2,7,46],
-"whist_8h.html#ae5f9a5f50ab08d080df02684e783ab66":[14,0,2,2,7,86],
-"whist_8h.html#ae8e4c0175929d141a35aca839fea9693":[14,0,2,2,7,20]
+"whist_8h.html#ae5f9a5f50ab08d080df02684e783ab66":[14,0,2,2,7,86]
 };

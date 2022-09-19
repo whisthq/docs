@@ -1,5 +1,6 @@
 var structVirtualFrontendContext =
 [
+    [ "dimensions_set", "structVirtualFrontendContext.html#ac0201bb0ce5717d23fa7adeb4053c788", null ],
     [ "dpi", "structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f", null ],
     [ "height", "structVirtualFrontendContext.html#a5771119a7347add61da98aa091eaf98f", null ],
     [ "key_state", "structVirtualFrontendContext.html#acb5aedd86c6db4564a6c28624d141a52", null ],

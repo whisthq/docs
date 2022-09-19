@@ -18,7 +18,7 @@ var impl_8c =
     [ "virtual_get_window_dpi", "impl_8c.html#a417d9b5c30d2ac7d39a859b9b77a9bd8", null ],
     [ "virtual_get_window_pixel_size", "impl_8c.html#a320d536a4528f64cfedf08cb94782e1d", null ],
     [ "virtual_get_window_virtual_size", "impl_8c.html#a3bca7fa710f9f3a34ba4a813f787b8ba", null ],
-    [ "virtual_init", "impl_8c.html#a26b1a4b2057d7e97aa7946907ed8c761", null ],
+    [ "virtual_init", "impl_8c.html#a104125310bc456655ebe9d4164ec0b12", null ],
     [ "virtual_interrupt", "impl_8c.html#a21fdc3c4c0f48b0d363d3411edd18cd4", null ],
     [ "virtual_is_any_window_visible", "impl_8c.html#a17fa4939b4b2172f58cc9d42abfe2a11", null ],
     [ "virtual_open_audio", "impl_8c.html#a17634607cbf37432d7e46ce1ee540073", null ],

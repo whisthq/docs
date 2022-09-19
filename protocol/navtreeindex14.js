@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"structVirtualInterface.html#a120fb93cbc63eaf769b1f0526629e08b":[13,0,121,13],
 "structVirtualInterface.html#a29dd31774ba645d1d1ba97df5cd46da6":[13,0,121,25],
 "structVirtualInterface.html#a41b17f5214d3c5dd36f98190ed9e9dd0":[13,0,121,8],
 "structVirtualInterface.html#a4951d41f3670c050cc8036b80646a32a":[13,0,121,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "structWhistWindow.html#a1050da9f358ea7e630e68babe14edc89":[13,0,149,7],
 "structWhistWindow.html#a50499c2b085fd212662787a3ef8f412e":[13,0,149,6],
 "structWhistWindow.html#a51c41c1309803f471e92ac28e544ef5e":[13,0,149,1],
-"structWhistWindow.html#a56ac4280251adb6c9347baeeb59b6513":[13,0,149,8],
-"structWhistWindow.html#a5eeb32d49ab1899ccc47902930d7c436":[13,0,149,5]
+"structWhistWindow.html#a56ac4280251adb6c9347baeeb59b6513":[13,0,149,8]
 };
