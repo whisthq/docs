@@ -31,7 +31,6 @@ var impl_8c =
     [ "virtual_resize_window", "impl_8c.html#a082851b4781b4401aa89a7565c618c84", null ],
     [ "virtual_restore_window", "impl_8c.html#a087cbfd79a7c89486680c1576a270805", null ],
     [ "virtual_set_cursor", "impl_8c.html#af73d8ec34537d30a51a96c4301a0c199", null ],
-    [ "virtual_set_title", "impl_8c.html#a33642626012bb52a6acd5158f2d4ba9f", null ],
     [ "virtual_set_titlebar_color", "impl_8c.html#a5c87db2f7196833169a10189e51aac6c", null ],
     [ "virtual_set_window_fullscreen", "impl_8c.html#ad43ee803dd704ddecae9641c0aadf9bf", null ],
     [ "virtual_update_video", "impl_8c.html#a97a0fd61087938993b1d863260704f67", null ],

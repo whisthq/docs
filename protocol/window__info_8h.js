@@ -1,12 +1,10 @@
 var window__info_8h =
 [
-    [ "WINDOW_NAME_MAXLEN", "window__info_8h.html#a97052ef1526c9d27ad6d58b7d8d92fc0", null ],
     [ "bring_window_to_top", "window__info_8h.html#a79699ba271f4a3d2372f64a348a3048c", null ],
     [ "close_window", "window__info_8h.html#a92172f4730304b6eb8eb7931d5197413", null ],
     [ "destroy_window_info_getter", "window__info_8h.html#aeb2edfe495c114f66af1adeeb413f2c0", null ],
     [ "fullscreen_window", "window__info_8h.html#ab54d2cc9b2d2809b37a20fed484ec0af", null ],
     [ "get_active_window", "window__info_8h.html#a092a69e23e099fac013c1b7510d9aeea", null ],
-    [ "get_focused_window_name", "window__info_8h.html#a03ff5688ba3a77c405bd696b923f9d2d", null ],
     [ "get_valid_windows", "window__info_8h.html#ac471d2bc4c3c671c3b1fc2aefe2f1126", null ],
     [ "get_window_attributes", "window__info_8h.html#afafbb5b857288ed54c8b274af2351c3d", null ],
     [ "init_window_info_getter", "window__info_8h.html#a9173c83ed7a14a3a61b50a2cae574ef7", null ],

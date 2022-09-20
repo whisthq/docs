@@ -149,8 +149,6 @@ var whist_8h =
       [ "MESSAGE_TCP_PONG", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a6389a3270b7b9331d3032b9c2ecd8681", null ],
       [ "SMESSAGE_INIT_REPLY", "whist_8h.html#a7c0601110e75dab446fcca0c02609353ab4f8f956523110a9e3b04ed0f11cb8a4", null ],
       [ "SMESSAGE_CLIPBOARD", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a86b5ce811becb248c9572438105db9aa", null ],
-      [ "SMESSAGE_WINDOW_TITLE", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a350f6ac715ca8fba37c2967385fd1594", null ],
-      [ "SMESSAGE_OPEN_URI", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a8aa255189138c9a25497f6e544c8f645", null ],
       [ "SMESSAGE_FULLSCREEN", "whist_8h.html#a7c0601110e75dab446fcca0c02609353a8bee600907e82ec0da4091d1c1a5abe5", null ],
       [ "SMESSAGE_FILE_METADATA", "whist_8h.html#a7c0601110e75dab446fcca0c02609353ab6f26910ff293a00e1a9ece3de4d5e90", null ],
       [ "SMESSAGE_FILE_DATA", "whist_8h.html#a7c0601110e75dab446fcca0c02609353af1edac653bbbf90d0ed4e295553b8363", null ],

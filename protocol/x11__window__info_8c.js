@@ -9,7 +9,6 @@ var x11__window__info_8c =
     [ "destroy_window_info_getter", "x11__window__info_8c.html#aeb2edfe495c114f66af1adeeb413f2c0", null ],
     [ "fullscreen_window", "x11__window__info_8c.html#ab54d2cc9b2d2809b37a20fed484ec0af", null ],
     [ "get_active_window", "x11__window__info_8c.html#a092a69e23e099fac013c1b7510d9aeea", null ],
-    [ "get_focused_window_name", "x11__window__info_8c.html#a03ff5688ba3a77c405bd696b923f9d2d", null ],
     [ "get_valid_windows", "x11__window__info_8c.html#af29501b57aebb07eb540ddc886054be9", null ],
     [ "get_valid_windows_helper", "x11__window__info_8c.html#aed31f24aa6e5481c4a63a69e2df1cf58", null ],
     [ "get_window_attributes", "x11__window__info_8c.html#afafbb5b857288ed54c8b274af2351c3d", null ],

@@ -3,7 +3,6 @@ var structWhistServerState =
     [ "client", "structWhistServerState.html#a4f12eba5d91bcc3a1605c5b5bffe20ee", null ],
     [ "client_dpi", "structWhistServerState.html#a86af9f2800e3ad1e26873bdab29eb05b", null ],
     [ "client_height", "structWhistServerState.html#a4b720a651b31181944b4c476c00e3b1e", null ],
-    [ "client_joined_after_window_name_broadcast", "structWhistServerState.html#ad10680f9725871356347cbdf417341ed", null ],
     [ "client_os", "structWhistServerState.html#af6e7d9310ca2ab554df0bcbcd11b532b", null ],
     [ "client_width", "structWhistServerState.html#acb5ead1b9021926c2c312b61b57b97fa", null ],
     [ "config", "structWhistServerState.html#ad12060ebe2eba5db499018f391a385e0", null ],
