@@ -18,10 +18,10 @@ var tcp_8c =
       [ "TCP_PONG", "tcp_8c.html#a2bd49552cbb68048f6e89df2ec3cf12baed29c730c6815b0d33f7f13fc4516368", null ],
       [ "TCP_WHIST_PACKET", "tcp_8c.html#a2bd49552cbb68048f6e89df2ec3cf12ba3850c403f3507bd5c17af3e55bb6593d", null ]
     ] ],
-    [ "create_tcp_client_context", "tcp_8c.html#adcb0a40a65b2680c94a628a3acb7f8e6", null ],
+    [ "create_tcp_client_context", "tcp_8c.html#a3d6d3f2e35a4ddecd52d9046d09aeef5", null ],
     [ "create_tcp_listen_socket", "tcp_8c.html#a2ada8e52905489bdceb582f4cc8a86f5", null ],
     [ "create_tcp_server_context", "tcp_8c.html#a06226fd32ee04683f517ef5a2750dc25", null ],
-    [ "create_tcp_socket_context", "tcp_8c.html#abc320ee9c1c48f1764c5eff0b90f565f", null ],
+    [ "create_tcp_socket_context", "tcp_8c.html#ac3f709232f129015d20646adabfc95a9", null ],
     [ "multithreaded_tcp_send", "tcp_8c.html#ac43995cb93eeea4eaf12ae823208ffc6", null ],
     [ "tcp_send_constructed_packet", "tcp_8c.html#a30b23798b36b0fadb93d5be69327ce64", null ],
     [ "port_mappings", "tcp_8c.html#aabcebffcda90f6aab9a64d4fb9d75d5a", null ]

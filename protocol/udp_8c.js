@@ -46,10 +46,10 @@ var udp_8c =
       [ "UDP_CONNECTION_ATTEMPT", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aaa441979ecd6d4b97d1d0a6e8139325db", null ],
       [ "UDP_CONNECTION_CONFIRMATION", "udp_8c.html#af026caee3b8fbd9791a41cd1af78046aa5cb78e7d73c46eaae227c5a39c184c5a", null ]
     ] ],
-    [ "create_udp_client_context", "udp_8c.html#affe81b4f24423445ea0cb2d330506d39", null ],
+    [ "create_udp_client_context", "udp_8c.html#add15c65efa5d7b5a81cd4ad93212986d", null ],
     [ "create_udp_listen_socket", "udp_8c.html#ab227c787d07a796738fef8cc10a1a0ad", null ],
     [ "create_udp_server_context", "udp_8c.html#a01047961dc8cff8d46c7a951bfbbd644", null ],
-    [ "create_udp_socket_context", "udp_8c.html#a9f44d3016a420229546215957d9bca7f", null ],
+    [ "create_udp_socket_context", "udp_8c.html#ae848502624fef0a2af394dc0cb106425", null ],
     [ "udp_get_client_input_timestamp", "udp_8c.html#a6ae4764e36a830e303b387952859739f", null ],
     [ "udp_get_network_settings", "udp_8c.html#a3b06fee55b43d9c3a1ed2c4f5c2b65b2", null ],
     [ "udp_get_num_indices", "udp_8c.html#aa5673dcb479fc273bc4b03c74929028f", null ],

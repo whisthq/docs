@@ -211,12 +211,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a01047961dc8cff8d46c7a951bfbbd644"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a01047961dc8cff8d46c7a951bfbbd644">create_udp_server_context</a> (<a class="el" href="structUDPContext.html">UDPContext</a> *context, int port, int connection_timeout_ms)</td></tr>
 <tr class="memdesc:a01047961dc8cff8d46c7a951bfbbd644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a UDP Server Context, which will wait connection_timeout_ms for a client to connect.  <a href="udp_8c.html#a01047961dc8cff8d46c7a951bfbbd644">More...</a><br /></td></tr>
 <tr class="separator:a01047961dc8cff8d46c7a951bfbbd644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affe81b4f24423445ea0cb2d330506d39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#affe81b4f24423445ea0cb2d330506d39">create_udp_client_context</a> (<a class="el" href="structUDPContext.html">UDPContext</a> *context, char *destination, int port, int connection_timeout_ms)</td></tr>
-<tr class="memdesc:affe81b4f24423445ea0cb2d330506d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a UDP <a class="el" href="structClient.html">Client</a> Context, which will try to connect for connection_timeout_ms.  <a href="udp_8c.html#affe81b4f24423445ea0cb2d330506d39">More...</a><br /></td></tr>
-<tr class="separator:affe81b4f24423445ea0cb2d330506d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f44d3016a420229546215957d9bca7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a9f44d3016a420229546215957d9bca7f">create_udp_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *network_context, char *destination, int port, int recvfrom_timeout_ms, int connection_timeout_ms, bool <a class="el" href="client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *binary_aes_private_key)</td></tr>
-<tr class="memdesc:a9f44d3016a420229546215957d9bca7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a udp network context and initializes a UDP connection between a server and a client.  <a href="udp_8c.html#a9f44d3016a420229546215957d9bca7f">More...</a><br /></td></tr>
-<tr class="separator:a9f44d3016a420229546215957d9bca7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add15c65efa5d7b5a81cd4ad93212986d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#add15c65efa5d7b5a81cd4ad93212986d">create_udp_client_context</a> (<a class="el" href="structUDPContext.html">UDPContext</a> *context, const char *destination, int port, int connection_timeout_ms)</td></tr>
+<tr class="memdesc:add15c65efa5d7b5a81cd4ad93212986d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a UDP <a class="el" href="structClient.html">Client</a> Context, which will try to connect for connection_timeout_ms.  <a href="udp_8c.html#add15c65efa5d7b5a81cd4ad93212986d">More...</a><br /></td></tr>
+<tr class="separator:add15c65efa5d7b5a81cd4ad93212986d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae848502624fef0a2af394dc0cb106425"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ae848502624fef0a2af394dc0cb106425">create_udp_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *network_context, const char *destination, int port, int recvfrom_timeout_ms, int connection_timeout_ms, bool <a class="el" href="client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, const char *binary_aes_private_key)</td></tr>
+<tr class="memdesc:ae848502624fef0a2af394dc0cb106425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a udp network context and initializes a UDP connection between a server and a client.  <a href="udp_8c.html#ae848502624fef0a2af394dc0cb106425">More...</a><br /></td></tr>
+<tr class="separator:ae848502624fef0a2af394dc0cb106425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed5f450b0434a42cec5d03a819d29eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aed5f450b0434a42cec5d03a819d29eb3">udp_register_nack_buffer</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *socket_context, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> type, int max_payload_size, int num_buffers)</td></tr>
 <tr class="memdesc:aed5f450b0434a42cec5d03a819d29eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a nack buffer, so that future nacks can be handled.  <a href="udp_8c.html#aed5f450b0434a42cec5d03a819d29eb3">More...</a><br /></td></tr>
 <tr class="separator:aed5f450b0434a42cec5d03a819d29eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -702,8 +702,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="affe81b4f24423445ea0cb2d330506d39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affe81b4f24423445ea0cb2d330506d39">&#9670;&nbsp;</a></span>create_udp_client_context()</h2>
+<a id="add15c65efa5d7b5a81cd4ad93212986d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add15c65efa5d7b5a81cd4ad93212986d">&#9670;&nbsp;</a></span>create_udp_client_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,7 +717,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>destination</em>, </td>
         </tr>
         <tr>
@@ -846,8 +846,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9f44d3016a420229546215957d9bca7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f44d3016a420229546215957d9bca7f">&#9670;&nbsp;</a></span>create_udp_socket_context()</h2>
+<a id="ae848502624fef0a2af394dc0cb106425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae848502624fef0a2af394dc0cb106425">&#9670;&nbsp;</a></span>create_udp_socket_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -861,7 +861,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>destination</em>, </td>
         </tr>
         <tr>
@@ -891,7 +891,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>binary_aes_private_key</em>&#160;</td>
         </tr>
         <tr>

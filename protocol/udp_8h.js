@@ -6,7 +6,7 @@ var udp_8h =
     [ "MAX_PACKET_SEGMENT_SIZE", "udp_8h.html#a9b54f844079db47f8762b331092ab9b8", null ],
     [ "UDP_NETWORK_THROTTLER_BUCKET_MS", "udp_8h.html#a5222d03fdb5004f2ebc781d1041f0e04", null ],
     [ "create_udp_listen_socket", "udp_8h.html#ab227c787d07a796738fef8cc10a1a0ad", null ],
-    [ "create_udp_socket_context", "udp_8h.html#a497472418eb2d897f80004378d81eb17", null ],
+    [ "create_udp_socket_context", "udp_8h.html#ae16ca45d3f04dd9c776129b6f5f9a726", null ],
     [ "udp_get_client_input_timestamp", "udp_8h.html#a6ae4764e36a830e303b387952859739f", null ],
     [ "udp_get_network_settings", "udp_8h.html#aaf696db0bbfc74d20b2a3ba0480b4c01", null ],
     [ "udp_get_num_indices", "udp_8h.html#ad23da60df4866703cdc09be5bd969ba1", null ],

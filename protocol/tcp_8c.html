@@ -149,18 +149,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a06226fd32ee04683f517ef5a2750dc25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a06226fd32ee04683f517ef5a2750dc25">create_tcp_server_context</a> (<a class="el" href="structTCPContext.html">TCPContext</a> *context, int port, int connection_timeout_ms)</td></tr>
 <tr class="memdesc:a06226fd32ee04683f517ef5a2750dc25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a TCP Server Context, which will wait connection_timeout_ms for a client to connect.  <a href="tcp_8c.html#a06226fd32ee04683f517ef5a2750dc25">More...</a><br /></td></tr>
 <tr class="separator:a06226fd32ee04683f517ef5a2750dc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcb0a40a65b2680c94a628a3acb7f8e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#adcb0a40a65b2680c94a628a3acb7f8e6">create_tcp_client_context</a> (<a class="el" href="structTCPContext.html">TCPContext</a> *context, char *destination, int port, int connection_timeout_ms)</td></tr>
-<tr class="memdesc:adcb0a40a65b2680c94a628a3acb7f8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a TCP <a class="el" href="structClient.html">Client</a> Context, which will try to connect for connection_timeout_ms.  <a href="tcp_8c.html#adcb0a40a65b2680c94a628a3acb7f8e6">More...</a><br /></td></tr>
-<tr class="separator:adcb0a40a65b2680c94a628a3acb7f8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6d3f2e35a4ddecd52d9046d09aeef5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a3d6d3f2e35a4ddecd52d9046d09aeef5">create_tcp_client_context</a> (<a class="el" href="structTCPContext.html">TCPContext</a> *context, const char *destination, int port, int connection_timeout_ms)</td></tr>
+<tr class="memdesc:a3d6d3f2e35a4ddecd52d9046d09aeef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a TCP <a class="el" href="structClient.html">Client</a> Context, which will try to connect for connection_timeout_ms.  <a href="tcp_8c.html#a3d6d3f2e35a4ddecd52d9046d09aeef5">More...</a><br /></td></tr>
+<tr class="separator:a3d6d3f2e35a4ddecd52d9046d09aeef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b23798b36b0fadb93d5be69327ce64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a30b23798b36b0fadb93d5be69327ce64">tcp_send_constructed_packet</a> (<a class="el" href="structTCPContext.html">TCPContext</a> *context, <a class="el" href="structTCPPacket.html">TCPPacket</a> *packet)</td></tr>
 <tr class="memdesc:a30b23798b36b0fadb93d5be69327ce64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a fully constructed <a class="el" href="structWhistPacket.html" title="Packet of data to be sent over a SocketContextData.">WhistPacket</a>.  <a href="tcp_8c.html#a30b23798b36b0fadb93d5be69327ce64">More...</a><br /></td></tr>
 <tr class="separator:a30b23798b36b0fadb93d5be69327ce64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac43995cb93eeea4eaf12ae823208ffc6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ac43995cb93eeea4eaf12ae823208ffc6">multithreaded_tcp_send</a> (void *opaque)</td></tr>
 <tr class="memdesc:ac43995cb93eeea4eaf12ae823208ffc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multithreaded function to asynchronously send all TCP packets for one socket context on the same thread.  <a href="tcp_8c.html#ac43995cb93eeea4eaf12ae823208ffc6">More...</a><br /></td></tr>
 <tr class="separator:ac43995cb93eeea4eaf12ae823208ffc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc320ee9c1c48f1764c5eff0b90f565f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#abc320ee9c1c48f1764c5eff0b90f565f">create_tcp_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *network_context, char *destination, int port, int recvfrom_timeout_ms, int connection_timeout_ms, bool <a class="el" href="client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, char *binary_aes_private_key)</td></tr>
-<tr class="memdesc:abc320ee9c1c48f1764c5eff0b90f565f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tcp network context and initializes a TCP connection between a server and a client.  <a href="tcp_8c.html#abc320ee9c1c48f1764c5eff0b90f565f">More...</a><br /></td></tr>
-<tr class="separator:abc320ee9c1c48f1764c5eff0b90f565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f709232f129015d20646adabfc95a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#ac3f709232f129015d20646adabfc95a9">create_tcp_socket_context</a> (<a class="el" href="structSocketContext.html">SocketContext</a> *network_context, const char *destination, int port, int recvfrom_timeout_ms, int connection_timeout_ms, bool <a class="el" href="client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66">using_stun</a>, const char *binary_aes_private_key)</td></tr>
+<tr class="memdesc:ac3f709232f129015d20646adabfc95a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tcp network context and initializes a TCP connection between a server and a client.  <a href="tcp_8c.html#ac3f709232f129015d20646adabfc95a9">More...</a><br /></td></tr>
+<tr class="separator:ac3f709232f129015d20646adabfc95a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ada8e52905489bdceb582f4cc8a86f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp_8c.html#a2ada8e52905489bdceb582f4cc8a86f5">create_tcp_listen_socket</a> (<a class="el" href="whist_2network_2network_8h.html#aff55fe551a9992a54ec54621c524d0a4">SOCKET</a> *sock, int port, int timeout_ms)</td></tr>
 <tr class="memdesc:a2ada8e52905489bdceb582f4cc8a86f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tcp listen socket, that can be used in <a class="el" href="structSocketContext.html" title="Interface describing the available functions and socket context of a network protocol.">SocketContext</a>.  <a href="tcp_8c.html#a2ada8e52905489bdceb582f4cc8a86f5">More...</a><br /></td></tr>
 <tr class="separator:a2ada8e52905489bdceb582f4cc8a86f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,8 +323,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="adcb0a40a65b2680c94a628a3acb7f8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcb0a40a65b2680c94a628a3acb7f8e6">&#9670;&nbsp;</a></span>create_tcp_client_context()</h2>
+<a id="a3d6d3f2e35a4ddecd52d9046d09aeef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6d3f2e35a4ddecd52d9046d09aeef5">&#9670;&nbsp;</a></span>create_tcp_client_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +338,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>destination</em>, </td>
         </tr>
         <tr>
@@ -467,8 +467,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abc320ee9c1c48f1764c5eff0b90f565f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc320ee9c1c48f1764c5eff0b90f565f">&#9670;&nbsp;</a></span>create_tcp_socket_context()</h2>
+<a id="ac3f709232f129015d20646adabfc95a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3f709232f129015d20646adabfc95a9">&#9670;&nbsp;</a></span>create_tcp_socket_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -482,7 +482,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>destination</em>, </td>
         </tr>
         <tr>
@@ -512,7 +512,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>binary_aes_private_key</em>&#160;</td>
         </tr>
         <tr>
