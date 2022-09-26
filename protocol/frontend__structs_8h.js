@@ -26,6 +26,7 @@ var frontend__structs_8h =
     [ "FrontendResizeEvent", "frontend__structs_8h.html#a6c0a052d083a70ec45b7dbe083ea9375", null ],
     [ "FrontendStartupParameterEvent", "frontend__structs_8h.html#a7c26f1fae7fa50b2905dcc6d0ebe376c", null ],
     [ "FrontendVisibilityEvent", "frontend__structs_8h.html#ac124b80f5256981c2f1cdc2d7c701213", null ],
+    [ "WhistError", "frontend__structs_8h.html#ab9870274cf84d671f8cb408464609823", null ],
     [ "WhistFrontend", "frontend__structs_8h.html#ac4039dfcf74e38247ed9e8ab1dbed25f", null ],
     [ "WhistFrontendEvent", "frontend__structs_8h.html#a746d5495832038021a0930072cbbb2e3", null ],
     [ "FrontendEventType", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddf", [
@@ -45,5 +46,9 @@ var frontend__structs_8h =
       [ "FRONTEND_EVENT_STARTUP_PARAMETER", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa2276ebb143c4f47d9ae57cedfbdd4fea", null ],
       [ "FRONTEND_EVENT_QUIT", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaa1023541c5b670566f0ae667deb73d43", null ],
       [ "FRONTEND_EVENT_INTERRUPT", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa676739a05c4e0a1af9cac75dc2e12ec3", null ]
+    ] ],
+    [ "WhistError", "frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41ef", [
+      [ "WHIST_DISCONNECT_ERROR", "frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41efaa295bac5aa56e8a5f4a2c4511593838c", null ],
+      [ "WHIST_DIMENSION_ERROR", "frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41efabe07d5a0024c4eff132f0d630c549759", null ]
     ] ]
 ];

@@ -126,6 +126,8 @@ Data Structures</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac4039dfcf74e38247ed9e8ab1dbed25f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structWhistFrontend.html">WhistFrontend</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend__structs_8h.html#ac4039dfcf74e38247ed9e8ab1dbed25f">WhistFrontend</a></td></tr>
 <tr class="separator:ac4039dfcf74e38247ed9e8ab1dbed25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9870274cf84d671f8cb408464609823"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41ef">WhistError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend__structs_8h.html#ab9870274cf84d671f8cb408464609823">WhistError</a></td></tr>
+<tr class="separator:ab9870274cf84d671f8cb408464609823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0bc02164db466f196c1d9e70f3056af"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddf">FrontendEventType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend__structs_8h.html#ac0bc02164db466f196c1d9e70f3056af">FrontendEventType</a></td></tr>
 <tr class="separator:ac0bc02164db466f196c1d9e70f3056af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63afb72a02fe87c19046dfc8adaad408"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFrontendKeypressEvent.html">FrontendKeypressEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend__structs_8h.html#a63afb72a02fe87c19046dfc8adaad408">FrontendKeypressEvent</a></td></tr>
@@ -157,6 +159,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a7f47c09b46aa108247e07d61fd1b41ef"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41ef">WhistError</a> { <a class="el" href="frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41efaa295bac5aa56e8a5f4a2c4511593838c">WHIST_DISCONNECT_ERROR</a>, 
+<a class="el" href="frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41efabe07d5a0024c4eff132f0d630c549759">WHIST_DIMENSION_ERROR</a>
+ }</td></tr>
+<tr class="separator:a7f47c09b46aa108247e07d61fd1b41ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a153431f5c5d2a42e6b50bc64337ddf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddf">FrontendEventType</a> { <br />
 &#160;&#160;<a class="el" href="frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfae745405ebd1ecf50424c92c52c124c65">FRONTEND_EVENT_UNHANDLED</a> = 0, 
 <a class="el" href="frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa0574353d68b2199efa69268039cb8646">FRONTEND_EVENT_RESIZE</a>, 
@@ -364,6 +370,20 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="ab9870274cf84d671f8cb408464609823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9870274cf84d671f8cb408464609823">&#9670;&nbsp;</a></span>WhistError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41ef">WhistError</a> <a class="el" href="frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41ef">WhistError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac4039dfcf74e38247ed9e8ab1dbed25f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4039dfcf74e38247ed9e8ab1dbed25f">&#9670;&nbsp;</a></span>WhistFrontend</h2>
 
@@ -445,6 +465,24 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a8a153431f5c5d2a42e6b50bc64337ddfa676739a05c4e0a1af9cac75dc2e12ec3"></a>FRONTEND_EVENT_INTERRUPT&#160;</td><td class="fielddoc"><p>Interrupt event. </p>
 <p>Used to interrupt the main thread while it is waiting for events when there is some external work for it to do. This is triggered by calling the <a class="el" href="frontend_8c.html#a98eca1faaf4b82714c64e89c2d12f271">whist_frontend_interrupt()</a> function from another thread. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7f47c09b46aa108247e07d61fd1b41ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f47c09b46aa108247e07d61fd1b41ef">&#9670;&nbsp;</a></span>WhistError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41ef">WhistError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7f47c09b46aa108247e07d61fd1b41efaa295bac5aa56e8a5f4a2c4511593838c"></a>WHIST_DISCONNECT_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7f47c09b46aa108247e07d61fd1b41efabe07d5a0024c4eff132f0d630c549759"></a>WHIST_DIMENSION_ERROR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

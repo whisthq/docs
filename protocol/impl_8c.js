@@ -30,6 +30,7 @@ var impl_8c =
     [ "virtual_render", "impl_8c.html#a02b4e6541d1020ef044fa395c21f325b", null ],
     [ "virtual_resize_window", "impl_8c.html#a082851b4781b4401aa89a7565c618c84", null ],
     [ "virtual_restore_window", "impl_8c.html#a087cbfd79a7c89486680c1576a270805", null ],
+    [ "virtual_send_error_notification", "impl_8c.html#af284570fefcca111cbb3cbfbbb28c95f", null ],
     [ "virtual_set_cursor", "impl_8c.html#af73d8ec34537d30a51a96c4301a0c199", null ],
     [ "virtual_set_titlebar_color", "impl_8c.html#a5c87db2f7196833169a10189e51aac6c", null ],
     [ "virtual_set_window_fullscreen", "impl_8c.html#ad43ee803dd704ddecae9641c0aadf9bf", null ],
@@ -43,5 +44,6 @@ var impl_8c =
     [ "on_file_download_start", "impl_8c.html#a8dafd7f05c6518f44f4291b2ddb082d0", null ],
     [ "on_file_download_update", "impl_8c.html#a7b2f4753a286417e68546e4cdfe28afe", null ],
     [ "on_file_upload", "impl_8c.html#a30d9b3af830eaed4169151a59b45b368", null ],
-    [ "on_notification_callback_ptr", "impl_8c.html#ac572fc9c84b034d71b8c064881c5dab2", null ]
+    [ "on_notification_callback_ptr", "impl_8c.html#ac572fc9c84b034d71b8c064881c5dab2", null ],
+    [ "on_whist_error", "impl_8c.html#a3522909e1cea87067ff04307e5363741", null ]
 ];

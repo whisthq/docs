@@ -27,6 +27,7 @@ var structVirtualInterface =
     [ "set_on_file_download_update_callback", "structVirtualInterface.html#af35c39c612307f59dd61adef8dd66bed", null ],
     [ "set_on_file_upload_callback", "structVirtualInterface.html#a29dd31774ba645d1d1ba97df5cd46da6", null ],
     [ "set_on_notification_callback", "structVirtualInterface.html#ac6b96b4fdc0c30512ca806164e9369d9", null ],
+    [ "set_on_whist_error_callback", "structVirtualInterface.html#a586be6bac66c44b1222f275905046d78", null ],
     [ "set_video_frame_callback", "structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11", null ],
     [ "set_video_playing", "structVirtualInterface.html#a702f18e35120ba47ec98e755e12c1e5e", null ],
     [ "utils", "structVirtualInterface.html#a600aea9aa13dcbd7842de79c1c1d1edd", null ],
