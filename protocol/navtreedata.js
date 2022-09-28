@@ -190,9 +190,9 @@ var NAVTREEINDEX =
 "structLinkedList.html",
 "structRingBuffer.html#a0260e103fd1adae06fed275672381b86",
 "structVirtualInterface.html",
-"structWhistWindow.html#a51c41c1309803f471e92ac28e544ef5e",
-"virtual_8h_source.html",
-"whist_8h.html#ae8e4c0175929d141a35aca839fea9693"
+"structWhistWindow.html#a50499c2b085fd212662787a3ef8f412e",
+"virtual_8h.html#aed65fc17d8499b9d0db15b8df3c28346",
+"whist_8h.html#ae5f9a5f50ab08d080df02684e783ab66"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

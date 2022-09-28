@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"virtual_8h.html#aed65fc17d8499b9d0db15b8df3c28346":[14,0,0,0,1,4,0],
 "virtual_8h_source.html":[14,0,0,0,1,4],
 "wasapicapture_8c.html":[14,0,2,0,7],
 "wasapicapture_8h.html":[14,0,2,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "whist_8h.html#ad823e92fd0b4fb00da638572b36e8774":[14,0,2,2,7,75],
 "whist_8h.html#adc0ff2e968cb733b9d5b1370fec443f5":[14,0,2,2,7,14],
 "whist_8h.html#adc70ab64077706c3578a5d50fb4820d5":[14,0,2,2,7,117],
-"whist_8h.html#ae2bcbf05a79de1a8a42492a8e5169c22":[14,0,2,2,7,46],
-"whist_8h.html#ae5f9a5f50ab08d080df02684e783ab66":[14,0,2,2,7,86]
+"whist_8h.html#ae2bcbf05a79de1a8a42492a8e5169c22":[14,0,2,2,7,46]
 };

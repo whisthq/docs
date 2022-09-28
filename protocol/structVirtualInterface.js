@@ -9,6 +9,7 @@ var structVirtualInterface =
     [ "file", "structVirtualInterface.html#a93889590ac1b950e64bf4d3750dccdbf", null ],
     [ "free", "structVirtualInterface.html#ac2108d41fc161d1c11f2f55d23422789", null ],
     [ "free_frame_ref", "structVirtualInterface.html#a41b17f5214d3c5dd36f98190ed9e9dd0", null ],
+    [ "freeze_all_windows", "structVirtualInterface.html#a1275205e4b1f1fd7dace1bb39d777190", null ],
     [ "get_frame_ref", "structVirtualInterface.html#af4d671eb0c7521535c4bab1a4118c58f", null ],
     [ "get_frame_ref_yuv_data", "structVirtualInterface.html#a790c7006e915a98cdcbb7f81322ac23a", null ],
     [ "get_handle_from_frame_ref", "structVirtualInterface.html#a4eed2b8fe2be418240a4cea9fe3e4dac", null ],
@@ -29,7 +30,7 @@ var structVirtualInterface =
     [ "set_on_notification_callback", "structVirtualInterface.html#ac6b96b4fdc0c30512ca806164e9369d9", null ],
     [ "set_on_whist_error_callback", "structVirtualInterface.html#a586be6bac66c44b1222f275905046d78", null ],
     [ "set_video_frame_callback", "structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11", null ],
-    [ "set_video_playing", "structVirtualInterface.html#a702f18e35120ba47ec98e755e12c1e5e", null ],
+    [ "set_video_spotlight", "structVirtualInterface.html#a9aea23f47770be5feeb9b82bdc8a0817", null ],
     [ "utils", "structVirtualInterface.html#a600aea9aa13dcbd7842de79c1c1d1edd", null ],
     [ "video", "structVirtualInterface.html#add5504ee93d39a22014ece8ff85090c0", null ]
 ];

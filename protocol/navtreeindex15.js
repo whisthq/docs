@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structWhistWindow.html#a50499c2b085fd212662787a3ef8f412e":[13,0,149,6],
 "structWhistWindow.html#a51c41c1309803f471e92ac28e544ef5e":[13,0,149,1],
 "structWhistWindow.html#a56ac4280251adb6c9347baeeb59b6513":[13,0,149,8],
 "structWhistWindow.html#a5eeb32d49ab1899ccc47902930d7c436":[13,0,149,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "virtual_8c.html":[14,0,0,0,1,3],
 "virtual_8c.html#ab3063ea5e4c4d68b559b79d974b76d52":[14,0,0,0,1,3,0],
 "virtual_8c.html#aed65fc17d8499b9d0db15b8df3c28346":[14,0,0,0,1,3,1],
-"virtual_8h.html":[14,0,0,0,1,4],
-"virtual_8h.html#aed65fc17d8499b9d0db15b8df3c28346":[14,0,0,0,1,4,0]
+"virtual_8h.html":[14,0,0,0,1,4]
 };

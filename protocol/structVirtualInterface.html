@@ -136,8 +136,11 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a99f0c7a6339fa3b6ceb308380f0417cd"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#ae05b4b8d9371a983b7252fc90ede4d11">set_video_frame_callback</a> )(int window_id, <br class="typebreak" />
 &#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="interface_8h.html#a65ce30db60c896cd1b3df2de341de3ac">VideoFrameCallback</a> cb)</td></tr>
 <tr class="separator:a99f0c7a6339fa3b6ceb308380f0417cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04b3fc01b9e167fce9f9aa87f75cc7a"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a702f18e35120ba47ec98e755e12c1e5e">set_video_playing</a> )(int window_id, bool playing)</td></tr>
-<tr class="separator:ab04b3fc01b9e167fce9f9aa87f75cc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2993400afd1b805ed7cb53a65b6484"><td class="memItemLeft" >&#160;&#160;&#160;unsigned int(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a1275205e4b1f1fd7dace1bb39d777190">freeze_all_windows</a> )(void)</td></tr>
+<tr class="separator:abf2993400afd1b805ed7cb53a65b6484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767386b9989362105c69723abae329a1"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structVirtualInterface.html#a9aea23f47770be5feeb9b82bdc8a0817">set_video_spotlight</a> )(int window_id, unsigned int <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;spotlight_id)</td></tr>
+<tr class="separator:a767386b9989362105c69723abae329a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add5504ee93d39a22014ece8ff85090c0"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVirtualInterface.html#add5504ee93d39a22014ece8ff85090c0">video</a></td></tr>
 <tr class="separator:add5504ee93d39a22014ece8ff85090c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0de2830bb9576d71578f3ea36738adf"><td class="memItemLeft" >struct {</td></tr>
@@ -292,6 +295,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* VirtualInterface::free_frame_ref) (void *frame_ref)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1275205e4b1f1fd7dace1bb39d777190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1275205e4b1f1fd7dace1bb39d777190">&#9670;&nbsp;</a></span>freeze_all_windows</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int(* VirtualInterface::freeze_all_windows) (void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -578,14 +595,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a702f18e35120ba47ec98e755e12c1e5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a702f18e35120ba47ec98e755e12c1e5e">&#9670;&nbsp;</a></span>set_video_playing</h2>
+<a id="a9aea23f47770be5feeb9b82bdc8a0817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aea23f47770be5feeb9b82bdc8a0817">&#9670;&nbsp;</a></span>set_video_spotlight</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* VirtualInterface::set_video_playing) (int window_id, bool playing)</td>
+          <td class="memname">void(* VirtualInterface::set_video_spotlight) (int window_id, unsigned int spotlight_id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
