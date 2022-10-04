@@ -2,7 +2,7 @@ var searchData=
 [
   ['aborting_5fptr_19',['aborting_ptr',['../structClipboardActivity.html#a9d9b48fa62bad0bbfb529e266453bf75',1,'ClipboardActivity']]],
   ['absolute_20',['absolute',['../structFrontendMouseMotionEvent.html#a99e910f3bfd008bb5969e61e9f6458c0',1,'FrontendMouseMotionEvent']]],
-  ['ack_21',['ack',['../structUDPContext.html#a462c0356a2e1df8937f2a7549936300c',1,'UDPContext::ack()'],['../structLTRFrame.html#a8f978d94f3a4f21b5319eb8acb9e393d',1,'LTRFrame::ack()']]],
+  ['ack_21',['ack',['../structLTRFrame.html#a8f978d94f3a4f21b5319eb8acb9e393d',1,'LTRFrame']]],
   ['ack_5frefresh_5fms_22',['ACK_REFRESH_MS',['../whist_8h.html#a407e78922a862311fd4f35eeef889630',1,'whist.h']]],
   ['action_23',['action',['../structLTRFrame.html#abe835e58f098ab62846cfcf01ed16ab2',1,'LTRFrame']]],
   ['activate_5fclient_24',['activate_client',['../client_8c.html#ad1dc7366b46921b0a4e053ffadbd51a1',1,'activate_client(Client *client):&#160;client.c'],['../client_8h.html#ad1dc7366b46921b0a4e053ffadbd51a1',1,'activate_client(Client *client):&#160;client.c']]],
@@ -19,7 +19,7 @@ var searchData=
   ['adjust_5ftimer_35',['adjust_timer',['../group__timers.html#ga36d3842866523095ef393c383b4fcb5b',1,'adjust_timer(WhistTimer *timer_opaque, int num_seconds):&#160;clock.c'],['../group__timers.html#ga36d3842866523095ef393c383b4fcb5b',1,'adjust_timer(WhistTimer *timer, int num_seconds):&#160;clock.c']]],
   ['aes_2ec_36',['aes.c',['../aes_8c.html',1,'']]],
   ['aes_2eh_37',['aes.h',['../aes_8h.html',1,'']]],
-  ['aes_5fmetadata_38',['aes_metadata',['../structTCPNetworkPacket.html#aabd8d785ec899bd039e4266514907948',1,'TCPNetworkPacket::aes_metadata()'],['../structUDPNetworkPacket.html#a135e1fa43afee52a831053abd60b3e3a',1,'UDPNetworkPacket::aes_metadata()']]],
+  ['aes_5fmetadata_38',['aes_metadata',['../structTCPNetworkPacket.html#aabd8d785ec899bd039e4266514907948',1,'TCPNetworkPacket']]],
   ['aesmetadata_39',['AESMetadata',['../structAESMetadata.html',1,'']]],
   ['aggregation_5ftype_40',['aggregation_type',['../structStatisticInfo.html#a42c51f6d59b7e204b6972657527d2bf1',1,'StatisticInfo']]],
   ['aggregationtype_41',['AggregationType',['../log__statistic_8c.html#a0271fcfc94579b48ed1dd87309d8e118',1,'log_statistic.c']]],

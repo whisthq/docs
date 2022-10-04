@@ -1,5 +1,23 @@
 var searchData=
 [
-  ['videoencodertype_5056',['VideoEncoderType',['../encode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562',1,'encode.h']]],
-  ['videoframetype_5057',['VideoFrameType',['../whist_2video_2video_8h.html#a3fc7f0fa0e803591461ebc389c333583',1,'video.h']]]
+  ['wccop_4904',['WccOp',['../network__algorithm_8h.html#a39ef8d2688f24968d0744d9bb7cea4c7',1,'network_algorithm.h']]],
+  ['whistclientmessagetype_4905',['WhistClientMessageType',['../whist_8h.html#a9461c07e2605c3d72eb6254b9ab1c128',1,'whist.h']]],
+  ['whistclipboardactiontype_4906',['WhistClipboardActionType',['../clipboard__synchronizer_8h.html#af53287f0252108707ccba06a4d50e569',1,'clipboard_synchronizer.h']]],
+  ['whistcursortype_4907',['WhistCursorType',['../cursor_8h.html#a04b87ebf9b925dbe68703667fee6cce5',1,'cursor.h']]],
+  ['whistdragstate_4908',['WhistDragState',['../events_8h.html#ab9f31af4ec25d97c4d008171f292f060',1,'events.h']]],
+  ['whisterror_4909',['WhistError',['../frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41ef',1,'frontend_structs.h']]],
+  ['whistexitcode_4910',['WhistExitCode',['../whist_8h.html#aef166b266f8d5b853ec64a90756fafb6',1,'whist.h']]],
+  ['whistfeature_4911',['WhistFeature',['../group__feature__flags.html#gabaccb37c4f94057ce1c1ee2abd34fb06',1,'features.h']]],
+  ['whistkeycode_4912',['WhistKeycode',['../events_8h.html#aad1832f9d718bfd4d4e414729ea4369b',1,'events.h']]],
+  ['whistkeymod_4913',['WhistKeymod',['../events_8h.html#aa4659d7ee57a984abbb88b497b5ca57f',1,'events.h']]],
+  ['whistmousebutton_4914',['WhistMouseButton',['../events_8h.html#afa47769b22f4e68bdbf79565f9852032',1,'events.h']]],
+  ['whistmousemode_4915',['WhistMouseMode',['../cursor_8h.html#a16e38bee28535fa71ec83c8fb5e3bfa4',1,'cursor.h']]],
+  ['whistmousewheelmomentumtype_4916',['WhistMouseWheelMomentumType',['../events_8h.html#a7df5b12dc65193d6bb632bc012c8dfda',1,'events.h']]],
+  ['whistmultigesturetype_4917',['WhistMultigestureType',['../events_8h.html#a54272dc64f4ff6adc5a16a4e76a67153',1,'events.h']]],
+  ['whistostype_4918',['WhistOSType',['../events_8h.html#a6e760c662b6b1560542cc151a2ac01b4',1,'events.h']]],
+  ['whistpackettype_4919',['WhistPacketType',['../whist_8h.html#abc95f4cc09d4297e52acd3113483a47d',1,'whist.h']]],
+  ['whistservermessagetype_4920',['WhistServerMessageType',['../whist_8h.html#a7c0601110e75dab446fcca0c02609353',1,'whist.h']]],
+  ['whiststatus_4921',['WhistStatus',['../group__error__codes.html#ga18cc8e20ea58aa56867b56542e89b04d',1,'error_codes.h']]],
+  ['whistthreadpriority_4922',['WhistThreadPriority',['../group__threading.html#ga1eedf1deef6e272cb639c0bc15a3e68f',1,'threads.h']]],
+  ['whisttosvalue_4923',['WhistTOSValue',['../whist_2network_2network_8h.html#a19538dc4b7d9fdf4b3a195bb3dd18a41',1,'network.h']]]
 ];

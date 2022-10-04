@@ -10,6 +10,5 @@ var dir_190dac40e16f649d163a778d134d4659 =
     [ "tcp.h", "tcp_8h.html", "tcp_8h" ],
     [ "throttle.c", "throttle_8c.html", "throttle_8c" ],
     [ "throttle.h", "throttle_8h.html", "throttle_8h" ],
-    [ "udp.c", "udp_8c.html", "udp_8c" ],
     [ "udp.h", "udp_8h.html", "udp_8h" ]
 ];
