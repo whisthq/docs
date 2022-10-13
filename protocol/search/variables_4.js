@@ -23,7 +23,7 @@ var searchData=
   ['destroying_4083',['destroying',['../structNetworkThrottleContext.html#af1394b5623dc1b94889bba028f636fe4',1,'NetworkThrottleContext::destroying()'],['../structQueueContext.html#abfae5fa5ea43c8950a30f606623d7b03',1,'QueueContext::destroying()']]],
   ['device_4084',['device',['../structAudioDevice.html#a36ab5c207f117d40abc59a159d2b97ba',1,'AudioDevice']]],
   ['device_5ftype_4085',['device_type',['../structInputDevice.html#a4fa00d68759f1577b838f2cf7c7107bc',1,'InputDevice::device_type()'],['../structHardwareDecodeType.html#aea728c1ce87c5a9dd58ba12173f21f55',1,'HardwareDecodeType::device_type()'],['../structVideoDecoder.html#af11d21440de75bfc467abbffbf4f89da',1,'VideoDecoder::device_type()'],['../structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643',1,'RegisteredResource::device_type()']]],
-  ['dimensions_4086',['dimensions',['../structWhistClientMessage.html#a50490171cd6175284158b2d11694977b',1,'WhistClientMessage']]],
+  ['dimensions_4086',['dimensions',['../structWhistClientMessage.html#a68a8920f3d6ea40527bbc7406dd79b35',1,'WhistClientMessage']]],
   ['dimensions_5fset_4087',['dimensions_set',['../structVirtualFrontendContext.html#ac0201bb0ce5717d23fa7adeb4053c788',1,'VirtualFrontendContext']]],
   ['direction_4088',['direction',['../structTransferringFile.html#a5b12998468016243fbeffd1492966d61',1,'TransferringFile']]],
   ['disable_4089',['disable',['../features_8c.html#a8eb62ab1cf861738c1ecf3d75398ec18',1,'features.c']]],

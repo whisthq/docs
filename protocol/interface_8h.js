@@ -10,6 +10,7 @@ var interface_8h =
     [ "OnFileDownloadUpdate", "interface_8h.html#a8cffbb4db889b0f4818a05949b5e6adc", null ],
     [ "OnNotificationCallback", "interface_8h.html#a3ccea30ae6ddeb0d2e0a1f6133b480f0", null ],
     [ "OnWhistError", "interface_8h.html#ab4ed11e1cedf8cb745026e984578c79b", null ],
+    [ "OnWhistLog", "interface_8h.html#a2669fcdfd84e745938f7ca4467b09b25", null ],
     [ "VideoFrameCallback", "interface_8h.html#a65ce30db60c896cd1b3df2de341de3ac", null ],
     [ "VirtualInterface", "interface_8h.html#a91c7033405008bbc76ec5d76816889a6", null ],
     [ "ModifierKeyFlags", "interface_8h.html#a0ed2544df88eda418ae0519a619b9808", [

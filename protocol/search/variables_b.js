@@ -29,9 +29,8 @@ var searchData=
   ['lodepng_5fdefault_5fcompress_5fsettings_4342',['lodepng_default_compress_settings',['../lodepng_8c.html#a0b5cf190f94f8f11ed5c0abb3504ad86',1,'lodepng_default_compress_settings():&#160;lodepng.c'],['../lodepng_8h.html#a0b5cf190f94f8f11ed5c0abb3504ad86',1,'lodepng_default_compress_settings():&#160;lodepng.c']]],
   ['lodepng_5fdefault_5fdecompress_5fsettings_4343',['lodepng_default_decompress_settings',['../lodepng_8c.html#aab7a41a03154aa8d9ef65f2d434641b6',1,'lodepng_default_decompress_settings():&#160;lodepng.c'],['../lodepng_8h.html#aab7a41a03154aa8d9ef65f2d434641b6',1,'lodepng_default_decompress_settings():&#160;lodepng.c']]],
   ['lodepng_5fversion_5fstring_4344',['LODEPNG_VERSION_STRING',['../lodepng_8c.html#a8b5b5e358236bf8112bd6e58ae8da1b2',1,'LODEPNG_VERSION_STRING():&#160;lodepng.c'],['../lodepng_8h.html#a8b5b5e358236bf8112bd6e58ae8da1b2',1,'LODEPNG_VERSION_STRING():&#160;lodepng.c']]],
-  ['logging_4345',['logging',['../structVirtualInterface.html#a060ad3685a19e3295da15f66bf1db6f5',1,'VirtualInterface']]],
-  ['long_5foption_4346',['long_option',['../structWhistCommandLineOption.html#a9d175aa452650bfa0d907ce4fd5bfa0c',1,'WhistCommandLineOption']]],
-  ['long_5fterm_5fframe_5findex_4347',['long_term_frame_index',['../structLTRAction.html#a947968159b3e651d3719253e447c4fdd',1,'LTRAction']]],
-  ['ltr_5faction_4348',['ltr_action',['../structFFmpegEncoder.html#a8ddfc4f1e8777a5cccfdbab5e0d82332',1,'FFmpegEncoder::ltr_action()'],['../structNvidiaEncoder.html#a832b3dd35a47459f6383ea505aceb877',1,'NvidiaEncoder::ltr_action()']]],
-  ['ltr_5fcontext_4349',['ltr_context',['../structWhistServerState.html#a3c05e0c9cbd2fa0a293a6b90dab20164',1,'WhistServerState']]]
+  ['long_5foption_4345',['long_option',['../structWhistCommandLineOption.html#a9d175aa452650bfa0d907ce4fd5bfa0c',1,'WhistCommandLineOption']]],
+  ['long_5fterm_5fframe_5findex_4346',['long_term_frame_index',['../structLTRAction.html#a947968159b3e651d3719253e447c4fdd',1,'LTRAction']]],
+  ['ltr_5faction_4347',['ltr_action',['../structFFmpegEncoder.html#a8ddfc4f1e8777a5cccfdbab5e0d82332',1,'FFmpegEncoder::ltr_action()'],['../structNvidiaEncoder.html#a832b3dd35a47459f6383ea505aceb877',1,'NvidiaEncoder::ltr_action()']]],
+  ['ltr_5fcontext_4348',['ltr_context',['../structWhistServerState.html#a3c05e0c9cbd2fa0a293a6b90dab20164',1,'WhistServerState']]]
 ];

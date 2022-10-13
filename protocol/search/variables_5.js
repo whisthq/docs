@@ -29,7 +29,7 @@ var searchData=
   ['error_4126',['error',['../structFrontendStartupParameterEvent.html#a669f1940c70975dfed13d38dc40bdb0e',1,'FrontendStartupParameterEvent::error()'],['../structLodePNGState.html#a1a00a050da588cf3c2b7a6252bebb0cd',1,'LodePNGState::error()']]],
   ['event_4127',['event',['../structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb',1,'X11CaptureDevice']]],
   ['event_5finfo_4128',['event_info',['../structFileMetadata.html#a771dd5a12976a9a0142f36f2d58333fa',1,'FileMetadata::event_info()'],['../structTransferringFile.html#a7a8dd8d494ed61ed36fa0b39b6cd0fca',1,'TransferringFile::event_info()']]],
-  ['events_4129',['events',['../structVirtualInterface.html#af0de2830bb9576d71578f3ea36738adf',1,'VirtualInterface']]],
+  ['events_4129',['events',['../structVirtualInterface.html#a072f49c8f245a9b4d7f07e39d8c4689f',1,'VirtualInterface']]],
   ['events_5fqueue_4130',['events_queue',['../impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e',1,'impl.c']]],
   ['exiting_4131',['exiting',['../structWhistServerState.html#a56cc9b74ca3a7fb2d71dea61d1eecab8',1,'WhistServerState']]]
 ];

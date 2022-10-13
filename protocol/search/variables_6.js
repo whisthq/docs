@@ -11,7 +11,7 @@ var searchData=
   ['fec_5fframe_5fbuffer_4140',['fec_frame_buffer',['../structFrameData.html#aec551b669a213996989740f84bb40947',1,'FrameData']]],
   ['fec_5fpackets_5freceived_4141',['fec_packets_received',['../structFrameData.html#a1ebb5927b1a380da36425ae408088d41',1,'FrameData']]],
   ['ffmpeg_5fencoder_4142',['ffmpeg_encoder',['../structVideoEncoder.html#a9307f198076d55ba94d55ab275c2c7d7',1,'VideoEncoder']]],
-  ['file_4143',['file',['../structVirtualInterface.html#a93889590ac1b950e64bf4d3750dccdbf',1,'VirtualInterface::file()'],['../structWhistClientMessage.html#ac483bcd64751c9834cdea881ae71cd38',1,'WhistClientMessage::file()'],['../structWhistServerMessage.html#a19ad9000bba61691ee739f5f7c0c6204',1,'WhistServerMessage::file()']]],
+  ['file_4143',['file',['../structVirtualInterface.html#a14f605f9542e2a892c6d8e44649fba24',1,'VirtualInterface::file()'],['../structWhistClientMessage.html#ac483bcd64751c9834cdea881ae71cd38',1,'WhistClientMessage::file()'],['../structWhistServerMessage.html#a19ad9000bba61691ee739f5f7c0c6204',1,'WhistServerMessage::file()']]],
   ['file_5fdrag_4144',['file_drag',['../structWhistFrontendEvent.html#aa4feaf572c220e2e6091a1c99541aab0',1,'WhistFrontendEvent']]],
   ['file_5fdrag_5fdata_4145',['file_drag_data',['../structWhistClientMessage.html#a70a1ba7ad460bdf0a40d429e774662b7',1,'WhistClientMessage']]],
   ['file_5fdrop_4146',['file_drop',['../structWhistFrontendEvent.html#a23822df69a50c9c0a193c85a3a40e2b9',1,'WhistFrontendEvent']]],

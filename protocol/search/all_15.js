@@ -67,5 +67,5 @@ var searchData=
   ['using_5fserverside_5fscale_2295',['USING_SERVERSIDE_SCALE',['../whist_8h.html#afa1974cc8beaefae0b0afb0e084ff9eb',1,'whist.h']]],
   ['using_5fstun_2296',['using_stun',['../client__utils_8c.html#a78f4a0eca6c500b41c87fc2ba4375b66',1,'client_utils.c']]],
   ['utf8_5fstring_2297',['UTF8_STRING',['../structX11CaptureDevice.html#a4d38c5daddbd848151b0a8eb0b7c2420',1,'X11CaptureDevice']]],
-  ['utils_2298',['utils',['../structVirtualInterface.html#a600aea9aa13dcbd7842de79c1c1d1edd',1,'VirtualInterface']]]
+  ['utils_2298',['utils',['../structVirtualInterface.html#a519444d2ae31cd36b0c5ade205c8189b',1,'VirtualInterface']]]
 ];

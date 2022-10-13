@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"sdl__utils_8c.html#a24e70f423f16da088d42656ecb1cc683":[14,0,0,10,5],
 "sdl__utils_8c.html#a321c8a7ae1828f3fa641475e964b0ffb":[14,0,0,10,4],
 "sdl__utils_8c.html#a38188485497cb37637364f5d785ddb5f":[14,0,0,10,16],
 "sdl__utils_8c.html#a46ebcb0bcfb15eae4e15a7686891b121":[14,0,0,10,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structDynamicBuffer.html#a5eac9386582377913762fc058ac1a8ac":[11,2,2,3],
 "structDynamicBuffer.html#a938f2c8aa90ab824c05372f1903b9ac3":[11,2,2,0],
 "structDynamicBuffer.html#ab086b6e22e3b2018e9cb35aaf637e22c":[11,2,2,1],
-"structDynamicBuffer.html#ad80cc8f3a40b8681fa9ede1f2aa19c79":[11,2,2,2],
-"structEncodedAudio.html":[13,0,27]
+"structDynamicBuffer.html#ad80cc8f3a40b8681fa9ede1f2aa19c79":[11,2,2,2]
 };

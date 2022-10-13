@@ -8,7 +8,7 @@ var searchData=
   ['vbv_5fsize_2304',['vbv_size',['../structNvidiaEncoder.html#a40c5605f9abc56c722b376041190aa34',1,'NvidiaEncoder']]],
   ['verbose_5flog_2305',['verbose_log',['../structDebugConsoleOverrideValues.html#a5161d9392ed5a50daa3a6c41e3356e4c',1,'DebugConsoleOverrideValues']]],
   ['verbose_5flog_5faudio_2306',['verbose_log_audio',['../structDebugConsoleOverrideValues.html#a98e29b3292bdd95ea1907657a9d81795',1,'DebugConsoleOverrideValues']]],
-  ['video_2307',['video',['../structVirtualInterface.html#add5504ee93d39a22014ece8ff85090c0',1,'VirtualInterface']]],
+  ['video_2307',['video',['../structVirtualInterface.html#a4075e1b6e786eb28862e1b67026e9d71',1,'VirtualInterface']]],
   ['video_2ec_2308',['video.c',['../server_2video_8c.html',1,'(Global Namespace)'],['../whist_2video_2video_8c.html',1,'(Global Namespace)']]],
   ['video_2eh_2309',['video.h',['../client_2video_8h.html',1,'(Global Namespace)'],['../server_2video_8h.html',1,'(Global Namespace)'],['../whist_2video_2video_8h.html',1,'(Global Namespace)']]],
   ['video_5fav_5fhwframe_5ftransfer_5ftime_2310',['VIDEO_AV_HWFRAME_TRANSFER_TIME',['../log__statistic_8h.html#a5caad6508eb2c3373d06f221feb364f0a250066aaa58526ff20d827ead7c26944',1,'log_statistic.h']]],

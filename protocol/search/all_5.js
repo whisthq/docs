@@ -45,7 +45,7 @@ var searchData=
   ['estimated_5fjitter_5flatency_5fratio_583',['ESTIMATED_JITTER_LATENCY_RATIO',['../ringbuffer_8c.html#aae1c510758ee20c3ab1c53b1bc895786',1,'ringbuffer.c']]],
   ['event_584',['event',['../structX11CaptureDevice.html#aa4bb25592e663c310fc4b6659f976ecb',1,'X11CaptureDevice']]],
   ['event_5finfo_585',['event_info',['../structFileMetadata.html#a771dd5a12976a9a0142f36f2d58333fa',1,'FileMetadata::event_info()'],['../structTransferringFile.html#a7a8dd8d494ed61ed36fa0b39b6cd0fca',1,'TransferringFile::event_info()']]],
-  ['events_586',['events',['../structVirtualInterface.html#af0de2830bb9576d71578f3ea36738adf',1,'VirtualInterface']]],
+  ['events_586',['events',['../structVirtualInterface.html#a072f49c8f245a9b4d7f07e39d8c4689f',1,'VirtualInterface']]],
   ['events_2eh_587',['events.h',['../events_8h.html',1,'']]],
   ['events_5fqueue_588',['events_queue',['../impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e',1,'impl.c']]],
   ['ewma_5ffactor_589',['EWMA_FACTOR',['../network__algorithm_8c.html#aa3af14bab81dee35828959d2200a6c97',1,'network_algorithm.c']]],
