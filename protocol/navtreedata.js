@@ -192,7 +192,7 @@ var NAVTREEINDEX =
 "structWhistCursorTypes.html#a20402f962a6e81b495edfa0783996c49",
 "sync__packets_8h.html",
 "whist_8h.html#a4315da3047cc4ba85c5fa2f2e86d4b0b",
-"x11__window__info_8c.html#ada2351c0e44f99302487a3ff00e6da3e"
+"x11__window__info_8c.html#ab54d2cc9b2d2809b37a20fed484ec0af"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

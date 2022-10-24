@@ -5,7 +5,7 @@ var cudacontext_8c =
     [ "CUCTXDESTROYV2PROC", "cudacontext_8c.html#a38c94ab7b166d5485a76d945666e8574", null ],
     [ "CUDEVICEGETPROC", "cudacontext_8c.html#a8a6fbb415419477f8db2951d7a98b256", null ],
     [ "CUINITPROC", "cudacontext_8c.html#aca3067d6168833ac7803c1369528fab8", null ],
-    [ "cuda_destroy", "cudacontext_8c.html#aa03821ea384d1614612f1b625aa7d0bd", null ],
+    [ "cuda_destroy", "cudacontext_8c.html#a3dd9380f2745874a02befbadca3caaad", null ],
     [ "cuda_init", "cudacontext_8c.html#a8a9e5066d4daf827ca3ec0fd0ee7aae0", null ],
     [ "get_nvidia_thread_cuda_context_ptr", "cudacontext_8c.html#ac126b47c5ace76c2e9eb4663e7bdecc3", null ],
     [ "get_video_thread_cuda_context_ptr", "cudacontext_8c.html#a4cc86119c3b305d8ed146143b2a51f99", null ],

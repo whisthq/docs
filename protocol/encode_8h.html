@@ -132,9 +132,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1ad945ffbb6af0e593989f3799bff354"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8h.html#a1ad945ffbb6af0e593989f3799bff354">create_video_encoder</a> (int in_width, int in_height, int out_width, int out_height, int bitrate, int vbv_size, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
-<tr class="memdesc:a1ad945ffbb6af0e593989f3799bff354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new encoder.  <a href="encode_8h.html#a1ad945ffbb6af0e593989f3799bff354">More...</a><br /></td></tr>
-<tr class="separator:a1ad945ffbb6af0e593989f3799bff354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac628dd9bf4342e3d9d0cb9ea76742b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVideoEncoder.html">VideoEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8h.html#a5ac628dd9bf4342e3d9d0cb9ea76742b">create_video_encoder</a> (int width, int height, int bitrate, int vbv_size, <a class="el" href="whist_8h.html#a03b4b6ae5fb82af68d46aaea3d3e4d79">CodecType</a> codec_type)</td></tr>
+<tr class="memdesc:a5ac628dd9bf4342e3d9d0cb9ea76742b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create a new encoder.  <a href="encode_8h.html#a5ac628dd9bf4342e3d9d0cb9ea76742b">More...</a><br /></td></tr>
+<tr class="separator:a5ac628dd9bf4342e3d9d0cb9ea76742b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a444edd5dc4cb990b7441ba96964936fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="encode_8h.html#a444edd5dc4cb990b7441ba96964936fa">video_encoder_encode</a> (<a class="el" href="structVideoEncoder.html">VideoEncoder</a> *encoder)</td></tr>
 <tr class="memdesc:a444edd5dc4cb990b7441ba96964936fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a frame.  <a href="encode_8h.html#a444edd5dc4cb990b7441ba96964936fa">More...</a><br /></td></tr>
 <tr class="separator:a444edd5dc4cb990b7441ba96964936fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,8 +240,8 @@ Usage</h1>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1ad945ffbb6af0e593989f3799bff354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ad945ffbb6af0e593989f3799bff354">&#9670;&nbsp;</a></span>create_video_encoder()</h2>
+<a id="a5ac628dd9bf4342e3d9d0cb9ea76742b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac628dd9bf4342e3d9d0cb9ea76742b">&#9670;&nbsp;</a></span>create_video_encoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,25 +250,13 @@ Usage</h1>
           <td class="memname"><a class="el" href="structVideoEncoder.html">VideoEncoder</a>* create_video_encoder </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>in_width</em>, </td>
+          <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>in_height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>out_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>out_height</em>, </td>
+          <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -299,10 +287,8 @@ Usage</h1>
 <p>Will create a new encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">in_width</td><td>Width of the frames that the encoder must intake </td></tr>
-    <tr><td class="paramname">in_height</td><td>Height of the frames that the encoder must intake </td></tr>
-    <tr><td class="paramname">out_width</td><td>Width of the frames that the encoder must output </td></tr>
-    <tr><td class="paramname">out_height</td><td>Height of the frames that the encoder must output </td></tr>
+    <tr><td class="paramname">width</td><td>Width of the frames that the encoder must take in </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the frames that the encoder must take in </td></tr>
     <tr><td class="paramname">bitrate</td><td>The number of bits per second that this encoder will encode to </td></tr>
     <tr><td class="paramname">vbv_size</td><td>VBV Buffer size in bits</td></tr>
     <tr><td class="paramname">codec_type</td><td>Which codec type (h264 or h265) to use</td></tr>

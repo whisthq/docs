@@ -1,6 +1,6 @@
 var encode_8c =
 [
-    [ "create_video_encoder", "encode_8c.html#a1ad945ffbb6af0e593989f3799bff354", null ],
+    [ "create_video_encoder", "encode_8c.html#a5ac628dd9bf4342e3d9d0cb9ea76742b", null ],
     [ "destroy_video_encoder", "encode_8c.html#a7f0817add564fea3dbb260a90cef9132", null ],
     [ "reconfigure_encoder", "encode_8c.html#a8d1dbd84e74c7a17de0bc7252aedc211", null ],
     [ "video_encoder_encode", "encode_8c.html#a444edd5dc4cb990b7441ba96964936fa", null ],

@@ -9,7 +9,7 @@ var encode_8h =
       [ "NVIDIA_ENCODER", "encode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562ab792692a01f6b3a964743a59ae2cbec4", null ],
       [ "FFMPEG_ENCODER", "encode_8h.html#a2f3c0233caf50b001eb28cbaea7f0562a856ce1da43f5764119d04916e1a7d083", null ]
     ] ],
-    [ "create_video_encoder", "encode_8h.html#a1ad945ffbb6af0e593989f3799bff354", null ],
+    [ "create_video_encoder", "encode_8h.html#a5ac628dd9bf4342e3d9d0cb9ea76742b", null ],
     [ "destroy_video_encoder", "encode_8h.html#a7f0817add564fea3dbb260a90cef9132", null ],
     [ "reconfigure_encoder", "encode_8h.html#a8d1dbd84e74c7a17de0bc7252aedc211", null ],
     [ "video_encoder_encode", "encode_8h.html#a444edd5dc4cb990b7441ba96964936fa", null ],
