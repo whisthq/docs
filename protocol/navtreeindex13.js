@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"structRingBuffer.html#a222e926e44d53e0f8bec5e58bbccfc64":[13,0,90,13],
+"structRingBuffer.html#a3229bb03ce787b257fbaef7b25a7eef5":[13,0,90,0],
 "structRingBuffer.html#a4040ea10a7ec97c33893f20c63084a7a":[13,0,90,22],
 "structRingBuffer.html#a43c8b6829b64fd8b7f0aa7dbf7847a07":[13,0,90,19],
 "structRingBuffer.html#a44ac04c74f6f5e1a9c140d599df24ac5":[13,0,90,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "structWhistCursorInfo.html#ab13be0969c797eb4b96d1d0f04137b83":[13,0,118,7],
 "structWhistCursorInfo.html#ab3f1c4f53af0601a98be9fabe468f653":[13,0,118,6],
 "structWhistCursorInfo.html#ac47327438dea49b2a00bf7bf50e01f59":[13,0,118,0],
-"structWhistCursorInfo.html#ae3dfc504cc471c9cb214e002fbe8a478":[13,0,118,4],
-"structWhistCursorTypes.html":[13,0,119],
-"structWhistCursorTypes.html#a0d5df4f6de2bf890bd2b13722c4833ab":[13,0,119,0]
+"structWhistCursorInfo.html#ae3dfc504cc471c9cb214e002fbe8a478":[13,0,118,4]
 };

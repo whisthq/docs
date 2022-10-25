@@ -35,6 +35,8 @@ var frontend__structs_8h =
       [ "FRONTEND_EVENT_VISIBILITY", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfafce1f9571a0d53d0b99327884174f4cd", null ],
       [ "FRONTEND_EVENT_AUDIO_UPDATE", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfab3af4e3bf1a4b799e8165b97714d4340", null ],
       [ "FRONTEND_EVENT_KEYPRESS", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa0930337e06d072378bd6a68e9e4b6a80", null ],
+      [ "FRONTEND_EVENT_FOCUS", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfab0f70432ebf0201b5c9d9034d7b43c09", null ],
+      [ "FRONTEND_EVENT_DEFOCUS", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa155cd8baf682719b7aa6014bfa83eeb5", null ],
       [ "FRONTEND_EVENT_MOUSE_MOTION", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfaaefd3f50f2be221be6f12de8504e3e1e", null ],
       [ "FRONTEND_EVENT_MOUSE_BUTTON", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa14e75822fbc12499601c66892cd5ac50", null ],
       [ "FRONTEND_EVENT_MOUSE_WHEEL", "frontend__structs_8h.html#a8a153431f5c5d2a42e6b50bc64337ddfa5906a80c10b8574b204560b1bb234336", null ],

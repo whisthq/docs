@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['video_2ec_3101',['video.c',['../server_2video_8c.html',1,'(Global Namespace)'],['../whist_2video_2video_8c.html',1,'(Global Namespace)']]],
-  ['video_2eh_3102',['video.h',['../client_2video_8h.html',1,'(Global Namespace)'],['../server_2video_8h.html',1,'(Global Namespace)'],['../whist_2video_2video_8h.html',1,'(Global Namespace)']]],
-  ['virtual_2ec_3103',['virtual.c',['../virtual_8c.html',1,'']]],
-  ['virtual_2eh_3104',['virtual.h',['../virtual_8h.html',1,'']]]
+  ['video_2ec_3103',['video.c',['../server_2video_8c.html',1,'(Global Namespace)'],['../whist_2video_2video_8c.html',1,'(Global Namespace)']]],
+  ['video_2eh_3104',['video.h',['../client_2video_8h.html',1,'(Global Namespace)'],['../server_2video_8h.html',1,'(Global Namespace)'],['../whist_2video_2video_8h.html',1,'(Global Namespace)']]],
+  ['virtual_2ec_3105',['virtual.c',['../virtual_8c.html',1,'']]],
+  ['virtual_2eh_3106',['virtual.h',['../virtual_8h.html',1,'']]]
 ];
