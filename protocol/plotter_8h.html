@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('plotter_8h.html',''); initResizable();
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae197a58f4f3d4176640cbb3a6644a2ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plotter_8h.html#ae197a58f4f3d4176640cbb3a6644a2ab">whist_plotter_init</a> (void)</td></tr>
-<tr class="memdesc:ae197a58f4f3d4176640cbb3a6644a2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init the plotter sub system.  <a href="plotter_8h.html#ae197a58f4f3d4176640cbb3a6644a2ab">More...</a><br /></td></tr>
-<tr class="separator:ae197a58f4f3d4176640cbb3a6644a2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454fe0b8f758996e40f8e4bfd88ac9e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plotter_8h.html#a454fe0b8f758996e40f8e4bfd88ac9e6">whist_plotter_init</a> (const char *filename)</td></tr>
+<tr class="memdesc:a454fe0b8f758996e40f8e4bfd88ac9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init the plotter sub system.  <a href="plotter_8h.html#a454fe0b8f758996e40f8e4bfd88ac9e6">More...</a><br /></td></tr>
+<tr class="separator:a454fe0b8f758996e40f8e4bfd88ac9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dea4345f9e00dac5a71338ceff39299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plotter_8h.html#a1dea4345f9e00dac5a71338ceff39299">whist_plotter_start_sampling</a> (void)</td></tr>
 <tr class="memdesc:a1dea4345f9e00dac5a71338ceff39299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or restart sampling of samples.  <a href="plotter_8h.html#a1dea4345f9e00dac5a71338ceff39299">More...</a><br /></td></tr>
 <tr class="separator:a1dea4345f9e00dac5a71338ceff39299"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,9 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1a4837bf96cee54300991e88f253d8b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plotter_8h.html#a1a4837bf96cee54300991e88f253d8b2">whist_plotter_export_to_file</a> (const char *filename)</td></tr>
 <tr class="memdesc:a1a4837bf96cee54300991e88f253d8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the samples to a json format file.  <a href="plotter_8h.html#a1a4837bf96cee54300991e88f253d8b2">More...</a><br /></td></tr>
 <tr class="separator:a1a4837bf96cee54300991e88f253d8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aa4f3beb43e4618c87fc36d05a6836a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plotter_8h.html#a3aa4f3beb43e4618c87fc36d05a6836a">whist_plotter_export_c</a> (char *out_s, size_t max_size)</td></tr>
-<tr class="memdesc:a3aa4f3beb43e4618c87fc36d05a6836a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the samples to a json format string.  <a href="plotter_8h.html#a3aa4f3beb43e4618c87fc36d05a6836a">More...</a><br /></td></tr>
-<tr class="separator:a3aa4f3beb43e4618c87fc36d05a6836a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48551df1572bc70825448c00e59fb47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plotter_8h.html#aa48551df1572bc70825448c00e59fb47">whist_plotter_destroy</a> (void)</td></tr>
+<tr class="memdesc:aa48551df1572bc70825448c00e59fb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy plotter, release resouces.  <a href="plotter_8h.html#aa48551df1572bc70825448c00e59fb47">More...</a><br /></td></tr>
+<tr class="separator:aa48551df1572bc70825448c00e59fb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2021-2022 Whist Technologies, Inc. </p>
@@ -121,43 +121,31 @@ Functions</h2></td></tr>
 @brief APIs for plotting graphs</h1>
 <h1><a class="anchor" id="autotoc_md137"></a>
 Usage</h1>
+<p>The plotter API is backended by two implementations:</p><ol type="1">
+<li>the basic plotter, where you can call start_sampling(), stop_sampling(), and export_to_file() afterwrad.</li>
+<li>the stream plotter, once created, it will peridically flush samples onto disk.</li>
+</ol>
+<p>Both of them accept samples by the insert_sample() API.</p>
 <p>Call these functions from anywhere within client where they're needed. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a3aa4f3beb43e4618c87fc36d05a6836a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aa4f3beb43e4618c87fc36d05a6836a">&#9670;&nbsp;</a></span>whist_plotter_export_c()</h2>
+<a id="aa48551df1572bc70825448c00e59fb47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48551df1572bc70825448c00e59fb47">&#9670;&nbsp;</a></span>whist_plotter_destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void whist_plotter_export_c </td>
+          <td class="memname">void whist_plotter_destroy </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>out_s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>max_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Export the samples to a json format string. </p>
-<p>This function is a C wrapper to whist_plotter_export().</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out_s</td><td>The point to the buffer to use to save the JSON string </td></tr>
-    <tr><td class="paramname">max_size</td><td>The size of the buffer </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Destroy plotter, release resouces. </p>
+<dl class="section note"><dt>Note</dt><dd>This is safe to call regardless of whether init() has been called. This function is not and need not be thread safe, and should be called at the very end, i.e. before the protocol quits </dd></dl>
 
 </div>
 </div>
@@ -185,12 +173,13 @@ Usage</h1>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>Only for non-stream plotter </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success </dd></dl>
 
 </div>
 </div>
-<a id="ae197a58f4f3d4176640cbb3a6644a2ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae197a58f4f3d4176640cbb3a6644a2ab">&#9670;&nbsp;</a></span>whist_plotter_init()</h2>
+<a id="a454fe0b8f758996e40f8e4bfd88ac9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a454fe0b8f758996e40f8e4bfd88ac9e6">&#9670;&nbsp;</a></span>whist_plotter_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,14 +187,21 @@ Usage</h1>
         <tr>
           <td class="memname">void whist_plotter_init </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Init the plotter sub system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>If provided, the plotter will be initalized as a stream plotter which flushes data peridocally onto this file on disk. Otherwise, the plotter will be initalized as a basic plotter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>this function doesn't mean to be thread safe, it should be called before other plotter APIs, and called only once </dd></dl>
 
 </div>
 </div>
@@ -250,7 +246,7 @@ Usage</h1>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Has no effect if the plotter is not in a started status </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Has no effect if the plotter is not initalized. </dd></dl>
 
 </div>
 </div>
@@ -271,7 +267,7 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Start or restart sampling of samples. </p>
-<dl class="section note"><dt>Note</dt><dd>All previous existing samples are cleared by calling this function </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>All previous existing samples are cleared by calling this function. Only for non-stream plotter </dd></dl>
 
 </div>
 </div>
@@ -292,7 +288,7 @@ Usage</h1>
 </div><div class="memdoc">
 
 <p>Stops sampling. </p>
-<dl class="section note"><dt>Note</dt><dd>e.g stop to avoid waste of CPU and memory used on sampling </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>e.g stop to avoid waste of CPU and memory used on sampling Only for non-stream plotter </dd></dl>
 
 </div>
 </div>

@@ -86,39 +86,30 @@ $(document).ready(function(){initNavTree('plotter_8h_source.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <a href="plotter_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="debug__flags_8h.html">debug_flags.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#ae197a58f4f3d4176640cbb3a6644a2ab">whist_plotter_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#a1dea4345f9e00dac5a71338ceff39299">whist_plotter_start_sampling</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#abff1d213f322b7d7c83c711bfa0ad102">whist_plotter_stop_sampling</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#a940485ae6fc5690c9776b199303e46ab">whist_plotter_insert_sample</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* label, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// only expose this function to c++</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C++&quot;</span> {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;std::string whist_plotter_export();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="debug__flags_8h.html">debug_flags.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#a454fe0b8f758996e40f8e4bfd88ac9e6">whist_plotter_init</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#a1dea4345f9e00dac5a71338ceff39299">whist_plotter_start_sampling</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#abff1d213f322b7d7c83c711bfa0ad102">whist_plotter_stop_sampling</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#a940485ae6fc5690c9776b199303e46ab">whist_plotter_insert_sample</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* label, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">int</span> <a class="code" href="plotter_8h.html#a1a4837bf96cee54300991e88f253d8b2">whist_plotter_export_to_file</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#a3aa4f3beb43e4618c87fc36d05a6836a">whist_plotter_export_c</a>(<span class="keywordtype">char</span>* out_s, <span class="keywordtype">size_t</span> max_size);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> <a class="code" href="plotter_8h.html#aa48551df1572bc70825448c00e59fb47">whist_plotter_destroy</a>(<span class="keywordtype">void</span>);</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="adebug__flags_8h_html"><div class="ttname"><a href="debug__flags_8h.html">debug_flags.h</a></div></div>
+<div class="ttc" id="aplotter_8h_html_a454fe0b8f758996e40f8e4bfd88ac9e6"><div class="ttname"><a href="plotter_8h.html#a454fe0b8f758996e40f8e4bfd88ac9e6">whist_plotter_init</a></div><div class="ttdeci">void whist_plotter_init(const char *filename)</div><div class="ttdoc">Init the plotter sub system.</div></div>
 <div class="ttc" id="aplotter_8h_html_a940485ae6fc5690c9776b199303e46ab"><div class="ttname"><a href="plotter_8h.html#a940485ae6fc5690c9776b199303e46ab">whist_plotter_insert_sample</a></div><div class="ttdeci">void whist_plotter_insert_sample(const char *label, double x, double y)</div><div class="ttdoc">Insert a sample to the plotter.</div></div>
-<div class="ttc" id="aplotter_8h_html_a3aa4f3beb43e4618c87fc36d05a6836a"><div class="ttname"><a href="plotter_8h.html#a3aa4f3beb43e4618c87fc36d05a6836a">whist_plotter_export_c</a></div><div class="ttdeci">void whist_plotter_export_c(char *out_s, size_t max_size)</div><div class="ttdoc">Export the samples to a json format string.</div></div>
 <div class="ttc" id="aplotter_8h_html_a1a4837bf96cee54300991e88f253d8b2"><div class="ttname"><a href="plotter_8h.html#a1a4837bf96cee54300991e88f253d8b2">whist_plotter_export_to_file</a></div><div class="ttdeci">int whist_plotter_export_to_file(const char *filename)</div><div class="ttdoc">Export the samples to a json format file.</div></div>
 <div class="ttc" id="aplotter_8h_html_a1dea4345f9e00dac5a71338ceff39299"><div class="ttname"><a href="plotter_8h.html#a1dea4345f9e00dac5a71338ceff39299">whist_plotter_start_sampling</a></div><div class="ttdeci">void whist_plotter_start_sampling(void)</div><div class="ttdoc">Start or restart sampling of samples.</div></div>
 <div class="ttc" id="aplotter_8h_html_abff1d213f322b7d7c83c711bfa0ad102"><div class="ttname"><a href="plotter_8h.html#abff1d213f322b7d7c83c711bfa0ad102">whist_plotter_stop_sampling</a></div><div class="ttdeci">void whist_plotter_stop_sampling(void)</div><div class="ttdoc">Stops sampling.</div></div>
-<div class="ttc" id="aplotter_8h_html_ae197a58f4f3d4176640cbb3a6644a2ab"><div class="ttname"><a href="plotter_8h.html#ae197a58f4f3d4176640cbb3a6644a2ab">whist_plotter_init</a></div><div class="ttdeci">void whist_plotter_init(void)</div><div class="ttdoc">Init the plotter sub system.</div></div>
+<div class="ttc" id="aplotter_8h_html_aa48551df1572bc70825448c00e59fb47"><div class="ttname"><a href="plotter_8h.html#aa48551df1572bc70825448c00e59fb47">whist_plotter_destroy</a></div><div class="ttdeci">void whist_plotter_destroy(void)</div><div class="ttdoc">Destroy plotter, release resouces.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
