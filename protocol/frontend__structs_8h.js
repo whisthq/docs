@@ -51,6 +51,7 @@ var frontend__structs_8h =
     ] ],
     [ "WhistError", "frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41ef", [
       [ "WHIST_DISCONNECT_ERROR", "frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41efaa295bac5aa56e8a5f4a2c4511593838c", null ],
-      [ "WHIST_DIMENSION_ERROR", "frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41efabe07d5a0024c4eff132f0d630c549759", null ]
+      [ "WHIST_DIMENSION_ERROR", "frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41efabe07d5a0024c4eff132f0d630c549759", null ],
+      [ "WHIST_AUDIO_ERROR", "frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41efa826cf3b849b0ae09d7aa02842b583366", null ]
     ] ]
 ];

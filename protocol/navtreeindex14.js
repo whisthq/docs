@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"structWhistCommandLineOption.html#acab9f15c60c20035f5e6009dfc458ea5":[11,4,0,6],
+"structWhistCommandLineOption.html#ae090083bba23eae2c5da9ef943fab5a2":[11,4,0,2],
 "structWhistCommandLineOption.html#afd5913d2ac5b71b1b7402f77f3e5f37a":[11,4,0,9],
 "structWhistCursorInfo.html":[13,0,118],
 "structWhistCursorInfo.html#a29eff4661068b07de8abf9be713fbf37":[13,0,118,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "structgf256__ctx.html#a150812cd7e31d68cd2b2f5513ff6cf38":[13,0,50,0],
 "structgf256__ctx.html#a171f868bc75b09a538c31e77c5978cde":[13,0,50,2],
 "structgf256__ctx.html#a17a3efd1a2b1e740d9458d3879a9fc16":[13,0,50,10],
-"structgf256__ctx.html#a26b6687d2db2c080cfacf7f4310ff34c":[13,0,50,5],
-"structgf256__ctx.html#a2cf5195ffcbecde4382156f10cc04c88":[13,0,50,9],
-"structgf256__ctx.html#a38e1b6bea256caf90e23fd804094de82":[13,0,50,11]
+"structgf256__ctx.html#a26b6687d2db2c080cfacf7f4310ff34c":[13,0,50,5]
 };

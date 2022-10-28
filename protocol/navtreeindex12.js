@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structLTRState.html#a4e091248de0c9670e317a49365514113":[13,0,77,4],
 "structLTRState.html#a5aacfd8377d37dcd64be6be3c9754486":[13,0,77,5],
 "structLTRState.html#a6f601291469a6d638d85c1b4e5d75e16":[13,0,77,8],
 "structLTRState.html#a75332579802631c6ed3f0ea8291dadbd":[13,0,77,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structRWLock.html#aa4e0cbe7e94c4f95bd65e0b8ca934e9d":[13,0,92,8],
 "structRegionHeader.html":[13,0,88],
 "structRegionHeader.html#a1fadab60a2a9b4d87efc22a4d8894155":[13,0,88,0],
-"structRegisteredResource.html":[13,0,89],
-"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[13,0,89,5]
+"structRegisteredResource.html":[13,0,89]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"structRegisteredResource.html#a0e6ad98a845efd1afe3722c2e7a60c24":[13,0,89,5],
 "structRegisteredResource.html#a170f4b6cfceac4638cb230e536316643":[13,0,89,0],
 "structRegisteredResource.html#a364758c77b0b72cabc4e4b9d72fb03e5":[13,0,89,2],
 "structRegisteredResource.html#a4d549b8fc69a8bce4e28a6f9a16129be":[13,0,89,4],
@@ -179,10 +180,11 @@ var NAVTREEINDEX13 =
 "structVideoFrame.html#aef3314aab1ba78f86d87b04395658de6":[13,0,113,6],
 "structVirtualFrontendContext.html":[13,0,114],
 "structVirtualFrontendContext.html#a0be3aea8ac3c0119bb70a80672b1502f":[13,0,114,1],
-"structVirtualFrontendContext.html#a17f6444fbf22fb30020f153b1e2b50b5":[13,0,114,5],
+"structVirtualFrontendContext.html#a17f6444fbf22fb30020f153b1e2b50b5":[13,0,114,6],
 "structVirtualFrontendContext.html#a4ee3508b36e432c55923a65a2a84ed37":[13,0,114,4],
 "structVirtualFrontendContext.html#a5771119a7347add61da98aa091eaf98f":[13,0,114,2],
 "structVirtualFrontendContext.html#ac0201bb0ce5717d23fa7adeb4053c788":[13,0,114,0],
+"structVirtualFrontendContext.html#acaa577c52da4468d3e6dcf7b2ebe5396":[13,0,114,5],
 "structVirtualFrontendContext.html#acb5aedd86c6db4564a6c28624d141a52":[13,0,114,3],
 "structVirtualInterface.html":[13,0,115],
 "structVirtualInterface.html#a072f49c8f245a9b4d7f07e39d8c4689f":[13,0,115,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "structWhistCommandLineOption.html#a28d571c06bf4d45600411abf9fc81fe6":[11,4,0,0],
 "structWhistCommandLineOption.html#a5fe390febdfb6f6bbb3d93c59e745ffe":[11,4,0,3],
 "structWhistCommandLineOption.html#a973ab5318ad74c0d2a0597cfe04c255d":[11,4,0,8],
-"structWhistCommandLineOption.html#a9d175aa452650bfa0d907ce4fd5bfa0c":[11,4,0,5],
-"structWhistCommandLineOption.html#acab9f15c60c20035f5e6009dfc458ea5":[11,4,0,6],
-"structWhistCommandLineOption.html#ae090083bba23eae2c5da9ef943fab5a2":[11,4,0,2]
+"structWhistCommandLineOption.html#a9d175aa452650bfa0d907ce4fd5bfa0c":[11,4,0,5]
 };
