@@ -31,6 +31,7 @@ var impl_8c =
     [ "virtual_resize_window", "impl_8c.html#a082851b4781b4401aa89a7565c618c84", null ],
     [ "virtual_restore_window", "impl_8c.html#a087cbfd79a7c89486680c1576a270805", null ],
     [ "virtual_send_error_notification", "impl_8c.html#af284570fefcca111cbb3cbfbbb28c95f", null ],
+    [ "virtual_send_gpu_command", "impl_8c.html#a6694a1b4c9060929f7b2f62c5d81ffb6", null ],
     [ "virtual_set_cursor", "impl_8c.html#af73d8ec34537d30a51a96c4301a0c199", null ],
     [ "virtual_set_titlebar_color", "impl_8c.html#a5c87db2f7196833169a10189e51aac6c", null ],
     [ "virtual_set_window_fullscreen", "impl_8c.html#ad43ee803dd704ddecae9641c0aadf9bf", null ],
@@ -39,11 +40,13 @@ var impl_8c =
     [ "callback_context", "impl_8c.html#a67b5953b36108e04f24abe803bc1fe44", null ],
     [ "events_queue", "impl_8c.html#ac331598d5bf381dbd25b0294f2cbb77e", null ],
     [ "get_modifier_key_state", "impl_8c.html#a4e5d3970e4c21a966c9dbb65a8a69c70", null ],
+    [ "gpu_context", "impl_8c.html#a87960fc4cb30fc5dea8de9277f7ff3f7", null ],
     [ "on_cursor_change", "impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40", null ],
     [ "on_file_download_complete", "impl_8c.html#ac00b87eb030299fcbdae3f0a93140219", null ],
     [ "on_file_download_start", "impl_8c.html#a8dafd7f05c6518f44f4291b2ddb082d0", null ],
     [ "on_file_download_update", "impl_8c.html#a7b2f4753a286417e68546e4cdfe28afe", null ],
     [ "on_file_upload", "impl_8c.html#a30d9b3af830eaed4169151a59b45b368", null ],
+    [ "on_gpu_command", "impl_8c.html#a5535111282934c7c77f140330c61602d", null ],
     [ "on_notification_callback_ptr", "impl_8c.html#ac572fc9c84b034d71b8c064881c5dab2", null ],
     [ "on_whist_error", "impl_8c.html#a3522909e1cea87067ff04307e5363741", null ]
 ];

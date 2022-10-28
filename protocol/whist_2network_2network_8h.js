@@ -8,6 +8,7 @@ var whist_2network_2network_8h =
     [ "AUDIO_BITRATE", "whist_2network_2network_8h.html#a4dd2e9c562db4c9c333b1ddcbea5f7cc", null ],
     [ "AUDIO_NACKBUFFER_SIZE", "whist_2network_2network_8h.html#a6268ba8879305a31512908e23f295ddc", null ],
     [ "closesocket", "whist_2network_2network_8h.html#afdbb9d84bd17efd2ae7290e664992c48", null ],
+    [ "GPU_NACKBUFFER_SIZE", "whist_2network_2network_8h.html#a3dede374d9a2e0e232415d8dc64764e4", null ],
     [ "INVALID_SOCKET", "whist_2network_2network_8h.html#a26769957ec1a2beaf223f33b66ee64ab", null ],
     [ "MAX_PACKET_SIZE", "whist_2network_2network_8h.html#a879456c3b8e2853f7044d764e9c180d4", null ],
     [ "MAX_PAYLOAD_SIZE", "whist_2network_2network_8h.html#a6303f7392a2d06be5a121c54278d561b", null ],

@@ -122,9 +122,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aeb94491a6b615aa71f713b853324205e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#aeb94491a6b615aa71f713b853324205e">renderer_wants_frame</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, int num_buffered_frames)</td></tr>
 <tr class="memdesc:aeb94491a6b615aa71f713b853324205e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the renderer wants a frame of that type.  <a href="renderer_8c.html#aeb94491a6b615aa71f713b853324205e">More...</a><br /></td></tr>
 <tr class="separator:aeb94491a6b615aa71f713b853324205e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9eeec294b2ae3129d1688c953b06555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#ad9eeec294b2ae3129d1688c953b06555">renderer_receive_frame</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, void *frame)</td></tr>
-<tr class="memdesc:ad9eeec294b2ae3129d1688c953b06555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video or audio frame.  <a href="renderer_8c.html#ad9eeec294b2ae3129d1688c953b06555">More...</a><br /></td></tr>
-<tr class="separator:ad9eeec294b2ae3129d1688c953b06555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea8ef989383621c7bce067367210713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a1ea8ef989383621c7bce067367210713">renderer_receive_frame</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, void *frame, int size)</td></tr>
+<tr class="memdesc:a1ea8ef989383621c7bce067367210713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video or audio frame.  <a href="renderer_8c.html#a1ea8ef989383621c7bce067367210713">More...</a><br /></td></tr>
+<tr class="separator:a1ea8ef989383621c7bce067367210713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751bce4fc770bc6f26daf49d5fd45fd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8c.html#a751bce4fc770bc6f26daf49d5fd45fd8">destroy_renderer</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *whist_renderer)</td></tr>
 <tr class="memdesc:a751bce4fc770bc6f26daf49d5fd45fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the given whist renderer.  <a href="renderer_8c.html#a751bce4fc770bc6f26daf49d5fd45fd8">More...</a><br /></td></tr>
 <tr class="separator:a751bce4fc770bc6f26daf49d5fd45fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,8 +269,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9eeec294b2ae3129d1688c953b06555"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9eeec294b2ae3129d1688c953b06555">&#9670;&nbsp;</a></span>renderer_receive_frame()</h2>
+<a id="a1ea8ef989383621c7bce067367210713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea8ef989383621c7bce067367210713">&#9670;&nbsp;</a></span>renderer_receive_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +291,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>frame</em>&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -306,7 +312,8 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">renderer</td><td>The renderer context to give a frame to</td></tr>
     <tr><td class="paramname">packet_type</td><td>Packet type, either Video or Audio</td></tr>
-    <tr><td class="paramname">frame</td><td>The VideoFrame* / AudioFrame*</td></tr>
+    <tr><td class="paramname">frame</td><td>The VideoFrame* / AudioFrame* / GPU packet *</td></tr>
+    <tr><td class="paramname">size</td><td>The size of the data pointed by frame</td></tr>
   </table>
   </dd>
 </dl>

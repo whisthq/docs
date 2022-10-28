@@ -8,6 +8,7 @@ var interface_8h =
     [ "OnFileDownloadComplete", "interface_8h.html#afb4d450f41150a6b987c9d06721b2181", null ],
     [ "OnFileDownloadStart", "interface_8h.html#ad93a62b01fb855a3906d288bd9a10c66", null ],
     [ "OnFileDownloadUpdate", "interface_8h.html#a8cffbb4db889b0f4818a05949b5e6adc", null ],
+    [ "OnGpuCommandCallback", "interface_8h.html#a17692aa200cf49628b68bd08a455dfd7", null ],
     [ "OnNotificationCallback", "interface_8h.html#a3ccea30ae6ddeb0d2e0a1f6133b480f0", null ],
     [ "OnWhistError", "interface_8h.html#ab4ed11e1cedf8cb745026e984578c79b", null ],
     [ "OnWhistLog", "interface_8h.html#a2669fcdfd84e745938f7ca4467b09b25", null ],

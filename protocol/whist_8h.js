@@ -142,6 +142,7 @@ var whist_8h =
       [ "PACKET_AUDIO", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47da3701057450c7a09aa316bb880f2db6ac", null ],
       [ "PACKET_VIDEO", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47dab3488b238f3094f2bcfaa19a393be226", null ],
       [ "PACKET_MESSAGE", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47da501ce71c96f98746319edaf14fd43aef", null ],
+      [ "PACKET_GPU", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47da724132fada68d6a09202114c66cea81b", null ],
       [ "NUM_PACKET_TYPES", "whist_8h.html#abc95f4cc09d4297e52acd3113483a47dac6642b5659955b94b1141878bd60e994", null ]
     ] ],
     [ "WhistServerMessageType", "whist_8h.html#a7c0601110e75dab446fcca0c02609353", [

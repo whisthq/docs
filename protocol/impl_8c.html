@@ -145,6 +145,8 @@ Functions</h2></td></tr>
 <tr class="separator:a21fdc3c4c0f48b0d363d3411edd18cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee3ea533f950c8ca6b965615e5544e9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a8ee3ea533f950c8ca6b965615e5544e9">virtual_get_chosen_file</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend)</td></tr>
 <tr class="separator:a8ee3ea533f950c8ca6b965615e5544e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6694a1b4c9060929f7b2f62c5d81ffb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a6694a1b4c9060929f7b2f62c5d81ffb6">virtual_send_gpu_command</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, void *buffer, int size)</td></tr>
+<tr class="separator:a6694a1b4c9060929f7b2f62c5d81ffb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b5be9b5be9fdd9e4dd540092c8f24fd"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a2b5be9b5be9fdd9e4dd540092c8f24fd">virtual_file_download_start</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const char *file_path, int64_t file_size)</td></tr>
 <tr class="separator:a2b5be9b5be9fdd9e4dd540092c8f24fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaddd09640cf9ecc65e25d819d26a006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#acaddd09640cf9ecc65e25d819d26a006">virtual_file_download_update</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, void *opaque, int64_t bytes_so_far, int64_t bytes_per_sec)</td></tr>
@@ -182,6 +184,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac331598d5bf381dbd25b0294f2cbb77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b5953b36108e04f24abe803bc1fe44"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a67b5953b36108e04f24abe803bc1fe44">callback_context</a></td></tr>
 <tr class="separator:a67b5953b36108e04f24abe803bc1fe44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87960fc4cb30fc5dea8de9277f7ff3f7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a87960fc4cb30fc5dea8de9277f7ff3f7">gpu_context</a></td></tr>
+<tr class="separator:a87960fc4cb30fc5dea8de9277f7ff3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d9b3af830eaed4169151a59b45b368"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_8h.html#a37105195b9292c0603cb55a10a2e11d0">OnFileUploadCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a30d9b3af830eaed4169151a59b45b368">on_file_upload</a></td></tr>
 <tr class="separator:a30d9b3af830eaed4169151a59b45b368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d0a11e73161c6c8d2662c0e8a5d8a40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_8h.html#af2205e2276c4c7a109a62cfa4c1cc65b">OnCursorChangeCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a4d0a11e73161c6c8d2662c0e8a5d8a40">on_cursor_change</a></td></tr>
@@ -198,6 +202,8 @@ Variables</h2></td></tr>
 <tr class="separator:a4e5d3970e4c21a966c9dbb65a8a69c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3522909e1cea87067ff04307e5363741"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_8h.html#ab4ed11e1cedf8cb745026e984578c79b">OnWhistError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a3522909e1cea87067ff04307e5363741">on_whist_error</a></td></tr>
 <tr class="separator:a3522909e1cea87067ff04307e5363741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5535111282934c7c77f140330c61602d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_8h.html#a17692aa200cf49628b68bd08a455dfd7">OnGpuCommandCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="impl_8c.html#a5535111282934c7c77f140330c61602d">on_gpu_command</a></td></tr>
+<tr class="separator:a5535111282934c7c77f140330c61602d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5a04db2cf03c25dfc773b71bc272aaf4"></a>
@@ -1039,6 +1045,40 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a6694a1b4c9060929f7b2f62c5d81ffb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6694a1b4c9060929f7b2f62c5d81ffb6">&#9670;&nbsp;</a></span>virtual_send_gpu_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void virtual_send_gpu_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af73d8ec34537d30a51a96c4301a0c199"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af73d8ec34537d30a51a96c4301a0c199">&#9670;&nbsp;</a></span>virtual_set_cursor()</h2>
 
@@ -1252,6 +1292,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a87960fc4cb30fc5dea8de9277f7ff3f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87960fc4cb30fc5dea8de9277f7ff3f7">&#9670;&nbsp;</a></span>gpu_context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* gpu_context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4d0a11e73161c6c8d2662c0e8a5d8a40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d0a11e73161c6c8d2662c0e8a5d8a40">&#9670;&nbsp;</a></span>on_cursor_change</h2>
 
@@ -1316,6 +1370,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="interface_8h.html#a37105195b9292c0603cb55a10a2e11d0">OnFileUploadCallback</a> on_file_upload</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5535111282934c7c77f140330c61602d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5535111282934c7c77f140330c61602d">&#9670;&nbsp;</a></span>on_gpu_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_8h.html#a17692aa200cf49628b68bd08a455dfd7">OnGpuCommandCallback</a> on_gpu_command</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -3,6 +3,7 @@ var whist__frame_8h =
     [ "VideoFrame", "structVideoFrame.html", "structVideoFrame" ],
     [ "AudioFrame", "structAudioFrame.html", "structAudioFrame" ],
     [ "LARGEST_AUDIOFRAME_SIZE", "whist__frame_8h.html#a84e8623194435c55447f0ebb656150ec", null ],
+    [ "LARGEST_GPUFRAME_SIZE", "whist__frame_8h.html#a02c0b7acd62afbf90dbd74c6a2d417c5", null ],
     [ "LARGEST_VIDEOFRAME_SIZE", "whist__frame_8h.html#a66295e639cf3c980d7e5c2605df61d4f", null ],
     [ "MAX_AUDIOFRAME_DATA_SIZE", "whist__frame_8h.html#a2cb3744afacc1bb5aa291d7aaf7ab218", null ],
     [ "MAX_AUDIOFRAME_METADATA_SIZE", "whist__frame_8h.html#a7720723895cf99ac2e4a848c2eda9554", null ],

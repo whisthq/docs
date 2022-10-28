@@ -147,6 +147,8 @@ Functions</h2></td></tr>
 <tr class="separator:a474d9c27bb0996b4a47a01541b591c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c4e2b7a0cdda449f2ba813663fd5eb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a8c4e2b7a0cdda449f2ba813663fd5eb0">whist_frontend_file_download_complete</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, void *opaque)</td></tr>
 <tr class="separator:a8c4e2b7a0cdda449f2ba813663fd5eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8486c5cd9e5adeb46e5d3f9e6897fa25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a8486c5cd9e5adeb46e5d3f9e6897fa25">whist_frontend_send_gpu_command</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, void *buffer, int size)</td></tr>
+<tr class="separator:a8486c5cd9e5adeb46e5d3f9e6897fa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787311d1b27d6a6367d60fdd98a862b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#a787311d1b27d6a6367d60fdd98a862b3">whist_frontend_set_cursor</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, <a class="el" href="structWhistCursorInfo.html">WhistCursorInfo</a> *cursor)</td></tr>
 <tr class="separator:a787311d1b27d6a6367d60fdd98a862b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7854b464b9404182515705d7b3acf88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frontend_8c.html#ae7854b464b9404182515705d7b3acf88">whist_frontend_get_keyboard_state</a> (<a class="el" href="structWhistFrontend.html">WhistFrontend</a> *frontend, const uint8_t **key_state, int *key_count, int *mod_state)</td></tr>
@@ -1088,6 +1090,40 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="frontend__structs_8h.html#a7f47c09b46aa108247e07d61fd1b41ef">WhistError</a>&#160;</td>
           <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8486c5cd9e5adeb46e5d3f9e6897fa25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8486c5cd9e5adeb46e5d3f9e6897fa25">&#9670;&nbsp;</a></span>whist_frontend_send_gpu_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void whist_frontend_send_gpu_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWhistFrontend.html">WhistFrontend</a> *&#160;</td>
+          <td class="paramname"><em>frontend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

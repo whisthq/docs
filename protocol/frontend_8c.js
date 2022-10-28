@@ -35,6 +35,7 @@ var frontend_8c =
     [ "whist_frontend_resize_window", "frontend_8c.html#aa958888c62d05e83d61678276e7ef081", null ],
     [ "whist_frontend_restore_window", "frontend_8c.html#ad2473d79fc2fdf1ee959c1f799d8d3d5", null ],
     [ "whist_frontend_send_error_notification", "frontend_8c.html#a262b6c0384823d13e1cf7087a7ffc079", null ],
+    [ "whist_frontend_send_gpu_command", "frontend_8c.html#a8486c5cd9e5adeb46e5d3f9e6897fa25", null ],
     [ "whist_frontend_set_cursor", "frontend_8c.html#a787311d1b27d6a6367d60fdd98a862b3", null ],
     [ "whist_frontend_set_titlebar_color", "frontend_8c.html#af20eefc1bcc06c9619a384d7efdbf5dd", null ],
     [ "whist_frontend_set_window_fullscreen", "frontend_8c.html#aa6be517264408b308241ce80660b9da2", null ],

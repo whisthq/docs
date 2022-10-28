@@ -111,9 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aeb94491a6b615aa71f713b853324205e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#aeb94491a6b615aa71f713b853324205e">renderer_wants_frame</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, int num_buffered_frames)</td></tr>
 <tr class="memdesc:aeb94491a6b615aa71f713b853324205e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the renderer wants a frame of that type.  <a href="renderer_8h.html#aeb94491a6b615aa71f713b853324205e">More...</a><br /></td></tr>
 <tr class="separator:aeb94491a6b615aa71f713b853324205e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb4f833673fdffc6791de6f73ff8e163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#adb4f833673fdffc6791de6f73ff8e163">renderer_receive_frame</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, void *frame)</td></tr>
-<tr class="memdesc:adb4f833673fdffc6791de6f73ff8e163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video or audio frame.  <a href="renderer_8h.html#adb4f833673fdffc6791de6f73ff8e163">More...</a><br /></td></tr>
-<tr class="separator:adb4f833673fdffc6791de6f73ff8e163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99358cc86b04190ece436a02a63061b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#a99358cc86b04190ece436a02a63061b0">renderer_receive_frame</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer, <a class="el" href="whist_8h.html#abc95f4cc09d4297e52acd3113483a47d">WhistPacketType</a> packet_type, void *frame, int size)</td></tr>
+<tr class="memdesc:a99358cc86b04190ece436a02a63061b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive video or audio frame.  <a href="renderer_8h.html#a99358cc86b04190ece436a02a63061b0">More...</a><br /></td></tr>
+<tr class="separator:a99358cc86b04190ece436a02a63061b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9262636b11f7ef525cea6ee8abf8cb45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderer_8h.html#a9262636b11f7ef525cea6ee8abf8cb45">destroy_renderer</a> (<a class="el" href="structWhistRenderer.html">WhistRenderer</a> *renderer)</td></tr>
 <tr class="memdesc:a9262636b11f7ef525cea6ee8abf8cb45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the given whist renderer.  <a href="renderer_8h.html#a9262636b11f7ef525cea6ee8abf8cb45">More...</a><br /></td></tr>
 <tr class="separator:a9262636b11f7ef525cea6ee8abf8cb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,8 +206,8 @@ Usage</h1>
 
 </div>
 </div>
-<a id="adb4f833673fdffc6791de6f73ff8e163"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb4f833673fdffc6791de6f73ff8e163">&#9670;&nbsp;</a></span>renderer_receive_frame()</h2>
+<a id="a99358cc86b04190ece436a02a63061b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99358cc86b04190ece436a02a63061b0">&#9670;&nbsp;</a></span>renderer_receive_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,7 +228,13 @@ Usage</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>frame</em>&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -243,7 +249,8 @@ Usage</h1>
   <table class="params">
     <tr><td class="paramname">renderer</td><td>The renderer context to give a frame to</td></tr>
     <tr><td class="paramname">packet_type</td><td>Packet type, either Video or Audio</td></tr>
-    <tr><td class="paramname">frame</td><td>The VideoFrame* / AudioFrame*</td></tr>
+    <tr><td class="paramname">frame</td><td>The VideoFrame* / AudioFrame* / GPU packet *</td></tr>
+    <tr><td class="paramname">size</td><td>The size of the data pointed by frame</td></tr>
   </table>
   </dd>
 </dl>
